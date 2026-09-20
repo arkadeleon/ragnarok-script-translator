@@ -1,0 +1,1 @@
+# ragnarok-script-translator
