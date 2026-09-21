@@ -241,31 +241,19 @@
       "kind" : "message",
       "line" : 277,
       "npc" : "Mercenary Merchant",
-      "text" : "[Mercenary Goods Merchant]"
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\",.@input,getitemname(.@item[.@m]))"
+      ],
+      "text" : "[Mercenary Goods Merchant]\nHere you are, this is exactly\n{0}.\nThank you, and please come\nagain when you need more\npotions for your Mercenaries."
     },
     {
       "kind" : "message",
-      "line" : 279,
+      "line" : 277,
       "npc" : "Mercenary Merchant",
       "placeholders" : [
         "getitemname(.@item[.@m])"
       ],
-      "text" : "Here's your {0}."
-    },
-    {
-      "kind" : "message",
-      "line" : 281,
-      "npc" : "Mercenary Merchant",
-      "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@input,getitemname(.@item[.@m]))"
-      ],
-      "text" : "Here you are, this is exactly\n{0}."
-    },
-    {
-      "kind" : "message",
-      "line" : 284,
-      "npc" : "Mercenary Merchant",
-      "text" : "Thank you, and please come\nagain when you need more\npotions for your Mercenaries."
+      "text" : "[Mercenary Goods Merchant]\nHere's your {0}.\nThank you, and please come\nagain when you need more\npotions for your Mercenaries."
     },
     {
       "kind" : "message",
@@ -277,25 +265,25 @@
       "kind" : "message",
       "line" : 307,
       "npc" : "Mercenary_Switch",
+      "text" : "[Checker]\nPlease select."
+    },
+    {
+      "kind" : "message",
+      "line" : 307,
+      "npc" : "Mercenary_Switch",
       "text" : "[Checker]"
     },
     {
       "kind" : "message",
-      "line" : 309,
+      "line" : 307,
       "npc" : "Mercenary_Switch",
-      "text" : "Error."
+      "text" : "[Checker]\nWrong number"
     },
     {
       "kind" : "message",
-      "line" : 311,
+      "line" : 307,
       "npc" : "Mercenary_Switch",
-      "text" : "Wrong number"
-    },
-    {
-      "kind" : "message",
-      "line" : 313,
-      "npc" : "Mercenary_Switch",
-      "text" : "Please select."
+      "text" : "[Checker]\nError."
     },
     {
       "kind" : "option",

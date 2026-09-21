@@ -392,52 +392,40 @@
       "kind" : "message",
       "line" : 544,
       "npc" : "Point Merchant",
-      "text" : "[ Point Merchant ]"
+      "text" : "[ Point Merchant ]\nYou can't find the stuff you need?"
     },
     {
       "kind" : "message",
-      "line" : 546,
-      "npc" : "Point Merchant",
-      "text" : "You can't find the stuff you need?"
-    },
-    {
-      "kind" : "message",
-      "line" : 551,
+      "line" : 544,
       "npc" : "Point Merchant",
       "placeholders" : [
         ".@color$[.@i]"
       ],
-      "text" : "You have chosen {0} Points.\nHow many do you want?\nIf you want to cancel, enter 0."
+      "text" : "[ Point Merchant ]\nYou have chosen {0} Points.\nHow many do you want?\nIf you want to cancel, enter 0."
     },
     {
       "kind" : "message",
       "line" : 556,
       "npc" : "Point Merchant",
-      "text" : "[ Point Merchant ]"
+      "text" : "[ Point Merchant ]\nYou've cancelled the trade."
     },
     {
       "kind" : "message",
-      "line" : 558,
+      "line" : 556,
       "npc" : "Point Merchant",
-      "text" : "You've cancelled the trade."
+      "text" : "[ Point Merchant ]\nYou don't seem to have enough money."
     },
     {
       "kind" : "message",
-      "line" : 562,
+      "line" : 556,
       "npc" : "Point Merchant",
-      "text" : "You don't seem to have enough money."
+      "text" : "[ Point Merchant ]\nYou don't have enough space in your inventory to buy this amount."
     },
     {
       "kind" : "message",
-      "line" : 566,
+      "line" : 556,
       "npc" : "Point Merchant",
-      "text" : "You don't have enough space in your inventory to buy this amount."
-    },
-    {
-      "kind" : "message",
-      "line" : 571,
-      "npc" : "Point Merchant",
-      "text" : "Thank you very much. See you~!"
+      "text" : "[ Point Merchant ]\nThank you very much. See you~!"
     },
     {
       "kind" : "option",
@@ -746,15 +734,7 @@
       "line" : 813,
       "npc" : "Emmitt White",
       "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nJust a second.\nYou need to wait for the timer to expire before going back.\n "
-    },
-    {
-      "kind" : "message",
-      "line" : 823,
-      "npc" : "Emmitt White",
-      "placeholders" : [
+        ".@n$",
         "(.@hrs < 10 ? \"0\" : \"\")",
         ".@hrs",
         "(.@min < 10 ? \"0\" : \"\")",
@@ -762,7 +742,7 @@
         "(.@sec < 10 ? \"0\" : \"\")",
         ".@sec"
       ],
-      "text" : "Cooldown: ^3355FF{0}{1}:{2}{3}:{4}{5}^000000"
+      "text" : "{0}\nJust a second.\nYou need to wait for the timer to expire before going back.\n \nCooldown: ^3355FF{1}{2}:{3}{4}:{5}{6}^000000"
     },
     {
       "kind" : "message",
@@ -1322,18 +1302,22 @@
     },
     {
       "kind" : "message",
-      "line" : 1449,
+      "line" : 1447,
       "npc" : "Tournament Guide",
       "placeholders" : [
-        "callfunc(\"F_GetNumSuffix\",('GMT_1QUE-10))"
+        ".@n$"
       ],
-      "text" : "Congratulations on winning the {0} round!"
+      "text" : "{0}\nCongratulations! You've defeated every other opponent in Group A! Good luck on the final!"
     },
     {
       "kind" : "message",
-      "line" : 1453,
+      "line" : 1447,
       "npc" : "Tournament Guide",
-      "text" : "Congratulations! You've defeated every other opponent in Group A! Good luck on the final!"
+      "placeholders" : [
+        ".@n$",
+        "callfunc(\"F_GetNumSuffix\",('GMT_1QUE-10))"
+      ],
+      "text" : "{0}\nCongratulations on winning the {1} round!"
     },
     {
       "kind" : "option",

@@ -112,33 +112,91 @@
     },
     {
       "kind" : "message",
-      "line" : 107,
-      "npc" : "gld_mission",
-      "text" : "Incredible."
-    },
-    {
-      "kind" : "message",
-      "line" : 109,
-      "npc" : "gld_mission",
-      "text" : "Currently, the total number of fortresses that your guild has conquered"
-    },
-    {
-      "kind" : "message",
-      "line" : 114,
+      "line" : 105,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".region$[.@zoneid]"
-      ],
-      "text" : "Your guild has conquered {0}!"
-    },
-    {
-      "kind" : "message",
-      "line" : 116,
-      "npc" : "gld_mission",
-      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
         ".@total"
       ],
-      "text" : "is {0}!"
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}{2}\nis {3}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
+        ".@total"
+      ],
+      "text" : "{0}\nIncredible.\n{1}{2}\nis {3}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".@total"
+      ],
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\nis {1}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".@total"
+      ],
+      "text" : "{0}\nIncredible.\nis {1}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
+        ".region$[.@zoneid]"
+      ],
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}{2}\nYour guild has conquered {3}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
+        ".region$[.@zoneid]"
+      ],
+      "text" : "{0}\nIncredible.\n{1}{2}\nYour guild has conquered {3}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".region$[.@zoneid]"
+      ],
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\nYour guild has conquered {1}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".region$[.@zoneid]"
+      ],
+      "text" : "{0}\nIncredible.\nYour guild has conquered {1}!"
     },
     {
       "kind" : "message",
@@ -275,15 +333,21 @@
     },
     {
       "kind" : "message",
-      "line" : 214,
+      "line" : 212,
       "npc" : "gld_mission",
-      "text" : "I'll reward you accordingly upon completing this mission."
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nI'll give you experience points in return."
     },
     {
       "kind" : "message",
-      "line" : 216,
+      "line" : 212,
       "npc" : "gld_mission",
-      "text" : "I'll give you experience points in return."
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nI'll reward you accordingly upon completing this mission."
     },
     {
       "kind" : "option",

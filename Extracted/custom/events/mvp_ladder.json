@@ -39,21 +39,31 @@
     },
     {
       "kind" : "message",
-      "line" : 26,
+      "line" : 23,
       "npc" : "MvP Ladder Warper",
       "placeholders" : [
         "callfunc(\"F_InsertPlural\", .finish_item_amount, getitemname( .finish_item_id ))"
       ],
-      "text" : "If your party can finish the MVP ladder game, each member will earn {0}."
+      "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.\nIf your party can finish the MVP ladder game, each member will earn {0}."
     },
     {
       "kind" : "message",
-      "line" : 28,
+      "line" : 23,
       "npc" : "MvP Ladder Warper",
       "placeholders" : [
         "callfunc( \"F_InsertComma\", .register_cost )"
       ],
-      "text" : "But the entrance fee is {0} zeny."
+      "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.\nBut the entrance fee is {0} zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\", .finish_item_amount, getitemname( .finish_item_id ))",
+        "callfunc( \"F_InsertComma\", .register_cost )"
+      ],
+      "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.\nIf your party can finish the MVP ladder game, each member will earn {0}.\nBut the entrance fee is {1} zeny."
     },
     {
       "kind" : "message",
@@ -68,34 +78,31 @@
       "kind" : "message",
       "line" : 35,
       "npc" : "MvP Ladder Warper",
-      "text" : "[MvP Ladder Warper]"
+      "text" : "[MvP Ladder Warper]\nNobody has finished this game yet."
     },
     {
       "kind" : "message",
-      "line" : 37,
+      "line" : 35,
       "npc" : "MvP Ladder Warper",
-      "text" : "Nobody has finished this game yet."
+      "placeholders" : [
+        "( $mvpladdderparty_time / 60 )",
+        "( $mvpladdderparty_time % 60 )",
+        "$mvpladdderparty_name$",
+        "( .@i +1 )",
+        "$mvpladderparty_member$[.@i]"
+      ],
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.\n^000000{3}. ^0000FF{4}"
     },
     {
       "kind" : "message",
-      "line" : 40,
+      "line" : 35,
       "npc" : "MvP Ladder Warper",
       "placeholders" : [
         "( $mvpladdderparty_time / 60 )",
         "( $mvpladdderparty_time % 60 )",
         "$mvpladdderparty_name$"
       ],
-      "text" : "The best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 45,
-      "npc" : "MvP Ladder Warper",
-      "placeholders" : [
-        "( .@i +1 )",
-        "$mvpladderparty_member$[.@i]"
-      ],
-      "text" : "^000000{0}. ^0000FF{1}"
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000."
     },
     {
       "kind" : "option",

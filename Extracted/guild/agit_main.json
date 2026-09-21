@@ -199,42 +199,47 @@
       "npc" : "Castle Manager",
       "placeholders" : [
         "strnpcinfo(1)",
-        "GetCastleData(strnpcinfo(2),CD_CURRENT_ECONOMY)"
-      ],
-      "text" : "[{0}]\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}."
-    },
-    {
-      "kind" : "message",
-      "line" : 629,
-      "npc" : "Castle Manager",
-      "placeholders" : [
-        "GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY)"
-      ],
-      "text" : " You invested {0} times in past 1 day."
-    },
-    {
-      "kind" : "message",
-      "line" : 631,
-      "npc" : "Castle Manager",
-      "placeholders" : [
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_ECONOMY)",
         "GetCastleData(strnpcinfo(2),CD_CURRENT_DEFENSE)"
       ],
-      "text" : " Now, the Castle Defense level is {0}.^000000"
+      "text" : "[{0}]\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}.\n Now, the Castle Defense level is {2}.^000000\n \nThat's all I have to report, Master."
     },
     {
       "kind" : "message",
-      "line" : 633,
+      "line" : 624,
       "npc" : "Castle Manager",
       "placeholders" : [
-        "GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE)"
+        "strnpcinfo(1)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_ECONOMY)",
+        "GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_DEFENSE)"
       ],
-      "text" : " ^0000ff- You invested {0} times in past 1 day.^000000"
+      "text" : "[{0}]\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}.\n You invested {2} times in past 1 day.\n Now, the Castle Defense level is {3}.^000000\n \nThat's all I have to report, Master."
     },
     {
       "kind" : "message",
-      "line" : 635,
+      "line" : 624,
       "npc" : "Castle Manager",
-      "text" : " \nThat's all I have to report, Master."
+      "placeholders" : [
+        "strnpcinfo(1)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_ECONOMY)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_DEFENSE)",
+        "GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE)"
+      ],
+      "text" : "[{0}]\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}.\n Now, the Castle Defense level is {2}.^000000\n ^0000ff- You invested {3} times in past 1 day.^000000\n \nThat's all I have to report, Master."
+    },
+    {
+      "kind" : "message",
+      "line" : 624,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_ECONOMY)",
+        "GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_DEFENSE)",
+        "GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE)"
+      ],
+      "text" : "[{0}]\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}.\n You invested {2} times in past 1 day.\n Now, the Castle Defense level is {3}.^000000\n ^0000ff- You invested {4} times in past 1 day.^000000\n \nThat's all I have to report, Master."
     },
     {
       "kind" : "message",
@@ -243,37 +248,36 @@
       "placeholders" : [
         "strnpcinfo(1)"
       ],
-      "text" : "[{0}]\nIf you invest in commercial growth, the quantity of goods made by the guild will increase. Therfore, if you consider our future, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice."
+      "text" : "[{0}]\nIf you invest in commercial growth, the quantity of goods made by the guild will increase. Therfore, if you consider our future, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n \n^ff0000The commercial growth level of our Castle is at it's highest, 100%. No more investments are needed. Just as I have expected from a great economist like you, Master.^000000"
     },
     {
       "kind" : "message",
-      "line" : 669,
-      "npc" : "Castle Manager",
-      "text" : " \n^ff0000The commercial growth level of our Castle is at it's highest, 100%. No more investments are needed. Just as I have expected from a great economist like you, Master.^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 674,
-      "npc" : "Castle Manager",
-      "text" : " \n^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect riches of the guild to grow at a high rate."
-    },
-    {
-      "kind" : "message",
-      "line" : 679,
+      "line" : 664,
       "npc" : "Castle Manager",
       "placeholders" : [
-        ".@eco_invest"
+        "strnpcinfo(1)"
       ],
-      "text" : " \nThe current investment amount required is ^ff0000{0}^000000 zeny. Will you invest?"
+      "text" : "[{0}]\nIf you invest in commercial growth, the quantity of goods made by the guild will increase. Therfore, if you consider our future, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n \n^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect riches of the guild to grow at a high rate."
     },
     {
       "kind" : "message",
-      "line" : 683,
+      "line" : 664,
       "npc" : "Castle Manager",
       "placeholders" : [
+        "strnpcinfo(1)",
         ".@eco_invest"
       ],
-      "text" : " \nYou've invested once today... if you wish to invest once more, ^ff0000{0}^000000 more zeny will be needed."
+      "text" : "[{0}]\nIf you invest in commercial growth, the quantity of goods made by the guild will increase. Therfore, if you consider our future, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n \nYou've invested once today... if you wish to invest once more, ^ff0000{1}^000000 more zeny will be needed."
+    },
+    {
+      "kind" : "message",
+      "line" : 664,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        ".@eco_invest"
+      ],
+      "text" : "[{0}]\nIf you invest in commercial growth, the quantity of goods made by the guild will increase. Therfore, if you consider our future, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n \nThe current investment amount required is ^ff0000{1}^000000 zeny. Will you invest?"
     },
     {
       "kind" : "option",
@@ -321,37 +325,36 @@
       "placeholders" : [
         "strnpcinfo(1)"
       ],
-      "text" : "[{0}]\nIf you raise Castle Defenses, the durability of Guardians and the Emperium will increase. Therefore, if you consider our coming battles, some investment in this area will be required.\n \nOriginally you can invest just once but if you pay more money, you can invest twice."
+      "text" : "[{0}]\nIf you raise Castle Defenses, the durability of Guardians and the Emperium will increase. Therefore, if you consider our coming battles, some investment in this area will be required.\n \nOriginally you can invest just once but if you pay more money, you can invest twice.\n \n^ff0000But the Castle Defense level of our Castle is at it's highest, 100%. No more investments are needed. Just as I have expected from a great strategist like you, Master.^000000"
     },
     {
       "kind" : "message",
-      "line" : 735,
-      "npc" : "Castle Manager",
-      "text" : " \n^ff0000But the Castle Defense level of our Castle is at it's highest, 100%. No more investments are needed. Just as I have expected from a great strategist like you, Master.^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 740,
-      "npc" : "Castle Manager",
-      "text" : " \n^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect the Defenses of the guild to grow at a high rate."
-    },
-    {
-      "kind" : "message",
-      "line" : 745,
+      "line" : 730,
       "npc" : "Castle Manager",
       "placeholders" : [
-        ".@def_invest"
+        "strnpcinfo(1)"
       ],
-      "text" : " \nThe current investment amount required is ^ff0000{0}^000000 zeny. Will you invest?"
+      "text" : "[{0}]\nIf you raise Castle Defenses, the durability of Guardians and the Emperium will increase. Therefore, if you consider our coming battles, some investment in this area will be required.\n \nOriginally you can invest just once but if you pay more money, you can invest twice.\n \n^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect the Defenses of the guild to grow at a high rate."
     },
     {
       "kind" : "message",
-      "line" : 749,
+      "line" : 730,
       "npc" : "Castle Manager",
       "placeholders" : [
+        "strnpcinfo(1)",
         ".@def_invest"
       ],
-      "text" : " \nYou've invested once today... if you wish to invest once more, ^ff0000{0}^000000 more zeny will be needed."
+      "text" : "[{0}]\nIf you raise Castle Defenses, the durability of Guardians and the Emperium will increase. Therefore, if you consider our coming battles, some investment in this area will be required.\n \nOriginally you can invest just once but if you pay more money, you can invest twice.\n \nYou've invested once today... if you wish to invest once more, ^ff0000{1}^000000 more zeny will be needed."
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        ".@def_invest"
+      ],
+      "text" : "[{0}]\nIf you raise Castle Defenses, the durability of Guardians and the Emperium will increase. Therefore, if you consider our coming battles, some investment in this area will be required.\n \nOriginally you can invest just once but if you pay more money, you can invest twice.\n \nThe current investment amount required is ^ff0000{1}^000000 zeny. Will you invest?"
     },
     {
       "kind" : "option",

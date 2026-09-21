@@ -318,27 +318,21 @@
       "kind" : "message",
       "line" : 211,
       "npc" : "Hugin's Magician",
-      "text" : "[Hugin's Magician]"
-    },
-    {
-      "kind" : "message",
-      "line" : 215,
-      "npc" : "Hugin's Magician",
-      "placeholders" : [
-        ".@cost"
-      ],
-      "text" : "4th slot is already upgraded to the final option. Would you like a random bonus effect for the 3rd slot? You need ^0000ff{0}^000000 Coagulated Spell items."
-    },
-    {
-      "kind" : "message",
-      "line" : 221,
-      "npc" : "Hugin's Magician",
       "placeholders" : [
         ".@equip_name$",
         ".@number",
         ".@cost"
       ],
-      "text" : "Enchanting ^0000FF{0}^000000's 4th slot as ^0000FF{1}^000000 level effect. Requires ^0000FF{2}^000000 Coagulated Spell items."
+      "text" : "[Hugin's Magician]\nEnchanting ^0000FF{0}^000000's 4th slot as ^0000FF{1}^000000 level effect. Requires ^0000FF{2}^000000 Coagulated Spell items."
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Hugin's Magician",
+      "placeholders" : [
+        ".@cost"
+      ],
+      "text" : "[Hugin's Magician]\n4th slot is already upgraded to the final option. Would you like a random bonus effect for the 3rd slot? You need ^0000ff{0}^000000 Coagulated Spell items."
     },
     {
       "kind" : "option",
@@ -657,25 +651,6 @@
       "kind" : "message",
       "line" : 465,
       "npc" : "Dark magic master",
-      "text" : "[Dark magic master]"
-    },
-    {
-      "kind" : "message",
-      "line" : 469,
-      "npc" : "Dark magic master",
-      "placeholders" : [
-        ".@amount_poll",
-        "getitemname(.@polluted_id)",
-        ".@amount_coag",
-        "getitemname(.@coagulated_id)",
-        "callfunc(\"F_InsertComma\",.@cost_zeny)"
-      ],
-      "text" : "Would you like a random bonus effect for the 3rd slot? You need ^0000ff{0} {1}, {2} {3}, and {4} zeny^000000. But it has high risk of failing.."
-    },
-    {
-      "kind" : "message",
-      "line" : 475,
-      "npc" : "Dark magic master",
       "placeholders" : [
         ".@equip_name$",
         ".@level",
@@ -685,7 +660,20 @@
         "getitemname(.@coagulated_id)",
         "callfunc(\"F_InsertComma\",.@cost_zeny)"
       ],
-      "text" : "Enchanting ^0000ff{0} (Socket)^000000's 4th slot as ^0000ff{1}^000000 level effect. Requires ^0000ff{2} {3}, {4} {5}, and {6} z^000000. It has some risk of failing.."
+      "text" : "[Dark magic master]\nEnchanting ^0000ff{0} (Socket)^000000's 4th slot as ^0000ff{1}^000000 level effect. Requires ^0000ff{2} {3}, {4} {5}, and {6} z^000000. It has some risk of failing.."
+    },
+    {
+      "kind" : "message",
+      "line" : 465,
+      "npc" : "Dark magic master",
+      "placeholders" : [
+        ".@amount_poll",
+        "getitemname(.@polluted_id)",
+        ".@amount_coag",
+        "getitemname(.@coagulated_id)",
+        "callfunc(\"F_InsertComma\",.@cost_zeny)"
+      ],
+      "text" : "[Dark magic master]\nWould you like a random bonus effect for the 3rd slot? You need ^0000ff{0} {1}, {2} {3}, and {4} zeny^000000. But it has high risk of failing.."
     },
     {
       "kind" : "option",
@@ -789,15 +777,6 @@
       "npc" : "Portrait collector",
       "placeholders" : [
         "getitemname(.@white_card)"
-      ],
-      "text" : "Exchange for {0}"
-    },
-    {
-      "kind" : "option",
-      "line" : 543,
-      "npc" : "Portrait collector",
-      "placeholders" : [
-        "getitemname(.@khalitzburg_card)"
       ],
       "text" : "Exchange for {0}"
     },

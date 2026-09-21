@@ -5,13 +5,13 @@
       "kind" : "message",
       "line" : 17,
       "npc" : "rental_woe_TE",
-      "text" : "[Rental Items Manager]"
+      "text" : "[Rental Items Manager]\n^4d4dffWe offer various battlegears that you can use in the regions of Gloria and Kafragarten based on the rules of Siege Battle TE.^000000"
     },
     {
       "kind" : "message",
-      "line" : 25,
+      "line" : 17,
       "npc" : "rental_woe_TE",
-      "text" : "^4d4dffWe offer various battlegears that you can use in the regions of Gloria and Kafragarten based on the rules of Siege Battle TE.^000000"
+      "text" : "[Rental Items Manager]\nWe offer various battlegears that you can use in the regions of Gloria and Kafragarten based on the rules of Siege Battle TE."
     },
     {
       "kind" : "message",
@@ -65,22 +65,16 @@
       "kind" : "message",
       "line" : 113,
       "npc" : "rental_woe_TE",
-      "text" : "[Rental Items Manager]"
+      "text" : "[Rental Items Manager]\nYou already have too many items to receive a new rental equipment.\nPlease organize your items and try again."
     },
     {
       "kind" : "message",
-      "line" : 115,
-      "npc" : "rental_woe_TE",
-      "text" : "You already have too many items to receive a new rental equipment.\nPlease organize your items and try again."
-    },
-    {
-      "kind" : "message",
-      "line" : 119,
+      "line" : 113,
       "npc" : "rental_woe_TE",
       "placeholders" : [
         "getarg(0)"
       ],
-      "text" : "We have {0} ready for you.\nSelect the desired item."
+      "text" : "[Rental Items Manager]\nWe have {0} ready for you.\nSelect the desired item."
     },
     {
       "kind" : "option",
@@ -92,31 +86,19 @@
       "kind" : "message",
       "line" : 132,
       "npc" : "rental_woe_TE",
-      "text" : "[Rental Items Manager]"
+      "placeholders" : [
+        "getarg(.@index+1)"
+      ],
+      "text" : "[Rental Items Manager]\nHere is {0}.\n^4d4dffThis item is effective for the next 24 hours^000000 and after that it expires.\nDo you need anything else?"
     },
     {
       "kind" : "message",
-      "line" : 134,
+      "line" : 132,
       "npc" : "rental_woe_TE",
       "placeholders" : [
         "getarg(.@index+1)"
       ],
-      "text" : "You already have {0}."
-    },
-    {
-      "kind" : "message",
-      "line" : 136,
-      "npc" : "rental_woe_TE",
-      "placeholders" : [
-        "getarg(.@index+1)"
-      ],
-      "text" : "Here is {0}.\n^4d4dffThis item is effective for the next 24 hours^000000 and after that it expires."
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "rental_woe_TE",
-      "text" : "Do you need anything else?"
+      "text" : "[Rental Items Manager]\nYou already have {0}.\nDo you need anything else?"
     }
   ]
 }

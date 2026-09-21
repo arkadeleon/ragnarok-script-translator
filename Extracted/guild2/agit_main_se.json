@@ -66,12 +66,13 @@
     },
     {
       "kind" : "message",
-      "line" : 241,
+      "line" : 237,
       "npc" : "Steward",
       "placeholders" : [
+        "getcastledata(strnpcinfo(4),CD_CURRENT_ECONOMY)",
         "getcastledata(strnpcinfo(4),CD_INVESTED_ECONOMY)"
       ],
-      "text" : "Last time, you invested in\nCommercial Growth {0}."
+      "text" : "[ Steward ]\nThe Commercial Growth\nLevel of the stronghold is ^0000ff{0}.\nLast time, you invested in\nCommercial Growth {1}."
     },
     {
       "kind" : "message",
@@ -80,22 +81,17 @@
       "placeholders" : [
         "getcastledata(strnpcinfo(4),CD_CURRENT_DEFENSE)"
       ],
-      "text" : "[ Steward ]\nOur stronghold's\nsafeguard level is {0}."
+      "text" : "[ Steward ]\nOur stronghold's\nsafeguard level is {0}.\n \nThat is all, master."
     },
     {
       "kind" : "message",
-      "line" : 249,
+      "line" : 245,
       "npc" : "Steward",
       "placeholders" : [
+        "getcastledata(strnpcinfo(4),CD_CURRENT_DEFENSE)",
         "getcastledata(strnpcinfo(4),CD_INVESTED_DEFENSE)"
       ],
-      "text" : "Last time, you invested\nin defense {0} times."
-    },
-    {
-      "kind" : "message",
-      "line" : 252,
-      "npc" : "Steward",
-      "text" : " \nThat is all, master."
+      "text" : "[ Steward ]\nOur stronghold's\nsafeguard level is {0}.\nLast time, you invested\nin defense {1} times.\n \nThat is all, master."
     },
     {
       "kind" : "message",
@@ -191,37 +187,31 @@
       "kind" : "message",
       "line" : 375,
       "npc" : "Steward",
-      "text" : "[ Steward ]"
+      "text" : "[ Steward ]\nThe Defense Level of this\nstronghold is 100%, and\ncannot be increased further."
     },
     {
       "kind" : "message",
-      "line" : 377,
+      "line" : 375,
       "npc" : "Steward",
-      "text" : "The Defense Level of this\nstronghold is 100%, and\ncannot be increased further."
+      "text" : "[ Steward ]\nMaster, you've already\ninvested in Defense twice\ntoday. You'll need to wait\nuntil tomorrow if you really\nwant to increase our defenses."
     },
     {
       "kind" : "message",
-      "line" : 383,
-      "npc" : "Steward",
-      "text" : "Master, you've already\ninvested in Defense twice\ntoday. You'll need to wait\nuntil tomorrow if you really\nwant to increase our defenses."
-    },
-    {
-      "kind" : "message",
-      "line" : 391,
+      "line" : 375,
       "npc" : "Steward",
       "placeholders" : [
         ".@def_invest"
       ],
-      "text" : "We need ^FF0000{0}^000000\nZeny to invest in our\nstronghold's defenses.\nWill you invest now?"
+      "text" : "[ Steward ]\nWe need ^FF0000{0}^000000\nZeny to invest in our\nstronghold's defenses\na second time today.\nWill you invest now?"
     },
     {
       "kind" : "message",
-      "line" : 397,
+      "line" : 375,
       "npc" : "Steward",
       "placeholders" : [
         ".@def_invest"
       ],
-      "text" : "We need ^FF0000{0}^000000\nZeny to invest in our\nstronghold's defenses\na second time today.\nWill you invest now?"
+      "text" : "[ Steward ]\nWe need ^FF0000{0}^000000\nZeny to invest in our\nstronghold's defenses.\nWill you invest now?"
     },
     {
       "kind" : "option",
@@ -656,22 +646,14 @@
       "line" : 807,
       "npc" : "Guardian",
       "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nOur defense status is..."
-    },
-    {
-      "kind" : "message",
-      "line" : 810,
-      "npc" : "Guardian",
-      "placeholders" : [
+        ".@n$",
         ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[0]\")]",
         ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[1]\")]",
         ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[2]\")]",
         ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[3]\")]",
         ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[4]\")]"
       ],
-      "text" : "1st Guardian Stone: {0}^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: {2}^000000\n2nd Fortress Gate: {3}^000000\n3rd Fortress Gate: {4}^000000"
+      "text" : "{0}\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: {2}^000000\n1st Fortress Gate: {3}^000000\n2nd Fortress Gate: {4}^000000\n3rd Fortress Gate: {5}^000000"
     },
     {
       "kind" : "message",
@@ -965,13 +947,16 @@
       "placeholders" : [
         ".@color$[.@j]"
       ],
-      "text" : "^3355FFYou placed the {0} Gemstone.^000000"
+      "text" : "^3355FFYou placed the {0} Gemstone.^000000\n^3355FFHowever, the Guardian Stone\nRepair System failed because\nof a magic power conflict.^000000"
     },
     {
       "kind" : "message",
-      "line" : 1020,
+      "line" : 1018,
       "npc" : "Guardian Stone",
-      "text" : "^3355FFHowever, the Guardian Stone\nRepair System failed because\nof a magic power conflict.^000000"
+      "placeholders" : [
+        ".@color$[.@j]"
+      ],
+      "text" : "^3355FFYou placed the {0} Gemstone.^000000"
     },
     {
       "kind" : "message",

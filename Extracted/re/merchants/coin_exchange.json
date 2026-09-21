@@ -531,55 +531,53 @@
       "npc" : "F_mal_coin",
       "placeholders" : [
         ".@npc_name$",
-        "getarg(2)"
+        "getarg(2)",
+        "getarg(6)"
       ],
-      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is"
+      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} Silvervine Fruit."
     },
     {
       "kind" : "message",
-      "line" : 507,
+      "line" : 504,
       "npc" : "F_mal_coin",
       "placeholders" : [
+        ".@npc_name$",
+        "getarg(2)",
+        "getarg(5)"
+      ],
+      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 504,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$",
+        "getarg(2)",
         "getarg(4)",
         "getarg(5)"
       ],
-      "text" : "{0} E Grade Coin or {1} Malangdo Canned Specialties."
+      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} E Grade Coin or {3} Malangdo Canned Specialties."
     },
     {
       "kind" : "message",
-      "line" : 511,
+      "line" : 520,
       "npc" : "F_mal_coin",
       "placeholders" : [
-        "getarg(5)"
-      ],
-      "text" : "{0} Malangdo Canned Specialties."
-    },
-    {
-      "kind" : "message",
-      "line" : 515,
-      "npc" : "F_mal_coin",
-      "placeholders" : [
-        "getarg(6)"
-      ],
-      "text" : "{0} Silvervine Fruit."
-    },
-    {
-      "kind" : "message",
-      "line" : 522,
-      "npc" : "F_mal_coin",
-      "placeholders" : [
+        ".@npc_name$",
         "getarg(2)"
       ],
-      "text" : "Would you like to purchase\n^0000FF[{0}]^000000 with E Grade Coins?"
+      "text" : "{0}\nWould you like to\npurchase ^0000FF[{1}]^000000?"
     },
     {
       "kind" : "message",
-      "line" : 525,
+      "line" : 520,
       "npc" : "F_mal_coin",
       "placeholders" : [
+        ".@npc_name$",
         "getarg(2)"
       ],
-      "text" : "Would you like to\npurchase ^0000FF[{0}]^000000?"
+      "text" : "{0}\nWould you like to purchase\n^0000FF[{1}]^000000 with E Grade Coins?"
     },
     {
       "kind" : "message",
@@ -709,13 +707,61 @@
       "placeholders" : [
         ".@names$[.@i]"
       ],
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?"
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
     },
     {
       "kind" : "message",
-      "line" : 609,
+      "line" : 604,
       "npc" : "Wandering Merchant",
-      "text" : "This is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis fish looks like a long belt."
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?"
     },
     {
       "kind" : "message",
@@ -731,12 +777,6 @@
     },
     {
       "kind" : "message",
-      "line" : 627,
-      "npc" : "Wandering Merchant",
-      "text" : "This is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
       "line" : 632,
       "npc" : "Wandering Merchant",
       "text" : "[Wandering Merchant]\nIt gives a high chance of executing the Stun or Auto-Spell Bash\nwhen using close-range physical attacks.\nBase ATK is 180."
@@ -746,12 +786,6 @@
       "line" : 637,
       "npc" : "Wandering Merchant",
       "text" : "[Wandering Merchant]\nMore details are...\nadditional ATK + 20 when Base Lv. is over 100,\nfreeze self with low rate."
-    },
-    {
-      "kind" : "message",
-      "line" : 645,
-      "npc" : "Wandering Merchant",
-      "text" : "This fish looks like a long belt."
     },
     {
       "kind" : "message",
@@ -767,33 +801,15 @@
     },
     {
       "kind" : "message",
-      "line" : 660,
-      "npc" : "Wandering Merchant",
-      "text" : "This is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
-    },
-    {
-      "kind" : "message",
       "line" : 663,
       "npc" : "Wandering Merchant",
       "text" : "[Wandering Merchant]\nMore details are...\ngives MATK + 20 for 7sec at a certain rate with magical attacks\nand additional MATK + 10, ATK + 10 when Base Lv. is over 100.\nBase ATK is 160."
     },
     {
       "kind" : "message",
-      "line" : 672,
-      "npc" : "Wandering Merchant",
-      "text" : "This is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
-    },
-    {
-      "kind" : "message",
       "line" : 676,
       "npc" : "Wandering Merchant",
       "text" : "[Wandering Merchant]\nMore details are...\ncan be used by Archer, Thief, and Rogue classes."
-    },
-    {
-      "kind" : "message",
-      "line" : 683,
-      "npc" : "Wandering Merchant",
-      "text" : "This is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
     },
     {
       "kind" : "message",
@@ -832,13 +848,25 @@
       "placeholders" : [
         ".@names$[.@i]"
       ],
-      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?"
+      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a glove which can give happiness\njust by wearing it."
     },
     {
       "kind" : "message",
-      "line" : 725,
+      "line" : 721,
       "npc" : "Stinky Merchant",
-      "text" : "This is a glove which can give happiness\njust by wearing it."
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nIt looks like it wouldn't hurt, don't you think so?\nBut I'm telling you, it can hurt someone."
+    },
+    {
+      "kind" : "message",
+      "line" : 721,
+      "npc" : "Stinky Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?"
     },
     {
       "kind" : "message",
@@ -851,12 +879,6 @@
       "line" : 734,
       "npc" : "Stinky Merchant",
       "text" : "[Stinky Merchant]\nMore details are...\nSLOT : 1 / Refine : Unable / Destruction : Unable"
-    },
-    {
-      "kind" : "message",
-      "line" : 740,
-      "npc" : "Stinky Merchant",
-      "text" : "It looks like it wouldn't hurt, don't you think so?\nBut I'm telling you, it can hurt someone."
     },
     {
       "kind" : "message",
@@ -907,13 +929,43 @@
       "placeholders" : [
         ".@names$[.@i]"
       ],
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?"
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is the one that flies\nwith a big pectoral."
     },
     {
       "kind" : "message",
-      "line" : 778,
+      "line" : 774,
       "npc" : "Roving Merchant",
-      "text" : "This is the one that flies\nwith a big pectoral."
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nIn that case, I'll explain for you.\nThis is a ^DC143CBullet^000000 which stuns the enemy at a certain rate when attacking."
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Roving Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which causes darkness at a certain rate.\nIt's neutral property and its ATK is 50."
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Roving Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which stuns the enemy at a certain rate."
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Roving Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\n[Roving Merchant]\nFor your information,\none box contains\n200 units."
     },
     {
       "kind" : "message",
@@ -929,33 +981,15 @@
     },
     {
       "kind" : "message",
-      "line" : 791,
-      "npc" : "Roving Merchant",
-      "text" : "In that case, I'll explain for you.\nThis is a ^DC143CBullet^000000 which stuns the enemy at a certain rate when attacking."
-    },
-    {
-      "kind" : "message",
       "line" : 794,
       "npc" : "Roving Merchant",
       "text" : "[Roving Merchant]\nI feel somthing bad\nis moving in my pocket but...\nit is neutral property and its ATK is 50."
     },
     {
       "kind" : "message",
-      "line" : 801,
-      "npc" : "Roving Merchant",
-      "text" : "I'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which causes darkness at a certain rate.\nIt's neutral property and its ATK is 50."
-    },
-    {
-      "kind" : "message",
       "line" : 805,
       "npc" : "Roving Merchant",
       "text" : "[Roving Merchant]\nIt is compressed\nand put into a very small box,\nso be careful when you open it."
-    },
-    {
-      "kind" : "message",
-      "line" : 812,
-      "npc" : "Roving Merchant",
-      "text" : "I'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which stuns the enemy at a certain rate."
     },
     {
       "kind" : "message",
@@ -1021,49 +1055,43 @@
       "kind" : "message",
       "line" : 848,
       "npc" : "Armor Merchant Naphara",
-      "text" : "[Armor Merchant]"
+      "text" : "[Armor Merchant]\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options."
     },
     {
       "kind" : "message",
-      "line" : 851,
+      "line" : 848,
       "npc" : "Armor Merchant Naphara",
-      "text" : "^3131FFStr Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFATK+1 increases for every STR+10^000000\n^3131FFATK +1% added above STR 110^000000"
+      "text" : "[Armor Merchant]\n^3131FFStr Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFATK+1 increases for every STR+10^000000\n^3131FFATK +1% added above STR 110^000000\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options."
     },
     {
       "kind" : "message",
-      "line" : 857,
+      "line" : 848,
       "npc" : "Armor Merchant Naphara",
-      "text" : "^3131FFInt Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFMATK+1 increases for every INT+10^000000\n^3131FFMATK +1% added above INT 110^000000"
+      "text" : "[Armor Merchant]\n^3131FFInt Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFMATK+1 increases for every INT+10^000000\n^3131FFMATK +1% added above INT 110^000000\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options."
     },
     {
       "kind" : "message",
-      "line" : 863,
+      "line" : 848,
       "npc" : "Armor Merchant Naphara",
-      "text" : "^3131FFAgi Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFFLEE+1 increases for every AGI+10^000000\n^3131FFComplete Flee +1 added above AGI 110^000000"
+      "text" : "[Armor Merchant]\n^3131FFAgi Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFFLEE+1 increases for every AGI+10^000000\n^3131FFComplete Flee +1 added above AGI 110^000000\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options."
     },
     {
       "kind" : "message",
-      "line" : 869,
+      "line" : 848,
       "npc" : "Armor Merchant Naphara",
-      "text" : "^3131FFVit Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFMHP+50 for every VIT+10^000000\n^3131FFMHP+1% added above VIT 110^000000"
+      "text" : "[Armor Merchant]\n^3131FFVit Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFMHP+50 for every VIT+10^000000\n^3131FFMHP+1% added above VIT 110^000000\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options."
     },
     {
       "kind" : "message",
-      "line" : 875,
+      "line" : 848,
       "npc" : "Armor Merchant Naphara",
-      "text" : "^3131FFDex Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFHIT+1 increases for every DEX+10^000000\n^3131FFRanged attack power +1% added above DEX 110^000000"
+      "text" : "[Armor Merchant]\n^3131FFDex Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFHIT+1 increases for every DEX+10^000000\n^3131FFRanged attack power +1% added above DEX 110^000000\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options."
     },
     {
       "kind" : "message",
-      "line" : 881,
+      "line" : 848,
       "npc" : "Armor Merchant Naphara",
-      "text" : "^3131FFLuk Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFCRI+1 increases for every LUK+10^000000\n^3131FFCritical damage +1% added above LUK 110^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 887,
-      "npc" : "Armor Merchant Naphara",
-      "text" : "^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options."
+      "text" : "[Armor Merchant]\n^3131FFLuk Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFCRI+1 increases for every LUK+10^000000\n^3131FFCritical damage +1% added above LUK 110^000000\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options."
     },
     {
       "kind" : "message",
@@ -1222,19 +1250,13 @@
       "kind" : "message",
       "line" : 952,
       "npc" : "Slot Expert Nattuer",
-      "text" : "[Slot Expert]"
+      "text" : "[Slot Expert]\nShoot, I'm sorry. It failed.\nBut I'm sure it will work next time. I have a feeling."
     },
     {
       "kind" : "message",
-      "line" : 958,
+      "line" : 952,
       "npc" : "Slot Expert Nattuer",
-      "text" : "Shoot, I'm sorry. It failed.\nBut I'm sure it will work next time. I have a feeling."
-    },
-    {
-      "kind" : "message",
-      "line" : 965,
-      "npc" : "Slot Expert Nattuer",
-      "text" : "My eyes feel like they're gonna pop out.\nNonetheless, congratulations. Slot activation was successful."
+      "text" : "[Slot Expert]\nMy eyes feel like they're gonna pop out.\nNonetheless, congratulations. Slot activation was successful."
     },
     {
       "kind" : "message",
@@ -1288,40 +1310,46 @@
       "kind" : "message",
       "line" : 988,
       "npc" : "Herb Merchant Plafina",
-      "text" : "[Herb Merchant]"
+      "placeholders" : [
+        ".cost[.@item]"
+      ],
+      "text" : "[Herb Merchant]\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each."
     },
     {
       "kind" : "message",
-      "line" : 991,
-      "npc" : "Herb Merchant Plafina",
-      "text" : "Snow Flip has special effects on ^3131FFBurning, Bleeding, Deep Sleep, Sleep^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 994,
-      "npc" : "Herb Merchant Plafina",
-      "text" : "Peony Mamy has special effects on ^3131FFFrost, Frozen, Freezing^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 997,
-      "npc" : "Herb Merchant Plafina",
-      "text" : "Slapping Herb has special effects on ^3131FFStun, Fear, Chaos, Hallucination^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 1000,
-      "npc" : "Herb Merchant Plafina",
-      "text" : "Yggdrasil Dust has special effects on ^3131FFBlind, Curse, Decrease Agility, Reverse Orcish^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 1003,
+      "line" : 988,
       "npc" : "Herb Merchant Plafina",
       "placeholders" : [
         ".cost[.@item]"
       ],
-      "text" : "Requires 5 seconds between uses.\nIt costs {0} Splendide Coins for each."
+      "text" : "[Herb Merchant]\nSnow Flip has special effects on ^3131FFBurning, Bleeding, Deep Sleep, Sleep^000000.\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each."
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        ".cost[.@item]"
+      ],
+      "text" : "[Herb Merchant]\nPeony Mamy has special effects on ^3131FFFrost, Frozen, Freezing^000000\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each."
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        ".cost[.@item]"
+      ],
+      "text" : "[Herb Merchant]\nSlapping Herb has special effects on ^3131FFStun, Fear, Chaos, Hallucination^000000\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each."
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        ".cost[.@item]"
+      ],
+      "text" : "[Herb Merchant]\nYggdrasil Dust has special effects on ^3131FFBlind, Curse, Decrease Agility, Reverse Orcish^000000.\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each."
     },
     {
       "kind" : "option",

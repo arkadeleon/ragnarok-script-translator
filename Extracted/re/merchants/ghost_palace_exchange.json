@@ -44,31 +44,31 @@
       "kind" : "message",
       "line" : 19,
       "npc" : "Dimension Traveler",
+      "text" : "[Dimension Traveler]\nGoodbye friend~ Come again!"
+    },
+    {
+      "kind" : "message",
+      "line" : 19,
+      "npc" : "Dimension Traveler",
       "text" : "[Dimension Traveler]"
     },
     {
       "kind" : "message",
-      "line" : 22,
+      "line" : 19,
       "npc" : "Dimension Traveler",
-      "text" : "Oh! Are you interested in weapons? We have all the weapons we can get from the Ghost Palace. Why don't you choose one?"
+      "text" : "[Dimension Traveler]\nOh! Are you interested in weapons? We have all the weapons we can get from the Ghost Palace. Why don't you choose one?"
     },
     {
       "kind" : "message",
-      "line" : 25,
+      "line" : 19,
       "npc" : "Dimension Traveler",
-      "text" : "Armor? We have all the armors we can get from the Ghost Palace. Why don't you choose one?"
+      "text" : "[Dimension Traveler]\nArmor? We have all the armors we can get from the Ghost Palace. Why don't you choose one?"
     },
     {
       "kind" : "message",
-      "line" : 28,
+      "line" : 19,
       "npc" : "Dimension Traveler",
-      "text" : "Huhh! It seems like many of them already heard that I have the best stuff. Feel free to check out my collections."
-    },
-    {
-      "kind" : "message",
-      "line" : 31,
-      "npc" : "Dimension Traveler",
-      "text" : "Goodbye friend~ Come again!"
+      "text" : "[Dimension Traveler]\nHuhh! It seems like many of them already heard that I have the best stuff. Feel free to check out my collections."
     },
     {
       "kind" : "message",
@@ -83,26 +83,22 @@
       "kind" : "message",
       "line" : 81,
       "npc" : "Dimension Traveler",
-      "text" : "[Dimension Traveler]"
-    },
-    {
-      "kind" : "message",
-      "line" : 83,
-      "npc" : "Dimension Traveler",
-      "placeholders" : [
-        "mesitemlink( .@items[.@s] )"
-      ],
-      "text" : "Do you mean {0}?"
-    },
-    {
-      "kind" : "message",
-      "line" : 84,
-      "npc" : "Dimension Traveler",
       "placeholders" : [
         ".@items[.@s+1]",
         ".@item_name_req$"
       ],
-      "text" : "{0} ^006400{1}^000000 are required in exchange."
+      "text" : "[Dimension Traveler]\n{0} ^006400{1}^000000 are required in exchange."
+    },
+    {
+      "kind" : "message",
+      "line" : 81,
+      "npc" : "Dimension Traveler",
+      "placeholders" : [
+        "mesitemlink( .@items[.@s] )",
+        ".@items[.@s+1]",
+        ".@item_name_req$"
+      ],
+      "text" : "[Dimension Traveler]\nDo you mean {0}?\n{1} ^006400{2}^000000 are required in exchange."
     },
     {
       "kind" : "option",
@@ -126,28 +122,73 @@
       "kind" : "message",
       "line" : 90,
       "npc" : "Dimension Traveler",
-      "text" : "[Dimension Traveler]"
+      "placeholders" : [
+        ".@item_name_req$",
+        ".@items[.@s+1]",
+        ".@item_name_req$"
+      ],
+      "text" : "[Dimension Traveler]\n[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {0}. I will exchange it for ^006400{1} {2}^000000."
     },
     {
       "kind" : "message",
-      "line" : 93,
+      "line" : 90,
       "npc" : "Dimension Traveler",
-      "text" : "I have more than enough weapons."
+      "placeholders" : [
+        ".@item_name_req$",
+        ".@items[.@s+1]",
+        ".@item_name_req$"
+      ],
+      "text" : "[Dimension Traveler]\nI have more than enough weapons.\n[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {0}. I will exchange it for ^006400{1} {2}^000000."
     },
     {
       "kind" : "message",
-      "line" : 96,
+      "line" : 90,
       "npc" : "Dimension Traveler",
-      "text" : "We have many armors for you. Why don't you pick one?"
+      "placeholders" : [
+        ".@item_name_req$",
+        ".@items[.@s+1]",
+        ".@item_name_req$"
+      ],
+      "text" : "[Dimension Traveler]\nWe have many armors for you. Why don't you pick one?\n[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {0}. I will exchange it for ^006400{1} {2}^000000."
     },
     {
       "kind" : "message",
-      "line" : 99,
+      "line" : 90,
+      "npc" : "Dimension Traveler",
+      "placeholders" : [
+        ".@item_name_req$",
+        ".@item_name_req$",
+        ".@items[.@s+1]",
+        ".@item_name_req$"
+      ],
+      "text" : "[Dimension Traveler]\nIf you bring me {0}, I will trade it with anything you want.\n[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {1}. I will exchange it for ^006400{2} {3}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "Dimension Traveler",
+      "text" : "[Dimension Traveler]\n[Dimension Traveler]\nThank you. Come back if you need anything else."
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "Dimension Traveler",
+      "text" : "[Dimension Traveler]\nI have more than enough weapons.\n[Dimension Traveler]\nThank you. Come back if you need anything else."
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "Dimension Traveler",
+      "text" : "[Dimension Traveler]\nWe have many armors for you. Why don't you pick one?\n[Dimension Traveler]\nThank you. Come back if you need anything else."
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
       "npc" : "Dimension Traveler",
       "placeholders" : [
         ".@item_name_req$"
       ],
-      "text" : "If you bring me {0}, I will trade it with anything you want."
+      "text" : "[Dimension Traveler]\nIf you bring me {0}, I will trade it with anything you want.\n[Dimension Traveler]\nThank you. Come back if you need anything else."
     },
     {
       "kind" : "message",

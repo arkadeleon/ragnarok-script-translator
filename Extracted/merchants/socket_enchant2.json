@@ -623,11 +623,19 @@
       "kind" : "message",
       "line" : 394,
       "npc" : "Func_Socket2",
-      "text" : "[Leablem]"
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        "(.@zeny_req >= 1000 ? (.@zeny_req/1000 +\",000\") : .@zeny_req)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        "(.@req_amount[0] > 1 && .@item_req[0] != 999 ? \"s\":\"\")",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Leablem]\n{0}? Okay, then you need to bring me\n^FF0000{1},000 zeny as service charge and {2} {3}{4} as the requirement.\n^FF0000Of course, don't forget to bring me a {5}.\n^FF0000You should have all items.^000000"
     },
     {
       "kind" : "message",
-      "line" : 397,
+      "line" : 394,
       "npc" : "Func_Socket2",
       "placeholders" : [
         "getitemname(.@item_id)",
@@ -638,21 +646,7 @@
         "getitemname(.@item_req[1])",
         "getitemname(.@item_id)"
       ],
-      "text" : "{0}... Okay, then you need to bring me\n^FF0000{1},000 zeny as service charge,\n^FF0000{2}ea {3} and {4}ea {5}.\n^FF0000Of course, you need a {6}.^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 404,
-      "npc" : "Func_Socket2",
-      "placeholders" : [
-        "getitemname(.@item_id)",
-        "(.@zeny_req >= 1000 ? (.@zeny_req/1000 +\",000\") : .@zeny_req)",
-        ".@req_amount[0]",
-        "getitemname(.@item_req[0])",
-        "(.@req_amount[0] > 1 && .@item_req[0] != 999 ? \"s\":\"\")",
-        "getitemname(.@item_id)"
-      ],
-      "text" : "{0}? Okay, then you need to bring me\n^FF0000{1},000 zeny as service charge and {2} {3}{4} as the requirement.\n^FF0000Of course, don't forget to bring me a {5}.\n^FF0000You should have all items.^000000"
+      "text" : "[Leablem]\n{0}... Okay, then you need to bring me\n^FF0000{1},000 zeny as service charge,\n^FF0000{2}ea {3} and {4}ea {5}.\n^FF0000Of course, you need a {6}.^000000"
     },
     {
       "kind" : "message",

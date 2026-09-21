@@ -14,7 +14,35 @@
       "kind" : "message",
       "line" : 37,
       "npc" : "Bank Clerk",
-      "text" : "We could open you an account."
+      "text" : "We could open you an account.\nWhat would you like?"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Bank Clerk",
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\",@income)"
+      ],
+      "text" : "We could open you an account.\nToday's income: ^135445{0}^000000 zeny.\nWhat would you like?"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Bank Clerk",
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\",#kafrabank)"
+      ],
+      "text" : "We could open you an account.\nYour account: ^135445{0}^000000 zeny.\nWhat would you like?"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Bank Clerk",
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\",@income)",
+        "callfunc(\"F_InsertComma\",#kafrabank)"
+      ],
+      "text" : "We could open you an account.\nToday's income: ^135445{0}^000000 zeny.\nYour account: ^135445{1}^000000 zeny.\nWhat would you like?"
     },
     {
       "kind" : "message",
@@ -23,7 +51,17 @@
       "placeholders" : [
         "callfunc(\"F_InsertComma\",@income)"
       ],
-      "text" : "Today's income: ^135445{0}^000000 zeny."
+      "text" : "Today's income: ^135445{0}^000000 zeny.\nWhat would you like?"
+    },
+    {
+      "kind" : "message",
+      "line" : 38,
+      "npc" : "Bank Clerk",
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\",@income)",
+        "callfunc(\"F_InsertComma\",#kafrabank)"
+      ],
+      "text" : "Today's income: ^135445{0}^000000 zeny.\nYour account: ^135445{1}^000000 zeny.\nWhat would you like?"
     },
     {
       "kind" : "message",
@@ -32,7 +70,7 @@
       "placeholders" : [
         "callfunc(\"F_InsertComma\",#kafrabank)"
       ],
-      "text" : "Your account: ^135445{0}^000000 zeny."
+      "text" : "Your account: ^135445{0}^000000 zeny.\nWhat would you like?"
     },
     {
       "kind" : "message",

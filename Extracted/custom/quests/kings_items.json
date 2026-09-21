@@ -53,26 +53,21 @@
       "kind" : "message",
       "line" : 34,
       "npc" : "King of Prontera",
-      "text" : "[King of Prontera]\nIf you could get me:"
-    },
-    {
-      "kind" : "message",
-      "line" : 37,
-      "npc" : "King of Prontera",
       "placeholders" : [
         "getd(\".@Items\"+.@i+\"[\"+(.@j+1)+\"]\")",
-        "getitemname(getd(\".@Items\"+.@i+\"[\"+.@j+\"]\"))"
+        "getitemname(getd(\".@Items\"+.@i+\"[\"+.@j+\"]\"))",
+        "((.@i == 2 )?\"sword.\":\"crown.\")"
       ],
-      "text" : " ~ ^0055FF{0}^000000x {1}"
+      "text" : "[King of Prontera]\nIf you could get me:\n ~ ^0055FF{0}^000000x {1}\nI'll give my {2}"
     },
     {
       "kind" : "message",
-      "line" : 38,
+      "line" : 34,
       "npc" : "King of Prontera",
       "placeholders" : [
         "((.@i == 2 )?\"sword.\":\"crown.\")"
       ],
-      "text" : "I'll give my {0}"
+      "text" : "[King of Prontera]\nIf you could get me:\nI'll give my {0}"
     },
     {
       "kind" : "message",
@@ -96,22 +91,16 @@
       "kind" : "message",
       "line" : 48,
       "npc" : "King of Prontera",
-      "text" : "[King of Prontera]"
+      "text" : "[King of Prontera]\nYou're missing something.\nCome back after you get ALL the items."
     },
     {
       "kind" : "message",
-      "line" : 50,
-      "npc" : "King of Prontera",
-      "text" : "You're missing something.\nCome back after you get ALL the items."
-    },
-    {
-      "kind" : "message",
-      "line" : 56,
+      "line" : 48,
       "npc" : "King of Prontera",
       "placeholders" : [
         "((.@i==1)?\"crown.\":\"sword.\")"
       ],
-      "text" : "THANK YOU SOO MUCH!!\nThis will surely calm her down.\nAs promised, here is my {0}"
+      "text" : "[King of Prontera]\nTHANK YOU SOO MUCH!!\nThis will surely calm her down.\nAs promised, here is my {0}"
     },
     {
       "kind" : "message",

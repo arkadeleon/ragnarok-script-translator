@@ -83,19 +83,13 @@
       "kind" : "message",
       "line" : 185,
       "npc" : "Inn Master",
-      "text" : "[Inn Master]"
+      "text" : "[Inn Master]\nI'm sorry, but I don't\nthink you have enough\nmoney to check in. The\nservice charge is 5,000 zeny."
     },
     {
       "kind" : "message",
-      "line" : 187,
+      "line" : 185,
       "npc" : "Inn Master",
-      "text" : "I'm sorry, but I don't\nthink you have enough\nmoney to check in. The\nservice charge is 5,000 zeny."
-    },
-    {
-      "kind" : "message",
-      "line" : 193,
-      "npc" : "Inn Master",
-      "text" : "Enjoy your stay~"
+      "text" : "[Inn Master]\nEnjoy your stay~"
     },
     {
       "kind" : "message",
@@ -274,15 +268,21 @@
     },
     {
       "kind" : "message",
-      "line" : 338,
+      "line" : 336,
       "npc" : "F_InnMaid",
-      "text" : "I'm sorry, but the service charge is 5,000 zeny. Please make sure that you have enough money to check in next time, okay?"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nI'm sorry, but the service charge is 5,000 zeny. Please make sure that you have enough money to check in next time, okay?"
     },
     {
       "kind" : "message",
-      "line" : 341,
+      "line" : 336,
       "npc" : "F_InnMaid",
-      "text" : "Thank you.\nI hope you\nenjoy your rest~"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nThank you.\nI hope you\nenjoy your rest~"
     }
   ]
 }

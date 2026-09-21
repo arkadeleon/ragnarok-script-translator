@@ -11,37 +11,25 @@
       "kind" : "message",
       "line" : 194,
       "npc" : "Umbala Kid",
-      "text" : "[Kid]"
+      "text" : "[Kid]\nMakumalagu!\nSaampa joojimbo\nkaku na jedi Solo.\nBwahahahahahahaah!"
     },
     {
       "kind" : "message",
-      "line" : 196,
+      "line" : 194,
       "npc" : "Umbala Kid",
-      "text" : "Wow, mom!\nL-look at this!\nWe're flying! W-we're...\nWe're in the freakin' sky!"
-    },
-    {
-      "kind" : "message",
-      "line" : 202,
-      "npc" : "Umbala Kid",
-      "text" : "Makumalagu!\nSaampa joojimbo\nkaku na jedi Solo.\nBwahahahahahahaah!"
+      "text" : "[Kid]\nWow, mom!\nL-look at this!\nWe're flying! W-we're...\nWe're in the freakin' sky!"
     },
     {
       "kind" : "message",
       "line" : 212,
       "npc" : "Umbala Lady",
-      "text" : "[Lady]"
+      "text" : "[Lady]\nChooktu!\nSacraup matii!\nShaka gurftalfi\nhuntiki manjoo!"
     },
     {
       "kind" : "message",
-      "line" : 214,
+      "line" : 212,
       "npc" : "Umbala Lady",
-      "text" : "Shush...\nHoney, behave~\nDon't act so excited\nwhen we're out in a\npublic place like this!"
-    },
-    {
-      "kind" : "message",
-      "line" : 221,
-      "npc" : "Umbala Lady",
-      "text" : "Chooktu!\nSacraup matii!\nShaka gurftalfi\nhuntiki manjoo!"
+      "text" : "[Lady]\nShush...\nHoney, behave~\nDon't act so excited\nwhen we're out in a\npublic place like this!"
     },
     {
       "kind" : "message",
@@ -1009,7 +997,7 @@
       "placeholders" : [
         ".@npc_name$"
       ],
-      "text" : "[{0}]\nGood!\nNow we can start\nthis game! I'll roll first~"
+      "text" : "[{0}]\nGood!\nNow we can start\nthis game! I'll roll first~\n^3355FF*Rolling and rumbling*^000000"
     },
     {
       "kind" : "message",
@@ -1066,37 +1054,40 @@
     },
     {
       "kind" : "message",
-      "line" : 1397,
+      "line" : 1395,
       "npc" : "applegamble",
       "placeholders" : [
+        ".@npc_name$",
         ".@tablesub",
         "strcharinfo(0)",
         ".@playersub"
       ],
-      "text" : "Currently my total is ^0000FF{0}^000000 and ^FF0000{1}^000000, your total is ^FF0000{2}^000000. We are making an even game. Would you like to cast dice again?"
+      "text" : "[{0}]\nCurrently my total is ^0000FF{1}^000000 and ^FF0000{2}^000000, your total is ^FF0000{3}^000000. I am winning this game. Would you like to cast dice again?"
     },
     {
       "kind" : "message",
-      "line" : 1399,
+      "line" : 1395,
       "npc" : "applegamble",
       "placeholders" : [
+        ".@npc_name$",
         ".@tablesub",
         "strcharinfo(0)",
         ".@playersub",
         "strcharinfo(0)"
       ],
-      "text" : "Currently my total is ^0000FF{0}^000000 and ^FF0000{1}^000000, your total is ^FF0000{2}^000000. ^FF0000{3}^000000, you are currently winning this game. Would you like to cast dice again?"
+      "text" : "[{0}]\nCurrently my total is ^0000FF{1}^000000 and ^FF0000{2}^000000, your total is ^FF0000{3}^000000. ^FF0000{4}^000000, you are currently winning this game. Would you like to cast dice again?"
     },
     {
       "kind" : "message",
-      "line" : 1401,
+      "line" : 1395,
       "npc" : "applegamble",
       "placeholders" : [
+        ".@npc_name$",
         ".@tablesub",
         "strcharinfo(0)",
         ".@playersub"
       ],
-      "text" : "Currently my total is ^0000FF{0}^000000 and ^FF0000{1}^000000, your total is ^FF0000{2}^000000. I am winning this game. Would you like to cast dice again?"
+      "text" : "[{0}]\nCurrently my total is ^0000FF{1}^000000 and ^FF0000{2}^000000, your total is ^FF0000{3}^000000. We are making an even game. Would you like to cast dice again?"
     },
     {
       "kind" : "option",
@@ -1121,59 +1112,57 @@
       "line" : 1410,
       "npc" : "applegamble",
       "placeholders" : [
+        ".@npc_name$",
+        "strcharinfo(0)",
+        ".@player3",
+        ".@playertotal"
+      ],
+      "text" : "[{0}]\n^FF0000{1}^000000, you got ^FF0000{2}^000000 and the total is now ^FF0000{3}^000000. You lost this game. I am sorry but please try again."
+    },
+    {
+      "kind" : "message",
+      "line" : 1410,
+      "npc" : "applegamble",
+      "placeholders" : [
+        ".@npc_name$",
+        "strcharinfo(0)",
+        ".@player3",
+        ".@playertotal"
+      ],
+      "text" : "[{0}]\n^FF0000{1}^000000, you got ^FF0000{2}^000000 and the total is now ^FF0000{3}^000000. Even though you casted dice again, still your total is smaller than mine. You lost the game. I am sorry and please try again."
+    },
+    {
+      "kind" : "message",
+      "line" : 1410,
+      "npc" : "applegamble",
+      "placeholders" : [
+        ".@npc_name$",
+        "strcharinfo(0)",
+        ".@player3",
+        ".@playertotal"
+      ],
+      "text" : "[{0}]\n^FF0000{1}^000000, you got ^FF0000{2}^000000 and the total is now ^FF0000{3}^000000. I don't want to take any risk, let's end this game in a draw. Let's play again some other time~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1410,
+      "npc" : "applegamble",
+      "placeholders" : [
+        ".@npc_name$",
+        "strcharinfo(0)",
+        ".@player3",
+        ".@playertotal"
+      ],
+      "text" : "[{0}]\n^FF0000{1}^000000, you got ^FF0000{2}^000000 and the total is now ^FF0000{3}^000000. Now it is my turn."
+    },
+    {
+      "kind" : "message",
+      "line" : 1410,
+      "npc" : "applegamble",
+      "placeholders" : [
         ".@npc_name$"
       ],
-      "text" : "[{0}]"
-    },
-    {
-      "kind" : "message",
-      "line" : 1412,
-      "npc" : "applegamble",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@player3",
-        ".@playertotal"
-      ],
-      "text" : "^FF0000{0}^000000, you got ^FF0000{1}^000000 and the total is now ^FF0000{2}^000000. You lost this game. I am sorry but please try again."
-    },
-    {
-      "kind" : "message",
-      "line" : 1416,
-      "npc" : "applegamble",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@player3",
-        ".@playertotal"
-      ],
-      "text" : "^FF0000{0}^000000, you got ^FF0000{1}^000000 and the total is now ^FF0000{2}^000000. Even though you casted dice again, still your total is smaller than mine. You lost the game. I am sorry and please try again."
-    },
-    {
-      "kind" : "message",
-      "line" : 1421,
-      "npc" : "applegamble",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@player3",
-        ".@playertotal"
-      ],
-      "text" : "^FF0000{0}^000000, you got ^FF0000{1}^000000 and the total is now ^FF0000{2}^000000. I don't want to take any risk, let's end this game in a draw. Let's play again some other time~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1426,
-      "npc" : "applegamble",
-      "text" : "Alright.\nLet me cast the dice again."
-    },
-    {
-      "kind" : "message",
-      "line" : 1430,
-      "npc" : "applegamble",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@player3",
-        ".@playertotal"
-      ],
-      "text" : "^FF0000{0}^000000, you got ^FF0000{1}^000000 and the total is now ^FF0000{2}^000000. Now it is my turn."
+      "text" : "[{0}]\nAlright.\nLet me cast the dice again."
     },
     {
       "kind" : "message",
@@ -1182,31 +1171,34 @@
       "placeholders" : [
         ".@npc_name$"
       ],
-      "text" : "[{0}]"
+      "text" : "[{0}]\nI see, you don't want to take risk of losing this game. Neither do I, let's end this game in a draw. Let's play again some other time~"
     },
     {
       "kind" : "message",
-      "line" : 1436,
+      "line" : 1434,
       "npc" : "applegamble",
-      "text" : "I see, you don't want to take risk of losing the game. Okay, let me cast dice again."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nIt couldn't hurt to try.\nWell, I win this time.\nI'm sorry, let's try play\nagain sometime."
     },
     {
       "kind" : "message",
-      "line" : 1440,
+      "line" : 1434,
       "npc" : "applegamble",
-      "text" : "I see, you don't want to take risk of losing this game. Neither do I, let's end this game in a draw. Let's play again some other time~"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nAlright.\nLet me cast the dice again."
     },
     {
       "kind" : "message",
-      "line" : 1445,
+      "line" : 1434,
       "npc" : "applegamble",
-      "text" : "Alright.\nLet me cast the dice again."
-    },
-    {
-      "kind" : "message",
-      "line" : 1449,
-      "npc" : "applegamble",
-      "text" : "It couldn't hurt to try.\nWell, I win this time.\nI'm sorry, let's try play\nagain sometime."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nI see, you don't want to take risk of losing the game. Okay, let me cast dice again."
     },
     {
       "kind" : "message",
@@ -1219,55 +1211,59 @@
       "line" : 1462,
       "npc" : "applegamble",
       "placeholders" : [
-        ".@npc_name$"
-      ],
-      "text" : "[{0}]"
-    },
-    {
-      "kind" : "message",
-      "line" : 1464,
-      "npc" : "applegamble",
-      "placeholders" : [
+        ".@npc_name$",
         ".@table3",
         ".@tabletotal"
       ],
-      "text" : "I got ^0000FF{0}^000000 and the total is now ^0000FF{1}^000000. I lost this game since my total exceeded 12. Let me give you my apples. Congratulations, that was a great game."
+      "text" : "[{0}]\nI got ^0000FF{1}^000000 and the total is now ^0000FF{2}^000000. I lost this game since my total exceeded 12. Let me give you my apples. Congratulations, that was a great game."
     },
     {
       "kind" : "message",
-      "line" : 1470,
+      "line" : 1462,
       "npc" : "applegamble",
       "placeholders" : [
+        ".@npc_name$",
         ".@table3",
         ".@tabletotal",
         ".@playertotal",
         "strcharinfo(0)"
       ],
-      "text" : "I got ^0000FF{0}^000000 and the total is now ^0000FF{1}^000000. With total ^FF0000{2}^000000 you won this game, ^FF0000{3}^000000. Let me give you my apples. It was a great game and I hope we will play again some other time."
+      "text" : "[{0}]\nI got ^0000FF{1}^000000 and the total is now ^0000FF{2}^000000. With total ^FF0000{3}^000000 you won this game, ^FF0000{4}^000000. Let me give you my apples. It was a great game and I hope we will play again some other time."
     },
     {
       "kind" : "message",
-      "line" : 1476,
+      "line" : 1462,
       "npc" : "applegamble",
       "placeholders" : [
+        ".@npc_name$",
         ".@table3",
         ".@tabletotal",
         ".@playertotal",
         "strcharinfo(0)"
       ],
-      "text" : "I got ^0000FF{0}^000000 and the total is now ^0000FF{1}^000000. With total ^FF0000{2}^000000 this game came out even, ^FF0000{3}^000000. Let me give you your apple back. It was a great game and I hope we will play again some other time."
+      "text" : "[{0}]\nI got ^0000FF{1}^000000 and the total is now ^0000FF{2}^000000. With total ^FF0000{3}^000000 this game came out even, ^FF0000{4}^000000. Let me give you your apple back. It was a great game and I hope we will play again some other time."
     },
     {
       "kind" : "message",
-      "line" : 1482,
+      "line" : 1462,
       "npc" : "applegamble",
       "placeholders" : [
+        ".@npc_name$",
         ".@table3",
         ".@tabletotal",
         ".@playertotal",
         "strcharinfo(0)"
       ],
-      "text" : "I got ^0000FF{0}^000000 and the total is now ^0000FF{1}^000000. With total ^FF0000{2}^000000 you lost this game, ^FF0000{3}^000000. I am sorry but please try again."
+      "text" : "[{0}]\nI got ^0000FF{1}^000000 and the total is now ^0000FF{2}^000000. With total ^FF0000{3}^000000 you lost this game, ^FF0000{4}^000000. I am sorry but please try again."
+    },
+    {
+      "kind" : "message",
+      "line" : 1462,
+      "npc" : "applegamble",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]"
     }
   ]
 }

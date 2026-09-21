@@ -14,13 +14,16 @@
       "placeholders" : [
         ".@npc_name$"
       ],
-      "text" : "[{0}]"
+      "text" : "[{0}]\nAh... you...\nbased on TE rules, I won't be ordering you or asking you favors unfortunately."
     },
     {
       "kind" : "message",
-      "line" : 164,
+      "line" : 162,
       "npc" : "Training_Instructor_TE",
-      "text" : "Ah... you...\nbased on TE rules, I won't be ordering you or asking you favors unfortunately."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nThere are missions you can complete in TE region.\nLet's see, what do you want?"
     },
     {
       "kind" : "message",
@@ -30,12 +33,6 @@
         ".@npc_name$"
       ],
       "text" : "[{0}]\nHey now, since this place is just for primary and secondary job classes as well as users without expanded levels, could you leave if you got nothing else to do here?"
-    },
-    {
-      "kind" : "message",
-      "line" : 171,
-      "npc" : "Training_Instructor_TE",
-      "text" : "There are missions you can complete in TE region.\nLet's see, what do you want?"
     },
     {
       "kind" : "option",
@@ -62,31 +59,25 @@
       "placeholders" : [
         ".@npc_name$"
       ],
-      "text" : "[{0}]"
+      "text" : "[{0}]\nMm, I'm sorry but missions are for users with ^4d4dff70 level^000000 or higher.\nHonestly, it's hard to complete a mission if your level is too low."
     },
     {
       "kind" : "message",
-      "line" : 178,
+      "line" : 176,
       "npc" : "Training_Instructor_TE",
-      "text" : "Mm, I'm sorry but missions are for users with ^4d4dff70 level^000000 or higher.\nHonestly, it's hard to complete a mission if your level is too low."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nYou already know that you have to accept a mission in a certain period of time, right?\nUnfortunately, you can't accept missions right now."
     },
     {
       "kind" : "message",
-      "line" : 184,
+      "line" : 176,
       "npc" : "Training_Instructor_TE",
-      "text" : "You already know that you have to accept a mission in a certain period of time, right?"
-    },
-    {
-      "kind" : "message",
-      "line" : 186,
-      "npc" : "Training_Instructor_TE",
-      "text" : "Moreover, you have to keep in mind that you can't accept both high-level and low-level missions simultaneously if they are of the same content."
-    },
-    {
-      "kind" : "message",
-      "line" : 188,
-      "npc" : "Training_Instructor_TE",
-      "text" : "Unfortunately, you can't accept missions right now."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nYou already know that you have to accept a mission in a certain period of time, right?\nMoreover, you have to keep in mind that you can't accept both high-level and low-level missions simultaneously if they are of the same content."
     },
     {
       "kind" : "message",
@@ -95,19 +86,16 @@
       "placeholders" : [
         ".@npc_name$"
       ],
-      "text" : "[{0}]"
+      "text" : "[{0}]\nYou can only check the results of the missions you've already accepted."
     },
     {
       "kind" : "message",
-      "line" : 194,
+      "line" : 190,
       "npc" : "Training_Instructor_TE",
-      "text" : "Mm, you were taking a break?\nWell, it doesn't matter anymore."
-    },
-    {
-      "kind" : "message",
-      "line" : 197,
-      "npc" : "Training_Instructor_TE",
-      "text" : "You can only check the results of the missions you've already accepted."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nMm, you were taking a break?\nWell, it doesn't matter anymore.\nYou can only check the results of the missions you've already accepted."
     },
     {
       "kind" : "option",
@@ -122,22 +110,143 @@
       "placeholders" : [
         ".@npc_name$"
       ],
+      "text" : "[{0}]\nSee you later then."
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@mob_name$[0]"
+      ],
+      "text" : "[{0}]\nYou did it in time.\nI don't understand why {1} appear at that time of the day.\nAnyway, good job."
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
       "text" : "[{0}]"
     },
     {
       "kind" : "message",
-      "line" : 203,
+      "line" : 201,
       "npc" : "Training_Instructor_TE",
-      "text" : "See you later then."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nTime's up.\nUnfortunately, mission failed!\nMaybe next time!"
     },
     {
       "kind" : "message",
-      "line" : 241,
+      "line" : 201,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
-        ".@mob_name$[0]"
+        ".@npc_name$"
       ],
-      "text" : "You did it in time.\nI don't understand why {0} appear at that time of the day.\nAnyway, good job."
+      "text" : "[{0}]\nYou're not on this mission currently.\nCould you check again?"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nYou're already on a elimination mission!\nI would like you to take care of what you already have unless you want to cancel it."
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nYou are already on a high-level mission!\nYou cannot accept a low-level mission if you're already on a high-level mission of the same content!"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@mob_name$[1]",
+        ".@fortress$",
+        ".@num_kill",
+        ".@mob_name$[1]"
+      ],
+      "text" : "[{0}]\nI've been told that {1} appear during the busy siege hours at the fortress in {2}.\nI would like you to ^4d4dffeliminate {3} or more of {4}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nIncredible!\nBreaking Emperiums is definitely not an easy job.\nYou must be contributing a lot to your guild. Good job!"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nYou're already on a mission of the same content,\nthe level is different though\nI would like you to take care of what you already have unless you want to cancel it."
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nThere is something called 'commercial development level' in each fortress.\nIt increases as much as each guild invests."
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nThe break for commercial development of the fortress is over now.\nGood. Think about what kind of missions you want and come back again."
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nWhat is the most important thing in siege battles?\nIt's destroying Emperiums! Let me give you that exact mission of destroying Emperiums!"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@num_items",
+        ".@string$[0]",
+        ".@string$[1]"
+      ],
+      "text" : "[{0}]\n{1} or more of {2} let's see you've done it right.\n{3}\nAnyway, good job."
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@string$[2]",
+        ".@fortress$"
+      ],
+      "text" : "[{0}]\nHmm you wouldn't believe it, but this mission is related to a theft.\nThey told me a bunch of {1} is missing from the fortress in {2}."
     },
     {
       "kind" : "message",
@@ -166,48 +275,12 @@
     },
     {
       "kind" : "message",
-      "line" : 271,
-      "npc" : "Training_Instructor_TE",
-      "text" : "You're not on this mission currently.\nCould you check again?"
-    },
-    {
-      "kind" : "message",
-      "line" : 277,
-      "npc" : "Training_Instructor_TE",
-      "text" : "You are already on a high-level mission!\nYou cannot accept a low-level mission if you're already on a high-level mission of the same content!"
-    },
-    {
-      "kind" : "message",
-      "line" : 281,
-      "npc" : "Training_Instructor_TE",
-      "text" : "You're already on a elimination mission!\nI would like you to take care of what you already have unless you want to cancel it."
-    },
-    {
-      "kind" : "message",
       "line" : 285,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
         ".@npc_name$"
       ],
       "text" : "[{0}]\nIt only makes sense that way, doesn't it?\nDon't you think so?"
-    },
-    {
-      "kind" : "message",
-      "line" : 290,
-      "npc" : "Training_Instructor_TE",
-      "placeholders" : [
-        ".@mob_name$[1]",
-        ".@fortress$",
-        ".@num_kill",
-        ".@mob_name$[1]"
-      ],
-      "text" : "I've been told that {0} appear during the busy siege hours at the fortress in {1}.\nI would like you to ^4d4dffeliminate {2} or more of {3}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 316,
-      "npc" : "Training_Instructor_TE",
-      "text" : "Incredible!\nBreaking Emperiums is definitely not an easy job.\nYou must be contributing a lot to your guild. Good job!"
     },
     {
       "kind" : "message",
@@ -236,30 +309,12 @@
     },
     {
       "kind" : "message",
-      "line" : 341,
-      "npc" : "Training_Instructor_TE",
-      "text" : "You're not on this mission currently.\nCould you check again?"
-    },
-    {
-      "kind" : "message",
-      "line" : 346,
-      "npc" : "Training_Instructor_TE",
-      "text" : "You're already on a mission of the same content,\nthe level is different though\nI would like you to take care of what you already have unless you want to cancel it."
-    },
-    {
-      "kind" : "message",
       "line" : 350,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
         ".@npc_name$"
       ],
       "text" : "[{0}]\nIt only makes sense that way, doesn't it?\nDon't you think so?"
-    },
-    {
-      "kind" : "message",
-      "line" : 357,
-      "npc" : "Training_Instructor_TE",
-      "text" : "There is something called 'commercial development level' in each fortress.\nIt increases as much as each guild invests."
     },
     {
       "kind" : "message",
@@ -281,18 +336,6 @@
     },
     {
       "kind" : "message",
-      "line" : 371,
-      "npc" : "Training_Instructor_TE",
-      "text" : "The break for commercial development of the fortress is over now.\nGood. Think about what kind of missions you want and come back again."
-    },
-    {
-      "kind" : "message",
-      "line" : 375,
-      "npc" : "Training_Instructor_TE",
-      "text" : "What is the most important thing in siege battles?\nIt's destroying Emperiums! Let me give you that exact mission of destroying Emperiums!"
-    },
-    {
-      "kind" : "message",
       "line" : 378,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
@@ -300,17 +343,6 @@
         ".@num_kill"
       ],
       "text" : "[{0}]\nGloria or Kafragarten, wherever it is! Right now, at this very hour, ^4d4dffdestroy Emperiums!^000000\n^4d4dffTarget number is {1} or more!^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 414,
-      "npc" : "Training_Instructor_TE",
-      "placeholders" : [
-        ".@num_items",
-        ".@string$[0]",
-        ".@string$[1]"
-      ],
-      "text" : "{0} or more of {1} let's see you've done it right.\n{2}\nAnyway, good job."
     },
     {
       "kind" : "message",
@@ -349,34 +381,12 @@
     },
     {
       "kind" : "message",
-      "line" : 443,
-      "npc" : "Training_Instructor_TE",
-      "text" : "You're not on this mission currently.\nCould you check again?"
-    },
-    {
-      "kind" : "message",
-      "line" : 448,
-      "npc" : "Training_Instructor_TE",
-      "text" : "You're already on a mission of the same content,\nthe level is different though\nI would like you to take care of what you already have unless you want to cancel it."
-    },
-    {
-      "kind" : "message",
       "line" : 452,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
         ".@npc_name$"
       ],
       "text" : "[{0}]\nIt only makes sense that way, doesn't it?\nDon't you think so?"
-    },
-    {
-      "kind" : "message",
-      "line" : 457,
-      "npc" : "Training_Instructor_TE",
-      "placeholders" : [
-        ".@string$[2]",
-        ".@fortress$"
-      ],
-      "text" : "Hmm you wouldn't believe it, but this mission is related to a theft.\nThey told me a bunch of {0} is missing from the fortress in {1}."
     },
     {
       "kind" : "message",

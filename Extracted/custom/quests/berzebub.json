@@ -3,15 +3,21 @@
   "scripts" : [
     {
       "kind" : "message",
-      "line" : 23,
+      "line" : 21,
       "npc" : "Old Woman",
-      "text" : "Hey, I remember you! I already told you that you may only complete this quest once."
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nHey, I remember you! I already told you that you may only complete this quest once."
     },
     {
       "kind" : "message",
-      "line" : 25,
+      "line" : 21,
       "npc" : "Old Woman",
-      "text" : "Greeting, lad. I found a really nifty item while I was picking mushrooms near Glast Heim."
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nGreeting, lad. I found a really nifty item while I was picking mushrooms near Glast Heim."
     },
     {
       "kind" : "option",
@@ -69,19 +75,20 @@
       "line" : 40,
       "npc" : "Old Woman",
       "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nI need all of the following items:"
-    },
-    {
-      "kind" : "message",
-      "line" : 43,
-      "npc" : "Old Woman",
-      "placeholders" : [
+        ".@n$",
         ".@Items[.@i+1]",
         "getitemname(.@Items[.@i])"
       ],
-      "text" : " ~ {0}x {1}"
+      "text" : "{0}\nI need all of the following items:\n ~ {1}x {2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "npc" : "Old Woman",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nI need all of the following items:"
     },
     {
       "kind" : "option",
@@ -97,15 +104,21 @@
     },
     {
       "kind" : "message",
-      "line" : 50,
+      "line" : 48,
       "npc" : "Old Woman",
-      "text" : "You lie! Get out of here and get those items, you sorry excuse for a rock star."
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nYou lie! Get out of here and get those items, you sorry excuse for a rock star."
     },
     {
       "kind" : "message",
-      "line" : 56,
+      "line" : 48,
       "npc" : "Old Woman",
-      "text" : "Congratulations! You have all the items. Here is your ^FF0000Berzebub Card^000000, as promised."
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nCongratulations! You have all the items. Here is your ^FF0000Berzebub Card^000000, as promised."
     },
     {
       "kind" : "message",

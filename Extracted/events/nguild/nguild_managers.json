@@ -8,41 +8,38 @@
       "placeholders" : [
         ".@npc_name$"
       ],
-      "text" : "[ {0} ]"
+      "text" : "[ {0} ]\nI am waiting for my master.  Brave adventurer, follow your destiny!"
     },
     {
       "kind" : "message",
-      "line" : 34,
-      "npc" : "F_GldManager",
-      "text" : "I am waiting for my master.  Brave adventurer, follow your destiny!"
-    },
-    {
-      "kind" : "message",
-      "line" : 38,
+      "line" : 32,
       "npc" : "F_GldManager",
       "placeholders" : [
+        ".@npc_name$",
         "getguildmaster(.@gid)"
       ],
-      "text" : "I am here to follow ^5533FF{0}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!"
+      "text" : "[ {0} ]\nI am here to follow ^5533FF{1}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!"
     },
     {
       "kind" : "message",
-      "line" : 43,
+      "line" : 32,
       "npc" : "F_GldManager",
       "placeholders" : [
+        ".@npc_name$",
         "getguildmaster(.@gid)",
         "getguildmaster(.@gid)"
       ],
-      "text" : "You're not ^5533FF{0}^000000! I am here to follow ^5533FF{1}^000000's command only"
+      "text" : "[ {0} ]\nYou're not ^5533FF{1}^000000! I am here to follow ^5533FF{2}^000000's command only"
     },
     {
       "kind" : "message",
-      "line" : 47,
+      "line" : 32,
       "npc" : "F_GldManager",
       "placeholders" : [
+        ".@npc_name$",
         "getguildmaster(.@gid)"
       ],
-      "text" : "Welcome Master ^5533FF{0}^000000 ! I will assist you in any way I can!"
+      "text" : "[ {0} ]\nWelcome Master ^5533FF{1}^000000 ! I will assist you in any way I can!"
     },
     {
       "kind" : "option",
@@ -73,9 +70,12 @@
     },
     {
       "kind" : "message",
-      "line" : 58,
+      "line" : 55,
       "npc" : "F_GldManager",
-      "text" : "Master, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000."
     },
     {
       "kind" : "message",
@@ -102,19 +102,16 @@
       "placeholders" : [
         ".@npc_name$"
       ],
-      "text" : "[ {0} ]"
+      "text" : "[ {0} ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled."
     },
     {
       "kind" : "message",
-      "line" : 70,
+      "line" : 68,
       "npc" : "F_GldManager",
-      "text" : "Master, you do not have enough money to employ a Kafra. Employment has been cancelled."
-    },
-    {
-      "kind" : "message",
-      "line" : 76,
-      "npc" : "F_GldManager",
-      "text" : "You have created a contract with the Kafra Staff Company."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nYou have created a contract with the Kafra Staff Company."
     },
     {
       "kind" : "message",

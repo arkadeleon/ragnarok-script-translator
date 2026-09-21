@@ -41,18 +41,6 @@
       "kind" : "message",
       "line" : 37,
       "npc" : "F_AvenBoard",
-      "text" : "[Monster Information Retrieval System]"
-    },
-    {
-      "kind" : "message",
-      "line" : 39,
-      "npc" : "F_AvenBoard",
-      "text" : "There is no information available for that monster.\nPlease check your monster name."
-    },
-    {
-      "kind" : "message",
-      "line" : 44,
-      "npc" : "F_AvenBoard",
       "placeholders" : [
         "getarg(.@i+1)",
         ".@element$[ getmonsterinfo(.@mob_id,MOB_ELEMENT) ]",
@@ -60,7 +48,13 @@
         ".@race$[ getmonsterinfo(.@mob_id,MOB_RACE) ]",
         "getarg(.@i+2)"
       ],
-      "text" : "- Name : {0}\n- Element : {1}\n- Size : {2}\n- Race : {3}\n--------------------------------^FD8D02\n{4}"
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : {1}\n- Size : {2}\n- Race : {3}\n--------------------------------^FD8D02\n{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "text" : "[Monster Information Retrieval System]\nThere is no information available for that monster.\nPlease check your monster name."
     },
     {
       "kind" : "message",
@@ -2139,13 +2133,13 @@
       "kind" : "message",
       "line" : 2484,
       "npc" : "Guide",
-      "text" : "[Thanatos Tower Guide]"
+      "text" : "[Thanatos Tower Guide]\nThanatos Tower is comprised of 12 floors, but only 3 floors are open to the public. If you wish to progress, you must have signed a contract with '^0000FFRenkenber^000000'."
     },
     {
       "kind" : "message",
-      "line" : 2486,
+      "line" : 2484,
       "npc" : "Guide",
-      "text" : "Thanatos Tower is comprised of 12 floors, but only 3 floors are open to the public. If you wish to progress, you must have signed a contract with '^0000FFRenkenber^000000'."
+      "text" : "[Thanatos Tower Guide]\nThanatos Tower is comprised of 12 floors, but only 3 floors are open to the public. If you wish to progress, you must have signed a contract with'^0000FFRenkenber^000000'."
     },
     {
       "kind" : "message",
@@ -2158,12 +2152,6 @@
       "line" : 2491,
       "npc" : "Guide",
       "text" : "[Public Announcement]\nPlease don't touch it. Only those that have a contract with '^0000FFRenkenber^000000' can progress."
-    },
-    {
-      "kind" : "message",
-      "line" : 2496,
-      "npc" : "Guide",
-      "text" : "Thanatos Tower is comprised of 12 floors, but only 3 floors are open to the public. If you wish to progress, you must have signed a contract with'^0000FFRenkenber^000000'."
     },
     {
       "kind" : "message",

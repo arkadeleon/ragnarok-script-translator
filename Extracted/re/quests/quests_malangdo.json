@@ -331,19 +331,13 @@
       "kind" : "message",
       "line" : 251,
       "npc" : "Investment Cat Helper",
-      "text" : "[Investment Cat Helper]"
+      "text" : "[Investment Cat Helper]\nYou've made many investments. Thank you."
     },
     {
       "kind" : "message",
-      "line" : 253,
+      "line" : 251,
       "npc" : "Investment Cat Helper",
-      "text" : "Got it?"
-    },
-    {
-      "kind" : "message",
-      "line" : 255,
-      "npc" : "Investment Cat Helper",
-      "text" : "You've made many investments. Thank you."
+      "text" : "[Investment Cat Helper]\nGot it?"
     },
     {
       "kind" : "message",
@@ -3641,13 +3635,7 @@
       "kind" : "message",
       "line" : 2878,
       "npc" : "Pipielle",
-      "text" : "[Pipielle]\nAnd this is a small gift for looking after admiral Tomas."
-    },
-    {
-      "kind" : "message",
-      "line" : 2882,
-      "npc" : "Pipielle",
-      "text" : "^0000ffReceived 200 E Class Coins.^000000"
+      "text" : "[Pipielle]\nAnd this is a small gift for looking after admiral Tomas.\n^0000ffReceived 200 E Class Coins.^000000"
     },
     {
       "kind" : "message",
@@ -4931,7 +4919,7 @@
     {
       "kind" : "message",
       "line" : 3968,
-      "text" : "[Admiral Thomas]\nWe have a common interest to talk.\nThere is no reason to search there like you.\nPlease leave me alone."
+      "text" : "[Admiral Thomas]\nWe have a common interest to talk.\nThere is no reason to search there like you.\nPlease leave me alone.\nIt used to be habitat of insects because someone left cat's ship biscuit.\nI think it's ok now due to we removed all of them."
     },
     {
       "kind" : "message",
@@ -5164,7 +5152,7 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[{0}]\nRight!\nIt may be cat's grave... Do not touch them!\nAvoid, avoid~"
+      "text" : "[{0}]\nRight!\nIt may be cat's grave... Do not touch them!\nAvoid, avoid~\nWe already collected buried cat's ship biscuit."
     },
     {
       "kind" : "message",
@@ -5643,22 +5631,10 @@
       "kind" : "message",
       "line" : 4560,
       "npc" : "Chef Nyas",
-      "text" : "[Chef Nyas]\nMy curious food is..."
-    },
-    {
-      "kind" : "message",
-      "line" : 4566,
-      "npc" : "Chef Nyas",
       "placeholders" : [
         "getitemname(.@StartID[(.@i-1)/5]+((.@i-1)%5))"
       ],
-      "text" : "^4d4dff {0} ^000000 ."
-    },
-    {
-      "kind" : "message",
-      "line" : 4570,
-      "npc" : "Chef Nyas",
-      "text" : "Just one dish is enough, so please do it together."
+      "text" : "[Chef Nyas]\nMy curious food is...\n^4d4dff {0} ^000000 .\nJust one dish is enough, so please do it together."
     },
     {
       "kind" : "message",
@@ -5808,13 +5784,13 @@
       "kind" : "message",
       "line" : 4696,
       "npc" : "Expert Cat",
-      "text" : "[Rato]\nThey are so active that I am not sure where they are now."
+      "text" : "[Rato]\nThey are so active that I am not sure where they are now.\nIf you meet them, please spend time with them."
     },
     {
       "kind" : "message",
       "line" : 4700,
       "npc" : "Expert Cat",
-      "text" : "[Rato]\nOh, really?\nIt's okay even though you cannot do this right now."
+      "text" : "[Rato]\nOh, really?\nIt's okay even though you cannot do this right now.\nIf you meet them, please spend time with them."
     },
     {
       "kind" : "message",
@@ -6768,7 +6744,10 @@
       "kind" : "message",
       "line" : 5470,
       "npc" : "Beginning Compass",
-      "text" : "After inserting the card and pressing the red button, the path to the destination lit up."
+      "placeholders" : [
+        ".@str$"
+      ],
+      "text" : "After inserting the card and pressing the red button, the path to the destination lit up.\nThe order will be {0}^000000."
     },
     {
       "kind" : "message",
@@ -6791,22 +6770,21 @@
         ".@color$",
         "strnpcinfo(1)"
       ],
-      "text" : "Delicate {0} lights surround the {1}."
+      "text" : "Delicate {0} lights surround the {1}.\nAfter inserting the card and pressing the button, characters appear on the screen."
     },
     {
       "kind" : "message",
-      "line" : 5506,
-      "text" : "After inserting the card and pressing the button, characters appear on the screen."
+      "line" : 5504,
+      "placeholders" : [
+        ".@color$",
+        "strnpcinfo(1)"
+      ],
+      "text" : "Delicate {0} lights surround the {1}."
     },
     {
       "kind" : "message",
       "line" : 5508,
       "text" : "^00FF00This is a card that didn't start the game yet. Please go back to the Beginning Compass.^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 5511,
-      "text" : "After inserting the card and pressing the button, characters appear on the screen."
     },
     {
       "kind" : "message",
@@ -6875,18 +6853,8 @@
     },
     {
       "kind" : "message",
-      "line" : 5564,
-      "text" : "After inserting the card and pressing the button, characters appear on the screen."
-    },
-    {
-      "kind" : "message",
       "line" : 5566,
       "text" : "The compass needle turns around in the middle of map.\nYou should run for the next destination."
-    },
-    {
-      "kind" : "message",
-      "line" : 5576,
-      "text" : "After inserting the card and pressing the button, characters appear on the screen."
     },
     {
       "kind" : "message",
@@ -6915,13 +6883,13 @@
       "kind" : "message",
       "line" : 5613,
       "npc" : "Meowbell",
-      "text" : "This is the Meowbell.\nYou insert your card into the middle slot."
+      "text" : "This is the Meowbell.\nYou insert your card into the middle slot.\nKnock Meowbell!!"
     },
     {
       "kind" : "message",
-      "line" : 5622,
+      "line" : 5613,
       "npc" : "Meowbell",
-      "text" : "Knock Meowbell!!"
+      "text" : "This is the Meowbell.\nYou insert your card into the middle slot.\n-- Beep --\nThe card has out with a warning sound."
     },
     {
       "kind" : "message",
@@ -6946,12 +6914,6 @@
       "line" : 5643,
       "npc" : "Meowbell",
       "text" : "[Deckhand Bubi]\nOh, you've really gotten used to it.\nYou succeeded again.\nI've put my paw stamp here.\nRun to Rato now."
-    },
-    {
-      "kind" : "message",
-      "line" : 5651,
-      "npc" : "Meowbell",
-      "text" : "-- Beep --\nThe card has out with a warning sound."
     },
     {
       "kind" : "message",
@@ -7695,19 +7657,25 @@
       "kind" : "message",
       "line" : 6233,
       "npc" : "Noisy Machine",
-      "text" : "Luminous"
+      "placeholders" : [
+        ".@Color$[.@rand]"
+      ],
+      "text" : "Luminous\n{0}\nThe buttons below are shining now.\nStop the machine by pressing the right button within time."
     },
     {
       "kind" : "message",
-      "line" : 6241,
+      "line" : 6233,
       "npc" : "Noisy Machine",
-      "text" : "Shines according to this order."
+      "placeholders" : [
+        ".@Color$[.@rand]"
+      ],
+      "text" : "Luminous\n{0}\nShines according to this order.\nThe buttons below are shining now.\nStop the machine by pressing the right button within time."
     },
     {
       "kind" : "message",
-      "line" : 6246,
+      "line" : 6233,
       "npc" : "Noisy Machine",
-      "text" : "The buttons below are shining now.\nStop the machine by pressing the right button within time."
+      "text" : "Luminous\nThe buttons below are shining now.\nStop the machine by pressing the right button within time."
     },
     {
       "kind" : "message",
@@ -9029,16 +8997,73 @@
       "kind" : "message",
       "line" : 7138,
       "npc" : "Cat Gamers Director",
-      "text" : "[Cat Gamers Director]"
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[Cat Gamers Director]\nHeh~ It's not like I didn't feed them right... Heh~ I hope it was not too much for you, {0}."
     },
     {
       "kind" : "message",
-      "line" : 7140,
+      "line" : 7138,
+      "npc" : "Cat Gamers Director",
+      "text" : "[Cat Gamers Director]\nHeh~ Hmm, 50 Marses, and 30 Milk Bottles... Heh~"
+    },
+    {
+      "kind" : "message",
+      "line" : 7138,
+      "npc" : "Cat Gamers Director",
+      "text" : "[Cat Gamers Director]\nHeh~ Our team must have some grudge over Team 'Dog n Waltz', enough to ask you for this kind of favor..."
+    },
+    {
+      "kind" : "message",
+      "line" : 7138,
+      "npc" : "Cat Gamers Director",
+      "text" : "[Cat Gamers Director]\nHeh~ Ah, quickness training. It's good to see our players trying their best on training.\nHeh~ Yes, nothing is better than mouse catching for improving quickness."
+    },
+    {
+      "kind" : "message",
+      "line" : 7138,
+      "npc" : "Cat Gamers Director",
+      "text" : "[Cat Gamers Director]\nHeh~ '50 Peco Peco please!! Let's party.' Hmm... Heh~ 50 Pecos can feed all of our neighbors."
+    },
+    {
+      "kind" : "message",
+      "line" : 7138,
+      "npc" : "Cat Gamers Director",
+      "text" : "[Cat Gamers Director]\nHeh~ Hmm... let me see... Heh~ That's right, I was worrying about our team getting so nervous before the actual game... But, they won't even talk to me about it."
+    },
+    {
+      "kind" : "message",
+      "line" : 7138,
+      "npc" : "Cat Gamers Director",
+      "text" : "[Cat Gamers Director]\nHeh~ The note says, get me 30 Rat Tails for a snack."
+    },
+    {
+      "kind" : "message",
+      "line" : 7138,
+      "npc" : "Cat Gamers Director",
+      "text" : "[Cat Gamers Director]\nHeh~ It says 5 on the note... 5 of what? What?! Lemons?"
+    },
+    {
+      "kind" : "message",
+      "line" : 7138,
+      "npc" : "Cat Gamers Director",
+      "text" : "[Cat Gamers Director]\nHeh~ Give us 10 Ice Pieces or 10 Ice Creams!! Heh~ I personally prefer Ice Cream, just so you know."
+    },
+    {
+      "kind" : "message",
+      "line" : 7138,
+      "npc" : "Cat Gamers Director",
+      "text" : "[Cat Gamers Director]\nHeh~ Here, I found the note from our team. Heh~"
+    },
+    {
+      "kind" : "message",
+      "line" : 7138,
       "npc" : "Cat Gamers Director",
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "Heh~ It's not like I didn't feed them right... Heh~ I hope it was not too much for you, {0}."
+      "text" : "[Cat Gamers Director]\n[Cat Gamers Director]\nHeh?! There's no favor note for you, {0}. Heh~ What do you want to report? Heh~"
     },
     {
       "kind" : "message",
@@ -9048,21 +9073,9 @@
     },
     {
       "kind" : "message",
-      "line" : 7152,
-      "npc" : "Cat Gamers Director",
-      "text" : "Heh~ Hmm, 50 Marses, and 30 Milk Bottles... Heh~"
-    },
-    {
-      "kind" : "message",
       "line" : 7159,
       "npc" : "Cat Gamers Director",
       "text" : "[Cat Gamers Director]\nHeh~ But, where are 50 Marses and 30 Milk Bottles? Heh~ Please see if you haven't missed them..."
-    },
-    {
-      "kind" : "message",
-      "line" : 7164,
-      "npc" : "Cat Gamers Director",
-      "text" : "Heh~ Our team must have some grudge over Team 'Dog n Waltz', enough to ask you for this kind of favor..."
     },
     {
       "kind" : "message",
@@ -9072,21 +9085,9 @@
     },
     {
       "kind" : "message",
-      "line" : 7175,
-      "npc" : "Cat Gamers Director",
-      "text" : "Heh~ Ah, quickness training. It's good to see our players trying their best on training.\nHeh~ Yes, nothing is better than mouse catching for improving quickness."
-    },
-    {
-      "kind" : "message",
       "line" : 7182,
       "npc" : "Cat Gamers Director",
       "text" : "[Cat Gamers Director]\nHeh? Where are those 10 Cramps you promised? Heh~ You didn't eat them... did you?"
-    },
-    {
-      "kind" : "message",
-      "line" : 7187,
-      "npc" : "Cat Gamers Director",
-      "text" : "Heh~ '50 Peco Peco please!! Let's party.' Hmm... Heh~ 50 Pecos can feed all of our neighbors."
     },
     {
       "kind" : "message",
@@ -9096,21 +9097,9 @@
     },
     {
       "kind" : "message",
-      "line" : 7198,
-      "npc" : "Cat Gamers Director",
-      "text" : "Heh~ Hmm... let me see... Heh~ That's right, I was worrying about our team getting so nervous before the actual game... But, they won't even talk to me about it."
-    },
-    {
-      "kind" : "message",
       "line" : 7205,
       "npc" : "Cat Gamers Director",
       "text" : "[Cat Gamers Director]\nHeh~ Where are those 20 yarns? It says 20 on the note, right...? Please check if you have lost them somewhere."
-    },
-    {
-      "kind" : "message",
-      "line" : 7210,
-      "npc" : "Cat Gamers Director",
-      "text" : "Heh~ The note says, get me 30 Rat Tails for a snack."
     },
     {
       "kind" : "message",
@@ -9120,21 +9109,9 @@
     },
     {
       "kind" : "message",
-      "line" : 7222,
-      "npc" : "Cat Gamers Director",
-      "text" : "Heh~ It says 5 on the note... 5 of what? What?! Lemons?"
-    },
-    {
-      "kind" : "message",
       "line" : 7229,
       "npc" : "Cat Gamers Director",
       "text" : "[Cat Gamers Director]\nHeh~ Let's just get 5 Lemons for them, will you? Heh~ I am still not sure where they want to use them..."
-    },
-    {
-      "kind" : "message",
-      "line" : 7234,
-      "npc" : "Cat Gamers Director",
-      "text" : "Heh~ Give us 10 Ice Pieces or 10 Ice Creams!! Heh~ I personally prefer Ice Cream, just so you know."
     },
     {
       "kind" : "message",
@@ -9144,21 +9121,9 @@
     },
     {
       "kind" : "message",
-      "line" : 7250,
-      "npc" : "Cat Gamers Director",
-      "text" : "Heh~ Here, I found the note from our team. Heh~"
-    },
-    {
-      "kind" : "message",
       "line" : 7253,
       "npc" : "Cat Gamers Director",
       "text" : "[Cat Gamers Director]\nHeh~ It says 'We will meet Eryu together.'. Heh~ Have you met Eryu already? I don't think so... Heh~"
-    },
-    {
-      "kind" : "message",
-      "line" : 7261,
-      "npc" : "Cat Gamers Director",
-      "text" : "Heh~ Here, I found the note from our team. Heh~"
     },
     {
       "kind" : "message",
@@ -9168,21 +9133,9 @@
     },
     {
       "kind" : "message",
-      "line" : 7272,
-      "npc" : "Cat Gamers Director",
-      "text" : "Heh~ Here, I found the note from our team. Heh~"
-    },
-    {
-      "kind" : "message",
       "line" : 7275,
       "npc" : "Cat Gamers Director",
       "text" : "[Cat Gamers Director]\nHeh~ It says 'We will meet Ketchup together.'. Heh~ Have you met Ketchup already? I don't think so... Heh~"
-    },
-    {
-      "kind" : "message",
-      "line" : 7283,
-      "npc" : "Cat Gamers Director",
-      "text" : "Heh~ Here, I found the note from our team. Heh~"
     },
     {
       "kind" : "message",
@@ -11228,19 +11181,16 @@
       "placeholders" : [
         ".@count$[.@match]"
       ],
-      "text" : "[Ser]\n{0} match ~~"
+      "text" : "[Ser]\n{0} match ~~\nTry your best!"
     },
     {
       "kind" : "message",
-      "line" : 8611,
+      "line" : 8608,
       "npc" : "Ser",
-      "text" : "Result is even, so we play again."
-    },
-    {
-      "kind" : "message",
-      "line" : 8614,
-      "npc" : "Ser",
-      "text" : "Try your best!"
+      "placeholders" : [
+        ".@count$[.@match]"
+      ],
+      "text" : "[Ser]\n{0} match ~~\nResult is even, so we play again.\nTry your best!"
     },
     {
       "kind" : "message",
@@ -11361,9 +11311,9 @@
     },
     {
       "kind" : "message",
-      "line" : 8676,
+      "line" : 8673,
       "npc" : "Ser",
-      "text" : "Oh! You won all 5 matches. Here are some more extra Cans."
+      "text" : "[Ser]\nGood bye~ Come back tomorrow for more practice~\nOh! You won all 5 matches. Here are some more extra Cans."
     },
     {
       "kind" : "message",
@@ -11801,19 +11751,16 @@
       "placeholders" : [
         ".@count$[.@match]"
       ],
-      "text" : "[Paa]\n{0} match ~~ meow."
+      "text" : "[Paa]\n{0} match ~~ meow.\nTry your best meow!"
     },
     {
       "kind" : "message",
-      "line" : 8943,
+      "line" : 8940,
       "npc" : "Paa",
-      "text" : "Result is even, so we play again meow."
-    },
-    {
-      "kind" : "message",
-      "line" : 8946,
-      "npc" : "Paa",
-      "text" : "Try your best meow!"
+      "placeholders" : [
+        ".@count$[.@match]"
+      ],
+      "text" : "[Paa]\n{0} match ~~ meow.\nResult is even, so we play again meow.\nTry your best meow!"
     },
     {
       "kind" : "message",
@@ -11931,9 +11878,9 @@
     },
     {
       "kind" : "message",
-      "line" : 9008,
+      "line" : 9005,
       "npc" : "Paa",
-      "text" : "Oh! You won all 5 matches meow. Here are some more extra Cans meow!"
+      "text" : "[Paa]\nGood bye meow~ Come back tomorrow for more practice meow~\nOh! You won all 5 matches meow. Here are some more extra Cans meow!"
     },
     {
       "kind" : "message",
@@ -12307,25 +12254,21 @@
       "npc" : "Kuka",
       "placeholders" : [
         "$malangdo_gamer$",
-        "$malangdo_gamer"
-      ],
-      "text" : "[Kuka]\nCurrent 1st place for the ChamChamCham game is\n^0000FF{0}^000000 with ^DE2B21{1}^000000 winning streak yo~"
-    },
-    {
-      "kind" : "message",
-      "line" : 9242,
-      "npc" : "Kuka",
-      "text" : "Never know when someone else would break the record yo~"
-    },
-    {
-      "kind" : "message",
-      "line" : 9244,
-      "npc" : "Kuka",
-      "placeholders" : [
+        "$malangdo_gamer",
         "strcharinfo(0)",
         "$malangdo_gamer$"
       ],
-      "text" : "I expect that you, {0}, can beat ^0000FF{1}^000000 sometime yo~"
+      "text" : "[Kuka]\nCurrent 1st place for the ChamChamCham game is\n^0000FF{0}^000000 with ^DE2B21{1}^000000 winning streak yo~\nI expect that you, {2}, can beat ^0000FF{3}^000000 sometime yo~"
+    },
+    {
+      "kind" : "message",
+      "line" : 9238,
+      "npc" : "Kuka",
+      "placeholders" : [
+        "$malangdo_gamer$",
+        "$malangdo_gamer"
+      ],
+      "text" : "[Kuka]\nCurrent 1st place for the ChamChamCham game is\n^0000FF{0}^000000 with ^DE2B21{1}^000000 winning streak yo~\nNever know when someone else would break the record yo~"
     },
     {
       "kind" : "message",
@@ -12435,34 +12378,30 @@
       "placeholders" : [
         ".@win"
       ],
-      "text" : "[Kuka]\nCongrats yo~ You won ^DE2B21{0}^000000 in a row yo~"
+      "text" : "[Kuka]\nCongrats yo~ You won ^DE2B21{0}^000000 in a row yo~\nA new record yo~ Congrats yo~"
     },
     {
       "kind" : "message",
-      "line" : 9333,
+      "line" : 9330,
       "npc" : "Kuka",
       "placeholders" : [
-        ".@win_cnt",
-        ".@win_record"
-      ],
-      "text" : "You won ^DE2B21{0}^000000 more than the recent ^DE2B21{1}^000000 record yo~ Congrats yo~"
-    },
-    {
-      "kind" : "message",
-      "line" : 9337,
-      "npc" : "Kuka",
-      "placeholders" : [
+        ".@win",
         ".@win_cnt",
         ".@name_record$",
         ".@win_record"
       ],
-      "text" : "And you have won ^DE2B21{0}^000000 more than ^0000FF{1}^000000's ^DE2B21{2}^000000 winning streak yo~ New record yo~ Congrats yo~"
+      "text" : "[Kuka]\nCongrats yo~ You won ^DE2B21{0}^000000 in a row yo~\nAnd you have won ^DE2B21{1}^000000 more than ^0000FF{2}^000000's ^DE2B21{3}^000000 winning streak yo~ New record yo~ Congrats yo~"
     },
     {
       "kind" : "message",
-      "line" : 9339,
+      "line" : 9330,
       "npc" : "Kuka",
-      "text" : "A new record yo~ Congrats yo~"
+      "placeholders" : [
+        ".@win",
+        ".@win_cnt",
+        ".@win_record"
+      ],
+      "text" : "[Kuka]\nCongrats yo~ You won ^DE2B21{0}^000000 in a row yo~\nYou won ^DE2B21{1}^000000 more than the recent ^DE2B21{2}^000000 record yo~ Congrats yo~"
     },
     {
       "kind" : "message",

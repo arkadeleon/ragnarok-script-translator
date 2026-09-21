@@ -5,18 +5,12 @@
       "kind" : "message",
       "line" : 20,
       "npc" : "Chief Warder",
-      "text" : "[Saddeus]"
-    },
-    {
-      "kind" : "message",
-      "line" : 22,
-      "npc" : "Chief Warder",
       "placeholders" : [
         "(Sex==SEX_MALE?\"Mr.\":\"Ms.\")",
         "BaseLevel",
         "JobLevel"
       ],
-      "text" : "{0} Prisoner #{1}{2},\nwhat's the noise over there?"
+      "text" : "[Saddeus]\n{0} Prisoner #{1}{2},\nwhat's the noise over there?"
     },
     {
       "kind" : "option",
@@ -40,28 +34,37 @@
       "kind" : "message",
       "line" : 28,
       "npc" : "Chief Warder",
-      "text" : "[Saddeus]"
+      "placeholders" : [
+        ".@MUSTPAY"
+      ],
+      "text" : "[Saddeus]\nOK, we could release you for ^FF0000{0}z^000000."
     },
     {
       "kind" : "message",
-      "line" : 32,
-      "npc" : "Chief Warder",
-      "text" : "I can't remember you. Is it your 1st time?"
-    },
-    {
-      "kind" : "message",
-      "line" : 33,
-      "npc" : "Chief Warder",
-      "text" : "You again? Somebody hasn't grown wiser from the very first visit..."
-    },
-    {
-      "kind" : "message",
-      "line" : 34,
+      "line" : 28,
       "npc" : "Chief Warder",
       "placeholders" : [
         ".@MUSTPAY"
       ],
-      "text" : "OK, we could release you for ^FF0000{0}z^000000."
+      "text" : "[Saddeus]\nI can't remember you. Is it your 1st time?\nOK, we could release you for ^FF0000{0}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Chief Warder",
+      "placeholders" : [
+        ".@MUSTPAY"
+      ],
+      "text" : "[Saddeus]\nYou again? Somebody hasn't grown wiser from the very first visit...\nOK, we could release you for ^FF0000{0}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Chief Warder",
+      "placeholders" : [
+        ".@MUSTPAY"
+      ],
+      "text" : "[Saddeus]\nI can't remember you. Is it your 1st time?\nYou again? Somebody hasn't grown wiser from the very first visit...\nOK, we could release you for ^FF0000{0}z^000000."
     },
     {
       "kind" : "option",
@@ -109,28 +112,31 @@
       "kind" : "message",
       "line" : 62,
       "npc" : "Chief Warder",
-      "text" : "[Saddeus]"
+      "text" : "[Saddeus]\nStop your silly games now!"
     },
     {
       "kind" : "message",
-      "line" : 63,
+      "line" : 62,
       "npc" : "Chief Warder",
-      "text" : "Your case says nothing about your bank accounts."
+      "text" : "[Saddeus]\nYour case says nothing about your bank accounts.\nStop your silly games now!"
     },
     {
       "kind" : "message",
-      "line" : 64,
+      "line" : 62,
       "npc" : "Chief Warder",
       "placeholders" : [
         "#kafrabank"
       ],
-      "text" : "Alas, there's your bank account info... ^FF0000{0}z^000000... in the case. It's not enough."
+      "text" : "[Saddeus]\nAlas, there's your bank account info... ^FF0000{0}z^000000... in the case. It's not enough.\nStop your silly games now!"
     },
     {
       "kind" : "message",
-      "line" : 65,
+      "line" : 62,
       "npc" : "Chief Warder",
-      "text" : "Stop your silly games now!"
+      "placeholders" : [
+        "#kafrabank"
+      ],
+      "text" : "[Saddeus]\nYour case says nothing about your bank accounts.\nAlas, there's your bank account info... ^FF0000{0}z^000000... in the case. It's not enough.\nStop your silly games now!"
     },
     {
       "kind" : "message",
@@ -160,37 +166,25 @@
       "kind" : "message",
       "line" : 84,
       "npc" : "Chief Warder",
-      "text" : "[Saddeus]"
+      "text" : "[Saddeus]\nI'm sorry, you should release your Cart, PecoPeco or Falcon!"
     },
     {
       "kind" : "message",
-      "line" : 87,
+      "line" : 84,
       "npc" : "Chief Warder",
-      "text" : "I'm sorry, you should release your Cart, PecoPeco or Falcon!"
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Chief Warder",
-      "text" : "Talk to our overseer, Oliver."
+      "text" : "[Saddeus]\nTalk to our overseer, Oliver."
     },
     {
       "kind" : "message",
       "line" : 121,
       "npc" : "Chief Warder",
-      "text" : "[Saddeus]"
+      "text" : "[Saddeus]\nNow shut up and back off!"
     },
     {
       "kind" : "message",
-      "line" : 122,
+      "line" : 121,
       "npc" : "Chief Warder",
-      "text" : "Is today X-Mas time, huh?"
-    },
-    {
-      "kind" : "message",
-      "line" : 123,
-      "npc" : "Chief Warder",
-      "text" : "Now shut up and back off!"
+      "text" : "[Saddeus]\nIs today X-Mas time, huh?\nNow shut up and back off!"
     },
     {
       "kind" : "message",
@@ -200,22 +194,23 @@
     },
     {
       "kind" : "message",
-      "line" : 138,
+      "line" : 129,
       "npc" : "Overseer",
       "placeholders" : [
         "PRISON_Q"
       ],
-      "text" : "I want you to gather ^FF0000{0} Orange Net Mushroom^000000."
+      "text" : "[Oliver]\nI want you to gather ^FF0000{0} Orange Net Mushroom^000000."
     },
     {
       "kind" : "message",
-      "line" : 140,
+      "line" : 129,
       "npc" : "Overseer",
       "placeholders" : [
+        "PRISON_Q",
         "countitem(1069)",
         "countitem(1070)"
       ],
-      "text" : "OK... hand me all the shrooms...\nLet me see... {0} of almost edible ones...\nAnd {1} useless deadly ones."
+      "text" : "[Oliver]\nI want you to gather ^FF0000{0} Orange Net Mushroom^000000.\nOK... hand me all the shrooms...\nLet me see... {1} of almost edible ones...\nAnd {2} useless deadly ones."
     },
     {
       "kind" : "message",
@@ -227,13 +222,109 @@
       "kind" : "message",
       "line" : 156,
       "npc" : "Overseer",
-      "text" : "Hmm... You've been here already... Well-well..."
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "Hmm... You've been here already... Well-well...\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms."
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "Hmm... You've been here already... Well-well...\nDrop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms."
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "Hmm... You've been here already... Well-well...\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then."
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "Hmm... You've been here already... Well-well...\nDrop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then."
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "Hmm... You've been here already... Well-well...\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nAnd you may eat the deadly ones for breakfast."
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "Hmm... You've been here already... Well-well...\nDrop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nAnd you may eat the deadly ones for breakfast."
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "Hmm... You've been here already... Well-well...\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then.\nAnd you may eat the deadly ones for breakfast."
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "Hmm... You've been here already... Well-well...\nDrop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then.\nAnd you may eat the deadly ones for breakfast."
     },
     {
       "kind" : "message",
       "line" : 158,
       "npc" : "Overseer",
-      "text" : "Drop these mushrooms!! They are poisonous!"
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "Drop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms."
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "Drop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then."
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "Drop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nAnd you may eat the deadly ones for breakfast."
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "Drop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then.\nAnd you may eat the deadly ones for breakfast."
     },
     {
       "kind" : "message",
@@ -246,15 +337,30 @@
     },
     {
       "kind" : "message",
-      "line" : 166,
+      "line" : 165,
       "npc" : "Overseer",
-      "text" : "You're a fast fella! You'll have to get more shrooms, then."
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "OK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then."
     },
     {
       "kind" : "message",
-      "line" : 167,
+      "line" : 165,
       "npc" : "Overseer",
-      "text" : "And you may eat the deadly ones for breakfast."
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "OK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nAnd you may eat the deadly ones for breakfast."
+    },
+    {
+      "kind" : "message",
+      "line" : 165,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "text" : "OK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then.\nAnd you may eat the deadly ones for breakfast."
     }
   ]
 }

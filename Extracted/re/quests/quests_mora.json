@@ -180,27 +180,27 @@
     },
     {
       "kind" : "message",
-      "line" : 146,
+      "line" : 142,
       "npc" : "Theore",
-      "text" : "I must tell my next-door neighbor Pico!!!\nAnd Kachua!!!"
+      "text" : "[Theore]\n......\nI must tell my next-door neighbor Pico!!!\nAnd Kachua!!!"
     },
     {
       "kind" : "message",
-      "line" : 150,
+      "line" : 142,
       "npc" : "Theore",
-      "text" : "Tell the merchant across the street!!!\nAnd also tell the administrator!!!"
+      "text" : "[Theore]\n......\nTell the merchant across the street!!!\nAnd also tell the administrator!!!"
     },
     {
       "kind" : "message",
-      "line" : 154,
+      "line" : 142,
       "npc" : "Theore",
-      "text" : "Tell Mr. Holgren!!!\nWrite up a report for the King!!!"
+      "text" : "[Theore]\n......\nTell Mr. Holgren!!!\nWrite up a report for the King!!!"
     },
     {
       "kind" : "message",
-      "line" : 158,
+      "line" : 142,
       "npc" : "Theore",
-      "text" : "Tell the people around here!!!\nShout it out loud from the observatory so the whole world hears!!!"
+      "text" : "[Theore]\n......\nTell the people around here!!!\nShout it out loud from the observatory so the whole world hears!!!"
     },
     {
       "kind" : "message",
@@ -689,13 +689,43 @@
         ".@Wings$[.@i[4]-1]",
         ".@Clothing$[.@i[3]-1]"
       ],
-      "text" : "[Tired-looking Fairy]\nA {0}-skinned fairy with {1} hair and {2} wings, dressed in {3} clothing......."
+      "text" : "[Tired-looking Fairy]\nA {0}-skinned fairy with {1} hair and {2} wings, dressed in {3} clothing.......\nHmm...... That must be Kusmi."
     },
     {
       "kind" : "message",
-      "line" : 586,
+      "line" : 582,
       "npc" : "Tired-looking Fairy",
-      "text" : "Hmm...... That must be Kusmi."
+      "placeholders" : [
+        ".@Skin$[.@i[2]-1]",
+        ".@Hair$[.@i[1]-1]",
+        ".@Wings$[.@i[4]-1]",
+        ".@Clothing$[.@i[3]-1]"
+      ],
+      "text" : "[Tired-looking Fairy]\nA {0}-skinned fairy with {1} hair and {2} wings, dressed in {3} clothing.......\nHmm......That must be Theodore."
+    },
+    {
+      "kind" : "message",
+      "line" : 582,
+      "npc" : "Tired-looking Fairy",
+      "placeholders" : [
+        ".@Skin$[.@i[2]-1]",
+        ".@Hair$[.@i[1]-1]",
+        ".@Wings$[.@i[4]-1]",
+        ".@Clothing$[.@i[3]-1]"
+      ],
+      "text" : "[Tired-looking Fairy]\nA {0}-skinned fairy with {1} hair and {2} wings, dressed in {3} clothing.......\nHmm......That must be Pauchon."
+    },
+    {
+      "kind" : "message",
+      "line" : 582,
+      "npc" : "Tired-looking Fairy",
+      "placeholders" : [
+        ".@Skin$[.@i[2]-1]",
+        ".@Hair$[.@i[1]-1]",
+        ".@Wings$[.@i[4]-1]",
+        ".@Clothing$[.@i[3]-1]"
+      ],
+      "text" : "[Tired-looking Fairy]\nA {0}-skinned fairy with {1} hair and {2} wings, dressed in {3} clothing......."
     },
     {
       "kind" : "message",
@@ -705,21 +735,9 @@
     },
     {
       "kind" : "message",
-      "line" : 595,
-      "npc" : "Tired-looking Fairy",
-      "text" : "Hmm......That must be Theodore."
-    },
-    {
-      "kind" : "message",
       "line" : 597,
       "npc" : "Tired-looking Fairy",
       "text" : "[Tired-looking Fairy]\nTheodore must be roaming the area northeast of the village.\nGo see if he has lost his pouch."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Tired-looking Fairy",
-      "text" : "Hmm......That must be Pauchon."
     },
     {
       "kind" : "message",
@@ -945,9 +963,9 @@
     },
     {
       "kind" : "message",
-      "line" : 781,
+      "line" : 777,
       "npc" : "Kusmi",
-      "text" : "Also, on the way back, will you check to see that my friend Rondo is in Mora Villagee?"
+      "text" : "[Kusmi]\nIf you go to the warehouse in Mora Village, the manager will tell you moree.\nAlso, on the way back, will you check to see that my friend Rondo is in Mora Villagee?"
     },
     {
       "kind" : "message",
@@ -1419,9 +1437,9 @@
     },
     {
       "kind" : "message",
-      "line" : 1150,
+      "line" : 1146,
       "npc" : "Pauchon",
-      "text" : "Also, please pay a visit to my friend Humming."
+      "text" : "[Pauchon]\nThe supplies from the mainland come through the Village. If you go speak to the Warehouse Manager, he'll be able to tell you something.\nAlso, please pay a visit to my friend Humming."
     },
     {
       "kind" : "message",
@@ -4118,93 +4136,83 @@
       "line" : 3625,
       "npc" : "Black Shadow",
       "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "text" : "[{0}'s Attack]"
-    },
-    {
-      "kind" : "message",
-      "line" : 3629,
-      "npc" : "Black Shadow",
-      "placeholders" : [
+        "strcharinfo(0)",
         ".@weapon$"
       ],
-      "text" : "You attempt to attack with your recent expensive purchase ^FF0000[{0}]^000000, but the unidentified creature rapidly dodged."
+      "text" : "[{0}'s Attack]\nYou attempt to attack with your recent expensive purchase ^FF0000[{1}]^000000, but the unidentified creature rapidly dodged."
     },
     {
       "kind" : "message",
-      "line" : 3632,
+      "line" : 3625,
       "npc" : "Black Shadow",
       "placeholders" : [
+        "strcharinfo(0)",
         ".@weapon$"
       ],
-      "text" : "By mistake, you use ^FF0000[{0}]^000000 that Holgren has thrown your way to attack the unidentified creature, but the creature foresaw the attack and dodged."
+      "text" : "[{0}'s Attack]\nBy mistake, you use ^FF0000[{1}]^000000 that Holgren has thrown your way to attack the unidentified creature, but the creature foresaw the attack and dodged."
     },
     {
       "kind" : "message",
-      "line" : 3635,
+      "line" : 3625,
       "npc" : "Black Shadow",
       "placeholders" : [
+        "strcharinfo(0)",
         ".@weapon$"
       ],
-      "text" : "You use your precious ^FF0000[+{0}+]^000000 to attack the unidentified creature, but the creature pulled back and dodged your attack."
+      "text" : "[{0}'s Attack]\nYou use your precious ^FF0000[+{1}+]^000000 to attack the unidentified creature, but the creature pulled back and dodged your attack."
     },
     {
       "kind" : "message",
-      "line" : 3650,
+      "line" : 3625,
       "npc" : "Black Shadow",
       "placeholders" : [
+        "strcharinfo(0)",
         ".@str$",
         ".@p_damage"
       ],
-      "text" : "{0} ^FF0000[{1}]^000000 damage inflicted."
+      "text" : "[{0}'s Attack]\n{1} ^FF0000[{2}]^000000 damage inflicted."
     },
     {
       "kind" : "message",
       "line" : 3659,
       "npc" : "Black Shadow",
       "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "text" : "[{0}'s Attack]"
-    },
-    {
-      "kind" : "message",
-      "line" : 3663,
-      "npc" : "Black Shadow",
-      "placeholders" : [
+        "strcharinfo(0)",
         ".@skillname$"
       ],
-      "text" : "You use skill ^0000FF[{0}]^000000 but you couldn't concentrate, and failed to use the skill properly."
+      "text" : "[{0}'s Attack]\nYou use skill ^0000FF[{1}]^000000 but you couldn't concentrate, and failed to use the skill properly."
     },
     {
       "kind" : "message",
-      "line" : 3666,
+      "line" : 3659,
       "npc" : "Black Shadow",
       "placeholders" : [
+        "strcharinfo(0)",
         ".@skillname$"
       ],
-      "text" : "You use skill ^0000FF[{0}]^000000 with all your might, but the unidentified creature dodged lightly and mocked you."
+      "text" : "[{0}'s Attack]\nYou use skill ^0000FF[{1}]^000000 with all your might, but the unidentified creature dodged lightly and mocked you."
     },
     {
       "kind" : "message",
-      "line" : 3669,
+      "line" : 3659,
       "npc" : "Black Shadow",
       "placeholders" : [
+        "strcharinfo(0)",
         ".@skillname$"
       ],
-      "text" : "You use skill ^0000FF[{0}]^000000 to attack the creature, but he got out of sight and you failed to use the skill."
+      "text" : "[{0}'s Attack]\nYou use skill ^0000FF[{1}]^000000 to attack the creature, but he got out of sight and you failed to use the skill."
     },
     {
       "kind" : "message",
-      "line" : 3680,
+      "line" : 3659,
       "npc" : "Black Shadow",
       "placeholders" : [
+        "strcharinfo(0)",
         ".@skillname$",
         ".@str$",
         ".@p_damage"
       ],
-      "text" : "You use skill ^0000FF[{0}]^000000 to attack the unidentified creature. {1} ^FF0000[{2}]^000000 damage inflicted."
+      "text" : "[{0}'s Attack]\nYou use skill ^0000FF[{1}]^000000 to attack the unidentified creature. {2} ^FF0000[{3}]^000000 damage inflicted."
     },
     {
       "kind" : "message",
@@ -4213,22 +4221,17 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[{0}'s Attack]"
+      "text" : "[{0}'s Attack]\nYou use your steel-like teeth to bite the unidentified creature, but the frightened creature dodged. He stares at you with strange eyes."
     },
     {
       "kind" : "message",
-      "line" : 3692,
+      "line" : 3688,
       "npc" : "Black Shadow",
       "placeholders" : [
+        "strcharinfo(0)",
         ".@p_damage"
       ],
-      "text" : "You use your well-groomed teeth to bite the unidentified creature hard until your teeth sink into its flesh. ^FF0000[{0}]^000000 damage inflicted."
-    },
-    {
-      "kind" : "message",
-      "line" : 3694,
-      "npc" : "Black Shadow",
-      "text" : "You use your steel-like teeth to bite the unidentified creature, but the frightened creature dodged. He stares at you with strange eyes."
+      "text" : "[{0}'s Attack]\nYou use your well-groomed teeth to bite the unidentified creature hard until your teeth sink into its flesh. ^FF0000[{1}]^000000 damage inflicted."
     },
     {
       "kind" : "message",
@@ -4243,19 +4246,16 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[{0}'s Escape]"
+      "text" : "[{0}'s Escape]\nFortunately, the unidentified creature did not come after you."
     },
     {
       "kind" : "message",
-      "line" : 3702,
+      "line" : 3700,
       "npc" : "Black Shadow",
-      "text" : "Fortunately, the unidentified creature did not come after you."
-    },
-    {
-      "kind" : "message",
-      "line" : 3705,
-      "npc" : "Black Shadow",
-      "text" : "When you attempt to run away, the unidentified creature sees you and attacks. You fail to escape."
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[{0}'s Escape]\nWhen you attempt to run away, the unidentified creature sees you and attacks. You fail to escape."
     },
     {
       "kind" : "message",
@@ -4393,21 +4393,21 @@
     },
     {
       "kind" : "message",
-      "line" : 3809,
+      "line" : 3804,
       "npc" : "Black Shadow",
-      "text" : "The unidentified creature shoots a stream of bath water."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature shoots a stream of bath water."
     },
     {
       "kind" : "message",
-      "line" : 3813,
+      "line" : 3804,
       "npc" : "Black Shadow",
-      "text" : "The unidentified creature dashes at you with great speed. It appears to be attempting a headbutt."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature dashes at you with great speed. It appears to be attempting a headbutt."
     },
     {
       "kind" : "message",
-      "line" : 3817,
+      "line" : 3804,
       "npc" : "Black Shadow",
-      "text" : "The unidentified creature runs at you with its teeth bared. It appears to be attempting to bite."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature runs at you with its teeth bared. It appears to be attempting to bite."
     },
     {
       "kind" : "message",
@@ -4470,178 +4470,130 @@
       "kind" : "message",
       "line" : 3846,
       "npc" : "Black Shadow",
-      "text" : "[Attack of the unidentified creature]"
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature shoots a stream of water at you, but you dodge it easily by tilting your body."
     },
     {
       "kind" : "message",
-      "line" : 3850,
+      "line" : 3846,
       "npc" : "Black Shadow",
-      "text" : "The unidentified creature shoots a stream of water at you, but you dodge it easily by tilting your body."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature shoots a stream of water at you, but you dodge it while picking your nose."
     },
     {
       "kind" : "message",
-      "line" : 3853,
-      "npc" : "Black Shadow",
-      "text" : "The unidentified creature shoots a stream of water at you, but you dodge it while picking your nose."
-    },
-    {
-      "kind" : "message",
-      "line" : 3864,
+      "line" : 3846,
       "npc" : "Black Shadow",
       "placeholders" : [
         ".@str$",
         ".@n_damage"
       ],
-      "text" : "The stream of water hits your {0} squarely. ^FF0000[{1}]^000000 damage received."
+      "text" : "[Attack of the unidentified creature]\nThe stream of water hits your {0} squarely. ^FF0000[{1}]^000000 damage received."
     },
     {
       "kind" : "message",
       "line" : 3871,
       "npc" : "Black Shadow",
-      "text" : "[Attack of the unidentified creature]"
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature dashes at you attempting a headbutt, but you are not the one to succumb to such an attack."
     },
     {
       "kind" : "message",
-      "line" : 3875,
+      "line" : 3871,
       "npc" : "Black Shadow",
-      "text" : "The unidentified creature dashes at you attempting a headbutt, but you are not the one to succumb to such an attack."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature dashes at you attempting a headbutt, but you move slightly to dodge the attack."
     },
     {
       "kind" : "message",
-      "line" : 3878,
+      "line" : 3871,
       "npc" : "Black Shadow",
-      "text" : "The unidentified creature dashes at you attempting a headbutt, but you move slightly to dodge the attack."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature dashes at you attempting a headbutt, but you dodge the attack while picking your nose."
     },
     {
       "kind" : "message",
-      "line" : 3881,
+      "line" : 3871,
       "npc" : "Black Shadow",
-      "text" : "The unidentified creature dashes at you attempting a headbutt, but you dodge the attack while picking your nose."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature dashes at you attempting a headbutt, but you dodge the attack easily."
     },
     {
       "kind" : "message",
-      "line" : 3884,
-      "npc" : "Black Shadow",
-      "text" : "The unidentified creature dashes at you attempting a headbutt, but you dodge the attack easily."
-    },
-    {
-      "kind" : "message",
-      "line" : 3898,
+      "line" : 3871,
       "npc" : "Black Shadow",
       "placeholders" : [
         ".@str$",
         ".@n_damage"
       ],
-      "text" : "The unidentified creature dashes at you and headbutts. {0} ^FF0000[{1}]^000000 damage received."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature dashes at you and headbutts. {0} ^FF0000[{1}]^000000 damage received."
     },
     {
       "kind" : "message",
       "line" : 3905,
       "npc" : "Black Shadow",
-      "text" : "[Attack of the unidentified creature]"
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature runs at you with its teeth bared, but you dodge the attack sneering."
     },
     {
       "kind" : "message",
-      "line" : 3909,
+      "line" : 3905,
       "npc" : "Black Shadow",
-      "text" : "The unidentified creature runs at you with its teeth bared, but you dodge the attack sneering."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature runs at you with its teeth bared, but you dodge the attack by moving slightly."
     },
     {
       "kind" : "message",
-      "line" : 3912,
+      "line" : 3905,
       "npc" : "Black Shadow",
-      "text" : "The unidentified creature runs at you with its teeth bared, but you dodge the attack by moving slightly."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature runs at you with its teeth bared, but you dodge the attack while stretching."
     },
     {
       "kind" : "message",
-      "line" : 3915,
+      "line" : 3905,
       "npc" : "Black Shadow",
-      "text" : "The unidentified creature runs at you with its teeth bared, but you dodge the attack while stretching."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature runs at you with its teeth bared, but you dodge the attack while counting Zenies."
     },
     {
       "kind" : "message",
-      "line" : 3918,
+      "line" : 3905,
       "npc" : "Black Shadow",
-      "text" : "The unidentified creature runs at you with its teeth bared, but you dodge the attack while counting Zenies."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature runs at you with its teeth bared, but you dodge the attack lightly."
     },
     {
       "kind" : "message",
-      "line" : 3921,
-      "npc" : "Black Shadow",
-      "text" : "The unidentified creature runs at you with its teeth bared, but you dodge the attack lightly."
-    },
-    {
-      "kind" : "message",
-      "line" : 3924,
-      "npc" : "Black Shadow",
-      "text" : "The unidentified creature runs at you with its teeth bared, but you dodge the attack sneering."
-    },
-    {
-      "kind" : "message",
-      "line" : 3936,
+      "line" : 3905,
       "npc" : "Black Shadow",
       "placeholders" : [
         ".@str$",
         ".@n_damage"
       ],
-      "text" : "The unidentified creature runs at you with its teeth bared, and bites your {0} ^FF0000[{1}]^000000 damage received."
+      "text" : "[Attack of the unidentified creature]\nThe unidentified creature runs at you with its teeth bared, and bites your {0} ^FF0000[{1}]^000000 damage received."
     },
     {
       "kind" : "message",
       "line" : 3953,
       "npc" : "Black Shadow",
       "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "text" : "[Defense of {0}]"
-    },
-    {
-      "kind" : "message",
-      "line" : 3968,
-      "npc" : "Black Shadow",
-      "placeholders" : [
+        "strcharinfo(0)",
         ".@str$",
         ".@n_damage"
       ],
-      "text" : "{0} ^FF0000[{1}]^000000 damage received."
+      "text" : "[Defense of {0}]\n{1} ^FF0000[{2}]^000000 damage received."
     },
     {
       "kind" : "message",
       "line" : 3978,
       "npc" : "Black Shadow",
       "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "text" : "[Defense of {0}]"
-    },
-    {
-      "kind" : "message",
-      "line" : 3993,
-      "npc" : "Black Shadow",
-      "placeholders" : [
+        "strcharinfo(0)",
         ".@str$",
         ".@n_damage"
       ],
-      "text" : "{0} ^FF0000[{1}]^000000 damage received."
+      "text" : "[Defense of {0}]\n{1} ^FF0000[{2}]^000000 damage received."
     },
     {
       "kind" : "message",
       "line" : 4002,
       "npc" : "Black Shadow",
       "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "text" : "[Defense of {0}]"
-    },
-    {
-      "kind" : "message",
-      "line" : 4017,
-      "npc" : "Black Shadow",
-      "placeholders" : [
+        "strcharinfo(0)",
         ".@str$",
         ".@n_damage"
       ],
-      "text" : "The unidentified creature runs at you with its teeth bared, {0} ^FF0000[{1}]^000000 damage received."
+      "text" : "[Defense of {0}]\nThe unidentified creature runs at you with its teeth bared, {1} ^FF0000[{2}]^000000 damage received."
     },
     {
       "kind" : "message",
@@ -4656,19 +4608,16 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[{0}'s Escape]"
+      "text" : "[{0}'s Escape]\nFortunately ^BF2C15Unidentified creature^000000\ndid not come after you."
     },
     {
       "kind" : "message",
-      "line" : 4027,
+      "line" : 4025,
       "npc" : "Black Shadow",
-      "text" : "Fortunately ^BF2C15Unidentified creature^000000\ndid not come after you."
-    },
-    {
-      "kind" : "message",
-      "line" : 4031,
-      "npc" : "Black Shadow",
-      "text" : "When you attempt to run away, the unidentified creature sees you and attacks.\nYou fail to escape."
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[{0}'s Escape]\nWhen you attempt to run away, the unidentified creature sees you and attacks.\nYou fail to escape."
     },
     {
       "kind" : "message",
@@ -5892,19 +5841,13 @@
       "kind" : "message",
       "line" : 5088,
       "npc" : "Initializing Mora Sanjo",
-      "text" : "Enter your password"
+      "text" : "Enter your password\nHehe"
     },
     {
       "kind" : "message",
-      "line" : 5090,
+      "line" : 5088,
       "npc" : "Initializing Mora Sanjo",
-      "text" : "Hehe"
-    },
-    {
-      "kind" : "message",
-      "line" : 5093,
-      "npc" : "Initializing Mora Sanjo",
-      "text" : "[Initialization]\n14.1 Initializing all quest window include related daily quest and map and so on"
+      "text" : "Enter your password\n[Initialization]\n14.1 Initializing all quest window include related daily quest and map and so on"
     },
     {
       "kind" : "message",

@@ -24,15 +24,21 @@
     },
     {
       "kind" : "message",
-      "line" : 34,
+      "line" : 32,
       "npc" : "Disguise Event",
-      "text" : "The Event is currently: [^0000FFON^000000]\nWould you like to turn it OFF?"
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThe Event is currently: [^FF0000OFF^000000]\nWould you like to turn it ON?"
     },
     {
       "kind" : "message",
-      "line" : 37,
+      "line" : 32,
       "npc" : "Disguise Event",
-      "text" : "The Event is currently: [^FF0000OFF^000000]\nWould you like to turn it ON?"
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThe Event is currently: [^0000FFON^000000]\nWould you like to turn it OFF?"
     },
     {
       "kind" : "option",
@@ -125,31 +131,52 @@
     },
     {
       "kind" : "message",
-      "line" : 87,
-      "npc" : "Disguise Event",
-      "text" : "That item does not exist. Please try again."
-    },
-    {
-      "kind" : "message",
-      "line" : 91,
-      "npc" : "Disguise Event",
-      "text" : "Input the amount to be given."
-    },
-    {
-      "kind" : "message",
-      "line" : 96,
-      "npc" : "Disguise Event",
-      "text" : "That amount is invalid. Using default amount of 1."
-    },
-    {
-      "kind" : "message",
-      "line" : 102,
+      "line" : 85,
       "npc" : "Disguise Event",
       "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThat item does not exist. Please try again."
+    },
+    {
+      "kind" : "message",
+      "line" : 85,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nInput the amount to be given."
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThat amount is invalid. Using default amount of 1."
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$",
         ".PrizeAmt",
         "getitemname(.Prize)"
       ],
-      "text" : "The Prize has been changed successfully.\nPrize: {0}x [^0000FF{1}^000000]"
+      "text" : "{0}\nThe Prize has been changed successfully.\nPrize: {1}x [^0000FF{2}^000000]"
+    },
+    {
+      "kind" : "message",
+      "line" : 99,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$",
+        ".PrizeAmt",
+        "getitemname(.Prize)"
+      ],
+      "text" : "{0}\nThe Prize has been changed successfully.\nPrize: {1}x [^0000FF{2}^000000]"
     },
     {
       "kind" : "message",

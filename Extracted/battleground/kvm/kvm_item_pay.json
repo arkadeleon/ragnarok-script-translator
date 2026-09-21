@@ -513,89 +513,220 @@
       "kind" : "message",
       "line" : 250,
       "npc" : "KVM Logistic Officer",
-      "text" : "[Logistics]"
-    },
-    {
-      "kind" : "message",
-      "line" : 253,
-      "npc" : "KVM Logistic Officer",
-      "placeholders" : [
-        "getitemname(.@item_id)"
-      ],
-      "text" : "You have selected ^ff0000{0}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 255,
-      "npc" : "KVM Logistic Officer",
-      "placeholders" : [
-        "callfunc(\"F_GetWeaponType\",.@item_id)",
-        "getitemname(.@item_id)"
-      ],
-      "text" : "There is only one {0}: {1}."
-    },
-    {
-      "kind" : "message",
-      "line" : 257,
-      "npc" : "KVM Logistic Officer",
-      "placeholders" : [
-        "callfunc(\"F_GetArmorType\",.@item_id)",
-        "getitemname(.@item_id)"
-      ],
-      "text" : "You have selected '{0}'.\nThe armor for one whose Lvl is more than 80 is: ^ff0000{1}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 261,
-      "npc" : "KVM Logistic Officer",
-      "placeholders" : [
-        "callfunc(\"F_GetArmorType\",.@item_id)",
-        "callfunc(\"F_GetArmorType\",.@item_id)",
-        "getitemname(.@item_id)"
-      ],
-      "text" : "You have selected 'Mass-Production {0}'.\nThere is only one Mass-Production {1}: ^ff0000{2}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 265,
-      "npc" : "KVM Logistic Officer",
-      "placeholders" : [
-        "callfunc(\"F_GetArmorType\",.@item_id)",
-        "callfunc(\"F_GetArmorType\",.@item_id)",
-        "getitemname(.@item_id)"
-      ],
-      "text" : "You have selected 'Popularized {0}'.\nThere is only one Popularized {1}: ^ff0000{2}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 270,
-      "npc" : "KVM Logistic Officer",
-      "placeholders" : [
-        ".@name$",
-        "kvm_point"
-      ],
-      "text" : "It requires ^0000ff2,000^000000 KVM Points, and {0}, your points are: ^580080{1}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 272,
-      "npc" : "KVM Logistic Officer",
-      "placeholders" : [
-        ".@name$",
-        "kvm_point"
-      ],
-      "text" : "It requires ^0000ff1,200^000000 KVM Points, and {0}, your points are: ^580080{1}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 274,
-      "npc" : "KVM Logistic Officer",
       "placeholders" : [
         ".@prices[.@req_setting]",
         ".@name$",
         "kvm_point"
       ],
-      "text" : "It requires ^0000ff{0}^000000 KVM Points, and {1}, your points are: ^580080{2}^000000."
+      "text" : "[Logistics]\nIt requires ^0000ff{0}^000000 KVM Points, and {1}, your points are: ^580080{2}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@prices[.@req_setting]",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected 'Popularized {0}'.\nThere is only one Popularized {1}: ^ff0000{2}^000000.\nIt requires ^0000ff{3}^000000 KVM Points, and {4}, your points are: ^580080{5}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@prices[.@req_setting]",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected 'Mass-Production {0}'.\nThere is only one Mass-Production {1}: ^ff0000{2}^000000.\nIt requires ^0000ff{3}^000000 KVM Points, and {4}, your points are: ^580080{5}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@prices[.@req_setting]",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected '{0}'.\nThe armor for one whose Lvl is more than 80 is: ^ff0000{1}^000000.\nIt requires ^0000ff{2}^000000 KVM Points, and {3}, your points are: ^580080{4}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetWeaponType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@prices[.@req_setting]",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nThere is only one {0}: {1}.\nIt requires ^0000ff{2}^000000 KVM Points, and {3}, your points are: ^580080{4}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@prices[.@req_setting]",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected ^ff0000{0}^000000.\nIt requires ^0000ff{1}^000000 KVM Points, and {2}, your points are: ^580080{3}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nIt requires ^0000ff1,200^000000 KVM Points, and {0}, your points are: ^580080{1}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected 'Popularized {0}'.\nThere is only one Popularized {1}: ^ff0000{2}^000000.\nIt requires ^0000ff1,200^000000 KVM Points, and {3}, your points are: ^580080{4}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected 'Mass-Production {0}'.\nThere is only one Mass-Production {1}: ^ff0000{2}^000000.\nIt requires ^0000ff1,200^000000 KVM Points, and {3}, your points are: ^580080{4}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected '{0}'.\nThe armor for one whose Lvl is more than 80 is: ^ff0000{1}^000000.\nIt requires ^0000ff1,200^000000 KVM Points, and {2}, your points are: ^580080{3}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetWeaponType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nThere is only one {0}: {1}.\nIt requires ^0000ff1,200^000000 KVM Points, and {2}, your points are: ^580080{3}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected ^ff0000{0}^000000.\nIt requires ^0000ff1,200^000000 KVM Points, and {1}, your points are: ^580080{2}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nIt requires ^0000ff2,000^000000 KVM Points, and {0}, your points are: ^580080{1}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected 'Popularized {0}'.\nThere is only one Popularized {1}: ^ff0000{2}^000000.\nIt requires ^0000ff2,000^000000 KVM Points, and {3}, your points are: ^580080{4}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected 'Mass-Production {0}'.\nThere is only one Mass-Production {1}: ^ff0000{2}^000000.\nIt requires ^0000ff2,000^000000 KVM Points, and {3}, your points are: ^580080{4}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected '{0}'.\nThe armor for one whose Lvl is more than 80 is: ^ff0000{1}^000000.\nIt requires ^0000ff2,000^000000 KVM Points, and {2}, your points are: ^580080{3}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetWeaponType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nThere is only one {0}: {1}.\nIt requires ^0000ff2,000^000000 KVM Points, and {2}, your points are: ^580080{3}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected ^ff0000{0}^000000.\nIt requires ^0000ff2,000^000000 KVM Points, and {1}, your points are: ^580080{2}^000000."
     },
     {
       "kind" : "message",
@@ -626,74 +757,74 @@
       "line" : 288,
       "npc" : "KVM Logistic Officer",
       "placeholders" : [
-        "getitemname(.@item_id)"
-      ],
-      "text" : "[Logistics]\nYou have purchased a {0}."
-    },
-    {
-      "kind" : "message",
-      "line" : 291,
-      "npc" : "KVM Logistic Officer",
-      "placeholders" : [
-        ".@req_setting",
-        "kvm_point"
-      ],
-      "text" : "Your KVM Points are reduced by ^0000ff{0}^000000 points, your KVM Points are now ^580080{1}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 293,
-      "npc" : "KVM Logistic Officer",
-      "placeholders" : [
-        "kvm_point"
-      ],
-      "text" : "Your KVM Points are reduced by ^0000ff1,200^000000 points, your KVM Points are now ^580080{0}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 295,
-      "npc" : "KVM Logistic Officer",
-      "placeholders" : [
+        "getitemname(.@item_id)",
         ".@prices[.@req_setting]",
         "kvm_point"
       ],
-      "text" : "Your KVM Points are reduced by ^0000ff{0}^000000 points, your KVM Points are now ^580080{1}^000000."
+      "text" : "[Logistics]\nYou have purchased a {0}.\nYour KVM Points are reduced by ^0000ff{1}^000000 points, your KVM Points are now ^580080{2}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 288,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_setting",
+        "kvm_point",
+        ".@prices[.@req_setting]",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have purchased a {0}.\nYour KVM Points are reduced by ^0000ff{1}^000000 points, your KVM Points are now ^580080{2}^000000.\nYour KVM Points are reduced by ^0000ff{3}^000000 points, your KVM Points are now ^580080{4}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 288,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have purchased a {0}.\nYour KVM Points are reduced by ^0000ff1,200^000000 points, your KVM Points are now ^580080{1}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 288,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_setting",
+        "kvm_point",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have purchased a {0}.\nYour KVM Points are reduced by ^0000ff{1}^000000 points, your KVM Points are now ^580080{2}^000000.\nYour KVM Points are reduced by ^0000ff1,200^000000 points, your KVM Points are now ^580080{3}^000000."
     },
     {
       "kind" : "message",
       "line" : 298,
       "npc" : "KVM Logistic Officer",
-      "text" : "[Logistics]"
-    },
-    {
-      "kind" : "message",
-      "line" : 300,
-      "npc" : "KVM Logistic Officer",
-      "text" : "You need ^0000ff2,000^000000 KVM Points to purchase this item."
-    },
-    {
-      "kind" : "message",
-      "line" : 302,
-      "npc" : "KVM Logistic Officer",
-      "text" : "You need ^0000ff1,200^000000 KVM Points to purchase this item."
-    },
-    {
-      "kind" : "message",
-      "line" : 304,
-      "npc" : "KVM Logistic Officer",
       "placeholders" : [
-        ".@prices[.@req_setting]"
+        ".@prices[.@req_setting]",
+        "kvm_point"
       ],
-      "text" : "You need ^0000ff{0}^000000 KVM Points to purchase this item."
+      "text" : "[Logistics]\nYou need ^0000ff{0}^000000 KVM Points to purchase this item.\nHowever, your KVM Points are now ^580080{1}^000000.\nWhich are not enough to buy it.\nWhen you get enough points, please come back again."
     },
     {
       "kind" : "message",
-      "line" : 305,
+      "line" : 298,
       "npc" : "KVM Logistic Officer",
       "placeholders" : [
         "kvm_point"
       ],
-      "text" : "However, your KVM Points are now ^580080{0}^000000.\nWhich are not enough to buy it.\nWhen you get enough points, please come back again."
+      "text" : "[Logistics]\nYou need ^0000ff1,200^000000 KVM Points to purchase this item.\nHowever, your KVM Points are now ^580080{0}^000000.\nWhich are not enough to buy it.\nWhen you get enough points, please come back again."
+    },
+    {
+      "kind" : "message",
+      "line" : 298,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou need ^0000ff2,000^000000 KVM Points to purchase this item.\nHowever, your KVM Points are now ^580080{0}^000000.\nWhich are not enough to buy it.\nWhen you get enough points, please come back again."
     }
   ]
 }

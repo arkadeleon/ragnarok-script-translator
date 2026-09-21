@@ -1325,23 +1325,17 @@
       "kind" : "message",
       "line" : 786,
       "npc" : "Kafra Service",
-      "text" : "[Kafra Pavianne]\nLet's see..."
-    },
-    {
-      "kind" : "message",
-      "line" : 789,
-      "npc" : "Kafra Service",
-      "text" : "You have 1 Kafra Pass.\nYou can sell that pass to us for 2000 zeny. Would you like to sell this Kafra Pass back to the Kafra Corporation?"
-    },
-    {
-      "kind" : "message",
-      "line" : 793,
-      "npc" : "Kafra Service",
       "placeholders" : [
         "countitem(1084)",
         ".@kafrapassmoney"
       ],
-      "text" : "You have {0} Kafra Passes.\nIf you want to sell them to us, you will receive {1} zeny. Would you like to sell these back to the Kafra Corporation?"
+      "text" : "[Kafra Pavianne]\nLet's see...\nYou have {0} Kafra Passes.\nIf you want to sell them to us, you will receive {1} zeny. Would you like to sell these back to the Kafra Corporation?"
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Kafra Service",
+      "text" : "[Kafra Pavianne]\nLet's see...\nYou have 1 Kafra Pass.\nYou can sell that pass to us for 2000 zeny. Would you like to sell this Kafra Pass back to the Kafra Corporation?"
     },
     {
       "kind" : "option",
@@ -1776,29 +1770,23 @@
       "kind" : "message",
       "line" : 1075,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]"
+      "text" : "[Kafra Employee]\nUm, but I don't think\nyou're able to carry\nvery much right now.\nIt looks like you have\ntoo much stuff inside\nyour inventory."
     },
     {
       "kind" : "message",
-      "line" : 1077,
+      "line" : 1075,
       "npc" : "Kafra Employee",
-      "text" : "Um, but I don't think\nyou're able to carry\nvery much right now.\nIt looks like you have\ntoo much stuff inside\nyour inventory."
+      "placeholders" : [
+        "strcharinfo(0)",
+        ".@total"
+      ],
+      "text" : "[Kafra Employee]\nLet's see...\n{0}...\nAh, you have a total of\n{1} Special Reserve Points.\nNow what you would like\nto exchange them for?"
     },
     {
       "kind" : "message",
       "line" : 1084,
       "npc" : "Kafra Employee",
       "text" : "[Kafra Employee]\nPlease put some of\nyour things into Kafra\nStorage. To use this\nservice, we ask that you\nhave about ^FF00001,100^000000 free units\nof weight in your inventory."
-    },
-    {
-      "kind" : "message",
-      "line" : 1094,
-      "npc" : "Kafra Employee",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@total"
-      ],
-      "text" : "Let's see...\n{0}...\nAh, you have a total of\n{1} Special Reserve Points.\nNow what you would like\nto exchange them for?"
     },
     {
       "kind" : "option",
@@ -1942,25 +1930,19 @@
       "kind" : "message",
       "line" : 1111,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]"
-    },
-    {
-      "kind" : "message",
-      "line" : 1116,
-      "npc" : "Kafra Employee",
       "placeholders" : [
         ".@points"
       ],
-      "text" : "I'm sorry, but you don't\nenough Special Reserve\nPoints to exchange for this\nreward. You need at least\n^0000FF{0}^000000 more points."
+      "text" : "[Kafra Employee]\nI'm sorry, but you don't\nenough Special Reserve\nPoints to exchange for this\nreward. You need at least\n^0000FF{0}^000000 more points."
     },
     {
       "kind" : "message",
-      "line" : 1124,
+      "line" : 1111,
       "npc" : "Kafra Employee",
       "placeholders" : [
         ".@total"
       ],
-      "text" : "After receiving this\nreward, you'll have\n^AC0000{0}^000000 Special Reserve\nPoints left. Would you\nlike to redeem your\npoints for this reward?"
+      "text" : "[Kafra Employee]\nAfter receiving this\nreward, you'll have\n^AC0000{0}^000000 Special Reserve\nPoints left. Would you\nlike to redeem your\npoints for this reward?"
     },
     {
       "kind" : "option",
@@ -1978,19 +1960,13 @@
       "kind" : "message",
       "line" : 1136,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]"
+      "text" : "[Kafra Employee]\nUh oh...\nIt's that time again~\nIt's Kafra Lottery Time!\nLet's see how good your\nluck is today. Ready?"
     },
     {
       "kind" : "message",
-      "line" : 1138,
+      "line" : 1136,
       "npc" : "Kafra Employee",
-      "text" : "^0000FF1st Lottery Chance!!^000000\nIt's time to test out\nyour luck. Get ready!"
-    },
-    {
-      "kind" : "message",
-      "line" : 1143,
-      "npc" : "Kafra Employee",
-      "text" : "Uh oh...\nIt's that time again~\nIt's Kafra Lottery Time!\nLet's see how good your\nluck is today. Ready?"
+      "text" : "[Kafra Employee]\n^0000FF1st Lottery Chance!!^000000\nIt's time to test out\nyour luck. Get ready!"
     },
     {
       "kind" : "message",
@@ -2026,13 +2002,19 @@
       "kind" : "message",
       "line" : 1181,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]"
+      "text" : "[Kafra Employee]\nOoh, something\ncame out! Let's see\nwhat you've won~\nOh goodness, it's...!"
     },
     {
       "kind" : "message",
-      "line" : 1183,
+      "line" : 1181,
       "npc" : "Kafra Employee",
-      "text" : "Ooh, something\ncame out! Let's see\nwhat you've won~\nOh goodness, it's...!"
+      "text" : "[Kafra Employee]\nIt looks like\nsomething came\nout! What could it be?\nOoh, you just won..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1188,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nWhoa...!\nFirst Prize!\nYour very own"
     },
     {
       "kind" : "message",
@@ -2042,27 +2024,21 @@
     },
     {
       "kind" : "message",
-      "line" : 1191,
+      "line" : 1188,
       "npc" : "Kafra Employee",
-      "text" : "Hm? F-fourth prize?\nYou got the 4th prize!!\nWell, that's not too bad.\nThat's 100 Potatoes!\nWhen they're sliced, then fried, they make a great snack when\ndrinking with your friends~"
+      "text" : "[Kafra Employee]\nSecond Prize!\nA brand new shiny pair\nof Shoes! Its elegant design\nand durability comes with our\nhighest recommendation. We\nhope you enjoy your new shoes~"
     },
     {
       "kind" : "message",
-      "line" : 1200,
+      "line" : 1188,
       "npc" : "Kafra Employee",
-      "text" : "It's Third Prize!\n4 Butterfly Wings~\nWhen you're in trouble,\njust wave one of these\nto take you away...\nTo your safe place."
+      "text" : "[Kafra Employee]\nIt's Third Prize!\n4 Butterfly Wings~\nWhen you're in trouble,\njust wave one of these\nto take you away...\nTo your safe place."
     },
     {
       "kind" : "message",
-      "line" : 1209,
+      "line" : 1188,
       "npc" : "Kafra Employee",
-      "text" : "Second Prize!\nA brand new shiny pair\nof Shoes! Its elegant design\nand durability comes with our\nhighest recommendation. We\nhope you enjoy your new shoes~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1218,
-      "npc" : "Kafra Employee",
-      "text" : "Whoa...!\nFirst Prize!\nYour very own"
+      "text" : "[Kafra Employee]\nHm? F-fourth prize?\nYou got the 4th prize!!\nWell, that's not too bad.\nThat's 100 Potatoes!\nWhen they're sliced, then fried, they make a great snack when\ndrinking with your friends~"
     },
     {
       "kind" : "message",
@@ -2072,39 +2048,33 @@
     },
     {
       "kind" : "message",
-      "line" : 1228,
-      "npc" : "Kafra Employee",
-      "text" : "It looks like\nsomething came\nout! What could it be?\nOoh, you just won..."
-    },
-    {
-      "kind" : "message",
       "line" : 1233,
       "npc" : "Kafra Employee",
       "text" : "[Kafra Employee]"
     },
     {
       "kind" : "message",
-      "line" : 1236,
+      "line" : 1233,
       "npc" : "Kafra Employee",
-      "text" : "F-fourth prize...?!\nBoooo! 100 Red Potions.\nWait.. That's actually pretty\ngood! Yaaaaaay~ Now you\ncan look like a high roller by\nsharing them with your friends!"
+      "text" : "[Kafra Employee]\nOh wow...!\nFirst Prize!\n3 Blue Potions~\nWith enough of these,\nyou can use your skills\nwith a bit more impunity~"
     },
     {
       "kind" : "message",
-      "line" : 1245,
+      "line" : 1233,
       "npc" : "Kafra Employee",
-      "text" : "Third Prize!\nYour very own pair\nof suave Sunglasses!\nIt'll give you an edge in\nthe war of looking cool,\nor when playing poker~"
+      "text" : "[Kafra Employee]\nSecond Prize!\nA... Cap? Hmmm,\nthese have pretty good\nDefense, but I'm not so\nsure of how fashionable\nthis hat is. Oh well..."
     },
     {
       "kind" : "message",
-      "line" : 1254,
+      "line" : 1233,
       "npc" : "Kafra Employee",
-      "text" : "Second Prize!\nA... Cap? Hmmm,\nthese have pretty good\nDefense, but I'm not so\nsure of how fashionable\nthis hat is. Oh well..."
+      "text" : "[Kafra Employee]\nThird Prize!\nYour very own pair\nof suave Sunglasses!\nIt'll give you an edge in\nthe war of looking cool,\nor when playing poker~"
     },
     {
       "kind" : "message",
-      "line" : 1263,
+      "line" : 1233,
       "npc" : "Kafra Employee",
-      "text" : "Oh wow...!\nFirst Prize!\n3 Blue Potions~\nWith enough of these,\nyou can use your skills\nwith a bit more impunity~"
+      "text" : "[Kafra Employee]\nF-fourth prize...?!\nBoooo! 100 Red Potions.\nWait.. That's actually pretty\ngood! Yaaaaaay~ Now you\ncan look like a high roller by\nsharing them with your friends!"
     },
     {
       "kind" : "message",
@@ -2149,28 +2119,22 @@
       "kind" : "message",
       "line" : 1298,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]"
+      "text" : "[Kafra Employee]\n....Oh dear... What are you carrying so many things...?\nI don't think you can keep the received items~"
     },
     {
       "kind" : "message",
-      "line" : 1300,
+      "line" : 1298,
       "npc" : "Kafra Employee",
-      "text" : "....Oh dear... What are you carrying so many things...?\nI don't think you can keep the received items~"
+      "placeholders" : [
+        "RESRVPTS"
+      ],
+      "text" : "[Kafra Employee]\nYour special reserve points are ^FF0000{0}^000000~\nChoose a category to test your luck."
     },
     {
       "kind" : "message",
       "line" : 1303,
       "npc" : "Kafra Employee",
       "text" : "[Kafra Employee]\nI'm sorry~ but~\nPlease, visit Kafra warehouse and store your items until you have free space of ^0000FF1100^000000 and come back.\nI apologize for inconvenience~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1309,
-      "npc" : "Kafra Employee",
-      "placeholders" : [
-        "RESRVPTS"
-      ],
-      "text" : "Your special reserve points are ^FF0000{0}^000000~\nChoose a category to test your luck."
     },
     {
       "kind" : "option",
@@ -2200,22 +2164,16 @@
       "kind" : "message",
       "line" : 1315,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]"
+      "text" : "[Kafra Employee]\nI'm sorry~ dear~\nYou can't choose the selected chance because you do not have enough special reserve points.\nPlease check your special reserve points and choose another one~"
     },
     {
       "kind" : "message",
-      "line" : 1317,
-      "npc" : "Kafra Employee",
-      "text" : "I'm sorry~ dear~\nYou can't choose the selected chance because you do not have enough special reserve points.\nPlease check your special reserve points and choose another one~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1323,
+      "line" : 1315,
       "npc" : "Kafra Employee",
       "placeholders" : [
         "F_GetNumSuffix(.@s)"
       ],
-      "text" : "^0000FF{0} Lottery Chance!!^000000"
+      "text" : "[Kafra Employee]\n^0000FF{0} Lottery Chance!!^000000"
     },
     {
       "kind" : "message",
@@ -2263,157 +2221,151 @@
       "kind" : "message",
       "line" : 1346,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]"
+      "text" : "[Kafra Employee]\nWhat a pity!\nYou got the 4th prize!!\nThe prize is ^00FF00150 Red Potions~^000000"
     },
     {
       "kind" : "message",
-      "line" : 1351,
+      "line" : 1346,
       "npc" : "Kafra Employee",
-      "text" : "What a pity!\nYou got the 4th prize!!\nThe prize is ^00FF00150 Red Potions~^000000"
+      "text" : "[Kafra Employee]\nThe 3rd~~\nThe 3rd prize!\nThe prize is ^00FF0015 Concentration Potion~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nThe 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF003 Blue Potions~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nWhoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF001 Yggdrasil Seed~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nWhat a pity!\nYou got the 4th prize!!\nThe prize is ^00FF0010 White Potions~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nThe 3rd~~\nThe 3rd prize!\nThe prize is ^00FF0015 Awakening Potions~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nThe 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF0010 Berserk Potions~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nWhoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF001 Yggdrasilberry~^000000\nThe prize is ^00FF001 Yggdrasil Seed~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nWhat a pity!\nYou got the 4th prize!!\nThe prize is ^00FF0030 White Potions~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nThe 3rd~~\nThe 3rd prize!\nThe prize is ^00FF0010 Blue Potions~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nThe 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF001 Yggdrasil Seed~^000000\nThe prize is ^00FF0010 Royal Jellies~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nWhoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF003 Yggdrasilberries~^000000\nThe prize is ^00FF002 Yggdrasil Seeds~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nCongratulations~~"
     },
     {
       "kind" : "message",
       "line" : 1355,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nWhoa~ 150 potions! It is enough to share with your friends~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1360,
-      "npc" : "Kafra Employee",
-      "text" : "The 3rd~~\nThe 3rd prize!\nThe prize is ^00FF0015 Concentration Potion~^000000"
+      "text" : "[Kafra Employee]\nWhoa~ 150 potions! It is enough to share with your friends~\nCongratulations~~"
     },
     {
       "kind" : "message",
       "line" : 1364,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nWe always use this when we need to concentrate on something.\nHowever, overdose is not good for your body~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1370,
-      "npc" : "Kafra Employee",
-      "text" : "The 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF003 Blue Potions~^000000"
+      "text" : "[Kafra Employee]\nWe always use this when we need to concentrate on something.\nHowever, overdose is not good for your body~\nCongratulations~~"
     },
     {
       "kind" : "message",
       "line" : 1374,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nTry these when your spiritual power is low~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1379,
-      "npc" : "Kafra Employee",
-      "text" : "Whoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF001 Yggdrasil Seed~^000000"
+      "text" : "[Kafra Employee]\nTry these when your spiritual power is low~\nCongratulations~~"
     },
     {
       "kind" : "message",
       "line" : 1383,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nI guess you spent entire luck for this lottery chance~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1390,
-      "npc" : "Kafra Employee",
-      "text" : "What a pity!\nYou got the 4th prize!!\nThe prize is ^00FF0010 White Potions~^000000"
+      "text" : "[Kafra Employee]\nI guess you spent entire luck for this lottery chance~\nCongratulations~~"
     },
     {
       "kind" : "message",
       "line" : 1394,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nThe greatest among potions! Use it before you fall into faint~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1399,
-      "npc" : "Kafra Employee",
-      "text" : "The 3rd~~\nThe 3rd prize!\nThe prize is ^00FF0015 Awakening Potions~^000000"
+      "text" : "[Kafra Employee]\nThe greatest among potions! Use it before you fall into faint~\nCongratulations~~"
     },
     {
       "kind" : "message",
       "line" : 1403,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nAn awakening potion is better than a concentration potion!\nOverdose is not good for your body~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1409,
-      "npc" : "Kafra Employee",
-      "text" : "The 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF0010 Berserk Potions~^000000"
+      "text" : "[Kafra Employee]\nAn awakening potion is better than a concentration potion!\nOverdose is not good for your body~\nCongratulations~~"
     },
     {
       "kind" : "message",
       "line" : 1413,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nOverdose may cause madness~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1419,
-      "npc" : "Kafra Employee",
-      "text" : "Whoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF001 Yggdrasilberry~^000000\nThe prize is ^00FF001 Yggdrasil Seed~^000000"
+      "text" : "[Kafra Employee]\nOverdose may cause madness~\nCongratulations~~"
     },
     {
       "kind" : "message",
       "line" : 1424,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nI guess you spent entire luck for this lottery chance~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1431,
-      "npc" : "Kafra Employee",
-      "text" : "What a pity!\nYou got the 4th prize!!\nThe prize is ^00FF0030 White Potions~^000000"
+      "text" : "[Kafra Employee]\nI guess you spent entire luck for this lottery chance~\nCongratulations~~"
     },
     {
       "kind" : "message",
       "line" : 1435,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nThe greatest among potions! Use it before you fall into faint~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1440,
-      "npc" : "Kafra Employee",
-      "text" : "The 3rd~~\nThe 3rd prize!\nThe prize is ^00FF0010 Blue Potions~^000000"
+      "text" : "[Kafra Employee]\nThe greatest among potions! Use it before you fall into faint~\nCongratulations~~"
     },
     {
       "kind" : "message",
       "line" : 1444,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nTry these when your spiritual power is low~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1450,
-      "npc" : "Kafra Employee",
-      "text" : "The 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF001 Yggdrasil Seed~^000000\nThe prize is ^00FF0010 Royal Jellies~^000000"
+      "text" : "[Kafra Employee]\nTry these when your spiritual power is low~\nCongratulations~~"
     },
     {
       "kind" : "message",
       "line" : 1455,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nWhat a gift set~\nThese are very healthy food so ~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1462,
-      "npc" : "Kafra Employee",
-      "text" : "Whoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF003 Yggdrasilberries~^000000\nThe prize is ^00FF002 Yggdrasil Seeds~^000000"
+      "text" : "[Kafra Employee]\nWhat a gift set~\nThese are very healthy food so ~\nCongratulations~~"
     },
     {
       "kind" : "message",
       "line" : 1467,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nI guess you spent entire luck for this lottery chance~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1471,
-      "npc" : "Kafra Employee",
-      "text" : "Congratulations~~"
+      "text" : "[Kafra Employee]\nI guess you spent entire luck for this lottery chance~\nCongratulations~~"
     },
     {
       "kind" : "message",

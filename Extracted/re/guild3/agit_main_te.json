@@ -5,16 +5,19 @@
       "kind" : "message",
       "line" : 218,
       "npc" : "Kafra_Staff_TE",
-      "text" : "[Kafra Employee]"
+      "placeholders" : [
+        ".@guildname$"
+      ],
+      "text" : "[Kafra Employee]\nWelcome. ^ff0000{0}^000000 Member.\nThe Kafra Corporation will stay with you wherever you go."
     },
     {
       "kind" : "message",
-      "line" : 220,
+      "line" : 218,
       "npc" : "Kafra_Staff_TE",
       "placeholders" : [
         ".@guildname$"
       ],
-      "text" : "Welcome. ^ff0000{0}^000000 Member.\nThe Kafra Corporation will stay with you wherever you go."
+      "text" : "[Kafra Employee]\nI am instructed to only offer my services to the ^ff0000{0}^000000 Guild. Please try another Kafra Employee around here. Sorry for the inconvenience."
     },
     {
       "kind" : "option",
@@ -56,25 +59,19 @@
       "kind" : "message",
       "line" : 248,
       "npc" : "Kafra_Staff_TE",
-      "text" : "[Kafra Employee]"
+      "text" : "[Kafra Employee]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths and Alchemists."
     },
     {
       "kind" : "message",
-      "line" : 250,
+      "line" : 248,
       "npc" : "Kafra_Staff_TE",
-      "text" : "I'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths and Alchemists."
+      "text" : "[Kafra Employee]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time."
     },
     {
       "kind" : "message",
-      "line" : 257,
+      "line" : 248,
       "npc" : "Kafra_Staff_TE",
-      "text" : "You already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time."
-    },
-    {
-      "kind" : "message",
-      "line" : 265,
-      "npc" : "Kafra_Staff_TE",
-      "text" : "The Pushcart rental\nfee is 800 zeny. Would\nyou like to rent a Pushcart?"
+      "text" : "[Kafra Employee]\nThe Pushcart rental\nfee is 800 zeny. Would\nyou like to rent a Pushcart?"
     },
     {
       "kind" : "option",
@@ -99,15 +96,6 @@
       "line" : 287,
       "npc" : "Kafra_Staff_TE",
       "text" : "[Kafra Employee]\nWe, here at Kafra Corporation,\nare always endeavoring to provide you with the best services. We hope that we meet your adventuring needs and standards of excellence."
-    },
-    {
-      "kind" : "message",
-      "line" : 295,
-      "npc" : "Kafra_Staff_TE",
-      "placeholders" : [
-        ".@guildname$"
-      ],
-      "text" : "I am instructed to only offer my services to the ^ff0000{0}^000000 Guild. Please try another Kafra Employee around here. Sorry for the inconvenience."
     },
     {
       "kind" : "message",
@@ -141,28 +129,33 @@
     },
     {
       "kind" : "message",
-      "line" : 343,
+      "line" : 341,
       "npc" : "invest_TE",
-      "text" : "I have been waiting for a master to fulfill my destiny.\nBrave soul... fate will guide you towards your future..."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nI have been waiting for a master to fulfill my destiny.\nBrave soul... fate will guide you towards your future..."
     },
     {
       "kind" : "message",
-      "line" : 348,
+      "line" : 341,
       "npc" : "invest_TE",
       "placeholders" : [
+        ".@npc_name$",
         ".@guildmaster$"
       ],
-      "text" : "No matter how much you pester me, I'll still follow my master ^ff0000{0}^000000. Where are the Guardians?! Send these ruffians away right now!"
+      "text" : "{0}\nNo matter how much you pester me, I'll still follow my master ^ff0000{1}^000000. Where are the Guardians?! Send these ruffians away right now!"
     },
     {
       "kind" : "message",
-      "line" : 351,
+      "line" : 341,
       "npc" : "invest_TE",
       "placeholders" : [
+        ".@npc_name$",
         "strcharinfo(0)",
         "strnpcinfo(1)"
       ],
-      "text" : "Welcome. My honorable master, ^ff0000{0}^000000...\nYour humble servent, {1}, is here to serve you."
+      "text" : "{0}\nWelcome. My honorable master, ^ff0000{1}^000000...\nYour humble servent, {2}, is here to serve you."
     },
     {
       "kind" : "option",
@@ -206,42 +199,47 @@
       "npc" : "invest_TE",
       "placeholders" : [
         ".@npc_name$",
-        "GetCastleData(.@map$,CD_CURRENT_ECONOMY)"
-      ],
-      "text" : "{0}\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}."
-    },
-    {
-      "kind" : "message",
-      "line" : 363,
-      "npc" : "invest_TE",
-      "placeholders" : [
-        ".@economy_today"
-      ],
-      "text" : " You invested {0} times in past 1 day."
-    },
-    {
-      "kind" : "message",
-      "line" : 364,
-      "npc" : "invest_TE",
-      "placeholders" : [
+        "GetCastleData(.@map$,CD_CURRENT_ECONOMY)",
         "GetCastleData(.@map$,CD_CURRENT_DEFENSE)"
       ],
-      "text" : " Now, the Castle Defense level is {0}.^000000"
+      "text" : "{0}\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}.\n Now, the Castle Defense level is {2}.^000000\n \nThat's all I have to report, Master."
     },
     {
       "kind" : "message",
-      "line" : 366,
+      "line" : 358,
       "npc" : "invest_TE",
       "placeholders" : [
-        ".@defense_today"
+        ".@npc_name$",
+        "GetCastleData(.@map$,CD_CURRENT_ECONOMY)",
+        ".@economy_today",
+        "GetCastleData(.@map$,CD_CURRENT_DEFENSE)"
       ],
-      "text" : " ^0000ff- You invested {0} times in past 1 day.^000000"
+      "text" : "{0}\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}.\n You invested {2} times in past 1 day.\n Now, the Castle Defense level is {3}.^000000\n \nThat's all I have to report, Master."
     },
     {
       "kind" : "message",
-      "line" : 367,
+      "line" : 358,
       "npc" : "invest_TE",
-      "text" : " \nThat's all I have to report, Master."
+      "placeholders" : [
+        ".@npc_name$",
+        "GetCastleData(.@map$,CD_CURRENT_ECONOMY)",
+        "GetCastleData(.@map$,CD_CURRENT_DEFENSE)",
+        ".@defense_today"
+      ],
+      "text" : "{0}\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}.\n Now, the Castle Defense level is {2}.^000000\n ^0000ff- You invested {3} times in past 1 day.^000000\n \nThat's all I have to report, Master."
+    },
+    {
+      "kind" : "message",
+      "line" : 358,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        "GetCastleData(.@map$,CD_CURRENT_ECONOMY)",
+        ".@economy_today",
+        "GetCastleData(.@map$,CD_CURRENT_DEFENSE)",
+        ".@defense_today"
+      ],
+      "text" : "{0}\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}.\n You invested {2} times in past 1 day.\n Now, the Castle Defense level is {3}.^000000\n ^0000ff- You invested {4} times in past 1 day.^000000\n \nThat's all I have to report, Master."
     },
     {
       "kind" : "message",
@@ -284,33 +282,57 @@
     },
     {
       "kind" : "message",
-      "line" : 410,
+      "line" : 408,
       "npc" : "invest_TE",
-      "text" : "Master, we have not the resources to Summon the Guardian. If you want to accumulate them, you have to learn the Guild skill. We failed to summon the Guardian."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nWe completed the summoning of the Guardian. Our defenses are now increased with it in place."
     },
     {
       "kind" : "message",
-      "line" : 413,
+      "line" : 408,
       "npc" : "invest_TE",
-      "text" : "Master, you already have summoned that Guardian. We cannot summon another."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nWell... I'm sorry but we don't have funds to summon the Guardian. We failed to summon the Guardian."
     },
     {
       "kind" : "message",
-      "line" : 415,
+      "line" : 408,
       "npc" : "invest_TE",
-      "text" : "Well... I'm sorry but we don't have funds to summon the Guardian. We failed to summon the Guardian."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nMaster, you already have summoned that Guardian. We cannot summon another."
     },
     {
       "kind" : "message",
-      "line" : 420,
+      "line" : 408,
       "npc" : "invest_TE",
-      "text" : "We completed the summoning of the Guardian. Our defenses are now increased with it in place."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nMaster, we have not the resources to Summon the Guardian. If you want to accumulate them, you have to learn the Guild skill. We failed to summon the Guardian."
     },
     {
       "kind" : "message",
-      "line" : 427,
+      "line" : 425,
       "npc" : "invest_TE",
-      "text" : "We are currently hiring a Kafra Employee... Do you want to fire the Kafra Employee?"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nWe are currently hiring a Kafra Employee... Do you want to fire the Kafra Employee?"
+    },
+    {
+      "kind" : "message",
+      "line" : 425,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nWill you contact the kafra Main Office and Hire a Employee for our Castle?\n^ff0000 10,000 zeny is required for their services. "
     },
     {
       "kind" : "option",
@@ -373,12 +395,6 @@
       "text" : "{0}\n....\nI have discharged the Kafra Employee... But... are you unsatisfied with something?"
     },
     {
-      "kind" : "message",
-      "line" : 454,
-      "npc" : "invest_TE",
-      "text" : "Will you contact the kafra Main Office and Hire a Employee for our Castle?\n^ff0000 10,000 zeny is required for their services. "
-    },
-    {
       "kind" : "option",
       "line" : 457,
       "npc" : "invest_TE",
@@ -401,21 +417,30 @@
     },
     {
       "kind" : "message",
-      "line" : 464,
+      "line" : 462,
       "npc" : "invest_TE",
-      "text" : "Master, we can't hire a Kafra Employee because we don't have a contract with the Kafra Main Office. If you want to obtain a contract with the Kafra Main Office, you will need to learn the Guild skill first."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nMaster, we can't hire a Kafra Employee because we don't have a contract with the Kafra Main Office. If you want to obtain a contract with the Kafra Main Office, you will need to learn the Guild skill first."
     },
     {
       "kind" : "message",
-      "line" : 468,
+      "line" : 462,
       "npc" : "invest_TE",
-      "text" : "Well... I'm sorry but we don't have enough funds to hire a Kafra Employee."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nWell... I'm sorry but we don't have enough funds to hire a Kafra Employee."
     },
     {
       "kind" : "message",
-      "line" : 475,
+      "line" : 462,
       "npc" : "invest_TE",
-      "text" : "We obtained a contract with the kafra Main Office, and hired a Kafra Employee."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nWe obtained a contract with the kafra Main Office, and hired a Kafra Employee."
     },
     {
       "kind" : "message",
@@ -488,46 +513,50 @@
         ".@npc_name$",
         "getarg(3)",
         "getarg(4)",
-        "getarg(5)"
-      ],
-      "text" : "{0}\nIf you invest in {1}, the {2}. Therfore, if you consider our {3}, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n "
-    },
-    {
-      "kind" : "message",
-      "line" : 536,
-      "npc" : "invest_TE",
-      "placeholders" : [
+        "getarg(5)",
         "getarg(3)",
         "getarg(6)"
       ],
-      "text" : "^ff0000The {0} level of our Castle is at it's highest, 100%. No more investments are needed. Just as I have expected from a great {1} like you, Master.^000000"
+      "text" : "{0}\nIf you invest in {1}, the {2}. Therfore, if you consider our {3}, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n \n^ff0000The {4} level of our Castle is at it's highest, 100%. No more investments are needed. Just as I have expected from a great {5} like you, Master.^000000"
     },
     {
       "kind" : "message",
-      "line" : 540,
+      "line" : 530,
       "npc" : "invest_TE",
       "placeholders" : [
+        ".@npc_name$",
+        "getarg(3)",
+        "getarg(4)",
+        "getarg(5)",
         "getarg(7)"
       ],
-      "text" : "^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect the {0} of the guild to grow at a high rate."
+      "text" : "{0}\nIf you invest in {1}, the {2}. Therfore, if you consider our {3}, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n \n^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect the {4} of the guild to grow at a high rate."
     },
     {
       "kind" : "message",
-      "line" : 544,
+      "line" : 530,
       "npc" : "invest_TE",
       "placeholders" : [
+        ".@npc_name$",
+        "getarg(3)",
+        "getarg(4)",
+        "getarg(5)",
         ".@cost_invest"
       ],
-      "text" : "The current investment amount required is ^ff0000{0}^000000 zeny. Will you invest?"
+      "text" : "{0}\nIf you invest in {1}, the {2}. Therfore, if you consider our {3}, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n \nYou've invested once today... if you wish to invest once more, ^ff0000{4}^000000 more zeny will be needed."
     },
     {
       "kind" : "message",
-      "line" : 546,
+      "line" : 530,
       "npc" : "invest_TE",
       "placeholders" : [
+        ".@npc_name$",
+        "getarg(3)",
+        "getarg(4)",
+        "getarg(5)",
         ".@cost_invest"
       ],
-      "text" : "You've invested once today... if you wish to invest once more, ^ff0000{0}^000000 more zeny will be needed."
+      "text" : "{0}\nIf you invest in {1}, the {2}. Therfore, if you consider our {3}, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n \nThe current investment amount required is ^ff0000{4}^000000 zeny. Will you invest?"
     },
     {
       "kind" : "option",
@@ -546,18 +575,22 @@
     },
     {
       "kind" : "message",
-      "line" : 552,
+      "line" : 550,
       "npc" : "invest_TE",
-      "text" : "I'm sorry but there is not enough zeny to invest. You will have to try again when you have the funds, Master."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nI'm sorry but there is not enough zeny to invest. You will have to try again when you have the funds, Master."
     },
     {
       "kind" : "message",
-      "line" : 557,
+      "line" : 550,
       "npc" : "invest_TE",
       "placeholders" : [
+        ".@npc_name$",
         "getarg(3)"
       ],
-      "text" : "We finished the investment safely. I expect that our {0} level will be increased by tomorrow."
+      "text" : "{0}\nWe finished the investment safely. I expect that our {1} level will be increased by tomorrow."
     },
     {
       "kind" : "message",

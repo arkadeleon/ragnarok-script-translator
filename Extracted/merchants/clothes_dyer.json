@@ -99,15 +99,21 @@
     },
     {
       "kind" : "message",
-      "line" : 62,
+      "line" : 60,
       "npc" : "Dyer Ginedin Rephere",
-      "text" : "Sorry, I'm too busy with other jobs to dye your clothes."
+      "placeholders" : [
+        ".n$"
+      ],
+      "text" : "{0}\nOh... you need my work? Well... okay, sounds good."
     },
     {
       "kind" : "message",
-      "line" : 65,
+      "line" : 60,
       "npc" : "Dyer Ginedin Rephere",
-      "text" : "Oh... you need my work? Well... okay, sounds good."
+      "placeholders" : [
+        ".n$"
+      ],
+      "text" : "{0}\nSorry, I'm too busy with other jobs to dye your clothes."
     },
     {
       "kind" : "message",
@@ -144,9 +150,40 @@
     },
     {
       "kind" : "message",
-      "line" : 148,
+      "line" : 146,
       "npc" : "Dyer Ginedin Rephere",
-      "text" : "I can change your dye to\nthe default for free.\nAre you sure?"
+      "placeholders" : [
+        ".n$"
+      ],
+      "text" : "{0}\nI can change your dye to\nthe default for free.\nAre you sure?"
+    },
+    {
+      "kind" : "message",
+      "line" : 146,
+      "npc" : "Dyer Ginedin Rephere",
+      "placeholders" : [
+        ".n$"
+      ],
+      "text" : "{0}\nFor me to dye your clothes, I'll need the appropriate Dyestuffs. Please check my price list for the information."
+    },
+    {
+      "kind" : "message",
+      "line" : 146,
+      "npc" : "Dyer Ginedin Rephere",
+      "placeholders" : [
+        ".n$"
+      ],
+      "text" : "{0}\nI'm sorry, but you don't have enough money."
+    },
+    {
+      "kind" : "message",
+      "line" : 146,
+      "npc" : "Dyer Ginedin Rephere",
+      "placeholders" : [
+        ".n$",
+        "((.@s)?.@DyeName$[getarg((.@s-1)*2)]:.@DyeName$[0])"
+      ],
+      "text" : "{0}\nYour clothes have been dyed {1}."
     },
     {
       "kind" : "option",
@@ -162,12 +199,13 @@
     },
     {
       "kind" : "message",
-      "line" : 156,
+      "line" : 154,
       "npc" : "Dyer Ginedin Rephere",
       "placeholders" : [
+        ".n$",
         ".@DyeName$[0]"
       ],
-      "text" : "Your clothes have been dyed {0}."
+      "text" : "{0}\nYour clothes have been dyed {1}."
     },
     {
       "kind" : "message",

@@ -29,47 +29,85 @@
       "kind" : "message",
       "line" : 30,
       "npc" : "Perchik",
-      "text" : "[Perchik]"
+      "text" : "[Perchik]\nI work for free, but..."
     },
     {
       "kind" : "message",
-      "line" : 32,
+      "line" : 30,
       "npc" : "Perchik",
-      "text" : "For my work I accept:"
+      "text" : "[Perchik]\nFor my work I accept:"
     },
     {
       "kind" : "message",
-      "line" : 34,
+      "line" : 30,
       "npc" : "Perchik",
       "placeholders" : [
         ".@Item[.@i+1]",
         "getitemname(.@Item[.@i])"
       ],
-      "text" : " ~ {0}x {1}"
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}"
     },
     {
       "kind" : "message",
-      "line" : 35,
+      "line" : 30,
       "npc" : "Perchik",
       "placeholders" : [
         "callfunc(\"F_InsertComma\",.@Cost[0])"
       ],
-      "text" : " ~ {0} Zeny"
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0} Zeny"
     },
     {
       "kind" : "message",
-      "line" : 36,
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "callfunc(\"F_InsertComma\",.@Cost[0])"
+      ],
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
       "npc" : "Perchik",
       "placeholders" : [
         "callfunc(\"F_InsertComma\",.@Cost[1])"
       ],
-      "text" : " ~ {0} Zeny per refine"
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0} Zeny per refine"
     },
     {
       "kind" : "message",
-      "line" : 38,
+      "line" : 30,
       "npc" : "Perchik",
-      "text" : "I work for free, but..."
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "callfunc(\"F_InsertComma\",.@Cost[1])"
+      ],
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2} Zeny per refine"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\",.@Cost[0])",
+        "callfunc(\"F_InsertComma\",.@Cost[1])"
+      ],
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0} Zeny\n ~ {1} Zeny per refine"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "callfunc(\"F_InsertComma\",.@Cost[0])",
+        "callfunc(\"F_InsertComma\",.@Cost[1])"
+      ],
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2} Zeny\n ~ {3} Zeny per refine"
     },
     {
       "kind" : "message",
@@ -93,71 +131,82 @@
       "kind" : "message",
       "line" : 63,
       "npc" : "Perchik",
-      "text" : "[Perchik]"
+      "text" : "[Perchik]\nNothing is equipped there!"
     },
     {
       "kind" : "message",
-      "line" : 65,
+      "line" : 63,
       "npc" : "Perchik",
-      "text" : "Nothing is equipped there!"
+      "text" : "[Perchik]\nAlas, this item's already signed.\nI would never touch a master's work."
     },
     {
       "kind" : "message",
-      "line" : 72,
+      "line" : 63,
       "npc" : "Perchik",
-      "text" : "Alas, this item's already signed.\nI would never touch a master's work."
+      "text" : "[Perchik]\nA card? Here?!\nAs I said before, I don't sign items with cards."
     },
     {
       "kind" : "message",
-      "line" : 78,
+      "line" : 63,
       "npc" : "Perchik",
-      "text" : "A card? Here?!\nAs I said before, I don't sign items with cards."
+      "text" : "[Perchik]\nSorry, I don't sign slotted items."
     },
     {
       "kind" : "message",
-      "line" : 84,
+      "line" : 63,
       "npc" : "Perchik",
-      "text" : "Sorry, I don't sign slotted items."
+      "text" : "[Perchik]\nSorry, I don't sign rental items!"
     },
     {
       "kind" : "message",
-      "line" : 91,
-      "npc" : "Perchik",
-      "text" : "Sorry, I don't sign rental items!"
-    },
-    {
-      "kind" : "message",
-      "line" : 97,
-      "npc" : "Perchik",
-      "text" : "I will need:"
-    },
-    {
-      "kind" : "message",
-      "line" : 99,
-      "npc" : "Perchik",
-      "placeholders" : [
-        ".@Item[.@i+1]",
-        "getitemname(.@Item[.@i])"
-      ],
-      "text" : " ~ {0}x {1}"
-    },
-    {
-      "kind" : "message",
-      "line" : 102,
-      "npc" : "Perchik",
-      "placeholders" : [
-        ".@price"
-      ],
-      "text" : " ~ {0} Zeny"
-    },
-    {
-      "kind" : "message",
-      "line" : 104,
+      "line" : 63,
       "npc" : "Perchik",
       "placeholders" : [
         "getitemname(.@id)"
       ],
-      "text" : "Shall I sign your ^0055FF{0}^000000?"
+      "text" : "[Perchik]\nShall I sign your ^0055FF{0}^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        "getitemname(.@id)"
+      ],
+      "text" : "[Perchik]\nI will need:\nShall I sign your ^0055FF{0}^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "getitemname(.@id)"
+      ],
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\nShall I sign your ^0055FF{2}^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@price",
+        "getitemname(.@id)"
+      ],
+      "text" : "[Perchik]\nI will need:\n ~ {0} Zeny\nShall I sign your ^0055FF{1}^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@price",
+        "getitemname(.@id)"
+      ],
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2} Zeny\nShall I sign your ^0055FF{3}^000000?"
     },
     {
       "kind" : "option",
@@ -181,28 +230,22 @@
       "kind" : "message",
       "line" : 112,
       "npc" : "Perchik",
-      "text" : "[Perchik]"
+      "text" : "[Perchik]\nI don't work for 'thanks'."
     },
     {
       "kind" : "message",
-      "line" : 114,
-      "npc" : "Perchik",
-      "text" : "I don't work for 'thanks'."
-    },
-    {
-      "kind" : "message",
-      "line" : 119,
+      "line" : 112,
       "npc" : "Perchik",
       "placeholders" : [
         "getitemname(@id)"
       ],
-      "text" : "Where is {0}...?"
+      "text" : "[Perchik]\nWhere is {0}...?"
     },
     {
       "kind" : "message",
-      "line" : 129,
+      "line" : 112,
       "npc" : "Perchik",
-      "text" : "Done!"
+      "text" : "[Perchik]\nDone!"
     }
   ]
 }

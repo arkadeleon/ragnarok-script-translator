@@ -5,239 +5,89 @@
 //  Created by Leon Li on 2026/9/21.
 //
 
-/// A string expression split into literal text and the expressions concatenated into it.
-private enum Segment {
-    case literal(String)
-    case placeholder(String)
-}
-
-/// Walks the token stream of one NPC file and collects dialog pages and menu options.
+/// Collects dialog pages and menu options from one NPC file.
 ///
-/// A page is a run of consecutive `mes` statements with nothing in between, which is what the
-/// client sees between two `next`/`close` calls. A `mes` that is the sole body of an `if`/`else`/loop
-/// forms a page on its own, since it may or may not be shown at runtime.
+/// Pages are what the client sees between two `next`/`close` calls. Because `mes` lines are often
+/// spread over `if`/`switch` branches, the extractor walks every path through those branches and
+/// emits a page per path, so runtime pages can be matched as a whole. Paths are capped per page;
+/// past the cap the pending text is emitted as is and matching falls back to line chunks.
 struct ScriptExtractor {
-    private let source: [UInt8]
+    private let parser: ScriptParser
     private let tokens: [Token]
 
+    /// Maximum number of alternative pages kept open at once.
+    fileprivate static let maxVariants = 16
+
     init(source: String) {
-        self.source = Array(source.utf8)
-        self.tokens = ScriptTokenizer.tokenize(source)
+        let bytes = Array(source.utf8)
+        tokens = ScriptTokenizer.tokenize(source)
+        parser = ScriptParser(source: bytes, tokens: tokens)
     }
 
     func extract() -> [ExtractedScript] {
         var scripts: [ExtractedScript] = []
-        var npc: String?
-        var page: [[Segment]] = []
-        var pageLine = 0
+        var emitted: Set<[String]> = []
 
-        func flushPage() {
-            if let script = Self.makeScript(kind: .message, npc: npc, line: pageLine, lines: page) {
+        // The same page can be reached on several paths and flushed by each; keep it once per source location.
+        func append(_ script: ExtractedScript) {
+            if emitted.insert([script.kind.rawValue, String(script.line), script.text]).inserted {
                 scripts.append(script)
             }
-            page.removeAll()
         }
 
+        for script in ScriptParser.parse(source: parser.source, tokens: tokens) {
+            var walker = PageWalker(npc: script.npc, emit: append)
+            walker.run(.block(script.statements))
+            walker.finish()
+        }
+
+        extractOptions(into: append)
+
+        // Stable by line so variants of one page keep their emission order.
+        return scripts.enumerated()
+            .sorted { ($0.element.line, $0.offset) < ($1.element.line, $1.offset) }
+            .map(\.element)
+    }
+
+    // MARK: - Options
+
+    /// `select`/`prompt`/`menu` can sit inside any expression, so options are collected by a flat scan.
+    private func extractOptions(into append: (ExtractedScript) -> Void) {
+        var npc: String?
         var index = 0
         while index < tokens.count {
             let token = tokens[index]
-
             if case .header(let name) = token.kind {
-                flushPage()
                 npc = name
                 index += 1
                 continue
             }
-
             guard token.kind == .identifier else {
-                flushPage()
                 index += 1
                 continue
             }
 
             switch token.text.lowercased() {
-            case "mes":
-                let (arguments, end) = parseArguments(from: index + 1, until: ";")
-                let standalone = isStandalone(at: index)
-                if standalone {
-                    flushPage()
-                }
-                if page.isEmpty {
-                    pageLine = token.line
-                }
-                page.append(contentsOf: arguments)
-                if standalone {
-                    flushPage()
-                }
-                index = end
-
             case "select", "prompt":
-                flushPage()
-                guard index + 1 < tokens.count, tokens[index + 1].text == "(" else {
+                guard index + 1 < tokens.count, tokens[index + 1].kind == .punctuation, tokens[index + 1].text == "(" else {
                     index += 1
                     continue
                 }
-                let (arguments, end) = parseArguments(from: index + 2, until: ")")
-                scripts.append(contentsOf: Self.makeOptions(npc: npc, line: token.line, arguments: arguments))
+                let (arguments, end) = parser.parseArguments(from: index + 2, until: ")")
+                Self.makeOptions(npc: npc, line: token.line, arguments: arguments).forEach(append)
                 index = end
 
             case "menu":
-                flushPage()
-                let (arguments, end) = parseArguments(from: index + 1, until: ";")
+                let (arguments, end) = parser.parseArguments(from: index + 1, until: ";")
                 // `menu "text",L_label,"text",L_label,...`: every other argument is a label.
                 let texts = arguments.enumerated().filter { $0.offset.isMultiple(of: 2) }.map(\.element)
-                scripts.append(contentsOf: Self.makeOptions(npc: npc, line: token.line, arguments: texts))
+                Self.makeOptions(npc: npc, line: token.line, arguments: texts).forEach(append)
                 index = end
 
             default:
-                flushPage()
                 index += 1
             }
         }
-        flushPage()
-
-        return scripts
-    }
-
-    // MARK: - Parsing
-
-    /// `if (...) mes "..."` or `else mes "..."` shows the message conditionally, so it must not be merged
-    /// with its neighbours.
-    private func isStandalone(at index: Int) -> Bool {
-        guard index > 0 else { return false }
-        let previous = tokens[index - 1]
-        switch previous.kind {
-        case .punctuation:
-            return previous.text == ")"
-        case .identifier:
-            return previous.text.lowercased() == "else"
-        default:
-            return false
-        }
-    }
-
-    /// Reads comma-separated arguments up to `terminator` at nesting depth 0.
-    /// Returns the arguments as segments and the index just past the terminator.
-    private func parseArguments(from start: Int, until terminator: String) -> (arguments: [[Segment]], end: Int) {
-        var arguments: [[Segment]] = []
-        var current: [Token] = []
-        var depth = 0
-        var index = start
-
-        func finishArgument() {
-            if !current.isEmpty {
-                arguments.append(segments(of: current))
-                current.removeAll()
-            }
-        }
-
-        while index < tokens.count {
-            let token = tokens[index]
-            if case .header = token.kind {
-                // Ran off the end of a script body; give up on this statement.
-                break
-            }
-            if token.kind == .punctuation {
-                switch token.text {
-                case "(", "[":
-                    depth += 1
-                case ")", "]":
-                    if depth == 0 {
-                        if terminator == ")" {
-                            index += 1
-                            finishArgument()
-                            return (arguments, index)
-                        }
-                        // Unbalanced; treat as end of statement.
-                        finishArgument()
-                        return (arguments, index)
-                    }
-                    depth -= 1
-                case ",":
-                    if depth == 0 {
-                        finishArgument()
-                        index += 1
-                        continue
-                    }
-                case ";", "}", "{":
-                    if depth == 0 || token.text != ";" {
-                        finishArgument()
-                        return (arguments, token.text == terminator ? index + 1 : index)
-                    }
-                default:
-                    break
-                }
-            }
-            current.append(token)
-            index += 1
-        }
-        finishArgument()
-        return (arguments, index)
-    }
-
-    /// Splits an expression on top-level `+` and classifies each term as literal text or placeholder.
-    private func segments(of tokens: [Token]) -> [Segment] {
-        var terms: [[Token]] = [[]]
-        var depth = 0
-        for token in tokens {
-            if token.kind == .punctuation {
-                switch token.text {
-                case "(", "[": depth += 1
-                case ")", "]": depth -= 1
-                case "+" where depth == 0:
-                    terms.append([])
-                    continue
-                default: break
-                }
-            }
-            terms[terms.count - 1].append(token)
-        }
-
-        return terms.compactMap { term in
-            guard let first = term.first, let last = term.last else {
-                return nil
-            }
-            if term.count == 1, first.kind == .string {
-                return .literal(first.text)
-            }
-            let expression = String(decoding: source[first.range.lowerBound..<last.range.upperBound], as: UTF8.self)
-            return .placeholder(expression)
-        }
-    }
-
-    // MARK: - Building scripts
-
-    private static func makeScript(kind: ExtractedScript.Kind, npc: String?, line: Int, lines: [[Segment]]) -> ExtractedScript? {
-        guard !lines.isEmpty else {
-            return nil
-        }
-
-        var text = ""
-        var placeholders: [String] = []
-        var hasText = false
-
-        for (lineIndex, segments) in lines.enumerated() {
-            if lineIndex > 0 {
-                text += "\n"
-            }
-            for segment in segments {
-                switch segment {
-                case .literal(let literal):
-                    text += literal
-                    if !literal.allSatisfy(\.isWhitespace) {
-                        hasText = true
-                    }
-                case .placeholder(let expression):
-                    text += "{\(placeholders.count)}"
-                    placeholders.append(expression)
-                }
-            }
-        }
-
-        guard hasText else {
-            return nil
-        }
-        return ExtractedScript(kind: kind, npc: npc, line: line, text: text, placeholders: placeholders.isEmpty ? nil : placeholders)
     }
 
     /// Menu arguments may hold several options separated by `:`; empty options are hidden by the client.
@@ -277,5 +127,168 @@ struct ScriptExtractor {
 
     private static func isMenuVariable(_ expression: String) -> Bool {
         expression.lowercased().hasSuffix("menu$")
+    }
+
+    // MARK: - Building scripts
+
+    static func makeScript(kind: ExtractedScript.Kind, npc: String?, line: Int, lines: [[Segment]]) -> ExtractedScript? {
+        guard !lines.isEmpty else {
+            return nil
+        }
+
+        var text = ""
+        var placeholders: [String] = []
+        var hasText = false
+
+        for (lineIndex, segments) in lines.enumerated() {
+            if lineIndex > 0 {
+                text += "\n"
+            }
+            for segment in segments {
+                switch segment {
+                case .literal(let literal):
+                    text += literal
+                    if !literal.allSatisfy(\.isWhitespace) {
+                        hasText = true
+                    }
+                case .placeholder(let expression):
+                    text += "{\(placeholders.count)}"
+                    placeholders.append(expression)
+                }
+            }
+        }
+
+        guard hasText else {
+            return nil
+        }
+        return ExtractedScript(kind: kind, npc: npc, line: line, text: text, placeholders: placeholders.isEmpty ? nil : placeholders)
+    }
+}
+
+// MARK: - Page walker
+
+/// Evaluates statements against the set of pages that may currently be open on the client.
+private struct PageWalker {
+    /// One possible content of the dialog box on one execution path.
+    struct Variant: Equatable {
+        var lines: [[Segment]] = []
+        var line = 0
+    }
+
+    let npc: String?
+    let emit: (ExtractedScript) -> Void
+
+    /// Open pages, one per path. Empty means no path reaches here (after `close`, `end`, ...).
+    private var open: [Variant] = [Variant()]
+
+    init(npc: String?, emit: @escaping (ExtractedScript) -> Void) {
+        self.npc = npc
+        self.emit = emit
+    }
+
+    /// Runs `statement` and returns the variants that left it through `break`/`continue`.
+    @discardableResult
+    mutating func run(_ statement: Statement) -> [Variant] {
+        switch statement {
+        case .mes(let lines):
+            if open.isEmpty {
+                open = [Variant()]
+            }
+            for index in open.indices {
+                if open[index].lines.isEmpty, let first = lines.first {
+                    open[index].line = first.line
+                }
+                open[index].lines.append(contentsOf: lines.map(\.segments))
+            }
+            return []
+
+        case .transparent:
+            return []
+
+        case .newPage, .label:
+            flush()
+            open = [Variant()]
+            return []
+
+        case .terminate:
+            flush()
+            open = []
+            return []
+
+        case .exit:
+            let exits = open
+            open = []
+            return exits
+
+        case .block(let statements):
+            var exits: [Variant] = []
+            for statement in statements {
+                exits += run(statement)
+            }
+            return exits
+
+        case .branch(let then, let otherwise):
+            let before = open
+            var exits = run(then)
+            let afterThen = open
+            open = before
+            if let otherwise {
+                exits += run(otherwise)
+            }
+            merge(afterThen)
+            return exits
+
+        case .switch(let cases, let hasDefault):
+            let before = open
+            var after: [Variant] = hasDefault ? [] : before
+            for body in cases {
+                open = before
+                let exits = run(body)
+                after = Self.union(after, open, exits)
+            }
+            open = []
+            merge(after)
+            return []
+
+        case .loop(let body):
+            let before = open
+            let exits = run(body)
+            merge(before)
+            merge(exits)
+            return []
+        }
+    }
+
+    mutating func finish() {
+        flush()
+        open = []
+    }
+
+    // MARK: - Private
+
+    private mutating func merge(_ variants: [Variant]) {
+        open = Self.union(open, variants)
+        if open.count > ScriptExtractor.maxVariants {
+            flush()
+            open = [Variant()]
+        }
+    }
+
+    private static func union(_ lists: [Variant]...) -> [Variant] {
+        var result: [Variant] = []
+        for list in lists {
+            for variant in list where !result.contains(variant) {
+                result.append(variant)
+            }
+        }
+        return result
+    }
+
+    private func flush() {
+        for variant in open where !variant.lines.isEmpty {
+            if let script = ScriptExtractor.makeScript(kind: .message, npc: npc, line: variant.line, lines: variant.lines) {
+                emit(script)
+            }
+        }
     }
 }

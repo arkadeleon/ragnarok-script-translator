@@ -5,47 +5,42 @@
       "kind" : "message",
       "line" : 373,
       "npc" : "WOE_CONTROL",
-      "text" : "[WOE Information]"
+      "text" : "[WOE Information]\nThe War of Emperium is ^777777inactive^000000."
     },
     {
       "kind" : "message",
-      "line" : 382,
-      "npc" : "WOE_CONTROL",
-      "placeholders" : [
-        "Add_Zero(.@i)"
-      ],
-      "text" : "The War of Emperium is ^0055FFactive^000000 until ^FF0000{0}^000000 in the following regions:\n "
-    },
-    {
-      "kind" : "message",
-      "line" : 385,
-      "npc" : "WOE_CONTROL",
-      "placeholders" : [
-        ".Regions$[.@i]"
-      ],
-      "text" : " > ^777777{0}^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 387,
-      "npc" : "WOE_CONTROL",
-      "text" : "The War of Emperium is ^0055FFactive^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 396,
-      "npc" : "WOE_CONTROL",
-      "text" : "The War of Emperium is ^777777inactive^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 398,
+      "line" : 373,
       "npc" : "WOE_CONTROL",
       "placeholders" : [
         ".Days$[.@time[0]]",
         "Add_Zero(.@time[1])"
       ],
-      "text" : " \nThe next session will begin\non ^0055FF{0}^000000 at {1}^000000."
+      "text" : "[WOE Information]\nThe War of Emperium is ^777777inactive^000000.\n \nThe next session will begin\non ^0055FF{0}^000000 at {1}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 373,
+      "npc" : "WOE_CONTROL",
+      "text" : "[WOE Information]\nThe War of Emperium is ^0055FFactive^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 373,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        "Add_Zero(.@i)"
+      ],
+      "text" : "[WOE Information]\nThe War of Emperium is ^0055FFactive^000000 until ^FF0000{0}^000000 in the following regions:\n "
+    },
+    {
+      "kind" : "message",
+      "line" : 373,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        "Add_Zero(.@i)",
+        ".Regions$[.@i]"
+      ],
+      "text" : "[WOE Information]\nThe War of Emperium is ^0055FFactive^000000 until ^FF0000{0}^000000 in the following regions:\n \n > ^777777{1}^000000"
     },
     {
       "kind" : "option",
@@ -69,59 +64,107 @@
       "kind" : "message",
       "line" : 426,
       "npc" : "WOE_CONTROL",
-      "text" : "[Schedule]"
+      "text" : "[Schedule]\nNo times are configured."
     },
     {
       "kind" : "message",
-      "line" : 430,
+      "line" : 426,
       "npc" : "WOE_CONTROL",
       "placeholders" : [
         ".Days$[$WOE_CONTROL[.@i]]",
         "Add_Zero($WOE_CONTROL[.@i+1])",
         "Add_Zero($WOE_CONTROL[.@i+2])"
       ],
-      "text" : "> ^FF0000{0} ({1}-{2})^000000"
+      "text" : "[Schedule]\n> ^FF0000{0} ({1}-{2})^000000"
     },
     {
       "kind" : "message",
-      "line" : 432,
+      "line" : 426,
       "npc" : "WOE_CONTROL",
       "placeholders" : [
+        ".Days$[$WOE_CONTROL[.@i]]",
+        "Add_Zero($WOE_CONTROL[.@i+1])",
+        "Add_Zero($WOE_CONTROL[.@i+2])",
         "getcastlename(.Castles$[.@j])",
         ".Castles$[.@j]"
       ],
-      "text" : "  ~ {0} ^777777({1})^000000"
+      "text" : "[Schedule]\n> ^FF0000{0} ({1}-{2})^000000\n  ~ {3} ^777777({4})^000000"
     },
     {
       "kind" : "message",
-      "line" : 437,
+      "line" : 426,
       "npc" : "WOE_CONTROL",
-      "text" : "No times are configured."
+      "placeholders" : [
+        ".Days$[$WOE_CONTROL[.@i]]",
+        "Add_Zero($WOE_CONTROL[.@i+1])",
+        "Add_Zero($WOE_CONTROL[.@i+2])"
+      ],
+      "text" : "[Schedule]\n> ^FF0000{0} ({1}-{2})^000000\n "
+    },
+    {
+      "kind" : "message",
+      "line" : 426,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".Days$[$WOE_CONTROL[.@i]]",
+        "Add_Zero($WOE_CONTROL[.@i+1])",
+        "Add_Zero($WOE_CONTROL[.@i+2])",
+        "getcastlename(.Castles$[.@j])",
+        ".Castles$[.@j]"
+      ],
+      "text" : "[Schedule]\n> ^FF0000{0} ({1}-{2})^000000\n  ~ {3} ^777777({4})^000000\n "
+    },
+    {
+      "kind" : "message",
+      "line" : 426,
+      "npc" : "WOE_CONTROL",
+      "text" : "[Schedule]"
+    },
+    {
+      "kind" : "message",
+      "line" : 441,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".Regions$[.@i]",
+        "getcastlename(.Castles$[.@index])",
+        "((.@t)?\"^0055FF\"+getguildname(.@t):\"^777777unoccupied\")"
+      ],
+      "text" : "[Castle Ownership]\n> ^FF0000{0}^000000\n  ~ {1}: {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 441,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".Regions$[.@i]"
+      ],
+      "text" : "[Castle Ownership]\n> ^FF0000{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 441,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".Regions$[.@i]",
+        "getcastlename(.Castles$[.@index])",
+        "((.@t)?\"^0055FF\"+getguildname(.@t):\"^777777unoccupied\")"
+      ],
+      "text" : "[Castle Ownership]\n> ^FF0000{0}^000000\n  ~ {1}: {2}^000000\n "
+    },
+    {
+      "kind" : "message",
+      "line" : 441,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".Regions$[.@i]"
+      ],
+      "text" : "[Castle Ownership]\n> ^FF0000{0}^000000\n "
     },
     {
       "kind" : "message",
       "line" : 441,
       "npc" : "WOE_CONTROL",
       "text" : "[Castle Ownership]"
-    },
-    {
-      "kind" : "message",
-      "line" : 444,
-      "npc" : "WOE_CONTROL",
-      "placeholders" : [
-        ".Regions$[.@i]"
-      ],
-      "text" : "> ^FF0000{0}^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 448,
-      "npc" : "WOE_CONTROL",
-      "placeholders" : [
-        "getcastlename(.Castles$[.@index])",
-        "((.@t)?\"^0055FF\"+getguildname(.@t):\"^777777unoccupied\")"
-      ],
-      "text" : "  ~ {0}: {1}^000000"
     },
     {
       "kind" : "message",
@@ -202,15 +245,32 @@
       "placeholders" : [
         ".Days$[.@Day]",
         "Add_Zero(.@Start)",
+        "Add_Zero(.@End)",
+        ".@string$"
+      ],
+      "text" : "[New Session]\n^0055FF{0} ({1}-{2})^000000\n > Castles:\n{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 494,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".Days$[.@Day]",
+        "Add_Zero(.@Start)",
         "Add_Zero(.@End)"
       ],
       "text" : "[New Session]\n^0055FF{0} ({1}-{2})^000000\n > Castles:"
     },
     {
       "kind" : "message",
-      "line" : 498,
+      "line" : 494,
       "npc" : "WOE_CONTROL",
-      "text" : "   ~ ^777777(none selected)^000000"
+      "placeholders" : [
+        ".Days$[.@Day]",
+        "Add_Zero(.@Start)",
+        "Add_Zero(.@End)"
+      ],
+      "text" : "[New Session]\n^0055FF{0} ({1}-{2})^000000\n > Castles:\n   ~ ^777777(none selected)^000000"
     },
     {
       "kind" : "message",
@@ -249,19 +309,13 @@
       "kind" : "message",
       "line" : 541,
       "npc" : "WOE_CONTROL",
-      "text" : "[Remove Session]"
+      "text" : "[Remove Session]\nThere are no sessions configured."
     },
     {
       "kind" : "message",
-      "line" : 543,
+      "line" : 541,
       "npc" : "WOE_CONTROL",
-      "text" : "There are no sessions configured."
-    },
-    {
-      "kind" : "message",
-      "line" : 547,
-      "npc" : "WOE_CONTROL",
-      "text" : "Select a session to remove."
+      "text" : "[Remove Session]\nSelect a session to remove."
     },
     {
       "kind" : "message",
@@ -288,19 +342,13 @@
       "kind" : "message",
       "line" : 560,
       "npc" : "WOE_CONTROL",
-      "text" : "[Remove Session]"
+      "text" : "[Remove Session]\nSession deleted."
     },
     {
       "kind" : "message",
-      "line" : 562,
+      "line" : 560,
       "npc" : "WOE_CONTROL",
-      "text" : "cancelled."
-    },
-    {
-      "kind" : "message",
-      "line" : 566,
-      "npc" : "WOE_CONTROL",
-      "text" : "Session deleted."
+      "text" : "[Remove Session]\ncancelled."
     },
     {
       "kind" : "message",
@@ -310,9 +358,9 @@
     },
     {
       "kind" : "message",
-      "line" : 574,
+      "line" : 571,
       "npc" : "WOE_CONTROL",
-      "text" : " \nBe aware that this will disrupt the current WOE session."
+      "text" : "[Reload Settings]\nThis will trigger all events related to new session configurations, if any.\n \nBe aware that this will disrupt the current WOE session."
     },
     {
       "kind" : "option",
@@ -330,37 +378,25 @@
       "kind" : "message",
       "line" : 579,
       "npc" : "WOE_CONTROL",
-      "text" : "[Reload Settings]"
+      "text" : "[Reload Settings]\nVariables have been re-initialized."
     },
     {
       "kind" : "message",
-      "line" : 580,
+      "line" : 579,
       "npc" : "WOE_CONTROL",
-      "text" : "cancelled."
-    },
-    {
-      "kind" : "message",
-      "line" : 584,
-      "npc" : "WOE_CONTROL",
-      "text" : "Variables have been re-initialized."
+      "text" : "[Reload Settings]\ncancelled."
     },
     {
       "kind" : "message",
       "line" : 589,
       "npc" : "WOE_CONTROL",
-      "text" : "[Force Agit End]"
+      "text" : "[Force Agit End]\nWOE has already ended."
     },
     {
       "kind" : "message",
-      "line" : 591,
+      "line" : 589,
       "npc" : "WOE_CONTROL",
-      "text" : "WOE has already ended."
-    },
-    {
-      "kind" : "message",
-      "line" : 595,
-      "npc" : "WOE_CONTROL",
-      "text" : "This command will safely execute all AgitEnd events.\n \nKill the current WOE session?"
+      "text" : "[Force Agit End]\nThis command will safely execute all AgitEnd events.\n \nKill the current WOE session?"
     },
     {
       "kind" : "option",
@@ -378,19 +414,13 @@
       "kind" : "message",
       "line" : 600,
       "npc" : "WOE_CONTROL",
-      "text" : "[Force Agit End]"
+      "text" : "[Force Agit End]\nWOE session terminated."
     },
     {
       "kind" : "message",
-      "line" : 602,
+      "line" : 600,
       "npc" : "WOE_CONTROL",
-      "text" : "cancelled."
-    },
-    {
-      "kind" : "message",
-      "line" : 606,
-      "npc" : "WOE_CONTROL",
-      "text" : "WOE session terminated."
+      "text" : "[Force Agit End]\ncancelled."
     }
   ]
 }

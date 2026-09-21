@@ -888,32 +888,29 @@
       "line" : 1043,
       "npc" : "Investment Status Board",
       "placeholders" : [
-        "callfunc(\"F_GetNumSuffix\",.@notice)"
-      ],
-      "text" : "{0} total (unit in 10,000z)"
-    },
-    {
-      "kind" : "message",
-      "line" : 1047,
-      "npc" : "Investment Status Board",
-      "placeholders" : [
+        "callfunc(\"F_GetNumSuffix\",.@notice)",
         "getcastlename(.@map$)",
         "getguildname(getcastledata(.@map$,CD_GUILD_ID))",
-        ".@fund[.@i]"
-      ],
-      "text" : "{0} {1} Guild: {2}"
-    },
-    {
-      "kind" : "message",
-      "line" : 1050,
-      "npc" : "Investment Status Board",
-      "placeholders" : [
+        ".@fund[.@i]",
         ".@realm$",
         ".@fund[0]",
         ".@realm$",
         "(.@fund[0]+.@fund[1]+.@fund[2]+.@fund[3]+.@fund[4]+.@fund[5])"
       ],
-      "text" : "{0} normal: {1}\n{2} Investment Grand Total: {3}"
+      "text" : "{0} total (unit in 10,000z)\n{1} {2} Guild: {3}\n{4} normal: {5}\n{6} Investment Grand Total: {7}"
+    },
+    {
+      "kind" : "message",
+      "line" : 1043,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        "callfunc(\"F_GetNumSuffix\",.@notice)",
+        ".@realm$",
+        ".@fund[0]",
+        ".@realm$",
+        "(.@fund[0]+.@fund[1]+.@fund[2]+.@fund[3]+.@fund[4]+.@fund[5])"
+      ],
+      "text" : "{0} total (unit in 10,000z)\n{1} normal: {2}\n{3} Investment Grand Total: {4}"
     },
     {
       "kind" : "message",
@@ -925,43 +922,43 @@
       "kind" : "message",
       "line" : 1061,
       "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@invest_region$[.@i]"
+      ],
+      "text" : "!- Investment Results of All Agit Regions -!\nNo data for [{0}]."
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@invest_region$[.@i]"
+      ],
+      "text" : "!- Investment Results of All Agit Regions -!\n^4d4dff[{0}] maximum achieved^000000\n-> Abyss Gate available"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@invest_region$[.@i]"
+      ],
+      "text" : "!- Investment Results of All Agit Regions -!\n[{0}] minimum achieved\n-> Guild Dungeon Deepest Layer (2F) available"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@invest_region$[.@i]"
+      ],
+      "text" : "!- Investment Results of All Agit Regions -!\n^aaaaaa[{0}] below minimum^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
       "text" : "!- Investment Results of All Agit Regions -!"
-    },
-    {
-      "kind" : "message",
-      "line" : 1064,
-      "npc" : "Investment Status Board",
-      "placeholders" : [
-        ".@invest_region$[.@i]"
-      ],
-      "text" : "^aaaaaa[{0}] below minimum^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 1066,
-      "npc" : "Investment Status Board",
-      "placeholders" : [
-        ".@invest_region$[.@i]"
-      ],
-      "text" : "[{0}] minimum achieved\n-> Guild Dungeon Deepest Layer (2F) available"
-    },
-    {
-      "kind" : "message",
-      "line" : 1069,
-      "npc" : "Investment Status Board",
-      "placeholders" : [
-        ".@invest_region$[.@i]"
-      ],
-      "text" : "^4d4dff[{0}] maximum achieved^000000\n-> Abyss Gate available"
-    },
-    {
-      "kind" : "message",
-      "line" : 1072,
-      "npc" : "Investment Status Board",
-      "placeholders" : [
-        ".@invest_region$[.@i]"
-      ],
-      "text" : "No data for [{0}]."
     },
     {
       "kind" : "message",

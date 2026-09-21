@@ -13,39 +13,121 @@
     },
     {
       "kind" : "message",
-      "line" : 144,
+      "line" : 140,
       "npc" : "quest_shop",
       "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])",
         "Chk(Zeny,.@q[4]*.@q[1])",
         "(.@q[4]*.@q[1])"
       ],
-      "text" : " > {0}{1} Zeny^000000"
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000"
     },
     {
       "kind" : "message",
-      "line" : 145,
+      "line" : 140,
       "npc" : "quest_shop",
       "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])",
         "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
         "(.@q[5]*.@q[1])",
         ".Points$[1]",
         "getd(.Points$[0])",
         "(.@q[5]*.@q[1])"
       ],
-      "text" : " > {0}{1} {2} ({3}/{4})^000000"
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} {4} ({5}/{6})^000000"
     },
     {
       "kind" : "message",
-      "line" : 147,
+      "line" : 140,
       "npc" : "quest_shop",
       "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])",
+        "Chk(Zeny,.@q[4]*.@q[1])",
+        "(.@q[4]*.@q[1])",
+        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
+        "(.@q[5]*.@q[1])",
+        ".Points$[1]",
+        "getd(.Points$[0])",
+        "(.@q[5]*.@q[1])"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])",
         "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
         "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
         "Slot(.@q[.@i])",
         "countitem(.@q[.@i])",
         "(.@q[.@i+1]*.@q[1])"
       ],
-      "text" : " > {0}{1}{2} ({3}/{4})^000000"
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3}{4} ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])",
+        "Chk(Zeny,.@q[4]*.@q[1])",
+        "(.@q[4]*.@q[1])",
+        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
+        "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
+        "Slot(.@q[.@i])",
+        "countitem(.@q[.@i])",
+        "(.@q[.@i+1]*.@q[1])"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5}{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])",
+        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
+        "(.@q[5]*.@q[1])",
+        ".Points$[1]",
+        "getd(.Points$[0])",
+        "(.@q[5]*.@q[1])",
+        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
+        "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
+        "Slot(.@q[.@i])",
+        "countitem(.@q[.@i])",
+        "(.@q[.@i+1]*.@q[1])"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} {4} ({5}/{6})^000000\n > {7}{8}{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])",
+        "Chk(Zeny,.@q[4]*.@q[1])",
+        "(.@q[4]*.@q[1])",
+        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
+        "(.@q[5]*.@q[1])",
+        ".Points$[1]",
+        "getd(.Points$[0])",
+        "(.@q[5]*.@q[1])",
+        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
+        "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
+        "Slot(.@q[.@i])",
+        "countitem(.@q[.@i])",
+        "(.@q[.@i+1]*.@q[1])"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000\n > {9}{10}{11} ({12}/{13})^000000"
     },
     {
       "kind" : "option",

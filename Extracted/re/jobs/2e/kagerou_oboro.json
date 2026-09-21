@@ -755,13 +755,25 @@
       "kind" : "message",
       "line" : 437,
       "npc" : "Old Man",
-      "text" : "[Leader Gion]"
+      "text" : "[Leader Gion]\nYou've passed the Test of Knowledge."
     },
     {
       "kind" : "message",
-      "line" : 440,
+      "line" : 437,
       "npc" : "Old Man",
-      "text" : "You've passed the Test of Knowledge."
+      "text" : "[Leader Gion]\nYou've passed the Test of Survival."
+    },
+    {
+      "kind" : "message",
+      "line" : 437,
+      "npc" : "Old Man",
+      "text" : "[Leader Gion]\nYou've passed the Test of Weaponry."
+    },
+    {
+      "kind" : "message",
+      "line" : 437,
+      "npc" : "Old Man",
+      "text" : "[Leader Gion]"
     },
     {
       "kind" : "message",
@@ -771,21 +783,9 @@
     },
     {
       "kind" : "message",
-      "line" : 447,
-      "npc" : "Old Man",
-      "text" : "You've passed the Test of Survival."
-    },
-    {
-      "kind" : "message",
       "line" : 449,
       "npc" : "Old Man",
       "text" : "[Leader Gion]\nLooks like you went through hell with this test."
-    },
-    {
-      "kind" : "message",
-      "line" : 454,
-      "npc" : "Old Man",
-      "text" : "You've passed the Test of Weaponry."
     },
     {
       "kind" : "message",
@@ -873,21 +873,21 @@
     },
     {
       "kind" : "message",
-      "line" : 502,
+      "line" : 499,
       "npc" : "Old Man",
-      "text" : "You've passed the ^339CCCTests of Knowledge and Survival^000000!"
+      "text" : "[Leader Gion]\nYou've passed the ^339CCCTests of Survival and Weaponry^000000!"
     },
     {
       "kind" : "message",
-      "line" : 505,
+      "line" : 499,
       "npc" : "Old Man",
-      "text" : "You've passed the ^339CCCTests of Knowledge and Weaponry^000000!"
+      "text" : "[Leader Gion]\nYou've passed the ^339CCCTests of Knowledge and Weaponry^000000!"
     },
     {
       "kind" : "message",
-      "line" : 508,
+      "line" : 499,
       "npc" : "Old Man",
-      "text" : "You've passed the ^339CCCTests of Survival and Weaponry^000000!"
+      "text" : "[Leader Gion]\nYou've passed the ^339CCCTests of Knowledge and Survival^000000!"
     },
     {
       "kind" : "message",
@@ -1217,6 +1217,15 @@
       "kind" : "message",
       "line" : 719,
       "npc" : "Old Man",
+      "placeholders" : [
+        "sprintf(.@str$ + \"Then I will get to see a familiar face after so long...\",\"Knowledge\")"
+      ],
+      "text" : "[Leader Gion]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 719,
+      "npc" : "Old Man",
       "text" : "[Leader Gion]"
     },
     {
@@ -1382,9 +1391,14 @@
     },
     {
       "kind" : "message",
-      "line" : 903,
+      "line" : 849,
       "npc" : "Kuuga Gai",
-      "text" : "[Kuuga Gai]\nAn unknown error has occurred.\nPlease contact customer service."
+      "placeholders" : [
+        "(.@i < .@questions)?\"Question number \"",
+        ".@i",
+        "\":\":\"Last question:\""
+      ],
+      "text" : "[Kuuga Gai]\n{0}{1}{2}\n[Kuuga Gai]\nAn unknown error has occurred.\nPlease contact customer service."
     },
     {
       "kind" : "message",
@@ -1516,12 +1530,13 @@
     },
     {
       "kind" : "message",
-      "line" : 1062,
+      "line" : 1058,
       "npc" : "F_KO_Survival_dice",
       "placeholders" : [
+        ".@dice",
         ".@dice"
       ],
-      "text" : "Press Close to move forward {0} blocks."
+      "text" : "The dice came out as {0}.\nPress Close to move forward {1} blocks."
     },
     {
       "kind" : "message",
@@ -2153,19 +2168,18 @@
         "@job_ko_dice2",
         ".@dice_sum"
       ],
-      "text" : "{0} + {1} = {2}"
+      "text" : "{0} + {1} = {2}\nYou total is lower than 5. Press Close to move to block 30."
     },
     {
       "kind" : "message",
-      "line" : 1558,
+      "line" : 1554,
       "npc" : "Sight",
-      "text" : "You total is lower than 5. Press Close to move to block 30."
-    },
-    {
-      "kind" : "message",
-      "line" : 1562,
-      "npc" : "Sight",
-      "text" : "You total is larger than 5. Press Close to move to block 19."
+      "placeholders" : [
+        "@job_ko_dice1",
+        "@job_ko_dice2",
+        ".@dice_sum"
+      ],
+      "text" : "{0} + {1} = {2}\nYou total is larger than 5. Press Close to move to block 19."
     },
     {
       "kind" : "message",
@@ -2263,13 +2277,7 @@
         "@job_ko_dice2",
         ".@dice_sum"
       ],
-      "text" : "{0} + {1} = {2}"
-    },
-    {
-      "kind" : "message",
-      "line" : 1637,
-      "npc" : "Sight",
-      "text" : "You total is larger than 8. Please choose a block to move between blocks 25 through 30."
+      "text" : "{0} + {1} = {2}\nYou total is larger than 8. Please choose a block to move between blocks 25 through 30."
     },
     {
       "kind" : "option",
@@ -2836,7 +2844,7 @@
       "kind" : "message",
       "line" : 2017,
       "npc" : "Red Leopard Joe",
-      "text" : "[Red Leopard Joe]"
+      "text" : "[Red Leopard Joe]\nVery creative. I do see room for improvement but the weapon itself may come out useful after smoothing it out a bit."
     },
     {
       "kind" : "message",
@@ -2848,19 +2856,13 @@
       "kind" : "message",
       "line" : 2022,
       "npc" : "Red Leopard Joe",
-      "text" : "[Red Leopard Joe]\nAhh, Its not an Ordinary Huuma."
+      "text" : "[Red Leopard Joe]\nAhh, Its not an Ordinary Huuma.\nVery creative. I do see room for improvement but the weapon itself may come out useful after smoothing it out a bit."
     },
     {
       "kind" : "message",
       "line" : 2025,
       "npc" : "Red Leopard Joe",
       "text" : "[Red Leopard Joe]\nAhh, how is it possible? You don't have weapons? Maybe you equipped it?"
-    },
-    {
-      "kind" : "message",
-      "line" : 2029,
-      "npc" : "Red Leopard Joe",
-      "text" : "Very creative. I do see room for improvement but the weapon itself may come out useful after smoothing it out a bit."
     },
     {
       "kind" : "message",
