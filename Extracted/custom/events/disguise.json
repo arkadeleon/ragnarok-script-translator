@@ -1,0 +1,191 @@
+{
+  "file" : "npc/custom/events/disguise.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nSelect an option."
+    },
+    {
+      "kind" : "option",
+      "line" : 30,
+      "npc" : "Disguise Event",
+      "text" : "Turn ON/OFF Event"
+    },
+    {
+      "kind" : "option",
+      "line" : 30,
+      "npc" : "Disguise Event",
+      "text" : "Event Settings"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "Disguise Event",
+      "text" : "The Event is currently: [^0000FFON^000000]\nWould you like to turn it OFF?"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Disguise Event",
+      "text" : "The Event is currently: [^FF0000OFF^000000]\nWould you like to turn it ON?"
+    },
+    {
+      "kind" : "option",
+      "line" : 40,
+      "npc" : "Disguise Event",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 40,
+      "npc" : "Disguise Event",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nPick a setting to modify."
+    },
+    {
+      "kind" : "option",
+      "line" : 58,
+      "npc" : "Disguise Event",
+      "text" : "Monster Display"
+    },
+    {
+      "kind" : "option",
+      "line" : 58,
+      "npc" : "Disguise Event",
+      "text" : "Number of Rounds"
+    },
+    {
+      "kind" : "option",
+      "line" : 58,
+      "npc" : "Disguise Event",
+      "text" : "Prize Settings"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nChoose a disguise rule."
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$",
+        ".@r$[.Rule-1]"
+      ],
+      "text" : "{0}\nThe Disguise Rule has been set:\n  > ^0055FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 70,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$",
+        ".Rounds"
+      ],
+      "text" : "{0}\nInput the number of rounds you want the event to last.\nCurrent number: [^0000FF{1}^000000]"
+    },
+    {
+      "kind" : "message",
+      "line" : 76,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$",
+        ".Rounds"
+      ],
+      "text" : "{0}\nThe number of rounds has been changed to {1}."
+    },
+    {
+      "kind" : "message",
+      "line" : 80,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$",
+        "getitemname(.Prize)",
+        ".Prize"
+      ],
+      "text" : "{0}\nInput the Item ID of the prize given each round.\nCurrent item: [^0000FF{1}^000000] (ID #{2})"
+    },
+    {
+      "kind" : "message",
+      "line" : 87,
+      "npc" : "Disguise Event",
+      "text" : "That item does not exist. Please try again."
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "Disguise Event",
+      "text" : "Input the amount to be given."
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Disguise Event",
+      "text" : "That amount is invalid. Using default amount of 1."
+    },
+    {
+      "kind" : "message",
+      "line" : 102,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".PrizeAmt",
+        "getitemname(.Prize)"
+      ],
+      "text" : "The Prize has been changed successfully.\nPrize: {0}x [^0000FF{1}^000000]"
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nWelcome.\nHow may I be of assistance?"
+    },
+    {
+      "kind" : "option",
+      "line" : 112,
+      "npc" : "Disguise Event",
+      "text" : "Information"
+    },
+    {
+      "kind" : "option",
+      "line" : 112,
+      "npc" : "Disguise Event",
+      "text" : "Nothing, just passing through."
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThis event is quite simple.\nAt the start of the event, I will\ndisguise myself as a random\nmonster. You have to shout\nthat monster's name out loud."
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Disguise Event",
+      "text" : "If you are correct, you will receive\na prize. If not, keep trying!\nThat's all that there is to this event."
+    }
+  ]
+}

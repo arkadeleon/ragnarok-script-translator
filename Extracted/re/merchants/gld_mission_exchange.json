@@ -1,0 +1,659 @@
+{
+  "file" : "npc/re/merchants/gld_mission_exchange.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 16,
+      "text" : "You have too many items to proceed with the quest.\nPlease lighten your load and try again."
+    },
+    {
+      "kind" : "message",
+      "line" : 21,
+      "text" : "It's a machine that exchanges Commemorative Siege Guild Coins for special items.\nSelect the desired item and insert as many coins as necessary."
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "text" : "View exchangeable items"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "text" : "Trade for Investment Certificates"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "text" : "Trade for Good Medicines"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "text" : "Trade for Gifts"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "text" : "Kvasir's Ring"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "text" : "Leave"
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "text" : "[ClickClick MeowMeow-GX]\nThank you for choosing ClickClick MeowMeow!\nHere is a list of items you can purchase with Commemorative Siege Guild Coins."
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "text" : "= Blood of Frost Giant =\nNew medicine developed by the joint effort of Alchemy Union of 3 countries. Gives the user supernatural powers for a short period of time.\n^4d4dffDrains 3000 HP, but increases physical and magical damage to the user's counterpart players by 100% for 10 seconds.\nRequired Level: 80 or higher^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 36,
+      "text" : "= Core of Golem =\nNew medicine developed by the joint effort of Alchemy Union of 3 countries. Gives the user supernatural powers for a short period of time.\n^4d4dffDrains 300 SP, but decreases the damage taken from the user's counterpart players by 50% for 10 seconds.\nRequired Level: 80 or higher^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "placeholders" : [
+        ".@status$[.@i]",
+        "(.@i == 1 ? \"Petrification\" : .@status$[.@i])"
+      ],
+      "text" : "= Fairy's Tear ({0}) =\nA potion developed by Vicent, a pharmaceutical genius. Gives the user supernatural powers for a short period of time.\n^4d4dffDrains 3000 HP, but allows the user to become immune to {1} status for 10 seconds.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "text" : "= Feather Beret[1] =\nA comfortable, sky blue-colored hat decorated with feathers.\n^4d4dffMDEF + 1, Decreases the damage taken from the user's counterpart players by 10%.\nCard Slot [1], available to all job classes except for Novices."
+    },
+    {
+      "kind" : "message",
+      "line" : 54,
+      "text" : "= Feather Beret Costume =\nA comfortable, sky blue-colored hat decorated with feathers.\n^4d4dffCostume Equipment, available to all job classes.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 58,
+      "text" : "This is the end of the list."
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "text" : "[ClickClick MeowMeow-GX]\nWe exchange the ^4d4dff1Investment Certificate^000000 of Cat's Paw Merchant Group for ^4d4dff10Commemorative Coins!^000000\nDo you want to exchange?"
+    },
+    {
+      "kind" : "option",
+      "line" : 66,
+      "text" : "Yes."
+    },
+    {
+      "kind" : "option",
+      "line" : 66,
+      "text" : "View other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 68,
+      "text" : "[ClickClick MeowMeow-GX]"
+    },
+    {
+      "kind" : "message",
+      "line" : 70,
+      "text" : "Thank you for using our service, meow!"
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "text" : "You don't have enough coins for Investment Certificates.\n1 Investment Certificate is worth 10 coins."
+    },
+    {
+      "kind" : "message",
+      "line" : 80,
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 87,
+      "text" : "[ClickClick MeowMeow-GX]\nYou have selected a list of good medicines!\nAll items listed below are worth ^4d4dff300 coins each^000000, meow!"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "text" : "Blood of Frost Giants"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "text" : "Core of Golem"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "text" : "Fairy's Tear (Stun)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "text" : "Fairy's Tear (Frozen)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "text" : "Fairy's Tear (Sleep)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "text" : "Fairy's Tear (Curse)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "text" : "Fairy's Tear (Petrify)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "text" : "Fairy's Tear (Silence)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "text" : "Fairy's Tear (Blind)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "text" : "View other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "text" : "You've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 126,
+      "text" : "[ClickClick MeowMeow-GX]\nYou have selected a list of good gifts!\nThe price for each item is listed separately, meow!"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "text" : "Old Card Album -500 Coins"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "text" : "Old Purple Box -300 Coins"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "text" : "Old Blue Box -100 Coins"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "text" : "Jewelry Box -500 Coins"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "text" : "Wrapped Mask -500 Coins"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "text" : "Feather Beret"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "text" : "Leave"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "text" : "[ClickClick MeowMeow-GX]\nYou have selected a nice beret decorated with feathers!\nWe have Feather Berets and Feather Beret Costumes to which you can install cards, meow!"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "text" : "Feather Beret[1] -1500 Coins"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "text" : "Feather Beret Costume -800 Coins"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "text" : "Purchase a Beret"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "text" : "View other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 153,
+      "text" : "[ClickClick MeowMeow-GX]\nIt's a feather beret to which you can install cards!\nIt is worth 1500 Commemorative Coins. Do you want to purchase it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 157,
+      "text" : "Yes!"
+    },
+    {
+      "kind" : "option",
+      "line" : 157,
+      "text" : "No!"
+    },
+    {
+      "kind" : "message",
+      "line" : 159,
+      "text" : "[ClickClick MeowMeow-GX]"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "text" : "Thank you for using our service, meow!"
+    },
+    {
+      "kind" : "message",
+      "line" : 165,
+      "text" : "You need 1500 Commemorative Coins in order to purchase the selected item.\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 171,
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "text" : "[ClickClick MeowMeow-GX]\nIt's a feather beret costume!\nIt is worth 800 Commemorative Coins. Do you want to purchase it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 182,
+      "text" : "Yes!"
+    },
+    {
+      "kind" : "option",
+      "line" : 182,
+      "text" : "No!"
+    },
+    {
+      "kind" : "message",
+      "line" : 184,
+      "text" : "[ClickClick MeowMeow-GX]"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "text" : "Thank you for using our service, meow!"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "text" : "You need 800 Commemorative Coins in order to purchase the selected item.\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 196,
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 203,
+      "text" : "[ClickClick MeowMeow-GX]\nThe preparations for changing the color of feather beret costumes are under way.\nPlease come back later!\nLet me show you other items!"
+    },
+    {
+      "kind" : "message",
+      "line" : 210,
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "text" : "[ClickClick MeowMeow-GX]\nDo not use the exchange machine."
+    },
+    {
+      "kind" : "message",
+      "line" : 224,
+      "text" : "[ClickClick MeowMeow-GX]\nThis is the category of Kvasir's Rings.\nYou can view the description for each ring and purchase one here."
+    },
+    {
+      "kind" : "option",
+      "line" : 228,
+      "text" : "Trade for Kvasir's Ring (Blue)"
+    },
+    {
+      "kind" : "option",
+      "line" : 228,
+      "text" : "Trade for Kvasir's Ring (Red)"
+    },
+    {
+      "kind" : "option",
+      "line" : 228,
+      "text" : "Trade for Kvasir's Ring (Green)"
+    },
+    {
+      "kind" : "option",
+      "line" : 228,
+      "text" : "Trade for Kvasir's Ring (Brown)"
+    },
+    {
+      "kind" : "option",
+      "line" : 228,
+      "text" : "Leave"
+    },
+    {
+      "kind" : "message",
+      "line" : 230,
+      "text" : "= Kvasir's Ring (Blue) =\nA ring that is rumored to be filled with the power of Kvasir, a sage god. \n^4d4dffMSP + 30. 'Snow Flip' 1Lv available^000000\nAccessory. Available to all job classes. Required Level: 1"
+    },
+    {
+      "kind" : "message",
+      "line" : 235,
+      "text" : "[ClickClick MeowMeow-GX]\nKvasir's Ring (Blue) can be purchased with ^4d4dff20Blood of Frost Giant and 20 Core of Golem^000000\nor ^4d4dff1Kvasir's Ring in different color and 10 Commemorative Coins!^000000\nDo you want to purchase it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 240,
+      "text" : "Pay with Blood and Core"
+    },
+    {
+      "kind" : "option",
+      "line" : 240,
+      "text" : "Pay with Kvasir's Ring (Red)"
+    },
+    {
+      "kind" : "option",
+      "line" : 240,
+      "text" : "Pay with Kvasir's Ring (Green)"
+    },
+    {
+      "kind" : "option",
+      "line" : 240,
+      "text" : "Pay with Kvasir's Ring (Brown)"
+    },
+    {
+      "kind" : "option",
+      "line" : 240,
+      "text" : "Leave"
+    },
+    {
+      "kind" : "message",
+      "line" : 242,
+      "text" : "[ClickClick MeowMeow-GX]"
+    },
+    {
+      "kind" : "message",
+      "line" : 244,
+      "text" : "Kvasir's Ring (Blue) has been purchased."
+    },
+    {
+      "kind" : "message",
+      "line" : 249,
+      "text" : "Looks like Kvasir's Ring (Blue) can be purchased with ^4d4dff20Blood of Frost Giant and 20 Core of Golem.^000000\nYou don't have enough items to complete the purchase. View other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 267,
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 274,
+      "text" : "= Kvasir's Ring (Red) =\nA ring that is rumored to be filled with the power of Kvasir, a sage god. \n^4d4dffMSP + 30. 'Peony Mamy' 1Lv available^000000\nAccessory. Available to all job classes. Required Level: 1"
+    },
+    {
+      "kind" : "message",
+      "line" : 279,
+      "text" : "[ClickClick MeowMeow-GX]\nKvasir's Ring (Red) can be purchased with ^4d4dff1Kvasir's Ring and 10 Commemorative Coins.^000000\nWhich of the followings do you want to trade for Kvasir's Ring (Red)?"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "text" : "Kvasir's Ring (Blue)"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "text" : "Kvasir's Ring (Green)"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "text" : "Kvasir's Ring (Brown)"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "text" : "Leave"
+    },
+    {
+      "kind" : "message",
+      "line" : 297,
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 304,
+      "text" : "= Kvasir's Ring (Green) =\nA ring that is rumored to be filled with the power of Kvasir, a sage god. \n^4d4dffMSP + 100. 'Sada Ear' 1Lv available^000000\nAccessory. Available to all job classes. Required Level: 1"
+    },
+    {
+      "kind" : "message",
+      "line" : 309,
+      "text" : "[ClickClick MeowMeow-GX]\nKvasir's Ring (Green) can be purchased with ^4d4dff1Kvasir's Ring and 10 Commemorative Coins.^000000\nWhich of the followings do you want to trade for Kvasir's Ring (Red)?"
+    },
+    {
+      "kind" : "option",
+      "line" : 313,
+      "text" : "Kvasir's Ring (Blue)"
+    },
+    {
+      "kind" : "option",
+      "line" : 313,
+      "text" : "Kvasir's Ring (Red)"
+    },
+    {
+      "kind" : "option",
+      "line" : 313,
+      "text" : "Kvasir's Ring (Brown)"
+    },
+    {
+      "kind" : "option",
+      "line" : 313,
+      "text" : "Leave"
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 334,
+      "text" : "= Kvasir Ring Brown =\nA ring that is rumored to be filled with the power of Kvasir, a sage god. \n^4d4dffMSP + 100. 'Dust of Galaxy' 1Lv available^000000\nAccessory. Available to all job classes. Required Level: 1"
+    },
+    {
+      "kind" : "message",
+      "line" : 339,
+      "text" : "[ClickClick MeowMeow-GX]\nKvasir's Ring (Brown) can be purchased with ^4d4dff1Kvasir's Ring and 10 Commemorative Coins.^000000\nWhich of the followings do you want to trade for Kvasir's Ring (Red)?"
+    },
+    {
+      "kind" : "option",
+      "line" : 343,
+      "text" : "Kvasir's Ring (Blue)"
+    },
+    {
+      "kind" : "option",
+      "line" : 343,
+      "text" : "Kvasir's Ring (Red)"
+    },
+    {
+      "kind" : "option",
+      "line" : 343,
+      "text" : "Kvasir's Ring (Green)"
+    },
+    {
+      "kind" : "option",
+      "line" : 343,
+      "text" : "Leave"
+    },
+    {
+      "kind" : "message",
+      "line" : 357,
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 364,
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 371,
+      "text" : "[ClickClick MeowMeow-GX]\nDo not use the exchange machine."
+    },
+    {
+      "kind" : "message",
+      "line" : 379,
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[ClickClick MeowMeow-GX]\nYou're purchasing 1 {0}, meow!\nAre you sure?"
+    },
+    {
+      "kind" : "option",
+      "line" : 383,
+      "text" : "Yes!"
+    },
+    {
+      "kind" : "option",
+      "line" : 383,
+      "text" : "No!"
+    },
+    {
+      "kind" : "message",
+      "line" : 385,
+      "text" : "[ClickClick MeowMeow-GX]"
+    },
+    {
+      "kind" : "message",
+      "line" : 387,
+      "text" : "Thank you for using our service, meow!"
+    },
+    {
+      "kind" : "message",
+      "line" : 391,
+      "text" : "One good medicine is worth 300 commemorative coins that you've raked and scraped..."
+    },
+    {
+      "kind" : "message",
+      "line" : 395,
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 404,
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[ClickClick MeowMeow-GX]\nYou're purchasing 1 {0}, meow!\nAre you sure?"
+    },
+    {
+      "kind" : "option",
+      "line" : 408,
+      "text" : "Yes!"
+    },
+    {
+      "kind" : "option",
+      "line" : 408,
+      "text" : "No!"
+    },
+    {
+      "kind" : "message",
+      "line" : 410,
+      "text" : "[ClickClick MeowMeow-GX]"
+    },
+    {
+      "kind" : "message",
+      "line" : 412,
+      "text" : "Thank you for using our service, meow!"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "placeholders" : [
+        ".@price"
+      ],
+      "text" : "You need {0} Commemorative Coins in order to purchase the selected item.\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 422,
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 434,
+      "text" : "[ClickClick MeowMeow-GX]"
+    },
+    {
+      "kind" : "message",
+      "line" : 437,
+      "placeholders" : [
+        ".@fromname$",
+        ".@toname$"
+      ],
+      "text" : "You have {0}.\nDo you want to trade this in for {1}?"
+    },
+    {
+      "kind" : "message",
+      "line" : 440,
+      "text" : "[ClickClick MeowMeow-GX]"
+    },
+    {
+      "kind" : "option",
+      "line" : 441,
+      "text" : "Yes!"
+    },
+    {
+      "kind" : "option",
+      "line" : 441,
+      "text" : "Leave"
+    },
+    {
+      "kind" : "message",
+      "line" : 445,
+      "placeholders" : [
+        ".@fromname$",
+        ".@toname$"
+      ],
+      "text" : "You have traded {0} for {1}."
+    },
+    {
+      "kind" : "message",
+      "line" : 453,
+      "text" : "You've decided to view other items."
+    },
+    {
+      "kind" : "message",
+      "line" : 457,
+      "placeholders" : [
+        ".@fromname$"
+      ],
+      "text" : "You need 1 {0} and 10 Commemorative Coins in order to complete the purchase."
+    }
+  ]
+}

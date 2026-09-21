@@ -1,0 +1,281 @@
+{
+  "file" : "npc/custom/quests/questboard.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "^FF0000{0} - {1}/{2} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "((getd(\".\" +currentquest$+\"_collectionprize\"))?getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))+\" - \"+getd(\".\" +currentquest$+\"_collectionamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "--------------------------------\n[Reward]\nItem: ^0000FF{0}\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 38,
+      "npc" : "Questboard",
+      "text" : "Finish"
+    },
+    {
+      "kind" : "option",
+      "line" : 38,
+      "npc" : "Questboard",
+      "text" : "Abort"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nQuest aborted."
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "^FF0000{0} - {1}/{2} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "((getd(\".\" +currentquest$+\"_huntingprize\"))?getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))+\" - \"+getd(\".\" +currentquest$+\"_huntingamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "--------------------------------\n[Reward]\nItem: ^0000FF{0}\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Questboard",
+      "text" : "Finish"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Questboard",
+      "text" : "Abort"
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nQuest aborted."
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nSelect category:"
+    },
+    {
+      "kind" : "option",
+      "line" : 82,
+      "npc" : "Questboard",
+      "text" : "Exit"
+    },
+    {
+      "kind" : "message",
+      "line" : 95,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "Time2Str(getd(.@selection + \"_collection_delay\"))"
+      ],
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0}^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 102,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nYou already did this quest.\nPlease choose another one."
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 113,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "^FF0000{0} - {1} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 115,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "((getd(\".\" +.@selection+\"_collectionprize\"))?getitemname(getd(\".\" +.@selection+\"_collectionprize\"))+\" - \"+getd(\".\" +.@selection+\"_collectionamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "--------------------------------\n[Reward]\nItem: ^0000FF{0}\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 122,
+      "npc" : "Questboard",
+      "text" : "Accept"
+    },
+    {
+      "kind" : "option",
+      "line" : 122,
+      "npc" : "Questboard",
+      "text" : "Decline"
+    },
+    {
+      "kind" : "message",
+      "line" : 126,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nQuest accepted."
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nYou don't have the required\nlevel to do this quest."
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "Time2Str(getd(.@selection + \"_hunting_delay\"))"
+      ],
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0}^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 155,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nYou already did this quest.\nPlease choose another one."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 166,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "^FF0000{0} - {1} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "((getd(\".\" +.@selection+\"_huntingprize\"))?getitemname(getd(\".\" +.@selection+\"_huntingprize\"))+\" - \"+getd(\".\" +.@selection+\"_huntingamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "--------------------------------\n[Reward]\nItem: ^0000FF{0}\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Questboard",
+      "text" : "Accept"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Questboard",
+      "text" : "Decline"
+    },
+    {
+      "kind" : "message",
+      "line" : 179,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nQuest accepted."
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nYou don't have the required\nlevel to do this quest."
+    },
+    {
+      "kind" : "message",
+      "line" : 204,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nYou don't have everything."
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nCongratulation! Here is your Reward."
+    },
+    {
+      "kind" : "message",
+      "line" : 239,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nYou didn't kill everything."
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nCongratulation! Here is your Reward."
+    }
+  ]
+}

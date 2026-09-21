@@ -1,0 +1,462 @@
+{
+  "file" : "npc/quests/skills/sage_skills.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 19,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nGood day, I'm Mishuna, one\nof the instructors here in the\nSchweicherbil Magic Academy.\nBy any chance, are you a Sage\nor Scholar? Oh... You're not?"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nOh, that's too bad.\nMy apologies. But if you\nhappen to know any, or meet\nany in your journeys, please\ndirect them to me if they haven't heard of the lessons I provide."
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nI'm sorry to bother\nyou, and I thank you\nfor your time. Good\nday to you, adventurer."
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nIf you have any Sage or\nScholar friends who haven't\nlearned the skills from Sir\nBarmundt's scrolls, then\nplease refer them to me."
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nI trust that you are\nfinding that these\nelement based skills\nare very useful in battle.\nKnowledge truly equates\nto power in the long run..."
+    },
+    {
+      "kind" : "message",
+      "line" : 60,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nAh, you must have\nforgotten what I taught\nyou somehow. Perhaps\nyou lost your copy of the\nskill scroll I gave you? No\nmatter, I'll help you remember."
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nYou'll be given the chance to\nchoose which kind of ^FF0000Elemental\nChange^000000 skill that you want, even one that you didn't previously\nlearn, so long as you fulfill\nthe skill's requirements."
+    },
+    {
+      "kind" : "message",
+      "line" : 76,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nKeep in mind that once\nyou learn your Elemental\nChange skill, you won't be\nable to change it. Now, which\nskill would you like to learn?"
+    },
+    {
+      "kind" : "option",
+      "line" : 88,
+      "npc" : "Mischna",
+      "text" : "Fire Elemental Change"
+    },
+    {
+      "kind" : "option",
+      "line" : 88,
+      "npc" : "Mischna",
+      "text" : "Earth Elemental Change"
+    },
+    {
+      "kind" : "option",
+      "line" : 88,
+      "npc" : "Mischna",
+      "text" : "Wind Elemental Change"
+    },
+    {
+      "kind" : "option",
+      "line" : 88,
+      "npc" : "Mischna",
+      "text" : "Water Elemental Change"
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "Mischna",
+      "placeholders" : [
+        ".@ReqSkill$[.@i]",
+        ".@Skill$[.@i]",
+        ".@ReqSkill$[.@i]"
+      ],
+      "text" : "[Mishuna]\nI'm sorry, but you haven't\nlearned ^FF0000Endow {0}^000000, the skill\nrequired for ^FF0000{1} Elemental\nChange^000000. You'll need to learn\nEndow {2} or select another\nElemental Change skill."
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
+      "npc" : "Mischna",
+      "placeholders" : [
+        ".@Skill$[.@i]"
+      ],
+      "text" : "[Mishuna]\nVery well, I shall\nteach you the ^FF0000{0}\nElemental Change^000000 skill\nand the ^FF0000Elemental Converter\nCreation skill^000000. Please remain\nstill while I chant this spell."
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\n%$#@!#$% Yap~~"
+    },
+    {
+      "kind" : "message",
+      "line" : 112,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nYap!"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "npc" : "Mischna",
+      "placeholders" : [
+        ".@Skill$[.@i]"
+      ],
+      "text" : "^3355FFYou've successfully\nlearned the {0} Elemental\nChange skill and the Elemental\nConverter Creation skill.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nAlright, I'm going\nto cast a spell that\nwill help you remember\nthe skills you forgot.\nDon't move, and try to\nstay as still as possible..."
+    },
+    {
+      "kind" : "message",
+      "line" : 137,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\n%$#@!#$% Yap~~"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nYap!"
+    },
+    {
+      "kind" : "message",
+      "line" : 145,
+      "npc" : "Mischna",
+      "text" : "^3355FFYou successfully recalled\nthe Elemental Coverter\nCreation skill and are\nable to use it again.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 152,
+      "npc" : "Mischna",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[Mishuna]\nAh, you've learned these\nskills as quickly as I thought\nyou would. Very well then,\nI hope you adeptly use these\ntalents for the right purposes.\nFarewell for now, {0}."
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nGood day, I'm Mishuna, one\nof the instructors here in the\nSchweicherbil Magic Academy.\nHow may I be of service?"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Mischna",
+      "text" : "I seek new knowledge."
+    },
+    {
+      "kind" : "message",
+      "line" : 169,
+      "npc" : "Mischna",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[Mishuna]\nAh, you must be {0}.\nI've looked forward to meeting\nyou. In the noble pursuit of\nknowledge, might I suggest\nreading the recently restored\nscrolls of Sir Barmundt?"
+    },
+    {
+      "kind" : "message",
+      "line" : 177,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nSir Barmundt's scrolls contain\nknowledge about the 4 elements,\nwhich are Fire, Water, Earth, and Wind. The knowledge of these\nscrolls can be applied in the\nuse of 2 new Sage skills."
+    },
+    {
+      "kind" : "message",
+      "line" : 184,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nThe first is called ^FF0000Elemental\nChange^000000, which enables you\nto change a monster's attribute\naccording to the specific element of the Elemental Change skill\nthat you have learned."
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nThe second is called\nElemental Converter Creation,\nwhich enables you to create\nconverter items that are required to use the Elemental Change skill."
+    },
+    {
+      "kind" : "message",
+      "line" : 197,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nAlthough the knowledge of\nthese two skills has been\nlost for years, we've finally\nbeen able to recover most\nof it. So, do you think you're\nready to learn these skills?"
+    },
+    {
+      "kind" : "option",
+      "line" : 205,
+      "npc" : "Mischna",
+      "text" : "Maybe later."
+    },
+    {
+      "kind" : "option",
+      "line" : 205,
+      "npc" : "Mischna",
+      "text" : "Yes, I am."
+    },
+    {
+      "kind" : "message",
+      "line" : 206,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nAh, you must be busy right\nnow. No problem, just come\nback when you think you're\nready to learn. Well then,\nfarewell and have a good day~"
+    },
+    {
+      "kind" : "message",
+      "line" : 214,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nVery well, then. First, you\nmust learn the Elemental\nCoverter Creation skill, which\nis essential to learning the\nElemental Change skill."
+    },
+    {
+      "kind" : "message",
+      "line" : 221,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nPlease bring the required\nmaterials so that we can\nconstruct a basic elemental\nconverter in order for you to\nlearn the skill. Let's see,\nyou will need to bring..."
+    },
+    {
+      "kind" : "message",
+      "line" : 229,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\n^ff00007 Horns^000000,\n^ff000012 Rainbow Shells^000000,\n^ff000010 Snail's Shells^000000,\n^ff00004 Blank Scrolls^000000 and\n^ff000010 Scorpion Tails^000000.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 236,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nAlright, I shall be\nnexting here for your\nreturn. Remember that we\nneed these items to create\na converter so that you can learn the skill from my example..."
+    },
+    {
+      "kind" : "message",
+      "line" : 247,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nHm, you still haven't\ngathered all of the materials\nrequired to create an elemental\ncoverter. Let me remind you\nwhat to bring so that you\ndon't forget next time..."
+    },
+    {
+      "kind" : "message",
+      "line" : 255,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\n^ff00007 Horns^000000,\n^ff000012 Rainbow Shells^000000,\n^ff000010 Snail's Shells^000000,\n^ff00004 Blank Scrolls^000000 and\n^ff000010 Scorpion Tails^000000.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 262,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nDon't forget that we need\nall of these items to create\na converter so that you can\nlearn the Elemental Converter\nCreation skill by watching\nme demonstrate it for you."
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nGreat, you brought everything.\nNow, let me explain the skill.\nThe skills you learn as a Sage\ndetermine what kind of elemental converters that you can craft."
+    },
+    {
+      "kind" : "message",
+      "line" : 278,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nThe ^FF0000Endow Blaze^000000 skill enables\nyou to create Fire elemental\nconverters. The ^FF0000Endow Quake^000000\nskill enables the creation\nof Earth elemental converters."
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\n^FF0000Endow Tornado^000000 enables\nthe creation of Wind elemental\nconverters, and ^FF0000Endow Tsunami^000000\nenables the creation of Water\nelemental converters. That\nall makes sense, right?"
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nNow, your elemental coverter\ncreation success rate depends\non the level of the Endow Blaze, Endow Quake, Endow Tornado,\nor Endow Tsunami skills, and\nyour abilities."
+    },
+    {
+      "kind" : "message",
+      "line" : 300,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nNow, please take this copy\nof Barmundt's scroll, and use\nit as a reference when you try\nto craft elemental converters\nwhen you use the Elemental\nConverter Creation skill."
+    },
+    {
+      "kind" : "message",
+      "line" : 308,
+      "npc" : "Mischna",
+      "text" : "^3355FFYou have learned the\nElemental Converter\nCreation skill by reviewing\nyour copy of Barmundt's scroll.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 321,
+      "npc" : "Mischna",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[Mishuna]\nWow, {0}!\nYou learned that skill\nreally quickly! No wonder\npeople say that you're one\nof the best Sages around!"
+    },
+    {
+      "kind" : "message",
+      "line" : 328,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nNow you're ready to\nlearn the other skill,\nElemental Change. Alright,\nI need to prepare a few things\nfor this lesson, so we'll meet\nand discuss this later, okay?"
+    },
+    {
+      "kind" : "message",
+      "line" : 341,
+      "npc" : "Mischna",
+      "text" : "- I recalled ^ff0000Elemental Converter Creation skill^000000 While I talk to Mishuna! -"
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nYou'll be given the chance to\nchoose which kind of ^FF0000Elemental\nChange^000000 skill that you want, even one that you didn't previously\nlearn, so long as you fulfill\nthe skill's requirements."
+    },
+    {
+      "kind" : "message",
+      "line" : 351,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nKeep in mind that once\nyou learn your Elemental\nChange skill, you won't be\nable to change it. Now, which\nskill would you like to learn?"
+    },
+    {
+      "kind" : "option",
+      "line" : 363,
+      "npc" : "Mischna",
+      "text" : "Fire Elemental Change"
+    },
+    {
+      "kind" : "option",
+      "line" : 363,
+      "npc" : "Mischna",
+      "text" : "Earth Elemental Change"
+    },
+    {
+      "kind" : "option",
+      "line" : 363,
+      "npc" : "Mischna",
+      "text" : "Wind Elemental Change"
+    },
+    {
+      "kind" : "option",
+      "line" : 363,
+      "npc" : "Mischna",
+      "text" : "Water Elemental Change"
+    },
+    {
+      "kind" : "message",
+      "line" : 365,
+      "npc" : "Mischna",
+      "placeholders" : [
+        ".@ReqSkill$[.@i]",
+        ".@Skill$[.@i]",
+        ".@ReqSkill$[.@i]"
+      ],
+      "text" : "[Mishuna]\nI'm sorry, but you have not\nlearned ^FF0000Endow {0}^000000, the skill\nrequired for the {1} Elemental Change skill. Please learn Endow\n{2} or select another Elemental Change skill for me to teach you."
+    },
+    {
+      "kind" : "message",
+      "line" : 373,
+      "npc" : "Mischna",
+      "placeholders" : [
+        ".@Skill$[.@i]"
+      ],
+      "text" : "[Mishuna]\nVery well, then. Please\nbring the following items\nso that you can learn the\n{0} Elemental Change skill."
+    },
+    {
+      "kind" : "message",
+      "line" : 379,
+      "npc" : "Mischna",
+      "placeholders" : [
+        ".@ReqItem$[.@i]"
+      ],
+      "text" : "[Mishuna]\n^FF000020 {0}^000000,\n^FF00001 Payon Solution^000000 and\n^FF00001 Morocc Solution^000000. Please\nreturn to me once you have\nall the materials ready."
+    },
+    {
+      "kind" : "message",
+      "line" : 393,
+      "npc" : "Mischna",
+      "text" : "- I recalled ^ff0000Elemental Converter Creation skill^000000 While I talk to Mishuna! -"
+    },
+    {
+      "kind" : "message",
+      "line" : 402,
+      "npc" : "Mischna",
+      "placeholders" : [
+        ".@Skill$[.@i]"
+      ],
+      "text" : "[Mishuna]\nAre you having trouble\ngathering all the required\nitems? Just in case, let me\nremind you of what you need\nto bring me to learn the {0}\nElemental Change skill."
+    },
+    {
+      "kind" : "message",
+      "line" : 410,
+      "npc" : "Mischna",
+      "placeholders" : [
+        ".@ReqItem$[.@i]"
+      ],
+      "text" : "[Mishuna]\n^ff000020 {0}^000000,\n^ff00001 Payon Solution^000000 and\n^ff00001 Morocc Solution^000000. Please\ndon't forget and have the\nmaterials ready for the next\ntime you see me, alright?"
+    },
+    {
+      "kind" : "message",
+      "line" : 419,
+      "npc" : "Mischna",
+      "placeholders" : [
+        ".@Skill$[.@i]",
+        ".@Skill$[.@i]"
+      ],
+      "text" : "[Mishuna]\nAh, you're back. I can now\nfinally teach you about the\n{0} Elemental Change skill.\nThis skill has the chance to\npermanently change a targeted\nmonster's attribute to {1}."
+    },
+    {
+      "kind" : "message",
+      "line" : 427,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nRemember that you must\nuse an elemental converter to\ncast this skill, and that it has a success rate, similarly to the\nElemental Converter Creation\nskill. So be aware of that."
+    },
+    {
+      "kind" : "message",
+      "line" : 434,
+      "npc" : "Mischna",
+      "placeholders" : [
+        "strcharinfo(0)",
+        ".@Skill$[.@i]"
+      ],
+      "text" : "[Mishuna]\nNow, {0},\nI'm going to cast a spell\nthat will help you memorize\nthe {1} Elemental Change\nskill. Try to stay still..."
+    },
+    {
+      "kind" : "message",
+      "line" : 441,
+      "npc" : "Mischna",
+      "text" : "^3355FFMishuna begins to chant\na strange incantation as\na soft blue glow surrounds\nhis body and slowly grows\nbrighter and more intense.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 448,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\n@#$%^~ Yap!"
+    },
+    {
+      "kind" : "message",
+      "line" : 457,
+      "npc" : "Mischna",
+      "placeholders" : [
+        "strcharinfo(0)",
+        ".@Skill$[.@i]"
+      ],
+      "text" : "[Mishuna]\n{0}...\nI'm happy to say that you've\nsuccessfully memorized the\n{1} Elemental Change skill.\nI hope that it serves you well\nin battle. Farewell for now~"
+    },
+    {
+      "kind" : "message",
+      "line" : 467,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nIf you have any Sage or\nScholar friends who haven't\nlearned the skills from Sir\nBarmundt's scrolls, then\nplease refer them to me."
+    },
+    {
+      "kind" : "message",
+      "line" : 474,
+      "npc" : "Mischna",
+      "text" : "[Mishuna]\nI trust that you are\nfinding that these\nelement based skills\nare very useful in battle.\nKnowledge truly equates\nto power in the long run..."
+    }
+  ]
+}

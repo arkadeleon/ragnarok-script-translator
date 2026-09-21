@@ -1,0 +1,368 @@
+{
+  "file" : "npc/re/merchants/hd_refiner.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 20,
+      "text" : "[Blacksmith Mighty Hammer]\nUnlike others, I am a blacksmith who refines a very limited number of items.\nI refine only items that are ^CC0000+7 to +9^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "text" : "[Blacksmith Mighty Hammer]\nMy specialty is that even if my refining fails, the refine level decreases by 1 without losing the gear. Isn't it great?"
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "text" : "[Blacksmith Mighty Hammer]\nSo lets kick this into overdrive, what d' ya say? What item do you want to refine?"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "text" : "[Blacksmith Mighty Hammer]"
+    },
+    {
+      "kind" : "message",
+      "line" : 38,
+      "text" : "I'm a blacksmith, not a hairstylist."
+    },
+    {
+      "kind" : "message",
+      "line" : 41,
+      "text" : "With my hammer, I will make you a star of the sky."
+    },
+    {
+      "kind" : "message",
+      "line" : 45,
+      "text" : "Making artificial hands is not my specialty."
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "text" : "Bring out the item so I can refine it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "text" : "Where is this foot odor coming from?"
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "text" : "Where is the accessory?"
+    },
+    {
+      "kind" : "message",
+      "line" : 58,
+      "text" : "What do you want me to refine?"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "text" : "Huh? What do you want me to do?"
+    },
+    {
+      "kind" : "message",
+      "line" : 67,
+      "text" : "[Blacksmith Mighty Hammer]\nThis item can't be refined."
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "text" : "[Blacksmith Mighty Hammer]\nI only handle items with refine levels from +7 to +9."
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "placeholders" : [
+        "getitemname(.@material)"
+      ],
+      "text" : "[Blacksmith Mighty Hammer]\nIn order to refine the gear you selected you need ^ff9999{0}^000000 and 20,000 zeny as a fee.\nDo you have them ready?"
+    },
+    {
+      "kind" : "option",
+      "line" : 98,
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 98,
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 99,
+      "text" : "[Blacksmith Mighty Hammer]\nI will wait until you are ready."
+    },
+    {
+      "kind" : "message",
+      "line" : 104,
+      "text" : "[Blacksmith Mighty Hammer]\nIt looks like this item will likely fail to be refined.\nWell, even if it fails, it only decreases by 1 refine level.\nWould you like to continue refining?"
+    },
+    {
+      "kind" : "message",
+      "line" : 112,
+      "text" : "[Blacksmith Mighty Hammer]\nAh! Is it the ^0000ffBlacksmith Blessing^000000?\nWith the Blacksmith Blessing, the equipment won't vanish if the refine fails!"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "text" : "[Blacksmith Mighty Hammer]"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "placeholders" : [
+        "getequiprefinerycnt(.@part)",
+        ".@blacksmith_blessing_count"
+      ],
+      "text" : "For +{0} equipment, refine with^316AC5 {1} unit(s) Blacksmith Blessing^000000 can prevent the equipment from vanishing. Do you want use it to refine?"
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "placeholders" : [
+        "getequiprefinerycnt(.@part)",
+        ".@blacksmith_blessing_count"
+      ],
+      "text" : "For +{0} weapon, refine with^316AC5 {1} unit(s) Blacksmith Blessing^000000 can prevent the equipment from vanishing. Do you want use it to refine?"
+    },
+    {
+      "kind" : "message",
+      "line" : 131,
+      "text" : "[Blacksmith Mighty Hammer]\nOnly those who overcome fear of failure will obtain a masterpiece."
+    },
+    {
+      "kind" : "message",
+      "line" : 137,
+      "text" : "[Blacksmith Mighty Hammer]\nDidn't you just say you had everything ready?"
+    },
+    {
+      "kind" : "message",
+      "line" : 149,
+      "text" : "[Blacksmith Mighty Hammer]"
+    },
+    {
+      "kind" : "message",
+      "line" : 151,
+      "text" : "Wait a second...\nDo you think I'm stupid?!\nYou switched the item while I wasn't looking! Get out of here!"
+    },
+    {
+      "kind" : "message",
+      "line" : 157,
+      "text" : "[Blacksmith Mighty Hammer]\nTac! Tac! Tac!"
+    },
+    {
+      "kind" : "message",
+      "line" : 163,
+      "text" : "[Blacksmith Mighty Hammer]\nThe sound refreshes my mind every time I hear it.\nHere, have it. Refine succeeded flawlessly!"
+    },
+    {
+      "kind" : "message",
+      "line" : 172,
+      "text" : "[Blacksmith Mighty Hammer]\nWhat?!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "text" : "[Blacksmith Mighty Hammer]\nAiya! I am faceless now. HmHm."
+    },
+    {
+      "kind" : "message",
+      "line" : 182,
+      "text" : "[Blacksmith Mighty Hammer]\nOops!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "text" : "[Blacksmith Mighty Hammer]\nI am sure a person like you would never blame me for a decrease in refine level by 1. Hmm."
+    },
+    {
+      "kind" : "message",
+      "line" : 204,
+      "text" : "[Basta]\nI'm the best Blacksmith in the whole world, Basta.\nBut I don't provide a normal refine service.\nI only refine equipment ^CC0000over +10^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 209,
+      "text" : "[Basta]\nWhich equipment do you want to refine?"
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "text" : "[Basta]"
+    },
+    {
+      "kind" : "message",
+      "line" : 220,
+      "text" : "Is your head an equipment?"
+    },
+    {
+      "kind" : "message",
+      "line" : 223,
+      "text" : "What do you want me to do?"
+    },
+    {
+      "kind" : "message",
+      "line" : 227,
+      "text" : "Making artificial hands is not my specialty."
+    },
+    {
+      "kind" : "message",
+      "line" : 230,
+      "text" : "Do you even know what a robe is?"
+    },
+    {
+      "kind" : "message",
+      "line" : 233,
+      "text" : "If you want to refine your feet, don't come to me, try running a marathon."
+    },
+    {
+      "kind" : "message",
+      "line" : 237,
+      "text" : "Where is the accessory?"
+    },
+    {
+      "kind" : "message",
+      "line" : 240,
+      "text" : "Well... I don't see any equipment worth refining."
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "text" : "I can't make you smart. Go see a school teacher for that."
+    },
+    {
+      "kind" : "message",
+      "line" : 249,
+      "text" : "[Basta]\nEven I cannot refine this item. There's no way."
+    },
+    {
+      "kind" : "message",
+      "line" : 255,
+      "text" : "[Basta]\nHaven't I told you? I only refine equipment that are +10 and above."
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "text" : "[Basta]\nThis weapon is perfect, no need to refine it anymore~"
+    },
+    {
+      "kind" : "message",
+      "line" : 279,
+      "placeholders" : [
+        "getitemname(.@material)",
+        "callfunc(\"F_InsertComma\",.@price)"
+      ],
+      "text" : "[Basta]\nHmm... is this the one you want to refine?\nTo refine this equipment, I need 1 ^ff9999{0}^000000 and {1} zeny as a fee.\nDo you really want to refine this?"
+    },
+    {
+      "kind" : "option",
+      "line" : 284,
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 284,
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "text" : "[Basta]\nOkay. If that's what you want..."
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "placeholders" : [
+        ".@type$"
+      ],
+      "text" : "[Basta]\nThis {0} has already been refined pretty high.\nIf you try to refine it more, the refine level could decrease."
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "text" : "[Basta]\nI am different from the blacksmiths in others places.\nIt is impossible that the refine level will drop by, say, 3 or 4... that sounds scary.\nHere it can only decrease by 1 level."
+    },
+    {
+      "kind" : "message",
+      "line" : 300,
+      "text" : "[Basta]\nCompared to other blacksmiths, the risk is smaller.\nI've given all precautions. Do you want to try it?"
+    },
+    {
+      "kind" : "message",
+      "line" : 307,
+      "text" : "[Basta]\nWoah~ Is it the ^316AC5Blacksmith Blessing^000000? It is difficult to get~ But, you have it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 310,
+      "placeholders" : [
+        ".@refine_count",
+        ".@type$",
+        ".@blacksmith_blessing_count"
+      ],
+      "text" : "[Basta]\nFor +{0} {1} need ^316AC5{2} unit(s) Blacksmith Blessing^000000 can prevent the equipment from vanishing. Do you want to refine with Blacksmith Blessing?"
+    },
+    {
+      "kind" : "message",
+      "line" : 322,
+      "text" : "[Basta]\nWell~\nNot challenging at all could also be a kind of wisdom in life."
+    },
+    {
+      "kind" : "message",
+      "line" : 329,
+      "text" : "[Basta]\nHmm... You didn't bring all the materials needed.\nCome back when you have them all."
+    },
+    {
+      "kind" : "message",
+      "line" : 342,
+      "text" : "[Basta]"
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "text" : "Wait a second...\nDo you think I'm stupid?!\nYou switched the item while I wasn't looking! Get out of here!"
+    },
+    {
+      "kind" : "message",
+      "line" : 350,
+      "text" : "Pow! Pow! Pow! Pow!"
+    },
+    {
+      "kind" : "message",
+      "line" : 355,
+      "text" : "[Basta]\nGreat! Nicely done!!\nI really am the best blacksmith in the whole wide world!"
+    },
+    {
+      "kind" : "message",
+      "line" : 364,
+      "text" : "[Basta]\nAaaaaaaaaaak!!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 367,
+      "text" : "[Basta]\nRefining has failed!\nThe best blacksmith in the world like me...\ndoesn't guarantee 100% success~"
+    },
+    {
+      "kind" : "message",
+      "line" : 376,
+      "text" : "[Basta]\nAaaaaaaaaaak!!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 379,
+      "text" : "[Basta]\nDamn it!\nRefining has failed and refine level has decreased!\nEven the best blacksmith in the world doesn't guarantee 100% success!"
+    },
+    {
+      "kind" : "message",
+      "line" : 384,
+      "text" : "Too bad."
+    },
+    {
+      "kind" : "message",
+      "line" : 386,
+      "text" : "[Basta]\nI'll do better next time! Don't worry!"
+    }
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "file" : "npc/custom/etc/stock_market.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 179,
+      "npc" : "Stock Market",
+      "text" : "[Stock Market]\nTrading is currently closed."
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_LastUpd$"
+      ],
+      "text" : "[Stock Market]\nLast fluctuation: {0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S1N$",
+        "$S1",
+        "@S1Update$",
+        "$S2N$",
+        "$S2",
+        "@S2Update$",
+        "$S3N$",
+        "$S3",
+        "@S3Update$",
+        "$S4N$",
+        "$S4",
+        "@S4Update$",
+        "$S5N$",
+        "$S5",
+        "@S5Update$",
+        "$S6N$",
+        "$S6",
+        "@S6Update$",
+        "$S7N$",
+        "$S7",
+        "@S7Update$",
+        "$S8N$",
+        "$S8",
+        "@S8Update$",
+        "$S9N$",
+        "$S9",
+        "@S9Update$",
+        "$S10N$",
+        "$S10",
+        "@S10Update$"
+      ],
+      "text" : "^21698F{0}^000000 {1}z ({2})\n^21698F{3}^000000 {4}z ({5})\n^21698F{6}^000000 {7}z ({8})\n^21698F{9}^000000 {10}z ({11})\n^21698F{12}^000000 {13}z ({14})\n^21698F{15}^000000 {16}z ({17})\n^21698F{18}^000000 {19}z ({20})\n^21698F{21}^000000 {22}z ({23})\n^21698F{24}^000000 {25}z ({26})\n^21698F{27}^000000 {28}z ({29})"
+    },
+    {
+      "kind" : "option",
+      "line" : 257,
+      "npc" : "Stock Market",
+      "text" : "Portfolio"
+    },
+    {
+      "kind" : "option",
+      "line" : 257,
+      "npc" : "Stock Market",
+      "text" : "Buy Shares"
+    },
+    {
+      "kind" : "option",
+      "line" : 257,
+      "npc" : "Stock Market",
+      "text" : "Sell Shares"
+    },
+    {
+      "kind" : "option",
+      "line" : 257,
+      "npc" : "Stock Market",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 260,
+      "npc" : "Stock Market",
+      "text" : "Portfolio"
+    },
+    {
+      "kind" : "option",
+      "line" : 260,
+      "npc" : "Stock Market",
+      "text" : "Buy Shares"
+    },
+    {
+      "kind" : "option",
+      "line" : 260,
+      "npc" : "Stock Market",
+      "text" : "Sell Shares"
+    },
+    {
+      "kind" : "option",
+      "line" : 260,
+      "npc" : "Stock Market",
+      "text" : "GM Menu"
+    },
+    {
+      "kind" : "option",
+      "line" : 260,
+      "npc" : "Stock Market",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply."
+    },
+    {
+      "kind" : "message",
+      "line" : 267,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S1N$",
+        "#S1",
+        "$S1"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]"
+    },
+    {
+      "kind" : "message",
+      "line" : 268,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S2N$",
+        "#S2",
+        "$S2"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]"
+    },
+    {
+      "kind" : "message",
+      "line" : 269,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S3N$",
+        "#S3",
+        "$S3"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]"
+    },
+    {
+      "kind" : "message",
+      "line" : 270,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S4N$",
+        "#S4",
+        "$S4"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]"
+    },
+    {
+      "kind" : "message",
+      "line" : 271,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S7N$",
+        "#S7",
+        "$S7"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]"
+    },
+    {
+      "kind" : "message",
+      "line" : 274,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S8N$",
+        "#S8",
+        "$S8"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]"
+    },
+    {
+      "kind" : "message",
+      "line" : 275,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S9N$",
+        "#S9",
+        "$S9"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]"
+    },
+    {
+      "kind" : "message",
+      "line" : 276,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]"
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S1N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 304,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S2N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 316,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S3N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 328,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S4N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 340,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S5N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 352,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S6N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 364,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S7N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 376,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S8N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 388,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S9N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 400,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S10N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 406,
+      "npc" : "Stock Market",
+      "text" : "^FF0000Invalid Share Name.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 411,
+      "npc" : "Stock Market",
+      "text" : "^FF0000You don't have that many shares.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Stock Market",
+      "text" : "^FF0000Invalid integer.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 422,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S1N$",
+        "$S2N$",
+        "$S3N$",
+        "$S4N$",
+        "$S5N$",
+        "$S6N$",
+        "$S7N$",
+        "$S8N$",
+        "$S9N$",
+        "$S10N$"
+      ],
+      "text" : "[Stock Market]\nAvailable shares:\n{0}\n{1}\n{2}\n{3}\n{4}\n{5}\n{6}\n{7}\n{8}\n{9}"
+    },
+    {
+      "kind" : "option",
+      "line" : 435,
+      "npc" : "Stock Market",
+      "text" : "Continue"
+    },
+    {
+      "kind" : "option",
+      "line" : 435,
+      "npc" : "Stock Market",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 437,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans"
+      ],
+      "text" : "Enter the name of the share company\nTransaction fee of ^FF0000{0}z^000000 will apply."
+    },
+    {
+      "kind" : "message",
+      "line" : 459,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S1N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 470,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S2N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 481,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S3N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 492,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S4N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 503,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S5N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 514,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S6N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 525,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S7N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 536,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S8N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 547,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S9N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 558,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S10N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 568,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_BuyMin"
+      ],
+      "text" : "^FF0000Minimum of {0} shares can be bought at a time.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 574,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_BuyMax"
+      ],
+      "text" : "^FF0000Maximum number of {0} shares can be bought at a time.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 579,
+      "npc" : "Stock Market",
+      "text" : "^FF0000You do not have enough zeny.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 585,
+      "npc" : "Stock Market",
+      "text" : "^FF0000Invalid share name.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 591,
+      "npc" : "Stock Market",
+      "text" : "[Stock Market]"
+    },
+    {
+      "kind" : "message",
+      "line" : 596,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "@S1"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z"
+    },
+    {
+      "kind" : "message",
+      "line" : 601,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "@S2"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z"
+    },
+    {
+      "kind" : "message",
+      "line" : 606,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "@S3"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z"
+    },
+    {
+      "kind" : "message",
+      "line" : 611,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S4N$",
+        "#S4",
+        "$S4",
+        "@S4"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z"
+    },
+    {
+      "kind" : "message",
+      "line" : 616,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S5N$",
+        "#S5",
+        "$S5",
+        "@S5"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z"
+    },
+    {
+      "kind" : "message",
+      "line" : 621,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "@S6"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z"
+    },
+    {
+      "kind" : "message",
+      "line" : 626,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "@S7"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z"
+    },
+    {
+      "kind" : "message",
+      "line" : 631,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "@S8"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z"
+    },
+    {
+      "kind" : "message",
+      "line" : 636,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S9N$",
+        "#S9",
+        "$S9",
+        "@S9"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z"
+    },
+    {
+      "kind" : "message",
+      "line" : 641,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S10N$",
+        "#S10",
+        "$S10",
+        "@S10"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z"
+    },
+    {
+      "kind" : "message",
+      "line" : 646,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@total"
+      ],
+      "text" : "Total value: {0}z"
+    },
+    {
+      "kind" : "message",
+      "line" : 653,
+      "npc" : "Stock Market",
+      "text" : "[Stock Market]\nMaster, do you require anything?"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Stock Market",
+      "text" : "Fluctuate Market"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Stock Market",
+      "text" : "Reset Prices"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Stock Market",
+      "text" : "Nothing"
+    },
+    {
+      "kind" : "message",
+      "line" : 749,
+      "npc" : "Stock Market",
+      "text" : "Market fluctuated."
+    },
+    {
+      "kind" : "option",
+      "line" : 753,
+      "npc" : "Stock Market",
+      "text" : "Set prices to..."
+    },
+    {
+      "kind" : "option",
+      "line" : 753,
+      "npc" : "Stock Market",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 754,
+      "npc" : "Stock Market",
+      "text" : "Farewell."
+    },
+    {
+      "kind" : "message",
+      "line" : 758,
+      "npc" : "Stock Market",
+      "text" : "Are you sure you want to reset?\n^FF0000All share values will become the same.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Stock Market",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Stock Market",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 784,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@gmset"
+      ],
+      "text" : "All prices changed to {0}z."
+    },
+    {
+      "kind" : "message",
+      "line" : 788,
+      "npc" : "Stock Market",
+      "text" : "[Stock Market]\nGoodbye."
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+{
+  "file" : "npc/other/hugel_bingo.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "plate1",
+      "text" : "The numbers you have entered\nexceed the limit, or you have\nalready entered these numbers.\nPlease enter your numbers again."
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "plate1",
+      "placeholders" : [
+        "@bingo_a1$",
+        "@bingo_a2$",
+        "@bingo_a3$",
+        "@bingo_a4$",
+        "@bingo_a5$",
+        "@bingo_b1$",
+        "@bingo_b2$",
+        "@bingo_b3$",
+        "@bingo_b4$",
+        "@bingo_b5$",
+        "@bingo_c1$",
+        "@bingo_c2$",
+        "@bingo_c3$",
+        "@bingo_c4$",
+        "@bingo_c5$",
+        "@bingo_d1$",
+        "@bingo_d2$",
+        "@bingo_d3$",
+        "@bingo_d4$",
+        "@bingo_d5$",
+        "@bingo_e1$",
+        "@bingo_e2$",
+        "@bingo_e3$",
+        "@bingo_e4$",
+        "@bingo_e5$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] [{3}] [{4}]\n[{5}] [{6}] [{7}] [{8}] [{9}]\n[{10}] [{11}] [{12}] [{13}] [{14}]\n[{15}] [{16}] [{17}] [{18}] [{19}]\n[{20}] [{21}] [{22}] [{23}] [{24}]"
+    },
+    {
+      "kind" : "message",
+      "line" : 451,
+      "npc" : "1a",
+      "placeholders" : [
+        "$@bingoresult",
+        "$bingo[$@bingoresult -1]"
+      ],
+      "text" : "[ {0}st Number - {1} ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 452,
+      "npc" : "1a",
+      "placeholders" : [
+        "$@bingoresult",
+        "$bingo[$@bingoresult -1]"
+      ],
+      "text" : "[ {0}nd Number - {1} ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 453,
+      "npc" : "1a",
+      "placeholders" : [
+        "$@bingoresult",
+        "$bingo[$@bingoresult -1]"
+      ],
+      "text" : "[ {0}rd Number - {1} ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 454,
+      "npc" : "1a",
+      "placeholders" : [
+        "$@bingoresult",
+        "$bingo[$@bingoresult -1]"
+      ],
+      "text" : "[ {0}th Number - {1} ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 455,
+      "npc" : "1a",
+      "placeholders" : [
+        "@bingo_a1$",
+        "@bingo_a2$",
+        "@bingo_a3$",
+        "@bingo_a4$",
+        "@bingo_a5$",
+        "@bingo_b1$",
+        "@bingo_b2$",
+        "@bingo_b3$",
+        "@bingo_b4$",
+        "@bingo_b5$",
+        "@bingo_c1$",
+        "@bingo_c2$",
+        "@bingo_c3$",
+        "@bingo_c4$",
+        "@bingo_c5$",
+        "@bingo_d1$",
+        "@bingo_d2$",
+        "@bingo_d3$",
+        "@bingo_d4$",
+        "@bingo_d5$",
+        "@bingo_e1$",
+        "@bingo_e2$",
+        "@bingo_e3$",
+        "@bingo_e4$",
+        "@bingo_e5$",
+        "@bingowin"
+      ],
+      "text" : "[{0}] [{1}] [{2}] [{3}] [{4}]\n[{5}] [{6}] [{7}] [{8}] [{9}]\n[{10}] [{11}] [{12}] [{13}] [{14}]\n[{15}] [{16}] [{17}] [{18}] [{19}]\n[{20}] [{21}] [{22}] [{23}] [{24}]\n[Currently Finished Lines - {25} ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "1a",
+      "text" : "We just have made 5 lines!\nSay ^ff0000Bingo^000000!\nW-we just matched\n5 numbers in a row!\nQuickly, say ''^FF0000Bingo^000000!''\nRemember, you'll only\nhave one chance to say it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 482,
+      "npc" : "1a",
+      "text" : "Oh no! I'm sorry, but\nsomeone already yelled\n''bingo'' before you did.\nI'm sorry, but you missed\nyour chance! Better luck,\nnext time, alright?"
+    },
+    {
+      "kind" : "message",
+      "line" : 492,
+      "npc" : "1a",
+      "text" : "I'm sorry, but you\nsaid it wrong. Next time,\nmake sure that you yell\nout the word, ''^FF0000Bingo^000000,'' okay?"
+    },
+    {
+      "kind" : "message",
+      "line" : 777,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_a1$",
+        "@bingo_a2$",
+        "@bingo_a3$",
+        "@bingo_a4$",
+        "@bingo_a5$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] [{3}] [{4}]"
+    },
+    {
+      "kind" : "message",
+      "line" : 780,
+      "npc" : "Func_Bingo",
+      "text" : "^ff0000[__]^000000 [   ] [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 781,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_a1$"
+      ],
+      "text" : "[{0}] ^ff0000[__]^000000 [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 782,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_a1$",
+        "@bingo_a2$"
+      ],
+      "text" : "[{0}] [{1}] ^ff0000[__]^000000 [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 783,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_a1$",
+        "@bingo_a2$",
+        "@bingo_a3$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] ^ff0000[__]^000000 [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 784,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_a1$",
+        "@bingo_a2$",
+        "@bingo_a3$",
+        "@bingo_a4$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] [{3}] ^ff0000[__]^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 792,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_b1$",
+        "@bingo_b2$",
+        "@bingo_b3$",
+        "@bingo_b4$",
+        "@bingo_b5$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] [{3}] [{4}]"
+    },
+    {
+      "kind" : "message",
+      "line" : 793,
+      "npc" : "Func_Bingo",
+      "text" : "[   ] [   ] [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 796,
+      "npc" : "Func_Bingo",
+      "text" : "^ff0000[__]^000000 [   ] [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 797,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_b1$"
+      ],
+      "text" : "[{0}] ^ff0000[__]^000000 [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_b1$",
+        "@bingo_b2$"
+      ],
+      "text" : "[{0}] [{1}] ^ff0000[__]^000000 [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 799,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_b1$",
+        "@bingo_b2$",
+        "@bingo_b3$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] ^ff0000[__]^000000 [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 800,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_b1$",
+        "@bingo_b2$",
+        "@bingo_b3$",
+        "@bingo_b4$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] [{3}] ^ff0000[__]^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 808,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_c1$",
+        "@bingo_c2$",
+        "@bingo_c3$",
+        "@bingo_c4$",
+        "@bingo_c5$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] [{3}] [{4}]"
+    },
+    {
+      "kind" : "message",
+      "line" : 809,
+      "npc" : "Func_Bingo",
+      "text" : "[   ] [   ] [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 812,
+      "npc" : "Func_Bingo",
+      "text" : "^ff0000[__]^000000 [   ] [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 813,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_c1$"
+      ],
+      "text" : "[{0}] ^ff0000[__]^000000 [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 814,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_c1$",
+        "@bingo_c2$"
+      ],
+      "text" : "[{0}] [{1}] ^ff0000[__]^000000 [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 815,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_c1$",
+        "@bingo_c2$",
+        "@bingo_c3$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] ^ff0000[__]^000000 [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_c1$",
+        "@bingo_c2$",
+        "@bingo_c3$",
+        "@bingo_c4$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] [{3}] ^ff0000[__]^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 824,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_d1$",
+        "@bingo_d2$",
+        "@bingo_d3$",
+        "@bingo_d4$",
+        "@bingo_d5$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] [{3}] [{4}]"
+    },
+    {
+      "kind" : "message",
+      "line" : 825,
+      "npc" : "Func_Bingo",
+      "text" : "[   ] [   ] [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 828,
+      "npc" : "Func_Bingo",
+      "text" : "^ff0000[__]^000000 [   ] [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 829,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_d1$"
+      ],
+      "text" : "[{0}] ^ff0000[__]^000000 [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 830,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_d1$",
+        "@bingo_d2$"
+      ],
+      "text" : "[{0}] [{1}] ^ff0000[__]^000000 [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 831,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_d1$",
+        "@bingo_d2$",
+        "@bingo_d3$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] ^ff0000[__]^000000 [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 832,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_d1$",
+        "@bingo_d2$",
+        "@bingo_d3$",
+        "@bingo_d4$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] [{3}] ^ff0000[__]^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 839,
+      "npc" : "Func_Bingo",
+      "text" : "[   ] [   ] [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 842,
+      "npc" : "Func_Bingo",
+      "text" : "^ff0000[__]^000000 [   ] [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 843,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_e1$"
+      ],
+      "text" : "[{0}] ^ff0000[__]^000000 [   ] [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 844,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_e1$",
+        "@bingo_e2$"
+      ],
+      "text" : "[{0}] [{1}] ^ff0000[__]^000000 [   ] [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 845,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_e1$",
+        "@bingo_e2$",
+        "@bingo_e3$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] ^ff0000[__]^000000 [   ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 846,
+      "npc" : "Func_Bingo",
+      "placeholders" : [
+        "@bingo_e1$",
+        "@bingo_e2$",
+        "@bingo_e3$",
+        "@bingo_e4$"
+      ],
+      "text" : "[{0}] [{1}] [{2}] [{3}] ^ff0000[__]^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 875,
+      "npc" : "Arcade Helper",
+      "text" : "[Helper]\nIf you'd like to play\na game of bingo, then\nplease proceed this way."
+    },
+    {
+      "kind" : "message",
+      "line" : 884,
+      "npc" : "Arcade Owner",
+      "text" : "[Arcade Owner]\nWelcome to the\nBingo Game Arcade.\nCare to play a game of\nbingo? If you have any\nquestions, feel free to ask."
+    },
+    {
+      "kind" : "option",
+      "line" : 891,
+      "npc" : "Arcade Owner",
+      "text" : "Rules for Bingo"
+    },
+    {
+      "kind" : "option",
+      "line" : 891,
+      "npc" : "Arcade Owner",
+      "text" : "Bingo Room"
+    },
+    {
+      "kind" : "option",
+      "line" : 891,
+      "npc" : "Arcade Owner",
+      "text" : "Marvelous Medals"
+    },
+    {
+      "kind" : "message",
+      "line" : 893,
+      "npc" : "Arcade Owner",
+      "text" : "[Arcade Owner]\nThe rules for playing bingo\nare simple. First, take a board\nwith 25 boxes organized so that\nthere are five rows and five\ncolumns. Then, number the\nboxes in any order you like."
+    },
+    {
+      "kind" : "message",
+      "line" : 901,
+      "npc" : "Arcade Owner",
+      "text" : "[Arcade Owner]\nOf course, you must use\nthe numbers 1 through 25.\nWhen everyone's bingo board\nis ready, the game will begin.\nOur game coordinator will call out a number from 1 to 25 at random."
+    },
+    {
+      "kind" : "message",
+      "line" : 908,
+      "npc" : "Arcade Owner",
+      "text" : "[Arcade Owner]\nEach time the coordinator\ncalls out a number, make sure\nthat you mark the corresponding\nnumbered square on your bingo\nboard. Now, these are the\nconditions for winning..."
+    },
+    {
+      "kind" : "message",
+      "line" : 916,
+      "npc" : "Arcade Owner",
+      "text" : "[Arcade Owner]\nIf you can make a line of\n5 squares in a row, horizontally, vertically, or diagonally, using\nthe numbers called out by the\ncoordinator, you quickly yell\nthe word, ''Bingo.''"
+    },
+    {
+      "kind" : "message",
+      "line" : 923,
+      "npc" : "Arcade Owner",
+      "text" : "[Arcade Owner]\nIf you are the first to yell\nthe word, ''Bingo,'' you'll\nwin! But if someone beats you\nto it, then it can't be helped.\nAnyway, it costs 1,000 zeny\nto play each bingo game~"
+    },
+    {
+      "kind" : "message",
+      "line" : 932,
+      "npc" : "Arcade Owner",
+      "text" : "[Arcade Owner]\nAh, if you want to join a\nbingo game, enter the right\ndoor. There must be at least\n5 people to play a game, so\nyou may need to wait until\nthat requirement is fulfilled."
+    },
+    {
+      "kind" : "message",
+      "line" : 940,
+      "npc" : "Arcade Owner",
+      "text" : "[Arcade Owner]\nIf you just want to\nwatch the bingo game,\nthen you may enter the\nleft door as a spectator\nin the Bingo Room."
+    },
+    {
+      "kind" : "message",
+      "line" : 948,
+      "npc" : "Arcade Owner",
+      "text" : "[Arcade Owner]\nWhen you win a bingo\ngame, you will be rewarded\nwith ''Marvelous Medals,''\nwhich can only be used within\nthis arcade. You also can't trade medals with other players."
+    },
+    {
+      "kind" : "message",
+      "line" : 955,
+      "npc" : "Arcade Owner",
+      "text" : "[Arcade Owner]\nYou usually get 1 Marvelous\nMedal for winning a bingo game,\nbut you can win 50 at one time\nunder special conditions. You\ncan also play Monster Racing\ngames to win more medals."
+    },
+    {
+      "kind" : "message",
+      "line" : 963,
+      "npc" : "Arcade Owner",
+      "text" : "[Arcade Owner]\nCollect as many Marvelous\nMedals as you can, and trade\nthem for products in the Monster Racing Arena. I hear there's also\na place in Einbroch where you can use them, but I wouldn't know."
+    }
+  ]
+}

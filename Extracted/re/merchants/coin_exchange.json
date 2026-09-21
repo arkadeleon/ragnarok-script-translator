@@ -1,0 +1,1673 @@
+{
+  "file" : "npc/re/merchants/coin_exchange.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "You have too many kinds of objects. Let's try to continue after reducing those objects."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "Can't continue because you have too many heavy objects. Let's try to continue after reducing the weight."
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "[Coin Exchanger CX-1]\nWelcome to CX-1. If you have coins, you can exchange them to high or low grade coins."
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "[Coin Exchanger CX-1]\nThank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 59,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "[Coin Exchanger CX-1]\nYou chose a coin that you don't have.\nThank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "[Coin Exchanger CX-1]\n----Rate of exchange----\nHigher exchange - 30 to 10\nLower exchange - 10 to 30\n------------------------\n^ff3333When you exchange, we charge a fee according to the current market price.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 87,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "[Coin Exchanger CX-1]\nThank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "text" : "[Coin Exchanger CX-1]\nThis coin is not available to exchange to {0} coin.\nThank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to {0} coin.\nThank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        ".@exchange_rate[.@i]",
+        "getitemname(.@coin)",
+        ".@exchange_name$[.@i]",
+        ".@exchange_loss[(!.@i)]",
+        ".@exchange_total"
+      ],
+      "text" : "[Coin Exchanger CX-1]\n^003399{0}^000000 unit(s) of ^003399 {1}^000000 taken.\nI exchanged them for ^003399{2} coins^000000, after deducting ^003399{3}^000000 unit(s), ^003399{4}^000000 unit(s) remaining."
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "Special Vending Machine",
+      "text" : "You have too many kinds of objects. Let's try to continue after reducing those objects."
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "Special Vending Machine",
+      "text" : "Can't continue because you have too many heavy objects. Let's try to continue after reducing the weight."
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nWelcome to CX-82. You have a Silvervine Fruit, so you can purchase the Malangdo Specialty that has special ability."
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nSeagod's Protection is an item used for entering the Culvert memorial dungeon during a certain period."
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nOctopus Hunting Stick is an item used for entering the Culvert memorial dungeon during a certain period."
+    },
+    {
+      "kind" : "message",
+      "line" : 146,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nPremium and Ordinary Lubricant are items used for separation of equipment and cards. If you visit the specialist Jeremy with either item, he will explain more details of the effects."
+    },
+    {
+      "kind" : "message",
+      "line" : 149,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nSillit Pong is special item that separates sockets with MVP cards. Unable to separate MVP card by Premium and Ordinary Lubricant."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Special Vending Machine",
+      "placeholders" : [
+        "getarg(.@i*3)",
+        ".@cost"
+      ],
+      "text" : "[Special Vending Machine]\nYou choose ^005500{0}^000000. For purchasing, you need ^005500{1}^000000 unit(s) of Silvervine Fruit."
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Special Vending Machine",
+      "text" : "Stop"
+    },
+    {
+      "kind" : "message",
+      "line" : 163,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nThank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nNot enough Silvervine Fruit.\nClosing the transaction.\nThank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 174,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nThe transaction is completed. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 184,
+      "npc" : "Dark Merchant K",
+      "text" : "It seems you have too much in your inventory. Let's try again after getting rid of some of your belongings."
+    },
+    {
+      "kind" : "message",
+      "line" : 188,
+      "npc" : "Dark Merchant K",
+      "text" : "Your inventory is too heavy now. Please come back after getting rid of some of your belongings."
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Dark Merchant K",
+      "text" : "[Merchant K]\nThank you for the trade.\nWe exchange ^ff000010 C Grade Coin^000000 to ^3333ff1 Mora Coin^000000. Shall we begin then?"
+    },
+    {
+      "kind" : "option",
+      "line" : 204,
+      "npc" : "Dark Merchant K",
+      "text" : "Quit"
+    },
+    {
+      "kind" : "message",
+      "line" : 206,
+      "npc" : "Dark Merchant K",
+      "text" : "[Merchant K]\nLet's exchange some other time."
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]"
+      ],
+      "text" : "[Merchant K]\nYou need ^ff0000{0}^000000 C Grade Coin to perform the exchange. But you don't seem to have enough now."
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]",
+        "(.@coin_amount[.@i]/10)"
+      ],
+      "text" : "[Merchant K]\nC Grade Coin ^003399{0}^000000 well received.\nExchanged to ^003399{1}^000000 Mora Coin."
+    },
+    {
+      "kind" : "message",
+      "line" : 221,
+      "npc" : "Dark Merchant K",
+      "text" : "[Merchant K]\nWould you like to continue?"
+    },
+    {
+      "kind" : "message",
+      "line" : 229,
+      "npc" : "Dark MachineTX100",
+      "text" : "It seems you have too much in your inventory. Let's try again after getting rid of some of your belongings."
+    },
+    {
+      "kind" : "message",
+      "line" : 233,
+      "npc" : "Dark MachineTX100",
+      "text" : "Your inventory is too heavy now. Please come back after getting rid of some of your belongings."
+    },
+    {
+      "kind" : "message",
+      "line" : 236,
+      "npc" : "Dark MachineTX100",
+      "text" : "[Dark Machine TX100]\nThank you for visiting TX100. You can exchange coins into higher or lower level coins."
+    },
+    {
+      "kind" : "message",
+      "line" : 239,
+      "npc" : "Dark MachineTX100",
+      "text" : "[Dark Machine TX100]\nFor a lower level coin exchange you can do 500 as a 1 time maximum, and for higher level coin exchange you can do 99 as a 1 time maximum."
+    },
+    {
+      "kind" : "message",
+      "line" : 258,
+      "npc" : "Dark MachineTX100",
+      "text" : "[Dark Machine TX100]\nThank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 267,
+      "npc" : "Dark MachineTX100",
+      "text" : "[Dark Machine TX100]\nYou've chosen abnormal menu.\nAborting process. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Dark MachineTX100",
+      "text" : "[Dark Machine TX100]\nYou chose a coin that you don't have.\nAborting process. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 278,
+      "npc" : "Dark MachineTX100",
+      "text" : "[Dark Machine TX100]\n----Exchange Rate----\nHigher Coin - 3 to 1\nLower Coin - 1 to 3\n---------------------\n^ff3333We take a small vendor fee from your exchanged coins.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Dark MachineTX100",
+      "text" : "[Dark Machine TX100]\nThank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "text" : "[Dark Machine TX100]\nThis coin cannot be exchanged to a {0} level coin.\nAborting process. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "text" : "[Dark Machine TX100]\nYou have not enough coins for a {0} level coin exchange.\nAborting process. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 323,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "text" : "[Dark Machine TX100]\nYou have too many {0} level coins already. Please come back with less coins."
+    },
+    {
+      "kind" : "message",
+      "line" : 342,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        "getitemname(.@coin)",
+        ".@payment_amount",
+        "(.@reward_amount-.@fee)",
+        ".@coin_text$",
+        ".@fee"
+      ],
+      "text" : "[Dark Machine TX100]\nReceived ^003399{0}^000000 for ^003399{1}^000000 unit(s).\nWe have exchanged your coin to ^003399{2}^000000 unit(s) of ^003399{3} Level Coin^000000, deducted ^003399{4}^000000 unit(s) as exchanging fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 350,
+      "npc" : "Can Agency Guard",
+      "text" : "You seem to have too many items. Give it a try after sorting out the item kinds."
+    },
+    {
+      "kind" : "message",
+      "line" : 354,
+      "npc" : "Can Agency Guard",
+      "text" : "You're not likely to be able to go on due to the heavy items you've got. Give it a try after lightening the weight."
+    },
+    {
+      "kind" : "message",
+      "line" : 357,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nHey, you there... Have you seen any ^0000ffMalangdo Cat Can^000000s around here?"
+    },
+    {
+      "kind" : "option",
+      "line" : 360,
+      "npc" : "Can Agency Guard",
+      "text" : "Why are you asking?"
+    },
+    {
+      "kind" : "option",
+      "line" : 360,
+      "npc" : "Can Agency Guard",
+      "text" : "Oh, you mean these?"
+    },
+    {
+      "kind" : "message",
+      "line" : 362,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nUmm.\nWe at the Can Agency recently got some suspicious intelligence about them..."
+    },
+    {
+      "kind" : "message",
+      "line" : 366,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nThere were faulty products in bulk on the can production line for Malangdo specialty. These products, to be discarded, seem to have fallen into a retail dealer's hands."
+    },
+    {
+      "kind" : "message",
+      "line" : 369,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nActually they were hard to distinguish from normal products. But it obviously says ^0000ffMalangdo Cat Can^000000 outside."
+    },
+    {
+      "kind" : "message",
+      "line" : 372,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nAs faulty products are moving around on the market, we've been collecting them as is our duty. Have you ever seen anyone who has things like what I'm describing?"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nIf you find anyone selling these products, please come and tell me."
+    },
+    {
+      "kind" : "message",
+      "line" : 380,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nUmm? I cannot see the ^0000ffMalangdo Cat Can^000000 from you. Don't forget to bring it to me if you've found out..."
+    },
+    {
+      "kind" : "message",
+      "line" : 386,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nThe Malangdo Cat Can is a faulty product. Let me exchange it to 3 E Grade Coins. How about that?"
+    },
+    {
+      "kind" : "option",
+      "line" : 389,
+      "npc" : "Can Agency Guard",
+      "text" : "I won't exchange"
+    },
+    {
+      "kind" : "option",
+      "line" : 389,
+      "npc" : "Can Agency Guard",
+      "text" : "^0000ff1^000000 Can -> ^0000ff3^000000 E Grade Coin"
+    },
+    {
+      "kind" : "option",
+      "line" : 389,
+      "npc" : "Can Agency Guard",
+      "text" : "^0000ff10^000000 Can -> ^0000ff30^000000 E Grade Coin"
+    },
+    {
+      "kind" : "option",
+      "line" : 389,
+      "npc" : "Can Agency Guard",
+      "text" : "^0000ff100^000000 Can -> ^0000ff300^000000 E Grade Coin"
+    },
+    {
+      "kind" : "option",
+      "line" : 389,
+      "npc" : "Can Agency Guard",
+      "text" : "Exchange all I've got"
+    },
+    {
+      "kind" : "message",
+      "line" : 391,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nUmm, I'm not here forever, so come to me if you'd like to exchange while I still am."
+    },
+    {
+      "kind" : "message",
+      "line" : 413,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nUmm? I cannot see the ^0000ffMalangdo Cat Can^000000 from you. Don't forget to bring it to me if you've found out..."
+    },
+    {
+      "kind" : "message",
+      "line" : 417,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nUmm? I don't think you have enough to exchange... Come to me again when the amount is exactly decided."
+    },
+    {
+      "kind" : "message",
+      "line" : 424,
+      "npc" : "Can Agency Guard",
+      "placeholders" : [
+        ".@count",
+        "(.@count*3)"
+      ],
+      "text" : "[Can Agency Guard]\nExchanged {0} Malangdo Cat Can to {1} E Class Coin. Check it out."
+    },
+    {
+      "kind" : "message",
+      "line" : 436,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nAhaaa~\nIf you want to buy this stuff,\nyou can talk to me\nwhen you grow up a little more.\nThis stuff is too expensive\nfor a child~"
+    },
+    {
+      "kind" : "message",
+      "line" : 445,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nNice to meet you~~\nI am! YES~~ That's right!\nI'm selling special stuff\nwhich you can see only here on Meow Meow Island!"
+    },
+    {
+      "kind" : "message",
+      "line" : 451,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nHow about it? What are you waiting for?\nWhy don't you take a look at\nwhat kinds of stuff I have?"
+    },
+    {
+      "kind" : "message",
+      "line" : 458,
+      "npc" : "F_mal_coin",
+      "text" : "[Wandering Merchant]\nOh~\nThese are rental items, so make sure you know if you have the ^0000FF1 hour^000000 or ^0000FF7 day^000000 version."
+    },
+    {
+      "kind" : "message",
+      "line" : 466,
+      "npc" : "F_mal_coin",
+      "text" : "[Roving Merchant]\nJust for your information,\nSow Bug, Starfish, Dried Squid, and Flying Fish are the items which you can use for 1 hour."
+    },
+    {
+      "kind" : "message",
+      "line" : 472,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nWell then, do you want to take a look at what I have now?"
+    },
+    {
+      "kind" : "option",
+      "line" : 475,
+      "npc" : "F_mal_coin",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 475,
+      "npc" : "F_mal_coin",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 478,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nIt seems that there are too many items in your inventory.\nPlease make space and come back again~"
+    },
+    {
+      "kind" : "message",
+      "line" : 484,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nIt seems that you're overweight.\nPlease reduce your weight and come back again~"
+    },
+    {
+      "kind" : "message",
+      "line" : 489,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nWell, take a good look at them~~~"
+    },
+    {
+      "kind" : "message",
+      "line" : 494,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nWell, then. I'll see you next time.\nGoodbye."
+    },
+    {
+      "kind" : "message",
+      "line" : 504,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$",
+        "getarg(2)"
+      ],
+      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is"
+    },
+    {
+      "kind" : "message",
+      "line" : 507,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        "getarg(4)",
+        "getarg(5)"
+      ],
+      "text" : "{0} E Grade Coin or {1} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 511,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 515,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 522,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        "getarg(2)"
+      ],
+      "text" : "Would you like to purchase\n^0000FF[{0}]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 525,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        "getarg(2)"
+      ],
+      "text" : "Would you like to\npurchase ^0000FF[{0}]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 551,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@str$"
+      ],
+      "text" : "{0}\nI'm sorry, you need more {1}."
+    },
+    {
+      "kind" : "message",
+      "line" : 556,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nSorry, you've purchased too many.\nYou need to make more space in your inventory. Please come back later."
+    },
+    {
+      "kind" : "message",
+      "line" : 561,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nThank you."
+    },
+    {
+      "kind" : "message",
+      "line" : 567,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nAlways be careful\nwhen you purchase items."
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "[Spearfish(1hr)] 8 E-Coins/50 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "[Tuna(1hr)] 8 E-Coins/50 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "[Hairtail(1hr)] 8 E-Coins/50 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "[Saurel(1hr)] 8 E-Coins/50 Can"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "[Malang Snow Crab(1hr)] 8 E-Coins/50 Can"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "[Brindle Eel(1hr)] 8 E-Coins/50 Can"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "[Hairtail(7Days)] 10 Silvervine Fruit"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "[Spearfish(7Days)] 10 Silvervine Fruit"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "[Saurel(7Days)] 10 Silvervine Fruit"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "[Tuna(7Days)] 10 Silvervine Fruit"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "[Brindle Eel(7Days)] 10 Silvervine Fruit"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "[Malang Snow Crab(7Days)] 10 Silvervine Fruit"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "text" : "End purchasing."
+    },
+    {
+      "kind" : "message",
+      "line" : 599,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWell, then. I'll see you next time.\nGoodbye."
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 609,
+      "npc" : "Wandering Merchant",
+      "text" : "This is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
+    },
+    {
+      "kind" : "message",
+      "line" : 612,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nOf course, this is ^DC143CTwo-Handed Spear^000000.\nIt gives a high chance of\ncausing the Bleeding status\nwhen you're using Pierce or Clashing Spiral~"
+    },
+    {
+      "kind" : "message",
+      "line" : 618,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nMore details are...\nIncrease 100% of Clashing Spiral ATK and 50% of Inspiration ATK,\nadditional ATK + 30 when Base Lv. is over 100.\nBase ATK is 220."
+    },
+    {
+      "kind" : "message",
+      "line" : 627,
+      "npc" : "Wandering Merchant",
+      "text" : "This is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 632,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nIt gives a high chance of executing the Stun or Auto-Spell Bash\nwhen using close-range physical attacks.\nBase ATK is 180."
+    },
+    {
+      "kind" : "message",
+      "line" : 637,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nMore details are...\nadditional ATK + 20 when Base Lv. is over 100,\nfreeze self with low rate."
+    },
+    {
+      "kind" : "message",
+      "line" : 645,
+      "npc" : "Wandering Merchant",
+      "text" : "This fish looks like a long belt."
+    },
+    {
+      "kind" : "message",
+      "line" : 647,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nThis is a ^DC143CTwo-Handed Sword^000000\nwhich most swordmen can use.\nIt increases 50% of critical damage when attacking and CRI + 20.\nBase ATK is 220."
+    },
+    {
+      "kind" : "message",
+      "line" : 653,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nMore details are...\nadditional ATK + 50 when Base Lv. is over 100."
+    },
+    {
+      "kind" : "message",
+      "line" : 660,
+      "npc" : "Wandering Merchant",
+      "text" : "This is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
+    },
+    {
+      "kind" : "message",
+      "line" : 663,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nMore details are...\ngives MATK + 20 for 7sec at a certain rate with magical attacks\nand additional MATK + 10, ATK + 10 when Base Lv. is over 100.\nBase ATK is 160."
+    },
+    {
+      "kind" : "message",
+      "line" : 672,
+      "npc" : "Wandering Merchant",
+      "text" : "This is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
+    },
+    {
+      "kind" : "message",
+      "line" : 676,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nMore details are...\ncan be used by Archer, Thief, and Rogue classes."
+    },
+    {
+      "kind" : "message",
+      "line" : 683,
+      "npc" : "Wandering Merchant",
+      "text" : "This is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
+    },
+    {
+      "kind" : "message",
+      "line" : 688,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nMore details are...\nAGI + 3, and ASPD + 2 for 5sec at a certain rate with long range physical attacks.\nAlso gives additional 20% of long range physical ATK when Base Lv. is over 100.\nHunter, Bard, and Dancer classes can use it."
+    },
+    {
+      "kind" : "option",
+      "line" : 710,
+      "npc" : "Stinky Merchant",
+      "text" : "[Cat Paw Glove] 32 E-Coins/200 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 710,
+      "npc" : "Stinky Merchant",
+      "text" : "[Cat Club] 32 E-Coins/200 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 710,
+      "npc" : "Stinky Merchant",
+      "text" : "End purchasing."
+    },
+    {
+      "kind" : "message",
+      "line" : 716,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nWell, then. I'll see you next time.\nGoodbye."
+    },
+    {
+      "kind" : "message",
+      "line" : 721,
+      "npc" : "Stinky Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 725,
+      "npc" : "Stinky Merchant",
+      "text" : "This is a glove which can give happiness\njust by wearing it."
+    },
+    {
+      "kind" : "message",
+      "line" : 728,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nThis is an ^DC143CAccessory^000000\nand its defense is 5.\nIt also gives\nVIT + 1, AGI + 1, DEX + 1, LUK + 1."
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nMore details are...\nSLOT : 1 / Refine : Unable / Destruction : Unable"
+    },
+    {
+      "kind" : "message",
+      "line" : 740,
+      "npc" : "Stinky Merchant",
+      "text" : "It looks like it wouldn't hurt, don't you think so?\nBut I'm telling you, it can hurt someone."
+    },
+    {
+      "kind" : "message",
+      "line" : 743,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nThis is a ^DC143CMace^000000 that increases 15% of damage to the animal type of monster.\nBase ATK is 88.\nThe other details are\nWeapon Lv : 1 / SLOT : 3 / Refine : Able / Destruction : Unable"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Roving Merchant",
+      "text" : "[Flying Fish] 200 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Roving Merchant",
+      "text" : "[Sow Bug] 200 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Roving Merchant",
+      "text" : "[Dried Squid] 200 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Roving Merchant",
+      "text" : "[Starfish] 200 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Roving Merchant",
+      "text" : "End purchasing."
+    },
+    {
+      "kind" : "message",
+      "line" : 769,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nWell, then. I'll see you next time.\nGoodbye."
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Roving Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Roving Merchant",
+      "text" : "This is the one that flies\nwith a big pectoral."
+    },
+    {
+      "kind" : "message",
+      "line" : 781,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nThis is a ^DC143CThrowing Weapon^000000.\nOf course, it can give fatal wounds to the enemy\nat a certain rate when attacking."
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nIts property is neutral and ATK is 50."
+    },
+    {
+      "kind" : "message",
+      "line" : 791,
+      "npc" : "Roving Merchant",
+      "text" : "In that case, I'll explain for you.\nThis is a ^DC143CBullet^000000 which stuns the enemy at a certain rate when attacking."
+    },
+    {
+      "kind" : "message",
+      "line" : 794,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nI feel somthing bad\nis moving in my pocket but...\nit is neutral property and its ATK is 50."
+    },
+    {
+      "kind" : "message",
+      "line" : 801,
+      "npc" : "Roving Merchant",
+      "text" : "I'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which causes darkness at a certain rate.\nIt's neutral property and its ATK is 50."
+    },
+    {
+      "kind" : "message",
+      "line" : 805,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nIt is compressed\nand put into a very small box,\nso be careful when you open it."
+    },
+    {
+      "kind" : "message",
+      "line" : 812,
+      "npc" : "Roving Merchant",
+      "text" : "I'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which stuns the enemy at a certain rate."
+    },
+    {
+      "kind" : "message",
+      "line" : 815,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nIt is perfectly organized and packed\nso you can't even see inside.\nIt is neutral property and its ATK is 110."
+    },
+    {
+      "kind" : "message",
+      "line" : 822,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nFor your information,\none box contains\n200 units."
+    },
+    {
+      "kind" : "message",
+      "line" : 836,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "- Stop Here!! -\n- You have too many items. -\n- You cannot carry any more items. -\n- Lighten your load and -\n- try again. -"
+    },
+    {
+      "kind" : "message",
+      "line" : 843,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "[Armor Merchant]\nHello, this is Naphara's store, a place of high class goods.\nWhat would you need?"
+    },
+    {
+      "kind" : "option",
+      "line" : 847,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "Str Glove"
+    },
+    {
+      "kind" : "option",
+      "line" : 847,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "Int Glove"
+    },
+    {
+      "kind" : "option",
+      "line" : 847,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "Agi Glove"
+    },
+    {
+      "kind" : "option",
+      "line" : 847,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "Vit Glove"
+    },
+    {
+      "kind" : "option",
+      "line" : 847,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "Dex Glove"
+    },
+    {
+      "kind" : "option",
+      "line" : 847,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "Luk Glove"
+    },
+    {
+      "kind" : "message",
+      "line" : 848,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "[Armor Merchant]"
+    },
+    {
+      "kind" : "message",
+      "line" : 851,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "^3131FFStr Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFATK+1 increases for every STR+10^000000\n^3131FFATK +1% added above STR 110^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 857,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "^3131FFInt Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFMATK+1 increases for every INT+10^000000\n^3131FFMATK +1% added above INT 110^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 863,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "^3131FFAgi Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFFLEE+1 increases for every AGI+10^000000\n^3131FFComplete Flee +1 added above AGI 110^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 869,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "^3131FFVit Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFMHP+50 for every VIT+10^000000\n^3131FFMHP+1% added above VIT 110^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 875,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "^3131FFDex Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFHIT+1 increases for every DEX+10^000000\n^3131FFRanged attack power +1% added above DEX 110^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 881,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "^3131FFLuk Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFCRI+1 increases for every LUK+10^000000\n^3131FFCritical damage +1% added above LUK 110^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 887,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options."
+    },
+    {
+      "kind" : "message",
+      "line" : 892,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "[Armor Merchant]\nIt costs 10 Splendide Coins.\nWould you like to buy it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 896,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "Buy it."
+    },
+    {
+      "kind" : "option",
+      "line" : 896,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "Don't buy it."
+    },
+    {
+      "kind" : "message",
+      "line" : 898,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "[Armor Merchant]\nIt seems like you don't have enough coins."
+    },
+    {
+      "kind" : "message",
+      "line" : 904,
+      "npc" : "Armor Merchant Naphara",
+      "text" : "[Armor Merchant]\nGreat, it's yours. Thank you."
+    },
+    {
+      "kind" : "message",
+      "line" : 912,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "[Slot Expert]\nI am Slot Expert Nattuer.\nIf you bring me an item from my little brother Naphara along with 5 Splendide Coins, I will open up one Slot for you."
+    },
+    {
+      "kind" : "option",
+      "line" : 916,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "Activate a Slot."
+    },
+    {
+      "kind" : "option",
+      "line" : 916,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "Forget it."
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "[Slot Expert]\nSlot activation is an extremely difficult procedure that can fail even with heightened care and the use of a magnifying lens."
+    },
+    {
+      "kind" : "message",
+      "line" : 922,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "[Slot Expert]\nOf course, if your heart were as big as that flower-filled land, you wouldn't mind. Right? Should I go for it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 925,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "Continue."
+    },
+    {
+      "kind" : "option",
+      "line" : 925,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "Forget it."
+    },
+    {
+      "kind" : "message",
+      "line" : 928,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "[Slot Expert]\nWhich item would you like to activate with a Slot?"
+    },
+    {
+      "kind" : "option",
+      "line" : 931,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "Str Glove"
+    },
+    {
+      "kind" : "option",
+      "line" : 931,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "Int Glove"
+    },
+    {
+      "kind" : "option",
+      "line" : 931,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "Ag Glove"
+    },
+    {
+      "kind" : "option",
+      "line" : 931,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "Vit Glove"
+    },
+    {
+      "kind" : "option",
+      "line" : 931,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "Dex Glove"
+    },
+    {
+      "kind" : "option",
+      "line" : 931,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "Luk Glove"
+    },
+    {
+      "kind" : "message",
+      "line" : 933,
+      "npc" : "Slot Expert Nattuer",
+      "placeholders" : [
+        "getitemname(.@choice)"
+      ],
+      "text" : "[Slot Expert]\nLet's confirm for the last time. Is the one you want {0}?"
+    },
+    {
+      "kind" : "option",
+      "line" : 936,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 936,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 937,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "[Slot Expert]\nWhy don't you talk to me when you know for sure."
+    },
+    {
+      "kind" : "message",
+      "line" : 942,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "[Slot Expert]\nYou don't have that item. Why don't you talk to me when you know for sure."
+    },
+    {
+      "kind" : "message",
+      "line" : 947,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "[Slot Expert]\nYou don't have enough coins. Why don't you talk to me when you know for sure."
+    },
+    {
+      "kind" : "message",
+      "line" : 952,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "[Slot Expert]"
+    },
+    {
+      "kind" : "message",
+      "line" : 958,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "Shoot, I'm sorry. It failed.\nBut I'm sure it will work next time. I have a feeling."
+    },
+    {
+      "kind" : "message",
+      "line" : 965,
+      "npc" : "Slot Expert Nattuer",
+      "text" : "My eyes feel like they're gonna pop out.\nNonetheless, congratulations. Slot activation was successful."
+    },
+    {
+      "kind" : "message",
+      "line" : 972,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "- Stop Here!! -\n- You have too many items. -\n- You cannot carry any more items. -\n- Lighten your load and -\n- try again. -"
+    },
+    {
+      "kind" : "message",
+      "line" : 979,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "[Herb Merchant]\nWelcome, this is Plafina's Herb Store where only the freshest herbs are provided~!"
+    },
+    {
+      "kind" : "option",
+      "line" : 982,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Snow Flip"
+    },
+    {
+      "kind" : "option",
+      "line" : 982,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Peony Mommy"
+    },
+    {
+      "kind" : "option",
+      "line" : 982,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Slapping Herb"
+    },
+    {
+      "kind" : "option",
+      "line" : 982,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Yggdrasil Dust"
+    },
+    {
+      "kind" : "option",
+      "line" : 982,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "End conversation"
+    },
+    {
+      "kind" : "message",
+      "line" : 984,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "[Herb Merchant]\nCome back anytime."
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "[Herb Merchant]"
+    },
+    {
+      "kind" : "message",
+      "line" : 991,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Snow Flip has special effects on ^3131FFBurning, Bleeding, Deep Sleep, Sleep^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 994,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Peony Mamy has special effects on ^3131FFFrost, Frozen, Freezing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 997,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Slapping Herb has special effects on ^3131FFStun, Fear, Chaos, Hallucination^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1000,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Yggdrasil Dust has special effects on ^3131FFBlind, Curse, Decrease Agility, Reverse Orcish^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 1003,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        ".cost[.@item]"
+      ],
+      "text" : "Requires 5 seconds between uses.\nIt costs {0} Splendide Coins for each."
+    },
+    {
+      "kind" : "option",
+      "line" : 1006,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Buy 1."
+    },
+    {
+      "kind" : "option",
+      "line" : 1006,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Buy 10."
+    },
+    {
+      "kind" : "option",
+      "line" : 1006,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Don't buy."
+    },
+    {
+      "kind" : "message",
+      "line" : 1013,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        ".@buy",
+        "getitemname(.items[.@item])"
+      ],
+      "text" : "[Herb Merchant]\nWould you like to buy {0} {1}?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1016,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Buy."
+    },
+    {
+      "kind" : "option",
+      "line" : 1016,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "Don't buy."
+    },
+    {
+      "kind" : "message",
+      "line" : 1020,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "[Herb Merchant]\nYou don't have enough coins."
+    },
+    {
+      "kind" : "message",
+      "line" : 1024,
+      "npc" : "Herb Merchant Plafina",
+      "text" : "[Herb Merchant]\nThank you for your business."
+    },
+    {
+      "kind" : "message",
+      "line" : 1038,
+      "npc" : "Replication Expert Paltu",
+      "text" : "You have too many items to continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 1042,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nWoohoo- Greetings. What are you looking for? Lots of goods here."
+    },
+    {
+      "kind" : "option",
+      "line" : 1045,
+      "npc" : "Replication Expert Paltu",
+      "text" : "No thanks."
+    },
+    {
+      "kind" : "option",
+      "line" : 1045,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Replication?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1045,
+      "npc" : "Replication Expert Paltu",
+      "text" : "I know you got lots up your sleeve!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1048,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nReally? Hmm?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1052,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nOne can say that there's no one better in Eclage than I at utilizing magic resistance."
+    },
+    {
+      "kind" : "message",
+      "line" : 1055,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nI'll give you a good price whatever it is. Just trust me."
+    },
+    {
+      "kind" : "option",
+      "line" : 1058,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Could you do something for me?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1060,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nHey, I like your attitude."
+    },
+    {
+      "kind" : "message",
+      "line" : 1063,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nAh- you know the hat you're wearing?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1067,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nDon't you have any of those hats lying around in storage that are solid but too ugly to wear? You do, right?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1070,
+      "npc" : "Replication Expert Paltu",
+      "text" : "........."
+    },
+    {
+      "kind" : "message",
+      "line" : 1073,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nSee! I knew it. I knew it from the first minute."
+    },
+    {
+      "kind" : "message",
+      "line" : 1076,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nIf you bring me ^ff0000 50 Splendide Coins and the ingredients^000000, I'll make you a new hat in the same shape but worn as a ^ff0000Costume^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 1079,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nHmm, what was it...?\nI think you adventurers call them ^0571B0Costumes^000000? right?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1083,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Yes~ What do you need?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1084,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nI need 1 ^0571B0hat to replicate^000000 and\nI need ^E1281E 4 Crystal Mirrors^000000 for magic resistance, ^E1281E 1 Fairy Magic Powder^000000 as the catalyst, and ^E1281E Emerald, Ruby, Sapphire, Topaz, and Zircon, 10 of each^000000, to be used for amplifying the magic power."
+    },
+    {
+      "kind" : "message",
+      "line" : 1089,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nThere's quite a lot of ingredients, right? Well, I can't do anything about that. Dealing with magic power is not a joke."
+    },
+    {
+      "kind" : "option",
+      "line" : 1092,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Which hats can be replicated?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1093,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nOh! You're pretty sharp!\nAlmost forgot the most important thing."
+    },
+    {
+      "kind" : "message",
+      "line" : 1097,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nHats that I can replicate are:\n^0571B0Frog Hat, Romantic Flower, Magestic Goat, Blush, Valkyrie Helm, Deviruchi Hat, Assassin Mask, Elven Ears, Hahoe Mask, and Boys Cap^000000 a total of 10 types."
+    },
+    {
+      "kind" : "message",
+      "line" : 1101,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nWhat do you think? I'll make it happen as long as I have the ingredients and the compensation."
+    },
+    {
+      "kind" : "option",
+      "line" : 1104,
+      "npc" : "Replication Expert Paltu",
+      "text" : "I'll do it later."
+    },
+    {
+      "kind" : "option",
+      "line" : 1104,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Show me what you got!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1106,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nWhat? Are you kidding me? Please tell me you are!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1114,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nOh wow.\nYou made the right call. I thought I was going to starve to death because the Laphines have no interest in pretty hats."
+    },
+    {
+      "kind" : "message",
+      "line" : 1118,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nI'll make it a great deal for you. You really should know I'm giving you a good deal here."
+    },
+    {
+      "kind" : "message",
+      "line" : 1121,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nIs there something you had in mind? Why don't you take a look?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1135,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        "getitemname(.@items[.@i])"
+      ],
+      "text" : "[Paltu]\nIs ^0571B0{0}^000000 what you wanted?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1140,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nAy... Credit purchases are difficult for me."
+    },
+    {
+      "kind" : "message",
+      "line" : 1143,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        "getitemname(.@items[.@i])"
+      ],
+      "text" : "[Paltu]\n^0571B0{0}^000000 and\n^E1281E50 Splendide Coins, 4 Crystal Mirrors, 1 Fairy Magic Powder, 10 of each Emerald, Ruby, Sapphire, Topaz, and Zircon^000000 are necessary."
+    },
+    {
+      "kind" : "message",
+      "line" : 1147,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nI'm in a tight spot myself. Please consider my situation also."
+    },
+    {
+      "kind" : "message",
+      "line" : 1152,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nYes, this is more than enough. Should I make it now?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1155,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Please make it now."
+    },
+    {
+      "kind" : "option",
+      "line" : 1155,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Oops, I have to take care of something..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1157,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nHey.. Hey! Hey! Where you going?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1162,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nI got it. Oh right! Almost forgot again."
+    },
+    {
+      "kind" : "message",
+      "line" : 1165,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\n^FF0000In the process of replication, magic intervention phenomenon causes the hat to lose all of its refinements, cards, and hidden enchantments.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1168,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\n^FF0000And if you possess multiple hats of the same type, the one you don't want can undergo the replication process, so please check to make sure.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1171,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nSo any problems with that?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1174,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Let me go check."
+    },
+    {
+      "kind" : "option",
+      "line" : 1174,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Start the replication process."
+    },
+    {
+      "kind" : "message",
+      "line" : 1175,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nYeah, please make sure!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1180,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nWoohoo- Got it.\nIt's finally time for me to use my skills again."
+    },
+    {
+      "kind" : "message",
+      "line" : 1185,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nDo this thing here, and do that thing there, and then do this thing here again..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1190,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\n... .. ..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1212,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]\nGood. This is a satisfying result.\nI'll do even a better job next time. Please tell others about my work. Have a good day~"
+    }
+  ]
+}

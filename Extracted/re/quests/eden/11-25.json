@@ -1,0 +1,199 @@
+{
+  "file" : "npc/re/quests/eden/11-25.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 22,
+      "npc" : "Mission [11 - 25]",
+      "text" : "- You need to have an -\n- ^4d4dff'Eden Group Mark'^000000 -\n- to receive these missions. -"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Mission [11 - 25]",
+      "text" : " - You must collect your - \n - reward before starting - \n - a new mission. - \n \n - Manager : Spike - "
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "npc" : "Mission [11 - 25]",
+      "text" : " - You can only request - \n - one mission at a time. - \n \n - Manager : Spike - "
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "npc" : "Mission [11 - 25]",
+      "text" : " - There are no tasks - \n - open for you right now. - "
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Mission [11 - 25]",
+      "text" : " - These missions are too - \n - easy for your caliber - \n - search for a more level - \n - appropriate mission. - "
+    },
+    {
+      "kind" : "message",
+      "line" : 59,
+      "npc" : "Mission [11 - 25]",
+      "text" : " - Mission bulletin board -\n - for beginners. -\n \n - Manager : Spike -"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Mission [11 - 25]",
+      "text" : "Hornet Hunting"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Mission [11 - 25]",
+      "text" : "Condor Hunting"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Mission [11 - 25]",
+      "text" : "Grasshopper's Leg"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Mission [11 - 25]",
+      "text" : "Worm Tail Hunting"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Mission [11 - 25]",
+      "text" : "Spore Hunting"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Mission [11 - 25]",
+      "text" : "Pest Control"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Mission [11 - 25]",
+      "text" : "Muka Hunting"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Mission [11 - 25]",
+      "text" : "Familiar Hunting"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Mission [11 - 25]",
+      "text" : "Collect Feathers"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Mission [11 - 25]",
+      "text" : "Collect Poison Spores"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Mission [11 - 25]",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 76,
+      "npc" : "Mission [11 - 25]",
+      "text" : " - Stop reading the bulletin board. - "
+    },
+    {
+      "kind" : "message",
+      "line" : 83,
+      "npc" : "Mission [11 - 25]",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "text" : " - Mission ^4d4dff{0}^000000 - \n - is already finished for today. - \n \n - Manager : Spike - "
+    },
+    {
+      "kind" : "message",
+      "line" : 89,
+      "npc" : "Mission [11 - 25]",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "text" : " - Mission '{0}' - "
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Mission [11 - 25]",
+      "text" : " \n - Manager : Spike - "
+    },
+    {
+      "kind" : "option",
+      "line" : 95,
+      "npc" : "Mission [11 - 25]",
+      "text" : "I will do this mission."
+    },
+    {
+      "kind" : "option",
+      "line" : 95,
+      "npc" : "Mission [11 - 25]",
+      "text" : "Look for other missions."
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Mission [11 - 25]",
+      "text" : " - Let's search for -\n - other missions. - "
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Spike",
+      "text" : "[Spike]\nYou haven't finished your mission yet.\nKeep up the good work. You are almost done."
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Spike",
+      "text" : "[Spike]\nAre you looking for a job?\nWe always have lots of work to do."
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "npc" : "Spike",
+      "text" : "[Spike]\nWhy don't you look around and find some interesting tasks?"
+    },
+    {
+      "kind" : "message",
+      "line" : 145,
+      "npc" : "Spike",
+      "placeholders" : [
+        "getitemname(.@item_req)",
+        ".@req_amount",
+        "getitemname(.@item_req)"
+      ],
+      "text" : "[Spike]\nYou don't have enough {0}.\nYou need to bring {1} {2}."
+    },
+    {
+      "kind" : "message",
+      "line" : 151,
+      "npc" : "Spike",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "text" : "[Spike]\nHmm... let me see~\nYou have completed the '{0}' mission."
+    },
+    {
+      "kind" : "message",
+      "line" : 155,
+      "npc" : "Spike",
+      "text" : "[Spike]\nGood work~!!\nOur client is so happy with your work. He will appreciate what you have done.\nPlease help us again. Thanks!"
+    }
+  ]
+}

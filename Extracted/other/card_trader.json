@@ -1,0 +1,209 @@
+{
+  "file" : "npc/other/card_trader.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Putty",
+      "text" : "[Putty]\nHi there.\nI don't know if I can be\nof any assistance, but I\nam trying to help older veterans\nby exchaning the cards that\nthey are no longer using."
+    },
+    {
+      "kind" : "option",
+      "line" : 72,
+      "npc" : "Putty",
+      "text" : "Ask for more information!"
+    },
+    {
+      "kind" : "option",
+      "line" : 72,
+      "npc" : "Putty",
+      "text" : "I don't have any cards right now."
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "npc" : "Putty",
+      "text" : "[Putty]\nI am giving 1 point for each card that you bring me.\nThe points can be used to exchange for items that I have."
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Putty",
+      "text" : "[Putty]\nFor ^CC0000100 points^000000: ^0000CC1 Old Card Album^000000.\nFor ^CC000050 points^000000: ^0000CC20 Yggdrasil Berry^000000.\nFor ^CC000020 points^000000: ^0000CC10 Blue Potion^000000.\nFor ^CC00001 point^000000: ^0000CC4 Honey^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 86,
+      "npc" : "Putty",
+      "text" : "[Putty]\nWell, remember this offer!"
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "Putty",
+      "placeholders" : [
+        ".@points"
+      ],
+      "text" : "[Putty]\nWelcome back!\nI see you already have some\ntrading points. Actually, you currently have ^00cc00{0}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Putty",
+      "text" : "[Putty]\nWould you like to exchange these\npoints now, or you would like to exchange more cards?"
+    },
+    {
+      "kind" : "option",
+      "line" : 101,
+      "npc" : "Putty",
+      "text" : "I would like to exchange cards."
+    },
+    {
+      "kind" : "option",
+      "line" : 101,
+      "npc" : "Putty",
+      "text" : "Can I exchange the points?"
+    },
+    {
+      "kind" : "message",
+      "line" : 103,
+      "npc" : "Putty",
+      "text" : "[Putty]\nPlease tell me what card you want to exchange."
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Putty",
+      "text" : "[Putty]"
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "npc" : "Putty",
+      "text" : "Please, come back here if you want to exchange a monster card."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Putty",
+      "placeholders" : [
+        "callfunc(\"F_GetPlural\",getitemname(.@card))"
+      ],
+      "text" : "You don't have any ^0055FF{0}^000000 with you!"
+    },
+    {
+      "kind" : "message",
+      "line" : 127,
+      "npc" : "Putty",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\",.@count,getitemname(.@card))"
+      ],
+      "text" : "You've got ^0055FF{0}^000000.\n \nWould you like to exchange 1 point for each of them?"
+    },
+    {
+      "kind" : "option",
+      "line" : 131,
+      "npc" : "Putty",
+      "text" : "Yes, please!"
+    },
+    {
+      "kind" : "option",
+      "line" : 131,
+      "npc" : "Putty",
+      "text" : "No, thank you."
+    },
+    {
+      "kind" : "message",
+      "line" : 135,
+      "npc" : "Putty",
+      "placeholders" : [
+        ".@count"
+      ],
+      "text" : "[Putty]\nAlright, you have received ^CC0000{0}^000000 points."
+    },
+    {
+      "kind" : "message",
+      "line" : 139,
+      "npc" : "Putty",
+      "text" : "[Putty]\nOkay, let me know if I can help you with something else."
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "Putty",
+      "text" : "[Putty]\nThese are the items that I have."
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "text" : "1 Old Card Album - 50 Points"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "text" : "20 Yggdrasil Berry - 50 Points"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "text" : "10 Blue Potion - 20 Points"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "text" : "4 Honey - 1 Point"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "text" : "^777777Nerver mind.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 153,
+      "npc" : "Putty",
+      "text" : "[Putty]\nGreat, I wish you the best\nof luck with this album. I have a\nvery good feeling about this one!"
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "Putty",
+      "text" : "[Putty]\nOh, you must like adventures.\nHere you go, just what you need!"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Putty",
+      "text" : "[Putty]\nBlue Potions? Are you sure?\nIf that's what you want, here they are!"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Putty",
+      "text" : "[Putty]\nIt took many bees\nto make all of this.\nMake good use of it."
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Putty",
+      "text" : "[Putty]\nAlright, come back when you have more points."
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Putty",
+      "text" : "[Putty]\nSorry, but you don't have enough points."
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "Putty",
+      "text" : "[Putty]\nYou have 0 points. You need at least 1 point to exchange."
+    }
+  ]
+}

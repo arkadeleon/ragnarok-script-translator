@@ -1,0 +1,244 @@
+{
+  "file" : "npc/custom/etc/airplane.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 241,
+      "npc" : "F_Porter",
+      "text" : "^FF0000[Porter]^000000\nThe plane is currently ported.  Would you like to board?"
+    },
+    {
+      "kind" : "option",
+      "line" : 244,
+      "npc" : "F_Porter",
+      "text" : "Yes."
+    },
+    {
+      "kind" : "option",
+      "line" : 244,
+      "npc" : "F_Porter",
+      "text" : "No."
+    },
+    {
+      "kind" : "option",
+      "line" : 244,
+      "npc" : "F_Porter",
+      "text" : "View Hourly Itinerary."
+    },
+    {
+      "kind" : "message",
+      "line" : 251,
+      "npc" : "F_Porter",
+      "text" : "^FF0000[Porter]^000000\nHave a good day.  Thank you for traveling with Airship."
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "F_Porter",
+      "text" : "^FF0000[Porter]^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 257,
+      "npc" : "F_Porter",
+      "text" : "Sorry, ma'am, but the plane currently isn't ported.  However, you can view the airplane's hourly itinerary."
+    },
+    {
+      "kind" : "message",
+      "line" : 258,
+      "npc" : "F_Porter",
+      "text" : "Sorry, sir, but the plane currently isn't ported.  However, you can view the airplane's hourly itinerary."
+    },
+    {
+      "kind" : "option",
+      "line" : 260,
+      "npc" : "F_Porter",
+      "text" : "Yes, please."
+    },
+    {
+      "kind" : "option",
+      "line" : 260,
+      "npc" : "F_Porter",
+      "text" : "No thanks."
+    },
+    {
+      "kind" : "message",
+      "line" : 265,
+      "npc" : "F_Porter",
+      "text" : "^FF0000[Porter]^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 342,
+      "npc" : "Itinerary Schedule",
+      "text" : "^FF0000[Itinerary]^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 348,
+      "npc" : "Docker",
+      "text" : "^FF0000[Airplane Attendant]^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 351,
+      "npc" : "Docker",
+      "placeholders" : [
+        "$locationsname$[$destination]"
+      ],
+      "text" : "We are currently docked at {0}.  Would you like to exit?"
+    },
+    {
+      "kind" : "option",
+      "line" : 353,
+      "npc" : "Docker",
+      "text" : "Yes."
+    },
+    {
+      "kind" : "option",
+      "line" : 353,
+      "npc" : "Docker",
+      "text" : "No."
+    },
+    {
+      "kind" : "message",
+      "line" : 362,
+      "npc" : "Docker",
+      "text" : "^FF0000[Airplane Attendant]^000000\nHave a good day.  Thank you for traveling with us."
+    },
+    {
+      "kind" : "message",
+      "line" : 367,
+      "npc" : "Docker",
+      "text" : "^FF0000[Airplane Attendant]^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 368,
+      "npc" : "Docker",
+      "text" : "Sorry, ma'am, but the plane currently isn't docked.  Please wait."
+    },
+    {
+      "kind" : "message",
+      "line" : 369,
+      "npc" : "Docker",
+      "text" : "Sorry, sir, but the plane currently isn't docked.  Please wait."
+    },
+    {
+      "kind" : "message",
+      "line" : 373,
+      "npc" : "Docker",
+      "text" : "^FF0000[Airplane Attendant]^000000\nWe're currently in air. Please wait until the pilot has announced that we have safely landed."
+    },
+    {
+      "kind" : "message",
+      "line" : 380,
+      "npc" : "F_Itin",
+      "text" : "Try again later.  A recent server reboot or rehash has messed the itinerary up for a bit."
+    },
+    {
+      "kind" : "message",
+      "line" : 400,
+      "npc" : "F_Itin",
+      "placeholders" : [
+        "@time$",
+        "@minutes$",
+        "@time$",
+        "@minutess$",
+        "$locationsname$[$locationn[@tempo]]"
+      ],
+      "text" : "{0}:{1} A.M. - {2}:{3} A.M. - ^FF0000{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 401,
+      "npc" : "F_Itin",
+      "placeholders" : [
+        "@time$",
+        "@minutes$",
+        "@time$",
+        "@minutess$",
+        "$locationsname$[$locationn[@tempo]]"
+      ],
+      "text" : "{0}:{1} P.M. - {2}:{3} P.M. -^FF0000 {4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 402,
+      "npc" : "F_Itin",
+      "placeholders" : [
+        "@time$",
+        "@minutes$",
+        "@time$",
+        "@minutess$",
+        "$locationsname$[$locationn[@tempo]]"
+      ],
+      "text" : "{0}:{1} P.M. - {2}:{3} P.M. -^FF0000 {4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 403,
+      "npc" : "F_Itin",
+      "placeholders" : [
+        "@time$",
+        "@minutes$",
+        "@time$",
+        "@minutess$",
+        "$locationsname$[$locationn[@tempo]]"
+      ],
+      "text" : "{0}:{1} A.M. - {2}:{3} A.M. -^FF0000 {4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 421,
+      "npc" : "F_Itin",
+      "placeholders" : [
+        "@time$",
+        "@minutes$",
+        "@time$",
+        "@minutess$",
+        "$locationsname$[$locationn[@tempo]]"
+      ],
+      "text" : "{0}:{1} A.M. - {2}:{3} A.M. - ^FF0000{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 422,
+      "npc" : "F_Itin",
+      "placeholders" : [
+        "@time$",
+        "@minutes$",
+        "@time$",
+        "@minutess$",
+        "$locationsname$[$locationn[@tempo]]"
+      ],
+      "text" : "{0}:{1} P.M. - {2}:{3} P.M. -^FF0000 {4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 423,
+      "npc" : "F_Itin",
+      "placeholders" : [
+        "@time$",
+        "@minutes$",
+        "@time$",
+        "@minutess$",
+        "$locationsname$[$locationn[@tempo]]"
+      ],
+      "text" : "{0}:{1} P.M. - {2}:{3} P.M. -^FF0000 {4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 424,
+      "npc" : "F_Itin",
+      "placeholders" : [
+        "@time$",
+        "@minutes$",
+        "@time$",
+        "@minutess$",
+        "$locationsname$[$locationn[@tempo]]"
+      ],
+      "text" : "{0}:{1} A.M. - {2}:{3} A.M. -^FF0000 {4}^000000"
+    }
+  ]
+}

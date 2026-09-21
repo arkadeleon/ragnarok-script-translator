@@ -1,0 +1,1033 @@
+{
+  "file" : "npc/re/instances/AirshipAssault.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 16,
+      "npc" : "Adventurer Leon",
+      "text" : "[Adventurer Leon]\nHm...after several days of observation, this place seems to be a device imprinted with the memories of an airship."
+    },
+    {
+      "kind" : "message",
+      "line" : 19,
+      "npc" : "Adventurer Leon",
+      "text" : "[Adventurer Leon]\n...that is different. I don't have any more information..."
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Dimensional Device",
+      "text" : "^ff0000Memorial Dungeon cannot be reentered within 23 hours after your last entrance.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 38,
+      "npc" : "Dimensional Device",
+      "text" : "^ff0000Users below level 125 cannot enter this dungeon^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Dimensional Device",
+      "text" : "^ff0000To enter, you must create or join a party of 1 or more members.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Dimensional Device",
+      "text" : "^ff0000This Memorial Dungeon is only for 1 person. Only the party leader can enter.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 49,
+      "npc" : "Dimensional Device",
+      "text" : "Power Up the Device"
+    },
+    {
+      "kind" : "option",
+      "line" : 49,
+      "npc" : "Dimensional Device",
+      "text" : "Use the Device"
+    },
+    {
+      "kind" : "option",
+      "line" : 49,
+      "npc" : "Dimensional Device",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "npc" : "Dimensional Device",
+      "text" : "^ff0000This Memorial Dungeon is only for 1 person. Only the party leader can enter.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "Dimensional Device",
+      "placeholders" : [
+        "getpartyname( getcharid(1) )",
+        "strcharinfo(0)",
+        ".@md_name$"
+      ],
+      "text" : "Party name: {0}\nCharacter name: {1}\n^0000ff{2}^000000 - Creation failed!"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "npc" : "Dimensional Device",
+      "text" : "^ff0000After dimension device has formed^000000\n^ff0000click to enter again.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 77,
+      "npc" : "Dimensional Device",
+      "text" : "^ff0000To enter, you must create or join a party of 1 or more members.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 80,
+      "npc" : "Dimensional Device",
+      "text" : "^ff0000The party leader has not used the device.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 83,
+      "npc" : "Dimensional Device",
+      "text" : "An unknown error has occurred."
+    },
+    {
+      "kind" : "message",
+      "line" : 104,
+      "npc" : "Loki",
+      "text" : "[Loki]\n...Glad there aren't any of those pesky things here..."
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Loki",
+      "text" : "[Loki]\n...I will defend this place no matter what. Go down into the airship...!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "Fenrir",
+      "text" : "[Fenrir]\nFlying in the air through with the strength of machinery... the development of technology is truly marvelous."
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "npc" : "Fenrir",
+      "text" : "[Fenrir]\nBut I feel there's a power of some kind... I think this airship won't be able to fly solely just by technology."
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "Fenrir",
+      "text" : "[Fenrir]\nI will face them here. Chaos, go down to the lower floor of the airship with Iris!"
+    },
+    {
+      "kind" : "message",
+      "line" : 136,
+      "npc" : "Captain Ferlock",
+      "text" : "[Iris]\nWhoa~ this is great!! The wind is so cool~!!\nHooray~ we are flying through the sky! For free on top of that!"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "Captain Ferlock",
+      "text" : "[Iris]\nIs it not marvelous how this huge ship can fly without the use of magic? Chaos?"
+    },
+    {
+      "kind" : "message",
+      "line" : 144,
+      "npc" : "Captain Ferlock",
+      "text" : "[Chaos]\n......"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Captain Ferlock",
+      "text" : "[Iris]\n...?? Chaos?"
+    },
+    {
+      "kind" : "message",
+      "line" : 152,
+      "npc" : "Captain Ferlock",
+      "text" : "[Chaos]\n.....Sage Kadmon.."
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Captain Ferlock",
+      "text" : "[Iris]\nWhat are you doing instead of listening to me!!!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "Captain Ferlock",
+      "text" : "[Chaos]\nArgh! Aaah~!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 164,
+      "npc" : "Captain Ferlock",
+      "text" : "[Iris]\nHumph! That's what you get for being absent-minded!"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Captain Ferlock",
+      "text" : "[Chaos]\nAh...Iris!! Are you trying to kill me~!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 172,
+      "npc" : "Captain Ferlock",
+      "text" : "[Iris]\nHumph! I don't care if you die or not..."
+    },
+    {
+      "kind" : "message",
+      "line" : 176,
+      "npc" : "Captain Ferlock",
+      "text" : "[Captain Ferlock]\nHey!! No horsing around on the ship!!\nThis is what's wrong with young humans. They have no manners! If you act up I will toss all of you off!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 181,
+      "npc" : "Captain Ferlock",
+      "text" : "[Iris]\nOops... By the way captain, how does this big airship fly through the sky? It is so marvelous!"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Captain Ferlock",
+      "text" : "[Captain Ferlock]\nHuh? That's a good question.\nAs you can see, we heat the large boiler to boil water then use the pressure of the steam to move the pistons which turns the cogwheel and moves the turbine to turn the propeller."
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Captain Ferlock",
+      "text" : "[Iris]\nEh... So that's how this big ship floats... but now the feeling of the mystery is gone. I thought there would be some mystical device... a little disappointed..."
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "Captain Ferlock",
+      "text" : "[Captain Ferlock]\nThat's right. This big ship can't be in the sky with just steam. So it uses an amplifier called a 'Rune Engine'."
+    },
+    {
+      "kind" : "message",
+      "line" : 198,
+      "npc" : "Captain Ferlock",
+      "text" : "[Iris]\nRune Engine? What is that?"
+    },
+    {
+      "kind" : "message",
+      "line" : 202,
+      "npc" : "Captain Ferlock",
+      "text" : "[Captain Ferlock]\nIt's a device that uses a magical stone.\nSomething about fallen fragments of a broken heart according to the legends... a ridiculous legend but that doesn't matter..."
+    },
+    {
+      "kind" : "message",
+      "line" : 206,
+      "npc" : "Captain Ferlock",
+      "text" : "[Captain Ferlock]\nThe stone is the so-called 'Tear of Ymir.' If put in junction with locomotive engines like steam engines, the rune exuded from the stone amplifies the energy."
+    },
+    {
+      "kind" : "message",
+      "line" : 209,
+      "npc" : "Captain Ferlock",
+      "text" : "[Captain Ferlock]\nIn all honesty it is not an overstatement to say a rock the size of a thumb is moving this ship. It possesses an incredible power."
+    },
+    {
+      "kind" : "message",
+      "line" : 213,
+      "npc" : "Captain Ferlock",
+      "text" : "[Iris]\nThat little thing...!!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "npc" : "Captain Ferlock",
+      "text" : "[Loki]\n......huh?\nSomething is coming this way..."
+    },
+    {
+      "kind" : "message",
+      "line" : 222,
+      "npc" : "Captain Ferlock",
+      "text" : "[Guard]\nAlert!! Alert!! A large Wyvern unit at 7 o'clock!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 226,
+      "npc" : "Captain Ferlock",
+      "text" : "[Captain Ferlock]\nWhat?!"
+    },
+    {
+      "kind" : "message",
+      "line" : 230,
+      "npc" : "Captain Ferlock",
+      "text" : "[Guard]\nGre...Gremlins!! Gremlins have landed from the Wyvern!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 244,
+      "npc" : "Captain Ferlock",
+      "text" : "[Chaos]\nHm... What is this now?"
+    },
+    {
+      "kind" : "message",
+      "line" : 248,
+      "npc" : "Captain Ferlock",
+      "text" : "[Arcana]\nHahahaha~ You have waited long!!\nBeautiful sorceress Arcana's surprise airborne monster show!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 253,
+      "npc" : "Captain Ferlock",
+      "text" : "[Chaos]\nWha...what show?"
+    },
+    {
+      "kind" : "message",
+      "line" : 257,
+      "npc" : "Captain Ferlock",
+      "text" : "[Arcana]\nNow... Let us get started! Gremlins~!!\nIt's PARTY TIME~!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 262,
+      "npc" : "Captain Ferlock",
+      "text" : "[Guard]\nCap..Captain! This is serious!\nGremlins are all over the ship!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 267,
+      "npc" : "Captain Ferlock",
+      "text" : "[Captain Ferlock]\nWhat?! These are Gremlins?!\nYou bastards!! Come down from there now!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Captain Ferlock",
+      "text" : "[Iris]\nCaptain. There is no need to be so agitated.\nGremlins are just monsters that tinker with machines. Rather..."
+    },
+    {
+      "kind" : "message",
+      "line" : 277,
+      "npc" : "Captain Ferlock",
+      "text" : "[Captain Ferlock]\nYou don't know what you're talking about!!\nWe're at an altitude of 8000!! Even a minor malfunction could lead to a deadly crash!"
+    },
+    {
+      "kind" : "message",
+      "line" : 282,
+      "npc" : "Captain Ferlock",
+      "text" : "[Guard]\nArgh!! Rear engine number 1!!\n...This is serious! They are heading towards the engine room! We have to protect the Rune Engine!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Captain Ferlock",
+      "text" : "[Captain Ferlock]\nDamn it... Where did I put my weapon...\nHey humans!! Block that nuisance while I go to the captain's room to look for my weapon!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Captain Ferlock",
+      "text" : "[Captain Ferlock]\nWe have to especially stop them from getting to the Rune Engine!! If that is destroyed the ship can no longer fly!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Captain Ferlock",
+      "text" : "[Captain Ferlock]\nDamn... if only I had my weapon..."
+    },
+    {
+      "kind" : "message",
+      "line" : 299,
+      "npc" : "Captain Ferlock",
+      "text" : "[Chaos]\nIris!! Let's go down to the engine room! Loki and Fenrir, hold this place!"
+    },
+    {
+      "kind" : "message",
+      "line" : 303,
+      "npc" : "Captain Ferlock",
+      "text" : "[Iris]\nOh...okay! Alright... Let's go!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 398,
+      "npc" : "Traveling Knight",
+      "text" : "[Traveling Knight]\nWhat are these things?\nShould I cut them all down? ...No it is not enough money for me to be involved..."
+    },
+    {
+      "kind" : "message",
+      "line" : 407,
+      "npc" : "Passed out Drunkard",
+      "text" : "[Passed out Drunkard]\nUgh... Getting drunk... hiccup\n....Snore...Zzz"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Wealthy man at a meal",
+      "text" : "[Wealthy man at a meal]\nWha... what are these monsters?!\nHow dare you interrupt my precious meal time! Guard! Where are you!"
+    },
+    {
+      "kind" : "message",
+      "line" : 423,
+      "npc" : "Free Riding Bard",
+      "text" : "[Free Riding Bard]\nWhoa... Gorgeous~ Fantastic~\nEven the exploding ship is incredible~ Whoa~"
+    },
+    {
+      "kind" : "message",
+      "line" : 430,
+      "npc" : "Airship Cafeteria Manager",
+      "text" : "[Airship Cafeteria Manager]\nThey might look menacing but those monsters are also customers to my cafeteria.\nWhat would you like monster customer?"
+    },
+    {
+      "kind" : "message",
+      "line" : 434,
+      "npc" : "Airship Cafeteria Manager",
+      "text" : "[Airship Cafeteria Manager]\nAh... Argh! Help me!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 440,
+      "npc" : "Gambling Spirit",
+      "text" : "[Gambling Spirit]\nHey! Don't touch my cards!\nOff with your hands and neck!"
+    },
+    {
+      "kind" : "message",
+      "line" : 444,
+      "npc" : "Gambling Spirit",
+      "text" : "[Gambling Spirit]\nHuh..?!\nI was just getting a feel for this and these monsters show up?! Are you trying to steal my money because I won a little? Huh?!"
+    },
+    {
+      "kind" : "message",
+      "line" : 511,
+      "npc" : "Airship Crew",
+      "text" : "[Airship Crew]\nThis is the entrance to the engine room. Stop them from getting in!"
+    },
+    {
+      "kind" : "message",
+      "line" : 517,
+      "npc" : "Airship Crew",
+      "text" : "[Airship Crew]\nDamn... There are too many of them! The engine room could get overrun!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 523,
+      "npc" : "King's Escort",
+      "text" : "[King's Escort]\nWe must not waken our sleeping King no matter what happens!"
+    },
+    {
+      "kind" : "message",
+      "line" : 530,
+      "npc" : "Tourist",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\n....Snore...Zzz"
+    },
+    {
+      "kind" : "message",
+      "line" : 543,
+      "npc" : "Iris",
+      "text" : "[Chaos]\nDamn... They have already reached this far! Thanks to you the Rune Engine was defended."
+    },
+    {
+      "kind" : "message",
+      "line" : 547,
+      "npc" : "Iris",
+      "text" : "[Iris]\nUh...oh!! There's a gremlin heading towards the engine room!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 551,
+      "npc" : "Iris",
+      "text" : "[Chaos]\n.....!! We have to stop him!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 555,
+      "npc" : "Iris",
+      "text" : "[Gremlin]\nSqueak..!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 567,
+      "npc" : "Iris",
+      "text" : "- Pop! Pop pop!"
+    },
+    {
+      "kind" : "message",
+      "line" : 570,
+      "npc" : "Iris",
+      "text" : "[Iris]\nEeek!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 574,
+      "npc" : "Iris",
+      "text" : "[Crew Member]\nArgh! The Rune Engine!! The engine room has exploded!! Fire suppression team! Put out the fire!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 578,
+      "npc" : "Iris",
+      "text" : "[Chaos]\nDamn it!! It's dangerous here! Let's get out of here first! Iris, hurry!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 665,
+      "npc" : "Traveling Knight",
+      "text" : "[Traveling Knight]\nAh.. Argh!!\nIt's going to explode! Have to go over... I have to go over to that Airship on the other side!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 672,
+      "npc" : "Free Riding Bard",
+      "text" : "[Free Riding Bard]\nWhoa... Gorgeous~ Fantastic~\nEven the exploding ship is incredible~ Whoa~"
+    },
+    {
+      "kind" : "message",
+      "line" : 679,
+      "npc" : "Gambling Spirit",
+      "text" : "[Gambling Spirit]\nWhat is this? Fire?\nAhhhhhh~"
+    },
+    {
+      "kind" : "message",
+      "line" : 686,
+      "npc" : "Airship Cafeteria Manager",
+      "text" : "[Airship Cafeteria Manager]\nIs this ship.. going to fall..\nHowever I will share fate with this ship. This ship and I are one!"
+    },
+    {
+      "kind" : "message",
+      "line" : 690,
+      "npc" : "Airship Cafeteria Manager",
+      "text" : "[Airship Cafeteria Manager]\nAh... Argh! Help me!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 739,
+      "npc" : "Fenrir",
+      "text" : "[Fenrir]\n...These bastards just keep coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 743,
+      "npc" : "Fenrir",
+      "text" : "[?????]\nAs expected. Our intuition wasn't wrong. It was fruitful to have followed the wave of evil and come this far."
+    },
+    {
+      "kind" : "message",
+      "line" : 747,
+      "npc" : "Fenrir",
+      "text" : "[Iris]\n...?? Who goes there!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Fenrir",
+      "text" : "[?????]\nLet me introduce..."
+    },
+    {
+      "kind" : "message",
+      "line" : 754,
+      "npc" : "Fenrir",
+      "text" : "[?????]\nShiva! Basara! Laksmi!\nWe are the invincible Rangers!"
+    },
+    {
+      "kind" : "message",
+      "line" : 759,
+      "npc" : "Fenrir",
+      "text" : "[Guardian Heroines]\nGuardian Heroines!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 763,
+      "npc" : "Fenrir",
+      "text" : "[Chaos]\n......"
+    },
+    {
+      "kind" : "message",
+      "line" : 767,
+      "npc" : "Fenrir",
+      "text" : "[Fenrir]\n......"
+    },
+    {
+      "kind" : "message",
+      "line" : 771,
+      "npc" : "Fenrir",
+      "text" : "[Shiva]\nHm? What's with the reaction? Everybody is kind of a lukewarm... Was it too much?"
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Fenrir",
+      "text" : "[Basara]\nHm, no, no. Everybody is just captivated by our great entrance."
+    },
+    {
+      "kind" : "message",
+      "line" : 777,
+      "npc" : "Fenrir",
+      "text" : "[Laksmi]\nRight, right. This much production for a hero's entrance is a bit too much!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 781,
+      "npc" : "Fenrir",
+      "text" : "[Iris]\nPu....\nPuhahahahahahahahaha"
+    },
+    {
+      "kind" : "message",
+      "line" : 785,
+      "npc" : "Fenrir",
+      "text" : "[Iris]\nWhat? Who are these idiots?!\nJust look at their clothes!!\nAre those stage costumes? Are they celebrities and not heroes?"
+    },
+    {
+      "kind" : "message",
+      "line" : 791,
+      "npc" : "Fenrir",
+      "text" : "[Shiva]\nHumph. You don't know what you're talking about!\nDo you know how much these clothes cost? That is what's wrong with people who are dull to the latest fashion~"
+    },
+    {
+      "kind" : "message",
+      "line" : 795,
+      "npc" : "Fenrir",
+      "text" : "[Basara]\nYou guys! This isn't the time to be chatting like this! Let's root out the wave of evil!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Fenrir",
+      "text" : "[Shiva]\nRoger, Basara! Let's end it with a swift attack!!\nHuuma Metal Shuriken!! Hiyah!"
+    },
+    {
+      "kind" : "message",
+      "line" : 803,
+      "npc" : "Fenrir",
+      "text" : "- Pop! Pop pop!"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Fenrir",
+      "text" : "[Iris]\nWhat, what are they... Absolute morons..."
+    },
+    {
+      "kind" : "message",
+      "line" : 811,
+      "npc" : "Fenrir",
+      "text" : "[Arcana]\nOh? Gee!\nAn unexpected ally?\nThis could turn out to be a fun party~"
+    },
+    {
+      "kind" : "message",
+      "line" : 817,
+      "npc" : "Fenrir",
+      "text" : "[Fenrir]\nWait!\nIt would be better to end this party now... What is this? Did Freyja send you?"
+    },
+    {
+      "kind" : "message",
+      "line" : 822,
+      "npc" : "Fenrir",
+      "text" : "[Arcana]\nOh. You have no fear.\nHow dare a mere lowly human say Freyja's name."
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Fenrir",
+      "text" : "[Fenrir]\nAs expected. You are Freyja's pawn?"
+    },
+    {
+      "kind" : "message",
+      "line" : 831,
+      "npc" : "Fenrir",
+      "text" : "[Arcana]\n...Careful. If you keep going on like that...\nYou will receive a divine punishment!"
+    },
+    {
+      "kind" : "message",
+      "line" : 837,
+      "npc" : "Fenrir",
+      "text" : "[Fenrir]\n...!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 841,
+      "npc" : "Fenrir",
+      "text" : "[Arcana]\nOkay~ I will show you something good. Something to cool your heads."
+    },
+    {
+      "kind" : "message",
+      "line" : 845,
+      "npc" : "Fenrir",
+      "text" : "[Fenrir]\nCould it be... Wyvern's Breath?!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 849,
+      "npc" : "Fenrir",
+      "text" : "[Arcana]\nB.I.N.G.O. ~"
+    },
+    {
+      "kind" : "message",
+      "line" : 853,
+      "npc" : "Fenrir",
+      "text" : "[Wyvern]\nWooooo..!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 857,
+      "npc" : "Fenrir",
+      "text" : "[Fenrir]\nNo... no!! The ship!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 863,
+      "npc" : "Fenrir",
+      "text" : "- Boom!!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 866,
+      "npc" : "Fenrir",
+      "text" : "[Fenrir]\n...?! Loki!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Fenrir",
+      "text" : "[Loki]\nHm...\nMy new clothes are ruined..."
+    },
+    {
+      "kind" : "message",
+      "line" : 875,
+      "npc" : "Fenrir",
+      "text" : "[Arcana]\nOoh.. you threw back Wyvern's Breath... an unexpected outcome. But can you withstand this one?"
+    },
+    {
+      "kind" : "message",
+      "line" : 879,
+      "npc" : "Fenrir",
+      "text" : "[Wyvern]\nWooooo..!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 883,
+      "npc" : "Fenrir",
+      "text" : "[Loki]\nBothersome pests...\nYou! I will face one while you face the other..."
+    },
+    {
+      "kind" : "message",
+      "line" : 921,
+      "npc" : "Iris",
+      "text" : "[Gremlins]\nSqueak... Kooar~!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 925,
+      "npc" : "Iris",
+      "text" : "[Iris]\nEek! There are still more of these!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 929,
+      "npc" : "Iris",
+      "text" : "[Captain Felrock]\nFound it! My weapon! Hehehehe"
+    },
+    {
+      "kind" : "message",
+      "line" : 932,
+      "npc" : "Iris",
+      "text" : "[Captain Ferlock]\nI will show you what happens when you attack my ship!"
+    },
+    {
+      "kind" : "message",
+      "line" : 935,
+      "npc" : "Iris",
+      "text" : "[Captain Ferlock]\nI will end this with my specially manufactured Exodus Joker XIII Doom Rifle!"
+    },
+    {
+      "kind" : "message",
+      "line" : 939,
+      "npc" : "Iris",
+      "text" : "[Iris]\nJust.. just a minute...\nYou're really going to fire that?!"
+    },
+    {
+      "kind" : "message",
+      "line" : 944,
+      "npc" : "Iris",
+      "text" : "[Captain Ferlock]\nOf course!\nHehehehehehehehe!"
+    },
+    {
+      "kind" : "message",
+      "line" : 950,
+      "npc" : "Iris",
+      "text" : "- Bang! Babang! Bang!"
+    },
+    {
+      "kind" : "message",
+      "line" : 952,
+      "npc" : "Iris",
+      "text" : "[Gremlins]\nUrrrk!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 956,
+      "npc" : "Iris",
+      "text" : "[Captain Ferlock]\nMuhahahaha!\nHow do you like that!!\nMuhahahahaha"
+    },
+    {
+      "kind" : "message",
+      "line" : 963,
+      "npc" : "Iris",
+      "text" : "- Bang! Babang! Bang!"
+    },
+    {
+      "kind" : "message",
+      "line" : 965,
+      "npc" : "Iris",
+      "text" : "[Guard]\nArrgh... the en..engine!"
+    },
+    {
+      "kind" : "message",
+      "line" : 969,
+      "npc" : "Iris",
+      "text" : "[Captain Ferlock]\nWhat?! Those bastards are breaking the engine more?!! You're making me angry!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 973,
+      "npc" : "Iris",
+      "text" : "[Iris]\nYou're the one who did it!!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 978,
+      "npc" : "Iris",
+      "text" : "- Bang! Babang! Bang!"
+    },
+    {
+      "kind" : "message",
+      "line" : 981,
+      "npc" : "Iris",
+      "text" : "[Captain Ferlock]\nBastards! Die! Die!\nMuhahahaha!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 986,
+      "npc" : "Iris",
+      "text" : "[Iris]\nThe way things are going the ship will crash because of that reindeer captain!! Stop that captain!! I'm scared..."
+    },
+    {
+      "kind" : "message",
+      "line" : 989,
+      "npc" : "Iris",
+      "text" : "[Iris]\nHow can we stop him? ...Maybe he will regain his senses if you beat him just enough to not die... I'm counting on you!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1028,
+      "npc" : "Chaos",
+      "text" : "[Chaos]\nYou get out of here now!! This ship is in danger!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1033,
+      "npc" : "Chaos",
+      "text" : "[Captain Ferlock]\nOops.. I was shooting like crazy. Looks like a lot of the Gremlins are gone? Hehehehe"
+    },
+    {
+      "kind" : "message",
+      "line" : 1037,
+      "npc" : "Chaos",
+      "text" : "[Iris]\nThe ship is damaged because of you!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1041,
+      "npc" : "Chaos",
+      "text" : "[Arcana]\nDoing our work for us. Hm, I guess this is enough?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1044,
+      "npc" : "Chaos",
+      "text" : "[Arcana]\nThen it's time for us to slip away..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1048,
+      "npc" : "Chaos",
+      "text" : "[Laksmi]\nOh? ... There, Basara. Looks like they are retreating."
+    },
+    {
+      "kind" : "message",
+      "line" : 1051,
+      "npc" : "Chaos",
+      "text" : "[Basara]\nOf course!! They got a sense of our skill!! Hohoho~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1054,
+      "npc" : "Chaos",
+      "text" : "[Basara]\nOn that note, one last Huuma Metal Shuriken!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1063,
+      "npc" : "Chaos",
+      "text" : "- Babang! Bang!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1066,
+      "npc" : "Chaos",
+      "text" : "[Fenrir]\nEek!! Looks like we'll fall!!\n...too short... Can't reach..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1070,
+      "npc" : "Chaos",
+      "text" : "[Fenrir]\n...is this the end?\n...A place I can't reach like before...\nChaos..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1076,
+      "npc" : "Chaos",
+      "text" : "[Loki]\n...Grab on"
+    },
+    {
+      "kind" : "message",
+      "line" : 1080,
+      "npc" : "Chaos",
+      "text" : "[Fenrir]\nLo...ki?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1084,
+      "npc" : "Chaos",
+      "text" : "[Loki]\nWhat are you looking at? Here, come up..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1088,
+      "npc" : "Chaos",
+      "text" : "[Guard]\nAll engines confirmed halted!!\nWe have to quickly escape!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1093,
+      "npc" : "Chaos",
+      "text" : "[Captain Ferlock]\nDamn...\nEverybody get on the lifeboats!\nBoard the lifeboats with the passengers being first priority! Release the lifeboats that have completed boarding!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1099,
+      "npc" : "Chaos",
+      "text" : "[Chaos]\nWait!! There are still people remaining!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1103,
+      "npc" : "Chaos",
+      "text" : "[Captain Ferlock]\nThere's nothing we can do!\nIf we keep stalling the rest will be in danger!! It's too bad but we have done all we can!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1108,
+      "npc" : "Chaos",
+      "text" : "[Chaos]\nBut the remaining people are precious lives as well! You're going to leave them?!! Huh?!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1112,
+      "npc" : "Chaos",
+      "text" : "[Captain Ferlock]\nYeah, you are right...\nOn that note I will leave you to take care of the aftermath. I'm off!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1118,
+      "npc" : "Chaos",
+      "text" : "[Chaos]\nHey! Where are you going! Argh!!\nI will catch you. I will kill you!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1123,
+      "npc" : "Chaos",
+      "text" : "[Basara]\nIt is not the time for us to be facing these trivial Gremlins."
+    },
+    {
+      "kind" : "message",
+      "line" : 1126,
+      "npc" : "Chaos",
+      "text" : "[Basara]\nI can feel a larger wave of evil.\nLet's leave these little ones to them. Let's go!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1130,
+      "npc" : "Chaos",
+      "text" : "[Laksmi&Shiva]\nRoger!! Ranger Flying form!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1134,
+      "npc" : "Chaos",
+      "text" : "[Iris]\nHuh? Hey!!\nWhere do you think you're going after destroying the ship?!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1138,
+      "npc" : "Chaos",
+      "text" : "[Iris]\nIf I catch you next time I will make sure you die!! Be nervous!! You got it?! Be ready, you yokels!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1142,
+      "npc" : "Chaos",
+      "text" : "[Guardian Heroines]\n...yokels? (Rage)"
+    },
+    {
+      "kind" : "message",
+      "line" : 1145,
+      "npc" : "Chaos",
+      "text" : "[Guardian Heroines]\nThe ones who denigrate and condemn the path of righteousness... We should mercilessly hand down righteous judgment, right?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1148,
+      "npc" : "Chaos",
+      "text" : "[Guardian Heroines]\nDie villains!! Huuma Metal Shuriken!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1153,
+      "npc" : "Chaos",
+      "text" : "- Bang! Babang! Bang!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1156,
+      "npc" : "Chaos",
+      "text" : "[Iris]\nEeek!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1160,
+      "npc" : "Chaos",
+      "text" : "[Guardian Heroines]\nAhahahahaha!!\nServes you right~!! Let's go!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1165,
+      "npc" : "Chaos",
+      "text" : "[Chaos]\nIris!! Come here!!\nLet's quickly find Fenrir and Loki and get out of here!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1170,
+      "npc" : "Chaos",
+      "text" : "[Chaos]\nYou get out of here now!! This ship is in danger!!"
+    }
+  ]
+}

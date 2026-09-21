@@ -1,0 +1,2961 @@
+{
+  "file" : "npc/re/other/adven_boards.txt",
+  "scripts" : [
+    {
+      "kind" : "option",
+      "line" : 12,
+      "npc" : "F_AvenBoard",
+      "text" : "Look up monsters by floor"
+    },
+    {
+      "kind" : "option",
+      "line" : 12,
+      "npc" : "F_AvenBoard",
+      "text" : "Monster Information Retrieval System"
+    },
+    {
+      "kind" : "option",
+      "line" : 12,
+      "npc" : "F_AvenBoard",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 20,
+      "npc" : "F_AvenBoard",
+      "text" : "[Monster Information Retrieval System]\nThis is Monster Information Retrieval System. Information of the monsters that appear in this dungeon can be searched. Enter Monster Name, including spaces, when searching."
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "F_AvenBoard",
+      "text" : "[Monster Information Retrieval System]\nNow searching"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "F_AvenBoard",
+      "text" : "[Monster Information Retrieval System]\nSearch has been completed.\nNow showing the search results."
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "text" : "[Monster Information Retrieval System]"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "F_AvenBoard",
+      "text" : "There is no information available for that monster.\nPlease check your monster name."
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        "getarg(.@i+1)",
+        ".@element$[ getmonsterinfo(.@mob_id,MOB_ELEMENT) ]",
+        ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]",
+        ".@race$[ getmonsterinfo(.@mob_id,MOB_RACE) ]",
+        "getarg(.@i+2)"
+      ],
+      "text" : "- Name : {0}\n- Element : {1}\n- Size : {2}\n- Race : {3}\n--------------------------------^FD8D02\n{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 52,
+      "npc" : "F_AvenBoard",
+      "text" : "[Monster Information Retrieval System]\nWould you like to search for other monster information?"
+    },
+    {
+      "kind" : "option",
+      "line" : 55,
+      "npc" : "F_AvenBoard",
+      "text" : "Search"
+    },
+    {
+      "kind" : "option",
+      "line" : 55,
+      "npc" : "F_AvenBoard",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "F_AvenBoard",
+      "text" : "[Monster Information Retrieval System]\nMonster search system will now shut down."
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "F_AvenBoard",
+      "text" : "Requested information will appear - There's no problem if it appears"
+    },
+    {
+      "kind" : "message",
+      "line" : 71,
+      "npc" : "F_AvenBoard",
+      "text" : "Operation Error."
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "F_InfoBoard",
+      "text" : "[Adventurer Group]\nFor more Information on the monsters\nMonster Information Retrieval System\nMust be used."
+    },
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "Signpost",
+      "text" : "[Ant Hell]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 103,
+      "npc" : "Signpost",
+      "text" : "[Ant Hell]\nAnt Hell dungeon is infested with gigantic insects, when one is attacked others may join the fight."
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Signpost",
+      "text" : "Ant Hell B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Signpost",
+      "text" : "Ant Hell B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Signpost",
+      "text" : "[Ant Hell B1]\n------------ Monster ------------\nFamiliar(24)\nAnt Egg(28)\nDeniro(31)\nPiere(32)\nAndre(33)\nVitata(35)\nGiearth(42)\nMaya Purple(81)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Signpost",
+      "text" : "<Maya Purple? What the hell difference with Maya! Hand who knows--I wonder Grape killing explorer.>"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "Signpost",
+      "text" : "[Ant Hell B2]\n------------ Monster ------------\nFamiliar(24)\nAnt Egg(28)\nDeniro(31)\nPiere(32)\nAndre(33)\nVitata(35)\nGiearth(42)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 136,
+      "npc" : "Signpost",
+      "text" : "<The Queen of ants! Boss Monster Maya! I view it's disgusting - huh? Maya did not get two? Okay I got it. Drop the rock! - Maya love grape explorer>"
+    },
+    {
+      "kind" : "message",
+      "line" : 149,
+      "npc" : "Signposts",
+      "text" : "[Geffen Dungeon]\nCaution! Geffen Dungeon consists of 3 levels that are too dangerous for new adventurers. Please provide information tips to the adventurer group to revise the information.\nRecommended for players around level 60~70."
+    },
+    {
+      "kind" : "message",
+      "line" : 169,
+      "npc" : "Signposts",
+      "text" : "[Geffen Dungeon]\nWhich part of the dungeon would you like to read about?"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Signposts",
+      "text" : "Geffen Dungeon B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Signposts",
+      "text" : "Geffen Dungeon B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Signposts",
+      "text" : "Geffen Dungeon B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Signposts",
+      "text" : "[Geffen Dungeon B1]\n------------ Monster ------------\nPoison Spore(26)\nPoPoring(30),\nHunter Fly(63)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 184,
+      "npc" : "Signposts",
+      "text" : "[Geffen Dungeon B2]\n------------ Monster ------------\nZombie(17)\nDrainliar(47)\nGhoul(61)\nJakk(63)\nNightmare(69)\nOgretooth(114)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "Signposts",
+      "text" : "<This dungeon is home to the rare spawn sword monster Ogretooth.>"
+    },
+    {
+      "kind" : "message",
+      "line" : 198,
+      "npc" : "Signposts",
+      "text" : "[Geffen Dungeon B3]\n------------ Monster ------------\nWhisper(34)\nGhoul(61)\nHunter Fly(63)\nNightmare(69)\nDeviruchi(93)\nMarionette(90)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 208,
+      "npc" : "Signposts",
+      "text" : "<The home of demonic ponies, cute demons and puppet demons. If you like demons, you should get in here.>"
+    },
+    {
+      "kind" : "message",
+      "line" : 220,
+      "npc" : "Signposts",
+      "text" : "[Glastheim]\nGlast Heim is an enormous dungeon with countless levels. Recommended for adventurers levels 70~130.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 267,
+      "npc" : "Signposts",
+      "text" : "[Glastheim]\nThe dungeons consist of several underground levels connected by ancient tunnels. Be prepared for attacks from Undead or demonic monsters within."
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Indoor"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Level B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Level B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Chivalry B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Chivalry B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim St. Abbey"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Churchyard"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Cave B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Cave B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glast Heim Underprison B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glast Heim Underprison B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Culvert B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Culvert B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Culvert B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Culvert B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "text" : "Glastheim Staircase"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Indoor]\n------------ Monster ------------\nSageworm(70)\nRideword(74)\nDark Frame(76)\nMarionette(90)\nAlice(100)\nWanderer(120)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Level B1]\n------------ Monster ------------\nWhisper(34)\nSageworm(70)\nRideword(74)\nDark Frame(76)\nOwl Duke(92)\nAlice(100)\nCarat(103)\nOwl Baron(120)\n--------------------------------\nMiddle 6 o'clock - Level B2\nMiddle 9 o'clock, 3 o'clock, Big 1 o'clock - Under Prison B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 301,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Level B2]\n------------ Monster ------------\nMimic(59)\nChimera(70)\nRideword(74)\nEvil Druid(80)\nRaydric Archer(82)\nAlice(100)\nOgretooth(114)\nRaydric(115)\nKhalitzburg(118)\nWanderer(120)\nAbysmal Knight(122)\nMysteltainn(130)\n--------------------------------\nBig 6 o'clock - Level B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 320,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Chivalry B1]\n------------ Monster ------------\nGiantWhisper(66)\nRideword(74)\nRaydric Archer(82)\nAlice(100)\nRaydric(115)\nKhalitzburg(118)\nAbysmal Knight(122)\n--------------------------------\nBig 9 o'clock, 12 o'clock, 3 o'clock - Chivalry B2\nMiddle 2 o'clock - Culvert B2"
+    },
+    {
+      "kind" : "message",
+      "line" : 335,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Chivalry B2]\n------------ Monster ------------\nRaydric Archer(82)\nAlice(100)\nRaydric(115)\nBloody Knight(116)\nKhalitzburg(118)\nAbysmal Knight(122)\nMysteltainn(130)\n--------------------------------\nBig 9 o'clock, 12 o'clock, 3 o'clock - Chivalry B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 349,
+      "npc" : "Signposts",
+      "text" : "[Glastheim St. Abbey]\n------------ Monster ------------\nMimic(56)\nGhoul(61)\nWraith(77)\nEvil Druid(80)\nDark Illusion(96)\nDark Priest(98)\n--------------------------------\nBig 11 o'clock, 5 o'clock - Churchyard"
+    },
+    {
+      "kind" : "message",
+      "line" : 362,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Churchyard]\n------------ Monster ------------\nZombie(17)\nMimic(56)\nGhoul(61)\nHunter Fly(63)\nWraith(77)\nEvil Druid(80)\nDark Lord(96)MVP\n--------------------------------\nBig 12 o'clock, 6 o'clock - St. Abbey\nBig 9 o'clock - Culvert B2"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Signposts",
+      "text" : "<Dark Lord is quite tall. Dark Illusion is also tall. ... Damn.. - Short Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 379,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Cave B1]\n------------ Monster ------------\nSting(104)\nArclouze(107)\n--------------------------------\nBig 11 o'clock - Culvert B4\nBig 5 o'clock - Cave B2"
+    },
+    {
+      "kind" : "message",
+      "line" : 389,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Cave B2]\n------------ Monster ------------\nGargoyle(100)\nMajoruros(107)\n--------------------------------\nBig 2 o'clock - Cave B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 398,
+      "npc" : "Signposts",
+      "text" : "[Glast Heim Underprison B1]\n------------ Monster ------------\nHunter Fly(63)\nZombie Prisoner(89)\nInjustice(95)\nRybio(98)\n--------------------------------\nBig 1 o'clock - Under Prison B2\nBig 8 o'clock - Level B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 410,
+      "npc" : "Signposts",
+      "text" : "[Glast Heim Underprison B2]\n------------ Monster ------------\nHunter Fly(63)\nCramp(82)\nSkel Prisoner(91)\nInjustice(95)\nRybio(98)\nPhendark(102)\nZealotus(105)\n--------------------------------\nBig 11 o'clock - Culvert B1\nBig 5 o'clock - Under Prison B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 425,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Culvert B1]\n------------ Monster ------------\nWhisper(34)\nGargoyle(100)\nArclouze(107)\n--------------------------------\nBig 1 o'clock - Under Prison B2\nBig 8 o'clock - Culvert B2"
+    },
+    {
+      "kind" : "message",
+      "line" : 436,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Culvert B2]\n------------ Monster ------------\nCramp(82)\nGargoyle(100)\n--------------------------------\nBig 11 o'clock - Culvert B1\nBig 1 o'clock - Culvert B3\nBig 3 o'clock - Staircase Dungeon\nBig 5 o'clock - Chivalry B1\nBig 7 o'clock - Under Prison B2\nBig 10 o'clock - Churchyard"
+    },
+    {
+      "kind" : "message",
+      "line" : 450,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Culvert B3]\n------------ Monster ------------\nGargoyle(100)\nSting(104)\n--------------------------------\nBig 12 o'clock - Culvert B2\nBig 7 o'clock - Culvert B4"
+    },
+    {
+      "kind" : "message",
+      "line" : 460,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Culvert B4]\n------------ Monster ------------\nDrainliar(47)\nGargoyle(100)\nAnolian(109)\n--------------------------------\nBig 11 o'clock - Culvert B3\nMiddle 7 o'clock - Cave B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 471,
+      "npc" : "Signposts",
+      "text" : "[Glastheim Staircase]\n------------ Monster ------------\nMimic(56)\nWind Ghost(80)\nRaydric Archer(82)\n--------------------------------\nMiddle - Culvert B2\nBig 7 o'clock - Glastheim Field"
+    },
+    {
+      "kind" : "message",
+      "line" : 490,
+      "npc" : "Signposts",
+      "text" : "[Magma Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 506,
+      "npc" : "Signposts",
+      "text" : "[Magma Dungeon]\nNogg road is a B2 dungeon that houses fierce monsters. Inexperienced adventurer should not enter this place. Furthermore roads within the dungeon are very narrow, so be careful to not cause inconvenience to other players."
+    },
+    {
+      "kind" : "option",
+      "line" : 510,
+      "npc" : "Signposts",
+      "text" : "Magma Dungeon B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 510,
+      "npc" : "Signposts",
+      "text" : "Magma Dungeon B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 510,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 512,
+      "npc" : "Signposts",
+      "text" : "[Magma Dungeon B1]\n------------ Monster ------------\nGrizzly(66)\nKaho(98)\nExplosion(100)\nBlazer(101)\nLava Golem(103)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 523,
+      "npc" : "Signposts",
+      "text" : "[Magma Dungeon B2]\n------------ Monster ------------\nGig(100)\nBlazer(101)\nDiabolic(104)\nDeleter (Sky)(105)\nDeleter (Ground)(105)\nNightmare terror(107)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 533,
+      "npc" : "Signposts",
+      "text" : "<B1 is too hot.. B2 is also hot, but not hot as B1~ - Melted Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 545,
+      "npc" : "Signposts",
+      "text" : "[Mjolnir Dead Pit]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 559,
+      "npc" : "Signposts",
+      "text" : "[Mjolnir Dead Pit]\nMjolnir Dead Pit is a dungeon comprised of B3 levels. This place is designed for beginner to intermediate adventurers. Adventurers may want to visit this dungeon to obtain Various ores can be found in this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 563,
+      "npc" : "Signposts",
+      "text" : "Mjolnir Dead Pit B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 563,
+      "npc" : "Signposts",
+      "text" : "Mjolnir Dead Pit B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 563,
+      "npc" : "Signposts",
+      "text" : "Mjolnir Dead Pit B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 563,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 565,
+      "npc" : "Signposts",
+      "text" : "[Mjolnir Dead Pit B1]\n------------ Monster ------------\nTarou(22)\nFamiliar(24)\nMartin(39)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 574,
+      "npc" : "Signposts",
+      "text" : "[Mjolnir Dead Pit B2]\n------------ Monster ------------\nMartin(39)\nGiearth(42)\nSkel Worker(44)\nDrainliar(47)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 582,
+      "npc" : "Signposts",
+      "text" : "<B2 of the dungeon is practically a labyrinth of tunnels created by Skel Workers. Be careful to not to get lost in the labyrinth. I didn't have any problem, but you might have some. - Expert Navigator Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 586,
+      "npc" : "Signposts",
+      "text" : "[Mjolnir Dead Pit B3]\n------------ Monster ------------\nMartin(39)\nGiearth(42)\nSkel Worker(44)\nMyst(49)\nCramp(82)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 595,
+      "npc" : "Signposts",
+      "text" : "<Monsters regularly surround you in mass numbers. It happens all the time !! I'm glad I brought flywings. Phew ~ - Ragged Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 607,
+      "npc" : "Signposts",
+      "text" : "[Forest of Labyrinth]\nA twisty, turny maze with varying levels of monsters within.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 651,
+      "npc" : "Signposts",
+      "text" : "[Forest of Labyrinth]\nForest of Labyrinth is comprised of B3 floors, where various monsters reside in 1, 2, B3. Be well prepared before venturing to this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Signposts",
+      "text" : "Forest of Labyrinth B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Signposts",
+      "text" : "Forest of Labyrinth B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Signposts",
+      "text" : "Forest of Labyrinth B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 657,
+      "npc" : "Signposts",
+      "text" : "[Forest of Labyrinth B1]\n------------ Monster ------------\nPoring(1)\nLunatic(3)\nPupa(4)\nChonchon(5)\nFabre(6)\nRocker(15)\nBoa(18)\nStainer(21)\nCreamy(23)\nCaramel(25)\nBigfoot(29)\nSmokie(29)\nPoPoring(30)\nHorn(32)\nCoco(38)\nYoyo(38)\nMartin(39)\nWolf(45)\nArgos(47)\nSteel Chonchon(48)\nChoco(48)\nSavage(59)\nDustiness(62)\nHunter Fly(63)\nMantis(65)\nSide Winder(70)\nArgiope(75)\nVagabond Wolf(93)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 691,
+      "npc" : "Signposts",
+      "text" : "[Forest of Labyrinth B2]\n------------ Monster ------------\nBigfoot(29)\nPoPoring(30)\nSasquatch(72)\nLeib Olmai(87)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 701,
+      "npc" : "Signposts",
+      "text" : "[Forest of Labyrinth B3]\n------------ Monster ------------\nVocal(18)\nPoPoring(30)\nEclipse(31)\nMastering(42)\nBaphomet Jr.(57)\nHunter Fly(63)\nMantis(65)\nSide Winder(70)\nStem Worm(84)\nGhostring(90)\nKiller Mantis(91)\nVagabond Wolf(93)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 717,
+      "npc" : "Signposts",
+      "text" : "<Looking at all those Baphomet Jr., Don't you think Baphomet is vigorous? No? - Jealous Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 729,
+      "npc" : "Signposts",
+      "text" : "[Forest of Labyrinth]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 773,
+      "npc" : "Signposts",
+      "text" : "[Forest of Labyrinth]\nForest of Labyrinth is comprised of B3 floors, where various monsters reside in 1, 2, B3. Be well prepared before venturing to this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 777,
+      "npc" : "Signposts",
+      "text" : "Forest of Labyrinth B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 777,
+      "npc" : "Signposts",
+      "text" : "Forest of Labyrinth B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 777,
+      "npc" : "Signposts",
+      "text" : "Forest of Labyrinth B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 777,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 779,
+      "npc" : "Signposts",
+      "text" : "[Forest of Labyrinth B1]\n------------ Monster ------------\nPoring(1)\nLunatic(3)\nPupa(4)\nChonchon(5)\nFabre(6)\nRocker(15)\nBoa(18)\nStainer(21)\nCreamy(23)\nCaramel(25)\nBigfoot(29)\nSmokie(29)\nPoPoring(30)\nHorn(32)\nCoco(38)\nYoyo(38)\nMartin(39)\nWolf(45)\nArgos(47)\nSteel Chonchon(48)\nChoco(48)\nSavage(59)\nDustiness(62)\nHunter Fly(63)\nMantis(65)\nSide Winder(70)\nArgiope(75)\nVagabond Wolf(93)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 813,
+      "npc" : "Signposts",
+      "text" : "[Forest of Labyrinth B2]\n------------ Monster ------------\nSmokie(29)\nPoPoring(30)\nSasquatch(72)\nLeib Olmai(87)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 823,
+      "npc" : "Signposts",
+      "text" : "[Forest of Labyrinth B3]\n------------ Monster ------------\nVocal(18)\nPoPoring(30)\nEclipse(31)\nMastering(42)\nBaphomet Jr.(57)\nHunter Fly(63)\nMantis(65)\nSide Winder(70)\nStem Worm(84)\nGhostring(90)\nKiller Mantis(91)\nVagabond Wolf(93)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 839,
+      "npc" : "Signposts",
+      "text" : "<Looking at all those Baphomet Jr., Don't you think Baphomet is vigorous? No? - Jealous Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 851,
+      "npc" : "Signposts",
+      "text" : "[Sphinx]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 868,
+      "npc" : "Signposts",
+      "text" : "[Sphinx]\nSphinx is comprised of 5 underground floors. This dungeon's difficulty is appropriate for intermediate to expert adventurers. All monsters in this dungeon are aggressive, so adventurers are advised to have a method to escape in emergencies."
+    },
+    {
+      "kind" : "option",
+      "line" : 872,
+      "npc" : "Signposts",
+      "text" : "Sphinx B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 872,
+      "npc" : "Signposts",
+      "text" : "Sphinx B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 872,
+      "npc" : "Signposts",
+      "text" : "Sphinx B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 872,
+      "npc" : "Signposts",
+      "text" : "Sphinx B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 872,
+      "npc" : "Signposts",
+      "text" : "Sphinx B5"
+    },
+    {
+      "kind" : "option",
+      "line" : 872,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 874,
+      "npc" : "Signposts",
+      "text" : "[Sphinx B1]\n------------ Monster ------------\nDrainliar(47)\nMatyr(58)\nZerom(70)\nRequiem(71)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 884,
+      "npc" : "Signposts",
+      "text" : "[Sphinx B2]\n------------ Monster ------------\nDrainliar(47)\nMatyr(58)\nZerom(70)\nRequiem(71)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 894,
+      "npc" : "Signposts",
+      "text" : "[Sphinx B3]\n------------ Monster ------------\nMimic(56)\nMatyr(58)\nMarduk(73)\nPasana(79)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 904,
+      "npc" : "Signposts",
+      "text" : "[Sphinx B4]\n------------ Monster ------------\nMimic(56)\nMinorous(58)\nPasana(79)\nAnubis(105)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 914,
+      "npc" : "Signposts",
+      "text" : "[Sphinx B5]\n------------ Monster ------------\nMimic(56)\nMatyr(58)\nSide Winder(70)\nPasana(79)\nPharaoh(85)\nAnubis(105)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 924,
+      "npc" : "Signposts",
+      "text" : "<Selling Pharaoh Mask~ Oops.. Sorry, when I saw Pharaoh, I remembered a bard's farfetched story. - Frozen Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 936,
+      "npc" : "Signposts",
+      "text" : "[Clock Tower Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 960,
+      "npc" : "Signposts",
+      "text" : "[Clock Tower Dungeon]\nClock Tower Dungeon is comprised of B4 ground floors and B4 underground floors. Warp points inside the dungeon are complex, sending adventurers to random locations. Exercise caution to not get lost inside the dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "text" : "Ground Floor B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "text" : "Ground Floor B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "text" : "Ground Floor B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "text" : "Ground Floor B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "text" : "Underground Floor B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "text" : "Underground Floor B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "text" : "Underground Floor B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "text" : "Underground Floor B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 966,
+      "npc" : "Signposts",
+      "text" : "[Clock Tower Dungeon Ground Floor B1]\n------------ Monster ------------\nRideword(74)\nPunk(82)\nBathory(86)\nTower Keeper(90)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 976,
+      "npc" : "Signposts",
+      "text" : "[Clock Tower Dungeon Ground Floor B2]\n------------ Monster ------------\nMimic(56)\nRideword(74)\nClock(81)\nPunk(82)\nTower Keeper(90)\nElder(92)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Signposts",
+      "text" : "[Clock Tower Dungeon Ground Floor B3]\n------------ Monster ------------\nMimic(56)\nRideword(74)\nAlarm(88)\nTower Keeper(90)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 998,
+      "npc" : "Signposts",
+      "text" : "[Clock Tower Dungeon Ground Floor B4]\n------------ Monster ------------\nWhisper(34)\nMimic(56)\nRideword(74)\nClock(81)\nAlarm(88)\nTower Keeper(90)\nOwl Duke(92)\nElder(92)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1010,
+      "npc" : "Signposts",
+      "text" : "<Owl Duke's lightning bolt hurts! - Bankrupt Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1014,
+      "npc" : "Signposts",
+      "text" : "[Clock Tower Dungeon Underground Floor B1]\n------------ Monster ------------\nDrainliar(47)\nArclouze(107)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1022,
+      "npc" : "Signposts",
+      "text" : "[Clock Tower Dungeon Underground Floor B2]\n------------ Monster ------------\nBrilight(71)\nOrc Archer(78)\nHigh Orc(81)\nArclouze(107)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1032,
+      "npc" : "Signposts",
+      "text" : "[Clock Tower Dungeon Underground Floor B3]\n------------ Monster ------------\nDrainliar(47)\nCramp(82)\nPenomena(85)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1041,
+      "npc" : "Signposts",
+      "text" : "[Clock Tower Dungeon Underground Floor B4]\n------------ Monster ------------\nWhisper(34)\nBathory(86)\nJoker(90)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1048,
+      "npc" : "Signposts",
+      "text" : "<Bathory.. is it a grandma? girl? it'd be better if it was a girl? Don't you agree? - Starsand hunting Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1060,
+      "npc" : "Signposts",
+      "text" : "[Orc Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1073,
+      "npc" : "Signposts",
+      "text" : "[Orc Dungeon]\nOrc Dungeon is comprised of 2 floors. Monsters that appear in this dungeon are not strong individually, but adventurers may be overwhelmed by the number. Holy element weapons will make adventurer's life easier in this dungeon. You can also utilize Priest skill, Aspersio."
+    },
+    {
+      "kind" : "option",
+      "line" : 1077,
+      "npc" : "Signposts",
+      "text" : "Orc Dungeon B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1077,
+      "npc" : "Signposts",
+      "text" : "Orc Dungeon B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1077,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1079,
+      "npc" : "Signposts",
+      "text" : "[Orc Dungeon B1]\n------------ Monster ------------\nFamiliar(24)\nDrainliar(47)\nSteel Chonchon(48)\nOrc Zombie(51)\nOrc Skeleton(53)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1090,
+      "npc" : "Signposts",
+      "text" : "[Orc Dungeon B2]\n------------ Monster ------------\nDrainliar(47)\nSteel Chonchon(48)\nOrc Skeleton(53)\nZenorc(54)\nOrc Archer(78)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1099,
+      "npc" : "Signposts",
+      "text" : "<Why are there so many monsters?? There are way too many... - Irritated Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1111,
+      "npc" : "Signposts",
+      "text" : "[Juperos Ruins]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1128,
+      "npc" : "Signposts",
+      "text" : "[Juperos Ruins]\nJuperos Ruins is comprised to 2 floors that can be accessed normally, and 1 center floor that can only be accessed by completing specific challenges."
+    },
+    {
+      "kind" : "option",
+      "line" : 1132,
+      "npc" : "Signposts",
+      "text" : "Juperos Ruins B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1132,
+      "npc" : "Signposts",
+      "text" : "Juperos Ruins B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1132,
+      "npc" : "Signposts",
+      "text" : "Juperos Ruins Center"
+    },
+    {
+      "kind" : "option",
+      "line" : 1132,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1134,
+      "npc" : "Signposts",
+      "text" : "[Juperos Ruins B1]\n------------ Monster ------------\nVenatu (Green)(113)\nVenatu (Purple)(113)\nVenatu (Orange)(113)\nVenatu (Blue)(113)\nDimik (Green)(116)\nDimik (Blue)(116)\nDimik (Orange)(116)\nDimik (Red)(116)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1148,
+      "npc" : "Signposts",
+      "text" : "[Juperos Ruins B2]\n------------ Monster ------------\nVenatu (Green)(113)\nVenatu (Purple)(113)\nVenatu (Orange)(113)\nVenatu (Blue)(113)\nApocalipse(121)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1159,
+      "npc" : "Signposts",
+      "text" : "[Juperos Ruins Center]\n------------ Monster ------------\nVenatu (Green)(113)\nVenatu (Purple)(113)\nVenatu (Orange)(113)\nDimik (Green)(116)\nDimik (Blue)(116)\nDimik (Orange)(116)\nDimik (Red)(116)\nArchdam(119)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1171,
+      "npc" : "Signposts",
+      "text" : "<Whoever that's reading this! Have you seen MVP monster, Vesper?? I can't understand! How is that a brute? Just how could it be... - Conspiracy suspecting Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1183,
+      "npc" : "Signposts",
+      "text" : "[Izlude Undersea Tunnel]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1209,
+      "npc" : "Signposts",
+      "text" : "[Izlude Undersea Tunnel]\nByalan Island's Undersea Tunnel is comprised of 6 floors. This dungeon is appropriate for beginners to expert adventurers. Most monsters in this dungeon are water element, therefore having wind element weapons will prove to be helpful."
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "text" : "Izlude Undersea Tunnel B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "text" : "Izlude Undersea Tunnel B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "text" : "Izlude Undersea Tunnel B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "text" : "Izlude Undersea Tunnel B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "text" : "Izlude Undersea Tunnel B5"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "text" : "Izlude Undersea Tunnel B6"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1215,
+      "npc" : "Signposts",
+      "text" : "[Izlude Undersea Tunnel B1]\n------------ Monster ------------\nHydra(34)\nPlankton(40)\nKukre(42)\nMarina(42)\nVadon(45)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1226,
+      "npc" : "Signposts",
+      "text" : "[Izlude Undersea Tunnel B2]\n------------ Monster ------------\nHydra(34)\nPlankton(40)\nKukre(42)\nMarina(42)\nVadon(45)\nCornutus(48)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1238,
+      "npc" : "Signposts",
+      "text" : "[Izlude Undersea Tunnel B3]\n------------ Monster ------------\nHydra(34)\nMarse(47)\nCornutus(48)\nObeaune(53)\nMerman(60)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1249,
+      "npc" : "Signposts",
+      "text" : "[Izlude Undersea Tunnel B4]\n------------ Monster ------------\nHydra(34)\nMarine Sphere(51)\nPhen(52)\nMarc(56)\nSwordfish(57)\nMerman(60)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1261,
+      "npc" : "Signposts",
+      "text" : "[Izlude Undersea Tunnel B5]\n------------ Monster ------------\nHydra(34)\nMarine Sphere(51)\nSwordfish(57)\nDeviace(60)\nMerman(60)\nStrouf(61)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1271,
+      "npc" : "Signposts",
+      "text" : "<Where is this? You don't know? Are you scared? This is definitely underwater, but I can breathe. Did I just grow gills out of nowhere? - Silly Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1275,
+      "npc" : "Signposts",
+      "text" : "[Izlude Undersea Tunnel B6]\n------------ Monster ------------\nLamp Rey(110)\nSquidgitte(113)\nOcto Pot(115)\nKing Kray(117)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1283,
+      "npc" : "Signposts",
+      "text" : "<Kraken is a squid? But why does it have octopus legs?! A.. Amazing..? - Visiting Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1295,
+      "npc" : "Signposts",
+      "text" : "[Toy Factory]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1313,
+      "npc" : "Signposts",
+      "text" : "[Toy Factory]\nToy Factory is comprised of 2 floors. Strong monsters sometimes appear within the dungeon. This dungeon is appropriate for leisure adventure experience, however some caution should be exercised."
+    },
+    {
+      "kind" : "option",
+      "line" : 1317,
+      "npc" : "Signposts",
+      "text" : "Toy Factory B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1317,
+      "npc" : "Signposts",
+      "text" : "Toy Factory B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1317,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1319,
+      "npc" : "Signposts",
+      "text" : "[Toy Factory B1]\n------------ Monster ------------\nPoring(1)\nDrops(2)\nPoPoring(30)\nCookie (Green)(35)\nMarin(37)\nCookie (Red)(37)\nMyst Case(39)\nMastering(42)\nChepet(42)\nAngeling(77)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1333,
+      "npc" : "Signposts",
+      "text" : "<Do you think Porings are cute? Would you change your mind if you met Angeling? It loves harassing people. Be wary of Angeling beginners! Be wary! That's all~ - Orc masked explorer grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1337,
+      "npc" : "Signposts",
+      "text" : "[Toy Factory B2]\n------------ Monster ------------\nCookie (Green)(35)\nCookie (Red)(37)\nMyst Case(39)\nCruiser(41)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1345,
+      "npc" : "Signposts",
+      "text" : "<I approached a new monster out of sheer curiosity. I actually witnessed it. Stormy Knight with red nose with christmas stockings on its feet, commandeering cookie monsters!! I might just become its fan. - Thick glove-wearing explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1357,
+      "npc" : "Signposts",
+      "text" : "[Sunken Ship]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1373,
+      "npc" : "Signposts",
+      "text" : "[Sunken Ship]\nSunken Ship is not completely submerged in water, allowing access to a total of 2 floors. Despite the size of the map, many monsters appear in this dungeon. Exercise caution inside the dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 1377,
+      "npc" : "Signposts",
+      "text" : "Sunken Ship B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1377,
+      "npc" : "Signposts",
+      "text" : "Sunken Ship B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1377,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1379,
+      "npc" : "Signposts",
+      "text" : "[Sunken Ship B1]\n------------ Monster ------------\nPoison Spore(26)\nHydra(34)\nWhisper(34)\nKukre(42)\nPirate Skeleton(48)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1390,
+      "npc" : "Signposts",
+      "text" : "[Sunken Ship B2]\n------------ Monster ------------\nHydra(34)\nWhisper(34)\nKukre(42)\nPirate Skeleton(48)\nMimic(56)\nPenomena(85)\nGhostring(90)\nMarionette(90)\nWanderer(120)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1403,
+      "npc" : "Signposts",
+      "text" : "<Ghostring runs away when it sees me.. It must be shy. Former captain of this sunken ship is also very rude. Pfft~! - Jealous of Captain's hat, Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1415,
+      "npc" : "Signposts",
+      "text" : "[Comodo East Cave, Mao]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1425,
+      "npc" : "Signposts",
+      "text" : "[Comodo East Cave, Mao]\nEast Cave, Mao is a tunnel that leads to Papuchicha Forest. This place is popular for highly sought after cards, Thara Frog and Hydra. Visit this place if you are in dire need of zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 1428,
+      "npc" : "Signposts",
+      "text" : "[Comodo East Cave, Mao]\n------------ Monster ------------\nHydra(34)\nThara Frog(40)\nMegalodon(46)\nNereid(98)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1436,
+      "npc" : "Signposts",
+      "text" : "<Thara Frog.. It's just a frog right? Ew.. It looks hideous.. - Frog loving Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1444,
+      "npc" : "Signposts",
+      "text" : "[Comodo West Cave, Karu]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1455,
+      "npc" : "Signposts",
+      "text" : "[Comodo West Cave, Karu]\nThis dungeon introduces Medusa monster that will surely cause you to turn to stone if you look at it in the eyes. There are no other exits in this cave."
+    },
+    {
+      "kind" : "message",
+      "line" : 1458,
+      "npc" : "Signposts",
+      "text" : "[Comodo West Cave, Karu]\n------------ Monster ------------\nMerman(60)\nPest(89)\nNereid(98)\nMedusa(102)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1466,
+      "npc" : "Signposts",
+      "text" : "<Tao Gunka? That monster with huge face? How strong is it? It's weak.. very weak.. Oh!! It might be strong for you.. - Trolling Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1474,
+      "npc" : "Signposts",
+      "text" : "[Comodo North Cave, Ruande]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1485,
+      "npc" : "Signposts",
+      "text" : "[Comodo North Cave, Ruande]\nAdventurers can reach Umbala by going through Ruande cave. Stalactic Golem monster can only be seen in this cave."
+    },
+    {
+      "kind" : "message",
+      "line" : 1488,
+      "npc" : "Signposts",
+      "text" : "[Comodo North Cave, Ruande]\n------------ Monster ------------\nHydra(34)\nMegalith(65)\nTri Joint(66)\nStalactic Golem(68)\nNereid(98)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1497,
+      "npc" : "Signposts",
+      "text" : "<Stalactic Golem? Phew~ Why did I come here? Ah! That's right I came here to go to Umbala..!! - Passing explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1505,
+      "npc" : "Signposts",
+      "text" : "[Payon Cave]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1533,
+      "npc" : "Signposts",
+      "text" : "[Payon Cave]\nPayon Cave is comprised of 5 floors. Most monsters are Undead or Demon. Holy property weapons will prove to be useful in this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 1537,
+      "npc" : "Signposts",
+      "text" : "Payon Cave B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1537,
+      "npc" : "Signposts",
+      "text" : "Payon Cave B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1537,
+      "npc" : "Signposts",
+      "text" : "Payon Cave B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1537,
+      "npc" : "Signposts",
+      "text" : "Payon Cave B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 1537,
+      "npc" : "Signposts",
+      "text" : "Payon Cave B5"
+    },
+    {
+      "kind" : "option",
+      "line" : 1537,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1539,
+      "npc" : "Signposts",
+      "text" : "[Payon Cave B1]\n------------ Monster ------------\nZombie(17)\nFamiliar(24)\nSkeleton(27)\nPoPoring(30)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1549,
+      "npc" : "Signposts",
+      "text" : "[Payon Cave B2]\n------------ Monster ------------\nSoldier Skeleton(34)\nDrainliar(47)\nArcher Skeleton(50)\nEggyra(53)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1559,
+      "npc" : "Signposts",
+      "text" : "[Payon Cave B3]\n------------ Monster ------------\nMandragora(13)\nPoPoring(30)\nSoldier Skeleton(34)\nHydra(34)\nArcher Skeleton(50)\nMunak(58)\nBongun(59)\nNine Tail(72)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1573,
+      "npc" : "Signposts",
+      "text" : "[Payon Cave B4]\n------------ Monster ------------\nMandragora(13)\nHydra(34)\nGreatest General(55)\nMunak(58)\nBongun(59)\nSohee(64)\nGiantWhisper(66)\nNine Tail(72)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1587,
+      "npc" : "Signposts",
+      "text" : "[Payon Cave B5]\n------------ Monster ------------\nArcher Skeleton(50)\nGreatest General(55)\nHorong(66)\nDokebi(68)\nNine Tail(72)\nAm Mut(76)\nSkeleton General(88)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1598,
+      "npc" : "Signposts",
+      "text" : "<Cat O'Nine Tails wears an underwear, but I'm not wearing one. Hey you over there, don't just watch!! - Extremely embarrassed Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1610,
+      "npc" : "Signposts",
+      "text" : "[Pyramid]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1631,
+      "npc" : "Signposts",
+      "text" : "[Pyramid]\nPyramid is comprised of B4 ground floors and B3 underground floors. This dungeon is appropriate for beginner to expert adventurers. Thief Guild is located in underground B1 floor."
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "text" : "Pyramid Ground Floor B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "text" : "Pyramid Ground Floor B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "text" : "Pyramid Ground Floor B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "text" : "Pyramid Ground Floor B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "text" : "Pyramid Underground Floor B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "text" : "Pyramid Underground Floor B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1637,
+      "npc" : "Signposts",
+      "text" : "[Pyramid Ground Floor B1]\n------------ Monster ------------\nFamiliar(24)\nPoPoring(30)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1645,
+      "npc" : "Signposts",
+      "text" : "[Pyramid Ground Floor B2]\n------------ Monster ------------\nPoPoring(30)\nSoldier Skeleton(34)\nDrainliar(47)\nArcher Skeleton(50)\nMummy(55)\nIsis(59)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1657,
+      "npc" : "Signposts",
+      "text" : "[Pyramid Ground Floor B3]\n------------ Monster ------------\nDrainliar(47)\nVerit(52)\nMummy(55)\nMimic(56)\nMatyr(58)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1668,
+      "npc" : "Signposts",
+      "text" : "[Pyramid Ground Floor B4]\n------------ Monster ------------\nMummy(55)\nMimic(56)\nMatyr(58)\nIsis(59)\nAncient Mummy(114)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1677,
+      "npc" : "Signposts",
+      "text" : "<King of the pyramid! I should change his bandages. His bandages have turned purple over the ages. He's dangerous? It's ok~ It's ok~ - Bandage carrying Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1681,
+      "npc" : "Signposts",
+      "text" : "[Pyramid Underground Floor B2]\n------------ Monster ------------\nVerit(52)\nMummy(55)\nMinorous(58)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1690,
+      "npc" : "Signposts",
+      "text" : "[Pyramid Underground Floor B3]\n------------ Monster ------------\nVerit(52)\nMimic(56)\nArclouze(107)\nAncient Mummy(114)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1698,
+      "npc" : "Signposts",
+      "text" : "<There's an MVP monster that attacks while sitting on its chair. He must have been very lazy. It didn't even move from the spot. That happens to be sometimes. - Lazy Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1712,
+      "npc" : "Signpost",
+      "text" : "[Abyss Lake Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1730,
+      "npc" : "Signpost",
+      "text" : "[Abyss Lake Dungeon]\nAbyss Lake Dungeon is comprised of B3 floors, and monsters in this dungeon are mostly Dragon race. Prepare yourself before venturing into this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 1734,
+      "npc" : "Signpost",
+      "text" : "Abyss Lake Dungeon B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1734,
+      "npc" : "Signpost",
+      "text" : "Abyss Lake Dungeon B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1734,
+      "npc" : "Signpost",
+      "text" : "Abyss Lake Dungeon B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1734,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1736,
+      "npc" : "Signpost",
+      "text" : "[Abyss Lake Dungeon B1]\n------------ Monster ------------\nMimic(56)\nNovus (Red)(84)\nPenomena(85)\nNovus (Yellow)(90)\nAncient Mimic(112)\nDragon Egg(119)\nFerus (Red)(126)\nFerus (Green)(126)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1750,
+      "npc" : "Signpost",
+      "text" : "[Abyss Lake Dungeon B2]\n------------ Monster ------------\nMimic(56)\nNovus (Red)(84)\nNovus (Yellow)(90)\nAncient Mimic(112)\nDragon Egg(119)\nFerus (Red)(126)\nAcidus (Gold)(130)\nAcidus (Blue)(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1764,
+      "npc" : "Signpost",
+      "text" : "[Abyss Lake Dungeon B3]\n------------ Monster ------------\nMimic(56)\nAncient Mimic(112)\nDragon Egg(119)\nHydrolancer(121)\nFerus (Red)(126)\nFerus (Green)(126)\nAcidus (Gold)(130)\nAcidus (Blue)(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1776,
+      "npc" : "Signpost",
+      "text" : "<Detardeurus is so big!! Doesn't it look strong? If you are not interested, nevermind. - Eager to ride the dragon, Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1788,
+      "npc" : "Signpost",
+      "text" : "[Einbech Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1804,
+      "npc" : "Signpost",
+      "text" : "[Einbech Dungeon]\nEinbech Dungeon is comprised of 2 floors, and most of the monsters that appear in this dungeon are Formless. Prepare before venturing into this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 1808,
+      "npc" : "Signpost",
+      "text" : "Einbech Dungeon 1f"
+    },
+    {
+      "kind" : "option",
+      "line" : 1808,
+      "npc" : "Signpost",
+      "text" : "Einbech Dungeon 2f"
+    },
+    {
+      "kind" : "option",
+      "line" : 1808,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1810,
+      "npc" : "Signpost",
+      "text" : "[Einbech Dungeon 1f]\n------------ Monster ------------\nPorcellio(85)\nNoxious(87)\nVenomous(87)\nPitman(90)\nWaste Stove(92)\nUngoliant(94)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1822,
+      "npc" : "Signpost",
+      "text" : "[Einbech Dungeon 2f]\n------------ Monster ------------\nTeddy Bear(91)\nWaste Stove(92)\nMineral(96)\nObsidian(97)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1830,
+      "npc" : "Signpost",
+      "text" : "<RSX-0806 ... That name is complex. - Intelligent Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1842,
+      "npc" : "Signpost",
+      "text" : "[Ice Cave]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1856,
+      "npc" : "Signpost",
+      "text" : "[Ice Cave]\nIce Cave is comprised of B3 floors, and most monsters within the dungeon are Water element. Prepare before venturing into this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 1860,
+      "npc" : "Signpost",
+      "text" : "Ice Cave B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1860,
+      "npc" : "Signpost",
+      "text" : "Ice Cave B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1860,
+      "npc" : "Signpost",
+      "text" : "Ice Cave B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1860,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1862,
+      "npc" : "Signpost",
+      "text" : "[Ice Cave B1]\n------------ Monster ------------\nRoween(95)\nSiroma(98)\nMuscipular(105)\nGazeti(106)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1872,
+      "npc" : "Signpost",
+      "text" : "[Ice Cave B2]\n------------ Monster ------------\nSiroma(98)\nIceicle(100)\nSnowier(103)\nGazeti(106)\nIce Titan(110)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1883,
+      "npc" : "Signpost",
+      "text" : "[Ice Cave B3]\n------------ Monster ------------\nIceicle(100)\nSnowier(103)\nGazeti(106)\nIce Titan(110)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1891,
+      "npc" : "Signpost",
+      "text" : "<Rare monster Ktullanux.. Sigh.. Even it's name is complex.. How would Ktullanux ice shave taste like? - Ice shave hungering Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1903,
+      "npc" : "Signpost",
+      "text" : "[Thor Volcano Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1919,
+      "npc" : "Signpost",
+      "text" : "[Thor Volcano Dungeon]\nThor Volcano Dungeon is comprised of B3 floors, and the monsters that appear in this dungeon are mostly Fire element. Prepare before venturing into this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 1923,
+      "npc" : "Signpost",
+      "text" : "Thor Volcano Dungeon B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1923,
+      "npc" : "Signpost",
+      "text" : "Thor Volcano Dungeon B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1923,
+      "npc" : "Signpost",
+      "text" : "Thor Volcano Dungeon B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1923,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1925,
+      "npc" : "Signpost",
+      "text" : "[Thor Volcano Dungeon B1]\n------------ Monster ------------\nMagmaring(110)\nImp(129)\nBow Guardian(132)\nSword Guardian(133)\nKasa(135)\nByorgue(135)\nSalamander(138)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1938,
+      "npc" : "Signpost",
+      "text" : "[Thor Volcano Dungeon B2]\n------------ Monster ------------\nKaho(98)\nMagmaring(110)\nKnocker(126)\nImp(129)\nBow Guardian(132)\nSword Guardian(133)\nSalamander(138)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1951,
+      "npc" : "Signpost",
+      "text" : "[Thor Volcano Dungeon B3]\n------------ Monster ------------\nBow Guardian(132)\nSword Guardian(133)\nKasa(135)\nByorgue(135)\nSalamander(138)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1960,
+      "npc" : "Signpost",
+      "text" : "<Young explorer~ Why are you here in Thor Volcano Dungeon~ Why are you crying~ Wah~ Wah~ Ifrit is scalding hot~ - Thor Sauna representative explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1972,
+      "npc" : "Signpost",
+      "text" : "[Odin Temple]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1990,
+      "npc" : "Signpost",
+      "text" : "[Odin Temple]\nOdin Temple is comprised of 3 areas , and most monsters that appear here have fast movement speed. Be prepared to get ambushed by multiple monsters."
+    },
+    {
+      "kind" : "option",
+      "line" : 1994,
+      "npc" : "Signpost",
+      "text" : "Odin Temple West"
+    },
+    {
+      "kind" : "option",
+      "line" : 1994,
+      "npc" : "Signpost",
+      "text" : "Odin Temple South"
+    },
+    {
+      "kind" : "option",
+      "line" : 1994,
+      "npc" : "Signpost",
+      "text" : "Odin Temple North"
+    },
+    {
+      "kind" : "option",
+      "line" : 1994,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1996,
+      "npc" : "Signpost",
+      "text" : "[Odin Temple West]\n------------ Monster ------------\nBreeze(92)\nPlasma (Blue)(115)\nPlasma (Green)(116)\nPlasma (Purple)(117)\nPlasma (Red)(118)\nPlasma (Yellow)(119)\nSkogul(126)\nFrus(128)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2010,
+      "npc" : "Signpost",
+      "text" : "[Odin Temple South]\n------------ Monster ------------\nPlasma (Yellow)(119)\nSkogul(126)\nFrus(128)\nSkeggiold (Black)(131)\nSkeggiold (Blue)(131)\nValkyrie(141)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2022,
+      "npc" : "Signpost",
+      "text" : "[Odin Temple North]\n------------ Monster ------------\nPlasma (Yellow)(119)\nSkogul(126)\nFrus(128)\nSkeggiold (Black)(131)\nSkeggiold (Blue)(131)\nValkyrie(141)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2032,
+      "npc" : "Signpost",
+      "text" : "<Valkyrie Randgris, how I wish to be wrapped around your soft wings - Dreamy explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2044,
+      "npc" : "Signpost",
+      "text" : "[Starlight Reef]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2056,
+      "npc" : "Signpost",
+      "text" : "[Starlight Reef]\nStarlight Reef introduces rather weak monsters. Be careful around Red Eruma monsters as it will assist other monsters in its vicinity. Prepare before venturing into this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 2060,
+      "npc" : "Signpost",
+      "text" : "Starlight Reef"
+    },
+    {
+      "kind" : "option",
+      "line" : 2060,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 2062,
+      "npc" : "Signpost",
+      "text" : "[Starlight Reef]\n------------ Monster ------------\nCrab(43)\nShellfish(50)\nAster(50)\nSiorava(87)\nRed Eruma(91)\nWild Rider(95)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2072,
+      "npc" : "Signpost",
+      "text" : "<Wild Rider..? Huh? Is it a cat? Why is a cat riding on a swordfish? - Mounted on picky, explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2083,
+      "npc" : "Signpost",
+      "text" : "[Geffenia]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2099,
+      "npc" : "Signpost",
+      "placeholders" : [
+        "charat( strnpcinfo(2),8 )"
+      ],
+      "text" : "[Geffenia Section {0}]\nAncient Elf's lost city, Geffenia is comprised of 4 sections. Most monsters that appear in this dungeon are strong, so be prepared before you venture into this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 2103,
+      "npc" : "Signpost",
+      "text" : "Geffenia Section 1"
+    },
+    {
+      "kind" : "option",
+      "line" : 2103,
+      "npc" : "Signpost",
+      "text" : "Geffenia Section 2"
+    },
+    {
+      "kind" : "option",
+      "line" : 2103,
+      "npc" : "Signpost",
+      "text" : "Geffenia Section 3"
+    },
+    {
+      "kind" : "option",
+      "line" : 2103,
+      "npc" : "Signpost",
+      "text" : "Geffenia Section 4"
+    },
+    {
+      "kind" : "option",
+      "line" : 2103,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 2105,
+      "npc" : "Signpost",
+      "text" : "[Geffenia Section 1]\n------------ Monster ------------\nExecutioner(101)\nFalse Angel(105)\nOgretooth(114)\nBloody Knight(116)\nMini Demon(117)\nVioly(118)\nSuccubus(118)\nIncubus(120)\nAbysmal Knight(122)\nMysteltainn(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2121,
+      "npc" : "Signpost",
+      "text" : "[Geffenia Section 2]\n------------ Monster ------------\nExecutioner(101)\nFalse Angel(105)\nOgretooth(114)\nBloody Knight(116)\nMini Demon(117)\nVioly(118)\nSuccubus(118)\nIncubus(120)\nAbysmal Knight(122)\nMysteltainn(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2137,
+      "npc" : "Signpost",
+      "text" : "[Geffenia Section 3]\n------------ Monster ------------\nExecutioner(101)\nFalse Angel(105)\nOgretooth(114)\nBloody Knight(116)\nMini Demon(117)\nVioly(118)\nSuccubus(118)\nIncubus(120)\nAbysmal Knight(122)\nMysteltainn(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2153,
+      "npc" : "Signpost",
+      "text" : "[Geffenia Section 4]\n------------ Monster ------------\nExecutioner(101)\nFalse Angel(105)\nOgretooth(114)\nBloody Knight(116)\nMini Demon(117)\nVioly(118)\nSuccubus(118)\nIncubus(120)\nAbysmal Knight(122)\nMysteltainn(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2167,
+      "npc" : "Signpost",
+      "text" : "<Hey Incubus~ Look at... Ugh... - Embarrassed Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2182,
+      "npc" : "Signpost",
+      "text" : "[Nameless Island St. Abbey]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2197,
+      "npc" : "Signpost",
+      "text" : "[Nameless Island St. Abbey]\nNameless Island St. Abbey is comprised of 3 floors, and most monsters that appear in this dungeon are Undead or demon. Prepare before venturing into this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 2201,
+      "npc" : "Signpost",
+      "text" : "Nameless Island St. Abbey 1F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2201,
+      "npc" : "Signpost",
+      "text" : "Nameless Island St. Abbey 2F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2201,
+      "npc" : "Signpost",
+      "text" : "Nameless Island St. Abbey 3F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2201,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 2203,
+      "npc" : "Signpost",
+      "text" : "[Nameless Island St. Abbey 1F]\n------------ Monster ------------\nGhoul(61)\nHell Poodle(115)\nFlame Skull(121)\nRagged Zombie(123)\nZombie Slaughter(124)\nBanshee(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2215,
+      "npc" : "Signpost",
+      "text" : "[Nameless Island St. Abbey 2F]\n------------ Monster ------------\nFlame Skull(121)\nRagged Zombie(123)\nZombie Slaughter(124)\nNecromancer(133)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2223,
+      "npc" : "Signpost",
+      "text" : "<Do you know how scary a Bishop can be when it becomes fallen..? Hibram.. I saw it.. - All knowing Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2227,
+      "npc" : "Signpost",
+      "text" : "[Nameless Island St. Abbey 3F]\n------------ Monster ------------\nFlame Skull(121)\nBanshee(130)\nNecromancer(133)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2234,
+      "npc" : "Signpost",
+      "text" : "<Beelzebub is not a Steel Chonchon, because Chonchons are weak. ... ... ... Run away! - Fleeing Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2246,
+      "npc" : "Signpost",
+      "text" : "[Somatology Laboratory]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2275,
+      "npc" : "Signpost",
+      "text" : "[Somatology Laboratory]\nSomatology Laboratory is comprised of 3 floors, and monsters that appear are mostly Demi-human. These monsters are very powerful so be sure to explore with another adventurer."
+    },
+    {
+      "kind" : "option",
+      "line" : 2279,
+      "npc" : "Signpost",
+      "text" : "Somatology Laboratory 1F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2279,
+      "npc" : "Signpost",
+      "text" : "Somatology Laboratory 2F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2279,
+      "npc" : "Signpost",
+      "text" : "Somatology Laboratory 3F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2279,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 2281,
+      "npc" : "Signpost",
+      "text" : "[Somatology Laboratory 1F]\n------------ Monster ------------\nMetaling(81)\nAnopheles(95)\nRemover(121)\nWickebine Tres(132)\nErrende Ebecee(133)\nLaurell Weinder(133)\nArmeyer Dinze(134)\nKavach Icarus(135)\nGemini-S58(135)\nEgnigem Cenia(136)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2297,
+      "npc" : "Signpost",
+      "text" : "[Somatology Laboratory 2F]\n------------ Monster ------------\nRemover(121)\nWickebine Tres(132)\nErrende Ebecee(133)\nLaurell Weinder(133)\nArmeyer Dinze(134)\nKavach Icarus(135)\nGemini-S58(135)\nEgnigem Cenia(136)\nEremes Guile(140)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2310,
+      "npc" : "Signpost",
+      "text" : "<There are even places like these.. Conducting experiments on human specimen.. MVP Egnigem Cenia... She's.. - Tearful Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2314,
+      "npc" : "Signpost",
+      "text" : "[Somatology Laboratory 3F]\n------------ Monster ------------\nEremes Guile(140)\nMargaretha Sorin(140)\nCecil Damon(141)\nKathryne Keyron(141)\nSeyren Windsor(142)\nHoward Alt-Eisen(142)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2324,
+      "npc" : "Signpost",
+      "text" : "<I've finally reached here.. Who's conducting these experiments.. What did they do to these people? Eremes.. Margaretha.. Cecil.. Kathryne.. Seyren.. Howard.. ... - Extremely tearful explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2336,
+      "npc" : "Signpost",
+      "text" : "Holy Ground\n- High Priest Zhed -"
+    },
+    {
+      "kind" : "message",
+      "line" : 2341,
+      "npc" : "Signpost",
+      "text" : "[Holy Ground]\nOnly those that have requested permission from High Priest Zhed may enter this dungeon. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2356,
+      "npc" : "Signpost",
+      "text" : "[Holy Ground]\nHoly Ground is comprised of 5 floors, and monsters that appear in this dungeon use magic skills. Prepare before venturing into this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 2360,
+      "npc" : "Signpost",
+      "text" : "Holy Ground 1F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2360,
+      "npc" : "Signpost",
+      "text" : "Holy Ground 2F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2360,
+      "npc" : "Signpost",
+      "text" : "Holy Ground 3F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2360,
+      "npc" : "Signpost",
+      "text" : "Holy Ground 4F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2360,
+      "npc" : "Signpost",
+      "text" : "Holy Ground 5F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2360,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 2362,
+      "npc" : "Signpost",
+      "text" : "[Holy Ground 1F]\n------------ Monster ------------\nGremlin(118)\nBeholder(120)\nHodremlin(122)\nVanberk(123)\nIsilla(124)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2373,
+      "npc" : "Signpost",
+      "text" : "[Holy Ground 2F]\n------------ Monster ------------\nGremlin(118)\nBeholder(120)\nHodremlin(122)\nVanberk(123)\nIsilla(124)\nSeeker(124)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2385,
+      "npc" : "Signpost",
+      "text" : "[Holy Ground 3F]\n------------ Monster ------------\nGremlin(118)\nBeholder(120)\nHodremlin(122)\nSeeker(124)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2395,
+      "npc" : "Signpost",
+      "text" : "[Holy Ground 4F]\n------------ Monster ------------\nHodremlin(122)\nSeeker(124)\nEchio(126)\nAgav(128)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2405,
+      "npc" : "Signpost",
+      "text" : "[Holy Ground 5F]\n------------ Monster ------------\nHodremlin(122)\nIsilla(124)\nSeeker(124)\nEchio(126)\nAgav(128)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2414,
+      "npc" : "Signpost",
+      "text" : "<Gloom Under Night's eyes are so round and cute. I want to make it my pet.. But what's its taming item? I probably can't tame it then.. - Hopeful Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2426,
+      "npc" : "Signpost",
+      "text" : "- Your ^0000FFLuxurious Keycard^000000resonates with Signpost and uncovers new information. -"
+    },
+    {
+      "kind" : "message",
+      "line" : 2430,
+      "npc" : "Signpost",
+      "text" : "Kiel Hyre Academy students cannot enter here."
+    },
+    {
+      "kind" : "message",
+      "line" : 2434,
+      "npc" : "Signpost",
+      "text" : "[Robot Factory]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2447,
+      "npc" : "Signpost",
+      "text" : "[Robot Factory]\nRobot Factory is comprised of 2 floors, and monsters that appear here are mostly formless. Constant monster self destructs to repel any invaders, so be cautious."
+    },
+    {
+      "kind" : "option",
+      "line" : 2451,
+      "npc" : "Signpost",
+      "text" : "Robot Factory 1F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2451,
+      "npc" : "Signpost",
+      "text" : "Robot Factory 2F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2451,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 2453,
+      "npc" : "Signpost",
+      "text" : "[Robot Factory 1F]\n------------ Monster ------------\nAlice(100)\nConstant(108)\nAliot(112)\nAliza(112)\nAlicel(115)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2464,
+      "npc" : "Signpost",
+      "text" : "[Robot Factory 2F]\n------------ Monster ------------\nKiel(90)\nConstant(108)\nAliot(112)\nAliza(112)\nAlicel(115)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2473,
+      "npc" : "Signpost",
+      "text" : "<I don't know why but there are 2 types of Kiel. Kiel and Kiel-D-01... Kiel-D-01 is the newer version of the two.. Should I request Kiel to make me a robot too? - Greedy Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2484,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower Guide]"
+    },
+    {
+      "kind" : "message",
+      "line" : 2486,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower is comprised of 12 floors, but only 3 floors are open to the public. If you wish to progress, you must have signed a contract with '^0000FFRenkenber^000000'."
+    },
+    {
+      "kind" : "message",
+      "line" : 2488,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower Guide]\nAccording to the information there are a total of 12 floors. Prepare for all kinds of situation before venturing in this dungeon...."
+    },
+    {
+      "kind" : "message",
+      "line" : 2491,
+      "npc" : "Guide",
+      "text" : "[Public Announcement]\nPlease don't touch it. Only those that have a contract with '^0000FFRenkenber^000000' can progress."
+    },
+    {
+      "kind" : "message",
+      "line" : 2496,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower is comprised of 12 floors, but only 3 floors are open to the public. If you wish to progress, you must have signed a contract with'^0000FFRenkenber^000000'."
+    },
+    {
+      "kind" : "message",
+      "line" : 2498,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower Guide]\nAccording to the information there are a total of 12 floors. Prepare for all kinds of situation before venturing in this dungeon."
+    },
+    {
+      "kind" : "message",
+      "line" : 2502,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower Guide]\nYou have signed the contract with '^0000FFRenkenber^000000', the following information are now available. To revise the information, contact Adventurer Group or '^0000FFRenkenber^000000'with information tip.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2530,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower Guide]\nPlease choose an appropriate floor for monster information."
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower 1F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower 2F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower 3F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower 4F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower 5F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower 6F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower 7F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower 8F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower 9F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower 10F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower 11F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower 12F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "text" : "Thanatos Tower Top Floor"
+    },
+    {
+      "kind" : "message",
+      "line" : 2536,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower 1F]\n------------ Monster ------------\nMimic(56)\nRideword(74)\nAlice(100)\nPlasma (Green)(116)\nLady Solace(123)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2547,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower 2F]\n------------ Monster ------------\nMimic(56)\nRideword(74)\nElder(92)\nAlice(100)\nAncient Mimic(112)\nDeath Word(114)\nPlasma (Blue)(116)\nBaroness of Retribution(121)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2561,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower 3F]\n------------ Monster ------------\nMimic(56)\nRideword(74)\nElder(92)\nAncient Mimic(112)\nDeath Word(114)\nPlasma (Purple)(117)\nMistress of Shelter(125)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2574,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower 4F]\n------------ Monster ------------\nMimic(56)\nRideword(74)\nOwl Duke(92)\nElder(92)\nAncient Mimic(112)\nDeath Word(114)\nPlasma (Red)(118)\nOwl Baron(120)\nDame of Sentinel(127)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2589,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower 5F]\n------------ Monster ------------\nOwl Duke(92)\nElder(92)\nAncient Mimic(112)\nDeath Word(114)\nPlasma (Blue)(115)\nPlasma (Green)(116)\nPlasma (Purple)(117)\nPlasma (Red)(118)\nOwl Baron(120)\nDolor of Thanatos(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2605,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower 6F]\n------------ Monster ------------\nOwl Duke(92)\nElder(92)\nAncient Mimic(112)\nDeath Word(114)\nPlasma (Blue)(115)\nPlasma (Green)(116)\nPlasma (Purple)(117)\nPlasma (Red)(118)\nOwl Baron(120)\nMaero of Thanatos(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2621,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower 7F]\n------------ Monster ------------\nAncient Mimic(112)\nDeath Word(114)\nBaroness of Retribution(121)\nLady Solace(123)\nMistress of Shelter(125)\nDame of Sentinel(127)\nDespero of Thanatos(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2634,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower 8F]\n------------ Monster ------------\nAncient Mimic(112)\nDeath Word(114)\nBaroness of Retribution(121)\nLady Solace(123)\nMistress of Shelter(125)\nDame of Sentinel(127)\nOdium of Thanatos(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2647,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower 9F]\n------------ Monster ------------\nPlasma (Red)(118)\nBaroness of Retribution(121)\nLady Solace(123)\nMistress of Shelter(125)\nDame of Sentinel(127)\nOdium of Thanatos(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2659,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower 10F]\n------------ Monster ------------\nPlasma (Blue)(115)\nBaroness of Retribution(121)\nLady Solace(123)\nMistress of Shelter(125)\nDame of Sentinel(127)\nMaero of Thanatos(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2671,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower 11F]\n------------ Monster ------------\nPlasma (Green)(116)\nBaroness of Retribution(121)\nLady Solace(123)\nMistress of Shelter(125)\nDame of Sentinel(127)\nDespero of Thanatos(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2683,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower 12F]\n------------ Monster ------------\nPlasma (Yellow)(119)\nBaroness of Retribution(121)\nLady Solace(123)\nMistress of Shelter(125)\nDame of Sentinel(127)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2694,
+      "npc" : "Guide",
+      "text" : "[Thanatos Tower Top Floor]\n------------ Monster ------------\n- Adventurer's tips are needed -\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2699,
+      "npc" : "Guide",
+      "text" : "<It's so empty.. I came all the way up here but there's nothing here.. - Angry Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2712,
+      "npc" : "Signpost",
+      "text" : "[Prontera Culvert]\nProntera Culvert can only be accessed by adventurers who have the permission from Rune-Midgarts Kingdom.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2717,
+      "npc" : "Signpost",
+      "text" : "[Prontera Culvert]\nProntera Culvert can only be accessed by adventurers who have signed a volunteer form at Prontera Chivalry. Would you like to go sign the volunteer form?"
+    },
+    {
+      "kind" : "option",
+      "line" : 2720,
+      "npc" : "Signpost",
+      "text" : "Volunteer"
+    },
+    {
+      "kind" : "option",
+      "line" : 2720,
+      "npc" : "Signpost",
+      "text" : "Do not volunteer"
+    },
+    {
+      "kind" : "message",
+      "line" : 2722,
+      "npc" : "Signpost",
+      "text" : "[Prontera Culvert]\nYou will be warped to Prontera Chivalry."
+    },
+    {
+      "kind" : "message",
+      "line" : 2728,
+      "npc" : "Signpost",
+      "text" : "[Prontera Culvert]\nProntera Chivalry is looking to enlist brave adventurers."
+    },
+    {
+      "kind" : "message",
+      "line" : 2747,
+      "npc" : "Signpost",
+      "text" : "[Prontera Culvert]\nProntera Culvert is comprised of B4 floors. This dungeon is appropriate for beginner adventurers and most monsters that appear here will assist others monsters with the same name."
+    },
+    {
+      "kind" : "option",
+      "line" : 2751,
+      "npc" : "Signpost",
+      "text" : "Prontera Culvert 1F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2751,
+      "npc" : "Signpost",
+      "text" : "Prontera Culvert 2F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2751,
+      "npc" : "Signpost",
+      "text" : "Prontera Culvert 3F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2751,
+      "npc" : "Signpost",
+      "text" : "Prontera Culvert 4F"
+    },
+    {
+      "kind" : "option",
+      "line" : 2751,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 2753,
+      "npc" : "Signpost",
+      "text" : "[Prontera Culvert 1F]\n------------ Monster ------------\nThief Bug Egg(20)\nThief Bug(21)\nTarou(22)\nFamiliar(24)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2763,
+      "npc" : "Signpost",
+      "text" : "[Prontera Culvert 2F]\n------------ Monster ------------\nSpore(18)\nThief Bug Egg(20)\nThief Bug(21)\nTarou(22)\nFamiliar(24)\nFemale Thief Bug(28)\nPlankton(40)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2776,
+      "npc" : "Signpost",
+      "text" : "[Prontera Culvert 3F]\n------------ Monster ------------\nThief Bug Egg(20)\nThief Bug(21)\nTarou(22)\nFamiliar(24)\nPoison Spore(26)\nFemale Thief Bug(28)\nMale Thief Bug(30)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2789,
+      "npc" : "Signpost",
+      "text" : "[Prontera Culvert 4F]\n------------ Monster ------------\nThief Bug Egg(20)\nThief Bug(21)\nFemale Thief Bug(28)\nMale Thief Bug(30)\nDrainliar(47)\nGolden Thief Bug(65)\nCramp(82)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2800,
+      "npc" : "Signpost",
+      "text" : "<There is a shiny bug living in Prontera Culvert 4F. It's called Golden Thief Bug. Prontera Sewage system regularly blocked by this monster. Ew~ It's nasty. - Irritated Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2812,
+      "npc" : "Signpost",
+      "text" : "[Turtle Island]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2825,
+      "npc" : "Signpost",
+      "text" : "[Turtle Island]\nTurtle Island is comprised of 3 floors, and the monsters that appear here are mostly brute. Prepare before venturing into this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 2829,
+      "npc" : "Signpost",
+      "text" : "Turtle Island"
+    },
+    {
+      "kind" : "option",
+      "line" : 2829,
+      "npc" : "Signpost",
+      "text" : "Turtles Village"
+    },
+    {
+      "kind" : "option",
+      "line" : 2829,
+      "npc" : "Signpost",
+      "text" : "Turtle Palace"
+    },
+    {
+      "kind" : "option",
+      "line" : 2829,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 2831,
+      "npc" : "Signpost",
+      "text" : "[Turtle Island]\n------------ Monster ------------\nPest(89)\nPermeter(90)\nSolider(92)\nFreezer(94)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2841,
+      "npc" : "Signpost",
+      "text" : "[Turtle Island - Turtle Village]\n------------ Monster ------------\nPermeter(90)\nFreezer(94)\nHeater(98)\nAssaulter(100)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2851,
+      "npc" : "Signpost",
+      "text" : "[Turtle Island - Turtle Palace]\n------------ Monster ------------\nPermeter(90)\nFreezer(94)\nHeater(98)\nAssaulter(100)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2859,
+      "npc" : "Signpost",
+      "text" : "<Turtles are known for their longevity right? How old is Turtle General? - Young explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2873,
+      "npc" : "Signpost",
+      "text" : "[Amatsu Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2888,
+      "npc" : "Signpost",
+      "text" : "[Amatsu Dungeon]\nAmatsu Dungeon is comprised of 3 floors. This dungeon's maze is very complex and fly wings cannot be used. Prepare before venturing into this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 2892,
+      "npc" : "Signpost",
+      "text" : "Amatsu Dungeon - Tatami Maze"
+    },
+    {
+      "kind" : "option",
+      "line" : 2892,
+      "npc" : "Signpost",
+      "text" : "Amatsu Dungeon - Battle Field in the Underground Forest"
+    },
+    {
+      "kind" : "option",
+      "line" : 2892,
+      "npc" : "Signpost",
+      "text" : "Amatsu Dungeon - Amatsu Underground Shrine"
+    },
+    {
+      "kind" : "option",
+      "line" : 2892,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 2894,
+      "npc" : "Signpost",
+      "text" : "[Amatsu Dungeon - Tatami Maze]\n------------ Monster ------------\nMiyabi Doll(85)\nFirelock Soldier(88)\nShinobi(95)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2903,
+      "npc" : "Signpost",
+      "text" : "[Amatsu Dungeon - Battle Field in the Underground Forest]\n------------ Monster ------------\nHorong(66)\nMiyabi Doll(85)\nPoisonous Toad(87)\nFirelock Soldier(88)\nShinobi(95)\nThe Paper(97)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2915,
+      "npc" : "Signpost",
+      "text" : "[Amatsu Dungeon - Amatsu Underground Shrine]\n------------ Monster ------------\nMimic(56)\nMiyabi Doll(85)\nFirelock Soldier(88)\nShinobi(95)\nThe Paper(97)\nTengu(98)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2925,
+      "npc" : "Signpost",
+      "text" : "<Samurai Specter is very rude. I wanted to introduce myself to him by giving him my name card, but he wasn't happy about it.. Pfft - Dejected Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2937,
+      "npc" : "Signpost",
+      "text" : "[Kunlun Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2951,
+      "npc" : "Signpost",
+      "text" : "[Kunlun Dungeon]\nKunlun Dungeon is comprised of 3 floors. Royal Jelly and Dead Branch items can be obtained from monsters in this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 2955,
+      "npc" : "Signpost",
+      "text" : "Kunlun Dungeon - Shrine of Kunlun Queen"
+    },
+    {
+      "kind" : "option",
+      "line" : 2955,
+      "npc" : "Signpost",
+      "text" : "Kunlun Dungeon - Hermit's Checkers"
+    },
+    {
+      "kind" : "option",
+      "line" : 2955,
+      "npc" : "Signpost",
+      "text" : "Kunlun Dungeon - Arcadia"
+    },
+    {
+      "kind" : "option",
+      "line" : 2955,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 2957,
+      "npc" : "Signpost",
+      "text" : "[Kunlun Dungeon - Shrine of Kunlun Queen]\n------------ Monster ------------\nZipper Bear(90)\nEnchanted Peach Tree(92)\nBloody Butterfly(94)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2966,
+      "npc" : "Signpost",
+      "text" : "[Kunlun Dungeon - Hermit's Checkers]\n------------ Monster ------------\nBaby Leopard(68)\nEnchanted Peach Tree(92)\nBloody Butterfly(94)\nTaoist Hermit(96)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2976,
+      "npc" : "Signpost",
+      "text" : "[Kunlun Dungeon - Arcadia]\n------------ Monster ------------\nHermit Plant(90)\nTaoist Hermit(96)\nEvil Nymph(97)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2983,
+      "npc" : "Signpost",
+      "text" : "<Is it true that Evil Snake Lord's caligraphy is phenomenal? I went there to take a look at it.. But I couldn't see its caligraphy.. - Forgetful Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2995,
+      "npc" : "Signpost",
+      "text" : "[Luoyang Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3014,
+      "npc" : "Signpost",
+      "text" : "[Luoyang Dungeon]\nLuoyang Dungeon is comprised of 3 floors and the monsters that appear here tend to overpower adventurers in mass numbers. Prepare before venturing into this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 3018,
+      "npc" : "Signpost",
+      "text" : "Luoyang Dungeon - Suei Long Gon"
+    },
+    {
+      "kind" : "option",
+      "line" : 3018,
+      "npc" : "Signpost",
+      "text" : "Luoyang Dungeon - The Royal Tomb"
+    },
+    {
+      "kind" : "option",
+      "line" : 3018,
+      "npc" : "Signpost",
+      "text" : "Luoyang Dungeon - Inside the Royal Tomb"
+    },
+    {
+      "kind" : "option",
+      "line" : 3018,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 3020,
+      "npc" : "Signpost",
+      "text" : "[Luoyang Dungeon - Suei Long Gon]\n------------ Monster ------------\nHorong(66)\nGrizzly(66)\nSide Winder(70)\nJing Guai(80)\nMi Gao(83)\nLeib Olmai(87)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3032,
+      "npc" : "Signpost",
+      "text" : "[Luoyang Dungeon - The Royal Tomb]\n------------ Monster ------------\nMimic(56)\nMunak(58)\nZhu Po Long(82)\nYao Jun(87)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3042,
+      "npc" : "Signpost",
+      "text" : "[Luoyang Dungeon - Inside the Royal Tomb]\n------------ Monster ------------\nZhu Po Long(82)\nGreen Maiden(82)\nYao Jun(87)\nMao Guai(89)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3050,
+      "npc" : "Signpost",
+      "text" : "<White Lady.. She's.. Beautiful.. She's Kind.. If it wasn't for Green Maidens.. Pfft - Dejected Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 3062,
+      "npc" : "Signpost",
+      "text" : "[Ayothaya Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3074,
+      "npc" : "Signpost",
+      "text" : "[Ayothaya Dungeon]\nAyothaya Dungeon is comprised of 2 floors. Monsters in this dungeon can be found hiding in the labyrinth."
+    },
+    {
+      "kind" : "option",
+      "line" : 3078,
+      "npc" : "Signpost",
+      "text" : "Ayothaya Dungeon - Ancient Shrine Maze"
+    },
+    {
+      "kind" : "option",
+      "line" : 3078,
+      "npc" : "Signpost",
+      "text" : "Ayothaya Dungeon - Inside Ancient Shrine"
+    },
+    {
+      "kind" : "option",
+      "line" : 3078,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 3080,
+      "npc" : "Signpost",
+      "text" : "[Ayothaya Dungeon - Ancient Shrine Maze]\n------------ Monster ------------\nWhisper(34)\nGhoul(61)\nLeaf Cat(64)\nKraben(70)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3090,
+      "npc" : "Signpost",
+      "text" : "[Ayothaya Dungeon - Inside Ancient Shrine]\n------------ Monster ------------\nWhisper(34)\nKraben(70)\nTamruan(73)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3097,
+      "npc" : "Signpost",
+      "text" : "<Oh Lady Tanee, don't be so shy and run away~ - Catch me ~ Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 3109,
+      "npc" : "Signpost",
+      "text" : "[Moscovia Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3123,
+      "npc" : "Signpost",
+      "text" : "[Moscovia Dungeon]\nMoscovia Dungeon is comprised of 3 areas, introducing passive and aggressive monsters in each areas. Prepare before venturing into this area."
+    },
+    {
+      "kind" : "option",
+      "line" : 3127,
+      "npc" : "Signpost",
+      "text" : "Moscovia Dungeon - Forest"
+    },
+    {
+      "kind" : "option",
+      "line" : 3127,
+      "npc" : "Signpost",
+      "text" : "Moscovia Dungeon - Deep within the Forest"
+    },
+    {
+      "kind" : "option",
+      "line" : 3127,
+      "npc" : "Signpost",
+      "text" : "Moscovia Dungeon - Extremely Deep within the forest"
+    },
+    {
+      "kind" : "option",
+      "line" : 3127,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 3129,
+      "npc" : "Signpost",
+      "text" : "[Moscovia Dungeon - Forest]\n------------ Monster ------------\nPoPoring(30)\nMantis(65)\nWood Goblin(81)\nLes(82)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3139,
+      "npc" : "Signpost",
+      "text" : "[Moscovia Dungeon - Deep within the Forest]\n------------ Monster ------------\nWood Goblin(81)\nLes(82)\nUzhas(85)\nBaba Yaga(87)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3149,
+      "npc" : "Signpost",
+      "text" : "[Moscovia Dungeon - Extremely Deep within the Forest]\n------------ Monster ------------\nMavka(84)\nUzhas(85)\nBaba Yaga(87)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3156,
+      "npc" : "Signpost",
+      "text" : "<Gopinch is 3 headed yah? Yes, well just telling you that it has 3 heads. - One headed Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 3168,
+      "npc" : "Signpost",
+      "text" : "[Brasilis Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3180,
+      "npc" : "Signpost",
+      "text" : "[Brasilis Dungeon]\nBrasilis Dungeon is comprised of 2 floors, and the monsters that appear in this dungeon are mostly water element. Wind element weapon will prove to be exceptional useful in this dungeon."
+    },
+    {
+      "kind" : "option",
+      "line" : 3184,
+      "npc" : "Signpost",
+      "text" : "Brasilis Dungeon Entrance"
+    },
+    {
+      "kind" : "option",
+      "line" : 3184,
+      "npc" : "Signpost",
+      "text" : "Brasilis Dungeon Interior"
+    },
+    {
+      "kind" : "option",
+      "line" : 3184,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 3186,
+      "npc" : "Signpost",
+      "text" : "[Brasilis Dungeon Entrance]\n------------ Monster ------------\nHydra(34)\nKukre(42)\nMarina(42)\nPiranha(75)\nIara(79)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3197,
+      "npc" : "Signpost",
+      "text" : "[Brasilis Dungeon Interior]\n------------ Monster ------------\nHydra(34)\nKukre(42)\nMarina(42)\nPiranha(75)\nIara(79)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3206,
+      "npc" : "Signpost",
+      "text" : "<There is a monster named Boitata making a bell sound. Why is it making such noise? - Misperceiving it as a pet dog - Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 3218,
+      "npc" : "Signpost",
+      "text" : "[Krakatau Volcano]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3228,
+      "npc" : "Signpost",
+      "text" : "[Krakatau Volcano]\nDewata Volcano can only be accessed by adventurers who have received permission from the Jati tribe. All of the monsters that appear in this place are aggressive. Only experienced adventurers should venture here."
+    },
+    {
+      "kind" : "message",
+      "line" : 3231,
+      "npc" : "Signpost",
+      "text" : "[Krakatau Volcano]\n------------ Monster ------------\nComodo(81)\nAncient Worm(83)\nGullinbursti(89)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3238,
+      "npc" : "Signpost",
+      "text" : "<Scary MVP Leak lives in Krakatau Volcano.. What's so scary about it though? - It's more cute than scary(?) Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 3240,
+      "npc" : "Signpost",
+      "text" : "[Adventurer Group]\nFor more Information on the monsters\nMonster Information Retrieval System\nMust be used."
+    },
+    {
+      "kind" : "message",
+      "line" : 3251,
+      "npc" : "Signpost",
+      "text" : "[Istana Cave]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3261,
+      "npc" : "Signpost",
+      "text" : "[Istana Cave]\nMonsters that appear in Istana Cave are all aggressive. Only experienced adventurers should venture here."
+    },
+    {
+      "kind" : "message",
+      "line" : 3264,
+      "npc" : "Signpost",
+      "text" : "[Istana Cave]\n------------ Monster ------------\nAm Mut(76)\nGajomart(81)\nBanaspaty(85)\nButoijo(88)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3272,
+      "npc" : "Signpost",
+      "text" : "Dewata's Jaty tribe holds their trial of strength here. - Brave Explorer Grape>"
+    },
+    {
+      "kind" : "message",
+      "line" : 3274,
+      "npc" : "Signpost",
+      "text" : "[Adventurer Group]\nFor more Information on the monsters\nMonster Information Retrieval System\nMust be used."
+    },
+    {
+      "kind" : "message",
+      "line" : 3287,
+      "npc" : "Signpost",
+      "text" : "[Kamidal Tunnel]\nAdventurers who travel all over the world, combining the information gathered from the public.\n-- Adventurer Tip --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3302,
+      "npc" : "Signpost",
+      "text" : "[Kamidal Tunnel]\nThis tunnel consists of two floors, and most monsters that appear here are insect-type."
+    },
+    {
+      "kind" : "option",
+      "line" : 3306,
+      "npc" : "Signpost",
+      "text" : "Kamidal Tunnel"
+    },
+    {
+      "kind" : "option",
+      "line" : 3306,
+      "npc" : "Signpost",
+      "text" : "Scaraba Hall"
+    },
+    {
+      "kind" : "option",
+      "line" : 3306,
+      "npc" : "Signpost",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 3308,
+      "npc" : "Signpost",
+      "text" : "[Kamidal Tunnel]\n------------ Monster ------------\nUni-horn Scaraba Egg(125)\nHorn Scaraba Egg(126)\nUni-horn Scaraba(130)\nHorn Scaraba(134)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3318,
+      "npc" : "Signpost",
+      "text" : "[Scaraba Hall]\n------------ Monster ------------\nAntler Scaraba Egg(127)\nRake Scaraba Egg(128)\nAntler Scaraba(136)\nRake Scaraba(139)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3326,
+      "npc" : "Signpost",
+      "text" : "<MVP Queen Scaraba... You'll have to explore to find it.>"
+    }
+  ]
+}

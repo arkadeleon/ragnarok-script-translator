@@ -1,0 +1,1391 @@
+{
+  "file" : "npc/re/merchants/enchan_verus.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 14,
+      "npc" : "Mass Charleston",
+      "text" : "^ff0000You have carried too many items, please reduce it and come back later.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 20,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI don't know where you can find Charleston Components,"
+    },
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nbut if you have 10 or more, then I can exchange them with factory products."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nA series of trials and errors was made before the mass version of Charleston was developed."
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI don't mean to depreciate myself, but mass versions are mass versions; they're cost-effective and practical, but never as good as the high-end versions."
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nSome Charlestons, especially in the development stage, are equipped with more advanced features. To study them, I need more components."
+    },
+    {
+      "kind" : "message",
+      "line" : 36,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nIf you have 10 or more Charleston Components, then I can exchange them with factory products."
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nYou got some nice parts on you! Would you like to exchange it with the goods produced in the factory?"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nIs a collection of Charleston advantages in a commodity, but can not be sold separately, IF bring good parts can be exchanged for you."
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Mass Charleston",
+      "text" : "Quit."
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Mass Charleston",
+      "text" : "Exchange Reinforced parts"
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Mass Charleston",
+      "text" : "Exchange Supplementary device"
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI'll see you next time!"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        ".@job_aft$[.@s]"
+      ],
+      "text" : "[Mass Charleston]\nWhich part of {0} do you want to select?"
+    },
+    {
+      "kind" : "message",
+      "line" : 70,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI'll see you next time!"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "Mass Charleston",
+      "text" : "Quit."
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(.@item[0])"
+      ],
+      "text" : "{0} (garment)"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(.@item[1])"
+      ],
+      "text" : "{0} (Shoes)"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(.@item[2])"
+      ],
+      "text" : "{0} (Accessory)"
+    },
+    {
+      "kind" : "message",
+      "line" : 77,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI'll see you next time!"
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nIf you find enough Charleston parts, can you come to me again?"
+    },
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(6752)",
+        ".@job_aft$[.@s]"
+      ],
+      "text" : "[Mass Charleston]\nExchanged 10 {0} for {1}. If you find more part, come to me again!"
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Mass Charleston",
+      "text" : "You have too many types of items. Lighten your inventory first."
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
+      "npc" : "Mass Charleston",
+      "text" : "The items in your inventory are weighing you down. Lighten your weight first."
+    },
+    {
+      "kind" : "message",
+      "line" : 104,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI can upgrade the Charleston Factory products. Let me know if you're interested."
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Mass Charleston",
+      "text" : "More information."
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Mass Charleston",
+      "text" : "Add abilities to your product."
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Mass Charleston",
+      "text" : "Reset product."
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nEach Upgrade/resetting attempt costs 100,000 zeny and 1 Charleston Component."
+    },
+    {
+      "kind" : "message",
+      "line" : 112,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI also provide a wider selection of Upgrade options for Charleston Equipment at ^ff0000+9^000000 or above."
+    },
+    {
+      "kind" : "message",
+      "line" : 115,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nRest assured, my Upgrade technology does not involve accidental damage on the item's Upgrade level or equipped cards."
+    },
+    {
+      "kind" : "message",
+      "line" : 128,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        ".@string$",
+        "strtolower(.@string$)"
+      ],
+      "text" : "[Mass Charleston]\n{0} a Charleston product costs 1 Charleston Component and 100,000 zeny. Please know that all the expenses go into {1} your product."
+    },
+    {
+      "kind" : "message",
+      "line" : 132,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nPlease make sure you're equipped with the Equipment you want to upgrade."
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Mass Charleston",
+      "text" : "Let me go equip it."
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Mass Charleston",
+      "text" : "Footgear"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Mass Charleston",
+      "text" : "Garment"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Mass Charleston",
+      "text" : "Clothes"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Mass Charleston",
+      "text" : "Accessory"
+    },
+    {
+      "kind" : "message",
+      "line" : 137,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nSure, please come back after you do."
+    },
+    {
+      "kind" : "message",
+      "line" : 142,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThings needed for commodity upgrades seem inadequate!"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nBecause it is a customized upgrade be sure to wear equipment."
+    },
+    {
+      "kind" : "message",
+      "line" : 200,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getequipname(.@part)"
+      ],
+      "text" : "[Mass Charleston]\n^990099{0}^000000??\nI'm not interested in this Equipment."
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nSomething's not right!"
+    },
+    {
+      "kind" : "message",
+      "line" : 223,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThis is a considerable level of enhanced equipment, this type can give enhanced expansion performance, choose from the following series of desirable to strengthen it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 231,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI'll be Upgrading the first ability. The existing Upgrade level and cards will not be damaged. Do you want to continue?"
+    },
+    {
+      "kind" : "option",
+      "line" : 234,
+      "npc" : "Mass Charleston",
+      "text" : "I'll come back later."
+    },
+    {
+      "kind" : "option",
+      "line" : 234,
+      "npc" : "Mass Charleston",
+      "text" : "Continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 235,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nNo problem. Come back if you change your mind."
+    },
+    {
+      "kind" : "message",
+      "line" : 242,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI'll be Upgrading the second ability. The existing Upgrade level and cards will not be damaged."
+    },
+    {
+      "kind" : "message",
+      "line" : 245,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThough there is a slight chance of failure, in which case the existing Upgrade level will be reset. What would you like to do?"
+    },
+    {
+      "kind" : "option",
+      "line" : 248,
+      "npc" : "Mass Charleston",
+      "text" : "I'll come back later."
+    },
+    {
+      "kind" : "option",
+      "line" : 248,
+      "npc" : "Mass Charleston",
+      "text" : "Continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 249,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nNo problem. Come back if you change your mind."
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI'll be Upgrading the 3rd ability. This highest Upgrade stage incurs a  chance of ^990000destroying the Equipment or resetting its existing Upgrade level.^000000 Do you want to continue?"
+    },
+    {
+      "kind" : "option",
+      "line" : 259,
+      "npc" : "Mass Charleston",
+      "text" : "I'll come back later."
+    },
+    {
+      "kind" : "option",
+      "line" : 259,
+      "npc" : "Mass Charleston",
+      "text" : "Continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 260,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nNo problem. Come back if you change your mind."
+    },
+    {
+      "kind" : "message",
+      "line" : 269,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThis Equipment is Upgraded to the maximum level. Please bring something else."
+    },
+    {
+      "kind" : "message",
+      "line" : 288,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred."
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred."
+    },
+    {
+      "kind" : "message",
+      "line" : 400,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred."
+    },
+    {
+      "kind" : "message",
+      "line" : 454,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred."
+    },
+    {
+      "kind" : "message",
+      "line" : 517,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred."
+    },
+    {
+      "kind" : "message",
+      "line" : 583,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred."
+    },
+    {
+      "kind" : "message",
+      "line" : 637,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred."
+    },
+    {
+      "kind" : "message",
+      "line" : 697,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred."
+    },
+    {
+      "kind" : "message",
+      "line" : 717,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred."
+    },
+    {
+      "kind" : "message",
+      "line" : 722,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThings needed for commodity upgrades seem inadequate!"
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred."
+    },
+    {
+      "kind" : "message",
+      "line" : 745,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nSince the balance of power does not match, the given existing ability has been destroyed. It is unfortunate but please try again next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 752,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThis!\nI'm sorry but the equipment has been destroyed."
+    },
+    {
+      "kind" : "message",
+      "line" : 758,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        ".@slot"
+      ],
+      "text" : "[Mass Charleston]\n^990000Socket{0}^000000 will be Upgrade."
+    },
+    {
+      "kind" : "message",
+      "line" : 770,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nReset the product's abilities."
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred."
+    },
+    {
+      "kind" : "message",
+      "line" : 787,
+      "npc" : "Mass Charleston",
+      "text" : "^ff0000You have carried too many items, please reduce it and come back later.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 791,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nEh, do I have a customer? Activating Salesman mode..."
+    },
+    {
+      "kind" : "message",
+      "line" : 795,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nCharleston Factory's best-selling items: ^FF0000Upgrade Part Plate^000000 and ^FF0000Supplement Part Str^000000 now on sale!"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nFor only ^FF00003,999,999^000000 zeny! Get yourself the ultra-performance action gears!"
+    },
+    {
+      "kind" : "message",
+      "line" : 801,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAlso available is the ^FF0000Pilebuncker^000000 ^FF0000Upgrade^000000 service!"
+    },
+    {
+      "kind" : "option",
+      "line" : 804,
+      "npc" : "Mass Charleston",
+      "text" : "Talk."
+    },
+    {
+      "kind" : "option",
+      "line" : 804,
+      "npc" : "Mass Charleston",
+      "text" : "Exchange Upgrade Parts."
+    },
+    {
+      "kind" : "option",
+      "line" : 804,
+      "npc" : "Mass Charleston",
+      "text" : "Exchange Supplementary devices."
+    },
+    {
+      "kind" : "option",
+      "line" : 804,
+      "npc" : "Mass Charleston",
+      "text" : "Upgrade Pilebuncker."
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThe Charleston Factory shut down, but its technology and products remain with us."
+    },
+    {
+      "kind" : "message",
+      "line" : 810,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nOh, haven't you heard the news? Oops, my bad. Please forget I said that."
+    },
+    {
+      "kind" : "message",
+      "line" : 815,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI'm a mass version Charleston. I wasn't even given a serial number. Who knows how many copies of me were made? It could be a hundred, maybe even a thousand."
+    },
+    {
+      "kind" : "message",
+      "line" : 818,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThe original Charleston is standing over there, but..."
+    },
+    {
+      "kind" : "message",
+      "line" : 821,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nBy the time Charlestons 1 and 2 escaped the factory, they're severely damaged. The battle that took place that day was incredible."
+    },
+    {
+      "kind" : "message",
+      "line" : 824,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI can still remember Charlestons 1 and 2 destroying Dr. Ve's numerous creatures like it was yesterday."
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThey also destroyed the mass version Charlestons modified by Dr. Ve to his bidding."
+    },
+    {
+      "kind" : "message",
+      "line" : 830,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nOf course there are others--like us here working on product upgrades--that were lucky enough to escape Dr. Ve's clutches and meet Charleston 1, who saved us all."
+    },
+    {
+      "kind" : "message",
+      "line" : 833,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAfter escaping with the modified Charleston 3, we came here."
+    },
+    {
+      "kind" : "message",
+      "line" : 836,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nJust so you know, this place was already in shambles when we arrived. We had nothing to do with its destruction. Perhaps..."
+    },
+    {
+      "kind" : "message",
+      "line" : 839,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nSorry I sidetracked. Anyway, this is the problem."
+    },
+    {
+      "kind" : "message",
+      "line" : 842,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nCharlestons 1 and 2 were destroyed to a point of impairment. They tried to repair each other, to no avail."
+    },
+    {
+      "kind" : "message",
+      "line" : 845,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThey realized they're damaged beyond repair. They salvaged however many parts they could, and built one body with one OS."
+    },
+    {
+      "kind" : "message",
+      "line" : 848,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAnd that's the newly built body. They blamed themselves for the destruction of the factory, and wanted to fix it. I'm afraid their data is corrupted or missing important memory."
+    },
+    {
+      "kind" : "message",
+      "line" : 851,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThe characteristics of the data show more traits of Charleston 2, while the access method of the OS is more similar to that of Charleston 1. Charleston 1 always was the more sentimental one."
+    },
+    {
+      "kind" : "message",
+      "line" : 854,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI don't know if the new Charleston is Charleston 1 or 2. I can't even tell what it misses or remembers the most."
+    },
+    {
+      "kind" : "message",
+      "line" : 857,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nShe keeps blaming herself for losing her data, for letting down her friends. Every time we try to console her,"
+    },
+    {
+      "kind" : "message",
+      "line" : 860,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nshe would say she doesn't have the heart or brain to remember or know. I wonder if she knows"
+    },
+    {
+      "kind" : "message",
+      "line" : 863,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nthat the memories of Humans fade and get distorted or glorified with time."
+    },
+    {
+      "kind" : "message",
+      "line" : 866,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nAnd that Humans learn from their mistakes and failures. I read that from those paper memory devices called ^FF0000books^000000 in the factory."
+    },
+    {
+      "kind" : "message",
+      "line" : 869,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThere was a small study in the ^FF0000south wing of the factory^000000. Later, it was turned into a robot development room."
+    },
+    {
+      "kind" : "message",
+      "line" : 872,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nMaybe the Charleston is more like the Humans than the rest of us. I just hope she doesn't have to be so sad."
+    },
+    {
+      "kind" : "message",
+      "line" : 875,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nI feel so congested in the OS that I ranted. Perhaps I need to defragment my memory."
+    },
+    {
+      "kind" : "message",
+      "line" : 879,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nUpgrade Part Plate\nClass: Armor, indestructible.\n-10% damage from Small and Medium monsters.\n-10% damage from Large monsters when Upgraded to +7.\nAdditional -5% damage from Small and Medium monsters when Upgraded to +9."
+    },
+    {
+      "kind" : "message",
+      "line" : 886,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nWeight: 300\nRequired Level: 100"
+    },
+    {
+      "kind" : "message",
+      "line" : 891,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nSupplement Part Str\nATK+ 5%!\nAdditional ATK +1% every 4 Upgrade levels.\nUse with Vitality/Agility/Dexterity supplementary devices for best results."
+    },
+    {
+      "kind" : "message",
+      "line" : 897,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nWeight: 200\nRequired Level: 100"
+    },
+    {
+      "kind" : "message",
+      "line" : 902,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nThe last masterpiece of the Charleston Factory! You'll never find such fine Equipment anywhere else."
+    },
+    {
+      "kind" : "message",
+      "line" : 905,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nTo Upgrade Pilebuncker,\n^FF00001 Pilebuncker^000000,\n^FF0000300 Dented Iron Plates^000000,\nand ^FF000015 Broken Engines^000000 are required."
+    },
+    {
+      "kind" : "option",
+      "line" : 911,
+      "npc" : "Mass Charleston",
+      "text" : "Pilebuncker S"
+    },
+    {
+      "kind" : "option",
+      "line" : 911,
+      "npc" : "Mass Charleston",
+      "text" : "Pilebuncker P"
+    },
+    {
+      "kind" : "option",
+      "line" : 911,
+      "npc" : "Mass Charleston",
+      "text" : "Pilebuncker T"
+    },
+    {
+      "kind" : "message",
+      "line" : 913,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nPilebuncker S\nClass: Blunt Weapon\nATK: 400\nAttack Speed bonus every 2 Upgrade levels."
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nWeight: 300\nWeapon Level: 4\nRequired Level: 130\nMechanic only. Comes with 1 Card socket."
+    },
+    {
+      "kind" : "message",
+      "line" : 927,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nPilebuncker P\nClass: Blunt Weapon\nATK: 450\nATK +5 every Upgrade level."
+    },
+    {
+      "kind" : "message",
+      "line" : 933,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nWeight: 400\nWeapon Level: 4\nRequired Level: 130\nMechanic only."
+    },
+    {
+      "kind" : "message",
+      "line" : 941,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nPilebuncker T\nClass: Blunt Weapon\nATK: 400\nSP cost -1% every Upgrade level."
+    },
+    {
+      "kind" : "message",
+      "line" : 947,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nWeight: 350\nWeapon Level: 4\nRequired Level: 130\nMechanic only. Comes with 1 Card socket."
+    },
+    {
+      "kind" : "message",
+      "line" : 958,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Mass Charleston]\nDo you really want to Upgrade ^FF0000{0}^000000?"
+    },
+    {
+      "kind" : "option",
+      "line" : 961,
+      "npc" : "Mass Charleston",
+      "text" : "I suggest you reconsider."
+    },
+    {
+      "kind" : "option",
+      "line" : 961,
+      "npc" : "Mass Charleston",
+      "text" : "Buy."
+    },
+    {
+      "kind" : "message",
+      "line" : 962,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nIt's a good buy, but you still need to make your decision carefully."
+    },
+    {
+      "kind" : "message",
+      "line" : 967,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nYou won't regret it! She's a Charleston factory!"
+    },
+    {
+      "kind" : "message",
+      "line" : 975,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nNot enough materials for the Upgrade."
+    },
+    {
+      "kind" : "message",
+      "line" : 981,
+      "npc" : "Mass Charleston",
+      "text" : "^FF0000Mechanic only^000000\n^FF0000Price: 3,999,999 zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 984,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Mass Charleston]\nDo you really want to buy ^FF0000{0}^000000?"
+    },
+    {
+      "kind" : "option",
+      "line" : 987,
+      "npc" : "Mass Charleston",
+      "text" : "I suggest you reconsider."
+    },
+    {
+      "kind" : "option",
+      "line" : 987,
+      "npc" : "Mass Charleston",
+      "text" : "Buy."
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nIt's a good buy, but you still need to make your decision carefully."
+    },
+    {
+      "kind" : "message",
+      "line" : 994,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nYou won't regret it! She's a Charleston factory!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1000,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nGood commodity value is not uncommon, please confirm your pocket depth!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1010,
+      "npc" : "Grandpa picking up scrap iron",
+      "text" : "[Grandpa picking up scrap iron]\nThere are two pieces of scrap iron I see the value of not Fibonacci to pick up and sell to the recycling bin, the result is not willing to deal with me."
+    },
+    {
+      "kind" : "message",
+      "line" : 1013,
+      "npc" : "Grandpa picking up scrap iron",
+      "text" : "[Grandpa picking up scrap iron]\nBecause it's not iron? Each resource recycling are not willing to buy, is nerve-racking!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1017,
+      "npc" : "Grandpa picking up scrap iron",
+      "text" : "[Grandpa picking up scrap iron]\nHey! Did you just talk to that piece of junk? Or am I losing my sight?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1021,
+      "npc" : "Grandpa picking up scrap iron",
+      "text" : "[Grandpa picking up scrap iron]\nOh, my God! That can't be sold to the Recycle Bin!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1030,
+      "npc" : "PLUTO_09",
+      "text" : "^ff0000You have carried too many items, please reduce it and come back later.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1034,
+      "npc" : "PLUTO_09",
+      "text" : "^0000ffAlthough the LCD still dim, but does not seem to work anymore.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1037,
+      "npc" : "PLUTO_09",
+      "text" : "^0000ffWhen the strange dinosaur pattern appears, go to the introduction screen.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1039,
+      "npc" : "PLUTO_09",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[PLUTO_09]\n{0},\nHello. How can I help you?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1043,
+      "npc" : "PLUTO_09",
+      "text" : "Note"
+    },
+    {
+      "kind" : "option",
+      "line" : 1043,
+      "npc" : "PLUTO_09",
+      "text" : "Old Fuel and Huge Metal Scrap to exchange for gear."
+    },
+    {
+      "kind" : "option",
+      "line" : 1043,
+      "npc" : "PLUTO_09",
+      "text" : "Design drawings for the production of Enchantment"
+    },
+    {
+      "kind" : "message",
+      "line" : 1045,
+      "npc" : "PLUTO_09",
+      "text" : "^0000ffDinosaur forward screen appears and a description of the cute girl voice.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1047,
+      "npc" : "PLUTO_09",
+      "text" : "[PLUTO_09]\nThis is 100 years since the genesis of the new PLUTO_09."
+    },
+    {
+      "kind" : "message",
+      "line" : 1050,
+      "npc" : "PLUTO_09",
+      "text" : "[PLUTO_09]\nBring Huge Metal Scrap and Old Fuel can help you make useful to you Equipment Oh~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1053,
+      "npc" : "PLUTO_09",
+      "text" : "[PLUTO_09]\nDo you want to make enchantment equipment? You bring the tank! I can make enchant with a design for you. Oh, good luck."
+    },
+    {
+      "kind" : "message",
+      "line" : 1056,
+      "npc" : "PLUTO_09",
+      "text" : "[PLUTO_09]\nThis is the Tyrannosaurus rex that appeared in the dinosaur fairy tale, very beautiful... (Continue to appear boring dinosaur story)"
+    },
+    {
+      "kind" : "message",
+      "line" : 1059,
+      "npc" : "PLUTO_09",
+      "text" : "^0000ffIn this introduction to the screen, presumed that the psychological state of the robot maker is extremely unstable.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1063,
+      "npc" : "PLUTO_09",
+      "text" : "[PLUTO_09]\nProduction equipment needs ^0000ff10 Huge Metal Scrap and 5 Old Fuel^000000."
+    },
+    {
+      "kind" : "option",
+      "line" : 1066,
+      "npc" : "PLUTO_09",
+      "text" : "Quit."
+    },
+    {
+      "kind" : "option",
+      "line" : 1066,
+      "npc" : "PLUTO_09",
+      "placeholders" : [
+        "getitemname(.@id[0])"
+      ],
+      "text" : "Making the {0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 1066,
+      "npc" : "PLUTO_09",
+      "placeholders" : [
+        "getitemname(.@id[1])"
+      ],
+      "text" : "Making the {0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 1068,
+      "npc" : "PLUTO_09",
+      "text" : "^0000ffDinosaurs gazed at the picture here after staying a bit closed.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1078,
+      "npc" : "PLUTO_09",
+      "placeholders" : [
+        "getitemname(6961)",
+        "getitemname(6962)"
+      ],
+      "text" : "[PLUTO_09]\nI have already talked about the production equipment needs ^0000ff10 {0} and 5 {1}^000000, you don't have enough."
+    },
+    {
+      "kind" : "message",
+      "line" : 1086,
+      "npc" : "PLUTO_09",
+      "text" : "[PLUTO_09]\nYour equipment is ready. Let's see if it fits."
+    },
+    {
+      "kind" : "message",
+      "line" : 1095,
+      "npc" : "PLUTO_09",
+      "placeholders" : [
+        "getitemname(6962)"
+      ],
+      "text" : "[PLUTO_09]\nIf you give me 5 {0}, I can do the production of design drawings look!\n----------\n^0000ffLittle dinosaur running around on the screen.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1100,
+      "npc" : "PLUTO_09",
+      "text" : "Quit."
+    },
+    {
+      "kind" : "message",
+      "line" : 1101,
+      "npc" : "PLUTO_09",
+      "text" : "^0000ffIt's over after showing that the dinosaurs are stuffing themselves.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1143,
+      "npc" : "PLUTO_09",
+      "text" : "^0000ffThe picture shows the dinosaur silently looking at the empty bowl, it may be an error message when the material is insufficient!^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1148,
+      "npc" : "PLUTO_09",
+      "text" : "[PLUTO_09]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1150,
+      "npc" : "PLUTO_09",
+      "text" : "What a pity, the design failed."
+    },
+    {
+      "kind" : "message",
+      "line" : 1152,
+      "npc" : "PLUTO_09",
+      "text" : "Great, the design was made."
+    },
+    {
+      "kind" : "message",
+      "line" : 1158,
+      "npc" : "PLUTO_09",
+      "text" : "^0000ffA screen showing howling that a dinosaur may not understand the command.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1167,
+      "npc" : "MARS_01",
+      "text" : "^ff0000You have carried too many items, please reduce it and come back later.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1172,
+      "npc" : "MARS_01",
+      "text" : "Blurred LCD screen may be frightened or happy and intense shaking, perhaps due to lack of power and can not complete the presentation."
+    },
+    {
+      "kind" : "option",
+      "line" : 1174,
+      "npc" : "MARS_01",
+      "text" : "Just ignore it."
+    },
+    {
+      "kind" : "option",
+      "line" : 1174,
+      "npc" : "MARS_01",
+      "text" : "Press every button."
+    },
+    {
+      "kind" : "message",
+      "line" : 1175,
+      "npc" : "MARS_01",
+      "text" : "It may be a pre-scrap robot that is common everywhere and doesn't require much attention."
+    },
+    {
+      "kind" : "message",
+      "line" : 1178,
+      "npc" : "MARS_01",
+      "text" : "[?????]\nHello! I'm MARS_01, an exploration robot. Currently, I have entered hibernation mode to save power. The related functions are set as follows."
+    },
+    {
+      "kind" : "option",
+      "line" : 1181,
+      "npc" : "MARS_01",
+      "text" : "Interrupt the machine"
+    },
+    {
+      "kind" : "option",
+      "line" : 1181,
+      "npc" : "MARS_01",
+      "text" : "Supply of fuel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1182,
+      "npc" : "MARS_01",
+      "text" : "The robot re-enters hibernation mode after a faint sound."
+    },
+    {
+      "kind" : "message",
+      "line" : 1185,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nWe are super power robot, as long as the old oil 1 will let me and the companion PLUTO has more than 90% of the power."
+    },
+    {
+      "kind" : "message",
+      "line" : 1188,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nIf you find Old Fuel, please insert the fuel into the mouth of the bottom of the screen, so you can lift the hibernation mode."
+    },
+    {
+      "kind" : "message",
+      "line" : 1194,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "getitemname(6962)"
+      ],
+      "text" : "[MARS_01]\nIf you find 1 {0}, please insert the fuel into the mouth of the bottom of the screen, so you can lift the hibernation mode."
+    },
+    {
+      "kind" : "message",
+      "line" : 1198,
+      "npc" : "MARS_01",
+      "text" : "Maybe we ran out of power when we went looking for fuel. should we put in the fuel?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1200,
+      "npc" : "MARS_01",
+      "text" : "Quit."
+    },
+    {
+      "kind" : "option",
+      "line" : 1200,
+      "npc" : "MARS_01",
+      "text" : "Put in the fuel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1201,
+      "npc" : "MARS_01",
+      "text" : "The old robot may be running out of power and not responding at all."
+    },
+    {
+      "kind" : "message",
+      "line" : 1204,
+      "npc" : "MARS_01",
+      "text" : "When the fuel is put in, the sound screen opens."
+    },
+    {
+      "kind" : "message",
+      "line" : 1207,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nStart the inspection system and confirm the damage of each part."
+    },
+    {
+      "kind" : "message",
+      "line" : 1210,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nPower meter 10%, dashboard normal, body skeleton 13%, perform mining operations well."
+    },
+    {
+      "kind" : "message",
+      "line" : 1213,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nPluto_09 began to inject energy for mining auxiliary robot."
+    },
+    {
+      "kind" : "message",
+      "line" : 1217,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nThank you for getting me started, I will reset the person who started me to be a manager."
+    },
+    {
+      "kind" : "option",
+      "line" : 1220,
+      "npc" : "MARS_01",
+      "text" : "Enter a name."
+    },
+    {
+      "kind" : "message",
+      "line" : 1221,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[MARS_01]\n{0},\nHello! The fuel has been fully charged."
+    },
+    {
+      "kind" : "message",
+      "line" : 1230,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[MARS_01]\n{0},\nHello! Can I help you?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1234,
+      "npc" : "MARS_01",
+      "text" : "Note"
+    },
+    {
+      "kind" : "option",
+      "line" : 1234,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "getitemname(20773)"
+      ],
+      "text" : "Enhanced {0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 1234,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "getitemname(15128)"
+      ],
+      "text" : "Enhanced {0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 1236,
+      "npc" : "MARS_01",
+      "text" : "^0000ffSoon the instructions again.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1238,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nWhile waiting for the new owner, we continue to update to the latest version."
+    },
+    {
+      "kind" : "message",
+      "line" : 1241,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nIf you bring aak Seri Wong propulsion wing, aak Seri Wong jacket equipment and strengthen the design, I will strengthen the equipment according to the design."
+    },
+    {
+      "kind" : "message",
+      "line" : 1244,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nAccording to the standard design drawings of the operation, the equipment will not be damaged during the process, but the number of maximum upgrade will change depending on the type of equipment."
+    },
+    {
+      "kind" : "message",
+      "line" : 1247,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nWelcome back again~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1289,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[MARS_01]\n{0},\nChoose the enchant you want to use!"
+    },
+    {
+      "kind" : "option",
+      "line" : 1293,
+      "npc" : "MARS_01",
+      "text" : "Quit."
+    },
+    {
+      "kind" : "message",
+      "line" : 1295,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nSo far."
+    },
+    {
+      "kind" : "message",
+      "line" : 1309,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nSo far."
+    },
+    {
+      "kind" : "message",
+      "line" : 1318,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nPlease contact the administrator."
+    },
+    {
+      "kind" : "message",
+      "line" : 1325,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nDid you remove your gear?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1336,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nThe design you choose is incompatible with the equipment."
+    },
+    {
+      "kind" : "message",
+      "line" : 1341,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nThis design is only for the first time to strengthen the use, but the equipment has other performance, please use other design to strengthen it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        ".@max_num_enchant"
+      ],
+      "text" : "[MARS_01]\nThe maximum number of enchants is {0}. The item has reached the upper limit."
+    },
+    {
+      "kind" : "message",
+      "line" : 1351,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nThe number of equipment has reached the limit."
+    },
+    {
+      "kind" : "message",
+      "line" : 1358,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nPlease pay special attention if the equipment will be removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 1368,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nThe product does not have a serial number, does not meet the specifications of the product can not be strengthened."
+    },
+    {
+      "kind" : "message",
+      "line" : 1372,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "getequipname(.@part)",
+        "getitemname(.@item_req)",
+        ".@max_num_enchant",
+        ".@slot_sum"
+      ],
+      "text" : "[MARS_01]^0000ff\nChoose {0} + {1},\n^000000------------------\nYour selected design can be upgraded to the equipment limit ^0000ff{2} the same design, ^000000so far, enhanced ^0000ff{3} times^000000, do you want to continue?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1377,
+      "npc" : "MARS_01",
+      "text" : "I'll think about it..."
+    },
+    {
+      "kind" : "option",
+      "line" : 1377,
+      "npc" : "MARS_01",
+      "text" : "Go on."
+    },
+    {
+      "kind" : "message",
+      "line" : 1378,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nCome back next time you need me~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]\nThe equipment has reached the upper limit of strengthening Hello!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "MARS_01",
+      "text" : "[MARS_01]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1407,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        ".@enchant_count"
+      ],
+      "text" : "The first equipment has been upgraded ^990000{0} times^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 1409,
+      "npc" : "MARS_01",
+      "text" : "For additional performance equipment^990000 ^000000 upgrade."
+    }
+  ]
+}

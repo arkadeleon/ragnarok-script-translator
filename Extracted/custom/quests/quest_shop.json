@@ -1,0 +1,81 @@
+{
+  "file" : "npc/custom/quests/quest_shop.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:"
+    },
+    {
+      "kind" : "message",
+      "line" : 144,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "Chk(Zeny,.@q[4]*.@q[1])",
+        "(.@q[4]*.@q[1])"
+      ],
+      "text" : " > {0}{1} Zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 145,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
+        "(.@q[5]*.@q[1])",
+        ".Points$[1]",
+        "getd(.Points$[0])",
+        "(.@q[5]*.@q[1])"
+      ],
+      "text" : " > {0}{1} {2} ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
+        "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
+        "Slot(.@q[.@i])",
+        "countitem(.@q[.@i])",
+        "(.@q[.@i+1]*.@q[1])"
+      ],
+      "text" : " > {0}{1}{2} ({3}/{4})^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(.@q[0])"
+      ],
+      "text" : " ~ Purchase ^0055FF{0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "quest_shop",
+      "text" : " ~ ^777777Cancel^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 157,
+      "npc" : "quest_shop",
+      "text" : "[Quest Shop]\nYou're missing one or more quest requirements."
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "(((.@q[2]*getiteminfo(.@q[0], ITEMINFO_WEIGHT))+Weight-MaxWeight)/10)"
+      ],
+      "text" : "[Quest Shop]\n^FF0000You need {0} additional weight capacity to complete this trade.^000000"
+    }
+  ]
+}

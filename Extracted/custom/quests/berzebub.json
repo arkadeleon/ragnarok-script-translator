@@ -1,0 +1,120 @@
+{
+  "file" : "npc/custom/quests/berzebub.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "Old Woman",
+      "text" : "Hey, I remember you! I already told you that you may only complete this quest once."
+    },
+    {
+      "kind" : "message",
+      "line" : 25,
+      "npc" : "Old Woman",
+      "text" : "Greeting, lad. I found a really nifty item while I was picking mushrooms near Glast Heim."
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Old Woman",
+      "text" : "Keep Talking"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Old Woman",
+      "text" : "Leave"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Old Woman",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nI have never seen an item like this before. I am told it can be placed inside any accessory with a slot available."
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Old Woman",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nIf you're interested in this item, I'll tell you what you need for me to make you one of your own. I can only give one of these to each player, so once you finish this quest, you may not do it again."
+    },
+    {
+      "kind" : "option",
+      "line" : 35,
+      "npc" : "Old Woman",
+      "text" : "Tell me more about it"
+    },
+    {
+      "kind" : "option",
+      "line" : 35,
+      "npc" : "Old Woman",
+      "text" : "Nah, I don't care about it"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Old Woman",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nI believe the item is called a ^FF0000Berzebub Card^000000. It makes you cast spells really fast!"
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "npc" : "Old Woman",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nI need all of the following items:"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Old Woman",
+      "placeholders" : [
+        ".@Items[.@i+1]",
+        "getitemname(.@Items[.@i])"
+      ],
+      "text" : " ~ {0}x {1}"
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Old Woman",
+      "text" : "I have all of that!"
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Old Woman",
+      "text" : "I'll get those ASAP"
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Old Woman",
+      "text" : "You lie! Get out of here and get those items, you sorry excuse for a rock star."
+    },
+    {
+      "kind" : "message",
+      "line" : 56,
+      "npc" : "Old Woman",
+      "text" : "Congratulations! You have all the items. Here is your ^FF0000Berzebub Card^000000, as promised."
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "Old Woman",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nSuch a great item I have right here..."
+    }
+  ]
+}

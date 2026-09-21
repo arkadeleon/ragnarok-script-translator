@@ -1,0 +1,180 @@
+{
+  "file" : "npc/custom/events/mvp_ladder.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 16,
+      "npc" : "MvP Ladder Warper",
+      "text" : "[MvP Ladder Warper]\nSay... do you want to play the MvP Ladder game?"
+    },
+    {
+      "kind" : "option",
+      "line" : 19,
+      "npc" : "MvP Ladder Warper",
+      "text" : "Yes, let's get it on!"
+    },
+    {
+      "kind" : "option",
+      "line" : 19,
+      "npc" : "MvP Ladder Warper",
+      "text" : "Information."
+    },
+    {
+      "kind" : "option",
+      "line" : 19,
+      "npc" : "MvP Ladder Warper",
+      "text" : "Show me the best record."
+    },
+    {
+      "kind" : "option",
+      "line" : 19,
+      "npc" : "MvP Ladder Warper",
+      "text" : "No."
+    },
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "MvP Ladder Warper",
+      "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest."
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\", .finish_item_amount, getitemname( .finish_item_id ))"
+      ],
+      "text" : "If your party can finish the MVP ladder game, each member will earn {0}."
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "callfunc( \"F_InsertComma\", .register_cost )"
+      ],
+      "text" : "But the entrance fee is {0} zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        ".timeout"
+      ],
+      "text" : "[MvP Ladder Warper]\nYou lose the game if you can't finish in {0} minutes, or if your entire party is killed.\nGood luck!"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "text" : "[MvP Ladder Warper]"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "MvP Ladder Warper",
+      "text" : "Nobody has finished this game yet."
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "( $mvpladdderparty_time / 60 )",
+        "( $mvpladdderparty_time % 60 )",
+        "$mvpladdderparty_name$"
+      ],
+      "text" : "The best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 45,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "( .@i +1 )",
+        "$mvpladderparty_member$[.@i]"
+      ],
+      "text" : "^000000{0}. ^0000FF{1}"
+    },
+    {
+      "kind" : "option",
+      "line" : 48,
+      "npc" : "MvP Ladder Warper",
+      "text" : "Close."
+    },
+    {
+      "kind" : "option",
+      "line" : 48,
+      "npc" : "MvP Ladder Warper",
+      "text" : "Reset the record."
+    },
+    {
+      "kind" : "option",
+      "line" : 49,
+      "npc" : "MvP Ladder Warper",
+      "text" : "Never mind."
+    },
+    {
+      "kind" : "option",
+      "line" : 49,
+      "npc" : "MvP Ladder Warper",
+      "text" : "I really want to reset it."
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "MvP Ladder Warper",
+      "text" : "[MvP Ladder Warper]\nRecord reset successfully."
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "MvP Ladder Warper",
+      "text" : "[MvP Ladder Warper]\nWhen you are strong enough to complete the game, please come back."
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "npc" : "MvP Ladder Warper",
+      "text" : "[MvP Ladder Warper]\nYou have to form a party to play."
+    },
+    {
+      "kind" : "message",
+      "line" : 67,
+      "npc" : "MvP Ladder Warper",
+      "text" : "[MvP Ladder Warper]\nOnly the party leader can register."
+    },
+    {
+      "kind" : "message",
+      "line" : 83,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        ".register_min"
+      ],
+      "text" : "[MvP Ladder Warper]\nYou have to form a party with exactly {0} members to play."
+    },
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        ".register_min",
+        "strnpcinfo(4)"
+      ],
+      "text" : "[MvP Ladder Warper]\nYour party must have {0} members online on map '{1}'."
+    },
+    {
+      "kind" : "message",
+      "line" : 93,
+      "npc" : "MvP Ladder Warper",
+      "text" : "[MvP Ladder Warper]\nYou don't have enough zeny. Please come back when you do."
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "MvP Ladder Warper",
+      "text" : "[MvP Ladder Warper]\nI'm sorry, but a party is currently playing the game. Please standby until the party is finished.\nThank you."
+    }
+  ]
+}

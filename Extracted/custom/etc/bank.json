@@ -1,0 +1,179 @@
+{
+  "file" : "npc/custom/etc/bank.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 20,
+      "npc" : "Banker",
+      "text" : "[Banker]\nWelcome to the First Bank of Prontera. How can I help you today?"
+    },
+    {
+      "kind" : "option",
+      "line" : 23,
+      "npc" : "Banker",
+      "text" : "I'd like to make a deposit."
+    },
+    {
+      "kind" : "option",
+      "line" : 23,
+      "npc" : "Banker",
+      "text" : "I'd like to make a withdrawal."
+    },
+    {
+      "kind" : "option",
+      "line" : 23,
+      "npc" : "Banker",
+      "text" : "What's my current balance?"
+    },
+    {
+      "kind" : "option",
+      "line" : 23,
+      "npc" : "Banker",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 25,
+      "npc" : "Banker",
+      "text" : "[Banker]\nVery well... How much would you like to deposit? The maximum you can deposit at once is 999,999 Zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Banker",
+      "placeholders" : [
+        "@cost"
+      ],
+      "text" : "[Banker]\nOh, and do realize there is a {0} Zeny charge on all transactions!"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "Banker",
+      "text" : "Make sure you ask me to deposit a real amount."
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Banker",
+      "text" : "It does not appear like you have the amount of zeny you're trying to deposit!"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Banker",
+      "placeholders" : [
+        "@cost"
+      ],
+      "text" : "You need {0} Zeny to cover the transaction fee!"
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Banker",
+      "text" : "[Banker]\nThank you very much... Your zeny is in good hands."
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "Banker",
+      "text" : "[Banker]\nVery well... How much would you like to withdraw? The maximum you can withdraw at one time is 999,999 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 59,
+      "npc" : "Banker",
+      "placeholders" : [
+        "@cost"
+      ],
+      "text" : "[Banker]\nOh, and do realize there is a {0} Zeny charge on all transactions!"
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "Banker",
+      "text" : "Please don't play games. I need a real amount to withdraw."
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Banker",
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\",#bankstorage)"
+      ],
+      "text" : "You only have ^00FF00{0}^000000 zeny in your account!"
+    },
+    {
+      "kind" : "message",
+      "line" : 73,
+      "npc" : "Banker",
+      "text" : "[Banker]\nYou don't have the Zeny for the transaction fee right now. Would you like me to take the fee directly from your withdrawal?"
+    },
+    {
+      "kind" : "option",
+      "line" : 76,
+      "npc" : "Banker",
+      "text" : "Yes please."
+    },
+    {
+      "kind" : "option",
+      "line" : 76,
+      "npc" : "Banker",
+      "text" : "No, Thanks"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Banker",
+      "placeholders" : [
+        "@cost"
+      ],
+      "text" : "[Banker]\nRemoving {0} from your withdrawal to cover the deposit fee..."
+    },
+    {
+      "kind" : "message",
+      "line" : 87,
+      "npc" : "Banker",
+      "text" : "[Banker]\nThere's your Zeny. Have a good day."
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "Banker",
+      "text" : "[Banker]\nVery well... come again soon."
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
+      "npc" : "Banker",
+      "text" : "[Banker]\nThere's your Zeny. Have a good day."
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "Banker",
+      "text" : "[Banker]\nHmmmm... let me check some paper work."
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Banker",
+      "text" : "*Rustle, Rustle*"
+    },
+    {
+      "kind" : "message",
+      "line" : 110,
+      "npc" : "Banker",
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\",#bankstorage)"
+      ],
+      "text" : "[Banker]\nYou currently have {0} Zeny in your account."
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "Banker",
+      "text" : "[Banker]\nVery well... come again soon."
+    }
+  ]
+}

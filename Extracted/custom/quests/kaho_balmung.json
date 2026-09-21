@@ -1,0 +1,102 @@
+{
+  "file" : "npc/custom/quests/kaho_balmung.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 21,
+      "npc" : "Royal Messenger",
+      "text" : "[Royal Messenger]\nWelcome to Prontera.\nI am the messenger in charge of the Royal Quests."
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "npc" : "Royal Messenger",
+      "text" : "Listen..."
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "npc" : "Royal Messenger",
+      "text" : "Walk away"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Royal Messenger",
+      "text" : "[Royal Messenger]\nThere are two quests.\nChoose the one you like."
+    },
+    {
+      "kind" : "option",
+      "line" : 30,
+      "npc" : "Royal Messenger",
+      "text" : "Balmung"
+    },
+    {
+      "kind" : "option",
+      "line" : 30,
+      "npc" : "Royal Messenger",
+      "text" : "Lord Kaho's Horns"
+    },
+    {
+      "kind" : "option",
+      "line" : 30,
+      "npc" : "Royal Messenger",
+      "text" : "^777777Never mind.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Royal Messenger",
+      "text" : "[Royal Messenger]"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Royal Messenger",
+      "text" : "Have a nice day."
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "Royal Messenger",
+      "text" : "You will need the following items:"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Royal Messenger",
+      "placeholders" : [
+        "getd(\".@Req\"+.@i+\"[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".@Req\"+.@i+\"[\"+.@j+\"]\"))"
+      ],
+      "text" : " ~ {0}x ^0055FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Royal Messenger",
+      "text" : " ~ 1,000,000z"
+    },
+    {
+      "kind" : "message",
+      "line" : 41,
+      "npc" : "Royal Messenger",
+      "text" : "[Royal Messenger]"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Royal Messenger",
+      "text" : "Come back when you meet all the requirements."
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "npc" : "Royal Messenger",
+      "placeholders" : [
+        "getitemname(getd(\".@Req\"+.@i+\"[0]\"))"
+      ],
+      "text" : "I see you already have all the items you need. Here's your {0}, as promised."
+    }
+  ]
+}

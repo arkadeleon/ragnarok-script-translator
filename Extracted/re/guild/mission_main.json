@@ -1,0 +1,496 @@
+{
+  "file" : "npc/re/guild/mission_main.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 18,
+      "npc" : "gld_mission",
+      "text" : "You have too many items to proceed with the quest.\nPlease lighten your load and try again."
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".region$[.@zoneid]"
+      ],
+      "text" : "{0}\nWe provide missions and daily quests that you can complete in the region of {1}.\nThere are simple daily quests as well as missions that you have to complete within the siege hours only. So, think about it~"
+    },
+    {
+      "kind" : "option",
+      "line" : 59,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".region$[.@zoneid]"
+      ],
+      "text" : "Conquering {0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 59,
+      "npc" : "gld_mission",
+      "text" : "Guild Dungeon Daily Quests"
+    },
+    {
+      "kind" : "option",
+      "line" : 59,
+      "npc" : "gld_mission",
+      "text" : "About quests"
+    },
+    {
+      "kind" : "option",
+      "line" : 59,
+      "npc" : "gld_mission",
+      "text" : "I don't need it."
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nIt's been less than an hour since the last time we've checked!\nCome back when the waiting time is over."
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nIf you have luck on your side, you'll have good results."
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nI have confirmed that the waiting time for conquering missions has ended.\nI'll delete unnecessary records for you."
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nAccording to ^4d4dffthe number of fortresses that your guild has conquered at this very moment,^000000 I'll give you a reward.\nDo you want to check right now? You're aware that ^4d4dffthe number can change even as we speak,^000000 right?"
+    },
+    {
+      "kind" : "option",
+      "line" : 88,
+      "npc" : "gld_mission",
+      "text" : "I'll come back later."
+    },
+    {
+      "kind" : "option",
+      "line" : 88,
+      "npc" : "gld_mission",
+      "text" : "Let's check right now!"
+    },
+    {
+      "kind" : "message",
+      "line" : 89,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nRight. Life is all about timing.\nCome back when it's shining the most."
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nUnfortunately, there is no fortress that your guild has conquered.\nTry again!"
+    },
+    {
+      "kind" : "message",
+      "line" : 107,
+      "npc" : "gld_mission",
+      "text" : "Incredible."
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "gld_mission",
+      "text" : "Currently, the total number of fortresses that your guild has conquered"
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".region$[.@zoneid]"
+      ],
+      "text" : "Your guild has conquered {0}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@total"
+      ],
+      "text" : "is {0}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nI'll give you a reward accordingly. I hope you make good use of it.\nYou have an hour of waiting time until the next report. Keep that in mind and try again."
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nI'm sorry but you can complete this mission only during the siege hours. I'm afraid I can't do anything here."
+    },
+    {
+      "kind" : "message",
+      "line" : 135,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nI'm sorry but conquering missions are for guild masters only.\nMembers should try guild dungeon daily quests instead."
+    },
+    {
+      "kind" : "message",
+      "line" : 142,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".region$[.@zoneid]"
+      ],
+      "text" : "{0}\nThese are missions that you can complete in guild dungeons of {1} area.\nYou can cancel them if you want to. Feel free to challenge yourself."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nYou don't need to rush since these missions take place in guild dungeons.\nFeel free to give it a try whenever you want to."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".level_req[.@index]"
+      ],
+      "text" : "{0}\nHmm, unfortunately, this mission is limited to users with ^4d4dfflevel {1}^000000 or higher only.\nYour level is not high enough."
+    },
+    {
+      "kind" : "message",
+      "line" : 169,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nOh, you've done a good job.\nIt isn't much, but hopefully it will be helpful."
+    },
+    {
+      "kind" : "message",
+      "line" : 177,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nHmm? It seems like you haven't completed the mission yet..\nIs there any problem?"
+    },
+    {
+      "kind" : "option",
+      "line" : 181,
+      "npc" : "gld_mission",
+      "text" : "No."
+    },
+    {
+      "kind" : "option",
+      "line" : 181,
+      "npc" : "gld_mission",
+      "text" : "Give up the quest."
+    },
+    {
+      "kind" : "message",
+      "line" : 182,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nI'm not sure how long you can use the guild dungeon, but good luck."
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nWell, no one's forcing you.\nDo whatever you like to do.\nI'll cancel the mission then."
+    },
+    {
+      "kind" : "message",
+      "line" : 196,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nThe rule is set here so that you're only allowed to complete one mission each day.\nI would like you to come back when the waiting time is over."
+    },
+    {
+      "kind" : "message",
+      "line" : 202,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nI have confirmed that the waiting time for this mission is over.\nI'll delete the records used for confirmation.\nNow, give it a try to complete the quest!"
+    },
+    {
+      "kind" : "message",
+      "line" : 208,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".ordinal$[.@sel]",
+        ".region$[.@zoneid]"
+      ],
+      "text" : "{0}\nThis is the {1} mission in {2}."
+    },
+    {
+      "kind" : "message",
+      "line" : 214,
+      "npc" : "gld_mission",
+      "text" : "I'll reward you accordingly upon completing this mission."
+    },
+    {
+      "kind" : "message",
+      "line" : 216,
+      "npc" : "gld_mission",
+      "text" : "I'll give you experience points in return."
+    },
+    {
+      "kind" : "option",
+      "line" : 218,
+      "npc" : "gld_mission",
+      "text" : "Accept it."
+    },
+    {
+      "kind" : "option",
+      "line" : 218,
+      "npc" : "gld_mission",
+      "text" : "Reject it."
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nEntrance to the guild dungeon is restricted. But it's not like you can't find a way to go there, either.\nI'll pray for your success in fighting those monsters."
+    },
+    {
+      "kind" : "message",
+      "line" : 225,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nWell, do as you wish."
+    },
+    {
+      "kind" : "message",
+      "line" : 233,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nIt's not difficult at all.\nI give a reward ^4d4dffdepending on how many fortresses you have conquered.^000000\n^4d4dffThe type and quality of the reward depend on the number of conquered fortresses at the very moment I check.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 238,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nAnd of course, I check during the siege hours only.\n^4d4dffReceiving a reward is followed by an hour of waiting time. So you'd better figure out the right timing as well.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 242,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nIf you are a master of a guild that is currently participating in siege battles, you should give it a try."
+    },
+    {
+      "kind" : "message",
+      "line" : 245,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nGuild dungeon daily quests consist of combat quests that you can complete in guild dungeons.\nIt's simple."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "text" : "{0}\nYou're really something else~!"
+    },
+    {
+      "kind" : "message",
+      "line" : 323,
+      "npc" : "gld_mission",
+      "text" : "It is to deal with the powerful creatures that appear in the Corridor of the Abyss."
+    },
+    {
+      "kind" : "message",
+      "line" : 326,
+      "npc" : "gld_mission",
+      "text" : "It is to eliminate the monsters that appear in the guild dungeon."
+    },
+    {
+      "kind" : "message",
+      "line" : 335,
+      "npc" : "gld_mission",
+      "text" : "You should hunt 50 or more Caterpillars and Creamy Fear monsters.."
+    },
+    {
+      "kind" : "message",
+      "line" : 338,
+      "npc" : "gld_mission",
+      "text" : "Hunt down 30 or more of all 3 types of Abyss Kobolds."
+    },
+    {
+      "kind" : "message",
+      "line" : 341,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffYou should kill furious 'Pyuriel' and warrior 'Lora'.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 50 or more of Giant Hornets and Ancient Worms, respectively.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 347,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 40 or more of Killer Mantises and 50 or more of Angra Mantises.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 350,
+      "npc" : "gld_mission",
+      "text" : "They are ^4d4dff'Elvira' and 'Gioia,' which is a strange mechanical creature of heroes' tears.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 353,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 50 or more Zombie Masters and Wraith Deads, respectively.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 356,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 50 GLD_DARK_SHADOW, 20 GLD_DARK_FRAME, and 20 GLD_DARK_PRIEST monsters.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 359,
+      "npc" : "gld_mission",
+      "text" : "They are ^4d4dff'Kades' and 'Rudo' who wander around the dead's hill.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 362,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 50 or more Gullinbursti and Leib Olmai, respectively.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 365,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 45 or more Skeleton General, 20 or more Am Mut and 25 or more Gajomart, respectively.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 368,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffThey are Old Empire's General 'Daehyon' and Guard 'Soheon'.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 371,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 50 or more Hell Apocalypse and Zakudam, respectively.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 374,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 35 or more Heavy Metaling and Cobalt Mineral, respectively.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 377,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt more than 50 Banshee Masters and 30 Beholder Masters.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 380,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 50 Aunoes, and 20 Fanats.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 383,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 30 or more Knight, Blacksmith, Assassin, respectively.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 386,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 30 or more Wizard, Priest, Hunter respectively.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 389,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 30 or more, Crusader, Rogue, Alchemist, respectively.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 392,
+      "npc" : "gld_mission",
+      "text" : "^4d4dffHunt 30 or more Sage, Monk, Bard, respectively.^000000"
+    }
+  ]
+}

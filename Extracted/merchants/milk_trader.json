@@ -1,0 +1,50 @@
+{
+  "file" : "npc/merchants/milk_trader.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Milk Vendor",
+      "text" : "^3355FFJust a minute!\nI can't offer any of my\nservices to you because\nyou're carrying too much\nstuff. Put your extra items in\nKafra Storage and come again~"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Milk Vendor",
+      "text" : "[Milk Vendor]\nHey, hey...\nIf you bring me\n1 Empty Bottle and\n15 Zeny, I'll exchange\nthem for 1 Milk. How\ndoes that sound?"
+    },
+    {
+      "kind" : "option",
+      "line" : 40,
+      "npc" : "Milk Vendor",
+      "text" : "Exchange all empty bottles."
+    },
+    {
+      "kind" : "option",
+      "line" : 40,
+      "npc" : "Milk Vendor",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Milk Vendor",
+      "text" : "[Milk Vendor]\nHey...\nYou don't have\nany Empty Bottles.\nI can't really give you\nthis milk any other\nway, you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "Milk Vendor",
+      "placeholders" : [
+        ".@total_cost"
+      ],
+      "text" : "[Milk Vendor]\nOh, whoa~!\nYou don't have enough\nzeny to exchange all\nthese Empty Bottles for\nMilk. You need to have\nat least {0} zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "Milk Vendor",
+      "text" : "[Milk Vendor]\nHmm...\nWould you make\na little more room\nin your inventory\nbefore I give you\nall of this milk?"
+    }
+  ]
+}

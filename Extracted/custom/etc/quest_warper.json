@@ -1,0 +1,797 @@
+{
+  "file" : "npc/custom/etc/quest_warper.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 72,
+      "npc" : "Q_Warpra",
+      "text" : "[Warpra]\nHello,\nI can warp you to any town or dungeon, but you need to unlock them first by visiting us.\nWhat do you need?"
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_TW_OFF)?\"^FF0000 Off\":\"^00FF00 On\")",
+        "(($QW_DW_OFF)?\"^FF0000 Off\":\"^00FF00 On\")",
+        "(($QW_DL)?\"^00FF00 On\":\"^FF0000 Off\")",
+        "$QW_DDL",
+        "(($QW_MapUserShow)?\"^00FF00 On\":\"^FF0000 Off\")"
+      ],
+      "text" : "Town warping = {0}^000000\nDungeon warping = {1}^000000\nDungeon Depth limit is {2}^000000\nIf on Dungeon Depth limit is set to ^0000FF{3}^000000\nShow Map Users = {4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 112,
+      "npc" : "Q_Warpra",
+      "text" : "Healing full = ^00FF00 On ^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 113,
+      "npc" : "Q_Warpra",
+      "text" : "Healing partly = ^00FF00 On ^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "Q_Warpra",
+      "text" : "Healing = ^FF0000 Off ^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_Stor)?\"^00FF00 On\":\"^FF0000 Off\")",
+        "(($QW_GStor)?\"^00FF00 On\":\"^FF0000 Off\")",
+        "(($QW_KPoint)?\"^00FF00 On\":\"^FF0000 Off\")"
+      ],
+      "text" : "Storage = {0}^000000\nGuild Storage = {1}^000000\nKafra points collect = {2}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "Q_Warpra",
+      "text" : "Town Warping"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "Q_Warpra",
+      "text" : "Dungeon Warping"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "Q_Warpra",
+      "text" : "Dungeon Level Limit"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "Q_Warpra",
+      "text" : "Show Map Users"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "Q_Warpra",
+      "text" : "Healing full"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "Q_Warpra",
+      "text" : "Healing partly"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "Q_Warpra",
+      "text" : "Storage"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "Q_Warpra",
+      "text" : "Guild Storage"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "Q_Warpra",
+      "text" : "Kafra points collect"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "Q_Warpra",
+      "text" : "Set Prices"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "Q_Warpra",
+      "text" : "Special Warp"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "Q_Warpra",
+      "text" : "Exit"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_BW_PRICE)?\"^00FF00\"+$QW_BW_PRICE:\"^FF0000Free\")",
+        "(($QW_AW_PRICE)?\"^00FF00\"+$QW_AW_PRICE:\"^FF0000Free\")",
+        "(($QW_OW_PRICE)?\"^00FF00\"+$QW_OW_PRICE:\"^FF0000Free\")",
+        "(($QW_BW_FEE)?\"^00FF00\"+$QW_BW_FEE:\"^FF0000NO\")",
+        "(($QW_AW_FEE)?\"^00FF00\"+$QW_AW_FEE:\"^FF0000NO\")",
+        "(($QW_OW_FEE)?\"^00FF00\"+$QW_OW_FEE:\"^FF0000NO\")",
+        "(($QW_HF_PRICE)?\"^00FF00\"+$QW_HF_PRICE:\"^FF0000Free\")",
+        "(($QW_HP_H_PRICE)?\"^00FF00\"+$QW_HP_H_PRICE+\"^000000 a point\":\"^FF0000Free^000000\")",
+        "(($QW_HP_S_PRICE)?\"^00FF00\"+$QW_HP_S_PRICE+\"^000000 a point\":\"^FF0000Free^000000\")"
+      ],
+      "text" : "Scroll through the list to see all the options.\nBasic - Warps are = {0}^000000\nAdvanced - Warps are = {1}^000000\nOverseas - Warps are = {2}^000000\nBasic Dungeon level warp fee = {3}^000000 zeny per level\nAdvanced Dungeon level warp fee = {4}^000000 zeny per level\nOverseas Dungeon level warp fee = {5}^000000 zeny per level\nFull Healing = {6}^000000\n^FF0000HP ^000000Part Healing = {7}\n^FF0000SP ^000000Part Healing = {8}"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "$QW_S_PRICE"
+      ],
+      "text" : "Storage = ^00FF00 {0} ^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 169,
+      "npc" : "Q_Warpra",
+      "text" : "Storage = ^FF0000 Free ^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Q_Warpra",
+      "text" : "Storage = ^0000FF Kafra Mode ^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 171,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_GS_PRICE)?\"^00FF00\"+$QW_GS_PRICE:\"^FF0000Free\")"
+      ],
+      "text" : "Guild Storage = {0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Q_Warpra",
+      "text" : "Basic - Warps"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Q_Warpra",
+      "text" : "Advanced - Warps"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Q_Warpra",
+      "text" : "Overseas - Warps"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Q_Warpra",
+      "text" : "Basic Dungeon warp fee"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Q_Warpra",
+      "text" : "Advanced Dungeon warp fee"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Q_Warpra",
+      "text" : "Overseas Dungeon warp fee"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Q_Warpra",
+      "text" : "Full Healing"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Q_Warpra",
+      "text" : "Part Healing"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Q_Warpra",
+      "text" : "Storage"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Q_Warpra",
+      "text" : "Guild Storage"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Q_Warpra",
+      "text" : "Back"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Q_Warpra",
+      "text" : "Exit"
+    },
+    {
+      "kind" : "message",
+      "line" : 176,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_BW_PRICE)?\"^00FF00\"+$QW_BW_PRICE:\"^FF0000Free\")"
+      ],
+      "text" : "Basic - Warps are = {0}^000000\nBasic - Warps are starter towns and related dungeons."
+    },
+    {
+      "kind" : "message",
+      "line" : 182,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_AW_PRICE)?\"^00FF00\"+$QW_AW_PRICE:\"^FF0000Free\")"
+      ],
+      "text" : "Advanced - Warps are = {0}^000000\nAdvanced - Warps are towns and dungeons on the same island but not close to any starter town."
+    },
+    {
+      "kind" : "message",
+      "line" : 188,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_OW_PRICE)?\"^00FF00\"+$QW_OW_PRICE:\"^FF0000Free\")"
+      ],
+      "text" : "Overseas - Warps are = {0}^000000\nOverseas - Warps are towns and dungeons overseas reachable by boat from Alberta."
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_BW_FEE)?\"^00FF00\"+$QW_BW_FEE:\"^FF0000NO\")"
+      ],
+      "text" : "Basic Dungeon level warp fee = {0}^000000 zeny per level\nBasic - Warps are starter town related dungeons.\nDungeon warp fees are calculated by maps away from entrance of the dungeon times Dungeon warp fee.\nThese costs are on top of the regular Warp costs."
+    },
+    {
+      "kind" : "message",
+      "line" : 202,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_AW_FEE)?\"^00FF00\"+$QW_AW_FEE:\"^FF0000NO\")"
+      ],
+      "text" : "Advanced Dungeon level warp fee = {0}^000000 zeny per level\nAdvanced - Warps are dungeons not close to any starter town.\nDungeon warp fees are calculated by maps away from entrance of the dungeon times Dungeon warp fee.\nThese costs are on top of the regular Warp costs."
+    },
+    {
+      "kind" : "message",
+      "line" : 210,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_OW_FEE)?\"^00FF00\"+$QW_OW_FEE:\"^FF0000NO\")"
+      ],
+      "text" : "Overseas Dungeon level warp fee = {0}^000000 zeny per level\nOverseas - Warps are dungeons related to towns overseas reachable by boat from Alberta.\nDungeon warp fees are calculated by maps away from entrance of the dungeon times Dungeon warp fee.\nThese costs are on top of the regular Warp costs."
+    },
+    {
+      "kind" : "message",
+      "line" : 218,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_HF_PRICE)?\"^00FF00\"+$QW_HF_PRICE:\"^FF0000Free\")"
+      ],
+      "text" : "Full Healing = {0}^000000\nInstant full healing 1 price."
+    },
+    {
+      "kind" : "message",
+      "line" : 224,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_HP_H_PRICE)?\"^00FF00\"+$QW_HP_H_PRICE+\"^000000 a point\":\"^FF0000Free^000000\")",
+        "(($QW_HP_S_PRICE)?\"^00FF00\"+$QW_HP_S_PRICE+\"^000000 a point\":\"^FF0000Free^000000\")"
+      ],
+      "text" : "^FF0000HP ^000000Part Healing = {0}\n^FF0000SP ^000000Part Healing = {1}\nHealing price per 1 HP.\nHealing price per 1 SP.\n2 inputs, first HP then SP."
+    },
+    {
+      "kind" : "message",
+      "line" : 234,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "$QW_S_PRICE"
+      ],
+      "text" : "Storage = ^00FF00 {0} ^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 235,
+      "npc" : "Q_Warpra",
+      "text" : "Storage = ^FF0000 Free ^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 236,
+      "npc" : "Q_Warpra",
+      "text" : "Storage = ^0000FF Kafra Mode ^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 237,
+      "npc" : "Q_Warpra",
+      "text" : "Storage cost, if set to 60 Kafra pricing will be handled."
+    },
+    {
+      "kind" : "message",
+      "line" : 242,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_GS_PRICE)?\"^00FF00\"+$QW_GS_PRICE:\"^FF0000Free\")"
+      ],
+      "text" : "Guild Storage = {0}^000000\nGuild Storage, free on Guild Kafras."
+    },
+    {
+      "kind" : "message",
+      "line" : 258,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "$QW_SP_Warpname$"
+      ],
+      "text" : "Scroll down to see all the information\nThe Special warp menu option will show in the main menu when all towns & dungeons are unlocked\nAnd when the map for special warping has been set\nmenu option name set to ^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 262,
+      "npc" : "Q_Warpra",
+      "text" : "map is currently ^FF0000not^000000 set, and Special warp menu is off"
+    },
+    {
+      "kind" : "message",
+      "line" : 263,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "$QW_SP_WarpMap$"
+      ],
+      "text" : "map is currently set to ^0000FF{0}^000000 and Special Warp menu is on"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "$QW_SP_WarpX",
+        "$QW_SP_WarpY"
+      ],
+      "text" : "coords are set to ^0000FF{0},{1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 265,
+      "npc" : "Q_Warpra",
+      "text" : "Set Special Warp name to show in menu"
+    },
+    {
+      "kind" : "option",
+      "line" : 265,
+      "npc" : "Q_Warpra",
+      "text" : "Set WarpMap"
+    },
+    {
+      "kind" : "option",
+      "line" : 265,
+      "npc" : "Q_Warpra",
+      "text" : "Set Coords"
+    },
+    {
+      "kind" : "option",
+      "line" : 265,
+      "npc" : "Q_Warpra",
+      "text" : "Go Back to GM_Menu"
+    },
+    {
+      "kind" : "option",
+      "line" : 265,
+      "npc" : "Q_Warpra",
+      "text" : "Exit"
+    },
+    {
+      "kind" : "message",
+      "line" : 268,
+      "npc" : "Q_Warpra",
+      "text" : "Set the name to show in the menu as option."
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Q_Warpra",
+      "text" : "Set the map in the ^0000FFmapname^000000 format.\nWhen this warpmap is set the option for players will show once they meet the requirements.\nTo disable Special Warp Menu option, clear this!"
+    },
+    {
+      "kind" : "message",
+      "line" : 280,
+      "npc" : "Q_Warpra",
+      "text" : "First input = Xcoord\nSecond input = Ycoord"
+    },
+    {
+      "kind" : "message",
+      "line" : 296,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "(($QW_DL)?\"^00FF00On\":\"^FF0000Off\")",
+        "$QW_DDL"
+      ],
+      "text" : "Dungeon Depth limit is {0}^000000\nIf^00FF00 On ^000000Dungeon Depth limit is set to ^0000FF{1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 299,
+      "npc" : "Q_Warpra",
+      "text" : "Toggle Dungeon Depth Limit"
+    },
+    {
+      "kind" : "option",
+      "line" : 299,
+      "npc" : "Q_Warpra",
+      "text" : "Set Dungeon Depth Limit"
+    },
+    {
+      "kind" : "option",
+      "line" : 299,
+      "npc" : "Q_Warpra",
+      "text" : "Go Back to GM_Menu"
+    },
+    {
+      "kind" : "option",
+      "line" : 299,
+      "npc" : "Q_Warpra",
+      "text" : "Exit"
+    },
+    {
+      "kind" : "message",
+      "line" : 303,
+      "npc" : "Q_Warpra",
+      "text" : "Set limit of Dungeon Depth 0 = entrance\nDepth 1 is a map connected to 0 and so on\nShortest Route to map counts as depth"
+    },
+    {
+      "kind" : "message",
+      "line" : 351,
+      "npc" : "Q_Warpra",
+      "text" : "[Warpra]\nPlease select where you want to go:"
+    },
+    {
+      "kind" : "message",
+      "line" : 381,
+      "npc" : "Q_Warpra",
+      "text" : "[Warpra]\nClose this window and I will heal you."
+    },
+    {
+      "kind" : "option",
+      "line" : 388,
+      "npc" : "Q_Warpra",
+      "text" : "Full heal"
+    },
+    {
+      "kind" : "option",
+      "line" : 388,
+      "npc" : "Q_Warpra",
+      "text" : "Health Points only"
+    },
+    {
+      "kind" : "option",
+      "line" : 388,
+      "npc" : "Q_Warpra",
+      "text" : "Skill Points only"
+    },
+    {
+      "kind" : "option",
+      "line" : 388,
+      "npc" : "Q_Warpra",
+      "text" : "Exit"
+    },
+    {
+      "kind" : "message",
+      "line" : 400,
+      "npc" : "Q_Warpra",
+      "text" : "[Warpra]"
+    },
+    {
+      "kind" : "message",
+      "line" : 401,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "@HpPrice",
+        "@Hp"
+      ],
+      "text" : "{0} Zeny for {1} health points"
+    },
+    {
+      "kind" : "message",
+      "line" : 402,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "@SpPrice",
+        "@Sp"
+      ],
+      "text" : "{0} Zeny for {1} skill points"
+    },
+    {
+      "kind" : "message",
+      "line" : 404,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "@total"
+      ],
+      "text" : "for a total of {0} zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 405,
+      "npc" : "Q_Warpra",
+      "text" : "Heal me"
+    },
+    {
+      "kind" : "option",
+      "line" : 405,
+      "npc" : "Q_Warpra",
+      "text" : "Let me see the choices again"
+    },
+    {
+      "kind" : "message",
+      "line" : 421,
+      "npc" : "Q_Warpra",
+      "text" : "[Warpra]\nChoose another option, you can afford both.\nI can heal as much as you can afford, too."
+    },
+    {
+      "kind" : "option",
+      "line" : 424,
+      "npc" : "Q_Warpra",
+      "text" : "OK"
+    },
+    {
+      "kind" : "option",
+      "line" : 424,
+      "npc" : "Q_Warpra",
+      "text" : "Exit"
+    },
+    {
+      "kind" : "message",
+      "line" : 428,
+      "npc" : "Q_Warpra",
+      "text" : "[Warpra]\nDo you want me to partly heal your HP?"
+    },
+    {
+      "kind" : "option",
+      "line" : 430,
+      "npc" : "Q_Warpra",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 430,
+      "npc" : "Q_Warpra",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 433,
+      "npc" : "Q_Warpra",
+      "text" : "You're not worth the effort."
+    },
+    {
+      "kind" : "message",
+      "line" : 441,
+      "npc" : "Q_Warpra",
+      "text" : "[Warpra]\nDo you want me to partly heal your SP?"
+    },
+    {
+      "kind" : "option",
+      "line" : 443,
+      "npc" : "Q_Warpra",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 443,
+      "npc" : "Q_Warpra",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 446,
+      "npc" : "Q_Warpra",
+      "text" : "You're not worth the effort."
+    },
+    {
+      "kind" : "message",
+      "line" : 465,
+      "npc" : "Q_Warpra",
+      "text" : "[Warpra]"
+    },
+    {
+      "kind" : "message",
+      "line" : 467,
+      "npc" : "Q_Warpra",
+      "text" : "Enter your storage password:"
+    },
+    {
+      "kind" : "message",
+      "line" : 477,
+      "npc" : "Q_Warpra",
+      "text" : "Close this window and I will open your storage."
+    },
+    {
+      "kind" : "message",
+      "line" : 483,
+      "npc" : "Q_Warpra",
+      "text" : "[Warpra]\nI am sorry but you have to be at least Novice level 6 if you want to use the storage."
+    },
+    {
+      "kind" : "message",
+      "line" : 490,
+      "npc" : "Q_Warpra",
+      "text" : "[Warpra]\nYou are not a part of a guild I can't help you."
+    },
+    {
+      "kind" : "message",
+      "line" : 499,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "GetGuildName(@GID)"
+      ],
+      "text" : "[Warpra]\nClose this window and I will open the ^5533FF{0}^000000 storage."
+    },
+    {
+      "kind" : "message",
+      "line" : 512,
+      "npc" : "Q_Warpra",
+      "text" : "[Warpra]\nYou need to unlock locations before they come available to you.\nTo unlock a location talk to my colleagues all over the world.\nEach account has its own stamp card.\nWant me to check what stamps you have collected so far?"
+    },
+    {
+      "kind" : "option",
+      "line" : 517,
+      "npc" : "Q_Warpra",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 517,
+      "npc" : "Q_Warpra",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 524,
+      "npc" : "Q_Warpra",
+      "text" : "[Warpra]\nI don't unlock this location, my assistant deeper in the dungeon will unlock this place."
+    },
+    {
+      "kind" : "message",
+      "line" : 533,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "@pTprice[@Tmenuref[@TWMenu-1]]",
+        "@pTmenuitems$[@Tmenuref[@TWMenu-1]]"
+      ],
+      "text" : "You don't seem to have {0} zeny to pay for the warp to {1}."
+    },
+    {
+      "kind" : "message",
+      "line" : 534,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "@warpprice",
+        "@DLevelName$[@DWLmenuref[@DWLMenu-1]]",
+        "@pDmenuitems$[@Dmenuref[@DWMenu-1]]"
+      ],
+      "text" : "You don't seem to have {0} zeny to pay for the warp to {1} at {2}."
+    },
+    {
+      "kind" : "message",
+      "line" : 535,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "@fee"
+      ],
+      "text" : "You don't seem to have {0} zeny to pay the storage fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 536,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "$QW_GS_PRICE"
+      ],
+      "text" : "You don't seem to have {0} zeny to pay the guild storage fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 537,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "@healfee"
+      ],
+      "text" : "You don't seem to have {0} zeny to pay for your healing."
+    },
+    {
+      "kind" : "message",
+      "line" : 546,
+      "npc" : "Q_Warpra",
+      "text" : "Let me check what Towns you have."
+    },
+    {
+      "kind" : "message",
+      "line" : 548,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "@Tstamp",
+        "@MaxTstamp"
+      ],
+      "text" : "You collected^00FF00 {0} of {1} ^000000Towns."
+    },
+    {
+      "kind" : "message",
+      "line" : 550,
+      "npc" : "Q_Warpra",
+      "text" : "They say there is an island you can only get to when married..."
+    },
+    {
+      "kind" : "message",
+      "line" : 554,
+      "npc" : "Q_Warpra",
+      "text" : "Let me check what dungeons you have."
+    },
+    {
+      "kind" : "message",
+      "line" : 556,
+      "npc" : "Q_Warpra",
+      "placeholders" : [
+        "@Dstamp",
+        "@MaxDstamp"
+      ],
+      "text" : "You collected^00FF00 {0} of {1} ^000000Dungeons.\nTo unlock a dungeon, search for my colleagues.\nYou can usually find them near the middle or end of the dungeon."
+    },
+    {
+      "kind" : "message",
+      "line" : 1534,
+      "npc" : "QWS_Dungeon_Warpra",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "text" : "[Warpra]\n{0} unlocked!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1539,
+      "npc" : "QWS_Dungeon_Warpra",
+      "text" : "[Warpra]\nSorry, I can only unlock this location."
+    },
+    {
+      "kind" : "message",
+      "line" : 1580,
+      "npc" : "QWS_Town_Warpra",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "text" : "[Warpra]\n{0} unlocked!"
+    }
+  ]
+}

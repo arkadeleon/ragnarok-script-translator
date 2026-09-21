@@ -1,0 +1,342 @@
+{
+  "file" : "npc/custom/etc/mvp_room.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room."
+    },
+    {
+      "kind" : "message",
+      "line" : 20,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "callfunc(\"F_InsertComma\", getvariableofnpc( .rentcost, \"MVP Summoner\" ) )"
+      ],
+      "text" : "The cost to rent a room for {0} minutes is {1} zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 22,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )"
+      ],
+      "text" : "You can only use the room for only {0} minutes."
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".@i",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "Room #{0} = {1}{2}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 28,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getmapusers(\"06guild_01\")"
+      ],
+      "text" : "MVP Room 1 [{0}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 28,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getmapusers(\"06guild_02\")"
+      ],
+      "text" : "MVP Room 2 [{0}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 28,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getmapusers(\"06guild_03\")"
+      ],
+      "text" : "MVP Room 3 [{0}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 28,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getmapusers(\"06guild_04\")"
+      ],
+      "text" : "MVP Room 4 [{0}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 28,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getmapusers(\"06guild_05\")"
+      ],
+      "text" : "MVP Room 5 [{0}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 28,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getmapusers(\"06guild_06\")"
+      ],
+      "text" : "MVP Room 6 [{0}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 28,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getmapusers(\"06guild_07\")"
+      ],
+      "text" : "MVP Room 7 [{0}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 28,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getmapusers(\"06guild_08\")"
+      ],
+      "text" : "MVP Room 8 [{0}]"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".color$[ .type[.@room] ]",
+        ".whoinuse$[.@room]"
+      ],
+      "text" : "[Private MVP Room]\nThis room is reserved for \n{0}{1}^000000.\nPlease select another."
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Private MVP Room",
+      "text" : "[Private MVP Room]\nReserve this room for..."
+    },
+    {
+      "kind" : "option",
+      "line" : 52,
+      "npc" : "Private MVP Room",
+      "text" : "For my party members"
+    },
+    {
+      "kind" : "option",
+      "line" : 52,
+      "npc" : "Private MVP Room",
+      "text" : "For my guild members"
+    },
+    {
+      "kind" : "option",
+      "line" : 52,
+      "npc" : "Private MVP Room",
+      "text" : "For personal account use"
+    },
+    {
+      "kind" : "message",
+      "line" : 54,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "( ( .@type == 1 )? \"Party\" : \"Guild\" )"
+      ],
+      "text" : "[Private MVP Room]\nYou do not own a {0}."
+    },
+    {
+      "kind" : "message",
+      "line" : 59,
+      "npc" : "Private MVP Room",
+      "text" : "You don't have enough zeny to rent a room."
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Private MVP Room",
+      "text" : "[Private MVP Room]\nI'm sorry, somebody else has already registered this room faster than you."
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".@i"
+      ],
+      "text" : "[Private MVP Room]\nYou already rented Room#{0}. Use that room instead."
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "MVP Summoner",
+      "placeholders" : [
+        "callfunc( \"Time2Str\", .renttime[ atoi( strnpcinfo(2) ) ] + .timeout * 60 )"
+      ],
+      "text" : "[MVP Summoner]\nTime left: {0}\nHi, what can I do for you?"
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "MVP Summoner",
+      "text" : "[MVP Summoner]"
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "MVP Summoner",
+      "text" : "I cannot offer heal service when there are monsters around."
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "MVP Summoner",
+      "text" : "You are completely healed."
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "MVP Summoner",
+      "text" : "[MVP Summoner]\nI cannot summon another MVP when there are monsters around."
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "MVP Summoner",
+      "placeholders" : [
+        "callfunc( \"F_InsertComma\", .mvpcost )"
+      ],
+      "text" : "[MVP Summoner]\nThe cost to summon an MVP is {0} zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 137,
+      "npc" : "MVP Summoner",
+      "text" : "[MVP Summoner]"
+    },
+    {
+      "kind" : "message",
+      "line" : 139,
+      "npc" : "MVP Summoner",
+      "text" : "You don't have enough zeny to summon an MVP."
+    },
+    {
+      "kind" : "message",
+      "line" : 144,
+      "npc" : "MVP Summoner",
+      "text" : "[MVP Summoner]"
+    },
+    {
+      "kind" : "message",
+      "line" : 146,
+      "npc" : "MVP Summoner",
+      "text" : "Please get ready."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "MVP Summoner",
+      "text" : "[MVP Summoner]\nI cannot summon another mini-boss when there are monsters around."
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "MVP Summoner",
+      "placeholders" : [
+        "callfunc( \"F_InsertComma\", .bosscost )"
+      ],
+      "text" : "[MVP Summoner]\nThe cost to summon a mini-boss is {0} zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "MVP Summoner",
+      "text" : "[MVP Summoner]"
+    },
+    {
+      "kind" : "message",
+      "line" : 164,
+      "npc" : "MVP Summoner",
+      "text" : "You doesn't have enough zeny to summon a mini-boss."
+    },
+    {
+      "kind" : "message",
+      "line" : 169,
+      "npc" : "MVP Summoner",
+      "text" : "[MVP Summoner]"
+    },
+    {
+      "kind" : "message",
+      "line" : 171,
+      "npc" : "MVP Summoner",
+      "text" : "Please get ready."
+    },
+    {
+      "kind" : "message",
+      "line" : 179,
+      "npc" : "MVP Summoner",
+      "text" : "[MVP Summoner]\nI cannot offer this service when there are monsters around."
+    },
+    {
+      "kind" : "message",
+      "line" : 187,
+      "npc" : "MVP Summoner",
+      "text" : "[MVP Summoner]\nAre you sure you want to leave this room?"
+    },
+    {
+      "kind" : "option",
+      "line" : 190,
+      "npc" : "MVP Summoner",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 190,
+      "npc" : "MVP Summoner",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "MVP Summoner",
+      "text" : "[MVP Summoner]"
+    },
+    {
+      "kind" : "message",
+      "line" : 196,
+      "npc" : "MVP Summoner",
+      "text" : "There are still some players in this room. Make sure you are the last member in this room to use this option."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "MVP Summoner",
+      "text" : "Are you sure you want to give up this room?"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "MVP Summoner",
+      "text" : "You will need to pay again to enter this room."
+    },
+    {
+      "kind" : "option",
+      "line" : 203,
+      "npc" : "MVP Summoner",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 203,
+      "npc" : "MVP Summoner",
+      "text" : "No"
+    }
+  ]
+}

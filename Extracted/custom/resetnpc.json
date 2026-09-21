@@ -1,0 +1,110 @@
+{
+  "file" : "npc/custom/resetnpc.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "text" : "[Reset Girl]"
+    },
+    {
+      "kind" : "message",
+      "line" : 19,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\",.@Reset[3],\"time\")"
+      ],
+      "text" : "Sorry you can only reset {0} in your life."
+    },
+    {
+      "kind" : "message",
+      "line" : 22,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\",.@Reset[1])",
+        "callfunc(\"F_InsertComma\",.@Reset[0])",
+        "callfunc(\"F_InsertComma\",.@Reset[2])"
+      ],
+      "text" : "I am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\",.@Reset[3],\"time\")",
+        "((.@Reset[3]>1)?\"them\":\"it\")"
+      ],
+      "text" : "You may only reset {0}, so use {1} wisely."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Reset Girl",
+      "text" : "Please select the service you want:"
+    },
+    {
+      "kind" : "option",
+      "line" : 29,
+      "npc" : "Reset Girl",
+      "text" : "^FF3355Reset Skills"
+    },
+    {
+      "kind" : "option",
+      "line" : 29,
+      "npc" : "Reset Girl",
+      "text" : "Reset Stats"
+    },
+    {
+      "kind" : "option",
+      "line" : 29,
+      "npc" : "Reset Girl",
+      "text" : "Reset Both^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 29,
+      "npc" : "Reset Girl",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Reset Girl",
+      "text" : "[Reset Girl]"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Reset Girl",
+      "text" : "Sorry, you don't have enough Zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\",.@Reset[3],\"time\")"
+      ],
+      "text" : "You can only reset {0} in your life, are you sure?"
+    },
+    {
+      "kind" : "option",
+      "line" : 38,
+      "npc" : "Reset Girl",
+      "text" : "Let me think"
+    },
+    {
+      "kind" : "option",
+      "line" : 38,
+      "npc" : "Reset Girl",
+      "text" : "That's fine"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Reset Girl",
+      "text" : "There you go!"
+    }
+  ]
+}

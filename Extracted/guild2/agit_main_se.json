@@ -1,0 +1,1411 @@
+{
+  "file" : "npc/guild2/agit_main_se.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 210,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nI await for the master\nwhom destiny will choose\nfor me. Do you think you\nhave to courage and strength\nto conquer this stronghold?"
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "Steward",
+      "placeholders" : [
+        "getguildmaster(.@GID)"
+      ],
+      "text" : "[ Steward ]\nHmpf. Your threats don't\nscare me! Guardians, drive\nthis infidel away from here!\nI will always be loyal to the\nmaster of this stronghold,\nthe one and only ^FF0000{0}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 228,
+      "npc" : "Steward",
+      "placeholders" : [
+        "getguildmaster(.@GID)"
+      ],
+      "text" : "[ Steward ]\nAh, Master ^FF0000{0}^000000...\nHow shall I serve you today?\nWas there an aspect of this\nstronghold's maintenance\nyou wanted to discuss?"
+    },
+    {
+      "kind" : "option",
+      "line" : 235,
+      "npc" : "Steward",
+      "text" : "Stronghold Briefing"
+    },
+    {
+      "kind" : "option",
+      "line" : 235,
+      "npc" : "Steward",
+      "text" : "Invest in Commercial Growth"
+    },
+    {
+      "kind" : "option",
+      "line" : 235,
+      "npc" : "Steward",
+      "text" : "Invest in Defense growth"
+    },
+    {
+      "kind" : "option",
+      "line" : 235,
+      "npc" : "Steward",
+      "text" : "Hire/Fire Storage Staff"
+    },
+    {
+      "kind" : "option",
+      "line" : 235,
+      "npc" : "Steward",
+      "text" : "Go to Master's room"
+    },
+    {
+      "kind" : "message",
+      "line" : 237,
+      "npc" : "Steward",
+      "placeholders" : [
+        "getcastledata(strnpcinfo(4),CD_CURRENT_ECONOMY)"
+      ],
+      "text" : "[ Steward ]\nThe Commercial Growth\nLevel of the stronghold is ^0000ff{0}."
+    },
+    {
+      "kind" : "message",
+      "line" : 241,
+      "npc" : "Steward",
+      "placeholders" : [
+        "getcastledata(strnpcinfo(4),CD_INVESTED_ECONOMY)"
+      ],
+      "text" : "Last time, you invested in\nCommercial Growth {0}."
+    },
+    {
+      "kind" : "message",
+      "line" : 245,
+      "npc" : "Steward",
+      "placeholders" : [
+        "getcastledata(strnpcinfo(4),CD_CURRENT_DEFENSE)"
+      ],
+      "text" : "[ Steward ]\nOur stronghold's\nsafeguard level is {0}."
+    },
+    {
+      "kind" : "message",
+      "line" : 249,
+      "npc" : "Steward",
+      "placeholders" : [
+        "getcastledata(strnpcinfo(4),CD_INVESTED_DEFENSE)"
+      ],
+      "text" : "Last time, you invested\nin defense {0} times."
+    },
+    {
+      "kind" : "message",
+      "line" : 252,
+      "npc" : "Steward",
+      "text" : " \nThat is all, master."
+    },
+    {
+      "kind" : "message",
+      "line" : 268,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nRaising the stronghold's\ncommercial growth will\nincrease the quantity of\ngoods produced for the guild.\nInvesting in commercial growth\nwill help the guild's future."
+    },
+    {
+      "kind" : "message",
+      "line" : 276,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nYou can make one investment\neach day, but if you can make\ntwo investments if you pay\nmore Zeny: this will speed\nup commercial development,\nbut can be quite expensive."
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nHowever, our stronghold's\ncommerical growth level is\nat 100%. It's not possible to\ndevelop commercial growth\nany further than that."
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nYou've already made two\ninvestments today, so you'll\nhave to wait until tomorrow\nto make another investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 302,
+      "npc" : "Steward",
+      "placeholders" : [
+        ".@eco_invest"
+      ],
+      "text" : "[ Steward ]\nYou must pay ^FF0000{0}^000000 Zeny\nto make an investment\nWill you invest in this\nstronghold's commerical\ndevelopment now?"
+    },
+    {
+      "kind" : "message",
+      "line" : 310,
+      "npc" : "Steward",
+      "placeholders" : [
+        ".@eco_invest"
+      ],
+      "text" : "[ Steward ]\nYou must pay ^FF0000{0}^000000\nmore Zeny to make a second\ninvestment today. Will you\ninvest one more time?"
+    },
+    {
+      "kind" : "option",
+      "line" : 317,
+      "npc" : "Steward",
+      "text" : "Invest in Commercial Growth"
+    },
+    {
+      "kind" : "option",
+      "line" : 317,
+      "npc" : "Steward",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 320,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nYou've already made two\ninvestments today, so you'll\nhave to wait until tomorrow\nto make another investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 328,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nI'm sorry, Master, but\nyou do not have enough\nZeny to make an investment\nfor the guild today."
+    },
+    {
+      "kind" : "message",
+      "line" : 337,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nA wise use of the guild's\nfunds, Master. We can expect\nto see the results of this\ninvestment by tomorrow."
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nAs you command, Master."
+    },
+    {
+      "kind" : "message",
+      "line" : 361,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nInvesting in our stronghold's\ndefense will enhance the\ndurability of our Guardians\nand the Emperium. We'll need\nevery advantage to protect\nourselves from our enemies."
+    },
+    {
+      "kind" : "message",
+      "line" : 369,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nYou can invest in defense\nonce per day, but if you pay\nmore Zeny, you can invest\na maximum of two times daily."
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Steward",
+      "text" : "[ Steward ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 377,
+      "npc" : "Steward",
+      "text" : "The Defense Level of this\nstronghold is 100%, and\ncannot be increased further."
+    },
+    {
+      "kind" : "message",
+      "line" : 383,
+      "npc" : "Steward",
+      "text" : "Master, you've already\ninvested in Defense twice\ntoday. You'll need to wait\nuntil tomorrow if you really\nwant to increase our defenses."
+    },
+    {
+      "kind" : "message",
+      "line" : 391,
+      "npc" : "Steward",
+      "placeholders" : [
+        ".@def_invest"
+      ],
+      "text" : "We need ^FF0000{0}^000000\nZeny to invest in our\nstronghold's defenses.\nWill you invest now?"
+    },
+    {
+      "kind" : "message",
+      "line" : 397,
+      "npc" : "Steward",
+      "placeholders" : [
+        ".@def_invest"
+      ],
+      "text" : "We need ^FF0000{0}^000000\nZeny to invest in our\nstronghold's defenses\na second time today.\nWill you invest now?"
+    },
+    {
+      "kind" : "option",
+      "line" : 404,
+      "npc" : "Steward",
+      "text" : "Invest in Defense"
+    },
+    {
+      "kind" : "option",
+      "line" : 404,
+      "npc" : "Steward",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 407,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nMaster, you've already\ninvested in Defense twice\ntoday. You'll need to wait\nuntil tomorrow if you really\nwant to increase our defenses."
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nI'm sorry, Master, but\nyou do not have enough\nZeny to make an investment\nfor the guild today."
+    },
+    {
+      "kind" : "message",
+      "line" : 425,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nA wise use of the guild's\nfunds, Master. Increasing\nthe frequency of treasure\nprocured by the guild will\ndefinitely help us all."
+    },
+    {
+      "kind" : "message",
+      "line" : 433,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nAs you command, Master."
+    },
+    {
+      "kind" : "message",
+      "line" : 439,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nDo you wish to dismiss\nthe Kafra Employee that\nwe've hired for the guild?"
+    },
+    {
+      "kind" : "option",
+      "line" : 444,
+      "npc" : "Steward",
+      "text" : "Dismiss"
+    },
+    {
+      "kind" : "option",
+      "line" : 444,
+      "npc" : "Steward",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 447,
+      "npc" : "Steward",
+      "text" : "[ Hired Kafra Employee ]\nMaster, please reconsider!\nI've been working very hard\nfor the success of the guild!\nI'll try harder to serve the\nguild members of this\nstronghold, I promise!"
+    },
+    {
+      "kind" : "option",
+      "line" : 455,
+      "npc" : "Steward",
+      "text" : "Dismiss"
+    },
+    {
+      "kind" : "option",
+      "line" : 455,
+      "npc" : "Steward",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 457,
+      "npc" : "Steward",
+      "text" : "[ Hired Kafra Employee ]\nWhy?! What have I done\nto deserve this? Waaah~!"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "Steward",
+      "text" : "[ Hired Kafra Employee ]\nThank you, Master!\nI'll obey your every\ncommand as best I can!\nYou won't regret this!"
+    },
+    {
+      "kind" : "message",
+      "line" : 473,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nShe works very hard,\nin my opinion. It was in\nall of our best interests to\nallow her to stay with us."
+    },
+    {
+      "kind" : "message",
+      "line" : 482,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nThat Kafra Employee\nhas been dismissed.\nWere really dissatisfied\nby the quality of her service?"
+    },
+    {
+      "kind" : "message",
+      "line" : 490,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nWill you hire a\nKafra Employee to serve\nour stronghold? You must\npay ^FF000010,000 Zeny^000000 to hire one."
+    },
+    {
+      "kind" : "option",
+      "line" : 496,
+      "npc" : "Steward",
+      "text" : "Hire"
+    },
+    {
+      "kind" : "option",
+      "line" : 496,
+      "npc" : "Steward",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 499,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nMaster, we cannot hire a\nKafra Employee because\nyou have not yet attained\nthe ^FF0000Contract with Kafra^000000\nguild skill."
+    },
+    {
+      "kind" : "message",
+      "line" : 508,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nMaster, we cannot hire a\nKafra Employee because\nwe do not have enough\nfunds to pay the contract fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 518,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nVery well. We have formed\na contract with the Kafra\nHead Office, and hired a\nKafra Employee for our\nstronghold. Here she is~"
+    },
+    {
+      "kind" : "message",
+      "line" : 526,
+      "npc" : "Steward",
+      "text" : "[ Hired Kafra Employee ]\nHow do you do? I've\nbeen dispatched by the\nKafra Head Office to\nserve your guild's needs.\nI'll do my best to follow\nyour every command, Master."
+    },
+    {
+      "kind" : "message",
+      "line" : 535,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nOur contract will expire\nafter one month, so we must\npay additional fees to keep\nthis Kafra Employee in\nthe service of our guild."
+    },
+    {
+      "kind" : "message",
+      "line" : 543,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nAs you command, Master.\nHowever, I suggest hiring\na Kafra Employee as soon\nas possible since our guild\nwould greatly benefit from\nthe convenient Kafra services."
+    },
+    {
+      "kind" : "message",
+      "line" : 554,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nDo you wish to enter the\nGuild Treasure Room?\nOnly you, the Guild Master,\nare permitted to enter."
+    },
+    {
+      "kind" : "message",
+      "line" : 560,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nPlease remember to open\nthe Treasure Boxes at the\nproper time. Otherwise, the\ntreasure may disappear if\nsomething unexpected happens."
+    },
+    {
+      "kind" : "option",
+      "line" : 567,
+      "npc" : "Steward",
+      "text" : "Go to Treasure Room"
+    },
+    {
+      "kind" : "option",
+      "line" : 567,
+      "npc" : "Steward",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 569,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nAllow me to guide you\non the secret path to\nthe Treasure Room.\nPress the secret switch\nwhen you wish to return here."
+    },
+    {
+      "kind" : "message",
+      "line" : 589,
+      "npc" : "Steward",
+      "text" : "[ Steward ]\nItems in the Treasure Room\nare produced once each day.\nTherefore, you must obtain\nthe treasure items everyday.\nFor the sake of the guild,\nprioritize treasure harvesting!"
+    },
+    {
+      "kind" : "message",
+      "line" : 643,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nGreat job. Now, all you\nneed to do is destroy this\nEmperium to gain ownership\nover this stronghold."
+    },
+    {
+      "kind" : "message",
+      "line" : 652,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nAs guardian of this\nstronghold, I answer only\nto the master of the guild\nthat controls this place."
+    },
+    {
+      "kind" : "message",
+      "line" : 661,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$",
+        "strnpcinfo(1)"
+      ],
+      "text" : "{0}\nI am {1}, guardian of\nthis stronghold. For now,\nall is quiet in this place."
+    },
+    {
+      "kind" : "option",
+      "line" : 666,
+      "npc" : "Guardian",
+      "text" : "Converse"
+    },
+    {
+      "kind" : "option",
+      "line" : 666,
+      "npc" : "Guardian",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 668,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nDo you have any questions\nabout this stronghold?"
+    },
+    {
+      "kind" : "option",
+      "line" : 672,
+      "npc" : "Guardian",
+      "text" : "Guardian Stones"
+    },
+    {
+      "kind" : "option",
+      "line" : 672,
+      "npc" : "Guardian",
+      "text" : "Fortress Gates"
+    },
+    {
+      "kind" : "option",
+      "line" : 672,
+      "npc" : "Guardian",
+      "text" : "Link Flags"
+    },
+    {
+      "kind" : "option",
+      "line" : 672,
+      "npc" : "Guardian",
+      "text" : "Battle Strategy"
+    },
+    {
+      "kind" : "option",
+      "line" : 672,
+      "npc" : "Guardian",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 674,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThere is one Emperium\nand two Guardian Stones in\neach fortress. These stones\nare the first line of defense,\nand must be destroyed before\nenemies can even enter."
+    },
+    {
+      "kind" : "message",
+      "line" : 682,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThe stones are located in\n^4D4DFFGate Houses^000000 which must be\nprotected to prevent enemies\nfrom reaching the Emperium.\nGuardian Stones can ^4D4DFFrecall\nyour Guardians^000000 for protection."
+    },
+    {
+      "kind" : "message",
+      "line" : 690,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nFortresses with higher levels\nof defense can summon more\nGuardians: this is why it is\nso important for guilds to\ninvest in Defense Growth."
+    },
+    {
+      "kind" : "message",
+      "line" : 697,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nGuardian Stones that have\nbeen destroyed can be revived\nafter a certain time, but one of the guild members must give\nme the order. I can also report the status of the Guardian Stones."
+    },
+    {
+      "kind" : "message",
+      "line" : 704,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\n^4D4DFFFortress Gates^000000 are the second line of guild stronghold defense,\nand are protected by extra barricades activated by the Guardian Stones.\nThese gates are located in three different parts of the fortress."
+    },
+    {
+      "kind" : "message",
+      "line" : 709,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nBarricades are protected by\nGuardian Stones, and are\nrestored when the Guardian\nStones are retrieved. However,\nit is not as easy to restore\ndestroyed Fortress Gates."
+    },
+    {
+      "kind" : "message",
+      "line" : 717,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nFortress Gates can only be\nrestored when the ^4D4DFFguild\nmaster of a stronghold\nchanges^000000, or if ^4D4DFFrestoration\nis requested by the guild\nmaster of the stronghold^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 726,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nStrongholds have many\nLink Flags that allow you\nto access vital areas within\nrestrictions placed by the\nBarricades. Usually, ^4D4DFFFlag 1\nlinks to the Gate House^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nMany flags link directly to\nthe flag near the Emperium.\nThe final numbered flag is\nlinked to the Convenience\nFacility of the stronghold's\nowner. Keep this in mind."
+    },
+    {
+      "kind" : "message",
+      "line" : 743,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nStrategy? It would be better\nto develop your battle plan to\nexploit your guild's advantages\nand your enemies' weaknesses.\nUse the Gate Houses and Barricades, and rebuild as quickly as you can!"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nYou have no questions\nto ask of me? Well, I'm\nhere to serve your needs."
+    },
+    {
+      "kind" : "message",
+      "line" : 758,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nI'm always here, so\nfeel free to request my\nassistance whenever\nthe need arises."
+    },
+    {
+      "kind" : "message",
+      "line" : 767,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$",
+        "strcharinfo(0)"
+      ],
+      "text" : "{0}\nGreetings, {1}.\nWhat are your orders?"
+    },
+    {
+      "kind" : "option",
+      "line" : 771,
+      "npc" : "Guardian",
+      "text" : "Increase Stronghold Defense"
+    },
+    {
+      "kind" : "option",
+      "line" : 771,
+      "npc" : "Guardian",
+      "text" : "Situational Briefing"
+    },
+    {
+      "kind" : "option",
+      "line" : 771,
+      "npc" : "Guardian",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 775,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nI'm sorry, but the Guardian\nStones aren't powerful enough\nto summon Guardians yet. We\nneed to accumulate more\nknowledge before they can\nsummon any Guardians."
+    },
+    {
+      "kind" : "message",
+      "line" : 785,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nI shall endeavor to summon\na Guardian through a Guardian\nStone. However, keep in mind\nthat this will not work if the\nGuardian Stone is destroyed."
+    },
+    {
+      "kind" : "message",
+      "line" : 800,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nYou've already commanded\nme to summon a Guardian\nto defend the stronghold."
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nOur defense status is..."
+    },
+    {
+      "kind" : "message",
+      "line" : 810,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[0]\")]",
+        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[1]\")]",
+        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[2]\")]",
+        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[3]\")]",
+        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[4]\")]"
+      ],
+      "text" : "1st Guardian Stone: {0}^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: {2}^000000\n2nd Fortress Gate: {3}^000000\n3rd Fortress Gate: {4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 817,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nI'll be standing by,\nawaiting your orders."
+    },
+    {
+      "kind" : "message",
+      "line" : 826,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nWho are you? Scoundrel!\nLeave this stronghold now!"
+    },
+    {
+      "kind" : "message",
+      "line" : 843,
+      "npc" : "Kafra",
+      "placeholders" : [
+        "GetGuildName(.@GID)"
+      ],
+      "text" : "[Kafra Employee]\nWelcome, proud member\nof the ^FF0000{0}^000000 Guild!\nThe Kafra Corporation is ready\nto assist you wherever you go!"
+    },
+    {
+      "kind" : "option",
+      "line" : 849,
+      "npc" : "Kafra",
+      "text" : "Use Storage"
+    },
+    {
+      "kind" : "option",
+      "line" : 849,
+      "npc" : "Kafra",
+      "text" : "Use Warp Service"
+    },
+    {
+      "kind" : "option",
+      "line" : 849,
+      "npc" : "Kafra",
+      "text" : "Rent Pushcart"
+    },
+    {
+      "kind" : "option",
+      "line" : 849,
+      "npc" : "Kafra",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Kafra",
+      "text" : "[Kafra Employee]\nI'm so sorry, but you must\nhave at least Novice Skill\nLv.6 to use the Storage."
+    },
+    {
+      "kind" : "message",
+      "line" : 860,
+      "npc" : "Kafra",
+      "text" : "[Kafra Employee]\nPlease tell me your\nWarp destination."
+    },
+    {
+      "kind" : "option",
+      "line" : 864,
+      "npc" : "Kafra",
+      "text" : "Rachel -> 200 z"
+    },
+    {
+      "kind" : "option",
+      "line" : 864,
+      "npc" : "Kafra",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 867,
+      "npc" : "Kafra",
+      "text" : "[Kafra Employee]\nI'm sorry, but you don't\nhave enough Zeny to pay\nthe warp fee. Would you\nplease check your funds again?"
+    },
+    {
+      "kind" : "message",
+      "line" : 886,
+      "npc" : "Kafra",
+      "text" : "[Kafra Employee]\nI'm sorry, but the Pushcart\nrental service can only be\nused by Merchant, Blacksmith,\nand Alchemist class characters."
+    },
+    {
+      "kind" : "message",
+      "line" : 893,
+      "npc" : "Kafra",
+      "text" : "[Kafra Employee]\nHm? You've already\nrented a Pushcart."
+    },
+    {
+      "kind" : "message",
+      "line" : 898,
+      "npc" : "Kafra",
+      "text" : "[Kafra Employee]\nThe Pushcart rental fee\nis 800 Zeny. Would you\nlike to rent a Pushcart?"
+    },
+    {
+      "kind" : "option",
+      "line" : 903,
+      "npc" : "Kafra",
+      "text" : "Rent Pushcart"
+    },
+    {
+      "kind" : "option",
+      "line" : 903,
+      "npc" : "Kafra",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 906,
+      "npc" : "Kafra",
+      "text" : "[Kafra Employee]\nI'm sorry, but you don't\nhave enough Zeny to rent\none of our Pushcarts."
+    },
+    {
+      "kind" : "message",
+      "line" : 923,
+      "npc" : "Kafra",
+      "text" : "[Kafra Employee]\nThank you for using the\nKafra Service. Wherever\nyou go, Kafra will be\nthere to support you!"
+    },
+    {
+      "kind" : "message",
+      "line" : 937,
+      "npc" : "Kafra",
+      "placeholders" : [
+        "getguildname(.@GID)"
+      ],
+      "text" : "[Kafra Employee]\nI'm sorry, but I've been\nexclusively contracted\nto the members of the\n^FF0000{0}^000000 Guild.\nYou'll have to ask another\nKafra Employee to help you..."
+    },
+    {
+      "kind" : "message",
+      "line" : 957,
+      "npc" : "Guardian Stone",
+      "text" : "^3355FFYou will need the\nfollowing materials to\nrebuild a destroyed\nGuardian Stone.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 962,
+      "npc" : "Guardian Stone",
+      "text" : "1 Oridecon\n1 Elunium\n30 Stones\n5 Blue Gemstones\n5 Yellow Gemstones\n5 Red Gemstones"
+    },
+    {
+      "kind" : "message",
+      "line" : 969,
+      "npc" : "Guardian Stone",
+      "text" : "^3355FFDo you want to continue?^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 971,
+      "npc" : "Guardian Stone",
+      "text" : "No"
+    },
+    {
+      "kind" : "option",
+      "line" : 971,
+      "npc" : "Guardian Stone",
+      "text" : "Continue"
+    },
+    {
+      "kind" : "message",
+      "line" : 972,
+      "npc" : "Guardian Stone",
+      "text" : "^3355FFWork canceled.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 976,
+      "npc" : "Guardian Stone",
+      "text" : "^3355FFArrange Stones, Elunium, and\nOridecon, in that order, in the\ncenter. Then you must arrange\nthe enchanted Gemstones to\nrebuild the Guardian Stone.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 983,
+      "npc" : "Guardian Stone",
+      "text" : "Elunium"
+    },
+    {
+      "kind" : "option",
+      "line" : 983,
+      "npc" : "Guardian Stone",
+      "text" : "Oridecon"
+    },
+    {
+      "kind" : "option",
+      "line" : 983,
+      "npc" : "Guardian Stone",
+      "text" : "Stone"
+    },
+    {
+      "kind" : "message",
+      "line" : 985,
+      "npc" : "Guardian Stone",
+      "placeholders" : [
+        ".@stone$[.@i]"
+      ],
+      "text" : "^3355FF{0} has been\nplaced in the center.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 988,
+      "npc" : "Guardian Stone",
+      "text" : "Elunium"
+    },
+    {
+      "kind" : "option",
+      "line" : 988,
+      "npc" : "Guardian Stone",
+      "text" : "Oridecon"
+    },
+    {
+      "kind" : "option",
+      "line" : 988,
+      "npc" : "Guardian Stone",
+      "text" : "Stone"
+    },
+    {
+      "kind" : "message",
+      "line" : 990,
+      "npc" : "Guardian Stone",
+      "placeholders" : [
+        ".@stone$[.@i]"
+      ],
+      "text" : "^3355FFYou have lined the\noutside of the center\nwith some {0}.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 994,
+      "npc" : "Guardian Stone",
+      "text" : "Elunium"
+    },
+    {
+      "kind" : "option",
+      "line" : 994,
+      "npc" : "Guardian Stone",
+      "text" : "Oridecon"
+    },
+    {
+      "kind" : "option",
+      "line" : 994,
+      "npc" : "Guardian Stone",
+      "text" : "Stone"
+    },
+    {
+      "kind" : "message",
+      "line" : 996,
+      "npc" : "Guardian Stone",
+      "placeholders" : [
+        ".@stone$[.@i]"
+      ],
+      "text" : "^3355FFYou covered the\nrest of the materials\nwith some {0}.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1000,
+      "npc" : "Guardian Stone",
+      "text" : "^3355FFNow you need to arrange\nthe enchanted Gemstones\naccordingly. You can identify\ntheir Magic properties by\ntheir casting effect.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1012,
+      "npc" : "Guardian Stone",
+      "text" : "^3355FFThe Gemstones must\nbe arranged in the correct\norder according to their\nmagic properties and power.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1017,
+      "npc" : "Guardian Stone",
+      "text" : "Red Gemstone"
+    },
+    {
+      "kind" : "option",
+      "line" : 1017,
+      "npc" : "Guardian Stone",
+      "text" : "Yellow Gemstone"
+    },
+    {
+      "kind" : "option",
+      "line" : 1017,
+      "npc" : "Guardian Stone",
+      "text" : "Blue Gemstone"
+    },
+    {
+      "kind" : "message",
+      "line" : 1018,
+      "npc" : "Guardian Stone",
+      "placeholders" : [
+        ".@color$[.@j]"
+      ],
+      "text" : "^3355FFYou placed the {0} Gemstone.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1020,
+      "npc" : "Guardian Stone",
+      "text" : "^3355FFHowever, the Guardian Stone\nRepair System failed because\nof a magic power conflict.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1032,
+      "npc" : "Guardian Stone",
+      "text" : "^3355FFThe Guardian Stone\nRepair System has\nalready completed.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1039,
+      "npc" : "Guardian Stone",
+      "text" : "^3355FFIt is impossible to\nrebuild the Guardian\nStone because the\nEmperium is not present.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1046,
+      "npc" : "Guardian Stone",
+      "text" : "^3355FFThe Gemstones have been\narranged, and the Guardian\nStone is successfully repaired.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1073,
+      "npc" : "Guardian Stone",
+      "text" : "^3355FFAfter all of that work...\nIt looks like you failed\nto fix the Guardian Stone,\nand lost some materials.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1085,
+      "npc" : "Guardian Stone",
+      "text" : "^3355FFYou don't have enough\nmaterials to repair\nthe Guardian Stone.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1113,
+      "npc" : "Control",
+      "text" : "^3355FFDemolished Fortress\nGates can be repaired,\nbut you will need to gather\nthe following materials.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1118,
+      "npc" : "Control",
+      "text" : "^4D4DFF10 Steel^000000,\n^4D4DFF30 Trunks^000000,\n^4D4DFF5 Oridecon^000000, and\n^4D4DFF10 Emveretarcon^000000."
+    },
+    {
+      "kind" : "option",
+      "line" : 1123,
+      "npc" : "Control",
+      "text" : "Continue"
+    },
+    {
+      "kind" : "message",
+      "line" : 1125,
+      "npc" : "Control",
+      "text" : "^3355FFYou will need Trunks to\nrepair the support frame,\nOridecon to enhance the\ngate's endurance, and\nEmveretarcon to basically\nhold everything together.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1138,
+      "npc" : "Control",
+      "text" : "^3355FFThe support frame\nis badly damaged:\nfixing this part\nis a top priority.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1143,
+      "npc" : "Control",
+      "text" : "Trunk"
+    },
+    {
+      "kind" : "option",
+      "line" : 1143,
+      "npc" : "Control",
+      "text" : "Steel"
+    },
+    {
+      "kind" : "option",
+      "line" : 1143,
+      "npc" : "Control",
+      "text" : "Emveretarcon"
+    },
+    {
+      "kind" : "option",
+      "line" : 1143,
+      "npc" : "Control",
+      "text" : "Oridecon"
+    },
+    {
+      "kind" : "message",
+      "line" : 1145,
+      "npc" : "Control",
+      "text" : "^3355FFThe frame has been\nreinforced with wood.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1153,
+      "npc" : "Control",
+      "text" : "^3355FFYou tried using steel,\nbut it's not working very\nwell. You'll have to try\nsomething else.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1159,
+      "npc" : "Control",
+      "text" : "^3355FFYou tried using emveretarcon\nto reinforce the gate, but it's\nnot working well at all.\nYou'll have to start over.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1165,
+      "npc" : "Control",
+      "text" : "^3355FFYou tried using oridecon,\nbut it's not working very\nwell. You'll have to try\nsomething else.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1173,
+      "npc" : "Control",
+      "text" : "^3355FFIt looks like the gate's\noverall endurance needs to\nbe reinforced with something.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1177,
+      "npc" : "Control",
+      "text" : "Trunk"
+    },
+    {
+      "kind" : "option",
+      "line" : 1177,
+      "npc" : "Control",
+      "text" : "Steel"
+    },
+    {
+      "kind" : "option",
+      "line" : 1177,
+      "npc" : "Control",
+      "text" : "Emveretarcon"
+    },
+    {
+      "kind" : "option",
+      "line" : 1177,
+      "npc" : "Control",
+      "text" : "Oridecon"
+    },
+    {
+      "kind" : "message",
+      "line" : 1179,
+      "npc" : "Control",
+      "text" : "^3355FFYou tried using wood\nto reinforce the gate.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1185,
+      "npc" : "Control",
+      "text" : "^3355FFYou tried using steel\nto reinforce the gate, but\nit's not working well at all.\nYou'll have to start over.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1191,
+      "npc" : "Control",
+      "text" : "^3355FFYou tried using emveretarcon\nto reinforce the gate, but it's\nnot working well at all.\nYou'll have to start over.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1197,
+      "npc" : "Control",
+      "text" : "^3355FFYou hammered the\noridecon: it looks\nlike this will work.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1208,
+      "npc" : "Control",
+      "text" : "^3355FFThe damage to the gate\nhas caused all these\ncracks. You'll have to\nweld them solid somehow.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Control",
+      "text" : "Trunk"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Control",
+      "text" : "Steel"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Control",
+      "text" : "Emveretarcon"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Control",
+      "text" : "Oridecon"
+    },
+    {
+      "kind" : "message",
+      "line" : 1215,
+      "npc" : "Control",
+      "text" : "^3355FFYou tried using wood to fix\nthis problem, but it seems\nto have made it worse.\nYou'll have to start all over.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1221,
+      "npc" : "Control",
+      "text" : "^3355FFYou used steel to weld\nall the cracks: the gate is\nis starting to look more solid.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1230,
+      "npc" : "Control",
+      "text" : "^3355FFYou tried using emveretarcon\nto reinforce the gate, but it's\nnot working well at all.\nYou'll have to start over.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1236,
+      "npc" : "Control",
+      "text" : "^3355FFYou tried using oridecon,\nbut it's not working very\nwell. You'll have to try\nsomething else.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1244,
+      "npc" : "Control",
+      "text" : "^3355FFNow you need to make\nsure that the gate is held\ntogether pretty solidly.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1248,
+      "npc" : "Control",
+      "text" : "Trunk"
+    },
+    {
+      "kind" : "option",
+      "line" : 1248,
+      "npc" : "Control",
+      "text" : "Steel"
+    },
+    {
+      "kind" : "option",
+      "line" : 1248,
+      "npc" : "Control",
+      "text" : "Emveretarcon"
+    },
+    {
+      "kind" : "option",
+      "line" : 1248,
+      "npc" : "Control",
+      "text" : "Oridecon"
+    },
+    {
+      "kind" : "message",
+      "line" : 1250,
+      "npc" : "Control",
+      "text" : "^3355FFYou tried using wood to fix\nthis problem, but it seems\nto have made it worse.\nYou'll have to start all over.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1256,
+      "npc" : "Control",
+      "text" : "^3355FFYou tried using steel,\nbut it's not working very\nwell. You'll have to try\nsomething else.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1262,
+      "npc" : "Control",
+      "text" : "^3355FFYou successfully used\nthe emveretarcon to repair\nmuch of the gate's damage.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1271,
+      "npc" : "Control",
+      "text" : "^3355FFYou tried using oridecon,\nbut it's not working very\nwell. You'll have to try\nsomething else.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1280,
+      "npc" : "Control",
+      "text" : "^3355FFWell, it looks like\nyou're just about done\nwith repairing the gate.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1285,
+      "npc" : "Control",
+      "text" : "^3355FFUnfortunately, the Fortress\nGate can't be reconstructed:\nthe Emperium is no longer here.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1292,
+      "npc" : "Control",
+      "text" : "^3355FFThe Fortress Gate has\nbeen successfully repaired!^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1313,
+      "npc" : "Control",
+      "text" : "^3355FFThe wall has been breached,\nand the attempt to repair the\nFortress Gate has failed.\nYou lost some of your\nrepair resources...^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1327,
+      "npc" : "Control",
+      "text" : "^3355FFYou can't attempt to repair\nthe Fortress Gate if you don't\nhave all the needed materials.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1715,
+      "npc" : "LinkFlag",
+      "text" : "^3355FFThis is the Stronghold\nTeleport Service. Would\nyou like to teleport to the\nConvenience Facility for\nguild members?^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1720,
+      "npc" : "LinkFlag",
+      "text" : "Go to Convenience Facility"
+    },
+    {
+      "kind" : "option",
+      "line" : 1720,
+      "npc" : "LinkFlag",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1725,
+      "npc" : "LinkFlag",
+      "text" : "^3355FFThis is the Stronghold\nTeleport Service. Would\nyou like to teleport to\nthe Emperium Center?^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1729,
+      "npc" : "LinkFlag",
+      "text" : "Teleport"
+    },
+    {
+      "kind" : "option",
+      "line" : 1729,
+      "npc" : "LinkFlag",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1733,
+      "npc" : "LinkFlag",
+      "text" : "^3355FFThis is the Stronghold\nTeleport Service. Please\nchoose a destination\nwithin the stronghold.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1753,
+      "npc" : "ReturnFlag",
+      "placeholders" : [
+        ".@str$",
+        ".@str$"
+      ],
+      "text" : "[ {0} Royal Edict ]\nThe Holy Kingdom of\n{1} declares that\none has yet to claim lordship\nover this stronghold. The one\nthat breaks the Emperium will\nbe recognized as its new owner."
+    },
+    {
+      "kind" : "message",
+      "line" : 1763,
+      "npc" : "ReturnFlag",
+      "text" : "[ Ringing Voice ]\nCourageous one,\ndo you wish to return\nto your stronghold?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1768,
+      "npc" : "ReturnFlag",
+      "text" : "Return to the Stronghold"
+    },
+    {
+      "kind" : "option",
+      "line" : 1768,
+      "npc" : "ReturnFlag",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1783,
+      "npc" : "ReturnFlag",
+      "placeholders" : [
+        ".@str$",
+        ".@str$",
+        "getguildname(.@GID)"
+      ],
+      "text" : "[ {0} Royal Edict ]\nThe Holy Kingdom of\n{1} decrees that\nthis stronghold is owned\nby the ^FF0000{2}^000000 Guild."
+    },
+    {
+      "kind" : "message",
+      "line" : 1789,
+      "npc" : "ReturnFlag",
+      "placeholders" : [
+        ".@str$",
+        "getguildmaster(.@GID)",
+        "getguildname(.@GID)"
+      ],
+      "text" : "[ {0} Royal Edict ]\n^FF0000{1}^000000 is\nGuild Master of ^FF0000{2}^000000.\nAny that object must claim this\nstronghold through strength of\nsteel and magic during the\nappointed Guild Siege times."
+    },
+    {
+      "kind" : "message",
+      "line" : 1802,
+      "npc" : "Switch",
+      "text" : " \n^3355FFWill you pull\nthis small lever?^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1806,
+      "npc" : "Switch",
+      "text" : "Pull Lever"
+    },
+    {
+      "kind" : "option",
+      "line" : 1806,
+      "npc" : "Switch",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1825,
+      "npc" : "Sunflower",
+      "text" : "- It's an amazingly huge sunflower; as big as a human! ... You feel something mysterious emanating from the flower. -"
+    },
+    {
+      "kind" : "option",
+      "line" : 1827,
+      "npc" : "Sunflower",
+      "text" : "Hold the stem."
+    },
+    {
+      "kind" : "option",
+      "line" : 1827,
+      "npc" : "Sunflower",
+      "text" : "Do nothing."
+    },
+    {
+      "kind" : "message",
+      "line" : 1843,
+      "npc" : "Sunflower",
+      "text" : "It's too scary to touch unknown things."
+    }
+  ]
+}

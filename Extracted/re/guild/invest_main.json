@@ -1,0 +1,1521 @@
+{
+  "file" : "npc/re/guild/invest_main.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "F_Invest_Abyss",
+      "text" : "There are 2 ways to invest, by Zeny or the Investment Certificate given out by the Cat Paw Merchant Guild.\nWhich way would you like to make your investment?"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "F_Invest_Abyss",
+      "text" : "Invest with Zeny."
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "F_Invest_Abyss",
+      "text" : "Invest with Investment Certificates."
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "F_Invest_Abyss",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 122,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nSo you've decided to invest in Zeny.\nMinimum investment unit is ^4d4dff10,000 Zeny^000000.\nYou can invest a maximum of 50 units which is ^4d4dff500,000 Zeny^000000."
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "F_Invest_Abyss",
+      "text" : "1 unit 10,000 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "F_Invest_Abyss",
+      "text" : "10 units 100,000 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "F_Invest_Abyss",
+      "text" : "50 units 500,000 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "F_Invest_Abyss",
+      "text" : "Another amount"
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "F_Invest_Abyss",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nPlease enter the amount you want to invest.\nPlease choose between 1 to 200.\nPlease enter 0 to cancel."
+    },
+    {
+      "kind" : "message",
+      "line" : 145,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nYou've exceeded the amount per investment.\nPlease try again."
+    },
+    {
+      "kind" : "message",
+      "line" : 150,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nCanceled."
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nCanceled."
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nYou do not have enough money."
+    },
+    {
+      "kind" : "message",
+      "line" : 166,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$",
+        "callfunc(\"F_InsertPlural\",.@units,\"unit\")",
+        "callfunc(\"F_InsertComma\",.@zeny)",
+        "getarg(2,\"\")"
+      ],
+      "text" : "{0}\nYou've invested {1} {2} Zeny{3}.\nNot much but this is a small gift. You can exchange it with items in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 174,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nWow, you've brought Investment Certificates.\nHow many certificates will you submit?"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "F_Invest_Abyss",
+      "text" : "1 Investment Certificate"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "F_Invest_Abyss",
+      "text" : "5 Investment Certificates"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "F_Invest_Abyss",
+      "text" : "Another amount"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "F_Invest_Abyss",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nPlease enter the number of Investment Certificates you want to submit.\nPlease choose between 1 to 20.\nPlease enter 0 to cancel."
+    },
+    {
+      "kind" : "message",
+      "line" : 193,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nYou've exceeded the amount per investment.\nPlease try again."
+    },
+    {
+      "kind" : "message",
+      "line" : 198,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nCanceled."
+    },
+    {
+      "kind" : "message",
+      "line" : 204,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nCanceled."
+    },
+    {
+      "kind" : "message",
+      "line" : 209,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nLooks like you have fewer Investment Certificates than you want to submit."
+    },
+    {
+      "kind" : "message",
+      "line" : 214,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@tickets",
+        "((.@tickets == 1)?\" is\":\"s are\")",
+        ".@units",
+        "((.@units < 100)?.@units:insertchar(\"\"+.@units,\",\",1))",
+        "getarg(2,\"\")"
+      ],
+      "text" : "{0}\n{1} Investment Certificate{2} the same as an investment of {3} units ({4}0,000z){5}.\nNot much but this is a small gift. You can exchange it with items in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 222,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nCanceled."
+    },
+    {
+      "kind" : "message",
+      "line" : 394,
+      "npc" : "Investment_total",
+      "text" : "Is this not working properly?"
+    },
+    {
+      "kind" : "message",
+      "line" : 397,
+      "npc" : "Investment_total",
+      "text" : "If you think the investment timer is dead, please adjust the timer."
+    },
+    {
+      "kind" : "option",
+      "line" : 399,
+      "npc" : "Investment_total",
+      "text" : "Turn on the timer"
+    },
+    {
+      "kind" : "option",
+      "line" : 399,
+      "npc" : "Investment_total",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 402,
+      "npc" : "Investment_total",
+      "text" : "You've turned on the timer."
+    },
+    {
+      "kind" : "message",
+      "line" : 405,
+      "npc" : "Investment_total",
+      "text" : "Canceled."
+    },
+    {
+      "kind" : "message",
+      "line" : 409,
+      "npc" : "Investment_total",
+      "text" : "I don't need to adjust anything now."
+    },
+    {
+      "kind" : "message",
+      "line" : 469,
+      "npc" : "Revoting Manager",
+      "text" : "[Revoting Manager]\nWe are not accepting additional votes.\nPlease wait for our results announcement."
+    },
+    {
+      "kind" : "message",
+      "line" : 561,
+      "npc" : "Revoting Manager",
+      "text" : "[Revoting Manager]\nNo! This is not the time to take a revote."
+    },
+    {
+      "kind" : "message",
+      "line" : 569,
+      "npc" : "Revoting Manager",
+      "text" : "[Revoting Manager]\nYou've already participated in the vote.\nPlease relax and wait for the results."
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Revoting Manager",
+      "text" : "[Revoting Manager]\nWould you like to participate in the vote for choosing where to connect the 'Abyss Gate'?"
+    },
+    {
+      "kind" : "option",
+      "line" : 578,
+      "npc" : "Revoting Manager",
+      "text" : "Participate in the vote."
+    },
+    {
+      "kind" : "option",
+      "line" : 578,
+      "npc" : "Revoting Manager",
+      "text" : "Skip for now."
+    },
+    {
+      "kind" : "message",
+      "line" : 579,
+      "npc" : "Revoting Manager",
+      "text" : "[Revoting Manager]\nYou've canceled the vote."
+    },
+    {
+      "kind" : "message",
+      "line" : 583,
+      "npc" : "Revoting Manager",
+      "text" : "[Revoting Manager]\nYou can vote once and won't need to invest for your choice.\nPlesae choose one WOE area."
+    },
+    {
+      "kind" : "message",
+      "line" : 602,
+      "npc" : "Revoting Manager",
+      "placeholders" : [
+        ".@menu$[.@vote]"
+      ],
+      "text" : "[Revoting Manager]\nYou've voted for {0}.\nThanks for voting."
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$",
+        ".@name$",
+        ".@intro$"
+      ],
+      "text" : "{0}\nI'm {1}, the {2} of the Cat Paw Merchant Guild.\nI consult about investments for the Abyss Gate development.\nHow may I help you?"
+    },
+    {
+      "kind" : "option",
+      "line" : 729,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "What is the Abyss Gate?"
+    },
+    {
+      "kind" : "option",
+      "line" : 729,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "Investing in the gate development?"
+    },
+    {
+      "kind" : "option",
+      "line" : 729,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "I want to invest in this area."
+    },
+    {
+      "kind" : "option",
+      "line" : 729,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nIt is only called the Abyss Gate for convenience but it's simply a ^4d4dffgap to another dimension^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nMore of these gaps are found here and there after Morocc created the Crack of Dimension.\nI personally think that the Abyss Gate found recently is part of the past or even from the future."
+    },
+    {
+      "kind" : "message",
+      "line" : 738,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nIt is said that the Abyss Gate forcefully connects to another dimension beyond our world.\nProbably because there are those that follow the Emperium's power."
+    },
+    {
+      "kind" : "message",
+      "line" : 742,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThere are a total of 4 Abyss Gates found so far. They all connect to the Agit region overflowing with the Emperium's force."
+    },
+    {
+      "kind" : "message",
+      "line" : 745,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nWe named each by dimension beyond the gap.\n^4d4dffWay of the Warrior, Hill of the Dead, Winds of the Ancient, and the Hero's Tears.^000000\nAnd all these four gaps are called the ^4d4dffAbyss Gate^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 750,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThe gap may lead to the past, future or even an unknown world.\nThe power the Abyss Gate holds is both fearful but sweet"
+    },
+    {
+      "kind" : "message",
+      "line" : 754,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nAre you also interested in exploring the Abyss Gate?\nHa ha. You'll need to go through several steps before exploring."
+    },
+    {
+      "kind" : "message",
+      "line" : 758,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nIf you are interested,\nwill you take the time to sit down and talk about investing in maintaining the Abyss Gate?"
+    },
+    {
+      "kind" : "message",
+      "line" : 763,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nAre you curious about investing in the Gate development?\nWhat do you want to know about?"
+    },
+    {
+      "kind" : "option",
+      "line" : 767,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "About the Gate?"
+    },
+    {
+      "kind" : "option",
+      "line" : 767,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "About investments?"
+    },
+    {
+      "kind" : "option",
+      "line" : 767,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "How to invest?"
+    },
+    {
+      "kind" : "option",
+      "line" : 767,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "Benefits from investing?"
+    },
+    {
+      "kind" : "message",
+      "line" : 769,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThe Gate is what it is named after, a door.\nA dimensional passageway that connects here to there."
+    },
+    {
+      "kind" : "message",
+      "line" : 773,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThe Abyss Gate was created as a very unstable path from beyond the dimensional gap,\ntherefore traveling through the Gate will need an artificial dimension connection."
+    },
+    {
+      "kind" : "message",
+      "line" : 777,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nHumans are far from having the advanced technology that's needed\nbut our Cat Paw Merchant Guild holds the high technology to use the Crack of Dimension."
+    },
+    {
+      "kind" : "message",
+      "line" : 781,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nSo we made a proposal.\nWith the promise of support the Cat Paw Merchant Guild and paying for the immense expense for maintaining the connection with the Gate,\nwe will make the connection to the Crack of Dimension."
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nOf course working on the Crack of Dimension is no easy job and it does come with risks.\nThere are cases where people go missing from traveling between."
+    },
+    {
+      "kind" : "message",
+      "line" : 790,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThe best maintaining duration is about 4 days\nYou invest in us and we create the door that connects to the dimensional gap."
+    },
+    {
+      "kind" : "message",
+      "line" : 794,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nDoesn't this sound like the perfect win-win proposal?"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nForcing through the unstable dimensional gap and creating a passageway is very dangerous.\nNot to mention the huge resources needed."
+    },
+    {
+      "kind" : "message",
+      "line" : 802,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nIf you take care of the charges and also the danger pay by investing in the Cat Paw Merchant Guild,\nwe'll create and maintain the gate regardless of the risks."
+    },
+    {
+      "kind" : "message",
+      "line" : 806,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nBut then of course the money involved for the gate costs will be extreme.\nIt will be easy if you can find investors to share the amount."
+    },
+    {
+      "kind" : "message",
+      "line" : 810,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThere is a basic charge to start connecting the gate.\nResults depend on the how much investment money is collected."
+    },
+    {
+      "kind" : "message",
+      "line" : 814,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThe Abyss Gate exists in each Agit region.\nCan you imagine how much money and sacrifice our guild will have to go through to develop in all areas?"
+    },
+    {
+      "kind" : "message",
+      "line" : 818,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThis explains the regional competition in investments.\nIf not enough gate maintenance costs are collected then it is obvious the region with the most investments will receive the benefits"
+    },
+    {
+      "kind" : "message",
+      "line" : 822,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nIf ^4d4dffthe Abyss Gate is successfully connected then the dungeon of the hideout area\nwill be open to others instead of being guild exclusive^000000 which will be very attractive for investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 826,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nBut then again, this is only for when the gate is connected."
+    },
+    {
+      "kind" : "message",
+      "line" : 830,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nIt's simple.\nVisit the branch manager of the ^4d4dffregion you want to invest in during the investment duration^000000 and make your investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nWe usually receive ^4d4dffthe common currency here, Zeny^000000.\nBut since we're talking about supporting our Cat Paw Merchant Guild, you can also invest with items in demand in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 838,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nProvide the items in need to Namis in Malangdo who is in charge of general affairs in our guild.\nBring back your Investment Certificate to add it to the investment tribute."
+    },
+    {
+      "kind" : "message",
+      "line" : 842,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nYou must visit and invest at the region you want in order for your investment to be counted as a tribute."
+    },
+    {
+      "kind" : "message",
+      "line" : 846,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThe Abyss Gate is basically contracting and connecting with the castle that owns the Agit;\ntherefore, we will provide all we have once the costs for connecting and maintaining the gate are sufficient."
+    },
+    {
+      "kind" : "message",
+      "line" : 850,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nIn terms of the minimum and maximum costs for the whole work,\nif the collected investment ^4d4dffexceeds the minimum costs^000000, we can connect you to the ^4d4dffdeepest layer of an unknown guild dungeon^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 854,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nIf investments exceed the maximum costs, that region will be connected to the\n^4d4dffAbyss Gate^000000 regardless of the investment rank which includes the deepest layer of the guild dungeon."
+    },
+    {
+      "kind" : "message",
+      "line" : 858,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\n^ff0000If there is no Agit region that reached the maximum investment, then the region with the\nhighest investment participation will get the Abyss Gate connected with the investment collected from all regions.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 862,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nOnce the Abyss Gate is connected, the deepest layer (2F) of the guild dungeon\nwill be open to all adventurers that participated in the regional investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 866,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nVisits to the dungeon will be counted for the next investment for the Agit region\nso being in good terms with the guild that claims the Agit castle will be a bonus."
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nBy the way, it isn't easy to maintain the connection with the Abyss Gate and investments and reconnection is needed weekly\nso please continue your support and investment if you want the power of the unknown."
+    },
+    {
+      "kind" : "message",
+      "line" : 877,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "- Currently you're carrying -\n- too many items with you. -\n- Please try again after you -\n- lose some weight. -"
+    },
+    {
+      "kind" : "message",
+      "line" : 884,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nYou have too many Thank You Tickets to receive any more.\nCannot give you any more tickets. Please use your ticket and come back.\nThe ticket can be exchanged with various items in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 891,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nWe do not receive investments now.\nPlease come back during the investment duration."
+    },
+    {
+      "kind" : "message",
+      "line" : 907,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$",
+        ".@realm$"
+      ],
+      "text" : "{0}\nWould you like to invest in the ^4d4dff{1}^000000 region?\nIf there is a castle occupied already, you will invest in the castle and the guild that is occupying it."
+    },
+    {
+      "kind" : "option",
+      "line" : 912,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 914,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nCanceled."
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$",
+        ".@castle_name$[.@i]",
+        ".@owner_name$[.@i]"
+      ],
+      "text" : "{0}\nThe guild that is occupying {1} is {2}.\nDoesn't look like your guild."
+    },
+    {
+      "kind" : "message",
+      "line" : 924,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$",
+        ".@castle_name$[.@i]",
+        ".@owner_name$[.@i]"
+      ],
+      "text" : "{0}\nInvest under {1}'s{2} guild name."
+    },
+    {
+      "kind" : "message",
+      "line" : 934,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nIs that so?\nPlease come back whenever you are interested in investing in the Abyss Gate development."
+    },
+    {
+      "kind" : "message",
+      "line" : 967,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nThere are currently no connected dungeon gates."
+    },
+    {
+      "kind" : "message",
+      "line" : 973,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$",
+        ".@gate$",
+        ".@realm$"
+      ],
+      "text" : "{0}\nWe've successfully connected the Abyss Gate [{1}] with the help from your investment.\nThe Agit dungeon will be open to everyone with a small entrance fee in {2}."
+    },
+    {
+      "kind" : "message",
+      "line" : 977,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nPlease visit as often as possible since the entrance fee is saved as an investment for the region.\nDo you want to enter the Agit dungeon?"
+    },
+    {
+      "kind" : "option",
+      "line" : 981,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@realm$"
+      ],
+      "text" : "{0} Dungeon 1F - 10000z"
+    },
+    {
+      "kind" : "option",
+      "line" : 981,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@realm$"
+      ],
+      "text" : "{0} Dungeon 2F - 10000z"
+    },
+    {
+      "kind" : "option",
+      "line" : 981,
+      "npc" : "Gate Manager",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 983,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nCanceled."
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "text" : "{0}\nI'm collecting a small entrance fee.\nYour contribution will be saved for the next investment.\nEntrance fee is 10000z."
+    },
+    {
+      "kind" : "message",
+      "line" : 994,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$",
+        ".@realm$",
+        ".@i"
+      ],
+      "text" : "{0}\nI'm sending you to the {1} Agit Dungeon {2}F."
+    },
+    {
+      "kind" : "message",
+      "line" : 1009,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$",
+        ".@realm$"
+      ],
+      "text" : "{0}\nThe {1} Agit Dungeon 2F is now available but since it is not connected with the Abyss Gate,\nthe Agit dungeon is only accessible to the Agit guild."
+    },
+    {
+      "kind" : "message",
+      "line" : 1014,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$",
+        ".@realm$"
+      ],
+      "text" : "{0}\n{1} was not chosen to be connected with a gate this time.\nPlease wait for the next investment duration."
+    },
+    {
+      "kind" : "message",
+      "line" : 1040,
+      "npc" : "Investment Status Board",
+      "text" : "There are currently no investment sums available."
+    },
+    {
+      "kind" : "message",
+      "line" : 1043,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        "callfunc(\"F_GetNumSuffix\",.@notice)"
+      ],
+      "text" : "{0} total (unit in 10,000z)"
+    },
+    {
+      "kind" : "message",
+      "line" : 1047,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        "getcastlename(.@map$)",
+        "getguildname(getcastledata(.@map$,CD_GUILD_ID))",
+        ".@fund[.@i]"
+      ],
+      "text" : "{0} {1} Guild: {2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 1050,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@realm$",
+        ".@fund[0]",
+        ".@realm$",
+        "(.@fund[0]+.@fund[1]+.@fund[2]+.@fund[3]+.@fund[4]+.@fund[5])"
+      ],
+      "text" : "{0} normal: {1}\n{2} Investment Grand Total: {3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 1054,
+      "npc" : "Investment Status Board",
+      "text" : "!- Notice -!\nNo sums are available because the total investment amount is currently being calculated.\nPlease wait for the announcement of the results."
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1064,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@invest_region$[.@i]"
+      ],
+      "text" : "^aaaaaa[{0}] below minimum^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1066,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@invest_region$[.@i]"
+      ],
+      "text" : "[{0}] minimum achieved\n-> Guild Dungeon Deepest Layer (2F) available"
+    },
+    {
+      "kind" : "message",
+      "line" : 1069,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@invest_region$[.@i]"
+      ],
+      "text" : "^4d4dff[{0}] maximum achieved^000000\n-> Abyss Gate available"
+    },
+    {
+      "kind" : "message",
+      "line" : 1072,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@invest_region$[.@i]"
+      ],
+      "text" : "No data for [{0}]."
+    },
+    {
+      "kind" : "message",
+      "line" : 1076,
+      "npc" : "Investment Status Board",
+      "text" : "!- Notice -!\nNo investment information will be announced now."
+    },
+    {
+      "kind" : "message",
+      "line" : 1103,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@realm$"
+      ],
+      "text" : "[Gate Manager]\nYou don't seem to be the member of guild owning this castle.\nIf you need any help, please visit any of our guild members at {0} Square."
+    },
+    {
+      "kind" : "message",
+      "line" : 1108,
+      "npc" : "Gate Manager",
+      "text" : "[Gate Manager]\nHello, I am the Gate Manager from Cat Paw Merchant Guild warp department.\nHow may I help you today?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1112,
+      "npc" : "Gate Manager",
+      "text" : "Invest for gate connection"
+    },
+    {
+      "kind" : "option",
+      "line" : 1112,
+      "npc" : "Gate Manager",
+      "text" : "Deepest Layer Dungeon Access"
+    },
+    {
+      "kind" : "option",
+      "line" : 1112,
+      "npc" : "Gate Manager",
+      "text" : "Abyss Gate Access"
+    },
+    {
+      "kind" : "option",
+      "line" : 1112,
+      "npc" : "Gate Manager",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1115,
+      "npc" : "Gate Manager",
+      "text" : "[Gate Manager]\nYou have too many items to receive the Thank You Ticket as a small gift for your investment.\nPlease come back after making room in your inventory."
+    },
+    {
+      "kind" : "message",
+      "line" : 1121,
+      "npc" : "Gate Manager",
+      "text" : "[Gate Manager]\nYou have too many Thank You Tickets to receive any more.\nCannot give you any more tickets. Please use your ticket and come back.\nThe ticket can be exchanged with various items in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 1128,
+      "npc" : "Gate Manager",
+      "text" : "[Gate Manager]\nWe do not receive investments now.\nPlease come back during the investment duration."
+    },
+    {
+      "kind" : "message",
+      "line" : 1134,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@realm$"
+      ],
+      "text" : "[Gate Manager]\nYou don't seem to be the member of the guild owning this castle.\nPlease use the normal investment from {0} Square."
+    },
+    {
+      "kind" : "message",
+      "line" : 1139,
+      "npc" : "Gate Manager",
+      "text" : "[Gate Manager]\nProceed investing under your guild name."
+    },
+    {
+      "kind" : "message",
+      "line" : 1145,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@realm$"
+      ],
+      "text" : "[Gate Manager]\nYou are interested in exploring the {0} Guild Dungeon Deepest Layer (2F).\nLet me guide you. Good luck."
+    },
+    {
+      "kind" : "message",
+      "line" : 1185,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@realm$"
+      ],
+      "text" : "[Gate Manager]\nLet me guide you to the Abyss Gap connected with {0}, the Abyss Gate 'Way of the Warrior'."
+    },
+    {
+      "kind" : "message",
+      "line" : 1223,
+      "npc" : "Gate Manager",
+      "text" : "[Gate Manager]\nCanceled."
+    },
+    {
+      "kind" : "message",
+      "line" : 1236,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "text" : "[Gate Manager]\n{0} was not chosen to be connected with a gate this time.\nPlease wait for the next investment duration."
+    },
+    {
+      "kind" : "message",
+      "line" : 1242,
+      "npc" : "Gate Manager",
+      "text" : "[Gate Manager]\nThere are currently no connected dungeon gates.\nA gate will be connected as soon as the investment results are available.\nPlease wait."
+    },
+    {
+      "kind" : "message",
+      "line" : 1248,
+      "npc" : "Gate Manager",
+      "text" : "[Gate Manager]\nThe gate will disappear soon.\nThe dungeon is no longer accessible.\nPlease try again next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 1259,
+      "npc" : "Cat Paw Merchants Notice",
+      "text" : "<< Cat Paw Merchants Notice >>\n'^C379CEInvest Unused Items for Prizes!^000000'"
+    },
+    {
+      "kind" : "option",
+      "line" : 1262,
+      "npc" : "Cat Paw Merchants Notice",
+      "text" : "Read Notice"
+    },
+    {
+      "kind" : "option",
+      "line" : 1262,
+      "npc" : "Cat Paw Merchants Notice",
+      "text" : "Check Event 1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1262,
+      "npc" : "Cat Paw Merchants Notice",
+      "text" : "Check Event 2"
+    },
+    {
+      "kind" : "message",
+      "line" : 1264,
+      "npc" : "Cat Paw Merchants Notice",
+      "text" : "- Notice -\nHello all Cat Paw Merchants customers! With your love, we Cat Paw Merchants are growing every day. All executives and staff members promise to do our best to further our frontier and development."
+    },
+    {
+      "kind" : "message",
+      "line" : 1267,
+      "npc" : "Cat Paw Merchants Notice",
+      "text" : "- Event Notice! -\n An Event called '^C379CEInvest Unused Items for Prizes!^000000' is under way, where you could exchange unused items in your storage for Investment Certificate of the Cat Paw Merchants."
+    },
+    {
+      "kind" : "message",
+      "line" : 1270,
+      "npc" : "Cat Paw Merchants Notice",
+      "text" : "Exchangeable items will be announced on a separate sheet. Thank you for your time.\n- From all the employees of Cat Paw Merchants -"
+    },
+    {
+      "kind" : "message",
+      "line" : 1273,
+      "npc" : "Cat Paw Merchants Notice",
+      "text" : "There is a small warning at the bottom.\n \n^FF0000This event could be changed or repealed due to the Merchants' situation.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1278,
+      "npc" : "Cat Paw Merchants Notice",
+      "text" : "'^C379CEInvest Unused Items for Prizes!^000000'\nThere are details of Event 1."
+    },
+    {
+      "kind" : "message",
+      "line" : 1314,
+      "npc" : "Cat Paw Merchants Notice",
+      "placeholders" : [
+        ".@event1$[.@i-1]",
+        ".@str$"
+      ],
+      "text" : "[{0}]\n{1} for one Cat Paw Merchants Investment Certificate."
+    },
+    {
+      "kind" : "message",
+      "line" : 1319,
+      "npc" : "Cat Paw Merchants Notice",
+      "text" : "Look out for the next '^C379CEInvest Unused Items for Prizes!^000000' Event 2!! Coming up real soon!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1326,
+      "npc" : "Namis",
+      "text" : "- Currently you're carrying -\n- too many items with you. -\n- Please try again after you -\n- lose some weight. -"
+    },
+    {
+      "kind" : "message",
+      "line" : 1335,
+      "npc" : "Namis",
+      "text" : "[Namis]\nPurr-Purr-Purrr-Purrrr-Pur~ Meow!!\nWh-- What? How rude. You scared me."
+    },
+    {
+      "kind" : "option",
+      "line" : 1339,
+      "npc" : "Namis",
+      "text" : "What do you need? I'll invest!"
+    },
+    {
+      "kind" : "option",
+      "line" : 1339,
+      "npc" : "Namis",
+      "text" : "What's the purpose of this event?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1339,
+      "npc" : "Namis",
+      "text" : "Were you asleep?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1343,
+      "npc" : "Namis",
+      "text" : "[Namis]\nSo, another pushover in contract with the Cat Paw Merchants?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1346,
+      "npc" : "Namis",
+      "text" : "Huh? What! You calling me a pushover?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1347,
+      "npc" : "Namis",
+      "text" : "[Namis]\nI'll say this just once, so you listen good!\nWe, the Cat Paw Merchants have planned an event for loyal workers like yourself."
+    },
+    {
+      "kind" : "message",
+      "line" : 1351,
+      "npc" : "Namis",
+      "text" : "[Namis]\nRun along to your storage and bring back rotting antiques to us and we'll exchange them for the oh-so valuable 'Cat Paw Merchants Investment Certificate'."
+    },
+    {
+      "kind" : "message",
+      "line" : 1354,
+      "npc" : "Namis",
+      "text" : "[Namis]\nIt will be wise for you to do so because the Cat Paw Merchants are doing this at a loss!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1357,
+      "npc" : "Namis",
+      "text" : "[Namis]\nDetails are on the notice."
+    },
+    {
+      "kind" : "message",
+      "line" : 1361,
+      "npc" : "Namis",
+      "text" : "[Namis]\nHick- Slurp-\nRemember, human! There's no other cat who works as hard as I do."
+    },
+    {
+      "kind" : "message",
+      "line" : 1366,
+      "npc" : "Namis",
+      "text" : "[Namis]\nYou must be here to participate in the '^C379CEInvest Unused Items for Prizes!^000000' event of the Cat Paw Merchants."
+    },
+    {
+      "kind" : "message",
+      "line" : 1369,
+      "npc" : "Namis",
+      "text" : "[Namis]\nSo, which event do you wish to participate in?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1372,
+      "npc" : "Namis",
+      "text" : "Not interested"
+    },
+    {
+      "kind" : "option",
+      "line" : 1372,
+      "npc" : "Namis",
+      "text" : "Event 1 Items"
+    },
+    {
+      "kind" : "option",
+      "line" : 1372,
+      "npc" : "Namis",
+      "text" : "Event 2 Items"
+    },
+    {
+      "kind" : "message",
+      "line" : 1374,
+      "npc" : "Namis",
+      "text" : "[Namis]\nDon't you mess with a busy cat!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1378,
+      "npc" : "Namis",
+      "text" : "[Namis]\nSo you're in for Event 1.\nChoose from the shown list."
+    },
+    {
+      "kind" : "message",
+      "line" : 1413,
+      "npc" : "Namis",
+      "text" : "[Namis]\nParticipate in Event 2?\nIt is not yet in motion. Wait for it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1428,
+      "npc" : "Namis",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[Namis]\nYou don't have the items?\n{0} exchange for one Cat Paw Merchants Investment Certificate."
+    },
+    {
+      "kind" : "message",
+      "line" : 1432,
+      "npc" : "Namis",
+      "text" : "[Namis]\nDon't bother me and look up the details on the board over there!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1436,
+      "npc" : "Namis",
+      "placeholders" : [
+        "getarg(4)",
+        "getarg(3)"
+      ],
+      "text" : "[Namis]\n'^8E5601{0} Event^000000'\nSeems to be the right items.\n{1}\nOh! Almost forgot. Will you invest?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1442,
+      "npc" : "Namis",
+      "text" : "Invest"
+    },
+    {
+      "kind" : "option",
+      "line" : 1442,
+      "npc" : "Namis",
+      "text" : "Don't Invest"
+    },
+    {
+      "kind" : "message",
+      "line" : 1443,
+      "npc" : "Namis",
+      "text" : "[Namis]\nDon't you mess with a busy cat!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1451,
+      "npc" : "Namis",
+      "text" : "[Namis]\nHere's your Certificate. Always be grateful to the Merchants for these events!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1466,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "- Currently you're carrying -\n- too many items with you. -\n- Please try again after you -\n- lose some weight. -"
+    },
+    {
+      "kind" : "message",
+      "line" : 1472,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "[Vending Machine Notice]\n^6815EA1. Don't kick the machine please. @_@\n2. You can only insert Invest Thanks Ticket.\n3. About the Jelly Box, if you open it, it gives you a random item.\n4. Hope you enjoy~^000000\n- Mr. Cat, the Machine Owner -"
+    },
+    {
+      "kind" : "option",
+      "line" : 1479,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "Finish"
+    },
+    {
+      "kind" : "option",
+      "line" : 1479,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "Purchase"
+    },
+    {
+      "kind" : "option",
+      "line" : 1479,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "Red Paw Jelly Bag (5 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1479,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "Black Paw Jelly Bag (50 Tickets)"
+    },
+    {
+      "kind" : "message",
+      "line" : 1483,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "The Vending Machine is selling items in the following list."
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "Finish"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "1 Siege Arrow Quiver A (2 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "1 Siege Arrow Quiver S (2 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "30 White Potion (12 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "30 White Slim Potion (14 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "10 Dark Water (20 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "20 Siege_Violet_Potion (30 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "10 Coldproof Potion (30 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "10 Thunderproof Potion (30 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "10 Earthproof Potion (30 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "10 Fireproof Potion (30 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "10 Elemental Converter[Fire] (30 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "10 Elemental Converter[Water] (30 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "10 Elemental Converter[Wind] (30 Tickets)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "10 Elemental Converter[Earth] (30 Tickets)"
+    },
+    {
+      "kind" : "message",
+      "line" : 1504,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "Red Paw Jelly Bag Button chosen. Need to insert 5 ^FF0000Invest Thanks Ticket^000000 and a random item will appear."
+    },
+    {
+      "kind" : "message",
+      "line" : 1507,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "You don't have enough ^FF0000Invest Thanks Ticket^000000 to proceed."
+    },
+    {
+      "kind" : "message",
+      "line" : 1573,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "Black Paw Jelly Bag Button chosen. Need to insert 50 ^FF0000Invest Thanks Ticket^000000 and a random item will appear."
+    },
+    {
+      "kind" : "message",
+      "line" : 1576,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "You don't have enough ^FF0000Invest Thanks Ticket^000000 to proceed."
+    },
+    {
+      "kind" : "message",
+      "line" : 1655,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "You don't have enough ^FF0000Invest Thanks Ticket^000000 to proceed."
+    },
+    {
+      "kind" : "message",
+      "line" : 1660,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "- Done! -"
+    },
+    {
+      "kind" : "message",
+      "line" : 1662,
+      "npc" : "Thanks Ticket Machine",
+      "placeholders" : [
+        "((getargcount() > 3)?getarg(3,\"\"):getitemname(getarg(1)))"
+      ],
+      "text" : "The item ^0000FF{0}^000000 has been obtained."
+    },
+    {
+      "kind" : "message",
+      "line" : 1668,
+      "npc" : "Thanks Ticket Machine",
+      "text" : "- Done! -"
+    },
+    {
+      "kind" : "message",
+      "line" : 1670,
+      "npc" : "Thanks Ticket Machine",
+      "placeholders" : [
+        "((getargcount() > 2)?getarg(2,\"\"):getitemname(getarg(0)))"
+      ],
+      "text" : "The item ^0000FF{0}^000000 has been obtained."
+    }
+  ]
+}

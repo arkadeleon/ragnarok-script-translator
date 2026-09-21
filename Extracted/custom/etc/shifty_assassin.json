@@ -1,0 +1,224 @@
+{
+  "file" : "npc/custom/etc/shifty_assassin.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 21,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nWhat do you want?"
+    },
+    {
+      "kind" : "option",
+      "line" : 24,
+      "npc" : "Shifty Assassin",
+      "text" : "Buy Ninjas"
+    },
+    {
+      "kind" : "option",
+      "line" : 24,
+      "npc" : "Shifty Assassin",
+      "text" : "Assassinate somebody"
+    },
+    {
+      "kind" : "option",
+      "line" : 24,
+      "npc" : "Shifty Assassin",
+      "text" : "Check your Ninjas"
+    },
+    {
+      "kind" : "option",
+      "line" : 24,
+      "npc" : "Shifty Assassin",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nHow many ninjas do you want to make available?"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        ".@add"
+      ],
+      "text" : "{0} ninjas added."
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        "$ninja_avail",
+        ".@ninja_price"
+      ],
+      "text" : "[Shifty Assassin]\nHow many ninjas do you want buy?\nThere are ^0000FF{0}^000000 ninjas available.\nThey cost ^0000FF{1} zeny ^000000each."
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        ".@price"
+      ],
+      "text" : "[Shifty Assassin]\nThat will cost you ^0000FF{0} zeny^000000."
+    },
+    {
+      "kind" : "option",
+      "line" : 52,
+      "npc" : "Shifty Assassin",
+      "text" : "Continue"
+    },
+    {
+      "kind" : "option",
+      "line" : 52,
+      "npc" : "Shifty Assassin",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 58,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nThank you."
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nEnter the name of the target.\n^FF0000Type the name exactly, otherwise I won't be able to find the victim.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 69,
+      "npc" : "Shifty Assassin",
+      "text" : "Continue"
+    },
+    {
+      "kind" : "option",
+      "line" : 69,
+      "npc" : "Shifty Assassin",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 72,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        ".@name$"
+      ],
+      "text" : "[Shifty Assassin]\n{0} is not online."
+    },
+    {
+      "kind" : "message",
+      "line" : 77,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        "#ninjas",
+        "#ninjasr"
+      ],
+      "text" : "[Shifty Assassin]\nActive Ninjas: {0}\nResting Ninjas: {1}\nHow many do you want to send?"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Shifty Assassin",
+      "text" : "Sending ninjas now."
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]"
+    },
+    {
+      "kind" : "message",
+      "line" : 97,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        "#ninjasr"
+      ],
+      "text" : "Your attack succeeded but only ^FF0000{0}^000000 Ninjas survived."
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "Shifty Assassin",
+      "text" : "Sending ninjas now."
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]"
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        "#ninjasr"
+      ],
+      "text" : "Your attack failed and only ^FF0000{0}^000000 Ninjas survived."
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nSorry, all my ninjas are busy doing War of Emperium."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        "#ninjas",
+        "#ninjasr"
+      ],
+      "text" : "[Shifty Assassin]\nYou have:\n^FF0000{0}^000000 Active Ninjas.\n^0000FF{1}^000000 Resting Ninjas."
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nYou can't kill anyone without ninjas."
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nYou can only send 10 ninjas max."
+    },
+    {
+      "kind" : "message",
+      "line" : 146,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nYou do not have enough zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 151,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nThere aren't that many ninjas to buy."
+    },
+    {
+      "kind" : "message",
+      "line" : 157,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nThere are no ninjas left to buy."
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nYou do not have that many ninjas."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nGoodbye."
+    }
+  ]
+}

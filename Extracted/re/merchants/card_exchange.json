@@ -1,0 +1,173 @@
+{
+  "file" : "npc/re/merchants/card_exchange.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "Card Vendor Machine",
+      "text" : "You have too many items, please reduce it and come back later!"
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Card Vendor Machine",
+      "text" : "You are overweight now, please reduce it and come back later!"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Card Vendor Machine",
+      "text" : "[Terminator RX1]\nText Explanation Begins:\nPress 1 for Cancel,\nPress 2 for Explanation,\nPress 3 for Coin Exchange,\nPress 4 for Card Exchange."
+    },
+    {
+      "kind" : "option",
+      "line" : 37,
+      "npc" : "Card Vendor Machine",
+      "text" : "1.Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 37,
+      "npc" : "Card Vendor Machine",
+      "text" : "2.Explanation"
+    },
+    {
+      "kind" : "option",
+      "line" : 37,
+      "npc" : "Card Vendor Machine",
+      "text" : "3.Change Card into Coin"
+    },
+    {
+      "kind" : "option",
+      "line" : 37,
+      "npc" : "Card Vendor Machine",
+      "text" : "4.Change Coin into Card"
+    },
+    {
+      "kind" : "option",
+      "line" : 37,
+      "npc" : "Card Vendor Machine",
+      "text" : "^ffffff5.Start Security System^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Card Vendor Machine",
+      "text" : "[Terminator RX1]\nYou are welcome!"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Card Vendor Machine",
+      "text" : "[Terminator RX1]\nNo.3, when you choose Coin Exchange, system will collect ONE card from your inventory randomly to exchange into ONE Coin."
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Card Vendor Machine",
+      "text" : "[Terminator RX1]\nNo.4, when you choose Card Excahnge, system will collect FIVE coin from your inventory to exchange into ONE Card randomly."
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Card Vendor Machine",
+      "text" : "[Terminator RX1]\nYou are welcome!"
+    },
+    {
+      "kind" : "message",
+      "line" : 86,
+      "npc" : "Card Vendor Machine",
+      "text" : "[Terminator RX1]\nCard searching has finished!"
+    },
+    {
+      "kind" : "message",
+      "line" : 89,
+      "npc" : "Card Vendor Machine",
+      "text" : "[Terminator RX1]\nThank you for coming!"
+    },
+    {
+      "kind" : "message",
+      "line" : 97,
+      "npc" : "Card Vendor Machine",
+      "text" : "[Terminator RX1]\nYou do not have enough coins."
+    },
+    {
+      "kind" : "message",
+      "line" : 467,
+      "npc" : "Card Vendor Machine",
+      "text" : "[Terminator RX1]\nAll cards have finished."
+    },
+    {
+      "kind" : "message",
+      "line" : 470,
+      "npc" : "Card Vendor Machine",
+      "text" : "[Terminator RX1]\nThank you for coming!"
+    },
+    {
+      "kind" : "message",
+      "line" : 474,
+      "npc" : "Card Vendor Machine",
+      "text" : "[Terminator RX1]\nFound unauthorized signal, starting security system..."
+    },
+    {
+      "kind" : "message",
+      "line" : 487,
+      "npc" : "Card Vendor Machine",
+      "placeholders" : [
+        "getitemname(getarg(.@i))"
+      ],
+      "text" : "Found ^980078{0}^000000,\nDo you want to exchange ONE Card into ONE Coin?"
+    },
+    {
+      "kind" : "option",
+      "line" : 490,
+      "npc" : "Card Vendor Machine",
+      "text" : "No"
+    },
+    {
+      "kind" : "option",
+      "line" : 490,
+      "npc" : "Card Vendor Machine",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "message",
+      "line" : 492,
+      "npc" : "Card Vendor Machine",
+      "text" : "^980078Do you want search for other cards?^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 494,
+      "npc" : "Card Vendor Machine",
+      "text" : "No"
+    },
+    {
+      "kind" : "option",
+      "line" : 494,
+      "npc" : "Card Vendor Machine",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "message",
+      "line" : 495,
+      "npc" : "Card Vendor Machine",
+      "text" : "^980078Card searching is interrupted^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 503,
+      "npc" : "Card Vendor Machine",
+      "placeholders" : [
+        "getitemname(getarg(.@i))"
+      ],
+      "text" : "^980078{0} has exchanged into Coin.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 506,
+      "npc" : "Card Vendor Machine",
+      "text" : "^980078Your inventory does not contain the card for exchange.^000000"
+    }
+  ]
+}

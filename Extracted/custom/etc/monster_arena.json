@@ -1,0 +1,934 @@
+{
+  "file" : "npc/custom/etc/monster_arena.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Monster Arena",
+      "placeholders" : [
+        "getmapusers(\"gon_test\")"
+      ],
+      "text" : "[Monster Arena]\nWould you like to enter the Monster Arena?\nCurrently ^FF0000{0}^000000 players\n^FF0000Note:^000000 Pecos, Falcons and Carts will be lost on entry."
+    },
+    {
+      "kind" : "option",
+      "line" : 34,
+      "npc" : "Monster Arena",
+      "text" : "Enter"
+    },
+    {
+      "kind" : "option",
+      "line" : 34,
+      "npc" : "Monster Arena",
+      "text" : "Information"
+    },
+    {
+      "kind" : "option",
+      "line" : 34,
+      "npc" : "Monster Arena",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Monster Arena",
+      "text" : "[Monster Arena]\nCome back any time."
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "npc" : "Monster Arena",
+      "text" : "[Monster Arena]\nYou must purchase a pet from the Monster Tamer to start fighting."
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "npc" : "Monster Arena",
+      "text" : "[Monster Arena]\nThen talk to the Usher and tell him you would like to compete."
+    },
+    {
+      "kind" : "message",
+      "line" : 54,
+      "npc" : "Monster Arena",
+      "text" : "[Monster Arena]\nTalk to the referee to summon your monster.\nOnce your monster has fought, you must talk to the Usher again and choose to spectate."
+    },
+    {
+      "kind" : "message",
+      "line" : 58,
+      "npc" : "Monster Arena",
+      "text" : "[Monster Arena]\nTalk to the Monster Trainer, he will ask you to heal your pet."
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "Monster Arena",
+      "text" : "[Monster Arena]\nTo do this, click the Nurse repeatedly until it says your pet is healed."
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Monster Arena",
+      "text" : "[Monster Arena]\nThe more monsters you kill, the more exp you get and the quicker you can upgrade."
+    },
+    {
+      "kind" : "message",
+      "line" : 67,
+      "npc" : "Monster Arena",
+      "text" : "[Monster Arena]\nThe stronger your monster is, the longer it will take to summon again."
+    },
+    {
+      "kind" : "message",
+      "line" : 107,
+      "npc" : "monsterreferee",
+      "text" : "[Referee]\nYour monster is:"
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "monsterreferee",
+      "text" : "Poring"
+    },
+    {
+      "kind" : "message",
+      "line" : 112,
+      "npc" : "monsterreferee",
+      "text" : "Faber"
+    },
+    {
+      "kind" : "message",
+      "line" : 113,
+      "npc" : "monsterreferee",
+      "text" : "Lunatic"
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "monsterreferee",
+      "text" : "Drops"
+    },
+    {
+      "kind" : "message",
+      "line" : 115,
+      "npc" : "monsterreferee",
+      "text" : "Picky"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "npc" : "monsterreferee",
+      "text" : "ChonChon"
+    },
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "monsterreferee",
+      "text" : "Super Picky"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "monsterreferee",
+      "text" : "Willow"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "monsterreferee",
+      "text" : "Roda Frog"
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "npc" : "monsterreferee",
+      "text" : "Condor"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "monsterreferee",
+      "text" : "Thief Bug Larva"
+    },
+    {
+      "kind" : "message",
+      "line" : 122,
+      "npc" : "monsterreferee",
+      "text" : "Savage Babe"
+    },
+    {
+      "kind" : "message",
+      "line" : 123,
+      "npc" : "monsterreferee",
+      "text" : "Familiar"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "monsterreferee",
+      "text" : "Hornet"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "monsterreferee",
+      "text" : "Desert Wolf Puppy"
+    },
+    {
+      "kind" : "message",
+      "line" : 126,
+      "npc" : "monsterreferee",
+      "text" : "Spore"
+    },
+    {
+      "kind" : "message",
+      "line" : 127,
+      "npc" : "monsterreferee",
+      "text" : "Rocker"
+    },
+    {
+      "kind" : "message",
+      "line" : 128,
+      "npc" : "monsterreferee",
+      "text" : "Skeleton"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "monsterreferee",
+      "text" : "Plankton"
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "monsterreferee",
+      "text" : "Antonio"
+    },
+    {
+      "kind" : "message",
+      "line" : 131,
+      "npc" : "monsterreferee",
+      "text" : "Thief Bug Female"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "monsterreferee",
+      "text" : "Would you like to fight?"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "monsterreferee",
+      "text" : "Fight"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "monsterreferee",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "monsterreferee",
+      "text" : "[Referee]\nAlright"
+    },
+    {
+      "kind" : "message",
+      "line" : 204,
+      "npc" : "Usher",
+      "text" : "[Usher]\nWhat would you like to do?"
+    },
+    {
+      "kind" : "option",
+      "line" : 207,
+      "npc" : "Usher",
+      "text" : "^0000FFSpectate"
+    },
+    {
+      "kind" : "option",
+      "line" : 207,
+      "npc" : "Usher",
+      "text" : "^FF0000Compete^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 207,
+      "npc" : "Usher",
+      "text" : "Return to Town"
+    },
+    {
+      "kind" : "option",
+      "line" : 207,
+      "npc" : "Usher",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 217,
+      "npc" : "Usher",
+      "text" : "Level 1-3"
+    },
+    {
+      "kind" : "option",
+      "line" : 217,
+      "npc" : "Usher",
+      "text" : "^FF0000All Levels"
+    },
+    {
+      "kind" : "option",
+      "line" : 221,
+      "npc" : "Usher",
+      "text" : "Level 4-7"
+    },
+    {
+      "kind" : "option",
+      "line" : 221,
+      "npc" : "Usher",
+      "text" : "^FF0000All Levels"
+    },
+    {
+      "kind" : "message",
+      "line" : 265,
+      "npc" : "Usher",
+      "text" : "[Usher]\nYou haven't got a monster, you can only spectate."
+    },
+    {
+      "kind" : "message",
+      "line" : 270,
+      "npc" : "Usher",
+      "text" : "[Usher]\nYou have to heal your monster before you can fight again."
+    },
+    {
+      "kind" : "message",
+      "line" : 280,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]"
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Monster Trainer",
+      "text" : "Welcome to the monster arena, would you like to start training?"
+    },
+    {
+      "kind" : "option",
+      "line" : 285,
+      "npc" : "Monster Trainer",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 285,
+      "npc" : "Monster Trainer",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nNew trainers may only start with Porings.\nThey cost 1000z, Would you like to buy one?"
+    },
+    {
+      "kind" : "option",
+      "line" : 291,
+      "npc" : "Monster Trainer",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 291,
+      "npc" : "Monster Trainer",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 296,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nCongratulations!\nWhen your Poring earns enough experience, talk to me to upgrade."
+    },
+    {
+      "kind" : "message",
+      "line" : 302,
+      "npc" : "Monster Trainer",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "#monpoints"
+      ],
+      "text" : "Welcome back, {0}.\nYour monster has {1} exp points."
+    },
+    {
+      "kind" : "option",
+      "line" : 306,
+      "npc" : "Monster Trainer",
+      "text" : "Upgrade Monster"
+    },
+    {
+      "kind" : "option",
+      "line" : 306,
+      "npc" : "Monster Trainer",
+      "text" : "Sell Experience"
+    },
+    {
+      "kind" : "option",
+      "line" : 306,
+      "npc" : "Monster Trainer",
+      "text" : "^FF0000Abandon Monster^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 306,
+      "npc" : "Monster Trainer",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 309,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nAre you sure you want to abandon your monster?"
+    },
+    {
+      "kind" : "option",
+      "line" : 312,
+      "npc" : "Monster Trainer",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 312,
+      "npc" : "Monster Trainer",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 315,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nMonster released into the wild."
+    },
+    {
+      "kind" : "message",
+      "line" : 320,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nYou can sell your monster's experience for 100z each."
+    },
+    {
+      "kind" : "option",
+      "line" : 323,
+      "npc" : "Monster Trainer",
+      "text" : "Sell"
+    },
+    {
+      "kind" : "option",
+      "line" : 323,
+      "npc" : "Monster Trainer",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 324,
+      "npc" : "Monster Trainer",
+      "placeholders" : [
+        "#monpoints"
+      ],
+      "text" : "[Monster Trainer]\nYou have: ^FF0000{0}^000000 experience points\nHow many would you like to sell?"
+    },
+    {
+      "kind" : "message",
+      "line" : 333,
+      "npc" : "Monster Trainer",
+      "placeholders" : [
+        ".@sellearn"
+      ],
+      "text" : "[Monster Trainer]\nYou earned ^0000FF{0}^000000z."
+    },
+    {
+      "kind" : "message",
+      "line" : 339,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nYou do not have enough experience."
+    },
+    {
+      "kind" : "message",
+      "line" : 346,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]"
+    },
+    {
+      "kind" : "message",
+      "line" : 348,
+      "npc" : "Monster Trainer",
+      "text" : "You need 10 exp points to upgrade your monster."
+    },
+    {
+      "kind" : "message",
+      "line" : 349,
+      "npc" : "Monster Trainer",
+      "text" : "You need 20 exp points to upgrade your monster."
+    },
+    {
+      "kind" : "message",
+      "line" : 350,
+      "npc" : "Monster Trainer",
+      "text" : "You need 40 exp points to upgrade your monster."
+    },
+    {
+      "kind" : "message",
+      "line" : 351,
+      "npc" : "Monster Trainer",
+      "text" : "You need 80 exp points to upgrade your monster."
+    },
+    {
+      "kind" : "message",
+      "line" : 352,
+      "npc" : "Monster Trainer",
+      "text" : "You need 160 exp points to upgrade your monster."
+    },
+    {
+      "kind" : "message",
+      "line" : 353,
+      "npc" : "Monster Trainer",
+      "text" : "You need 320 exp points to upgrade your monster."
+    },
+    {
+      "kind" : "message",
+      "line" : 354,
+      "npc" : "Monster Trainer",
+      "text" : "You need 640 exp points to upgrade your monster."
+    },
+    {
+      "kind" : "message",
+      "line" : 355,
+      "npc" : "Monster Trainer",
+      "text" : "You need 1280 exp points to upgrade your monster."
+    },
+    {
+      "kind" : "message",
+      "line" : 356,
+      "npc" : "Monster Trainer",
+      "text" : "You need 2560 exp points to upgrade your monster."
+    },
+    {
+      "kind" : "option",
+      "line" : 358,
+      "npc" : "Monster Trainer",
+      "text" : "Continue"
+    },
+    {
+      "kind" : "option",
+      "line" : 358,
+      "npc" : "Monster Trainer",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 359,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]"
+    },
+    {
+      "kind" : "message",
+      "line" : 372,
+      "npc" : "Monster Trainer",
+      "text" : "Unable to upgrade."
+    },
+    {
+      "kind" : "message",
+      "line" : 379,
+      "npc" : "Monster Trainer",
+      "text" : "Upgraded to Fabre!"
+    },
+    {
+      "kind" : "message",
+      "line" : 383,
+      "npc" : "Monster Trainer",
+      "text" : "Which monster would you like to upgrade to?"
+    },
+    {
+      "kind" : "option",
+      "line" : 385,
+      "npc" : "Monster Trainer",
+      "text" : "Lunatic"
+    },
+    {
+      "kind" : "option",
+      "line" : 385,
+      "npc" : "Monster Trainer",
+      "text" : "Drops"
+    },
+    {
+      "kind" : "option",
+      "line" : 385,
+      "npc" : "Monster Trainer",
+      "text" : "Picky"
+    },
+    {
+      "kind" : "message",
+      "line" : 390,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Drops!"
+    },
+    {
+      "kind" : "message",
+      "line" : 397,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Picky!"
+    },
+    {
+      "kind" : "message",
+      "line" : 404,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Lunatic!"
+    },
+    {
+      "kind" : "message",
+      "line" : 409,
+      "npc" : "Monster Trainer",
+      "text" : "Which monster would you like to upgrade to?"
+    },
+    {
+      "kind" : "option",
+      "line" : 411,
+      "npc" : "Monster Trainer",
+      "text" : "ChonChon"
+    },
+    {
+      "kind" : "option",
+      "line" : 411,
+      "npc" : "Monster Trainer",
+      "text" : "Super Picky"
+    },
+    {
+      "kind" : "option",
+      "line" : 411,
+      "npc" : "Monster Trainer",
+      "text" : "Willow"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to ChonChon!"
+    },
+    {
+      "kind" : "message",
+      "line" : 423,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Super Picky!"
+    },
+    {
+      "kind" : "message",
+      "line" : 430,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Willow!"
+    },
+    {
+      "kind" : "message",
+      "line" : 435,
+      "npc" : "Monster Trainer",
+      "text" : "Which monster would you like to upgrade to?"
+    },
+    {
+      "kind" : "option",
+      "line" : 437,
+      "npc" : "Monster Trainer",
+      "text" : "Condor"
+    },
+    {
+      "kind" : "option",
+      "line" : 437,
+      "npc" : "Monster Trainer",
+      "text" : "Roda Frog"
+    },
+    {
+      "kind" : "message",
+      "line" : 442,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Condor!"
+    },
+    {
+      "kind" : "message",
+      "line" : 449,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Roda Frog!"
+    },
+    {
+      "kind" : "message",
+      "line" : 456,
+      "npc" : "Monster Trainer",
+      "text" : "Upgraded to Thief Bug Larva!"
+    },
+    {
+      "kind" : "message",
+      "line" : 462,
+      "npc" : "Monster Trainer",
+      "text" : "Upgraded to Savage Babe!"
+    },
+    {
+      "kind" : "message",
+      "line" : 466,
+      "npc" : "Monster Trainer",
+      "text" : "Which monster would you like to upgrade to?"
+    },
+    {
+      "kind" : "option",
+      "line" : 468,
+      "npc" : "Monster Trainer",
+      "text" : "Familiar"
+    },
+    {
+      "kind" : "option",
+      "line" : 468,
+      "npc" : "Monster Trainer",
+      "text" : "Hornet"
+    },
+    {
+      "kind" : "message",
+      "line" : 473,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Hornet!"
+    },
+    {
+      "kind" : "message",
+      "line" : 480,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Familiar!"
+    },
+    {
+      "kind" : "message",
+      "line" : 485,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nWhich monster would you like to upgrade to?"
+    },
+    {
+      "kind" : "option",
+      "line" : 488,
+      "npc" : "Monster Trainer",
+      "text" : "Desert Wolf Puppy"
+    },
+    {
+      "kind" : "option",
+      "line" : 488,
+      "npc" : "Monster Trainer",
+      "text" : "Spore"
+    },
+    {
+      "kind" : "option",
+      "line" : 488,
+      "npc" : "Monster Trainer",
+      "text" : "Rocker"
+    },
+    {
+      "kind" : "message",
+      "line" : 493,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Spore!"
+    },
+    {
+      "kind" : "message",
+      "line" : 500,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Rocker!"
+    },
+    {
+      "kind" : "message",
+      "line" : 507,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Desert Wolf Puppy!"
+    },
+    {
+      "kind" : "message",
+      "line" : 512,
+      "npc" : "Monster Trainer",
+      "text" : "Which monster would you like to upgrade to?"
+    },
+    {
+      "kind" : "option",
+      "line" : 514,
+      "npc" : "Monster Trainer",
+      "text" : "Skeleton"
+    },
+    {
+      "kind" : "option",
+      "line" : 514,
+      "npc" : "Monster Trainer",
+      "text" : "Antonio"
+    },
+    {
+      "kind" : "option",
+      "line" : 514,
+      "npc" : "Monster Trainer",
+      "text" : "Plankton"
+    },
+    {
+      "kind" : "option",
+      "line" : 514,
+      "npc" : "Monster Trainer",
+      "text" : "Thief Bug Female"
+    },
+    {
+      "kind" : "message",
+      "line" : 519,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Plankton!"
+    },
+    {
+      "kind" : "message",
+      "line" : 526,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Antonio!"
+    },
+    {
+      "kind" : "message",
+      "line" : 533,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Thief Bug Female!"
+    },
+    {
+      "kind" : "message",
+      "line" : 540,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nUpgraded to Skeleton!"
+    },
+    {
+      "kind" : "message",
+      "line" : 545,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nYou don't have enough zeny!"
+    },
+    {
+      "kind" : "message",
+      "line" : 550,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nGoodbye."
+    },
+    {
+      "kind" : "message",
+      "line" : 555,
+      "npc" : "Monster Trainer",
+      "text" : "[Monster Trainer]\nYour monster needs to heal.\nIt will heal faster if you click the nurse faster."
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Duel Master",
+      "text" : "[Duel Master]"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Duel Master",
+      "text" : "There are currently no players dueling."
+    },
+    {
+      "kind" : "option",
+      "line" : 780,
+      "npc" : "Duel Master",
+      "text" : "Join"
+    },
+    {
+      "kind" : "option",
+      "line" : 780,
+      "npc" : "Duel Master",
+      "text" : "Spectate"
+    },
+    {
+      "kind" : "option",
+      "line" : 780,
+      "npc" : "Duel Master",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 804,
+      "npc" : "Duel Master",
+      "placeholders" : [
+        "$@duelist1$",
+        "$@monster1"
+      ],
+      "text" : "^0000FF {0}^000000 [Monster Level: ^FF0000{1}^000000]\nIs waiting for an opponent"
+    },
+    {
+      "kind" : "option",
+      "line" : 807,
+      "npc" : "Duel Master",
+      "text" : "Join"
+    },
+    {
+      "kind" : "option",
+      "line" : 807,
+      "npc" : "Duel Master",
+      "text" : "Spectate"
+    },
+    {
+      "kind" : "option",
+      "line" : 807,
+      "npc" : "Duel Master",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 832,
+      "npc" : "Duel Master",
+      "placeholders" : [
+        "$@duelist1$",
+        "$@monster1",
+        "$@duelist2$",
+        "$@monster2"
+      ],
+      "text" : "^0000FF{0}^000000 [Monster Level: ^0000FF{1}^000000]\n           VS.\n^FF0000{2}^000000 [Monster Level: ^FF0000{3}^000000]"
+    },
+    {
+      "kind" : "option",
+      "line" : 836,
+      "npc" : "Duel Master",
+      "text" : "Spectate"
+    },
+    {
+      "kind" : "option",
+      "line" : 836,
+      "npc" : "Duel Master",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 845,
+      "npc" : "Duel Master",
+      "text" : "[Duel Master]\nGoodbye."
+    },
+    {
+      "kind" : "message",
+      "line" : 850,
+      "npc" : "Duel Master",
+      "text" : "[Duel Master]\nYou haven't got a monster, you can't participate."
+    },
+    {
+      "kind" : "message",
+      "line" : 855,
+      "npc" : "Duel Master",
+      "text" : "[Duel Master]\nYou need to heal before you can join."
+    },
+    {
+      "kind" : "message",
+      "line" : 862,
+      "npc" : "Duel Master",
+      "text" : "[Duel Master]\nWould you like to return?"
+    },
+    {
+      "kind" : "option",
+      "line" : 864,
+      "npc" : "Duel Master",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 864,
+      "npc" : "Duel Master",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 865,
+      "npc" : "Duel Master",
+      "text" : "Alright"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "file" : "npc/custom/quests/kings_items.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nHello, can you help me?"
+    },
+    {
+      "kind" : "option",
+      "line" : 20,
+      "npc" : "King of Prontera",
+      "text" : "Sure, what can I do?"
+    },
+    {
+      "kind" : "option",
+      "line" : 20,
+      "npc" : "King of Prontera",
+      "text" : "Sorry, I'm busy."
+    },
+    {
+      "kind" : "message",
+      "line" : 21,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nOk, that's fine, I'm sure someone else will help."
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nThank you. Well, my daughter next to me is a little rowdy...\nIf you get her these items I'm sure she'll calm down.\nI'll give you my crown or my sword as a reward."
+    },
+    {
+      "kind" : "option",
+      "line" : 31,
+      "npc" : "King of Prontera",
+      "text" : "What do you need?"
+    },
+    {
+      "kind" : "option",
+      "line" : 31,
+      "npc" : "King of Prontera",
+      "text" : "I have the items!"
+    },
+    {
+      "kind" : "option",
+      "line" : 31,
+      "npc" : "King of Prontera",
+      "text" : "Forget it."
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nIf you could get me:"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "King of Prontera",
+      "placeholders" : [
+        "getd(\".@Items\"+.@i+\"[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".@Items\"+.@i+\"[\"+.@j+\"]\"))"
+      ],
+      "text" : " ~ ^0055FF{0}^000000x {1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 38,
+      "npc" : "King of Prontera",
+      "placeholders" : [
+        "((.@i == 2 )?\"sword.\":\"crown.\")"
+      ],
+      "text" : "I'll give my {0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nWhat item do you want?"
+    },
+    {
+      "kind" : "option",
+      "line" : 45,
+      "npc" : "King of Prontera",
+      "text" : "Crown"
+    },
+    {
+      "kind" : "option",
+      "line" : 45,
+      "npc" : "King of Prontera",
+      "text" : "Sword"
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]"
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "King of Prontera",
+      "text" : "You're missing something.\nCome back after you get ALL the items."
+    },
+    {
+      "kind" : "message",
+      "line" : 56,
+      "npc" : "King of Prontera",
+      "placeholders" : [
+        "((.@i==1)?\"crown.\":\"sword.\")"
+      ],
+      "text" : "THANK YOU SOO MUCH!!\nThis will surely calm her down.\nAs promised, here is my {0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nOk, that's fine, I'm sure someone else will help."
+    },
+    {
+      "kind" : "message",
+      "line" : 68,
+      "npc" : "King's Daughter",
+      "text" : "[King's Daughter]\nHmph, I hate my dad right now!!"
+    },
+    {
+      "kind" : "option",
+      "line" : 71,
+      "npc" : "King's Daughter",
+      "text" : "Why?"
+    },
+    {
+      "kind" : "option",
+      "line" : 71,
+      "npc" : "King's Daughter",
+      "text" : "Whatever..."
+    },
+    {
+      "kind" : "message",
+      "line" : 72,
+      "npc" : "King's Daughter",
+      "text" : "[King's Daughter]\nFINE THEN! Hmph!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "King's Daughter",
+      "text" : "[King's Daughter]\nWell, he won't give me what I want!!\nHe's the King of Prontera. He should be able to get me ANYTHING!!!"
+    }
+  ]
+}

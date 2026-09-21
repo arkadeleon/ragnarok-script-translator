@@ -1,0 +1,40 @@
+{
+  "file" : "npc/events/nguild/nguild_flags.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "F_Flags",
+      "text" : " [ Edict of the Divine Rune-Midgarts Kingdom ]\n \n1. Follow the ordinance of The Divine Rune-Midgarts Kingdom, \nWe declare that\nthere is no formal master of this castle.\n \n2. To the one who can \novercome all trials\nand destroy the Emperium,\nthe king will endow the one with\nownership of this castle."
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "F_Flags",
+      "text" : "Brave ones...\nDo you wish to return to your honorable place?"
+    },
+    {
+      "kind" : "option",
+      "line" : 42,
+      "npc" : "F_Flags",
+      "text" : "Return to the guild castle."
+    },
+    {
+      "kind" : "option",
+      "line" : 42,
+      "npc" : "F_Flags",
+      "text" : "Quit."
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "npc" : "F_Flags",
+      "placeholders" : [
+        "GetGuildName(.@GID)",
+        "GetGuildName(.@GID)",
+        "GetGuildMaster(.@GID)"
+      ],
+      "text" : "[ Edict of the Divine Rune-Midgarts Kingdom ]\n \n1. Following the ordinance of the\nDivine Rune-Midgarts Kingdom,\nwe approve that this place is in\nthe private possession of ^ff0000{0}^000000 Guild.\n \n2. The guild Master of ^ff0000{1}^000000 Guild is\n^FF0000{2}^000000\nIf there is anyone who objects to this,\n prove your strength and honor with a steel blade in your hand."
+    }
+  ]
+}

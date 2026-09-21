@@ -1,0 +1,131 @@
+{
+  "file" : "npc/re/merchants/shadow_refiner.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 15,
+      "text" : "[Shadow Blacksmith]\nNow Basta is in charge of refinement for shadow items.\nIf you'd like to refine a shadow item, please visit him."
+    },
+    {
+      "kind" : "message",
+      "line" : 23,
+      "text" : "[Shadow Blacksmith]\nDo you want to refine a shadow item? Pick yer poison!"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "text" : "[Shadow Blacksmith]\nWhen a shadow item is refined, it gains extra bonuses very much like normal items."
+    },
+    {
+      "kind" : "message",
+      "line" : 36,
+      "text" : "[Shadow Blacksmith]\nWeapon: ATK, MATK + 1 increase for each +1 refine success.\nEtc: HP + 10 increase for each +1 refine success."
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "text" : "[Shadow Blacksmith]\nAll types of Oridecon and Elunium can be used to refine shadow items. Each attempt will also cost 20,000 zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "text" : "[Shadow Blacksmith]\nHD ores can be used for gear that is at least refine level +7 and will prevent breaking as long as you stay talking to me."
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "text" : "[Shadow Blacksmith]\nThere's nothing here!"
+    },
+    {
+      "kind" : "message",
+      "line" : 60,
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\", .@zeny_cost)"
+      ],
+      "text" : "[Shadow Blacksmith]\nI require {0} zeny as a fee for EACH refine attempt.\nChoose your Ore and start refining."
+    },
+    {
+      "kind" : "option",
+      "line" : 83,
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 93,
+      "text" : "[Shadow Blacksmith]\nHD Ore can only used for +7 or higher refine level items."
+    },
+    {
+      "kind" : "message",
+      "line" : 101,
+      "text" : "[Shadow Blacksmith]\nYou've cancelled refining."
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "placeholders" : [
+        "getitemname(.@choose)"
+      ],
+      "text" : "[Shadow Blacksmith]\nYou do not have enough {0}."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "text" : "[Shadow Blacksmith]\nYou do not have enough zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "text" : "[Shadow Blacksmith]\nShadow Equipment can be refined to the maximum of 10..."
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "text" : "[Shadow Blacksmith]\nThis item cannot be refined."
+    },
+    {
+      "kind" : "message",
+      "line" : 126,
+      "text" : "[Shadow Blacksmith]\nThe safety refine level for Shadow Equipment is +4."
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "text" : "Shadow equipment may be destroyed in subsequent refinements. Want to get started?"
+    },
+    {
+      "kind" : "message",
+      "line" : 131,
+      "text" : "The next refinement, if it fails, will degrade the refinement. Do you want to refine?"
+    },
+    {
+      "kind" : "option",
+      "line" : 133,
+      "text" : "Proceed"
+    },
+    {
+      "kind" : "option",
+      "line" : 133,
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "text" : "[Shadow Blacksmith]\nHeh, I knew it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 139,
+      "text" : "[Shadow Blacksmith]\nWell then.. here goes nothing!"
+    },
+    {
+      "kind" : "message",
+      "line" : 151,
+      "text" : "[Shadow Blacksmith]\nIt worked! It worked!"
+    },
+    {
+      "kind" : "message",
+      "line" : 159,
+      "text" : "[Shadow Blacksmith]\nOh Odin No!"
+    }
+  ]
+}

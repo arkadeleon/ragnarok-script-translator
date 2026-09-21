@@ -1,0 +1,94 @@
+{
+  "file" : "npc/re/instances/ThorGunsuBase.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 16,
+      "npc" : "Maram",
+      "text" : "[Maram]\nYou've arrived, adventurer!\nThank you for coming all the way here."
+    },
+    {
+      "kind" : "message",
+      "line" : 21,
+      "npc" : "Maram",
+      "text" : "[Maram]\nIt seems like this is the real deal after all. The security here is different from what it has been so far....\nLet's be careful not to be caught by the guards and explore the inside."
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Maram",
+      "text" : "[Maram]\nTry to move away from the security guard's line of sight as much as possible.\nIf you get caught, you might be attacked, so if you can't break through, we'll meet again here."
+    },
+    {
+      "kind" : "message",
+      "line" : 36,
+      "npc" : "Maram",
+      "text" : "[Maram]\nLet's try to go in while avoiding the guard tower as much as possible."
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Maram",
+      "text" : "^FF0000Caution : If you perform arbitrary processing within the dungeon, such as monster taming, it will not be considered normal progress.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 50,
+      "npc" : "Maram",
+      "placeholders" : [
+        ".@md_name$"
+      ],
+      "text" : "Enter {0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Maram",
+      "placeholders" : [
+        ".@md_name$"
+      ],
+      "text" : "[Maram]\nWhen the application is complete, talk to me again and select ^0000CD{0} entry^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 56,
+      "npc" : "Maram",
+      "placeholders" : [
+        "getpartyname(getcharid(1))",
+        "strcharinfo(0)",
+        ".@md_name$"
+      ],
+      "text" : "Party: {0}\nLeader: {1}\n^0000ff{2} ^000000- Unknown error"
+    },
+    {
+      "kind" : "message",
+      "line" : 66,
+      "npc" : "Maram",
+      "text" : "[Maram]\n^ff0000An unknown error occurred.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 71,
+      "npc" : "Maram",
+      "text" : "[Maram]\nIt seems like you haven't created the dungeon yet. Please check again in a moment."
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "Maram",
+      "text" : "[Maram]\n^ff0000Only a member of the party can enter the Memorial Dungeon.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Maram",
+      "text" : "[Maram]\nBe careful and explore inside.\nFrom what I heard from Dandelion earlier, there aren't many people, but there are watchtowers here and there that monitor a fairly wide area."
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Maram",
+      "text" : "[Maram]\nIf you get caught by the watchtower, soldiers will appear, so be careful not to get caught.\nWell, if you find anything, please contact me!"
+    }
+  ]
+}

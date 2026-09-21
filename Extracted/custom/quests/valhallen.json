@@ -1,0 +1,209 @@
+{
+  "file" : "npc/custom/quests/valhallen.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 22,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\nI come from Valhalla to aid you.\nI can transmute for you many of the Valhallen items,\nalthough they require many rare elements to make."
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "text" : "Mjolnir"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "text" : "Sleipnir"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "text" : "Brisingamen"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "text" : "Gleipnir"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "text" : "Megingjard"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "text" : "Asprika"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "text" : "Brynhild"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "text" : "Hervor"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "text" : "Jormungand"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "text" : "Muspellium"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "text" : "Essence Of Rune"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "text" : "Close"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\n^3355FFMjolnir^000000 is the mighty Hammer of Thor."
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\n^3355FFSleipnir^000000 are boots made after Odin's War Horse."
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\n^3355FFBrisingammen^000000 is the magical Necklace of Freyja, goddess of Beauty."
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\nThe ^3355FFGleipnir^000000 is a light yet strong rope required to make ^3355FFMegingjard^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\nThe ^3355FFMegingjard^000000 is the powerful Belt of Thor."
+    },
+    {
+      "kind" : "message",
+      "line" : 54,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\nThe ^3355FFAsprika^000000 is the light of gods."
+    },
+    {
+      "kind" : "message",
+      "line" : 59,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\nThe ^3355FFBrynhild^000000 is the warrior's armor."
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\nThe ^3355FFHervor^000000 is named after the valkyrie who ensures victory for her warriors."
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\nThe ^3355FFJormungand^000000 is famous for its ability to poison the enemy."
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\nThe ^3355FFMuspellium^000000 is required to make ^3355FFJormungand^000000 and ^3355FFHervor^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 79,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\nThe ^3355FFEssence Of Rune^000000 is required to make ^3355FFJormungand^000000 and ^3355FFHervor^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 87,
+      "npc" : "Lenneth",
+      "text" : "^FF0000The items I need are as follows:^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        ".@amount",
+        "((countitem(.@id)<.@amount)?(\"^dd3355\"):(\"^33dd55\"))",
+        "getitemname(.@id)",
+        "((getitemslots(.@id)>0)?\" [\"+getitemslots(.@id)+\"]\":\"\")"
+      ],
+      "text" : " ~ {0}x {1}{2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\nGo on and find all these items.\nI will wait here to aid you."
+    },
+    {
+      "kind" : "message",
+      "line" : 104,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        "getitemname(.@Items[0])"
+      ],
+      "text" : "[Lenneth]\nDo you desire ^3355FF{0}^000000?"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Lenneth",
+      "text" : "No"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Lenneth",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Lenneth",
+      "text" : "[Lenneth]\nPlease return if you change your mind."
+    },
+    {
+      "kind" : "message",
+      "line" : 112,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        "getitemname(.@Items[0])"
+      ],
+      "text" : "[Lenneth]\nHere is your ^3355FF{0}^000000.\nMay it serve you well."
+    }
+  ]
+}

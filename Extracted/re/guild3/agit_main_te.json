@@ -1,0 +1,787 @@
+{
+  "file" : "npc/re/guild3/agit_main_te.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 218,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "[Kafra Employee]"
+    },
+    {
+      "kind" : "message",
+      "line" : 220,
+      "npc" : "Kafra_Staff_TE",
+      "placeholders" : [
+        ".@guildname$"
+      ],
+      "text" : "Welcome. ^ff0000{0}^000000 Member.\nThe Kafra Corporation will stay with you wherever you go."
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "Use Storage"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "Use Teleport Service"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "Rent a Pushcart"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 226,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "[Kafra Employee]\nHere, let me open\nyour Storage for you.\nThank you for using\nthe Kafra Service."
+    },
+    {
+      "kind" : "message",
+      "line" : 234,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "[Kafra Employee]\nI'm sorry, but you\nneed the Novice's\nBasic Skill Level 6 to\nuse the Storage Service."
+    },
+    {
+      "kind" : "message",
+      "line" : 248,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "[Kafra Employee]"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "I'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths and Alchemists."
+    },
+    {
+      "kind" : "message",
+      "line" : 257,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "You already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time."
+    },
+    {
+      "kind" : "message",
+      "line" : 265,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "The Pushcart rental\nfee is 800 zeny. Would\nyou like to rent a Pushcart?"
+    },
+    {
+      "kind" : "option",
+      "line" : 269,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "Rent a Pushcart"
+    },
+    {
+      "kind" : "option",
+      "line" : 269,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 271,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "[Kafra Employee]\nI'm sorry, but you\ndon't have enough\nzeny to pay the Pushcart\nrental fee of 800 zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "[Kafra Employee]\nWe, here at Kafra Corporation,\nare always endeavoring to provide you with the best services. We hope that we meet your adventuring needs and standards of excellence."
+    },
+    {
+      "kind" : "message",
+      "line" : 295,
+      "npc" : "Kafra_Staff_TE",
+      "placeholders" : [
+        ".@guildname$"
+      ],
+      "text" : "I am instructed to only offer my services to the ^ff0000{0}^000000 Guild. Please try another Kafra Employee around here. Sorry for the inconvenience."
+    },
+    {
+      "kind" : "message",
+      "line" : 302,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "[Kafra Employee]\nPlease choose\nyour destination."
+    },
+    {
+      "kind" : "option",
+      "line" : 306,
+      "npc" : "Kafra_Staff_TE",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "{0} -> 200 z"
+    },
+    {
+      "kind" : "option",
+      "line" : 306,
+      "npc" : "Kafra_Staff_TE",
+      "text" : "Cancel it"
+    },
+    {
+      "kind" : "message",
+      "line" : 309,
+      "npc" : "Kafra_Staff_TE",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[Kafra Employee]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto {0} is 200 zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 343,
+      "npc" : "invest_TE",
+      "text" : "I have been waiting for a master to fulfill my destiny.\nBrave soul... fate will guide you towards your future..."
+    },
+    {
+      "kind" : "message",
+      "line" : 348,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@guildmaster$"
+      ],
+      "text" : "No matter how much you pester me, I'll still follow my master ^ff0000{0}^000000. Where are the Guardians?! Send these ruffians away right now!"
+    },
+    {
+      "kind" : "message",
+      "line" : 351,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strnpcinfo(1)"
+      ],
+      "text" : "Welcome. My honorable master, ^ff0000{0}^000000...\nYour humble servent, {1}, is here to serve you."
+    },
+    {
+      "kind" : "option",
+      "line" : 354,
+      "npc" : "invest_TE",
+      "text" : "Castle briefing"
+    },
+    {
+      "kind" : "option",
+      "line" : 354,
+      "npc" : "invest_TE",
+      "text" : "Invest in commercial growth"
+    },
+    {
+      "kind" : "option",
+      "line" : 354,
+      "npc" : "invest_TE",
+      "text" : "Invest in Castle Defenses"
+    },
+    {
+      "kind" : "option",
+      "line" : 354,
+      "npc" : "invest_TE",
+      "text" : "Summon Guardian"
+    },
+    {
+      "kind" : "option",
+      "line" : 354,
+      "npc" : "invest_TE",
+      "text" : "Hire / Fire a Kafra Employee"
+    },
+    {
+      "kind" : "option",
+      "line" : 354,
+      "npc" : "invest_TE",
+      "text" : "Go into Master's room"
+    },
+    {
+      "kind" : "message",
+      "line" : 358,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        "GetCastleData(.@map$,CD_CURRENT_ECONOMY)"
+      ],
+      "text" : "{0}\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}."
+    },
+    {
+      "kind" : "message",
+      "line" : 363,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@economy_today"
+      ],
+      "text" : " You invested {0} times in past 1 day."
+    },
+    {
+      "kind" : "message",
+      "line" : 364,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        "GetCastleData(.@map$,CD_CURRENT_DEFENSE)"
+      ],
+      "text" : " Now, the Castle Defense level is {0}.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 366,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@defense_today"
+      ],
+      "text" : " ^0000ff- You invested {0} times in past 1 day.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 367,
+      "npc" : "invest_TE",
+      "text" : " \nThat's all I have to report, Master."
+    },
+    {
+      "kind" : "message",
+      "line" : 388,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nWill you summon a Guardian? It'll be a protector to defend us loyally.\nPlease select a guardian to defend us."
+    },
+    {
+      "kind" : "message",
+      "line" : 400,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nWill you summon the chosen guardian? 10,000 zeny are required to summon a Guardian."
+    },
+    {
+      "kind" : "option",
+      "line" : 403,
+      "npc" : "invest_TE",
+      "text" : "Summon"
+    },
+    {
+      "kind" : "option",
+      "line" : 403,
+      "npc" : "invest_TE",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 404,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nI did as you ordered. But please remember if you the have money to spare, it'll be better to set it up."
+    },
+    {
+      "kind" : "message",
+      "line" : 410,
+      "npc" : "invest_TE",
+      "text" : "Master, we have not the resources to Summon the Guardian. If you want to accumulate them, you have to learn the Guild skill. We failed to summon the Guardian."
+    },
+    {
+      "kind" : "message",
+      "line" : 413,
+      "npc" : "invest_TE",
+      "text" : "Master, you already have summoned that Guardian. We cannot summon another."
+    },
+    {
+      "kind" : "message",
+      "line" : 415,
+      "npc" : "invest_TE",
+      "text" : "Well... I'm sorry but we don't have funds to summon the Guardian. We failed to summon the Guardian."
+    },
+    {
+      "kind" : "message",
+      "line" : 420,
+      "npc" : "invest_TE",
+      "text" : "We completed the summoning of the Guardian. Our defenses are now increased with it in place."
+    },
+    {
+      "kind" : "message",
+      "line" : 427,
+      "npc" : "invest_TE",
+      "text" : "We are currently hiring a Kafra Employee... Do you want to fire the Kafra Employee?"
+    },
+    {
+      "kind" : "option",
+      "line" : 429,
+      "npc" : "invest_TE",
+      "text" : "Fire"
+    },
+    {
+      "kind" : "option",
+      "line" : 429,
+      "npc" : "invest_TE",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 430,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nShe worked hard in my opinion. It was a good decision to keep her."
+    },
+    {
+      "kind" : "message",
+      "line" : 435,
+      "npc" : "invest_TE",
+      "text" : "[ Hired Kafra Employee ]\nI worked so hard... How can you do that, Master?... Please... Please reconsider... Check it again, Master... Please..."
+    },
+    {
+      "kind" : "option",
+      "line" : 438,
+      "npc" : "invest_TE",
+      "text" : "Fire"
+    },
+    {
+      "kind" : "option",
+      "line" : 438,
+      "npc" : "invest_TE",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 439,
+      "npc" : "invest_TE",
+      "text" : "[ Hired Kafra Employee ]\nI'll work hard for you... Thank you!"
+    },
+    {
+      "kind" : "message",
+      "line" : 443,
+      "npc" : "invest_TE",
+      "text" : "[ Hired Kafra Employee ]\nOh, my goodness! This is nonsense!"
+    },
+    {
+      "kind" : "message",
+      "line" : 449,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\n....\nI have discharged the Kafra Employee... But... are you unsatisfied with something?"
+    },
+    {
+      "kind" : "message",
+      "line" : 454,
+      "npc" : "invest_TE",
+      "text" : "Will you contact the kafra Main Office and Hire a Employee for our Castle?\n^ff0000 10,000 zeny is required for their services. "
+    },
+    {
+      "kind" : "option",
+      "line" : 457,
+      "npc" : "invest_TE",
+      "text" : "Hire."
+    },
+    {
+      "kind" : "option",
+      "line" : 457,
+      "npc" : "invest_TE",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 458,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nI did as you ordered, but some of our members will be unhappy. It will be better to hire a Kafra Employee quickly."
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "invest_TE",
+      "text" : "Master, we can't hire a Kafra Employee because we don't have a contract with the Kafra Main Office. If you want to obtain a contract with the Kafra Main Office, you will need to learn the Guild skill first."
+    },
+    {
+      "kind" : "message",
+      "line" : 468,
+      "npc" : "invest_TE",
+      "text" : "Well... I'm sorry but we don't have enough funds to hire a Kafra Employee."
+    },
+    {
+      "kind" : "message",
+      "line" : 475,
+      "npc" : "invest_TE",
+      "text" : "We obtained a contract with the kafra Main Office, and hired a Kafra Employee."
+    },
+    {
+      "kind" : "message",
+      "line" : 478,
+      "npc" : "invest_TE",
+      "text" : "[ Hired Kafra Employee ]\nHow do you do? I was dispatched from the Main Office.\nI'll do my best to not tarnish the reputation of the Guild."
+    },
+    {
+      "kind" : "message",
+      "line" : 483,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nThe Contract terms of the hired Kafra Employee are for 1 month and after this term, you will need to pay an additional fee.\nIt will be useful for our members."
+    },
+    {
+      "kind" : "message",
+      "line" : 489,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nDo you want to visit the room where our valuables are stored?\nThat room is restricted to you... you are the only one with access to it."
+    },
+    {
+      "kind" : "message",
+      "line" : 493,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nIf you don't open the treasure box within time limits, there is a possibility of losing it when unexpected situation occurs.\nPlease make sure to remember that always, Master.\nSo, for our guild's improvement, you must find time to collect it."
+    },
+    {
+      "kind" : "option",
+      "line" : 498,
+      "npc" : "invest_TE",
+      "text" : "Go into Master's room."
+    },
+    {
+      "kind" : "option",
+      "line" : 498,
+      "npc" : "invest_TE",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 500,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nI'll show you the secret path. Follow me...please.\nWhen you want to return here, please press the secret switch."
+    },
+    {
+      "kind" : "message",
+      "line" : 516,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nGoods are produced once a day... if you don't remove them in time, they will not be produced anymore.\nTherefore, it will be better if you check up on them from time to time."
+    },
+    {
+      "kind" : "message",
+      "line" : 530,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        "getarg(3)",
+        "getarg(4)",
+        "getarg(5)"
+      ],
+      "text" : "{0}\nIf you invest in {1}, the {2}. Therfore, if you consider our {3}, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n "
+    },
+    {
+      "kind" : "message",
+      "line" : 536,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        "getarg(3)",
+        "getarg(6)"
+      ],
+      "text" : "^ff0000The {0} level of our Castle is at it's highest, 100%. No more investments are needed. Just as I have expected from a great {1} like you, Master.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 540,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        "getarg(7)"
+      ],
+      "text" : "^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect the {0} of the guild to grow at a high rate."
+    },
+    {
+      "kind" : "message",
+      "line" : 544,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@cost_invest"
+      ],
+      "text" : "The current investment amount required is ^ff0000{0}^000000 zeny. Will you invest?"
+    },
+    {
+      "kind" : "message",
+      "line" : 546,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@cost_invest"
+      ],
+      "text" : "You've invested once today... if you wish to invest once more, ^ff0000{0}^000000 more zeny will be needed."
+    },
+    {
+      "kind" : "option",
+      "line" : 548,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        "getarg(3)"
+      ],
+      "text" : "Invest in {0}."
+    },
+    {
+      "kind" : "option",
+      "line" : 548,
+      "npc" : "invest_TE",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 552,
+      "npc" : "invest_TE",
+      "text" : "I'm sorry but there is not enough zeny to invest. You will have to try again when you have the funds, Master."
+    },
+    {
+      "kind" : "message",
+      "line" : 557,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        "getarg(3)"
+      ],
+      "text" : "We finished the investment safely. I expect that our {0} level will be increased by tomorrow."
+    },
+    {
+      "kind" : "message",
+      "line" : 560,
+      "npc" : "invest_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "{0}\nI'll do as you bid, my master... There is no hurry. We will do our best."
+    },
+    {
+      "kind" : "message",
+      "line" : 702,
+      "npc" : "lever2_TE",
+      "text" : "[Ringing Voice]\n'Those who overcome an ordeal shows a great deal of bravery... and will find their way to another ordeal.'"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "lever2_TE",
+      "text" : "[Ringing Voice]\n'Only the truly brave can take the test.'"
+    },
+    {
+      "kind" : "message",
+      "line" : 709,
+      "npc" : "lever2_TE",
+      "text" : " \nThere's a small lever. Will you pull it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 712,
+      "npc" : "lever2_TE",
+      "text" : "Pull."
+    },
+    {
+      "kind" : "option",
+      "line" : 712,
+      "npc" : "lever2_TE",
+      "text" : "Don't pull."
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "lever2_TE",
+      "text" : " \nNothing happened."
+    },
+    {
+      "kind" : "message",
+      "line" : 745,
+      "npc" : "lever1_TE",
+      "text" : " \nThere's a small lever. Will you pull it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 748,
+      "npc" : "lever1_TE",
+      "text" : "Pull."
+    },
+    {
+      "kind" : "option",
+      "line" : 748,
+      "npc" : "lever1_TE",
+      "text" : "Do not."
+    },
+    {
+      "kind" : "message",
+      "line" : 1076,
+      "npc" : "F_flag_woe_TE",
+      "text" : "[ Edict of the Divine Rune-Midgarts Kingdom ]\n \n1. Follow the ordinance of The Divine Rune-Midgarts Kingdom, \nWe declare that\nthere is no formal master of this castle.\n \n2. To the one who can \novercome all trials\nand destroy the Emperium,\nthe king will endow the one with\nownership of this castle."
+    },
+    {
+      "kind" : "message",
+      "line" : 1090,
+      "npc" : "F_flag_woe_TE",
+      "text" : "[ Echoing Voice ]\nBrave ones...\nDo you wish to return to your honorable place?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1094,
+      "npc" : "F_flag_woe_TE",
+      "text" : "Return to the guild castle."
+    },
+    {
+      "kind" : "option",
+      "line" : 1094,
+      "npc" : "F_flag_woe_TE",
+      "text" : "Quit."
+    },
+    {
+      "kind" : "message",
+      "line" : 1096,
+      "npc" : "F_flag_woe_TE",
+      "text" : "Tertiary job class and users with expanded levels are not allowed to participate in Training Siege Battles."
+    },
+    {
+      "kind" : "message",
+      "line" : 1106,
+      "npc" : "F_flag_woe_TE",
+      "placeholders" : [
+        ".@guildname$",
+        ".@guildname$",
+        ".@guildmaster$"
+      ],
+      "text" : "[ Edict of the Divine Rune-Midgarts Kingdom ]\n \n1. Follow the ordinance of The Divine Rune-Midgarts Kingdom, \nwe approve that this place is in\nthe private prossession of ^ff0000{0}^000000 Guild.\n \n2. The guild Master of ^ff0000{1}^000000 Guild is\n^ff0000{2}^000000\nIf there is anyone who objects to this,\nprove your strength and honor with a steel blade in your hand."
+    },
+    {
+      "kind" : "message",
+      "line" : 1139,
+      "text" : "password"
+    },
+    {
+      "kind" : "message",
+      "line" : 1142,
+      "text" : "That's not right"
+    },
+    {
+      "kind" : "message",
+      "line" : 1145,
+      "text" : "What do you want to do with the Gloria-bound warp?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1147,
+      "text" : "Open it"
+    },
+    {
+      "kind" : "option",
+      "line" : 1147,
+      "text" : "Close it"
+    },
+    {
+      "kind" : "option",
+      "line" : 1147,
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 1147,
+      "text" : "Rental item provided"
+    },
+    {
+      "kind" : "message",
+      "line" : 1149,
+      "text" : "Opening the warp."
+    },
+    {
+      "kind" : "message",
+      "line" : 1153,
+      "text" : "Closing the warp."
+    },
+    {
+      "kind" : "message",
+      "line" : 1159,
+      "text" : "You have 300 seconds."
+    },
+    {
+      "kind" : "message",
+      "line" : 1166,
+      "text" : "password"
+    },
+    {
+      "kind" : "message",
+      "line" : 1169,
+      "text" : "That's not right"
+    },
+    {
+      "kind" : "message",
+      "line" : 1172,
+      "text" : "What do you want to do with the Kafragarten-bound warp?"
+    },
+    {
+      "kind" : "option",
+      "line" : 1174,
+      "text" : "Open it"
+    },
+    {
+      "kind" : "option",
+      "line" : 1174,
+      "text" : "Close it"
+    },
+    {
+      "kind" : "option",
+      "line" : 1174,
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 1176,
+      "text" : "Opening the warp."
+    },
+    {
+      "kind" : "message",
+      "line" : 1180,
+      "text" : "Closing the warp."
+    },
+    {
+      "kind" : "message",
+      "line" : 1190,
+      "npc" : "Test Guide",
+      "text" : "Password?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1193,
+      "npc" : "Test Guide",
+      "text" : "Aww..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1196,
+      "npc" : "Test Guide",
+      "text" : "We provide material items needed for testing TE."
+    },
+    {
+      "kind" : "option",
+      "line" : 1198,
+      "npc" : "Test Guide",
+      "text" : "Materials for Hervor"
+    },
+    {
+      "kind" : "option",
+      "line" : 1198,
+      "npc" : "Test Guide",
+      "text" : "Materials for Jormungand"
+    }
+  ]
+}
