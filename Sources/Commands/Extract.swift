@@ -22,6 +22,8 @@ struct Extract: ParsableCommand {
 
         try Git.sync(repository: repositoryURL, from: "https://github.com/arkadeleon/swift-rathena.git")
 
+        try? FileManager.default.removeItem(at: outputURL)
+
         let npcURL = repositoryURL.appending(path: "npc")
         let files = try scriptFiles(in: npcURL)
 

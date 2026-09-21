@@ -30,7 +30,7 @@ struct ScriptExtractor {
 
         // The same page can be reached on several paths and flushed by each; keep it once per source location.
         func append(_ script: ExtractedScript) {
-            if emitted.insert([script.kind.rawValue, String(script.line), script.text]).inserted {
+            if emitted.insert([script.kind.rawValue, String(script.line), script.text] + (script.placeholders ?? [])).inserted {
                 scripts.append(script)
             }
         }
@@ -239,15 +239,19 @@ private struct PageWalker {
             return exits
 
         case .switch(let cases, let hasDefault):
+            // Execution jumps to the matching case and falls through into the following
+            // cases until a `break`, so each case starts from the jump state plus whatever
+            // fell out of the previous case.
             let before = open
             var after: [Variant] = hasDefault ? [] : before
+            var fallen: [Variant] = []
             for body in cases {
-                open = before
-                let exits = run(body)
-                after = Self.union(after, open, exits)
+                open = Self.union(before, fallen)
+                after = Self.union(after, run(body))
+                fallen = open
             }
             open = []
-            merge(after)
+            merge(Self.union(after, fallen))
             return []
 
         case .loop(let body):
