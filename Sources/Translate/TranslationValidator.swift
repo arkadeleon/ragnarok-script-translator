@@ -51,10 +51,20 @@ enum TranslationValidator {
         return nil
     }
 
-    /// A speaker name must come back as one short line, not an explanation of one.
-    static func validateSpeaker(source: String, translation: String) -> String? {
+    /// Languages whose script is not Latin: a name left in Latin letters was not transliterated.
+    private static let nonLatinLanguages: Set<String> = ["ja", "ko", "ru", "th", "zh-Hans", "zh-Hant"]
+
+    /// A speaker name must come back as one short line, not an explanation of one, and in the
+    /// target script.
+    static func validateSpeaker(source: String, translation: String, language: String) -> String? {
         if let reason = validate(source: source, translation: translation) {
             return reason
+        }
+        if nonLatinLanguages.contains(language) {
+            let bare = translation.replacing(placeholderPattern, with: "").replacing(colorPattern, with: "")
+            if bare.contains(where: { $0.isLetter && $0.isASCII }) {
+                return "name not transliterated"
+            }
         }
         if translation.contains("\n") || translation.contains("[") || translation.contains("]") {
             return "not a single name"

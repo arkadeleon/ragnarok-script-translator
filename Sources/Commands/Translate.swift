@@ -35,7 +35,7 @@ struct Translate: AsyncParsableCommand {
     var glossary: String = "Glossary"
 
     @Option(help: "Ollama model name.")
-    var model: String = "gemma4:12b"
+    var model: String = "gemma4:26b"
 
     @Option(help: "Ollama server URL.")
     var endpoint: String = "http://localhost:11434"
@@ -85,14 +85,19 @@ struct Translate: AsyncParsableCommand {
 
         let start = Date()
         for (index, file) in pending.enumerated() {
-            let extracted = try JSONDecoder().decode(ExtractedFile.self, from: Data(contentsOf: inputURL.appending(path: file)))
-            try await translate(extracted, cache: &cache, glossary: glossary, translator: translator)
+            do {
+                let extracted = try decoder.decode(ExtractedFile.self, from: Data(contentsOf: inputURL.appending(path: file)))
+                try await translate(extracted, cache: &cache, glossary: glossary, translator: translator)
 
-            let translated = Self.translatedFile(for: extracted, cache: cache)
-            try Self.write(translated, to: outputURL.appending(path: file))
+                let translated = Self.translatedFile(for: extracted, cache: cache)
+                try Self.write(translated, to: outputURL.appending(path: file))
 
-            let failures = translated.scripts.filter { $0.error != nil }.count
-            printProgress(done: index + 1, total: pending.count, start: start, file: extracted.file, scripts: extracted.scripts.count, failures: failures)
+                let failures = translated.scripts.filter { $0.error != nil }.count
+                printProgress(done: index + 1, total: pending.count, start: start, file: extracted.file, scripts: extracted.scripts.count, failures: failures)
+            } catch {
+                // One bad file must not end a run that takes days; it is retried next time.
+                print("\(file): \(error)")
+            }
         }
 
         try Self.aggregate(from: outputURL, cache: cache)
@@ -126,19 +131,33 @@ struct Translate: AsyncParsableCommand {
         if !speakers.isEmpty {
             let results = try await translateBatched(
                 speakers, batchSize: Self.speakerBatchSize, glossary: glossary, translator: translator,
-                system: { TranslationPrompt.speakers(language: language, glossary: $0) },
-                validate: TranslationValidator.validateSpeaker
+                system: { terms, _ in TranslationPrompt.speakers(language: language, glossary: terms, examples: glossary.nameExamples(count: 4)) },
+                validate: { TranslationValidator.validateSpeaker(source: $0, translation: $1, language: language) }
             )
             for (speaker, outcome) in results {
-                // A name the model cannot handle stays English rather than blocking the page.
-                cache.speakers[speaker] = (try? outcome.get()) ?? speaker
+                switch outcome {
+                case .success(let translation):
+                    cache.speakers[speaker] = translation
+                case .failure(let failure):
+                    // A name the model cannot handle stays English rather than blocking the page.
+                    print("speaker \"\(speaker)\" not translated: \(failure.reason)")
+                    cache.speakers[speaker] = speaker
+                }
             }
         }
 
         if !texts.isEmpty {
+            // Names mentioned in the dialogue must match the speaker table.
+            var fileSpeakers: [String: String] = [:]
+            for speaker in seenSpeakers.union(extracted.scripts.compactMap(\.speaker)) where Self.needsTranslation(speaker) {
+                if let translation = cache.speakers[speaker], translation != speaker {
+                    fileSpeakers[speaker] = translation
+                }
+            }
+            let names = Glossary(terms: fileSpeakers)
             let results = try await translateBatched(
                 texts, batchSize: batchSize, glossary: glossary, translator: translator,
-                system: { TranslationPrompt.system(language: language, glossary: $0) },
+                system: { TranslationPrompt.system(language: language, glossary: $0, names: names.entries(in: $1)) },
                 validate: TranslationValidator.validate
             )
             for (text, outcome) in results {
@@ -175,7 +194,7 @@ struct Translate: AsyncParsableCommand {
         batchSize: Int,
         glossary: Glossary,
         translator: OllamaTranslator,
-        system: ([(term: String, translation: String)]) -> String,
+        system: ([(term: String, translation: String)], [String]) -> String,
         validate: (String, String) -> String?
     ) async throws -> [(String, Outcome)] {
         var results: [(String, Outcome)] = []
@@ -185,14 +204,12 @@ struct Translate: AsyncParsableCommand {
             var lastFailures: [String: TranslationFailure] = [:]
 
             for _ in 0..<Self.maxAttempts where !remaining.isEmpty {
-                let items = remaining.enumerated().map { TranslationItem(id: $0.offset + 1, speaker: $0.element.speaker, text: $0.element.text) }
-                let prompt = system(glossary.entries(in: remaining.map(\.text)))
-                let outputs = try await translator.translate(items, system: prompt)
+                let (outputs, errors) = await send(remaining, glossary: glossary, translator: translator, system: system)
 
                 var retry: [Pending] = []
-                for (index, item) in remaining.enumerated() {
-                    guard let raw = outputs[index + 1] else {
-                        lastFailures[item.text] = TranslationFailure(reason: "missing from response", output: "")
+                for item in remaining {
+                    guard let raw = outputs[item.text] else {
+                        lastFailures[item.text] = errors[item.text] ?? TranslationFailure(reason: "missing from response", output: "")
                         retry.append(item)
                         continue
                     }
@@ -212,6 +229,39 @@ struct Translate: AsyncParsableCommand {
             }
         }
         return results
+    }
+
+    /// One request for `items`, keyed by source text. A response the model cut short cannot be
+    /// parsed, so the batch is halved and each half asked again; a single item that still fails is
+    /// reported as an error rather than losing the rest of the batch.
+    private func send(
+        _ items: [Pending],
+        glossary: Glossary,
+        translator: OllamaTranslator,
+        system: ([(term: String, translation: String)], [String]) -> String
+    ) async -> (outputs: [String: String], errors: [String: TranslationFailure]) {
+        let requestItems = items.enumerated().map { TranslationItem(id: $0.offset + 1, speaker: $0.element.speaker, text: $0.element.text) }
+        let prompt = system(glossary.entries(in: items.map(\.text)), items.map(\.text))
+
+        do {
+            let outputs = try await translator.translate(requestItems, system: prompt)
+            var result: [String: String] = [:]
+            for (index, item) in items.enumerated() {
+                if let output = outputs[index + 1] {
+                    result[item.text] = output
+                }
+            }
+            return (result, [:])
+        } catch {
+            guard items.count > 1 else {
+                return ([:], [items[0].text: TranslationFailure(reason: "\(error)", output: "")])
+            }
+            let middle = items.count / 2
+            let first = await send(Array(items[..<middle]), glossary: glossary, translator: translator, system: system)
+            let second = await send(Array(items[middle...]), glossary: glossary, translator: translator, system: system)
+            return (first.outputs.merging(second.outputs) { current, _ in current },
+                    first.errors.merging(second.errors) { current, _ in current })
+        }
     }
 
     private static func needsTranslation(_ speaker: String) -> Bool {

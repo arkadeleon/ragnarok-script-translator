@@ -24,6 +24,7 @@ struct OllamaTranslator {
     var endpoint: URL
     var model: String
     var contextLength = 16384
+    var maxOutputTokens = 8192
 
     private struct ChatRequest: Encodable {
         struct Message: Encodable {
@@ -33,6 +34,7 @@ struct OllamaTranslator {
         struct Options: Encodable {
             var temperature: Double
             var num_ctx: Int
+            var num_predict: Int
         }
         var model: String
         var messages: [Message]
@@ -89,7 +91,7 @@ struct OllamaTranslator {
             model: model,
             messages: [.init(role: "system", content: system), .init(role: "user", content: payload)],
             format: JSONSchema(),
-            options: .init(temperature: 0.2, num_ctx: contextLength)
+            options: .init(temperature: 0.2, num_ctx: contextLength, num_predict: maxOutputTokens)
         )
 
         var urlRequest = URLRequest(url: endpoint.appending(path: "api/chat"))
