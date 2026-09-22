@@ -9,13 +9,13 @@ import ArgumentParser
 import Foundation
 
 /// Builds `Glossary/<language>.lproj/Glossary.json` for every language ragnarok-data-converter ships,
-/// from the item, map, skill and monster names in its `Output/` tables. The glossary is fed to the
+/// from the item, map and monster names in its `Output/` tables. The glossary is fed to the
 /// translation model as terminology, so it only needs names whose official rendering the model
 /// could not guess.
 struct GenerateGlossary: ParsableCommand {
     static let configuration = CommandConfiguration(
         commandName: "glossary",
-        abstract: "Fetches ragnarok-data-converter and generates a terminology glossary per language."
+        abstract: "Fetches ragnarok-data-converter and generates a terminology glossary per language from item, map and monster names."
     )
 
     @Option(name: .shortAndLong, help: "Directory to write <language>.lproj/Glossary.json into.")
@@ -29,11 +29,9 @@ struct GenerateGlossary: ParsableCommand {
         var signMainTitle: String?
     }
 
-    private struct SkillInfo: Decodable {
-        var skillName: String?
-    }
-
-    private static let minimumTerms = 100
+    /// Clients whose tables are not localized (English names, or English variants with stray
+    /// Korean); what survives the filters is only misleading.
+    private static let skippedLanguages: Set<String> = ["de", "fr", "id", "th", "tr"]
 
     /// (English, translation, isProperName): proper names skip the everyday-word filter.
     private typealias Pair = (term: String, translation: String, isProperName: Bool)
@@ -48,22 +46,18 @@ struct GenerateGlossary: ParsableCommand {
 
         let items = try Self.load([String: ItemInfo].self, english.appending(path: "ItemInfo.json"))
         let maps = try Self.load([String: MapInfo].self, english.appending(path: "MapInfo.json"))
-        let skills = try Self.load([String: SkillInfo].self, english.appending(path: "SkillInfo.json"))
 
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
 
         for language in try Self.languages(in: dataURL) {
+            if Self.skippedLanguages.contains(language) {
+                print("\(language): skipped (tables are not localized)")
+                continue
+            }
             let target = dataURL.appending(path: "\(language).lproj")
             var pairs: [Pair] = []
 
-            if let targetSkills = try? Self.load([String: SkillInfo].self, target.appending(path: "SkillInfo.json")) {
-                for (id, skill) in skills {
-                    if let name = skill.skillName, let translated = targetSkills[id]?.skillName {
-                        pairs.append((name, translated, true))
-                    }
-                }
-            }
             if let targetMaps = try? Self.load([String: MapInfo].self, target.appending(path: "MapInfo.json")) {
                 for (id, map) in maps {
                     if let name = map.signMainTitle, let translated = targetMaps[id]?.signMainTitle {
@@ -86,21 +80,8 @@ struct GenerateGlossary: ParsableCommand {
                 }
             }
 
-            var glossary = Self.select(pairs, language: language)
-            // A client whose tables are still English yields only stray entries; no glossary is
-            // better than a misleading one.
-            guard glossary.count >= Self.minimumTerms else {
-                print("\(language): \(glossary.count) terms, skipped (tables are not localized)")
-                continue
-            }
-
+            let glossary = Self.select(pairs, language: language)
             let glossaryURL = URL(filePath: output).appending(path: "\(language).lproj").appending(path: "Glossary.json")
-
-            // Entries already in the file were reviewed or added by hand; they win.
-            if let data = try? Data(contentsOf: glossaryURL), let existing = try? JSONDecoder().decode([String: String].self, from: data) {
-                glossary.merge(existing) { _, manual in manual }
-            }
-
             try FileManager.default.createDirectory(at: glossaryURL.deletingLastPathComponent(), withIntermediateDirectories: true)
             try encoder.encode(glossary).write(to: glossaryURL, options: .atomic)
             print("\(language): \(glossary.count) terms")
