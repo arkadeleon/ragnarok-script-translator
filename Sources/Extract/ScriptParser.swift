@@ -20,7 +20,9 @@ indirect enum Statement {
     /// A jump target (`OnInit:`, `L_Label:`); anything may arrive here, so the page starts over.
     case label
     case block([Statement])
-    case branch(then: Statement, else: Statement?)
+    /// `if ... else if ... else ...`: one alternative runs, or none when there is no `else`.
+    /// Kept flat rather than nested so a 300-deep `else if` chain does not recurse 300 deep.
+    case branch(alternatives: [Statement], otherwise: Statement?)
     case `switch`(cases: [Statement], hasDefault: Bool)
     case loop(Statement)
 }
@@ -112,15 +114,23 @@ struct ScriptParser {
 
         switch token.text.lowercased() {
         case "if":
-            index += 1
-            skipParenthesized()
-            let then = parseStatement() ?? .transparent
+            var alternatives: [Statement] = []
             var otherwise: Statement?
-            if index < tokens.count, tokens[index].kind == .identifier, tokens[index].text.lowercased() == "else" {
-                index += 1
+            while true {
+                index += 1 // `if`
+                skipParenthesized()
+                alternatives.append(parseStatement() ?? .transparent)
+                guard index < tokens.count, tokens[index].kind == .identifier, tokens[index].text.lowercased() == "else" else {
+                    break
+                }
+                index += 1 // `else`
+                if index < tokens.count, tokens[index].kind == .identifier, tokens[index].text.lowercased() == "if" {
+                    continue
+                }
                 otherwise = parseStatement() ?? .transparent
+                break
             }
-            return .branch(then: then, else: otherwise)
+            return .branch(alternatives: alternatives, otherwise: otherwise)
 
         case "else":
             // Dangling else (e.g. after a `;` we did not model); treat its body as unconditional.

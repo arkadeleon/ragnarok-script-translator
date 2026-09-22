@@ -338,13 +338,15 @@
       "kind" : "message",
       "line" : 519,
       "npc" : "Christopher",
-      "text" : "[ Christopher ]\nWelcome to Christopher's Workshop.\nYe can get all yer stuff for\nforging here. What business\nbrings ye to me?"
+      "speaker" : " Christopher ",
+      "text" : "Welcome to Christopher's Workshop.\nYe can get all yer stuff for\nforging here. What business\nbrings ye to me?"
     },
     {
       "kind" : "message",
       "line" : 525,
       "npc" : "Christopher",
-      "text" : "[ Christopher ]\nWe are taking a break from our forges in honor of the festival.\nPlease come back again after the festival is done."
+      "speaker" : " Christopher ",
+      "text" : "We are taking a break from our forges in honor of the festival.\nPlease come back again after the festival is done."
     },
     {
       "kind" : "message",
@@ -356,7 +358,8 @@
       "kind" : "message",
       "line" : 540,
       "npc" : "Point Merchant",
-      "text" : "[ Point Merchant ]\nHello. I'm selling a catalyst called ^FF0000Points^000000 for Sorcerers. What would you like?"
+      "speaker" : " Point Merchant ",
+      "text" : "Hello. I'm selling a catalyst called ^FF0000Points^000000 for Sorcerers. What would you like?"
     },
     {
       "kind" : "option",
@@ -392,7 +395,8 @@
       "kind" : "message",
       "line" : 544,
       "npc" : "Point Merchant",
-      "text" : "[ Point Merchant ]\nYou can't find the stuff you need?"
+      "speaker" : " Point Merchant ",
+      "text" : "You can't find the stuff you need?"
     },
     {
       "kind" : "message",
@@ -401,31 +405,36 @@
       "placeholders" : [
         ".@color$[.@i]"
       ],
-      "text" : "[ Point Merchant ]\nYou have chosen {0} Points.\nHow many do you want?\nIf you want to cancel, enter 0."
+      "speaker" : " Point Merchant ",
+      "text" : "You have chosen {0} Points.\nHow many do you want?\nIf you want to cancel, enter 0."
     },
     {
       "kind" : "message",
       "line" : 556,
       "npc" : "Point Merchant",
-      "text" : "[ Point Merchant ]\nYou've cancelled the trade."
+      "speaker" : " Point Merchant ",
+      "text" : "You've cancelled the trade."
     },
     {
       "kind" : "message",
       "line" : 556,
       "npc" : "Point Merchant",
-      "text" : "[ Point Merchant ]\nYou don't seem to have enough money."
+      "speaker" : " Point Merchant ",
+      "text" : "You don't seem to have enough money."
     },
     {
       "kind" : "message",
       "line" : 556,
       "npc" : "Point Merchant",
-      "text" : "[ Point Merchant ]\nYou don't have enough space in your inventory to buy this amount."
+      "speaker" : " Point Merchant ",
+      "text" : "You don't have enough space in your inventory to buy this amount."
     },
     {
       "kind" : "message",
       "line" : 556,
       "npc" : "Point Merchant",
-      "text" : "[ Point Merchant ]\nThank you very much. See you~!"
+      "speaker" : " Point Merchant ",
+      "text" : "Thank you very much. See you~!"
     },
     {
       "kind" : "option",
@@ -455,7 +464,8 @@
       "kind" : "message",
       "line" : 605,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nWelcome~!\nThe Kafra Services.\nare always on your side.\nSo how can I help you?"
+      "speaker" : "Kafra Employee",
+      "text" : "Welcome~!\nThe Kafra Services.\nare always on your side.\nSo how can I help you?"
     },
     {
       "kind" : "message",
@@ -1305,19 +1315,19 @@
       "line" : 1447,
       "npc" : "Tournament Guide",
       "placeholders" : [
-        ".@n$"
+        ".@n$",
+        "callfunc(\"F_GetNumSuffix\",('GMT_1QUE-10))"
       ],
-      "text" : "{0}\nCongratulations! You've defeated every other opponent in Group A! Good luck on the final!"
+      "text" : "{0}\nCongratulations on winning the {1} round!"
     },
     {
       "kind" : "message",
       "line" : 1447,
       "npc" : "Tournament Guide",
       "placeholders" : [
-        ".@n$",
-        "callfunc(\"F_GetNumSuffix\",('GMT_1QUE-10))"
+        ".@n$"
       ],
-      "text" : "{0}\nCongratulations on winning the {1} round!"
+      "text" : "{0}\nCongratulations! You've defeated every other opponent in Group A! Good luck on the final!"
     },
     {
       "kind" : "option",
@@ -1366,7 +1376,8 @@
       "kind" : "message",
       "line" : 2290,
       "npc" : "Tournament Healer",
-      "text" : "[ Tournament Healer ]\nThe previous round's winner can receive a heal from me."
+      "speaker" : " Tournament Healer ",
+      "text" : "The previous round's winner can receive a heal from me."
     },
     {
       "kind" : "option",
@@ -1384,13 +1395,15 @@
       "kind" : "message",
       "line" : 2294,
       "npc" : "Tournament Healer",
-      "text" : "[ Tournament Healer ]\nGuess you don't need to be healed."
+      "speaker" : " Tournament Healer ",
+      "text" : "Guess you don't need to be healed."
     },
     {
       "kind" : "message",
       "line" : 2298,
       "npc" : "Tournament Healer",
-      "text" : "[ Tournament Healer ]\nEnjoy.\nGood luck on the next round!"
+      "speaker" : " Tournament Healer ",
+      "text" : "Enjoy.\nGood luck on the next round!"
     },
     {
       "kind" : "message",
@@ -1530,17 +1543,20 @@
     {
       "kind" : "message",
       "line" : 4198,
-      "text" : "[Iris]\nAre you okay?\nThere have been so many jerks everywhere we go..."
+      "speaker" : "Iris",
+      "text" : "Are you okay?\nThere have been so many jerks everywhere we go..."
     },
     {
       "kind" : "message",
       "line" : 4200,
-      "text" : "[Kafra]\nThanks for helping me out.\nWho are you?"
+      "speaker" : "Kafra",
+      "text" : "Thanks for helping me out.\nWho are you?"
     },
     {
       "kind" : "message",
       "line" : 4202,
-      "text" : "[Iris]\nI am Iris~\nI am travelling with my good friend Chaos~!"
+      "speaker" : "Iris",
+      "text" : "I am Iris~\nI am travelling with my good friend Chaos~!"
     },
     {
       "kind" : "message",
@@ -1548,7 +1564,8 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[Iris]\nI am not the one you should thank.\nThank that adventurer, {0}.\nIt could have been much worse."
+      "speaker" : "Iris",
+      "text" : "I am not the one you should thank.\nThank that adventurer, {0}.\nIt could have been much worse."
     },
     {
       "kind" : "message",
@@ -1556,7 +1573,8 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[Kafra]\nThank you {0}.\nYou saved me."
+      "speaker" : "Kafra",
+      "text" : "Thank you {0}.\nYou saved me."
     },
     {
       "kind" : "message",
@@ -1564,7 +1582,8 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[Iris]\nIt's pretty rare to meet someone as righteous as {0}."
+      "speaker" : "Iris",
+      "text" : "It's pretty rare to meet someone as righteous as {0}."
     },
     {
       "kind" : "message",
@@ -1572,27 +1591,32 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[Iris]\nI'm on my way to see the Geffen Magic Tournament with Chaos.\nAre you on your way there too, {0}?"
+      "speaker" : "Iris",
+      "text" : "I'm on my way to see the Geffen Magic Tournament with Chaos.\nAre you on your way there too, {0}?"
     },
     {
       "kind" : "message",
       "line" : 4210,
-      "text" : "[Chaos]\nYes, you seem strong enough to be in the Tournament."
+      "speaker" : "Chaos",
+      "text" : "Yes, you seem strong enough to be in the Tournament."
     },
     {
       "kind" : "message",
       "line" : 4211,
-      "text" : "[Chaos]\nJust know that Fenrir plans on joining as well, so it won't be that easy."
+      "speaker" : "Chaos",
+      "text" : "Just know that Fenrir plans on joining as well, so it won't be that easy."
     },
     {
       "kind" : "message",
       "line" : 4212,
-      "text" : "[Chaos]\nThis is my favorite magic buff scroll, so take it as a token of our appreciation."
+      "speaker" : "Chaos",
+      "text" : "This is my favorite magic buff scroll, so take it as a token of our appreciation."
     },
     {
       "kind" : "message",
       "line" : 4216,
-      "text" : "[Chaos]\nIt will be useful in the Magic Tournament.\nLet's go Iris~!\nIt's going to start soon~!"
+      "speaker" : "Chaos",
+      "text" : "It will be useful in the Magic Tournament.\nLet's go Iris~!\nIt's going to start soon~!"
     },
     {
       "kind" : "message",
@@ -1601,22 +1625,26 @@
         "strcharinfo(0)",
         "strcharinfo(0)"
       ],
-      "text" : "[Iris]\nYes~! Go {0}~\nKafra, wish us luck~!\nDo your best {1}."
+      "speaker" : "Iris",
+      "text" : "Yes~! Go {0}~\nKafra, wish us luck~!\nDo your best {1}."
     },
     {
       "kind" : "message",
       "line" : 4485,
-      "text" : "[Fenrir]\nAre you okay?\nWhere are all these punks coming from anyways?"
+      "speaker" : "Fenrir",
+      "text" : "Are you okay?\nWhere are all these punks coming from anyways?"
     },
     {
       "kind" : "message",
       "line" : 4487,
-      "text" : "[Magic Academy Student]\nThanks for helping me.\nWho are you?"
+      "speaker" : "Magic Academy Student",
+      "text" : "Thanks for helping me.\nWho are you?"
     },
     {
       "kind" : "message",
       "line" : 4489,
-      "text" : "[Fenrir]\nI am Fenris Fenrir."
+      "speaker" : "Fenrir",
+      "text" : "I am Fenris Fenrir."
     },
     {
       "kind" : "message",
@@ -1625,7 +1653,8 @@
         "strcharinfo(0)",
         "('sex?\"he\":\"she\")"
       ],
-      "text" : "[Fenrir]\nThank {0}.\nIt would have been much worse if {1} hadn't shown up."
+      "speaker" : "Fenrir",
+      "text" : "Thank {0}.\nIt would have been much worse if {1} hadn't shown up."
     },
     {
       "kind" : "message",
@@ -1633,7 +1662,8 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[Magic Academy Student]\nThank you so much {0}.\nYou saved me."
+      "speaker" : "Magic Academy Student",
+      "text" : "Thank you so much {0}.\nYou saved me."
     },
     {
       "kind" : "message",
@@ -1641,12 +1671,14 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[Fenrir]\nYou don't meet many people like {0} these days.\nYou're a good person."
+      "speaker" : "Fenrir",
+      "text" : "You don't meet many people like {0} these days.\nYou're a good person."
     },
     {
       "kind" : "message",
       "line" : 4495,
-      "text" : "[Fenrir]\nI was on the way to register for the Geffen Magic Tournament with Loki."
+      "speaker" : "Fenrir",
+      "text" : "I was on the way to register for the Geffen Magic Tournament with Loki."
     },
     {
       "kind" : "message",
@@ -1654,7 +1686,8 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[Fenrir]\nI have a feeling that you will register too {0}.\nI hope to meet you in the finals of the Tournament."
+      "speaker" : "Fenrir",
+      "text" : "I have a feeling that you will register too {0}.\nI hope to meet you in the finals of the Tournament."
     },
     {
       "kind" : "message",
@@ -1662,22 +1695,26 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[Loki]\nOh yeah?\n{0} is going to register?\nThat's interesting."
+      "speaker" : "Loki",
+      "text" : "Oh yeah?\n{0} is going to register?\nThat's interesting."
     },
     {
       "kind" : "message",
       "line" : 4499,
-      "text" : "[Loki]\nI have a spare magic buff scroll.\nI will give it to you as a present."
+      "speaker" : "Loki",
+      "text" : "I have a spare magic buff scroll.\nI will give it to you as a present."
     },
     {
       "kind" : "message",
       "line" : 4503,
-      "text" : "[Loki]\nI doubt that you can beat Fenrir at the Tournament.\nHer fighting prowess is unmatched."
+      "speaker" : "Loki",
+      "text" : "I doubt that you can beat Fenrir at the Tournament.\nHer fighting prowess is unmatched."
     },
     {
       "kind" : "message",
       "line" : 4504,
-      "text" : "[Loki]\nFenrir, it's time to register.\nLet's hurry."
+      "speaker" : "Loki",
+      "text" : "Fenrir, it's time to register.\nLet's hurry."
     },
     {
       "kind" : "message",
@@ -1685,36 +1722,42 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[Fenrir]\nYes~! I almost forgot.\nIt was nice meeting you {0}~!"
+      "speaker" : "Fenrir",
+      "text" : "Yes~! I almost forgot.\nIt was nice meeting you {0}~!"
     },
     {
       "kind" : "message",
       "line" : 4507,
-      "text" : "[Fenrir]\nI hope to meet you in combat soon."
+      "speaker" : "Fenrir",
+      "text" : "I hope to meet you in combat soon."
     },
     {
       "kind" : "message",
       "line" : 4669,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Geffen Resident]\nMy monthly salary...\nWhat am I gonna do?\nI have to eat..."
+      "speaker" : "Geffen Resident",
+      "text" : "My monthly salary...\nWhat am I gonna do?\nI have to eat..."
     },
     {
       "kind" : "message",
       "line" : 4670,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Geffen Resident]\nYou're not a thief are you?\nI don't know what to do about my zeny being stolen."
+      "speaker" : "Geffen Resident",
+      "text" : "You're not a thief are you?\nI don't know what to do about my zeny being stolen."
     },
     {
       "kind" : "message",
       "line" : 4671,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Lydia]\nWoo, yeah, what a day~\nIt seems like all these thieves in Geffen are rich.\nThey may be good at stealing but they're easy to steal from too."
+      "speaker" : "Lydia",
+      "text" : "Woo, yeah, what a day~\nIt seems like all these thieves in Geffen are rich.\nThey may be good at stealing but they're easy to steal from too."
     },
     {
       "kind" : "message",
       "line" : 4675,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Lydia]\nHey, why are you crying?\nWhat happened?"
+      "speaker" : "Lydia",
+      "text" : "Hey, why are you crying?\nWhat happened?"
     },
     {
       "kind" : "message",
@@ -1726,55 +1769,64 @@
       "kind" : "message",
       "line" : 4679,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Geffen Resident]\nWhat am I going to do?\n*sobbing*"
+      "speaker" : "Geffen Resident",
+      "text" : "What am I going to do?\n*sobbing*"
     },
     {
       "kind" : "message",
       "line" : 4680,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Lydia]\n(I stole this envelope from one of those thug-looking guys)\n....\nHow much zeny was stolen from you?"
+      "speaker" : "Lydia",
+      "text" : "(I stole this envelope from one of those thug-looking guys)\n....\nHow much zeny was stolen from you?"
     },
     {
       "kind" : "message",
       "line" : 4683,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Geffen Resident]\n1,000,000 zeny!\nIt's everything that I had."
+      "speaker" : "Geffen Resident",
+      "text" : "1,000,000 zeny!\nIt's everything that I had."
     },
     {
       "kind" : "message",
       "line" : 4686,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Lydia]\nWhoa! That's the same amount as what's in this envelope that I stole from that shoplifter."
+      "speaker" : "Lydia",
+      "text" : "Whoa! That's the same amount as what's in this envelope that I stole from that shoplifter."
     },
     {
       "kind" : "message",
       "line" : 4689,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Lydia]\nMaybe this is what you are looking for?\nCheck it out!"
+      "speaker" : "Lydia",
+      "text" : "Maybe this is what you are looking for?\nCheck it out!"
     },
     {
       "kind" : "message",
       "line" : 4690,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Geffen Resident]\nLet me see...\nWait, this has to be my zeny!\nThank you very much for finding it!"
+      "speaker" : "Geffen Resident",
+      "text" : "Let me see...\nWait, this has to be my zeny!\nThank you very much for finding it!"
     },
     {
       "kind" : "message",
       "line" : 4695,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Lydia]\nWell... Um, that is...\nI didn't say I was gonna give it back to you..."
+      "speaker" : "Lydia",
+      "text" : "Well... Um, that is...\nI didn't say I was gonna give it back to you..."
     },
     {
       "kind" : "message",
       "line" : 4698,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Geffen Resident]\nThank you very much!!\nI will never forget your kindness~!\nI'm putting it in the bank right now!\nHave a good day~!!! Zap~!!"
+      "speaker" : "Geffen Resident",
+      "text" : "Thank you very much!!\nI will never forget your kindness~!\nI'm putting it in the bank right now!\nHave a good day~!!! Zap~!!"
     },
     {
       "kind" : "message",
       "line" : 4702,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Lydia]\n......\nI guess... I did a good thing...?"
+      "speaker" : "Lydia",
+      "text" : "......\nI guess... I did a good thing...?"
     },
     {
       "kind" : "message",
@@ -1786,31 +1838,36 @@
       "kind" : "message",
       "line" : 4708,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Lydia]\nSo, are you asking me for more zeny?\nZeny doesn't grow on trees you know!"
+      "speaker" : "Lydia",
+      "text" : "So, are you asking me for more zeny?\nZeny doesn't grow on trees you know!"
     },
     {
       "kind" : "message",
       "line" : 4713,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Lydia]\nI mean it is hers so...\nI'll just consider it a donation to the Geffen Magic Tournament."
+      "speaker" : "Lydia",
+      "text" : "I mean it is hers so...\nI'll just consider it a donation to the Geffen Magic Tournament."
     },
     {
       "kind" : "message",
       "line" : 4717,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Lydia]\nWell, I can't give away any Tournament participants any zeny..."
+      "speaker" : "Lydia",
+      "text" : "Well, I can't give away any Tournament participants any zeny..."
     },
     {
       "kind" : "message",
       "line" : 4720,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Lydia]\nI stole this magic scroll from another thief, so don't worry about taking it."
+      "speaker" : "Lydia",
+      "text" : "I stole this magic scroll from another thief, so don't worry about taking it."
     },
     {
       "kind" : "message",
       "line" : 4725,
       "npc" : "Geffen Shoplifter",
-      "text" : "[Lydia]\nI need to get to the Geffen Magic Tournament.\nGotta go!"
+      "speaker" : "Lydia",
+      "text" : "I need to get to the Geffen Magic Tournament.\nGotta go!"
     }
   ]
 }

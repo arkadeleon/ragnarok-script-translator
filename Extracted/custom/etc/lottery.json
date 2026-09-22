@@ -13,26 +13,17 @@
         "$LW4",
         "$LW5",
         "$LW6",
-        "$LID"
-      ],
-      "text" : "[Lottery]\nWinning Lotto Numbers ({0}):\n^0000FF[{1}] [{2}] [{3}] [{4}] [{5}] [{6}]^000000\nNext Draw-ID: ^FF0000{7}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 93,
-      "npc" : "Lottery",
-      "placeholders" : [
-        "$LID2",
-        "$LW1",
-        "$LW2",
-        "$LW3",
-        "$LW4",
-        "$LW5",
-        "$LW6",
         "#LID",
+        "#LW1",
+        "#LW2",
+        "#LW3",
+        "#LW4",
+        "#LW5",
+        "#LW6",
         "$LID"
       ],
-      "text" : "[Lottery]\nWinning Lotto Numbers ({0}):\n^0000FF[{1}] [{2}] [{3}] [{4}] [{5}] [{6}]^000000\nYour Ticket ({7}):\nNext Draw-ID: ^FF0000{8}^000000."
+      "speaker" : "Lottery",
+      "text" : "Winning Lotto Numbers ({0}):\n^0000FF[{1}] [{2}] [{3}] [{4}] [{5}] [{6}]^000000\nYour Ticket ({7}):\n^FF0000[{8}] [{9}] [{10}] [{11}] [{12}] [{13}]^000000\nNext Draw-ID: ^FF0000{14}^000000."
     },
     {
       "kind" : "message",
@@ -54,7 +45,8 @@
         "#LW6",
         "$LID"
       ],
-      "text" : "[Lottery]\nWinning Lotto Numbers ({0}):\n^0000FF[{1}] [{2}] [{3}] [{4}] [{5}] [{6}]^000000\n^FF0000[{7}] [{8}] [{9}] [{10}] [{11}] [{12}]^000000\nNext Draw-ID: ^FF0000{13}^000000."
+      "speaker" : "Lottery",
+      "text" : "Winning Lotto Numbers ({0}):\n^0000FF[{1}] [{2}] [{3}] [{4}] [{5}] [{6}]^000000\n^FF0000[{7}] [{8}] [{9}] [{10}] [{11}] [{12}]^000000\nNext Draw-ID: ^FF0000{13}^000000."
     },
     {
       "kind" : "message",
@@ -69,15 +61,27 @@
         "$LW5",
         "$LW6",
         "#LID",
-        "#LW1",
-        "#LW2",
-        "#LW3",
-        "#LW4",
-        "#LW5",
-        "#LW6",
         "$LID"
       ],
-      "text" : "[Lottery]\nWinning Lotto Numbers ({0}):\n^0000FF[{1}] [{2}] [{3}] [{4}] [{5}] [{6}]^000000\nYour Ticket ({7}):\n^FF0000[{8}] [{9}] [{10}] [{11}] [{12}] [{13}]^000000\nNext Draw-ID: ^FF0000{14}^000000."
+      "speaker" : "Lottery",
+      "text" : "Winning Lotto Numbers ({0}):\n^0000FF[{1}] [{2}] [{3}] [{4}] [{5}] [{6}]^000000\nYour Ticket ({7}):\nNext Draw-ID: ^FF0000{8}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 93,
+      "npc" : "Lottery",
+      "placeholders" : [
+        "$LID2",
+        "$LW1",
+        "$LW2",
+        "$LW3",
+        "$LW4",
+        "$LW5",
+        "$LW6",
+        "$LID"
+      ],
+      "speaker" : "Lottery",
+      "text" : "Winning Lotto Numbers ({0}):\n^0000FF[{1}] [{2}] [{3}] [{4}] [{5}] [{6}]^000000\nNext Draw-ID: ^FF0000{7}^000000."
     },
     {
       "kind" : "option",
@@ -105,7 +109,8 @@
         "$L_TicketPrice",
         "$L_Prize_Money"
       ],
-      "text" : "[Lottery]\nTickets cost ^0000FF{0}z^000000.\nThe Jackpot is ^FF0000{1}z^000000."
+      "speaker" : "Lottery",
+      "text" : "Tickets cost ^0000FF{0}z^000000.\nThe Jackpot is ^FF0000{1}z^000000."
     },
     {
       "kind" : "option",
@@ -123,7 +128,8 @@
       "kind" : "message",
       "line" : 113,
       "npc" : "Lottery",
-      "text" : "[Lottery]\nWould you like your numbers hand picked or computer generated?"
+      "speaker" : "Lottery",
+      "text" : "Would you like your numbers hand picked or computer generated?"
     },
     {
       "kind" : "option",
@@ -155,7 +161,8 @@
         "@L5",
         "@L6"
       ],
-      "text" : "[Lottery]\nThe computer has selected the following numbers:\n^0000FF{0} {1} {2} {3} {4} {5}^000000"
+      "speaker" : "Lottery",
+      "text" : "The computer has selected the following numbers:\n^0000FF{0} {1} {2} {3} {4} {5}^000000"
     },
     {
       "kind" : "option",
@@ -173,7 +180,8 @@
       "kind" : "message",
       "line" : 167,
       "npc" : "Lottery",
-      "text" : "[Lottery]\nPlease pick your numbers (1-40):"
+      "speaker" : "Lottery",
+      "text" : "Please pick your numbers (1-40):"
     },
     {
       "kind" : "message",
@@ -187,7 +195,8 @@
         "@L5",
         "@L6"
       ],
-      "text" : "[Lottery]\nYour numbers are:\n^0000FF{0} {1} {2} {3} {4} {5}^000000"
+      "speaker" : "Lottery",
+      "text" : "Your numbers are:\n^0000FF{0} {1} {2} {3} {4} {5}^000000"
     },
     {
       "kind" : "option",
@@ -205,25 +214,29 @@
       "kind" : "message",
       "line" : 230,
       "npc" : "Lottery",
-      "text" : "[Lottery]\nThe live broadcasted draw is at 9pm.\nYou can claim your ticket between then and the next draw."
+      "speaker" : "Lottery",
+      "text" : "The live broadcasted draw is at 9pm.\nYou can claim your ticket between then and the next draw."
     },
     {
       "kind" : "message",
       "line" : 234,
       "npc" : "Lottery",
-      "text" : "[Lottery]\nGood luck!"
+      "speaker" : "Lottery",
+      "text" : "Good luck!"
     },
     {
       "kind" : "message",
       "line" : 284,
       "npc" : "Lottery",
-      "text" : "[Lottery]\nBad luck, it appears you do not hold a winning ticket."
+      "speaker" : "Lottery",
+      "text" : "Bad luck, it appears you do not hold a winning ticket."
     },
     {
       "kind" : "message",
       "line" : 287,
       "npc" : "Lottery",
-      "text" : "[Lottery]\nBetter luck next time!."
+      "speaker" : "Lottery",
+      "text" : "Better luck next time!."
     },
     {
       "kind" : "message",
@@ -232,7 +245,8 @@
       "placeholders" : [
         "$L_Prize_Money"
       ],
-      "text" : "[Lottery]\nYou have matched all six numbers!\nJackpot!\nYou've won ^0000FF{0}z^000000."
+      "speaker" : "Lottery",
+      "text" : "You have matched all six numbers!\nJackpot!\nYou've won ^0000FF{0}z^000000."
     },
     {
       "kind" : "message",
@@ -241,31 +255,36 @@
       "placeholders" : [
         "$L_Prize_Money_Small"
       ],
-      "text" : "[Lottery]\nYou have matched at least 4 numbers!\nYou've won ^0000FF{0}z^000000."
+      "speaker" : "Lottery",
+      "text" : "You have matched at least 4 numbers!\nYou've won ^0000FF{0}z^000000."
     },
     {
       "kind" : "message",
       "line" : 314,
       "npc" : "Lottery",
-      "text" : "[Lottery]\nYou can't afford a lottery ticket."
+      "speaker" : "Lottery",
+      "text" : "You can't afford a lottery ticket."
     },
     {
       "kind" : "message",
       "line" : 320,
       "npc" : "Lottery",
-      "text" : "[Lottery]\nI'm sorry but it appears that you have an invalid ticket."
+      "speaker" : "Lottery",
+      "text" : "I'm sorry but it appears that you have an invalid ticket."
     },
     {
       "kind" : "message",
       "line" : 326,
       "npc" : "Lottery",
-      "text" : "[Lottery]\nIt appears that you already have a ticket for today.\nYou may only purchase one ticket per draw."
+      "speaker" : "Lottery",
+      "text" : "It appears that you already have a ticket for today.\nYou may only purchase one ticket per draw."
     },
     {
       "kind" : "message",
       "line" : 332,
       "npc" : "Lottery",
-      "text" : "[Lottery]\nCome back soon!"
+      "speaker" : "Lottery",
+      "text" : "Come back soon!"
     },
     {
       "kind" : "option",
@@ -301,13 +320,15 @@
       "kind" : "message",
       "line" : 402,
       "npc" : "Lottery",
-      "text" : "[Lottery]\nPlease pick your numbers (1-40):"
+      "speaker" : "Lottery",
+      "text" : "Please pick your numbers (1-40):"
     },
     {
       "kind" : "message",
       "line" : 450,
       "npc" : "Lottery",
-      "text" : "[Lottery]\nLottery rigged for next draw."
+      "speaker" : "Lottery",
+      "text" : "Lottery rigged for next draw."
     }
   ]
 }

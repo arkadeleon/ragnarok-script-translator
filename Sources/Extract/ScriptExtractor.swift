@@ -30,7 +30,8 @@ struct ScriptExtractor {
 
         // The same page can be reached on several paths and flushed by each; keep it once per source location.
         func append(_ script: ExtractedScript) {
-            if emitted.insert([script.kind.rawValue, String(script.line), script.text] + (script.placeholders ?? [])).inserted {
+            let key = [script.kind.rawValue, String(script.line), script.speaker ?? "", script.text] + (script.placeholders ?? [])
+            if emitted.insert(key).inserted {
                 scripts.append(script)
             }
         }
@@ -136,6 +137,13 @@ struct ScriptExtractor {
             return nil
         }
 
+        var lines = lines
+        var speaker: String?
+        if kind == .message, let name = speakerName(of: lines[0]) {
+            speaker = name
+            lines.removeFirst()
+        }
+
         var text = ""
         var placeholders: [String] = []
         var hasText = false
@@ -158,10 +166,36 @@ struct ScriptExtractor {
             }
         }
 
-        guard hasText else {
+        // A page that is only a speaker line still records the speaker.
+        guard hasText || speaker != nil else {
             return nil
         }
-        return ExtractedScript(kind: kind, npc: npc, line: line, text: text, placeholders: placeholders.isEmpty ? nil : placeholders)
+        return ExtractedScript(kind: kind, npc: npc, line: line, speaker: speaker, text: text, placeholders: placeholders.isEmpty ? nil : placeholders)
+    }
+
+    /// `[Name]` or `[` + expression + `]` on a line of its own: the speaker, with any expression
+    /// (the player's name in practice) rendered as `{0}`.
+    private static func speakerName(of segments: [Segment]) -> String? {
+        var rendered = ""
+        var placeholderCount = 0
+        for segment in segments {
+            switch segment {
+            case .literal(let literal):
+                rendered += literal
+            case .placeholder:
+                rendered += "{\(placeholderCount)}"
+                placeholderCount += 1
+            }
+        }
+        let trimmed = rendered.trimmingCharacters(in: .whitespaces)
+        guard trimmed.count >= 2, trimmed.hasPrefix("["), trimmed.hasSuffix("]") else {
+            return nil
+        }
+        let inner = trimmed.dropFirst().dropLast()
+        guard !inner.contains("]"), !inner.contains("[") else {
+            return nil
+        }
+        return String(inner)
     }
 }
 
@@ -227,15 +261,24 @@ private struct PageWalker {
             }
             return exits
 
-        case .branch(let then, let otherwise):
+        case .branch(let alternatives, let otherwise):
             let before = open
-            var exits = run(then)
-            let afterThen = open
-            open = before
-            if let otherwise {
-                exits += run(otherwise)
+            var after: [Variant] = []
+            var exits: [Variant] = []
+            for alternative in alternatives {
+                open = before
+                exits += run(alternative)
+                after = Self.union(after, open)
             }
-            merge(afterThen)
+            if let otherwise {
+                open = before
+                exits += run(otherwise)
+                after = Self.union(after, open)
+            } else {
+                after = Self.union(after, before)
+            }
+            open = []
+            merge(after)
             return exits
 
         case .switch(let cases, let hasDefault):

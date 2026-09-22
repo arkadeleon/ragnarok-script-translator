@@ -7,9 +7,111 @@
       "npc" : "quest_shop",
       "placeholders" : [
         "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
-        "Slot(.@q[0])"
+        "Slot(.@q[0])",
+        "Chk(Zeny,.@q[4]*.@q[1])",
+        "(.@q[4]*.@q[1])",
+        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
+        "(.@q[5]*.@q[1])",
+        ".Points$[1]",
+        "getd(.Points$[0])",
+        "(.@q[5]*.@q[1])",
+        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
+        "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
+        "Slot(.@q[.@i])",
+        "countitem(.@q[.@i])",
+        "(.@q[.@i+1]*.@q[1])"
       ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:"
+      "speaker" : "Quest Shop",
+      "text" : "Reward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000\n > {9}{10}{11} ({12}/{13})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])",
+        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
+        "(.@q[5]*.@q[1])",
+        ".Points$[1]",
+        "getd(.Points$[0])",
+        "(.@q[5]*.@q[1])",
+        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
+        "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
+        "Slot(.@q[.@i])",
+        "countitem(.@q[.@i])",
+        "(.@q[.@i+1]*.@q[1])"
+      ],
+      "speaker" : "Quest Shop",
+      "text" : "Reward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} {4} ({5}/{6})^000000\n > {7}{8}{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])",
+        "Chk(Zeny,.@q[4]*.@q[1])",
+        "(.@q[4]*.@q[1])",
+        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
+        "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
+        "Slot(.@q[.@i])",
+        "countitem(.@q[.@i])",
+        "(.@q[.@i+1]*.@q[1])"
+      ],
+      "speaker" : "Quest Shop",
+      "text" : "Reward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5}{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])",
+        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
+        "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
+        "Slot(.@q[.@i])",
+        "countitem(.@q[.@i])",
+        "(.@q[.@i+1]*.@q[1])"
+      ],
+      "speaker" : "Quest Shop",
+      "text" : "Reward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3}{4} ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])",
+        "Chk(Zeny,.@q[4]*.@q[1])",
+        "(.@q[4]*.@q[1])",
+        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
+        "(.@q[5]*.@q[1])",
+        ".Points$[1]",
+        "getd(.Points$[0])",
+        "(.@q[5]*.@q[1])"
+      ],
+      "speaker" : "Quest Shop",
+      "text" : "Reward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
+        "Slot(.@q[0])",
+        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
+        "(.@q[5]*.@q[1])",
+        ".Points$[1]",
+        "getd(.Points$[0])",
+        "(.@q[5]*.@q[1])"
+      ],
+      "speaker" : "Quest Shop",
+      "text" : "Reward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} {4} ({5}/{6})^000000"
     },
     {
       "kind" : "message",
@@ -21,7 +123,8 @@
         "Chk(Zeny,.@q[4]*.@q[1])",
         "(.@q[4]*.@q[1])"
       ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000"
+      "speaker" : "Quest Shop",
+      "text" : "Reward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000"
     },
     {
       "kind" : "message",
@@ -29,105 +132,10 @@
       "npc" : "quest_shop",
       "placeholders" : [
         "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
-        "Slot(.@q[0])",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        "(.@q[5]*.@q[1])",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        "(.@q[5]*.@q[1])"
+        "Slot(.@q[0])"
       ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} {4} ({5}/{6})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        "(.@q[4]*.@q[1])",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        "(.@q[5]*.@q[1])",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        "(.@q[5]*.@q[1])"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
-        "Slot(.@q[0])",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        "(.@q[.@i+1]*.@q[1])"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3}{4} ({5}/{6})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        "(.@q[4]*.@q[1])",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        "(.@q[.@i+1]*.@q[1])"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5}{6} ({7}/{8})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
-        "Slot(.@q[0])",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        "(.@q[5]*.@q[1])",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        "(.@q[5]*.@q[1])",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        "(.@q[.@i+1]*.@q[1])"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} {4} ({5}/{6})^000000\n > {7}{8}{9} ({10}/{11})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        "(.@q[4]*.@q[1])",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        "(.@q[5]*.@q[1])",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        "(.@q[5]*.@q[1])",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        "((.ShowID)?\"{\"+.@q[.@i]+\"} \":\"\")",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        "(.@q[.@i+1]*.@q[1])"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000\n > {9}{10}{11} ({12}/{13})^000000"
+      "speaker" : "Quest Shop",
+      "text" : "Reward: ^0055FF{0}{1}^000000\nRequirements:"
     },
     {
       "kind" : "option",
@@ -148,7 +156,8 @@
       "kind" : "message",
       "line" : 157,
       "npc" : "quest_shop",
-      "text" : "[Quest Shop]\nYou're missing one or more quest requirements."
+      "speaker" : "Quest Shop",
+      "text" : "You're missing one or more quest requirements."
     },
     {
       "kind" : "message",
@@ -157,7 +166,8 @@
       "placeholders" : [
         "(((.@q[2]*getiteminfo(.@q[0], ITEMINFO_WEIGHT))+Weight-MaxWeight)/10)"
       ],
-      "text" : "[Quest Shop]\n^FF0000You need {0} additional weight capacity to complete this trade.^000000"
+      "speaker" : "Quest Shop",
+      "text" : "^FF0000You need {0} additional weight capacity to complete this trade.^000000"
     }
   ]
 }

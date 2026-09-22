@@ -8,7 +8,7 @@
 import ArgumentParser
 
 @main
-struct RagnarokScriptTranslator: ParsableCommand {
+struct RagnarokScriptTranslator: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
         commandName: "ragnarok-script-translator",
         abstract: "Extracts translatable text from rAthena NPC scripts and translates it.",

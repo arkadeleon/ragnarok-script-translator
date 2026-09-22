@@ -8,7 +8,8 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[Hunting Missions]\nHello, {0}!"
+      "speaker" : "Hunting Missions",
+      "text" : "Hello, {0}!"
     },
     {
       "kind" : "message",
@@ -19,13 +20,15 @@
         "F_Rand(\"Working hard, as always...\", \"Not slacking, I hope...\")",
         "F_InsertPlural(Mission_Total,\"mission\",0,\"^0055FF%d^777777 %s\")"
       ],
-      "text" : "[Hunting Missions]\nHello, {0}!\n{1}\nIs there anything I can help\nyou with?\n \n^777777~ You've completed {2}. ~^000000"
+      "speaker" : "Hunting Missions",
+      "text" : "Hello, {0}!\n{1}\nIs there anything I can help\nyou with?\n \n^777777~ You've completed {2}. ~^000000"
     },
     {
       "kind" : "message",
       "line" : 32,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nI can't find any records...\nYou must be new here!"
+      "speaker" : "Hunting Missions",
+      "text" : "I can't find any records...\nYou must be new here!"
     },
     {
       "kind" : "option",
@@ -55,7 +58,8 @@
       "kind" : "message",
       "line" : 53,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nYou've started a mission\non another character."
+      "speaker" : "Hunting Missions",
+      "text" : "You've started a mission\non another character."
     },
     {
       "kind" : "message",
@@ -64,37 +68,43 @@
       "placeholders" : [
         "Time2Str(#Mission_Delay)"
       ],
-      "text" : "[Hunting Missions]\nI'm afraid you'll have to wait {0} before taking another mission."
+      "speaker" : "Hunting Missions",
+      "text" : "I'm afraid you'll have to wait {0} before taking another mission."
     },
     {
       "kind" : "message",
       "line" : 53,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nYou must hunt:"
+      "speaker" : "Hunting Missions",
+      "text" : "You must hunt:"
     },
     {
       "kind" : "message",
       "line" : 61,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nI can't seem to find any records\nfor that character, though...\nOne moment, please."
+      "speaker" : "Hunting Missions",
+      "text" : "I can't seem to find any records\nfor that character, though...\nOne moment, please."
     },
     {
       "kind" : "message",
       "line" : 86,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nReport back when\nyou've finished.\nGood luck!"
+      "speaker" : "Hunting Missions",
+      "text" : "Report back when\nyou've finished.\nGood luck!"
     },
     {
       "kind" : "message",
       "line" : 92,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nMission status:"
+      "speaker" : "Hunting Missions",
+      "text" : "Mission status:"
     },
     {
       "kind" : "message",
       "line" : 97,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nDo you really want to\nabandon your mission?"
+      "speaker" : "Hunting Missions",
+      "text" : "Do you really want to\nabandon your mission?\nYour delay time will not be reset."
     },
     {
       "kind" : "message",
@@ -103,13 +113,15 @@
       "placeholders" : [
         "F_InsertComma(.Reset)"
       ],
-      "text" : "[Hunting Missions]\nDo you really want to\nabandon your mission?\nIt will cost {0} Zeny."
+      "speaker" : "Hunting Missions",
+      "text" : "Do you really want to\nabandon your mission?\nIt will cost {0} Zeny."
     },
     {
       "kind" : "message",
       "line" : 97,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nDo you really want to\nabandon your mission?\nYour delay time will not be reset."
+      "speaker" : "Hunting Missions",
+      "text" : "Do you really want to\nabandon your mission?"
     },
     {
       "kind" : "option",
@@ -127,19 +139,22 @@
       "kind" : "message",
       "line" : 109,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nYou don't have enough\nZeny to drop this mission."
+      "speaker" : "Hunting Missions",
+      "text" : "You don't have enough\nZeny to drop this mission."
     },
     {
       "kind" : "message",
       "line" : 118,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nAlright, I've dropped\nyour current mission."
+      "speaker" : "Hunting Missions",
+      "text" : "Alright, I've dropped\nyour current mission."
     },
     {
       "kind" : "message",
       "line" : 131,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nI knew you were kidding!\nKeep up the good work."
+      "speaker" : "Hunting Missions",
+      "text" : "I knew you were kidding!\nKeep up the good work."
     },
     {
       "kind" : "message",
@@ -148,7 +163,8 @@
       "placeholders" : [
         "#Mission_Points"
       ],
-      "text" : "[Hunting Missions]\nYou have ^0055FF{0}^000000 Mission Points.\nUse them well!"
+      "speaker" : "Hunting Missions",
+      "text" : "You have ^0055FF{0}^000000 Mission Points.\nUse them well!"
     },
     {
       "kind" : "message",
@@ -158,19 +174,22 @@
         "(.@i+1)",
         "((.@name$[.@i] == \"\") ? \"^777777none\" : \"^0055FF\" + .@name$[.@i]+\"^000000 : ^FF0000\" + .@val[.@i] + \" pt.\")"
       ],
-      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank {0}]  {1}^000000"
+      "speaker" : "Hunting Missions",
+      "text" : "The top hunters are:\n  [Rank {0}]  {1}^000000"
     },
     {
       "kind" : "message",
       "line" : 148,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nThe top hunters are:"
+      "speaker" : "Hunting Missions",
+      "text" : "The top hunters are:"
     },
     {
       "kind" : "message",
       "line" : 155,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nNothing? Okay..."
+      "speaker" : "Hunting Missions",
+      "text" : "Nothing? Okay..."
     },
     {
       "kind" : "message",
@@ -194,31 +213,36 @@
         "F_InsertComma(.@Job_Exp)",
         "F_InsertComma(.@Zeny)"
       ],
-      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+      "speaker" : "Hunting Missions",
+      "text" : "Mission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
     },
     {
       "kind" : "message",
       "line" : 191,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nOh, you're done!\nGood work.\nHere's your reward."
+      "speaker" : "Hunting Missions",
+      "text" : "Oh, you're done!\nGood work.\nHere's your reward."
     },
     {
       "kind" : "message",
       "line" : 217,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nIf you so choose, I can assign\nyou a random hunting quest.\nSome are easier than others, but\nthe rewards increase with difficulty."
+      "speaker" : "Hunting Missions",
+      "text" : "If you so choose, I can assign\nyou a random hunting quest.\nSome are easier than others, but\nthe rewards increase with difficulty."
     },
     {
       "kind" : "message",
       "line" : 223,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nMissions points are shared\namongst all your characters.\nYou can't take missions on\nmultiple characters at once."
+      "speaker" : "Hunting Missions",
+      "text" : "Missions points are shared\namongst all your characters.\nDelay time is, too.\nYou can't take missions on\nmultiple characters at once."
     },
     {
       "kind" : "message",
       "line" : 223,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nMissions points are shared\namongst all your characters.\nDelay time is, too.\nYou can't take missions on\nmultiple characters at once."
+      "speaker" : "Hunting Missions",
+      "text" : "Missions points are shared\namongst all your characters.\nYou can't take missions on\nmultiple characters at once."
     },
     {
       "kind" : "message",
@@ -227,19 +251,22 @@
       "placeholders" : [
         "(.Delay ? \"every \" + ((.Delay == 1) ? \"hour.\" : .Delay + \" hours.\") : \"whenever you want.\")"
       ],
-      "text" : "[Hunting Missions]\nYou can start a quest\n{0}\nThat's everything~"
+      "speaker" : "Hunting Missions",
+      "text" : "You can start a quest\n{0}\nThat's everything~"
     },
     {
       "kind" : "message",
       "line" : 251,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nDeal completed."
+      "speaker" : "Hunting Missions",
+      "text" : "You don't have enough Mission Points."
     },
     {
       "kind" : "message",
       "line" : 251,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nYou don't have enough Mission Points."
+      "speaker" : "Hunting Missions",
+      "text" : "Deal completed."
     }
   ]
 }

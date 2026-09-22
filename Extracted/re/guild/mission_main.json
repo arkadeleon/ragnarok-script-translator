@@ -118,41 +118,9 @@
         ".@npcname$",
         "getcastlename(.castle$[.@i+.@zoneid*5])",
         "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
-        ".@total"
+        ".region$[.@zoneid]"
       ],
-      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}{2}\nis {3}!"
-    },
-    {
-      "kind" : "message",
-      "line" : 105,
-      "npc" : "gld_mission",
-      "placeholders" : [
-        ".@npcname$",
-        "getcastlename(.castle$[.@i+.@zoneid*5])",
-        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
-        ".@total"
-      ],
-      "text" : "{0}\nIncredible.\n{1}{2}\nis {3}!"
-    },
-    {
-      "kind" : "message",
-      "line" : 105,
-      "npc" : "gld_mission",
-      "placeholders" : [
-        ".@npcname$",
-        ".@total"
-      ],
-      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\nis {1}!"
-    },
-    {
-      "kind" : "message",
-      "line" : 105,
-      "npc" : "gld_mission",
-      "placeholders" : [
-        ".@npcname$",
-        ".@total"
-      ],
-      "text" : "{0}\nIncredible.\nis {1}!"
+      "text" : "{0}\nIncredible.\n{1}{2}\nYour guild has conquered {3}!"
     },
     {
       "kind" : "message",
@@ -172,11 +140,9 @@
       "npc" : "gld_mission",
       "placeholders" : [
         ".@npcname$",
-        "getcastlename(.castle$[.@i+.@zoneid*5])",
-        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
         ".region$[.@zoneid]"
       ],
-      "text" : "{0}\nIncredible.\n{1}{2}\nYour guild has conquered {3}!"
+      "text" : "{0}\nIncredible.\nYour guild has conquered {1}!"
     },
     {
       "kind" : "message",
@@ -194,9 +160,43 @@
       "npc" : "gld_mission",
       "placeholders" : [
         ".@npcname$",
-        ".region$[.@zoneid]"
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
+        ".@total"
       ],
-      "text" : "{0}\nIncredible.\nYour guild has conquered {1}!"
+      "text" : "{0}\nIncredible.\n{1}{2}\nis {3}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
+        ".@total"
+      ],
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}{2}\nis {3}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".@total"
+      ],
+      "text" : "{0}\nIncredible.\nis {1}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".@total"
+      ],
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\nis {1}!"
     },
     {
       "kind" : "message",
@@ -338,7 +338,7 @@
       "placeholders" : [
         ".@npcname$"
       ],
-      "text" : "{0}\nI'll give you experience points in return."
+      "text" : "{0}\nI'll reward you accordingly upon completing this mission."
     },
     {
       "kind" : "message",
@@ -347,7 +347,7 @@
       "placeholders" : [
         ".@npcname$"
       ],
-      "text" : "{0}\nI'll reward you accordingly upon completing this mission."
+      "text" : "{0}\nI'll give you experience points in return."
     },
     {
       "kind" : "option",
