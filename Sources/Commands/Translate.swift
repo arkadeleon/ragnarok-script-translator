@@ -32,20 +32,28 @@ struct Translate: AsyncParsableCommand {
     @Option(help: "Directory holding <language>.lproj/Glossary.json terminology.")
     var glossary: String = "Glossary"
 
-    @Option(help: "Model name.")
-    var model: String = "qwen3.7-plus"
+    enum Provider: String, ExpressibleByArgument, CaseIterable {
+        case ollama
+        case dashscope
+    }
 
-    @Option(help: "OpenAI-compatible API base URL; the key is read from DASHSCOPE_API_KEY.")
-    var endpoint: String = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    @Option(help: "Model backend: ollama, or dashscope (Alibaba Cloud, key in DASHSCOPE_API_KEY).")
+    var provider: Provider = .ollama
 
-    @Option(help: "Maximum texts per request (default: no limit).")
+    @Option(help: "Model name. Defaults to gemma4:26b for ollama, qwen3.7-plus for dashscope.")
+    var model: String?
+
+    @Option(help: "Server URL. Defaults to the provider's standard endpoint.")
+    var endpoint: String?
+
+    @Option(help: "Maximum texts per request. Defaults to 20 for ollama, no limit for dashscope.")
     var batchSize: Int?
 
-    @Option(help: "Maximum source characters per request.")
-    var batchCharacters: Int = 40000
+    @Option(help: "Maximum source characters per request. Defaults to no limit for ollama, 40000 for dashscope.")
+    var batchCharacters: Int?
 
-    @Option(help: "Files translated at the same time.")
-    var concurrency: Int = 10
+    @Option(help: "Files translated at the same time. Defaults to 1 for ollama, 10 for dashscope.")
+    var concurrency: Int?
 
     @Option(help: "Translate at most this many files, then stop.")
     var limit: Int?
@@ -103,7 +111,7 @@ struct Translate: AsyncParsableCommand {
                     }
                 }
             }
-            for _ in 0..<max(concurrency, 1) {
+            for _ in 0..<max(concurrency ?? (provider == .ollama ? 1 : 10), 1) {
                 startNext(cache: cache)
             }
 
@@ -135,20 +143,30 @@ struct Translate: AsyncParsableCommand {
         }
     }
 
-    private func makeTranslator() throws -> OpenAITranslator {
-        guard let url = URL(string: endpoint) else {
-            throw ValidationError("Invalid endpoint: \(endpoint)")
+    private func makeTranslator() throws -> any Translator {
+        switch provider {
+        case .ollama:
+            let endpoint = endpoint ?? "http://localhost:11434"
+            guard let url = URL(string: endpoint) else {
+                throw ValidationError("Invalid endpoint: \(endpoint)")
+            }
+            return OllamaTranslator(endpoint: url, model: model ?? "gemma4:26b")
+        case .dashscope:
+            let endpoint = endpoint ?? "https://dashscope.aliyuncs.com/compatible-mode/v1"
+            guard let url = URL(string: endpoint) else {
+                throw ValidationError("Invalid endpoint: \(endpoint)")
+            }
+            guard let apiKey = ProcessInfo.processInfo.environment["DASHSCOPE_API_KEY"], !apiKey.isEmpty else {
+                throw ValidationError("Set DASHSCOPE_API_KEY to your Alibaba Cloud Model Studio API key.")
+            }
+            return OpenAITranslator(endpoint: url, apiKey: apiKey, model: model ?? "qwen3.7-plus")
         }
-        guard let apiKey = ProcessInfo.processInfo.environment["DASHSCOPE_API_KEY"], !apiKey.isEmpty else {
-            throw ValidationError("Set DASHSCOPE_API_KEY to your Alibaba Cloud Model Studio API key.")
-        }
-        return OpenAITranslator(endpoint: url, apiKey: apiKey, model: model)
     }
 
     // MARK: - Translating one file
 
     /// Translates whatever in `extracted` the cache does not have yet.
-    private func translate(_ extracted: ExtractedFile, cache: TranslationCache, glossary: Glossary, translator: OpenAITranslator) async -> [(String, Outcome)] {
+    private func translate(_ extracted: ExtractedFile, cache: TranslationCache, glossary: Glossary, translator: any Translator) async -> [(String, Outcome)] {
         var texts: [String] = []
         var seen: Set<String> = []
 
@@ -184,7 +202,7 @@ struct Translate: AsyncParsableCommand {
     private func translateBatched(
         _ texts: [String],
         glossary: Glossary,
-        translator: OpenAITranslator
+        translator: any Translator
     ) async -> [(String, Outcome)] {
         var results: [(String, Outcome)] = []
 
@@ -224,11 +242,14 @@ struct Translate: AsyncParsableCommand {
     /// gives it the whole conversation for consistent wording; the character limit keeps the
     /// response of the few very large files well inside the model's output limit.
     private func batches(of texts: [String]) -> [[String]] {
+        let maxTexts = batchSize ?? (provider == .ollama ? 20 : .max)
+        let maxCharacters = batchCharacters ?? (provider == .ollama ? .max : 40000)
+
         var batches: [[String]] = []
         var batch: [String] = []
         var characters = 0
         for text in texts {
-            if !batch.isEmpty, batch.count >= batchSize ?? .max || characters + text.count > batchCharacters {
+            if !batch.isEmpty, batch.count >= maxTexts || characters + text.count > maxCharacters {
                 batches.append(batch)
                 batch = []
                 characters = 0
@@ -248,7 +269,7 @@ struct Translate: AsyncParsableCommand {
     private func send(
         _ texts: [String],
         glossary: Glossary,
-        translator: OpenAITranslator
+        translator: any Translator
     ) async -> (outputs: [String: String], errors: [String: TranslationFailure]) {
         let items = texts.enumerated().map { TranslationItem(id: $0.offset + 1, text: $0.element) }
         let prompt = TranslationPrompt.system(language: language, glossary: glossary.entries(in: texts))
