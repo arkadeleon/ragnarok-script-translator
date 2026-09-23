@@ -1,8 +1,8 @@
 //
-//  OllamaTranslator.swift
+//  OpenAITranslator.swift
 //  ragnarok-script-translator
 //
-//  Created by Leon Li on 2026/9/22.
+//  Created by Leon Li on 2026/9/23.
 //
 
 import Foundation
@@ -13,34 +13,40 @@ struct TranslationItem: Encodable {
     var text: String
 }
 
-/// Translates a batch of texts with an instruction model served by Ollama (`/api/chat`), asking
-/// for a JSON array back so answers cannot be misattributed.
-struct OllamaTranslator {
+/// Translates a batch of texts with a model behind an OpenAI-compatible `/chat/completions`
+/// endpoint, such as Alibaba Cloud Model Studio (DashScope) serving Qwen, asking for a JSON array
+/// back so answers cannot be misattributed.
+struct OpenAITranslator {
     struct Error: Swift.Error, CustomStringConvertible {
         var description: String
     }
 
     var endpoint: URL
+    var apiKey: String
     var model: String
-    var contextLength = 16384
-    var maxOutputTokens = 8192
+    var maxOutputTokens = 65536
 
     private struct ChatRequest: Encodable {
         struct Message: Encodable {
             var role: String
             var content: String
         }
-        struct Options: Encodable {
-            var temperature: Double
-            var num_ctx: Int
-            var num_predict: Int
+        struct ResponseFormat: Encodable {
+            struct Schema: Encodable {
+                var name = "translations"
+                var strict = true
+                var schema = JSONSchema()
+            }
+            var type = "json_schema"
+            var json_schema = Schema()
         }
         var model: String
         var messages: [Message]
-        var stream = false
-        var think = false
-        var format: JSONSchema
-        var options: Options
+        var temperature = 0.2
+        var max_tokens: Int
+        var response_format = ResponseFormat()
+        /// DashScope extension; Qwen hybrid models would otherwise be free to think first.
+        var enable_thinking = false
     }
 
     /// The response shape: `{"translations": [{"id": 1, "text": "..."}]}`.
@@ -48,6 +54,7 @@ struct OllamaTranslator {
         var type = "object"
         var properties = ["translations": Translations()]
         var required = ["translations"]
+        var additionalProperties = false
 
         struct Translations: Encodable {
             var type = "array"
@@ -57,6 +64,7 @@ struct OllamaTranslator {
             var type = "object"
             var properties = ["id": Field(type: "integer"), "text": Field(type: "string")]
             var required = ["id", "text"]
+            var additionalProperties = false
         }
         struct Field: Encodable {
             var type: String
@@ -64,12 +72,13 @@ struct OllamaTranslator {
     }
 
     private struct ChatResponse: Decodable {
-        struct Message: Decodable {
-            var content: String
+        struct Choice: Decodable {
+            struct Message: Decodable {
+                var content: String?
+            }
+            var message: Message
         }
-        var message: Message
-        var eval_count: Int?
-        var prompt_eval_count: Int?
+        var choices: [Choice]
     }
 
     private struct Translations: Decodable {
@@ -89,26 +98,26 @@ struct OllamaTranslator {
         let request = ChatRequest(
             model: model,
             messages: [.init(role: "system", content: system), .init(role: "user", content: payload)],
-            format: JSONSchema(),
-            options: .init(temperature: 0.2, num_ctx: contextLength, num_predict: maxOutputTokens)
+            max_tokens: maxOutputTokens
         )
 
-        var urlRequest = URLRequest(url: endpoint.appending(path: "api/chat"))
+        var urlRequest = URLRequest(url: endpoint.appending(path: "chat/completions"))
         urlRequest.httpMethod = "POST"
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        urlRequest.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
         urlRequest.httpBody = try encoder.encode(request)
         urlRequest.timeoutInterval = 3600
 
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
         guard let http = response as? HTTPURLResponse, http.statusCode == 200 else {
             let status = (response as? HTTPURLResponse)?.statusCode ?? -1
-            throw Error(description: "Ollama returned HTTP \(status): \(String(decoding: data, as: UTF8.self))")
+            throw Error(description: "\(endpoint.host() ?? "Server") returned HTTP \(status): \(String(decoding: data, as: UTF8.self))")
         }
 
         let chat = try JSONDecoder().decode(ChatResponse.self, from: data)
-        guard let content = chat.message.content.data(using: .utf8),
-              let parsed = try? JSONDecoder().decode(Translations.self, from: content) else {
-            throw Error(description: "Model did not return the expected JSON: \(chat.message.content.prefix(200))")
+        guard let content = chat.choices.first?.message.content,
+              let parsed = try? JSONDecoder().decode(Translations.self, from: Data(content.utf8)) else {
+            throw Error(description: "Model did not return the expected JSON: \(String(decoding: data, as: UTF8.self).prefix(200))")
         }
 
         var result: [Int: String] = [:]

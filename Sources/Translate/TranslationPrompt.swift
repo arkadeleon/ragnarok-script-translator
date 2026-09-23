@@ -10,7 +10,7 @@ import Foundation
 /// Builds the instructions for a general-purpose instruction model. Terminology goes straight into
 /// the prompt: an instruction model follows it, so no substitution tricks are needed.
 enum TranslationPrompt {
-    static func system(language: String, glossary: [(term: String, translation: String)]) -> String {
+    static func system(language: String, glossary: [Glossary.Entry]) -> String {
         let target = languageName(for: language)
         var prompt = """
         You translate NPC dialogue from the MMORPG Ragnarok Online from English into \(target).
@@ -25,9 +25,13 @@ enum TranslationPrompt {
         - Use the standard Ragnarok Online \(target) terminology.
         """
         if !glossary.isEmpty {
-            prompt += "\n\nTerminology to use:\n"
+            prompt += """
+            \n\nTerminology to use. Each entry says what kind of name it is; use it only where the text \
+            refers to that thing. A name that is also an everyday word (a speaker called "Check", a job \
+            called "Champion") is translated as the everyday word where it is used as one.\n
+            """
             for entry in glossary {
-                prompt += "- \(entry.term) = \(entry.translation)\n"
+                prompt += "- \(entry.term) (\(entry.kind)) = \(entry.translation)\n"
             }
         }
         prompt += "\nReturn JSON: {\"translations\":[{\"id\": ..., \"text\": ...}, ...]} with one entry per input id, in the same order."

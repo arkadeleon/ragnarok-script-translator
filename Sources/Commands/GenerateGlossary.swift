@@ -9,13 +9,13 @@ import ArgumentParser
 import Foundation
 
 /// Builds `Glossary/<language>.lproj/Glossary.json` for every language ragnarok-data-converter ships,
-/// from the item, map and monster names in its `Output/` tables. The glossary is fed to the
+/// from the item, map, monster and skill names in its `Output/` tables, grouped by that kind. The glossary is fed to the
 /// translation model as terminology, so it only needs names whose official rendering the model
 /// could not guess.
 struct GenerateGlossary: ParsableCommand {
     static let configuration = CommandConfiguration(
         commandName: "glossary",
-        abstract: "Fetches ragnarok-data-converter and generates a terminology glossary per language from item, map and monster names."
+        abstract: "Fetches ragnarok-data-converter and generates a terminology glossary per language from item, map, monster and skill names."
     )
 
     @Option(name: .shortAndLong, help: "Directory to write <language>.lproj/Glossary.json into.")
@@ -27,6 +27,10 @@ struct GenerateGlossary: ParsableCommand {
 
     private struct MapInfo: Decodable {
         var signMainTitle: String?
+    }
+
+    private struct SkillInfo: Decodable {
+        var skillName: String?
     }
 
     /// Clients whose tables are not localized (English names, or English variants with stray
@@ -46,6 +50,7 @@ struct GenerateGlossary: ParsableCommand {
 
         let items = try Self.load([String: ItemInfo].self, english.appending(path: "ItemInfo.json"))
         let maps = try Self.load([String: MapInfo].self, english.appending(path: "MapInfo.json"))
+        let skills = try Self.load([String: SkillInfo].self, english.appending(path: "SkillInfo.json"))
 
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
@@ -56,35 +61,44 @@ struct GenerateGlossary: ParsableCommand {
                 continue
             }
             let target = dataURL.appending(path: "\(language).lproj")
-            var pairs: [Pair] = []
+            // Kept apart per kind: the prompt names the kind, and a name shared by an item and a
+            // skill ("Fire Arrow") keeps both renderings.
+            var glossary: [String: [String: String]] = [:]
 
             if let targetMaps = try? Self.load([String: MapInfo].self, target.appending(path: "MapInfo.json")) {
-                for (id, map) in maps {
-                    if let name = map.signMainTitle, let translated = targetMaps[id]?.signMainTitle {
-                        pairs.append((name, translated, true))
-                    }
+                let pairs = maps.compactMap { id, map -> Pair? in
+                    guard let name = map.signMainTitle, let translated = targetMaps[id]?.signMainTitle else { return nil }
+                    return (name, translated, true)
                 }
+                glossary["map"] = Self.select(pairs, language: language)
             }
             if let targetMonsters = try? Self.load([String: String].self, target.appending(path: "MonsterName.json")) {
-                for (id, name) in monsterNames {
-                    if let translated = targetMonsters[String(format: "%05d", id)] {
-                        pairs.append((name, translated, true))
-                    }
+                let pairs = monsterNames.compactMap { id, name -> Pair? in
+                    guard let translated = targetMonsters[String(format: "%05d", id)] else { return nil }
+                    return (name, translated, true)
                 }
+                glossary["monster"] = Self.select(pairs, language: language)
             }
             if let targetItems = try? Self.load([String: ItemInfo].self, target.appending(path: "ItemInfo.json")) {
-                for (id, item) in items {
-                    if let name = item.identifiedItemName, let translated = targetItems[id]?.identifiedItemName {
-                        pairs.append((name, translated, false))
-                    }
+                let pairs = items.compactMap { id, item -> Pair? in
+                    guard let name = item.identifiedItemName, let translated = targetItems[id]?.identifiedItemName else { return nil }
+                    return (name, translated, false)
                 }
+                glossary["item"] = Self.select(pairs, language: language)
+            }
+            // Skill names are proper names even when they are everyday words ("Heal", "Cure").
+            if let targetSkills = try? Self.load([String: SkillInfo].self, target.appending(path: "SkillInfo.json")) {
+                let pairs = skills.compactMap { id, skill -> Pair? in
+                    guard let name = skill.skillName, let translated = targetSkills[id]?.skillName else { return nil }
+                    return (name, translated, true)
+                }
+                glossary["skill"] = Self.select(pairs, language: language)
             }
 
-            let glossary = Self.select(pairs, language: language)
             let glossaryURL = URL(filePath: output).appending(path: "\(language).lproj").appending(path: "Glossary.json")
             try FileManager.default.createDirectory(at: glossaryURL.deletingLastPathComponent(), withIntermediateDirectories: true)
             try encoder.encode(glossary).write(to: glossaryURL, options: .atomic)
-            print("\(language): \(glossary.count) terms")
+            print("\(language): \(glossary.values.map(\.count).reduce(0, +)) terms")
         }
     }
 

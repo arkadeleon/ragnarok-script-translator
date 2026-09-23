@@ -17,7 +17,7 @@ import Foundation
 /// model. Translated files whose source disappeared are removed.
 struct Translate: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
-        abstract: "Translates extracted scripts into the target language with an Ollama model."
+        abstract: "Translates extracted scripts into the target language with an instruction model."
     )
 
     @Option(name: .shortAndLong, help: "Target language code, e.g. zh-Hans.")
@@ -32,14 +32,17 @@ struct Translate: AsyncParsableCommand {
     @Option(help: "Directory holding <language>.lproj/Glossary.json terminology.")
     var glossary: String = "Glossary"
 
-    @Option(help: "Ollama model name.")
-    var model: String = "gemma4:26b"
+    @Option(help: "Model name.")
+    var model: String = "qwen3.7-plus"
 
-    @Option(help: "Ollama server URL.")
-    var endpoint: String = "http://localhost:11434"
+    @Option(help: "OpenAI-compatible API base URL; the key is read from DASHSCOPE_API_KEY.")
+    var endpoint: String = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 
-    @Option(help: "Texts per request.")
-    var batchSize: Int = 20
+    @Option(help: "Maximum texts per request (default: no limit).")
+    var batchSize: Int?
+
+    @Option(help: "Maximum source characters per request.")
+    var batchCharacters: Int = 40000
 
     @Option(help: "Translate at most this many files, then stop.")
     var limit: Int?
@@ -50,13 +53,9 @@ struct Translate: AsyncParsableCommand {
     private static let maxAttempts = 3
 
     func run() async throws {
-        guard let endpointURL = URL(string: endpoint) else {
-            throw ValidationError("Invalid endpoint: \(endpoint)")
-        }
-
+        let translator = try makeTranslator()
         let inputURL = URL(filePath: input)
         let outputURL = URL(filePath: output).appending(path: "\(language).lproj")
-        let translator = OllamaTranslator(endpoint: endpointURL, model: model)
         let glossary = try Glossary(directory: URL(filePath: self.glossary), language: language)
         var cache = try TranslationCache(directory: outputURL)
 
@@ -98,10 +97,20 @@ struct Translate: AsyncParsableCommand {
         }
     }
 
+    private func makeTranslator() throws -> OpenAITranslator {
+        guard let url = URL(string: endpoint) else {
+            throw ValidationError("Invalid endpoint: \(endpoint)")
+        }
+        guard let apiKey = ProcessInfo.processInfo.environment["DASHSCOPE_API_KEY"], !apiKey.isEmpty else {
+            throw ValidationError("Set DASHSCOPE_API_KEY to your Alibaba Cloud Model Studio API key.")
+        }
+        return OpenAITranslator(endpoint: url, apiKey: apiKey, model: model)
+    }
+
     // MARK: - Translating one file
 
     /// Translates whatever in `extracted` the cache does not have yet.
-    private func translate(_ extracted: ExtractedFile, cache: inout TranslationCache, glossary: Glossary, translator: OllamaTranslator) async throws {
+    private func translate(_ extracted: ExtractedFile, cache: inout TranslationCache, glossary: Glossary, translator: OpenAITranslator) async throws {
         var texts: [String] = []
         var seen: Set<String> = []
 
@@ -146,12 +155,12 @@ struct Translate: AsyncParsableCommand {
     private func translateBatched(
         _ texts: [String],
         glossary: Glossary,
-        translator: OllamaTranslator
+        translator: OpenAITranslator
     ) async throws -> [(String, Outcome)] {
         var results: [(String, Outcome)] = []
 
-        for batchStart in stride(from: 0, to: texts.count, by: batchSize) {
-            var remaining = Array(texts[batchStart..<min(batchStart + batchSize, texts.count)])
+        for batch in batches(of: texts) {
+            var remaining = batch
             var lastFailures: [String: TranslationFailure] = [:]
 
             for _ in 0..<Self.maxAttempts where !remaining.isEmpty {
@@ -182,13 +191,35 @@ struct Translate: AsyncParsableCommand {
         return results
     }
 
+    /// Splits `texts` into requests in dialogue order. A cloud model takes most files whole, which
+    /// gives it the whole conversation for consistent wording; the character limit keeps the
+    /// response of the few very large files well inside the model's output limit.
+    private func batches(of texts: [String]) -> [[String]] {
+        var batches: [[String]] = []
+        var batch: [String] = []
+        var characters = 0
+        for text in texts {
+            if !batch.isEmpty, batch.count >= batchSize ?? .max || characters + text.count > batchCharacters {
+                batches.append(batch)
+                batch = []
+                characters = 0
+            }
+            batch.append(text)
+            characters += text.count
+        }
+        if !batch.isEmpty {
+            batches.append(batch)
+        }
+        return batches
+    }
+
     /// One request for `texts`, keyed by source text. A response the model cut short cannot be
     /// parsed, so the batch is halved and each half asked again; a single text that still fails is
     /// reported as an error rather than losing the rest of the batch.
     private func send(
         _ texts: [String],
         glossary: Glossary,
-        translator: OllamaTranslator
+        translator: OpenAITranslator
     ) async -> (outputs: [String: String], errors: [String: TranslationFailure]) {
         let items = texts.enumerated().map { TranslationItem(id: $0.offset + 1, text: $0.element) }
         let prompt = TranslationPrompt.system(language: language, glossary: glossary.entries(in: texts))
