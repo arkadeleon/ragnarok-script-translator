@@ -44,6 +44,9 @@ struct Translate: AsyncParsableCommand {
     @Option(help: "Maximum source characters per request.")
     var batchCharacters: Int = 40000
 
+    @Option(help: "Files translated at the same time.")
+    var concurrency: Int = 10
+
     @Option(help: "Translate at most this many files, then stop.")
     var limit: Int?
 
@@ -79,20 +82,55 @@ struct Translate: AsyncParsableCommand {
         }
         print("\(files.count) files, \(translatedCount) up to date, \(pending.count) to translate, \(removed) removed; \(cache.texts.count) texts cached, \(glossary.count) glossary terms")
 
+        // Files run concurrently, each against the cache as it was when the file started; the
+        // cache is only updated here, as files finish. A text shared by two files in flight at the
+        // same time is translated twice, which costs little.
         let start = Date()
-        for (index, file) in pending.enumerated() {
-            do {
-                let extracted = try decoder.decode(ExtractedFile.self, from: Data(contentsOf: inputURL.appending(path: file)))
-                try await translate(extracted, cache: &cache, glossary: glossary, translator: translator)
+        var done = 0
+        await withTaskGroup(of: (String, Result<(ExtractedFile, [(String, Outcome)]), any Error>).self) { group in
+            var queue = pending.makeIterator()
+            func startNext(cache: TranslationCache) {
+                guard let file = queue.next() else {
+                    return
+                }
+                group.addTask {
+                    do {
+                        let extracted = try JSONDecoder().decode(ExtractedFile.self, from: Data(contentsOf: inputURL.appending(path: file)))
+                        let results = await translate(extracted, cache: cache, glossary: glossary, translator: translator)
+                        return (file, .success((extracted, results)))
+                    } catch {
+                        return (file, .failure(error))
+                    }
+                }
+            }
+            for _ in 0..<max(concurrency, 1) {
+                startNext(cache: cache)
+            }
 
-                let translated = Self.translatedFile(for: extracted, cache: cache)
-                try Self.write(translated, to: outputURL.appending(path: file))
+            for await (file, result) in group {
+                done += 1
+                do {
+                    let (extracted, results) = try result.get()
+                    for (text, outcome) in results {
+                        switch outcome {
+                        case .success(let translation):
+                            cache.texts[text] = translation
+                            cache.failures.removeValue(forKey: text)
+                        case .failure(let failure):
+                            cache.failures[text] = failure
+                        }
+                    }
 
-                let failures = translated.scripts.filter { $0.error != nil }.count
-                printProgress(done: index + 1, total: pending.count, start: start, file: extracted.file, scripts: extracted.scripts.count, failures: failures)
-            } catch {
-                // One bad file must not end a run that takes days; it is retried next time.
-                print("\(file): \(error)")
+                    let translated = Self.translatedFile(for: extracted, cache: cache)
+                    try Self.write(translated, to: outputURL.appending(path: file))
+
+                    let failures = translated.scripts.filter { $0.error != nil }.count
+                    printProgress(done: done, total: pending.count, start: start, file: extracted.file, scripts: extracted.scripts.count, failures: failures)
+                } catch {
+                    // One bad file must not end a run that takes days; it is retried next time.
+                    print("\(file): \(error)")
+                }
+                startNext(cache: cache)
             }
         }
     }
@@ -110,7 +148,7 @@ struct Translate: AsyncParsableCommand {
     // MARK: - Translating one file
 
     /// Translates whatever in `extracted` the cache does not have yet.
-    private func translate(_ extracted: ExtractedFile, cache: inout TranslationCache, glossary: Glossary, translator: OpenAITranslator) async throws {
+    private func translate(_ extracted: ExtractedFile, cache: TranslationCache, glossary: Glossary, translator: OpenAITranslator) async -> [(String, Outcome)] {
         var texts: [String] = []
         var seen: Set<String> = []
 
@@ -121,18 +159,9 @@ struct Translate: AsyncParsableCommand {
             texts.append(text)
         }
         guard !texts.isEmpty else {
-            return
+            return []
         }
-
-        for (text, outcome) in try await translateBatched(texts, glossary: glossary, translator: translator) {
-            switch outcome {
-            case .success(let translation):
-                cache.texts[text] = translation
-                cache.failures.removeValue(forKey: text)
-            case .failure(let failure):
-                cache.failures[text] = failure
-            }
-        }
+        return await translateBatched(texts, glossary: glossary, translator: translator)
     }
 
     private enum Outcome {
@@ -156,7 +185,7 @@ struct Translate: AsyncParsableCommand {
         _ texts: [String],
         glossary: Glossary,
         translator: OpenAITranslator
-    ) async throws -> [(String, Outcome)] {
+    ) async -> [(String, Outcome)] {
         var results: [(String, Outcome)] = []
 
         for batch in batches(of: texts) {
