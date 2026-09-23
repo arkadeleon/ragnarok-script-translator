@@ -1,0 +1,163 @@
+{
+  "file" : "npc/custom/quests/kings_items.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nHello, can you help me?",
+      "translation" : "[普隆德拉国王]\n你好，能帮帮我吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 20,
+      "npc" : "King of Prontera",
+      "text" : "Sure, what can I do?",
+      "translation" : "当然，我能做什么？"
+    },
+    {
+      "kind" : "option",
+      "line" : 20,
+      "npc" : "King of Prontera",
+      "text" : "Sorry, I'm busy.",
+      "translation" : "抱歉，我很忙。"
+    },
+    {
+      "kind" : "message",
+      "line" : 21,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nOk, that's fine, I'm sure someone else will help.",
+      "translation" : "[普隆德拉国王]\n好吧，没关系，我相信会有其他人帮忙的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nThank you. Well, my daughter next to me is a little rowdy...\nIf you get her these items I'm sure she'll calm down.\nI'll give you my crown or my sword as a reward.",
+      "translation" : "[普隆德拉国王]\n谢谢你。嗯，我旁边的女儿有点吵闹……\n如果你能给她弄到这些东西，我相信她会安静下来的。\n我会把我的王冠或剑作为奖励给你。"
+    },
+    {
+      "kind" : "option",
+      "line" : 31,
+      "npc" : "King of Prontera",
+      "text" : "What do you need?",
+      "translation" : "你需要什么？"
+    },
+    {
+      "kind" : "option",
+      "line" : 31,
+      "npc" : "King of Prontera",
+      "text" : "I have the items!",
+      "translation" : "我有物品！"
+    },
+    {
+      "kind" : "option",
+      "line" : 31,
+      "npc" : "King of Prontera",
+      "text" : "Forget it.",
+      "translation" : "算了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "King of Prontera",
+      "placeholders" : [
+        "getd(\".@Items\"+.@i+\"[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".@Items\"+.@i+\"[\"+.@j+\"]\"))",
+        "((.@i == 2 )?\"sword.\":\"crown.\")"
+      ],
+      "text" : "[King of Prontera]\nIf you could get me:\n ~ ^0055FF{0}^000000x {1}\nI'll give my {2}",
+      "translation" : "[普隆德拉国王]\n如果你能给我：\n ~ ^0055FF{0}^000000 x {1}\n我就把我的{2}给你"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "King of Prontera",
+      "placeholders" : [
+        "((.@i == 2 )?\"sword.\":\"crown.\")"
+      ],
+      "text" : "[King of Prontera]\nIf you could get me:\nI'll give my {0}",
+      "translation" : "[普隆德拉国王]\n如果你能给我：\n我就把我的{0}给你"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nWhat item do you want?",
+      "translation" : "[普隆德拉国王]\n你想要什么物品？"
+    },
+    {
+      "kind" : "option",
+      "line" : 45,
+      "npc" : "King of Prontera",
+      "text" : "Crown",
+      "translation" : "王冠"
+    },
+    {
+      "kind" : "option",
+      "line" : 45,
+      "npc" : "King of Prontera",
+      "text" : "Sword",
+      "translation" : "剑"
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nYou're missing something.\nCome back after you get ALL the items.",
+      "translation" : "[普隆德拉国王]\n你还缺东西。\n等你集齐所有物品后再回来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "npc" : "King of Prontera",
+      "placeholders" : [
+        "((.@i==1)?\"crown.\":\"sword.\")"
+      ],
+      "text" : "[King of Prontera]\nTHANK YOU SOO MUCH!!\nThis will surely calm her down.\nAs promised, here is my {0}",
+      "translation" : "[普隆德拉国王]\n太感谢你了！！\n这肯定能让她安静下来。\n按照约定，这是我的{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nOk, that's fine, I'm sure someone else will help.",
+      "translation" : "[普隆德拉国王]\n好吧，没关系，我相信会有其他人帮忙的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 68,
+      "npc" : "King's Daughter",
+      "text" : "[King's Daughter]\nHmph, I hate my dad right now!!",
+      "translation" : "[国王的女儿]\n哼，我现在讨厌我爸爸！！"
+    },
+    {
+      "kind" : "option",
+      "line" : 71,
+      "npc" : "King's Daughter",
+      "text" : "Why?",
+      "translation" : "为什么？"
+    },
+    {
+      "kind" : "option",
+      "line" : 71,
+      "npc" : "King's Daughter",
+      "text" : "Whatever...",
+      "translation" : "随便……"
+    },
+    {
+      "kind" : "message",
+      "line" : 72,
+      "npc" : "King's Daughter",
+      "text" : "[King's Daughter]\nFINE THEN! Hmph!!",
+      "translation" : "[国王的女儿]\n那好吧！哼！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "King's Daughter",
+      "text" : "[King's Daughter]\nWell, he won't give me what I want!!\nHe's the King of Prontera. He should be able to get me ANYTHING!!!",
+      "translation" : "[国王的女儿]\n哼，他不给我想要的东西！！\n他是普隆德拉国王。他应该能给我弄到任何东西！！！"
+    }
+  ]
+}

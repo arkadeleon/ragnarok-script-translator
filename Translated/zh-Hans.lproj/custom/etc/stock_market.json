@@ -1,0 +1,1773 @@
+{
+  "file" : "npc/custom/etc/stock_market.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 179,
+      "npc" : "Stock Market",
+      "text" : "[Stock Market]\nTrading is currently closed.",
+      "translation" : "[证券交易所]\n目前交易已关闭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_LastUpd$",
+        "$S1N$",
+        "$S1",
+        "@S1Update$",
+        "$S2N$",
+        "$S2",
+        "@S2Update$",
+        "$S3N$",
+        "$S3",
+        "@S3Update$",
+        "$S4N$",
+        "$S4",
+        "@S4Update$",
+        "$S5N$",
+        "$S5",
+        "@S5Update$",
+        "$S6N$",
+        "$S6",
+        "@S6Update$",
+        "$S7N$",
+        "$S7",
+        "@S7Update$",
+        "$S8N$",
+        "$S8",
+        "@S8Update$",
+        "$S9N$",
+        "$S9",
+        "@S9Update$",
+        "$S10N$",
+        "$S10",
+        "@S10Update$"
+      ],
+      "text" : "[Stock Market]\nLast fluctuation: {0}\n^21698F{1}^000000 {2}z ({3})\n^21698F{4}^000000 {5}z ({6})\n^21698F{7}^000000 {8}z ({9})\n^21698F{10}^000000 {11}z ({12})\n^21698F{13}^000000 {14}z ({15})\n^21698F{16}^000000 {17}z ({18})\n^21698F{19}^000000 {20}z ({21})\n^21698F{22}^000000 {23}z ({24})\n^21698F{25}^000000 {26}z ({27})\n^21698F{28}^000000 {29}z ({30})",
+      "translation" : "[证券交易所]\n上次波动：{0}\n^21698F{1}^000000 {2}泽尼 ({3})\n^21698F{4}^000000 {5}泽尼 ({6})\n^21698F{7}^000000 {8}泽尼 ({9})\n^21698F{10}^000000 {11}泽尼 ({12})\n^21698F{13}^000000 {14}泽尼 ({15})\n^21698F{16}^000000 {17}泽尼 ({18})\n^21698F{19}^000000 {20}泽尼 ({21})\n^21698F{22}^000000 {23}泽尼 ({24})\n^21698F{25}^000000 {26}泽尼 ({27})\n^21698F{28}^000000 {29}泽尼 ({30})"
+    },
+    {
+      "kind" : "option",
+      "line" : 257,
+      "npc" : "Stock Market",
+      "text" : "Portfolio",
+      "translation" : "投资组合"
+    },
+    {
+      "kind" : "option",
+      "line" : 257,
+      "npc" : "Stock Market",
+      "text" : "Buy Shares",
+      "translation" : "购买股票"
+    },
+    {
+      "kind" : "option",
+      "line" : 257,
+      "npc" : "Stock Market",
+      "text" : "Sell Shares",
+      "translation" : "出售股票"
+    },
+    {
+      "kind" : "option",
+      "line" : 257,
+      "npc" : "Stock Market",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 260,
+      "npc" : "Stock Market",
+      "text" : "Portfolio",
+      "translation" : "投资组合"
+    },
+    {
+      "kind" : "option",
+      "line" : 260,
+      "npc" : "Stock Market",
+      "text" : "Buy Shares",
+      "translation" : "购买股票"
+    },
+    {
+      "kind" : "option",
+      "line" : 260,
+      "npc" : "Stock Market",
+      "text" : "Sell Shares",
+      "translation" : "出售股票"
+    },
+    {
+      "kind" : "option",
+      "line" : 260,
+      "npc" : "Stock Market",
+      "text" : "GM Menu",
+      "translation" : "GM菜单"
+    },
+    {
+      "kind" : "option",
+      "line" : 260,
+      "npc" : "Stock Market",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "$S4N$",
+        "#S4",
+        "$S4",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]\n^0000FF{10}^FF0000 x {11} [{12}z]\n^0000FF{13}^FF0000 x {14} [{15}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]\n^0000FF{10}^FF0000 x {11} [{12}泽尼]\n^0000FF{13}^FF0000 x {14} [{15}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "$S4N$",
+        "#S4",
+        "$S4",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]\n^0000FF{10}^FF0000 x {11} [{12}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]\n^0000FF{10}^FF0000 x {11} [{12}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "$S4N$",
+        "#S4",
+        "$S4",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]\n^0000FF{10}^FF0000 x {11} [{12}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]\n^0000FF{10}^FF0000 x {11} [{12}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "$S4N$",
+        "#S4",
+        "$S4",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S4N$",
+        "#S4",
+        "$S4",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]\n^0000FF{10}^FF0000 x {11} [{12}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]\n^0000FF{10}^FF0000 x {11} [{12}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S4N$",
+        "#S4",
+        "$S4",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S4N$",
+        "#S4",
+        "$S4",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S4N$",
+        "#S4",
+        "$S4",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]\n^0000FF{10}^FF0000 x {11} [{12}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]\n^0000FF{10}^FF0000 x {11} [{12}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S5N$",
+        "#S5",
+        "$S5"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "$S4N$",
+        "#S4",
+        "$S4"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]\n^0000FF{10}^FF0000 x {11} [{12}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]\n^0000FF{10}^FF0000 x {11} [{12}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "$S4N$",
+        "#S4",
+        "$S4"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "$S4N$",
+        "#S4",
+        "$S4"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "$S4N$",
+        "#S4",
+        "$S4"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S4N$",
+        "#S4",
+        "$S4"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S4N$",
+        "#S4",
+        "$S4"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S4N$",
+        "#S4",
+        "$S4"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S4N$",
+        "#S4",
+        "$S4"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S3N$",
+        "#S3",
+        "$S3"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]\n^0000FF{7}^FF0000 x {8} [{9}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]\n^0000FF{7}^FF0000 x {8} [{9}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "$S3N$",
+        "#S3",
+        "$S3"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S3N$",
+        "#S3",
+        "$S3"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S3N$",
+        "#S3",
+        "$S3"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "$S2N$",
+        "#S2",
+        "$S2"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]\n^0000FF{4}^FF0000 x {5} [{6}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]\n^0000FF{4}^FF0000 x {5} [{6}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S2N$",
+        "#S2",
+        "$S2"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans",
+        "$S1N$",
+        "#S1",
+        "$S1"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.\n^0000FF{1}^FF0000 x {2} [{3}z]",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。\n^0000FF{1}^FF0000 x {2} [{3}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans"
+      ],
+      "text" : "[Stock Market]\nEnter the name of the share you wish to sell.\nTransaction fee of ^FF0000{0}z^000000 will apply.",
+      "translation" : "[证券交易所]\n请输入您希望出售的股票名称。\n将收取 ^FF0000{0}泽尼^000000 的交易费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "$S9N$",
+        "#S9",
+        "$S9",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]\n^0000FF{9}^FF0000 x {10} [{11}z]\n^0000FF{12}^FF0000 x {13} [{14}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]\n^0000FF{9}^FF0000 x {10} [{11}泽尼]\n^0000FF{12}^FF0000 x {13} [{14}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "$S9N$",
+        "#S9",
+        "$S9",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]\n^0000FF{9}^FF0000 x {10} [{11}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]\n^0000FF{9}^FF0000 x {10} [{11}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S9N$",
+        "#S9",
+        "$S9",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]\n^0000FF{9}^FF0000 x {10} [{11}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]\n^0000FF{9}^FF0000 x {10} [{11}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S9N$",
+        "#S9",
+        "$S9",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]\n^0000FF{9}^FF0000 x {10} [{11}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]\n^0000FF{9}^FF0000 x {10} [{11}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "$S9N$",
+        "#S9",
+        "$S9"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]\n^0000FF{9}^FF0000 x {10} [{11}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]\n^0000FF{9}^FF0000 x {10} [{11}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "$S9N$",
+        "#S9",
+        "$S9"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S9N$",
+        "#S9",
+        "$S9"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S9N$",
+        "#S9",
+        "$S9"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S8N$",
+        "#S8",
+        "$S8"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S8N$",
+        "#S8",
+        "$S8"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "$S7N$",
+        "#S7",
+        "$S7"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "$S9N$",
+        "#S9",
+        "$S9",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]\n^0000FF{9}^FF0000 x {10} [{11}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]\n^0000FF{9}^FF0000 x {10} [{11}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S9N$",
+        "#S9",
+        "$S9",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "$S9N$",
+        "#S9",
+        "$S9"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S9N$",
+        "#S9",
+        "$S9"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "$S8N$",
+        "#S8",
+        "$S8"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S7N$",
+        "#S7",
+        "$S7"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 274,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "$S9N$",
+        "#S9",
+        "$S9",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]\n^0000FF{6}^FF0000 x {7} [{8}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]\n^0000FF{6}^FF0000 x {7} [{8}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 274,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 274,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "$S9N$",
+        "#S9",
+        "$S9"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 274,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S8N$",
+        "#S8",
+        "$S8"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 275,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S9N$",
+        "#S9",
+        "$S9",
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]\n^0000FF{3}^FF0000 x {4} [{5}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]\n^0000FF{3}^FF0000 x {4} [{5}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 275,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S9N$",
+        "#S9",
+        "$S9"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 276,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S10N$",
+        "#S10",
+        "$S10"
+      ],
+      "text" : "^0000FF{0}^FF0000 x {1} [{2}z]",
+      "translation" : "^0000FF{0}^FF0000 x {1} [{2}泽尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S1N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000.",
+      "translation" : "出售了 {0} 股 {1}。\n获得 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 304,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S2N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000.",
+      "translation" : "出售了 {0} 股 {1}。\n获得 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 316,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S3N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000.",
+      "translation" : "出售了 {0} 股 {1}。\n获得 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 328,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S4N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000.",
+      "translation" : "出售了 {0} 股 {1}。\n获得 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 340,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S5N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000.",
+      "translation" : "出售了 {0} 股 {1}。\n获得 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 352,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S6N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000.",
+      "translation" : "出售了 {0} 股 {1}。\n获得 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 364,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S7N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000.",
+      "translation" : "出售了 {0} 股 {1}。\n获得 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 376,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S8N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000.",
+      "translation" : "出售了 {0} 股 {1}。\n获得 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 388,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S9N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000.",
+      "translation" : "出售了 {0} 股 {1}。\n获得 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 400,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@sellamount",
+        "$S10N$",
+        "@price"
+      ],
+      "text" : "Sold {0} {1} shares.\nEarned ^0000FF{2}z^000000.",
+      "translation" : "出售了 {0} 股 {1}。\n获得 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 406,
+      "npc" : "Stock Market",
+      "text" : "^FF0000Invalid Share Name.^000000",
+      "translation" : "^FF0000无效的股票名称。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 411,
+      "npc" : "Stock Market",
+      "text" : "^FF0000You don't have that many shares.^000000",
+      "translation" : "^FF0000您没有那么多股票。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Stock Market",
+      "text" : "^FF0000Invalid integer.^000000",
+      "translation" : "^FF0000无效的整数。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 422,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S1N$",
+        "$S2N$",
+        "$S3N$",
+        "$S4N$",
+        "$S5N$",
+        "$S6N$",
+        "$S7N$",
+        "$S8N$",
+        "$S9N$",
+        "$S10N$"
+      ],
+      "text" : "[Stock Market]\nAvailable shares:\n{0}\n{1}\n{2}\n{3}\n{4}\n{5}\n{6}\n{7}\n{8}\n{9}",
+      "translation" : "[证券交易所]\n可交易的股票：\n{0}\n{1}\n{2}\n{3}\n{4}\n{5}\n{6}\n{7}\n{8}\n{9}"
+    },
+    {
+      "kind" : "option",
+      "line" : 435,
+      "npc" : "Stock Market",
+      "text" : "Continue",
+      "translation" : "继续"
+    },
+    {
+      "kind" : "option",
+      "line" : 435,
+      "npc" : "Stock Market",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 437,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_Trans"
+      ],
+      "text" : "Enter the name of the share company\nTransaction fee of ^FF0000{0}z^000000 will apply.",
+      "translation" : "请输入股票公司名称\n将收取 ^FF0000{0}泽尼^000000 的交易费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 459,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S1N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000.",
+      "translation" : "购买了 {0} 股 {1}。\n花费 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 470,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S2N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000.",
+      "translation" : "购买了 {0} 股 {1}。\n花费 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 481,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S3N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000.",
+      "translation" : "购买了 {0} 股 {1}。\n花费 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 492,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S4N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000.",
+      "translation" : "购买了 {0} 股 {1}。\n花费 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 503,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S5N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000.",
+      "translation" : "购买了 {0} 股 {1}。\n花费 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 514,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S6N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000.",
+      "translation" : "购买了 {0} 股 {1}。\n花费 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 525,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S7N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000.",
+      "translation" : "购买了 {0} 股 {1}。\n花费 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 536,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S8N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000.",
+      "translation" : "购买了 {0} 股 {1}。\n花费 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 547,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S9N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000.",
+      "translation" : "购买了 {0} 股 {1}。\n花费 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 558,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@buyamount",
+        "$S10N$",
+        "@price"
+      ],
+      "text" : "Bought {0} {1} shares.\nLost ^0000FF{2}z^000000.",
+      "translation" : "购买了 {0} 股 {1}。\n花费 ^0000FF{2}泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 568,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_BuyMin"
+      ],
+      "text" : "^FF0000Minimum of {0} shares can be bought at a time.^000000",
+      "translation" : "^FF0000每次最少购买 {0} 股。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 574,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S_BuyMax"
+      ],
+      "text" : "^FF0000Maximum number of {0} shares can be bought at a time.^000000",
+      "translation" : "^FF0000每次最多购买 {0} 股。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 579,
+      "npc" : "Stock Market",
+      "text" : "^FF0000You do not have enough zeny.^000000",
+      "translation" : "^FF0000您的泽尼不足。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 585,
+      "npc" : "Stock Market",
+      "text" : "^FF0000Invalid share name.^000000",
+      "translation" : "^FF0000无效的股票名称。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 591,
+      "npc" : "Stock Market",
+      "text" : "[Stock Market]",
+      "translation" : "[证券交易所]"
+    },
+    {
+      "kind" : "message",
+      "line" : 596,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S1N$",
+        "#S1",
+        "$S1",
+        "@S1"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z",
+      "translation" : "{0}: {1} x {2}泽尼 = {3}泽尼"
+    },
+    {
+      "kind" : "message",
+      "line" : 601,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S2N$",
+        "#S2",
+        "$S2",
+        "@S2"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z",
+      "translation" : "{0}: {1} x {2}泽尼 = {3}泽尼"
+    },
+    {
+      "kind" : "message",
+      "line" : 606,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S3N$",
+        "#S3",
+        "$S3",
+        "@S3"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z",
+      "translation" : "{0}: {1} x {2}泽尼 = {3}泽尼"
+    },
+    {
+      "kind" : "message",
+      "line" : 611,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S4N$",
+        "#S4",
+        "$S4",
+        "@S4"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z",
+      "translation" : "{0}: {1} x {2}泽尼 = {3}泽尼"
+    },
+    {
+      "kind" : "message",
+      "line" : 616,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S5N$",
+        "#S5",
+        "$S5",
+        "@S5"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z",
+      "translation" : "{0}: {1} x {2}泽尼 = {3}泽尼"
+    },
+    {
+      "kind" : "message",
+      "line" : 621,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S6N$",
+        "#S6",
+        "$S6",
+        "@S6"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z",
+      "translation" : "{0}: {1} x {2}泽尼 = {3}泽尼"
+    },
+    {
+      "kind" : "message",
+      "line" : 626,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S7N$",
+        "#S7",
+        "$S7",
+        "@S7"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z",
+      "translation" : "{0}: {1} x {2}泽尼 = {3}泽尼"
+    },
+    {
+      "kind" : "message",
+      "line" : 631,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S8N$",
+        "#S8",
+        "$S8",
+        "@S8"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z",
+      "translation" : "{0}: {1} x {2}泽尼 = {3}泽尼"
+    },
+    {
+      "kind" : "message",
+      "line" : 636,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S9N$",
+        "#S9",
+        "$S9",
+        "@S9"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z",
+      "translation" : "{0}: {1} x {2}泽尼 = {3}泽尼"
+    },
+    {
+      "kind" : "message",
+      "line" : 641,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "$S10N$",
+        "#S10",
+        "$S10",
+        "@S10"
+      ],
+      "text" : "{0}: {1} x {2}z = {3}z",
+      "translation" : "{0}: {1} x {2}泽尼 = {3}泽尼"
+    },
+    {
+      "kind" : "message",
+      "line" : 646,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@total"
+      ],
+      "text" : "Total value: {0}z",
+      "translation" : "总价值: {0}泽尼"
+    },
+    {
+      "kind" : "message",
+      "line" : 653,
+      "npc" : "Stock Market",
+      "text" : "[Stock Market]\nMaster, do you require anything?",
+      "translation" : "[证券交易所]\n师父，有什么需要吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Stock Market",
+      "text" : "Fluctuate Market",
+      "translation" : "市场波动"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Stock Market",
+      "text" : "Reset Prices",
+      "translation" : "重置价格"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Stock Market",
+      "text" : "Nothing",
+      "translation" : "无"
+    },
+    {
+      "kind" : "message",
+      "line" : 749,
+      "npc" : "Stock Market",
+      "text" : "Market fluctuated.",
+      "translation" : "市场已波动。"
+    },
+    {
+      "kind" : "option",
+      "line" : 753,
+      "npc" : "Stock Market",
+      "text" : "Set prices to...",
+      "translation" : "设置价格为..."
+    },
+    {
+      "kind" : "option",
+      "line" : 753,
+      "npc" : "Stock Market",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 754,
+      "npc" : "Stock Market",
+      "text" : "Farewell.",
+      "translation" : "再见。"
+    },
+    {
+      "kind" : "message",
+      "line" : 758,
+      "npc" : "Stock Market",
+      "text" : "Are you sure you want to reset?\n^FF0000All share values will become the same.^000000",
+      "translation" : "确定要重置吗？\n^FF0000所有股票价值将变为相同。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Stock Market",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Stock Market",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 784,
+      "npc" : "Stock Market",
+      "placeholders" : [
+        "@gmset"
+      ],
+      "text" : "All prices changed to {0}z.",
+      "translation" : "所有价格已更改为 {0}泽尼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 788,
+      "npc" : "Stock Market",
+      "text" : "[Stock Market]\nGoodbye.",
+      "translation" : "[证券交易所]\n再见。"
+    }
+  ]
+}

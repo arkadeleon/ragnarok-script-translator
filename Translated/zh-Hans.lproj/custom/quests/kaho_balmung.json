@@ -1,0 +1,96 @@
+{
+  "file" : "npc/custom/quests/kaho_balmung.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 21,
+      "npc" : "Royal Messenger",
+      "text" : "[Royal Messenger]\nWelcome to Prontera.\nI am the messenger in charge of the Royal Quests.",
+      "translation" : "[皇家信使]\n欢迎来到普隆德拉。\n我是负责皇家任务的信使。"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "npc" : "Royal Messenger",
+      "text" : "Listen...",
+      "translation" : "听我说……"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "npc" : "Royal Messenger",
+      "text" : "Walk away",
+      "translation" : "离开"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Royal Messenger",
+      "text" : "[Royal Messenger]\nThere are two quests.\nChoose the one you like.",
+      "translation" : "[皇家信使]\n这里有两个任务。\n请选择你喜欢的一个。"
+    },
+    {
+      "kind" : "option",
+      "line" : 30,
+      "npc" : "Royal Messenger",
+      "text" : "Balmung",
+      "translation" : "神器 三十二朔月"
+    },
+    {
+      "kind" : "option",
+      "line" : 30,
+      "npc" : "Royal Messenger",
+      "text" : "Lord Kaho's Horns",
+      "translation" : "卡浩之角"
+    },
+    {
+      "kind" : "option",
+      "line" : 30,
+      "npc" : "Royal Messenger",
+      "text" : "^777777Never mind.^000000",
+      "translation" : "^777777算了。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Royal Messenger",
+      "text" : "[Royal Messenger]\nHave a nice day.",
+      "translation" : "[皇家信使]\n祝你愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Royal Messenger",
+      "placeholders" : [
+        "getd(\".@Req\"+.@i+\"[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".@Req\"+.@i+\"[\"+.@j+\"]\"))"
+      ],
+      "text" : "[Royal Messenger]\nYou will need the following items:\n ~ {0}x ^0055FF{1}^000000\n ~ 1,000,000z",
+      "translation" : "[皇家信使]\n你需要以下物品：\n ~ {0}个 ^0055FF{1}^000000\n ~ 1,000,000z"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Royal Messenger",
+      "text" : "[Royal Messenger]\nYou will need the following items:\n ~ 1,000,000z",
+      "translation" : "[皇家信使]\n你需要以下物品：\n ~ 1,000,000z"
+    },
+    {
+      "kind" : "message",
+      "line" : 41,
+      "npc" : "Royal Messenger",
+      "text" : "[Royal Messenger]\nCome back when you meet all the requirements.",
+      "translation" : "[皇家信使]\n当你满足所有要求后再回来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 41,
+      "npc" : "Royal Messenger",
+      "placeholders" : [
+        "getitemname(getd(\".@Req\"+.@i+\"[0]\"))"
+      ],
+      "text" : "[Royal Messenger]\nI see you already have all the items you need. Here's your {0}, as promised.",
+      "translation" : "[皇家信使]\n我看你已经集齐了所有需要的物品。这是答应给你的{0}，请收好。"
+    }
+  ]
+}

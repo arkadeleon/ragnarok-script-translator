@@ -1,0 +1,779 @@
+{
+  "file" : "npc/guild/agit_main.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 346,
+      "npc" : "Kafra Staff",
+      "placeholders" : [
+        "GetGuildName(.@GID)"
+      ],
+      "text" : "[Kafra Employee]\nWelcome. ^ff0000{0}^000000 Member.\nThe Kafra Corporation will stay with you wherever you go.",
+      "translation" : "[卡普拉服务员]\n欢迎。^ff0000{0}^000000 成员。\n无论您前往何处，卡普拉公司都将与您同行。"
+    },
+    {
+      "kind" : "option",
+      "line" : 350,
+      "npc" : "Kafra Staff",
+      "text" : "Use Storage",
+      "translation" : "使用仓库"
+    },
+    {
+      "kind" : "option",
+      "line" : 350,
+      "npc" : "Kafra Staff",
+      "text" : "Use Teleport Service",
+      "translation" : "使用瞬间移动服务"
+    },
+    {
+      "kind" : "option",
+      "line" : 350,
+      "npc" : "Kafra Staff",
+      "text" : "Rent a Pushcart",
+      "translation" : "租赁手推车"
+    },
+    {
+      "kind" : "option",
+      "line" : 350,
+      "npc" : "Kafra Staff",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 353,
+      "npc" : "Kafra Staff",
+      "text" : "[Kafra Employee]\nI'm sorry, but you\nneed the Novice's\nBasic Skill Level 6 to\nuse the Storage Service.",
+      "translation" : "[卡普拉服务员]\n抱歉，您需要将初心者的基本技能等级提升至6级，才能使用仓库服务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 362,
+      "npc" : "Kafra Staff",
+      "text" : "[Kafra Employee]\nHere, let me open\nyour Storage for you.\nThank you for using\nthe Kafra Service.",
+      "translation" : "[卡普拉服务员]\n来，让我为您打开仓库。\n感谢您使用卡普拉服务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 372,
+      "npc" : "Kafra Staff",
+      "text" : "[Kafra Employee]\nPlease choose\nyour destination.",
+      "translation" : "[卡普拉服务员]\n请选择您的目的地。"
+    },
+    {
+      "kind" : "option",
+      "line" : 376,
+      "npc" : "Kafra Staff",
+      "placeholders" : [
+        ".@destination$"
+      ],
+      "text" : "{0} -> 200z",
+      "translation" : "{0} -> 200z"
+    },
+    {
+      "kind" : "option",
+      "line" : 376,
+      "npc" : "Kafra Staff",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 379,
+      "npc" : "Kafra Staff",
+      "placeholders" : [
+        ".@destination$"
+      ],
+      "text" : "[Kafra Employee]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto {0} is 200 zeny.",
+      "translation" : "[卡普拉服务员]\n抱歉，您的泽尼不足以支付瞬间移动服务费用。传送到 {0} 的费用是200泽尼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 400,
+      "npc" : "Kafra Staff",
+      "text" : "[Kafra Employee]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, Master Smiths,\nAlchemists, Biochemists,\nMechanics and Geneticists.",
+      "translation" : "[卡普拉服务员]\n抱歉，手推车租赁服务仅对商人、铁匠、高阶铁匠、炼金术士、生物化学家、机匠和遗传学者开放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 412,
+      "npc" : "Kafra Staff",
+      "text" : "[Kafra Employee]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time.",
+      "translation" : "[卡普拉服务员]\n您已经装备了手推车。\n很遗憾，我们无法同时向同一位顾客出租多辆手推车。"
+    },
+    {
+      "kind" : "message",
+      "line" : 422,
+      "npc" : "Kafra Staff",
+      "text" : "[Kafra Employee]\nThe Pushcart rental\nfee is 800 zeny. Would\nyou like to rent a Pushcart?",
+      "translation" : "[卡普拉服务员]\n手推车租赁费用为800泽尼。您想要租赁手推车吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 427,
+      "npc" : "Kafra Staff",
+      "text" : "Rent a Pushcart.",
+      "translation" : "租赁手推车。"
+    },
+    {
+      "kind" : "option",
+      "line" : 427,
+      "npc" : "Kafra Staff",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 430,
+      "npc" : "Kafra Staff",
+      "text" : "[Kafra Employee]\nI'm sorry, but you\ndon't have enough\nzeny to pay the Pushcart\nrental fee of 800 zeny.",
+      "translation" : "[卡普拉服务员]\n抱歉，您的泽尼不足以支付800泽尼的手推车租赁费用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 451,
+      "npc" : "Kafra Staff",
+      "text" : "[Kafra Employee]\nWe, here at Kafra Corporation,\nare always endeavoring to provide you with the best services. We hope that we meet your adventuring needs and standards of excellence.",
+      "translation" : "[卡普拉服务员]\n我们卡普拉公司始终致力于为您提供最优质的服务。我们希望能够满足您的冒险需求及卓越标准。"
+    },
+    {
+      "kind" : "message",
+      "line" : 459,
+      "npc" : "Kafra Staff",
+      "placeholders" : [
+        "GetGuildName(.@GID)"
+      ],
+      "text" : "[Kafra Employee]\nI am instructed to only offer my services to the ^ff0000{0}^000000 Guild. Please try another Kafra Employee around here. Sorry for the inconvenience.",
+      "translation" : "[卡普拉服务员]\n我接到指示，仅向 ^ff0000{0}^000000 公会提供服务。请尝试联系附近的其他卡普拉服务员。给您带来不便，敬请谅解。"
+    },
+    {
+      "kind" : "message",
+      "line" : 608,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nI have been waiting for a master to fulfill my destiny.\nBrave soul... fate will guide you towards your future...",
+      "translation" : "[{0}]\n我一直在等待一位能实现我命运的主人。\n勇敢的灵魂……命运将指引你走向未来……"
+    },
+    {
+      "kind" : "message",
+      "line" : 614,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        "GetGuildMaster(.@GID)"
+      ],
+      "text" : "[{0}]\nNo matter how much you pester me, I'll still follow my master ^ff0000{1}^000000. Where are the Guardians?! Send these ruffians away right now!",
+      "translation" : "[{0}]\n无论你如何纠缠，我都会追随我的主人 ^ff0000{1}^000000。守卫们在哪里？！立刻把这些暴徒赶走！"
+    },
+    {
+      "kind" : "message",
+      "line" : 618,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        "strcharinfo(0)",
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nWelcome. My honorable master, ^ff0000{1}^000000...\nYour humble servent, {2}, is here to serve you.",
+      "translation" : "[{0}]\n欢迎。我尊敬的主人，^ff0000{1}^000000……\n您卑微的仆人 {2} 在此为您服务。"
+    },
+    {
+      "kind" : "option",
+      "line" : 622,
+      "npc" : "Castle Manager",
+      "text" : "Castle briefing",
+      "translation" : "城堡简报"
+    },
+    {
+      "kind" : "option",
+      "line" : 622,
+      "npc" : "Castle Manager",
+      "text" : "Invest in commercial growth",
+      "translation" : "投资商业发展"
+    },
+    {
+      "kind" : "option",
+      "line" : 622,
+      "npc" : "Castle Manager",
+      "text" : "Invest in Castle Defenses",
+      "translation" : "投资城堡防御"
+    },
+    {
+      "kind" : "option",
+      "line" : 622,
+      "npc" : "Castle Manager",
+      "text" : "Summon Guardian",
+      "translation" : "召唤守卫"
+    },
+    {
+      "kind" : "option",
+      "line" : 622,
+      "npc" : "Castle Manager",
+      "text" : "Hire / Fire a Kafra Employee",
+      "translation" : "雇佣/解雇卡普拉服务员"
+    },
+    {
+      "kind" : "option",
+      "line" : 622,
+      "npc" : "Castle Manager",
+      "text" : "Go into Master's room",
+      "translation" : "进入主人的房间"
+    },
+    {
+      "kind" : "message",
+      "line" : 624,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_ECONOMY)",
+        "GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_DEFENSE)",
+        "GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE)"
+      ],
+      "text" : "[{0}]\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}.\n You invested {2} times in past 1 day.\n Now, the Castle Defense level is {3}.^000000\n ^0000ff- You invested {4} times in past 1 day.^000000\n \nThat's all I have to report, Master.",
+      "translation" : "[{0}]\n我将向您汇报城堡简报，主人。\n \n^0000ff目前，商业发展等级为 {1}。\n 过去1天内您投资了 {2} 次。\n 目前，城堡防御等级为 {3}。^000000\n ^0000ff- 过去1天内您投资了 {4} 次。^000000\n \n汇报完毕，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 624,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_ECONOMY)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_DEFENSE)",
+        "GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE)"
+      ],
+      "text" : "[{0}]\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}.\n Now, the Castle Defense level is {2}.^000000\n ^0000ff- You invested {3} times in past 1 day.^000000\n \nThat's all I have to report, Master.",
+      "translation" : "[{0}]\n我将向您汇报城堡简报，主人。\n \n^0000ff目前，商业发展等级为 {1}。\n 目前，城堡防御等级为 {2}。^000000\n ^0000ff- 过去1天内您投资了 {3} 次。^000000\n \n汇报完毕，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 624,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_ECONOMY)",
+        "GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_DEFENSE)"
+      ],
+      "text" : "[{0}]\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}.\n You invested {2} times in past 1 day.\n Now, the Castle Defense level is {3}.^000000\n \nThat's all I have to report, Master.",
+      "translation" : "[{0}]\n我将向您汇报城堡简报，主人。\n \n^0000ff目前，商业发展等级为 {1}。\n 过去1天内您投资了 {2} 次。\n 目前，城堡防御等级为 {3}。^000000\n \n汇报完毕，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 624,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_ECONOMY)",
+        "GetCastleData(strnpcinfo(2),CD_CURRENT_DEFENSE)"
+      ],
+      "text" : "[{0}]\nI will report the Castle briefing, Master.\n \n^0000ffNow, the commercial growth level is {1}.\n Now, the Castle Defense level is {2}.^000000\n \nThat's all I have to report, Master.",
+      "translation" : "[{0}]\n我将向您汇报城堡简报，主人。\n \n^0000ff目前，商业发展等级为 {1}。\n 目前，城堡防御等级为 {2}。^000000\n \n汇报完毕，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 664,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nIf you invest in commercial growth, the quantity of goods made by the guild will increase. Therfore, if you consider our future, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n \n^ff0000The commercial growth level of our Castle is at it's highest, 100%. No more investments are needed. Just as I have expected from a great economist like you, Master.^000000",
+      "translation" : "[{0}]\n如果您投资商业发展，公会生产的商品数量将会增加。因此，考虑到我们的未来，投资是必要的。\n \n起初，您只能投资一次，但如果支付更多资金，您可以投资两次。\n \n^ff0000我们城堡的商业发展等级已达到最高的100%。不再需要投资。正如我所料，您真是一位伟大的经济学家，主人。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 664,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nIf you invest in commercial growth, the quantity of goods made by the guild will increase. Therfore, if you consider our future, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n \n^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect riches of the guild to grow at a high rate.",
+      "translation" : "[{0}]\n如果您投资商业发展，公会生产的商品数量将会增加。因此，考虑到我们的未来，投资是必要的。\n \n起初，您只能投资一次，但如果支付更多资金，您可以投资两次。\n \n^ff0000您今天已经投资了两次。无法再进行投资。^000000 我期待公会的财富高速增长。"
+    },
+    {
+      "kind" : "message",
+      "line" : 664,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        ".@eco_invest"
+      ],
+      "text" : "[{0}]\nIf you invest in commercial growth, the quantity of goods made by the guild will increase. Therfore, if you consider our future, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n \nThe current investment amount required is ^ff0000{1}^000000 zeny. Will you invest?",
+      "translation" : "[{0}]\n如果您投资商业发展，公会生产的商品数量将会增加。因此，考虑到我们的未来，投资是必要的。\n \n起初，您只能投资一次，但如果支付更多资金，您可以投资两次。\n \n当前所需的投资金额为 ^ff0000{1}^000000 泽尼。您要投资吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 664,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        ".@eco_invest"
+      ],
+      "text" : "[{0}]\nIf you invest in commercial growth, the quantity of goods made by the guild will increase. Therfore, if you consider our future, investments will be a necessity.\n \nInitially, you are able to invest just once but if you pay more money, you will be able to invest twice.\n \nYou've invested once today... if you wish to invest once more, ^ff0000{1}^000000 more zeny will be needed.",
+      "translation" : "[{0}]\n如果您投资商业发展，公会生产的商品数量将会增加。因此，考虑到我们的未来，投资是必要的。\n \n起初，您只能投资一次，但如果支付更多资金，您可以投资两次。\n \n您今天已经投资了一次……如果您希望再投资一次，则需要额外 ^ff0000{1}^000000 泽尼。"
+    },
+    {
+      "kind" : "option",
+      "line" : 687,
+      "npc" : "Castle Manager",
+      "text" : "Invest in commercial growth",
+      "translation" : "投资商业发展"
+    },
+    {
+      "kind" : "option",
+      "line" : 687,
+      "npc" : "Castle Manager",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 690,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nI'm sorry but there is not enough zeny to invest. You will have to try again when you have the funds, Master.",
+      "translation" : "[{0}]\n抱歉，泽尼不足，无法进行投资。当您筹集到资金后，请再来尝试，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 696,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[ {0}]\nWe finished the investment safely. I expect that our growth level will be increased by tomorrow.",
+      "translation" : "[ {0}]\n我们已安全完成投资。我预计我们的发展等级明天将会提升。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nI'll do as you bid, my master... There is no hurry. We will do our best.",
+      "translation" : "[{0}]\n我会遵从您的命令，我的主人……不必着急。我们会尽力而为。"
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nIf you raise Castle Defenses, the durability of Guardians and the Emperium will increase. Therefore, if you consider our coming battles, some investment in this area will be required.\n \nOriginally you can invest just once but if you pay more money, you can invest twice.\n \n^ff0000But the Castle Defense level of our Castle is at it's highest, 100%. No more investments are needed. Just as I have expected from a great strategist like you, Master.^000000",
+      "translation" : "[{0}]\n如果您提升城堡防御，<黑暗搜集者>华丽金属守卫和华丽金属的耐久度将会增加。因此，考虑到即将到来的战斗，在这方面进行一些投资是必要的。\n \n原本您只能投资一次，但如果支付更多资金，您可以投资两次。\n \n^ff0000但我们城堡的防御等级已达到最高的100%。不再需要投资。正如我所料，您真是一位伟大的战略家，主人。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nIf you raise Castle Defenses, the durability of Guardians and the Emperium will increase. Therefore, if you consider our coming battles, some investment in this area will be required.\n \nOriginally you can invest just once but if you pay more money, you can invest twice.\n \n^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect the Defenses of the guild to grow at a high rate.",
+      "translation" : "[{0}]\n如果您提升城堡防御，<黑暗搜集者>华丽金属守卫和华丽金属的耐久度将会增加。因此，考虑到即将到来的战斗，在这方面进行一些投资是必要的。\n \n原本您只能投资一次，但如果支付更多资金，您可以投资两次。\n \n^ff0000您今天已经投资了两次。无法再进行投资。^000000 我期待公会的防御能力高速增长。"
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        ".@def_invest"
+      ],
+      "text" : "[{0}]\nIf you raise Castle Defenses, the durability of Guardians and the Emperium will increase. Therefore, if you consider our coming battles, some investment in this area will be required.\n \nOriginally you can invest just once but if you pay more money, you can invest twice.\n \nThe current investment amount required is ^ff0000{1}^000000 zeny. Will you invest?",
+      "translation" : "[{0}]\n如果您提升城堡防御，<黑暗搜集者>华丽金属守卫和华丽金属的耐久度将会增加。因此，考虑到即将到来的战斗，在这方面进行一些投资是必要的。\n \n原本您只能投资一次，但如果支付更多资金，您可以投资两次。\n \n当前所需的投资金额为 ^ff0000{1}^000000 泽尼。您要投资吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        ".@def_invest"
+      ],
+      "text" : "[{0}]\nIf you raise Castle Defenses, the durability of Guardians and the Emperium will increase. Therefore, if you consider our coming battles, some investment in this area will be required.\n \nOriginally you can invest just once but if you pay more money, you can invest twice.\n \nYou've invested once today... if you wish to invest once more, ^ff0000{1}^000000 more zeny will be needed.",
+      "translation" : "[{0}]\n如果您提升城堡防御，<黑暗搜集者>华丽金属守卫和华丽金属的耐久度将会增加。因此，考虑到即将到来的战斗，在这方面进行一些投资是必要的。\n \n原本您只能投资一次，但如果支付更多资金，您可以投资两次。\n \n您今天已经投资了一次……如果您希望再投资一次，则需要额外 ^ff0000{1}^000000 泽尼。"
+    },
+    {
+      "kind" : "option",
+      "line" : 753,
+      "npc" : "Castle Manager",
+      "text" : "Invest in Castle Defenses.",
+      "translation" : "投资城堡防御。"
+    },
+    {
+      "kind" : "option",
+      "line" : 753,
+      "npc" : "Castle Manager",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 756,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nI'm sorry but there is not enough zeny to invest. You will have to try again when you have the funds, Master.",
+      "translation" : "[{0}]\n抱歉，泽尼不足，无法进行投资。当您筹集到资金后，请再来尝试，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 762,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[ {0}]\nWe finished the investment safely. I expect that our Castle Defense level will be increased by tomorrow.",
+      "translation" : "[ {0}]\n我们已安全完成投资。我预计我们的城堡防御等级明天将会提升。"
+    },
+    {
+      "kind" : "message",
+      "line" : 766,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nI'll do as you bid, my master... There is no hurry. We will do our best.",
+      "translation" : "[{0}]\n我会遵从您的命令，我的主人……不必着急。我们会尽力而为。"
+    },
+    {
+      "kind" : "message",
+      "line" : 771,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nWill you summon a Guardian? It'll be a protector to defend us loyally.\nPlease select a guardian to defend us.",
+      "translation" : "[{0}]\n您要召唤守卫吗？它将成为忠诚保护我们的守护者。\n请选择一名守卫来保卫我们。"
+    },
+    {
+      "kind" : "message",
+      "line" : 788,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nWill you summon the chosen guardian? 10,000 zeny are required to summon a Guardian.",
+      "translation" : "[{0}]\n您要召唤选定的守卫吗？召唤守卫需要10,000泽尼。"
+    },
+    {
+      "kind" : "option",
+      "line" : 791,
+      "npc" : "Castle Manager",
+      "text" : "Summon",
+      "translation" : "召唤"
+    },
+    {
+      "kind" : "option",
+      "line" : 791,
+      "npc" : "Castle Manager",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 794,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nMaster, we have not the resources to Summon the Guardian. If you want to accumulate them, you have to learn the Guild skill. We failed to summon the Guardian.",
+      "translation" : "[{0}]\n主人，我们没有资源来召唤守卫。如果您想积累资源，必须学习公会技能。我们未能召唤守卫。"
+    },
+    {
+      "kind" : "message",
+      "line" : 799,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nMaster, you already have summoned that Guardian. We cannot summon another.",
+      "translation" : "[{0}]\n主人，您已经召唤了该守卫。我们无法再次召唤。"
+    },
+    {
+      "kind" : "message",
+      "line" : 804,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nWell... I'm sorry but we don't have funds to summon the Guardian. We failed to summon the Guardian.",
+      "translation" : "[{0}]\n嗯……抱歉，我们没有资金来召唤守卫。我们未能召唤守卫。"
+    },
+    {
+      "kind" : "message",
+      "line" : 815,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nWe completed the summoning of the Guardian. Our defenses are now increased with it in place.",
+      "translation" : "[{0}]\n我们已完成守卫的召唤。有了它的存在，我们的防御力得到了提升。"
+    },
+    {
+      "kind" : "message",
+      "line" : 819,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nI did as you ordered. But please remember if you the have money to spare, it'll be better to set it up.",
+      "translation" : "[{0}]\n我已按您的命令行事。但请记住，如果您有闲钱，最好将其设置好。"
+    },
+    {
+      "kind" : "message",
+      "line" : 825,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nWe are currently hiring a Kafra Employee... Do you want to fire the Kafra Employee?",
+      "translation" : "[{0}]\n我们目前正在雇佣一名卡普拉服务员……您想要解雇这名卡普拉服务员吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 828,
+      "npc" : "Castle Manager",
+      "text" : "Fire",
+      "translation" : "解雇"
+    },
+    {
+      "kind" : "option",
+      "line" : 828,
+      "npc" : "Castle Manager",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 831,
+      "npc" : "Castle Manager",
+      "text" : "[ Hired Kafra Employee ]\nI worked so hard... How can you do that, Master?... Please... Please reconsider... Check it again, Master... Please...",
+      "translation" : "[受雇的卡普拉服务员]\n我工作得如此努力……您怎么能这样，主人？……求求您……请重新考虑……再检查一下，主人……求求您……"
+    },
+    {
+      "kind" : "option",
+      "line" : 834,
+      "npc" : "Castle Manager",
+      "text" : "Fire",
+      "translation" : "解雇"
+    },
+    {
+      "kind" : "option",
+      "line" : 834,
+      "npc" : "Castle Manager",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 836,
+      "npc" : "Castle Manager",
+      "text" : "[ Hired Kafra Employee ]\nOh, my goodness! This is nonsense!",
+      "translation" : "[受雇的卡普拉服务员]\n哦，天哪！这太荒谬了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 842,
+      "npc" : "Castle Manager",
+      "text" : "[ Hired Kafra Employee ]\nI'll work hard for you... Thank you!",
+      "translation" : "[受雇的卡普拉服务员]\n我会为您努力工作的……谢谢！"
+    },
+    {
+      "kind" : "message",
+      "line" : 848,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nShe worked hard in my opinion. It was a good decision to keep her.",
+      "translation" : "[{0}]\n在我看来，她工作很努力。留下她是个正确的决定。"
+    },
+    {
+      "kind" : "message",
+      "line" : 854,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\n....\nI have discharged the Kafra Employee... But... are you unsatisfied with something?",
+      "translation" : "[{0}]\n....\n我已解雇了卡普拉服务员……但是……您对某些事情不满意吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 859,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nWill you contact the kafra Main Office and Hire a Employee for our Castle?\n^ff0000 10,000 zeny is required for their services. ",
+      "translation" : "[{0}]\n您要联系卡普拉总公司并为我们的城堡雇佣一名员工吗？\n^ff0000 他们的服务需要10,000泽尼。 "
+    },
+    {
+      "kind" : "option",
+      "line" : 863,
+      "npc" : "Castle Manager",
+      "text" : "Hire.",
+      "translation" : "雇佣。"
+    },
+    {
+      "kind" : "option",
+      "line" : 863,
+      "npc" : "Castle Manager",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 866,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nMaster, we can't hire a Kafra Employee because we don't have a contract with the Kafra Main Office. If you want to obtain a contract with the Kafra Main Office, you will need to learn the Guild skill first.",
+      "translation" : "[{0}]\n主人，因为我们没有与卡普拉总公司签订合同，所以无法雇佣卡普拉服务员。如果您想获得与卡普拉总公司的合同，首先需要学习公会技能。"
+    },
+    {
+      "kind" : "message",
+      "line" : 871,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nWell... I'm sorry but we don't have enough funds to hire a Kafra Employee.",
+      "translation" : "[{0}]\n嗯……抱歉，我们没有足够的资金来雇佣卡普拉服务员。"
+    },
+    {
+      "kind" : "message",
+      "line" : 878,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nWe obtained a contract with the kafra Main Office, and hired a Kafra Employee.",
+      "translation" : "[{0}]\n我们获得了与卡普拉总公司的合同，并雇佣了一名卡普拉服务员。"
+    },
+    {
+      "kind" : "message",
+      "line" : 882,
+      "npc" : "Castle Manager",
+      "text" : "[ Hired Kafra Employee ]\nHow do you do? I was dispatched from the Main Office.\nI'll do my best to not tarnish the reputation of the Guild.",
+      "translation" : "[受雇的卡普拉服务员]\n您好。我是从总公司派遣来的。\n我会尽力不损害公会的声誉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 887,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nThe Contract terms of the hired Kafra Employee are for 1 month and after this term, you will need to pay an additional fee.\nIt will be useful for our members.",
+      "translation" : "[{0}]\n受雇卡普拉服务员的合同期限为1个月，期限过后您需要支付额外费用。\n这对我们的成员很有用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 892,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nI did as you ordered, but some of our members will be unhappy. It will be better to hire a Kafra Employee quickly.",
+      "translation" : "[{0}]\n我已按您的命令行事，但我们的一些成员可能会不高兴。最好尽快雇佣一名卡普拉服务员。"
+    },
+    {
+      "kind" : "message",
+      "line" : 897,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nDo you want to visit the room where our valuables are stored?\nThat room is restricted to you... you are the only one with access to it.",
+      "translation" : "[{0}]\n您想要进入存放我们贵重物品的房间吗？\n那个房间对您限制开放……您是唯一有权进入的人。"
+    },
+    {
+      "kind" : "option",
+      "line" : 901,
+      "npc" : "Castle Manager",
+      "text" : "Go into Master's room.",
+      "translation" : "进入主人的房间。"
+    },
+    {
+      "kind" : "option",
+      "line" : 901,
+      "npc" : "Castle Manager",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nI'll show you the secret path. Follow me...please.\nWhen you want to return here, please press the secret switch.",
+      "translation" : "[{0}]\n我会为您展示秘密通道。请跟我来……\n当您想返回这里时，请按动秘密开关。"
+    },
+    {
+      "kind" : "message",
+      "line" : 910,
+      "npc" : "Castle Manager",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nGoods are produced once a day... if you don't remove them in time, they will not be produced anymore.\nTherefore, it will be better if you check up on them from time to time.",
+      "translation" : "[{0}]\n商品每天生产一次……如果您不及时取出，它们将不再生产。\n因此，最好时不时检查一下。"
+    },
+    {
+      "kind" : "message",
+      "line" : 925,
+      "npc" : "Lever",
+      "text" : "[Ringing Voice]\n'Those who overcome an ordeal shows a great deal of bravery... and will find their way to another ordeal.'",
+      "translation" : "[回响的声音]\n‘克服考验的人展现出巨大的勇气……并将找到通往另一场考验的道路。’"
+    },
+    {
+      "kind" : "message",
+      "line" : 967,
+      "npc" : "Lever",
+      "text" : "[Ringing Voice]\n'Only the truly brave can take the test.'",
+      "translation" : "[回响的声音]\n‘只有真正勇敢的人才能接受测试。’"
+    },
+    {
+      "kind" : "message",
+      "line" : 970,
+      "npc" : "Lever",
+      "text" : " \nThere's a small lever. Will you pull it?",
+      "translation" : "\n这里有一个小拉杆。你要拉动它吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 973,
+      "npc" : "Lever",
+      "text" : "Pull.",
+      "translation" : "拉动。"
+    },
+    {
+      "kind" : "option",
+      "line" : 973,
+      "npc" : "Lever",
+      "text" : "Don't pull.",
+      "translation" : "不要拉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 979,
+      "npc" : "Lever",
+      "text" : " \nNothing happened.",
+      "translation" : " \n什么也没发生。"
+    }
+  ]
+}

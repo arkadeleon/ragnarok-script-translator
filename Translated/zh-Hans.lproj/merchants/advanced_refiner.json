@@ -1,0 +1,192 @@
+{
+  "file" : "npc/merchants/advanced_refiner.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nI am the Armsmith\nI can refine all kinds of weapons,\narmor and equipment, so let me\nknow what you want to refine.",
+      "translation" : "[孙比]\n我是武器锻造师。\n我可以精炼各种武器、防具和装备，请告诉我你想精炼什么。"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nI don't think I can refine any items you have...",
+      "translation" : "[孙比]\n我想我无法精炼你持有的任何物品……"
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nGo find another Blacksmith. You can't refine this thing.",
+      "translation" : "[孙比]\n去找别的铁匠吧。这东西没法精炼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nHmm... someone perfected this already. I don't think I can work on it further.",
+      "translation" : "[孙比]\n嗯……有人已经把它精炼到完美了。我想我没法再进一步加工了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 68,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nClang! Clang! Clang!",
+      "translation" : "[孙比]\n铛！铛！铛！"
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "npc" : "Suhnbi",
+      "placeholders" : [
+        "((.@itemtype == IT_WEAPON)?\"weapon\":\"armor\")"
+      ],
+      "text" : "[Suhnbi]\nThere you go! It's done.\nIt's been a while since I've made such a fine {0}. You must be happy because it has become stronger!",
+      "translation" : "[孙比]\n好了！完成了。\n好久没做出这么棒的{0}了。它变得更强了，你一定很高兴吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nUuuuuuuuuummmmmph!!!",
+      "translation" : "[孙比]\n唔唔唔唔唔嗯！！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 85,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\n...\n.....\n.......Huhuhuhuhu~\n........It was your choice and my ability, no regret.",
+      "translation" : "[孙比]\n……\n………\n………呵呵呵呵~\n………这是你的选择和我能力的结果，无需后悔。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Suhnbi",
+      "placeholders" : [
+        ".@equip_lv",
+        "getitemname(.@item_req)",
+        ".@price"
+      ],
+      "text" : "[Suhnbi]\nYou want to refine a level {0} weapon?\nTo refine that, you'll need to have one ^ff9999{1}^000000 and {2} zeny.\nWould you like to continue?",
+      "translation" : "[孙比]\n你想精炼一把+{0}的武器吗？\n要精炼它，你需要一个^ff9999{1}^000000和{2}泽尼。\n要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Suhnbi",
+      "placeholders" : [
+        "getitemname(.@item_req)",
+        ".@price"
+      ],
+      "text" : "[Suhnbi]\nTo refine that, you'll need to have one ^ff9999{0}^000000 and {1} zeny.\nWould you like to continue?",
+      "translation" : "[孙比]\n要精炼它，你需要一个^ff9999{0}^000000和{1}泽尼。\n要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 147,
+      "npc" : "Suhnbi",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 147,
+      "npc" : "Suhnbi",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 150,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nWow!!\nThis weapon probably\nlooks like it's been refined...\nmany times...\nIt may break if\nyou refine it again.",
+      "translation" : "[孙比]\n哇！！\n这把武器看起来\n好像已经被精炼过\n很多次了……\n如果再精炼的话，\n可能会损坏。"
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "Suhnbi",
+      "text" : "And if it breaks,\nyou can't use it anymore!\nAll the cards in it and the properties ^ff0000will be lost^000000!\n^ff0000Besides, the equipment will break!^000000\nAre you sure you still want to continue?",
+      "translation" : "如果损坏了，\n你就再也无法使用它了！\n里面的卡片和属性^ff0000将会丢失^000000！\n^ff0000而且，装备会损坏！^000000\n你确定还要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 164,
+      "npc" : "Suhnbi",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 164,
+      "npc" : "Suhnbi",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 165,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nGood.\nBecause if the weapon breaks from unreasonable refining, then I get a bad mood, too.",
+      "translation" : "[孙比]\n很好。\n因为如果武器因不合理的精炼而损坏，我的心情也会变差。"
+    },
+    {
+      "kind" : "message",
+      "line" : 171,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nGiggle. Giggle. Oh, you have guts, daring to refine this.\nYou know it's pretty risky, don't you?",
+      "translation" : "[孙比]\n嘻嘻。嘻嘻。哦，你真有胆量，敢精炼这个。\n你知道这相当有风险，对吧？"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Suhnbi",
+      "text" : "If your defensive equipment is broken, you'll never be able to use it again.\nEven your cards and your modifications will ^ff0000completely disappear^000000.\nDo you really wish to continue?",
+      "translation" : "如果你的防御装备损坏了，你就再也无法使用它了。\n连你的卡片和插卡改造都会^ff0000完全消失^000000。\n你真的希望继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 180,
+      "npc" : "Suhnbi",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 180,
+      "npc" : "Suhnbi",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 181,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nWhat nonsense. You waste my precious time.\nGet lost, punk.",
+      "translation" : "[孙比]\n胡说什么。浪费我宝贵的时间。\n滚开，朽魔。"
+    },
+    {
+      "kind" : "message",
+      "line" : 195,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nWait a second...\nDo you think I'm stupid?!\nYou switched the item while I wasn't looking! Get out of here!",
+      "translation" : "[孙比]\n等一下……\n你以为我傻吗？！\n你趁我不注意调换了物品！给我滚出去！"
+    },
+    {
+      "kind" : "message",
+      "line" : 205,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nAre these all you have?\nI'm very sorry, but I can't do anything without all the materials. Besides, I deserve some payments for my work, don't I?",
+      "translation" : "[孙比]\n你就只有这些吗？\n非常抱歉，没有齐全的材料我什么都做不了。而且，我也该收点工钱，不是吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 210,
+      "npc" : "Suhnbi",
+      "text" : "[Suhnbi]\nI can't help it even if you're not happy about it...",
+      "translation" : "[孙比]\n即使你不高兴，我也没办法……"
+    }
+  ]
+}

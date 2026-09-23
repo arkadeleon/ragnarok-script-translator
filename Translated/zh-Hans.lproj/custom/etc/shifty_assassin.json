@@ -1,0 +1,242 @@
+{
+  "file" : "npc/custom/etc/shifty_assassin.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 21,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nWhat do you want?",
+      "translation" : "[狡猾的刺客]\n你想要什么？"
+    },
+    {
+      "kind" : "option",
+      "line" : 24,
+      "npc" : "Shifty Assassin",
+      "text" : "Buy Ninjas",
+      "translation" : "购买忍者"
+    },
+    {
+      "kind" : "option",
+      "line" : 24,
+      "npc" : "Shifty Assassin",
+      "text" : "Assassinate somebody",
+      "translation" : "暗杀某人"
+    },
+    {
+      "kind" : "option",
+      "line" : 24,
+      "npc" : "Shifty Assassin",
+      "text" : "Check your Ninjas",
+      "translation" : "查看你的忍者"
+    },
+    {
+      "kind" : "option",
+      "line" : 24,
+      "npc" : "Shifty Assassin",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nHow many ninjas do you want to make available?",
+      "translation" : "[狡猾的刺客]\n你想提供多少名忍者？"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        ".@add"
+      ],
+      "text" : "{0} ninjas added.",
+      "translation" : "已添加 {0} 名忍者。"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        "$ninja_avail",
+        ".@ninja_price"
+      ],
+      "text" : "[Shifty Assassin]\nHow many ninjas do you want buy?\nThere are ^0000FF{0}^000000 ninjas available.\nThey cost ^0000FF{1} zeny ^000000each.",
+      "translation" : "[狡猾的刺客]\n你想购买多少名忍者？\n目前有 ^0000FF{0}^000000 名忍者可供购买。\n每名价格为 ^0000FF{1} 泽尼^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        ".@price"
+      ],
+      "text" : "[Shifty Assassin]\nThat will cost you ^0000FF{0} zeny^000000.",
+      "translation" : "[狡猾的刺客]\n这将花费你 ^0000FF{0} 泽尼^000000。"
+    },
+    {
+      "kind" : "option",
+      "line" : 52,
+      "npc" : "Shifty Assassin",
+      "text" : "Continue",
+      "translation" : "继续"
+    },
+    {
+      "kind" : "option",
+      "line" : 52,
+      "npc" : "Shifty Assassin",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 58,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nThank you.",
+      "translation" : "[狡猾的刺客]\n谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nEnter the name of the target.\n^FF0000Type the name exactly, otherwise I won't be able to find the victim.^000000",
+      "translation" : "[狡猾的刺客]\n请输入目标的名字。\n^FF0000请准确输入名字，否则我将无法找到受害者。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 69,
+      "npc" : "Shifty Assassin",
+      "text" : "Continue",
+      "translation" : "继续"
+    },
+    {
+      "kind" : "option",
+      "line" : 69,
+      "npc" : "Shifty Assassin",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 72,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        ".@name$"
+      ],
+      "text" : "[Shifty Assassin]\n{0} is not online.",
+      "translation" : "[狡猾的刺客]\n{0} 不在线。"
+    },
+    {
+      "kind" : "message",
+      "line" : 77,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        "#ninjas",
+        "#ninjasr"
+      ],
+      "text" : "[Shifty Assassin]\nActive Ninjas: {0}\nResting Ninjas: {1}\nHow many do you want to send?",
+      "translation" : "[狡猾的刺客]\n活跃忍者：{0}\n休息忍者：{1}\n你想派遣多少名？"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Shifty Assassin",
+      "text" : "Sending ninjas now.",
+      "translation" : "正在派遣忍者。"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        "#ninjasr"
+      ],
+      "text" : "[Shifty Assassin]\nYour attack succeeded but only ^FF0000{0}^000000 Ninjas survived.",
+      "translation" : "[狡猾的刺客]\n你的攻击成功了，但只有 ^FF0000{0}^000000 名忍者幸存。"
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "Shifty Assassin",
+      "text" : "Sending ninjas now.",
+      "translation" : "正在派遣忍者。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        "#ninjasr"
+      ],
+      "text" : "[Shifty Assassin]\nYour attack failed and only ^FF0000{0}^000000 Ninjas survived.",
+      "translation" : "[狡猾的刺客]\n你的攻击失败了，只有 ^FF0000{0}^000000 名忍者幸存。"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nSorry, all my ninjas are busy doing War of Emperium.",
+      "translation" : "[狡猾的刺客]\n抱歉，我所有的忍者都忙于参加攻城战。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        "#ninjas",
+        "#ninjasr"
+      ],
+      "text" : "[Shifty Assassin]\nYou have:\n^FF0000{0}^000000 Active Ninjas.\n^0000FF{1}^000000 Resting Ninjas.",
+      "translation" : "[狡猾的刺客]\n你拥有：\n^FF0000{0}^000000 名活跃忍者。\n^0000FF{1}^000000 名休息忍者。"
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nYou can't kill anyone without ninjas.",
+      "translation" : "[狡猾的刺客]\n没有忍者，你无法杀害任何人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nYou can only send 10 ninjas max.",
+      "translation" : "[狡猾的刺客]\n你最多只能派遣 10 名忍者。"
+    },
+    {
+      "kind" : "message",
+      "line" : 146,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nYou do not have enough zeny.",
+      "translation" : "[狡猾的刺客]\n你的泽尼不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 151,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nThere aren't that many ninjas to buy.",
+      "translation" : "[狡猾的刺客]\n没有那么多忍者可供购买。"
+    },
+    {
+      "kind" : "message",
+      "line" : 157,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nThere are no ninjas left to buy.",
+      "translation" : "[狡猾的刺客]\n没有剩余的忍者可供购买了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nYou do not have that many ninjas.",
+      "translation" : "[狡猾的刺客]\n你没有那么多忍者。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Shifty Assassin",
+      "text" : "[Shifty Assassin]\nGoodbye.",
+      "translation" : "[狡猾的刺客]\n再见。"
+    }
+  ]
+}
