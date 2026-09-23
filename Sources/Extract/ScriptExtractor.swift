@@ -30,7 +30,7 @@ struct ScriptExtractor {
 
         // The same page can be reached on several paths and flushed by each; keep it once per source location.
         func append(_ script: ExtractedScript) {
-            let key = [script.kind.rawValue, String(script.line), script.speaker ?? "", script.text] + (script.placeholders ?? [])
+            let key = [script.kind.rawValue, String(script.line), script.text] + (script.placeholders ?? [])
             if emitted.insert(key).inserted {
                 scripts.append(script)
             }
@@ -137,13 +137,6 @@ struct ScriptExtractor {
             return nil
         }
 
-        var lines = lines
-        var speaker: String?
-        if kind == .message, let name = speakerName(of: lines[0]) {
-            speaker = name
-            lines.removeFirst()
-        }
-
         var text = ""
         var placeholders: [String] = []
         var hasText = false
@@ -166,36 +159,10 @@ struct ScriptExtractor {
             }
         }
 
-        // A page that is only a speaker line still records the speaker.
-        guard hasText || speaker != nil else {
+        guard hasText else {
             return nil
         }
-        return ExtractedScript(kind: kind, npc: npc, line: line, speaker: speaker, text: text, placeholders: placeholders.isEmpty ? nil : placeholders)
-    }
-
-    /// `[Name]` or `[` + expression + `]` on a line of its own: the speaker, with any expression
-    /// (the player's name in practice) rendered as `{0}`.
-    private static func speakerName(of segments: [Segment]) -> String? {
-        var rendered = ""
-        var placeholderCount = 0
-        for segment in segments {
-            switch segment {
-            case .literal(let literal):
-                rendered += literal
-            case .placeholder:
-                rendered += "{\(placeholderCount)}"
-                placeholderCount += 1
-            }
-        }
-        let trimmed = rendered.trimmingCharacters(in: .whitespaces)
-        guard trimmed.count >= 2, trimmed.hasPrefix("["), trimmed.hasSuffix("]") else {
-            return nil
-        }
-        let inner = trimmed.dropFirst().dropLast()
-        guard !inner.contains("]"), !inner.contains("[") else {
-            return nil
-        }
-        return String(inner)
+        return ExtractedScript(kind: kind, npc: npc, line: line, text: text, placeholders: placeholders.isEmpty ? nil : placeholders)
     }
 }
 

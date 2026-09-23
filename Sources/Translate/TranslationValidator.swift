@@ -51,33 +51,6 @@ enum TranslationValidator {
         return nil
     }
 
-    /// Languages whose script is not Latin: a name left in Latin letters was not transliterated.
-    private static let nonLatinLanguages: Set<String> = ["ja", "ko", "ru", "th", "zh-Hans", "zh-Hant"]
-
-    /// A speaker name must come back as one short line, not an explanation of one, and in the
-    /// target script.
-    static func validateSpeaker(source: String, translation: String, language: String) -> String? {
-        if let reason = validate(source: source, translation: translation) {
-            return reason
-        }
-        if nonLatinLanguages.contains(language) {
-            let bare = translation.replacing(placeholderPattern, with: "").replacing(colorPattern, with: "")
-            if bare.contains(where: { $0.isLetter && $0.isASCII }) {
-                return "name not transliterated"
-            }
-        }
-        if translation.contains("\n") || translation.contains("[") || translation.contains("]") {
-            return "not a single name"
-        }
-        for bracket in ["(", "（"] where translation.contains(bracket) && !source.contains(bracket) {
-            return "contains commentary"
-        }
-        if translation.count > max(source.count * 3, 12) {
-            return "too long for a name"
-        }
-        return nil
-    }
-
     /// Repairs mistakes that are unambiguous: a literal backslash-n where the model meant a line break.
     static func tidy(_ translation: String, source: String) -> String {
         var result = translation

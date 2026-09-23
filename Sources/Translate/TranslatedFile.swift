@@ -12,8 +12,6 @@ import Foundation
 /// translation sits next to its source for review.
 struct TranslatedFile: Codable {
     var file: String
-    /// Speaker names heading pages in this file, English to translated.
-    var speakers: [String: String]
     var scripts: [TranslatedScript]
 
     var hasFailures: Bool {
@@ -30,25 +28,23 @@ struct TranslatedFile: Codable {
 struct TranslatedScript: Codable {
     var kind: ExtractedScript.Kind
     var npc: String?
-    var speaker: String?
     var line: Int
     var text: String
     var placeholders: [String]?
-    /// The translated body; nil when the model produced nothing acceptable.
+    /// The translated text; nil when the model produced nothing acceptable.
     var translation: String?
     /// Why the translation was rejected, with the model's last output.
     var error: String?
     var output: String?
 
     func isSource(_ script: ExtractedScript) -> Bool {
-        kind == script.kind && npc == script.npc && speaker == script.speaker && line == script.line
+        kind == script.kind && npc == script.npc && line == script.line
             && text == script.text && placeholders == script.placeholders
     }
 
     init(_ script: ExtractedScript, translation: String?, failure: TranslationFailure?) {
         kind = script.kind
         npc = script.npc
-        speaker = script.speaker
         line = script.line
         text = script.text
         placeholders = script.placeholders
@@ -68,7 +64,6 @@ struct TranslationFailure {
 struct TranslationCache {
     var texts: [String: String] = [:]
     var failures: [String: TranslationFailure] = [:]
-    var speakers: [String: String] = [:]
 
     init() {}
 
@@ -79,9 +74,8 @@ struct TranslationCache {
         let decoder = JSONDecoder()
         for case let url as URL in enumerator where url.pathExtension == "json" {
             guard let file = try? decoder.decode(TranslatedFile.self, from: Data(contentsOf: url)) else {
-                continue // the aggregate tables, or something that is not ours
+                continue // the aggregate table, or something that is not ours
             }
-            speakers.merge(file.speakers) { current, _ in current }
             for script in file.scripts {
                 if let translation = script.translation {
                     texts[script.text] = translation

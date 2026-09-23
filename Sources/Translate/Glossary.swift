@@ -7,8 +7,10 @@
 
 import Foundation
 
-/// Terminology from `Glossary/<language>.lproj/Glossary.json` (see the `glossary` command):
-/// `{ "Red Potion": "红色药水", ... }`. Only the terms that occur in a batch are put into its prompt.
+/// Terminology from `Glossary/<language>.lproj/`: `Glossary.json` is generated from the game data
+/// tables by the `glossary` command, `Manual.json` is maintained by hand for the terms those tables
+/// do not carry (zeny, job names, Kafra, ...) and wins on conflict. Only the terms that occur in a
+/// batch are put into its prompt.
 struct Glossary {
     private var entries: [(term: String, translation: String)] = []
 
@@ -16,32 +18,17 @@ struct Glossary {
 
     init() {}
 
-    /// An ad-hoc glossary, e.g. the speaker names of one file.
-    init(terms: [String: String]) {
-        entries = terms.map { (term: $0.key, translation: $0.value) }.sorted { $0.term < $1.term }
-    }
-
     init(directory: URL, language: String) throws {
-        let url = directory.appending(path: "\(language).lproj").appending(path: "Glossary.json")
-        guard let data = try? Data(contentsOf: url) else {
-            return
-        }
-        let dictionary = try JSONDecoder().decode([String: String].self, from: data)
-        entries = dictionary.map { (term: $0.key, translation: $0.value) }.sorted { $0.term < $1.term }
-    }
-
-    /// A few single-word proper nouns with their official rendering, to show the model how names
-    /// are written in the target language. Preferred ones first, then whatever the glossary has.
-    func nameExamples(count: Int) -> [(term: String, translation: String)] {
-        let preferred = ["Poring", "Prontera", "Geffen", "Payon", "Kafra", "Izlude"]
-        var examples = entries.filter { preferred.contains($0.term) }
-        for entry in entries where examples.count < count {
-            let isSingleWord = !entry.term.contains(" ") && entry.term.allSatisfy { $0.isLetter }
-            if isSingleWord, entry.term.count >= 4, !examples.contains(where: { $0.term == entry.term }) {
-                examples.append(entry)
+        let localized = directory.appending(path: "\(language).lproj")
+        let decoder = JSONDecoder()
+        var terms: [String: String] = [:]
+        for name in ["Glossary.json", "Manual.json"] {
+            guard let data = try? Data(contentsOf: localized.appending(path: name)) else {
+                continue
             }
+            terms.merge(try decoder.decode([String: String].self, from: data)) { _, later in later }
         }
-        return Array(examples.prefix(count))
+        entries = terms.map { (term: $0.key, translation: $0.value) }.sorted { $0.term < $1.term }
     }
 
     func entries(in texts: [String]) -> [(term: String, translation: String)] {

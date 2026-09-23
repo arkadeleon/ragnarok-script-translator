@@ -10,7 +10,6 @@ import Foundation
 /// One text to translate, as sent to the model.
 struct TranslationItem: Encodable {
     var id: Int
-    var speaker: String?
     var text: String
 }
 

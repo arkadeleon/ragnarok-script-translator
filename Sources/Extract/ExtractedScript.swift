@@ -26,11 +26,7 @@ struct ExtractedScript: Codable {
     var npc: String?
     /// Line in the source file where the script starts.
     var line: Int
-    /// The name inside the `[...]` line a page starts with, if it has one. Translated separately so
-    /// a name reads the same on every page; `{0}` stands for the player's own name.
-    var speaker: String?
-    /// The text as the server sends it (without the speaker line), with non-literal parts replaced
-    /// by `{0}`, `{1}`, ...
+    /// The text as the server sends it, with non-literal parts replaced by `{0}`, `{1}`, ...
     var text: String
     /// Source expressions for each placeholder, in order.
     var placeholders: [String]?

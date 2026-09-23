@@ -12,8 +12,7 @@
         ".color$[ .type[.@i] ]",
         ".whoinuse$[.@i]"
       ],
-      "speaker" : "Private MVP Room",
-      "text" : "Please select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #{2} = {3}{4}^000000"
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #{2} = {3}{4}^000000"
     },
     {
       "kind" : "message",
@@ -25,8 +24,7 @@
         ".color$[ .type[.@i] ]",
         ".whoinuse$[.@i]"
       ],
-      "speaker" : "Private MVP Room",
-      "text" : "Please select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #{1} = {2}{3}^000000"
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #{1} = {2}{3}^000000"
     },
     {
       "kind" : "message",
@@ -36,8 +34,7 @@
         "getvariableofnpc( .timeout, \"MVP Summoner\" )",
         "callfunc(\"F_InsertComma\", getvariableofnpc( .rentcost, \"MVP Summoner\" ) )"
       ],
-      "speaker" : "Private MVP Room",
-      "text" : "Please select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n "
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n "
     },
     {
       "kind" : "message",
@@ -46,8 +43,7 @@
       "placeholders" : [
         "getvariableofnpc( .timeout, \"MVP Summoner\" )"
       ],
-      "speaker" : "Private MVP Room",
-      "text" : "Please select a private MVP room.\nYou can only use the room for only {0} minutes.\n "
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n "
     },
     {
       "kind" : "option",
@@ -129,15 +125,13 @@
         ".color$[ .type[.@room] ]",
         ".whoinuse$[.@room]"
       ],
-      "speaker" : "Private MVP Room",
-      "text" : "This room is reserved for \n{0}{1}^000000.\nPlease select another."
+      "text" : "[Private MVP Room]\nThis room is reserved for \n{0}{1}^000000.\nPlease select another."
     },
     {
       "kind" : "message",
       "line" : 49,
       "npc" : "Private MVP Room",
-      "speaker" : "Private MVP Room",
-      "text" : "Reserve this room for..."
+      "text" : "[Private MVP Room]\nReserve this room for..."
     },
     {
       "kind" : "option",
@@ -164,8 +158,7 @@
       "placeholders" : [
         "( ( .@type == 1 )? \"Party\" : \"Guild\" )"
       ],
-      "speaker" : "Private MVP Room",
-      "text" : "You do not own a {0}."
+      "text" : "[Private MVP Room]\nYou do not own a {0}."
     },
     {
       "kind" : "message",
@@ -177,8 +170,7 @@
       "kind" : "message",
       "line" : 63,
       "npc" : "Private MVP Room",
-      "speaker" : "Private MVP Room",
-      "text" : "I'm sorry, somebody else has already registered this room faster than you."
+      "text" : "[Private MVP Room]\nI'm sorry, somebody else has already registered this room faster than you."
     },
     {
       "kind" : "message",
@@ -187,8 +179,7 @@
       "placeholders" : [
         ".@i"
       ],
-      "speaker" : "Private MVP Room",
-      "text" : "You already rented Room#{0}. Use that room instead."
+      "text" : "[Private MVP Room]\nYou already rented Room#{0}. Use that room instead."
     },
     {
       "kind" : "message",
@@ -197,29 +188,25 @@
       "placeholders" : [
         "callfunc( \"Time2Str\", .renttime[ atoi( strnpcinfo(2) ) ] + .timeout * 60 )"
       ],
-      "speaker" : "MVP Summoner",
-      "text" : "Time left: {0}\nHi, what can I do for you?"
+      "text" : "[MVP Summoner]\nTime left: {0}\nHi, what can I do for you?"
     },
     {
       "kind" : "message",
       "line" : 96,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "I cannot offer heal service when there are monsters around."
+      "text" : "[MVP Summoner]\nI cannot offer heal service when there are monsters around."
     },
     {
       "kind" : "message",
       "line" : 96,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "You are completely healed."
+      "text" : "[MVP Summoner]\nYou are completely healed."
     },
     {
       "kind" : "message",
       "line" : 129,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "I cannot summon another MVP when there are monsters around."
+      "text" : "[MVP Summoner]\nI cannot summon another MVP when there are monsters around."
     },
     {
       "kind" : "message",
@@ -228,36 +215,31 @@
       "placeholders" : [
         "callfunc( \"F_InsertComma\", .mvpcost )"
       ],
-      "speaker" : "MVP Summoner",
-      "text" : "The cost to summon an MVP is {0} zeny."
+      "text" : "[MVP Summoner]\nThe cost to summon an MVP is {0} zeny."
     },
     {
       "kind" : "message",
       "line" : 137,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "You don't have enough zeny to summon an MVP."
+      "text" : "[MVP Summoner]\nYou don't have enough zeny to summon an MVP."
     },
     {
       "kind" : "message",
       "line" : 137,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "Please get ready."
+      "text" : "[MVP Summoner]\nPlease get ready."
     },
     {
       "kind" : "message",
       "line" : 144,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "Please get ready."
+      "text" : "[MVP Summoner]\nPlease get ready."
     },
     {
       "kind" : "message",
       "line" : 154,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "I cannot summon another mini-boss when there are monsters around."
+      "text" : "[MVP Summoner]\nI cannot summon another mini-boss when there are monsters around."
     },
     {
       "kind" : "message",
@@ -266,43 +248,37 @@
       "placeholders" : [
         "callfunc( \"F_InsertComma\", .bosscost )"
       ],
-      "speaker" : "MVP Summoner",
-      "text" : "The cost to summon a mini-boss is {0} zeny."
+      "text" : "[MVP Summoner]\nThe cost to summon a mini-boss is {0} zeny."
     },
     {
       "kind" : "message",
       "line" : 162,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "You doesn't have enough zeny to summon a mini-boss."
+      "text" : "[MVP Summoner]\nYou doesn't have enough zeny to summon a mini-boss."
     },
     {
       "kind" : "message",
       "line" : 162,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "Please get ready."
+      "text" : "[MVP Summoner]\nPlease get ready."
     },
     {
       "kind" : "message",
       "line" : 169,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "Please get ready."
+      "text" : "[MVP Summoner]\nPlease get ready."
     },
     {
       "kind" : "message",
       "line" : 179,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "I cannot offer this service when there are monsters around."
+      "text" : "[MVP Summoner]\nI cannot offer this service when there are monsters around."
     },
     {
       "kind" : "message",
       "line" : 187,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "Are you sure you want to leave this room?"
+      "text" : "[MVP Summoner]\nAre you sure you want to leave this room?"
     },
     {
       "kind" : "option",
@@ -320,22 +296,19 @@
       "kind" : "message",
       "line" : 194,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "There are still some players in this room. Make sure you are the last member in this room to use this option."
+      "text" : "[MVP Summoner]\nThere are still some players in this room. Make sure you are the last member in this room to use this option."
     },
     {
       "kind" : "message",
       "line" : 194,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "Are you sure you want to give up this room?\nYou will need to pay again to enter this room."
+      "text" : "[MVP Summoner]\nAre you sure you want to give up this room?\nYou will need to pay again to enter this room."
     },
     {
       "kind" : "message",
       "line" : 194,
       "npc" : "MVP Summoner",
-      "speaker" : "MVP Summoner",
-      "text" : "Are you sure you want to give up this room?"
+      "text" : "[MVP Summoner]\nAre you sure you want to give up this room?"
     },
     {
       "kind" : "option",

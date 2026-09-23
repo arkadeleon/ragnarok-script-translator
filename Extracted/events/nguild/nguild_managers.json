@@ -5,39 +5,41 @@
       "kind" : "message",
       "line" : 32,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : "I am waiting for my master.  Brave adventurer, follow your destiny!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nI am waiting for my master.  Brave adventurer, follow your destiny!"
     },
     {
       "kind" : "message",
       "line" : 32,
       "npc" : "F_GldManager",
       "placeholders" : [
+        ".@npc_name$",
         "getguildmaster(.@gid)"
       ],
-      "speaker" : " {0} ",
-      "text" : "I am here to follow ^5533FF{0}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!"
+      "text" : "[ {0} ]\nI am here to follow ^5533FF{1}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!"
     },
     {
       "kind" : "message",
       "line" : 32,
       "npc" : "F_GldManager",
       "placeholders" : [
+        ".@npc_name$",
         "getguildmaster(.@gid)",
         "getguildmaster(.@gid)"
       ],
-      "speaker" : " {0} ",
-      "text" : "You're not ^5533FF{0}^000000! I am here to follow ^5533FF{1}^000000's command only"
+      "text" : "[ {0} ]\nYou're not ^5533FF{1}^000000! I am here to follow ^5533FF{2}^000000's command only"
     },
     {
       "kind" : "message",
       "line" : 32,
       "npc" : "F_GldManager",
       "placeholders" : [
+        ".@npc_name$",
         "getguildmaster(.@gid)"
       ],
-      "speaker" : " {0} ",
-      "text" : "Welcome Master ^5533FF{0}^000000 ! I will assist you in any way I can!"
+      "text" : "[ {0} ]\nWelcome Master ^5533FF{1}^000000 ! I will assist you in any way I can!"
     },
     {
       "kind" : "option",
@@ -61,15 +63,19 @@
       "kind" : "message",
       "line" : 55,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : ""
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]"
     },
     {
       "kind" : "message",
       "line" : 55,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : "Master, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000."
     },
     {
       "kind" : "message",
@@ -93,36 +99,43 @@
       "kind" : "message",
       "line" : 68,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : "Master, you do not have enough money to employ a Kafra. Employment has been cancelled."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled."
     },
     {
       "kind" : "message",
       "line" : 68,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : "You have created a contract with the Kafra Staff Company."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nYou have created a contract with the Kafra Staff Company."
     },
     {
       "kind" : "message",
       "line" : 79,
       "npc" : "F_GldManager",
-      "speaker" : " Kafra Staff ",
-      "text" : "How do you do? I'm here to provide you with helpful service! I'll do the best I can to serve you."
+      "text" : "[ Kafra Staff ]\nHow do you do? I'm here to provide you with helpful service! I'll do the best I can to serve you."
     },
     {
       "kind" : "message",
       "line" : 83,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : "I think the Kafra Staff will benefit our guild members."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nI think the Kafra Staff will benefit our guild members."
     },
     {
       "kind" : "message",
       "line" : 89,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : "As you wish Master.  But I suggest we get a Kafra as soon as possible!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nAs you wish Master.  But I suggest we get a Kafra as soon as possible!"
     },
     {
       "kind" : "message",
@@ -146,8 +159,7 @@
       "kind" : "message",
       "line" : 99,
       "npc" : "F_GldManager",
-      "speaker" : " Kafra Staff ",
-      "text" : "Have I done anything wrong? If I did, will you please forgive me?"
+      "text" : "[ Kafra Staff ]\nHave I done anything wrong? If I did, will you please forgive me?"
     },
     {
       "kind" : "option",
@@ -165,36 +177,40 @@
       "kind" : "message",
       "line" : 104,
       "npc" : "F_GldManager",
-      "speaker" : " Kafra Staff ",
-      "text" : "It's unfortunate that I won't be able to serve your guild anymore...."
+      "text" : "[ Kafra Staff ]\nIt's unfortunate that I won't be able to serve your guild anymore...."
     },
     {
       "kind" : "message",
       "line" : 110,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : "The Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nThe Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!"
     },
     {
       "kind" : "message",
       "line" : 114,
       "npc" : "F_GldManager",
-      "speaker" : " Kafra Staff ",
-      "text" : "Thank you master, I'll do my best! ^^."
+      "text" : "[ Kafra Staff ]\nThank you master, I'll do my best! ^^."
     },
     {
       "kind" : "message",
       "line" : 119,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : "Master, I think you should keep the current Kafra Staff because she is already trying her best to serve us"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nMaster, I think you should keep the current Kafra Staff because she is already trying her best to serve us"
     },
     {
       "kind" : "message",
       "line" : 126,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : "Would you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nWould you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room."
     },
     {
       "kind" : "option",
@@ -212,22 +228,28 @@
       "kind" : "message",
       "line" : 131,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : "Please follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nPlease follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out."
     },
     {
       "kind" : "message",
       "line" : 138,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : "The goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nThe goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time."
     },
     {
       "kind" : "message",
       "line" : 147,
       "npc" : "F_GldManager",
-      "speaker" : " {0} ",
-      "text" : "As you wish, master."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[ {0} ]\nAs you wish, master."
     }
   ]
 }

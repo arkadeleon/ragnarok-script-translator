@@ -5,71 +5,84 @@
       "kind" : "message",
       "line" : 27,
       "npc" : "Vestri",
-      "speaker" : "Vestri",
-      "text" : "I'm the most skillful blacksmith!"
+      "text" : "[Vestri]\nI'm the most skillful blacksmith!"
     },
     {
       "kind" : "message",
       "line" : 55,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "I am the best Armsmith ever!\nI don't refine normal, boring items.\nI only refine items that are Level 10 or higher."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nI am the best Armsmith ever!\nI don't refine normal, boring items.\nI only refine items that are Level 10 or higher."
     },
     {
       "kind" : "message",
       "line" : 60,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Anyway, you may use my services if your item is Level 10 or higher.\nWhat do you want me to refine?"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nAnyway, you may use my services if your item is Level 10 or higher.\nWhat do you want me to refine?"
     },
     {
       "kind" : "message",
       "line" : 74,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "I don't think I can refine any items you have..."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nI don't think I can refine any items you have..."
     },
     {
       "kind" : "message",
       "line" : 81,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "You're not wearing\nanything there that\nI can refine."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nYou're not wearing\nanything there that\nI can refine."
     },
     {
       "kind" : "message",
       "line" : 89,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "I don't think I can\nrefine this item at all..."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nI don't think I can\nrefine this item at all..."
     },
     {
       "kind" : "message",
       "line" : 96,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "I said I don't work with items that are lower than Level 10."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nI said I don't work with items that are lower than Level 10."
     },
     {
       "kind" : "message",
       "line" : 101,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "I can't refine this\nany more. This is as\nrefined as it gets!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nI can't refine this\nany more. This is as\nrefined as it gets!"
     },
     {
       "kind" : "message",
       "line" : 125,
       "npc" : "refinenew",
       "placeholders" : [
+        ".@npc_name$",
         ".@article$",
         ".@type$",
         ".@type$",
         "getitemname(.@material)",
         "callfunc(\"F_InsertComma\",.@price)"
       ],
-      "speaker" : "{0}",
-      "text" : "Hmm {0} {1}, is that ok?\nIf you want to refine this {2},\nI will need 1 ^003366{3}^000000 and {4} zeny.\nAre you sure you want to continue?"
+      "text" : "[{0}]\nHmm {1} {2}, is that ok?\nIf you want to refine this {3},\nI will need 1 ^003366{4}^000000 and {5} zeny.\nAre you sure you want to continue?"
     },
     {
       "kind" : "option",
@@ -87,35 +100,39 @@
       "kind" : "message",
       "line" : 132,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Hm... if you mind... never mind..."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nHm... if you mind... never mind..."
     },
     {
       "kind" : "message",
       "line" : 138,
       "npc" : "refinenew",
       "placeholders" : [
+        ".@npc_name$",
         ".@type$"
       ],
-      "speaker" : "{0}",
-      "text" : "This {0} already has been refined several times.\nIt could be destroyed if I try again.\nIt won't break for sure, but there is has a small chance."
+      "text" : "[{0}]\nThis {1} already has been refined several times.\nIt could be destroyed if I try again.\nIt won't break for sure, but there is has a small chance."
     },
     {
       "kind" : "message",
       "line" : 143,
       "npc" : "refinenew",
       "placeholders" : [
+        ".@npc_name$",
         ".@type$"
       ],
-      "speaker" : "{0}",
-      "text" : "You could be ^FF0000lowering the upgrade level^000000 of the {0},\nor if it breaks, you will lose ^FF0000any cards^000000 or special properties added to it."
+      "text" : "[{0}]\nYou could be ^FF0000lowering the upgrade level^000000 of the {1},\nor if it breaks, you will lose ^FF0000any cards^000000 or special properties added to it."
     },
     {
       "kind" : "message",
       "line" : 147,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Do you still want me to refine it?\nI think I have given you enough warning."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nDo you still want me to refine it?\nI think I have given you enough warning."
     },
     {
       "kind" : "option",
@@ -133,25 +150,29 @@
       "kind" : "message",
       "line" : 152,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Well, no challenge is one way to go...\nNo risk... that could be wise."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nWell, no challenge is one way to go...\nNo risk... that could be wise."
     },
     {
       "kind" : "message",
       "line" : 159,
       "npc" : "refinenew",
       "placeholders" : [
+        ".@npc_name$",
         "getitemname(.@material)"
       ],
-      "speaker" : "{0}",
-      "text" : "Hm. You don't seem to have enough money or {0}.\nPlease come back when you have them."
+      "text" : "[{0}]\nHm. You don't seem to have enough money or {1}.\nPlease come back when you have them."
     },
     {
       "kind" : "message",
       "line" : 170,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Wait a second...\nDo you think I'm stupid?!\nYou switched the item while I wasn't looking! Get out of here!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nWait a second...\nDo you think I'm stupid?!\nYou switched the item while I wasn't looking! Get out of here!"
     },
     {
       "kind" : "message",
@@ -163,64 +184,82 @@
       "kind" : "message",
       "line" : 183,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Good! Succes!!!\nI am the best Armsmith."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nGood! Succes!!!\nI am the best Armsmith."
     },
     {
       "kind" : "message",
       "line" : 189,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Clang! Clang! Clang! Clang!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nClang! Clang! Clang! Clang!"
     },
     {
       "kind" : "message",
       "line" : 194,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Ahhh!!!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nAhhh!!!"
     },
     {
       "kind" : "message",
       "line" : 197,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Oh my god!\nThe upgrade level has dropped...\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nOh my god!\nThe upgrade level has dropped...\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be."
     },
     {
       "kind" : "message",
       "line" : 201,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Clang! Clang! Clang!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nClang! Clang! Clang!"
     },
     {
       "kind" : "message",
       "line" : 206,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Hmmm!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nHmmm!"
     },
     {
       "kind" : "message",
       "line" : 209,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Oh my! I've failed to refine stuff...\nI didn't mean it!\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nOh my! I've failed to refine stuff...\nI didn't mean it!\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be."
     },
     {
       "kind" : "message",
       "line" : 216,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "I will do a better job next time! Don't worry!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nI will do a better job next time! Don't worry!"
     },
     {
       "kind" : "message",
       "line" : 223,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "I can refine this to the safe limit or a desired number of times. It's your choice."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nI can refine this to the safe limit or a desired number of times. It's your choice."
     },
     {
       "kind" : "option",
@@ -244,25 +283,29 @@
       "kind" : "message",
       "line" : 234,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "How many times would you like me to refine your item?"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nHow many times would you like me to refine your item?"
     },
     {
       "kind" : "message",
       "line" : 240,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "I can't refine this item that many times."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nI can't refine this item that many times."
     },
     {
       "kind" : "message",
       "line" : 246,
       "npc" : "refinenew",
       "placeholders" : [
+        ".@npc_name$",
         ".@refinecheck"
       ],
-      "speaker" : "{0}",
-      "text" : "This will try to refine the equipment {0} times past the safe limit. Your equipment may be destroyed... is that ok?"
+      "text" : "[{0}]\nThis will try to refine the equipment {1} times past the safe limit. Your equipment may be destroyed... is that ok?"
     },
     {
       "kind" : "option",
@@ -280,27 +323,31 @@
       "kind" : "message",
       "line" : 250,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "You said so... So be it."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nYou said so... So be it."
     },
     {
       "kind" : "message",
       "line" : 257,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "You said so... So be it."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nYou said so... So be it."
     },
     {
       "kind" : "message",
       "line" : 262,
       "npc" : "refinenew",
       "placeholders" : [
+        ".@npc_name$",
         ".@refinecnt",
         "getitemname(.@material)",
         ".@fullprice"
       ],
-      "speaker" : "{0}",
-      "text" : "That will cost you {0} {1} and {2} Zeny. Is that ok?"
+      "text" : "[{0}]\nThat will cost you {1} {2} and {3} Zeny. Is that ok?"
     },
     {
       "kind" : "option",
@@ -318,32 +365,38 @@
       "kind" : "message",
       "line" : 266,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "You said so... So be it."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nYou said so... So be it."
     },
     {
       "kind" : "message",
       "line" : 271,
       "npc" : "refinenew",
       "placeholders" : [
+        ".@npc_name$",
         "getitemname(.@material)"
       ],
-      "speaker" : "{0}",
-      "text" : "Hm. You don't seem to have enough money or {0}.\nPlease come back when you have them."
+      "text" : "[{0}]\nHm. You don't seem to have enough money or {1}.\nPlease come back when you have them."
     },
     {
       "kind" : "message",
       "line" : 280,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Look here... you don't have any items on..."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nLook here... you don't have any items on..."
     },
     {
       "kind" : "message",
       "line" : 290,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Clang... No, but did you imagine I could be so stupid?!\nYou changed it...\nGet out before I stun you with my Hammer!!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nClang... No, but did you imagine I could be so stupid?!\nYou changed it...\nGet out before I stun you with my Hammer!!"
     },
     {
       "kind" : "message",
@@ -355,57 +408,73 @@
       "kind" : "message",
       "line" : 303,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Clang! Clang! Clang! Clang!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nClang! Clang! Clang! Clang!"
     },
     {
       "kind" : "message",
       "line" : 308,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Ahhh!!!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nAhhh!!!"
     },
     {
       "kind" : "message",
       "line" : 311,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Oh my god!\nThe upgrade level has dropped...\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nOh my god!\nThe upgrade level has dropped...\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be."
     },
     {
       "kind" : "message",
       "line" : 315,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Clang! Clang! Clang!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nClang! Clang! Clang!"
     },
     {
       "kind" : "message",
       "line" : 320,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Hmmm!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nHmmm!"
     },
     {
       "kind" : "message",
       "line" : 323,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Oh my! I've failed to refine stuff...\nI didn't mean it!\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nOh my! I've failed to refine stuff...\nI didn't mean it!\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be."
     },
     {
       "kind" : "message",
       "line" : 330,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "I will do a better job next time! Don't worry!"
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nI will do a better job next time! Don't worry!"
     },
     {
       "kind" : "message",
       "line" : 337,
       "npc" : "refinenew",
-      "speaker" : "{0}",
-      "text" : "Good! Succes!!!\nI am the best Blacksmith."
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nGood! Succes!!!\nI am the best Blacksmith."
     },
     {
       "kind" : "message",
@@ -417,8 +486,7 @@
       "kind" : "message",
       "line" : 354,
       "npc" : "Austri",
-      "speaker" : "Austri",
-      "text" : "If you bring me 3\nOridecon or Elunium\nI can exchange them for\nBradium or Carnium.\nJust give me 50,000z."
+      "text" : "[Austri]\nIf you bring me 3\nOridecon or Elunium\nI can exchange them for\nBradium or Carnium.\nJust give me 50,000z."
     },
     {
       "kind" : "option",
@@ -448,15 +516,13 @@
       "kind" : "message",
       "line" : 372,
       "npc" : "Austri",
-      "speaker" : "Austri",
-      "text" : "Hmm..."
+      "text" : "[Austri]\nHmm..."
     },
     {
       "kind" : "message",
       "line" : 380,
       "npc" : "Austri",
-      "speaker" : "Austri",
-      "text" : "Refining with Refined Bradium\ncan be a little expensive.\nI can exchange it for some Carnium.\nTake it and use it well."
+      "text" : "[Austri]\nRefining with Refined Bradium\ncan be a little expensive.\nI can exchange it for some Carnium.\nTake it and use it well."
     },
     {
       "kind" : "message",
@@ -465,8 +531,7 @@
       "placeholders" : [
         "getitemname(.@i[2])"
       ],
-      "speaker" : "Austri",
-      "text" : "Ok! Here's your {0}.\nTake it and use it well."
+      "text" : "[Austri]\nOk! Here's your {0}.\nTake it and use it well."
     },
     {
       "kind" : "message",
@@ -475,110 +540,85 @@
       "placeholders" : [
         "getitemname(.@i[0])"
       ],
-      "speaker" : "Austri",
-      "text" : "You better not be trying\nto cheat me because you\ndon't have enough money\nor {0}."
+      "text" : "[Austri]\nYou better not be trying\nto cheat me because you\ndon't have enough money\nor {0}."
     },
     {
       "kind" : "message",
       "line" : 405,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "My cool dad Holink said I have the world's greatest refine hammer!!\nMeow Meow~\nWho do you think I am?\nYes!!! You!! You want to refine?"
+      "text" : "[Clink]\nMy cool dad Holink said I have the world's greatest refine hammer!!\nMeow Meow~\nWho do you think I am?\nYes!!! You!! You want to refine?"
     },
     {
       "kind" : "message",
       "line" : 416,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : ""
+      "text" : "[Clink]"
     },
     {
       "kind" : "message",
       "line" : 416,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Dad said. There's no cure for stupidity..."
+      "text" : "[Clink]\nDad said. There's no cure for stupidity..."
     },
     {
       "kind" : "message",
       "line" : 416,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "There's nothing to see here!!"
+      "text" : "[Clink]\nThere's nothing to see here!!"
     },
     {
       "kind" : "message",
       "line" : 416,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "What an arrogant left hand this is!"
+      "text" : "[Clink]\nWhat an arrogant left hand this is!"
     },
     {
       "kind" : "message",
       "line" : 416,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "What an arrogant right hand this is!"
+      "text" : "[Clink]\nWhat an arrogant right hand this is!"
     },
     {
       "kind" : "message",
       "line" : 416,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Get that dirty thing off my face!!"
+      "text" : "[Clink]\nGet that dirty thing off my face!!"
     },
     {
       "kind" : "message",
       "line" : 416,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Kyaong~! Do not provoke me."
+      "text" : "[Clink]\nKyaong~! Do not provoke me."
     },
     {
       "kind" : "message",
       "line" : 416,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Where is the accessory?"
+      "text" : "[Clink]\nWhere is the accessory?"
     },
     {
       "kind" : "message",
       "line" : 416,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Are you talking about the other head part?"
+      "text" : "[Clink]\nAre you talking about the other head part?"
     },
     {
       "kind" : "message",
       "line" : 448,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "This can't be refined!!"
+      "text" : "[Clink]\nThis can't be refined!!"
     },
     {
       "kind" : "message",
       "line" : 454,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Perfect refining. Did I do this for you?"
+      "text" : "[Clink]\nPerfect refining. Did I do this for you?"
     },
     {
       "kind" : "message",
       "line" : 464,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : ""
-    },
-    {
-      "kind" : "message",
-      "line" : 464,
-      "npc" : "Clink",
-      "placeholders" : [
-        "getitemname(.@material)",
-        ".@price"
-      ],
-      "speaker" : "Clink",
-      "text" : "Hmm, an armor refine? Someone like you?\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?"
+      "text" : "[Clink]"
     },
     {
       "kind" : "message",
@@ -588,8 +628,7 @@
         "getitemname(.@material)",
         ".@price"
       ],
-      "speaker" : "Clink",
-      "text" : "A level 1 weapon?\nUrr... Annoying... Okay, let's try...\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?"
+      "text" : "[Clink]\nHmm, an armor refine? Someone like you?\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?"
     },
     {
       "kind" : "message",
@@ -599,8 +638,7 @@
         "getitemname(.@material)",
         ".@price"
       ],
-      "speaker" : "Clink",
-      "text" : "A level 2 weapon?\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?"
+      "text" : "[Clink]\nA level 1 weapon?\nUrr... Annoying... Okay, let's try...\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?"
     },
     {
       "kind" : "message",
@@ -610,8 +648,7 @@
         "getitemname(.@material)",
         ".@price"
       ],
-      "speaker" : "Clink",
-      "text" : "Woot!! A level 3 weapon? Impressive~\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?"
+      "text" : "[Clink]\nA level 2 weapon?\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?"
     },
     {
       "kind" : "message",
@@ -621,8 +658,17 @@
         "getitemname(.@material)",
         ".@price"
       ],
-      "speaker" : "Clink",
-      "text" : "Wow!... A level 4 weapon~!!\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?"
+      "text" : "[Clink]\nWoot!! A level 3 weapon? Impressive~\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "Clink",
+      "placeholders" : [
+        "getitemname(.@material)",
+        ".@price"
+      ],
+      "text" : "[Clink]\nWow!... A level 4 weapon~!!\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?"
     },
     {
       "kind" : "option",
@@ -640,8 +686,7 @@
       "kind" : "message",
       "line" : 505,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "I knew it!!\nI knew you were not worth trying my magical refining hammer for."
+      "text" : "[Clink]\nI knew it!!\nI knew you were not worth trying my magical refining hammer for."
     },
     {
       "kind" : "message",
@@ -650,8 +695,7 @@
       "placeholders" : [
         ".@type$"
       ],
-      "speaker" : "Clink",
-      "text" : "Wow!!\nThis {0} has been refined quite a bit, huh?\nYou do know that this might break, right?"
+      "text" : "[Clink]\nWow!!\nThis {0} has been refined quite a bit, huh?\nYou do know that this might break, right?"
     },
     {
       "kind" : "message",
@@ -660,8 +704,7 @@
       "placeholders" : [
         ".@type$"
       ],
-      "speaker" : "Clink",
-      "text" : "If you break the {0}, you can never use it again.\nCards and enchant effects...\nthe ^ff0000whole thing will disappear^000000.\nYou still up for this~?"
+      "text" : "[Clink]\nIf you break the {0}, you can never use it again.\nCards and enchant effects...\nthe ^ff0000whole thing will disappear^000000.\nYou still up for this~?"
     },
     {
       "kind" : "option",
@@ -679,8 +722,7 @@
       "kind" : "message",
       "line" : 523,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "I knew it!!\nYou can't even take this big step. Don't think about refining..."
+      "text" : "[Clink]\nI knew it!!\nYou can't even take this big step. Don't think about refining..."
     },
     {
       "kind" : "message",
@@ -690,64 +732,58 @@
         "getitemname(.@material)",
         ".@price"
       ],
-      "speaker" : "Clink",
-      "text" : "Hey you!! Didn't I tell you\nthat you need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny??!!"
+      "text" : "[Clink]\nHey you!! Didn't I tell you\nthat you need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny??!!"
     },
     {
       "kind" : "message",
       "line" : 541,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Wait a second...\nDo you think I'm stupid?!\nYou switched the item while I wasn't looking! Get out of here!"
+      "text" : "[Clink]\nWait a second...\nDo you think I'm stupid?!\nYou switched the item while I wasn't looking! Get out of here!"
     },
     {
       "kind" : "message",
       "line" : 551,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Cry Hammer!! Cry!!!"
+      "text" : "[Clink]\nCry Hammer!! Cry!!!"
     },
     {
       "kind" : "message",
       "line" : 561,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Huh?! I failed?!"
+      "text" : "[Clink]\nHuh?! I failed?!"
     },
     {
       "kind" : "message",
       "line" : 564,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Arrgg~ It's all~ Broken...? What a pity~"
+      "text" : "[Clink]\nArrgg~ It's all~ Broken...? What a pity~"
     },
     {
       "kind" : "message",
       "line" : 567,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Hey...!! Get me another one.\nThis is not possible.\nHow can my hammer fail from refining?"
+      "text" : "[Clink]\nHey...!! Get me another one.\nThis is not possible.\nHow can my hammer fail from refining?"
     },
     {
       "kind" : "message",
       "line" : 574,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Cry Hammer!! Cry!!!"
+      "text" : "[Clink]\nCry Hammer!! Cry!!!"
     },
     {
       "kind" : "message",
       "line" : 578,
       "npc" : "Clink",
-      "speaker" : "Clink",
-      "text" : "Ok!! Perfect!!\nThere's nothing I can't refine\nwith this special hammer.\nYou can praise me!!\nWhat a day!!"
+      "text" : "[Clink]\nOk!! Perfect!!\nThere's nothing I can't refine\nwith this special hammer.\nYou can praise me!!\nWhat a day!!"
     },
     {
       "kind" : "message",
       "line" : 647,
       "npc" : "Dietrich",
-      "speaker" : "{0}",
-      "text" : "We sell and exchange various ores used in smelting."
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nWe sell and exchange various ores used in smelting."
     },
     {
       "kind" : "option",
@@ -777,40 +813,48 @@
       "kind" : "message",
       "line" : 652,
       "npc" : "Dietrich",
-      "speaker" : "{0}",
-      "text" : "Phracon and Emveretarcon are available for use in smelting low-level weapons."
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nPhracon and Emveretarcon are available for use in smelting low-level weapons."
     },
     {
       "kind" : "message",
       "line" : 658,
       "npc" : "Dietrich",
-      "speaker" : "{0}",
-      "text" : "We are purifying Elunium Stone or Oridecon Stone, or exchanging them with Bradium or Carnium."
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nWe are purifying Elunium Stone or Oridecon Stone, or exchanging them with Bradium or Carnium."
     },
     {
       "kind" : "message",
       "line" : 664,
       "npc" : "Dietrich",
-      "speaker" : "{0}",
-      "text" : "We add Etel Dust to existing smelting ores and replace them with Ether-bearing smelting ores."
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nWe add Etel Dust to existing smelting ores and replace them with Ether-bearing smelting ores."
     },
     {
       "kind" : "message",
       "line" : 670,
       "npc" : "Dietrich",
-      "speaker" : "{0}",
-      "text" : "If you lack the materials used for smelting, come anytime."
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "text" : "[{0}]\nIf you lack the materials used for smelting, come anytime."
     },
     {
       "kind" : "message",
       "line" : 689,
       "npc" : "Pauline",
       "placeholders" : [
+        "strnpcinfo(1)",
         "mesitemlink( 25728 )",
         "mesitemlink( 25730 )"
       ],
-      "speaker" : "{0}",
-      "text" : "Do you have {0} or {1}?\nWe will exchange them for refined products for use as smelting goods."
+      "text" : "[{0}]\nDo you have {1} or {2}?\nWe will exchange them for refined products for use as smelting goods."
     }
   ]
 }
