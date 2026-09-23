@@ -1,0 +1,942 @@
+{
+  "file" : "npc/battleground/kvm/kvm_item_pay.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 20,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(6376)",
+        ".@pointstoadd",
+        "getitemname(6376)",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nAre those {0}s I see?\nWe no longer accept that currency,\nbut I can exchange those for you,\nSo you have {1} {2}s?\nAlright, all set, you now have ^580080{3}^000000 KVM Points.",
+      "translation" : "[后勤]\n我看到的是{0}吗？\n我们不再接受那种货币了，\n不过我可以为你进行兑换。\n所以你想要{1} {2}吗？\n好了，搞定了，你现在拥有^580080{3}^000000 KVM点数。"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "KVM Logistic Officer",
+      "text" : "- Wait a minute !! -\n- Currently you're carrying -\n- too many items with you. -\n- Please try again -\n- after you lose some weight. -",
+      "translation" : "- 等一下！！ -\n- 你目前携带的物品 -\n- 太多了。 -\n- 请在减轻负重后 -\n- 再试一次。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 36,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nHello?\nI am in charge of distributing\nreward items for KVM points. Any\nwrong selection of items will not\nbe reversed. Please be carefull.\nSelect the next step please.",
+      "translation" : "[后勤]\n喂？\n我负责发放KVM点数奖励物品。\n一旦选错物品，概不退换。\n请务必小心。\n请选择下一步。"
+    },
+    {
+      "kind" : "option",
+      "line" : 45,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Read the KVM Catalogue.",
+      "translation" : "阅读KVM目录"
+    },
+    {
+      "kind" : "option",
+      "line" : 45,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Purchase KVM Items.",
+      "translation" : "购买KVM物品"
+    },
+    {
+      "kind" : "option",
+      "line" : 45,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Confirm KVM Points.",
+      "translation" : "确认KVM点数"
+    },
+    {
+      "kind" : "option",
+      "line" : 45,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Explanation of KVM Rewards.",
+      "translation" : "KVM奖励说明"
+    },
+    {
+      "kind" : "option",
+      "line" : 45,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Explanation of KVM Points.",
+      "translation" : "KVM点数说明"
+    },
+    {
+      "kind" : "message",
+      "line" : 47,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nHere is the catalogue of KVM items.\nEach weapon requires 2,000 points\nand each armor from 10 to 1,200\npoints. So, be carefull when\nselecting a reward.",
+      "translation" : "[后勤]\n这是KVM物品目录。\n每件武器需要2,000点，\n每件防具从10点到1,200点不等。\n所以，选择奖励时请务必小心。"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nWich items do you want to see? As\nfor the detailed specification of\nthe items, please refer to the\n^3131FFCatalogue^000000.",
+      "translation" : "[后勤]\n你想查看哪些物品？\n关于物品的详细规格，\n请参考^3131FF目录^000000。"
+    },
+    {
+      "kind" : "option",
+      "line" : 63,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Weapon",
+      "translation" : "武器"
+    },
+    {
+      "kind" : "option",
+      "line" : 63,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Armor/Accessory",
+      "translation" : "防具/饰品"
+    },
+    {
+      "kind" : "option",
+      "line" : 63,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Mass-Production Armor/Accessory",
+      "translation" : "量产型防具/饰品"
+    },
+    {
+      "kind" : "option",
+      "line" : 63,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Popularized Armor/Accessory",
+      "translation" : "普及型防具/饰品"
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the Weapon Category.\nPlease select a sub-category.",
+      "translation" : "[后勤]\n你选择了武器类别。\n请选择子类别。"
+    },
+    {
+      "kind" : "option",
+      "line" : 69,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Dagger/Sword/Spear",
+      "translation" : "短剑/单手剑/长矛"
+    },
+    {
+      "kind" : "option",
+      "line" : 69,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Staff/Mace/Axe/Shuriken",
+      "translation" : "职员/钝器/斧/飞镖"
+    },
+    {
+      "kind" : "option",
+      "line" : 69,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Bow/Katar/Instrument/Whip",
+      "translation" : "弓/拳刃/乐器/鞭"
+    },
+    {
+      "kind" : "option",
+      "line" : 69,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Book/Knuckle",
+      "translation" : "书/拳套"
+    },
+    {
+      "kind" : "option",
+      "line" : 69,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Revolver/Rifle/Gun/Grenade Launcher",
+      "translation" : "左轮手枪/步枪/枪/榴弹发射器"
+    },
+    {
+      "kind" : "message",
+      "line" : 71,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the Dagger/Sword/Spear category.\nPlease select a sub-category.",
+      "translation" : "[后勤]\n你选择了短剑/单手剑/长矛类别。\n请选择子类别。"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Dagger",
+      "translation" : "短剑"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "KVM Logistic Officer",
+      "text" : "One-handed Sword",
+      "translation" : "单手剑"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Two-handed Sword",
+      "translation" : "双手剑"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "KVM Logistic Officer",
+      "text" : "One-handed Spear",
+      "translation" : "单手长枪"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Two-handed Spear",
+      "translation" : "双手长枪"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the 'One-handed Sword' category.\nThere are 3 One-handed Swords: Glorious Flamberge, Glorious Rapier and Glorious Holy Avenger.\nIf you want their details, please refer to the KVM Catalogue.\nPlease select one of them.",
+      "translation" : "[后勤]\n您已选择“单手剑”类别。\n共有3种单手剑：勇士水纹之剑、勇士击刺长剑和勇士神圣复仇者之剑。\n如需了解详情，请参阅KVM目录。\n请从中选择一种。"
+    },
+    {
+      "kind" : "option",
+      "line" : 84,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Glorious Flamberge",
+      "translation" : "勇士水纹之剑"
+    },
+    {
+      "kind" : "option",
+      "line" : 84,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Glorious Rapier",
+      "translation" : "勇士击刺长剑"
+    },
+    {
+      "kind" : "option",
+      "line" : 84,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Glorious Holy Avenger",
+      "translation" : "勇士神圣复仇者之剑"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the 'Staff/Mace/Axe/Shuriken' category.\nPlease select a sub-category.",
+      "translation" : "[后勤]\n您已选择“杖/钝器/斧/飞镖”类别。\n请选择子类别。"
+    },
+    {
+      "kind" : "option",
+      "line" : 98,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Staff",
+      "translation" : "杖"
+    },
+    {
+      "kind" : "option",
+      "line" : 98,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Mace",
+      "translation" : "钝器"
+    },
+    {
+      "kind" : "option",
+      "line" : 98,
+      "npc" : "KVM Logistic Officer",
+      "text" : "One-handed Axe",
+      "translation" : "单手斧"
+    },
+    {
+      "kind" : "option",
+      "line" : 98,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Two-handed Axe",
+      "translation" : "双手斧"
+    },
+    {
+      "kind" : "option",
+      "line" : 98,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Shuriken",
+      "translation" : "飞镖"
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the 'Staff' category.\nThere are 3 Staffs: a Two-handed Weapon Glorious Destruction Staff, a One-handed Glorious Arc Wand and a Glorious Healing Staff.\nIf you want their details, please refer to the KVM Catalogue.\nPlease select one of them.",
+      "translation" : "[后勤]\n您已选择“杖”类别。\n共有3种杖：双手武器勇士毁灭魔杖、单手言灵魔杖和勇士恢复之杖。\n如需了解详情，请参阅KVM目录。\n请从中选择一种。"
+    },
+    {
+      "kind" : "option",
+      "line" : 106,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Glorious Destruction Staff",
+      "translation" : "勇士毁灭魔杖"
+    },
+    {
+      "kind" : "option",
+      "line" : 106,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Glorious Arc Wand",
+      "translation" : "勇士言灵魔杖"
+    },
+    {
+      "kind" : "option",
+      "line" : 106,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Glorious Healing Staff",
+      "translation" : "勇士恢复之杖"
+    },
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the Bow/Katar/Instrument/Whip category.\nPlease select a sub-category.",
+      "translation" : "[后勤]\n您已选择“弓/拳刃/乐器/鞭”类别。\n请选择子类别。"
+    },
+    {
+      "kind" : "option",
+      "line" : 121,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Bow",
+      "translation" : "弓"
+    },
+    {
+      "kind" : "option",
+      "line" : 121,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Katar",
+      "translation" : "拳刃"
+    },
+    {
+      "kind" : "option",
+      "line" : 121,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Instrument",
+      "translation" : "乐器"
+    },
+    {
+      "kind" : "option",
+      "line" : 121,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Whip",
+      "translation" : "鞭"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the 'Katar' category.\nThere are 2 Katars: Glorious Bloody Roar and Glorious Jamadhar.\nIf you want their details, please refer to the KVM Catalogue.\nPlease select one of them.",
+      "translation" : "[后勤]\n你选择了“拳刃”类别。\n共有2种拳刃：勇士血拳刃和勇士秘刃闇啸。\n如需了解详情，请查阅KVM目录。\n请从中选择一个。"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Glorious Bloody Roar",
+      "translation" : "勇士血拳刃"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Glorious Jamadhar",
+      "translation" : "勇士秘刃闇啸"
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the Book/Knuckle category.\nPlease select a sub-category.",
+      "translation" : "[后勤]\n你选择了书籍/拳套类别。\n请选择一个子类别。"
+    },
+    {
+      "kind" : "option",
+      "line" : 142,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Book",
+      "translation" : "书籍"
+    },
+    {
+      "kind" : "option",
+      "line" : 142,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Knuckle",
+      "translation" : "拳套"
+    },
+    {
+      "kind" : "message",
+      "line" : 144,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected 'Book'.\nThere are 2 Books: Glorious Tablet and Glorious Apocalypse.\nIf you want their details, please refer to the KVM Catalogue.\nPlease select one of them.",
+      "translation" : "[后勤]\n你选择了“书籍”。\n共有2种书籍：勇士智慧石碑和勇士阿修罗机械战士。\n如需了解详情，请查阅KVM目录。\n请从中选择一个。"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Glorious Tablet",
+      "translation" : "勇士智慧石碑"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Glorious Apocalypse",
+      "translation" : "勇士阿修罗机械战士"
+    },
+    {
+      "kind" : "message",
+      "line" : 155,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the 'Knuckle' category.\nThere are 2 Knuckles: Glorious Claw and Glorious Fist.\nIf you want their details, please refer to the KVM Catalogue.\nPlease select one of them.",
+      "translation" : "[后勤]\n你选择了“拳套”类别。\n共有2种拳套：勇士龙爪拳套和勇士升龙拳套。\n如需了解详情，请查阅KVM目录。\n请从中选择一个。"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Glorious Claw",
+      "translation" : "勇士龙爪拳套"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Glorious Fist",
+      "translation" : "勇士升龙拳套"
+    },
+    {
+      "kind" : "message",
+      "line" : 167,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the 'Revolver/Rifle/Gun/Grenade Launcher' category.\nPlease select a sub-category.",
+      "translation" : "[后勤]\n你选择了“左轮手枪/步枪/枪械/榴弹发射器”类别。\n请选择一个子类别。"
+    },
+    {
+      "kind" : "option",
+      "line" : 171,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Revolver",
+      "translation" : "左轮手枪"
+    },
+    {
+      "kind" : "option",
+      "line" : 171,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Rifle",
+      "translation" : "步枪"
+    },
+    {
+      "kind" : "option",
+      "line" : 171,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Gatling Gun",
+      "translation" : "加特林机枪"
+    },
+    {
+      "kind" : "option",
+      "line" : 171,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Shotgun",
+      "translation" : "霰弹枪"
+    },
+    {
+      "kind" : "option",
+      "line" : 171,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Grenade Launcher",
+      "translation" : "榴弹发射器"
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the 'Armor/Accessory' category.\nPlease select a sub-category.",
+      "translation" : "[后勤]\n你选择了“防具/饰品”类别。\n请选择子类别。"
+    },
+    {
+      "kind" : "option",
+      "line" : 184,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Armor",
+      "translation" : "防具"
+    },
+    {
+      "kind" : "option",
+      "line" : 184,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Cloak",
+      "translation" : "披风"
+    },
+    {
+      "kind" : "option",
+      "line" : 184,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Shoes",
+      "translation" : "长靴"
+    },
+    {
+      "kind" : "option",
+      "line" : 184,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Accessory",
+      "translation" : "饰品"
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the 'Mass-Production Armor/Accessory' category.\nPlease select a sub-category.",
+      "translation" : "[后勤]\n你选择了“量产防具/饰品”类别。\n请选择子类别。"
+    },
+    {
+      "kind" : "option",
+      "line" : 195,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Mass-Production Armor",
+      "translation" : "量产防具"
+    },
+    {
+      "kind" : "option",
+      "line" : 195,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Mass-Production Shoes",
+      "translation" : "量产长靴"
+    },
+    {
+      "kind" : "option",
+      "line" : 195,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Mass-Production Accessory",
+      "translation" : "量产饰品"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected the 'Popularized Armor/Accessory' category.\nPlease select a sub-category.",
+      "translation" : "[后勤]\n你选择了“普及防具/饰品”类别。\n请选择子类别。"
+    },
+    {
+      "kind" : "option",
+      "line" : 205,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Popularized Armor",
+      "translation" : "普及防具"
+    },
+    {
+      "kind" : "option",
+      "line" : 205,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Popularized Shoes",
+      "translation" : "普及长靴"
+    },
+    {
+      "kind" : "option",
+      "line" : 205,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Popularized Accessory",
+      "translation" : "普及饰品"
+    },
+    {
+      "kind" : "message",
+      "line" : 212,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\n{0}, your current points are ^580080{1}^000000 KVM Points.",
+      "translation" : "[后勤]\n{0}，你目前的KVM积分是 ^580080{1}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 216,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nThere are 3 categories in KVM Rewards: Weapon/Armor.Accessory.",
+      "translation" : "[后勤]\nKVM奖励分为3个类别：武器、防具、饰品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nWeapon rewards require 2,000 KVM points for each.\nThere are 3 types of Armor rewards and they require 840/630/580 KVM points fo each.\nAccessory rewards require 1,200 KVM points for each.",
+      "translation" : "[后勤]\n武器奖励每件需要2,000 KVM积分。\n防具奖励分为3种，分别需要840/630/580 KVM积分。\n饰品奖励每件需要1,200 KVM积分。"
+    },
+    {
+      "kind" : "message",
+      "line" : 224,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nKreiger Weapons are LV 4 Weapons, they can be upgraded and will have special effects: Slaughter, Destruction and Blessing.",
+      "translation" : "[后勤]\nKreiger武器是4级武器，它们可以升级并拥有特殊效果：屠杀、破坏和祝福。"
+    },
+    {
+      "kind" : "message",
+      "line" : 227,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nWhen you can wear all 3 armors, you can have a special set of options.\nAlso, when Kreiger Accessory rewards are worn with medalsm it will bring you special set rewards.",
+      "translation" : "[后勤]\n当你能同时装备全部3件防具时，可以获得特殊的套装属性。\n此外，当Kreiger饰品奖励与奖章一同佩戴时，会为你带来特殊的套装奖励。"
+    },
+    {
+      "kind" : "message",
+      "line" : 231,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nFinally, there are Mass-Production Armor and Accessory rewards.\nPlayers whose Lvl is higher than 60 can equip Mass-Production Armors and there is a Lvl limit for Popularized Armor as well.",
+      "translation" : "[后勤]\n最后，还有量产防具和饰品奖励。\n等级高于60级的玩家可以装备量产防具，普及防具也有等级限制。"
+    },
+    {
+      "kind" : "message",
+      "line" : 236,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nKVM Points are rewarded when you win, lose or draw in Kreiger Von Midgard (KVM).\nYou can have special Rewards by using these points.",
+      "translation" : "[后勤]\n在米德加尔特战记(KVM)中，无论胜、负、平都会获得KVM积分。\n你可以使用这些积分换取特殊的奖励。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected ^ff0000{0}^000000.\nIt requires ^0000ff2,000^000000 KVM Points, and {1}, your points are: ^580080{2}^000000.",
+      "translation" : "[后勤]\n你选择了 ^ff0000{0}^000000。\n这需要 ^0000ff2,000^000000 KVM积分，{1}，你的积分是：^580080{2}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetWeaponType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nThere is only one {0}: {1}.\nIt requires ^0000ff2,000^000000 KVM Points, and {2}, your points are: ^580080{3}^000000.",
+      "translation" : "[后勤]\n只有一个 {0}：{1}。\n这需要 ^0000ff2,000^000000 KVM积分，{2}，你的积分是：^580080{3}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected '{0}'.\nThe armor for one whose Lvl is more than 80 is: ^ff0000{1}^000000.\nIt requires ^0000ff2,000^000000 KVM Points, and {2}, your points are: ^580080{3}^000000.",
+      "translation" : "[后勤]\n你选择了 '{0}'。\n等级超过80级的护甲为：^ff0000{1}^000000。\n需要 ^0000ff2,000^000000 KVM点数，以及 {2}，你的点数为：^580080{3}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected 'Mass-Production {0}'.\nThere is only one Mass-Production {1}: ^ff0000{2}^000000.\nIt requires ^0000ff2,000^000000 KVM Points, and {3}, your points are: ^580080{4}^000000.",
+      "translation" : "[后勤]\n你选择了 '量产型 {0}'。\n仅有一个量产型 {1}：^ff0000{2}^000000。\n需要 ^0000ff2,000^000000 KVM点数，以及 {3}，你的点数为：^580080{4}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected 'Popularized {0}'.\nThere is only one Popularized {1}: ^ff0000{2}^000000.\nIt requires ^0000ff2,000^000000 KVM Points, and {3}, your points are: ^580080{4}^000000.",
+      "translation" : "[后勤]\n你选择了 '普及型 {0}'。\n仅有一个普及型 {1}：^ff0000{2}^000000。\n需要 ^0000ff2,000^000000 KVM点数，以及 {3}，你的点数为：^580080{4}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nIt requires ^0000ff2,000^000000 KVM Points, and {0}, your points are: ^580080{1}^000000.",
+      "translation" : "[后勤]\n需要 ^0000ff2,000^000000 KVM点数，以及 {0}，你的点数为：^580080{1}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected ^ff0000{0}^000000.\nIt requires ^0000ff1,200^000000 KVM Points, and {1}, your points are: ^580080{2}^000000.",
+      "translation" : "[后勤]\n你选择了 ^ff0000{0}^000000。\n需要 ^0000ff1,200^000000 KVM点数，以及 {1}，你的点数为：^580080{2}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetWeaponType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nThere is only one {0}: {1}.\nIt requires ^0000ff1,200^000000 KVM Points, and {2}, your points are: ^580080{3}^000000.",
+      "translation" : "[后勤]\n仅有一个 {0}：{1}。\n需要 ^0000ff1,200^000000 KVM点数，以及 {2}，你的点数为：^580080{3}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected '{0}'.\nThe armor for one whose Lvl is more than 80 is: ^ff0000{1}^000000.\nIt requires ^0000ff1,200^000000 KVM Points, and {2}, your points are: ^580080{3}^000000.",
+      "translation" : "[后勤]\n你选择了 '{0}'。\n等级超过80级的护甲为：^ff0000{1}^000000。\n需要 ^0000ff1,200^000000 KVM点数，以及 {2}，你的点数为：^580080{3}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected 'Mass-Production {0}'.\nThere is only one Mass-Production {1}: ^ff0000{2}^000000.\nIt requires ^0000ff1,200^000000 KVM Points, and {3}, your points are: ^580080{4}^000000.",
+      "translation" : "[后勤]\n你选择了 '量产型 {0}'。\n仅有一个量产型 {1}：^ff0000{2}^000000。\n需要 ^0000ff1,200^000000 KVM点数，以及 {3}，你的点数为：^580080{4}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected 'Popularized {0}'.\nThere is only one Popularized {1}: ^ff0000{2}^000000.\nIt requires ^0000ff1,200^000000 KVM Points, and {3}, your points are: ^580080{4}^000000.",
+      "translation" : "[后勤]\n你选择了 '普及型 {0}'。\n仅有一个普及型 {1}：^ff0000{2}^000000。\n需要 ^0000ff1,200^000000 KVM点数，以及 {3}，你的点数为：^580080{4}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nIt requires ^0000ff1,200^000000 KVM Points, and {0}, your points are: ^580080{1}^000000.",
+      "translation" : "[后勤]\n需要 ^0000ff1,200^000000 KVM点数，以及 {0}，你的点数为：^580080{1}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@prices[.@req_setting]",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected ^ff0000{0}^000000.\nIt requires ^0000ff{1}^000000 KVM Points, and {2}, your points are: ^580080{3}^000000.",
+      "translation" : "[后勤]\n你选择了 ^ff0000{0}^000000。\n需要 ^0000ff{1}^000000 KVM点数，以及 {2}，你的点数为：^580080{3}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetWeaponType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@prices[.@req_setting]",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nThere is only one {0}: {1}.\nIt requires ^0000ff{2}^000000 KVM Points, and {3}, your points are: ^580080{4}^000000.",
+      "translation" : "[后勤]\n仅有一个 {0}：{1}。\n需要 ^0000ff{2}^000000 KVM点数，以及 {3}，你的点数为：^580080{4}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@prices[.@req_setting]",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected '{0}'.\nThe armor for one whose Lvl is more than 80 is: ^ff0000{1}^000000.\nIt requires ^0000ff{2}^000000 KVM Points, and {3}, your points are: ^580080{4}^000000.",
+      "translation" : "[后勤]\n你选择了 '{0}'。\n等级超过80级的护甲为：^ff0000{1}^000000。\n需要 ^0000ff{2}^000000 KVM点数，以及 {3}，你的点数为：^580080{4}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@prices[.@req_setting]",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected 'Mass-Production {0}'.\nThere is only one Mass-Production {1}: ^ff0000{2}^000000.\nIt requires ^0000ff{3}^000000 KVM Points, and {4}, your points are: ^580080{5}^000000.",
+      "translation" : "[后勤]\n你选择了 '量产型 {0}'。\n仅有一个量产型 {1}：^ff0000{2}^000000。\n需要 ^0000ff{3}^000000 KVM点数，以及 {4}，你的点数为：^580080{5}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "callfunc(\"F_GetArmorType\",.@item_id)",
+        "getitemname(.@item_id)",
+        ".@prices[.@req_setting]",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have selected 'Popularized {0}'.\nThere is only one Popularized {1}: ^ff0000{2}^000000.\nIt requires ^0000ff{3}^000000 KVM Points, and {4}, your points are: ^580080{5}^000000.",
+      "translation" : "[后勤]\n你选择了 '普及型 {0}'。\n仅有一个普及型 {1}：^ff0000{2}^000000。\n需要 ^0000ff{3}^000000 KVM点数，以及 {4}，你的点数为：^580080{5}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        ".@prices[.@req_setting]",
+        ".@name$",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nIt requires ^0000ff{0}^000000 KVM Points, and {1}, your points are: ^580080{2}^000000.",
+      "translation" : "[后勤]\n需要 ^0000ff{0}^000000 KVM点数，以及 {1}，你的点数为：^580080{2}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 276,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Are you sure you want this item?",
+      "translation" : "你确定要购买这个道具吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 278,
+      "npc" : "KVM Logistic Officer",
+      "text" : "No, I won't purchase it.",
+      "translation" : "不，我不想购买。"
+    },
+    {
+      "kind" : "option",
+      "line" : 278,
+      "npc" : "KVM Logistic Officer",
+      "text" : "Yes, I will purchase it.",
+      "translation" : "是的，我要购买。"
+    },
+    {
+      "kind" : "message",
+      "line" : 280,
+      "npc" : "KVM Logistic Officer",
+      "text" : "[Logistics]\nYou have selected 'I won't purchase it'.\nWhen purchasing an item, please be careful there are no refunds.",
+      "translation" : "[后勤]\n你选择了 '不，我不想购买'。\n购买道具时请务必小心，一旦购买无法退款。"
+    },
+    {
+      "kind" : "message",
+      "line" : 288,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_setting",
+        "kvm_point",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have purchased a {0}.\nYour KVM Points are reduced by ^0000ff{1}^000000 points, your KVM Points are now ^580080{2}^000000.\nYour KVM Points are reduced by ^0000ff1,200^000000 points, your KVM Points are now ^580080{3}^000000.",
+      "translation" : "[后勤]\n你购买了 {0}。\n你的KVM积分减少了 ^0000ff{1}^000000 点，你现在的KVM积分是 ^580080{2}^000000。\n你的KVM积分减少了 ^0000ff1,200^000000 点，你现在的KVM积分是 ^580080{3}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 288,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have purchased a {0}.\nYour KVM Points are reduced by ^0000ff1,200^000000 points, your KVM Points are now ^580080{1}^000000.",
+      "translation" : "[后勤]\n你购买了 {0}。\n你的KVM积分减少了 ^0000ff1,200^000000 点，你现在的KVM积分是 ^580080{1}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 288,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_setting",
+        "kvm_point",
+        ".@prices[.@req_setting]",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have purchased a {0}.\nYour KVM Points are reduced by ^0000ff{1}^000000 points, your KVM Points are now ^580080{2}^000000.\nYour KVM Points are reduced by ^0000ff{3}^000000 points, your KVM Points are now ^580080{4}^000000.",
+      "translation" : "[后勤]\n你购买了 {0}。\n你的KVM积分减少了 ^0000ff{1}^000000 点，你现在的KVM积分是 ^580080{2}^000000。\n你的KVM积分减少了 ^0000ff{3}^000000 点，你现在的KVM积分是 ^580080{4}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 288,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@prices[.@req_setting]",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou have purchased a {0}.\nYour KVM Points are reduced by ^0000ff{1}^000000 points, your KVM Points are now ^580080{2}^000000.",
+      "translation" : "[后勤]\n你购买了 {0}。\n你的KVM积分减少了 ^0000ff{1}^000000 点，你现在的KVM积分是 ^580080{2}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 298,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou need ^0000ff2,000^000000 KVM Points to purchase this item.\nHowever, your KVM Points are now ^580080{0}^000000.\nWhich are not enough to buy it.\nWhen you get enough points, please come back again.",
+      "translation" : "[后勤]\n你需要 ^0000ff2,000^000000 KVM积分才能购买此物品。\n然而，你现在的KVM积分只有 ^580080{0}^000000。\n积分不足，无法购买。\n当你获得足够的积分后，请再次回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 298,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou need ^0000ff1,200^000000 KVM Points to purchase this item.\nHowever, your KVM Points are now ^580080{0}^000000.\nWhich are not enough to buy it.\nWhen you get enough points, please come back again.",
+      "translation" : "[后勤]\n你需要 ^0000ff1,200^000000 KVM积分才能购买此物品。\n然而，你现在的KVM积分只有 ^580080{0}^000000。\n积分不足，无法购买。\n当你获得足够的积分后，请再次回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 298,
+      "npc" : "KVM Logistic Officer",
+      "placeholders" : [
+        ".@prices[.@req_setting]",
+        "kvm_point"
+      ],
+      "text" : "[Logistics]\nYou need ^0000ff{0}^000000 KVM Points to purchase this item.\nHowever, your KVM Points are now ^580080{1}^000000.\nWhich are not enough to buy it.\nWhen you get enough points, please come back again.",
+      "translation" : "[后勤]\n你需要 ^0000ff{0}^000000 KVM积分才能购买此物品。\n然而，你现在的KVM积分只有 ^580080{1}^000000。\n积分不足，无法购买。\n当你获得足够的积分后，请再次回来。"
+    }
+  ]
+}

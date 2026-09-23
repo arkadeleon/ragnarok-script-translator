@@ -1,0 +1,580 @@
+{
+  "file" : "npc/custom/etc/blackjack.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 21,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nHello there! Would you like to play a game of Black Jack?",
+      "translation" : "[荷官]\n你好！想来玩一局二十一点吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "npc" : "Black Jack Dealer",
+      "text" : "What are the rules?",
+      "translation" : "规则是什么？"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "npc" : "Black Jack Dealer",
+      "text" : "I want to play.",
+      "translation" : "我想玩。"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "npc" : "Black Jack Dealer",
+      "text" : "No thanks.",
+      "translation" : "不用了，谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nWhat would you like to know?",
+      "translation" : "[荷官]\n你想了解什么？"
+    },
+    {
+      "kind" : "option",
+      "line" : 32,
+      "npc" : "Black Jack Dealer",
+      "text" : "The basics.",
+      "translation" : "基本规则。"
+    },
+    {
+      "kind" : "option",
+      "line" : 32,
+      "npc" : "Black Jack Dealer",
+      "text" : "Winning and loosing.",
+      "translation" : "胜负规则。"
+    },
+    {
+      "kind" : "option",
+      "line" : 32,
+      "npc" : "Black Jack Dealer",
+      "text" : "'Double Down'.",
+      "translation" : "“加倍”。"
+    },
+    {
+      "kind" : "option",
+      "line" : 32,
+      "npc" : "Black Jack Dealer",
+      "text" : "Ace value.",
+      "translation" : "Ace的数值。"
+    },
+    {
+      "kind" : "option",
+      "line" : 32,
+      "npc" : "Black Jack Dealer",
+      "text" : "Nothing.",
+      "translation" : "没什么。"
+    },
+    {
+      "kind" : "message",
+      "line" : 36,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nBlack Jack is a card game in which the goal is to get 21, or as\nclose to 21 points as possible, without going over 21.",
+      "translation" : "[荷官]\n二十一点是一种纸牌游戏，目标是获得21点，或者在不超过21点的情况下尽可能接近21点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nBefore the game starts, the player must make a bet.  Once the bet\nhas been made, both the dealer and the player are dealt 2 cards\neach.  Depending on what cards you have, you can choose to ^5533FF'stay'^000000,\nor you can choose to ^5533FF'pull'^000000.",
+      "translation" : "[荷官]\n在游戏开始前，玩家必须进行下注。下注完成后，荷官和玩家各发2张牌。根据你手中的牌，你可以选择 ^5533FF'停牌'^000000，或者选择 ^5533FF'要牌'^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nWhen you choose to 'stay', you are telling the dealer that you don't\nneed anymore cards.  This allows the dealer to pull if he/she\nwants to.  In order to stay, you must have ^FF3355at least 13 points^000000. The\ndealer can only stay when he/she has^FF3355 17 points or more^000000.",
+      "translation" : "[荷官]\n当你选择“停牌”时，即表示你告诉荷官你不需要更多的牌了。这允许荷官根据意愿决定是否要牌。为了停牌，你的点数必须 ^FF3355至少达到13点^000000。而荷官只有在点数 ^FF3355达到17点或以上^000000时才能停牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 52,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nWhen you choose to 'pull', you are telling the dealer that you want\nanother card.  By pulling more cards you can increase your point\ntotal.  As long has you have ^FF3355less than 21^000000 points you can pull a\ncard from the deck.",
+      "translation" : "[荷官]\n当你选择“要牌”时，即表示你告诉荷官你想要另一张牌。通过抽取更多的牌，你可以增加你的总点数。只要你的点数 ^FF3355少于21点^000000，你就可以从牌堆中抽取一张牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 59,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nThere are 3 ways to win and loose at Black Jack.",
+      "translation" : "[荷官]\n在二十一点中，有3种胜负方式。"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\n1.) At the end of a Black Jack round, if you have more points\nthan the dealer you will win the round.  Conversely if you have\nless points than the dealer you will loose.",
+      "translation" : "[荷官]\n1.) 在一轮二十一点结束时，如果你的点数比荷官高，你就会赢得该轮。反之，如果你的点数比荷官低，你就会输掉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 67,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\n2.) If you pull a card that makes your point total go over 21 you\nwill automatically loose the round.  This is called a ^5533FF'bust'^000000.  If\nthe dealer busts then you will win the round.",
+      "translation" : "[荷官]\n2.) 如果你抽到的牌使你的总点数超过21点，你将自动输掉该轮。这被称为 ^5533FF'爆牌'^000000。如果荷官爆牌，你将赢得该轮。"
+    },
+    {
+      "kind" : "message",
+      "line" : 72,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\n3.) If you have a point total of 21 with the first 2 cards, you\nwill automatically win the round.  This is called a ^5533FF'Black Jack'^000000\nand happens when you get an 'Ace' and a '10 valued' card. If the\ndealer gets a Black Jack he/she will automatically win the round.",
+      "translation" : "[荷官]\n3.) 如果你通过前2张牌就获得了21点，你将自动赢得该轮。这被称为 ^5533FF'二十一点'^000000，发生在当你拿到一张“Ace”和一张“点数为10”的牌时。如果荷官拿到二十一点，他/她将自动赢得该轮。"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\n4.) Besides winning and loosing, you can tie with the dealer.  If\nboth you and the dealer have the same point total at the end of a\nround, this will result in a tie with no winner and no loss or gain\nin money.",
+      "translation" : "[荷官]\n4.) 除了胜负之外，你还可以与荷官打平。如果在回合结束时你和荷官的总点数相同，则会导致平局，没有赢家，也不会有金钱的盈亏。"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nThis is called a ^5533FF'push'^000000 with the dealer.  This also\napplies to both you and the dealer having Black Jack at the same\ntime.",
+      "translation" : "[荷官]\n这被称为与荷官 ^5533FF'平局'^000000。这也适用于你和荷官同时拿到二十一点的情况。"
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nThe 'Double Down' option allows you to double your current bet,\nbut with the drawback that you will only be able to pull one\nadditional card.  This option is only available at the beginning of\neach round.",
+      "translation" : "[荷官]\n“加倍”选项允许你将当前的赌注翻倍，但缺点是你只能再抽取一张额外的牌。此选项仅在每轮开始时可用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nAn example of when doubling down is useful, is when\nyour first 2 cards give you a point total of 11.  You have a good\nchance of getting 21 or 20 with the next card that you draw.  This\nwould be a good hand to double down on.",
+      "translation" : "[荷官]\n翻倍下注的一个实用例子是，当你的前两张牌点数总和为11时。你很有机会在下一张牌中抽到21点或20点。这会是一个非常适合翻倍下注的好牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 103,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nThe 'Ace' card is a unique card in the game of Black Jack because\nit can have 2 values.  An Ace can be counted as either 11 points,\nor just 1 point.  For example if you had an Ace and a 4, that would\ngive you either 15 or 5 points.",
+      "translation" : "[荷官]\n“Ace”是二十一点游戏中的一张独特卡牌，因为它有两个数值。Ace既可以计为11点，也可以只计为1点。例如，如果你有一张Ace和一张4，那么你的点数就是15点或5点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nIf you decided to stay, the Ace would automatically be counted as\n11 points to give you 15 points total.",
+      "translation" : "[荷官]\n如果你决定停牌，Ace会自动计为11点，从而使你的总点数为15点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 113,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nIf you had decided to pull and received a 9, the ace would\nautomatically be counted as 1 point to give you a total of 14\npoints.  If the Ace was counted as 11 points, you would have a\npoint total over 21 and would have lost.",
+      "translation" : "[荷官]\n如果你决定要牌并抽到一张9，Ace会自动计为1点，使你的总点数为14点。如果Ace被计为11点，你的总点数就会超过21点从而导致输掉比赛。"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nIt is because of the flexibility you have with the 'Ace' that makes\nit the most powerful card in the game.",
+      "translation" : "[荷官]\n正是因为“Ace”所具有的这种灵活性，使其成为了游戏中威力最强的牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nFeel free to come back anytime",
+      "translation" : "[荷官]\n欢迎随时回来"
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nPlease place your bets...",
+      "translation" : "[荷官]\n请下注...\n"
+    },
+    {
+      "kind" : "option",
+      "line" : 133,
+      "npc" : "Black Jack Dealer",
+      "text" : "2z",
+      "translation" : "2z"
+    },
+    {
+      "kind" : "option",
+      "line" : 133,
+      "npc" : "Black Jack Dealer",
+      "text" : "10z",
+      "translation" : "10z"
+    },
+    {
+      "kind" : "option",
+      "line" : 133,
+      "npc" : "Black Jack Dealer",
+      "text" : "20z",
+      "translation" : "20z"
+    },
+    {
+      "kind" : "option",
+      "line" : 133,
+      "npc" : "Black Jack Dealer",
+      "text" : "100z",
+      "translation" : "100z"
+    },
+    {
+      "kind" : "option",
+      "line" : 133,
+      "npc" : "Black Jack Dealer",
+      "text" : "Too rich for my blood....",
+      "translation" : "这对我来说太贵了...."
+    },
+    {
+      "kind" : "message",
+      "line" : 153,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nI'm sorry but you don't have enough zeny to make that bet.",
+      "translation" : "[荷官]\n很抱歉，您的泽尼不足以进行该笔投注。"
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "Black Jack Dealer",
+      "text" : "(the cards are being dealt)",
+      "translation" : "(正在发牌)"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Black Jack Dealer",
+      "text" : "- Here are the ^FF5533DEALER'S^000000 cards:",
+      "translation" : "- 这是 ^FF5533荷官的^000000牌："
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@dealTot"
+      ],
+      "text" : "- Here are the ^FF5533DEALER'S^000000 cards:\n    The DEALER has: ^FF5533{0}^000000\n \n- Here are ^5533FFYOUR^000000 cards:",
+      "translation" : "- 这是 ^FF5533荷官的^000000牌：\n    荷官持有：^FF5533{0}^000000\n \n- 这是 ^5533FF你的^000000牌："
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@dealTot",
+        "@playTot",
+        "@playTot",
+        "(@playTot-10)"
+      ],
+      "text" : "- Here are the ^FF5533DEALER'S^000000 cards:\n    The DEALER has: ^FF5533{0}^000000\n \n- Here are ^5533FFYOUR^000000 cards:\n    YOU have: ^5533FF{1}^000000\n    You have: ^5533FF{2}^000000, or ^5533FF{3}^000000",
+      "translation" : "- 这是 ^FF5533荷官的^000000牌：\n    荷官持有：^FF5533{0}^000000\n \n- 这是 ^5533FF你的^000000牌：\n    你持有：^5533FF{1}^000000\n    你的点数为：^5533FF{2}^000000，或 ^5533FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@dealTot",
+        "@playTot",
+        "(@playTot-10)"
+      ],
+      "text" : "- Here are the ^FF5533DEALER'S^000000 cards:\n    The DEALER has: ^FF5533{0}^000000\n \n- Here are ^5533FFYOUR^000000 cards:\n    You have: ^5533FF{1}^000000, or ^5533FF{2}^000000",
+      "translation" : "- 这是 ^FF5533荷官的^000000牌：\n    荷官持有：^FF5533{0}^000000\n \n- 这是 ^5533FF你的^000000牌：\n    你的点数为：^5533FF{1}^000000，或 ^5533FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@dealTot",
+        "@playTot"
+      ],
+      "text" : "- Here are the ^FF5533DEALER'S^000000 cards:\n    The DEALER has: ^FF5533{0}^000000\n \n- Here are ^5533FFYOUR^000000 cards:\n    YOU have: ^5533FF{1}^000000",
+      "translation" : "- 这是 ^FF5533荷官的^000000牌：\n    荷官持有：^FF5533{0}^000000\n \n- 这是 ^5533FF你的^000000牌：\n    你持有：^5533FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@dealTot"
+      ],
+      "text" : "    The DEALER has: ^FF5533{0}^000000\n \n- Here are ^5533FFYOUR^000000 cards:",
+      "translation" : "    荷官持有：^FF5533{0}^000000\n \n- 这是 ^5533FF你的^000000牌："
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@dealTot",
+        "@playTot",
+        "@playTot",
+        "(@playTot-10)"
+      ],
+      "text" : "    The DEALER has: ^FF5533{0}^000000\n \n- Here are ^5533FFYOUR^000000 cards:\n    YOU have: ^5533FF{1}^000000\n    You have: ^5533FF{2}^000000, or ^5533FF{3}^000000",
+      "translation" : "    荷官持有：^FF5533{0}^000000\n \n- 以下是^5533FF您的^000000牌：\n    您持有：^5533FF{1}^000000\n    您持有：^5533FF{2}^000000，或^5533FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@dealTot",
+        "@playTot",
+        "(@playTot-10)"
+      ],
+      "text" : "    The DEALER has: ^FF5533{0}^000000\n \n- Here are ^5533FFYOUR^000000 cards:\n    You have: ^5533FF{1}^000000, or ^5533FF{2}^000000",
+      "translation" : "    荷官持有：^FF5533{0}^000000\n \n- 以下是^5533FF您的^000000牌：\n    您持有：^5533FF{1}^000000，或^5533FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@dealTot",
+        "@playTot"
+      ],
+      "text" : "    The DEALER has: ^FF5533{0}^000000\n \n- Here are ^5533FFYOUR^000000 cards:\n    YOU have: ^5533FF{1}^000000",
+      "translation" : "    荷官持有：^FF5533{0}^000000\n \n- 以下是^5533FF您的^000000牌：\n    您持有：^5533FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 187,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@playTot",
+        "@playTot",
+        "(@playTot-10)"
+      ],
+      "text" : "    YOU have: ^5533FF{0}^000000\n    You have: ^5533FF{1}^000000, or ^5533FF{2}^000000",
+      "translation" : "    您持有：^5533FF{0}^000000\n    您持有：^5533FF{1}^000000，或^5533FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 187,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@playTot"
+      ],
+      "text" : "    YOU have: ^5533FF{0}^000000",
+      "translation" : "    您持有：^5533FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 188,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@playTot",
+        "(@playTot-10)"
+      ],
+      "text" : "    You have: ^5533FF{0}^000000, or ^5533FF{1}^000000",
+      "translation" : "    您持有：^5533FF{0}^000000，或^5533FF{1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 195,
+      "npc" : "Black Jack Dealer",
+      "text" : "Hit me(pull)",
+      "translation" : "要牌"
+    },
+    {
+      "kind" : "option",
+      "line" : 195,
+      "npc" : "Black Jack Dealer",
+      "text" : "Stay",
+      "translation" : "停牌"
+    },
+    {
+      "kind" : "option",
+      "line" : 195,
+      "npc" : "Black Jack Dealer",
+      "text" : "Double Down",
+      "translation" : "双倍下注"
+    },
+    {
+      "kind" : "option",
+      "line" : 196,
+      "npc" : "Black Jack Dealer",
+      "text" : "Hit me(pull)",
+      "translation" : "要牌"
+    },
+    {
+      "kind" : "option",
+      "line" : 196,
+      "npc" : "Black Jack Dealer",
+      "text" : "Stay",
+      "translation" : "停牌"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]",
+      "translation" : "[荷官]"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nThe Dealer stays.",
+      "translation" : "[荷官]\n荷官停牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nThe Dealer stays.\nThe Dealer is going to pull",
+      "translation" : "[荷官]\n荷官停牌。\n荷官准备要牌"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nThe Dealer is going to pull",
+      "translation" : "[荷官]\n荷官准备要牌"
+    },
+    {
+      "kind" : "message",
+      "line" : 210,
+      "npc" : "Black Jack Dealer",
+      "text" : "I'm sorry but you do not have a high enough total to stay.  You must pull.",
+      "translation" : "很抱歉，您的点数不够高，无法停牌。您必须要牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nPlayer has chosen to Double Down.  You're current bet will be\ndoubled, and you will only be able to pull 1 extra card.",
+      "translation" : "[荷官]\n玩家选择了双倍下注。您当前的赌注将\n翻倍，且您只能再额外抽取1张牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 235,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nCongratulations, you've won!",
+      "translation" : "[荷官]\n恭喜，您赢了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 241,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nI'm sorry but you've lost.",
+      "translation" : "[荷官]\n很抱歉，您输了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 247,
+      "npc" : "Black Jack Dealer",
+      "text" : "[Dealer]\nIts a push.  You tied with the Dealer.",
+      "translation" : "[荷官]\n平局。您与荷官点数相同。"
+    },
+    {
+      "kind" : "message",
+      "line" : 296,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@dealCard$[0]",
+        "@dealCard$[1]"
+      ],
+      "text" : "    .-----.   .-----. \n    | {0} |   | {1} | \n    '-----'   '-----' ",
+      "translation" : "    .-----.   .-----. \n    | {0} |   | {1} | \n    '-----'   '-----' "
+    },
+    {
+      "kind" : "message",
+      "line" : 301,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@playCard$[0]",
+        "@playCard$[1]"
+      ],
+      "text" : "    .-----.   .-----. \n    | {0} |   | {1} | \n    '-----'   '-----' ",
+      "translation" : "    .-----.   .-----. \n    | {0} |   | {1} | \n    '-----'   '-----' "
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@dealCard$[0]",
+        "@dealCard$[1]",
+        "@dealCard$[2]"
+      ],
+      "text" : "    .-----.   .-----.   .-----. \n    | {0} |   | {1} |   | {2} | \n    '-----'   '-----'    '-----' ",
+      "translation" : "    .-----.   .-----.   .-----. \n    | {0} |   | {1} |   | {2} | \n    '-----'   '-----'    '-----' "
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@playCard$[0]",
+        "@playCard$[1]",
+        "@playCard$[2]"
+      ],
+      "text" : "    .-----.   .-----.   .-----. \n    | {0} |   | {1} |   | {2} | \n    '-----'   '-----'    '-----' ",
+      "translation" : "    .-----.   .-----.   .-----. \n    | {0} |   | {1} |   | {2} | \n    '-----'   '-----'    '-----' "
+    },
+    {
+      "kind" : "message",
+      "line" : 316,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@dealCard$[0]",
+        "@dealCard$[1]",
+        "@dealCard$[2]",
+        "@dealCard$[3]"
+      ],
+      "text" : " .-----.  .-----.  .-----. \n | {0} |  | {1} |  | {2} | \n '-----'  '-----'   '-----' \n    .-----.  \n    | {3} |\n    '-----'   ",
+      "translation" : " .-----.  .-----.  .-----. \n | {0} |  | {1} |  | {2} | \n '-----'  '-----'   '-----' \n    .-----.  \n    | {3} |\n    '-----'   "
+    },
+    {
+      "kind" : "message",
+      "line" : 324,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@playCard$[0]",
+        "@playCard$[1]",
+        "@playCard$[2]",
+        "@playCard$[3]"
+      ],
+      "text" : " .-----.  .-----.  .-----. \n | {0} |  | {1} |  | {2} |\n '-----'  '-----'   '-----' \n    .-----.  \n    | {3} |\n    '-----'   ",
+      "translation" : " .-----.  .-----.  .-----. \n | {0} |  | {1} |  | {2} |\n '-----'  '-----'   '-----' \n    .-----.  \n    | {3} |\n    '-----'   "
+    },
+    {
+      "kind" : "message",
+      "line" : 332,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@dealCard$[0]",
+        "@dealCard$[1]",
+        "@dealCard$[2]",
+        "@dealCard$[3]",
+        "@dealCard$[4]"
+      ],
+      "text" : " .-----.  .-----.  .-----. \n | {0} |  | {1} |  | {2} | \n '-----'  '-----'   '-----' \n    .-----.   .-----. \n    | {3} |   | {4} | \n    '-----'   '-----' ",
+      "translation" : " .-----.  .-----.  .-----. \n | {0} |  | {1} |  | {2} | \n '-----'  '-----'   '-----' \n    .-----.   .-----. \n    | {3} |   | {4} | \n    '-----'   '-----' "
+    },
+    {
+      "kind" : "message",
+      "line" : 340,
+      "npc" : "Black Jack Dealer",
+      "placeholders" : [
+        "@playCard$[0]",
+        "@playCard$[1]",
+        "@playCard$[2]",
+        "@playCard$[3]",
+        "@playCard$[4]"
+      ],
+      "text" : " .-----.  .-----.  .-----. \n | {0} |  | {1} |  | {2} | \n '-----'  '-----'   '-----' \n    .-----.   .-----. \n    | {3} |   | {4} | \n    '-----'   '-----' ",
+      "translation" : " .-----.  .-----.  .-----. \n | {0} |  | {1} |  | {2} | \n '-----'  '-----'   '-----' \n    .-----.   .-----. \n    | {3} |   | {4} | \n    '-----'   '-----' "
+    }
+  ]
+}
