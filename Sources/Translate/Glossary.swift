@@ -10,7 +10,8 @@ import Foundation
 /// Terminology from `Glossary/<language>.lproj/`: `Glossary.json` is generated from the game data
 /// tables by the `glossary` command, `Manual.json` is maintained by hand for the terms those tables
 /// do not carry (zeny, job names, speaker names, ...) and wins on conflict. Only the terms that
-/// occur in a batch are put into its prompt.
+/// occur in a batch are put into its prompt. `Examples.json`, also by hand, holds a few translated
+/// lines that go into every prompt to show the style.
 ///
 /// Both files group terms by kind (`{"monster": {"Poring": "波利"}, "skill": {...}}`). The kind goes
 /// into the prompt so the model can tell a name from the everyday word it happens to spell: a
@@ -22,7 +23,15 @@ struct Glossary {
         var translation: String
     }
 
+    /// A translated line shown to the model as an example.
+    struct Example: Decodable {
+        var kind: ExtractedScript.Kind
+        var text: String
+        var translation: String
+    }
+
     private var entries: [Entry] = []
+    private(set) var examples: [Example] = []
 
     var count: Int { entries.count }
 
@@ -47,6 +56,10 @@ struct Glossary {
         entries = (generated + manual)
             .sorted { ($0.term, $0.kind) < ($1.term, $1.kind) }
             .filter { seen.insert([$0.term.lowercased(), $0.kind, $0.translation]).inserted }
+
+        if let data = try? Data(contentsOf: localized.appending(path: "Examples.json")) {
+            examples = try decoder.decode([Example].self, from: data)
+        }
     }
 
     func entries(in texts: [String]) -> [Entry] {

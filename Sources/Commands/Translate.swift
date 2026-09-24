@@ -291,7 +291,7 @@ struct Translate: AsyncParsableCommand {
         let items = scripts.enumerated().map {
             TranslationItem(id: $0.offset + 1, npc: $0.element.npc, kind: $0.element.kind, text: $0.element.text)
         }
-        let prompt = TranslationPrompt.system(language: language, glossary: glossary.entries(in: scripts.map(\.text)))
+        let prompt = TranslationPrompt.system(language: language, glossary: glossary.entries(in: scripts.map(\.text)), examples: glossary.examples)
 
         do {
             let outputs = try await translator.translate(TranslationRequest(context: context, items: items), system: prompt)

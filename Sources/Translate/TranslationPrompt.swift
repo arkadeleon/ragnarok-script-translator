@@ -10,7 +10,7 @@ import Foundation
 /// Builds the instructions for a general-purpose instruction model. Terminology goes straight into
 /// the prompt: an instruction model follows it, so no substitution tricks are needed.
 enum TranslationPrompt {
-    static func system(language: String, glossary: [Glossary.Entry]) -> String {
+    static func system(language: String, glossary: [Glossary.Entry], examples: [Glossary.Example]) -> String {
         let target = languageName(for: language)
         var prompt = """
         You translate NPC dialogue from the MMORPG Ragnarok Online from English into \(target).
@@ -27,7 +27,7 @@ enum TranslationPrompt {
         - Keep color codes like ^FF0000 and ^000000 exactly where they are.
         - A first line in square brackets, like [Kafra Employee], is the speaker's name: translate the name, keep the brackets and keep it on its own first line. A first line of exactly [{0}] is the player's own name: keep it exactly as it is.
         - The source is hard-wrapped for a narrow English text box. Join its lines into natural sentences and break lines only where a sentence ends; keep blank lines and one-item-per-line lists as they are. The game wraps long lines itself.
-        - Write ellipses the way \(target) does (for example …… in Chinese), not as "...".
+        - Write ellipses as three half-width periods "...".
         - Do not add explanations or notes.
         - Options (kind "option") and item names are short; translate them as short labels, without adding a full stop.
         - Use the standard Ragnarok Online \(target) terminology.
@@ -42,8 +42,20 @@ enum TranslationPrompt {
                 prompt += "- \(entry.term) (\(entry.kind)) = \(entry.translation)\n"
             }
         }
+        if !examples.isEmpty {
+            prompt += "\n\nExamples of the expected style (strings in JSON notation):\n"
+            for example in examples {
+                prompt += "\n\(example.kind.rawValue): \(jsonString(example.text))\n=> \(jsonString(example.translation))\n"
+            }
+        }
         prompt += "\nReturn JSON: {\"translations\":[{\"id\": ..., \"text\": ...}, ...]} with one entry per input id, in the same order."
         return prompt
+    }
+
+    private static func jsonString(_ string: String) -> String {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .withoutEscapingSlashes
+        return (try? String(decoding: encoder.encode(string), as: UTF8.self)) ?? string
     }
 
     private static let languageNames: [String: String] = [
