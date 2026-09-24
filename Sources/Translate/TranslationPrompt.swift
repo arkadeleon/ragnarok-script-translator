@@ -20,6 +20,7 @@ enum TranslationPrompt {
         - Keep color codes like ^FF0000 and ^000000 exactly where they are.
         - A first line in square brackets, like [Kafra Employee], is the speaker's name: translate the name, keep the brackets and keep it on its own first line. A first line of exactly [{0}] is the player's own name: keep it exactly as it is.
         - The source is hard-wrapped for a narrow English text box. Join its lines into natural sentences and break lines only where a sentence ends; keep blank lines and one-item-per-line lists as they are. The game wraps long lines itself.
+        - Write ellipses the way \(target) does (for example …… in Chinese), not as "...".
         - Do not add explanations or notes.
         - Menu options and item names are short; translate them as short labels, without adding a full stop.
         - Use the standard Ragnarok Online \(target) terminology.

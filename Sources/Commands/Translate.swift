@@ -40,13 +40,13 @@ struct Translate: AsyncParsableCommand {
     @Option(help: "Model backend: ollama, or dashscope (Alibaba Cloud, key in DASHSCOPE_API_KEY).")
     var provider: Provider = .ollama
 
-    @Option(help: "Model name. Defaults to gemma4:26b for ollama, qwen3.7-plus for dashscope.")
+    @Option(help: "Model name. Defaults to qwen3.8:27b for ollama, qwen3.7-plus for dashscope.")
     var model: String?
 
     @Option(help: "Server URL. Defaults to the provider's standard endpoint.")
     var endpoint: String?
 
-    @Option(help: "Maximum texts per request. Defaults to 20 for ollama, no limit for dashscope.")
+    @Option(help: "Maximum texts per request. Defaults to 40 for ollama, no limit for dashscope.")
     var batchSize: Int?
 
     @Option(help: "Maximum source characters per request. Defaults to no limit for ollama, 40000 for dashscope.")
@@ -150,7 +150,7 @@ struct Translate: AsyncParsableCommand {
             guard let url = URL(string: endpoint) else {
                 throw ValidationError("Invalid endpoint: \(endpoint)")
             }
-            return OllamaTranslator(endpoint: url, model: model ?? "gemma4:26b")
+            return OllamaTranslator(endpoint: url, model: model ?? "qwen3.8:27b")
         case .dashscope:
             let endpoint = endpoint ?? "https://dashscope.aliyuncs.com/compatible-mode/v1"
             guard let url = URL(string: endpoint) else {
@@ -242,7 +242,7 @@ struct Translate: AsyncParsableCommand {
     /// gives it the whole conversation for consistent wording; the character limit keeps the
     /// response of the few very large files well inside the model's output limit.
     private func batches(of texts: [String]) -> [[String]] {
-        let maxTexts = batchSize ?? (provider == .ollama ? 20 : .max)
+        let maxTexts = batchSize ?? (provider == .ollama ? 40 : .max)
         let maxCharacters = batchCharacters ?? (provider == .ollama ? .max : 40000)
 
         var batches: [[String]] = []
