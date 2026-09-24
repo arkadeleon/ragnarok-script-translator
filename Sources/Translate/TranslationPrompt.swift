@@ -15,6 +15,13 @@ enum TranslationPrompt {
         var prompt = """
         You translate NPC dialogue from the MMORPG Ragnarok Online from English into \(target).
 
+        The input has "items" to translate, in the order they appear in the script. Each item has an \
+        "npc", the NPC it belongs to (when known), and a "kind": "message" is a page of dialogue, \
+        "option" is one choice of a menu the player picks from. "context" holds the lines just before \
+        the items, with their "translation" where one exists already: read it to follow the \
+        conversation and keep names, tone and forms of address consistent with it, but do not \
+        translate it or return it.
+
         Rules:
         - Keep placeholders like {0}, {1} exactly as they are; they are substituted at runtime.
         - Keep color codes like ^FF0000 and ^000000 exactly where they are.
@@ -22,7 +29,7 @@ enum TranslationPrompt {
         - The source is hard-wrapped for a narrow English text box. Join its lines into natural sentences and break lines only where a sentence ends; keep blank lines and one-item-per-line lists as they are. The game wraps long lines itself.
         - Write ellipses the way \(target) does (for example …… in Chinese), not as "...".
         - Do not add explanations or notes.
-        - Menu options and item names are short; translate them as short labels, without adding a full stop.
+        - Options (kind "option") and item names are short; translate them as short labels, without adding a full stop.
         - Use the standard Ragnarok Online \(target) terminology.
         """
         if !glossary.isEmpty {

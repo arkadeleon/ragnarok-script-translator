@@ -48,10 +48,10 @@ struct OpenAITranslator: Translator {
         var choices: [Choice]
     }
 
-    func translate(_ items: [TranslationItem], system: String) async throws -> [Int: String] {
-        let request = ChatRequest(
+    func translate(_ request: TranslationRequest, system: String) async throws -> [Int: String] {
+        let chatRequest = ChatRequest(
             model: model,
-            messages: [.init(role: "system", content: system), .init(role: "user", content: try Self.payload(for: items))],
+            messages: [.init(role: "system", content: system), .init(role: "user", content: try Self.payload(for: request))],
             max_tokens: maxOutputTokens
         )
 
@@ -61,7 +61,7 @@ struct OpenAITranslator: Translator {
         urlRequest.httpMethod = "POST"
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
         urlRequest.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
-        urlRequest.httpBody = try encoder.encode(request)
+        urlRequest.httpBody = try encoder.encode(chatRequest)
         urlRequest.timeoutInterval = 3600
 
         let (data, response) = try await URLSession.shared.data(for: urlRequest)

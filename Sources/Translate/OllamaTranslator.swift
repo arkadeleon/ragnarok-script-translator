@@ -41,10 +41,10 @@ struct OllamaTranslator: Translator {
         var prompt_eval_count: Int?
     }
 
-    func translate(_ items: [TranslationItem], system: String) async throws -> [Int: String] {
-        let request = ChatRequest(
+    func translate(_ request: TranslationRequest, system: String) async throws -> [Int: String] {
+        let chatRequest = ChatRequest(
             model: model,
-            messages: [.init(role: "system", content: system), .init(role: "user", content: try Self.payload(for: items))],
+            messages: [.init(role: "system", content: system), .init(role: "user", content: try Self.payload(for: request))],
             format: TranslationSchema(),
             options: .init(temperature: 0.2, num_ctx: contextLength, num_predict: maxOutputTokens)
         )
@@ -54,7 +54,7 @@ struct OllamaTranslator: Translator {
         var urlRequest = URLRequest(url: endpoint.appending(path: "api/chat"))
         urlRequest.httpMethod = "POST"
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        urlRequest.httpBody = try encoder.encode(request)
+        urlRequest.httpBody = try encoder.encode(chatRequest)
         urlRequest.timeoutInterval = 3600
 
         let (data, response) = try await URLSession.shared.data(for: urlRequest)

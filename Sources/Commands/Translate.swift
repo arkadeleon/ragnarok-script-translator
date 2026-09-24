@@ -9,8 +9,9 @@ import ArgumentParser
 import Foundation
 
 /// Translates extracted pages with an instruction model, one source file at a time: batches in
-/// dialogue order so the model sees the conversation flow, terminology in the prompt, mechanical
-/// validation, and a translated copy of each file written as soon as it is done.
+/// dialogue order, each preceded by the lines before it so the model sees the conversation flow,
+/// terminology in the prompt, mechanical validation, and a translated copy of each file written as
+/// soon as it is done.
 ///
 /// Re-running after `extract` picks up upstream changes: a file is redone when its extracted
 /// scripts no longer match the translated copy, and only the texts not yet in the cache go to the
@@ -46,7 +47,7 @@ struct Translate: AsyncParsableCommand {
     @Option(help: "Server URL. Defaults to the provider's standard endpoint.")
     var endpoint: String?
 
-    @Option(help: "Maximum texts per request. Defaults to 40 for ollama, no limit for dashscope.")
+    @Option(help: "Maximum texts per request. Defaults to 20 for ollama, no limit for dashscope.")
     var batchSize: Int?
 
     @Option(help: "Maximum source characters per request. Defaults to no limit for ollama, 40000 for dashscope.")
@@ -62,6 +63,9 @@ struct Translate: AsyncParsableCommand {
     var retryFailed = false
 
     private static let maxAttempts = 3
+
+    /// Lines of the script before a batch that are sent along with it.
+    private static let contextLines = 5
 
     func run() async throws {
         let translator = try makeTranslator()
@@ -165,21 +169,22 @@ struct Translate: AsyncParsableCommand {
 
     // MARK: - Translating one file
 
-    /// Translates whatever in `extracted` the cache does not have yet.
+    /// Translates whatever in `extracted` the cache does not have yet. A text that occurs more than
+    /// once is sent with the speaker and kind of its first occurrence.
     private func translate(_ extracted: ExtractedFile, cache: TranslationCache, glossary: Glossary, translator: any Translator) async -> [(String, Outcome)] {
-        var texts: [String] = []
+        var pending: [Int] = []
         var seen: Set<String> = []
 
-        for script in extracted.scripts {
+        for (index, script) in extracted.scripts.enumerated() {
             let text = script.text
             guard !text.isEmpty, cache.texts[text] == nil, seen.insert(text).inserted else { continue }
             if cache.failures[text] != nil && !retryFailed { continue }
-            texts.append(text)
+            pending.append(index)
         }
-        guard !texts.isEmpty else {
+        guard !pending.isEmpty else {
             return []
         }
-        return await translateBatched(texts, glossary: glossary, translator: translator)
+        return await translateBatched(pending, in: extracted.scripts, translations: cache.texts, glossary: glossary, translator: translator)
     }
 
     private enum Outcome {
@@ -198,64 +203,75 @@ struct Translate: AsyncParsableCommand {
         var failure: TranslationFailure
     }
 
-    /// Sends `texts` in batches, retrying rejected ones in fresh batches up to `maxAttempts`.
+    /// Sends the scripts at `pending` in batches, retrying rejected ones in fresh batches up to
+    /// `maxAttempts`. Each batch goes with the lines before it, translated where that is done
+    /// already, including by earlier batches of this file.
     private func translateBatched(
-        _ texts: [String],
+        _ pending: [Int],
+        in scripts: [ExtractedScript],
+        translations: [String: String],
         glossary: Glossary,
         translator: any Translator
     ) async -> [(String, Outcome)] {
         var results: [(String, Outcome)] = []
+        var translations = translations
 
-        for batch in batches(of: texts) {
-            var remaining = batch
+        for batch in batches(of: pending, in: scripts) {
+            let context = scripts[max(batch[0] - Self.contextLines, 0)..<batch[0]]
+                .filter { !$0.text.isEmpty }
+                .map { TranslationContext(npc: $0.npc, kind: $0.kind, text: $0.text, translation: translations[$0.text]) }
+            var remaining = batch.map { scripts[$0] }
             var lastFailures: [String: TranslationFailure] = [:]
 
             for _ in 0..<Self.maxAttempts where !remaining.isEmpty {
-                let (outputs, errors) = await send(remaining, glossary: glossary, translator: translator)
+                let (outputs, errors) = await send(remaining, context: context, glossary: glossary, translator: translator)
 
-                var retry: [String] = []
-                for text in remaining {
+                var retry: [ExtractedScript] = []
+                for script in remaining {
+                    let text = script.text
                     guard let raw = outputs[text] else {
                         lastFailures[text] = errors[text] ?? TranslationFailure(reason: "missing from response", output: "")
-                        retry.append(text)
+                        retry.append(script)
                         continue
                     }
                     let output = TranslationValidator.tidy(raw, source: text)
                     if let reason = TranslationValidator.validate(source: text, translation: output) {
                         lastFailures[text] = TranslationFailure(reason: reason, output: output)
-                        retry.append(text)
+                        retry.append(script)
                         continue
                     }
                     results.append((text, .success(output)))
+                    translations[text] = output
                 }
                 remaining = retry
             }
 
-            for text in remaining {
-                results.append((text, .failure(lastFailures[text] ?? TranslationFailure(reason: "no attempts", output: ""))))
+            for script in remaining {
+                results.append((script.text, .failure(lastFailures[script.text] ?? TranslationFailure(reason: "no attempts", output: ""))))
             }
         }
         return results
     }
 
-    /// Splits `texts` into requests in dialogue order. A cloud model takes most files whole, which
-    /// gives it the whole conversation for consistent wording; the character limit keeps the
-    /// response of the few very large files well inside the model's output limit.
-    private func batches(of texts: [String]) -> [[String]] {
-        let maxTexts = batchSize ?? (provider == .ollama ? 40 : .max)
+    /// Splits the indices in `pending` into requests in dialogue order. A cloud model takes most
+    /// files whole, which gives it the whole conversation for consistent wording; the character
+    /// limit keeps the response of the few very large files well inside the model's output limit.
+    private func batches(of pending: [Int], in scripts: [ExtractedScript]) -> [[Int]] {
+        let maxTexts = batchSize ?? (provider == .ollama ? 20 : .max)
         let maxCharacters = batchCharacters ?? (provider == .ollama ? .max : 40000)
 
-        var batches: [[String]] = []
-        var batch: [String] = []
+        var batches: [[Int]] = []
+        var batch: [Int] = []
         var characters = 0
-        for text in texts {
-            if !batch.isEmpty, batch.count >= maxTexts || characters + text.count > maxCharacters {
+        for index in pending {
+            let count = scripts[index].text.count
+            if !batch.isEmpty, batch.count >= maxTexts || characters + count > maxCharacters {
                 batches.append(batch)
                 batch = []
                 characters = 0
             }
-            batch.append(text)
-            characters += text.count
+            batch.append(index)
+            characters += count
         }
         if !batch.isEmpty {
             batches.append(batch)
@@ -263,33 +279,36 @@ struct Translate: AsyncParsableCommand {
         return batches
     }
 
-    /// One request for `texts`, keyed by source text. A response the model cut short cannot be
-    /// parsed, so the batch is halved and each half asked again; a single text that still fails is
-    /// reported as an error rather than losing the rest of the batch.
+    /// One request for `scripts`, keyed by source text. A response the model cut short cannot be
+    /// parsed, so the batch is halved and each half asked again with the same context; a single
+    /// text that still fails is reported as an error rather than losing the rest of the batch.
     private func send(
-        _ texts: [String],
+        _ scripts: [ExtractedScript],
+        context: [TranslationContext],
         glossary: Glossary,
         translator: any Translator
     ) async -> (outputs: [String: String], errors: [String: TranslationFailure]) {
-        let items = texts.enumerated().map { TranslationItem(id: $0.offset + 1, text: $0.element) }
-        let prompt = TranslationPrompt.system(language: language, glossary: glossary.entries(in: texts))
+        let items = scripts.enumerated().map {
+            TranslationItem(id: $0.offset + 1, npc: $0.element.npc, kind: $0.element.kind, text: $0.element.text)
+        }
+        let prompt = TranslationPrompt.system(language: language, glossary: glossary.entries(in: scripts.map(\.text)))
 
         do {
-            let outputs = try await translator.translate(items, system: prompt)
+            let outputs = try await translator.translate(TranslationRequest(context: context, items: items), system: prompt)
             var result: [String: String] = [:]
-            for (index, text) in texts.enumerated() {
+            for (index, script) in scripts.enumerated() {
                 if let output = outputs[index + 1] {
-                    result[text] = output
+                    result[script.text] = output
                 }
             }
             return (result, [:])
         } catch {
-            guard texts.count > 1 else {
-                return ([:], [texts[0]: TranslationFailure(reason: "\(error)", output: "")])
+            guard scripts.count > 1 else {
+                return ([:], [scripts[0].text: TranslationFailure(reason: "\(error)", output: "")])
             }
-            let middle = texts.count / 2
-            let first = await send(Array(texts[..<middle]), glossary: glossary, translator: translator)
-            let second = await send(Array(texts[middle...]), glossary: glossary, translator: translator)
+            let middle = scripts.count / 2
+            let first = await send(Array(scripts[..<middle]), context: context, glossary: glossary, translator: translator)
+            let second = await send(Array(scripts[middle...]), context: context, glossary: glossary, translator: translator)
             return (first.outputs.merging(second.outputs) { current, _ in current },
                     first.errors.merging(second.errors) { current, _ in current })
         }

@@ -7,17 +7,33 @@
 
 import Foundation
 
-/// One text to translate, as sent to the model.
+/// What the model is sent: the texts to translate, after the lines that precede them in the script.
+struct TranslationRequest: Encodable {
+    var context: [TranslationContext]
+    var items: [TranslationItem]
+}
+
+/// One text to translate, with who says it and whether it is dialogue or a menu option.
 struct TranslationItem: Encodable {
     var id: Int
+    var npc: String?
+    var kind: ExtractedScript.Kind
     var text: String
+}
+
+/// A line shown before the items for continuity, with its translation when there is one already.
+struct TranslationContext: Encodable {
+    var npc: String?
+    var kind: ExtractedScript.Kind
+    var text: String
+    var translation: String?
 }
 
 /// A model backend that translates a batch of texts, asking for a JSON array back so answers
 /// cannot be misattributed.
 protocol Translator: Sendable {
     /// Returns translations keyed by item id; ids the model skipped are absent.
-    func translate(_ items: [TranslationItem], system: String) async throws -> [Int: String]
+    func translate(_ request: TranslationRequest, system: String) async throws -> [Int: String]
 }
 
 struct TranslatorError: Error, CustomStringConvertible {
@@ -55,11 +71,11 @@ private struct TranslationResponse: Decodable {
 }
 
 extension Translator {
-    /// The user message: the items as JSON.
-    static func payload(for items: [TranslationItem]) throws -> String {
+    /// The user message: the request as JSON.
+    static func payload(for request: TranslationRequest) throws -> String {
         let encoder = JSONEncoder()
         encoder.outputFormatting = .withoutEscapingSlashes
-        return String(decoding: try encoder.encode(["items": items]), as: UTF8.self)
+        return String(decoding: try encoder.encode(request), as: UTF8.self)
     }
 
     /// Parses the model's answer, which must follow `TranslationSchema`.
