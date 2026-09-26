@@ -6,7 +6,7 @@
       "line" : 16,
       "npc" : "MvP Ladder Warper",
       "text" : "[MvP Ladder Warper]\nSay... do you want to play the MvP Ladder game?",
-      "translation" : "[MVP阶梯传送员]\n话说……你想参加MVP阶梯挑战吗？"
+      "translation" : "[MVP阶梯传送员]\n请问...你想玩MVP阶梯游戏吗？"
     },
     {
       "kind" : "option",
@@ -20,14 +20,14 @@
       "line" : 19,
       "npc" : "MvP Ladder Warper",
       "text" : "Information.",
-      "translation" : "资讯。"
+      "translation" : "资讯"
     },
     {
       "kind" : "option",
       "line" : 19,
       "npc" : "MvP Ladder Warper",
       "text" : "Show me the best record.",
-      "translation" : "显示最佳记录。"
+      "translation" : "查看最佳纪录"
     },
     {
       "kind" : "option",
@@ -45,7 +45,7 @@
         "callfunc( \"F_InsertComma\", .register_cost )"
       ],
       "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.\nIf your party can finish the MVP ladder game, each member will earn {0}.\nBut the entrance fee is {1} zeny.",
-      "translation" : "[MVP阶梯传送员]\n在这个游戏中，你的队伍必须按照从弱到强的顺序，击杀所有的MVP魔物。\n如果你的队伍能够完成MVP阶梯挑战，每位成员将获得{0}。\n但入场费是{1}泽尼。"
+      "translation" : "[MVP阶梯传送员]\n在这个游戏中，你的队伍必须按顺序击杀所有的MVP魔物，从最弱的到最强的。\n如果你的队伍完成了MVP阶梯游戏，每位成员将获得{0}。\n但是入场费是{1} Zeny。"
     },
     {
       "kind" : "message",
@@ -55,7 +55,7 @@
         "callfunc( \"F_InsertComma\", .register_cost )"
       ],
       "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.\nBut the entrance fee is {0} zeny.",
-      "translation" : "[MVP阶梯传送员]\n在这个游戏中，你的队伍必须按照从弱到强的顺序，击杀所有的MVP魔物。\n但入场费是{0}泽尼。"
+      "translation" : "[MVP阶梯传送员]\n在这个游戏中，你的队伍必须按顺序击杀所有的MVP魔物，从最弱的到最强的。\n但是入场费是{0} Zeny。"
     },
     {
       "kind" : "message",
@@ -65,14 +65,14 @@
         "callfunc(\"F_InsertPlural\", .finish_item_amount, getitemname( .finish_item_id ))"
       ],
       "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.\nIf your party can finish the MVP ladder game, each member will earn {0}.",
-      "translation" : "[MVP阶梯传送员]\n在这个游戏中，你的队伍必须按照从弱到强的顺序，击杀所有的MVP魔物。\n如果你的队伍能够完成MVP阶梯挑战，每位成员将获得{0}。"
+      "translation" : "[MVP阶梯传送员]\n在这个游戏中，你的队伍必须按顺序击杀所有的MVP魔物，从最弱的到最强的。\n如果你的队伍完成了MVP阶梯游戏，每位成员将获得{0}。"
     },
     {
       "kind" : "message",
       "line" : 23,
       "npc" : "MvP Ladder Warper",
       "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.",
-      "translation" : "[MVP阶梯传送员]\n在这个游戏中，你的队伍必须按照从弱到强的顺序，击杀所有的MVP魔物。"
+      "translation" : "[MVP阶梯传送员]\n在这个游戏中，你的队伍必须按顺序击杀所有的MVP魔物，从最弱的到最强的。"
     },
     {
       "kind" : "message",
@@ -82,14 +82,14 @@
         ".timeout"
       ],
       "text" : "[MvP Ladder Warper]\nYou lose the game if you can't finish in {0} minutes, or if your entire party is killed.\nGood luck!",
-      "translation" : "[MVP阶梯传送员]\n如果你们无法在{0}分钟内完成，或者全队阵亡，则视为挑战失败。\n祝你好运！"
+      "translation" : "[MVP阶梯传送员]\n如果你无法在{0}分钟内完成，或者你的整个队伍被击败，你就输了。\n祝你好运！"
     },
     {
       "kind" : "message",
       "line" : 35,
       "npc" : "MvP Ladder Warper",
       "text" : "[MvP Ladder Warper]\nNobody has finished this game yet.",
-      "translation" : "[MVP阶梯传送员]\n目前还没有人完成过这个挑战。"
+      "translation" : "[MVP阶梯传送员]\n目前还没有人完成这个游戏。"
     },
     {
       "kind" : "message",
@@ -103,7 +103,7 @@
         "$mvpladderparty_member$[.@i]"
       ],
       "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.\n^000000{3}. ^0000FF{4}",
-      "translation" : "[MVP阶梯传送员]\n最佳记录是\n[ {0}分 {1}秒 ]\n由队伍 ^FF0000{2}^000000 创造。\n^000000{3}. ^0000FF{4}"
+      "translation" : "[MVP阶梯传送员]\n最佳纪录是\n[ {0} 分 {1} 秒 ]\n由队伍 ^FF0000{2}^000000 创造。\n^000000{3}。 ^0000FF{4}"
     },
     {
       "kind" : "message",
@@ -115,63 +115,63 @@
         "$mvpladdderparty_name$"
       ],
       "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.",
-      "translation" : "[MVP阶梯传送员]\n最佳记录是\n[ {0}分 {1}秒 ]\n由队伍 ^FF0000{2}^000000 创造。"
+      "translation" : "[MVP阶梯传送员]\n最佳纪录是\n[ {0} 分 {1} 秒 ]\n由队伍 ^FF0000{2}^000000 创造。"
     },
     {
       "kind" : "option",
       "line" : 48,
       "npc" : "MvP Ladder Warper",
       "text" : "Close.",
-      "translation" : "关闭。"
+      "translation" : "关闭"
     },
     {
       "kind" : "option",
       "line" : 48,
       "npc" : "MvP Ladder Warper",
       "text" : "Reset the record.",
-      "translation" : "重置记录。"
+      "translation" : "重置纪录"
     },
     {
       "kind" : "option",
       "line" : 49,
       "npc" : "MvP Ladder Warper",
       "text" : "Never mind.",
-      "translation" : "算了。"
+      "translation" : "算了"
     },
     {
       "kind" : "option",
       "line" : 49,
       "npc" : "MvP Ladder Warper",
       "text" : "I really want to reset it.",
-      "translation" : "我确实想重置它。"
+      "translation" : "我确实想重置它"
     },
     {
       "kind" : "message",
       "line" : 53,
       "npc" : "MvP Ladder Warper",
       "text" : "[MvP Ladder Warper]\nRecord reset successfully.",
-      "translation" : "[MVP阶梯传送员]\n记录已成功重置。"
+      "translation" : "[MVP阶梯传送员]\n纪录重置成功。"
     },
     {
       "kind" : "message",
       "line" : 57,
       "npc" : "MvP Ladder Warper",
       "text" : "[MvP Ladder Warper]\nWhen you are strong enough to complete the game, please come back.",
-      "translation" : "[MVP阶梯传送员]\n等你足够强大可以完成挑战时，请再来。"
+      "translation" : "[MVP阶梯传送员]\n当你足够强大能够完成游戏时，请回来找我。"
     },
     {
       "kind" : "message",
       "line" : 62,
       "npc" : "MvP Ladder Warper",
       "text" : "[MvP Ladder Warper]\nYou have to form a party to play.",
-      "translation" : "[MVP阶梯传送员]\n你必须组成一个队伍才能参加。"
+      "translation" : "[MVP阶梯传送员]\n你必须组建队伍才能玩。"
     },
     {
       "kind" : "message",
       "line" : 67,
       "npc" : "MvP Ladder Warper",
       "text" : "[MvP Ladder Warper]\nOnly the party leader can register.",
-      "translation" : "[MVP阶梯传送员]\n只有队长可以报名。"
+      "translation" : "[MVP阶梯传送员]\n只有队伍首领才能报名。"
     },
     {
       "kind" : "message",
@@ -181,7 +181,7 @@
         ".register_min"
       ],
       "text" : "[MvP Ladder Warper]\nYou have to form a party with exactly {0} members to play.",
-      "translation" : "[MVP阶梯传送员]\n你必须组成一个恰好有{0}名成员的队伍才能参加。"
+      "translation" : "[MVP阶梯传送员]\n你必须组建恰好有{0}名成员的队伍才能玩。"
     },
     {
       "kind" : "message",
@@ -192,21 +192,21 @@
         "strnpcinfo(4)"
       ],
       "text" : "[MvP Ladder Warper]\nYour party must have {0} members online on map '{1}'.",
-      "translation" : "[MVP阶梯传送员]\n你的队伍必须有{0}名成员在线并位于地图“{1}”上。"
+      "translation" : "[MVP阶梯传送员]\n你的队伍必须在地图'{1}'上有{0}名成员在线。"
     },
     {
       "kind" : "message",
       "line" : 93,
       "npc" : "MvP Ladder Warper",
       "text" : "[MvP Ladder Warper]\nYou don't have enough zeny. Please come back when you do.",
-      "translation" : "[MVP阶梯传送员]\n你的泽尼不足。请凑够后再来。"
+      "translation" : "[MVP阶梯传送员]\n您的Zeny不足，请攒够后再来。"
     },
     {
       "kind" : "message",
       "line" : 98,
       "npc" : "MvP Ladder Warper",
       "text" : "[MvP Ladder Warper]\nI'm sorry, but a party is currently playing the game. Please standby until the party is finished.\nThank you.",
-      "translation" : "[MVP阶梯传送员]\n抱歉，目前已有队伍正在进行挑战。请等待该队伍结束后再来。\n谢谢。"
+      "translation" : "[MVP阶梯传送员]\n很抱歉，当前有队伍正在游戏中。请等待他们结束后再试。\n谢谢。"
     }
   ]
 }

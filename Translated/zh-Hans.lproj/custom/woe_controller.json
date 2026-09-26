@@ -10,7 +10,7 @@
         ".Regions$[.@i]"
       ],
       "text" : "[WOE Information]\nThe War of Emperium is ^0055FFactive^000000 until ^FF0000{0}^000000 in the following regions:\n \n > ^777777{1}^000000",
-      "translation" : "[攻城战资讯]\n攻城战在以下地区于 ^FF0000{0}^000000 前 ^0055FF进行中^000000：\n \n > ^777777{1}^000000"
+      "translation" : "[攻城战资讯]\n攻城战^0055FF正在进行中^000000，将持续到^FF0000{0}^000000，涉及以下区域：\n \n > ^777777{1}^000000"
     },
     {
       "kind" : "message",
@@ -20,14 +20,14 @@
         "Add_Zero(.@i)"
       ],
       "text" : "[WOE Information]\nThe War of Emperium is ^0055FFactive^000000 until ^FF0000{0}^000000 in the following regions:\n ",
-      "translation" : "[攻城战资讯]\n攻城战在以下地区于 ^FF0000{0}^000000 前 ^0055FF进行中^000000："
+      "translation" : "[攻城战资讯]\n攻城战^0055FF正在进行中^000000，将持续到^FF0000{0}^000000，涉及以下区域：\n "
     },
     {
       "kind" : "message",
       "line" : 373,
       "npc" : "WOE_CONTROL",
       "text" : "[WOE Information]\nThe War of Emperium is ^0055FFactive^000000.",
-      "translation" : "[攻城战资讯]\n攻城战 ^0055FF进行中^000000。"
+      "translation" : "[攻城战资讯]\n攻城战^0055FF正在进行中^000000。"
     },
     {
       "kind" : "message",
@@ -38,28 +38,28 @@
         "Add_Zero(.@time[1])"
       ],
       "text" : "[WOE Information]\nThe War of Emperium is ^777777inactive^000000.\n \nThe next session will begin\non ^0055FF{0}^000000 at {1}^000000.",
-      "translation" : "[攻城战资讯]\n攻城战 ^777777未进行^000000。\n \n下一轮将于\n^0055FF{0}^000000 {1}^000000 开始。"
+      "translation" : "[攻城战资讯]\n攻城战^777777未开启^000000。\n \n下一场将于^0055FF{0}^000000的{1}^000000开始。"
     },
     {
       "kind" : "message",
       "line" : 373,
       "npc" : "WOE_CONTROL",
       "text" : "[WOE Information]\nThe War of Emperium is ^777777inactive^000000.",
-      "translation" : "[攻城战资讯]\n攻城战 ^777777未进行^000000。"
+      "translation" : "[攻城战资讯]\n攻城战^777777未开启^000000。"
     },
     {
       "kind" : "option",
       "line" : 404,
       "npc" : "WOE_CONTROL",
       "text" : " ~ Check schedule...",
-      "translation" : " ~ 查看日程..."
+      "translation" : "查看日程..."
     },
     {
       "kind" : "option",
       "line" : 404,
       "npc" : "WOE_CONTROL",
       "text" : " ~ View castle owners...",
-      "translation" : " ~ 查看城堡归属..."
+      "translation" : "查看城堡归属..."
     },
     {
       "kind" : "option",
@@ -132,7 +132,7 @@
       "line" : 426,
       "npc" : "WOE_CONTROL",
       "text" : "[Schedule]\nNo times are configured.",
-      "translation" : "[日程]\n未配置时间。"
+      "translation" : "[日程]\n未设置任何时间。"
     },
     {
       "kind" : "message",
@@ -193,42 +193,42 @@
         "(.Size/4)"
       ],
       "text" : "[Session Manager]\nThere are ^0055FF{0} session(s)^000000 configured.\nWhat would you like to do?",
-      "translation" : "[会话管理员]\n已配置 ^0055FF{0} 个会话^000000。\n你想做什么？"
+      "translation" : "[会话管理员]\n已配置^0055FF{0}^000000个会话。\n您想要执行什么操作？"
     },
     {
       "kind" : "option",
       "line" : 460,
       "npc" : "WOE_CONTROL",
       "text" : " ~ Add a session...",
-      "translation" : " ~ 添加会话..."
+      "translation" : "添加会话..."
     },
     {
       "kind" : "option",
       "line" : 460,
       "npc" : "WOE_CONTROL",
       "text" : " ~ Delete a session...",
-      "translation" : " ~ 删除会话..."
+      "translation" : "移除会话..."
     },
     {
       "kind" : "option",
       "line" : 460,
       "npc" : "WOE_CONTROL",
       "text" : " ~ Reload settings...",
-      "translation" : " ~ 重新载入设置..."
+      "translation" : "重新载入设置..."
     },
     {
       "kind" : "option",
       "line" : 460,
       "npc" : "WOE_CONTROL",
       "text" : " ~ ^777777Go back^000000",
-      "translation" : " ~ ^777777返回^000000"
+      "translation" : " ^777777返回^000000"
     },
     {
       "kind" : "message",
       "line" : 462,
       "npc" : "WOE_CONTROL",
       "text" : "[New Session]\nSelect a day.",
-      "translation" : "[新一轮]\n选择一天。"
+      "translation" : "[新一轮]\n请选择日期。"
     },
     {
       "kind" : "option",
@@ -248,7 +248,7 @@
         ".Days$[.@Day]"
       ],
       "text" : "[New Session]\nSelect a start time for ^0055FF{0}^000000.",
-      "translation" : "[新一轮]\n为 ^0055FF{0}^000000 选择开始时间。"
+      "translation" : "[新一轮]\n请选择 ^0055FF{0}^000000 的开始时间。"
     },
     {
       "kind" : "message",
@@ -258,14 +258,14 @@
         ".Days$[.@Day]"
       ],
       "text" : "[New Session]\nSelect an end time for ^0055FF{0}^000000.",
-      "translation" : "[新一轮]\n为 ^0055FF{0}^000000 选择结束时间。"
+      "translation" : "[新一轮]\n请选择 ^0055FF{0}^000000 的结束时间。"
     },
     {
       "kind" : "message",
       "line" : 485,
       "npc" : "WOE_CONTROL",
       "text" : "[New Session]\nThe chosen times overlap with an existing session.",
-      "translation" : "[新一轮]\n所选时间与现有会话冲突。"
+      "translation" : "[新一轮]\n所选时间与现有会话重叠。"
     },
     {
       "kind" : "message",
@@ -347,14 +347,14 @@
       "line" : 541,
       "npc" : "WOE_CONTROL",
       "text" : "[Remove Session]\nThere are no sessions configured.",
-      "translation" : "[移除会话]\n未配置任何会话。"
+      "translation" : "[移除会话]\n没有已配置的会话。"
     },
     {
       "kind" : "message",
       "line" : 541,
       "npc" : "WOE_CONTROL",
       "text" : "[Remove Session]\nSelect a session to remove.",
-      "translation" : "[移除会话]\n选择要移除的会话。"
+      "translation" : "[移除会话]\n请选择要移除的会话。"
     },
     {
       "kind" : "message",
@@ -399,14 +399,14 @@
       "line" : 571,
       "npc" : "WOE_CONTROL",
       "text" : "[Reload Settings]\nThis will trigger all events related to new session configurations, if any.\n \nBe aware that this will disrupt the current WOE session.",
-      "translation" : "[重新载入设置]\n这将触发所有与新会话配置相关的事件（如果有）。\n \n请注意，这会中断当前的攻城战会话。"
+      "translation" : "[重新载入设置]\n这将触发所有与新会话配置相关的事件（如果有的话）。\n \n请注意，这将中断当前的攻城战会话。"
     },
     {
       "kind" : "message",
       "line" : 571,
       "npc" : "WOE_CONTROL",
       "text" : "[Reload Settings]\nThis will trigger all events related to new session configurations, if any.",
-      "translation" : "[重新载入设置]\n这将触发所有与新会话配置相关的事件（如果有）。"
+      "translation" : "[重新载入设置]\n这将触发所有与新会话配置相关的事件（如果有的话）。"
     },
     {
       "kind" : "option",
@@ -441,14 +441,14 @@
       "line" : 589,
       "npc" : "WOE_CONTROL",
       "text" : "[Force Agit End]\nWOE has already ended.",
-      "translation" : "[强制结束攻城]\n攻城战已结束。"
+      "translation" : "[强制结束攻城]\n攻城战已经结束。"
     },
     {
       "kind" : "message",
       "line" : 589,
       "npc" : "WOE_CONTROL",
       "text" : "[Force Agit End]\nThis command will safely execute all AgitEnd events.\n \nKill the current WOE session?",
-      "translation" : "[强制结束攻城]\n此命令将安全执行所有 AgitEnd 事件。\n \n终止当前攻城战会话？"
+      "translation" : "[强制结束攻城]\n此命令将安全地执行所有结束攻城事件。\n \n是否终止当前的攻城战会话？"
     },
     {
       "kind" : "option",

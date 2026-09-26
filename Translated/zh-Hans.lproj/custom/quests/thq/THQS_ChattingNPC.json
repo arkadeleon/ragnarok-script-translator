@@ -6,7 +6,7 @@
       "line" : 18,
       "npc" : "Notice",
       "text" : "^FF0000[ Treasure Hunter Guild House ]^000000\n \nWelcome to the Treasure Hunter's Guild House.\nFeel free to drop in and look around\nand feel free to become a member if you wish.\n \nFor membership applications please talk to Keegan\nup the stairs and down the hall.",
-      "translation" : "^FF0000[寻宝猎人公会总部]^000000\n\n欢迎来到寻宝猎人公会总部。\n请随意参观，\n如果您愿意，也欢迎加入成为会员。\n\n如需申请入会，请上楼穿过走廊去找基根。"
+      "translation" : "^FF0000[ 猎人公会 ]^000000\n\n欢迎来到猎人公会。\n请随意参观，\n如果您愿意，也可以申请成为会员。\n\n如需申请会员资格，请上楼并沿着走廊找到基根。"
     },
     {
       "kind" : "message",
@@ -20,14 +20,14 @@
       "line" : 30,
       "npc" : "Ahlma",
       "text" : "[Ahlma]\nWelcome to The Treasure Hunter Guild.\nHow may I help you?",
-      "translation" : "[阿尔玛]\n欢迎来到寻宝猎人公会。\n请问有什么可以帮您的吗？"
+      "translation" : "[阿尔玛]\n欢迎来到猎人公会。\n有什么可以帮您的吗？"
     },
     {
       "kind" : "option",
       "line" : 35,
       "npc" : "Ahlma",
       "text" : "Save",
-      "translation" : "保存进度"
+      "translation" : "保存"
     },
     {
       "kind" : "option",
@@ -41,28 +41,28 @@
       "line" : 36,
       "npc" : "Ahlma",
       "text" : "[Ahlma]\nOk, saved. Thank you ~ See you soon~",
-      "translation" : "[阿尔玛]\n好的，已保存。谢谢～再见～"
+      "translation" : "[阿尔玛]\n好的，已保存。谢谢~ 下次见~"
     },
     {
       "kind" : "message",
       "line" : 41,
       "npc" : "Ahlma",
       "text" : "[Ahlma]\nWell if you think you are safe, good on you.",
-      "translation" : "[阿尔玛]\n好吧，如果你觉得安全的话，那就好。"
+      "translation" : "[阿尔玛]\n既然你觉得安全，那就祝你好运吧。"
     },
     {
       "kind" : "message",
       "line" : 45,
       "npc" : "Ahlma",
       "text" : "Sorry, members only.",
-      "translation" : "抱歉，仅限会员。"
+      "translation" : "抱歉，仅限会员使用。"
     },
     {
       "kind" : "message",
       "line" : 50,
       "npc" : "Smile Helper",
       "text" : "[Smile Gal]\nOh man...I am so sick of\ntrading Mr. Smile masks for crap.\n \nYou ask me for one and you'll find yourself 10 pounds lighter!",
-      "translation" : "[微笑女孩]\n噢，天哪……我真是受够了\n拿笑脸面具去换那些破烂玩意儿。\n\n你要是敢跟我要一个，小心让你瘦上十磅！"
+      "translation" : "[微笑女孩]\n天哪...我受够了用笑脸面具换那些破烂东西。\n\n你要是敢跟我换，保证让你轻上十磅！"
     },
     {
       "kind" : "message",
@@ -76,24 +76,25 @@
       "line" : 59,
       "npc" : "Female Assasin",
       "text" : "[Sharlet]\nUmm sorry I'm not gonna waste my time talking to you if you aren't even a member!",
-      "translation" : "[夏莱特]\n嗯，抱歉，如果你连会员都不是，我可不想浪费时间和你说话！"
+      "translation" : "[夏莱特]\n嗯，抱歉，如果你连会员都不是，我可没空跟你废话！"
     },
     {
       "kind" : "message",
       "line" : 67,
       "npc" : "Female Assasin",
       "text" : "How are you reading this???\nWell unless you are reading the code :)",
-      "translation" : "你怎么能看到这段文字？？？\n除非你在看代码吧 :)"
+      "translation" : "你怎么能读到这段话？？？\n除非你是在看代码 :)"
     },
     {
+      "error" : "speaker header added",
       "kind" : "message",
       "line" : 71,
       "npc" : "Female Assasin",
+      "output" : "[女 刺客]\n啊，欢迎，寻宝猎人{0}。\n你听说过那个独自闯入格拉斯特海姆的勇敢男子吗？他一定是疯了。",
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "Ahh welcome fellow Treasure Hunter {0}.\nDid you hear about that brave man that went into Glast Heim alone?! He must be crazy.",
-      "translation" : "啊，欢迎，同为寻宝猎人的{0}。\n你听说那个独自闯入格拉斯特海姆的勇敢家伙了吗？！他一定是疯了。"
+      "text" : "Ahh welcome fellow Treasure Hunter {0}.\nDid you hear about that brave man that went into Glast Heim alone?! He must be crazy."
     },
     {
       "kind" : "message",
@@ -103,7 +104,7 @@
         "strcharinfo(0)"
       ],
       "text" : "{0} don't you have something better you could be doing? Like a quest.",
-      "translation" : "{0}，你难道没有更重要的事情要做吗？比如去做个任务。"
+      "translation" : "{0}，你难道没有更该做的事吗？比如去做个任务。"
     },
     {
       "kind" : "message",
@@ -117,17 +118,18 @@
       "line" : 80,
       "npc" : "Female Wizard",
       "text" : "[Sasha]\nUmm sorry I'm not gonna waste my time talking to you if you aren't even a member!",
-      "translation" : "[萨莎]\n嗯，抱歉，如果你连会员都不是，我可不想浪费时间和你说话！"
+      "translation" : "[萨莎]\n嗯，抱歉，如果你连会员都不是，我可没空跟你废话！"
     },
     {
+      "error" : "speaker header added",
       "kind" : "message",
       "line" : 87,
       "npc" : "Female Wizard",
+      "output" : "[女 法师]\n啊，欢迎，寻宝猎人{0}。\n你听说过那个在树林里四处游荡的山羊人吗？\n\n据说他叫巴风特，已经在普隆德拉外的普勒斯特迷宫里游荡很久了。",
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "Ahh welcome fellow Treasure Hunter {0}.\nDid you hear about that goat man running around in the trees?\n \nApparently his name is Baphomet and he has been running around the Forest Maze out side of Prontera for quite some time now.",
-      "translation" : "啊，欢迎，同为寻宝猎人的{0}。\n你听说那个在树林里到处乱跑的山羊人了吗？\n\n据说他的名字叫巴风特，他在普隆德拉外面的普勒斯特迷宫附近已经游荡相当长一段时间了。"
+      "text" : "Ahh welcome fellow Treasure Hunter {0}.\nDid you hear about that goat man running around in the trees?\n \nApparently his name is Baphomet and he has been running around the Forest Maze out side of Prontera for quite some time now."
     },
     {
       "kind" : "message",
@@ -137,7 +139,7 @@
         "strcharinfo(0)"
       ],
       "text" : "{0} don't you have something better you could be doing? Like a quest.",
-      "translation" : "{0}，你难道没有更重要的事情要做吗？比如去做个任务。"
+      "translation" : "{0}，你难道没有更该做的事吗？比如去做个任务。"
     }
   ]
 }
