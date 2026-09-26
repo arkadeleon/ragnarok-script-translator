@@ -12,7 +12,7 @@ import Foundation
 enum TranslationValidator {
     private static var placeholderPattern: Regex<Substring> { /\{\d+\}/ }
     private static var colorPattern: Regex<Substring> { /\^[0-9A-Fa-f]{6}/ }
-    private static var headerPattern: Regex<(Substring, Substring)> { /^\[[^\]\n]*\](\n|$)/ }
+    private static var headerPattern: Regex<(Substring, Substring)> { /^[ \t]*\[[ \t]*[^\]\n]*?[ \t]*\]\]?[ \t]*(\n|$)/ }
 
     /// Returns a reason the translation is unacceptable, or nil if it passes.
     static func validate(source: String, translation: String) -> String? {
