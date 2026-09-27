@@ -1,0 +1,1517 @@
+{
+  "file" : "npc/other/arena/arena_room.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 21,
+      "npc" : "Vendigos",
+      "text" : "[Vendigos]\nWelcome to the world of Arena, the battle against a time limit.\nMy name is Vendigos, I am here to help you.",
+      "translation" : "[文迪戈斯]\n欢迎来到竞技场，这里是与时间赛跑的战斗之地。\n我是文迪戈斯，很乐意为您提供帮助。"
+    },
+    {
+      "kind" : "message",
+      "line" : 25,
+      "npc" : "Vendigos",
+      "text" : "[Vendigos]\nIf you have any questions, feel free to ask me.",
+      "translation" : "[文迪戈斯]\n如果您有任何问题，请随时向我提问。"
+    },
+    {
+      "kind" : "option",
+      "line" : 29,
+      "npc" : "Vendigos",
+      "text" : "How to challenge",
+      "translation" : "挑战方法"
+    },
+    {
+      "kind" : "option",
+      "line" : 29,
+      "npc" : "Vendigos",
+      "text" : "About Arena Points",
+      "translation" : "关于竞技场点数"
+    },
+    {
+      "kind" : "option",
+      "line" : 29,
+      "npc" : "Vendigos",
+      "text" : "My Current Arena Points",
+      "translation" : "我的当前竞技场点数"
+    },
+    {
+      "kind" : "option",
+      "line" : 29,
+      "npc" : "Vendigos",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Vendigos",
+      "text" : "[Vendigos]\nThere are two different kinds of arena mode such as ^3131FFPlayer Mode^000000 and ^3131FFParty Mode^000000.",
+      "translation" : "[文迪戈斯]\n竞技场有两种不同的模式，分别是^3131FF单人模式^000000和^3131FF队伍模式^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "Vendigos",
+      "text" : "[Vendigos]\n^3131FFPlayer Mode^000000 consists of 4 different stages based on character level from 50~80.\nFor a party with 5 members, they can participate in ^3131FFParty Mode^000000.",
+      "translation" : "[文迪戈斯]\n^3131FF单人模式^000000根据角色等级（50~80级）分为4个不同的阶段。\n由5名成员组成的队伍可以参加^3131FF队伍模式^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 38,
+      "npc" : "Vendigos",
+      "text" : "[Vendigos]\nFor ^3131FFeach Player Mode Stage^000000, characters who are 20 levels higher than the level requirement on each stage cannot enter. This is to prevent high level characters preoccupying a low level stage.",
+      "translation" : "[文迪戈斯]\n在^3131FF每个单人模式阶段^000000中，等级比该阶段要求高20级以上的角色无法进入。这是为了防止高等级角色占用低等级阶段。"
+    },
+    {
+      "kind" : "message",
+      "line" : 41,
+      "npc" : "Vendigos",
+      "text" : "[Vendigos]\nThere are the NPCs for Player Mode Stages from 12 o'clock direction to the reversed clock direction.\nWhile you're waiting in a chat room, you will be automatically guided to an arena room by the waiting order.",
+      "translation" : "[文迪戈斯]\n单人模式各阶段的NPC位于12点钟方向，按逆时针方向排列。\n当您在聊天室等待时，系统会根据等待顺序自动将您引导至竞技场房间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Vendigos",
+      "text" : "[Vendigos]\nLet me explain about the ^3131FFArena Point^000000.\nIt is a reward point for players who ^3131FFsuccessfully cleared a arena stage^000000, a player can possess the maximum 30,000 points.",
+      "translation" : "[文迪戈斯]\n让我来介绍一下^3131FF竞技场点数^000000。\n这是奖励给^3131FF成功通关竞技场阶段^000000的玩家的点数，每位玩家最多可持有30,000点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Vendigos",
+      "text" : "[Vendigos]\nEven if you did not clear a stage due to time-over or other errors, you will be given a very small amount of arena points.",
+      "translation" : "[文迪戈斯]\n即使因时间耗尽或其他错误未能通关阶段，您也会获得少量的竞技场点数。"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Vendigos",
+      "text" : "[Vendigos]\nRegarding the use of Arena Points,\nwe are providing various services such as souvenir photograph services through an NPC named Givu.",
+      "translation" : "[文迪戈斯]\n关于竞技场点数的使用，\n我们提供多种服务，例如通过名为吉武的NPC提供的纪念照片服务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 58,
+      "npc" : "Vendigos",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[Vendigos]\nLet me check {0}'s current arena points.",
+      "translation" : "[文迪戈斯]\n让我查看一下{0}当前的竞技场点数。"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "Vendigos",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "arena_point"
+      ],
+      "text" : "[Vendigos]\n{0} has total ^3131FF{1}^000000 points.",
+      "translation" : "[文迪戈斯]\n{0}总共拥有^3131FF{1}^000000点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Vendigos",
+      "text" : "[Vendigos]\nIf you wish to know how to use arena points, please refer to the 2nd menu ^3131FF'About Arena Points'^000000.",
+      "translation" : "[文迪戈斯]\n如果您想了解如何使用竞技场点数，请参阅第二个菜单^3131FF“关于竞技场点数”^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 68,
+      "npc" : "Vendigos",
+      "text" : "[Vendigos]\nOkay then,\nplease have\na good time.",
+      "translation" : "[文迪戈斯]\n那么，\n祝您玩得愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "Vendigos",
+      "text" : "[Vendigos]\nIs there anything\nmore I can help you with?",
+      "translation" : "[文迪戈斯]\n还有什么我可以帮您的吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 107,
+      "npc" : "Arena Record Staff",
+      "text" : "[Owen Kheuv]\nHello, my name is Own Kheuv\nin charge of every arena stage record of players.",
+      "translation" : "[欧文·克夫]\n您好，我是欧文·克夫，负责记录每位玩家在竞技场各阶段的成绩。"
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Arena Record Staff",
+      "text" : "[Owen Kheuv]\nWould you like to check the top record players in each stage?\nIf so, please choose a menu below.",
+      "translation" : "[欧文·克夫]\n您想查看各阶段排名靠前的玩家吗？\n如果是，请选择下方的菜单。"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Arena Record Staff",
+      "text" : "Lv 50 Stage",
+      "translation" : "50级阶段"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Arena Record Staff",
+      "text" : "Lv 60 Stage",
+      "translation" : "60级阶段"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Arena Record Staff",
+      "text" : "Lv 70 Stage",
+      "translation" : "70级阶段"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Arena Record Staff",
+      "text" : "Lv 80 Stage",
+      "translation" : "80级阶段"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Arena Record Staff",
+      "text" : "Party Stage",
+      "translation" : "队伍阶段"
+    },
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "Arena Record Staff",
+      "placeholders" : [
+        "$arena_50topn$",
+        "$top_50min",
+        "$top_50sec"
+      ],
+      "text" : "[Owen Kheuv]\nCurrently the top player of the arena Lv 50 stage is ^3131FF {0}^000000, the top record is ^3131FF{1}^000000 minutes ^3131FF{2}^000000 seconds.",
+      "translation" : "[欧文·克夫]\n目前竞技场50级阶段排名第一的玩家是^3131FF{0}^000000，最佳纪录为^3131FF{1}^000000分^3131FF{2}^000000秒。"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Arena Record Staff",
+      "placeholders" : [
+        "$arena_60topn$",
+        "$top_60min",
+        "$top_60sec"
+      ],
+      "text" : "[Owen Kheuv]\nCurrenly the top player of the arena Lv 60 stage is ^3131FF{0}^000000, the top record is ^3131FF{1}^000000 minutes ^3131FF{2}^000000 seconds.",
+      "translation" : "[欧文·克夫]\n目前竞技场60级阶段排名第一的玩家是^3131FF{0}^000000，最佳纪录为^3131FF{1}^000000分^3131FF{2}^000000秒。"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "Arena Record Staff",
+      "placeholders" : [
+        "$arena_70topn$",
+        "$top_70min",
+        "$top_70sec"
+      ],
+      "text" : "[Owen Kheuv]\nCurrenly the top player of the arena Lv 70 stage is ^3131FF{0}^000000, the top record is ^3131FF{1}^000000 minutes ^3131FF{2}^000000 seconds.",
+      "translation" : "[欧文·克夫]\n目前竞技场70级阶段排名第一的玩家是^3131FF{0}^000000，最佳纪录为^3131FF{1}^000000分^3131FF{2}^000000秒。"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Arena Record Staff",
+      "placeholders" : [
+        "$arena_80topn$",
+        "$top_80min",
+        "$top_80sec"
+      ],
+      "text" : "[Owen Kheuv]\nCurrenly the top player of the arena Lv 80 stage is ^3131FF{0}^000000, the top record is ^3131FF{1}^000000 minutes ^3131FF{2}^000000 seconds.",
+      "translation" : "[欧文·克夫]\n目前竞技场80级阶段排名第一的玩家是^3131FF{0}^000000，最佳纪录为^3131FF{1}^000000分^3131FF{2}^000000秒。"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Arena Record Staff",
+      "placeholders" : [
+        "$arena_pttopn$",
+        "$top_ptmin",
+        "$top_ptsec"
+      ],
+      "text" : "[Owen Kheuv]\nCurrenly the top party is ^3131FF{0}^000000, the top record is ^3131FF{1}^000000 minutes ^3131FF{2}^000000 seconds.",
+      "translation" : "[欧文·克夫]\n目前排名第一的队伍是^3131FF{0}^000000，最佳纪录为^3131FF{1}^000000分^3131FF{2}^000000秒。"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "Helper Pat",
+      "text" : "[Pat]\nWelcome, welcome.\nI am a helper of the Lv 50 arena stage.",
+      "translation" : "[帕特]\n欢迎，欢迎。\n我是50级竞技场阶段的助手。"
+    },
+    {
+      "kind" : "message",
+      "line" : 144,
+      "npc" : "Helper Pat",
+      "text" : "[Pat]\nThis ^3131FFLv 50 arena stage^000000\nis accessable to characters from ^FF0000level 50^000000 to ^FF0000level 69^000000.",
+      "translation" : "[帕特]\n这个^3131FF50级竞技场阶段^000000\n允许^FF000050级^000000到^FF000069级^000000的角色进入。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Helper Pat",
+      "text" : "[Pat]\nThis level limitation is to prevent high level characters abusing low level arena stages. I hope you will understand.\nAlso we accept an entrance fee, 1,000 zeny.",
+      "translation" : "[帕特]\n设置等级限制是为了防止高等级角色滥用低等级竞技场阶段，希望您能理解。\n此外，我们需要收取1,000 Zeny的入场费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 152,
+      "npc" : "Helper Pat",
+      "text" : "[Pat]\nLet me introduce you about the play rules of arena.",
+      "translation" : "[帕特]\n让我为您介绍一下竞技场的游玩规则。"
+    },
+    {
+      "kind" : "message",
+      "line" : 155,
+      "npc" : "Helper Pat",
+      "text" : "[Pat]\n^3131FFWait in a chat room for your turn coming.^000000\nWhen it's your turn, you will be automatically warped to an arena map.",
+      "translation" : "[帕特]\n^3131FF请在聊天室等待轮到您。^000000\n当轮到您时，您将被自动传送到竞技场地图。"
+    },
+    {
+      "kind" : "message",
+      "line" : 159,
+      "npc" : "Helper Pat",
+      "text" : "[Pat]\nAs immediately as you enter, a timer to check your play time will be activated.\nPlease follow what ^3131FFHeel and Toe^000000 guides you. ",
+      "translation" : "[帕特]\n您一进入，计时器就会启动以记录您的游玩时间。\n请跟随^3131FF脚跟和脚尖^000000的指引。"
+    },
+    {
+      "kind" : "message",
+      "line" : 163,
+      "npc" : "Helper Pat",
+      "text" : "[Pat]\nYou have a ^3131FF5 minutes^000000 battle time.",
+      "translation" : "[帕特]\n您有^3131FF5分钟^000000的战斗时间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 166,
+      "npc" : "Helper Pat",
+      "text" : "[Pat]\nAfter you clear every room including a boss room, you will be warped again to an ^3131FFending waiting room^000000.\nYou can only allow to stay in the waiting room for ^3131FF1 minute^000000, please hurry up to receive the arena points and leave.",
+      "translation" : "[帕特]\n当您通过所有房间（包括Boss房）后，您将被再次传送到^3131FF结束等待室^000000。\n您只能在等待室停留^3131FF1分钟^000000，请抓紧时间领取竞技场点数并离开。"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Helper Pat",
+      "text" : "[Pat]\nIf you stay over 1 minute inside the ending waiting room, you will be forced outside and will not receive any arena points. Please remember that.",
+      "translation" : "[帕特]\n如果您在结束等待室停留超过1分钟，将被强制传送出去，且无法获得任何竞技场点数。请记住这一点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 173,
+      "npc" : "Helper Pat",
+      "text" : "[Pat]\nI hope you will have a good time.",
+      "translation" : "[帕特]\n祝您玩得愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 179,
+      "npc" : "Helper Ben",
+      "text" : "[Ben]\nWelcome, welcome.\nI am a helper of the Lv 60 arena stage.",
+      "translation" : "[本]\n欢迎，欢迎。\n我是60级竞技场阶段的助手。"
+    },
+    {
+      "kind" : "message",
+      "line" : 183,
+      "npc" : "Helper Ben",
+      "text" : "[Ben]\nThis ^3131FFLv 60 arena stage^000000\nis accessable to characters from ^FF0000level 60^000000 to ^FF0000level 79^000000.",
+      "translation" : "[本]\n这个^3131FF60级竞技场阶段^000000\n对^FF000060级^000000到^FF000079级^000000的角色开放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 187,
+      "npc" : "Helper Ben",
+      "text" : "[Ben]\nThis level limitation is to prevent high level characters abusing low level arena stages. I hope you will understand.\nAlso we accept an entrance fee, 1,000 zeny.",
+      "translation" : "[本]\n设置等级限制是为了防止高等级角色滥用低等级竞技场阶段。希望您能理解。\n此外，我们需要收取1,000 Zeny的入场费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Helper Ben",
+      "text" : "[Ben]\nLet me introduce you about the play rules of arena.",
+      "translation" : "[本]\n让我为您介绍竞技场的游玩规则。"
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "Helper Ben",
+      "text" : "[Ben]\n^3131FFWait in a chat room for your turn coming.^000000\nWhen it's your turn, you will be automatically warped to an arena map.",
+      "translation" : "[本]\n^3131FF请在聊天室等待轮到您的时候。^000000\n当轮到您时，您将被自动传送到竞技场地图。"
+    },
+    {
+      "kind" : "message",
+      "line" : 198,
+      "npc" : "Helper Ben",
+      "text" : "[Ben]\nAs immediately as you enter, a timer to check your play time will be activated.\nPlease follow what ^3131FFMinilover^000000 guides you. ",
+      "translation" : "[本]\n进入后，计时器将立即启动以检查您的游玩时间。\n请跟随^3131FFMinilover^000000的指引。"
+    },
+    {
+      "kind" : "message",
+      "line" : 202,
+      "npc" : "Helper Ben",
+      "text" : "[Ben]\nYou have a ^3131FF6 minutes^000000 battle time.",
+      "translation" : "[本]\n您有^3131FF6分钟^000000的战斗时间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 205,
+      "npc" : "Helper Ben",
+      "text" : "[Ben]\nAfter you clear every room including a boss room, you will be warped again to an ^3131FFending waiting room^000000.\nYou can only allow to stay in the waiting room for ^3131FF1 minute^000000, please hurry up to receive the arena points and leave.",
+      "translation" : "[本]\n当您通过所有房间（包括Boss房）后，您将被再次传送到^3131FF结束等待室^000000。\n您只能在等待室停留^3131FF1分钟^000000，请抓紧时间领取竞技场点数并离开。"
+    },
+    {
+      "kind" : "message",
+      "line" : 209,
+      "npc" : "Helper Ben",
+      "text" : "[Ben]\nIf you stay over 1 minute inside the ending waiting room, you will be forced outside and will not receive any arena points. Please remember that.",
+      "translation" : "[本]\n如果您在结束等待室停留超过1分钟，将被强制传送出去，且无法获得任何竞技场点数。请记住这一点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 212,
+      "npc" : "Helper Ben",
+      "text" : "[Ben]\nI hope you will have a good time.",
+      "translation" : "[本]\n祝您玩得愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 218,
+      "npc" : "Helper Vicious",
+      "text" : "[Vicious]\nHey there.\nMy name is Vicious, I am a helper of Lv 70 arena stage.\n(...I have no clue how the hell I put myself into this crappy work...mumble mumble...grumble grumble..)",
+      "translation" : "[维舍斯]\n嘿，你好。\n我叫维舍斯，是70级竞技场阶段的助手。\n(...我完全不知道我是怎么搞到这份破工作的...咕咕...嘟嘟...)"
+    },
+    {
+      "kind" : "message",
+      "line" : 223,
+      "npc" : "Helper Vicious",
+      "text" : "[Vicious]\nThis ^3131FFLv 70 arena stage^000000\nis accessable to characters from ^FF0000level 70^000000 to ^FF0000level 89^000000.",
+      "translation" : "[维舍斯]\n这个^3131FF70级竞技场阶段^000000\n对^FF000070级^000000到^FF000089级^000000的角色开放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 227,
+      "npc" : "Helper Vicious",
+      "text" : "[Vicious]\nThis level limitation is to prevent high level characters abusing low level arena stages. I hope you will understand.\nAlso we accept an entrance fee, 1,000 zeny.",
+      "translation" : "[维舍斯]\n设置等级限制是为了防止高等级角色滥用低等级竞技场阶段。希望您能理解。\n此外，我们需要收取1,000 Zeny的入场费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 231,
+      "npc" : "Helper Vicious",
+      "text" : "[Vicious]\nLet me introduce you about the play rules of arena.",
+      "translation" : "[维舍斯]\n让我为您介绍竞技场的游玩规则。"
+    },
+    {
+      "kind" : "message",
+      "line" : 234,
+      "npc" : "Helper Vicious",
+      "text" : "[Vicious]\n^3131FFWait in a chat room for your turn coming.^000000\nWhen it's your turn, you will be automatically warped to an arena map.",
+      "translation" : "[维舍斯]\n^3131FF请在聊天室等待轮到您的时候。^000000\n当轮到您时，您将被自动传送到竞技场地图。"
+    },
+    {
+      "kind" : "message",
+      "line" : 238,
+      "npc" : "Helper Vicious",
+      "text" : "[Vicious]\nAs immediately as you enter, a timer to check your play time will be activated.\nPlease follow what ^3131FFCadilac^000000 guides you. ",
+      "translation" : "[维舍斯]\n进入后，计时器将立即启动以检查您的游玩时间。\n请跟随^3131FFCadilac^000000的指引。"
+    },
+    {
+      "kind" : "message",
+      "line" : 242,
+      "npc" : "Helper Vicious",
+      "text" : "[Vicious]\nYou have a ^3131FF7 minutes^000000 battle time.",
+      "translation" : "[维舍斯]\n您有^3131FF7分钟^000000的战斗时间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 245,
+      "npc" : "Helper Vicious",
+      "text" : "[Vicious]\nAfter you clear every room including a boss room, you will be warped again to an ^3131FFending waiting room^000000.\nYou can only allow to stay in the waiting room for ^3131FF1 minute^000000, please hurry up to receive the arena points and leave.",
+      "translation" : "[维舍斯]\n当您通过所有房间（包括Boss房）后，您将被再次传送到^3131FF结束等待室^000000。\n您只能在等待室停留^3131FF1分钟^000000，请抓紧时间领取竞技场点数并离开。"
+    },
+    {
+      "kind" : "message",
+      "line" : 249,
+      "npc" : "Helper Vicious",
+      "text" : "[Vicious]\nIf you stay over 1 minute inside the ending waiting room, you will be forced outside and will not receive any arena points. Remember that.",
+      "translation" : "[维舍斯]\n如果您在结束等待室停留超过1分钟，将被强制传送出去，且无法获得任何竞技场点数。请记住这一点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 252,
+      "npc" : "Helper Vicious",
+      "text" : "[Vicious]\nOkay, take care now.",
+      "translation" : "[维舍斯]\n好了，保重。"
+    },
+    {
+      "kind" : "message",
+      "line" : 258,
+      "npc" : "Helper Epin",
+      "text" : "[Epin]\nGood day,\nI am a helper of Lv 80 arena stage and my name is Epin.\nI like reading and I am 19 years old...huh...? Don't you want to hear about me...?",
+      "translation" : "[埃频]\n您好，\n我是80级竞技场阶段的助手，我叫埃频。\n我喜欢读书，今年19岁...嗯...？您不想听听我的故事...？"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Helper Epin",
+      "text" : "[Epin]\nOkay...",
+      "translation" : "[埃频]\n好的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 267,
+      "npc" : "Helper Epin",
+      "placeholders" : [
+        "(checkre(0)?\"160\":\"99\")"
+      ],
+      "text" : "[Epin]\nThis ^3131FFLv 80 arena stage^000000\nis accessable to characters from ^FF0000level 80^000000 to ^FF0000level {0}^000000.",
+      "translation" : "[埃频]\n^3131FF80级竞技场^000000\n仅限^FF000080级^000000至^FF0000{0}级^000000的角色进入。"
+    },
+    {
+      "kind" : "message",
+      "line" : 271,
+      "npc" : "Helper Epin",
+      "text" : "[Epin]\nThis level limitation is to prevent high level characters abusing low level arena stages. I hope you will understand.\nAlso we accept an entrance fee, 1,000 zeny.",
+      "translation" : "[埃频]\n设置等级限制是为了防止高等级角色滥用低等级竞技场。希望您能理解。\n此外，入场费为1,000 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 275,
+      "npc" : "Helper Epin",
+      "text" : "[Epin]\nLet me introduce you about the play rules of arena.",
+      "translation" : "[埃频]\n让我为您介绍竞技场的游玩规则。"
+    },
+    {
+      "kind" : "message",
+      "line" : 278,
+      "npc" : "Helper Epin",
+      "text" : "[Epin]\n^3131FFWait in a chat room for your turn coming.^000000\nWhen it's your turn, you will be automatically warped to an arena map.",
+      "translation" : "[埃频]\n^3131FF在聊天室等待轮到您。^000000\n轮到您时，您将被自动传送到竞技场地图。"
+    },
+    {
+      "kind" : "message",
+      "line" : 282,
+      "npc" : "Helper Epin",
+      "text" : "[Epin]\nAs immediately as you enter, a timer to check your play time will be activated.\nPlease follow what ^3131FFActus^000000 guides you. ",
+      "translation" : "[埃频]\n进入后，计时器将立即启动以计算游玩时间。\n请跟随^3131FFActus^000000的指引。"
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Helper Epin",
+      "text" : "[Epin]\nYou have a ^3131FF8 minutes^000000 battle time.",
+      "translation" : "[埃频]\n您有^3131FF8分钟^000000的战斗时间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Helper Epin",
+      "text" : "[Epin]\nAfter you clear every room including a boss room, you will be warped again to an ^3131FFending waiting room^000000.\nYou can only allow to stay in the waiting room for ^3131FF1 minute^000000, please hurry up to receive the arena points and leave.",
+      "translation" : "[埃频]\n当您通过所有房间（包括Boss房）后，您将被再次传送到^3131FF结束等待室^000000。\n您只能在等待室停留^3131FF1分钟^000000，请抓紧时间领取竞技场点数并离开。"
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Helper Epin",
+      "text" : "[Epin]\nIf you stay over 1 minute inside the ending waiting room, you will be forced outside and will not receive any arena points. Please remember that.",
+      "translation" : "[埃频]\n如果您在结束等待室停留超过1分钟，将被强制传送出去，且无法获得任何竞技场点数。请记住这一点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 296,
+      "npc" : "Helper Epin",
+      "text" : "[Epin]\nI hope you will have a good time.",
+      "translation" : "[埃频]\n祝您玩得愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 302,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nWelcome to party arena stage.\nI hope you will listen carefully to my introduction\nsince this party arena stage is a little bit different from player mode stages.",
+      "translation" : "[卢尼克]\n欢迎来到队伍竞技场。\n由于队伍竞技场与个人模式略有不同，\n请仔细听我的介绍。"
+    },
+    {
+      "kind" : "message",
+      "line" : 307,
+      "npc" : "Helper Lunic",
+      "placeholders" : [
+        "(checkre(0)?\"160\":\"99\")"
+      ],
+      "text" : "[Lunic]\n^3131FFParty Arena Stage^000000\nis accessible to players from ^FF0000level 10^000000 to ^FF0000level {0}^000000.",
+      "translation" : "[卢尼克]\n^3131FF队伍竞技场^000000\n仅限^FF000010级^000000至^FF0000{0}级^000000的玩家进入。"
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nAlso, arena will be not be started until all of 5 party members enter the room. We accept an entrance fee 1,000 zeny.",
+      "translation" : "[卢尼克]\n此外，必须5名队伍成员全部进入房间后，竞技场才会开始。入场费为1,000 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 314,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nLet me introduce you about the play rules of arena.",
+      "translation" : "[卢尼克]\n让我为您介绍竞技场的游玩规则。"
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\n^3131FFGroup a party with your friends and wait in a chat room^000000.\nYou must form a party beforehand. If you didn't do, you could still play but you would have a lot of inconvenience.",
+      "translation" : "[卢尼克]\n^3131FF与朋友组成队伍并在聊天室等待^000000。\n您必须提前组队。如果没有组队，虽然可以游玩，但会非常不便。"
+    },
+    {
+      "kind" : "message",
+      "line" : 321,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nAlso please remember 5 players automatically warped to the arena room will be in order of ^FF0000entering a chat room^000000 not in order of ^FF0000party^000000. Please remember that.",
+      "translation" : "[卢尼克]\n另外请记住，自动传送到竞技场房间的5名玩家是按^FF0000进入聊天室的顺序^000000，而不是按^FF0000队伍顺序^000000。请记住这一点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 324,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nAnd please form a party with ^3131FF5 players^000000 before you enter a chat room.",
+      "translation" : "[卢尼克]\n请在进入聊天室前，与^3131FF5名玩家^000000组成队伍。"
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nWhen it becomes your turn, you will be warped into a small map where a warp and a help NPC are located.\nIn case you enter with members of a different party, use the warp to escape the map. Then you will return to the waiting room.",
+      "translation" : "[卢尼克]\n轮到您时，您将被传送到一个小型地图，那里有传送门和帮助NPC。\n如果您与不同队伍的人员一起进入，请使用传送门离开地图，然后您将返回等待室。"
+    },
+    {
+      "kind" : "message",
+      "line" : 331,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nIn case you enter with your party members, please proceed speaking with the help NPC in the small map.\nThe help NPC is only accessible to talk ^FF0000 1 player ^000000at a time.",
+      "translation" : "[卢尼克]\n如果您与队伍成员一起进入，请与小型地图中的帮助NPC对话以继续。\n帮助NPC每次只能与^FF00001名玩家^000000对话。"
+    },
+    {
+      "kind" : "message",
+      "line" : 335,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nThe NPC will guide you and your party members to the actual arena room.\nHowever, if anyone in the party ^3131FFdoes not have enough money to pay the entrance fee, he will be warped outside^000000.",
+      "translation" : "[卢尼克]\nNPC将引导您和您的队伍成员进入真正的竞技场房间。\n但是，如果队伍中有人^3131FF没有足够的钱支付入场费，他将被传送出去^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 339,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nAlso be aware that you can only stay inside the map for ^FF0000 1 minute^000000.",
+      "translation" : "[卢尼克]\n请注意，您在地图内的停留时间不得超过^FF0000 1分钟^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 342,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nAs immediately as you enter the arena map, a timer which calculates your battle time will be activated.\nPlease follow what ^3131FFSlipslowrun^000000 guides you. ",
+      "translation" : "[卢尼克]\n一旦进入竞技场地图，计算战斗时间的计时器就会启动。\n请跟随^3131FFSlipslowrun^000000的指引行动。"
+    },
+    {
+      "kind" : "message",
+      "line" : 346,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nYou will have ^3131FF10 minutes^000000 to clear the stage however it is not that easy to do. And you're advised to use the time wisely.",
+      "translation" : "[卢尼克]\n您将有^3131FF10分钟^000000的时间来通关，但这并不容易。建议您合理利用时间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 349,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nAfter you clear every room including a boss room, you will be warped again to an ^3131FFending waiting room^000000.\nYou can only allow to stay in the waiting room for ^3131FF1 minute^000000, please hurry up to receive the arena points and leave.",
+      "translation" : "[卢尼克]\n当您通过所有房间（包括Boss房）后，将被传送到^3131FF结束等待室^000000。\n您在等待室中只能停留^3131FF1分钟^000000，请抓紧时间领取竞技场点数并离开。"
+    },
+    {
+      "kind" : "message",
+      "line" : 353,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nIf you stay over 1 minute inside the ending waiting room, you will be forced outside and will not receive any arena points. Please remember that.",
+      "translation" : "[卢尼克]\n如果您在结束等待室停留超过1分钟，将被强制传送出去，且无法获得任何竞技场点数。请务必记住这一点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 356,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nBesides, if a party make a new record on time to clear the map,\n^3131FFthe party master^000000 can record ^3131FFthe party name^000000.",
+      "translation" : "[卢尼克]\n此外，如果队伍以新的最快时间通关地图，\n^3131FF队伍长^000000可以记录^3131FF队伍名称^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 360,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nIn this case, if a party has more than one master or none, it is impossible to write ^FF0000the top party record^000000.\nTherefore, it is strongly suggested to form one party before entering the arena map.",
+      "translation" : "[卢尼克]\n在这种情况下，如果队伍有多个队长或没有队长，则无法写入^FF0000最佳队伍记录^000000。\n因此，强烈建议在进入竞技场地图前组建一支队伍。"
+    },
+    {
+      "kind" : "message",
+      "line" : 364,
+      "npc" : "Helper Lunic",
+      "text" : "[Lunic]\nThank you for listening and\nI hope you will have a good time.",
+      "translation" : "[卢尼克]\n感谢您的聆听，\n祝您游戏愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 372,
+      "npc" : "Helper Lonik",
+      "text" : "[Lonik]\nTah dah! Here I am!",
+      "translation" : "[洛尼克]\n当当！我来了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Helper Lonik",
+      "text" : "[Lonik]\nYou are curious if there is anyone inside or not, aren't you?",
+      "translation" : "[洛尼克]\n您是不是很好奇里面有没有人？"
+    },
+    {
+      "kind" : "message",
+      "line" : 378,
+      "npc" : "Helper Lonik",
+      "text" : "[Lonik]\nMy answer is...\n.............\nYes!\nThere is someone inside.",
+      "translation" : "[洛尼克]\n我的回答是...\n.............\n有！\n里面有人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 378,
+      "npc" : "Helper Lonik",
+      "text" : "[Lonik]\nMy answer is...\n.............\nNo!\nGo for it, good luck!",
+      "translation" : "[洛尼克]\n我的回答是...\n.............\n没有！\n去吧，祝您好运！"
+    },
+    {
+      "kind" : "message",
+      "line" : 386,
+      "npc" : "Helper Lonik",
+      "text" : "[Lonik]\nYou'd better wait a little bit longer!",
+      "translation" : "[洛尼克]\n您最好再等一会儿！"
+    },
+    {
+      "kind" : "message",
+      "line" : 399,
+      "npc" : "Arena Manager",
+      "text" : "[Arena Manager]\nCommand has been canceled.",
+      "translation" : "[竞技场管理员]\n指令已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 403,
+      "npc" : "Arena Manager",
+      "text" : "Password is incorrect.",
+      "translation" : "密码错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 406,
+      "npc" : "Arena Manager",
+      "text" : "[Arena Manager]\nSelect an option.",
+      "translation" : "[竞技场管理员]\n请选择一个选项。"
+    },
+    {
+      "kind" : "option",
+      "line" : 409,
+      "npc" : "Arena Manager",
+      "text" : "Restart arena",
+      "translation" : "重启竞技场"
+    },
+    {
+      "kind" : "option",
+      "line" : 409,
+      "npc" : "Arena Manager",
+      "text" : "Rearrange the Ranking Time",
+      "translation" : "重新排列准时记录"
+    },
+    {
+      "kind" : "option",
+      "line" : 411,
+      "npc" : "Arena Manager",
+      "text" : "Lv 50",
+      "translation" : "Lv 50"
+    },
+    {
+      "kind" : "option",
+      "line" : 411,
+      "npc" : "Arena Manager",
+      "text" : "Lv 60",
+      "translation" : "Lv 60"
+    },
+    {
+      "kind" : "option",
+      "line" : 411,
+      "npc" : "Arena Manager",
+      "text" : "Lv 70",
+      "translation" : "Lv 70"
+    },
+    {
+      "kind" : "option",
+      "line" : 411,
+      "npc" : "Arena Manager",
+      "text" : "Lv 80",
+      "translation" : "Lv 80"
+    },
+    {
+      "kind" : "option",
+      "line" : 411,
+      "npc" : "Arena Manager",
+      "text" : "Party Mode",
+      "translation" : "队伍模式"
+    },
+    {
+      "kind" : "message",
+      "line" : 425,
+      "npc" : "Arena Manager",
+      "text" : "[Arena Manager]\n== Caution ==\nYou have chosen to restart party arena stage.\nDo you wish to proceed?",
+      "translation" : "[竞技场管理员]\n== 注意 ==\n您已选择重启队伍竞技场阶段。\n是否继续？"
+    },
+    {
+      "kind" : "option",
+      "line" : 430,
+      "npc" : "Arena Manager",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 430,
+      "npc" : "Arena Manager",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 433,
+      "npc" : "Arena Manager",
+      "text" : "[Arena Manager]\nThe arena stage has been successfuly reactivated.",
+      "translation" : "[竞技场管理员]\n竞技场阶段已成功重新激活。"
+    },
+    {
+      "kind" : "message",
+      "line" : 438,
+      "npc" : "Arena Manager",
+      "text" : "[Arena Manager]\nCommand has been canceled.",
+      "translation" : "[竞技场管理员]\n指令已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 443,
+      "npc" : "Arena Manager",
+      "placeholders" : [
+        ".@arena"
+      ],
+      "text" : "[Arena Manager]\n== Caution ==\nYou have chosen to restart Lv {0} arena stage.\nDo you wish to proceed?",
+      "translation" : "[竞技场管理员]\n== 注意 ==\n您已选择重启 Lv {0} 竞技场阶段。\n是否继续？"
+    },
+    {
+      "kind" : "option",
+      "line" : 448,
+      "npc" : "Arena Manager",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 448,
+      "npc" : "Arena Manager",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 451,
+      "npc" : "Arena Manager",
+      "text" : "[Arena Manager]\nThe arena stage has been successfuly reactivated.",
+      "translation" : "[竞技场管理员]\n竞技场阶段已成功重新激活。"
+    },
+    {
+      "kind" : "message",
+      "line" : 455,
+      "npc" : "Arena Manager",
+      "text" : "[Arena Manager]\nCommand has been canceled.",
+      "translation" : "[竞技场管理员]\n指令已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 460,
+      "npc" : "Arena Manager",
+      "text" : "[Arena Manager]\n== Caution ==\n^CE0000You have chosen to rearrange the ranking time. Make sure this is not a good decision unless if something serious was happened!^000000",
+      "translation" : "[竞技场管理员]\n== 注意 ==\n^CE0000您已选择重新排列准时记录。除非发生了严重问题，否则请确保这不是一个好决定！^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "Arena Manager",
+      "text" : "[Arena Manager]\nAre you sure you want to rearrange the ranking time?",
+      "translation" : "[竞技场管理员]\n您确定要重新排列准时记录吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 467,
+      "npc" : "Arena Manager",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "option",
+      "line" : 467,
+      "npc" : "Arena Manager",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "message",
+      "line" : 469,
+      "npc" : "Arena Manager",
+      "text" : "[Arena Manager]\nPhew~ :)",
+      "translation" : "[竞技场管理员]\n呼~ :)"
+    },
+    {
+      "kind" : "option",
+      "line" : 473,
+      "npc" : "Arena Manager",
+      "text" : "Lv 50",
+      "translation" : "Lv 50"
+    },
+    {
+      "kind" : "option",
+      "line" : 473,
+      "npc" : "Arena Manager",
+      "text" : "Lv 60",
+      "translation" : "Lv 60"
+    },
+    {
+      "kind" : "option",
+      "line" : 473,
+      "npc" : "Arena Manager",
+      "text" : "Lv 70",
+      "translation" : "Lv 70"
+    },
+    {
+      "kind" : "option",
+      "line" : 473,
+      "npc" : "Arena Manager",
+      "text" : "Lv 80",
+      "translation" : "Lv 80"
+    },
+    {
+      "kind" : "option",
+      "line" : 473,
+      "npc" : "Arena Manager",
+      "text" : "Party Mode",
+      "translation" : "队伍模式"
+    },
+    {
+      "kind" : "message",
+      "line" : 500,
+      "npc" : "Arena Manager",
+      "text" : "[Arena Manager]\nPlease enter a value for minutes first and then seconds.",
+      "translation" : "[竞技场管理员]\n请先输入分钟数，然后输入秒数。"
+    },
+    {
+      "kind" : "message",
+      "line" : 510,
+      "npc" : "Arena Manager",
+      "placeholders" : [
+        ".@mode$",
+        "getd(.@min$)",
+        "getd(.@sec$)"
+      ],
+      "text" : "[Arena Manager]\nCurrent {0} ranker's play time has been rearranged to ^FF0000{1}^000000 minutes and ^FF0000{2}^000000 seconds.",
+      "translation" : "[竞技场管理员]\n当前 {0} 名玩家的游玩时间已重新排列为 ^FF0000{1}^000000 分钟和 ^FF0000{2}^000000 秒。"
+    },
+    {
+      "kind" : "message",
+      "line" : 521,
+      "npc" : "Reward Manager",
+      "text" : "[Reward Manager]\nCommand has been canceled.",
+      "translation" : "[奖励管理员]\n命令已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 525,
+      "npc" : "Reward Manager",
+      "text" : "[Reward Manager]\nPassword is incorrect.",
+      "translation" : "[奖励管理员]\n密码错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 529,
+      "npc" : "Reward Manager",
+      "text" : "[Reward Manager]\nYou have chosen to hide the teleporter NPC.",
+      "translation" : "[奖励管理员]\n您已选择隐藏传送员NPC。"
+    },
+    {
+      "kind" : "option",
+      "line" : 532,
+      "npc" : "Reward Manager",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 532,
+      "npc" : "Reward Manager",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 532,
+      "npc" : "Reward Manager",
+      "text" : "Turn on",
+      "translation" : "开启"
+    },
+    {
+      "kind" : "message",
+      "line" : 534,
+      "npc" : "Reward Manager",
+      "text" : "[Reward Manager]\nYou have canceled the command.",
+      "translation" : "[奖励管理员]\n您已取消命令。"
+    },
+    {
+      "kind" : "message",
+      "line" : 538,
+      "npc" : "Reward Manager",
+      "text" : "[Reward Manager]\nNPC has been hidden.",
+      "translation" : "[奖励管理员]\nNPC已隐藏。"
+    },
+    {
+      "kind" : "message",
+      "line" : 543,
+      "npc" : "Reward Manager",
+      "text" : "[Reward Manager]\nNPC has been enabled.",
+      "translation" : "[奖励管理员]\nNPC已启用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 552,
+      "npc" : "Teleporter",
+      "text" : "[Teleporter]\nI can move you to the reward arena!\nWould you like to go there?",
+      "translation" : "[传送员]\n我可以带您去奖励竞技场！\n您想去那里吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 556,
+      "npc" : "Teleporter",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 556,
+      "npc" : "Teleporter",
+      "text" : "No.",
+      "translation" : "不。"
+    },
+    {
+      "kind" : "message",
+      "line" : 558,
+      "npc" : "Teleporter",
+      "text" : "[Teleporter]\nLet me guide you.",
+      "translation" : "[传送员]\n让我为您指引方向。"
+    },
+    {
+      "kind" : "message",
+      "line" : 564,
+      "npc" : "Teleporter",
+      "text" : "[Teleporter]\nNo problem, feel free to come back any time.",
+      "translation" : "[传送员]\n没问题，欢迎随时回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 572,
+      "npc" : "Givu",
+      "text" : "- Wait a moment! -\n- Currently you're carrying -\n- too many items with you. -\n- Please lighten your weight -\n- and try again. -",
+      "translation" : "- 请等一下！ -\n- 您目前携带的物品 -\n- 太多了。 -\n- 请减轻负重 -\n- 然后再试一次。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 579,
+      "npc" : "Givu",
+      "text" : "[Givu]\nHello, there. Welcome to the world of Arena.\nMy name is Givu, I am in charge of arena point exchange program.",
+      "translation" : "[吉武]\n您好。欢迎来到竞技场世界。\n我是吉武，负责竞技场积分兑换服务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 583,
+      "npc" : "Givu",
+      "text" : "[Givu]\nYou can exchange your arena points with various stuffs.\nPlease choose a menu below.",
+      "translation" : "[吉武]\n您可以使用竞技场积分兑换各种物品。\n请在下方菜单中选择。"
+    },
+    {
+      "kind" : "option",
+      "line" : 587,
+      "npc" : "Givu",
+      "text" : "Exchange with Consumable items",
+      "translation" : "兑换消耗品"
+    },
+    {
+      "kind" : "option",
+      "line" : 587,
+      "npc" : "Givu",
+      "text" : "Exchange with EXP points",
+      "translation" : "兑换经验值"
+    },
+    {
+      "kind" : "option",
+      "line" : 587,
+      "npc" : "Givu",
+      "text" : "Take a Souvenir Picture",
+      "translation" : "拍摄纪念照"
+    },
+    {
+      "kind" : "option",
+      "line" : 587,
+      "npc" : "Givu",
+      "text" : "Check Current Arena Points",
+      "translation" : "查看当前竞技场积分"
+    },
+    {
+      "kind" : "message",
+      "line" : 589,
+      "npc" : "Givu",
+      "text" : "[Givu]\nWhat consumable item do you wish to exchange?",
+      "translation" : "[吉武]\n您想兑换哪种消耗品？"
+    },
+    {
+      "kind" : "option",
+      "line" : 592,
+      "npc" : "Givu",
+      "text" : "Honey",
+      "translation" : "蜂蜜"
+    },
+    {
+      "kind" : "option",
+      "line" : 592,
+      "npc" : "Givu",
+      "text" : "Royal Jelly",
+      "translation" : "蜂胶"
+    },
+    {
+      "kind" : "option",
+      "line" : 592,
+      "npc" : "Givu",
+      "text" : "Mastela Fruit",
+      "translation" : "玛丝黛拉果实"
+    },
+    {
+      "kind" : "option",
+      "line" : 592,
+      "npc" : "Givu",
+      "text" : "Condensed White Potion",
+      "translation" : "白色纤细药水"
+    },
+    {
+      "kind" : "option",
+      "line" : 592,
+      "npc" : "Givu",
+      "text" : "Anodyne",
+      "translation" : "止痛药"
+    },
+    {
+      "kind" : "option",
+      "line" : 592,
+      "npc" : "Givu",
+      "text" : "Yggdrasil Seed",
+      "translation" : "天地树芽"
+    },
+    {
+      "kind" : "option",
+      "line" : 592,
+      "npc" : "Givu",
+      "text" : "Yggdrasilberry",
+      "translation" : "天地树果"
+    },
+    {
+      "kind" : "option",
+      "line" : 592,
+      "npc" : "Givu",
+      "text" : "Old Blue Box",
+      "translation" : "神秘箱子"
+    },
+    {
+      "kind" : "option",
+      "line" : 592,
+      "npc" : "Givu",
+      "text" : "Old Purple Box",
+      "translation" : "神秘紫箱"
+    },
+    {
+      "kind" : "option",
+      "line" : 592,
+      "npc" : "Givu",
+      "text" : "Old Card Album",
+      "translation" : "老旧 收集册"
+    },
+    {
+      "kind" : "message",
+      "line" : 605,
+      "npc" : "Givu",
+      "text" : "[Givu]\nWould you like to exchange your arena points with experience points?\nIt requires 40 arena points.",
+      "translation" : "[吉武]\n您想用竞技场积分兑换经验值吗？\n这需要40点竞技场积分。"
+    },
+    {
+      "kind" : "option",
+      "line" : 609,
+      "npc" : "Givu",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 609,
+      "npc" : "Givu",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "message",
+      "line" : 611,
+      "npc" : "Givu",
+      "text" : "[Givu]\nYou have canceled your request.",
+      "translation" : "[吉武]\n您已取消请求。"
+    },
+    {
+      "kind" : "message",
+      "line" : 616,
+      "npc" : "Givu",
+      "text" : "[Givu]\nYou do not have enough arena points.\nPlease check the total amount of arena points you have.",
+      "translation" : "[吉武]\n您的竞技场积分不足。\n请检查您拥有的竞技场积分总额。"
+    },
+    {
+      "kind" : "message",
+      "line" : 633,
+      "npc" : "Givu",
+      "text" : "[Givu]\nYou have gained experience points. Thank you.",
+      "translation" : "[吉武]\n您已获得经验值。谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 638,
+      "npc" : "Givu",
+      "text" : "[Givu]\nYou have chosen a souvenir picture services.",
+      "translation" : "[吉武]\n您选择了纪念照服务。"
+    },
+    {
+      "kind" : "option",
+      "line" : 641,
+      "npc" : "Givu",
+      "text" : "About souvenir Picture Services",
+      "translation" : "关于纪念照服务"
+    },
+    {
+      "kind" : "option",
+      "line" : 641,
+      "npc" : "Givu",
+      "text" : "Take a picture",
+      "translation" : "拍照"
+    },
+    {
+      "kind" : "message",
+      "line" : 643,
+      "npc" : "Givu",
+      "text" : "[Givu]\nDo you see stairs at the right side of me?",
+      "translation" : "[吉武]\n您看到我右边的楼梯了吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 646,
+      "npc" : "Givu",
+      "text" : "[Givu]\nAt the stairs, you can take a screenshot with an NPC or a monster.",
+      "translation" : "[吉武]\n在楼梯那里，您可以与NPC或魔物合影。"
+    },
+    {
+      "kind" : "message",
+      "line" : 649,
+      "npc" : "Givu",
+      "text" : "[Givu]\nWhen you choose an NPC or a monster, it will show some emotion icons ^FF0000for 1 minute^000000.",
+      "translation" : "[吉武]\n当您选择NPC或魔物时，它会显示一些表情图标^FF0000持续1分钟^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 652,
+      "npc" : "Givu",
+      "text" : "[Givu]\nDon't miss the chance to take a picture with your favorite NPC!",
+      "translation" : "[吉武]\n不要错过与您最喜欢的NPC合影的机会！"
+    },
+    {
+      "kind" : "message",
+      "line" : 657,
+      "npc" : "Givu",
+      "text" : "[Givu]\nA souvenir picture services is on progress. Please wait.",
+      "translation" : "[吉武]\n纪念照服务正在进行中。请稍候。"
+    },
+    {
+      "kind" : "message",
+      "line" : 661,
+      "npc" : "Givu",
+      "text" : "[Givu]\nPlease choose an NPC at below.\nThe NPC will appear for 1 minute and this service requires 10 arena points.",
+      "translation" : "[吉武]\n请在下方选择一位NPC。\n该NPC将现身1分钟，此服务需要10点竞技场积分。"
+    },
+    {
+      "kind" : "option",
+      "line" : 665,
+      "npc" : "Givu",
+      "text" : "Baphomet",
+      "translation" : "巴风特"
+    },
+    {
+      "kind" : "option",
+      "line" : 665,
+      "npc" : "Givu",
+      "text" : "Dark Lord",
+      "translation" : "暗黑之王"
+    },
+    {
+      "kind" : "option",
+      "line" : 665,
+      "npc" : "Givu",
+      "text" : "Doppelganger",
+      "translation" : "分身"
+    },
+    {
+      "kind" : "option",
+      "line" : 665,
+      "npc" : "Givu",
+      "text" : "Eddga",
+      "translation" : "虎王"
+    },
+    {
+      "kind" : "option",
+      "line" : 665,
+      "npc" : "Givu",
+      "text" : "Dracula",
+      "translation" : "德古拉"
+    },
+    {
+      "kind" : "option",
+      "line" : 665,
+      "npc" : "Givu",
+      "text" : "Samurai",
+      "translation" : "武士"
+    },
+    {
+      "kind" : "option",
+      "line" : 665,
+      "npc" : "Givu",
+      "text" : "Stormy Knight",
+      "translation" : "冰暴骑士"
+    },
+    {
+      "kind" : "option",
+      "line" : 665,
+      "npc" : "Givu",
+      "text" : "Phreeoni",
+      "translation" : "皮里恩"
+    },
+    {
+      "kind" : "option",
+      "line" : 665,
+      "npc" : "Givu",
+      "text" : "Girl",
+      "translation" : "女孩"
+    },
+    {
+      "kind" : "option",
+      "line" : 665,
+      "npc" : "Givu",
+      "text" : "Valkyrie",
+      "translation" : "瓦尔基里"
+    },
+    {
+      "kind" : "message",
+      "line" : 678,
+      "npc" : "Givu",
+      "text" : "[Givu]\nYou do not have enough arena points.\nPlease check the total amount of arena points you have.",
+      "translation" : "[吉武]\n您的竞技场积分不足。\n请检查您拥有的竞技场积分总额。"
+    },
+    {
+      "kind" : "message",
+      "line" : 683,
+      "npc" : "Givu",
+      "text" : "[Givu]\nWould you like to take a picture with pretty girls?",
+      "translation" : "[吉武]\n您想和漂亮的女孩合影吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 683,
+      "npc" : "Givu",
+      "text" : "[Givu]\nWould you like to take a picture with a Valkyrie?",
+      "translation" : "[吉武]\n您想和瓦尔基里合影吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 683,
+      "npc" : "Givu",
+      "placeholders" : [
+        "getmonsterinfo($@arena_picture_id, MOB_NAME)"
+      ],
+      "text" : "[Givu]\nWould you like to take a picture with a {0}?",
+      "translation" : "[吉武]\n您想和{0}合影吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 691,
+      "npc" : "Givu",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 691,
+      "npc" : "Givu",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 703,
+      "npc" : "Givu",
+      "text" : "[Givu]\nThank you.",
+      "translation" : "[吉武]\n谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 707,
+      "npc" : "Givu",
+      "text" : "[Givu]\nWould you like to consider a little longer?",
+      "translation" : "[吉武]\n您想再考虑一下吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 713,
+      "npc" : "Givu",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[Givu]\nLet me check {0}'s current arena points.",
+      "translation" : "[吉武]\n让我查一下{0}当前的竞技场积分。"
+    },
+    {
+      "kind" : "message",
+      "line" : 716,
+      "npc" : "Givu",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "arena_point"
+      ],
+      "text" : "[Givu]\n{0} has total ^3131FF{1}^000000 points.",
+      "translation" : "[吉武]\n{0} 总共有 ^3131FF{1}^000000 积分。"
+    },
+    {
+      "kind" : "message",
+      "line" : 954,
+      "npc" : "Picture Manager",
+      "text" : "[Picture Manager]\nCommand has been canceled.",
+      "translation" : "[图片管理员]\n指令已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 958,
+      "npc" : "Picture Manager",
+      "text" : "[Picture Manager]\nPassword is incorrect.",
+      "translation" : "[图片管理员]\n密码错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 962,
+      "npc" : "Picture Manager",
+      "text" : "[Picture Manager]\nWould you like to reset Picture Reward variable to 0?",
+      "translation" : "[图片管理员]\n您是否要将图片奖励变量重置为 0？"
+    },
+    {
+      "kind" : "option",
+      "line" : 965,
+      "npc" : "Picture Manager",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 965,
+      "npc" : "Picture Manager",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "message",
+      "line" : 967,
+      "npc" : "Picture Manager",
+      "text" : "[Picture Manager]\nYou have canceled your request.",
+      "translation" : "[图片管理员]\n您已取消请求。"
+    },
+    {
+      "kind" : "message",
+      "line" : 971,
+      "npc" : "Picture Manager",
+      "text" : "[Picture Manager]\nPicture rewarding reseted.",
+      "translation" : "[图片管理员]\n图片奖励已重置。"
+    },
+    {
+      "kind" : "message",
+      "line" : 981,
+      "npc" : "Live Broadcast",
+      "placeholders" : [
+        "getmapusers(\"force_1-1\")",
+        "getmapusers(\"force_2-1\")",
+        "getmapusers(\"force_3-1\")",
+        "getmapusers(\"force_4-1\")",
+        "getmapusers(\"force_1-2\")",
+        "getmapusers(\"arena_room\")"
+      ],
+      "text" : "[Live Broadcast]\nCurrently there are {0} people in Lv 50s map.\nCurrently there are {1} people in Lv 60s map.\nCurrently there are {2} people in Lv 70s map.\nCurrently there are {3} people in Lv 80s map.\nCurrently there are {4} people in party map.\nCurrently there are {5} people in the waiting room.",
+      "translation" : "[实况转播]\n目前 50 级地图有 {0} 人。\n目前 60 级地图有 {1} 人。\n目前 70 级地图有 {2} 人。\n目前 80 级地图有 {3} 人。\n目前队伍地图有 {4} 人。\n目前等待室有 {5} 人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 996,
+      "npc" : "Func_Are_Rew",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@arena_point",
+        ".@amount",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Givu]\nWould you like to exchange your arena points with {0}?\nYou can exchange ^3131FF{1} arena points with {2} {3}^000000.\nIf you wish to cancel, please enter 0. If you don't, please enter how many ^3131FFtimes^000000 of arena points you wish to spend.",
+      "translation" : "[吉武]\n您是否想用竞技场积分兑换 {0}？\n您可以使用 ^3131FF{1} 竞技场积分兑换 {2} {3}^000000。\n如果您想取消，请输入 0。否则，请输入您希望花费的竞技场积分 ^3131FF次数^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1003,
+      "npc" : "Func_Are_Rew",
+      "text" : "[Givu]\nYou have canceled your request.",
+      "translation" : "[吉武]\n您已取消请求。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1007,
+      "npc" : "Func_Are_Rew",
+      "text" : "[Givu]\nYou have exceeded the maximum capacity.",
+      "translation" : "[吉武]\n您已超出最大容量。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1012,
+      "npc" : "Func_Are_Rew",
+      "text" : "[Givu]\nYou do not have enough arena points.\nPlease check the total amount of arena points you have.",
+      "translation" : "[吉武]\n您的竞技场积分不足。\n请检查您拥有的竞技场积分总额。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1019,
+      "npc" : "Func_Are_Rew",
+      "text" : "[Givu]\nThank you, please come again.",
+      "translation" : "[吉武]\n谢谢，欢迎再次光临。"
+    }
+  ]
+}

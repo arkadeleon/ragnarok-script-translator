@@ -1,0 +1,234 @@
+{
+  "file" : "npc/other/card_trader.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Putty",
+      "text" : "[Putty]\nHi there.\nI don't know if I can be\nof any assistance, but I\nam trying to help older veterans\nby exchaning the cards that\nthey are no longer using.",
+      "translation" : "[帕蒂]\n你好。\n我不确定自己是否能帮上什么忙，\n但我正在帮助那些老玩家，\n回收他们不再使用的卡片。"
+    },
+    {
+      "kind" : "option",
+      "line" : 72,
+      "npc" : "Putty",
+      "text" : "Ask for more information!",
+      "translation" : "了解更多资讯！"
+    },
+    {
+      "kind" : "option",
+      "line" : 72,
+      "npc" : "Putty",
+      "text" : "I don't have any cards right now.",
+      "translation" : "我现在没有卡片。"
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "npc" : "Putty",
+      "text" : "[Putty]\nI am giving 1 point for each card that you bring me.\nThe points can be used to exchange for items that I have.",
+      "translation" : "[帕蒂]\n每交给我一张卡片，我就给你1点积分。\n积分可以用来兑换我这里的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Putty",
+      "text" : "[Putty]\nFor ^CC0000100 points^000000: ^0000CC1 Old Card Album^000000.\nFor ^CC000050 points^000000: ^0000CC20 Yggdrasil Berry^000000.\nFor ^CC000020 points^000000: ^0000CC10 Blue Potion^000000.\nFor ^CC00001 point^000000: ^0000CC4 Honey^000000.",
+      "translation" : "[帕蒂]\n^CC0000100积分^000000：^0000CC1 老旧 收集册^000000。\n^CC000050积分^000000：^0000CC20 天地树果实^000000。\n^CC000020积分^000000：^0000CC10 蓝色药水^000000。\n^CC00001积分^000000：^0000CC4 蜂蜜^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 86,
+      "npc" : "Putty",
+      "text" : "[Putty]\nWell, remember this offer!",
+      "translation" : "[帕蒂]\n好了，记住这个提议吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "Putty",
+      "placeholders" : [
+        ".@points"
+      ],
+      "text" : "[Putty]\nWelcome back!\nI see you already have some\ntrading points. Actually, you currently have ^00cc00{0}^000000.",
+      "translation" : "[帕蒂]\n欢迎回来！\n看来你已经有一些交易积分了。实际上，你目前拥有 ^00cc00{0}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Putty",
+      "text" : "[Putty]\nWould you like to exchange these\npoints now, or you would like to exchange more cards?",
+      "translation" : "[帕蒂]\n你想现在兑换这些积分，\n还是想再兑换一些卡片？"
+    },
+    {
+      "kind" : "option",
+      "line" : 101,
+      "npc" : "Putty",
+      "text" : "I would like to exchange cards.",
+      "translation" : "我想兑换卡片。"
+    },
+    {
+      "kind" : "option",
+      "line" : 101,
+      "npc" : "Putty",
+      "text" : "Can I exchange the points?",
+      "translation" : "我可以兑换积分吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 103,
+      "npc" : "Putty",
+      "text" : "[Putty]\nPlease tell me what card you want to exchange.",
+      "translation" : "[帕蒂]\n请告诉我你想兑换哪张卡片。"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Putty",
+      "placeholders" : [
+        "callfunc(\"F_GetPlural\",getitemname(.@card))"
+      ],
+      "text" : "[Putty]\nYou don't have any ^0055FF{0}^000000 with you!",
+      "translation" : "[帕蒂]\n你没有携带 ^0055FF{0}^000000！"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Putty",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\",.@count,getitemname(.@card))"
+      ],
+      "text" : "[Putty]\nYou've got ^0055FF{0}^000000.\n \nWould you like to exchange 1 point for each of them?",
+      "translation" : "[帕蒂]\n你有 ^0055FF{0}^000000。\n \n你想用它们每张兑换1点积分吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Putty",
+      "text" : "[Putty]\nPlease, come back here if you want to exchange a monster card.",
+      "translation" : "[帕蒂]\n如果你想兑换魔物卡片，请再来这里。"
+    },
+    {
+      "kind" : "option",
+      "line" : 131,
+      "npc" : "Putty",
+      "text" : "Yes, please!",
+      "translation" : "好的，请给我！"
+    },
+    {
+      "kind" : "option",
+      "line" : 131,
+      "npc" : "Putty",
+      "text" : "No, thank you.",
+      "translation" : "不用了，谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 135,
+      "npc" : "Putty",
+      "placeholders" : [
+        ".@count"
+      ],
+      "text" : "[Putty]\nAlright, you have received ^CC0000{0}^000000 points.",
+      "translation" : "[帕蒂]\n好的，你获得了 ^CC0000{0}^000000 积分。"
+    },
+    {
+      "kind" : "message",
+      "line" : 139,
+      "npc" : "Putty",
+      "text" : "[Putty]\nOkay, let me know if I can help you with something else.",
+      "translation" : "[帕蒂]\n好的，如果还有其他需要帮忙的，请告诉我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "Putty",
+      "text" : "[Putty]\nThese are the items that I have.",
+      "translation" : "[帕蒂]\n这些是我拥有的物品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "text" : "1 Old Card Album - 50 Points",
+      "translation" : "1 老旧 收集册 - 50 积分"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "text" : "20 Yggdrasil Berry - 50 Points",
+      "translation" : "20 天地树果实 - 50 积分"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "text" : "10 Blue Potion - 20 Points",
+      "translation" : "10 蓝色药水 - 20 积分"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "text" : "4 Honey - 1 Point",
+      "translation" : "4 蜂蜜 - 1 积分"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "text" : "^777777Nerver mind.^000000",
+      "translation" : "^777777算了。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 153,
+      "npc" : "Putty",
+      "text" : "[Putty]\nGreat, I wish you the best\nof luck with this album. I have a\nvery good feeling about this one!",
+      "translation" : "[帕蒂]\n太好了，祝你在收集册上好运。\n我对这个很有信心！"
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "Putty",
+      "text" : "[Putty]\nOh, you must like adventures.\nHere you go, just what you need!",
+      "translation" : "[帕蒂]\n哦，你一定喜欢冒险。\n给你，这正是你需要的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Putty",
+      "text" : "[Putty]\nBlue Potions? Are you sure?\nIf that's what you want, here they are!",
+      "translation" : "[帕蒂]\n蓝色药水？你确定吗？\n如果你想要，那就给你！"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Putty",
+      "text" : "[Putty]\nIt took many bees\nto make all of this.\nMake good use of it.",
+      "translation" : "[帕蒂]\n制作这些花了很多蜜蜂的心血。\n请好好利用它们。"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Putty",
+      "text" : "[Putty]\nAlright, come back when you have more points.",
+      "translation" : "[帕蒂]\n好的，等你有更多积分时再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Putty",
+      "text" : "[Putty]\nSorry, but you don't have enough points.",
+      "translation" : "[帕蒂]\n抱歉，你的积分不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "Putty",
+      "text" : "[Putty]\nYou have 0 points. You need at least 1 point to exchange.",
+      "translation" : "[帕蒂]\n你有0积分。兑换至少需要1积分。"
+    }
+  ]
+}

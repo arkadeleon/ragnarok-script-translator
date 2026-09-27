@@ -1,0 +1,2263 @@
+{
+  "file" : "npc/other/monster_race.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 152,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nWelcome to the\nMonster Race Arena.\nIf you'd like to participate\nin the ^3131FFSingle Monster Race^000000,\nthen please select 1 out of\nthe 6 monsters from the list.",
+      "translation" : "[票务助手]\n欢迎来到魔物赛跑竞技场。\n如果您想参加^3131FF单魔物赛跑^000000，\n请从列表中6只魔物里选择1只。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nWait, wait...\nI can't give you\nanything right now.\nYou're carrying way\ntoo many things...",
+      "translation" : "[票务助手]\n等等，等等...\n我现在什么都给不了您。\n您携带的东西太多了..."
+    },
+    {
+      "kind" : "option",
+      "line" : 169,
+      "npc" : "Ticket Helper",
+      "text" : "Monster Status",
+      "translation" : "魔物状态"
+    },
+    {
+      "kind" : "option",
+      "line" : 169,
+      "npc" : "Ticket Helper",
+      "text" : "Monster 1",
+      "translation" : "魔物1"
+    },
+    {
+      "kind" : "option",
+      "line" : 169,
+      "npc" : "Ticket Helper",
+      "text" : "Monster 2",
+      "translation" : "魔物2"
+    },
+    {
+      "kind" : "option",
+      "line" : 169,
+      "npc" : "Ticket Helper",
+      "text" : "Monster 3",
+      "translation" : "隐形怪物3"
+    },
+    {
+      "kind" : "option",
+      "line" : 169,
+      "npc" : "Ticket Helper",
+      "text" : "Monster 4",
+      "translation" : "隐形怪物4"
+    },
+    {
+      "kind" : "option",
+      "line" : 169,
+      "npc" : "Ticket Helper",
+      "text" : "Monster 5",
+      "translation" : "隐形怪物5"
+    },
+    {
+      "kind" : "option",
+      "line" : 169,
+      "npc" : "Ticket Helper",
+      "text" : "Monster 6",
+      "translation" : "魔物6"
+    },
+    {
+      "kind" : "message",
+      "line" : 172,
+      "npc" : "Ticket Helper",
+      "placeholders" : [
+        ".@i",
+        "getd(\"$@mr_1_luk\"+.@i)",
+        "getd(\"$@mr_1_tire\"+.@i)"
+      ],
+      "text" : "Monster {0} [^CC6600Luck^000000: {1}] [^EE0000HP^000000: {2}]",
+      "translation" : "魔物{0} [^CC6600幸运^000000: {1}] [^EE0000HP^000000: {2}]"
+    },
+    {
+      "kind" : "message",
+      "line" : 177,
+      "npc" : "Ticket Helper",
+      "placeholders" : [
+        "monster_race_1"
+      ],
+      "text" : "[Ticket Helper]\nYou have selected\nMonster ^FF0000{0}^000000 for the\nSingle Monster Race.\nThe start of the race\nwill be announced soon,\nso please wait. Thank you.",
+      "translation" : "[票务助手]\n您已选择魔物^FF0000{0}^000000参加单魔物赛跑。\n比赛即将开始，请等待。谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Ticket Helper",
+      "placeholders" : [
+        ".@m"
+      ],
+      "text" : "[Ticket Helper]\nYou've chosen Monster {0}?\nAlright then, please wait\nuntil the start of the race is\nannounced. If the monster you\npicked wins, then please use this ticket to redeem your prize.",
+      "translation" : "[票务助手]\n您选择了魔物{0}？\n好的，请等待比赛开始的通知。\n如果您选择的魔物获胜，请凭此票兑换奖品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 196,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nI'm sorry, but a Monster\nRace is now in progress.\nIf you'd like to participate, then please wait for the next race.",
+      "translation" : "[票务助手]\n很抱歉，魔物赛跑正在进行中。\n如果您想参加，请等待下一场比赛。"
+    },
+    {
+      "kind" : "message",
+      "line" : 258,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nI'm sorry, but I can't\nreward you with any medals\nuntil you make more space\navailable in your Inventory.",
+      "translation" : "[勋章发放员]\n很抱歉，在您的物品栏腾出更多空间之前，\n我无法向您发放任何奖牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 266,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nHello there~\nIf you've wagered on the\nwinning monster in a recent\nrace, then you can exchange\nyour game ticket here for\nsome Prize Medals.",
+      "translation" : "[勋章发放员]\n您好~\n如果您在最近一场比赛中押中了获胜的魔物，\n可以在此将您的比赛门票兑换为神奇的奖牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 274,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nPlease remember that you can\nonly exchange winning Game\nTickets for Prize Medals right\nafter the race finishes. Prize\nMedals may be given to Wayne\nin Hugel in exchange for items.",
+      "translation" : "[勋章发放员]\n请记住，您只能在比赛结束后立即\n将获胜的比赛门票兑换为神奇的奖牌。\n神奇的奖牌可以交给毁葛的韦恩兑换物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nOh, congratulations, you\nhave a winning ticket for\na Single Monster Race! So \nwould you like to exchange your\nRacing Ticket for Prize Medals?",
+      "translation" : "[勋章发放员]\n哦，恭喜您，您有一张单魔物赛跑的获胜门票！\n那么，您想将您的赛跑门票兑换为神奇的奖牌吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 291,
+      "npc" : "Medal Distributor",
+      "text" : "Yes, please.",
+      "translation" : "是的，请。"
+    },
+    {
+      "kind" : "option",
+      "line" : 291,
+      "npc" : "Medal Distributor",
+      "text" : "No, thanks.",
+      "translation" : "不用了，谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nUm, are you sure? You \ncan only exchange a winning\nRacing Ticket for Prize Medals\nfor a short time after the race. If you made a mistake, you\nshould ask me again quickly.",
+      "translation" : "[勋章发放员]\n嗯，您确定吗？\n您只能在比赛结束后的一小段时间内\n将获胜的赛跑门票兑换为神奇的奖牌。\n如果您选错了，请尽快再次向我询问。"
+    },
+    {
+      "kind" : "message",
+      "line" : 300,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nLet me see your ticket...\nOh! Congratulations, you\nwon! May I have your name?",
+      "translation" : "[勋章发放员]\n让我看看您的门票...\n哦！恭喜您，您赢了！\n请问您的名字是？"
+    },
+    {
+      "kind" : "message",
+      "line" : 308,
+      "npc" : "Medal Distributor",
+      "placeholders" : [
+        "strcharinfo(0)",
+        ".@insa"
+      ],
+      "text" : "[Medal Distributor]\nAh, {0}.\nYou can exchange this\nticket for a Prize Medal by\nentering your ticket exchange\nnumber now. Your ticket\nexchange number is ^FF0000{1}^000000.",
+      "translation" : "[勋章发放员]\n啊，{0}。\n您现在可以输入您的门票兑换号码\n将此门票兑换为神奇的奖牌。\n您的门票兑换号码是^FF0000{1}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 318,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nOh? You don't want\nto exchange your\nwinning ticket?",
+      "translation" : "[勋章发放员]\n哦？您不想兑换\n您的获胜门票吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 324,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nThank you! You entered\nthe correct number...\nEverything seems to\nbe in order. Alright!",
+      "translation" : "[勋章发放员]\n谢谢！您输入的号码是正确的...\n一切看起来都没问题。好的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 330,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nNow please accept your\nPrize Medals! You can\nexchange these with\nWayne in Hugel for some\ninteresting items. Thank you~",
+      "translation" : "[勋章发放员]\n请收下您的神奇的奖牌！\n您可以拿着这些奖牌去找毁葛的韦恩\n兑换一些有趣的物品。谢谢~"
+    },
+    {
+      "kind" : "message",
+      "line" : 341,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nI'm sorry, but it seems\nthat you entered the\nincorrect ticket number.\nWould you mind coming\nback again in a while?",
+      "translation" : "[勋章发放员]\n很抱歉，看来您输入的门票号码有误。\n您介意稍后再来一次吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 349,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nWhat's this...?\nI think there's a problem...\nDid you enter your name\nincorrectly? Please check\nyour name, and then try again.",
+      "translation" : "[勋章发放员]\n这是什么...？\n我觉得有点问题...\n您是不是名字输入错了？\n请检查一下您的名字，然后再试一次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 357,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nYou may not have wagered\non the winning monster in\nthe last race, but I hope that\nyou get lucky next time~",
+      "translation" : "[勋章发放员]\n您可能没有押中上一场比赛的获胜魔物，\n但我希望您下次能好运~"
+    },
+    {
+      "kind" : "message",
+      "line" : 365,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nHello there~\nIf you've wagered on the\nwinning monster in a recent\nrace, then you can exchange\nyour game ticket here for\nsome Prize Medals.",
+      "translation" : "[勋章发放员]\n您好~\n如果您在最近一场比赛中押中了获胜的魔物，\n可以在此将您的比赛门票兑换为神奇的奖牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 373,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nPlease remember that you can\nonly exchange winning Game\nTickets for Prize Medals right\nafter the race finishes. Prize\nMedals may be given to Wayne\nin Hugel in exchange for items.",
+      "translation" : "[勋章发放员]\n请记住，您只能在比赛结束后立即\n将获胜的比赛门票兑换为神奇的奖牌。\n神奇的奖牌可以交给毁葛的韦恩兑换物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 443,
+      "npc" : "Exit Guide",
+      "text" : "[Exit Guide]\nIf you have a winning Racing\nTicket, please make sure that\nyou redeem it for Prize Medals\nnow. All Racing Tickets become\nvoid once the next race begins.",
+      "translation" : "[出口向导]\n如果您有获胜的赛跑门票，\n请务必现在将其兑换为神奇的奖牌。\n下一场比赛开始后，所有赛跑门票都将失效。"
+    },
+    {
+      "kind" : "message",
+      "line" : 450,
+      "npc" : "Exit Guide",
+      "text" : "[Exit Guide]\nIf you wish to leave\nthe arena, then I can guide\nyou outside. Would you like\nto leave the arena right now?",
+      "translation" : "[出口向导]\n如果您想离开竞技场，\n我可以为您指引出口。\n您现在想离开竞技场吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 456,
+      "npc" : "Exit Guide",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 456,
+      "npc" : "Exit Guide",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 457,
+      "npc" : "Exit Guide",
+      "text" : "[Exit Guide]\nAlright, then.\nJust let me know\nwhenever you're\nready to leave.",
+      "translation" : "[出口向导]\n好的。\n当您准备好离开时，\n请随时告诉我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 465,
+      "npc" : "Exit Guide",
+      "text" : "[Exit Guide]\nThank you for\nyour patronage, and\nI hope that you come\nvisit us again soon~",
+      "translation" : "[出口向导]\n感谢您的惠顾，\n希望您很快能再来~"
+    },
+    {
+      "kind" : "message",
+      "line" : 471,
+      "npc" : "Exit Guide",
+      "text" : "[Exit Guide]\nIn accordance with our\npolicies, I must take your\nRacing Ticket before you leave.\nThank you for your patronage,\nand I hope you enjoy your time\nhere in the Monster Race Arena.",
+      "translation" : "[出口向导]\n根据我们的规定，\n在您离开之前，我必须收回您的赛跑门票。\n感谢您的惠顾，\n希望您在这里享受魔物赛跑竞技场的时光。"
+    },
+    {
+      "kind" : "message",
+      "line" : 487,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nWelcome to the biggest\nattraction in Hugel, the\nMonster Race Arena.\nHow may I help you today?",
+      "translation" : "[埃卡尔·艾勒伯德]\n欢迎来到毁葛最大的景点，\n魔物赛跑竞技场。\n今天有什么可以帮您的吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 493,
+      "npc" : "Eckar Ellebird",
+      "text" : "Monster Race Info",
+      "translation" : "魔物赛跑信息"
+    },
+    {
+      "kind" : "option",
+      "line" : 493,
+      "npc" : "Eckar Ellebird",
+      "text" : "Enter Monster Race",
+      "translation" : "进入魔物赛跑"
+    },
+    {
+      "kind" : "message",
+      "line" : 494,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nMonster Races originated from\nsimple children's games in which\nCute Pets would race against each other. This grew into an adult\npastime that is so popular, we've built a racing arena in Hugel.",
+      "translation" : "[埃卡尔·艾勒伯德]\n魔物赛跑起源于孩子们简单的游戏，\n可爱的宠物们互相赛跑。\n这逐渐发展成为一种成人的娱乐活动，\n非常受欢迎，以至于我们在毁葛建造了一个赛跑竞技场。"
+    },
+    {
+      "kind" : "message",
+      "line" : 500,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nOur Monster Race Arena hosts\ntwo types of monster races. First, we have the Single Monster Race,\nin which those that wagered on the 1st place monster are rewarded.",
+      "translation" : "[埃卡尔·艾勒伯德]\n我们的魔物赛跑竞技场举办两种类型的魔物赛跑。\n首先是单魔物赛跑，押中第一名魔物的人将获得奖励。"
+    },
+    {
+      "kind" : "message",
+      "line" : 505,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nThen, we have the Dual Monster\nRace in which the house odds and rewards are greater than in Single\nMonster Races: you must wager on 2 monsters, and they must place in\n1st and 2nd for you to win.",
+      "translation" : "[埃卡尔·艾勒伯德]\n然后是双魔物赛跑，\n其赔率和奖励比单魔物赛跑更高：\n您必须押注两只魔物，\n且它们必须分别获得第一名和第二名您才能获胜。"
+    },
+    {
+      "kind" : "message",
+      "line" : 511,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nAlthough a small entrance\nfee is required, we only use\nthe money to give rewards to\nparticipants and maintain this\narena. Therefore, we're not\nprofiting from this enterprise.",
+      "translation" : "[埃卡尔·艾勒伯德]\n虽然需要支付少量的入场费，\n但我们只使用这笔钱来奖励参与者\n并维护这个竞技场。\n因此，我们并没有从中获利。"
+    },
+    {
+      "kind" : "message",
+      "line" : 519,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nAlso, we prohibit others\nfrom making personal bets\nand wagers, using items and\nzeny, based on the outcomes\nof these races. That kind of\ngambling is illegal here...",
+      "translation" : "[埃卡尔·艾勒伯德]\n此外，我们禁止他人\n使用物品和Zeny，\n基于这些比赛的结果进行个人押注和赌博。\n这种赌博在这里是非法的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 527,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nOnce you enter the Race Arena, you will receive a Racing Ticket.\nKeep in mind that winning Racing Tickets can only be exchanged for\nPrize Medals during a 5 minute window after the end of the race.",
+      "translation" : "[埃卡尔·艾勒伯德]\n一旦您进入赛跑竞技场，您将获得一张赛跑门票。\n请记住，获胜的赛跑门票只能在比赛结束后的5分钟窗口期内兑换为神奇的奖牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 533,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nThe entrance fee for all races\nin the Monster Race Arena is\n2,000 zeny. If you'd like to wager on a Dual Monster Race, then\nplease ask my brother Erenes,\nand he will help you.",
+      "translation" : "[埃卡尔·艾勒伯德]\n魔物赛跑竞技场所有比赛的入场费均为2,000 Zeny。\n如果您想押注双魔物赛跑，\n请找我的兄弟埃雷内斯，他会协助您。"
+    },
+    {
+      "kind" : "message",
+      "line" : 540,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nOtherwise, I'll help get you\nstarted if you're interested\nin a Single Monster Race.\nWould you like wager on\na Single Monster Race?",
+      "translation" : "[埃卡尔·艾勒伯德]\n否则，如果您有兴趣参加单魔物赛跑，\n我可以帮您开始。\n您想押注单魔物赛跑吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 547,
+      "npc" : "Eckar Ellebird",
+      "text" : "Yes, please.",
+      "translation" : "是的，请。"
+    },
+    {
+      "kind" : "option",
+      "line" : 547,
+      "npc" : "Eckar Ellebird",
+      "text" : "No, thanks.",
+      "translation" : "不用了，谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 548,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nVery well. I hope that\nyou enjoy your time here\nin the Monster Race Arena~",
+      "translation" : "[埃卡尔·艾勒伯德]\n好的。希望您\n在魔物赛跑竞技场玩得尽兴~"
+    },
+    {
+      "kind" : "message",
+      "line" : 555,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nOh, wow. You're carrying\nan awful lot of stuff... Yeah,\nyou better put some of it away\nin Kafra Storage or something.",
+      "translation" : "[埃卡尔·艾勒伯德]\n哦，天哪。您身上带的东西\n可真不少... 是的，\n您最好把一些东西存到卡普拉仓库里。"
+    },
+    {
+      "kind" : "message",
+      "line" : 563,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nI'm sorry, but you\ndon't have enough\nmoney to pay the\n2,000 zeny entrance fee. ",
+      "translation" : "[埃卡尔·艾勒伯德]\n很抱歉，您的Zeny不足，\n无法支付2,000 Zeny的入场费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 571,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nHm? What are you doing\nwith an expired Racing Ticket?\nWell, I better get rid of it for you before it can get mixed up\nwith your new Racing Ticket.",
+      "translation" : "[埃卡尔·艾勒伯德]\n嗯？您拿着过期的赛跑门票做什么？\n好吧，我最好帮您把它处理掉，\n以免它和您新的赛跑门票混在一起。"
+    },
+    {
+      "kind" : "message",
+      "line" : 580,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nI'm sorry, but you\ndon't have enough\nmoney to pay the\n2,000 zeny entrance fee. ",
+      "translation" : "[埃卡尔·艾勒伯德]\n很抱歉，您的Zeny不足，\n无法支付2,000 Zeny的入场费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 587,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nAlright, I think you\nshould be all set. I hope\nthat you enjoy the race~\nLet me guide you inside\nthe Monster Race Arena now.",
+      "translation" : "[埃卡尔·艾勒伯德]\n好的，我想您\n已经准备就绪了。希望您\n享受这场赛跑~\n现在让我带您进入魔物赛跑竞技场。"
+    },
+    {
+      "kind" : "message",
+      "line" : 600,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nThanks, I hope that\nyou enjoy this race.\nLet me guide you now\nto the Monster Race Arena.",
+      "translation" : "[埃卡尔·艾勒伯德]\n谢谢，希望您\n享受这场赛跑。\n现在让我带您\n前往魔物赛跑竞技场。"
+    },
+    {
+      "kind" : "message",
+      "line" : 612,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nWe're still finishing our\npreparations for the next\nSingle Monster Race, so\nwe ask that you please\nwait a little while longer...",
+      "translation" : "[埃卡尔·艾勒伯德]\n我们还在为下一场\n单魔物赛跑做最后的准备，\n所以请您稍等片刻..."
+    },
+    {
+      "kind" : "message",
+      "line" : 621,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nRight now, a Monster Race\nis in progress. It's too late to place a wager, but if you'd like\nto watch, the fee is 500 zeny\nfor spectators. Would you like to enter the Monster Race Arena?",
+      "translation" : "[埃卡尔·艾勒伯德]\n目前，一场魔物赛跑正在进行中。现在押注已经太晚了，但如果您想观看，观众费是500 Zeny。\n您想进入魔物赛跑竞技场吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 627,
+      "npc" : "Eckar Ellebird",
+      "text" : "Enter",
+      "translation" : "进入"
+    },
+    {
+      "kind" : "option",
+      "line" : 627,
+      "npc" : "Eckar Ellebird",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 628,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nAlright, then. If you'd like\nto wager on a monster\nrace, please wait for the\ncurrent race to finish. I hope\nthat you enjoy your time here\nin the Monster Race Arena~",
+      "translation" : "[埃卡尔·艾勒伯德]\n好的。如果您想\n押注魔物赛跑，请等待\n当前比赛结束。希望您\n在魔物赛跑竞技场玩得尽兴~"
+    },
+    {
+      "kind" : "message",
+      "line" : 638,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nThank you~\nI hope you enjoy\nwatching this race!",
+      "translation" : "[埃卡尔·艾勒伯德]\n谢谢~\n希望您享受\n观看这场赛跑！"
+    },
+    {
+      "kind" : "message",
+      "line" : 648,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nI'm sorry, but you don't\nhave enough money to pay\nthe 500 zeny spectator fee.",
+      "translation" : "[埃卡尔·艾勒伯德]\n很抱歉，您的Zeny不足，\n无法支付500 Zeny的观众费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 654,
+      "npc" : "Eckar Ellebird",
+      "text" : "[Eckar Ellebird]\nI'm sorry, but a monster\nrace has just ended, so we're\nhaving the 5 minute period in\nwhich the winners can claim\ntheir Prize Medals. The gate\nwill open soon, so please wait.",
+      "translation" : "[埃卡尔·艾勒伯德]\n很抱歉，一场魔物赛跑刚刚结束，\n现在是5分钟的窗口期，\n获胜者可以领取他们的神奇的奖牌。大门\n很快就会打开，请稍候。"
+    },
+    {
+      "kind" : "message",
+      "line" : 671,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nWelcome to the\nMonster Race Arena.\nHow can I help you?",
+      "translation" : "[游戏向导]\n欢迎来到\n魔物赛跑竞技场。\n有什么可以帮您的吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 676,
+      "npc" : "Game Guide",
+      "text" : "Monster Race Info",
+      "translation" : "魔物赛跑信息"
+    },
+    {
+      "kind" : "option",
+      "line" : 676,
+      "npc" : "Game Guide",
+      "text" : "Wager Info",
+      "translation" : "押注信息"
+    },
+    {
+      "kind" : "option",
+      "line" : 676,
+      "npc" : "Game Guide",
+      "text" : "Ticket Redemption Info",
+      "translation" : "门票兑换信息"
+    },
+    {
+      "kind" : "message",
+      "line" : 678,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nMonster Races originated from\nsimple children's games in which\nCute Pets would race against each other. This grew into an adult\npastime that is so popular, we've built a racing arena in Hugel.",
+      "translation" : "[游戏向导]\n魔物赛跑起源于\n孩子们简单的游戏，\n可爱的宠物互相赛跑。这逐渐发展\n成一种成人的娱乐活动，非常受欢迎，\n我们在毁葛建造了一个赛跑竞技场。"
+    },
+    {
+      "kind" : "message",
+      "line" : 684,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nOur Monster Race Arena hosts\ntwo types of monster races. First, we have the Single Monster Race,\nin which those that wagered on the 1st place monster are rewarded.",
+      "translation" : "[游戏向导]\n我们的魔物赛跑竞技场\n举办两种类型的魔物赛跑。首先，我们有单魔物赛跑，\n押中第一名魔物的人将获得奖励。"
+    },
+    {
+      "kind" : "message",
+      "line" : 689,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nThen, we have the Dual Monster\nRace in which the house odds and rewards are greater than in Single\nMonster Races: you must wager on 2 monsters, and they must place in\n1st and 2nd for you to win.",
+      "translation" : "[游戏向导]\n然后，我们有双魔物赛跑，\n其赔率和奖励比单魔物赛跑更高：\n您必须押注两只魔物，\n且它们必须分别获得第一名和第二名您才能获胜。"
+    },
+    {
+      "kind" : "message",
+      "line" : 695,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nAlthough a small entrance\nfee is required, we only use\nthe money to give rewards to\nparticipants and maintain this\narena. Therefore, we're not\nprofiting from this enterprise.",
+      "translation" : "[游戏向导]\n虽然需要缴纳少量的入场费，但我们只将这些钱用于奖励参赛者和维护竞技场。因此，我们并没有从中牟利。"
+    },
+    {
+      "kind" : "message",
+      "line" : 703,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nAlso, we prohibit others\nfrom making personal bets\nand wagers, using items and\nzeny, based on the outcomes\nof these races. That kind of\ngambling is illegal here...",
+      "translation" : "[游戏向导]\n此外，我们禁止他人基于比赛结果，使用物品或Zeny进行私人押注。这种行为在这里是违法的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 711,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nOnce you enter the Race Arena, you will receive a Racing Ticket.\nKeep in mind that winning Racing Tickets can only be exchanged for\nPrize Medals during a 5 minute window after the end of the race.",
+      "translation" : "[游戏向导]\n进入赛跑竞技场后，您将获得一张赛跑门票。请注意，获胜的赛跑门票只能在比赛结束后的5分钟内兑换为神奇的奖牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 718,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nBefore placing a wager, you\nmust get a free Racing Ticket\nfrom the Ticket Helper. There,\nI've marked the Ticket Helper\non your Mini-Map, so you can\nfind him pretty easily.",
+      "translation" : "[游戏向导]\n在押注之前，您必须从票务助手那里领取一张免费的赛跑门票。我已经在您的小地图上标记了票务助手的位置，您应该很容易找到他。"
+    },
+    {
+      "kind" : "message",
+      "line" : 729,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nIf you wagered on the winner\nof a Single Monster Race, or\non the 1st or 2nd place winners\nin a Dual Monster Race, then\nyou can exchange your Racing\nTicket for Prize Medals.",
+      "translation" : "[游戏向导]\n如果您押中了单魔物赛跑的冠军，或者双魔物赛跑的第一名或第二名，您就可以将赛跑门票兑换为神奇的奖牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 737,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nHowever, you must exchange\nyour Racing Ticket with the\nMedal Distributor within the\n5 minute window after the end\nof the race. ^FF0000Your ticket becomes^FFFFFF ^FF0000 void after these 5 minutes.^000000",
+      "translation" : "[游戏向导]\n但是，您必须在比赛结束后的5分钟内，找勋章发放员兑换您的赛跑门票。^FF0000您的门票在这5分钟后将^FFFFFF ^FF0000失效。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 744,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nWhen this 5 minute window\nelapses, you will be teleported outside, and we will immediately\nbegin preparing for the next race. Make sure that you remember this\ninformation when you wager.",
+      "translation" : "[游戏向导]\n当这5分钟的时间过去后，您将被传送出去，我们将立即开始准备下一场比赛。请在押注时务必记住这一信息。"
+    },
+    {
+      "kind" : "message",
+      "line" : 750,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nIf you haven't received\nyour free Racing Ticket,\nthen please visit the Ticket\nHelper. There, I've just marked\nhis location on your Mini-Map.",
+      "translation" : "[游戏向导]\n如果您还没有领取免费的赛跑门票，请前往票务助手处。我刚刚在他的位置标记了您的小地图。"
+    },
+    {
+      "kind" : "message",
+      "line" : 760,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nThank you, and\nI hope you enjoy\nyour time here in the\nMonster Racing Arena.",
+      "translation" : "[游戏向导]\n谢谢，希望您能在魔物赛跑竞技场度过愉快的时光。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1073,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nWelcome to the\nMonster Race Arena,\nthe pride and joy of\nthe village of Hugel!\nHow may I help you?",
+      "translation" : "[埃卡尔·艾雷内斯]\n欢迎来到魔物赛跑竞技场，\n这是毁葛村的骄傲！\n有什么可以帮您的吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1080,
+      "npc" : "Eckar Erenes",
+      "text" : "Monster Race Info",
+      "translation" : "魔物赛跑信息"
+    },
+    {
+      "kind" : "option",
+      "line" : 1080,
+      "npc" : "Eckar Erenes",
+      "text" : "Enter Monster Race",
+      "translation" : "进入魔物赛跑"
+    },
+    {
+      "kind" : "message",
+      "line" : 1081,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nMonster Races originated from\nsimple children's games in which\nCute Pets would race against each other. This grew into an adult\npastime that is so popular, we've built a racing arena in Hugel.",
+      "translation" : "[埃卡尔·艾雷内斯]\n魔物赛跑起源于孩子们简单的游戏，可爱的宠物互相赛跑。这逐渐发展成一种成人的娱乐活动，非常受欢迎，我们在毁葛建造了一个赛跑竞技场。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1087,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nOur Monster Race Arena hosts\ntwo types of monster races. First, we have the Single Monster Race,\nin which those that wagered on the 1st place monster are rewarded.",
+      "translation" : "[埃卡尔·艾雷内斯]\n我们的魔物赛跑竞技场举办两种类型的魔物赛跑。首先，我们有单魔物赛跑，押中第一名魔物的人将获得奖励。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1092,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nThen, we have the Dual Monster\nRace in which the house odds and rewards are greater than in Single\nMonster Races: you must wager on 2 monsters, and they must place in\n1st and 2nd for you to win.",
+      "translation" : "[埃卡尔·艾雷内斯]\n然后，我们有双魔物赛跑，其赔率和奖励比单魔物赛跑更高：您必须押注两只魔物，且它们必须分别获得第一名和第二名您才能获胜。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1098,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nAlthough a small entrance\nfee is required, we only use\nthe money to give rewards to\nparticipants and maintain this\narena. Therefore, we're not\nprofiting from this enterprise.",
+      "translation" : "[埃卡尔·艾雷内斯]\n虽然需要缴纳少量的入场费，但我们只将这些钱用于奖励参赛者和维护竞技场。因此，我们并没有从中牟利。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1106,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nAlso, we prohibit others\nfrom making personal bets\nand wagers, using items and\nzeny, based on the outcomes\nof these races. That kind of\ngambling is illegal here...",
+      "translation" : "[埃卡尔·艾雷内斯]\n此外，我们禁止他人基于比赛结果，使用物品或Zeny进行私人押注。这种行为在这里是违法的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1114,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nOnce you enter the Race Arena, you will receive a Racing Ticket.\nKeep in mind that winning Racing Tickets can only be exchanged for\nPrize Medals during a 5 minute window after the end of the race.",
+      "translation" : "[埃卡尔·艾雷内斯]\n进入赛跑竞技场后，您将获得一张赛跑门票。请注意，获胜的赛跑门票只能在比赛结束后的5分钟内兑换为神奇的奖牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1120,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nThe entrance fee for all races\nin the Monster Race Arena is\n2,000 zeny. If you'd like to wager on a Single Monster Race,\nthen please ask my brother\nEllebird to help you.",
+      "translation" : "[埃卡尔·艾雷内斯]\n魔物赛跑竞技场所有比赛的入场费均为2,000 Zeny。如果您想押注单魔物赛跑，请找我的兄弟艾尔伯德帮忙。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1127,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nOtherwise, I'll help get you\nstarted if you're interested\nin a Dual Monster Race.\nWould you like to wager\non a Dual Monster Race?",
+      "translation" : "[埃卡尔·艾雷内斯]\n否则，如果您有兴趣参加双魔物赛跑，我会帮您开始。您想押注双魔物赛跑吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1134,
+      "npc" : "Eckar Erenes",
+      "text" : "Yes, please.",
+      "translation" : "是的，请。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1134,
+      "npc" : "Eckar Erenes",
+      "text" : "No, thanks.",
+      "translation" : "不用了，谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1135,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nVery well. I hope that\nyou enjoy your time here\nin the Monster Race Arena~",
+      "translation" : "[埃卡尔·艾雷内斯]\n好的。希望您能在魔物赛跑竞技场度过愉快的时光~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1142,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nHmm... You're toting\ntoo many things with you\nright now. You better put\nsome of your stuff away in\nKafra Storage before you can\nwager on any monster races...",
+      "translation" : "[埃卡尔·艾雷内斯]\n嗯...您现在携带的物品太多了。您最好先把一些东西存入卡普拉仓库，然后才能押注魔物赛跑..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1152,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nI'm sorry, but you\ndon't have enough\nmoney to pay the\n2,000 zeny entrance fee. ",
+      "translation" : "[埃卡尔·艾雷内斯]\n很抱歉，您的Zeny不足，无法支付2,000 Zeny的入场费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1160,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nHm? What are you doing\nwith an expired Racing Ticket?\nWell, I better get rid of it for you before it can get mixed up\nwith your new Racing Ticket.",
+      "translation" : "[埃卡尔·艾雷内斯]\n嗯？您怎么拿着一张过期的赛跑门票？\n还是把它收起来吧，免得和您新的赛跑门票搞混了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1168,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nAlright, I think you\nshould be all set. I hope\nthat you enjoy the race~\nLet me guide you inside\nthe Monster Race Arena now.",
+      "translation" : "[埃卡尔·艾雷内斯]\n好了，我想您应该准备就绪了。希望您能享受这场赛跑~\n现在让我带您进入魔物赛跑竞技场。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1181,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nWe're still finishing our\npreparations for the next\nDouble Monster Race, so\nwe ask that you please\nwait a little while longer...",
+      "translation" : "[埃卡尔·艾雷内斯]\n我们还在为下一场双魔物赛跑做最后的准备，\n所以请您稍候片刻..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1191,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nThanks, I hope that\nyou enjoy this race.\nLet me guide you now\nto the Monster Race Arena.",
+      "translation" : "[埃卡尔·艾雷内斯]\n谢谢，希望您能享受这场赛跑。\n现在让我带您去魔物赛跑竞技场。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1202,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nWe're still finishing our\npreparations for the next\nDouble Monster Race, so\nwe ask that you please\nwait a little while longer...",
+      "translation" : "[埃卡尔·艾雷内斯]\n我们还在为下一场双魔物赛跑做最后的准备，\n所以请您稍候片刻..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1212,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nRight now, a Monster Race\nis in progress. It's too late to place a wager, but if you'd like\nto watch, the fee is 500 zeny\nfor spectators. Would you like to enter the Monster Race Arena?",
+      "translation" : "[埃卡尔·艾雷内斯]\n目前正在进行魔物赛跑。现在下注已经太晚了，但如果您想观看，观众入场费是500 Zeny。您想进入魔物赛跑竞技场吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1218,
+      "npc" : "Eckar Erenes",
+      "text" : "Enter",
+      "translation" : "进入"
+    },
+    {
+      "kind" : "option",
+      "line" : 1218,
+      "npc" : "Eckar Erenes",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1219,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nAlright, then. If you'd like\nto wager on a monster\nrace, please wait for the\ncurrent race to finish. I hope\nthat you enjoy your time here\nin the Monster Race Arena~",
+      "translation" : "[埃卡尔·艾雷内斯]\n好的。如果您想押注魔物赛跑，请等待当前比赛结束。希望您能在魔物赛跑竞技场度过愉快的时光~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1229,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nThank you~\nI hope you enjoy\nwatching this race!",
+      "translation" : "[埃卡尔·艾雷内斯]\n谢谢~\n希望您能享受观看这场赛跑！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1239,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nI'm sorry, but you don't\nhave enough money to pay\nthe 500 zeny spectator fee.",
+      "translation" : "[埃卡尔·艾雷内斯]\n很抱歉，您的Zeny不足，无法支付500 Zeny的观众入场费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1245,
+      "npc" : "Eckar Erenes",
+      "text" : "[Eckar Erenes]\nI'm sorry, but a monster\nrace has just ended, so we're\nhaving the 5 minute period in\nwhich the winners can claim\ntheir Prize Medals. The gate\nwill open soon, so please wait.",
+      "translation" : "[埃卡尔·艾雷内斯]\n很抱歉，魔物赛跑刚刚结束，现在是5分钟的领奖时间，获胜者可以领取神奇的奖牌。大门很快就会打开，请稍等。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1263,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nWelcome to the\nMonster Race Arena.\nIf you'd like to participate\nin the ^3131FFDouble Monster Race^000000,\nthen please select 1 out of\nthe 6 monsters from the list.",
+      "translation" : "[票务助手]\n欢迎来到魔物赛跑竞技场。\n如果您想参加^3131FF双魔物赛跑^000000，\n请从列表中6只魔物里选择1只。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1271,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nWait, wait...\nI can't give you\nanything right now.\nYou're carrying way\ntoo many things...",
+      "translation" : "[票务助手]\n等等，等等...\n我现在什么都给不了您。\n您携带的东西太多了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1280,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nHello there!\nInterested in wagering on\nthe Dual Monster Race?\nI'm here to help you if you've\ngot any questions, or if you\nwant to place your wager.",
+      "translation" : "[票务助手]\n您好！\n有兴趣押注双魔物赛跑吗？\n如果您有任何问题，或者想下注，我在这里为您服务。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1288,
+      "npc" : "Ticket Helper",
+      "text" : "Check Monster Status",
+      "translation" : "查看魔物状态"
+    },
+    {
+      "kind" : "option",
+      "line" : 1288,
+      "npc" : "Ticket Helper",
+      "text" : "Wager on Race",
+      "translation" : "押注赛跑"
+    },
+    {
+      "kind" : "option",
+      "line" : 1288,
+      "npc" : "Ticket Helper",
+      "text" : "Monster Race?",
+      "translation" : "魔物赛跑？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1288,
+      "npc" : "Ticket Helper",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1291,
+      "npc" : "Ticket Helper",
+      "placeholders" : [
+        ".@i",
+        "getd(\"$@mon_r02_Luk\"+.@i)",
+        "getd(\"$@mon_r02_tire\"+.@i)"
+      ],
+      "text" : "Monster {0} [^CC6600Luck^000000: {1}] [^EE0000HP^000000: {2}]",
+      "translation" : "魔物{0} [^CC6600幸运^000000: {1}] [^EE0000HP^000000: {2}]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1294,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nAlright, please choose which\ntwo monsters that you think\nwill win 1st and 2nd place.\nIf both your monsters come\nin 1st and 2nd, in any order,\nyou'll win the wager.",
+      "translation" : "[票务助手]\n好的，请选择您认为会获得第1名和第2名的两只魔物。\n如果您的两只魔物分别获得第1名和第2名（顺序不限），您就赢得了赌注。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1302,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nNow, please tell me\nyour first choice for one\nof the monsters that\nwill win this race.",
+      "translation" : "[票务助手]\n现在，请告诉我您认为会赢得这场比赛的第一只魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1322,
+      "npc" : "Ticket Helper",
+      "placeholders" : [
+        ".@m",
+        ".@string$[0]",
+        ".@string$[1]"
+      ],
+      "text" : "[Ticket Helper]\nYou've chosen\n^0000FFMonster {0}^000000, {1}\n{2}.\nAre you sure you want\nto choose this monster?",
+      "translation" : "[票务助手]\n您选择了\n^0000FF魔物 {0}^000000，{1}\n{2}。\n您确定要选择这只魔物吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1329,
+      "npc" : "Ticket Helper",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 1329,
+      "npc" : "Ticket Helper",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 1330,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nYou have canceled\nyour wager. Okay,\nI understand. Perhaps\nyou'd feel more comfortable\nchecking the monsters first?",
+      "translation" : "[票务助手]\n您取消了押注。好的，\n我理解。也许您想先查看一下魔物？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1339,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nNow, please make\nyour second choice\nfor the monster that\nyou think will place\n1st or 2nd in this race.",
+      "translation" : "[票务助手]\n现在，请做出您的第二个选择，\n选择您认为会获得第1名或第2名的魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1349,
+      "npc" : "Ticket Helper",
+      "placeholders" : [
+        ".@m1",
+        ".@m"
+      ],
+      "text" : "[Ticket Helper]\nYou've wagered on\n^0000FFMonster {0}^000000 and ^0000FFMonster {1}^000000\nto win this race. Good luck!\nI really hope that the odds\nwork out in your favor~",
+      "translation" : "[票务助手]\n您押注了\n^0000FF魔物 {0}^000000 和 ^0000FF魔物 {1}^000000\n赢得这场比赛。祝您好运！\n真希望好运能站在您这边~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1360,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nI'm very sorry, but a\nmonster race is underway.\nPlease wait, and then place\nyour wager for the next race.",
+      "translation" : "[票务助手]\n非常抱歉，目前魔物赛跑正在进行中。\n请等待比赛结束，\n然后再为下一场比赛下注。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1370,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nMonster Races originated from\nsimple children's games in which\nCute Pets would race against each other. This grew into an adult\npastime that is so popular, we've built a racing arena in Hugel.",
+      "translation" : "[票务助手]\n魔物赛跑起源于孩子们\n让可爱宠物互相赛跑的简单游戏。\n这项活动后来发展成了一种深受成人喜爱的娱乐方式，\n因此我们在毁葛建造了一座赛跑竞技场。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1376,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nOur Monster Race Arena hosts\ntwo types of monster races. First, we have the Single Monster Race,\nin which those that wagered on the 1st place monster are rewarded.",
+      "translation" : "[票务助手]\n我们的魔物赛跑竞技场\n举办两种类型的魔物赛跑。首先，我们有单魔物赛跑，\n押注第一名魔物获胜的玩家将获得奖励。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1381,
+      "npc" : "Ticket Helper",
+      "text" : "[Eclar Ellbird]\nThen, we have the Dual Monster\nRace in which those that wagered on the 1st and 2nd place monsters\nare equally rewarded. The house\nodds and wager rewards are greater in Dual Races than Single Races.",
+      "translation" : "[埃克拉尔·艾尔伯德]\n其次，我们有双魔物赛跑，\n押注第一名和第二名魔物的玩家\n将获得同等奖励。双魔物赛跑的\n庄家赔率和押注奖励都比单魔物赛跑更高。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1387,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nAlthough a small entrance\nfee is required, we only use\nthe money to give rewards to\nparticipants and maintain this\narena. Therefore, we're not\nprofiting from this enterprise.",
+      "translation" : "[票务助手]\n虽然需要支付少量的入场费，\n但我们只将这笔钱用于\n给参与者发放奖励以及维护这座竞技场。\n因此，我们并没有从中牟利。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1395,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nAlso, we prohibit others\nfrom making personal bets\nand wagers, using items and\nzeny, based on the outcomes\nof these races. That kind of\ngambling is illegal here...",
+      "translation" : "[票务助手]\n此外，我们禁止他人\n使用物品或Zeny，\n基于这些比赛的结果\n进行私人押注和赌博。这种行为在这里是违法的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1403,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nOnce you enter the Race Arena, you will receive a Racing Ticket.\nKeep in mind that winning Racing Tickets can only be exchanged for\nPrize Medals during a 5 minute window after the end of the race.",
+      "translation" : "[票务助手]\n一旦进入赛跑竞技场，您将获得一张赛跑门票。\n请注意，获胜的赛跑门票只能在比赛结束后的5分钟窗口期内\n兑换为神奇的奖牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1408,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nYou're already here\ninside the Monster Race\nArena, so you may as well\ntry placing a wager. It's\nmore fun than you'd think~",
+      "translation" : "[票务助手]\n您已经在魔物赛跑竞技场里了，\n不妨试着下注吧。\n这比您想象的更有趣~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1416,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nYou have canceled\nyour wager. Okay,\nI understand. Perhaps\nyou'd feel more comfortable\nchecking the monsters first?",
+      "translation" : "[票务助手]\n您取消了押注。好的，\n我理解。也许您想先查看一下魔物？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1426,
+      "npc" : "Ticket Helper",
+      "placeholders" : [
+        "monster_race_2_1",
+        "monster_race_2_2"
+      ],
+      "text" : "[Ticket Helper]\nYou've wagered on\n^0000FFMonster {0}^000000 and ^0000FFMonster {1}^000000\nfor this Dual Monster Race.",
+      "translation" : "[票务助手]\n您为这场双魔物赛跑\n押注了\n^0000FF魔物 {0}^000000 和 ^0000FF魔物 {1}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1432,
+      "npc" : "Ticket Helper",
+      "text" : "[Ticket Helper]\nThe start of the race will be\nannounced through a broadcast.\nYou can refer to your Mini-Map\nto track the monsters' race\npositions. Thank you, and\nhave a good time!",
+      "translation" : "[票务助手]\n比赛开始将通过广播宣布。\n您可以查看小地图\n来追踪魔物的赛跑位置。谢谢，\n祝您玩得愉快！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1449,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nWelcome to the\nMonster Race Arena.\nHow can I help you?",
+      "translation" : "[游戏向导]\n欢迎来到\n魔物赛跑竞技场。\n有什么可以帮您的吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1454,
+      "npc" : "Game Guide",
+      "text" : "Monster Race Info",
+      "translation" : "魔物赛跑信息"
+    },
+    {
+      "kind" : "option",
+      "line" : 1454,
+      "npc" : "Game Guide",
+      "text" : "Wager Info",
+      "translation" : "押注信息"
+    },
+    {
+      "kind" : "option",
+      "line" : 1454,
+      "npc" : "Game Guide",
+      "text" : "Ticket Redemption Info",
+      "translation" : "门票兑换信息"
+    },
+    {
+      "kind" : "message",
+      "line" : 1456,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nMonster Races originated from\nsimple children's games in which\nCute Pets would race against each other. This grew into an adult\npastime that is so popular, we've built a racing arena in Hugel.",
+      "translation" : "[游戏向导]\n魔物赛跑起源于\n孩子们简单的游戏，\n可爱的宠物互相赛跑。这逐渐发展\n成一种成人的娱乐活动，非常受欢迎，\n我们在毁葛建造了一个赛跑竞技场。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1462,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nOur Monster Race Arena hosts\ntwo types of monster races. First, we have the Single Monster Race,\nin which those that wagered on the 1st place monster are rewarded.",
+      "translation" : "[游戏向导]\n我们的魔物赛跑竞技场\n举办两种类型的魔物赛跑。首先，我们有单魔物赛跑，\n押中第一名魔物的人将获得奖励。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1467,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nThen, we have the Dual Monster\nRace in which the house odds and rewards are greater than in Single\nMonster Races: you must wager on 2 monsters, and they must place in\n1st and 2nd for you to win.",
+      "translation" : "[游戏向导]\n然后，我们有双魔物赛跑，\n其赔率和奖励比单魔物赛跑更高：\n您必须押注两只魔物，\n且它们必须分别获得第一名和第二名您才能获胜。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1473,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nAlthough a small entrance\nfee is required, we only use\nthe money to give rewards to\nparticipants and maintain this\narena. Therefore, we're not\nprofiting from this enterprise.",
+      "translation" : "[游戏向导]\n虽然需要缴纳少量的入场费，但我们只将这些钱用于奖励参赛者和维护竞技场。因此，我们并没有从中牟利。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1481,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nAlso, we prohibit others\nfrom making personal bets\nand wagers, using items and\nzeny, based on the outcomes\nof these races. That kind of\ngambling is illegal here...",
+      "translation" : "[游戏向导]\n此外，我们禁止他人基于比赛结果，使用物品或Zeny进行私人押注。这种行为在这里是违法的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1489,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nOnce you enter the Race Arena, you will receive a Racing Ticket.\nKeep in mind that winning Racing Tickets can only be exchanged for\nPrize Medals during a 5 minute window after the end of the race.",
+      "translation" : "[游戏向导]\n进入赛跑竞技场后，您将获得一张赛跑门票。请注意，获胜的赛跑门票只能在比赛结束后的5分钟内兑换为神奇的奖牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1496,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nBefore placing a wager, you\nmust get a free Racing Ticket\nfrom the Ticket Helper. There,\nI've marked the Ticket Helper\non your Mini-Map, so you can\nfind him pretty easily.",
+      "translation" : "[游戏向导]\n在押注之前，您必须从票务助手那里领取一张免费的赛跑门票。我已经在您的小地图上标记了票务助手的位置，您应该很容易找到他。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1507,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nIf you wagered on the winner\nof a Single Monster Race, or\non the 1st or 2nd place winners\nin a Dual Monster Race, then\nyou can exchange your Racing\nTicket for Prize Medals.",
+      "translation" : "[游戏向导]\n如果您押中了单魔物赛跑的冠军，或者双魔物赛跑的第一名或第二名，您就可以将赛跑门票兑换为神奇的奖牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1515,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nHowever, you must exchange\nyour Racing Ticket with the\nMedal Distributor within the\n5 minute window after the end\nof the race. ^FF0000Your ticket becomes^FFFFFF ^FF0000 void after these 5 minutes.^000000",
+      "translation" : "[游戏向导]\n但是，您必须在比赛结束后的5分钟内，找勋章发放员兑换您的赛跑门票。^FF0000您的门票在这5分钟后将^FFFFFF ^FF0000失效。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1522,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nWhen this 5 minute window\nelapses, you will be teleported outside, and we will immediately\nbegin preparing for the next race. Make sure that you remember this\ninformation when you wager.",
+      "translation" : "[游戏向导]\n当这5分钟的时间过去后，您将被传送出去，我们将立即开始准备下一场比赛。请在押注时务必记住这一信息。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1528,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nIf you haven't received\nyour free Racing Ticket,\nthen please visit the Ticket\nHelper. There, I've just marked\nhis location on your Mini-Map.",
+      "translation" : "[游戏向导]\n如果您还没有领取免费的赛跑门票，请前往票务助手处。我刚刚在他的位置标记了您的小地图。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1538,
+      "npc" : "Game Guide",
+      "text" : "[Game Guide]\nThank you, and\nI hope you enjoy\nyour time here in the\nMonster Racing Arena.",
+      "translation" : "[游戏向导]\n谢谢，希望您能在魔物赛跑竞技场度过愉快的时光。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1548,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nI'm sorry, but I can't\nreward you with any medals\nuntil you make more space\navailable in your Inventory.",
+      "translation" : "[勋章发放员]\n很抱歉，在您的物品栏腾出更多空间之前，\n我无法向您发放任何奖牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1555,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nHello there~\nIf you've wagered on the\nwinning monster in a recent\nrace, then you can exchange\nyour game ticket here for\nsome Prize Medals.",
+      "translation" : "[勋章发放员]\n您好~\n如果您在最近一场比赛中押中了获胜的魔物，\n可以在此将您的比赛门票兑换为神奇的奖牌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1564,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nPlease remember that you can\nonly exchange winning Game\nTickets for Prize Medals right\nafter the race finishes. Prize\nMedals may be given to Wayne\nin Hugel in exchange for items.",
+      "translation" : "[勋章发放员]\n请记住，您只能在比赛结束后立即\n将获胜的比赛门票兑换为神奇的奖牌。\n神奇的奖牌可以交给毁葛的韦恩兑换物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1573,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nPlease remember that you can\nonly exchange winning Game\nTickets for Prize Medals right\nafter the race finishes. Prize\nMedals may be given to Wayne\nin Hugel in exchange for items.",
+      "translation" : "[勋章发放员]\n请记住，您只能在比赛结束后立即\n将获胜的比赛门票兑换为神奇的奖牌。\n神奇的奖牌可以交给毁葛的韦恩兑换物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1582,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nCongratulations! It's really\ndifficult to guess the winners\nof a Dual Monster Race, so you\nmust be really lucky! Would you\nlike to exchange your winning\nRacing Ticket for Prize Medals?",
+      "translation" : "[勋章发放员]\n恭喜！猜中双魔物赛跑的\n获胜者真的很难，\n您一定非常幸运！您想\n将获胜的赛跑门票兑换为神奇的奖牌吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1590,
+      "npc" : "Medal Distributor",
+      "text" : "Yes, please.",
+      "translation" : "是的，请。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1590,
+      "npc" : "Medal Distributor",
+      "text" : "No, thanks.",
+      "translation" : "不用了，谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1591,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nOkay, everything looks good,\nso here's your Prize Medals~\nIf you want to trade these\nmedals for items, please\nvisit Wayne in Hugel. We hope\nyou enjoyed the Monster Race~",
+      "translation" : "[勋章发放员]\n好的，一切看起来都没问题，\n这是您的神奇的奖牌~\n如果您想将这些奖牌\n兑换为物品，请前往毁葛找韦恩。希望您\n享受了魔物赛跑~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1603,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nUm, are you sure? You \ncan only exchange a winning\nRacing Ticket for Prize Medals\nfor a short time after the race. If you made a mistake, you\nshould ask me again quickly.",
+      "translation" : "[勋章发放员]\n嗯，您确定吗？\n您只能在比赛结束后的一小段时间内\n将获胜的赛跑门票兑换为神奇的奖牌。\n如果您选错了，请尽快再次向我询问。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1611,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nWell, better luck next time...\nAlthough you can't always\nbe lucky, it's always fun to\nwager on the monster races!",
+      "translation" : "[勋章发放员]\n嗯，下次好运吧...\n虽然不可能总是幸运，\n但在魔物赛跑上下注总是很有趣的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1618,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nThanks for visiting the\nMonster Race Arena, and\nI hope you enjoy your time\nhere. I'll see you next time~",
+      "translation" : "[勋章发放员]\n感谢您光临魔物赛跑竞技场，\n希望您在这里度过愉快的时光。\n下次再见~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1625,
+      "npc" : "Medal Distributor",
+      "text" : "[Medal Distributor]\nYou may not have wagered\non the winning monster in\nthe last race, but I hope that\nyou get lucky next time~",
+      "translation" : "[勋章发放员]\n您可能没有押中上一场比赛的获胜魔物，\n但我希望您下次能好运~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1639,
+      "npc" : "Exit Guide",
+      "text" : "[Exit Guide]\nIf you have a winning Racing\nTicket, please make sure that\nyou redeem it for Prize Medals\nnow. All Racing Tickets become\nvoid once the next race begins.",
+      "translation" : "[出口向导]\n如果您有获胜的赛跑门票，\n请务必现在将其兑换为神奇的奖牌。\n下一场比赛开始后，所有赛跑门票都将失效。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1646,
+      "npc" : "Exit Guide",
+      "text" : "[Exit Guide]\nIf you wish to leave\nthe arena, then I can guide\nyou outside. Would you like\nto leave the arena right now?",
+      "translation" : "[出口向导]\n如果您想离开竞技场，\n我可以为您指引出口。\n您现在想离开竞技场吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1652,
+      "npc" : "Exit Guide",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 1652,
+      "npc" : "Exit Guide",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 1653,
+      "npc" : "Exit Guide",
+      "text" : "[Exit Guide]\nAlright, then.\nJust let me know\nwhenever you're\nready to leave.",
+      "translation" : "[出口向导]\n好的。\n当您准备好离开时，\n请随时告诉我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1661,
+      "npc" : "Exit Guide",
+      "text" : "[Exit Guide]\nThank you for\nyour patronage, and\nI hope that you come\nvisit us again soon~",
+      "translation" : "[出口向导]\n感谢您的惠顾，\n希望您很快能再来~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1667,
+      "npc" : "Exit Guide",
+      "text" : "[Exit Guide]\nIn accordance with our\npolicies, I must take your\nRacing Ticket before you leave.\nThank you for your patronage,\nand I hope you enjoy your time\nhere in the Monster Race Arena.",
+      "translation" : "[出口向导]\n根据我们的规定，\n在您离开之前，我必须收回您的赛跑门票。\n感谢您的惠顾，\n希望您在这里享受魔物赛跑竞技场的时光。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1915,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nCurses! We need to deliver\nwhat our customers ordered,\nbut we've been making nothing\nbut shipshod products! If we\nonly had that metal, we could\npump up our product quality!",
+      "translation" : "[艾菲尔]\n该死！我们需要交付\n顾客订购的产品，\n但我们一直在生产劣质品！如果我们有那种金属，\n我们就能提高产品质量！"
+    },
+    {
+      "kind" : "option",
+      "line" : 1923,
+      "npc" : "Ei'felle",
+      "text" : "What metal are you talking about?",
+      "translation" : "你说的是哪种金属？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1924,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nThere's a small village\nat the outskirts of the\nSchwarzwald Republic that\ngives these special medals\nthat are made of this metal\nwhich we desperately need...",
+      "translation" : "[艾菲尔]\n在修瓦鲁兹巴鲁德共和国的边缘\n有一个小村庄，那里会发放\n由我们急需的这种金属制成的\n特殊奖牌..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1932,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nWe've sent one of our best\nguildsmen to get some of those\nmedals for us, but he hasn't\nreported back to us quite yet.\nI'm getting pretty anxious...",
+      "translation" : "[艾菲尔]\n我们已经派了我们公会\n最好的成员之一去为我们\n获取一些那些奖牌，但他还没有\n向我们汇报。我有点着急了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1939,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nI mean, we need a whole\nlot of that metal to fill out\nour orders and finish our\nmanufacturing research,\nbut so far, none of us have\nbeen able to get any medals...",
+      "translation" : "[艾菲尔]\n我的意思是，我们需要大量的那种金属\n来完成订单并结束我们的\n制造研究，\n但到目前为止，我们还没有人\n能够获取到任何奖牌..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1948,
+      "npc" : "Ei'felle",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[{0}]\nOh! Are you talking\nabout the medals that\nthey give as rewards in\nthe Monster Race Arena?\nI have some of those.",
+      "translation" : "[{0}]\n哦！您说的是魔物赛跑竞技场\n作为奖励发放的那些奖牌吗？\n我正好有一些。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1955,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nHuh? Show them to me...\nYes! That's exactly what\nwe need! Would you please\ndonate your medals so that we\ncan finally make some quality\nproducts for our customers?",
+      "translation" : "[艾菲尔]\n咦？给我看看...\n没错！正是我们需要的那个！\n您愿意捐赠这些奖牌，\n让我们终于能为顾客\n生产高质量的产品吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1966,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nIf you happen to obtain any\nmedals from the Monster\nRace Arena in Hugel, then\nplease bring some of them\nto me. I'll be sure to repay\nyou for your kindness...",
+      "translation" : "[艾菲尔]\n如果您在毁葛的魔物赛跑竞技场\n获得了奖牌，\n请带一些给我。\n我一定会报答您的好意..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1975,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nOh, how have you been?\nThank you so much for\ndonating so many medals,\nthey've been helpful in my\nresearch. Still, I need more\nand more of them everyday...",
+      "translation" : "[艾菲尔]\n哦，最近怎么样？\n非常感谢您捐赠了这么多奖牌，\n它们对我的研究很有帮助。\n不过，我每天都还需要更多..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1984,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nThe other Blacksmith\nGuildsmen are doing their\nbest to collect Prize Medals\nin Hugel, but they keep failing\nto win them! If you have any\nmedals, then may I have some?",
+      "translation" : "[艾菲尔]\n其他铁匠公会的成员\n正在努力收集毁葛的神奇奖牌，\n但他们一直没能赢到！\n如果您有奖牌的话，\n能给我一些吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1995,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nIf you happen to obtain any\nmedals from the Monster\nRace Arena in Hugel, then\nplease bring some of them\nto me. I'll be sure to repay\nyou for your kindness...",
+      "translation" : "[艾菲尔]\n如果您在毁葛的魔物赛跑竞技场\n获得了奖牌，\n请带一些给我。\n我一定会报答您的好意..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2005,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nGoodness, you're carrying\nso many things with you!\nYou'd better put some of\nit away in Kafra Storage\nbefore you're overwhelmed\nby the bulk of your items!",
+      "translation" : "[艾菲尔]\n天哪，您身上带了这么多东西！\n最好把一些放进卡普拉仓库，\n以免被过多的物品压垮！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2016,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nAh, welcome back! I've finally\nmade a breakthrough in my\nmetal research! Look, I've\ndeveloped this Glittering\nJacket! It's lightweight and\nvery durable, you see?",
+      "translation" : "[艾菲尔]\n啊，欢迎回来！\n我的金属研究终于取得了突破！\n看，我开发了这件秘衣 恶德！\n它很轻便，而且非常耐用，您看？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2024,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nI wouldn't be able to have\ncompleted this without your\nhelp. Now, would you like to\nreceive this Glittering Jacket\nas my way of repaying you?",
+      "translation" : "[艾菲尔]\n如果没有您的帮助，\n我是不可能完成的。\n现在，您愿意接受这件秘衣 恶德\n作为我对您的回报吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 2031,
+      "npc" : "Ei'felle",
+      "text" : "Accept",
+      "translation" : "接受"
+    },
+    {
+      "kind" : "option",
+      "line" : 2031,
+      "npc" : "Ei'felle",
+      "text" : "Wait for Further Development",
+      "translation" : "等待进一步开发"
+    },
+    {
+      "kind" : "message",
+      "line" : 2035,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nAh, I see. You'd rather wait\nuntil we develop something\nmore to your liking. In that\ncase, would you please donate\nmore medals to my research?\nWe're always low on them...",
+      "translation" : "[艾菲尔]\n啊，我明白了。您宁愿等到\n我们开发出更符合您心意的东西。\n既然如此，您愿意再捐赠一些奖牌\n给我的研究吗？\n我们总是很缺..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2044,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nOh, you're back!\nThanks to all the medals\nthat you've donated, I'm now\nable to manufacture a set\nof slotted armor imbued\nwith a property of your choice.",
+      "translation" : "[艾菲尔]\n哦，您回来了！\n多亏您捐赠的所有奖牌，\n我现在能够制造一套\n带有您所选属性的插槽防具了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2052,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nIf you'd like, I can repay you\nnow by creating a set of slotted elemental armor for you, or we\ncan wait for you to donate more\nmedals until I can develop\nsomething else for you.",
+      "translation" : "[艾菲尔]\n如果您愿意，我现在就可以为您\n打造一套插槽元素防具作为回报，\n或者我们可以等您捐赠更多奖牌，\n直到我能为您开发其他东西。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2059,
+      "npc" : "Ei'felle",
+      "text" : "Accept Armor",
+      "translation" : "接受防具"
+    },
+    {
+      "kind" : "option",
+      "line" : 2059,
+      "npc" : "Ei'felle",
+      "text" : "Can I have something else?",
+      "translation" : "我能要别的东西吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 2059,
+      "npc" : "Ei'felle",
+      "text" : "Wait for Further Development",
+      "translation" : "等待进一步开发"
+    },
+    {
+      "kind" : "message",
+      "line" : 2061,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nI can manufacture one set of\nslotted Armor imbued with the\nFire, Earth, Wind, or Water\nproperty. Which property would\nyou like your armor to have?",
+      "translation" : "[艾菲尔]\n我可以制造一套带有火、地、风\n或水属性的插槽防具。\n您希望您的防具具有哪种属性？"
+    },
+    {
+      "kind" : "option",
+      "line" : 2068,
+      "npc" : "Ei'felle",
+      "text" : "Fire Property",
+      "translation" : "火属性"
+    },
+    {
+      "kind" : "option",
+      "line" : 2068,
+      "npc" : "Ei'felle",
+      "text" : "Earth Property",
+      "translation" : "土属性"
+    },
+    {
+      "kind" : "option",
+      "line" : 2068,
+      "npc" : "Ei'felle",
+      "text" : "Wind Property",
+      "translation" : "风属性"
+    },
+    {
+      "kind" : "option",
+      "line" : 2068,
+      "npc" : "Ei'felle",
+      "text" : "Water Property",
+      "translation" : "水属性"
+    },
+    {
+      "kind" : "message",
+      "line" : 2075,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nSomething else...?\nOh, you must mean\nthe Glittering Jacket that\nI developed earlier. After\nall, I have any other items\nto offer you for now...",
+      "translation" : "[艾菲尔]\n别的东西...？\n哦，您指的应该是\n我之前开发的那件秘衣 恶德。\n毕竟，我现在没有其他物品\n可以提供给您了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2086,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nAh, I see. You'd rather wait\nuntil we develop something\nmore to your liking. In that\ncase, would you please donate\nmore medals to my research?\nWe're always low on them...",
+      "translation" : "[艾菲尔]\n啊，我明白了。您宁愿等到\n我们开发出更符合您心意的东西。\n既然如此，您愿意再捐赠一些奖牌\n给我的研究吗？\n我们总是很缺..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2098,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nThe other Blacksmith\nGuildsmen are doing their\nbest to collect Prize Medals\nin Hugel, but they keep failing\nto win them! If you have any\nmedals, then may I have some?",
+      "translation" : "[艾菲尔]\n其他铁匠公会的成员\n正在努力收集毁葛的神奇奖牌，\n但他们一直没能赢到！\n如果您有奖牌的话，\n能给我一些吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2109,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nIf you happen to obtain any\nmedals from the Monster\nRace Arena in Hugel, then\nplease bring some of them\nto me. I'll be sure to repay\nyou for your kindness...",
+      "translation" : "[艾菲尔]\n如果您在毁葛的魔物赛跑竞技场\n获得了奖牌，\n请带一些给我。\n我一定会报答您的好意..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2118,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nAh, you're back! I've\nextracted all the metal\nfrom the medals you've\ngiven me, and I think I have\nenough to create a Level 4\nWeapon. Isn't that incredible?",
+      "translation" : "[艾菲尔]\n啊，您回来了！\n我已经从您给我的奖牌中\n提取了所有金属，\n我想我有足够的材料\n来制作一把4级武器了。\n这不可思议吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2126,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nIf you like, I can create\none of these weapons for you\nas my way of repaying you for\nyour help. What do you think?",
+      "translation" : "[艾菲尔]\n如果您愿意，我可以为您打造\n其中一把武器，作为对您帮助的回报。\n您觉得如何？"
+    },
+    {
+      "kind" : "option",
+      "line" : 2132,
+      "npc" : "Ei'felle",
+      "text" : "Yes, I want a Level 4 Weapon.",
+      "translation" : "是的，我想要一把4级武器。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2132,
+      "npc" : "Ei'felle",
+      "text" : "Can I have something else?",
+      "translation" : "我能要别的东西吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2133,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nSomething else?\nOh, alright then, would\nyou like to have a Glittering\nJacket, or a set of slotted\nelemental Armor? Please go\nahead and make your choice~",
+      "translation" : "[艾菲尔]\n别的东西？\n哦，好吧，那您想要一件秘衣 恶德，\n还是一套插槽元素防具？\n请随意选择~"
+    },
+    {
+      "kind" : "option",
+      "line" : 2141,
+      "npc" : "Ei'felle",
+      "text" : "Glittering Jacket",
+      "translation" : "秘衣 恶德"
+    },
+    {
+      "kind" : "option",
+      "line" : 2141,
+      "npc" : "Ei'felle",
+      "text" : "Fire Property Armor",
+      "translation" : "火属性防具"
+    },
+    {
+      "kind" : "option",
+      "line" : 2141,
+      "npc" : "Ei'felle",
+      "text" : "Earth Property Armor",
+      "translation" : "土属性防具"
+    },
+    {
+      "kind" : "option",
+      "line" : 2141,
+      "npc" : "Ei'felle",
+      "text" : "Wind Property Armor",
+      "translation" : "风属性防具"
+    },
+    {
+      "kind" : "option",
+      "line" : 2141,
+      "npc" : "Ei'felle",
+      "text" : "Water Property Armor",
+      "translation" : "水属性防具"
+    },
+    {
+      "kind" : "option",
+      "line" : 2141,
+      "npc" : "Ei'felle",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 2152,
+      "npc" : "Ei'felle",
+      "placeholders" : [
+        ".@type$[.@m]"
+      ],
+      "text" : "[Ei'felle]\nSo you'd like to have a\n{0}? Please choose\nwhich Level 4 Weapon\nthat you want me to create.",
+      "translation" : "[艾菲尔]\n您想要{0}吗？\n请告诉我您想让我打造哪一把4级武器。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2211,
+      "npc" : "Ei'felle",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 2219,
+      "npc" : "Ei'felle",
+      "text" : "Sure",
+      "translation" : "当然"
+    },
+    {
+      "kind" : "option",
+      "line" : 2219,
+      "npc" : "Ei'felle",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 2220,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nOh, alright...\nStill, I really need\nthose medals, so if you\nchange your mind, please\ncome back as soon as you can.",
+      "translation" : "[艾菲尔]\n哦，好吧...\n不过我真的很需要那些奖牌，\n如果您改变主意了，\n请尽快回来找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2229,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nOh, thank you so much!\nI can use the metal in those\nmedals to produce some high\nquality products. Now, how\nshall I repay you for giving me\nsome of your Prize Medals?",
+      "translation" : "[艾菲尔]\n哦，太感谢您了！\n我可以用那些奖牌里的金属\n制造出高品质的产品。\n那么，我该如何回报\n您给我的神奇奖牌呢？"
+    },
+    {
+      "kind" : "option",
+      "line" : 2237,
+      "npc" : "Ei'felle",
+      "text" : "Base Experience",
+      "translation" : "基础经验值"
+    },
+    {
+      "kind" : "option",
+      "line" : 2237,
+      "npc" : "Ei'felle",
+      "text" : "Job Experience",
+      "translation" : "职业经验值"
+    },
+    {
+      "kind" : "option",
+      "line" : 2237,
+      "npc" : "Ei'felle",
+      "text" : "No, I'm just glad to help.",
+      "translation" : "不，我只是很高兴能帮上忙。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2237,
+      "npc" : "Ei'felle",
+      "text" : "How's your research progressing?",
+      "translation" : "您的研究进展如何？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2239,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nYou just want to improve\nyourself, huh? Well, I dunno\nif you want to get stronger,\nsmarter, or faster, but I can\ncoach you on some visualization if you like. Now, relax with me~\nphysical development.",
+      "translation" : "[艾菲尔]\n您只是想让自己变得更强，对吧？\n嗯，我不知道您是想变强、变聪明还是变快，\n但如果您愿意，我可以教您一些意象训练。\n现在，跟着我一起放松~\n进行身体开发。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2247,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nFocus... and believe.\nBelieve that you are\nbecoming what you want\nto be! B-believe... with\nall of your freakin' heart!",
+      "translation" : "[艾菲尔]\n集中注意力...并去相信。\n相信您正在成为您想成为的样子！\n相...相信...用您全部的心去相信！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2256,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\n*Phew* How's that?\nNow do you see the\npower of hope?",
+      "translation" : "[艾菲尔]\n*呼* 感觉如何？\n现在您看到希望的力量了吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2298,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nYou want to become more\ncompetent in your job? Um...\nAlright, we can do that. Just\nmeditate with me, and we'll go\ndo some imagery work together.\nI'm real good at this you know.",
+      "translation" : "[艾菲尔]\n您想在工作中变得更胜任吗？嗯...\n好吧，我们可以做到。只需跟着我冥想，\n我们一起做一些意象工作。\n我在这方面真的很擅长，你知道吗。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2306,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nJ-just... visualize\nyourself... being...\nt-totally... awesome!\nYou've gotta see it, and\nyou've gotta feel it in your\nfreakin' heart and mind!",
+      "translation" : "[艾菲尔]\n只...只要...想象...自己...\n完...完全...很厉害！\n您必须看到它，\n并且必须用您的心和头脑去感受它！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2316,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nYeap, it doesn't matter\nif it's real or imagined...\nYour mind will work on\nwhatever you feed it.\nPlacebos and psychosomatic symptoms-- it all ties together.",
+      "translation" : "[艾菲尔]\n是的，无论是真实的还是想象的...\n您的大脑会处理您输入的任何东西。\n安慰剂效应和心身症状——它们都是相互关联的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2406,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nWhat th--?! You sure\nyou don't want anything?\nHm, well, I think it's kind\nof bad karma if I don't give\nyou anything in return, so...\nThink of something. Quick.",
+      "translation" : "[艾菲尔]\n什...什么？！您确定什么都不想要吗？\n嗯，我觉得如果不给您任何回报，\n对我来说有点像是坏运气，所以...\n想点东西。快点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2414,
+      "npc" : "Ei'felle",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[{0}]\nEr, just use the medals\nto further your manufacturing\nresearch, and then you can\npay me back if your develop\nsomething new. It's, um, like\nan investment in your work!",
+      "translation" : "[{0}]\n呃，就用那些奖牌继续您的制造研究吧，\n如果您开发出新的东西，再还给我。\n这，嗯，就像是对您工作的一笔投资！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2422,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nYeah... Yeah.\nOkay, I see where\nyou're coming from.\nThat's pretty smart.\nOkay, I'll repay you when\nwe develop something new!",
+      "translation" : "[艾菲尔]\n是的...是的。\n好的，我明白您的意思了。\n这很聪明。\n好的，等我们研发出新东西时，我会报答您的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2430,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nAnyway, I need as many\nmedals as I can get as\nsoon as I can. How many\nmedals do you think you\ncan give me right now?",
+      "translation" : "[艾菲尔]\n总之，我需要尽可能多地收集奖牌，越快越好。您觉得现在能给我多少枚奖牌？"
+    },
+    {
+      "kind" : "option",
+      "line" : 2437,
+      "npc" : "Ei'felle",
+      "text" : "Take them all.",
+      "translation" : "全部给您。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2437,
+      "npc" : "Ei'felle",
+      "text" : "How about this much?",
+      "translation" : "给这么多怎么样？"
+    },
+    {
+      "kind" : "option",
+      "line" : 2437,
+      "npc" : "Ei'felle",
+      "text" : "No, I changed my mind.",
+      "translation" : "不，我改变主意了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2439,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nTh-thank you!\nThank you so much!\nYour help will greatly\nadvance my research,\nand I promise to repay\nyou as soon as I can!",
+      "translation" : "[艾菲尔]\n谢...谢谢您！\n太感谢您了！\n您的帮助将极大地推动我的研究，\n我保证会尽快报答您！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2451,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nAlright, please enter the\nnumber of medals that\nyou're willing to give me.\nPlease don't enter any\nnumber greater than 100.",
+      "translation" : "[艾菲尔]\n好的，请输入您愿意给我的奖牌数量。\n请不要输入超过100的数字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2461,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nAw, so you've decided\nto cancel? Well, it's your\nchoice, but I'm still so\ndisappointed. Please come\nback if you change your mind...",
+      "translation" : "[艾菲尔]\n哎呀，您决定取消了？好吧，这是您的选择，\n但我还是很失望。如果您改变主意，请回来找我..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2469,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nRemember, you can only\nenter a number from 1 to 100.\nIf you want to give me more\nmedals, then perhaps you\nshould just give them all to me~",
+      "translation" : "[艾菲尔]\n记住，您只能输入1到100之间的数字。\n如果您想给我更多奖牌，\n也许直接把所有的都给我比较好~"
+    },
+    {
+      "kind" : "message",
+      "line" : 2479,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nI'm sorry, but I don't\nthink you have that many\nmedals with you. Make sure\nthat you offer me an amount of\nmedals that you actually have.",
+      "translation" : "[艾菲尔]\n抱歉，我觉得您身上没有那么多奖牌。\n请确保您提供的奖牌数量是您实际拥有的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2488,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nTh-thank you!\nThank you so much!\nYour help will greatly\nadvance my research,\nand I promise to repay\nyou as soon as I can!",
+      "translation" : "[艾菲尔]\n谢...谢谢您！\n太感谢您了！\n您的帮助将极大地推动我的研究，\n我保证会尽快报答您！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2500,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nOh, alright...\nStill, I really need\nthose medals, so if you\nchange your mind, please\ncome back as soon as you can.",
+      "translation" : "[艾菲尔]\n哦，好吧...\n不过我真的很需要那些奖牌，\n如果您改变主意了，\n请尽快回来找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2509,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nWell, I've been able to\ncreate a Glittering Jacket\nusing the medals that you've\nbrought to me. But I just know\nI can make something better\nif you'd bring me more!",
+      "translation" : "[艾菲尔]\n嗯，利用您带来的奖牌，\n我成功制作了一件秘衣 恶德。\n但我心里清楚，如果您能带来更多奖牌，\n我一定能做出更好的东西！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2517,
+      "npc" : "Ei'felle",
+      "placeholders" : [
+        "ein_medal01"
+      ],
+      "text" : "[Ei'felle]\nAs of now, I have the metal\nfrom ^FF0000{0}^000000 Prizes Medals that\nyou've donated to me. The more\nthat you bring, the closer I can get to making a new breakthrough!",
+      "translation" : "[艾菲尔]\n目前，我拥有来自您捐赠的^FF0000{0}^000000枚奖牌的金属。\n您带来的越多，我离实现新的突破就越近！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2526,
+      "npc" : "Ei'felle",
+      "placeholders" : [
+        "getitemname(.@arg1)"
+      ],
+      "text" : "[Ei'felle]\nDo you really want\nthis {0}?\nYou may want to forego this\nreward in favor of getting\nsomething better later...",
+      "translation" : "[艾菲尔]\n您真的想要这个{0}吗？\n您可能想放弃这个奖励，\n以便之后获得更好的东西..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2526,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nAre you sure that you want\nto accept this set of slotted\nFire property Armor? If you do,\nI'll need more medals from you\nto make further advancements\nin my manufacturing research.",
+      "translation" : "[艾菲尔]\n您确定要接受这套带孔的火属性防具吗？如果是，\n我需要您提供更多的奖牌，\n以便我在制造研究上取得进一步进展。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2526,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nAre you sure that you want\nto accept this set of slotted\nEarth property Armor? If you do,\nI'll need more medals from you\nto make further advancements\nin my manufacturing research.",
+      "translation" : "[艾菲尔]\n您确定要接受这套带孔的地属性防具吗？如果是，\n我需要您提供更多的奖牌，\n以便我在制造研究上取得进一步进展。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2526,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nAre you sure that you want\nto accept this set of slotted\nWind property Armor? If you do,\nI'll need more medals from you\nto make further advancements\nin my manufacturing research.",
+      "translation" : "[艾菲尔]\n您确定要接受这套带孔的风属性防具吗？如果是，\n我需要您提供更多的奖牌，\n以便我在制造研究上取得进一步进展。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2526,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nAre you sure that you want\nto accept this set of slotted\nWater property Armor? If you do,\nI'll need more medals from you\nto make further advancements\nin my manufacturing research.",
+      "translation" : "[艾菲尔]\n您确定要接受这套带孔的水属性防具吗？如果是，\n我需要您提供更多的奖牌，\n以便我在制造研究上取得进一步进展。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2526,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nAre you sure that you want\nto accept this set of slotted\nI'll need more medals from you\nto make further advancements\nin my manufacturing research.",
+      "translation" : "[艾菲尔]\n您确定要接受这套带孔的防具吗？\n我需要您提供更多的奖牌，\n以便我在制造研究上取得进一步进展。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2526,
+      "npc" : "Ei'felle",
+      "placeholders" : [
+        "getitemname(.@arg1)"
+      ],
+      "text" : "[Ei'felle]\nSo you wish to have a\n{0}? If you choose\nto have this Level 4 Weapon,\nI'll need to melt many of the\nmedals that you've donated\nto me. Shall we proceed?",
+      "translation" : "[艾菲尔]\n所以您想要一把{0}？如果您选择制作这把4级武器，\n我将需要熔毁许多您捐赠给我的奖牌。\n我们要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 2553,
+      "npc" : "Ei'felle",
+      "text" : "Decline",
+      "translation" : "拒绝"
+    },
+    {
+      "kind" : "option",
+      "line" : 2553,
+      "npc" : "Ei'felle",
+      "text" : "Accept",
+      "translation" : "接受"
+    },
+    {
+      "kind" : "message",
+      "line" : 2554,
+      "npc" : "Ei'felle",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[{0}]\nW-wait, I changed my\nmind. Would it be fine\nif I asked you to give\nme a reward later?",
+      "translation" : "[{0}]\n等...等等，我改变主意了。\n如果我稍后再向您索要奖励，可以吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2560,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nOf course, of course.\nRemember, if you donate\nmore medals to me, then\nI'll be able to create items\nof higher quality for you~",
+      "translation" : "[艾菲尔]\n当然，当然。\n请记住，如果您捐赠更多的奖牌，\n我就能为您制作出更高质量的装备~"
+    },
+    {
+      "kind" : "message",
+      "line" : 2560,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nI don't think I can develop\nanything better than these Level 4 Weapons, but after making\nsuch a big investment, you should decide on what you want carefully.",
+      "translation" : "[艾菲尔]\n我觉得我很难开发出比这些4级武器更好的东西了，\n但既然投入了这么多，您应该仔细考虑一下想要什么。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2574,
+      "npc" : "Ei'felle",
+      "placeholders" : [
+        "getitemname(.@arg1)"
+      ],
+      "text" : "[Ei'felle]\nHere you are, I trust that\nthis {0} will\nserve you well. Thank you\nfor your help, and I hope that\nyou'll continue to donate your\nmedals for my metal research~",
+      "translation" : "[艾菲尔]\n给您，我相信这把{0}能很好地为您服务。\n感谢您的帮助，希望您能继续捐赠奖牌用于我的金属研究~"
+    },
+    {
+      "kind" : "message",
+      "line" : 2574,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nGreat choice! I'm sure\nthat this set of slotted Fire\nproperty Armor will serve you\nwell. Thank you for your help,\nand if you get more medals,\nplease donate them to me~",
+      "translation" : "[艾菲尔]\n很好的选择！我相信这套带孔的火属性防具能很好地为您服务。\n感谢您的帮助，如果您获得更多奖牌，请捐赠给我~"
+    },
+    {
+      "kind" : "message",
+      "line" : 2574,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nGreat choice! I'm sure\nthat this set of slotted Earth\nproperty Armor will serve you\nwell. Thank you for your help,\nand if you get more medals,\nplease donate them to me~",
+      "translation" : "[艾菲尔]\n很好的选择！我相信这套带孔的地属性防具能很好地为您服务。\n感谢您的帮助，如果您获得更多奖牌，请捐赠给我~"
+    },
+    {
+      "kind" : "message",
+      "line" : 2574,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nGreat choice! I'm sure\nthat this set of slotted Wind\nproperty Armor will serve you\nwell. Thank you for your help,\nand if you get more medals,\nplease donate them to me~",
+      "translation" : "[艾菲尔]\n很好的选择！我相信这套带孔的风属性防具能很好地为您服务。\n感谢您的帮助，如果您获得更多奖牌，请捐赠给我~"
+    },
+    {
+      "kind" : "message",
+      "line" : 2574,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nGreat choice! I'm sure\nthat this set of slotted Water\nproperty Armor will serve you\nwell. Thank you for your help,\nand if you get more medals,\nplease donate them to me~",
+      "translation" : "[艾菲尔]\n很好的选择！我相信这套带孔的水属性防具能很好地为您服务。\n感谢您的帮助，如果您获得更多奖牌，请捐赠给我~"
+    },
+    {
+      "kind" : "message",
+      "line" : 2574,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nGreat choice! I'm sure\nproperty Armor will serve you\nwell. Thank you for your help,\nand if you get more medals,\nplease donate them to me~",
+      "translation" : "[艾菲尔]\n很好的选择！我相信这套带孔的防具能很好地为您服务。\n感谢您的帮助，如果您获得更多奖牌，请捐赠给我~"
+    },
+    {
+      "kind" : "message",
+      "line" : 2574,
+      "npc" : "Ei'felle",
+      "text" : "[Ei'felle]\nOnce again, I'd like to\nthank you for providing\nme with all of those medals.\nI imagine it must have been\ndifficult. In any case, I would\nappreciate your continued help~",
+      "translation" : "[艾菲尔]\n再次感谢您提供给我所有这些奖牌。\n我想这一定很不容易。无论如何，我都感激您持续的帮助~"
+    },
+    {
+      "kind" : "message",
+      "line" : 2607,
+      "npc" : "Wayne",
+      "text" : "[Wayne]\nHold on a second...\nIf you want to exchange\nyour Prize Medals for items,\nyou'd better free up more space\nin your Inventory first. Why don't you use your Kafra Storage?",
+      "translation" : "[韦恩]\n等一下...\n如果您想兑换神奇的奖牌，\n最好先腾出一些背包空间。为什么不使用卡普拉仓库呢？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2615,
+      "npc" : "Wayne",
+      "text" : "[Wayne]\nHello, there! Ever wonder\nwhat you could do with all\nthe Prize Medals you can win\nin Monster Race Arena? You\ncan donate them in Einbroch\nto the Blacksmith Guild...",
+      "translation" : "[韦恩]\n你好！你有没有想过，\n在魔物赛跑竞技场赢来的那些神奇的奖牌能用来做什么？\n你可以把它们捐赠给艾音布罗克的铁匠公会..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2623,
+      "npc" : "Wayne",
+      "text" : "[Wayne]\n...Or you can exchange them\nfor items, right here and right\nnow, with me. As always, the\nchoice is really up to you.",
+      "translation" : "[韦恩]\n...或者你可以直接在这里，\n现在，用它们和我兑换物品。一如既往，\n选择权完全在您。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2629,
+      "npc" : "Wayne",
+      "text" : "Prize Medal Exchange",
+      "translation" : "神奇的奖牌兑换"
+    },
+    {
+      "kind" : "option",
+      "line" : 2629,
+      "npc" : "Wayne",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 2630,
+      "npc" : "Wayne",
+      "text" : "[Wayne]\nWell, just keep in mind\nthat you can always come\nto me to trade in your Prize\nMedals for consumable items.\nThat guy in Einbroch? Not sure\nwhat he'd give you for them...",
+      "translation" : "[韦恩]\n嗯，只要记住，\n你随时可以来找我，\n用神奇的奖牌兑换消耗品。\n艾音布罗克的那个人？不确定他会给你什么..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2638,
+      "npc" : "Wayne",
+      "text" : "[Wayne]\nAll I know is that he\nneeds a whole lot of medals\nfor the work that he's doing.\nStill, I hear that he just may\nmake your donations worth\nall your effort, you know?",
+      "translation" : "[韦恩]\n我只知道，\n他需要大量的奖牌来完成他的工作。\n不过，我听说他可能会让你的捐赠物有所值，你知道吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2648,
+      "npc" : "Wayne",
+      "text" : "[Wayne]\nHold on a second...\nIf you want to exchange\nyour Prize Medals for items,\nyou'd better free up more space\nin your Inventory first. Why don't you use your Kafra Storage?",
+      "translation" : "[韦恩]\n等一下...\n如果您想兑换神奇的奖牌，\n最好先腾出一些背包空间。为什么不使用卡普拉仓库呢？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2656,
+      "npc" : "Wayne",
+      "text" : "[Wayne]\nNow, how many Prize Medals\nwould you like to exchange?\nIt doesn't take a genius to\nfigure out that you can get\nmore valuable items by trading\nmore Prize Medals at a time.",
+      "translation" : "[韦恩]\n那么，你想兑换多少神奇的奖牌？\n这不需要天才也能看出来，\n一次兑换更多的神奇的奖牌，你能得到更有价值的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2703,
+      "npc" : "Wayne",
+      "placeholders" : [
+        ".@pm[.@m]",
+        "((getarraysize(.@item_array)<3)?\" Well, we have only 1 set, but...\":\"\")"
+      ],
+      "text" : "[Wayne]\nNow, please choose\nwhich of the following item\nsets that you'd like to receive\nin exchange for {0} Prize Medal.{1}",
+      "translation" : "[韦恩]\n现在，请从以下物品套装中选择一个，\n作为{0}神奇的奖牌的兑换奖励。{1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 2711,
+      "npc" : "Wayne",
+      "text" : "[Wayne]\nHey, you don't have\nenough Prize Medals with\nyou. Go and get some more\nif you want to exchange\nthem with me for anything.",
+      "translation" : "[韦恩]\n嘿，你身上的神奇的奖牌不够。\n如果你想和我兑换任何东西，\n去多弄一些吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2719,
+      "npc" : "Wayne",
+      "text" : "[Wayne]\nThere you go~\nThanks for using my\nservice, and I hope that\nyou come visit me again\nsoon. Enjoy the monster\nraces, fair adventurer~",
+      "translation" : "[韦恩]\n给你~\n感谢使用我的服务，\n希望很快能再次见到你。\n祝你在魔物赛跑中玩得开心，勇敢的冒险者~"
+    },
+    {
+      "kind" : "message",
+      "line" : 2735,
+      "npc" : "Eocatt",
+      "text" : "[Eocatt]\nThere's an old, humble\nvillage on the outskirts of\nthe Schwarzwald Republic.\nIt was just a tiny blip on the\nmap until they opened up\ntheir Monster Race Arena!",
+      "translation" : "[埃奥卡特]\n在修瓦鲁兹巴鲁德共和国的边缘，\n有一个古老而谦逊的村庄。\n直到他们开放了魔物赛跑竞技场，\n它才在地图上变得引人注目！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2743,
+      "npc" : "Eocatt",
+      "text" : "[Eocatt]\nIf you win wagers on the\nmonster race games, you'll\nbe rewarded with these Prize\nMedals that are made of some\nreally rare metal. I hear this metal's in demand in Einbroch...",
+      "translation" : "[埃奥卡特]\n如果你在魔物赛跑中赢得赌注，\n就会获得这些由极其稀有的金属制成的神奇的奖牌。\n我听说这种金属在艾音布罗克很抢手..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2750,
+      "npc" : "Eocatt",
+      "text" : "[Eocatt]\nRight, right...\nI remember now, the\ntown was named Hugel.\nI'm sure there's other fun\nthings to do there, but I'm sure that the Race Arena is a must!",
+      "translation" : "[埃奥卡特]\n没错，没错...\n我想起来了，那个城镇叫毁葛。\n我相信那里还有其他有趣的事情，\n但竞技场绝对是必去之地！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2760,
+      "npc" : "Mudie",
+      "text" : "[Mudie]\nThe Monster Races\nare probably the biggest\nattraction here in Hugel.\nWe don't have much else\ngoing on here, I'm afraid.",
+      "translation" : "[穆迪]\n魔物赛跑大概是这里毁葛最大的看点。\n恐怕我们这里没什么其他活动了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2767,
+      "npc" : "Mudie",
+      "text" : "[Mudie]\nIf you want to go visit\nthe Monster Race Arena,\njust head towards the\n7 'o clock direction on\nyour Mini-Map, and look for\nthe hill surrounded by a fence.",
+      "translation" : "[穆迪]\n如果你想参观魔物赛跑竞技场，\n只需朝小地图的7点钟方向走，\n寻找那个被围栏围住的小山丘。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2775,
+      "npc" : "Mudie",
+      "text" : "[Mudie]\nYou should find the arena\nsomewhere around that area.\nAnyway, if you want to wager\nor just watch the races, just\nask one of the Eckar brothers. I hope you enjoy our little town~",
+      "translation" : "[穆迪]\n你应该能在附近找到竞技场。\n总之，如果你想下注或只是观看比赛，\n去找埃卡尔兄弟中的任何一个吧。希望你喜欢我们的小镇~"
+    },
+    {
+      "kind" : "message",
+      "line" : 2785,
+      "npc" : "Eccentric Scholar",
+      "text" : "[Eccentric Scholar]\nLet's see now...\nMonster 1's average speed\nand luck, as affected by\nwind resistance, fatigue...\nWhat's the approximate\nprobability of winning...?",
+      "translation" : "[古怪的学者]\n让我看看...\n1号魔物的平均速度和运气，\n受风阻、疲劳等因素影响...\n获胜的大致概率是多少...？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2793,
+      "npc" : "Eccentric Scholar",
+      "text" : "[Eccentric Scholar]\nCrunch it into my\nalgorithm... Carry the two...\nWait, how many significant\nfigures should I be using?\nAh, right, 7, to account for x,\na value representing--",
+      "translation" : "[古怪的学者]\n把它代入我的算法...进位是2...\n等等，我应该保留几位有效数字？\n啊，对了，7位，为了考虑x，\n一个代表--的值"
+    },
+    {
+      "kind" : "message",
+      "line" : 2801,
+      "npc" : "Eccentric Scholar",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[{0}]\nExcuse me, but\nwhat are you doing?",
+      "translation" : "[{0}]\n打扰一下，\n你在做什么？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2805,
+      "npc" : "Eccentric Scholar",
+      "text" : "[Eccentric Scholar]\nS-silence!\nI must complete\nmy calculations!\nNow, where was I...?",
+      "translation" : "[古怪的学者]\n肃静！\n我必须完成我的计算！\n那么，我刚才说到哪了...？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2817,
+      "npc" : "Blacksmith Guildsman",
+      "text" : "[Blacksmith Guildsman]\nHow many times must\nI wager on these races?!\nI haven't won even once!\nOh, I must have the worst\nluck in wagering history!",
+      "translation" : "[铁匠公会成员]\n我要下多少次注才能赢这些比赛啊？！\n我一次都没赢过！\n噢，我一定是赌运史上最倒霉的人！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2825,
+      "npc" : "Blacksmith Guildsman",
+      "text" : "[Blacksmith Guildsman]\nI've been assigned by my\nguild to bring back some\nPrize Medals to Einbroch...\nThey're apparently made\nwith some rare metal, but...\nIt's too hard for me to win~!",
+      "translation" : "[铁匠公会成员]\n我的公会派我来把一些神奇的奖牌带回艾音布罗克...\n它们似乎是用某种稀有金属制成的，但是...\n对我来说太难赢了~！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2835,
+      "npc" : "Blacksmith Guildsman",
+      "text" : "[Blacksmith Guildsman]\nRun! Go go go!\nI need to win some\nmedals! Otherwise, I'll\nbe too ashamed to return\nhome to Einbroch! F-faster!",
+      "translation" : "[铁匠公会成员]\n跑！快跑快跑！\n我需要赢一些奖牌！否则，\n我会羞愧得不敢回到艾音布罗克！快...再快点！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2846,
+      "npc" : "Valiant Knight",
+      "text" : "[Valiant Knight]\nHey, have you been\nwagering on the races?\nIf you've got a hot tip, then\nwould you share it with me?\nI've won some wagers... But\nI really wanna win more!",
+      "translation" : "[英勇的骑士]\n嘿，你一直在下注比赛吗？\n如果你有什么内部消息，\n能分享给我吗？\n我赢了一些赌注...但我真的想赢更多！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2854,
+      "npc" : "Valiant Knight",
+      "text" : "[Valiant Knight]\nHah hah! It's like I tell\nthose Blacksmiths! If they\ndon't wanna lose all the time,\nthen they should just bet on the same monster. Me? I always\nbet on the black Deviruchi~",
+      "translation" : "[英勇的骑士]\n哈哈！就像我告诉那些铁匠的那样！\n如果他们不想一直输，\n就应该只押同一只魔物。我呢？我总是押黑色的小恶魔~"
+    },
+    {
+      "kind" : "message",
+      "line" : 2861,
+      "npc" : "Valiant Knight",
+      "text" : "[Valiant Knight]\nYou too...!\nAlways bet\non Deviruchi!",
+      "translation" : "[英勇的骑士]\n你也是...！\n永远押小恶魔！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2870,
+      "npc" : "Drunkard",
+      "text" : "[Familiar Drunkard]\nGrrr...! ^333333*Hiccup*^000000\nI just gotta win this\nnext game! I hafta do it!\nHey, you! Which number is\nyour lucky number? Huh?",
+      "translation" : "[眼熟的酒鬼]\n咕噜...！^333333*打嗝*^000000\n我必须赢下一场比赛！我必须做到！\n嘿，你！你的幸运数字是多少？什么？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2877,
+      "npc" : "Drunkard",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[{0}]\nI, er...",
+      "translation" : "[{0}]\n我，呃..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2880,
+      "npc" : "Drunkard",
+      "text" : "[Familiar Drunkard]\nC'mon, I need your\nlucky number cuz I ran\nout of mine! Tell me!\nTell me! ^333333*Hiccup~*^000000",
+      "translation" : "[眼熟的酒鬼]\n快说，我需要你的幸运数字，因为我的用完了！告诉我！\n告诉我！^333333*打嗝~*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 2889,
+      "npc" : "Blacksmith Guildsman",
+      "text" : "[Blacksmith Guildsman]\nHow can this be so hard?\nWhy can't I win at least\none of these races? Argh!\nI can't go back until I get\nat least one Prize Medal!",
+      "translation" : "[铁匠公会成员]\n这怎么可能这么难？\n为什么我连一场比赛都赢不了？啊！\n在拿到至少一枚神奇的奖牌之前，我不能回去！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2896,
+      "npc" : "Blacksmith Guildsman",
+      "text" : "[Blacksmith Guildsman]\nYeah, I've been assigned\nby the Einbroch Factory to\nget some Prize Medals since\nthey're made of this rare medal. But it looks like they picked\nthe wrong guy for this job...",
+      "translation" : "[铁匠公会成员]\n是的，艾音布罗克工厂派我来拿一些神奇的奖牌，\n因为它们是用这种稀有金属制成的。但看起来他们选错人了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2903,
+      "npc" : "Blacksmith Guildsman",
+      "text" : "[Blacksmith Guildsman]\nI mean, I've been here\nforever and I haven't won\nanything yet! Hey, do me\na favor and give any extra\nPrize Medals you might have\nto the Einbroch Factory, okay?",
+      "translation" : "[铁匠公会成员]\n我是说，我在这里待了这么久，却还没赢过任何比赛！\n拜托你个忙，如果你有多余的神奇奖牌，\n请把它们交给艾音布罗克工厂，好吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2914,
+      "npc" : "Absent Minded Man",
+      "text" : "[Absent Minded Man]\nSay, are you here to bet\non the monster races? I've\ncome all the way here, just\nbecause some strange man\nasked me to win medals. It's\nthe only reason I'm in Hugel...",
+      "translation" : "[心不在焉的男子]\n喂，你是来赌怪物赛跑的吗？\n我大老远来到这里，\n只是因为一个奇怪的男子让我去赢奖牌。\n这是我来到毁葛的唯一原因..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2922,
+      "npc" : "Absent Minded Man",
+      "text" : "[Absent Minded Man]\nBut I've made more than\n100 wagers, and haven't won\nany of them! I mean, if I bet\non the same monster 6 times,\nI should win at least once,\nright? What's going on?!",
+      "translation" : "[心不在焉的男子]\n但我已经下了100多注，却一注都没赢！\n我是说，如果我连续6次押注同一只怪物，\n我至少应该赢一次吧？到底怎么回事？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2934,
+      "npc" : "Monster Race Manager",
+      "text" : "[Monster Race Manager]\nI can activate and\ndeactivate the Arena\nEntry NPCs for the Single\nand Dual Monster Races.",
+      "translation" : "[怪物赛跑管理员]\n我可以开启或关闭\n单人和双人怪物赛跑的\n竞技场入口NPC。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2940,
+      "npc" : "Monster Race Manager",
+      "text" : "Single Race Entry - ON",
+      "translation" : "开启单人赛跑入口"
+    },
+    {
+      "kind" : "option",
+      "line" : 2940,
+      "npc" : "Monster Race Manager",
+      "text" : "Dual Race Entry - ON",
+      "translation" : "开启双人赛跑入口"
+    },
+    {
+      "kind" : "option",
+      "line" : 2940,
+      "npc" : "Monster Race Manager",
+      "text" : "Single Race Entry - OFF",
+      "translation" : "关闭单人赛跑入口"
+    },
+    {
+      "kind" : "option",
+      "line" : 2940,
+      "npc" : "Monster Race Manager",
+      "text" : "Dual Race Entry - OFF",
+      "translation" : "关闭双人赛跑入口"
+    },
+    {
+      "kind" : "message",
+      "line" : 2941,
+      "npc" : "Monster Race Manager",
+      "text" : "[Monster Race Manager]\nPlease enter\nthe password.",
+      "translation" : "[怪物赛跑管理员]\n请输入密码。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2947,
+      "npc" : "Monster Race Manager",
+      "text" : "[Monster Race Manager]\nError.",
+      "translation" : "[怪物赛跑管理员]\n错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2950,
+      "npc" : "Monster Race Manager",
+      "text" : "[Monster Race Manager]\nIncorrect password.",
+      "translation" : "[怪物赛跑管理员]\n密码错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2953,
+      "npc" : "Monster Race Manager",
+      "text" : "[Monster Race Manager]\nThe Single Monster\nRace Entry NPC is ON.",
+      "translation" : "[怪物赛跑管理员]\n单人怪物赛跑入口已开启。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2953,
+      "npc" : "Monster Race Manager",
+      "text" : "[Monster Race Manager]\nThe Dual Monster\nRace Entry NPC is ON.",
+      "translation" : "[怪物赛跑管理员]\n双人怪物赛跑入口已开启。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2953,
+      "npc" : "Monster Race Manager",
+      "text" : "[Monster Race Manager]\nThe Single Monster\nRace Entry NPC is OFF.",
+      "translation" : "[怪物赛跑管理员]\n单人怪物赛跑入口已关闭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2953,
+      "npc" : "Monster Race Manager",
+      "text" : "[Monster Race Manager]\nThe Dual Monster\nRace Entry NPC is OFF.",
+      "translation" : "[怪物赛跑管理员]\n双人怪物赛跑入口已关闭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2953,
+      "npc" : "Monster Race Manager",
+      "text" : "[Monster Race Manager]",
+      "translation" : "[怪物赛跑管理员]"
+    }
+  ]
+}
