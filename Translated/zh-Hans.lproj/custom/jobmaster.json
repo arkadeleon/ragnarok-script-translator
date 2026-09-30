@@ -11,6 +11,7 @@
         "((.@blvl > 0) ? \"^bb0000\"+.@blvl+\"^000000 more base levels \" + \n\t\t\t\t((.@jlvl > 0) ? \"and \" : \"\") : \"\")",
         "((.@jlvl > 0) ? \"^00bb00\"+.@jlvl+\"^000000 more job levels \" : \"\")"
       ],
+      "state" : "needs_review",
       "text" : "Level requirement:\n{0}^00bb00{1}^000000 (^00bb00Job^000000)\nYou need {2}{3}to continue.",
       "translation" : "等级要求：\n{0}^00bb00{1}^000000 (^00bb00职业^000000)\n您需要{2}{3}才能继续。"
     },
@@ -24,6 +25,7 @@
         "((checkriding()) ? \"Peco\" : \"\")",
         "((ismounting()) ? \"mount\" : \"\")"
       ],
+      "state" : "needs_review",
       "text" : "Please remove your {0}{1}{2}{3} before proceeding.",
       "translation" : "请卸下您的{0}{1}{2}{3}后再继续。"
     },
@@ -31,6 +33,7 @@
       "kind" : "message",
       "line" : 123,
       "npc" : "Job Master",
+      "state" : "needs_review",
       "text" : "Please use all your skill points before proceeding.",
       "translation" : "请分配完所有技能点后再继续。"
     },
@@ -41,6 +44,7 @@
       "placeholders" : [
         ".NPCName$"
       ],
+      "state" : "needs_review",
       "text" : "{0}\nAn error has occurred.",
       "translation" : "{0}\n发生了一个错误。"
     },
@@ -48,6 +52,7 @@
       "kind" : "message",
       "line" : 300,
       "npc" : "Job Master",
+      "state" : "needs_review",
       "text" : "No more jobs are available.",
       "translation" : "没有更多可用的职业了。"
     },
@@ -55,6 +60,7 @@
       "kind" : "message",
       "line" : 308,
       "npc" : "Job Master",
+      "state" : "needs_review",
       "text" : "Select a job.",
       "translation" : "请选择一个职业。"
     },
@@ -67,6 +73,7 @@
         ".SNovice",
         "jobname(.@class)"
       ],
+      "state" : "needs_review",
       "text" : "{0}\nA base level of {1} is required to turn into a {2}.",
       "translation" : "{0}\n转职为{2}需要基础等级达到{1}。"
     },
@@ -78,6 +85,7 @@
         ".NPCName$",
         "callfunc(\"F_InsertArticle\", jobname(.@to_cls))"
       ],
+      "state" : "needs_review",
       "text" : "{0}\nYou are now {1}!",
       "translation" : "{0}\n您现在是{1}了！"
     },
@@ -85,6 +93,7 @@
       "kind" : "message",
       "line" : 377,
       "npc" : "Job Master",
+      "state" : "needs_review",
       "text" : "Unknown Class Error.",
       "translation" : "未知职业错误。"
     },
@@ -95,6 +104,7 @@
       "placeholders" : [
         "jobname(.@class)"
       ],
+      "state" : "needs_review",
       "text" : "Do you want to change into ^0055FF{0}^000000 class?",
       "translation" : "您想转职为^0055FF{0}^000000职业吗？"
     },
@@ -105,6 +115,7 @@
       "placeholders" : [
         "((.@back) ?\"Go back\" : \"Cancel\")"
       ],
+      "state" : "needs_review",
       "text" : " ~ ^777777{0}^000000",
       "translation" : " ~ ^777777{0}^000000"
     }

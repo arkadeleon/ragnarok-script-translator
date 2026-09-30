@@ -25,12 +25,24 @@ struct TranslatedFile: Codable {
     }
 }
 
+/// Where a translation stands, named after the string states of an Xcode string catalog.
+enum TranslationState: String, Codable {
+    /// No translation yet. `error` and `output` say why, if the model already tried.
+    case new
+    /// Produced by the model and passed validation, but not looked at by a person.
+    case needsReview = "needs_review"
+    /// Confirmed or fixed by a person. Wins over a model translation of the same text and is
+    /// never sent to the model again.
+    case translated
+}
+
 struct TranslatedScript: Codable {
     var kind: ExtractedScript.Kind
     var npc: String?
     var line: Int
     var text: String
     var placeholders: [String]?
+    var state: TranslationState
     /// The translated text; nil when the model produced nothing acceptable.
     var translation: String?
     /// Why the translation was rejected, with the model's last output.
@@ -42,15 +54,16 @@ struct TranslatedScript: Codable {
             && text == script.text && placeholders == script.placeholders
     }
 
-    init(_ script: ExtractedScript, translation: String?, failure: TranslationFailure?) {
+    init(_ script: ExtractedScript, translation: String?, state: TranslationState, failure: TranslationFailure?) {
         kind = script.kind
         npc = script.npc
         line = script.line
         text = script.text
         placeholders = script.placeholders
+        self.state = translation == nil ? .new : state
         self.translation = translation
-        error = failure?.reason
-        output = failure?.output
+        error = translation == nil ? failure?.reason : nil
+        output = translation == nil ? failure?.output : nil
     }
 }
 
@@ -63,6 +76,8 @@ struct TranslationFailure {
 /// shared between files are translated once and interrupted runs resume where they stopped.
 struct TranslationCache {
     var texts: [String: String] = [:]
+    /// Texts whose translation in `texts` is `translated` rather than `needsReview`.
+    var reviewed: Set<String> = []
     var failures: [String: TranslationFailure] = [:]
 
     init() {}
@@ -78,11 +93,21 @@ struct TranslationCache {
             }
             for script in file.scripts {
                 if let translation = script.translation {
-                    texts[script.text] = translation
+                    if script.state == .translated {
+                        texts[script.text] = translation
+                        reviewed.insert(script.text)
+                    } else if !reviewed.contains(script.text) {
+                        texts[script.text] = translation
+                    }
                 } else if let error = script.error {
                     failures[script.text] = TranslationFailure(reason: error, output: script.output ?? "")
                 }
             }
         }
+    }
+
+    /// The state of the translation of `text` in `texts`.
+    func state(of text: String) -> TranslationState {
+        reviewed.contains(text) ? .translated : .needsReview
     }
 }

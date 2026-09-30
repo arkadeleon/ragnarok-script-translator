@@ -318,7 +318,7 @@ struct Translate: AsyncParsableCommand {
 
     private static func translatedFile(for extracted: ExtractedFile, cache: TranslationCache) -> TranslatedFile {
         let scripts = extracted.scripts.map {
-            TranslatedScript($0, translation: cache.texts[$0.text], failure: cache.failures[$0.text])
+            TranslatedScript($0, translation: cache.texts[$0.text], state: cache.state(of: $0.text), failure: cache.failures[$0.text])
         }
         return TranslatedFile(file: extracted.file, scripts: scripts)
     }

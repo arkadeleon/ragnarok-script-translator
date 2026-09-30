@@ -21,6 +21,7 @@
         "countitem(.@q[.@i])",
         "(.@q[.@i+1]*.@q[1])"
       ],
+      "state" : "needs_review",
       "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000\n > {9}{10}{11} ({12}/{13})^000000",
       "translation" : "[任务商店]\n奖励: ^0055FF{0}{1}^000000\n需求:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000\n > {9}{10}{11} ({12}/{13})^000000"
     },
@@ -42,6 +43,7 @@
         "countitem(.@q[.@i])",
         "(.@q[.@i+1]*.@q[1])"
       ],
+      "state" : "needs_review",
       "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} {4} ({5}/{6})^000000\n > {7}{8}{9} ({10}/{11})^000000",
       "translation" : "[任务商店]\n奖励: ^0055FF{0}{1}^000000\n需求:\n > {2}{3} {4} ({5}/{6})^000000\n > {7}{8}{9} ({10}/{11})^000000"
     },
@@ -60,6 +62,7 @@
         "countitem(.@q[.@i])",
         "(.@q[.@i+1]*.@q[1])"
       ],
+      "state" : "needs_review",
       "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5}{6} ({7}/{8})^000000",
       "translation" : "[任务商店]\n奖励: ^0055FF{0}{1}^000000\n需求:\n > {2}{3} Zeny^000000\n > {4}{5}{6} ({7}/{8})^000000"
     },
@@ -76,6 +79,7 @@
         "countitem(.@q[.@i])",
         "(.@q[.@i+1]*.@q[1])"
       ],
+      "state" : "needs_review",
       "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3}{4} ({5}/{6})^000000",
       "translation" : "[任务商店]\n奖励: ^0055FF{0}{1}^000000\n需求:\n > {2}{3}{4} ({5}/{6})^000000"
     },
@@ -94,6 +98,7 @@
         "getd(.Points$[0])",
         "(.@q[5]*.@q[1])"
       ],
+      "state" : "needs_review",
       "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000",
       "translation" : "[任务商店]\n奖励: ^0055FF{0}{1}^000000\n需求:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000"
     },
@@ -110,6 +115,7 @@
         "getd(.Points$[0])",
         "(.@q[5]*.@q[1])"
       ],
+      "state" : "needs_review",
       "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} {4} ({5}/{6})^000000",
       "translation" : "[任务商店]\n奖励: ^0055FF{0}{1}^000000\n需求:\n > {2}{3} {4} ({5}/{6})^000000"
     },
@@ -123,6 +129,7 @@
         "Chk(Zeny,.@q[4]*.@q[1])",
         "(.@q[4]*.@q[1])"
       ],
+      "state" : "needs_review",
       "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:\n > {2}{3} Zeny^000000",
       "translation" : "[任务商店]\n奖励: ^0055FF{0}{1}^000000\n需求:\n > {2}{3} Zeny^000000"
     },
@@ -134,6 +141,7 @@
         "((.@q[2] > 1)?.@q[2]+\"x \":\"\")",
         "Slot(.@q[0])"
       ],
+      "state" : "needs_review",
       "text" : "[Quest Shop]\nReward: ^0055FF{0}{1}^000000\nRequirements:",
       "translation" : "[任务商店]\n奖励: ^0055FF{0}{1}^000000\n需求:"
     },
@@ -144,6 +152,7 @@
       "placeholders" : [
         "getitemname(.@q[0])"
       ],
+      "state" : "needs_review",
       "text" : " ~ Purchase ^0055FF{0}^000000",
       "translation" : " ~ 购买 ^0055FF{0}^000000"
     },
@@ -151,6 +160,7 @@
       "kind" : "option",
       "line" : 154,
       "npc" : "quest_shop",
+      "state" : "needs_review",
       "text" : " ~ ^777777Cancel^000000",
       "translation" : " ~ ^777777取消^000000"
     },
@@ -158,6 +168,7 @@
       "kind" : "message",
       "line" : 157,
       "npc" : "quest_shop",
+      "state" : "needs_review",
       "text" : "[Quest Shop]\nYou're missing one or more quest requirements.",
       "translation" : "[任务商店]\n您缺少一项或多项任务需求。"
     },
@@ -168,6 +179,7 @@
       "placeholders" : [
         "(((.@q[2]*getiteminfo(.@q[0], ITEMINFO_WEIGHT))+Weight-MaxWeight)/10)"
       ],
+      "state" : "needs_review",
       "text" : "[Quest Shop]\n^FF0000You need {0} additional weight capacity to complete this trade.^000000",
       "translation" : "[任务商店]\n^FF0000您需要额外的{0}负重才能完成此交易。^000000"
     }

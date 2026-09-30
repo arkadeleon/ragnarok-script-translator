@@ -12,6 +12,7 @@
         ".color$[ .type[.@i] ]",
         ".whoinuse$[.@i]"
       ],
+      "state" : "needs_review",
       "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #{2} = {3}{4}^000000",
       "translation" : "[私人MVP房间]\n请选择一个私人MVP房间。\n租用{0}分钟的费用为{1} Zeny。\n\n房间 #{2} = {3}{4}^000000"
     },
@@ -25,6 +26,7 @@
         ".color$[ .type[.@i] ]",
         ".whoinuse$[.@i]"
       ],
+      "state" : "needs_review",
       "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #{1} = {2}{3}^000000",
       "translation" : "[私人MVP房间]\n请选择一个私人MVP房间。\n您只能使用房间{0}分钟。\n\n房间 #{1} = {2}{3}^000000"
     },
@@ -36,6 +38,7 @@
         "getvariableofnpc( .timeout, \"MVP Summoner\" )",
         "callfunc(\"F_InsertComma\", getvariableofnpc( .rentcost, \"MVP Summoner\" ) )"
       ],
+      "state" : "needs_review",
       "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n ",
       "translation" : "[私人MVP房间]\n请选择一个私人MVP房间。\n租用{0}分钟的费用为{1} Zeny。"
     },
@@ -46,6 +49,7 @@
       "placeholders" : [
         "getvariableofnpc( .timeout, \"MVP Summoner\" )"
       ],
+      "state" : "needs_review",
       "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n ",
       "translation" : "[私人MVP房间]\n请选择一个私人MVP房间。\n您只能使用房间{0}分钟。"
     },
@@ -56,6 +60,7 @@
       "placeholders" : [
         "getmapusers(\"06guild_01\")"
       ],
+      "state" : "needs_review",
       "text" : "MVP Room 1 [{0}]",
       "translation" : "MVP房间 1 [{0}]"
     },
@@ -66,6 +71,7 @@
       "placeholders" : [
         "getmapusers(\"06guild_02\")"
       ],
+      "state" : "needs_review",
       "text" : "MVP Room 2 [{0}]",
       "translation" : "MVP房间 2 [{0}]"
     },
@@ -76,6 +82,7 @@
       "placeholders" : [
         "getmapusers(\"06guild_03\")"
       ],
+      "state" : "needs_review",
       "text" : "MVP Room 3 [{0}]",
       "translation" : "MVP房间 3 [{0}]"
     },
@@ -86,6 +93,7 @@
       "placeholders" : [
         "getmapusers(\"06guild_04\")"
       ],
+      "state" : "needs_review",
       "text" : "MVP Room 4 [{0}]",
       "translation" : "MVP房间 4 [{0}]"
     },
@@ -96,6 +104,7 @@
       "placeholders" : [
         "getmapusers(\"06guild_05\")"
       ],
+      "state" : "needs_review",
       "text" : "MVP Room 5 [{0}]",
       "translation" : "MVP房间 5 [{0}]"
     },
@@ -106,6 +115,7 @@
       "placeholders" : [
         "getmapusers(\"06guild_06\")"
       ],
+      "state" : "needs_review",
       "text" : "MVP Room 6 [{0}]",
       "translation" : "MVP房间 6 [{0}]"
     },
@@ -116,6 +126,7 @@
       "placeholders" : [
         "getmapusers(\"06guild_07\")"
       ],
+      "state" : "needs_review",
       "text" : "MVP Room 7 [{0}]",
       "translation" : "MVP房间 7 [{0}]"
     },
@@ -126,6 +137,7 @@
       "placeholders" : [
         "getmapusers(\"06guild_08\")"
       ],
+      "state" : "needs_review",
       "text" : "MVP Room 8 [{0}]",
       "translation" : "MVP房间 8 [{0}]"
     },
@@ -137,6 +149,7 @@
         ".color$[ .type[.@room] ]",
         ".whoinuse$[.@room]"
       ],
+      "state" : "needs_review",
       "text" : "[Private MVP Room]\nThis room is reserved for \n{0}{1}^000000.\nPlease select another.",
       "translation" : "[私人MVP房间]\n此房间已预留给\n{0}{1}^000000。\n请选择其他房间。"
     },
@@ -144,6 +157,7 @@
       "kind" : "message",
       "line" : 49,
       "npc" : "Private MVP Room",
+      "state" : "needs_review",
       "text" : "[Private MVP Room]\nReserve this room for...",
       "translation" : "[私人MVP房间]\n将此房间预留给..."
     },
@@ -151,6 +165,7 @@
       "kind" : "option",
       "line" : 52,
       "npc" : "Private MVP Room",
+      "state" : "needs_review",
       "text" : "For my party members",
       "translation" : "我的队伍成员"
     },
@@ -158,6 +173,7 @@
       "kind" : "option",
       "line" : 52,
       "npc" : "Private MVP Room",
+      "state" : "needs_review",
       "text" : "For my guild members",
       "translation" : "我的公会成员"
     },
@@ -165,6 +181,7 @@
       "kind" : "option",
       "line" : 52,
       "npc" : "Private MVP Room",
+      "state" : "needs_review",
       "text" : "For personal account use",
       "translation" : "个人账号使用"
     },
@@ -175,6 +192,7 @@
       "placeholders" : [
         "( ( .@type == 1 )? \"Party\" : \"Guild\" )"
       ],
+      "state" : "needs_review",
       "text" : "[Private MVP Room]\nYou do not own a {0}.",
       "translation" : "[私人MVP房间]\n您没有{0}。"
     },
@@ -182,6 +200,7 @@
       "kind" : "message",
       "line" : 59,
       "npc" : "Private MVP Room",
+      "state" : "needs_review",
       "text" : "You don't have enough zeny to rent a room.",
       "translation" : "您的Zeny不足，无法租用房间。"
     },
@@ -189,6 +208,7 @@
       "kind" : "message",
       "line" : 63,
       "npc" : "Private MVP Room",
+      "state" : "needs_review",
       "text" : "[Private MVP Room]\nI'm sorry, somebody else has already registered this room faster than you.",
       "translation" : "[私人MVP房间]\n很抱歉，其他人已经比您更快地预订了这个房间。"
     },
@@ -199,6 +219,7 @@
       "placeholders" : [
         ".@i"
       ],
+      "state" : "needs_review",
       "text" : "[Private MVP Room]\nYou already rented Room#{0}. Use that room instead.",
       "translation" : "[私人MVP房间]\n您已经租用了房间#{0}。请使用该房间。"
     },
@@ -209,6 +230,7 @@
       "placeholders" : [
         "callfunc( \"Time2Str\", .renttime[ atoi( strnpcinfo(2) ) ] + .timeout * 60 )"
       ],
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nTime left: {0}\nHi, what can I do for you?",
       "translation" : "[MVP召唤师]\n剩余时间：{0}\n您好，有什么可以帮您的吗？"
     },
@@ -216,6 +238,7 @@
       "kind" : "message",
       "line" : 96,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nI cannot offer heal service when there are monsters around.",
       "translation" : "[MVP召唤师]\n周围有魔物时，我无法提供治愈术服务。"
     },
@@ -223,6 +246,7 @@
       "kind" : "message",
       "line" : 96,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nYou are completely healed.",
       "translation" : "[MVP召唤师]\n您的状态已经完全恢复。"
     },
@@ -230,6 +254,7 @@
       "kind" : "message",
       "line" : 129,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nI cannot summon another MVP when there are monsters around.",
       "translation" : "[MVP召唤师]\n周围有魔物时，我无法召唤其他MVP。"
     },
@@ -240,6 +265,7 @@
       "placeholders" : [
         "callfunc( \"F_InsertComma\", .mvpcost )"
       ],
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nThe cost to summon an MVP is {0} zeny.",
       "translation" : "[MVP召唤师]\n召唤MVP的费用是{0} Zeny。"
     },
@@ -247,6 +273,7 @@
       "kind" : "message",
       "line" : 137,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nYou don't have enough zeny to summon an MVP.",
       "translation" : "[MVP召唤师]\n您的Zeny不足，无法召唤MVP。"
     },
@@ -254,6 +281,7 @@
       "kind" : "message",
       "line" : 137,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nPlease get ready.",
       "translation" : "[MVP召唤师]\n请做好准备。"
     },
@@ -261,6 +289,7 @@
       "kind" : "message",
       "line" : 144,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nPlease get ready.",
       "translation" : "[MVP召唤师]\n请做好准备。"
     },
@@ -268,6 +297,7 @@
       "kind" : "message",
       "line" : 154,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nI cannot summon another mini-boss when there are monsters around.",
       "translation" : "[MVP召唤师]\n周围有魔物时，我无法召唤其他小Boss。"
     },
@@ -278,6 +308,7 @@
       "placeholders" : [
         "callfunc( \"F_InsertComma\", .bosscost )"
       ],
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nThe cost to summon a mini-boss is {0} zeny.",
       "translation" : "[MVP召唤师]\n召唤小Boss的费用是{0} Zeny。"
     },
@@ -285,6 +316,7 @@
       "kind" : "message",
       "line" : 162,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nYou doesn't have enough zeny to summon a mini-boss.",
       "translation" : "[MVP召唤师]\n您的Zeny不足，无法召唤小Boss。"
     },
@@ -292,6 +324,7 @@
       "kind" : "message",
       "line" : 162,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nPlease get ready.",
       "translation" : "[MVP召唤师]\n请做好准备。"
     },
@@ -299,6 +332,7 @@
       "kind" : "message",
       "line" : 169,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nPlease get ready.",
       "translation" : "[MVP召唤师]\n请做好准备。"
     },
@@ -306,6 +340,7 @@
       "kind" : "message",
       "line" : 179,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nI cannot offer this service when there are monsters around.",
       "translation" : "[MVP召唤师]\n周围有魔物时，我无法提供此服务。"
     },
@@ -313,6 +348,7 @@
       "kind" : "message",
       "line" : 187,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nAre you sure you want to leave this room?",
       "translation" : "[MVP召唤师]\n您确定要离开这个房间吗？"
     },
@@ -320,6 +356,7 @@
       "kind" : "option",
       "line" : 190,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "Yes",
       "translation" : "是"
     },
@@ -327,6 +364,7 @@
       "kind" : "option",
       "line" : 190,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "No",
       "translation" : "否"
     },
@@ -334,6 +372,7 @@
       "kind" : "message",
       "line" : 194,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nThere are still some players in this room. Make sure you are the last member in this room to use this option.",
       "translation" : "[MVP召唤师]\n房间里还有其他玩家。请确保您是房间内最后一名使用此选项的成员。"
     },
@@ -341,6 +380,7 @@
       "kind" : "message",
       "line" : 194,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nAre you sure you want to give up this room?\nYou will need to pay again to enter this room.",
       "translation" : "[MVP召唤师]\n您确定要放弃这个房间吗？\n再次进入该房间需要重新付费。"
     },
@@ -348,6 +388,7 @@
       "kind" : "message",
       "line" : 194,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "[MVP Summoner]\nAre you sure you want to give up this room?",
       "translation" : "[MVP召唤师]\n您确定要放弃这个房间吗？"
     },
@@ -355,6 +396,7 @@
       "kind" : "option",
       "line" : 203,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "Yes",
       "translation" : "是"
     },
@@ -362,6 +404,7 @@
       "kind" : "option",
       "line" : 203,
       "npc" : "MVP Summoner",
+      "state" : "needs_review",
       "text" : "No",
       "translation" : "否"
     }
