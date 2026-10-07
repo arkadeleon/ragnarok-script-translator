@@ -1,0 +1,2060 @@
+{
+  "file" : "npc/re/quests/eden/eden_iro.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "Aperture",
+      "state" : "needs_review",
+      "text" : "[Aperture]\nHello there, adventurer.\nI've been studying magic from all over Midgard to upgrade what I believe to be one of the greatest skills available to the acolyte class.",
+      "translation" : "[光圈]\n你好，冒险者。\n我研究了米德加尔特各地的魔法，以升级我认为服事职业中最强大的技能之一。"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Aperture",
+      "state" : "needs_review",
+      "text" : "[Aperture]\nI am the one and only Acolyte that has attained the Level 10 Warp Portal skill!",
+      "translation" : "[光圈]\n我是唯一一位掌握了10级传送之阵技能的服事！"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "Aperture",
+      "state" : "needs_review",
+      "text" : "[Aperture]\nThat's right! And...\nI promise you that I don't forget locations that I have already memorized.\nOne day I will level up my skills to warp to wherever I please~",
+      "translation" : "[光圈]\n没错！而且...\n我向你保证，我不会忘记已经记住的地点。\n总有一天，我会升级我的技能，传送到任何我想去的地方~"
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "npc" : "Aperture",
+      "state" : "needs_review",
+      "text" : "[Aperture]\nI am willing to warp you to the many locations that I have memorized for a small fee.\nWould you like to use this service?",
+      "translation" : "[光圈]\n我愿意收取少量费用，将你传送到我记住的许多地点。\n你想使用这项服务吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 44,
+      "npc" : "Aperture",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 44,
+      "npc" : "Aperture",
+      "state" : "needs_review",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Aperture",
+      "state" : "needs_review",
+      "text" : "[Aperture]\nWhere would you like to go to?\nI wish you goodluck on your journey.",
+      "translation" : "[光圈]\n你想去哪里？\n祝你旅途顺利。"
+    },
+    {
+      "kind" : "option",
+      "line" : 57,
+      "npc" : "Aperture",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 59,
+      "npc" : "Aperture",
+      "state" : "needs_review",
+      "text" : "[Aperture]\nCome back when you need a warp.",
+      "translation" : "[光圈]\n当你需要传送时，欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Aperture",
+      "placeholders" : [
+        ".@towns$[.@i]",
+        ".@cost[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Aperture]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto {0} is {1} zeny.",
+      "translation" : "[光圈]\n很抱歉，您的Zeny不足，无法使用瞬间移动服务。\n传送到{0}的费用是{1} Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Aperture",
+      "state" : "needs_review",
+      "text" : "[Aperture]\nCome back when you need a warp.",
+      "translation" : "[光圈]\n当你需要传送时，欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 102,
+      "npc" : "VIP_iRO_Acolyte",
+      "placeholders" : [
+        "getarg(0)",
+        "getarg(1)"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nBut, my full powers are only available to those who have are VIPs.\nI can still offer you a warp to {1} though.",
+      "translation" : "{0}\n但是，我的全部能力只对VIP开放。\n不过，我仍然可以为您提供传送到{1}的服务。"
+    },
+    {
+      "kind" : "option",
+      "line" : 106,
+      "npc" : "VIP_iRO_Acolyte",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "{0} -> 1800z",
+      "translation" : "{0} -> 1800z"
+    },
+    {
+      "kind" : "option",
+      "line" : 106,
+      "npc" : "VIP_iRO_Acolyte",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "VIP_iRO_Acolyte",
+      "placeholders" : [
+        "getarg(0)",
+        "getarg(1)"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto {1} is 1,800 zeny.",
+      "translation" : "{0}\n很抱歉，您的Zeny不足，无法使用瞬间移动服务。\n传送到{1}的费用是1,800 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 137,
+      "npc" : "Primo d'Buffer",
+      "state" : "needs_review",
+      "text" : "[Primo d'Buffer]\nHello adventurer, you look like you are itching to get out there and save the world!\nI can also tell that you haven't been blessed with '^6666ffVIP Status^000000'.",
+      "translation" : "[普里莫·德·巴弗]\n你好，冒险者，你看起来迫不及待想要出去拯救世界了！\n我还能看出，你并没有获得'^6666ffVIP状态^000000'。"
+    },
+    {
+      "kind" : "message",
+      "line" : 137,
+      "npc" : "Primo d'Buffer",
+      "state" : "needs_review",
+      "text" : "[Primo d'Buffer]\nHello adventurer, you look like you are itching to get out there and save the world!\nI can also tell that you have been blessed with '^007FFFVIP Status^000000'.",
+      "translation" : "[普里莫·德·巴弗]\n你好，冒险者，你看起来迫不及待想要出去拯救世界了！\n我还能看出，你获得了'^007FFFVIP状态^000000'。"
+    },
+    {
+      "kind" : "message",
+      "line" : 142,
+      "npc" : "Primo d'Buffer",
+      "state" : "needs_review",
+      "text" : "[Primo d'Buffer]\nMy orders are to help out any Adventurer marked as VIP with special Buffs!\nCurrently I will give you ^ff0000+7 to all of your Stats for 30 minutes^000000 if you are VIP.",
+      "translation" : "[普里莫·德·巴弗]\n我的命令是帮助任何标记为VIP的冒险者，提供特殊的Buff！\n目前，如果你是VIP，我会给你^ff0000所有属性+7，持续30分钟^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 146,
+      "npc" : "Primo d'Buffer",
+      "state" : "needs_review",
+      "text" : "[Primo d'Buffer]\nIf you would like to be VIP, you can use WarpPortal to ^FF8C42Power-UP^000000 your game account with VIP Status. Of course there are many other advantages to being VIP, like higher EXP and Drop Rates, more Storage, and special buff NPCs like me!\nHappy Journeys!",
+      "translation" : "[普里莫·德·巴弗]\n如果你想成为VIP，可以使用传送之阵来^FF8C42强化^000000你的游戏账号，获得VIP状态。当然，成为VIP还有很多其他优势，比如更高的经验值和掉落率，更多的仓库空间，以及像我这样的特殊Buff NPC！\n旅途愉快！"
+    },
+    {
+      "kind" : "message",
+      "line" : 153,
+      "npc" : "Primo d'Buffer",
+      "state" : "needs_review",
+      "text" : "[Primo d'Buffer]\nThat is awesome!\nHere is +7 to all your stats for 30 minutes to help you on your journey. Just come back when you need to refill your stats!",
+      "translation" : "[普里莫·德·巴弗]\n太棒了！\n这是给你所有属性+7，持续30分钟的Buff，帮助你踏上旅程。当你需要补充属性时，随时回来！"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "You must wait for the timer to finish before you can hire a new mercenary.",
+      "translation" : "你必须等待计时器结束，才能雇佣新的佣兵。"
+    },
+    {
+      "kind" : "message",
+      "line" : 173,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "[Clearchus]\nGreetings young adventurer! I represent the Midgardian Mercenary Mission.",
+      "translation" : "[克利尔库斯]\n你好，年轻的冒险者！我代表米德加尔特佣兵任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 176,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "[Clearchus]\nWe provide training to aspiring mercenaries by pairing them with adventurers such as yourself.",
+      "translation" : "[克利尔库斯]\n我们为有志成为佣兵的冒险者提供训练，将他们与像你这样的冒险者配对。"
+    },
+    {
+      "kind" : "message",
+      "line" : 179,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "[Clearchus]\nOur organization is 10,000 strong! Now let me see if you are registered for this service.",
+      "translation" : "[克利尔库斯]\n我们的组织有10,000人！现在让我看看你是否已注册这项服务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 183,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "[Clearchus]\nUnfortunately it appears that you are not VIP, please get VIP so that you can use this service. You can get a temporary VIP access by talking to Gramps at the Eden Group Headquarters.",
+      "translation" : "[克利尔库斯]\n不幸的是，你似乎不是VIP，请获取VIP以便使用这项服务。你可以去乐园团总部找老爷爷获取临时VIP权限。"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "[Clearchus]\nVip is a very useful tool for adventurers to have, giving access to extra Kafra Services, discounted warps, exclusive content, and use of Primo d'Buffer. If an adventurer has full vip they even get an Exp, Drops, and storage boost!",
+      "translation" : "[克利尔库斯]\nVIP是冒险者非常实用的工具，可以解锁额外的卡普拉服务、折扣传送、专属内容，以及使用普里莫·德·巴弗。如果拥有完整VIP，甚至还能获得经验值、掉落率和仓库容量加成！"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "[Clearchus]\nYour name is on the list.",
+      "translation" : "[克利尔库斯]\n你的名字在名单上。"
+    },
+    {
+      "kind" : "message",
+      "line" : 193,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "[Clearchus]\nWhat kind of skill set are you looking for in a mercenary?",
+      "translation" : "[克利尔库斯]\n你想找哪种技能类型的佣兵？"
+    },
+    {
+      "kind" : "option",
+      "line" : 197,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "Swordsman",
+      "translation" : "剑士"
+    },
+    {
+      "kind" : "option",
+      "line" : 197,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "Archer",
+      "translation" : "弓箭手"
+    },
+    {
+      "kind" : "option",
+      "line" : 197,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "Lancer",
+      "translation" : "枪兵"
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "[Clearchus]\nI have just the mercenary in mind!",
+      "translation" : "[克利尔库斯]\n我正好有一位合适的佣兵！"
+    },
+    {
+      "kind" : "message",
+      "line" : 222,
+      "npc" : "Clearchus",
+      "state" : "needs_review",
+      "text" : "[Clearchus]\nHave fun now, ya hear?",
+      "translation" : "[克利尔库斯]\n祝你玩得开心，听到了吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 234,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "[Phelix]\nOh... I see from that look that you want me to work and give you Meat and Carrots...\nWell my friend Izaac here has some Red Potions with him, but I only have some Carrots.\nSo I can trade you ^0000CC1 Carrot for 3 Jellopy^000000.",
+      "translation" : "[菲利克斯]\n哦...看你的表情，你是想让我干活，然后给你肉和胡萝卜吧...\n好吧，我的朋友伊扎克身上有一些红色药水，但我只有胡萝卜。\n所以我可以用^0000CC1根胡萝卜换3个杰勒比结晶^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 239,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "[Phelix]\nIf you're interested in my offer, get me the Jellopies I mentioned.",
+      "translation" : "[菲利克斯]\n如果你对我的提议感兴趣，就把我提到的杰勒比结晶给我。"
+    },
+    {
+      "kind" : "option",
+      "line" : 242,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "Carrots please.",
+      "translation" : "我要胡萝卜。"
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "[Phelix]\nAlright, let's see what ya got...",
+      "translation" : "[菲利克斯]\n好了，让我看看你有什么..."
+    },
+    {
+      "kind" : "message",
+      "line" : 247,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "[Phelix]\nHmm, look dude, I said 3 Jellopies for 1 Carrot... got it?",
+      "translation" : "[菲利克斯]\n嗯，听着，我说的是3个杰勒比结晶换1根胡萝卜...明白了吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 251,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "[Phelix]\nNot too bad...\nHow many do you want?",
+      "translation" : "[菲利克斯]\n还不错...\n你想要多少？"
+    },
+    {
+      "kind" : "option",
+      "line" : 255,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "As many as I can get, please.",
+      "translation" : "请给我能换到的全部。"
+    },
+    {
+      "kind" : "option",
+      "line" : 255,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "I want to choose.",
+      "translation" : "我想自己选择。"
+    },
+    {
+      "kind" : "option",
+      "line" : 255,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "Never mind, I like my Jellopy.",
+      "translation" : "算了，我喜欢我的杰勒比结晶。"
+    },
+    {
+      "kind" : "message",
+      "line" : 261,
+      "npc" : "Phelix",
+      "placeholders" : [
+        ".@available"
+      ],
+      "state" : "needs_review",
+      "text" : "[Phelix]\nHow many do you want?\n^ff0000You have enough for up to {0} Carrots.^000000",
+      "translation" : "[菲利克斯]\n你想要多少？\n^ff0000你最多可以换{0}根胡萝卜。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 267,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "[Phelix]\nDon't want to deal? Fair enough...",
+      "translation" : "[菲利克斯]\n不想交易？好吧..."
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "[Phelix]\nDude, I said for every 3 Jellopy I'll give you 1 Carrot.",
+      "translation" : "[菲利克斯]\n听着，我说的是每3个杰勒比结晶换1根胡萝卜。"
+    },
+    {
+      "kind" : "message",
+      "line" : 279,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "[Phelix]\nDon't bother me if you don't want to trade.",
+      "translation" : "[菲利克斯]\n如果你不想交易，就别打扰我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "[Phelix]\nYou are overweight.",
+      "translation" : "[菲利克斯]\n你超重了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 288,
+      "npc" : "Phelix",
+      "state" : "needs_review",
+      "text" : "[Phelix]\nThere you go~! As I promised.\nTry not to stuff yer face.",
+      "translation" : "[菲利克斯]\n给你~！就像我承诺的那样。\n别吃太多哦。"
+    },
+    {
+      "kind" : "message",
+      "line" : 297,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "[Izaac]\nGood day!\nHave you collected any weird stuff from monsters?\nI want things like Jellopy, Fluff, Shell, Feather of Birds, Tree Root, Worm Peelings, and Chrysalis.\nI need those for something.",
+      "translation" : "[伊扎克]\n你好！\n你有没有从魔物身上收集到什么奇怪的东西？\n我想要杰勒比结晶、绒毛、贝壳、鸟羽、树根、虫皮和蛹。\n我需要那些东西做点事。"
+    },
+    {
+      "kind" : "message",
+      "line" : 303,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "[Izaac]\nOf course, I won't ask you to give me that stuff for free. What if I traded the following for ^CC00001 Red Potion^000000:\n^00CC005 Shell^000000\n^0000CC10 Fluff^000000\n^00CC0010 Jellopy^000000\n^0000CC6 Tree Root^000000\n^00CC001 Worm Peeling^000000\n^0000CC7 Feather of Birds^000000\n^00CC006 Chrysalis^000000",
+      "translation" : "[伊扎克]\n当然，我不会让你白送给我。如果我拿^CC00001瓶红色药水^000000交换以下物品：\n^00CC005贝壳^000000\n^0000CC绒毛^000000\n^00CC0010杰勒比结晶^000000\n^0000CC树根^000000\n^00CC001虫皮^000000\n^0000CC鸟羽^000000\n^00CC006蛹^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 313,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "Sure!",
+      "translation" : "当然！"
+    },
+    {
+      "kind" : "option",
+      "line" : 313,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "I think it's a rip-off!",
+      "translation" : "我觉得这太坑了！"
+    },
+    {
+      "kind" : "option",
+      "line" : 313,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "No, thanks.",
+      "translation" : "不用了，谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 315,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "[Izaac]\nSo which items do\nyou want to bring me?",
+      "translation" : "[伊扎克]\n那么，你想带哪些物品给我？"
+    },
+    {
+      "kind" : "option",
+      "line" : 326,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 328,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "[Izaac]\nSure~\nNo problem.",
+      "translation" : "[伊扎克]\n当然~\n没问题。"
+    },
+    {
+      "kind" : "message",
+      "line" : 338,
+      "npc" : "Izaac",
+      "placeholders" : [
+        ".@item$",
+        ".@item$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Izaac]\nHey, where's all\nthat {0} that\nyou promised me?\nGive me {1}!",
+      "translation" : "[伊扎克]\n嘿，你答应给我的那些{0}呢？\n给我{1}！"
+    },
+    {
+      "kind" : "message",
+      "line" : 345,
+      "npc" : "Izaac",
+      "placeholders" : [
+        ".@item$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Izaac]\nOkay, let me check\nhow much {0}\nyou have on you.\nHmm...",
+      "translation" : "[伊扎克]\n好的，让我看看你身上有多少{0}。\n嗯..."
+    },
+    {
+      "kind" : "message",
+      "line" : 353,
+      "npc" : "Izaac",
+      "placeholders" : [
+        "countitem(.@item)",
+        ".@item$",
+        ".@amount"
+      ],
+      "state" : "needs_review",
+      "text" : "[Izaac]\nYou have\na total of {0} {1}...\nFor all those, I can give you\na total of {2} Red Potion(s).",
+      "translation" : "[伊扎克]\n你总共有{0}个{1}...\n用这些，我可以给你总共{2}瓶红色药水。"
+    },
+    {
+      "kind" : "message",
+      "line" : 359,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "[Izaac]\nWhat do you say?\nDo we have a deal?",
+      "translation" : "[伊扎克]\n你觉得怎么样？\n成交吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 363,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "Deal.",
+      "translation" : "成交。"
+    },
+    {
+      "kind" : "option",
+      "line" : 363,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "No deal.",
+      "translation" : "不成交"
+    },
+    {
+      "kind" : "message",
+      "line" : 364,
+      "npc" : "Izaac",
+      "placeholders" : [
+        ".@item$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Izaac]\nHuh~\nAlright.\nThough are\n{0} more useful\nto an adventurer like you?",
+      "translation" : "[伊扎克]\n哈~\n好吧。\n不过对于像你这样的冒险者来说，\n{0}不是更有用吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 373,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "[Izaac]\nYou are overweight.",
+      "translation" : "[伊扎克]\n你超重了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 379,
+      "npc" : "Izaac",
+      "placeholders" : [
+        ".@item$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Izaac]\nThere you go!\nCheck how many {0}\nI've given you, it should be good.\nThanks, that was a good deal~",
+      "translation" : "[伊扎克]\n给你！\n检查一下我给了你多少{0}，应该没问题。\n谢谢，这是一笔好交易~"
+    },
+    {
+      "kind" : "message",
+      "line" : 386,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "[Izaac]\nA rip-off...?\nIf you check the market value\nof the items being traded, I'm actually the one getting\nripped off here.",
+      "translation" : "[伊扎克]\n宰客...？\n如果你查看交易物品的市场价值，\n其实是我被宰了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 393,
+      "npc" : "Izaac",
+      "state" : "needs_review",
+      "text" : "[Izaac]\nAlright, No problem.\nBut come back to me if you change your mind.",
+      "translation" : "[伊扎克]\n好吧，没问题。\n如果你改变主意，随时回来找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 403,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "[Eve Natalia]\nSo I'm in town for a while to see if I can strike up some commerce with MVP hunters!\nI'm willing to take some MVP gear and give you these upgrade Certificates I have in exchange;\nif things go well enough I'll open up further business opportunities!",
+      "translation" : "[伊芙·娜塔莉娅]\n我会在城镇停留一段时间，看看能否与MVP猎人开展一些贸易！\n我愿意收购一些MVP装备，并用我持有的这些升级证书作为交换；\n如果进展顺利，我会开放更多的商业机会！"
+    },
+    {
+      "kind" : "message",
+      "line" : 408,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "[Eve Natalia]\nSo do you have any of the gears I'm looking for to get some random Safe to 7 Certificates?",
+      "translation" : "[伊芙·娜塔莉娅]\n那么，你有我想要的装备，可以换取一些随机+7证书吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 411,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "What gear?",
+      "translation" : "什么装备？"
+    },
+    {
+      "kind" : "option",
+      "line" : 411,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "Yes I am!",
+      "translation" : "我有！"
+    },
+    {
+      "kind" : "option",
+      "line" : 411,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "Never mind.",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 413,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "[Eve Natalia]\nNidhoggur's Shadow Garb 4 Random Safe to 7 Certificates\nValkyrja's Shield 4 Random Safe to 7 Certificates\nValkyrian Armor 5 Random Safe to 7 Certificates\nDiabolus Robe 5 Random Safe to 7 Certificates\nDiabolus Armor 2 Random Safe to 7 Certificates\nDiabolus Boots 2 Random Safe to 7 Certificates\nDiabolus Manteau 4 Random Safe to 7 Certificates\nTwin Edge of Naght Sieger Blue 2 Random Safe to 7 Certificates\nTwin Edge of Naght Sieger Red 2 Random Safe to 7 Certificates",
+      "translation" : "[伊芙·娜塔莉娅]\n代理者甲壳碎片 4个随机+7证书\n瓦尔基里亚钢盾 4个随机+7证书\n瓦尔基里的盔甲 5个随机+7证书\n恐惧长袍 5个随机+7证书\n恐惧战甲 2个随机+7证书\n恐惧战靴 2个随机+7证书\n恐惧斗篷 4个随机+7证书\n纳户特基格的寒冰剑(蓝) 2个随机+7证书\n纳户特基格的寒冰剑(红) 2个随机+7证书"
+    },
+    {
+      "kind" : "message",
+      "line" : 425,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "[Eve Natalia]\nI'm going to ask you which piece of gear you want to trade in, please verify that the 1st one in your inventory is one you want to give up.\n^CC0000So if it is carded, upgraded, enchanted etc, you should put it in storage before we continue.^000000",
+      "translation" : "[伊芙·娜塔莉娅]\n我会询问你想交易哪件装备，请确认你物品栏中的第1件是你想要放弃的。\n^CC0000如果它带有卡片、已升级、已附魔等，请在继续之前将其放入仓库。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 429,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "Wait a minute",
+      "translation" : "等一下"
+    },
+    {
+      "kind" : "option",
+      "line" : 429,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "Nidhoggur's Shadow Garb 4",
+      "translation" : "代理者甲壳碎片 4"
+    },
+    {
+      "kind" : "option",
+      "line" : 429,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "Valkyrja's Shield 4",
+      "translation" : "瓦尔基里亚钢盾 4"
+    },
+    {
+      "kind" : "option",
+      "line" : 429,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "Valkyrian Armor 5",
+      "translation" : "瓦尔基里的盔甲 5"
+    },
+    {
+      "kind" : "option",
+      "line" : 429,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "Diabolus Robe 5",
+      "translation" : "恐惧长袍 5"
+    },
+    {
+      "kind" : "option",
+      "line" : 429,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "Diabolus Armor 2",
+      "translation" : "恐惧战甲 2"
+    },
+    {
+      "kind" : "option",
+      "line" : 429,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "Diabolus Boots 2",
+      "translation" : "恐惧战靴 2"
+    },
+    {
+      "kind" : "option",
+      "line" : 429,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "Diabolus Manteau 4",
+      "translation" : "恐惧斗篷 4"
+    },
+    {
+      "kind" : "option",
+      "line" : 429,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "Twin Edge of Naght Sieger Blue 2",
+      "translation" : "纳户特基格的寒冰剑(蓝) 2"
+    },
+    {
+      "kind" : "option",
+      "line" : 429,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "Twin Edge of Naght Sieger Red 2",
+      "translation" : "纳户特基格的寒冰剑(红) 2"
+    },
+    {
+      "kind" : "message",
+      "line" : 439,
+      "npc" : "Eve Natalia",
+      "placeholders" : [
+        "countitem(.@item)",
+        "getitemname(.@item)",
+        ".@amount"
+      ],
+      "state" : "needs_review",
+      "text" : "[Eve Natalia]\nI see you have {0} {1}.\nSo do you want to trade the 1st one in your inventory for ^00CC00{2} Random Safe to 7 Certificates^000000?\nTell me '1' if you do, or '0' to cancel.",
+      "translation" : "[伊芙·娜塔莉娅]\n我看到你有{0}个{1}。\n那么，你想用物品栏中的第1个交换^00CC00{2}个随机+7证书^000000吗？\n如果同意请告诉我“1”，或者输入“0”取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 446,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "[Eve Natalia]\nIt is a 0 or 1, it can't be that difficult.",
+      "translation" : "[伊芙·娜塔莉娅]\n是0还是1，这很难吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 450,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "[Eve Natalia]\nIt's best to be sure before trading, have a good day.",
+      "translation" : "[伊芙·娜塔莉娅]\n交易前最好确认清楚，祝你有美好的一天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 455,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "[Eve Natalia]\nYou don't even have 1... stop wasting my time.",
+      "translation" : "[伊芙·娜塔莉娅]\n你连1个都没有...别浪费我的时间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 459,
+      "npc" : "Eve Natalia",
+      "placeholders" : [
+        ".@amount"
+      ],
+      "state" : "needs_review",
+      "text" : "[Eve Natalia]\nOh perfect, you get ^CC0000{0}^000000 Safe to 7 Certificates!",
+      "translation" : "[伊芙·娜塔莉娅]\n完美，你获得了^CC0000{0}^000000个随机+7证书！"
+    },
+    {
+      "kind" : "message",
+      "line" : 473,
+      "npc" : "Eve Natalia",
+      "state" : "needs_review",
+      "text" : "[Eve Natalia]\nFair enough, if you have business with me in the future don't be shy!",
+      "translation" : "[伊芙·娜塔莉娅]\n很好，如果以后还有事找我，别客气！"
+    },
+    {
+      "kind" : "message",
+      "line" : 482,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "You're carrying too many items right now.",
+      "translation" : "你现在携带的物品太多了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 485,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "[Trader Machine]\nInsert Bubble Gums and/or Battle Manuals to trade for higher efficiency Gums and Manuals.",
+      "translation" : "[交易机器]\n放入掉宝率倍增糖和/或经验值书，以交换更高效率的糖和书。"
+    },
+    {
+      "kind" : "message",
+      "line" : 488,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "[Trader Machine]\nExchange rate:\n2 Bubble Gum -> 1 HE Bubble Gum\n2 Battle Manual -> 1 HE Battle Manual\n4 HE Battle Manual -> 1 Battle Manual X3\n3 Thick Battle Manual -> 2 Battle Manual X3\nWhat would you like to exchange for?",
+      "translation" : "[交易机器]\n兑换比例：\n2 掉宝率倍增糖 -> 1 超粘掉宝率倍增糖\n2 经验值书 -> 1 高级经验值书\n4 高级经验值书 -> 1 300%经验值倍增书\n3 厚经验值书 -> 2 300%经验值倍增书\n你想兑换什么？"
+    },
+    {
+      "kind" : "option",
+      "line" : 496,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "HE Bubble Gum",
+      "translation" : "超粘掉宝率倍增糖"
+    },
+    {
+      "kind" : "option",
+      "line" : 496,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "HE Battle Manual",
+      "translation" : "高级经验值书"
+    },
+    {
+      "kind" : "option",
+      "line" : 496,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "1 Battle Manual X3",
+      "translation" : "1 300%经验值倍增书"
+    },
+    {
+      "kind" : "option",
+      "line" : 496,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "2 Battle Manual X3",
+      "translation" : "2 300%经验值倍增书"
+    },
+    {
+      "kind" : "option",
+      "line" : 496,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "1 Costume Corsair",
+      "translation" : "1 海盗船长帽"
+    },
+    {
+      "kind" : "option",
+      "line" : 496,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "Nothing",
+      "translation" : "没什么"
+    },
+    {
+      "kind" : "message",
+      "line" : 510,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "[Trader Machine]\nI can give you 1 Battle Manual X3 for 1 Costume Corsair.",
+      "translation" : "[交易机器]\n我可以用1个海盗船长帽兑换1本300%经验值倍增书。"
+    },
+    {
+      "kind" : "message",
+      "line" : 514,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "[Trader Machine]\nYou don't have a Costume Corsair hat to make that trade.",
+      "translation" : "[交易机器]\n您没有海盗船长帽，无法进行该兑换。"
+    },
+    {
+      "kind" : "option",
+      "line" : 519,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "Yes, give it to me!",
+      "translation" : "是的，给我吧！"
+    },
+    {
+      "kind" : "option",
+      "line" : 519,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "No, wait not yet.",
+      "translation" : "不，先等等。"
+    },
+    {
+      "kind" : "message",
+      "line" : 522,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "[Trader Machine]\nYou place the required items into the machine...",
+      "translation" : "[交易机器]\n您将所需物品放入机器中..."
+    },
+    {
+      "kind" : "message",
+      "line" : 525,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "[Trader Machine]\nThe Machine has given you an item in return!",
+      "translation" : "[交易机器]\n机器已向您交付了物品！"
+    },
+    {
+      "kind" : "message",
+      "line" : 536,
+      "npc" : "Gum & Manual Exchanger",
+      "placeholders" : [
+        "getitemname(getarg(2))"
+      ],
+      "state" : "needs_review",
+      "text" : "[Trader Machine]\nHow many {0} do you want?\nI can give you up to 60.\nType 0 to cancel.",
+      "translation" : "[交易机器]\n您想要多少个{0}？\n最多可以兑换60个。\n输入0取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 543,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "[Trader Machine]\nCancelled.",
+      "translation" : "[交易机器]\n已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 547,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "[Trader Machine]\nI said only 60 max.",
+      "translation" : "[交易机器]\n我说最多只能兑换60个。"
+    },
+    {
+      "kind" : "message",
+      "line" : 551,
+      "npc" : "Gum & Manual Exchanger",
+      "placeholders" : [
+        ".@amount",
+        "getitemname(getarg(2))"
+      ],
+      "state" : "needs_review",
+      "text" : "[Trader Machine]\nThat's a total of {0} {1}.\nIs this correct?",
+      "translation" : "[交易机器]\n总共是{0}个{1}。\n确认无误吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 555,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "Yes, give them to me!",
+      "translation" : "是的，给我吧！"
+    },
+    {
+      "kind" : "option",
+      "line" : 555,
+      "npc" : "Gum & Manual Exchanger",
+      "state" : "needs_review",
+      "text" : "No, wait not yet.",
+      "translation" : "不，先等等。"
+    },
+    {
+      "kind" : "message",
+      "line" : 560,
+      "npc" : "Gum & Manual Exchanger",
+      "placeholders" : [
+        "getitemname(getarg(0))"
+      ],
+      "state" : "needs_review",
+      "text" : "[Trader Machine]\nYou don't have enough {0} to make that trade.",
+      "translation" : "[交易机器]\n您的{0}不足，无法进行该兑换。"
+    },
+    {
+      "kind" : "message",
+      "line" : 573,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nHello there!  I'm Merry Badger and I was hired to exchange the ^00CC00Eden Merit Badges^000000!",
+      "translation" : "[欢乐獾]\n你好！我是欢乐獾，我受雇来兑换^00CC00乐园团功勋徽章^000000！"
+    },
+    {
+      "kind" : "message",
+      "line" : 576,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nI can take your Merit Badges and give you some useful stuff, or I can take some of your stuff and give you some Eden Merit Badges.\nAs I get more authorization I can offer more things to trade with you, so definitely keep me in mind when visiting the Eden Group.",
+      "translation" : "[欢乐獾]\n我可以收下您的功勋徽章，给您一些有用的东西；或者收下您的一些物品，给您一些乐园团功勋徽章。\n随着我获得更高的授权，我能提供的兑换物品也会更多，所以去乐园团时请务必记得我。"
+    },
+    {
+      "kind" : "option",
+      "line" : 581,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Redeem Badges",
+      "translation" : "兑换徽章"
+    },
+    {
+      "kind" : "option",
+      "line" : 581,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Trade in FOR badges",
+      "translation" : "用物品换徽章"
+    },
+    {
+      "kind" : "option",
+      "line" : 581,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Exchange Rates",
+      "translation" : "兑换比例"
+    },
+    {
+      "kind" : "option",
+      "line" : 581,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "15 Job Manuals - 1 JM Box",
+      "translation" : "15 职业手册 - 1 JM盒子"
+    },
+    {
+      "kind" : "option",
+      "line" : 581,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Weekly Special",
+      "translation" : "本周特惠"
+    },
+    {
+      "kind" : "message",
+      "line" : 603,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nSure thing, I have several options currently for your Badges!",
+      "translation" : "[欢乐獾]\n没问题，目前我有几种徽章兑换方案供您选择！"
+    },
+    {
+      "kind" : "message",
+      "line" : 640,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nYou don't have enough ^00CC00Eden Merit Badges^000000. Let's start over!",
+      "translation" : "[欢乐獾]\n您的^00CC00伊甸积分徽章^000000不足。让我们重新开始吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 644,
+      "npc" : "Merry Badger",
+      "placeholders" : [
+        "getitemname(.@item_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nOk, I can give you ^ff0000{0}^000000 for ^0066CC5 of your Eden Merit Badge(s)^000000.\nDo you want to?",
+      "translation" : "[欢乐獾]\n好的，我可以给您^ff0000{0}^000000，作为交换，需要您提供^0066CC5个伊甸积分徽章^000000。\n您愿意吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 648,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 648,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 649,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nI understand, let's see if you'd like something different!",
+      "translation" : "[欢乐獾]\n明白了，看看您是否想要换点别的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 653,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nThere you go! What else would you like?",
+      "translation" : "[欢乐獾]\n给您！还需要什么吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 664,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nYou don't have enough ^00CC00Eden Merit Badges^000000. Let's start over!",
+      "translation" : "[欢乐獾]\n您的^00CC00伊甸积分徽章^000000不足。让我们重新开始吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 668,
+      "npc" : "Merry Badger",
+      "placeholders" : [
+        "getitemname(.@item_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nOk, I can give you ^ff0000{0}^000000 for ^0066CC5 of your Eden Merit Badge(s)^000000.\nDo you want to?",
+      "translation" : "[欢乐獾]\n好的，我可以给您^ff0000{0}^000000，作为交换，需要您提供^0066CC5个伊甸积分徽章^000000。\n您愿意吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 672,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 672,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 673,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nI understand, let's see if you'd like something different!",
+      "translation" : "[欢乐獾]\n明白了，看看您是否想要换点别的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 677,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nThere you go! What else would you like?",
+      "translation" : "[欢乐獾]\n给您！还需要什么吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 690,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nVIP Services offers those to any user with VIP!!",
+      "translation" : "[欢乐獾]\nVIP服务面向所有VIP用户开放！"
+    },
+    {
+      "kind" : "message",
+      "line" : 697,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nYou already got your Token today!",
+      "translation" : "[欢乐獾]\n您今天已经领取过代币了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 701,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nThere you go! What else would you like?",
+      "translation" : "[欢乐獾]\n给您！还需要什么吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 707,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nWonderful!\nI'll be here if you ever want to exchange for Eden Merit Badges!",
+      "translation" : "[欢乐獾]\n太好了！\n如果您想兑换伊甸积分徽章，随时都可以来找我！"
+    },
+    {
+      "kind" : "message",
+      "line" : 715,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nI have a limited selection as of right now, but here is what I can offer to get 1 Eden Merit Badge!",
+      "translation" : "[欢乐獾]\n目前我的库存有限，但以下是我用来兑换1个伊甸积分徽章的选项！"
+    },
+    {
+      "kind" : "option",
+      "line" : 718,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Etc Items",
+      "translation" : "其他物品"
+    },
+    {
+      "kind" : "option",
+      "line" : 718,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Equipments",
+      "translation" : "装备"
+    },
+    {
+      "kind" : "option",
+      "line" : 718,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 721,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "5x Old Purple Box",
+      "translation" : "5x 神秘紫箱"
+    },
+    {
+      "kind" : "option",
+      "line" : 721,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Nothing",
+      "translation" : "没什么"
+    },
+    {
+      "kind" : "message",
+      "line" : 722,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nWonderful!\nI'll be here if you ever want to exchange for Eden Merit Badges!",
+      "translation" : "[欢乐獾]\n太好了！\n如果您想兑换伊甸积分徽章，随时都可以来找我！"
+    },
+    {
+      "kind" : "message",
+      "line" : 729,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nYou don't have enough of that to get 1 Eden Merit Badge. Lets start over!",
+      "translation" : "[欢乐獾]\n您的该物品数量不足以兑换1个伊甸积分徽章。让我们重新开始吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nOk, I can give you ^CC00001 Eden Merit Badge^000000 for ^0000CC5 of your Old Purple Boxes^000000. Do you want to?",
+      "translation" : "[欢乐獾]\n好的，我可以给您^CC00001个伊甸积分徽章^000000，作为交换，需要您提供^0000CC5个神秘紫箱^000000。您愿意吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 736,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 736,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 737,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nI understand, lets see if you'd like something different!",
+      "translation" : "[欢乐獾]\n明白了，看看您是否想要换点别的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 742,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nThere you go!  What else would you like?",
+      "translation" : "[欢乐獾]\n给您！还需要什么吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 753,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nI will take the top item in your inventory! MAKE SURE YOU DONT HAVE ANY OF THESE ITEMS THAT YOU DONT WANT TO EXCHANGE.",
+      "translation" : "[欢乐獾]\n我将收取您物品栏中的第一个物品！请确保您没有不想兑换的物品排在最前面。"
+    },
+    {
+      "kind" : "option",
+      "line" : 756,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Giant Faceworm Snake Skin",
+      "translation" : "巨神蛇的皮"
+    },
+    {
+      "kind" : "option",
+      "line" : 756,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Giant Faceworm Snake Skin [1]",
+      "translation" : "巨神蛇的皮 [1]"
+    },
+    {
+      "kind" : "option",
+      "line" : 756,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Nothing",
+      "translation" : "没什么"
+    },
+    {
+      "kind" : "message",
+      "line" : 768,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nWonderful!\nI'll be here if you ever want to exchange for Eden Merit Badges!",
+      "translation" : "[欢乐獾]\n太好了！\n如果您想兑换伊甸积分徽章，随时都可以来找我！"
+    },
+    {
+      "kind" : "message",
+      "line" : 772,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nWell that is OK, if you want to see what I offer just ask!",
+      "translation" : "[欢乐獾]\n没关系，如果您想看看我有什么可以提供的，尽管问吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nYou don't have enough of that to get 1 Eden Merit Badge. Lets start over!",
+      "translation" : "[欢乐獾]\n您的该物品数量不足以兑换1个伊甸积分徽章。让我们重新开始吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 782,
+      "npc" : "Merry Badger",
+      "placeholders" : [
+        ".@amount_reward",
+        ".@item_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nOk, I can give you ^ff0000{0} Eden Merit Badge^000000 for ^00ff00{1}^000000. Do you want to?",
+      "translation" : "[欢乐獾]\n好的，我可以用^00ff00{1}^000000换取^ff0000{0} 伊甸积分徽章^000000。您想要吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 785,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 785,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nI understand, lets see if you'd like something different!",
+      "translation" : "[欢乐獾]\n明白了，看看您是否想要换点别的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 792,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nThere you go! What else do you like?",
+      "translation" : "[欢乐獾]\n给您！您还想要什么？"
+    },
+    {
+      "kind" : "message",
+      "line" : 799,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nWell that is OK, if you want to see what I offer just ask!",
+      "translation" : "[欢乐獾]\n没关系，如果您想看看我有什么可以提供的，尽管问吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 804,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nThis is what I'll give you for your ^00CC00Eden Merit Badges^000000!\nOk, I have a special for 3 Merit Badge. This week I'll give you ^00CC0040 Light Granule^000000, ^00CC0040 Gun Powder^000000, ^0000CC3 Izidor^000000, ^00CC0010 Prickly Fruit^000000, ^0000CC1 Mandragora Flowerpot^000000, and ^00CC003 Elder Branch^000000.\n^00CC002 Eden Merit Badges^000000 = ^0000CC10x KVM Badge^000000\n^00CC002 Eden Merit Badges^000000 = ^0000CC10x Bravery Medals^000000\n^00CC002 Eden Merit Badges^000000 = ^0000CC10x Valor Medals^000000\n^00CC005 Eden Merit Badges^000000 = ^0000CC5x Medium Life Potion^000000\n^00CC005 Eden Merit Badges^000000 = ^0000CC5x Life Insurance^000000\n^00CC005 Eden Merit Badges^000000 = ^0000CC5x Token Of Siegfried^000000\n^00CC007 Eden Merit Badges^000000 = ^0000CC1x Job Battle Manual^000000\n^00CC008 Eden Merit Badges^000000 = ^0000CC1x Reset Stone^000000",
+      "translation" : "[欢乐獾]\n这是我用您的^00CC00伊甸积分徽章^000000能换给您的东西！\n本周特惠：3个积分徽章可兑换^00CC0040 光粒^000000、^00CC0040 火药粉末^000000、^0000CC3 迷幻药^000000、^00CC0010 榴莲^000000、^0000CC1 曼陀罗魔花花盆^000000，以及^00CC003 年老的树枝^000000。\n^00CC002 伊甸积分徽章^000000 = ^0000CC10x KVM徽章^000000\n^00CC002 伊甸积分徽章^000000 = ^0000CC10x 勇气勋章^000000\n^00CC002 伊甸积分徽章^000000 = ^0000CC10x 英勇勋章^000000\n^00CC005 伊甸积分徽章^000000 = ^0000CC5x 中型生命水^000000\n^00CC005 伊甸积分徽章^000000 = ^0000CC5x [非卖品]免掉啪证书^000000\n^00CC005 伊甸积分徽章^000000 = ^0000CC5x 原地复活之证^000000\n^00CC007 伊甸积分徽章^000000 = ^0000CC1x JOB经验值书^000000\n^00CC008 伊甸积分徽章^000000 = ^0000CC1x 重置石^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nThis is what you can give me to get ^00CC001 Eden Merit Badge^000000!\n^0000CC5x Old Purple Box^000000",
+      "translation" : "[欢乐獾]\n您可以给我这些物品来换取^00CC001 伊甸积分徽章^000000！\n^0000CC5x 神秘紫箱^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 821,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nI was strong armed into giving this, but you are worth it!\nDo you want to exchange 15 Job Manuals to get 1 Tradable box of 10 Job Manuals?\nI know 15 does not equal 10, but boxes are expensive you know.",
+      "translation" : "[欢乐獾]\n我是被强迫做这个交易的，但您值得拥有！\n您想用15本JOB经验值书换取1个可交易的10本JOB经验值书盒子吗？\n我知道15不等于10，但盒子很贵，您懂的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nYou don't have 15 or more Job Manuals to get 1 Box!",
+      "translation" : "[欢乐獾]\n您没有15本或更多的JOB经验值书来换取1个盒子！"
+    },
+    {
+      "kind" : "option",
+      "line" : 832,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 832,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 833,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nWonderful!\nI'll be here if you ever want to exchange for Eden Merit Badges!",
+      "translation" : "[欢乐獾]\n太好了！\n如果您想兑换伊甸积分徽章，随时都可以来找我！"
+    },
+    {
+      "kind" : "message",
+      "line" : 838,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nWonderful, what else do you want?",
+      "translation" : "[欢乐獾]\n太好了，您还想要什么？"
+    },
+    {
+      "kind" : "message",
+      "line" : 844,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nI don't really understand why but I have this stack of coupons to sell.\nDo you want to exchange 25 Eden Merit Badges for 1 dungeon ticket? If you are VIP your ticket will last much longer!",
+      "translation" : "[欢乐獾]\n我不太明白为什么，但我有一堆优惠券要卖。\n您想用25个伊甸积分徽章换取1张副本门票吗？如果您是VIP，门票的有效期会更长！"
+    },
+    {
+      "kind" : "option",
+      "line" : 848,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 848,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 849,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nI understand, lets see if you'd like something different!",
+      "translation" : "[欢乐獾]\n明白了，看看您是否想要换点别的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 854,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nYou don't have enough badges!",
+      "translation" : "[欢乐獾]\n您的徽章数量不足！"
+    },
+    {
+      "kind" : "message",
+      "line" : 863,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nThere you go! What else would you like?",
+      "translation" : "[欢乐獾]\n给您！还需要什么吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 868,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nThe Weekly special is ....",
+      "translation" : "[欢乐獾]\n本周特惠是...."
+    },
+    {
+      "kind" : "message",
+      "line" : 871,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nOk, I have a special for 3 Merit Badge or 1,000,000 zeny.  This week I'll give you ^00CC0040 Light Granule^000000, 40 Gun Powder^000000, ^0000CC3 Izidor^000000\n^00CC0010 Prickly Fruit^000000, ^0000CC1 Mandragora Flowerpot^000000, and ^00CC003 Elder Branch^000000.",
+      "translation" : "[欢乐獾]\n好的，本周特惠：3个积分徽章或1,000,000 Zeny。我将给您^00CC0040 光粒^000000、40 火药粉末^000000、^0000CC3 迷幻药^000000、^00CC0010 榴莲^000000、^0000CC1 曼陀罗魔花花盆^000000，以及^00CC003 年老的树枝^000000。"
+    },
+    {
+      "kind" : "option",
+      "line" : 875,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Badges",
+      "translation" : "徽章"
+    },
+    {
+      "kind" : "option",
+      "line" : 875,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Zeny",
+      "translation" : "Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 875,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 878,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nYou don't have enough ^00CC00Eden Merit Badges^000000. Lets start over!",
+      "translation" : "[欢乐獾]\n您的^00CC00伊甸积分徽章^000000数量不足。让我们重新开始吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 887,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nYou don't have enough ^00CC00Zeny^000000. Lets start over!",
+      "translation" : "[欢乐獾]\n您的^00CC00Zeny^000000不足。让我们重新开始吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 895,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nI understand, lets see if you'd like something different!",
+      "translation" : "[欢乐獾]\n明白了，看看您是否想要换点别的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 905,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nThere you go! What else would you like?",
+      "translation" : "[欢乐獾]\n给您！还需要什么吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 915,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nYou don't have enough ^00CC00Eden Merit Badges^000000. Let's start over!",
+      "translation" : "[欢乐獾]\n您的^00CC00伊甸积分徽章^000000不足。让我们重新开始吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Merry Badger",
+      "placeholders" : [
+        "sprintf(\"Ok, I can give you ^ff0000%s^000000 for ^0066CC%d of your Eden Merit Badge(s)^000000.\",\n\t\t\t\tcallfunc(\"F_InsertPlural\",getarg(2),getitemname(getarg(1))), getarg(0))"
+      ],
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\n{0}\nDo you want to?",
+      "translation" : "[欢乐獾]\n{0}\n您想要吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 924,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 924,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 925,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nI understand, let's see if you'd like something different!",
+      "translation" : "[欢乐獾]\n明白了，看看您是否想要换点别的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 929,
+      "npc" : "Merry Badger",
+      "state" : "needs_review",
+      "text" : "[Merry Badger]\nThere you go! What else would you like?",
+      "translation" : "[欢乐獾]\n给您！还需要什么吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 940,
+      "npc" : "Kafra Stacker",
+      "state" : "needs_review",
+      "text" : "- Wait a moment! -\n- Currently you're carrying -\n- too much weight in items. -\n- Please come back later -\n- after you put some into Kafra storage. -",
+      "translation" : "- 请稍等！ -\n- 您当前携带的物品 -\n- 重量过重。 -\n- 请将部分物品存入卡普拉仓库 -\n- 后再回来。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 947,
+      "npc" : "Kafra Stacker",
+      "state" : "needs_review",
+      "text" : "[Toma]\nI can take your non-stacking Kafra Consumables\nand make them fit neatly into stacks!",
+      "translation" : "[托马]\n我可以接收您无法堆叠的卡普拉消耗品，\n并将它们整齐地堆叠起来！"
+    },
+    {
+      "kind" : "message",
+      "line" : 951,
+      "npc" : "Kafra Stacker",
+      "state" : "needs_review",
+      "text" : "[Toma]\nPlease understand that I can\nonly stack 10 groups at a time\nso keep talking to me until\nyou have 1 stack of each!",
+      "translation" : "[托马]\n请理解，我每次只能堆叠10组，\n所以请继续与我对话，\n直到每种物品都堆叠完毕！"
+    },
+    {
+      "kind" : "option",
+      "line" : 958,
+      "npc" : "Kafra Stacker",
+      "state" : "needs_review",
+      "text" : "Do it!",
+      "translation" : "执行！"
+    },
+    {
+      "kind" : "option",
+      "line" : 958,
+      "npc" : "Kafra Stacker",
+      "state" : "needs_review",
+      "text" : "Never mind.",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 961,
+      "npc" : "Kafra Stacker",
+      "state" : "needs_review",
+      "text" : "[Toma]\nTen stack down!\nWant to do another?",
+      "translation" : "[托马]\n堆叠了10组！\n还要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 966,
+      "npc" : "Kafra Stacker",
+      "state" : "needs_review",
+      "text" : "[Toma]\nOk then, laterz.",
+      "translation" : "[托马]\n好的，下次再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 975,
+      "npc" : "Code the Redeemer",
+      "state" : "needs_review",
+      "text" : "^0000ffHold it right there!\nYou're carrying too many items and don't have enough inventory space to receive any rewards. Please make more inventory space available and come back to take this challenge.^000000",
+      "translation" : "^0000ff请等一下！\n您携带的物品过多，且背包空间不足，无法接收奖励。\n请腾出一些背包空间，然后再回来接受挑战。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 979,
+      "npc" : "Code the Redeemer",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Code the Redeemer]\nWelcome, {0}!\nI've been expecting you.",
+      "translation" : "[救赎者 科德]\n欢迎，{0}！\n我一直在等您。"
+    },
+    {
+      "kind" : "message",
+      "line" : 983,
+      "npc" : "Code the Redeemer",
+      "state" : "needs_review",
+      "text" : "[Code the Redeemer]\nI am a distributor of all the\nitems that adventurers like\nyourself purchase on websites\nor receive as promotions.",
+      "translation" : "[救赎者 科德]\n我是负责分发所有物品的使者，\n这些物品是像您这样的冒险者\n在网站上购买或作为促销活动获得的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 989,
+      "npc" : "Code the Redeemer",
+      "state" : "needs_review",
+      "text" : "[Code the Redeemer]\n^0000FFIf the list is empty,\nthat means that you have\nnot purchased, or inputted\nyour serial code from the purchasing website.^000000",
+      "translation" : "[救赎者 科德]\n^0000FF如果列表是空的，\n说明您尚未购买，\n或者没有输入购买网站上的序列码。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1062,
+      "npc" : "Gramps",
+      "state" : "needs_review",
+      "text" : "[Gramps]\nWhen you get to being my\nage, you become bitter.\nToo long I've done nothing about the monsters that roam around\nMidgard.",
+      "translation" : "[老爷爷]\n等你到了我这个年纪，\n就会变得愤世嫉俗。\n我太久没有对米德加尔特四处游荡的魔物采取任何行动了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1068,
+      "npc" : "Gramps",
+      "state" : "needs_review",
+      "text" : "[Gramps]\nThat's why I'm asking you wippersnappers to help\nme hunt some monsters.\nWill you help me, young adventurer?",
+      "translation" : "[老爷爷]\n所以我才请求你们这些小鬼头\n帮我猎杀一些魔物。\n你愿意帮我吗，年轻的冒险者？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1078,
+      "npc" : "Bathory",
+      "state" : "needs_review",
+      "text" : "[Bathory]\nEheeheeheehee! The spotlight is on Glast Heim this week, so I'm ferrying people there for a mere 1,000z!",
+      "translation" : "[巴托里]\n嘿嘿嘿嘿！本周的焦点是格拉斯特海姆，所以我只要1000 Zeny就能把你们送过去！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1081,
+      "npc" : "Bathory",
+      "state" : "needs_review",
+      "text" : "[Bathory]\nHow about it? Want to take a ride on a beautiful Bathory's broom?",
+      "translation" : "[巴托里]\n怎么样？想体验一下美丽巴托里的扫帚吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1084,
+      "npc" : "Bathory",
+      "state" : "needs_review",
+      "text" : "Prepare for Takeoff!",
+      "translation" : "准备起飞！"
+    },
+    {
+      "kind" : "option",
+      "line" : 1084,
+      "npc" : "Bathory",
+      "state" : "needs_review",
+      "text" : "No thanks.",
+      "translation" : "不用了，谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1087,
+      "npc" : "Bathory",
+      "state" : "needs_review",
+      "text" : "[Bathory]\nCome on dearie...\nYou don't even have 1,000 zeny?",
+      "translation" : "[巴托里]\n哎呀亲爱的...\n你连1000 Zeny都没有吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1092,
+      "npc" : "Bathory",
+      "state" : "needs_review",
+      "text" : "[Bathory]\nAlright, hold on tight!",
+      "translation" : "[巴托里]\n好了，抓紧了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1099,
+      "npc" : "Bathory",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nNo thanks, maybe later.",
+      "translation" : "[{0}]\n不用了，下次再说吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1170,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nHello~ I am giving away extra stats to those who have a Fallen Angel Wing item.",
+      "translation" : "[暗黑 卢希尔]\n你好~ 我正在向拥有堕天使发圈物品的人赠送额外属性。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1174,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nPlease ^0000ffwear your Fallen Angel Wing item first^000000, and then I will give you extra stats.",
+      "translation" : "[暗黑 卢希尔]\n请先^0000ff装备你的堕天使发圈物品^000000，然后我会给你额外属性。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1178,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 1178,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "Enchant Fallen Angel Wing",
+      "translation" : "强化堕天使发圈"
+    },
+    {
+      "kind" : "option",
+      "line" : 1178,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "Reset Fallen Angel Wing Stats",
+      "translation" : "重置堕天使发圈属性"
+    },
+    {
+      "kind" : "message",
+      "line" : 1180,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nLater then...",
+      "translation" : "[暗黑 卢希尔]\n下次再来吧..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1190,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nOnly 1 socket can get an extra stat when refine level is between 1~6.\nIf refine level is 7~8, it can receive stats for 2 sockets.\n+9 can receive stats to all 3 sockets.",
+      "translation" : "[暗黑 卢希尔]\n当强化等级在1~6之间时，只有1个插槽可以获得额外属性。\n如果强化等级是7~8，可以获得2个插槽的属性。\n+9可以获得所有3个插槽的属性。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1195,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nThis item's refine level is lower than 7. Only ^ff0000socket slot 4^000000 can receive extra stats.\nWhat kind of extra stats do you want?",
+      "translation" : "[暗黑 卢希尔]\n该物品的强化等级低于7。只有^ff0000插槽4^000000可以获得额外属性。\n您想要什么类型的额外属性？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1195,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nThis item's refine level is between 7~8. ^ff0000Socket slot 3 and 4^000000 can receive extra stats.\nWhat kind of extra stats do you want?",
+      "translation" : "[暗黑 卢希尔]\n该物品的强化等级在7~8之间。^ff0000插槽3和4^000000可以获得额外属性。\n您想要什么类型的额外属性？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1195,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nThis item's refine level is more than 9. All 3 of ^ff0000Socket slot 2, 3 and 4^000000 can receive extra stats.\nWhat kind of extra stats do you want?",
+      "translation" : "[暗黑 卢希尔]\n该物品的强化等级高于9。^ff0000插槽2、3和4^000000都可以获得额外属性。\n您想要什么类型的额外属性？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "Let me get my gear on",
+      "translation" : "让我装备一下"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "1.Fighting spirit",
+      "translation" : "1.战斗精神"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "2.Magic Attack",
+      "translation" : "2.魔法攻击"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "3.Archery",
+      "translation" : "3.箭术"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "4.Critical",
+      "translation" : "4.暴击"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "5.MaxHP",
+      "translation" : "5.最大HP"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "6.MaxSP",
+      "translation" : "6.最大SP"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "7.Atk speed",
+      "translation" : "7.攻击速度"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "8.STR",
+      "translation" : "8.力量"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "9.AGI",
+      "translation" : "9.敏捷"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "10.VIT",
+      "translation" : "10.体质"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "11.INT",
+      "translation" : "11.智力"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "12.DEX",
+      "translation" : "12.灵巧"
+    },
+    {
+      "kind" : "option",
+      "line" : 1204,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "13.LUK",
+      "translation" : "13.幸运"
+    },
+    {
+      "kind" : "message",
+      "line" : 1206,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nPlease come back after equipping your item.",
+      "translation" : "[暗黑 卢希尔]\n请在装备好物品后再回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1262,
+      "npc" : "Dark Luhir",
+      "placeholders" : [
+        ".@string$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\n{0} ^ff0000Given stats cannot be turned back.^000000 Do you want to proceed?",
+      "translation" : "[暗黑 卢希尔]\n{0} ^ff0000赋予的属性无法撤销。^000000您确定要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1265,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "1.Quit",
+      "translation" : "1.退出"
+    },
+    {
+      "kind" : "option",
+      "line" : 1265,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "2.Yes, I want to try this.",
+      "translation" : "2.是的，我想尝试一下。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1266,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nLater then...",
+      "translation" : "[暗黑 卢希尔]\n下次再来吧..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1288,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nIt seems this item is already has max enchanting. Please bring another one for extra stats.",
+      "translation" : "[暗黑 卢希尔]\n这件物品似乎已经达到了最大强化等级。请拿另一件物品来附加属性。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1293,
+      "npc" : "Dark Luhir",
+      "placeholders" : [
+        ".@slot"
+      ],
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nGiving ability to item's ^990000{0} socket^000000.",
+      "translation" : "[暗黑 卢希尔]\n正在为物品的^990000{0} 插槽^000000赋予能力。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1299,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nStat reset of the Fallen Angel Wing will cost you 1,000,000 zeny?\nDo you wish to proceed?",
+      "translation" : "[暗黑 卢希尔]\n重置堕天使发圈的属性将花费您1,000,000 Zeny。\n您确定要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1303,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 1303,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "No thanks!",
+      "translation" : "不用了，谢谢！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1306,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nYou liar you don't have enough zeny!",
+      "translation" : "[暗黑 卢希尔]\n骗子，你的Zeny不够！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1314,
+      "npc" : "Dark Luhir",
+      "state" : "needs_review",
+      "text" : "[Dark Luhir]\nReseting item stats.",
+      "translation" : "[暗黑 卢希尔]\n正在重置物品属性。"
+    }
+  ]
+}

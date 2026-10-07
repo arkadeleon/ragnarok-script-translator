@@ -1,0 +1,1811 @@
+{
+  "file" : "npc/re/merchants/enchan_verus.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 14,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "^ff0000You have carried too many items, please reduce it and come back later.^000000",
+      "translation" : "^ff0000您携带的物品过多，请减少物品后再来。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 20,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI don't know where you can find Charleston Components,",
+      "translation" : "[马斯·查尔斯顿]\n我不知道您能在哪里找到查尔斯顿零件，"
+    },
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nbut if you have 10 or more, then I can exchange them with factory products.",
+      "translation" : "[马斯·查尔斯顿]\n但如果您有10个或更多，我可以用它们交换工厂产品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nA series of trials and errors was made before the mass version of Charleston was developed.",
+      "translation" : "[马斯·查尔斯顿]\n在开发量产版查尔斯顿之前，我们经历了一系列的试错过程。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI don't mean to depreciate myself, but mass versions are mass versions; they're cost-effective and practical, but never as good as the high-end versions.",
+      "translation" : "[马斯·查尔斯顿]\n我不是想贬低自己，但量产版就是量产版；它们性价比高且实用，但永远无法媲美高端版本。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nSome Charlestons, especially in the development stage, are equipped with more advanced features. To study them, I need more components.",
+      "translation" : "[马斯·查尔斯顿]\n一些查尔斯顿，尤其是在开发阶段，配备了更先进的功能。为了研究它们，我需要更多的零件。"
+    },
+    {
+      "kind" : "message",
+      "line" : 36,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nIf you have 10 or more Charleston Components, then I can exchange them with factory products.",
+      "translation" : "[马斯·查尔斯顿]\n如果您有10个或更多查尔斯顿零件，我可以用它们交换工厂产品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nYou got some nice parts on you! Would you like to exchange it with the goods produced in the factory?",
+      "translation" : "[马斯·查尔斯顿]\n您身上有一些不错的零件！您想用它们交换工厂生产的产品吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nIs a collection of Charleston advantages in a commodity, but can not be sold separately, IF bring good parts can be exchanged for you.",
+      "translation" : "[马斯·查尔斯顿]\n查尔斯顿的优势在于其作为商品的整体性，但无法单独出售。如果您带来好的零件，我可以为您交换。"
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Quit.",
+      "translation" : "退出。"
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Exchange Reinforced parts",
+      "translation" : "交换强化零件"
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Exchange Supplementary device",
+      "translation" : "交换辅助装置"
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI'll see you next time!",
+      "translation" : "[马斯·查尔斯顿]\n下次再见！"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        ".@job_aft$[.@s]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nWhich part of {0} do you want to select?",
+      "translation" : "[马斯·查尔斯顿]\n您想选择{0}的哪个部分？"
+    },
+    {
+      "kind" : "message",
+      "line" : 70,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI'll see you next time!",
+      "translation" : "[马斯·查尔斯顿]\n下次再见！"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Quit.",
+      "translation" : "退出。"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(.@item[0])"
+      ],
+      "state" : "needs_review",
+      "text" : "{0} (garment)",
+      "translation" : "{0}（服装）"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(.@item[1])"
+      ],
+      "state" : "needs_review",
+      "text" : "{0} (Shoes)",
+      "translation" : "{0}（长靴）"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(.@item[2])"
+      ],
+      "state" : "needs_review",
+      "text" : "{0} (Accessory)",
+      "translation" : "{0}（饰品）"
+    },
+    {
+      "kind" : "message",
+      "line" : 77,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI'll see you next time!",
+      "translation" : "[马斯·查尔斯顿]\n下次再见！"
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nIf you find enough Charleston parts, can you come to me again?",
+      "translation" : "[马斯·查尔斯顿]\n如果您找到足够的查尔斯顿零件，能再来找我吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(6752)",
+        ".@job_aft$[.@s]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nExchanged 10 {0} for {1}. If you find more part, come to me again!",
+      "translation" : "[马斯·查尔斯顿]\n已用10个{0}交换了{1}。如果您找到更多零件，请再来找我！"
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "You have too many types of items. Lighten your inventory first.",
+      "translation" : "您拥有的物品种类过多。请先减轻背包负担。"
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "The items in your inventory are weighing you down. Lighten your weight first.",
+      "translation" : "你背包里的物品太重了，影响了行动。请先减轻负重。"
+    },
+    {
+      "kind" : "message",
+      "line" : 104,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI can upgrade the Charleston Factory products. Let me know if you're interested.",
+      "translation" : "[马斯·查尔斯顿]\n我可以升级查尔斯顿工厂的产品。如果您感兴趣，请告诉我。"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "More information.",
+      "translation" : "更多信息"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Add abilities to your product.",
+      "translation" : "为产品添加能力"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Reset product.",
+      "translation" : "重置产品"
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nEach Upgrade/resetting attempt costs 100,000 zeny and 1 Charleston Component.",
+      "translation" : "[马斯·查尔斯顿]\n每次升级或重置尝试需要100,000 Zeny和1个查尔斯顿零件。"
+    },
+    {
+      "kind" : "message",
+      "line" : 112,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI also provide a wider selection of Upgrade options for Charleston Equipment at ^ff0000+9^000000 or above.",
+      "translation" : "[马斯·查尔斯顿]\n我还可以为^ff0000+9^000000或更高等级的查尔斯顿装备提供更广泛的升级选项。"
+    },
+    {
+      "kind" : "message",
+      "line" : 115,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nRest assured, my Upgrade technology does not involve accidental damage on the item's Upgrade level or equipped cards.",
+      "translation" : "[马斯·查尔斯顿]\n请放心，我的升级技术不会意外损坏装备的强化等级或镶嵌的卡片。"
+    },
+    {
+      "kind" : "message",
+      "line" : 128,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        ".@string$",
+        "strtolower(.@string$)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\n{0} a Charleston product costs 1 Charleston Component and 100,000 zeny. Please know that all the expenses go into {1} your product.",
+      "translation" : "[马斯·查尔斯顿]\n{0}一个查尔斯顿产品需要1个查尔斯顿零件和100,000 Zeny。请知悉，所有费用都将用于{1}您的产品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 132,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nPlease make sure you're equipped with the Equipment you want to upgrade.",
+      "translation" : "[马斯·查尔斯顿]\n请确保您已装备想要升级的装备。"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Let me go equip it.",
+      "translation" : "让我去装备它"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Footgear",
+      "translation" : "鞋子"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Garment",
+      "translation" : "服装"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Clothes",
+      "translation" : "衣服"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Accessory",
+      "translation" : "饰品"
+    },
+    {
+      "kind" : "message",
+      "line" : 137,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nSure, please come back after you do.",
+      "translation" : "[马斯·查尔斯顿]\n好的，完成后请回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 142,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThings needed for commodity upgrades seem inadequate!",
+      "translation" : "[马斯·查尔斯顿]\n用于商品升级的材料似乎不足！"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nBecause it is a customized upgrade be sure to wear equipment.",
+      "translation" : "[马斯·查尔斯顿]\n由于这是定制化升级，请确保已穿戴装备。"
+    },
+    {
+      "kind" : "message",
+      "line" : 200,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getequipname(.@part)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\n^990099{0}^000000??\nI'm not interested in this Equipment.",
+      "translation" : "[马斯·查尔斯顿]\n^990099{0}^000000??\n我对这件装备不感兴趣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nSomething's not right!",
+      "translation" : "[马斯·查尔斯顿]\n有些不对劲！"
+    },
+    {
+      "kind" : "message",
+      "line" : 223,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThis is a considerable level of enhanced equipment, this type can give enhanced expansion performance, choose from the following series of desirable to strengthen it!",
+      "translation" : "[马斯·查尔斯顿]\n这是一件强化等级相当高的装备，这种类型可以提供强化扩展性能，请从以下系列中选择想要强化的能力！"
+    },
+    {
+      "kind" : "message",
+      "line" : 231,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI'll be Upgrading the first ability. The existing Upgrade level and cards will not be damaged. Do you want to continue?",
+      "translation" : "[马斯·查尔斯顿]\n我将升级第一个能力。现有的强化等级和卡片不会受损。您要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 234,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "I'll come back later.",
+      "translation" : "我稍后再来。"
+    },
+    {
+      "kind" : "option",
+      "line" : 234,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Continue.",
+      "translation" : "继续"
+    },
+    {
+      "kind" : "message",
+      "line" : 235,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nNo problem. Come back if you change your mind.",
+      "translation" : "[马斯·查尔斯顿]\n没问题。如果您改变主意，请回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 242,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI'll be Upgrading the second ability. The existing Upgrade level and cards will not be damaged.",
+      "translation" : "[马斯·查尔斯顿]\n我将升级第二个能力。现有的强化等级和卡片不会受损。"
+    },
+    {
+      "kind" : "message",
+      "line" : 245,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThough there is a slight chance of failure, in which case the existing Upgrade level will be reset. What would you like to do?",
+      "translation" : "[马斯·查尔斯顿]\n虽然失败几率很小，但一旦失败，现有的强化等级将被重置。您想怎么做？"
+    },
+    {
+      "kind" : "option",
+      "line" : 248,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "I'll come back later.",
+      "translation" : "我稍后再来。"
+    },
+    {
+      "kind" : "option",
+      "line" : 248,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Continue.",
+      "translation" : "继续"
+    },
+    {
+      "kind" : "message",
+      "line" : 249,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nNo problem. Come back if you change your mind.",
+      "translation" : "[马斯·查尔斯顿]\n没问题。如果您改变主意，请回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI'll be Upgrading the 3rd ability. This highest Upgrade stage incurs a  chance of ^990000destroying the Equipment or resetting its existing Upgrade level.^000000 Do you want to continue?",
+      "translation" : "[马斯·查尔斯顿]\n我将升级第三个能力。这是最高强化阶段，有几率^990000破坏装备或重置其现有的强化等级^000000。您要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 259,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "I'll come back later.",
+      "translation" : "我稍后再来。"
+    },
+    {
+      "kind" : "option",
+      "line" : 259,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Continue.",
+      "translation" : "继续"
+    },
+    {
+      "kind" : "message",
+      "line" : 260,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nNo problem. Come back if you change your mind.",
+      "translation" : "[马斯·查尔斯顿]\n没问题。如果您改变主意，请回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 269,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThis Equipment is Upgraded to the maximum level. Please bring something else.",
+      "translation" : "[马斯·查尔斯顿]\n该装备已强化至最高等级。请带来其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 288,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
+      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
+      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 400,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
+      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 454,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
+      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 517,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
+      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 583,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
+      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 637,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
+      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 697,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
+      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 717,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
+      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 722,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThings needed for commodity upgrades seem inadequate!",
+      "translation" : "[马斯·查尔斯顿]\n用于商品升级的材料似乎不足！"
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
+      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 745,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nSince the balance of power does not match, the given existing ability has been destroyed. It is unfortunate but please try again next time.",
+      "translation" : "[马斯·查尔斯顿]\n由于力量平衡不匹配，现有的能力已被破坏。很遗憾，请下次再试。"
+    },
+    {
+      "kind" : "message",
+      "line" : 752,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThis!\nI'm sorry but the equipment has been destroyed.",
+      "translation" : "[马斯·查尔斯顿]\n哎呀！\n很抱歉，装备已被破坏。"
+    },
+    {
+      "kind" : "message",
+      "line" : 758,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        ".@slot"
+      ],
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\n^990000Socket{0}^000000 will be Upgrade.",
+      "translation" : "[马斯·查尔斯顿]\n^990000{0}号插槽^000000将被升级。"
+    },
+    {
+      "kind" : "message",
+      "line" : 770,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nReset the product's abilities.",
+      "translation" : "[马斯·查尔斯顿]\n重置该物品现有的能力。"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
+      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 787,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "^ff0000You have carried too many items, please reduce it and come back later.^000000",
+      "translation" : "^ff0000您携带的物品过多，请减少物品后再来。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 791,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nEh, do I have a customer? Activating Salesman mode...",
+      "translation" : "[马斯·查尔斯顿]\n咦，有顾客吗？启动销售员模式..."
+    },
+    {
+      "kind" : "message",
+      "line" : 795,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nCharleston Factory's best-selling items: ^FF0000Upgrade Part Plate^000000 and ^FF0000Supplement Part Str^000000 now on sale!",
+      "translation" : "[马斯·查尔斯顿]\n查尔斯顿工厂的畅销商品：^FF0000升级部件 碟仙恶灵^000000和^FF0000肌力补充装置^000000正在促销！"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nFor only ^FF00003,999,999^000000 zeny! Get yourself the ultra-performance action gears!",
+      "translation" : "[马斯·查尔斯顿]\n仅需^FF00003,999,999^000000 Zeny！快来抢购超高性能的动作装备吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 801,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAlso available is the ^FF0000Pilebuncker^000000 ^FF0000Upgrade^000000 service!",
+      "translation" : "[马斯·查尔斯顿]\n同时提供^FF0000Pilebuncker^000000 ^FF0000升级^000000服务！"
+    },
+    {
+      "kind" : "option",
+      "line" : 804,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Talk.",
+      "translation" : "交谈"
+    },
+    {
+      "kind" : "option",
+      "line" : 804,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Exchange Upgrade Parts.",
+      "translation" : "兑换升级部件"
+    },
+    {
+      "kind" : "option",
+      "line" : 804,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Exchange Supplementary devices.",
+      "translation" : "兑换补充装置"
+    },
+    {
+      "kind" : "option",
+      "line" : 804,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Upgrade Pilebuncker.",
+      "translation" : "升级Pilebuncker"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThe Charleston Factory shut down, but its technology and products remain with us.",
+      "translation" : "[马斯·查尔斯顿]\n查尔斯顿工厂虽然已经关闭，但其技术和产品仍留存在我们这里。"
+    },
+    {
+      "kind" : "message",
+      "line" : 810,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nOh, haven't you heard the news? Oops, my bad. Please forget I said that.",
+      "translation" : "[马斯·查尔斯顿]\n哦，你没听到新闻吗？哎呀，抱歉。请忘掉我刚才说的话。"
+    },
+    {
+      "kind" : "message",
+      "line" : 815,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI'm a mass version Charleston. I wasn't even given a serial number. Who knows how many copies of me were made? It could be a hundred, maybe even a thousand.",
+      "translation" : "[马斯·查尔斯顿]\n我是量产版查尔斯顿。我甚至没有被赋予序列号。谁知道制造了多少个我？可能有一百个，甚至一千个。"
+    },
+    {
+      "kind" : "message",
+      "line" : 818,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThe original Charleston is standing over there, but...",
+      "translation" : "[马斯·查尔斯顿]\n初代查尔斯顿就站在那边，但是..."
+    },
+    {
+      "kind" : "message",
+      "line" : 821,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nBy the time Charlestons 1 and 2 escaped the factory, they're severely damaged. The battle that took place that day was incredible.",
+      "translation" : "[马斯·查尔斯顿]\n当查尔斯顿1号和2号逃离工厂时，它们已经严重受损。那天发生的战斗简直难以置信。"
+    },
+    {
+      "kind" : "message",
+      "line" : 824,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI can still remember Charlestons 1 and 2 destroying Dr. Ve's numerous creatures like it was yesterday.",
+      "translation" : "[马斯·查尔斯顿]\n我依然记得查尔斯顿1号和2号摧毁维博士众多生物的情景，就像昨天发生的一样。"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThey also destroyed the mass version Charlestons modified by Dr. Ve to his bidding.",
+      "translation" : "[马斯·查尔斯顿]\n它们还摧毁了那些被维博士按照他的意愿改造过的量产版查尔斯顿。"
+    },
+    {
+      "kind" : "message",
+      "line" : 830,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nOf course there are others--like us here working on product upgrades--that were lucky enough to escape Dr. Ve's clutches and meet Charleston 1, who saved us all.",
+      "translation" : "[马斯·查尔斯顿]\n当然，还有像我们这样致力于产品升级的幸运儿，成功逃脱了维博士的魔爪，并遇到了拯救了我们的查尔斯顿1号。"
+    },
+    {
+      "kind" : "message",
+      "line" : 833,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAfter escaping with the modified Charleston 3, we came here.",
+      "translation" : "[马斯·查尔斯顿]\n带着被改造过的查尔斯顿3号机逃脱后，我们来到了这里。"
+    },
+    {
+      "kind" : "message",
+      "line" : 836,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nJust so you know, this place was already in shambles when we arrived. We had nothing to do with its destruction. Perhaps...",
+      "translation" : "[马斯·查尔斯顿]\n顺便告诉你，我们到达这里时，这个地方就已经是一片废墟了。它的毁灭与我们无关。也许..."
+    },
+    {
+      "kind" : "message",
+      "line" : 839,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nSorry I sidetracked. Anyway, this is the problem.",
+      "translation" : "[马斯·查尔斯顿]\n抱歉跑题了。总之，这就是目前的问题。"
+    },
+    {
+      "kind" : "message",
+      "line" : 842,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nCharlestons 1 and 2 were destroyed to a point of impairment. They tried to repair each other, to no avail.",
+      "translation" : "[马斯·查尔斯顿]\n查尔斯顿1号和2号受损严重，已经无法运作。它们尝试互相修复，但都失败了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 845,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThey realized they're damaged beyond repair. They salvaged however many parts they could, and built one body with one OS.",
+      "translation" : "[马斯·查尔斯顿]\n它们意识到自己已损坏到无法修复的地步。于是它们回收了尽可能多的零件，组装了一个身体和一个操作系统。"
+    },
+    {
+      "kind" : "message",
+      "line" : 848,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAnd that's the newly built body. They blamed themselves for the destruction of the factory, and wanted to fix it. I'm afraid their data is corrupted or missing important memory.",
+      "translation" : "[马斯·查尔斯顿]\n这就是新组装的身体。它们为工厂的毁灭感到自责，想要修复它。恐怕它们的数据已经损坏，或者丢失了重要的记忆。"
+    },
+    {
+      "kind" : "message",
+      "line" : 851,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThe characteristics of the data show more traits of Charleston 2, while the access method of the OS is more similar to that of Charleston 1. Charleston 1 always was the more sentimental one.",
+      "translation" : "[马斯·查尔斯顿]\n数据显示它更多具有查尔斯顿2号的特征，而操作系统的访问方式则更接近查尔斯顿1号。查尔斯顿1号向来是比较感性的一方。"
+    },
+    {
+      "kind" : "message",
+      "line" : 854,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI don't know if the new Charleston is Charleston 1 or 2. I can't even tell what it misses or remembers the most.",
+      "translation" : "[马斯·查尔斯顿]\n我不知道新的查尔斯顿是1号还是2号。我甚至无法分辨它最缺失或最记得的是什么。"
+    },
+    {
+      "kind" : "message",
+      "line" : 857,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nShe keeps blaming herself for losing her data, for letting down her friends. Every time we try to console her,",
+      "translation" : "[马斯·查尔斯顿]\n她一直因为丢失数据、让朋友们失望而自责。每次我们试图安慰她时，"
+    },
+    {
+      "kind" : "message",
+      "line" : 860,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nshe would say she doesn't have the heart or brain to remember or know. I wonder if she knows",
+      "translation" : "[马斯·查尔斯顿]\n她都会说自己没有心脏或大脑去记忆或知晓。我想知道她是否知道"
+    },
+    {
+      "kind" : "message",
+      "line" : 863,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nthat the memories of Humans fade and get distorted or glorified with time.",
+      "translation" : "[马斯·查尔斯顿]\n人类的记忆会随着时间流逝而模糊、扭曲或被美化。"
+    },
+    {
+      "kind" : "message",
+      "line" : 866,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nAnd that Humans learn from their mistakes and failures. I read that from those paper memory devices called ^FF0000books^000000 in the factory.",
+      "translation" : "[马斯·查尔斯顿]\n而且人类会从错误和失败中学习。我在工厂里那些被称为^FF0000书籍^000000的纸质记忆装置上读到过这一点。"
+    },
+    {
+      "kind" : "message",
+      "line" : 869,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThere was a small study in the ^FF0000south wing of the factory^000000. Later, it was turned into a robot development room.",
+      "translation" : "[马斯·查尔斯顿]\n在^FF0000工厂的南翼^000000有一间小研究室。后来，那里被改造成了机器人开发室。"
+    },
+    {
+      "kind" : "message",
+      "line" : 872,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nMaybe the Charleston is more like the Humans than the rest of us. I just hope she doesn't have to be so sad.",
+      "translation" : "[马斯·查尔斯顿]\n也许查尔斯顿比我们其他人都更像人类。我只希望她不必如此悲伤。"
+    },
+    {
+      "kind" : "message",
+      "line" : 875,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nI feel so congested in the OS that I ranted. Perhaps I need to defragment my memory.",
+      "translation" : "[马斯·查尔斯顿]\n我的操作系统感到有些拥堵，所以发了牢骚。也许我需要整理一下我的记忆碎片。"
+    },
+    {
+      "kind" : "message",
+      "line" : 879,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nUpgrade Part Plate\nClass: Armor, indestructible.\n-10% damage from Small and Medium monsters.\n-10% damage from Large monsters when Upgraded to +7.\nAdditional -5% damage from Small and Medium monsters when Upgraded to +9.",
+      "translation" : "[马斯·查尔斯顿]\n升级部件 碟仙恶灵\n类型：护甲，不可破坏。\n-10% 来自小型和中型魔物的伤害。\n升级至+7时，-10% 来自大型魔物的伤害。\n升级至+9时，额外-5% 来自小型和中型魔物的伤害。"
+    },
+    {
+      "kind" : "message",
+      "line" : 886,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nWeight: 300\nRequired Level: 100",
+      "translation" : "[马斯·查尔斯顿]\n重量：300\n需求等级：100"
+    },
+    {
+      "kind" : "message",
+      "line" : 891,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nSupplement Part Str\nATK+ 5%!\nAdditional ATK +1% every 4 Upgrade levels.\nUse with Vitality/Agility/Dexterity supplementary devices for best results.",
+      "translation" : "[马斯·查尔斯顿]\n肌力补充装置\nATK+ 5%!\n每提升4级强化，额外ATK +1%。\n与活力/敏捷/灵巧补充装置搭配使用效果最佳。"
+    },
+    {
+      "kind" : "message",
+      "line" : 897,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nWeight: 200\nRequired Level: 100",
+      "translation" : "[马斯·查尔斯顿]\n重量：200\n需求等级：100"
+    },
+    {
+      "kind" : "message",
+      "line" : 902,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nThe last masterpiece of the Charleston Factory! You'll never find such fine Equipment anywhere else.",
+      "translation" : "[马斯·查尔斯顿]\n这是查尔斯顿工厂的最后一件杰作！您在别处绝对找不到如此精良的装备。"
+    },
+    {
+      "kind" : "message",
+      "line" : 905,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nTo Upgrade Pilebuncker,\n^FF00001 Pilebuncker^000000,\n^FF0000300 Dented Iron Plates^000000,\nand ^FF000015 Broken Engines^000000 are required.",
+      "translation" : "[马斯·查尔斯顿]\n升级 Pilebuncker 需要：\n^FF00001 个 Pilebuncker^000000，\n^FF0000300 个 扭曲的铁板^000000，\n以及 ^FF000015 个 坏掉的引擎^000000。"
+    },
+    {
+      "kind" : "option",
+      "line" : 911,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Pilebuncker S",
+      "translation" : "Pilebuncker S"
+    },
+    {
+      "kind" : "option",
+      "line" : 911,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Pilebuncker P",
+      "translation" : "Pilebuncker P"
+    },
+    {
+      "kind" : "option",
+      "line" : 911,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Pilebuncker T",
+      "translation" : "Pilebuncker T"
+    },
+    {
+      "kind" : "message",
+      "line" : 913,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nPilebuncker S\nClass: Blunt Weapon\nATK: 400\nAttack Speed bonus every 2 Upgrade levels.",
+      "translation" : "[马斯·查尔斯顿]\nPilebuncker S\n类型：钝器\nATK：400\n每提升2级强化，攻击速度加成增加。"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nWeight: 300\nWeapon Level: 4\nRequired Level: 130\nMechanic only. Comes with 1 Card socket.",
+      "translation" : "[马斯·查尔斯顿]\n重量：300\n武器等级：4\n需求等级：130\n仅限机匠使用。附带1个卡片槽。"
+    },
+    {
+      "kind" : "message",
+      "line" : 927,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nPilebuncker P\nClass: Blunt Weapon\nATK: 450\nATK +5 every Upgrade level.",
+      "translation" : "[马斯·查尔斯顿]\nPilebuncker P\n类型：钝器\nATK：450\n每提升1级强化，ATK +5。"
+    },
+    {
+      "kind" : "message",
+      "line" : 933,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nWeight: 400\nWeapon Level: 4\nRequired Level: 130\nMechanic only.",
+      "translation" : "[马斯·查尔斯顿]\n重量：400\n武器等级：4\n需求等级：130\n仅限机匠使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 941,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nPilebuncker T\nClass: Blunt Weapon\nATK: 400\nSP cost -1% every Upgrade level.",
+      "translation" : "[马斯·查尔斯顿]\nPilebuncker T\n类型：钝器\nATK：400\n每提升1级强化，SP消耗 -1%。"
+    },
+    {
+      "kind" : "message",
+      "line" : 947,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nWeight: 350\nWeapon Level: 4\nRequired Level: 130\nMechanic only. Comes with 1 Card socket.",
+      "translation" : "[马斯·查尔斯顿]\n重量：350\n武器等级：4\n需求等级：130\n仅限机匠使用。附带1个卡片槽。"
+    },
+    {
+      "kind" : "message",
+      "line" : 958,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(.@item_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nDo you really want to Upgrade ^FF0000{0}^000000?",
+      "translation" : "[马斯·查尔斯顿]\n您确定要升级 ^FF0000{0}^000000 吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 961,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "I suggest you reconsider.",
+      "translation" : "建议您重新考虑"
+    },
+    {
+      "kind" : "option",
+      "line" : 961,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Buy.",
+      "translation" : "购买"
+    },
+    {
+      "kind" : "message",
+      "line" : 962,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nIt's a good buy, but you still need to make your decision carefully.",
+      "translation" : "[马斯·查尔斯顿]\n这是一笔划算的交易，但您仍需仔细做出决定。"
+    },
+    {
+      "kind" : "message",
+      "line" : 967,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nYou won't regret it! She's a Charleston factory!",
+      "translation" : "[马斯·查尔斯顿]\n您不会后悔的！她可是查尔斯顿工厂的产品！"
+    },
+    {
+      "kind" : "message",
+      "line" : 975,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nNot enough materials for the Upgrade.",
+      "translation" : "[马斯·查尔斯顿]\n升级所需的材料不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 981,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "^FF0000Mechanic only^000000\n^FF0000Price: 3,999,999 zeny^000000",
+      "translation" : "^FF0000仅限机匠使用^000000\n^FF0000价格：3,999,999 Zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 984,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(.@item_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nDo you really want to buy ^FF0000{0}^000000?",
+      "translation" : "[马斯·查尔斯顿]\n您确定要购买 ^FF0000{0}^000000 吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 987,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "I suggest you reconsider.",
+      "translation" : "建议您重新考虑"
+    },
+    {
+      "kind" : "option",
+      "line" : 987,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "Buy.",
+      "translation" : "购买"
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nIt's a good buy, but you still need to make your decision carefully.",
+      "translation" : "[马斯·查尔斯顿]\n这是一笔划算的交易，但您仍需仔细做出决定。"
+    },
+    {
+      "kind" : "message",
+      "line" : 994,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nYou won't regret it! She's a Charleston factory!",
+      "translation" : "[马斯·查尔斯顿]\n您不会后悔的！她可是查尔斯顿工厂的产品！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1000,
+      "npc" : "Mass Charleston",
+      "state" : "needs_review",
+      "text" : "[Mass Charleston]\nGood commodity value is not uncommon, please confirm your pocket depth!",
+      "translation" : "[马斯·查尔斯顿]\n物超所值并不罕见，请确认您的钱包深度！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1010,
+      "npc" : "Grandpa picking up scrap iron",
+      "state" : "needs_review",
+      "text" : "[Grandpa picking up scrap iron]\nThere are two pieces of scrap iron I see the value of not Fibonacci to pick up and sell to the recycling bin, the result is not willing to deal with me.",
+      "translation" : "[捡废铁的爷爷]\n我明明看到了两块有价值的废铁，想捡起来卖给回收站，结果人家不愿意收。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1013,
+      "npc" : "Grandpa picking up scrap iron",
+      "state" : "needs_review",
+      "text" : "[Grandpa picking up scrap iron]\nBecause it's not iron? Each resource recycling are not willing to buy, is nerve-racking!",
+      "translation" : "[捡废铁的爷爷]\n说是因为那不是铁？每家资源回收站都不愿意买，真是让人心烦！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1017,
+      "npc" : "Grandpa picking up scrap iron",
+      "state" : "needs_review",
+      "text" : "[Grandpa picking up scrap iron]\nHey! Did you just talk to that piece of junk? Or am I losing my sight?",
+      "translation" : "[捡废铁的爷爷]\n嘿！你刚才是在跟那堆破烂说话吗？还是我眼花了？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1021,
+      "npc" : "Grandpa picking up scrap iron",
+      "state" : "needs_review",
+      "text" : "[Grandpa picking up scrap iron]\nOh, my God! That can't be sold to the Recycle Bin!",
+      "translation" : "[捡废铁的爷爷]\n天哪！那东西肯定卖不到回收站去！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1030,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "^ff0000You have carried too many items, please reduce it and come back later.^000000",
+      "translation" : "^ff0000您携带的物品过多，请减少物品后再来。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1034,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "^0000ffAlthough the LCD still dim, but does not seem to work anymore.^000000",
+      "translation" : "^0000ff虽然LCD屏幕还亮着，但似乎已经无法正常工作了。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1037,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "^0000ffWhen the strange dinosaur pattern appears, go to the introduction screen.^000000",
+      "translation" : "^0000ff当出现奇怪的恐龙图案时，请前往介绍屏幕。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1039,
+      "npc" : "PLUTO_09",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[PLUTO_09]\n{0},\nHello. How can I help you?",
+      "translation" : "[PLUTO_09]\n{0}，\n你好。有什么可以帮你的吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1043,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "Note",
+      "translation" : "备注"
+    },
+    {
+      "kind" : "option",
+      "line" : 1043,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "Old Fuel and Huge Metal Scrap to exchange for gear.",
+      "translation" : "用旧燃料和大型金属废料交换装备"
+    },
+    {
+      "kind" : "option",
+      "line" : 1043,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "Design drawings for the production of Enchantment",
+      "translation" : "用于制作附魔的设计图"
+    },
+    {
+      "kind" : "message",
+      "line" : 1045,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "^0000ffDinosaur forward screen appears and a description of the cute girl voice.^000000",
+      "translation" : "^0000ff恐龙向前方屏幕移动，并伴随着可爱女孩的声音进行解说。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1047,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "[PLUTO_09]\nThis is 100 years since the genesis of the new PLUTO_09.",
+      "translation" : "[PLUTO_09]\n这是新PLUTO_09诞生100周年的纪念。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1050,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "[PLUTO_09]\nBring Huge Metal Scrap and Old Fuel can help you make useful to you Equipment Oh~",
+      "translation" : "[PLUTO_09]\n带来大型金属废料和旧燃料，就能帮你制作有用的装备哦~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1053,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "[PLUTO_09]\nDo you want to make enchantment equipment? You bring the tank! I can make enchant with a design for you. Oh, good luck.",
+      "translation" : "[PLUTO_09]\n你想制作附魔装备吗？带上材料吧！我可以帮你用设计图制作附魔。祝你好运。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1056,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "[PLUTO_09]\nThis is the Tyrannosaurus rex that appeared in the dinosaur fairy tale, very beautiful... (Continue to appear boring dinosaur story)",
+      "translation" : "[PLUTO_09]\n这是出现在恐龙童话里的霸王龙，非常美丽...（继续讲述无聊的恐龙故事）"
+    },
+    {
+      "kind" : "message",
+      "line" : 1059,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "^0000ffIn this introduction to the screen, presumed that the psychological state of the robot maker is extremely unstable.^000000",
+      "translation" : "^0000ff在这个介绍屏幕上，推测机器人制造者的心理状态极不稳定。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1063,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "[PLUTO_09]\nProduction equipment needs ^0000ff10 Huge Metal Scrap and 5 Old Fuel^000000.",
+      "translation" : "[PLUTO_09]\n制作装备需要^0000ff10个大型金属废料和5个旧燃料^000000。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1066,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "Quit.",
+      "translation" : "退出。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1066,
+      "npc" : "PLUTO_09",
+      "placeholders" : [
+        "getitemname(.@id[0])"
+      ],
+      "state" : "needs_review",
+      "text" : "Making the {0}",
+      "translation" : "制作{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 1066,
+      "npc" : "PLUTO_09",
+      "placeholders" : [
+        "getitemname(.@id[1])"
+      ],
+      "state" : "needs_review",
+      "text" : "Making the {0}",
+      "translation" : "制作{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 1068,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "^0000ffDinosaurs gazed at the picture here after staying a bit closed.^000000",
+      "translation" : "^0000ff恐龙盯着这里的图片看了一会儿，然后关闭了。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1078,
+      "npc" : "PLUTO_09",
+      "placeholders" : [
+        "getitemname(6961)",
+        "getitemname(6962)"
+      ],
+      "state" : "needs_review",
+      "text" : "[PLUTO_09]\nI have already talked about the production equipment needs ^0000ff10 {0} and 5 {1}^000000, you don't have enough.",
+      "translation" : "[PLUTO_09]\n我已经说过制作装备需要^0000ff10个{0}和5个{1}^000000，你的材料不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1086,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "[PLUTO_09]\nYour equipment is ready. Let's see if it fits.",
+      "translation" : "[PLUTO_09]\n您的装备已经准备好了。让我们看看是否合身。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1095,
+      "npc" : "PLUTO_09",
+      "placeholders" : [
+        "getitemname(6962)"
+      ],
+      "state" : "needs_review",
+      "text" : "[PLUTO_09]\nIf you give me 5 {0}, I can do the production of design drawings look!\n----------\n^0000ffLittle dinosaur running around on the screen.^000000",
+      "translation" : "[PLUTO_09]\n如果你给我5个{0}，我就可以制作设计图纸了！\n----------\n^0000ff小恐龙在屏幕上跑来跑去。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1100,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "Quit.",
+      "translation" : "退出。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1101,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "^0000ffIt's over after showing that the dinosaurs are stuffing themselves.^000000",
+      "translation" : "^0000ff展示完恐龙大快朵颐的样子后，画面结束了。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1143,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "^0000ffThe picture shows the dinosaur silently looking at the empty bowl, it may be an error message when the material is insufficient!^000000",
+      "translation" : "^0000ff图片显示恐龙正盯着空碗发呆，这可能是因为材料不足而出现的错误提示！^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1148,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "[PLUTO_09]\nWhat a pity, the design failed.",
+      "translation" : "[PLUTO_09]\n真遗憾，设计失败了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1148,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "[PLUTO_09]\nGreat, the design was made.",
+      "translation" : "[PLUTO_09]\n太好了，设计完成了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1158,
+      "npc" : "PLUTO_09",
+      "state" : "needs_review",
+      "text" : "^0000ffA screen showing howling that a dinosaur may not understand the command.^000000",
+      "translation" : "^0000ff屏幕上显示恐龙在嚎叫，它可能听不懂指令。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1167,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "^ff0000You have carried too many items, please reduce it and come back later.^000000",
+      "translation" : "^ff0000您携带的物品过多，请减少物品后再来。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1172,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "Blurred LCD screen may be frightened or happy and intense shaking, perhaps due to lack of power and can not complete the presentation.",
+      "translation" : "模糊的LCD屏幕可能因为受到惊吓或过于兴奋而剧烈震动，也可能是因为电力不足而无法完成演示。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1174,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "Just ignore it.",
+      "translation" : "直接无视"
+    },
+    {
+      "kind" : "option",
+      "line" : 1174,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "Press every button.",
+      "translation" : "按下所有按钮"
+    },
+    {
+      "kind" : "message",
+      "line" : 1175,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "It may be a pre-scrap robot that is common everywhere and doesn't require much attention.",
+      "translation" : "这可能是一台随处可见的报废机器人，不需要太在意。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1178,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[?????]\nHello! I'm MARS_01, an exploration robot. Currently, I have entered hibernation mode to save power. The related functions are set as follows.",
+      "translation" : "[?????]\n你好！我是MARS_01，一台探索机器人。目前，我进入了休眠模式以节省电力。相关功能设置如下。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1181,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "Interrupt the machine",
+      "translation" : "中断机器"
+    },
+    {
+      "kind" : "option",
+      "line" : 1181,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "Supply of fuel",
+      "translation" : "补充燃料"
+    },
+    {
+      "kind" : "message",
+      "line" : 1182,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "The robot re-enters hibernation mode after a faint sound.",
+      "translation" : "机器人发出微弱的声音后，重新进入了休眠模式。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1185,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nWe are super power robot, as long as the old oil 1 will let me and the companion PLUTO has more than 90% of the power.",
+      "translation" : "[MARS_01]\n我们是超级动力机器人，只要给我1个旧燃料，我和同伴PLUTO就能拥有超过90%的电力。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1188,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nIf you find Old Fuel, please insert the fuel into the mouth of the bottom of the screen, so you can lift the hibernation mode.",
+      "translation" : "[MARS_01]\n如果你找到旧燃料，请将其插入屏幕底部的接口，这样我就可以解除休眠模式了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1194,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "getitemname(6962)"
+      ],
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nIf you find 1 {0}, please insert the fuel into the mouth of the bottom of the screen, so you can lift the hibernation mode.",
+      "translation" : "[MARS_01]\n如果你找到1个{0}，请将其插入屏幕底部的接口，这样我就可以解除休眠模式了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1198,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "Maybe we ran out of power when we went looking for fuel. should we put in the fuel?",
+      "translation" : "也许我们在寻找燃料时耗尽了电力。我们要把燃料放进去吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1200,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "Quit.",
+      "translation" : "退出。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1200,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "Put in the fuel",
+      "translation" : "放入燃料"
+    },
+    {
+      "kind" : "message",
+      "line" : 1201,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "The old robot may be running out of power and not responding at all.",
+      "translation" : "这台旧机器人可能电力耗尽，完全没有任何反应。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1204,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "When the fuel is put in, the sound screen opens.",
+      "translation" : "燃料放入后，声音屏幕打开了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1207,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nStart the inspection system and confirm the damage of each part.",
+      "translation" : "[MARS_01]\n启动检查系统，确认各部件的损坏情况。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1210,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nPower meter 10%, dashboard normal, body skeleton 13%, perform mining operations well.",
+      "translation" : "[MARS_01]\n电力10%，仪表盘正常，机体骨架13%，采矿作业运行良好。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1213,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nPluto_09 began to inject energy for mining auxiliary robot.",
+      "translation" : "[MARS_01]\nPluto_09开始为采矿辅助机器人注入能量。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1217,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nThank you for getting me started, I will reset the person who started me to be a manager.",
+      "translation" : "[MARS_01]\n感谢您让我启动，我将把启动我的人设为管理员。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1220,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "Enter a name.",
+      "translation" : "输入名称"
+    },
+    {
+      "kind" : "message",
+      "line" : 1221,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[MARS_01]\n{0},\nHello! The fuel has been fully charged.",
+      "translation" : "[MARS_01]\n{0}，\n你好！燃料已充满。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1230,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[MARS_01]\n{0},\nHello! Can I help you?",
+      "translation" : "[MARS_01]\n{0}，\n你好！有什么可以帮你的吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1234,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "Note",
+      "translation" : "备注"
+    },
+    {
+      "kind" : "option",
+      "line" : 1234,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "getitemname(20773)"
+      ],
+      "state" : "needs_review",
+      "text" : "Enhanced {0}",
+      "translation" : "强化 {0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 1234,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "getitemname(15128)"
+      ],
+      "state" : "needs_review",
+      "text" : "Enhanced {0}",
+      "translation" : "强化 {0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 1236,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "^0000ffSoon the instructions again.^000000",
+      "translation" : "^0000ff即将再次显示说明。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1238,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nWhile waiting for the new owner, we continue to update to the latest version.",
+      "translation" : "[MARS_01]\n在等待新主人的期间，我们继续更新到最新版本。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1241,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nIf you bring aak Seri Wong propulsion wing, aak Seri Wong jacket equipment and strengthen the design, I will strengthen the equipment according to the design.",
+      "translation" : "[MARS_01]\n如果你带来Aak Seri Wong推进翼、Aak Seri Wong夹克装备并强化设计，我会根据设计来强化装备。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1244,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nAccording to the standard design drawings of the operation, the equipment will not be damaged during the process, but the number of maximum upgrade will change depending on the type of equipment.",
+      "translation" : "[MARS_01]\n根据操作的标准设计图，装备在过程中不会损坏，但最大强化次数会根据装备类型而变化。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1247,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nWelcome back again~",
+      "translation" : "[MARS_01]\n欢迎再次回来~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1289,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[MARS_01]\n{0},\nChoose the enchant you want to use!",
+      "translation" : "[MARS_01]\n{0}，\n请选择你想使用的附魔！"
+    },
+    {
+      "kind" : "option",
+      "line" : 1293,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "Quit.",
+      "translation" : "退出。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1295,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nSo far.",
+      "translation" : "[MARS_01]\n到此为止。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1309,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nSo far.",
+      "translation" : "[MARS_01]\n到此为止。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1318,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nPlease contact the administrator.",
+      "translation" : "[MARS_01]\n请联系管理员。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1325,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nDid you remove your gear?",
+      "translation" : "[MARS_01]\n你卸下装备了吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1336,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nThe design you choose is incompatible with the equipment.",
+      "translation" : "[MARS_01]\n你选择的设计与装备不兼容。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1341,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nThis design is only for the first time to strengthen the use, but the equipment has other performance, please use other design to strengthen it!",
+      "translation" : "[MARS_01]\n此设计仅用于首次强化，但该装备已有其他性能，请使用其他设计来强化它！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        ".@max_num_enchant"
+      ],
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nThe maximum number of enchants is {0}. The item has reached the upper limit.",
+      "translation" : "[MARS_01]\n附魔次数上限为{0}。该物品已达到上限。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1351,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nThe number of equipment has reached the limit.",
+      "translation" : "[MARS_01]\n装备数量已达到上限。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1358,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nPlease pay special attention if the equipment will be removed.",
+      "translation" : "[MARS_01]\n请注意，如果移除装备，附魔效果将会消失。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1368,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nThe product does not have a serial number, does not meet the specifications of the product can not be strengthened.",
+      "translation" : "[MARS_01]\n该物品没有序列号，不符合规格，无法进行强化。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1372,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "getequipname(.@part)",
+        "getitemname(.@item_req)",
+        ".@max_num_enchant",
+        ".@slot_sum"
+      ],
+      "state" : "needs_review",
+      "text" : "[MARS_01]^0000ff\nChoose {0} + {1},\n^000000------------------\nYour selected design can be upgraded to the equipment limit ^0000ff{2} the same design, ^000000so far, enhanced ^0000ff{3} times^000000, do you want to continue?",
+      "translation" : "[MARS_01]^0000ff\n选择 {0} + {1}，\n^000000------------------\n您选择的设计可强化至装备上限 ^0000ff{2} 次相同设计，^000000目前，已强化 ^0000ff{3} 次^000000，是否继续？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1377,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "I'll think about it...",
+      "translation" : "我再想想..."
+    },
+    {
+      "kind" : "option",
+      "line" : 1377,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "Go on.",
+      "translation" : "继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1378,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nCome back next time you need me~",
+      "translation" : "[MARS_01]\n下次有需要时再来找我~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nThe equipment has reached the upper limit of strengthening Hello!",
+      "translation" : "[MARS_01]\n装备已达到强化上限！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        ".@enchant_count"
+      ],
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nThe first equipment has been upgraded ^990000{0} times^000000.",
+      "translation" : "[MARS_01]\n首次装备已升级 ^990000{0} 次^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "MARS_01",
+      "state" : "needs_review",
+      "text" : "[MARS_01]\nFor additional performance equipment^990000 ^000000 upgrade.",
+      "translation" : "[MARS_01]\n用于额外性能装备^990000 ^000000升级。"
+    }
+  ]
+}

@@ -1,0 +1,2207 @@
+{
+  "file" : "npc/re/merchants/coin_exchange.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "needs_review",
+      "text" : "You have too many kinds of objects. Let's try to continue after reducing those objects.",
+      "translation" : "您的物品种类太多了。请先减少物品种类，然后再继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "needs_review",
+      "text" : "Can't continue because you have too many heavy objects. Let's try to continue after reducing the weight.",
+      "translation" : "由于您携带了太多重物，无法继续。请先减轻负重，然后再继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "needs_review",
+      "text" : "[Coin Exchanger CX-1]\nWelcome to CX-1. If you have coins, you can exchange them to high or low grade coins.",
+      "translation" : "[硬币兑换机 CX-1]\n欢迎光临CX-1。\n如果您持有硬币，可以将其兑换为高级或低级硬币。"
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "needs_review",
+      "text" : "[Coin Exchanger CX-1]\nThank you for coming.",
+      "translation" : "[硬币兑换机 CX-1]\n感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 59,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "needs_review",
+      "text" : "[Coin Exchanger CX-1]\nYou chose a coin that you don't have.\nThank you for coming.",
+      "translation" : "[硬币兑换机 CX-1]\n您选择了您没有的硬币。\n感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "needs_review",
+      "text" : "[Coin Exchanger CX-1]\n----Rate of exchange----\nHigher exchange - 30 to 10\nLower exchange - 10 to 30\n------------------------\n^ff3333When you exchange, we charge a fee according to the current market price.^000000",
+      "translation" : "[硬币兑换机 CX-1]\n----兑换比率----\n高级兑换 - 30换10\n低级兑换 - 10换30\n------------------------\n^ff3333兑换时，我们将根据当前市场价格收取手续费。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 87,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "needs_review",
+      "text" : "[Coin Exchanger CX-1]\nThank you for coming.",
+      "translation" : "[硬币兑换机 CX-1]\n感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Coin Exchanger CX-1]\nThis coin is not available to exchange to {0} coin.\nThank you for coming.",
+      "translation" : "[硬币兑换机 CX-1]\n此硬币无法兑换为{0}硬币。\n感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to {0} coin.\nThank you for coming.",
+      "translation" : "[硬币兑换机 CX-1]\n您的硬币不足，无法兑换为{0}硬币。\n感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        ".@exchange_rate[.@i]",
+        "getitemname(.@coin)",
+        ".@exchange_name$[.@i]",
+        ".@exchange_loss[(!.@i)]",
+        ".@exchange_total"
+      ],
+      "state" : "needs_review",
+      "text" : "[Coin Exchanger CX-1]\n^003399{0}^000000 unit(s) of ^003399 {1}^000000 taken.\nI exchanged them for ^003399{2} coins^000000, after deducting ^003399{3}^000000 unit(s), ^003399{4}^000000 unit(s) remaining.",
+      "translation" : "[硬币兑换机 CX-1]\n收取了^003399{0}^000000个^003399 {1}^000000。\n扣除^003399{3}^000000个后，兑换为^003399{2}硬币^000000，剩余^003399{4}^000000个。"
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "Special Vending Machine",
+      "state" : "needs_review",
+      "text" : "You have too many kinds of objects. Let's try to continue after reducing those objects.",
+      "translation" : "您的物品种类太多了。请先减少物品种类，然后再继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "Special Vending Machine",
+      "state" : "needs_review",
+      "text" : "Can't continue because you have too many heavy objects. Let's try to continue after reducing the weight.",
+      "translation" : "由于您携带了太多重物，无法继续。请先减轻负重，然后再继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Special Vending Machine",
+      "state" : "needs_review",
+      "text" : "[Special Vending Machine]\nWelcome to CX-82. You have a Silvervine Fruit, so you can purchase the Malangdo Specialty that has special ability.",
+      "translation" : "[特殊贩卖机]\n欢迎光临CX-82。\n您拥有猕猴桃果实，因此可以购买具有特殊能力的马兰多特产。"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "Special Vending Machine",
+      "state" : "needs_review",
+      "text" : "[Special Vending Machine]\nSeagod's Protection is an item used for entering the Culvert memorial dungeon during a certain period.",
+      "translation" : "[特殊贩卖机]\n海神护身符是用于在特定时期进入下水道记忆地下城的道具。"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Special Vending Machine",
+      "state" : "needs_review",
+      "text" : "[Special Vending Machine]\nOctopus Hunting Stick is an item used for entering the Culvert memorial dungeon during a certain period.",
+      "translation" : "[特殊贩卖机]\n捕章鱼棍是用于在特定时期进入下水道记忆地下城的道具。"
+    },
+    {
+      "kind" : "message",
+      "line" : 146,
+      "npc" : "Special Vending Machine",
+      "state" : "needs_review",
+      "text" : "[Special Vending Machine]\nPremium and Ordinary Lubricant are items used for separation of equipment and cards. If you visit the specialist Jeremy with either item, he will explain more details of the effects.",
+      "translation" : "[特殊贩卖机]\n高级润滑剂和普通润滑剂是用于分离装备和卡片的道具。\n如果您携带其中任意一种道具去拜访专家杰瑞米，他会向您解释更详细的效果。"
+    },
+    {
+      "kind" : "message",
+      "line" : 149,
+      "npc" : "Special Vending Machine",
+      "state" : "needs_review",
+      "text" : "[Special Vending Machine]\nSillit Pong is special item that separates sockets with MVP cards. Unable to separate MVP card by Premium and Ordinary Lubricant.",
+      "translation" : "[特殊贩卖机]\n西里特蓬是用于分离带有MVP卡片的插槽的特殊道具。\n无法使用高级润滑剂和普通润滑剂分离MVP卡片。"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Special Vending Machine",
+      "placeholders" : [
+        "getarg(.@i*3)",
+        ".@cost"
+      ],
+      "state" : "needs_review",
+      "text" : "[Special Vending Machine]\nYou choose ^005500{0}^000000. For purchasing, you need ^005500{1}^000000 unit(s) of Silvervine Fruit.",
+      "translation" : "[特殊贩卖机]\n您选择了^005500{0}^000000。\n购买需要^005500{1}^000000个猕猴桃果实。"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Special Vending Machine",
+      "state" : "needs_review",
+      "text" : "Stop",
+      "translation" : "停止"
+    },
+    {
+      "kind" : "message",
+      "line" : 163,
+      "npc" : "Special Vending Machine",
+      "state" : "needs_review",
+      "text" : "[Special Vending Machine]\nThank you for coming.",
+      "translation" : "[特殊贩卖机]\n感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Special Vending Machine",
+      "state" : "needs_review",
+      "text" : "[Special Vending Machine]\nNot enough Silvervine Fruit.\nClosing the transaction.\nThank you for coming.",
+      "translation" : "[特殊贩卖机]\n猕猴桃果实不足。\n交易已取消。\n感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 174,
+      "npc" : "Special Vending Machine",
+      "state" : "needs_review",
+      "text" : "[Special Vending Machine]\nThe transaction is completed. Thank you for coming.",
+      "translation" : "[特殊贩卖机]\n交易完成。感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 184,
+      "npc" : "Dark Merchant K",
+      "state" : "needs_review",
+      "text" : "It seems you have too much in your inventory. Let's try again after getting rid of some of your belongings.",
+      "translation" : "您的物品栏似乎太满了。请先丢弃一些物品，然后再试一次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 188,
+      "npc" : "Dark Merchant K",
+      "state" : "needs_review",
+      "text" : "Your inventory is too heavy now. Please come back after getting rid of some of your belongings.",
+      "translation" : "您的负重现在太重了。请先丢弃一些物品，然后再来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Dark Merchant K",
+      "state" : "needs_review",
+      "text" : "[Merchant K]\nThank you for the trade.\nWe exchange ^ff000010 C Grade Coin^000000 to ^3333ff1 Mora Coin^000000. Shall we begin then?",
+      "translation" : "[商人 K]\n感谢交易。\n我们将^ff000010枚C级硬币^000000兑换为^3333ff1枚穆拉村硬币^000000。\n那么，我们开始吧？"
+    },
+    {
+      "kind" : "option",
+      "line" : 204,
+      "npc" : "Dark Merchant K",
+      "state" : "needs_review",
+      "text" : "Quit",
+      "translation" : "退出"
+    },
+    {
+      "kind" : "message",
+      "line" : 206,
+      "npc" : "Dark Merchant K",
+      "state" : "needs_review",
+      "text" : "[Merchant K]\nLet's exchange some other time.",
+      "translation" : "[商人 K]\n我们改天再兑换吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Merchant K]\nYou need ^ff0000{0}^000000 C Grade Coin to perform the exchange. But you don't seem to have enough now.",
+      "translation" : "[商人 K]\n兑换需要^ff0000{0}^000000枚C级硬币。但您现在的数量似乎不够。"
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]",
+        "(.@coin_amount[.@i]/10)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Merchant K]\nC Grade Coin ^003399{0}^000000 well received.\nExchanged to ^003399{1}^000000 Mora Coin.",
+      "translation" : "[商人 K]\n已收到^003399{0}^000000枚C级硬币。\n已兑换为^003399{1}^000000枚穆拉村硬币。"
+    },
+    {
+      "kind" : "message",
+      "line" : 221,
+      "npc" : "Dark Merchant K",
+      "state" : "needs_review",
+      "text" : "[Merchant K]\nWould you like to continue?",
+      "translation" : "[商人 K]\n您想继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 229,
+      "npc" : "Dark MachineTX100",
+      "state" : "needs_review",
+      "text" : "It seems you have too much in your inventory. Let's try again after getting rid of some of your belongings.",
+      "translation" : "您的物品栏似乎太满了。请先丢弃一些物品，然后再试一次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 233,
+      "npc" : "Dark MachineTX100",
+      "state" : "needs_review",
+      "text" : "Your inventory is too heavy now. Please come back after getting rid of some of your belongings.",
+      "translation" : "您的负重现在太重了。请先丢弃一些物品，然后再来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 236,
+      "npc" : "Dark MachineTX100",
+      "state" : "needs_review",
+      "text" : "[Dark Machine TX100]\nThank you for visiting TX100. You can exchange coins into higher or lower level coins.",
+      "translation" : "[黑暗机器 TX100]\n感谢您使用TX100。您可以将硬币兑换为更高或更低等级的硬币。"
+    },
+    {
+      "kind" : "message",
+      "line" : 239,
+      "npc" : "Dark MachineTX100",
+      "state" : "needs_review",
+      "text" : "[Dark Machine TX100]\nFor a lower level coin exchange you can do 500 as a 1 time maximum, and for higher level coin exchange you can do 99 as a 1 time maximum.",
+      "translation" : "[黑暗机器 TX100]\n兑换为低等级硬币时，单次最多可兑换500枚；兑换为高等级硬币时，单次最多可兑换99枚。"
+    },
+    {
+      "kind" : "message",
+      "line" : 258,
+      "npc" : "Dark MachineTX100",
+      "state" : "needs_review",
+      "text" : "[Dark Machine TX100]\nThank you for coming.",
+      "translation" : "[黑暗机器 TX100]\n感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 267,
+      "npc" : "Dark MachineTX100",
+      "state" : "needs_review",
+      "text" : "[Dark Machine TX100]\nYou've chosen abnormal menu.\nAborting process. Thank you for coming.",
+      "translation" : "[黑暗机器 TX100]\n您选择了异常菜单。\n正在中止流程。感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Dark MachineTX100",
+      "state" : "needs_review",
+      "text" : "[Dark Machine TX100]\nYou chose a coin that you don't have.\nAborting process. Thank you for coming.",
+      "translation" : "[黑暗机器 TX100]\n您选择了一种您没有的硬币。\n正在中止流程。感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 278,
+      "npc" : "Dark MachineTX100",
+      "state" : "needs_review",
+      "text" : "[Dark Machine TX100]\n----Exchange Rate----\nHigher Coin - 3 to 1\nLower Coin - 1 to 3\n---------------------\n^ff3333We take a small vendor fee from your exchanged coins.^000000",
+      "translation" : "[黑暗机器 TX100]\n----兑换比率----\n高等级硬币 - 3兑1\n低等级硬币 - 1兑3\n---------------------\n^ff3333我们会从兑换的硬币中收取少量手续费。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Dark MachineTX100",
+      "state" : "needs_review",
+      "text" : "[Dark Machine TX100]\nThank you for coming.",
+      "translation" : "[黑暗机器 TX100]\n感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Dark Machine TX100]\nThis coin cannot be exchanged to a {0} level coin.\nAborting process. Thank you for coming.",
+      "translation" : "[黑暗机器 TX100]\n此硬币无法兑换为{0}级硬币。\n正在中止流程。感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Dark Machine TX100]\nYou have not enough coins for a {0} level coin exchange.\nAborting process. Thank you for coming.",
+      "translation" : "[黑暗机器 TX100]\n您的硬币不足以兑换为{0}级硬币。\n正在中止流程。感谢您的光临。"
+    },
+    {
+      "kind" : "message",
+      "line" : 323,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Dark Machine TX100]\nYou have too many {0} level coins already. Please come back with less coins.",
+      "translation" : "[黑暗机器 TX100]\n您拥有的{0}级硬币已经太多了。请减少硬币数量后再来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 342,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        "getitemname(.@coin)",
+        ".@payment_amount",
+        "(.@reward_amount-.@fee)",
+        ".@coin_text$",
+        ".@fee"
+      ],
+      "state" : "needs_review",
+      "text" : "[Dark Machine TX100]\nReceived ^003399{0}^000000 for ^003399{1}^000000 unit(s).\nWe have exchanged your coin to ^003399{2}^000000 unit(s) of ^003399{3} Level Coin^000000, deducted ^003399{4}^000000 unit(s) as exchanging fee.",
+      "translation" : "[黑暗机器 TX100]\n已收到^003399{0}^000000枚，共^003399{1}^000000枚。\n已将其兑换为^003399{2}^000000枚^003399{3}级硬币^000000，并扣除^003399{4}^000000枚作为兑换手续费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 350,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "You seem to have too many items. Give it a try after sorting out the item kinds.",
+      "translation" : "您的物品似乎太多了。请先整理一下物品种类，然后再试一次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 354,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "You're not likely to be able to go on due to the heavy items you've got. Give it a try after lightening the weight.",
+      "translation" : "由于您携带的物品过重，可能无法继续前进。请先减轻负重，然后再试一次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 357,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "[Can Agency Guard]\nHey, you there... Have you seen any ^0000ffMalangdo Cat Can^000000s around here?",
+      "translation" : "[坎机构守卫]\n嘿，你... 你在这附近见过^0000ff马拉格多猫罐头^000000吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 360,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "Why are you asking?",
+      "translation" : "你为什么要问？"
+    },
+    {
+      "kind" : "option",
+      "line" : 360,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "Oh, you mean these?",
+      "translation" : "哦，你是说这些吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 362,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "[Can Agency Guard]\nUmm.\nWe at the Can Agency recently got some suspicious intelligence about them...",
+      "translation" : "[坎机构守卫]\n嗯。\n我们坎机构最近收到了一些关于它们的情报..."
+    },
+    {
+      "kind" : "message",
+      "line" : 366,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "[Can Agency Guard]\nThere were faulty products in bulk on the can production line for Malangdo specialty. These products, to be discarded, seem to have fallen into a retail dealer's hands.",
+      "translation" : "[坎机构守卫]\n马拉格多特产的生产线上出现了一批有缺陷的产品。这些本应被丢弃的产品，似乎落入了一家零售经销商的手中。"
+    },
+    {
+      "kind" : "message",
+      "line" : 369,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "[Can Agency Guard]\nActually they were hard to distinguish from normal products. But it obviously says ^0000ffMalangdo Cat Can^000000 outside.",
+      "translation" : "[坎机构守卫]\n实际上，它们很难与普通产品区分开来。但外面明显写着^0000ff马拉格多猫罐头^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 372,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "[Can Agency Guard]\nAs faulty products are moving around on the market, we've been collecting them as is our duty. Have you ever seen anyone who has things like what I'm describing?",
+      "translation" : "[坎机构守卫]\n既然有缺陷产品在市场上流通，我们有责任回收它们。你见过有人持有像我描述的那样的东西吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "[Can Agency Guard]\nIf you find anyone selling these products, please come and tell me.",
+      "translation" : "[坎机构守卫]\n如果你发现有人出售这些产品，请过来告诉我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 380,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "[Can Agency Guard]\nUmm? I cannot see the ^0000ffMalangdo Cat Can^000000 from you. Don't forget to bring it to me if you've found out...",
+      "translation" : "[坎机构守卫]\n嗯？我看不到你身上的^0000ff马拉格多猫罐头^000000。如果你找到了，别忘了带给我..."
+    },
+    {
+      "kind" : "message",
+      "line" : 386,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "[Can Agency Guard]\nThe Malangdo Cat Can is a faulty product. Let me exchange it to 3 E Grade Coins. How about that?",
+      "translation" : "[坎机构守卫]\n马拉格多猫罐头是缺陷产品。让我把它兑换成3枚E级代币，怎么样？"
+    },
+    {
+      "kind" : "option",
+      "line" : 389,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "I won't exchange",
+      "translation" : "我不兑换"
+    },
+    {
+      "kind" : "option",
+      "line" : 389,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "^0000ff1^000000 Can -> ^0000ff3^000000 E Grade Coin",
+      "translation" : "^0000ff1^000000罐头 -> ^0000ff3^000000E级代币"
+    },
+    {
+      "kind" : "option",
+      "line" : 389,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "^0000ff10^000000 Can -> ^0000ff30^000000 E Grade Coin",
+      "translation" : "^0000ff10^000000罐头 -> ^0000ff30^000000E级代币"
+    },
+    {
+      "kind" : "option",
+      "line" : 389,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "^0000ff100^000000 Can -> ^0000ff300^000000 E Grade Coin",
+      "translation" : "^0000ff100^000000罐头 -> ^0000ff300^000000E级代币"
+    },
+    {
+      "kind" : "option",
+      "line" : 389,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "Exchange all I've got",
+      "translation" : "兑换我所有的"
+    },
+    {
+      "kind" : "message",
+      "line" : 391,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "[Can Agency Guard]\nUmm, I'm not here forever, so come to me if you'd like to exchange while I still am.",
+      "translation" : "[坎机构守卫]\n嗯，我不会一直在这里，所以如果你想兑换，趁我还在的时候来找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 413,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "[Can Agency Guard]\nUmm? I cannot see the ^0000ffMalangdo Cat Can^000000 from you. Don't forget to bring it to me if you've found out...",
+      "translation" : "[坎机构守卫]\n嗯？我看不到你身上的^0000ff马拉格多猫罐头^000000。如果你找到了，别忘了带给我..."
+    },
+    {
+      "kind" : "message",
+      "line" : 417,
+      "npc" : "Can Agency Guard",
+      "state" : "needs_review",
+      "text" : "[Can Agency Guard]\nUmm? I don't think you have enough to exchange... Come to me again when the amount is exactly decided.",
+      "translation" : "[坎机构守卫]\n嗯？我觉得你拥有的数量不够兑换... 等数量确定后再来找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 424,
+      "npc" : "Can Agency Guard",
+      "placeholders" : [
+        ".@count",
+        "(.@count*3)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Can Agency Guard]\nExchanged {0} Malangdo Cat Can to {1} E Class Coin. Check it out.",
+      "translation" : "[坎机构守卫]\n已将{0}个马拉格多猫罐头兑换为{1}枚E级代币。请查收。"
+    },
+    {
+      "kind" : "message",
+      "line" : 436,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nAhaaa~\nIf you want to buy this stuff,\nyou can talk to me\nwhen you grow up a little more.\nThis stuff is too expensive\nfor a child~",
+      "translation" : "{0}\n啊哈哈~\n如果你想买这些东西，\n等你再长大一点就可以来找我啦。\n这些东西对小孩子来说太贵了~"
+    },
+    {
+      "kind" : "message",
+      "line" : 445,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nNice to meet you~~\nI am! YES~~ That's right!\nI'm selling special stuff\nwhich you can see only here on Meow Meow Island!",
+      "translation" : "{0}\n很高兴见到你~~\n没错！是的~~\n我正在出售一些特别的物品，\n这些物品只能在喵喵岛上看到哦！"
+    },
+    {
+      "kind" : "message",
+      "line" : 451,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nHow about it? What are you waiting for?\nWhy don't you take a look at\nwhat kinds of stuff I have?",
+      "translation" : "{0}\n怎么样？还在等什么？\n为什么不来看看\n我都有哪些东西呢？"
+    },
+    {
+      "kind" : "message",
+      "line" : 458,
+      "npc" : "F_mal_coin",
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nOh~\nThese are rental items, so make sure you know if you have the ^0000FF1 hour^000000 or ^0000FF7 day^000000 version.",
+      "translation" : "[流浪商人]\n哦~\n这些是租赁物品，请确认你是要^0000FF1小时^000000还是^0000FF7天^000000的版本。"
+    },
+    {
+      "kind" : "message",
+      "line" : 466,
+      "npc" : "F_mal_coin",
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nJust for your information,\nSow Bug, Starfish, Dried Squid, and Flying Fish are the items which you can use for 1 hour.",
+      "translation" : "[流动商人]\n仅供你参考，\n臭虫、海星、鱿鱼干飞刀和飞鱼飞刀是可以使用1小时的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 472,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWell then, do you want to take a look at what I have now?",
+      "translation" : "{0}\n那么，你想看看我现在有什么吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 475,
+      "npc" : "F_mal_coin",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 475,
+      "npc" : "F_mal_coin",
+      "state" : "needs_review",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 478,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIt seems that there are too many items in your inventory.\nPlease make space and come back again~",
+      "translation" : "{0}\n看起来你的物品栏太满了。\n请腾出空间后再来~"
+    },
+    {
+      "kind" : "message",
+      "line" : 484,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIt seems that you're overweight.\nPlease reduce your weight and come back again~",
+      "translation" : "{0}\n看起来你超重了。\n请减轻负重后再来~"
+    },
+    {
+      "kind" : "message",
+      "line" : 489,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWell, take a good look at them~~~",
+      "translation" : "{0}\n那么，请好好看看吧~~~"
+    },
+    {
+      "kind" : "message",
+      "line" : 494,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWell, then. I'll see you next time.\nGoodbye.",
+      "translation" : "{0}\n那么，下次再见。\n再见。"
+    },
+    {
+      "kind" : "message",
+      "line" : 504,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$",
+        "getarg(2)",
+        "getarg(4)",
+        "getarg(5)"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} E Grade Coin or {3} Malangdo Canned Specialties.",
+      "translation" : "{0}\n^0000FF[{1}]^000000的价格是\n{2} E级硬币 或 {3} 马朗多罐头特产。"
+    },
+    {
+      "kind" : "message",
+      "line" : 504,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$",
+        "getarg(2)",
+        "getarg(5)"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} Malangdo Canned Specialties.",
+      "translation" : "{0}\n^0000FF[{1}]^000000的价格是\n{2} 马朗多罐头特产。"
+    },
+    {
+      "kind" : "message",
+      "line" : 504,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$",
+        "getarg(2)",
+        "getarg(6)"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} Silvervine Fruit.",
+      "translation" : "{0}\n^0000FF[{1}]^000000的价格是\n{2} 猕猴桃果实。"
+    },
+    {
+      "kind" : "message",
+      "line" : 520,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$",
+        "getarg(2)"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWould you like to purchase\n^0000FF[{1}]^000000 with E Grade Coins?",
+      "translation" : "{0}\n您想用E级硬币购买\n^0000FF[{1}]^000000吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 520,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$",
+        "getarg(2)"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWould you like to\npurchase ^0000FF[{1}]^000000?",
+      "translation" : "{0}\n您想购买\n^0000FF[{1}]^000000吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 551,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@str$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI'm sorry, you need more {1}.",
+      "translation" : "{0}\n很抱歉，您需要更多的{1}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 556,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nSorry, you've purchased too many.\nYou need to make more space in your inventory. Please come back later.",
+      "translation" : "{0}\n抱歉，您购买的数量太多了。\n请腾出物品栏空间，稍后再来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 561,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThank you.",
+      "translation" : "{0}\n谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 567,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nAlways be careful\nwhen you purchase items.",
+      "translation" : "{0}\n购买物品时\n请务必小心。"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Spearfish(1hr)] 8 E-Coins/50 Cans",
+      "translation" : "[剑鱼(1小时)] 8 E级硬币/50罐头"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Tuna(1hr)] 8 E-Coins/50 Cans",
+      "translation" : "[金枪鱼(1小时)] 8 E级硬币/50罐头"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Hairtail(1hr)] 8 E-Coins/50 Cans",
+      "translation" : "[带鱼(1小时)] 8 E级硬币/50罐头"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Saurel(1hr)] 8 E-Coins/50 Can",
+      "translation" : "[小沙丁鱼(1小时)] 8 E级硬币/50罐头"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Malang Snow Crab(1hr)] 8 E-Coins/50 Can",
+      "translation" : "[绵绵大蟹弓(1小时)] 8 E级硬币/50罐头"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Brindle Eel(1hr)] 8 E-Coins/50 Can",
+      "translation" : "[斑纹鳗鱼弓(1小时)] 8 E级硬币/50罐头"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Hairtail(7Days)] 10 Silvervine Fruit",
+      "translation" : "[带鱼(7天)] 10 猕猴桃果实"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Spearfish(7Days)] 10 Silvervine Fruit",
+      "translation" : "[剑鱼(7天)] 10 猕猴桃果实"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Saurel(7Days)] 10 Silvervine Fruit",
+      "translation" : "[小沙丁鱼(7天)] 10 猕猴桃果实"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Tuna(7Days)] 10 Silvervine Fruit",
+      "translation" : "[金枪鱼(7天)] 10 猕猴桃果实"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Brindle Eel(7Days)] 10 Silvervine Fruit",
+      "translation" : "[斑纹鳗鱼弓(7天)] 10 猕猴桃果实"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Malang Snow Crab(7Days)] 10 Silvervine Fruit",
+      "translation" : "[绵绵大蟹弓(7天)] 10 猕猴桃果实"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "End purchasing.",
+      "translation" : "结束购买"
+    },
+    {
+      "kind" : "message",
+      "line" : 599,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nWell, then. I'll see you next time.\nGoodbye.",
+      "translation" : "[流浪商人]\n那么，下次再见。\n再见。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~",
+      "translation" : "[流浪商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n这是一种...随季节变化而出现的鱼，非常美味！\n不过这只是我随口说说的美食，好吃~"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000.",
+      "translation" : "[流浪商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n这是一种非常受欢迎的鱼，\n常用于各种菜肴。\n剑士、商人和服事职业可以将其作为^DC143C钝器^000000使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis fish looks like a long belt.",
+      "translation" : "[流浪商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n这种鱼看起来像一条长长的腰带。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks.",
+      "translation" : "[流浪商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n这是一把^DC143C短剑^000000，\n有一定几率在物理攻击时使MATK + 100\n且ATK + 30，持续7秒。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120.",
+      "translation" : "[流浪商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n这是一把^DC143C弓^000000，增加LUK + 3和50%的暴击伤害，\n当基础等级超过100级时，增加20%的长怒物理ATK。\n基础ATK为120。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180.",
+      "translation" : "[流浪商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n这是一把^DC143C弓^000000。\n因为它具有弹性，\n我们开始将其作为弓使用。\n基础ATK为180。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?",
+      "translation" : "[流浪商人]\n您对^0000FF[{0}]^000000感兴趣吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 612,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nOf course, this is ^DC143CTwo-Handed Spear^000000.\nIt gives a high chance of\ncausing the Bleeding status\nwhen you're using Pierce or Clashing Spiral~",
+      "translation" : "[流浪商人]\n当然，这是一把^DC143C双手矛^000000。\n使用连刺攻击或螺旋击刺时，\n有很高的几率造成流血状态~"
+    },
+    {
+      "kind" : "message",
+      "line" : 618,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nMore details are...\nIncrease 100% of Clashing Spiral ATK and 50% of Inspiration ATK,\nadditional ATK + 30 when Base Lv. is over 100.\nBase ATK is 220.",
+      "translation" : "[流浪商人]\n更多细节是...\n增加100%的螺旋击刺ATK和50%的灵感ATK，\n当基础等级超过100级时，额外ATK + 30。\n基础ATK为220。"
+    },
+    {
+      "kind" : "message",
+      "line" : 632,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nIt gives a high chance of executing the Stun or Auto-Spell Bash\nwhen using close-range physical attacks.\nBase ATK is 180.",
+      "translation" : "[流浪商人]\n使用近战物理攻击时，\n有很高的几率执行眩晕或自动施法狂击。\n基础ATK为180。"
+    },
+    {
+      "kind" : "message",
+      "line" : 637,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nMore details are...\nadditional ATK + 20 when Base Lv. is over 100,\nfreeze self with low rate.",
+      "translation" : "[流浪商人]\n更多细节是...\n当基础等级超过100级时，额外ATK + 20，\n低几率冻结自身。"
+    },
+    {
+      "kind" : "message",
+      "line" : 647,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nThis is a ^DC143CTwo-Handed Sword^000000\nwhich most swordmen can use.\nIt increases 50% of critical damage when attacking and CRI + 20.\nBase ATK is 220.",
+      "translation" : "[流浪商人]\n这是一把大多数剑士都能使用的^DC143C双手剑^000000。\n攻击时增加50%的暴击伤害且CRI + 20。\n基础ATK为220。"
+    },
+    {
+      "kind" : "message",
+      "line" : 653,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nMore details are...\nadditional ATK + 50 when Base Lv. is over 100.",
+      "translation" : "[流浪商人]\n更多细节是...\n当基础等级超过100级时，额外ATK + 50。"
+    },
+    {
+      "kind" : "message",
+      "line" : 663,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nMore details are...\ngives MATK + 20 for 7sec at a certain rate with magical attacks\nand additional MATK + 10, ATK + 10 when Base Lv. is over 100.\nBase ATK is 160.",
+      "translation" : "[流浪商人]\n更多细节是...\n有一定几率在魔法攻击时使MATK + 20，持续7秒，\n且当基础等级超过100级时，额外MATK + 10，ATK + 10。\n基础ATK为160。"
+    },
+    {
+      "kind" : "message",
+      "line" : 676,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nMore details are...\ncan be used by Archer, Thief, and Rogue classes.",
+      "translation" : "[流浪商人]\n更多细节是...\n可由弓箭手、盗贼和流氓职业使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 688,
+      "npc" : "Wandering Merchant",
+      "state" : "needs_review",
+      "text" : "[Wandering Merchant]\nMore details are...\nAGI + 3, and ASPD + 2 for 5sec at a certain rate with long range physical attacks.\nAlso gives additional 20% of long range physical ATK when Base Lv. is over 100.\nHunter, Bard, and Dancer classes can use it.",
+      "translation" : "[流浪商人]\n更多细节是...\n有一定几率在远程物理攻击时使AGI + 3，ASPD + 2，持续5秒。\n且当基础等级超过100级时，额外增加20%的远程物理ATK。\n猎人、诗人和舞娘职业可以使用。"
+    },
+    {
+      "kind" : "option",
+      "line" : 710,
+      "npc" : "Stinky Merchant",
+      "state" : "needs_review",
+      "text" : "[Cat Paw Glove] 32 E-Coins/200 Cans",
+      "translation" : "[猫爪手套] 32 E-Coins/200 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 710,
+      "npc" : "Stinky Merchant",
+      "state" : "needs_review",
+      "text" : "[Cat Club] 32 E-Coins/200 Cans",
+      "translation" : "[猫爪木锤] 32 E-Coins/200 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 710,
+      "npc" : "Stinky Merchant",
+      "state" : "needs_review",
+      "text" : "End purchasing.",
+      "translation" : "结束购买"
+    },
+    {
+      "kind" : "message",
+      "line" : 716,
+      "npc" : "Stinky Merchant",
+      "state" : "needs_review",
+      "text" : "[Stinky Merchant]\nWell, then. I'll see you next time.\nGoodbye.",
+      "translation" : "[臭烘烘的商人]\n那么，下次再见。\n再见。"
+    },
+    {
+      "kind" : "message",
+      "line" : 721,
+      "npc" : "Stinky Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a glove which can give happiness\njust by wearing it.",
+      "translation" : "[臭烘烘的商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n这是一只只要戴上就能带来幸福的手套。"
+    },
+    {
+      "kind" : "message",
+      "line" : 721,
+      "npc" : "Stinky Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nIt looks like it wouldn't hurt, don't you think so?\nBut I'm telling you, it can hurt someone.",
+      "translation" : "[臭烘烘的商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n看起来好像不会伤人，您觉得呢？\n但我告诉您，它是会伤人的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 721,
+      "npc" : "Stinky Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?",
+      "translation" : "[臭烘烘的商人]\n您对^0000FF[{0}]^000000感兴趣吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 728,
+      "npc" : "Stinky Merchant",
+      "state" : "needs_review",
+      "text" : "[Stinky Merchant]\nThis is an ^DC143CAccessory^000000\nand its defense is 5.\nIt also gives\nVIT + 1, AGI + 1, DEX + 1, LUK + 1.",
+      "translation" : "[臭烘烘的商人]\n这是一件^DC143C饰品^000000，\n防御力为5。\n它还提供\nVIT + 1, AGI + 1, DEX + 1, LUK + 1。"
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Stinky Merchant",
+      "state" : "needs_review",
+      "text" : "[Stinky Merchant]\nMore details are...\nSLOT : 1 / Refine : Unable / Destruction : Unable",
+      "translation" : "[臭烘烘的商人]\n更多细节是...\nSLOT : 1 / 强化 : 无法 / 破坏 : 无法"
+    },
+    {
+      "kind" : "message",
+      "line" : 743,
+      "npc" : "Stinky Merchant",
+      "state" : "needs_review",
+      "text" : "[Stinky Merchant]\nThis is a ^DC143CMace^000000 that increases 15% of damage to the animal type of monster.\nBase ATK is 88.\nThe other details are\nWeapon Lv : 1 / SLOT : 3 / Refine : Able / Destruction : Unable",
+      "translation" : "[臭烘烘的商人]\n这是一把^DC143C钝器^000000，对动物型魔物的伤害增加15%。\n基础ATK为88。\n其他细节是\n武器Lv : 1 / SLOT : 3 / 强化 : 可以 / 破坏 : 无法"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Roving Merchant",
+      "state" : "needs_review",
+      "text" : "[Flying Fish] 200 Cans",
+      "translation" : "[飞鱼飞刀] 200 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Roving Merchant",
+      "state" : "needs_review",
+      "text" : "[Sow Bug] 200 Cans",
+      "translation" : "[步甲虫] 200 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Roving Merchant",
+      "state" : "needs_review",
+      "text" : "[Dried Squid] 200 Cans",
+      "translation" : "[鱿鱼干飞刀] 200 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Roving Merchant",
+      "state" : "needs_review",
+      "text" : "[Starfish] 200 Cans",
+      "translation" : "[海星] 200 Cans"
+    },
+    {
+      "kind" : "option",
+      "line" : 761,
+      "npc" : "Roving Merchant",
+      "state" : "needs_review",
+      "text" : "End purchasing.",
+      "translation" : "结束购买"
+    },
+    {
+      "kind" : "message",
+      "line" : 769,
+      "npc" : "Roving Merchant",
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nWell, then. I'll see you next time.\nGoodbye.",
+      "translation" : "[流动商人]\n那么，下次再见。\n再见。"
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Roving Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is the one that flies\nwith a big pectoral.",
+      "translation" : "[流动商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n这是那种用大胸鳍飞行的家伙。"
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Roving Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nIn that case, I'll explain for you.\nThis is a ^DC143CBullet^000000 which stuns the enemy at a certain rate when attacking.",
+      "translation" : "[流动商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n如果是这样，我来为您解释一下。\n这是一种^DC143C子弹^000000，攻击时有一定几率使敌人眩晕。"
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Roving Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which causes darkness at a certain rate.\nIt's neutral property and its ATK is 50.",
+      "translation" : "[流动商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n我来为您解释一下这个物品。\n这是一种^DC143C投掷武器^000000，有一定几率造成黑暗状态。\n它是中性属性，ATK为50。"
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Roving Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which stuns the enemy at a certain rate.",
+      "translation" : "[流动商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n我来为您解释一下这个物品。\n这是一种^DC143C投掷武器^000000，有一定几率使敌人眩晕。"
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Roving Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\n[Roving Merchant]\nFor your information,\none box contains\n200 units.",
+      "translation" : "[流动商人]\n您对^0000FF[{0}]^000000感兴趣吗？\n[流动商人]\n供您参考，\n一盒包含\n200个。"
+    },
+    {
+      "kind" : "message",
+      "line" : 781,
+      "npc" : "Roving Merchant",
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nThis is a ^DC143CThrowing Weapon^000000.\nOf course, it can give fatal wounds to the enemy\nat a certain rate when attacking.",
+      "translation" : "[流动商人]\n这是一种^DC143C投掷武器^000000。\n当然，攻击时有一定几率对敌人造成致命伤害。"
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Roving Merchant",
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nIts property is neutral and ATK is 50.",
+      "translation" : "[流动商人]\n它是中性属性，ATK为50。"
+    },
+    {
+      "kind" : "message",
+      "line" : 794,
+      "npc" : "Roving Merchant",
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nI feel somthing bad\nis moving in my pocket but...\nit is neutral property and its ATK is 50.",
+      "translation" : "[流动商人]\n我感觉口袋里有什么坏东西在动，但是...\n它是中性属性，ATK为50。"
+    },
+    {
+      "kind" : "message",
+      "line" : 805,
+      "npc" : "Roving Merchant",
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nIt is compressed\nand put into a very small box,\nso be careful when you open it.",
+      "translation" : "[流动商人]\n它被压缩并装在一个非常小的盒子里，\n所以打开时要小心。"
+    },
+    {
+      "kind" : "message",
+      "line" : 815,
+      "npc" : "Roving Merchant",
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nIt is perfectly organized and packed\nso you can't even see inside.\nIt is neutral property and its ATK is 110.",
+      "translation" : "[流动商人]\n它被完美地整理和包装好了，\n你甚至看不到里面。\n它是中性属性，ATK为110。"
+    },
+    {
+      "kind" : "message",
+      "line" : 822,
+      "npc" : "Roving Merchant",
+      "state" : "needs_review",
+      "text" : "[Roving Merchant]\nFor your information,\none box contains\n200 units.",
+      "translation" : "[流动商人]\n供您参考，\n一盒包含200个。"
+    },
+    {
+      "kind" : "message",
+      "line" : 836,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "- Stop Here!! -\n- You have too many items. -\n- You cannot carry any more items. -\n- Lighten your load and -\n- try again. -",
+      "translation" : "- 停在这里！！ -\n- 您的物品太多了。 -\n- 您无法再携带任何物品。 -\n- 请减轻负重， -\n- 然后再试一次。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 843,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "[Armor Merchant]\nHello, this is Naphara's store, a place of high class goods.\nWhat would you need?",
+      "translation" : "[防具商人]\n您好，这里是娜法拉的商店，一个高档商品的地方。\n您需要什么？"
+    },
+    {
+      "kind" : "option",
+      "line" : 847,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "Str Glove",
+      "translation" : "力量手套"
+    },
+    {
+      "kind" : "option",
+      "line" : 847,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "Int Glove",
+      "translation" : "智慧手套"
+    },
+    {
+      "kind" : "option",
+      "line" : 847,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "Agi Glove",
+      "translation" : "敏捷手套"
+    },
+    {
+      "kind" : "option",
+      "line" : 847,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "Vit Glove",
+      "translation" : "体力手套"
+    },
+    {
+      "kind" : "option",
+      "line" : 847,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "Dex Glove",
+      "translation" : "灵巧手套"
+    },
+    {
+      "kind" : "option",
+      "line" : 847,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "Luk Glove",
+      "translation" : "幸运手套"
+    },
+    {
+      "kind" : "message",
+      "line" : 848,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "[Armor Merchant]\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options.",
+      "translation" : "[防具商人]\n^3131FF需求等级：100^000000\n^3131FF插槽：0^000000\n^3131FF重量：10^000000\n是特性选项。"
+    },
+    {
+      "kind" : "message",
+      "line" : 848,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "[Armor Merchant]\n^3131FFStr Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFATK+1 increases for every STR+10^000000\n^3131FFATK +1% added above STR 110^000000\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options.",
+      "translation" : "[防具商人]\n^3131FF力量手套^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FF每增加10点STR，ATK+1^000000\n^3131FFSTR超过110时，ATK +1%^000000\n^3131FF需求等级：100^000000\n^3131FF插槽：0^000000\n^3131FF重量：10^000000\n是特性选项。"
+    },
+    {
+      "kind" : "message",
+      "line" : 848,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "[Armor Merchant]\n^3131FFInt Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFMATK+1 increases for every INT+10^000000\n^3131FFMATK +1% added above INT 110^000000\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options.",
+      "translation" : "[防具商人]\n^3131FF智慧手套^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FF每增加10点INT，MATK+1^000000\n^3131FFINT超过110时，MATK +1%^000000\n^3131FF需求等级：100^000000\n^3131FF插槽：0^000000\n^3131FF重量：10^000000\n是特性选项。"
+    },
+    {
+      "kind" : "message",
+      "line" : 848,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "[Armor Merchant]\n^3131FFAgi Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFFLEE+1 increases for every AGI+10^000000\n^3131FFComplete Flee +1 added above AGI 110^000000\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options.",
+      "translation" : "[防具商人]\n^3131FF敏捷手套^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FF每增加10点AGI，FLEE+1^000000\n^3131FFAGI超过110时，FLEE +1%^000000\n^3131FF需求等级：100^000000\n^3131FF插槽：0^000000\n^3131FF重量：10^000000\n是特性选项。"
+    },
+    {
+      "kind" : "message",
+      "line" : 848,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "[Armor Merchant]\n^3131FFVit Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFMHP+50 for every VIT+10^000000\n^3131FFMHP+1% added above VIT 110^000000\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options.",
+      "translation" : "[防具商人]\n^3131FF体力手套^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FF每增加10点VIT，MHP+50^000000\n^3131FFVIT超过110时，MHP +1%^000000\n^3131FF需求等级：100^000000\n^3131FF插槽：0^000000\n^3131FF重量：10^000000\n是特性选项。"
+    },
+    {
+      "kind" : "message",
+      "line" : 848,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "[Armor Merchant]\n^3131FFDex Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFHIT+1 increases for every DEX+10^000000\n^3131FFRanged attack power +1% added above DEX 110^000000\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options.",
+      "translation" : "[防具商人]\n^3131FF灵巧手套^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FF每增加10点DEX，HIT+1^000000\n^3131FFDEX超过110时，远程攻击力 +1%^000000\n^3131FF需求等级：100^000000\n^3131FF插槽：0^000000\n^3131FF重量：10^000000\n是特性选项。"
+    },
+    {
+      "kind" : "message",
+      "line" : 848,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "[Armor Merchant]\n^3131FFLuk Glove^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FFCRI+1 increases for every LUK+10^000000\n^3131FFCritical damage +1% added above LUK 110^000000\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options.",
+      "translation" : "[防具商人]\n^3131FF幸运手套^000000\n^3131FFMHP + 100, MSP + 20^000000\n^3131FF每增加10点LUK，CRI+1^000000\n^3131FFLUK超过110时，暴击伤害 +1%^000000\n^3131FF需求等级：100^000000\n^3131FF插槽：0^000000\n^3131FF重量：10^000000\n是特性选项。"
+    },
+    {
+      "kind" : "message",
+      "line" : 892,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "[Armor Merchant]\nIt costs 10 Splendide Coins.\nWould you like to buy it?",
+      "translation" : "[防具商人]\n需要10枚辉煌领域金币。\n您要购买吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 896,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "Buy it.",
+      "translation" : "购买"
+    },
+    {
+      "kind" : "option",
+      "line" : 896,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "Don't buy it.",
+      "translation" : "不购买"
+    },
+    {
+      "kind" : "message",
+      "line" : 898,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "[Armor Merchant]\nIt seems like you don't have enough coins.",
+      "translation" : "[防具商人]\n看来您的金币不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 904,
+      "npc" : "Armor Merchant Naphara",
+      "state" : "needs_review",
+      "text" : "[Armor Merchant]\nGreat, it's yours. Thank you.",
+      "translation" : "[防具商人]\n太好了，它是您的了。谢谢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 912,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "[Slot Expert]\nI am Slot Expert Nattuer.\nIf you bring me an item from my little brother Naphara along with 5 Splendide Coins, I will open up one Slot for you.",
+      "translation" : "[插槽专家]\n我是插槽专家纳图尔。\n如果您带着我弟弟纳法拉的道具和5枚辉煌领域金币来找我，我可以为您开启一个插槽。"
+    },
+    {
+      "kind" : "option",
+      "line" : 916,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "Activate a Slot.",
+      "translation" : "开启插槽"
+    },
+    {
+      "kind" : "option",
+      "line" : 916,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "Forget it.",
+      "translation" : "算了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "[Slot Expert]\nSlot activation is an extremely difficult procedure that can fail even with heightened care and the use of a magnifying lens.",
+      "translation" : "[插槽专家]\n开启插槽是一项极其困难的操作，即使小心翼翼并使用放大镜，也可能会失败。"
+    },
+    {
+      "kind" : "message",
+      "line" : 922,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "[Slot Expert]\nOf course, if your heart were as big as that flower-filled land, you wouldn't mind. Right? Should I go for it?",
+      "translation" : "[插槽专家]\n当然，如果您的心像那片花海一样宽广，就不会介意了。对吧？我要开始了吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 925,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "Continue.",
+      "translation" : "继续"
+    },
+    {
+      "kind" : "option",
+      "line" : 925,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "Forget it.",
+      "translation" : "算了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 928,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "[Slot Expert]\nWhich item would you like to activate with a Slot?",
+      "translation" : "[插槽专家]\n您想为哪个道具开启插槽？"
+    },
+    {
+      "kind" : "option",
+      "line" : 931,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "Str Glove",
+      "translation" : "力量手套"
+    },
+    {
+      "kind" : "option",
+      "line" : 931,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "Int Glove",
+      "translation" : "智慧手套"
+    },
+    {
+      "kind" : "option",
+      "line" : 931,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "Ag Glove",
+      "translation" : "敏捷手套"
+    },
+    {
+      "kind" : "option",
+      "line" : 931,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "Vit Glove",
+      "translation" : "体力手套"
+    },
+    {
+      "kind" : "option",
+      "line" : 931,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "Dex Glove",
+      "translation" : "灵巧手套"
+    },
+    {
+      "kind" : "option",
+      "line" : 931,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "Luk Glove",
+      "translation" : "幸运手套"
+    },
+    {
+      "kind" : "message",
+      "line" : 933,
+      "npc" : "Slot Expert Nattuer",
+      "placeholders" : [
+        "getitemname(.@choice)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Slot Expert]\nLet's confirm for the last time. Is the one you want {0}?",
+      "translation" : "[插槽专家]\n最后确认一下。您想要的是{0}吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 936,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 936,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 937,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "[Slot Expert]\nWhy don't you talk to me when you know for sure.",
+      "translation" : "[插槽专家]\n等您确定好了再来找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 942,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "[Slot Expert]\nYou don't have that item. Why don't you talk to me when you know for sure.",
+      "translation" : "[插槽专家]\n您没有那个道具。等您确定好了再来找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 947,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "[Slot Expert]\nYou don't have enough coins. Why don't you talk to me when you know for sure.",
+      "translation" : "[插槽专家]\n您的金币不足。等您确定好了再来找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 952,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "[Slot Expert]\nShoot, I'm sorry. It failed.\nBut I'm sure it will work next time. I have a feeling.",
+      "translation" : "[插槽专家]\n糟糕，对不起。失败了。\n但我相信下次会成功的。我有预感。"
+    },
+    {
+      "kind" : "message",
+      "line" : 952,
+      "npc" : "Slot Expert Nattuer",
+      "state" : "needs_review",
+      "text" : "[Slot Expert]\nMy eyes feel like they're gonna pop out.\nNonetheless, congratulations. Slot activation was successful.",
+      "translation" : "[插槽专家]\n我的眼睛都要瞪出来了。\n不过，恭喜您。插槽开启成功。"
+    },
+    {
+      "kind" : "message",
+      "line" : 972,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "- Stop Here!! -\n- You have too many items. -\n- You cannot carry any more items. -\n- Lighten your load and -\n- try again. -",
+      "translation" : "- 停在这里！！ -\n- 您的物品太多了。 -\n- 您无法再携带任何物品。 -\n- 请减轻负重， -\n- 然后再试一次。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 979,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "[Herb Merchant]\nWelcome, this is Plafina's Herb Store where only the freshest herbs are provided~!",
+      "translation" : "[药草商人]\n欢迎光临，这里是普拉菲娜的药草店，只提供最新鲜的药草~！"
+    },
+    {
+      "kind" : "option",
+      "line" : 982,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "Snow Flip",
+      "translation" : "冰雪花瓣"
+    },
+    {
+      "kind" : "option",
+      "line" : 982,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "Peony Mommy",
+      "translation" : "温馨花瓣"
+    },
+    {
+      "kind" : "option",
+      "line" : 982,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "Slapping Herb",
+      "translation" : "薄荷药草"
+    },
+    {
+      "kind" : "option",
+      "line" : 982,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "Yggdrasil Dust",
+      "translation" : "世界树之尘"
+    },
+    {
+      "kind" : "option",
+      "line" : 982,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "End conversation",
+      "translation" : "结束对话"
+    },
+    {
+      "kind" : "message",
+      "line" : 984,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "[Herb Merchant]\nCome back anytime.",
+      "translation" : "[药草商人]\n欢迎随时再来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        ".cost[.@item]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Herb Merchant]\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each.",
+      "translation" : "[药草商人]\n每次使用需间隔5秒。\n每次使用消耗{0}辉煌领域金币。"
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        ".cost[.@item]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Herb Merchant]\nSnow Flip has special effects on ^3131FFBurning, Bleeding, Deep Sleep, Sleep^000000.\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each.",
+      "translation" : "[药草商人]\n冰雪花瓣对^3131FF燃烧、流血、深度睡眠、睡眠^000000有特殊效果。\n每次使用需间隔5秒。\n每次使用消耗{0}辉煌领域金币。"
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        ".cost[.@item]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Herb Merchant]\nPeony Mamy has special effects on ^3131FFFrost, Frozen, Freezing^000000\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each.",
+      "translation" : "[药草商人]\n温馨花瓣对^3131FF冰冻、冻结、严寒^000000有特殊效果。\n每次使用需间隔5秒。\n每次使用消耗{0}辉煌领域金币。"
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        ".cost[.@item]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Herb Merchant]\nSlapping Herb has special effects on ^3131FFStun, Fear, Chaos, Hallucination^000000\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each.",
+      "translation" : "[药草商人]\n薄荷药草对^3131FF眩晕、恐惧、混沌、幻觉^000000有特殊效果。\n每次使用需间隔5秒。\n每次使用消耗{0}辉煌领域金币。"
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        ".cost[.@item]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Herb Merchant]\nYggdrasil Dust has special effects on ^3131FFBlind, Curse, Decrease Agility, Reverse Orcish^000000.\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each.",
+      "translation" : "[药草商人]\n世界树之尘对^3131FF失明、诅咒、缓速术、变成兽人面孔^000000有特殊效果。\n每次使用需间隔5秒。\n每次使用消耗{0}辉煌领域金币。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1006,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "Buy 1.",
+      "translation" : "购买1个"
+    },
+    {
+      "kind" : "option",
+      "line" : 1006,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "Buy 10.",
+      "translation" : "购买10个"
+    },
+    {
+      "kind" : "option",
+      "line" : 1006,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "Don't buy.",
+      "translation" : "不买"
+    },
+    {
+      "kind" : "message",
+      "line" : 1013,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        ".@buy",
+        "getitemname(.items[.@item])"
+      ],
+      "state" : "needs_review",
+      "text" : "[Herb Merchant]\nWould you like to buy {0} {1}?",
+      "translation" : "[药草商人]\n您要购买{0}个{1}吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1016,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "Buy.",
+      "translation" : "购买"
+    },
+    {
+      "kind" : "option",
+      "line" : 1016,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "Don't buy.",
+      "translation" : "不买"
+    },
+    {
+      "kind" : "message",
+      "line" : 1020,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "[Herb Merchant]\nYou don't have enough coins.",
+      "translation" : "[药草商人]\n您的金币不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1024,
+      "npc" : "Herb Merchant Plafina",
+      "state" : "needs_review",
+      "text" : "[Herb Merchant]\nThank you for your business.",
+      "translation" : "[药草商人]\n谢谢惠顾。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1038,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "You have too many items to continue.",
+      "translation" : "您的物品栏已满，无法继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1042,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nWoohoo- Greetings. What are you looking for? Lots of goods here.",
+      "translation" : "[帕尔图]\n哇哦~ 您好。您在找什么？这里有很多好货。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1045,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "No thanks.",
+      "translation" : "不用了，谢谢。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1045,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "Replication?",
+      "translation" : "复制？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1045,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "I know you got lots up your sleeve!",
+      "translation" : "我知道你有很多绝活！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1048,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nReally? Hmm?",
+      "translation" : "[帕尔图]\n真的吗？嗯？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1052,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nOne can say that there's no one better in Eclage than I at utilizing magic resistance.",
+      "translation" : "[帕尔图]\n可以说，在埃克拉珠，没有人比我更擅长利用魔法抗性了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1055,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nI'll give you a good price whatever it is. Just trust me.",
+      "translation" : "[帕尔图]\n不管是什么，我都会给您一个公道价。请相信我。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1058,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "Could you do something for me?",
+      "translation" : "能帮我做点什么吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1060,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nHey, I like your attitude.",
+      "translation" : "[帕尔图]\n嘿，我喜欢你的态度。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1063,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nAh- you know the hat you're wearing?",
+      "translation" : "[帕尔图]\n啊——你知道你头上戴的帽子吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1067,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nDon't you have any of those hats lying around in storage that are solid but too ugly to wear? You do, right?",
+      "translation" : "[帕尔图]\n你仓库里是不是有那种结实但太丑、戴不出门的帽子？有的吧？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1070,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : ".........",
+      "translation" : "........."
+    },
+    {
+      "kind" : "message",
+      "line" : 1073,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nSee! I knew it. I knew it from the first minute.",
+      "translation" : "[帕尔图]\n看吧！我就知道。我一开始就知道了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1076,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nIf you bring me ^ff0000 50 Splendide Coins and the ingredients^000000, I'll make you a new hat in the same shape but worn as a ^ff0000Costume^000000.",
+      "translation" : "[帕尔图]\n如果你给我^ff0000 50枚辉煌领域金币和材料^000000，我会为你制作一顶形状相同、但作为^ff0000时装^000000佩戴的新帽子。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1079,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nHmm, what was it...?\nI think you adventurers call them ^0571B0Costumes^000000? right?",
+      "translation" : "[帕尔图]\n嗯，那个叫什么来着...\n我想你们冒险者叫它^0571B0时装^000000？对吧？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1083,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "Yes~ What do you need?",
+      "translation" : "是的~ 你需要什么？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1084,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nI need 1 ^0571B0hat to replicate^000000 and\nI need ^E1281E 4 Crystal Mirrors^000000 for magic resistance, ^E1281E 1 Fairy Magic Powder^000000 as the catalyst, and ^E1281E Emerald, Ruby, Sapphire, Topaz, and Zircon, 10 of each^000000, to be used for amplifying the magic power.",
+      "translation" : "[帕尔图]\n我需要1顶^0571B0要复制的帽子^000000，\n还需要^E1281E 4个水晶镜子^000000用于魔法抗性，^E1281E 1份妖精魔法粉^000000作为催化剂，以及^E1281E 翡翠、红宝石、蓝宝石、黄玉和锆石，各10个^000000，用于增强魔力。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1089,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nThere's quite a lot of ingredients, right? Well, I can't do anything about that. Dealing with magic power is not a joke.",
+      "translation" : "[帕尔图]\n材料挺多的，对吧？我也没办法。处理魔力可不是开玩笑的。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1092,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "Which hats can be replicated?",
+      "translation" : "哪些帽子可以复制？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1093,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nOh! You're pretty sharp!\nAlmost forgot the most important thing.",
+      "translation" : "[帕尔图]\n哦！你很敏锐嘛！\n差点忘了最重要的事。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1097,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nHats that I can replicate are:\n^0571B0Frog Hat, Romantic Flower, Magestic Goat, Blush, Valkyrie Helm, Deviruchi Hat, Assassin Mask, Elven Ears, Hahoe Mask, and Boys Cap^000000 a total of 10 types.",
+      "translation" : "[帕尔图]\n我可以复制的帽子有：\n^0571B0青蛙帽、花叶、山羊头盔、腮红、瓦尔基里头盔、小恶魔帽、刺客口罩、妖精长耳朵饰、传统面具和男孩帽^000000，总共10种。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1101,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nWhat do you think? I'll make it happen as long as I have the ingredients and the compensation.",
+      "translation" : "[帕尔图]\n你觉得怎么样？只要有材料和报酬，我就能做到。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1104,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "I'll do it later.",
+      "translation" : "我稍后再来。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1104,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "Show me what you got!",
+      "translation" : "让我看看你有什么！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1106,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nWhat? Are you kidding me? Please tell me you are!",
+      "translation" : "[帕尔图]\n什么？你在开玩笑吧？求求你告诉我你在开玩笑！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1114,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nOh wow.\nYou made the right call. I thought I was going to starve to death because the Laphines have no interest in pretty hats.",
+      "translation" : "[帕尔图]\n哦，天哪。\n你做了正确的选择。我以为我要饿死了，因为拉菲涅斯对漂亮的帽子没兴趣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1118,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nI'll make it a great deal for you. You really should know I'm giving you a good deal here.",
+      "translation" : "[帕尔图]\n我会给你一个超划算的价格。你应该知道我在给你优惠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1121,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nIs there something you had in mind? Why don't you take a look?",
+      "translation" : "[帕尔图]\n你有什么想法吗？不如看看这个？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1135,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        "getitemname(.@items[.@i])"
+      ],
+      "state" : "needs_review",
+      "text" : "[Paltu]\nIs ^0571B0{0}^000000 what you wanted?",
+      "translation" : "[帕尔图]\n^0571B0{0}^000000 就是您想要的吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1140,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nAy... Credit purchases are difficult for me.",
+      "translation" : "[帕尔图]\n唉...用积分购买对我来说有点困难。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1143,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        "getitemname(.@items[.@i])"
+      ],
+      "state" : "needs_review",
+      "text" : "[Paltu]\n^0571B0{0}^000000 and\n^E1281E50 Splendide Coins, 4 Crystal Mirrors, 1 Fairy Magic Powder, 10 of each Emerald, Ruby, Sapphire, Topaz, and Zircon^000000 are necessary.",
+      "translation" : "[帕尔图]\n需要 ^0571B0{0}^000000 和\n^E1281E50 4枚辉煌领域金币、4面水晶镜子、1瓶妖精魔法粉，以及绿宝石、红宝石、蓝宝石、黄玉和锆石各10颗^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1147,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nI'm in a tight spot myself. Please consider my situation also.",
+      "translation" : "[帕尔图]\n我自己手头也很紧。请体谅一下我的处境。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1152,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nYes, this is more than enough. Should I make it now?",
+      "translation" : "[帕尔图]\n好的，这些足够了。我现在就开始制作吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1155,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "Please make it now.",
+      "translation" : "请现在开始制作。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1155,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "Oops, I have to take care of something...",
+      "translation" : "哎呀，我有点事要处理..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1157,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nHey.. Hey! Hey! Where you going?",
+      "translation" : "[帕尔图]\n嘿...嘿！嘿！你要去哪？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1162,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nI got it. Oh right! Almost forgot again.",
+      "translation" : "[帕尔图]\n明白了。对了！差点又忘了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1165,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\n^FF0000In the process of replication, magic intervention phenomenon causes the hat to lose all of its refinements, cards, and hidden enchantments.^000000",
+      "translation" : "[帕尔图]\n^FF0000在复制过程中，魔法干涉现象会导致帽子失去所有的强化等级、卡片和隐藏附魔。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1168,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\n^FF0000And if you possess multiple hats of the same type, the one you don't want can undergo the replication process, so please check to make sure.^000000",
+      "translation" : "[帕尔图]\n^FF0000如果您拥有多顶同类型的帽子，不想要的那顶将会被用于复制过程，请务必确认。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1171,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nSo any problems with that?",
+      "translation" : "[帕尔图]\n那么，您对此有什么异议吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1174,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "Let me go check.",
+      "translation" : "让我去确认一下。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1174,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "Start the replication process.",
+      "translation" : "开始复制过程。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1175,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nYeah, please make sure!",
+      "translation" : "[帕尔图]\n是的，请务必确认！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1180,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nWoohoo- Got it.\nIt's finally time for me to use my skills again.",
+      "translation" : "[帕尔图]\n耶——拿到了。\n终于轮到我大显身手了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1185,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nDo this thing here, and do that thing there, and then do this thing here again...",
+      "translation" : "[帕尔图]\n这里弄一下，那里弄一下，然后再弄一下这里..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1190,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\n... .. ...",
+      "translation" : "[帕尔图]\n... .. ..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1212,
+      "npc" : "Replication Expert Paltu",
+      "state" : "needs_review",
+      "text" : "[Paltu]\nGood. This is a satisfying result.\nI'll do even a better job next time. Please tell others about my work. Have a good day~",
+      "translation" : "[帕尔图]\n很好。这是一个令人满意的结果。\n下次我会做得更好。请把我的手艺推荐给其他人吧。祝您愉快~"
+    }
+  ]
+}

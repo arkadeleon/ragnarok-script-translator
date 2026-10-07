@@ -1,0 +1,1018 @@
+{
+  "file" : "npc/re/instances/HazyForest.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 25,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nAre you going into the forest?",
+      "translation" : "[拉菲尼士兵]\n你要进森林吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nWell, well, well, aren't you being too rash?\nWhy don't you at least organize a party?",
+      "translation" : "[拉菲尼士兵]\n哎呀，哎呀，哎呀，你太鲁莽了吧？\n至少组建一个队伍再进去吧？"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\n...Are you sure you're not doing too much?\nI think you'd better get some rest.\nYou'll only wear yourself out by trying to do too much",
+      "translation" : "[拉菲尼士兵]\n...你确定自己不会太勉强吗？\n我觉得你最好休息一下。\n做太多事情只会让你精疲力竭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nI don't think the authority will give you permission, either.\n...Even a Sapha would be stopped from entering the forest.",
+      "translation" : "[拉菲尼士兵]\n我觉得当局也不会给你许可的。\n...即使是萨法，也会被阻止进入森林。"
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "You speak our language quite well, don't you?",
+      "translation" : "你的语言说得很好啊，不是吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 47,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\n...Do I?\nActually I'm not speaking your language.\nI'm speaking Laphine language.",
+      "translation" : "[拉菲尼士兵]\n...是吗？\n其实我说的不是你们的语言。\n我说的是拉菲尼语。"
+    },
+    {
+      "kind" : "message",
+      "line" : 52,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nBut it's one of the mysteries of Bifrost.\nThat we can understand each other even if we speak different languages.",
+      "translation" : "[拉菲尼士兵]\n但这是双层牛肉堡的一个奥秘。\n即使我们说着不同的语言，也能互相理解。"
+    },
+    {
+      "kind" : "message",
+      "line" : 56,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nTo be able to talk with everybody...\nPerhaps that's the power of Bifrost.",
+      "translation" : "[拉菲尼士兵]\n能够与所有人交谈...\n也许这就是双层牛肉堡的力量。"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nGreat, great.\nNow the forest won't reject you.\nWhat are you going to do now?",
+      "translation" : "[拉菲尼士兵]\n很好，很好。\n现在森林不会排斥你了。\n你接下来打算做什么？"
+    },
+    {
+      "kind" : "message",
+      "line" : 67,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nYou human adventurers are incredible.\nYou're always going into the forest, where no one else dares to go.",
+      "translation" : "[拉菲尼士兵]\n你们人类冒险者真是不可思议。\n总是去那些没人敢去的森林。"
+    },
+    {
+      "kind" : "message",
+      "line" : 71,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nPhew. But I have to report to the authority\neveryone who goes into the forest, just in case.",
+      "translation" : "[拉菲尼士兵]\n呼。但我必须向当局报告每一个进入森林的人，以防万一。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nYou'll get permission\nafter you register.\nAre you going to venture into the Hazy Forest?",
+      "translation" : "[拉菲尼士兵]\n登记后你就会获得许可。\n你要去迷雾森林吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 81,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "Venture into the Hazy Forest.",
+      "translation" : "前往迷雾森林"
+    },
+    {
+      "kind" : "option",
+      "line" : 81,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "Give up.",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 83,
+      "npc" : "Laphine Soldier",
+      "placeholders" : [
+        "getpartyname(.@party_id)",
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nParty Name {0}...\nParty Leader {1}...\nHmm...",
+      "translation" : "[拉菲尼士兵]\n队伍名称 {0}...\n队伍首领 {1}...\n嗯..."
+    },
+    {
+      "kind" : "message",
+      "line" : 83,
+      "npc" : "Laphine Soldier",
+      "placeholders" : [
+        "getpartyname(.@party_id)",
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nParty Name {0}...\nParty Leader {1}...\nI've got it. I've written them down on the report here.",
+      "translation" : "[拉菲尼士兵]\n队伍名称 {0}...\n队伍首领 {1}...\n我记下了。我已经把它们写在报告上了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 89,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nIt's dangerous in the forest.\n...Why don't you just go back today?",
+      "translation" : "[拉菲尼士兵]\n森林里很危险。\n...今天还是回去吧？"
+    },
+    {
+      "kind" : "message",
+      "line" : 89,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nThe atmosphere is somewhat tense in the forest.\n...Why don't you just go back today?",
+      "translation" : "[拉菲尼士兵]\n森林里的气氛有些紧张。\n...今天还是回去吧？"
+    },
+    {
+      "kind" : "message",
+      "line" : 99,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nYou'll get permission soon.\nNow go to the log tunnel, the only way to get into the Hazy Forest.\nYou understand?",
+      "translation" : "[拉菲尼士兵]\n你很快就会获得许可。\n现在去原木隧道，那是进入迷雾森林的唯一途径。\n明白了吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 104,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nWe can't go against the forest,\nbut maybe you humans can.\nGood luck!",
+      "translation" : "[拉菲尼士兵]\n我们不能违背森林，\n但也许你们人类可以。\n祝你好运！"
+    },
+    {
+      "kind" : "message",
+      "line" : 110,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nWell, you've made the right decision.\nThat's what's good for you.",
+      "translation" : "[拉菲尼士兵]\n嗯，你做了正确的决定。\n这对你是好事。"
+    },
+    {
+      "kind" : "message",
+      "line" : 110,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nWell, you've made the right decision.",
+      "translation" : "[拉菲尼士兵]\n嗯，你做了正确的决定。"
+    },
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nWhere's your party leader?\nIt's dangerous in there.",
+      "translation" : "[拉菲尼士兵]\n你的队伍首领在哪里？\n里面很危险。"
+    },
+    {
+      "kind" : "message",
+      "line" : 122,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nI see you've been into the forest before.\nOkay, at least the forest won't reject you.\nHowever...",
+      "translation" : "[拉菲尼士兵]\n看来你以前进过森林。\n好吧，至少森林不会排斥你。\n但是..."
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Laphine Soldier",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nPut yourself in my shoes, the entrance guard, and let me meet the representative of your party.\nI have to discuss some things with him/her.",
+      "translation" : "[拉菲尼士兵]\n请站在我的立场上想想，作为入口守卫，我必须见一见你们队伍的代表。\n我有事要和他/她商量。"
+    },
+    {
+      "kind" : "message",
+      "line" : 137,
+      "npc" : "Log Tunnel",
+      "state" : "needs_review",
+      "text" : "I see the forest through the log tunnel.\nIt looks like I can enter the forest through the log tunnel.",
+      "translation" : "透过原木隧道，我能看到森林。\n看起来可以通过原木隧道进入森林。"
+    },
+    {
+      "kind" : "option",
+      "line" : 140,
+      "npc" : "Log Tunnel",
+      "state" : "needs_review",
+      "text" : "Enter the tunnel.",
+      "translation" : "进入隧道"
+    },
+    {
+      "kind" : "option",
+      "line" : 140,
+      "npc" : "Log Tunnel",
+      "state" : "needs_review",
+      "text" : "Give up.",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 144,
+      "npc" : "Log Tunnel",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nSomething doesn't feel right. Looks like something dangerous is going on, so you'd better turn back today.",
+      "translation" : "[拉菲尼士兵]\n感觉有些不对劲。\n看起来有什么危险正在发生，你最好今天先回去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Log Tunnel",
+      "state" : "needs_review",
+      "text" : "You try to crawl into the log, but some mysterious power pushes you back with a gush of wind.\nIt seems like you can't force your way into the forest.",
+      "translation" : "你试图爬进原木，但一股神秘的力量伴随着狂风将你推了回去。\n看来无法强行进入森林。"
+    },
+    {
+      "kind" : "message",
+      "line" : 152,
+      "npc" : "Log Tunnel",
+      "state" : "needs_review",
+      "text" : "[Laphine Soldier]\nHey, look!\nAre you going alone?\nThat's impossible. Too rash.\nTeam up with some friends and go together!",
+      "translation" : "[拉菲尼士兵]\n嘿，看！\n你是要一个人去吗？\n那是不可能的。太鲁莽了。\n找些朋友组队一起去吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 165,
+      "npc" : "Log Tunnel",
+      "state" : "needs_review",
+      "text" : "The world beyond the log tunnel looks dark and suffocating.\nYour instinct is screaming that this forest is dangerous.",
+      "translation" : "原木隧道另一边的世界看起来黑暗而令人窒息。\n你的直觉在尖叫，这片森林很危险。"
+    },
+    {
+      "kind" : "message",
+      "line" : 202,
+      "npc" : "F_Mora_Mist",
+      "state" : "needs_review",
+      "text" : "Obviously no one is taking care of it.\nIt seems like you can chop down the garden tree.",
+      "translation" : "显然没人照顾它。\n看起来可以砍倒这棵花园里的树。"
+    },
+    {
+      "kind" : "option",
+      "line" : 205,
+      "npc" : "F_Mora_Mist",
+      "state" : "needs_review",
+      "text" : "Chop down the garden tree.",
+      "translation" : "砍倒花园里的树"
+    },
+    {
+      "kind" : "option",
+      "line" : 205,
+      "npc" : "F_Mora_Mist",
+      "state" : "needs_review",
+      "text" : "Give up.",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 207,
+      "npc" : "F_Mora_Mist",
+      "placeholders" : [
+        "((getarg(3,0))?\"clearing the way out of the forest.\":\"so now you can continue.\")"
+      ],
+      "state" : "needs_review",
+      "text" : "You chop down the tree, which was blocking the path of the maze, {0}",
+      "translation" : "你砍倒了那棵挡在迷宫路径上的树，{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 543,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Mysterious Young Man]\nHuh? Do you plan to pass through here?\n.....I'm afraid it's beyond your ability, but I won't meddle in your affairs.\nWe'll meet again, if you survive.",
+      "translation" : "[神秘的年轻人]\n嗯？你打算从这里通过吗？\n...恐怕这超出了你的能力范围，但我不干涉你的事。\n如果你能活下来，我们还会再见的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 551,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Mysterious Young Man]\nYou... I remember seeing you at the camp.\nThe information you gave on Ahat was useful.\nThanks!",
+      "translation" : "[神秘的年轻人]\n你...我记得在营地见过你。\n你提供的关于阿哈特的信息很有用。\n谢谢！"
+    },
+    {
+      "kind" : "message",
+      "line" : 556,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Mysterious Young Man]\nBut do you plan to pass through here?\nWhat good is it to go across Bifrost?",
+      "translation" : "[神秘的年轻人]\n但你打算从这里通过吗？\n穿过双层牛肉堡有什么好处？"
+    },
+    {
+      "kind" : "message",
+      "line" : 561,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Mysterious Young Man]\nDo you plan to pass through here?\nI will advise against it if you're just curious.\nIt will only bring about your untimely death...",
+      "translation" : "[神秘的年轻人]\n你打算从这里通过吗？\n如果你只是好奇，我劝你打消这个念头。\n那只会带来你的非正常死亡..."
+    },
+    {
+      "kind" : "message",
+      "line" : 567,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Mysterious Young Man]\nIf you are determined to pass through here,\nI will ask for your help with something.",
+      "translation" : "[神秘的年轻人]\n如果你决心要从这里通过，\n我想请你帮个忙。"
+    },
+    {
+      "kind" : "option",
+      "line" : 571,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "Who are you?",
+      "translation" : "你是谁？"
+    },
+    {
+      "kind" : "message",
+      "line" : 572,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nLoki... from the Assassin's Guild.\nThat's my name.\nAnd yours?",
+      "translation" : "[洛基]\n洛基...来自刺客公会。\n这是我的名字。\n还有你的名字？"
+    },
+    {
+      "kind" : "message",
+      "line" : 577,
+      "npc" : "Mysterious Young Man",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\n....\n....{1} sir.",
+      "translation" : "[{0}]\n....\n....{1}先生。"
+    },
+    {
+      "kind" : "message",
+      "line" : 581,
+      "npc" : "Mysterious Young Man",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Loki]\nI see. {0}.\nI'm asking you again.\nDo you plan to pass through this forest?",
+      "translation" : "[洛基]\n原来如此，{0}。\n我再问你一次。\n你打算穿过这片森林吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 586,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "Yes, I do.",
+      "translation" : "有的，我有。"
+    },
+    {
+      "kind" : "option",
+      "line" : 586,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "No, I don't.",
+      "translation" : "没有，我没有。"
+    },
+    {
+      "kind" : "message",
+      "line" : 588,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nThen I'll ask you a question.\nHave you ever seen a guard... a girl with purple hair?",
+      "translation" : "[洛基]\n那么我问你个问题。\n你见过一个卫兵吗...一个紫发的女孩？"
+    },
+    {
+      "kind" : "option",
+      "line" : 592,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "No, I haven't.",
+      "translation" : "不，没见过。"
+    },
+    {
+      "kind" : "option",
+      "line" : 592,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "Yes, I might have...",
+      "translation" : "是的，我好像见过..."
+    },
+    {
+      "kind" : "message",
+      "line" : 594,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nSo you haven't.\nYou're telling the truth.",
+      "translation" : "[洛基]\n看来你没见过。\n你在说实话。"
+    },
+    {
+      "kind" : "message",
+      "line" : 600,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nWait.\n(Loki comes closer.)\n... No.\nYou're telling the truth.",
+      "translation" : "[洛基]\n等等。\n(洛基走近了一些。)\n...不。\n你在说实话。"
+    },
+    {
+      "kind" : "message",
+      "line" : 608,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nNow we have to say goodbye here.\nIf you survive this forest, of course.",
+      "translation" : "[洛基]\n我们在这里分别吧。\n当然，前提是你得活着穿过这片森林。"
+    },
+    {
+      "kind" : "message",
+      "line" : 615,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nI understand.\nStep back if you aren't ready.\nThis forest doesn't like strangers.",
+      "translation" : "[洛基]\n我明白了。\n如果你还没准备好，就退后吧。\n这片森林不喜欢陌生人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 623,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nI told you - step back if you don't want to die.\nIt's not easy going through the forest.\nIt may cost you your life.",
+      "translation" : "[洛基]\n我告诉过你——如果你不想死，就退后。\n穿过这片森林并不容易。\n它可能会夺走你的生命。"
+    },
+    {
+      "kind" : "option",
+      "line" : 628,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "Okay.",
+      "translation" : "好的。"
+    },
+    {
+      "kind" : "option",
+      "line" : 628,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "What do you want?",
+      "translation" : "你想要什么？"
+    },
+    {
+      "kind" : "message",
+      "line" : 630,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "- When you step back,\nLoki nods slightly and then looks away. -",
+      "translation" : "- 当你退后时，\n洛基微微点头，然后移开了视线。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 634,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nI'm looking for somebody.\nHave you ever seen a guard... a girl with purple hair?",
+      "translation" : "[洛基]\n我在找一个人。\n你见过一个卫兵吗...一个紫发的女孩？"
+    },
+    {
+      "kind" : "option",
+      "line" : 638,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "No, I haven't.",
+      "translation" : "不，没见过。"
+    },
+    {
+      "kind" : "option",
+      "line" : 638,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "Yes, I might have...",
+      "translation" : "是的，我好像见过..."
+    },
+    {
+      "kind" : "message",
+      "line" : 640,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nSo you haven't.\nYou're telling the truth.",
+      "translation" : "[洛基]\n看来你没见过。\n你在说实话。"
+    },
+    {
+      "kind" : "message",
+      "line" : 646,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nWait.\n(Loki comes closer.)\n... No.\nYou're telling the truth.",
+      "translation" : "[洛基]\n等等。\n(洛基走近了一些。)\n...不。\n你在说实话。"
+    },
+    {
+      "kind" : "message",
+      "line" : 654,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nNow we have to say goodbye here.\nHopefully, we will see each other again in Mora.",
+      "translation" : "[洛基]\n我们在这里分别吧。\n希望下次能在穆拉再见到你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 662,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nI don't want to go with you.\nHopefully, we will see each other again in Mora.",
+      "translation" : "[洛基]\n我不想和你一起走。\n希望下次能在穆拉再见到你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 667,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nSo we meet again.\nAre you used to this place?\nCome to the inn in Mora.\nI have something to give to you.",
+      "translation" : "[洛基]\n我们又见面了。\n你习惯这里了吗？\n来穆拉的旅馆吧。\n我有东西要给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 674,
+      "npc" : "Mysterious Young Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nWe're seeing a lot of each other these days.\nIt seems you are completely comfortable with the place.\nYou'd better not be too proud of yourself.",
+      "translation" : "[洛基]\n最近我们见面的次数真多。\n看来你完全适应这里了。\n你最好别太得意忘形。"
+    },
+    {
+      "kind" : "message",
+      "line" : 691,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "[Loki]\nAn adventurer in the forest.\n.....\nYou can go to Mora through this forest.",
+      "translation" : "[洛基]\n森林里的冒险者。\n.....\n你可以穿过这片森林去穆拉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 697,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "[Loki]\nIs it you that took care of this unruly girl?\nI guess I have to thank you.\nYou've calmed her down.",
+      "translation" : "[洛基]\n是你照顾了这个不听话的女孩吗？\n看来我得谢谢你。\n你让她平静下来了。"
+    },
+    {
+      "kind" : "option",
+      "line" : 702,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "What's happening?",
+      "translation" : "发生什么事了？"
+    },
+    {
+      "kind" : "option",
+      "line" : 702,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "This girl...?",
+      "translation" : "这个女孩...？"
+    },
+    {
+      "kind" : "message",
+      "line" : 703,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "[Loki]\nYou might be able to change your appearance, but you cannot change your unique, innate light.\nA scent strong enough to burn your nose.",
+      "translation" : "[洛基]\n你可以改变自己的外表，\n但无法改变你与生俱来的独特光芒。\n那是一种强烈到灼烧鼻息的气味。"
+    },
+    {
+      "kind" : "message",
+      "line" : 707,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "[Loki]\nThis is Nydhogg, the Guardian of Yggdrasil,\nwhom I was looking for.\nNow she won't wander around crazy any more.",
+      "translation" : "[洛基]\n这就是尼德霍格，世界树的守护者，\n正是我在寻找的人。\n现在她不会再疯疯癫癫地四处游荡了。"
+    },
+    {
+      "kind" : "option",
+      "line" : 712,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "What are you going to do now?",
+      "translation" : "你接下来打算做什么？"
+    },
+    {
+      "kind" : "message",
+      "line" : 713,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "[Loki]\nI'll wait for her to wake up and get out of this forest.\nI can manage it on my own.\nI'll see you in Mora.",
+      "translation" : "[洛基]\n我会等她醒来，然后离开这片森林。\n我一个人能搞定。\n我们在穆拉见。"
+    },
+    {
+      "kind" : "message",
+      "line" : 722,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "[Loki]\nI don't want to go with you.\nI can manage her on my own.\nIf you have something to say, say it after we get out of the forest.",
+      "translation" : "[洛基]\n我不想和你一起走。\n我一个人能照顾好她。\n如果你有什么话想说，等我们离开森林后再说。"
+    },
+    {
+      "kind" : "message",
+      "line" : 728,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "[Loki]\nI don't want to go with you.\nIf you have something to say, say it after we get out of the forest.",
+      "translation" : "[洛基]\n我不想和你一起走。\n如果你有什么话想说，等我们离开森林后再说。"
+    },
+    {
+      "kind" : "message",
+      "line" : 744,
+      "npc" : "Collapsed Girl",
+      "state" : "needs_review",
+      "text" : "You see a girl with mysterious hair collapsed on the ground.\nAs you approach her, you smell the scent of flowers so strong that it makes you dizzy.",
+      "translation" : "你看到一个有着神秘发色的女孩倒在地上。\n当你走近她时，闻到了一股浓郁的花香，让你有些头晕。"
+    },
+    {
+      "kind" : "message",
+      "line" : 759,
+      "npc" : "Flower Smelling Lady",
+      "state" : "needs_review",
+      "text" : "[Flower Smell Lady]\nI need rest.\nI'm too tired to talk to you.\nI'm sorry.",
+      "translation" : "[闻花香的女士]\n我需要休息。\n我太累了，没法和你说话。\n抱歉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 765,
+      "npc" : "Flower Smelling Lady",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nI've been waiting for you.\nI'm still confused, but I know what I did wrong.",
+      "translation" : "[守护者 尼德霍格]\n我一直在等你。\n我仍然有些困惑，但我知道自己错在哪里了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 769,
+      "npc" : "Flower Smelling Lady",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nIf it weren't for you, I would still be wandering in the abyssal darkness.\nI thank you, from the bottom of my heart.",
+      "translation" : "[守护者 尼德霍格]\n如果没有你，我可能还在无底的黑暗中徘徊。\n我从心底感谢你的帮助。"
+    },
+    {
+      "kind" : "message",
+      "line" : 773,
+      "npc" : "Flower Smelling Lady",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nI'm ashamed of myself, falling for the sweet but empty words that came to me in my loneliness.\n....",
+      "translation" : "[守护者 尼德霍格]\n我很羞愧，在孤独中竟然被那些甜美却空洞的话语所迷惑。\n...."
+    },
+    {
+      "kind" : "message",
+      "line" : 777,
+      "npc" : "Flower Smelling Lady",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nI don't deserve to be a guardian any more.\nA dragon gone crazy is not a guardian any more.",
+      "translation" : "[守护者 尼德霍格]\n我不再配做守护者了。\n一条疯了的龙，不再是守护者。"
+    },
+    {
+      "kind" : "message",
+      "line" : 781,
+      "npc" : "Flower Smelling Lady",
+      "state" : "needs_review",
+      "text" : "[Loki]\nYggdrasil doesn't think so.\nNidi, don't forget your duties.",
+      "translation" : "[洛基]\n世界树并不这么认为。\n尼德，别忘了你的职责。"
+    },
+    {
+      "kind" : "message",
+      "line" : 785,
+      "npc" : "Flower Smelling Lady",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nAre you...?\nI see...\nI thought I was forsaken...",
+      "translation" : "[守护者 尼德霍格]\n是你...？\n我明白了...\n我以为自己被抛弃了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 790,
+      "npc" : "Flower Smelling Lady",
+      "state" : "needs_review",
+      "text" : "The Guardian slowly looked away as if deep in thought.",
+      "translation" : "守护者缓缓移开目光，似乎陷入了沉思。"
+    },
+    {
+      "kind" : "message",
+      "line" : 794,
+      "npc" : "Flower Smelling Lady",
+      "state" : "needs_review",
+      "text" : "- He seems to be deep in thought. -",
+      "translation" : "- 他似乎陷入了沉思。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 797,
+      "npc" : "Flower Smelling Lady",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nI haven't gotten all of my powers back.\nI'm sorry I can't protect you.",
+      "translation" : "[守护者 尼德霍格]\n我还没有完全恢复力量。\n抱歉，我无法保护你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 801,
+      "npc" : "Flower Smelling Lady",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nLoki said...\nthat I won't cry from loneliness again,\nthat I will always have new friends like you...",
+      "translation" : "[守护者 尼德霍格]\n洛基说...\n我不会再因孤独而哭泣，\n我会一直拥有像你这样的新朋友..."
+    },
+    {
+      "kind" : "message",
+      "line" : 806,
+      "npc" : "Flower Smelling Lady",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\n...I've lost everything, but I'm happy now.",
+      "translation" : "[守护者 尼德霍格]\n...我失去了一切，但现在我很幸福。"
+    },
+    {
+      "kind" : "message",
+      "line" : 814,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "- You have too many items to do this quest. -",
+      "translation" : "- 你的物品栏太满了，无法执行此任务。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 818,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "He won't look at you. It's like he's not interested at all.",
+      "translation" : "他不愿看你一眼。看起来他对你毫无兴趣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 821,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nSo you've passed through the forest.\nIt seems Niddy has something to say to you.",
+      "translation" : "[洛基]\n看来你已经穿过了森林。\n尼德霍格似乎有话想对你说。"
+    },
+    {
+      "kind" : "message",
+      "line" : 826,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nNydhogg was one of the guardians of the World Tree.\nBut he abandoned his duties as a guardian when he gave in to Morocc's temptation.",
+      "translation" : "[洛基]\n尼德霍格曾是世界树的守护者之一。\n但他屈服于摩洛克的诱惑，抛弃了守护者的职责。"
+    },
+    {
+      "kind" : "message",
+      "line" : 830,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nSome fools performed a ritual to break the seal that held Morocc.\nBut the ritual didn't work right. The servant of Morocc failed to break the seal.",
+      "translation" : "[洛基]\n一些愚者试图举行仪式，打破封印摩洛克的结界。\n但仪式失败了。摩洛克的仆从没能打破封印。"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nBut the seal is so weak that it can break open any time.\nIt's Yggdrasil the World Tree's will that has kept the seal from breaking.",
+      "translation" : "[洛基]\n但封印已经非常脆弱，随时可能破碎。\n正是世界树尤克特拉希尔的意志，维持着封印不被打破。"
+    },
+    {
+      "kind" : "message",
+      "line" : 838,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nThat's right. The power of the World Tree is linked to the whole world.\nWhen the bond between the guardians and Yggdrasil broke, Yggdrasil became unstable.",
+      "translation" : "[守护者 尼德霍格]\n没错。世界树的力量与世界相连。\n当守护者与世界树的联系断裂时，世界树变得不稳定了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 842,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nThat's why all those disasters happened to Yggdrasil.\nAs the World Tree became unstable, the influence it had on the seal grew weak.",
+      "translation" : "[守护者 尼德霍格]\n这就是为什么世界树发生了那么多灾难。\n随着世界树变得不稳定，它对封印的影响也减弱了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 846,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nAnd Morocc broke himself free from the seal.\nAlthough it seems like he used most of his powers just to break the seal...",
+      "translation" : "[洛基]\n于是摩洛克挣脱了封印。\n虽然看起来他为了打破封印消耗了大部分力量..."
+    },
+    {
+      "kind" : "message",
+      "line" : 850,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nIt's all my fault.\nI couldn't break free from Morocc's temptation.\nFor too... too long...",
+      "translation" : "[守护者 尼德霍格]\n这都是我的错。\n我无法摆脱摩洛克的诱惑。\n太...太久了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 855,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\n...I wanted to be relieved of my thousands of years of loneliness.\nI wasn't in my right mind then.\nIt was none other than I that broke my bond with Yggdrasil.",
+      "translation" : "[守护者 尼德霍格]\n...我想摆脱数千年的孤独。\n那时我已神志不清。\n是我自己切断了与世界树的联系。"
+    },
+    {
+      "kind" : "message",
+      "line" : 860,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nI lost control of myself, and did what I shouldn't have done.\nThe other side of me became a shadow and a reckless tyrant.",
+      "translation" : "[守护者 尼德霍格]\n我失去了理智，做了不该做的事。\n我的另一面变成了阴影和疯狂的暴君。"
+    },
+    {
+      "kind" : "message",
+      "line" : 864,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nFacing the world, I realized...\nI felt too great a sense of loss... it was much more painful than the loneliness I had endured for thousands of years.",
+      "translation" : "[守护者 尼德霍格]\n面对世界时，我意识到...\n我感到巨大的失落...这比忍受数千年的孤独更痛苦。"
+    },
+    {
+      "kind" : "message",
+      "line" : 868,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nThat's how I was left alone.\nI felt too great a sense of loss... it was much more painful than the loneliness I had endured for thousands of years.",
+      "translation" : "[守护者 尼德霍格]\n就这样，我被独自留下了。\n我感到巨大的失落...这比忍受数千年的孤独更痛苦。"
+    },
+    {
+      "kind" : "message",
+      "line" : 872,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nSo I became a sinner, forgotten to the world.",
+      "translation" : "[守护者 尼德霍格]\n所以我成为了一个被世界遗忘的罪人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 875,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nIt's not too late.\nYou're still a guardian.\nYou still have things to do.",
+      "translation" : "[洛基]\n还不晚。\n你仍然是守护者。\n你仍有职责要履行。"
+    },
+    {
+      "kind" : "message",
+      "line" : 880,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\n...Oh, yes. It's late, but I have to fulfill my duties as a guardian.\nNow I know. I'll destroy Morocc with my own hands.\nI will fulfill my duties as a guardian.",
+      "translation" : "[守护者 尼德霍格]\n...噢，是的。虽然晚了，但我必须履行守护者的职责。\n我现在明白了。我会亲手消灭摩洛克。\n我将履行守护者的职责。"
+    },
+    {
+      "kind" : "option",
+      "line" : 885,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "You're not alone.",
+      "translation" : "你并不孤单。"
+    },
+    {
+      "kind" : "option",
+      "line" : 885,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "Those are very important duties.",
+      "translation" : "那是非常重要的职责。"
+    },
+    {
+      "kind" : "message",
+      "line" : 887,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nYou're right.\nIt may be why I haven't been forsaken - to realize that I'm not alone.\nYou are a kind soul.",
+      "translation" : "[守护者 尼德霍格]\n你说得对。\n也许这就是我没有被抛弃的原因——意识到我并不孤单。\n你有一颗善良的心。"
+    },
+    {
+      "kind" : "message",
+      "line" : 894,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nBut this is my atonement.\nI'm happy, though.\nI don't have to fight the loneliness any more.",
+      "translation" : "[守护者 尼德霍格]\n但这是我的赎罪。\n不过，我很幸福。\n我不必再与孤独斗争了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 901,
+      "npc" : "Sharp Eyed Man",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\n{0}...\nThanks for listening to my long story.",
+      "translation" : "[守护者 尼德霍格]\n{0}...\n谢谢你听我讲这些漫长的故事。"
+    },
+    {
+      "kind" : "message",
+      "line" : 905,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nIt's what I always have with me.\nI'm sure it will protect you someday.",
+      "translation" : "[守护者 尼德霍格]\n这是我一直随身携带的东西。\n我相信总有一天它会保护你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 909,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\n(Removes his scarf from around his neck and hands it to you.)",
+      "translation" : "[洛基]\n（从脖子上取下围巾递给你。）"
+    },
+    {
+      "kind" : "message",
+      "line" : 912,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Nydhogg the Guardian]\nMay the blessing of Mother Yggdrasil be with you...",
+      "translation" : "[守护者 尼德霍格]\n愿母亲 尤克特拉希尔的祝福与你同在..."
+    },
+    {
+      "kind" : "message",
+      "line" : 921,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nI'll be staying here for a while.\nWe may meet again.",
+      "translation" : "[洛基]\n我会在这里停留一段时间。\n我们也许还会再见面。"
+    },
+    {
+      "kind" : "message",
+      "line" : 925,
+      "npc" : "Sharp Eyed Man",
+      "state" : "needs_review",
+      "text" : "[Loki]\nThe day when Morocc reveals his despicable nature...\nI will be waiting for him.",
+      "translation" : "[洛基]\n当摩洛克暴露其卑鄙本性的那一天...\n我会在那里等着他。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1010,
+      "npc" : "Mysterious Flower",
+      "state" : "needs_review",
+      "text" : "It's a giant flower with mysterious energy.\nIt's reacting to the Mysterious Flower Seeds you have with you.",
+      "translation" : "这是一朵散发着神秘能量的巨大花朵。\n它正在对你随身携带的神奇的花种子产生反应。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1010,
+      "npc" : "Mysterious Flower",
+      "state" : "needs_review",
+      "text" : "It's a giant flower with mysterious energy.\nIt looks like it has some special use, but you're not sure what.",
+      "translation" : "这是一朵散发着神秘能量的巨大花朵。\n它看起来似乎有特殊用途，但你不确定是什么。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1014,
+      "npc" : "Mysterious Flower",
+      "state" : "needs_review",
+      "text" : "Observe the reaction.",
+      "translation" : "观察反应"
+    },
+    {
+      "kind" : "option",
+      "line" : 1014,
+      "npc" : "Mysterious Flower",
+      "state" : "needs_review",
+      "text" : "Stop the reaction.",
+      "translation" : "阻止反应"
+    },
+    {
+      "kind" : "message",
+      "line" : 1016,
+      "npc" : "Mysterious Flower",
+      "state" : "needs_review",
+      "text" : "The flower started to shake violently\nand swing forward as if trying to send the seeds as far away as possible!!!",
+      "translation" : "花朵开始剧烈摇晃，\n并向前摆动，似乎想尽可能把种子甩远！！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1023,
+      "npc" : "Mysterious Flower",
+      "state" : "needs_review",
+      "text" : "As you hold onto the Mysterious Flower Seeds tightly,\nthe flower shook violently and then became calm again.",
+      "translation" : "当你紧紧握住神奇的花种子时，\n花朵剧烈摇晃了一会儿，然后恢复了平静。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1028,
+      "npc" : "Mysterious Flower",
+      "state" : "needs_review",
+      "text" : "It looks like it has some special use, but you're not sure what.",
+      "translation" : "它看起来似乎有特殊用途，但你不确定是什么。"
+    }
+  ]
+}

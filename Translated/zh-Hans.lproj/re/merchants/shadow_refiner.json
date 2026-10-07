@@ -1,0 +1,172 @@
+{
+  "file" : "npc/re/merchants/shadow_refiner.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 15,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nNow Basta is in charge of refinement for shadow items.\nIf you'd like to refine a shadow item, please visit him.",
+      "translation" : "[影子铁匠]\n现在巴斯塔负责暗影装备的精炼。\n如果您想精炼暗影装备，请去找他。"
+    },
+    {
+      "kind" : "message",
+      "line" : 23,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nDo you want to refine a shadow item? Pick yer poison!",
+      "translation" : "[影子铁匠]\n你想精炼暗影装备吗？选个矿石吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nWhen a shadow item is refined, it gains extra bonuses very much like normal items.",
+      "translation" : "[影子铁匠]\n当暗影装备被精炼时，它会获得额外的加成，非常类似于普通装备。"
+    },
+    {
+      "kind" : "message",
+      "line" : 36,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nWeapon: ATK, MATK + 1 increase for each +1 refine success.\nEtc: HP + 10 increase for each +1 refine success.",
+      "translation" : "[影子铁匠]\n武器：每次精炼成功+1，攻击力和魔法攻击力各+1。\n其他：每次精炼成功+1，HP+10。"
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nAll types of Oridecon and Elunium can be used to refine shadow items. Each attempt will also cost 20,000 zeny.",
+      "translation" : "[影子铁匠]\n所有种类的神之金属和铝都可以用来精炼暗影装备。每次尝试还需要支付20,000 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nHD ores can be used for gear that is at least refine level +7 and will prevent breaking as long as you stay talking to me.",
+      "translation" : "[影子铁匠]\nHD矿石可用于精炼等级+7及以上的装备，只要您一直和我对话，就能防止装备损坏。"
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nThere's nothing here!",
+      "translation" : "[影子铁匠]\n这里什么都没有！"
+    },
+    {
+      "kind" : "message",
+      "line" : 60,
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\", .@zeny_cost)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nI require {0} zeny as a fee for EACH refine attempt.\nChoose your Ore and start refining.",
+      "translation" : "[影子铁匠]\n每次精炼尝试都需要收取{0} Zeny的费用。\n请选择矿石并开始精炼。"
+    },
+    {
+      "kind" : "option",
+      "line" : 83,
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 93,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nHD Ore can only used for +7 or higher refine level items.",
+      "translation" : "[影子铁匠]\nHD矿石只能用于精炼等级+7或更高的装备。"
+    },
+    {
+      "kind" : "message",
+      "line" : 101,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nYou've cancelled refining.",
+      "translation" : "[影子铁匠]\n您已取消精炼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "placeholders" : [
+        "getitemname(.@choose)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nYou do not have enough {0}.",
+      "translation" : "[影子铁匠]\n您的{0}不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nYou do not have enough zeny.",
+      "translation" : "[影子铁匠]\n您的Zeny不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nShadow Equipment can be refined to the maximum of 10...",
+      "translation" : "[影子铁匠]\n暗影装备最高可以精炼到+10..."
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nThis item cannot be refined.",
+      "translation" : "[影子铁匠]\n该物品无法精炼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 126,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nThe safety refine level for Shadow Equipment is +4.\nShadow equipment may be destroyed in subsequent refinements. Want to get started?",
+      "translation" : "[影子铁匠]\n暗影装备的安全精炼等级是+4。\n后续的精炼可能会导致装备损坏。要开始吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 126,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nThe safety refine level for Shadow Equipment is +4.\nThe next refinement, if it fails, will degrade the refinement. Do you want to refine?",
+      "translation" : "[影子铁匠]\n暗影装备的安全精炼等级是+4。\n下一次精炼如果失败，精炼等级将会降低。您确定要精炼吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 133,
+      "state" : "needs_review",
+      "text" : "Proceed",
+      "translation" : "继续"
+    },
+    {
+      "kind" : "option",
+      "line" : 133,
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nHeh, I knew it!",
+      "translation" : "[影子铁匠]\n嘿嘿，我就知道！"
+    },
+    {
+      "kind" : "message",
+      "line" : 139,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nWell then.. here goes nothing!",
+      "translation" : "[影子铁匠]\n那么...祝好运！"
+    },
+    {
+      "kind" : "message",
+      "line" : 151,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nIt worked! It worked!",
+      "translation" : "[影子铁匠]\n成功了！成功了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 159,
+      "state" : "needs_review",
+      "text" : "[Shadow Blacksmith]\nOh Odin No!",
+      "translation" : "[影子铁匠]\n奥丁啊！"
+    }
+  ]
+}

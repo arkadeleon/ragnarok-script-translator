@@ -1,0 +1,807 @@
+{
+  "file" : "npc/re/instances/TempleOfDemonGod.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 14,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nThis place is too dangerous for you to explore alone.\nPlease form a party and come with your comrades.",
+      "translation" : "[尼德霍格]\n这个地方对你来说太危险了，不适合独自探索。\n请组建队伍，和你的同志们一起来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 21,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nOnly party leaders can control access to the Temple of the Demon God.\nIt's to ensure the safety of the entire Expedition. Please let your leader talk to me instead.",
+      "translation" : "[尼德霍格]\n只有队伍的首领才能控制进入恶魔神殿的权限。\n这是为了确保整个远征队的安全。请让你的首领来和我对话。"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nI'm sorry, but you can't enter this place without approval from the Commander.\nYou must be on the quest to subjugate the Demon God to enter this place.",
+      "translation" : "[尼德霍格]\n很抱歉，没有指挥官的批准，你不能进入这个地方。\n你必须拥有“讨伐恶魔神”的任务才能进入此地。"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nPlease go to Commander Hiva Agip and receive the Demon God Subjugation quest.",
+      "translation" : "[尼德霍格]\n请去找指挥官希瓦·阿吉普，接受“讨伐恶魔神”的任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nI've been waiting for you, hero-in-waiting. \nLet me guide you to the depth of the temple where Morroc lies in wait.",
+      "translation" : "[尼德霍格]\n我一直在等你，未来的英雄。\n让我指引你前往神殿深处，那里有梦罗克在等待。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nThis tree is the spitting image of Yggdrasil.\nI just hope Morroc is not intent on what I fear most.\nThrough this tree the door is opened.",
+      "translation" : "[尼德霍格]\n这棵树简直就是世界树尤克特拉希尔的翻版。\n我只希望梦罗克没有像我最害怕的那样行事。\n透过这棵树，门就会打开。"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nI can sense that\nthis tree is generating mana at certain intervals as if it's breathing.\nI'm going to catch a moment between its breaths to open up a path for you. Are you ready?",
+      "translation" : "[尼德霍格]\n我能感觉到，\n这棵树正以某种间隔产生魔力，就像在呼吸一样。\n我会在它呼吸的间隙抓住时机，为你打开一条道路。你准备好了吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 55,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "Enter now.",
+      "translation" : "现在进入"
+    },
+    {
+      "kind" : "option",
+      "line" : 55,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "Do not enter.",
+      "translation" : "不要进入"
+    },
+    {
+      "kind" : "message",
+      "line" : 56,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nOkay.\nI understand if you need time.\nTake your time. I can wait as long as you want me to.",
+      "translation" : "[尼德霍格]\n好的。\n如果你需要时间，我理解。\n慢慢来，我可以等你，多久都行。"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Guardian Nidhogg",
+      "placeholders" : [
+        "getpartyname(.@party_id)",
+        "strcharinfo(0)",
+        ".@md_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "Party Name: {0}\nParty Leader: {1}\n^0000ff{2} ^000000 - Reservation Failed.",
+      "translation" : "队伍名称：{0}\n队伍首领：{1}\n^0000ff{2} ^000000 - 预约失败。"
+    },
+    {
+      "kind" : "message",
+      "line" : 71,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nJust wait a while, and the entrance will open.\nEnter through the tree.\nDon't be scared, even though it's not an ordinary tree.",
+      "translation" : "[尼德霍格]\n请稍等片刻，入口就会打开。\n穿过这棵树进入。\n别害怕，虽然它不是一棵普通的树。"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nYou have eliminated the God of Despair!?\nI can only say that his ambition was too big...\nAlways talk about creating a new world and becoming a god...",
+      "translation" : "[尼德霍格]\n你消灭了绝望之神！？\n我只能说他的野心太大了...\n总是谈论创造新世界和成为神..."
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nBut seriously, he didn't create anything at all!\nAbandon the body that used to be a demon, and the appearance after rebirth is just imitating the god...",
+      "translation" : "[尼德霍格]\n但说真的，他什么也没创造出来！\n抛弃了曾经作为恶魔的身体，重生后的样子只是在模仿神..."
+    },
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nThe result is just what a human looks like,\nHe can't escape the so-called god frame,\n...you can only say that you are eating bad luck!",
+      "translation" : "[尼德霍格]\n结果看起来就像个普通人，\n他无法摆脱所谓的“神”的外壳，\n...只能说他是自讨苦吃！"
+    },
+    {
+      "kind" : "message",
+      "line" : 95,
+      "npc" : "Guardian Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nI will give you approval for the quest, and you can report to the commander.\nThank you!",
+      "translation" : "[尼德霍格]\n我会批准你的任务，你可以去见指挥官了。\n谢谢！"
+    },
+    {
+      "kind" : "message",
+      "line" : 113,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nI'm sorry, but you can't enter this place without approval from the Commander.\nYou must be on the quest to subjugate the Demon God to enter this place.",
+      "translation" : "[尼德霍格]\n很抱歉，没有指挥官的批准，你不能进入这个地方。\n你必须拥有“讨伐恶魔神”的任务才能进入此地。"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nPlease go to Commander Hiva Agip and receive the 'Demon God Subjugation' quest.",
+      "translation" : "[尼德霍格]\n请去找指挥官希瓦·阿吉普，接受“讨伐恶魔神”的任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 123,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "You touched the tree and felt a strange flow of mana.\nPerhaps the flow of mana will guide you to the depth of the temple.",
+      "translation" : "你触摸了那棵树，感觉到一股奇异的魔力流动。\n也许这股魔力流动会指引你前往神殿深处。"
+    },
+    {
+      "kind" : "option",
+      "line" : 126,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "Enter.",
+      "translation" : "进入"
+    },
+    {
+      "kind" : "option",
+      "line" : 126,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "Quit.",
+      "translation" : "退出。"
+    },
+    {
+      "kind" : "message",
+      "line" : 127,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nOkay.\nI understand if you need time.\nTake your time. I can wait as long as you want me to.",
+      "translation" : "[尼德霍格]\n好的。\n如果你需要时间，我理解。\n慢慢来，我可以等你，多久都行。"
+    },
+    {
+      "kind" : "message",
+      "line" : 136,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nThis place is too dangerous for you to explore alone.\nPlease form a party and come with your comrades.",
+      "translation" : "[尼德霍格]\n这个地方对你来说太危险了，不适合独自探索。\n请组建队伍，和你的同志们一起来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 142,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nNo entry permission has been issued under the name of your party.\nPlease let your party leader submit an entry request, and I'll open the gate to the temple.",
+      "translation" : "[尼德霍格]\n你的队伍名下没有发出进入许可。\n请让你的队伍首领提交进入申请，我会打开通往神殿的大门。"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nYou are to comply with the rules set by the Expedition.\nIt's for everyone's safety.",
+      "translation" : "[尼德霍格]\n你必须遵守远征队制定的规则。\n这是为了大家的安全。"
+    },
+    {
+      "kind" : "message",
+      "line" : 152,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nUm...how could this happen... the flow of magic power becomes unstable,\nIt hurts my brain, this is the gap I finally made...\nmay not be able to enter at the moment...",
+      "translation" : "[尼德霍格]\n嗯...怎么会这样...魔力流动变得不稳定，\n我的脑子好痛，这是我终于造成的缺口...\n可能暂时无法进入..."
+    },
+    {
+      "kind" : "message",
+      "line" : 164,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nYou have eliminated the God of Despair!?\nI can only say that his ambition was too big...\nAlways talk about creating a new world and becoming a god...",
+      "translation" : "[尼德霍格]\n你消灭了绝望之神！？\n我只能说他的野心太大了...\n总是谈论创造新世界和成为神..."
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nBut seriously, he didn't create anything at all!\nAbandon the body that used to be a demon, and the appearance after rebirth is just imitating the god...",
+      "translation" : "[尼德霍格]\n但说真的，他什么也没创造出来！\n抛弃了曾经作为恶魔的身体，重生后的样子只是在模仿神..."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nThe result is just what a human looks like,\nHe can't escape the so-called god frame,\n...you can only say that you are eating bad luck!",
+      "translation" : "[尼德霍格]\n结果看起来就像个普通人，\n他无法摆脱所谓的“神”的外壳，\n...只能说他是自讨苦吃！"
+    },
+    {
+      "kind" : "message",
+      "line" : 182,
+      "npc" : "Yggdrasil Lookalike",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nI will give you approval for the quest, and you can report to the commander.\nThank you!",
+      "translation" : "[尼德霍格]\n我会批准你的任务，你可以去见指挥官了。\n谢谢！"
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Demon God's Apostle Aha",
+      "state" : "needs_review",
+      "text" : "[Ahat]\nWelcome\nto the Temple of the Demon God.\nIt's my honor to be your host today.",
+      "translation" : "[阿哈特]\n欢迎来到\n恶魔神殿。\n很荣幸今天能接待你们。"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Demon God's Apostle Aha",
+      "state" : "needs_review",
+      "text" : "[Ahat]\nSo, you've come.\nGosh, you're so persistent.\nHah hah, are you surprised to see me here?",
+      "translation" : "[阿哈特]\n所以，你来了。\n天哪，你真是执着。\n哈哈，看到我在这里感到惊讶吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 296,
+      "npc" : "Demon God's Apostle Aha",
+      "state" : "needs_review",
+      "text" : "[Ahat]\nDidn't you expect this at all?\nWhy don't I introduce myself officially?\nI'm Ahat, the first servant of the Demon God.",
+      "translation" : "[阿哈特]\n你完全没料到吧？\n那就让我正式介绍一下自己吧。\n我是阿哈特，恶魔之神的头号仆从。"
+    },
+    {
+      "kind" : "message",
+      "line" : 302,
+      "npc" : "Demon God's Apostle Aha",
+      "state" : "needs_review",
+      "text" : "[Ahat]\nWell, well, maybe I forfeit my life today.\nDon't look at me like that. Everything is as planned.",
+      "translation" : "[阿哈特]\n哎呀，看来我今天要交代在这里了。\n别用那种眼神看我，一切都在计划之中。"
+    },
+    {
+      "kind" : "message",
+      "line" : 307,
+      "npc" : "Demon God's Apostle Aha",
+      "state" : "needs_review",
+      "text" : "[Ahat]\nMy master wishes for Shnaim and I to put you to the test.\nTo see if you deserve to be our guests.",
+      "translation" : "[阿哈特]\n我的主人希望我和施奈姆来考验一下你们。\n看看你们是否配得上成为我们的客人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 312,
+      "npc" : "Demon God's Apostle Aha",
+      "state" : "needs_review",
+      "text" : "[Ahat]\nIf you think you've come this far on your own,\nyou're mistaken.",
+      "translation" : "[阿哈特]\n如果你以为能靠自己的力量走到这一步，\n那你就大错特错了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Demon God's Apostle Aha",
+      "state" : "needs_review",
+      "text" : "[Ahat]\nEverything is as the Master has planned.\nFor now, let's see if you can open this door.",
+      "translation" : "[阿哈特]\n一切都在师父的计划之中。\n现在，让我们看看你能不能打开这扇门。"
+    },
+    {
+      "kind" : "message",
+      "line" : 388,
+      "npc" : "Empty Soul Globe",
+      "state" : "needs_review",
+      "text" : "Only party leaders can perform this event.",
+      "translation" : "只有队伍首领才能执行此活动。"
+    },
+    {
+      "kind" : "message",
+      "line" : 392,
+      "npc" : "Empty Soul Globe",
+      "state" : "needs_review",
+      "text" : "If you want to activate the soul globes, you need Shnaim's soul.",
+      "translation" : "若要激活灵魂球，需要施奈姆的灵魂。"
+    },
+    {
+      "kind" : "message",
+      "line" : 395,
+      "npc" : "Empty Soul Globe",
+      "placeholders" : [
+        ".@visible_npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "Inject {0}'s soul into the empty soul globe.",
+      "translation" : "将{0}的灵魂注入空的灵魂球。"
+    },
+    {
+      "kind" : "message",
+      "line" : 407,
+      "npc" : "Empty Soul Globe",
+      "placeholders" : [
+        ".@visible_npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "Successfully activated {0}'s soul globe.",
+      "translation" : "成功激活了{0}的灵魂球。"
+    },
+    {
+      "kind" : "message",
+      "line" : 438,
+      "npc" : "Strange Boy",
+      "state" : "needs_review",
+      "text" : "[Boy]\nYou insignificant creature.\nHow dare you lay a hand on a god-in-waiting?!",
+      "translation" : "[男孩]\n你这卑微的生物。\n竟敢对即将成神者动手？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 444,
+      "npc" : "Strange Boy",
+      "state" : "needs_review",
+      "text" : "[Boy]\nFirst, let me applaud you for coming this far.\nYou've been a good pawn.",
+      "translation" : "[男孩]\n首先，我要为你们能走到这一步鼓掌。\n你们是很好的棋子。"
+    },
+    {
+      "kind" : "option",
+      "line" : 448,
+      "npc" : "Strange Boy",
+      "state" : "needs_review",
+      "text" : "What are you talking about?",
+      "translation" : "你在说什么？"
+    },
+    {
+      "kind" : "message",
+      "line" : 450,
+      "npc" : "Strange Boy",
+      "state" : "needs_review",
+      "text" : "[Boy]\nI've been waiting for this day.\nTo get out of that corner of the demon world and rule the entire universe.",
+      "translation" : "[男孩]\n我等待这一天已经很久了。\n为了走出恶魔世界的一角，统治整个宇宙。"
+    },
+    {
+      "kind" : "message",
+      "line" : 456,
+      "npc" : "Strange Boy",
+      "state" : "needs_review",
+      "text" : "[Boy]\nTo achieve that, I realized I must abandon my old body.\nSo I died--well, I let you kill me.",
+      "translation" : "[男孩]\n为了达成目标，我意识到必须抛弃旧的身体。\n所以我死了——好吧，是你们杀了我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 462,
+      "npc" : "Strange Boy",
+      "state" : "needs_review",
+      "text" : "[Boy]\nDeath is an inevitable step to take before rebirth.\nSo I'm reborn--again, you brought me back.",
+      "translation" : "[男孩]\n死亡是重生前必经的一步。\n所以我重生了——又是你们把我带回来的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 468,
+      "npc" : "Strange Boy",
+      "state" : "needs_review",
+      "text" : "[Boy]\nAll this has been arranged so that I could be reborn as God.",
+      "translation" : "[男孩]\n这一切都是为了让我重生为神而安排的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 473,
+      "npc" : "Strange Boy",
+      "state" : "needs_review",
+      "text" : "[Morroc]\nThat's right, you foolish humans!\nI died once, so that I could circle around the world and embrace it in my arms.\nI've been reborn to engulf this world.",
+      "translation" : "[梦罗克]\n没错，愚蠢的人类！\n我死过一次，是为了环游世界并拥抱它。\n我重生是为了吞噬这个世界。"
+    },
+    {
+      "kind" : "message",
+      "line" : 480,
+      "npc" : "Strange Boy",
+      "state" : "needs_review",
+      "text" : "[Morroc]\nI'll create a new world and become its Creator.\nLet me ask you, the first creatures that have stepped into my newborn land.",
+      "translation" : "[梦罗克]\n我将创造一个新世界，并成为它的创造者。\n让我问问你们，这些踏入我新生土地的第一个生物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 486,
+      "npc" : "Strange Boy",
+      "state" : "needs_review",
+      "text" : "[Morroc]\nHow'd you like to follow me and watch the birth of a new world?",
+      "translation" : "[梦罗克]\n你们愿意跟随我，见证新世界的诞生吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 557,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "[Loki]\nYou're helpless.\nAnd disgusting.",
+      "translation" : "[洛基]\n你无能为力。\n而且令人作呕。"
+    },
+    {
+      "kind" : "message",
+      "line" : 567,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nYou're with a mercenary.\nCould you dismiss your current mercenary and hire me instead?",
+      "translation" : "[尼德霍格]\n你正在雇佣一名佣兵。\n能否解雇当前的佣兵，改雇我？"
+    },
+    {
+      "kind" : "message",
+      "line" : 577,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nI already assisted you once.\nPlease be careful!",
+      "translation" : "[尼德霍格]\n我已经帮过你一次了。\n请小心！"
+    },
+    {
+      "kind" : "message",
+      "line" : 586,
+      "npc" : "Nidhogg",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\n{0},\nallow me to aid you in this battle.",
+      "translation" : "[尼德霍格]\n{0}，\n请允许我在这场战斗中助你一臂之力。"
+    },
+    {
+      "kind" : "message",
+      "line" : 592,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nMy duty as the guardian isn't over yet.",
+      "translation" : "[尼德霍格]\n我作为守护者的职责尚未结束。"
+    },
+    {
+      "kind" : "message",
+      "line" : 597,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "^4d4dffGuardian Nidhogg has joined your party.^000000",
+      "translation" : "^4d4dff守护者尼德霍格加入了你的队伍。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 955,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nThat was a tough battle.\nThis may not be good enough, but I hope it'll help your growth.",
+      "translation" : "[尼德霍格]\n这是一场艰苦的战斗。\n虽然这可能还不够，但我希望它能助你的成长。"
+    },
+    {
+      "kind" : "message",
+      "line" : 959,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "^4d4dffGuardian Nidhogg has rewarded you with a large amount of EXP for defeating Brinaranea.^000000",
+      "translation" : "^4d4dff守护者尼德霍格因你击败了巴利纳拉雷亚，奖励了你大量经验值。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 965,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nCan this dreadful place compete with the Frost of the Genesis?\nI can't say.\nHe's created nothing on his own. How did he convince himself to think that he could be a creator?",
+      "translation" : "[尼德霍格]\n这可怕的地方能与创世的寒霜相提并论吗？\n我无法断言。\n他从未独自创造过任何东西。他是如何说服自己，认为自己能成为创造者的？"
+    },
+    {
+      "kind" : "message",
+      "line" : 976,
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nThat was a tough battle.\nThis may not be good enough, but I hope it'll help your growth.",
+      "translation" : "[尼德霍格]\n这是一场艰苦的战斗。\n虽然这可能还不够，但我希望它能助你的成长。"
+    },
+    {
+      "kind" : "message",
+      "line" : 980,
+      "state" : "needs_review",
+      "text" : "^4d4dffGuardian Nidhogg has rewarded you with a large amount of EXP for defeating Brinaranea.^000000",
+      "translation" : "^4d4dff守护者尼德霍格因你击败了巴利纳拉雷亚，奖励了你大量经验值。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 995,
+      "npc" : "Morroc",
+      "state" : "needs_review",
+      "text" : "[Morroc]\nYou're good.\nCan you take on the wolf that swallowed the sun?",
+      "translation" : "[梦罗克]\n你很强。\n你能对付吞下太阳的那只狼吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1000,
+      "npc" : "Morroc",
+      "state" : "needs_review",
+      "text" : "[Morroc]\nIf you can't handle him, then you can't handle a god now, can you?",
+      "translation" : "[梦罗克]\n如果你连他都对付不了，那你现在也对付不了神，对吧？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1004,
+      "npc" : "Morroc",
+      "state" : "needs_review",
+      "text" : "[Morroc]\nI'll watch you. Mwa hah hah!",
+      "translation" : "[梦罗克]\n我会看着你的。哇哈哈！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1404,
+      "npc" : "Flowing Lava",
+      "state" : "needs_review",
+      "text" : "It can be used to block the flow of lava using a Frost Crystal.",
+      "translation" : "可以使用万年冰霜来阻挡熔岩的流动。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1406,
+      "npc" : "Flowing Lava",
+      "state" : "needs_review",
+      "text" : "Use a Frost Crystal",
+      "translation" : "使用万年冰霜"
+    },
+    {
+      "kind" : "option",
+      "line" : 1406,
+      "npc" : "Flowing Lava",
+      "state" : "needs_review",
+      "text" : "Do not use a Frost Crystal",
+      "translation" : "不使用万年冰霜"
+    },
+    {
+      "kind" : "message",
+      "line" : 1431,
+      "npc" : "Flowing Lava",
+      "state" : "needs_review",
+      "text" : "It can be used to block the flow of lava using a Frost Crystal.",
+      "translation" : "可以使用万年冰霜来阻挡熔岩的流动。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1433,
+      "npc" : "Flowing Lava",
+      "state" : "needs_review",
+      "text" : "Use a Frost Crystal",
+      "translation" : "使用万年冰霜"
+    },
+    {
+      "kind" : "option",
+      "line" : 1433,
+      "npc" : "Flowing Lava",
+      "state" : "needs_review",
+      "text" : "Do not use a Frost Crystal",
+      "translation" : "不使用万年冰霜"
+    },
+    {
+      "kind" : "message",
+      "line" : 1512,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nGood job, again.\nThis may not be good enough, but I hope it'll help your growth.",
+      "translation" : "[尼德霍格]\n干得好，再次。\n虽然这可能还不够，但我希望它能助你的成长。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1516,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "^4d4dffGuardian Nidhogg has rewarded you with a large amount of EXP for defeating Muspellskoll.^000000",
+      "translation" : "^4d4dff守护者尼德霍格因你击败了穆希贝斯寇，奖励了你大量经验值。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1522,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nSkoll... Skoll and Haati...\nEverything in here is a mere copy of that in the outside world.\nHe's not a creator.",
+      "translation" : "[尼德霍格]\n斯库尔...斯库尔和哈提...\n这里的一切不过是外界事物的拙劣复制品。\n他不是创造者。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1533,
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nGood job, again.\nThis may not be good enough, but I hope it'll help your growth.",
+      "translation" : "[尼德霍格]\n干得好，再次。\n虽然这可能还不够，但我希望它能助你的成长。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1537,
+      "state" : "needs_review",
+      "text" : "^4d4dffGuardian Nidhogg has rewarded you with a large amount of EXP for defeating Muspellskoll.^000000",
+      "translation" : "^4d4dff守护者尼德霍格因你击败了穆希贝斯寇，奖励了你大量经验值。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 2189,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nI don't know what to say.\nWe stopped the god-in-waiting.\nWe accomplished our goal.\nBut I'm still unnerved.",
+      "translation" : "[尼德霍格]\n我不知该说什么。\n我们阻止了那位准神。\n我们达成了目标。\n但我依然感到不安。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2196,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nThis world is created in the mind of Morroc's.\nHe'll live forever in this garden he couldn't finish.",
+      "translation" : "[尼德霍格]\n这个世界诞生于梦罗克的脑海中。\n他将永远生活在他未能完成的这座花园里。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2201,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nHe probably doesn't know his body is destroyed forever.\nHe was far too ambitious, even for him.\nHe wanted to create a new world and become its creator,",
+      "translation" : "[尼德霍格]\n他大概不知道自己的身体已永远毁灭。\n对他而言，这也太过野心勃勃了。\n他想创造一个新世界并成为其创造者，"
+    },
+    {
+      "kind" : "message",
+      "line" : 2206,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nbut he couldn't create anything on his own.\nHe abandoned his Demon body, just to become a mere facsimile of an existing god.",
+      "translation" : "[尼德霍格]\n但他无法独自创造任何东西。\n他抛弃了自己的恶魔之躯，只为成为现有神明的拙劣仿制品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2211,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nHe took the shape of a man.\nHe wasn't creative enough to reinvent the concept of God.\nHe was a paradox.",
+      "translation" : "[尼德霍格]\n他化作了人形。\n他缺乏足够的创造力去重新定义“神”的概念。\n他本身就是一个悖论。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2216,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nNow we need to get out of this trap in time and end; to reality.\nThis world only exists in the Demon God's mind. The same day repeats forever.",
+      "translation" : "[尼德霍格]\n现在我们需要及时逃离这个陷阱，回到现实。\n这个世界只存在于魔神的心中。同一天会永远重复。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2220,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nEveryone who enters this world will be dragged into the same loop.\nIn that sense, he succeeded in making his own world.",
+      "translation" : "[尼德霍格]\n每一个进入这个世界的人都会被卷入同样的循环。\n从这个意义上说，他成功创造了自己的世界。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2225,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nToday's despair will repeat day after day.\nEven though we know this, we'll come back to walk the same path again. I hope I'll be able to fight by you every time...",
+      "translation" : "[尼德霍格]\n今日的绝望将日复一日地重演。\n尽管我们知晓这一切，我们仍会回来，再次踏上同样的道路。我希望每次都能与你并肩作战..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2231,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nI've talked too much. The Commander must be waiting. Let me validate your feat, so you can report to him.\nYou did great today.",
+      "translation" : "[尼德霍格]\n我话太多了。指挥官一定在等着。让我确认你的功绩，以便你向他汇报。\n你今天表现得非常出色。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2250,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\n...It feels like things are not over yet,\nThis is very close to Morroc's spiritual world,\nHe should be here to keep thinking about the past!",
+      "translation" : "[尼德霍格]\n...感觉事情还没有结束。\n这里非常接近梦罗克的精神世界，\n他应该在这里，继续沉溺于对过去的思考！"
+    },
+    {
+      "kind" : "option",
+      "line" : 2257,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "Exit.",
+      "translation" : "离开"
+    },
+    {
+      "kind" : "message",
+      "line" : 2258,
+      "npc" : "Nidhogg",
+      "state" : "needs_review",
+      "text" : "[Nidhogg]\nOf course. You must be exhausted.\nLet me send you to the other members of your Expedition, free of charge.",
+      "translation" : "[尼德霍格]\n当然。你一定很疲惫了。\n让我免费送你回到你的远征队成员那里。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2267,
+      "npc" : "Little Helper",
+      "state" : "needs_review",
+      "text" : "What?",
+      "translation" : "什么？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2270,
+      "npc" : "Little Helper",
+      "state" : "needs_review",
+      "text" : "Wrong.",
+      "translation" : "错了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2273,
+      "npc" : "Little Helper",
+      "state" : "needs_review",
+      "text" : "What Boss?",
+      "translation" : "哪个Boss？"
+    },
+    {
+      "kind" : "option",
+      "line" : 2275,
+      "npc" : "Little Helper",
+      "state" : "needs_review",
+      "text" : "Brinaranea",
+      "translation" : "巴利纳拉雷亚"
+    },
+    {
+      "kind" : "option",
+      "line" : 2275,
+      "npc" : "Little Helper",
+      "state" : "needs_review",
+      "text" : "Muspellskoll",
+      "translation" : "穆希贝斯寇"
+    },
+    {
+      "kind" : "option",
+      "line" : 2275,
+      "npc" : "Little Helper",
+      "state" : "needs_review",
+      "text" : "Demigod",
+      "translation" : "重生的半魔神"
+    },
+    {
+      "kind" : "option",
+      "line" : 2275,
+      "npc" : "Little Helper",
+      "state" : "needs_review",
+      "text" : "Despair God",
+      "translation" : "绝望之神"
+    },
+    {
+      "kind" : "message",
+      "line" : 2277,
+      "npc" : "Little Helper",
+      "state" : "needs_review",
+      "text" : "Brinaranea health was set to 2.000.000.",
+      "translation" : "巴利纳拉雷亚的生命值已设为2,000,000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2281,
+      "npc" : "Little Helper",
+      "state" : "needs_review",
+      "text" : "Muspellskoll health was set to 2.000.000.",
+      "translation" : "穆希贝斯寇的生命值已设为2,000,000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2286,
+      "npc" : "Little Helper",
+      "state" : "needs_review",
+      "text" : "Demigod health was set to 2.000.000.",
+      "translation" : "重生的半魔神的生命值已设为2,000,000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2291,
+      "npc" : "Little Helper",
+      "state" : "needs_review",
+      "text" : "Despair God health was set to 2.000.000.",
+      "translation" : "绝望之神的生命值已设为2,000,000。"
+    }
+  ]
+}

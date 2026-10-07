@@ -1,0 +1,785 @@
+{
+  "file" : "npc/re/instances/HeartHunterWarBase.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 13,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "[Striker Unit Commander]\nHey, who's there?",
+      "translation" : "[突击队指挥官]\n嘿，你是谁？"
+    },
+    {
+      "kind" : "option",
+      "line" : 16,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "I am executing my mission with the Rebellion unit.",
+      "translation" : "我正在执行反叛者部队的任务"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "[Striker Unit Commander]\nThis place is dangerous and you must leave quickly. We are near the enemy base.",
+      "translation" : "[突击队指挥官]\n这里很危险，你必须立刻离开。我们离敌方基地很近。"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "[Striker Unit Commander]\nWe are arranging the situation inside the base. We cannot let you in yet.",
+      "translation" : "[突击队指挥官]\n我们正在部署基地内部的情况。目前还不能让你进去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "^0000ffSeems like the base has been arranged inside. ^000000\n[Striker Unit Commander]\nOnce we are ready for the operation, you will get in there with me.",
+      "translation" : "^0000ff基地内部似乎已经部署完毕。^000000\n[突击队指挥官]\n等行动准备就绪后，我会带你进去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "[Striker Unit Commander]\nOnce we are ready for the operation, you will get in there with me.",
+      "translation" : "[突击队指挥官]\n等行动准备就绪后，我会带你进去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 38,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "[Striker Unit Commander]\nBy the way, did you receive a briefing from the general Julian? Come back after receiving the briefing.",
+      "translation" : "[突击队指挥官]\n顺便问一下，你从朱利安将军那里接受简报了吗？接受完简报后再回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "[Striker Unit Commander]\nOnce we are ready for the operation, you will get in there with me.",
+      "translation" : "[突击队指挥官]\n等行动准备就绪后，我会带你进去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "^0000ffSeems like an adventurer without his/her unit (party) cannot enter.^000000",
+      "translation" : "^0000ff似乎没有所属队伍的冒险者无法进入。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 54,
+      "npc" : "Striker Unit Commander",
+      "placeholders" : [
+        ".@md_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Striker Unit Commander]\nThe field of operation is {0} Check whether the operation was applied properly.",
+      "translation" : "[突击队指挥官]\n行动区域是{0}。请确认行动是否已正确应用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "^ff0000Goint to the outer boundary of Heart Hunter War Base without clearing the Heart Hunter War Base is prohibited. Also, you cannot enter the Heart Hunter War Base that has already been cleared. Please check your operation point^000000",
+      "translation" : "^ff0000在未清除心之猎手战争基地的情况下，禁止前往心之猎手战争基地的外围边界。此外，已清除的心之猎手战争基地也无法进入。请检查您的行动点数^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 59,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "^ff0000This is when your progress is different from your party leader of the party member. In this case, find another party member who can go to the same place with you.^000000",
+      "translation" : "^ff0000如果您的进度与队伍队长或队员不一致，则无法进入。在这种情况下，请寻找与您进度相同的其他队员。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "^ff0000The entry is also impossible if the Memorial Dungeon has not been created as an operation field.^000000",
+      "translation" : "^ff0000如果记忆地下城尚未创建为行动区域，也无法进入。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Striker Unit Commander",
+      "state" : "needs_review",
+      "text" : "An unknown error has occurred.",
+      "translation" : "发生未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 79,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "^ff0000If you deal with monsters arbitrarily inside a dungeon, such as Monster taming, it will not be regarded as a normal progress. Please be aware of it.^000000",
+      "translation" : "^ff0000如果在地下城内部随意处理魔物，例如进行魔物驯服，将不被视为正常进度。请注意这一点。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 81,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nStop, which unit are you from? According to your answer, we may have to suppress you using an armed force.",
+      "translation" : "[朱利安]\n站住，你属于哪个部队？根据你的回答，我们可能需要动用武力制服你。"
+    },
+    {
+      "kind" : "option",
+      "line" : 84,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "I am executing my mission with the Rebellion unit.",
+      "translation" : "我正在执行反叛者部队的任务"
+    },
+    {
+      "kind" : "message",
+      "line" : 85,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nHmm, you are our troop? Since the scouting is not over yet, don't wander around here carelessly.",
+      "translation" : "[朱利安]\n嗯，你是我们的人？侦察工作还没结束，不要在这里随意走动。"
+    },
+    {
+      "kind" : "message",
+      "line" : 89,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "^ff0000If you deal with monsters arbitrarily inside a dungeon, such as Monster taming, it will not be regarded as a normal progress. Please be aware of it.^000000",
+      "translation" : "^ff0000如果在地下城内部随意处理魔物，例如进行魔物驯服，将不被视为正常进度。请注意这一点。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nAre you a deserter wandering around without a position?",
+      "translation" : "[朱利安]\n你是没有职位、四处游荡的逃兵吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 95,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "^ff0000Only the party leader can talk to Julian in detail.^000000",
+      "translation" : "^ff0000只有队伍队长才能与朱利安详细交谈。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 103,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nWe are arranging the situation inside the base. You cannot enter yet.",
+      "translation" : "[朱利安]\n我们正在部署基地内部的情况。目前还不能让你进去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 107,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "^0000ffSeems like the base has been arranged inside. ^000000",
+      "translation" : "^0000ff基地内部似乎已经部署完毕。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nAre you the augmentation force in striking Heart Hunter base? I think we met before.",
+      "translation" : "[朱利安]\n你是进攻心之猎手基地的增援部队吗？我想我们以前见过。"
+    },
+    {
+      "kind" : "option",
+      "line" : 117,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "Just a thought.",
+      "translation" : "只是随口一说。"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nWell, it doesn't matter. You should have a rough idea of what's going on here. Just remember that it's not going to be an easy task.",
+      "translation" : "[朱利安]\n没关系。你应该对这里的情况有个大概的了解。记住，这不会是一个简单的任务。"
+    },
+    {
+      "kind" : "option",
+      "line" : 121,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "Explain the situation to me.",
+      "translation" : "向我解释一下情况。"
+    },
+    {
+      "kind" : "option",
+      "line" : 121,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "No time, let's proceed now.",
+      "translation" : "没时间了，现在出发。"
+    },
+    {
+      "kind" : "message",
+      "line" : 122,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nSounds cool. You are like a foreign legion, so stay beside me during the operation.",
+      "translation" : "[朱利安]\n听起来不错。你就像外籍军团一样，行动期间请待在我身边。"
+    },
+    {
+      "kind" : "message",
+      "line" : 126,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nHmm, you haven't received a briefing yet? Since we don't have enough time, let me explain briefly.",
+      "translation" : "[朱利安]\n嗯，你还没收到简报吗？既然时间紧迫，我就简单说明一下。"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nWe don't have enough forces to strike the base.",
+      "translation" : "[朱利安]\n我们没有足够的兵力来强攻基地。"
+    },
+    {
+      "kind" : "message",
+      "line" : 132,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nFor the sake of mobility, we abandoned heavy firearms. Since our top priority mission is to occupy the base without destroying it much, most of explosive weapons have been excluded as well.",
+      "translation" : "[朱利安]\n为了保持机动性，我们放弃了重型火器。由于首要任务是占领基地且尽量减少破坏，大部分爆炸性武器也被排除在外。"
+    },
+    {
+      "kind" : "message",
+      "line" : 135,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nIf necessary, we can reinforce our firearms using the terrain features in the field... But it must be minimized.",
+      "translation" : "[朱利安]\n如有必要，我们可以利用现场的地形特征来加强火力...但必须将这种情况降到最低。"
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nIn any case, most of the operation must be anti-personnel damage and the base facilities have to be maintained whenever possible.",
+      "translation" : "[朱利安]\n总之，行动的大部分必须针对人员造成杀伤，并尽可能保持基地设施的完好。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nOur advance party has secured the boundary surface in the southern base. We will take that route to move to the central part. And each striker unit will move in an individual route.",
+      "translation" : "[朱利安]\n我们的先遣队已控制了基地南部的边界区域。我们将通过该路线前往中心区域。各突击队将沿各自独立的路线行动。"
+    },
+    {
+      "kind" : "message",
+      "line" : 144,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nYou are like a foreign legion, so stay beside me during the operation. Any more question? Of course, I won't take any, even though you have one.",
+      "translation" : "[朱利安]\n你就像外籍军团一样，行动期间请待在我身边。还有别的问题吗？当然，即使你有问题，我也不会回答的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 149,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nAfter that, follow the instruction of the chief of your unit. Once the gate to the base is opened, talk to the Striker Unit Commander over there and start.",
+      "translation" : "[朱利安]\n之后，请听从你所在部队首领的指示。一旦基地大门打开，与那边的突击队指挥官交谈并准备开始。"
+    },
+    {
+      "kind" : "message",
+      "line" : 153,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nIf you are ready, I will let you know the attack time.",
+      "translation" : "[朱利安]\n如果你准备好了，我会告诉你攻击时间。"
+    },
+    {
+      "kind" : "option",
+      "line" : 156,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "I'm ready.",
+      "translation" : "我准备好了"
+    },
+    {
+      "kind" : "option",
+      "line" : 156,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "I need some more time.",
+      "translation" : "我还需要一点时间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 157,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nI see. Since we are in a hurry, complete your preparation quickly and let me know.",
+      "translation" : "[朱利安]\n明白了。既然我们很赶时间，请尽快完成准备并通知我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 166,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nAfter that, follow the instruction of the chief of your unit. Once the gate to the base is opened, talk to the Striker Unit Commander over there and start.",
+      "translation" : "[朱利安]\n之后，请听从你所在部队首领的指示。一旦基地大门打开，与那边的突击队指挥官交谈并准备开始。"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nHave you been to the toilet? I was looking for you.",
+      "translation" : "[朱利安]\n你去上厕所了吗？我在找你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 173,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nIf you are ready, I will let you know the attack time.",
+      "translation" : "[朱利安]\n如果你准备好了，我会告诉你攻击时间。"
+    },
+    {
+      "kind" : "option",
+      "line" : 176,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "I'm ready.",
+      "translation" : "我准备好了"
+    },
+    {
+      "kind" : "option",
+      "line" : 176,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "I need some more time.",
+      "translation" : "我还需要一点时间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 177,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nI see. Since we are in a hurry, complete your preparation quickly and let me know.",
+      "translation" : "[朱利安]\n明白了。既然我们很赶时间，请尽快完成准备并通知我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 184,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nAfter that, follow the instruction of the chief of your unit. Once the gate to the base is opened, talk to the Striker Unit Commander over there and start.",
+      "translation" : "[朱利安]\n之后，请听从你所在部队首领的指示。一旦基地大门打开，与那边的突击队指挥官交谈并准备开始。"
+    },
+    {
+      "kind" : "message",
+      "line" : 188,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nThere is a broad vacant land on the outer boundary of the base we have occupied. We built a training ground there, but the facilities are imperfect. I need elite personnel who can examine it.",
+      "translation" : "[朱利安]\n在我们占领的基地外围边界有一片空旷地。我们在那里建了一个训练场，但设施尚不完善。我需要精英人员去检查。"
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nOh, isn't this the first time I tell you this? I would be glad if you can examine the facilities. What do you think?",
+      "translation" : "[朱利安]\n哦，这是我第一次告诉你这件事吗？如果你能检查设施，我会很高兴。你觉得怎么样？"
+    },
+    {
+      "kind" : "option",
+      "line" : 194,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "Let me do it.",
+      "translation" : "让我去做。"
+    },
+    {
+      "kind" : "option",
+      "line" : 194,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "Maybe next time...",
+      "translation" : "下次再说吧..."
+    },
+    {
+      "kind" : "message",
+      "line" : 195,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nI got it. I asked a little too much.",
+      "translation" : "[朱利安]\n明白了。是我问得有点多了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 205,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nIt will open soon. Once the gate to the base is opened, talk to the Striker Unit Commander over there and start.",
+      "translation" : "[朱利安]\n马上就要开始了。一旦基地大门打开，就去和那边的突击队指挥官交谈，然后开始行动。"
+    },
+    {
+      "kind" : "message",
+      "line" : 545,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nWe don't have time to joke",
+      "translation" : "[朱利安]\n我们没有时间开玩笑了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 646,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nWe can just sneak in like this. But we'd better secure a path for the cleanup party. How can we do that?",
+      "translation" : "[朱利安]\n我们可以就这样潜入。但我们最好为清理部队开辟一条通道。该怎么做呢？"
+    },
+    {
+      "kind" : "message",
+      "line" : 652,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nWhy are they all coming out all of a sudden. Just hand me the gunpowder",
+      "translation" : "[朱利安]\n它们怎么突然全都出来了。把火药给我。"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "Give him the gunpowder",
+      "translation" : "把火药给他"
+    },
+    {
+      "kind" : "message",
+      "line" : 765,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nIt takes some time in assembling the explosive. You go up and check if there is any threat.",
+      "translation" : "[朱利安]\n组装炸药需要一些时间。你上去检查一下是否有威胁。"
+    },
+    {
+      "kind" : "message",
+      "line" : 768,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nIf you find an enemy, don't forget to kill it without reporting me.",
+      "translation" : "[朱利安]\n如果你发现敌人，别忘了杀掉它们，不要向我汇报。"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Suspicious instrument",
+      "state" : "needs_review",
+      "text" : "There is a warning written in red color.\n-----------------------\n[^ff0000Do not push^000000]",
+      "translation" : "上面用红色写着警告。\n-----------------------\n[^ff0000请勿按下^000000]"
+    },
+    {
+      "kind" : "option",
+      "line" : 811,
+      "npc" : "Suspicious instrument",
+      "state" : "needs_review",
+      "text" : "Stop it.",
+      "translation" : "停下"
+    },
+    {
+      "kind" : "option",
+      "line" : 811,
+      "npc" : "Suspicious instrument",
+      "state" : "needs_review",
+      "text" : "Push the button",
+      "translation" : "按下按钮"
+    },
+    {
+      "kind" : "message",
+      "line" : 812,
+      "npc" : "Suspicious instrument",
+      "state" : "needs_review",
+      "text" : "I never push a suspicious button.",
+      "translation" : "我从不按下可疑的按钮。"
+    },
+    {
+      "kind" : "message",
+      "line" : 922,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nIs the gunpowder ready?",
+      "translation" : "[朱利安]\n火药准备好了吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 926,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nIs the gunpowder ready?",
+      "translation" : "[朱利安]\n火药准备好了吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 929,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "Give him the gunpowder",
+      "translation" : "把火药给他"
+    },
+    {
+      "kind" : "message",
+      "line" : 1112,
+      "npc" : "Ebel",
+      "state" : "needs_review",
+      "text" : "[Ebel]\nYou... Enemy? Our troop? Which side are you on?",
+      "translation" : "[埃贝尔]\n你...是敌人？还是我们的部队？你到底是哪边的？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1176,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nHmm. The engineers need to repair the occupied base. It's time for battle force step outside.",
+      "translation" : "[朱利安]\n嗯。工程师需要修复被占领的基地。是时候让战斗部队出击了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1251,
+      "npc" : "Julian",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Julian]\nI'm talking to your leader now {0}.",
+      "translation" : "[朱利安]\n我正在和你的首领说话，{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1255,
+      "npc" : "Julian",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Julian]\n{0}, is this your first visit here?",
+      "translation" : "[朱利安]\n{0}，这是你第一次来这里吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1258,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "Yes, it is.",
+      "translation" : "是的，确实如此。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1258,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "No, I've been here before.",
+      "translation" : "不，我以前来过。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1381,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nYou safely passed Section 1. Now help us with the defense training for Section 2.",
+      "translation" : "[朱利安]\n你安全通过了第一区。现在请协助我们进行第二区的防御训练。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1458,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nThis security system here controls plenty of system devices over there.",
+      "translation" : "[朱利安]\n这里的安保系统控制着那边大量的系统设备。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1461,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nIf you activate the device, they will open a narrow passage you can barely go through.",
+      "translation" : "[朱利安]\n如果你启动该装置，就会打开一条狭窄的通道，你几乎无法通过。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1464,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nUnless you activate the device, the defensive training does not start. Activate it when you are ready.",
+      "translation" : "[朱利安]\n除非你启动该装置，否则防御训练不会开始。准备好后再启动它。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1493,
+      "npc" : "SWT_8309",
+      "state" : "needs_review",
+      "text" : "You can see an unusually attractive\nred button.\n---------------------\n^ff0000[Do not push]^000000",
+      "translation" : "你可以看到一个异常引人注目的红色按钮。\n---------------------\n^ff0000[请勿按下]^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1498,
+      "npc" : "SWT_8309",
+      "state" : "needs_review",
+      "text" : "Ignore it",
+      "translation" : "无视"
+    },
+    {
+      "kind" : "option",
+      "line" : 1498,
+      "npc" : "SWT_8309",
+      "state" : "needs_review",
+      "text" : "Push it",
+      "translation" : "按下它"
+    },
+    {
+      "kind" : "message",
+      "line" : 1499,
+      "npc" : "SWT_8309",
+      "state" : "needs_review",
+      "text" : "You ignored the button and stepped back. Nothing happened.",
+      "translation" : "你无视了那个按钮，退后了一步。什么也没发生。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1565,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nWe have something as the last resort, in case we fail to defend the base. It's time to test it now.",
+      "translation" : "[朱利安]\n如果基地防御失败，我们还有一个最后的底牌。现在该测试它了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1568,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nEnter the door in front of you.",
+      "translation" : "[朱利安]\n进入你面前的门。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1583,
+      "npc" : "Ebel",
+      "state" : "needs_review",
+      "text" : "[Ebel]\nAre you my companion? Or an enemy? Which side are you on?",
+      "translation" : "[埃贝尔]\n你是我的同伴？还是敌人？你站在哪一边？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1593,
+      "npc" : "Julian",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Julian]\nWait for a while {0} we will proceed once your unit leader comes.",
+      "translation" : "[朱利安]\n稍等一下，{0}，等你的队长来了我们再继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1597,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nIt took me more than a week until I was able to talk to her. Now she speaks well.",
+      "translation" : "[朱利安]\n我花了一个多星期才让她愿意跟我说话。现在她说话很流利了。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1600,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "Are you close enough to call her by the first name?",
+      "translation" : "你们关系够好吗？可以直呼她的名字？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1600,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "I know. Let's start right now.",
+      "translation" : "我知道。我们现在就开始吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1601,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nNo, don't look at me like that. This girl would never talk to other guys. So I became in charge of her.",
+      "translation" : "[朱利安]\n不，别那样看我。这个女孩从来不会跟其他男生说话。所以我负责照顾她。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1604,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\n... It's real.",
+      "translation" : "[朱利安]\n...是真的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1611,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nHmm. Great. Let's start right away.",
+      "translation" : "[朱利安]\n嗯。很好。我们马上开始。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1722,
+      "npc" : "Ebel",
+      "state" : "needs_review",
+      "text" : "[Ebel]\nWhere did you learn the technique you have used a moment ago?",
+      "translation" : "[埃贝尔]\n你刚才用的那招是在哪里学的？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1727,
+      "npc" : "Ebel",
+      "state" : "needs_review",
+      "text" : "[Ebel]\n...",
+      "translation" : "[埃贝尔]\n..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1732,
+      "npc" : "Ebel",
+      "state" : "needs_review",
+      "text" : "[Ebel]\nWhere did you learn the technique you have used a moment ago?",
+      "translation" : "[埃贝尔]\n你刚才用的那招是在哪里学的？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1737,
+      "npc" : "Ebel",
+      "state" : "needs_review",
+      "text" : "[Ebel]\nYou... You're stronger than me. I have never experienced this before...",
+      "translation" : "[埃贝尔]\n你...你比我强。我以前从未经历过这种感觉..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1744,
+      "npc" : "Julian",
+      "state" : "needs_review",
+      "text" : "[Julian]\nHmm. Good job. Let us leave the training ground. The gateway is upstairs. Go up the stairs behind me.",
+      "translation" : "[朱利安]\n嗯。干得好。我们离开训练场吧。传送门在楼上。跟我走上楼梯。"
+    }
+  ]
+}

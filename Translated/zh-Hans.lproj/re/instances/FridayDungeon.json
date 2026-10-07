@@ -1,0 +1,611 @@
+{
+  "file" : "npc/re/instances/FridayDungeon.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 13,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nYour base level is too low, come back when you hit level 130.",
+      "translation" : "[玛丽·杰伊]\n您的基础等级太低了，请达到130级后再来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "^ff0000If you do any monster processing, such as monster taming within the dungeon, it won't count towards your progress. Please take note.^000000",
+      "translation" : "^ff0000如果您在地下城内进行魔物处理，例如驯服魔物，将不计入进度。请注意这一点。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 21,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nOh, a curious onlooker? I'm Marry Jay, the person in charge of Fridays among the days of the week.",
+      "translation" : "[玛丽·杰伊]\n哦，是一位好奇的旁观者吗？我是玛丽·杰伊，负责一周中星期五事务的人。"
+    },
+    {
+      "kind" : "option",
+      "line" : 24,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "When is the opening time?",
+      "translation" : "开放时间是什么时候？"
+    },
+    {
+      "kind" : "message",
+      "line" : 25,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nThe dungeon will be open during:\n^0000FFFriday 00:00 ~ Friday 23:59^000000",
+      "translation" : "[玛丽·杰伊]\n地下城将在以下时间开放：\n^0000FFFriday 00:00 ~ Friday 23:59^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nI hope to see you when Friday arrives~",
+      "translation" : "[玛丽·杰伊]\n期待星期五到来时与您相见~"
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "npc" : "Marry Jay",
+      "placeholders" : [
+        ".@md_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nSorry, but the entry period to the {0} has expired.\nTake a rest while waiting for the dungeon to be available again.",
+      "translation" : "[玛丽·杰伊]\n很抱歉，{0}的进入时间已过期。\n请休息片刻，等待地下城再次开放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nThe cooldown has expired.\nYou may re-enter the Memorial Dungeon.",
+      "translation" : "[玛丽·杰伊]\n紧急冷却已结束。\n您可以重新进入记忆地下城。"
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nYou came just in time.\nThe memorial dungeon is just ready to be opened.\nWould you like to enter now?",
+      "translation" : "[玛丽·杰伊]\n您来得正是时候。\n记忆地下城即将开放。\n您现在要进入吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 60,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "Enter Friday Memorial",
+      "translation" : "进入周五副本"
+    },
+    {
+      "kind" : "option",
+      "line" : 60,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nThe Memorial Dungeon has been created.\nYou may now enter.",
+      "translation" : "[玛丽·杰伊]\n记忆地下城已创建。\n您现在可以进入了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 72,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "Only party members can enter this Memorial dungeon.",
+      "translation" : "只有队伍成员才能进入这个记忆地下城。"
+    },
+    {
+      "kind" : "message",
+      "line" : 76,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "There is no Memorial Dungeon registered.",
+      "translation" : "没有注册的记忆地下城。"
+    },
+    {
+      "kind" : "message",
+      "line" : 79,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "The Friday Memorial Dungeon does not exist.\nYour party leader has not yet created the Memorial dungeon.",
+      "translation" : "周五副本不存在。\n您的队伍首领尚未创建记忆地下城。"
+    },
+    {
+      "kind" : "message",
+      "line" : 83,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "An unknown error occurred.",
+      "translation" : "发生了一个未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 86,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nOff you go!",
+      "translation" : "[玛丽·杰伊]\n去吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 95,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nYou have not prepared?\nCan't really help it I guess",
+      "translation" : "[玛丽·杰伊]\n您还没准备好吗？\n那我也没办法了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nBefore we start setting up the environment here, we'll give you the chance to choose an appropriate difficulty level.\nI could make my own choice, but each person handles it differently based on their abilities.",
+      "translation" : "[玛丽·杰伊]\n在开始布置这里的环境之前，我会给您选择合适难度的机会。\n虽然我可以替您做决定，但每个人根据自己的能力处理方式不同。"
+    },
+    {
+      "kind" : "option",
+      "line" : 113,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 113,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "LV130 ~ 199",
+      "translation" : "LV130 ~ 199"
+    },
+    {
+      "kind" : "option",
+      "line" : 113,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "LV200 + ",
+      "translation" : "LV200 +"
+    },
+    {
+      "kind" : "message",
+      "line" : 123,
+      "npc" : "Marry Jay",
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nYou can't choose this difficulty, because your base level is below 200.",
+      "translation" : "[玛丽·杰伊]\n由于您的基础等级低于200级，无法选择此难度。"
+    },
+    {
+      "kind" : "message",
+      "line" : 132,
+      "npc" : "Marry Jay",
+      "placeholders" : [
+        "'mob[0]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Marry Jay]\nYour base level is too low to select this, you need to be level {0} or above.",
+      "translation" : "[玛丽·杰伊]\n您的基础等级太低，无法选择此项，需要达到{0}级或以上。"
+    },
+    {
+      "kind" : "message",
+      "line" : 351,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "You have too many kinds of objects. Clear your inventory.",
+      "translation" : "您拥有的物品种类太多。请清理您的背包。"
+    },
+    {
+      "kind" : "message",
+      "line" : 355,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "Can't continue because you have too many heavy objects. Reduce your total weight by clearing your inventory.",
+      "translation" : "由于您携带的重型物品过多，无法继续。请清理背包以减轻总重量。"
+    },
+    {
+      "kind" : "message",
+      "line" : 358,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(25235, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nIf you bring me a {0}, I can enchant a wonderful effect on your accessory!",
+      "translation" : "[业余收藏家]\n如果您给我{0}，我就能为您的饰品附魔出奇妙的效果！"
+    },
+    {
+      "kind" : "option",
+      "line" : 361,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "What can you do with the Crafting Stone?",
+      "translation" : "你能用制作石做什么？"
+    },
+    {
+      "kind" : "option",
+      "line" : 361,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "Accessory Enchantment",
+      "translation" : "饰品附魔"
+    },
+    {
+      "kind" : "option",
+      "line" : 361,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "Reset Enchant",
+      "translation" : "重置附魔"
+    },
+    {
+      "kind" : "message",
+      "line" : 363,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nI trade expensive stones from the dungeon in exchange for my craftsmanship. I'm still a beginner, but my skills are passable.\nPlease take care of me.",
+      "translation" : "[业余收藏家]\n我用地下城里的昂贵宝石交换我的手艺。我虽然还是个新手，但技术还算过得去。\n请多关照。"
+    },
+    {
+      "kind" : "option",
+      "line" : 367,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "I've heard this before.",
+      "translation" : "我听过这些了。"
+    },
+    {
+      "kind" : "option",
+      "line" : 367,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "I'm listening.",
+      "translation" : "我在听。"
+    },
+    {
+      "kind" : "message",
+      "line" : 368,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nIs that so?",
+      "translation" : "[业余收藏家]\n是吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 372,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nBy using the Craft Stone, I can enchant one of your accessories with abilities.",
+      "translation" : "[业余收藏家]\n通过使用制作石，我可以为您的一个饰品附魔能力。"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(25235, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nI need 10 x {0} and 100,000 Zeny.\nThere is no failure in the enchantment process.",
+      "translation" : "[业余收藏家]\n我需要10个{0}和100,000 Zeny。\n附魔过程不会失败。"
+    },
+    {
+      "kind" : "message",
+      "line" : 379,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nHowever ^0000FFif the accessory has a random option, the random option will be removed after enchantment.^000000",
+      "translation" : "[业余收藏家]\n不过^0000FF如果饰品有随机选项，附魔后随机选项将会被移除。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 382,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "Anything else?",
+      "translation" : "还有其他吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 383,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nCards slotted to the accessory will remain after the enchantement.",
+      "translation" : "[业余收藏家]\n镶嵌在饰品上的卡片在附魔后会保留。"
+    },
+    {
+      "kind" : "message",
+      "line" : 386,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nA reset is possible, but I can't say that I'm experienced.\nMy success rate is:\nRoyal Ring: 80%\nOther Accessory: 20%",
+      "translation" : "[业余收藏家]\n可以重置，但我不能说我很有经验。\n我的成功率是：\n皇家戒指：80%\n其他饰品：20%"
+    },
+    {
+      "kind" : "message",
+      "line" : 392,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\n^0000FFIf the accessory has a random option, the random option will be removed after initialization.^000000",
+      "translation" : "[业余收藏家]\n^0000FF如果饰品有随机选项，初始化后随机选项将会被移除。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 412,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nPlease equip your accessory.",
+      "translation" : "[业余收藏家]\n请装备您的饰品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 539,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        ".@type_name$",
+        "mesitemlink(.@equip_id, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nI cannot {0} this {1} accessory.",
+      "translation" : "[业余收藏家]\n我无法{0}这个{1}饰品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 548,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nThe {0} already has maximum enchantment.\nI cannot work on this any further.",
+      "translation" : "[业余收藏家]\n{0}已经达到了最大附魔等级。\n我无法再进行任何操作了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 554,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nPlease select an enchantment type~",
+      "translation" : "[业余收藏家]\n请选择附魔类型~"
+    },
+    {
+      "kind" : "option",
+      "line" : 557,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "Physical",
+      "translation" : "物理"
+    },
+    {
+      "kind" : "option",
+      "line" : 557,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "Magical",
+      "translation" : "魔法"
+    },
+    {
+      "kind" : "option",
+      "line" : 557,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "Ranged",
+      "translation" : "远程"
+    },
+    {
+      "kind" : "message",
+      "line" : 578,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nAre you sure to enhance the {0}?\n^0000FFThere is a no chance of failure^000000.",
+      "translation" : "[业余收藏家]\n确定要附魔{0}吗？\n^0000FF没有失败的可能性^000000。"
+    },
+    {
+      "kind" : "option",
+      "line" : 582,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "Yes, please proceed",
+      "translation" : "是的，请继续"
+    },
+    {
+      "kind" : "option",
+      "line" : 582,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 586,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(25235, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nPlease bring me 10 x {0}.",
+      "translation" : "[业余收藏家]\n请给我10个{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 591,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nI need 100,000 zeny!",
+      "translation" : "[业余收藏家]\n我需要100,000 Zeny！"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nThe {0} has been enchanted!!",
+      "translation" : "[业余收藏家]\n{0}已经附魔完成！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 611,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nThe {0} already has an enchant.\nI cannot work on this any further.",
+      "translation" : "[业余收藏家]\n{0}已经附魔过了。\n我无法再进行任何操作了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 616,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nAre you sure you want to enhance the {0}?\n^0000FFThere is a no chance of failure^000000.",
+      "translation" : "[业余收藏家]\n确定要附魔{0}吗？\n^0000FF没有失败的可能性^000000。"
+    },
+    {
+      "kind" : "option",
+      "line" : 620,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "Yes, please proceed",
+      "translation" : "是的，请继续"
+    },
+    {
+      "kind" : "option",
+      "line" : 620,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 623,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(25235, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nPlease bring me 10 x {0}.",
+      "translation" : "[业余收藏家]\n请给我10个{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 628,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nI need 100,000 zeny!",
+      "translation" : "[业余收藏家]\n我需要100,000 Zeny！"
+    },
+    {
+      "kind" : "message",
+      "line" : 642,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)",
+        "mesitemlink(.@enchant, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nThe {0} has been enchanted with {1}.",
+      "translation" : "[业余收藏家]\n{0}已经附魔了{1}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 658,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nThe {0} is not at its maximum enchantment.\nI cannot reset this accessory.",
+      "translation" : "[业余收藏家]\n{0}尚未达到最大附魔等级。\n我无法重置这个饰品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 663,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)",
+        ".@success"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nAll enchanted effects will be removed from the {0}?\n^FF0000There is a {1}% chance of success. The accessory will be destroyed if the reset fails!^000000",
+      "translation" : "[业余收藏家]\n确定要移除{0}上的所有附魔效果吗？\n^FF0000成功率为{1}%。如果重置失败，饰品将会被销毁！^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 667,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "I'll be back later",
+      "translation" : "我稍后再来"
+    },
+    {
+      "kind" : "option",
+      "line" : 667,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "Please proceed",
+      "translation" : "请继续"
+    },
+    {
+      "kind" : "message",
+      "line" : 670,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(25235, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nPlease bring me 10 x {0}",
+      "translation" : "[业余收藏家]\n请给我10个{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 675,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nI need 100,000 zeny!",
+      "translation" : "[业余收藏家]\n我需要100,000 Zeny！"
+    },
+    {
+      "kind" : "message",
+      "line" : 689,
+      "npc" : "Amateur Collector",
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nDarn it...\nI have failed and the accessory has been destroyed. I'm so sorry.",
+      "translation" : "[业余收藏家]\n该死...\n我失败了，饰品被销毁了。非常抱歉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 695,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Amateur Collector]\nI have succeeded.\nThe {0} has been initialized.",
+      "translation" : "[业余收藏家]\n我成功了。\n{0}已经初始化。"
+    }
+  ]
+}

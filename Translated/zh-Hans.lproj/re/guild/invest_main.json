@@ -1,0 +1,1926 @@
+{
+  "file" : "npc/re/guild/invest_main.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "There are 2 ways to invest, by Zeny or the Investment Certificate given out by the Cat Paw Merchant Guild.\nWhich way would you like to make your investment?",
+      "translation" : "投资有两种方式，使用Zeny或猫爪商人公会发行的投资证书。\n您想用哪种方式进行投资？"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "Invest with Zeny.",
+      "translation" : "使用Zeny投资"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "Invest with Investment Certificates.",
+      "translation" : "使用投资证书投资"
+    },
+    {
+      "kind" : "option",
+      "line" : 120,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 122,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nSo you've decided to invest in Zeny.\nMinimum investment unit is ^4d4dff10,000 Zeny^000000.\nYou can invest a maximum of 50 units which is ^4d4dff500,000 Zeny^000000.",
+      "translation" : "{0}\n您决定使用Zeny进行投资。\n最低投资单位为^4d4dff10,000 Zeny^000000。\n最高投资单位为50份，即^4d4dff500,000 Zeny^000000。"
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "1 unit 10,000 Zeny",
+      "translation" : "1份 10,000 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "10 units 100,000 Zeny",
+      "translation" : "10份 100,000 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "50 units 500,000 Zeny",
+      "translation" : "50份 500,000 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "Another amount",
+      "translation" : "其他金额"
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nPlease enter the amount you want to invest.\nPlease choose between 1 to 200.\nPlease enter 0 to cancel.",
+      "translation" : "{0}\n请输入您想要投资的金额。\n请输入1到200之间的数字。\n输入0取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 145,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nYou've exceeded the amount per investment.\nPlease try again.",
+      "translation" : "{0}\n您超过了单次投资的上限。\n请重试。"
+    },
+    {
+      "kind" : "message",
+      "line" : 150,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nCanceled.",
+      "translation" : "{0}\n已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nCanceled.",
+      "translation" : "{0}\n已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nYou do not have enough money.",
+      "translation" : "{0}\n您的Zeny不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 166,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$",
+        "callfunc(\"F_InsertPlural\",.@units,\"unit\")",
+        "callfunc(\"F_InsertComma\",.@zeny)",
+        "getarg(2,\"\")"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nYou've invested {1} {2} Zeny{3}.\nNot much but this is a small gift. You can exchange it with items in Malangdo.",
+      "translation" : "{0}\n您投资了{1} {2} Zeny{3}。\n虽然不多，但这是一份小礼物。您可以在马拉甘多兑换物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 174,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWow, you've brought Investment Certificates.\nHow many certificates will you submit?",
+      "translation" : "{0}\n哇，您带来了投资证书。\n您要提交多少张证书？"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "1 Investment Certificate",
+      "translation" : "1张投资证书"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "5 Investment Certificates",
+      "translation" : "5张投资证书"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "Another amount",
+      "translation" : "其他金额"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "F_Invest_Abyss",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nPlease enter the number of Investment Certificates you want to submit.\nPlease choose between 1 to 20.\nPlease enter 0 to cancel.",
+      "translation" : "{0}\n请输入您想要提交的投资证书数量。\n请输入1到20之间的数字。\n输入0取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 193,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nYou've exceeded the amount per investment.\nPlease try again.",
+      "translation" : "{0}\n您超过了单次投资的上限。\n请重试。"
+    },
+    {
+      "kind" : "message",
+      "line" : 198,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nCanceled.",
+      "translation" : "{0}\n已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 204,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nCanceled.",
+      "translation" : "{0}\n已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 209,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nLooks like you have fewer Investment Certificates than you want to submit.",
+      "translation" : "{0}\n您的投资证书数量少于您想要提交的数量。"
+    },
+    {
+      "kind" : "message",
+      "line" : 214,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@tickets",
+        "((.@tickets == 1)?\" is\":\"s are\")",
+        ".@units",
+        "((.@units < 100)?.@units:insertchar(\"\"+.@units,\",\",1))",
+        "getarg(2,\"\")"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\n{1} Investment Certificate{2} the same as an investment of {3} units ({4}0,000z){5}.\nNot much but this is a small gift. You can exchange it with items in Malangdo.",
+      "translation" : "{0}\n{1}张投资证书{2}相当于{3}份投资（{4}0,000z）{5}。\n虽然不多，但这是一份小礼物。您可以在马拉甘多兑换物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 222,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nCanceled.",
+      "translation" : "{0}\n已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 394,
+      "npc" : "Investment_total",
+      "state" : "needs_review",
+      "text" : "Is this not working properly?",
+      "translation" : "这没有正常工作吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 397,
+      "npc" : "Investment_total",
+      "state" : "needs_review",
+      "text" : "If you think the investment timer is dead, please adjust the timer.",
+      "translation" : "如果您认为投资计时器已失效，请调整计时器。"
+    },
+    {
+      "kind" : "option",
+      "line" : 399,
+      "npc" : "Investment_total",
+      "state" : "needs_review",
+      "text" : "Turn on the timer",
+      "translation" : "开启计时器"
+    },
+    {
+      "kind" : "option",
+      "line" : 399,
+      "npc" : "Investment_total",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 402,
+      "npc" : "Investment_total",
+      "state" : "needs_review",
+      "text" : "You've turned on the timer.",
+      "translation" : "您已开启计时器。"
+    },
+    {
+      "kind" : "message",
+      "line" : 405,
+      "npc" : "Investment_total",
+      "state" : "needs_review",
+      "text" : "Canceled.",
+      "translation" : "已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 409,
+      "npc" : "Investment_total",
+      "state" : "needs_review",
+      "text" : "I don't need to adjust anything now.",
+      "translation" : "我现在不需要调整任何东西。"
+    },
+    {
+      "kind" : "message",
+      "line" : 469,
+      "npc" : "Revoting Manager",
+      "state" : "needs_review",
+      "text" : "[Revoting Manager]\nWe are not accepting additional votes.\nPlease wait for our results announcement.",
+      "translation" : "[重投票管理员]\n我们不再接受额外的投票。\n请等待结果公告。"
+    },
+    {
+      "kind" : "message",
+      "line" : 561,
+      "npc" : "Revoting Manager",
+      "state" : "needs_review",
+      "text" : "[Revoting Manager]\nNo! This is not the time to take a revote.",
+      "translation" : "[重投票管理员]\n不！现在不是进行重投票的时候。"
+    },
+    {
+      "kind" : "message",
+      "line" : 569,
+      "npc" : "Revoting Manager",
+      "state" : "needs_review",
+      "text" : "[Revoting Manager]\nYou've already participated in the vote.\nPlease relax and wait for the results.",
+      "translation" : "[重投票管理员]\n您已经参与过投票了。\n请放松，等待结果。"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Revoting Manager",
+      "state" : "needs_review",
+      "text" : "[Revoting Manager]\nWould you like to participate in the vote for choosing where to connect the 'Abyss Gate'?",
+      "translation" : "[重投票管理员]\n您是否想参与投票，以决定“深渊之门”连接至何处？"
+    },
+    {
+      "kind" : "option",
+      "line" : 578,
+      "npc" : "Revoting Manager",
+      "state" : "needs_review",
+      "text" : "Participate in the vote.",
+      "translation" : "参与投票"
+    },
+    {
+      "kind" : "option",
+      "line" : 578,
+      "npc" : "Revoting Manager",
+      "state" : "needs_review",
+      "text" : "Skip for now.",
+      "translation" : "暂时跳过"
+    },
+    {
+      "kind" : "message",
+      "line" : 579,
+      "npc" : "Revoting Manager",
+      "state" : "needs_review",
+      "text" : "[Revoting Manager]\nYou've canceled the vote.",
+      "translation" : "[重投票管理员]\n您已取消投票。"
+    },
+    {
+      "kind" : "message",
+      "line" : 583,
+      "npc" : "Revoting Manager",
+      "state" : "needs_review",
+      "text" : "[Revoting Manager]\nYou can vote once and won't need to invest for your choice.\nPlesae choose one WOE area.",
+      "translation" : "[重投票管理员]\n您可以投票一次，且无需为您的选择进行投资。\n请选择一个WOE区域。"
+    },
+    {
+      "kind" : "message",
+      "line" : 602,
+      "npc" : "Revoting Manager",
+      "placeholders" : [
+        ".@menu$[.@vote]"
+      ],
+      "state" : "needs_review",
+      "text" : "[Revoting Manager]\nYou've voted for {0}.\nThanks for voting.",
+      "translation" : "[重投票管理员]\n您已投票给{0}。\n感谢您的投票。"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$",
+        ".@name$",
+        ".@intro$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI'm {1}, the {2} of the Cat Paw Merchant Guild.\nI consult about investments for the Abyss Gate development.\nHow may I help you?",
+      "translation" : "{0}\n我是{1}，猫爪商人公会的{2}。\n我负责咨询深渊之门开发的投资事宜。\n有什么可以帮您的吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 729,
+      "npc" : "Cat Paw Merchant Guild",
+      "state" : "needs_review",
+      "text" : "What is the Abyss Gate?",
+      "translation" : "什么是深渊之门？"
+    },
+    {
+      "kind" : "option",
+      "line" : 729,
+      "npc" : "Cat Paw Merchant Guild",
+      "state" : "needs_review",
+      "text" : "Investing in the gate development?",
+      "translation" : "投资大门开发？"
+    },
+    {
+      "kind" : "option",
+      "line" : 729,
+      "npc" : "Cat Paw Merchant Guild",
+      "state" : "needs_review",
+      "text" : "I want to invest in this area.",
+      "translation" : "我想投资这个区域。"
+    },
+    {
+      "kind" : "option",
+      "line" : 729,
+      "npc" : "Cat Paw Merchant Guild",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIt is only called the Abyss Gate for convenience but it's simply a ^4d4dffgap to another dimension^000000.",
+      "translation" : "{0}\n它只是被称为“深渊之门”以便称呼，实际上它只是一个^4d4dff通往另一个维度的裂缝^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nMore of these gaps are found here and there after Morocc created the Crack of Dimension.\nI personally think that the Abyss Gate found recently is part of the past or even from the future.",
+      "translation" : "{0}\n在莫洛克创造了“维度裂缝”之后，这里那里都发现了更多的此类裂缝。\n我个人认为最近发现的深渊之门来自过去，甚至可能来自未来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 738,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIt is said that the Abyss Gate forcefully connects to another dimension beyond our world.\nProbably because there are those that follow the Emperium's power.",
+      "translation" : "{0}\n据说深渊之门会强行连接到我们世界之外的另一个维度。\n可能是因为那里有追随华丽金属力量的人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 742,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThere are a total of 4 Abyss Gates found so far. They all connect to the Agit region overflowing with the Emperium's force.",
+      "translation" : "{0}\n迄今为止共发现了4座深渊之门。它们全都连接着充满华丽金属力量的阿吉特地区。"
+    },
+    {
+      "kind" : "message",
+      "line" : 745,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWe named each by dimension beyond the gap.\n^4d4dffWay of the Warrior, Hill of the Dead, Winds of the Ancient, and the Hero's Tears.^000000\nAnd all these four gaps are called the ^4d4dffAbyss Gate^000000.",
+      "translation" : "{0}\n我们根据裂缝另一侧的维度为它们命名。\n^4d4dff战士之路、亡者之丘、远古之风，以及英雄之泪。^000000\n这四道裂缝统称为^4d4dff深渊之门^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 750,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThe gap may lead to the past, future or even an unknown world.\nThe power the Abyss Gate holds is both fearful but sweet",
+      "translation" : "{0}\n裂缝可能通往过去、未来，甚至是未知的世界。\n深渊之门所蕴含的力量既令人恐惧，又充满诱惑。"
+    },
+    {
+      "kind" : "message",
+      "line" : 754,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nAre you also interested in exploring the Abyss Gate?\nHa ha. You'll need to go through several steps before exploring.",
+      "translation" : "{0}\n您也对探索深渊之门感兴趣吗？\n哈哈。在开始探索之前，您需要先完成几个步骤。"
+    },
+    {
+      "kind" : "message",
+      "line" : 758,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIf you are interested,\nwill you take the time to sit down and talk about investing in maintaining the Abyss Gate?",
+      "translation" : "{0}\n如果您感兴趣，\n能否坐下来谈谈关于投资维护深渊之门的事宜？"
+    },
+    {
+      "kind" : "message",
+      "line" : 763,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nAre you curious about investing in the Gate development?\nWhat do you want to know about?",
+      "translation" : "{0}\n您对投资大门开发感到好奇吗？\n您想了解哪方面的内容？"
+    },
+    {
+      "kind" : "option",
+      "line" : 767,
+      "npc" : "Cat Paw Merchant Guild",
+      "state" : "needs_review",
+      "text" : "About the Gate?",
+      "translation" : "关于大门？"
+    },
+    {
+      "kind" : "option",
+      "line" : 767,
+      "npc" : "Cat Paw Merchant Guild",
+      "state" : "needs_review",
+      "text" : "About investments?",
+      "translation" : "关于投资？"
+    },
+    {
+      "kind" : "option",
+      "line" : 767,
+      "npc" : "Cat Paw Merchant Guild",
+      "state" : "needs_review",
+      "text" : "How to invest?",
+      "translation" : "如何投资？"
+    },
+    {
+      "kind" : "option",
+      "line" : 767,
+      "npc" : "Cat Paw Merchant Guild",
+      "state" : "needs_review",
+      "text" : "Benefits from investing?",
+      "translation" : "投资的收益？"
+    },
+    {
+      "kind" : "message",
+      "line" : 769,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThe Gate is what it is named after, a door.\nA dimensional passageway that connects here to there.",
+      "translation" : "{0}\n大门顾名思义，就是一扇门。\n一条连接此岸与彼岸的维度通道。"
+    },
+    {
+      "kind" : "message",
+      "line" : 773,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThe Abyss Gate was created as a very unstable path from beyond the dimensional gap,\ntherefore traveling through the Gate will need an artificial dimension connection.",
+      "translation" : "{0}\n深渊之门是从维度裂缝的另一侧开辟出的极不稳定的路径，\n因此穿越大门需要人工建立维度连接。"
+    },
+    {
+      "kind" : "message",
+      "line" : 777,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nHumans are far from having the advanced technology that's needed\nbut our Cat Paw Merchant Guild holds the high technology to use the Crack of Dimension.",
+      "translation" : "{0}\n人类还远未达到所需的高科技水平，\n但我们猫爪商人公会拥有利用维度裂缝的高科技技术。"
+    },
+    {
+      "kind" : "message",
+      "line" : 781,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nSo we made a proposal.\nWith the promise of support the Cat Paw Merchant Guild and paying for the immense expense for maintaining the connection with the Gate,\nwe will make the connection to the Crack of Dimension.",
+      "translation" : "{0}\n因此我们提出了一个方案。\n在获得猫爪商人公会的资助，并支付维护大门连接所需的巨额费用后，\n我们将建立通往维度裂缝的连接。"
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nOf course working on the Crack of Dimension is no easy job and it does come with risks.\nThere are cases where people go missing from traveling between.",
+      "translation" : "{0}\n当然，处理维度裂缝并非易事，且伴随着风险。\n曾有人员在穿越过程中失踪的案例。"
+    },
+    {
+      "kind" : "message",
+      "line" : 790,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThe best maintaining duration is about 4 days\nYou invest in us and we create the door that connects to the dimensional gap.",
+      "translation" : "{0}\n最佳的维护时长约为4天。\n您投资我们，我们便创建连接维度裂缝的大门。"
+    },
+    {
+      "kind" : "message",
+      "line" : 794,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nDoesn't this sound like the perfect win-win proposal?",
+      "translation" : "{0}\n这听起来难道不是一举两得的完美方案吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nForcing through the unstable dimensional gap and creating a passageway is very dangerous.\nNot to mention the huge resources needed.",
+      "translation" : "{0}\n强行穿越不稳定的维度裂缝并开辟通道是非常危险的。\n更不用说所需的巨大资源了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 802,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIf you take care of the charges and also the danger pay by investing in the Cat Paw Merchant Guild,\nwe'll create and maintain the gate regardless of the risks.",
+      "translation" : "{0}\n如果您通过投资猫爪商人公会来承担费用以及危险津贴，\n我们将不顾风险，创建并维护大门。"
+    },
+    {
+      "kind" : "message",
+      "line" : 806,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nBut then of course the money involved for the gate costs will be extreme.\nIt will be easy if you can find investors to share the amount.",
+      "translation" : "{0}\n但当然，大门的费用将是极其高昂的。\n如果您能找到投资者分摊费用，那就轻松多了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 810,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThere is a basic charge to start connecting the gate.\nResults depend on the how much investment money is collected.",
+      "translation" : "{0}\n建立大门连接需要支付基础费用。\n最终结果取决于收集到的投资金额。"
+    },
+    {
+      "kind" : "message",
+      "line" : 814,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThe Abyss Gate exists in each Agit region.\nCan you imagine how much money and sacrifice our guild will have to go through to develop in all areas?",
+      "translation" : "{0}\n深渊之门存在于每个Agit区域。\n您能想象我们的公会在所有区域进行开发需要付出多少金钱和牺牲吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 818,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThis explains the regional competition in investments.\nIf not enough gate maintenance costs are collected then it is obvious the region with the most investments will receive the benefits",
+      "translation" : "{0}\n这就解释了区域间的投资竞争。\n如果收集到的大门维护费用不足，那么投资最多的区域显然将获得收益。"
+    },
+    {
+      "kind" : "message",
+      "line" : 822,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIf ^4d4dffthe Abyss Gate is successfully connected then the dungeon of the hideout area\nwill be open to others instead of being guild exclusive^000000 which will be very attractive for investment.",
+      "translation" : "{0}\n不过，^4d4dff如果深渊之门成功连接，据点区域的副本将对其他玩家开放，而不再是公会独占^000000，这将极具投资吸引力。"
+    },
+    {
+      "kind" : "message",
+      "line" : 826,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nBut then again, this is only for when the gate is connected.",
+      "translation" : "{0}\n但再次强调，这仅适用于大门成功连接的情况。"
+    },
+    {
+      "kind" : "message",
+      "line" : 830,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIt's simple.\nVisit the branch manager of the ^4d4dffregion you want to invest in during the investment duration^000000 and make your investment.",
+      "translation" : "{0}\n很简单。\n在投资期间，前往您想投资的^4d4dff区域^000000的分支管理员处进行投资即可。"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWe usually receive ^4d4dffthe common currency here, Zeny^000000.\nBut since we're talking about supporting our Cat Paw Merchant Guild, you can also invest with items in demand in Malangdo.",
+      "translation" : "{0}\n我们通常接受^4d4dff通用货币Zeny^000000。\n但既然我们要支持猫爪商人公会，您也可以使用马朗多（Malangdo）上紧俏的物品进行投资。"
+    },
+    {
+      "kind" : "message",
+      "line" : 838,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nProvide the items in need to Namis in Malangdo who is in charge of general affairs in our guild.\nBring back your Investment Certificate to add it to the investment tribute.",
+      "translation" : "{0}\n请将所需物品交给马朗多负责公会总务的娜米丝（Namis）。\n拿回您的投资证书，将其计入投资贡品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 842,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nYou must visit and invest at the region you want in order for your investment to be counted as a tribute.",
+      "translation" : "{0}\n您必须亲自前往并投资您选择的区域，您的投资才会被计入贡品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 846,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThe Abyss Gate is basically contracting and connecting with the castle that owns the Agit;\ntherefore, we will provide all we have once the costs for connecting and maintaining the gate are sufficient.",
+      "translation" : "{0}\n深渊之门基本上是与拥有Agit的城堡进行契约和连接；\n因此，一旦连接和维护大门的费用充足，我们将提供我们拥有的一切。"
+    },
+    {
+      "kind" : "message",
+      "line" : 850,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIn terms of the minimum and maximum costs for the whole work,\nif the collected investment ^4d4dffexceeds the minimum costs^000000, we can connect you to the ^4d4dffdeepest layer of an unknown guild dungeon^000000.",
+      "translation" : "{0}\n关于整个工程的最小和最大成本，\n如果收集到的投资^4d4dff超过最低成本^000000，我们可以将您连接到^4d4dff未知公会副本的最深层^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 854,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIf investments exceed the maximum costs, that region will be connected to the\n^4d4dffAbyss Gate^000000 regardless of the investment rank which includes the deepest layer of the guild dungeon.",
+      "translation" : "{0}\n如果投资超过最高成本，该区域将连接^4d4dff深渊之门^000000，无论投资排名如何，都包括公会副本的最深层。"
+    },
+    {
+      "kind" : "message",
+      "line" : 858,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\n^ff0000If there is no Agit region that reached the maximum investment, then the region with the\nhighest investment participation will get the Abyss Gate connected with the investment collected from all regions.^000000",
+      "translation" : "{0}\n^ff0000如果没有Agit区域达到最高投资额，那么投资参与度最高的区域将获得深渊之门的连接，并使用从所有区域收集到的投资额。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 862,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nOnce the Abyss Gate is connected, the deepest layer (2F) of the guild dungeon\nwill be open to all adventurers that participated in the regional investment.",
+      "translation" : "{0}\n一旦深渊之门连接成功，公会副本的最深层（2F）将对所有参与区域投资的冒险者开放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 866,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nVisits to the dungeon will be counted for the next investment for the Agit region\nso being in good terms with the guild that claims the Agit castle will be a bonus.",
+      "translation" : "{0}\n对副本的访问将计入下一次Agit区域的投资，\n因此与占据Agit城堡的公会保持良好关系将是一个加分项。"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nBy the way, it isn't easy to maintain the connection with the Abyss Gate and investments and reconnection is needed weekly\nso please continue your support and investment if you want the power of the unknown.",
+      "translation" : "{0}\n顺便说一下，维持与深渊之门的连接并不容易，每周都需要重新投资和连接，\n如果您想要未知的力量，请继续您的支持和投资。"
+    },
+    {
+      "kind" : "message",
+      "line" : 877,
+      "npc" : "Cat Paw Merchant Guild",
+      "state" : "needs_review",
+      "text" : "- Currently you're carrying -\n- too many items with you. -\n- Please try again after you -\n- lose some weight. -",
+      "translation" : "- 您当前携带的物品 -\n- 数量过多。 -\n- 请在减轻负重后 -\n- 再次尝试。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 884,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nYou have too many Thank You Tickets to receive any more.\nCannot give you any more tickets. Please use your ticket and come back.\nThe ticket can be exchanged with various items in Malangdo.",
+      "translation" : "{0}\n您拥有的感谢券（Thank You Tickets）数量过多，无法再领取。\n无法再给您更多券了。请使用您的券后再回来。\n该券可以在马朗多兑换各种物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 891,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWe do not receive investments now.\nPlease come back during the investment duration.",
+      "translation" : "{0}\n我们现在不接受投资。\n请在投资期间再来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 907,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$",
+        ".@realm$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWould you like to invest in the ^4d4dff{1}^000000 region?\nIf there is a castle occupied already, you will invest in the castle and the guild that is occupying it.",
+      "translation" : "{0}\n您想投资^4d4dff{1}^000000区域吗？\n如果已有城堡被占据，您将投资该城堡及其占据的公会。"
+    },
+    {
+      "kind" : "option",
+      "line" : 912,
+      "npc" : "Cat Paw Merchant Guild",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 914,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nCanceled.",
+      "translation" : "{0}\n已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$",
+        ".@castle_name$[.@i]",
+        ".@owner_name$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThe guild that is occupying {1} is {2}.\nDoesn't look like your guild.",
+      "translation" : "{0}\n占据{1}的公会是{2}。\n看起来不是您的公会。"
+    },
+    {
+      "kind" : "message",
+      "line" : 924,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$",
+        ".@castle_name$[.@i]",
+        ".@owner_name$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nInvest under {1}'s{2} guild name.",
+      "translation" : "{0}\n以{1}的{2}公会名义进行投资。"
+    },
+    {
+      "kind" : "message",
+      "line" : 934,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIs that so?\nPlease come back whenever you are interested in investing in the Abyss Gate development.",
+      "translation" : "{0}\n是吗？\n如果您有兴趣投资深渊之门开发，请随时回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 967,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThere are currently no connected dungeon gates.",
+      "translation" : "{0}\n目前没有已连接的地下城之门。"
+    },
+    {
+      "kind" : "message",
+      "line" : 973,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$",
+        ".@gate$",
+        ".@realm$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWe've successfully connected the Abyss Gate [{1}] with the help from your investment.\nThe Agit dungeon will be open to everyone with a small entrance fee in {2}.",
+      "translation" : "{0}\n得益于您的投资，我们成功将深渊之门[{1}]连接起来了。\n阿吉特地下城将在{2}后向所有人开放，需支付少量入场费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 977,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nPlease visit as often as possible since the entrance fee is saved as an investment for the region.\nDo you want to enter the Agit dungeon?",
+      "translation" : "{0}\n入场费将作为该区域的投资储备，请尽可能多来参观。\n您想进入阿吉特地下城吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 981,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@realm$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0} Dungeon 1F - 10000z",
+      "translation" : "{0} 地下城 1F - 10000z"
+    },
+    {
+      "kind" : "option",
+      "line" : 981,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@realm$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0} Dungeon 2F - 10000z",
+      "translation" : "{0} 地下城 2F - 10000z"
+    },
+    {
+      "kind" : "option",
+      "line" : 981,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 983,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nCanceled.",
+      "translation" : "{0}\n已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI'm collecting a small entrance fee.\nYour contribution will be saved for the next investment.\nEntrance fee is 10000z.",
+      "translation" : "{0}\n我正在收取少量入场费。\n您的贡献将留作下一次投资。\n入场费为10000z。"
+    },
+    {
+      "kind" : "message",
+      "line" : 994,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$",
+        ".@realm$",
+        ".@i"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI'm sending you to the {1} Agit Dungeon {2}F.",
+      "translation" : "{0}\n我将把您传送到{1}阿吉特地下城 {2}F。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1009,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$",
+        ".@realm$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThe {1} Agit Dungeon 2F is now available but since it is not connected with the Abyss Gate,\nthe Agit dungeon is only accessible to the Agit guild.",
+      "translation" : "{0}\n{1}阿吉特地下城 2F现已开放，但由于未与深渊之门连接，\n阿吉特地下城仅对阿吉特公会开放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1014,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@n$",
+        ".@realm$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\n{1} was not chosen to be connected with a gate this time.\nPlease wait for the next investment duration.",
+      "translation" : "{0}\n{1}这次未被选中连接大门。\n请等待下一次投资期间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1040,
+      "npc" : "Investment Status Board",
+      "state" : "needs_review",
+      "text" : "There are currently no investment sums available.",
+      "translation" : "目前没有可用的投资额度。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1043,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        "callfunc(\"F_GetNumSuffix\",.@notice)",
+        "getcastlename(.@map$)",
+        "getguildname(getcastledata(.@map$,CD_GUILD_ID))",
+        ".@fund[.@i]",
+        ".@realm$",
+        ".@fund[0]",
+        ".@realm$",
+        "(.@fund[0]+.@fund[1]+.@fund[2]+.@fund[3]+.@fund[4]+.@fund[5])"
+      ],
+      "state" : "needs_review",
+      "text" : "{0} total (unit in 10,000z)\n{1} {2} Guild: {3}\n{4} normal: {5}\n{6} Investment Grand Total: {7}",
+      "translation" : "{0} 总计（单位：万z）\n{1} {2} 公会：{3}\n{4} 普通：{5}\n{6} 投资总额：{7}"
+    },
+    {
+      "kind" : "message",
+      "line" : 1043,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        "callfunc(\"F_GetNumSuffix\",.@notice)",
+        ".@realm$",
+        ".@fund[0]",
+        ".@realm$",
+        "(.@fund[0]+.@fund[1]+.@fund[2]+.@fund[3]+.@fund[4]+.@fund[5])"
+      ],
+      "state" : "needs_review",
+      "text" : "{0} total (unit in 10,000z)\n{1} normal: {2}\n{3} Investment Grand Total: {4}",
+      "translation" : "{0} 总计（单位：万z）\n{1} 普通：{2}\n{3} 投资总额：{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 1054,
+      "npc" : "Investment Status Board",
+      "state" : "needs_review",
+      "text" : "!- Notice -!\nNo sums are available because the total investment amount is currently being calculated.\nPlease wait for the announcement of the results.",
+      "translation" : "!- 告示 -!\n由于正在计算总投资金额，目前没有可用额度。\n请等待结果公告。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@invest_region$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "!- Investment Results of All Agit Regions -!\n^aaaaaa[{0}] below minimum^000000",
+      "translation" : "!- 所有阿吉特区域投资结果 -!\n^aaaaaa[{0}] 未达最低标准^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@invest_region$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "!- Investment Results of All Agit Regions -!\n[{0}] minimum achieved\n-> Guild Dungeon Deepest Layer (2F) available",
+      "translation" : "!- 所有阿吉特区域投资结果 -!\n[{0}] 达到最低标准\n-> 公会地下城最深层（2F）已开放"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@invest_region$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "!- Investment Results of All Agit Regions -!\n^4d4dff[{0}] maximum achieved^000000\n-> Abyss Gate available",
+      "translation" : "!- 所有阿吉特区域投资结果 -!\n^4d4dff[{0}] 达到最高标准^000000\n-> 深渊之门已开放"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "placeholders" : [
+        ".@invest_region$[.@i]"
+      ],
+      "state" : "needs_review",
+      "text" : "!- Investment Results of All Agit Regions -!\nNo data for [{0}].",
+      "translation" : "!- 所有阿吉特区域投资结果 -!\n[{0}] 无数据。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "state" : "needs_review",
+      "text" : "!- Investment Results of All Agit Regions -!",
+      "translation" : "!- 所有阿吉特区域投资结果 -!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1076,
+      "npc" : "Investment Status Board",
+      "state" : "needs_review",
+      "text" : "!- Notice -!\nNo investment information will be announced now.",
+      "translation" : "!- 告示 -!\n目前不会公布投资信息。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1103,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@realm$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\nYou don't seem to be the member of guild owning this castle.\nIf you need any help, please visit any of our guild members at {0} Square.",
+      "translation" : "[城门管理员]\n您似乎不是拥有这座城堡的公会的成员。\n如果您需要帮助，请前往{0}广场找我们的公会成员。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1108,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\nHello, I am the Gate Manager from Cat Paw Merchant Guild warp department.\nHow may I help you today?",
+      "translation" : "[城门管理员]\n您好，我是猫爪商会传送部门的城门管理员。\n今天有什么可以帮您的吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1112,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "Invest for gate connection",
+      "translation" : "投资传送门连接"
+    },
+    {
+      "kind" : "option",
+      "line" : 1112,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "Deepest Layer Dungeon Access",
+      "translation" : "最深层地下城入口"
+    },
+    {
+      "kind" : "option",
+      "line" : 1112,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "Abyss Gate Access",
+      "translation" : "深渊之门入口"
+    },
+    {
+      "kind" : "option",
+      "line" : 1112,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1115,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\nYou have too many items to receive the Thank You Ticket as a small gift for your investment.\nPlease come back after making room in your inventory.",
+      "translation" : "[城门管理员]\n您的物品栏已满，无法领取作为投资礼物的感谢券。\n请腾出物品栏空间后再来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1121,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\nYou have too many Thank You Tickets to receive any more.\nCannot give you any more tickets. Please use your ticket and come back.\nThe ticket can be exchanged with various items in Malangdo.",
+      "translation" : "[城门管理员]\n您持有的感谢券数量已达上限，无法再领取更多。\n请先使用您的感谢券，然后再来。\n感谢券可以在马拉甘多兑换各种物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1128,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\nWe do not receive investments now.\nPlease come back during the investment duration.",
+      "translation" : "[城门管理员]\n我们现在不接受投资。\n请在投资期间再来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1134,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@realm$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\nYou don't seem to be the member of the guild owning this castle.\nPlease use the normal investment from {0} Square.",
+      "translation" : "[城门管理员]\n您似乎不是拥有这座城堡的公会的成员。\n请使用{0}广场的普通投资。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1139,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\nProceed investing under your guild name.",
+      "translation" : "[城门管理员]\n请以您公会的名义进行投资。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1145,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@realm$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\nYou are interested in exploring the {0} Guild Dungeon Deepest Layer (2F).\nLet me guide you. Good luck.",
+      "translation" : "[城门管理员]\n您有兴趣探索{0}公会地下城最深层（2F）。\n让我为您指引方向。祝您好运。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1185,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        ".@realm$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\nLet me guide you to the Abyss Gap connected with {0}, the Abyss Gate 'Way of the Warrior'.",
+      "translation" : "[城门管理员]\n让我为您指引通往与{0}相连的深渊之门“战士之路”的深渊裂隙。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1223,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\nCanceled.",
+      "translation" : "[城门管理员]\n已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1236,
+      "npc" : "Gate Manager",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\n{0} was not chosen to be connected with a gate this time.\nPlease wait for the next investment duration.",
+      "translation" : "[城门管理员]\n{0}这次未被选中连接传送门。\n请等待下一次投资期间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1242,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\nThere are currently no connected dungeon gates.\nA gate will be connected as soon as the investment results are available.\nPlease wait.",
+      "translation" : "[城门管理员]\n目前没有任何已连接的地下城传送门。\n一旦投资结果公布，传送门就会连接。\n请稍候。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1248,
+      "npc" : "Gate Manager",
+      "state" : "needs_review",
+      "text" : "[Gate Manager]\nThe gate will disappear soon.\nThe dungeon is no longer accessible.\nPlease try again next time.",
+      "translation" : "[城门管理员]\n传送门即将消失。\n地下城已无法进入。\n请下次再试。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1259,
+      "npc" : "Cat Paw Merchants Notice",
+      "state" : "needs_review",
+      "text" : "<< Cat Paw Merchants Notice >>\n'^C379CEInvest Unused Items for Prizes!^000000'",
+      "translation" : "<< 猫爪商会告示 >>\n'^C379CE投资未使用物品以赢取奖品！^000000'"
+    },
+    {
+      "kind" : "option",
+      "line" : 1262,
+      "npc" : "Cat Paw Merchants Notice",
+      "state" : "needs_review",
+      "text" : "Read Notice",
+      "translation" : "阅读告示"
+    },
+    {
+      "kind" : "option",
+      "line" : 1262,
+      "npc" : "Cat Paw Merchants Notice",
+      "state" : "needs_review",
+      "text" : "Check Event 1",
+      "translation" : "查看活动1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1262,
+      "npc" : "Cat Paw Merchants Notice",
+      "state" : "needs_review",
+      "text" : "Check Event 2",
+      "translation" : "查看活动2"
+    },
+    {
+      "kind" : "message",
+      "line" : 1264,
+      "npc" : "Cat Paw Merchants Notice",
+      "state" : "needs_review",
+      "text" : "- Notice -\nHello all Cat Paw Merchants customers! With your love, we Cat Paw Merchants are growing every day. All executives and staff members promise to do our best to further our frontier and development.",
+      "translation" : "- 告示 -\n各位猫爪商会的顾客们好！\n多亏了大家的支持，猫爪商会每天都在成长。\n全体高管和职员承诺，将竭尽全力推动我们的开拓与发展。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1267,
+      "npc" : "Cat Paw Merchants Notice",
+      "state" : "needs_review",
+      "text" : "- Event Notice! -\n An Event called '^C379CEInvest Unused Items for Prizes!^000000' is under way, where you could exchange unused items in your storage for Investment Certificate of the Cat Paw Merchants.",
+      "translation" : "- 活动告示！ -\n名为'^C379CE投资未使用物品以赢取奖品！^000000'的活动正在进行中。\n您可以将仓库中未使用的物品兑换为猫爪商会的投资证书。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1270,
+      "npc" : "Cat Paw Merchants Notice",
+      "state" : "needs_review",
+      "text" : "Exchangeable items will be announced on a separate sheet. Thank you for your time.\n- From all the employees of Cat Paw Merchants -",
+      "translation" : "可兑换的物品将在单独的清单上公布。\n感谢您的阅读。\n- 来自猫爪商会全体职员 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 1273,
+      "npc" : "Cat Paw Merchants Notice",
+      "state" : "needs_review",
+      "text" : "There is a small warning at the bottom.\n \n^FF0000This event could be changed or repealed due to the Merchants' situation.^000000",
+      "translation" : "底部有一行小字警告。\n\n^FF0000本活动可能因商会情况而变更或取消。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1278,
+      "npc" : "Cat Paw Merchants Notice",
+      "state" : "needs_review",
+      "text" : "'^C379CEInvest Unused Items for Prizes!^000000'\nThere are details of Event 1.",
+      "translation" : "'^C379CE投资未使用物品以赢取奖品！^000000'\n以下是活动1的详细内容。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1314,
+      "npc" : "Cat Paw Merchants Notice",
+      "placeholders" : [
+        ".@event1$[.@i-1]",
+        ".@str$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\n{1} for one Cat Paw Merchants Investment Certificate.",
+      "translation" : "[{0}]\n{1}可兑换一张猫爪商会投资证书。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1319,
+      "npc" : "Cat Paw Merchants Notice",
+      "state" : "needs_review",
+      "text" : "Look out for the next '^C379CEInvest Unused Items for Prizes!^000000' Event 2!! Coming up real soon!",
+      "translation" : "敬请期待下一期'^C379CE投资未使用物品以赢取奖品！^000000'活动2！！即将开始！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1326,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "- Currently you're carrying -\n- too many items with you. -\n- Please try again after you -\n- lose some weight. -",
+      "translation" : "- 您当前携带的物品 -\n- 数量过多。 -\n- 请在减轻负重后 -\n- 再次尝试。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 1335,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nPurr-Purr-Purrr-Purrrr-Pur~ Meow!!\nWh-- What? How rude. You scared me.",
+      "translation" : "[娜米丝]\n呼噜呼噜呼噜呼噜呼~ 喵！！\n什...什么？好粗鲁。你吓到我了。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1339,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "What do you need? I'll invest!",
+      "translation" : "需要什么？我要投资！"
+    },
+    {
+      "kind" : "option",
+      "line" : 1339,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "What's the purpose of this event?",
+      "translation" : "这个活动的目的是什么？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1339,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "Were you asleep?",
+      "translation" : "你刚才在睡觉吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1343,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nSo, another pushover in contract with the Cat Paw Merchants?",
+      "translation" : "[娜米丝]\n所以，又一位与猫爪商会签约的软柿子？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1346,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "Huh? What! You calling me a pushover?",
+      "translation" : "哈？什么！你说我是软柿子？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1347,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nI'll say this just once, so you listen good!\nWe, the Cat Paw Merchants have planned an event for loyal workers like yourself.",
+      "translation" : "[娜米丝]\n我只说一次，你听好了！\n我们猫爪商会为像你这样忠实的员工策划了一场活动。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1351,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nRun along to your storage and bring back rotting antiques to us and we'll exchange them for the oh-so valuable 'Cat Paw Merchants Investment Certificate'.",
+      "translation" : "[娜米丝]\n快去你的仓库，把那些发霉的旧货带回来，我们会把它们兑换成价值连城的“猫爪商会投资证书”。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1354,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nIt will be wise for you to do so because the Cat Paw Merchants are doing this at a loss!",
+      "translation" : "[娜米丝]\n这么做对你很有利，因为猫爪商会是在亏本做这件事！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1357,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nDetails are on the notice.",
+      "translation" : "[娜米丝]\n详情请看告示。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1361,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nHick- Slurp-\nRemember, human! There's no other cat who works as hard as I do.",
+      "translation" : "[娜米丝]\n哈欠-吸溜-\n记住，人类！没有哪只猫比我更努力工作了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1366,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nYou must be here to participate in the '^C379CEInvest Unused Items for Prizes!^000000' event of the Cat Paw Merchants.",
+      "translation" : "[娜米丝]\n您一定是来参加猫爪商会的“^C379CE用闲置物品兑换奖品！^000000”活动的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1369,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nSo, which event do you wish to participate in?",
+      "translation" : "[娜米丝]\n那么，您想参加哪个活动呢？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1372,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "Not interested",
+      "translation" : "不感兴趣"
+    },
+    {
+      "kind" : "option",
+      "line" : 1372,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "Event 1 Items",
+      "translation" : "活动1物品"
+    },
+    {
+      "kind" : "option",
+      "line" : 1372,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "Event 2 Items",
+      "translation" : "活动2物品"
+    },
+    {
+      "kind" : "message",
+      "line" : 1374,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nDon't you mess with a busy cat!",
+      "translation" : "[娜米丝]\n别打扰一只忙碌的猫！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1378,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nSo you're in for Event 1.\nChoose from the shown list.",
+      "translation" : "[娜米丝]\n看来您是要参加“活动1”。\n请从列表中做出选择。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1413,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nParticipate in Event 2?\nIt is not yet in motion. Wait for it!",
+      "translation" : "[娜米丝]\n要参加“活动2”吗？\n它还没有开始。请耐心等待！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1428,
+      "npc" : "Namis",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Namis]\nYou don't have the items?\n{0} exchange for one Cat Paw Merchants Investment Certificate.",
+      "translation" : "[娜米丝]\n您没有物品吗？\n需要{0}个物品才能兑换一张猫爪商会投资证书。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1432,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nDon't bother me and look up the details on the board over there!",
+      "translation" : "[娜米丝]\n别烦我了，去那边看看告示板上的详情吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1436,
+      "npc" : "Namis",
+      "placeholders" : [
+        "getarg(4)",
+        "getarg(3)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Namis]\n'^8E5601{0} Event^000000'\nSeems to be the right items.\n{1}\nOh! Almost forgot. Will you invest?",
+      "translation" : "[娜米丝]\n“^8E5601{0} 活动^000000”\n看来是正确的物品。\n{1}\n哎呀！差点忘了。您要投资吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1442,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "Invest",
+      "translation" : "投资"
+    },
+    {
+      "kind" : "option",
+      "line" : 1442,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "Don't Invest",
+      "translation" : "不投资"
+    },
+    {
+      "kind" : "message",
+      "line" : 1443,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nDon't you mess with a busy cat!",
+      "translation" : "[娜米丝]\n别打扰一只忙碌的猫！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1451,
+      "npc" : "Namis",
+      "state" : "needs_review",
+      "text" : "[Namis]\nHere's your Certificate. Always be grateful to the Merchants for these events!",
+      "translation" : "[娜米丝]\n这是您的证书。请永远感谢商人们举办的这些活动！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1466,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "- Currently you're carrying -\n- too many items with you. -\n- Please try again after you -\n- lose some weight. -",
+      "translation" : "- 您当前携带的物品 -\n- 数量过多。 -\n- 请在减轻负重后 -\n- 再次尝试。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 1472,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "[Vending Machine Notice]\n^6815EA1. Don't kick the machine please. @_@\n2. You can only insert Invest Thanks Ticket.\n3. About the Jelly Box, if you open it, it gives you a random item.\n4. Hope you enjoy~^000000\n- Mr. Cat, the Machine Owner -",
+      "translation" : "[贩卖机告示]\n^6815EA1. 请不要踢机器。@_@\n2. 只能投入投资感谢券。\n3. 关于果冻盒，打开后会随机获得一个物品。\n4. 祝您玩得开心~^000000\n- 机器主人：猫先生 -"
+    },
+    {
+      "kind" : "option",
+      "line" : 1479,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "Finish",
+      "translation" : "完成"
+    },
+    {
+      "kind" : "option",
+      "line" : 1479,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "Purchase",
+      "translation" : "购买"
+    },
+    {
+      "kind" : "option",
+      "line" : 1479,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "Red Paw Jelly Bag (5 Tickets)",
+      "translation" : "红爪果冻袋 (5张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1479,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "Black Paw Jelly Bag (50 Tickets)",
+      "translation" : "黑爪果冻袋 (50张券)"
+    },
+    {
+      "kind" : "message",
+      "line" : 1483,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "The Vending Machine is selling items in the following list.",
+      "translation" : "贩卖机正在出售以下列表中的物品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "Finish",
+      "translation" : "完成"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "1 Siege Arrow Quiver A (2 Tickets)",
+      "translation" : "1 攻城箭袋 A (2张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "1 Siege Arrow Quiver S (2 Tickets)",
+      "translation" : "1 攻城箭袋 S (2张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "30 White Potion (12 Tickets)",
+      "translation" : "30 白色药水 (12张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "30 White Slim Potion (14 Tickets)",
+      "translation" : "30 白色小药水 (14张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "10 Dark Water (20 Tickets)",
+      "translation" : "10 黑暗之水 (20张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "20 Siege_Violet_Potion (30 Tickets)",
+      "translation" : "20 攻城紫色药水 (30张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "10 Coldproof Potion (30 Tickets)",
+      "translation" : "10 水属性抵抗药水 (30张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "10 Thunderproof Potion (30 Tickets)",
+      "translation" : "10 风属性抵抗药水 (30张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "10 Earthproof Potion (30 Tickets)",
+      "translation" : "10 地属性抵抗药水 (30张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "10 Fireproof Potion (30 Tickets)",
+      "translation" : "10 火属性抵抗药水 (30张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "10 Elemental Converter[Fire] (30 Tickets)",
+      "translation" : "10 元素转换器[火] (30张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "10 Elemental Converter[Water] (30 Tickets)",
+      "translation" : "10 元素转换器[水] (30张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "10 Elemental Converter[Wind] (30 Tickets)",
+      "translation" : "10 元素转换器[风] (30张券)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1485,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "10 Elemental Converter[Earth] (30 Tickets)",
+      "translation" : "10 元素转换器[地] (30张券)"
+    },
+    {
+      "kind" : "message",
+      "line" : 1504,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "Red Paw Jelly Bag Button chosen. Need to insert 5 ^FF0000Invest Thanks Ticket^000000 and a random item will appear.",
+      "translation" : "已选择红爪果冻袋按钮。需要投入5 ^FF0000投资感谢券^000000，随机获得一个物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1507,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "You don't have enough ^FF0000Invest Thanks Ticket^000000 to proceed.",
+      "translation" : "您的^FF0000投资感谢券^000000不足，无法继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1573,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "Black Paw Jelly Bag Button chosen. Need to insert 50 ^FF0000Invest Thanks Ticket^000000 and a random item will appear.",
+      "translation" : "已选择黑爪果冻袋按钮。需要投入50 ^FF0000投资感谢券^000000，随机获得一个物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1576,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "You don't have enough ^FF0000Invest Thanks Ticket^000000 to proceed.",
+      "translation" : "您的^FF0000投资感谢券^000000不足，无法继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1655,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "You don't have enough ^FF0000Invest Thanks Ticket^000000 to proceed.",
+      "translation" : "您的^FF0000投资感谢券^000000不足，无法继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1660,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "- Done! -",
+      "translation" : "- 完成！ -"
+    },
+    {
+      "kind" : "message",
+      "line" : 1662,
+      "npc" : "Thanks Ticket Machine",
+      "placeholders" : [
+        "((getargcount() > 3)?getarg(3,\"\"):getitemname(getarg(1)))"
+      ],
+      "state" : "needs_review",
+      "text" : "The item ^0000FF{0}^000000 has been obtained.",
+      "translation" : "已获取物品 ^0000FF{0}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1668,
+      "npc" : "Thanks Ticket Machine",
+      "state" : "needs_review",
+      "text" : "- Done! -",
+      "translation" : "- 完成！ -"
+    },
+    {
+      "kind" : "message",
+      "line" : 1670,
+      "npc" : "Thanks Ticket Machine",
+      "placeholders" : [
+        "((getargcount() > 2)?getarg(2,\"\"):getitemname(getarg(0)))"
+      ],
+      "state" : "needs_review",
+      "text" : "The item ^0000FF{0}^000000 has been obtained.",
+      "translation" : "已获取物品 ^0000FF{0}^000000。"
+    }
+  ]
+}

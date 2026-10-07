@@ -1,0 +1,135 @@
+{
+  "file" : "npc/re/merchants/novice_vending_machine.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 15,
+      "npc" : "novice_vending_machine",
+      "state" : "needs_review",
+      "text" : "Vending Machine for Novices.\nThere are many buttons.",
+      "translation" : "初心者专用露天商店。\n这里有好多按钮。"
+    },
+    {
+      "kind" : "option",
+      "line" : 18,
+      "npc" : "novice_vending_machine",
+      "state" : "needs_review",
+      "text" : "Manual",
+      "translation" : "说明书"
+    },
+    {
+      "kind" : "option",
+      "line" : 18,
+      "npc" : "novice_vending_machine",
+      "placeholders" : [
+        ".@storage_ticket_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "Trade {0}",
+      "translation" : "兑换 {0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 18,
+      "npc" : "novice_vending_machine",
+      "state" : "needs_review",
+      "text" : "Trade Novice equipments",
+      "translation" : "兑换新手装备"
+    },
+    {
+      "kind" : "message",
+      "line" : 20,
+      "npc" : "novice_vending_machine",
+      "placeholders" : [
+        ".@storage_ticket_name$",
+        ".@storage_ticket_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Exchange {0}]\n4 {1} can be exchanged into 1 Free Ticket for Warp, Airship or the Cart Service, or 1 Free Ticket for Peco Ride, 15 Novice Fly Wing, 5 Novice Butterfly Wing, 30 Novice Potion.",
+      "translation" : "[兑换 {0}]\n4个{1}可以兑换成1张传送、飞空艇或手推车免费使用券，1张大嘴鸟免费使用券，15个[非卖品]新手专用苍蝇翅膀，5个[非卖品]新手专用蝴蝶翅膀，30瓶初学者专用药水。"
+    },
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "novice_vending_machine",
+      "placeholders" : [
+        ".@storage_ticket_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Trade Novice Gears]\nArmor, Hood, Sandals, Main Gauche and Guard for Novice from Criatura Academy can be exchanged into 4 {0}.",
+      "translation" : "[兑换新手装备]\n克里图拉学院提供的新手用护甲、兜帽、轻便鞋、笨拙短剑和卫兵装备可以兑换成4个{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "novice_vending_machine",
+      "state" : "needs_review",
+      "text" : "[Trade Novice Gears]\nNovice Eggshell can be exchanged into Criatura Hair Coupon for changing your hairstyle.",
+      "translation" : "[兑换新手装备]\n新手蛋壳可以兑换成克里图拉美发券，用于改变发型。"
+    },
+    {
+      "kind" : "message",
+      "line" : 47,
+      "npc" : "novice_vending_machine",
+      "placeholders" : [
+        ".@storage_ticket_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "The number of {0} is insufficient to proceed with the exchange.",
+      "translation" : "{0}的数量不足，无法进行兑换。"
+    },
+    {
+      "kind" : "message",
+      "line" : 52,
+      "npc" : "novice_vending_machine",
+      "placeholders" : [
+        ".@storage_ticket_name$",
+        ".@amount$",
+        "getitemname(.@exchange[.@s])"
+      ],
+      "state" : "needs_review",
+      "text" : "Exchanged 4 {0} to {1}{2}",
+      "translation" : "已用4个{0}兑换了{1}{2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "novice_vending_machine",
+      "state" : "needs_review",
+      "text" : "Exchange all Novice equipments into coupons.\nSelect continue to proceed.",
+      "translation" : "将所有新手装备兑换成券。\n选择继续以进行兑换。"
+    },
+    {
+      "kind" : "option",
+      "line" : 60,
+      "npc" : "novice_vending_machine",
+      "state" : "needs_review",
+      "text" : "Continue",
+      "translation" : "继续"
+    },
+    {
+      "kind" : "option",
+      "line" : 60,
+      "npc" : "novice_vending_machine",
+      "state" : "needs_review",
+      "text" : "Cancel.",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "novice_vending_machine",
+      "state" : "needs_review",
+      "text" : "The trade was interrupted.",
+      "translation" : "兑换已中断。"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "novice_vending_machine",
+      "state" : "needs_review",
+      "text" : "Exchanging all equipment into coupons.",
+      "translation" : "正在将所有装备兑换成券。"
+    }
+  ]
+}
