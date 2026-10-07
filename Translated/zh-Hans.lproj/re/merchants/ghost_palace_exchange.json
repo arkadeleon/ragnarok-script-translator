@@ -104,31 +104,29 @@
       "translation" : "[次元旅行者]\n啊！{0}旁边写的数字是需要的数量。\n请留意这一点。"
     },
     {
-      "error" : "placeholders changed: [\"{0}\", \"{1}\", \"{2}\"] -> [\"{0}\", \"{2}\"]",
       "kind" : "message",
       "line" : 81,
       "npc" : "Dimension Traveler",
-      "output" : "[次元旅行者]\n您是指{0}吗？\n需要^006400{2}^000000作为交换。",
       "placeholders" : [
         "mesitemlink( .@items[.@s] )",
         ".@items[.@s+1]",
         ".@item_name_req$"
       ],
-      "state" : "new",
-      "text" : "[Dimension Traveler]\nDo you mean {0}?\n{1} ^006400{2}^000000 are required in exchange."
+      "state" : "needs_review",
+      "text" : "[Dimension Traveler]\nDo you mean {0}?\n{1} ^006400{2}^000000 are required in exchange.",
+      "translation" : "[次元旅行者]\n您是指{0}吗？\n需要{1}个^006400{2}^000000作为交换。"
     },
     {
-      "error" : "placeholders changed: [\"{0}\", \"{1}\"] -> [\"{1}\"]",
       "kind" : "message",
       "line" : 81,
       "npc" : "Dimension Traveler",
-      "output" : "[次元旅行者]\n需要^006400{1}^000000作为交换。",
       "placeholders" : [
         ".@items[.@s+1]",
         ".@item_name_req$"
       ],
-      "state" : "new",
-      "text" : "[Dimension Traveler]\n{0} ^006400{1}^000000 are required in exchange."
+      "state" : "needs_review",
+      "text" : "[Dimension Traveler]\n{0} ^006400{1}^000000 are required in exchange.",
+      "translation" : "[次元旅行者]\n需要{0}个^006400{1}^000000作为交换。"
     },
     {
       "kind" : "option",
