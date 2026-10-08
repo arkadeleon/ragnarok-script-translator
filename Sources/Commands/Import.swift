@@ -8,17 +8,16 @@
 import ArgumentParser
 import Foundation
 
-/// Imports the official script translations of the Latin American and Global clients from
+/// Imports the official script translations of the Latin American client from
 /// ragnarok-data-converter into `Imported/<language>.lproj/Scripts.json`, English text to
 /// translation.
 ///
 /// Each CSV under `data/i18n/sc` holds the lines of one script, one row per line, every column
 /// base64 encoded: the English text in column 2 already uses `{0}` placeholders and joins a page
-/// with `\n`, the same shape as the extracted texts. The clients order the other languages
-/// differently.
+/// with `\n`, the same shape as the extracted texts.
 struct Import: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
-        abstract: "Fetches ragnarok-data-converter and imports the official script translations of the Latin American and Global clients."
+        abstract: "Fetches ragnarok-data-converter and imports the official script translations of the Latin American client."
     )
 
     @Option(name: .shortAndLong, help: "Directory to write <language>.lproj/Scripts.json into.")
@@ -29,12 +28,9 @@ struct Import: AsyncParsableCommand {
     }
 
     /// The script directories in ragnarok-data-converter and the column of each language in them.
-    /// Global's Spanish (column 9) is left out: it adds little to the Latin American one and words
-    /// much of the rest differently.
     private var sources: [(directory: String, columns: [String: Int])] {
         [
             ("Input/LatinAmerica/data/i18n/sc", ["pt-BR": 7, "es": 9]),
-            ("Input/Global/data/i18n/sc", ["ko": 1, "zh-Hans": 4, "th": 6, "de": 10, "fr": 11, "id": 12, "tr": 13]),
         ]
     }
 
