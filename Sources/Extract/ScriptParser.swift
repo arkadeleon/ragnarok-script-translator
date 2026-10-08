@@ -5,25 +5,40 @@
 //  Created by Leon Li on 2026/9/21.
 //
 
+/// One `mes` argument: a single line of dialog.
+struct DialogLine {
+    var segments: [Segment]
+    var line: Int
+}
+
 /// The subset of rAthena script structure that affects which `mes` lines end up on the same page.
 indirect enum Statement {
     /// `mes "..."[, "..."]`
     case mes([DialogLine])
+
     /// A statement that does not touch the dialog box (`set`, `getitem`, ...).
     case transparent
+
     /// Ends the current page but lets the script continue on a fresh one (`next`, `clear`, `select`, ...).
     case newPage
+
     /// Ends the current page and the current path (`close`, `end`, `return`, `goto`).
     case terminate
+
     /// `break` / `continue`: leaves the enclosing `switch` or loop.
     case exit
+
     /// A jump target (`OnInit:`, `L_Label:`); anything may arrive here, so the page starts over.
     case label
+
     case block([Statement])
+
     /// `if ... else if ... else ...`: one alternative runs, or none when there is no `else`.
     /// Kept flat rather than nested so a 300-deep `else if` chain does not recurse 300 deep.
     case branch(alternatives: [Statement], otherwise: Statement?)
+
     case `switch`(cases: [Statement], hasDefault: Bool)
+
     case loop(Statement)
 }
 
@@ -37,7 +52,8 @@ struct ParsedScript {
 /// `mes` arguments are decomposed into segments.
 struct ScriptParser {
     let source: [UInt8]
-    private let tokens: [Token]
+    let tokens: [Token]
+
     private var index = 0
 
     /// Commands that clear the dialog box or hand control elsewhere, and so end a page.
@@ -51,12 +67,7 @@ struct ScriptParser {
         self.tokens = tokens
     }
 
-    static func parse(source: [UInt8], tokens: [Token]) -> [ParsedScript] {
-        var parser = ScriptParser(source: source, tokens: tokens)
-        return parser.parseScripts()
-    }
-
-    private mutating func parseScripts() -> [ParsedScript] {
+    mutating func parseScripts() -> [ParsedScript] {
         var scripts: [ParsedScript] = []
         while index < tokens.count {
             guard case .header(let npc) = tokens[index].kind else {
@@ -69,7 +80,8 @@ struct ScriptParser {
             if index < tokens.count, isPunctuation("}") {
                 index += 1
             }
-            scripts.append(ParsedScript(npc: npc, statements: statements))
+            let script = ParsedScript(npc: npc, statements: statements)
+            scripts.append(script)
         }
         return scripts
     }
@@ -78,8 +90,12 @@ struct ScriptParser {
     private mutating func parseStatements() -> [Statement] {
         var statements: [Statement] = []
         while index < tokens.count {
-            if case .header = tokens[index].kind { break }
-            if isPunctuation("}") { break }
+            if case .header = tokens[index].kind {
+                break
+            }
+            if isPunctuation("}") {
+                break
+            }
             if let statement = parseStatement() {
                 statements.append(statement)
             }
@@ -88,17 +104,23 @@ struct ScriptParser {
     }
 
     private mutating func parseStatement() -> Statement? {
-        guard index < tokens.count else { return nil }
+        guard index < tokens.count else {
+            return nil
+        }
         let token = tokens[index]
 
-        if case .header = token.kind { return nil }
+        if case .header = token.kind {
+            return nil
+        }
 
         if token.kind == .punctuation {
             switch token.text {
             case "{":
                 index += 1
                 let statements = parseStatements()
-                if isPunctuation("}") { index += 1 }
+                if isPunctuation("}") {
+                    index += 1
+                }
                 return .block(statements)
             case ";":
                 index += 1
@@ -131,44 +153,43 @@ struct ScriptParser {
                 break
             }
             return .branch(alternatives: alternatives, otherwise: otherwise)
-
         case "else":
             // Dangling else (e.g. after a `;` we did not model); treat its body as unconditional.
             index += 1
             return parseStatement()
-
         case "switch":
             index += 1
             skipParenthesized()
             return parseSwitchBody()
-
         case "while", "for":
             index += 1
             skipParenthesized()
             return .loop(parseStatement() ?? .transparent)
-
         case "do":
             index += 1
             let body = parseStatement() ?? .transparent
             if index < tokens.count, tokens[index].kind == .identifier, tokens[index].text.lowercased() == "while" {
                 index += 1
                 skipParenthesized()
-                if isPunctuation(";") { index += 1 }
+                if isPunctuation(";") {
+                    index += 1
+                }
             }
             return .loop(body)
-
         case "case", "default":
             // Outside a switch body we parsed; skip to the colon.
-            while index < tokens.count, !isPunctuation(":") { index += 1 }
-            if index < tokens.count { index += 1 }
+            while index < tokens.count, !isPunctuation(":") {
+                index += 1
+            }
+            if index < tokens.count {
+                index += 1
+            }
             return .label
-
         case "mes":
             let (arguments, end) = parseArguments(from: index + 1, until: ";")
             index = end
             let lines = arguments.map { DialogLine(segments: $0, line: token.line) }
             return .mes(lines)
-
         default:
             if index + 1 < tokens.count, tokens[index + 1].kind == .punctuation, tokens[index + 1].text == ":" {
                 index += 2
@@ -202,7 +223,9 @@ struct ScriptParser {
         }
 
         while index < tokens.count {
-            if case .header = tokens[index].kind { break }
+            if case .header = tokens[index].kind {
+                break
+            }
             if isPunctuation("}") {
                 index += 1
                 break
@@ -212,8 +235,12 @@ struct ScriptParser {
                 finishCase()
                 inCase = true
                 hasDefault = hasDefault || token.text.lowercased() == "default"
-                while index < tokens.count, !isPunctuation(":") { index += 1 }
-                if index < tokens.count { index += 1 }
+                while index < tokens.count, !isPunctuation(":") {
+                    index += 1
+                }
+                if index < tokens.count {
+                    index += 1
+                }
                 continue
             }
             if let statement = parseStatement() {
@@ -233,24 +260,35 @@ struct ScriptParser {
 
         while index < tokens.count {
             let token = tokens[index]
-            if case .header = token.kind { break }
+            if case .header = token.kind {
+                break
+            }
             if token.kind == .punctuation {
                 switch token.text {
-                case "(", "[": depth += 1
-                case ")", "]": depth -= 1
+                case "(", "[":
+                    depth += 1
+                case ")", "]":
+                    depth -= 1
                 case "{", "}":
-                    if depth <= 0 { return classify(command, mentionsMenu) }
+                    if depth <= 0 {
+                        return classify(command, mentionsMenu)
+                    }
                 case ";":
                     if depth <= 0 {
                         index += 1
                         return classify(command, mentionsMenu)
                     }
-                default: break
+                default:
+                    break
                 }
             } else if token.kind == .identifier {
                 let name = token.text.lowercased()
-                if command == nil { command = name }
-                if Self.menuCommands.contains(name) { mentionsMenu = true }
+                if command == nil {
+                    command = name
+                }
+                if Self.menuCommands.contains(name) {
+                    mentionsMenu = true
+                }
             }
             index += 1
         }
@@ -259,22 +297,36 @@ struct ScriptParser {
 
     private func classify(_ command: String?, _ mentionsMenu: Bool) -> Statement {
         if let command {
-            if Self.terminateCommands.contains(command) { return .terminate }
-            if Self.newPageCommands.contains(command) { return .newPage }
-            if command == "break" || command == "continue" { return .exit }
+            if Self.terminateCommands.contains(command) {
+                return .terminate
+            }
+            if Self.newPageCommands.contains(command) {
+                return .newPage
+            }
+            if command == "break" || command == "continue" {
+                return .exit
+            }
             // Script functions (`F_Foo(...)`) are called directly and may show dialog themselves.
-            if command.hasPrefix("f_") { return .newPage }
+            if command.hasPrefix("f_") {
+                return .newPage
+            }
         }
         return mentionsMenu ? .newPage : .transparent
     }
 
     private mutating func skipParenthesized() {
-        guard isPunctuation("(") else { return }
+        guard isPunctuation("(") else {
+            return
+        }
         var depth = 0
         while index < tokens.count {
-            if case .header = tokens[index].kind { return }
+            if case .header = tokens[index].kind {
+                return
+            }
             if tokens[index].kind == .punctuation {
-                if tokens[index].text == "(" { depth += 1 }
+                if tokens[index].text == "(" {
+                    depth += 1
+                }
                 if tokens[index].text == ")" {
                     depth -= 1
                     if depth == 0 {
@@ -352,12 +404,15 @@ struct ScriptParser {
         for token in tokens {
             if token.kind == .punctuation {
                 switch token.text {
-                case "(", "[": depth += 1
-                case ")", "]": depth -= 1
+                case "(", "[":
+                    depth += 1
+                case ")", "]":
+                    depth -= 1
                 case "+" where depth == 0:
                     terms.append([])
                     continue
-                default: break
+                default:
+                    break
                 }
             }
             terms[terms.count - 1].append(token)

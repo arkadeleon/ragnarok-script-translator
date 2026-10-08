@@ -15,10 +15,13 @@ struct Token {
         case punctuation
     }
 
-    var kind: Kind
+    var kind: Token.Kind
+
     /// For strings, the unescaped content. For everything else, the raw source text.
     var text: String
+
     var line: Int
+
     /// Byte range in the source, used to reproduce placeholder expressions verbatim.
     var range: Range<Int>
 }
@@ -35,17 +38,14 @@ struct ScriptTokenizer {
         bytes = Array(source.utf8)
     }
 
-    static func tokenize(_ source: String) -> [Token] {
-        var tokenizer = ScriptTokenizer(source: source)
-        return tokenizer.tokenize()
-    }
-
-    private mutating func tokenize() -> [Token] {
+    mutating func tokenize() -> [Token] {
         var tokens: [Token] = []
         while index < bytes.count {
             if depth == 0 {
                 skipWhitespaceAndComments()
-                guard index < bytes.count else { break }
+                guard index < bytes.count else {
+                    break
+                }
                 if let header = readHeaderLine() {
                     tokens.append(header)
                 }
@@ -53,8 +53,12 @@ struct ScriptTokenizer {
             }
 
             skipWhitespaceAndComments()
-            guard index < bytes.count else { break }
-            guard let token = readToken() else { continue }
+            guard index < bytes.count else {
+                break
+            }
+            guard let token = readToken() else {
+                continue
+            }
             if token.kind == .punctuation {
                 if token.text == "{" {
                     depth += 1
@@ -91,11 +95,11 @@ struct ScriptTokenizer {
             depth = 1
         }
 
-        return Token(kind: .header(npc: Self.displayName(of: fields[2])), text: text, line: startLine, range: start..<index)
+        return Token(kind: .header(npc: displayName(of: fields[2])), text: text, line: startLine, range: start..<index)
     }
 
     /// `Guard#pront::prtguard` -> `Guard`
-    private static func displayName(of name: String) -> String? {
+    private func displayName(of name: String) -> String? {
         var name = Substring(name)
         if let range = name.range(of: "::") {
             name = name[..<range.lowerBound]
@@ -136,17 +140,22 @@ struct ScriptTokenizer {
         }
     }
 
+    private func peek(_ offset: Int) -> UInt8? {
+        let position = index + offset
+        return position < bytes.count ? bytes[position] : nil
+    }
+
     private mutating func readToken() -> Token? {
         let byte = bytes[index]
         if byte == UInt8(ascii: "\"") {
             return readString()
         }
-        if Self.isIdentifierStart(byte) || Self.isVariablePrefix(byte) {
+        if byte.isIdentifierStart || byte.isVariablePrefix {
             if let identifier = readIdentifier() {
                 return identifier
             }
         }
-        if Self.isDigit(byte) {
+        if byte.isDigit {
             return readNumber()
         }
         return readPunctuation()
@@ -179,14 +188,16 @@ struct ScriptTokenizer {
 
     /// Mirrors rAthena's `skip_escaped_c` / `sv_unescape_c`. `index` points just past the backslash.
     private mutating func readEscape() -> [UInt8] {
-        guard index < bytes.count else { return [] }
+        guard index < bytes.count else {
+            return []
+        }
         let byte = bytes[index]
         switch byte {
         case UInt8(ascii: "x"):
             index += 1
             var value: UInt8 = 0
             var digits = 0
-            while index < bytes.count, let digit = Self.hexValue(bytes[index]) {
+            while index < bytes.count, let digit = bytes[index].hexValue {
                 value = value &* 16 &+ digit
                 digits += 1
                 index += 1
@@ -201,13 +212,27 @@ struct ScriptTokenizer {
                 index += 1
             }
             return [value]
-        case UInt8(ascii: "n"): index += 1; return [0x0A]
-        case UInt8(ascii: "r"): index += 1; return [0x0D]
-        case UInt8(ascii: "t"): index += 1; return [0x09]
-        case UInt8(ascii: "a"): index += 1; return [0x07]
-        case UInt8(ascii: "b"): index += 1; return [0x08]
-        case UInt8(ascii: "v"): index += 1; return [0x0B]
-        case UInt8(ascii: "f"): index += 1; return [0x0C]
+        case UInt8(ascii: "n"):
+            index += 1
+            return [0x0A]
+        case UInt8(ascii: "r"):
+            index += 1
+            return [0x0D]
+        case UInt8(ascii: "t"):
+            index += 1
+            return [0x09]
+        case UInt8(ascii: "a"):
+            index += 1
+            return [0x07]
+        case UInt8(ascii: "b"):
+            index += 1
+            return [0x08]
+        case UInt8(ascii: "v"):
+            index += 1
+            return [0x0B]
+        case UInt8(ascii: "f"):
+            index += 1
+            return [0x0C]
         case UInt8(ascii: "\""), UInt8(ascii: "'"), UInt8(ascii: "\\"), UInt8(ascii: "?"):
             index += 1
             return [byte]
@@ -221,13 +246,13 @@ struct ScriptTokenizer {
     private mutating func readIdentifier() -> Token? {
         let start = index
         var cursor = index
-        while cursor < bytes.count, Self.isVariablePrefix(bytes[cursor]) {
+        while cursor < bytes.count, bytes[cursor].isVariablePrefix {
             cursor += 1
         }
-        guard cursor < bytes.count, Self.isIdentifierStart(bytes[cursor]) else {
+        guard cursor < bytes.count, bytes[cursor].isIdentifierStart else {
             return nil
         }
-        while cursor < bytes.count, Self.isIdentifierPart(bytes[cursor]) {
+        while cursor < bytes.count, bytes[cursor].isIdentifierPart {
             cursor += 1
         }
         if cursor < bytes.count, bytes[cursor] == UInt8(ascii: "$") {
@@ -239,7 +264,7 @@ struct ScriptTokenizer {
 
     private mutating func readNumber() -> Token {
         let start = index
-        while index < bytes.count, Self.isIdentifierPart(bytes[index]) {
+        while index < bytes.count, bytes[index].isIdentifierPart {
             index += 1
         }
         return Token(kind: .number, text: String(decoding: bytes[start..<index], as: UTF8.self), line: line, range: start..<index)
@@ -250,39 +275,35 @@ struct ScriptTokenizer {
         index += 1
         return Token(kind: .punctuation, text: String(decoding: bytes[start..<index], as: UTF8.self), line: line, range: start..<index)
     }
+}
 
-    // MARK: - Character classes
-
-    private func peek(_ offset: Int) -> UInt8? {
-        let position = index + offset
-        return position < bytes.count ? bytes[position] : nil
+extension UInt8 {
+    fileprivate var isIdentifierStart: Bool {
+        (self >= UInt8(ascii: "a") && self <= UInt8(ascii: "z")) || (self >= UInt8(ascii: "A") && self <= UInt8(ascii: "Z")) || self == UInt8(ascii: "_")
     }
 
-    private static func isIdentifierStart(_ byte: UInt8) -> Bool {
-        (byte >= UInt8(ascii: "a") && byte <= UInt8(ascii: "z"))
-            || (byte >= UInt8(ascii: "A") && byte <= UInt8(ascii: "Z"))
-            || byte == UInt8(ascii: "_")
+    fileprivate var isIdentifierPart: Bool {
+        isIdentifierStart || isDigit
     }
 
-    private static func isIdentifierPart(_ byte: UInt8) -> Bool {
-        isIdentifierStart(byte) || isDigit(byte)
+    fileprivate var isDigit: Bool {
+        self >= UInt8(ascii: "0") && self <= UInt8(ascii: "9")
     }
 
-    private static func isDigit(_ byte: UInt8) -> Bool {
-        byte >= UInt8(ascii: "0") && byte <= UInt8(ascii: "9")
+    fileprivate var isVariablePrefix: Bool {
+        self == UInt8(ascii: "$") || self == UInt8(ascii: "@") || self == UInt8(ascii: ".") || self == UInt8(ascii: "'") || self == UInt8(ascii: "#")
     }
 
-    private static func isVariablePrefix(_ byte: UInt8) -> Bool {
-        byte == UInt8(ascii: "$") || byte == UInt8(ascii: "@") || byte == UInt8(ascii: ".")
-            || byte == UInt8(ascii: "'") || byte == UInt8(ascii: "#")
-    }
-
-    private static func hexValue(_ byte: UInt8) -> UInt8? {
-        switch byte {
-        case UInt8(ascii: "0")...UInt8(ascii: "9"): return byte - UInt8(ascii: "0")
-        case UInt8(ascii: "a")...UInt8(ascii: "f"): return byte - UInt8(ascii: "a") + 10
-        case UInt8(ascii: "A")...UInt8(ascii: "F"): return byte - UInt8(ascii: "A") + 10
-        default: return nil
+    fileprivate var hexValue: UInt8? {
+        switch self {
+        case UInt8(ascii: "0")...UInt8(ascii: "9"):
+            self - UInt8(ascii: "0")
+        case UInt8(ascii: "a")...UInt8(ascii: "f"):
+            self - UInt8(ascii: "a") + 10
+        case UInt8(ascii: "A")...UInt8(ascii: "F"):
+            self - UInt8(ascii: "A") + 10
+        default:
+            nil
         }
     }
 }

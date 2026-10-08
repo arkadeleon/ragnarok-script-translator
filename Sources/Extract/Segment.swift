@@ -10,9 +10,3 @@ enum Segment: Equatable {
     case literal(String)
     case placeholder(String)
 }
-
-/// One `mes` argument: a single line of dialog.
-struct DialogLine {
-    var segments: [Segment]
-    var line: Int
-}

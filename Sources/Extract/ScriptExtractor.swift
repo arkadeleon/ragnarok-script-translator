@@ -12,15 +12,17 @@
 /// emits a page per path, so runtime pages can be matched as a whole. Paths are capped per page;
 /// past the cap the pending text is emitted as is and matching falls back to line chunks.
 struct ScriptExtractor {
-    private let parser: ScriptParser
     private let tokens: [Token]
+    private let parser: ScriptParser
 
     /// Maximum number of alternative pages kept open at once.
     fileprivate static let maxVariants = 16
 
     init(source: String) {
+        var tokenizer = ScriptTokenizer(source: source)
+        tokens = tokenizer.tokenize()
+
         let bytes = Array(source.utf8)
-        tokens = ScriptTokenizer.tokenize(source)
         parser = ScriptParser(source: bytes, tokens: tokens)
     }
 
@@ -36,7 +38,10 @@ struct ScriptExtractor {
             }
         }
 
-        for script in ScriptParser.parse(source: parser.source, tokens: tokens) {
+        var parser = self.parser
+        let parsedScripts = parser.parseScripts()
+
+        for script in parsedScripts {
             var walker = PageWalker(npc: script.npc, emit: append)
             walker.run(.block(script.statements))
             walker.finish()
@@ -75,16 +80,14 @@ struct ScriptExtractor {
                     continue
                 }
                 let (arguments, end) = parser.parseArguments(from: index + 2, until: ")")
-                Self.makeOptions(npc: npc, line: token.line, arguments: arguments).forEach(append)
+                makeOptions(npc: npc, line: token.line, arguments: arguments).forEach(append)
                 index = end
-
             case "menu":
                 let (arguments, end) = parser.parseArguments(from: index + 1, until: ";")
                 // `menu "text",L_label,"text",L_label,...`: every other argument is a label.
                 let texts = arguments.enumerated().filter { $0.offset.isMultiple(of: 2) }.map(\.element)
-                Self.makeOptions(npc: npc, line: token.line, arguments: texts).forEach(append)
+                makeOptions(npc: npc, line: token.line, arguments: texts).forEach(append)
                 index = end
-
             default:
                 index += 1
             }
@@ -92,12 +95,12 @@ struct ScriptExtractor {
     }
 
     /// Menu arguments may hold several options separated by `:`; empty options are hidden by the client.
-    private static func makeOptions(npc: String?, line: Int, arguments: [[Segment]]) -> [ExtractedScript] {
+    private func makeOptions(npc: String?, line: Int, arguments: [[Segment]]) -> [ExtractedScript] {
         var options: [ExtractedScript] = []
         for argument in arguments {
             var current: [Segment] = []
             func finishOption() {
-                if let option = makeScript(kind: .option, npc: npc, line: line, lines: [current]) {
+                if let option = ExtractedScript(kind: .option, npc: npc, line: line, lines: [current]) {
                     options.append(option)
                 }
                 current.removeAll()
@@ -107,7 +110,7 @@ struct ScriptExtractor {
                 case .placeholder(let expression):
                     // `select(.@menu$ + "Cancel")`: the variable holds a `:`-terminated list of options
                     // built elsewhere, so the literal after it is an option of its own.
-                    if segmentIndex == 0, isMenuVariable(expression) {
+                    if segmentIndex == 0, expression.lowercased().hasSuffix("menu$") {
                         continue
                     }
                     current.append(segment)
@@ -125,45 +128,6 @@ struct ScriptExtractor {
         }
         return options
     }
-
-    private static func isMenuVariable(_ expression: String) -> Bool {
-        expression.lowercased().hasSuffix("menu$")
-    }
-
-    // MARK: - Building scripts
-
-    static func makeScript(kind: ExtractedScript.Kind, npc: String?, line: Int, lines: [[Segment]]) -> ExtractedScript? {
-        guard !lines.isEmpty else {
-            return nil
-        }
-
-        var text = ""
-        var placeholders: [String] = []
-        var hasText = false
-
-        for (lineIndex, segments) in lines.enumerated() {
-            if lineIndex > 0 {
-                text += "\n"
-            }
-            for segment in segments {
-                switch segment {
-                case .literal(let literal):
-                    text += literal
-                    if !literal.allSatisfy(\.isWhitespace) {
-                        hasText = true
-                    }
-                case .placeholder(let expression):
-                    text += "{\(placeholders.count)}"
-                    placeholders.append(expression)
-                }
-            }
-        }
-
-        guard hasText else {
-            return nil
-        }
-        return ExtractedScript(kind: kind, npc: npc, line: line, text: text, placeholders: placeholders.isEmpty ? nil : placeholders)
-    }
 }
 
 // MARK: - Page walker
@@ -180,7 +144,7 @@ private struct PageWalker {
     let emit: (ExtractedScript) -> Void
 
     /// Open pages, one per path. Empty means no path reaches here (after `close`, `end`, ...).
-    private var open: [Variant] = [Variant()]
+    private var open: [PageWalker.Variant] = [PageWalker.Variant()]
 
     init(npc: String?, emit: @escaping (ExtractedScript) -> Void) {
         self.npc = npc
@@ -189,11 +153,11 @@ private struct PageWalker {
 
     /// Runs `statement` and returns the variants that left it through `break`/`continue`.
     @discardableResult
-    mutating func run(_ statement: Statement) -> [Variant] {
+    mutating func run(_ statement: Statement) -> [PageWalker.Variant] {
         switch statement {
         case .mes(let lines):
             if open.isEmpty {
-                open = [Variant()]
+                open = [PageWalker.Variant()]
             }
             for index in open.indices {
                 if open[index].lines.isEmpty, let first = lines.first {
@@ -202,68 +166,60 @@ private struct PageWalker {
                 open[index].lines.append(contentsOf: lines.map(\.segments))
             }
             return []
-
         case .transparent:
             return []
-
         case .newPage, .label:
             flush()
-            open = [Variant()]
+            open = [PageWalker.Variant()]
             return []
-
         case .terminate:
             flush()
             open = []
             return []
-
         case .exit:
             let exits = open
             open = []
             return exits
-
         case .block(let statements):
-            var exits: [Variant] = []
+            var exits: [PageWalker.Variant] = []
             for statement in statements {
                 exits += run(statement)
             }
             return exits
-
         case .branch(let alternatives, let otherwise):
             let before = open
-            var after: [Variant] = []
-            var exits: [Variant] = []
+            var after: [PageWalker.Variant] = []
+            var exits: [PageWalker.Variant] = []
             for alternative in alternatives {
                 open = before
                 exits += run(alternative)
-                after = Self.union(after, open)
+                after = union(after, open)
             }
             if let otherwise {
                 open = before
                 exits += run(otherwise)
-                after = Self.union(after, open)
+                after = union(after, open)
             } else {
-                after = Self.union(after, before)
+                after = union(after, before)
             }
             open = []
             merge(after)
             return exits
-
         case .switch(let cases, let hasDefault):
             // Execution jumps to the matching case and falls through into the following
             // cases until a `break`, so each case starts from the jump state plus whatever
             // fell out of the previous case.
             let before = open
-            var after: [Variant] = hasDefault ? [] : before
-            var fallen: [Variant] = []
+            var after: [PageWalker.Variant] = hasDefault ? [] : before
+            var fallen: [PageWalker.Variant] = []
             for body in cases {
-                open = Self.union(before, fallen)
-                after = Self.union(after, run(body))
+                open = union(before, fallen)
+                after = union(after, run(body))
                 fallen = open
             }
             open = []
-            merge(Self.union(after, fallen))
+            merge(union(after, fallen))
             return []
-
         case .loop(let body):
             let before = open
             let exits = run(body)
@@ -280,16 +236,16 @@ private struct PageWalker {
 
     // MARK: - Private
 
-    private mutating func merge(_ variants: [Variant]) {
-        open = Self.union(open, variants)
+    private mutating func merge(_ variants: [PageWalker.Variant]) {
+        open = union(open, variants)
         if open.count > ScriptExtractor.maxVariants {
             flush()
-            open = [Variant()]
+            open = [PageWalker.Variant()]
         }
     }
 
-    private static func union(_ lists: [Variant]...) -> [Variant] {
-        var result: [Variant] = []
+    private func union(_ lists: [PageWalker.Variant]...) -> [PageWalker.Variant] {
+        var result: [PageWalker.Variant] = []
         for list in lists {
             for variant in list where !result.contains(variant) {
                 result.append(variant)
@@ -300,7 +256,7 @@ private struct PageWalker {
 
     private func flush() {
         for variant in open where !variant.lines.isEmpty {
-            if let script = ScriptExtractor.makeScript(kind: .message, npc: npc, line: variant.line, lines: variant.lines) {
+            if let script = ExtractedScript(kind: .message, npc: npc, line: variant.line, lines: variant.lines) {
                 emit(script)
             }
         }

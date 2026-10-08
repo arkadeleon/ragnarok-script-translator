@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum Git {
-    struct Error: Swift.Error, CustomStringConvertible {
-        var description: String
-    }
+struct GitError: Error, CustomStringConvertible {
+    var description: String
+}
 
+enum Git {
     /// Clones `url` into `repository` if it does not exist yet, otherwise pulls the latest changes.
     static func sync(repository: URL, from url: String) throws {
         let gitDirectory = repository.appending(path: ".git")
@@ -33,7 +33,7 @@ enum Git {
         try process.run()
         process.waitUntilExit()
         guard process.terminationStatus == 0 else {
-            throw Error(description: "git \(arguments.joined(separator: " ")) failed with status \(process.terminationStatus)")
+            throw GitError(description: "git \(arguments.joined(separator: " ")) failed with status \(process.terminationStatus)")
         }
     }
 }

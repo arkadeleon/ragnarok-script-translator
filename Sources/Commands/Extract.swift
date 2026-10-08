@@ -38,18 +38,21 @@ struct Extract: ParsableCommand {
             let data = try Data(contentsOf: fileURL)
             let source = String(decoding: data, as: UTF8.self)
 
-            let scripts = ScriptExtractor(source: source).extract()
+            let extractor = ScriptExtractor(source: source)
+            let scripts = extractor.extract()
             guard !scripts.isEmpty else {
                 continue
             }
 
             let file = ExtractedFile(file: "npc/" + relativePath, scripts: scripts)
+            let json = try encoder.encode(file)
+
             let jsonURL = outputURL
                 .appending(path: relativePath)
                 .deletingPathExtension()
                 .appendingPathExtension("json")
             try FileManager.default.createDirectory(at: jsonURL.deletingLastPathComponent(), withIntermediateDirectories: true)
-            try encoder.encode(file).write(to: jsonURL)
+            try json.write(to: jsonURL)
 
             totalScripts += scripts.count
             totalFiles += 1
