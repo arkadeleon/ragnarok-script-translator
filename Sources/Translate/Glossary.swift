@@ -7,15 +7,17 @@
 
 import Foundation
 
-/// Terminology from `Glossary/<language>.lproj/`: `Glossary.json` is generated from the game data
-/// tables by the `glossary` command, `Manual.json` is maintained by hand for the terms those tables
-/// do not carry (zeny, job names, speaker names, ...) and wins on conflict. Only the terms that
-/// occur in a batch are put into its prompt. `Examples.json`, also by hand, holds a few translated
-/// lines that go into every prompt to show the style.
+/// Terminology from `Glossary/<language>.lproj/`: `Items.json`, `Maps.json`, `Monsters.json` and
+/// `Skills.json` are generated from the game data tables by the `glossary` command, `Manual.json` is
+/// maintained by hand for the terms those tables do not carry (zeny, job names, speaker names, ...)
+/// and wins on conflict. Only the terms that occur in a batch are put into its prompt.
+/// `Examples.json`, also by hand, holds a few translated lines that go into every prompt to show
+/// the style.
 ///
-/// Both files group terms by kind (`{"monster": {"Poring": "波利"}, "skill": {...}}`). The kind goes
-/// into the prompt so the model can tell a name from the everyday word it happens to spell: a
-/// speaker called "Check" is no reason to translate "check the forest" as its name.
+/// Terms are grouped by kind: each generated file holds one kind (`{"Poring": "波利"}`), while
+/// `Manual.json` groups its terms by kind (`{"monster": {...}, "job": {...}}`). The kind goes into
+/// the prompt so the model can tell a name from the everyday word it happens to spell: a speaker
+/// called "Check" is no reason to translate "check the forest" as its name.
 struct Glossary {
     struct Entry {
         var term: String
@@ -48,9 +50,24 @@ struct Glossary {
                 terms.map { Entry(term: $0.key, kind: kind, translation: $0.value) }
             }
         }
+        func load(_ name: String, kind: String) throws -> [Entry] {
+            guard let data = try? Data(contentsOf: localized.appending(path: name)) else {
+                return []
+            }
+            return try decoder.decode([String: String].self, from: data).map {
+                Entry(term: $0.key, kind: kind, translation: $0.value)
+            }
+        }
         let manual = try load("Manual.json")
         let manualTerms = Set(manual.map { $0.term.lowercased() })
-        let generated = try load("Glossary.json").filter { !manualTerms.contains($0.term.lowercased()) }
+        let generated = try [
+            load("Items.json", kind: "item"),
+            load("Monsters.json", kind: "monster"),
+            load("Skills.json", kind: "skill"),
+            load("Maps.json", kind: "map"),
+        ]
+        .joined()
+        .filter { !manualTerms.contains($0.term.lowercased()) }
         // Matching ignores case, so "Old Man" and "Old man" with the same rendering are one entry.
         var seen: Set<[String]> = []
         entries = (generated + manual)

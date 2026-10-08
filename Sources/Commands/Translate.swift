@@ -30,7 +30,7 @@ struct Translate: AsyncParsableCommand {
     @Option(name: .shortAndLong, help: "Directory to write <language>.lproj/ into.")
     var output: String = "Translated"
 
-    @Option(help: "Directory holding <language>.lproj/Glossary.json terminology.")
+    @Option(help: "Directory holding <language>.lproj/ glossary terminology.")
     var glossary: String = "Glossary"
 
     enum Provider: String, ExpressibleByArgument, CaseIterable {
