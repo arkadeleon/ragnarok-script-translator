@@ -14,9 +14,10 @@ struct RagnarokScriptTranslator: AsyncParsableCommand {
         abstract: "Extracts translatable text from rAthena NPC scripts and translates it.",
         subcommands: [
             Extract.self,
-            GenerateGlossary.self,
             Import.self,
+            GenerateGlossary.self,
             Translate.self,
+            Export.self,
         ]
     )
 }
