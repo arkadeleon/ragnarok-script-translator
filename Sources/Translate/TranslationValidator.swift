@@ -9,13 +9,21 @@ import Foundation
 
 /// Checks that a translation still works as a client lookup value: the parts the client substitutes
 /// or renders specially must survive untouched.
-enum TranslationValidator {
-    private static var placeholderPattern: Regex<Substring> { /\{\d+\}/ }
-    private static var colorPattern: Regex<Substring> { /\^[0-9A-Fa-f]{6}/ }
-    private static var headerPattern: Regex<(Substring, Substring)> { /^[ \t]*\[[ \t]*[^\]\n]*?[ \t]*\]\]?[ \t]*(\n|$)/ }
+struct TranslationValidator {
+    private var placeholderPattern: Regex<Substring> {
+        /\{\d+\}/
+    }
+
+    private var colorPattern: Regex<Substring> {
+        /\^[0-9A-Fa-f]{6}/
+    }
+
+    private var headerPattern: Regex<(Substring, Substring)> {
+        /^[ \t]*\[[ \t]*[^\]\n]*?[ \t]*\]\]?[ \t]*(\n|$)/
+    }
 
     /// Returns a reason the translation is unacceptable, or nil if it passes.
-    static func validate(source: String, translation: String) -> String? {
+    func validate(source: String, translation: String) -> String? {
         if translation.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             return "empty"
         }
@@ -52,7 +60,7 @@ enum TranslationValidator {
     }
 
     /// Repairs mistakes that are unambiguous: a literal backslash-n where the model meant a line break.
-    static func tidy(_ translation: String, source: String) -> String {
+    func tidy(_ translation: String, source: String) -> String {
         var result = translation
         if !source.contains("\\n") {
             result = result.replacingOccurrences(of: "\\n", with: "\n")

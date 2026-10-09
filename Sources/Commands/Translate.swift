@@ -70,7 +70,7 @@ struct Translate: AsyncParsableCommand {
         var cache = try TranslationCache(directory: outputURL)
 
         // Relative paths like `cities/prontera.json`, shared by Extracted/ and the output.
-        let files = try Self.extractedFiles(in: inputURL)
+        let files = try extractedFiles(in: inputURL)
         let decoder = JSONDecoder()
         var pending: [String] = []
         for file in files {
@@ -82,12 +82,12 @@ struct Translate: AsyncParsableCommand {
             }
             pending.append(file)
         }
-        let removed = try Self.removeOrphans(in: outputURL, keeping: Set(files))
+        let removed = try removeOrphans(in: outputURL, keeping: Set(files))
         let translatedCount = files.count - pending.count
         if let limit {
             pending = Array(pending.prefix(limit))
         }
-        print("\(files.count) files, \(translatedCount) up to date, \(pending.count) to translate, \(removed) removed; \(cache.texts.count) texts cached, \(glossary.count) glossary terms")
+        print("\(files.count) files, \(translatedCount) up to date, \(pending.count) to translate, \(removed) removed; \(cache.texts.count) texts cached, \(glossary.entries.count) glossary terms")
 
         // Files run concurrently, each against the cache as it was when the file started; the
         // cache is only updated here, as files finish. A text shared by two files in flight at the
@@ -128,8 +128,8 @@ struct Translate: AsyncParsableCommand {
                         }
                     }
 
-                    let translated = Self.translatedFile(for: extracted, cache: cache)
-                    try Self.write(translated, to: outputURL.appending(path: file))
+                    let translated = translatedFile(for: extracted, cache: cache)
+                    try write(translated, to: outputURL.appending(path: file))
 
                     let failures = translated.scripts.filter { $0.error != nil }.count
                     printProgress(done: done, total: pending.count, start: start, file: extracted.file, scripts: extracted.scripts.count, failures: failures)
@@ -209,8 +209,9 @@ struct Translate: AsyncParsableCommand {
                         retry.append(script)
                         continue
                     }
-                    let output = TranslationValidator.tidy(raw, source: text)
-                    if let reason = TranslationValidator.validate(source: text, translation: output) {
+                    let validator = TranslationValidator()
+                    let output = validator.tidy(raw, source: text)
+                    if let reason = validator.validate(source: text, translation: output) {
                         lastFailures[text] = TranslationFailure(reason: reason, output: output)
                         retry.append(script)
                         continue
@@ -289,14 +290,14 @@ struct Translate: AsyncParsableCommand {
 
     // MARK: - Output
 
-    private static func translatedFile(for extracted: ExtractedFile, cache: TranslationCache) -> TranslatedFile {
+    private func translatedFile(for extracted: ExtractedFile, cache: TranslationCache) -> TranslatedFile {
         let scripts = extracted.scripts.map {
             TranslatedScript($0, translation: cache.texts[$0.text], state: cache.state(of: $0.text), failure: cache.failures[$0.text])
         }
         return TranslatedFile(file: extracted.file, scripts: scripts)
     }
 
-    private static func write(_ file: TranslatedFile, to url: URL) throws {
+    private func write(_ file: TranslatedFile, to url: URL) throws {
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
@@ -307,7 +308,7 @@ struct Translate: AsyncParsableCommand {
 
     /// Deletes translated files whose extracted source no longer exists. The aggregate tables at
     /// the top level are not per-file outputs and are left alone.
-    private static func removeOrphans(in outputURL: URL, keeping files: Set<String>) throws -> Int {
+    private func removeOrphans(in outputURL: URL, keeping files: Set<String>) throws -> Int {
         guard let enumerator = FileManager.default.enumerator(atPath: outputURL.path) else {
             return 0
         }
@@ -320,7 +321,7 @@ struct Translate: AsyncParsableCommand {
     }
 
     /// Paths of the extracted JSON files relative to `directory`, sorted.
-    private static func extractedFiles(in directory: URL) throws -> [String] {
+    private func extractedFiles(in directory: URL) throws -> [String] {
         guard let enumerator = FileManager.default.enumerator(atPath: directory.path) else {
             throw ValidationError("Cannot enumerate \(directory.path)")
         }
@@ -337,10 +338,10 @@ struct Translate: AsyncParsableCommand {
         let elapsed = Date().timeIntervalSince(start)
         let remaining = elapsed / Double(done) * Double(total - done)
         let note = failures > 0 ? ", \(failures) failed" : ""
-        print(String(format: "%d/%d  %@ (%d scripts%@)  ETA %@", done, total, file, scripts, note, Self.format(seconds: remaining)))
+        print(String(format: "%d/%d  %@ (%d scripts%@)  ETA %@", done, total, file, scripts, note, format(seconds: remaining)))
     }
 
-    private static func format(seconds: TimeInterval) -> String {
+    private func format(seconds: TimeInterval) -> String {
         let total = Int(seconds)
         return total >= 3600 ? "\(total / 3600)h\(total % 3600 / 60)m" : "\(total / 60)m\(total % 60)s"
     }

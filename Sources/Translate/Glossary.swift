@@ -32,30 +32,26 @@ struct Glossary {
         var translation: String
     }
 
-    private var entries: [Entry] = []
-    private(set) var examples: [Example] = []
-
-    var count: Int { entries.count }
-
-    init() {}
+    private(set) var entries: [Glossary.Entry] = []
+    private(set) var examples: [Glossary.Example] = []
 
     init(directory: URL, language: String) throws {
         let localized = directory.appending(path: "\(language).lproj")
         let decoder = JSONDecoder()
-        func load(_ name: String) throws -> [Entry] {
+        func load(_ name: String) throws -> [Glossary.Entry] {
             guard let data = try? Data(contentsOf: localized.appending(path: name)) else {
                 return []
             }
             return try decoder.decode([String: [String: String]].self, from: data).flatMap { kind, terms in
-                terms.map { Entry(term: $0.key, kind: kind, translation: $0.value) }
+                terms.map { Glossary.Entry(term: $0.key, kind: kind, translation: $0.value) }
             }
         }
-        func load(_ name: String, kind: String) throws -> [Entry] {
+        func load(_ name: String, kind: String) throws -> [Glossary.Entry] {
             guard let data = try? Data(contentsOf: localized.appending(path: name)) else {
                 return []
             }
             return try decoder.decode([String: String].self, from: data).map {
-                Entry(term: $0.key, kind: kind, translation: $0.value)
+                Glossary.Entry(term: $0.key, kind: kind, translation: $0.value)
             }
         }
         let manual = try load("Manual.json")
@@ -75,21 +71,24 @@ struct Glossary {
             .filter { seen.insert([$0.term.lowercased(), $0.kind, $0.translation]).inserted }
 
         if let data = try? Data(contentsOf: localized.appending(path: "Examples.json")) {
-            examples = try decoder.decode([Example].self, from: data)
+            examples = try decoder.decode([Glossary.Example].self, from: data)
         }
     }
 
-    func entries(in texts: [String]) -> [Entry] {
+    func entries(in texts: [String]) -> [Glossary.Entry] {
         // Color codes sit right against the term (`^000077Poporing`) and would hide it.
         let texts = texts.map { $0.replacing(/\^[0-9A-Fa-f]{6}/, with: " ") }
         return entries.filter { entry in
-            texts.contains { Self.contains($0, word: entry.term) }
+            texts.contains { $0.contains(word: entry.term) }
         }
     }
+}
 
+extension String {
     /// Whole-word, case-insensitive match (scripts write `Al de Baran` for `Al De Baran`, or shout
     /// `MAGNUM BREAK!`); an `s` after the term still counts.
-    private static func contains(_ text: String, word: String) -> Bool {
+    fileprivate func contains(word: String) -> Bool {
+        let text = self
         var searchRange = text.startIndex..<text.endIndex
         while let range = text.range(of: word, options: .caseInsensitive, range: searchRange) {
             let before = range.lowerBound == text.startIndex ? nil : text[text.index(before: range.lowerBound)]

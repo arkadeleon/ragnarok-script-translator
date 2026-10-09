@@ -108,7 +108,7 @@ struct Import: AsyncParsableCommand {
                     for (text, candidates) in texts[start..<min(start + 1000, texts.count)] {
                         var best: (translation: String, count: Int)?
                         for candidate in candidates where candidate.count > best?.count ?? 0
-                            && TranslationValidator.validate(source: text, translation: candidate.translation) == nil {
+                            && TranslationValidator().validate(source: text, translation: candidate.translation) == nil {
                             best = candidate
                         }
                         translations[text] = best?.translation
