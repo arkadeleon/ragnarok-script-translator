@@ -16,6 +16,9 @@ import Foundation
 /// Re-running after `extract` picks up upstream changes: a file is redone when its extracted
 /// scripts no longer match the translated copy, and only the texts not yet in the cache go to the
 /// model. Translated files whose source disappeared are removed.
+///
+/// Texts with an official translation in `Imported/<language>.lproj/Scripts.json` are copied from
+/// there instead of translated.
 struct Translate: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
         abstract: "Translates extracted scripts into the target language with an instruction model."
@@ -29,6 +32,9 @@ struct Translate: AsyncParsableCommand {
 
     @Option(name: .shortAndLong, help: "Directory to write <language>.lproj/ into.")
     var output: String = "Translated"
+
+    @Option(help: "Directory holding <language>.lproj/Scripts.json imported translations.")
+    var imported: String = "Imported"
 
     @Option(help: "Directory holding <language>.lproj/ glossary terminology.")
     var glossary: String = "Glossary"
@@ -66,8 +72,12 @@ struct Translate: AsyncParsableCommand {
         let translator = OllamaTranslator(endpoint: endpointURL, model: model)
         let inputURL = URL(filePath: input)
         let outputURL = URL(filePath: output).appending(path: "\(language).lproj")
+        let importedURL = URL(filePath: imported).appending(path: "\(language).lproj/Scripts.json")
         let glossary = try Glossary(directory: URL(filePath: self.glossary), language: language)
+
         var cache = try TranslationCache(directory: outputURL)
+        let importedTranslations = try importedTranslations(at: importedURL)
+        cache.addImported(importedTranslations)
 
         // Relative paths like `cities/prontera.json`, shared by Extracted/ and the output.
         let files = try extractedFiles(in: inputURL)
@@ -77,7 +87,8 @@ struct Translate: AsyncParsableCommand {
             let extracted = try decoder.decode(ExtractedFile.self, from: Data(contentsOf: inputURL.appending(path: file)))
             if let data = try? Data(contentsOf: outputURL.appending(path: file)),
                let translated = try? decoder.decode(TranslatedFile.self, from: data),
-               translated.matches(extracted), !(retryFailed && translated.hasFailures) {
+               translated.matches(extracted), !(retryFailed && translated.hasFailures),
+               !lacksImported(translated, importedTranslations) {
                 continue
             }
             pending.append(file)
@@ -87,7 +98,7 @@ struct Translate: AsyncParsableCommand {
         if let limit {
             pending = Array(pending.prefix(limit))
         }
-        print("\(files.count) files, \(translatedCount) up to date, \(pending.count) to translate, \(removed) removed; \(cache.texts.count) texts cached, \(glossary.entries.count) glossary terms")
+        print("\(files.count) files, \(translatedCount) up to date, \(pending.count) to translate, \(removed) removed; \(cache.texts.count) texts cached (\(importedTranslations.count) imported), \(glossary.entries.count) glossary terms")
 
         // Files run concurrently, each against the cache as it was when the file started; the
         // cache is only updated here, as files finish. A text shared by two files in flight at the
@@ -305,6 +316,25 @@ struct Translate: AsyncParsableCommand {
     }
 
     // MARK: - Files
+
+    /// The imported translations at `url`, English text to translation; empty when the language
+    /// has none.
+    private func importedTranslations(at url: URL) throws -> [String: String] {
+        guard FileManager.default.fileExists(atPath: url.path) else {
+            return [:]
+        }
+        let decoder = JSONDecoder()
+        let data = try Data(contentsOf: url)
+        return try decoder.decode([String: String].self, from: data)
+    }
+
+    /// True when `translated` has a script without its imported translation, so the file is
+    /// rewritten to pick it up.
+    private func lacksImported(_ translated: TranslatedFile, _ imported: [String: String]) -> Bool {
+        translated.scripts.contains { script in
+            imported[script.text].map { script.translation == nil || (script.state != .translated && script.translation != $0) } ?? false
+        }
+    }
 
     /// Deletes translated files whose extracted source no longer exists. The aggregate tables at
     /// the top level are not per-file outputs and are left alone.

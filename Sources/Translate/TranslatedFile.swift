@@ -106,6 +106,17 @@ struct TranslationCache {
         }
     }
 
+    /// Adds the official translations imported for the language, English text to translation, so
+    /// those texts are copied instead of sent to the model. They count as reviewed; a translation
+    /// a person already reviewed wins over them.
+    mutating func addImported(_ translations: [String: String]) {
+        for (text, translation) in translations where !reviewed.contains(text) {
+            texts[text] = translation
+            reviewed.insert(text)
+            failures.removeValue(forKey: text)
+        }
+    }
+
     /// The state of the translation of `text` in `texts`.
     func state(of text: String) -> TranslationState {
         reviewed.contains(text) ? .translated : .needsReview
