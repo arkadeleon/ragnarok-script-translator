@@ -1,0 +1,405 @@
+{
+  "file" : "npc/custom/quests/valhallen.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 22,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\nI come from Valhalla to aid you.\nI can transmute for you many of the Valhallen items,\nalthough they require many rare elements to make.",
+      "translation" : "[蕾妮絲]\n我來自瓦爾哈拉，前來助你一臂之力。\n我能為你煉製許多瓦爾哈拉的裝備，不過需要不少稀有材料。"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Mjolnir",
+      "translation" : "雷神之錘"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Sleipnir",
+      "translation" : "史雷普尼爾之靴"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Brisingamen",
+      "translation" : "女神項鍊"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Gleipnir",
+      "translation" : "魔法鐵鏈"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Megingjard",
+      "translation" : "雷神腰帶"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Asprika",
+      "translation" : "阿斯普利卡"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Brynhild",
+      "translation" : "布倫希爾德"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Hervor",
+      "translation" : "赫爾薇爾"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Jormungand",
+      "translation" : "耶夢加得"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Muspellium",
+      "translation" : "精魔礦石"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Essence Of Rune",
+      "translation" : "符文魔力精髓"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Close",
+      "translation" : "關閉"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        ".@amount",
+        "((countitem(.@id)<.@amount)?(\"^dd3355\"):(\"^33dd55\"))",
+        "getitemname(.@id)",
+        "((getitemslots(.@id)>0)?\" [\"+getitemslots(.@id)+\"]\":\"\")"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\n^3355FFMjolnir^000000 is the mighty Hammer of Thor.\n^FF0000The items I need are as follows:^000000\n ~ {0}x {1}{2}{3}^000000",
+      "translation" : "[蕾妮絲]\n^3355FF雷神之錘^000000是托爾威力強大的戰錘。\n^FF0000我需要的材料如下：^000000\n ~ {0}x {1}{2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\n^3355FFMjolnir^000000 is the mighty Hammer of Thor.\n^FF0000The items I need are as follows:^000000",
+      "translation" : "[蕾妮絲]\n^3355FF雷神之錘^000000是托爾威力強大的戰錘。\n^FF0000我需要的材料如下：^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        ".@amount",
+        "((countitem(.@id)<.@amount)?(\"^dd3355\"):(\"^33dd55\"))",
+        "getitemname(.@id)",
+        "((getitemslots(.@id)>0)?\" [\"+getitemslots(.@id)+\"]\":\"\")"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\n^3355FFSleipnir^000000 are boots made after Odin's War Horse.\n^FF0000The items I need are as follows:^000000\n ~ {0}x {1}{2}{3}^000000",
+      "translation" : "[蕾妮絲]\n^3355FF史雷普尼爾之靴^000000是以奧丁的戰馬為原型製作的靴子。\n^FF0000我需要的材料如下：^000000\n ~ {0}x {1}{2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\n^3355FFSleipnir^000000 are boots made after Odin's War Horse.\n^FF0000The items I need are as follows:^000000",
+      "translation" : "[蕾妮絲]\n^3355FF史雷普尼爾之靴^000000是以奧丁的戰馬為原型製作的靴子。\n^FF0000我需要的材料如下：^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        ".@amount",
+        "((countitem(.@id)<.@amount)?(\"^dd3355\"):(\"^33dd55\"))",
+        "getitemname(.@id)",
+        "((getitemslots(.@id)>0)?\" [\"+getitemslots(.@id)+\"]\":\"\")"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\n^3355FFBrisingammen^000000 is the magical Necklace of Freyja, goddess of Beauty.\n^FF0000The items I need are as follows:^000000\n ~ {0}x {1}{2}{3}^000000",
+      "translation" : "[蕾妮絲]\n^3355FF女神項鍊^000000是美之女神芙蕾雅的神秘項鍊。\n^FF0000我需要的材料如下：^000000\n ~ {0}x {1}{2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\n^3355FFBrisingammen^000000 is the magical Necklace of Freyja, goddess of Beauty.\n^FF0000The items I need are as follows:^000000",
+      "translation" : "[蕾妮絲]\n^3355FF女神項鍊^000000是美之女神芙蕾雅的神秘項鍊。\n^FF0000我需要的材料如下：^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        ".@amount",
+        "((countitem(.@id)<.@amount)?(\"^dd3355\"):(\"^33dd55\"))",
+        "getitemname(.@id)",
+        "((getitemslots(.@id)>0)?\" [\"+getitemslots(.@id)+\"]\":\"\")"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFGleipnir^000000 is a light yet strong rope required to make ^3355FFMegingjard^000000\n^FF0000The items I need are as follows:^000000\n ~ {0}x {1}{2}{3}^000000",
+      "translation" : "[蕾妮絲]\n^3355FF魔法鐵鏈^000000是製作^3355FF雷神腰帶^000000所需的輕便且強韌的繩索。\n^FF0000我需要的材料如下：^000000\n ~ {0}x {1}{2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFGleipnir^000000 is a light yet strong rope required to make ^3355FFMegingjard^000000\n^FF0000The items I need are as follows:^000000",
+      "translation" : "[蕾妮絲]\n^3355FF魔法鐵鏈^000000是製作^3355FF雷神腰帶^000000所需的輕便且強韌的繩索。\n^FF0000我需要的材料如下：^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        ".@amount",
+        "((countitem(.@id)<.@amount)?(\"^dd3355\"):(\"^33dd55\"))",
+        "getitemname(.@id)",
+        "((getitemslots(.@id)>0)?\" [\"+getitemslots(.@id)+\"]\":\"\")"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFMegingjard^000000 is the powerful Belt of Thor.\n^FF0000The items I need are as follows:^000000\n ~ {0}x {1}{2}{3}^000000",
+      "translation" : "[蕾妮絲]\n^3355FF雷神腰帶^000000是托爾的強大腰帶。\n^FF0000我需要的材料如下：^000000\n ~ {0}x {1}{2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFMegingjard^000000 is the powerful Belt of Thor.\n^FF0000The items I need are as follows:^000000",
+      "translation" : "[蕾妮絲]\n^3355FF雷神腰帶^000000是托爾的強大腰帶。\n^FF0000我需要的材料如下：^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 54,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        ".@amount",
+        "((countitem(.@id)<.@amount)?(\"^dd3355\"):(\"^33dd55\"))",
+        "getitemname(.@id)",
+        "((getitemslots(.@id)>0)?\" [\"+getitemslots(.@id)+\"]\":\"\")"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFAsprika^000000 is the light of gods.\n^FF0000The items I need are as follows:^000000\n ~ {0}x {1}{2}{3}^000000",
+      "translation" : "[蕾妮絲]\n^3355FF阿斯普利卡^000000是眾神之光。\n^FF0000我需要的材料如下：^000000\n ~ {0}x {1}{2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 54,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFAsprika^000000 is the light of gods.\n^FF0000The items I need are as follows:^000000",
+      "translation" : "[蕾妮絲]\n^3355FF阿斯普利卡^000000是眾神之光。\n^FF0000我需要的材料如下：^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 59,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        ".@amount",
+        "((countitem(.@id)<.@amount)?(\"^dd3355\"):(\"^33dd55\"))",
+        "getitemname(.@id)",
+        "((getitemslots(.@id)>0)?\" [\"+getitemslots(.@id)+\"]\":\"\")"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFBrynhild^000000 is the warrior's armor.\n^FF0000The items I need are as follows:^000000\n ~ {0}x {1}{2}{3}^000000",
+      "translation" : "[蕾妮絲]\n^3355FF布倫希爾德^000000是戰士的鎧甲。\n^FF0000我需要的材料如下：^000000\n ~ {0}x {1}{2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 59,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFBrynhild^000000 is the warrior's armor.\n^FF0000The items I need are as follows:^000000",
+      "translation" : "[蕾妮絲]\n^3355FF布倫希爾德^000000是戰士的鎧甲。\n^FF0000我需要的材料如下：^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        ".@amount",
+        "((countitem(.@id)<.@amount)?(\"^dd3355\"):(\"^33dd55\"))",
+        "getitemname(.@id)",
+        "((getitemslots(.@id)>0)?\" [\"+getitemslots(.@id)+\"]\":\"\")"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFHervor^000000 is named after the valkyrie who ensures victory for her warriors.\n^FF0000The items I need are as follows:^000000\n ~ {0}x {1}{2}{3}^000000",
+      "translation" : "[蕾妮絲]\n^3355FF赫爾薇爾^000000以那位為戰士帶來勝利的女武神命名。\n^FF0000我需要的材料如下：^000000\n ~ {0}x {1}{2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFHervor^000000 is named after the valkyrie who ensures victory for her warriors.\n^FF0000The items I need are as follows:^000000",
+      "translation" : "[蕾妮絲]\n^3355FF赫爾薇爾^000000以那位為戰士帶來勝利的女武神命名。\n^FF0000我需要的材料如下：^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        ".@amount",
+        "((countitem(.@id)<.@amount)?(\"^dd3355\"):(\"^33dd55\"))",
+        "getitemname(.@id)",
+        "((getitemslots(.@id)>0)?\" [\"+getitemslots(.@id)+\"]\":\"\")"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFJormungand^000000 is famous for its ability to poison the enemy.\n^FF0000The items I need are as follows:^000000\n ~ {0}x {1}{2}{3}^000000",
+      "translation" : "[蕾妮絲]\n^3355FF耶夢加得^000000以令敵人中毒的能力而聞名。\n^FF0000我需要的材料如下：^000000\n ~ {0}x {1}{2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFJormungand^000000 is famous for its ability to poison the enemy.\n^FF0000The items I need are as follows:^000000",
+      "translation" : "[蕾妮絲]\n^3355FF耶夢加得^000000以令敵人中毒的能力而聞名。\n^FF0000我需要的材料如下：^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        ".@amount",
+        "((countitem(.@id)<.@amount)?(\"^dd3355\"):(\"^33dd55\"))",
+        "getitemname(.@id)",
+        "((getitemslots(.@id)>0)?\" [\"+getitemslots(.@id)+\"]\":\"\")"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFMuspellium^000000 is required to make ^3355FFJormungand^000000 and ^3355FFHervor^000000.\n^FF0000The items I need are as follows:^000000\n ~ {0}x {1}{2}{3}^000000",
+      "translation" : "[蕾妮絲]\n^3355FF精魔礦石^000000是製作^3355FF耶夢加得^000000和^3355FF赫爾薇爾^000000所需的材料。\n^FF0000我需要的材料如下：^000000\n ~ {0}x {1}{2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFMuspellium^000000 is required to make ^3355FFJormungand^000000 and ^3355FFHervor^000000.\n^FF0000The items I need are as follows:^000000",
+      "translation" : "[蕾妮絲]\n^3355FF精魔礦石^000000是製作^3355FF耶夢加得^000000和^3355FF赫爾薇爾^000000所需的材料。\n^FF0000我需要的材料如下：^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 79,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        ".@amount",
+        "((countitem(.@id)<.@amount)?(\"^dd3355\"):(\"^33dd55\"))",
+        "getitemname(.@id)",
+        "((getitemslots(.@id)>0)?\" [\"+getitemslots(.@id)+\"]\":\"\")"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFEssence Of Rune^000000 is required to make ^3355FFJormungand^000000 and ^3355FFHervor^000000.\n^FF0000The items I need are as follows:^000000\n ~ {0}x {1}{2}{3}^000000",
+      "translation" : "[蕾妮絲]\n^3355FF符文魔力精髓^000000是製作^3355FF耶夢加得^000000和^3355FF赫爾薇爾^000000所需的材料。\n^FF0000我需要的材料如下：^000000\n ~ {0}x {1}{2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 79,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\nThe ^3355FFEssence Of Rune^000000 is required to make ^3355FFJormungand^000000 and ^3355FFHervor^000000.\n^FF0000The items I need are as follows:^000000",
+      "translation" : "[蕾妮絲]\n^3355FF符文魔力精髓^000000是製作^3355FF耶夢加得^000000和^3355FF赫爾薇爾^000000所需的材料。\n^FF0000我需要的材料如下：^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\nGo on and find all these items.\nI will wait here to aid you.",
+      "translation" : "[蕾妮絲]\n去收集齊這些材料吧。\n我會在這裡等著，助你完成製作。"
+    },
+    {
+      "kind" : "message",
+      "line" : 104,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        "getitemname(.@Items[0])"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\nDo you desire ^3355FF{0}^000000?",
+      "translation" : "[蕾妮絲]\n你想要^3355FF{0}^000000嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "No",
+      "translation" : "不要"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "Yes",
+      "translation" : "要"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Lenneth",
+      "state" : "translated",
+      "text" : "[Lenneth]\nPlease return if you change your mind.",
+      "translation" : "[蕾妮絲]\n改變主意的話，隨時來找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 112,
+      "npc" : "Lenneth",
+      "placeholders" : [
+        "getitemname(.@Items[0])"
+      ],
+      "state" : "translated",
+      "text" : "[Lenneth]\nHere is your ^3355FF{0}^000000.\nMay it serve you well.",
+      "translation" : "[蕾妮絲]\n這是你的^3355FF{0}^000000。\n願它助你一臂之力。"
+    }
+  ]
+}

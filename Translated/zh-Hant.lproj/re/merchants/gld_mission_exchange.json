@@ -1,0 +1,865 @@
+{
+  "file" : "npc/re/merchants/gld_mission_exchange.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 16,
+      "state" : "needs_review",
+      "text" : "You have too many items to proceed with the quest.\nPlease lighten your load and try again.",
+      "translation" : "您攜帶的物品過多，無法繼續任務。\n請減輕負重後再試一次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 21,
+      "state" : "needs_review",
+      "text" : "It's a machine that exchanges Commemorative Siege Guild Coins for special items.\nSelect the desired item and insert as many coins as necessary.",
+      "translation" : "這是一臺用“攻城紀念公會硬幣”兌換特殊物品的機器。\n請選擇您想要的物品，並投入相應數量的硬幣。"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "state" : "needs_review",
+      "text" : "View exchangeable items",
+      "translation" : "檢視可兌換物品"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "state" : "needs_review",
+      "text" : "Trade for Investment Certificates",
+      "translation" : "兌換投資證書"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "state" : "needs_review",
+      "text" : "Trade for Good Medicines",
+      "translation" : "兌換優質藥劑"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "state" : "needs_review",
+      "text" : "Trade for Gifts",
+      "translation" : "兌換禮物"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "state" : "needs_review",
+      "text" : "Kvasir's Ring",
+      "translation" : "誇西爾之戒"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "state" : "needs_review",
+      "text" : "Leave",
+      "translation" : "離開"
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nThank you for choosing ClickClick MeowMeow!\nHere is a list of items you can purchase with Commemorative Siege Guild Coins.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n感謝您選擇咔嚓咔嚓 喵喵！\n以下是您可以使用“攻城紀念公會硬幣”購買的物品列表。"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "state" : "needs_review",
+      "text" : "= Blood of Frost Giant =\nNew medicine developed by the joint effort of Alchemy Union of 3 countries. Gives the user supernatural powers for a short period of time.\n^4d4dffDrains 3000 HP, but increases physical and magical damage to the user's counterpart players by 100% for 10 seconds.\nRequired Level: 80 or higher^000000",
+      "translation" : "= 霜巨人之血 =\n由三國鍊金術聯合會共同研發的新藥劑。短時間內賦予使用者超凡力量。\n^4d4dff消耗3000 HP，但在10秒內使使用者對敵方玩家造成的物理和魔法傷害增加100%。\n所需等級：80級或以上^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 36,
+      "state" : "needs_review",
+      "text" : "= Core of Golem =\nNew medicine developed by the joint effort of Alchemy Union of 3 countries. Gives the user supernatural powers for a short period of time.\n^4d4dffDrains 300 SP, but decreases the damage taken from the user's counterpart players by 50% for 10 seconds.\nRequired Level: 80 or higher^000000",
+      "translation" : "= 巨石怪核心 =\n由三國鍊金術聯合會共同研發的新藥劑。短時間內賦予使用者超凡力量。\n^4d4dff消耗300 SP，但在10秒內使使用者受到敵方玩家的傷害減少50%。\n所需等級：80級或以上^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "placeholders" : [
+        ".@status$[.@i]",
+        "(.@i == 1 ? \"Petrification\" : .@status$[.@i])"
+      ],
+      "state" : "needs_review",
+      "text" : "= Fairy's Tear ({0}) =\nA potion developed by Vicent, a pharmaceutical genius. Gives the user supernatural powers for a short period of time.\n^4d4dffDrains 3000 HP, but allows the user to become immune to {1} status for 10 seconds.^000000",
+      "translation" : "= 妖精之淚 ({0}) =\n由製藥天才維森特研發的藥劑。短時間內賦予使用者超凡力量。\n^4d4dff消耗3000 HP，但在10秒內使使用者免疫{1}狀態。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "state" : "needs_review",
+      "text" : "= Feather Beret[1] =\nA comfortable, sky blue-colored hat decorated with feathers.\n^4d4dffMDEF + 1, Decreases the damage taken from the user's counterpart players by 10%.\nCard Slot [1], available to all job classes except for Novices.",
+      "translation" : "= 羽毛貝雷帽[1] =\n一頂舒適的淺藍色帽子，上面裝飾著羽毛。\n^4d4dffMDEF + 1，受到敵方玩家的傷害減少10%。\n卡片槽 [1]，除初心者外所有職業均可裝備。"
+    },
+    {
+      "kind" : "message",
+      "line" : 54,
+      "state" : "needs_review",
+      "text" : "= Feather Beret Costume =\nA comfortable, sky blue-colored hat decorated with feathers.\n^4d4dffCostume Equipment, available to all job classes.^000000",
+      "translation" : "= 羽毛貝雷帽 時裝 =\n一頂舒適的淺藍色帽子，上面裝飾著羽毛。\n^4d4dff時裝裝備，所有職業均可裝備。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 58,
+      "state" : "needs_review",
+      "text" : "This is the end of the list.",
+      "translation" : "列表到此結束。"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nWe exchange the ^4d4dff1Investment Certificate^000000 of Cat's Paw Merchant Group for ^4d4dff10Commemorative Coins!^000000\nDo you want to exchange?",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n我們將^4d4dff1張貓爪商會投資證書^000000兌換為^4d4dff10枚紀念硬幣^000000！\n您想要兌換嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 66,
+      "state" : "needs_review",
+      "text" : "Yes.",
+      "translation" : "是的"
+    },
+    {
+      "kind" : "option",
+      "line" : 66,
+      "state" : "needs_review",
+      "text" : "View other items.",
+      "translation" : "檢視其他物品"
+    },
+    {
+      "kind" : "message",
+      "line" : 68,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nThank you for using our service, meow!",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n感謝您使用我們的服務，喵！"
+    },
+    {
+      "kind" : "message",
+      "line" : 68,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou don't have enough coins for Investment Certificates.\n1 Investment Certificate is worth 10 coins.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您的硬幣不足以兌換投資證書。\n1張投資證書價值10枚硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 80,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 87,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou have selected a list of good medicines!\nAll items listed below are worth ^4d4dff300 coins each^000000, meow!",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您選擇了優質藥劑列表！\n以下列出的所有物品均價值^4d4dff300枚硬幣^000000，喵！"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "state" : "needs_review",
+      "text" : "Blood of Frost Giants",
+      "translation" : "霜巨人之血"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "state" : "needs_review",
+      "text" : "Core of Golem",
+      "translation" : "巨石怪核心"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "state" : "needs_review",
+      "text" : "Fairy's Tear (Stun)",
+      "translation" : "妖精之淚 (眩暈)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "state" : "needs_review",
+      "text" : "Fairy's Tear (Frozen)",
+      "translation" : "妖精之淚 (冰凍)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "state" : "needs_review",
+      "text" : "Fairy's Tear (Sleep)",
+      "translation" : "妖精之淚 (睡眠)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "state" : "needs_review",
+      "text" : "Fairy's Tear (Curse)",
+      "translation" : "妖精之淚 (詛咒)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "state" : "needs_review",
+      "text" : "Fairy's Tear (Petrify)",
+      "translation" : "妖精之淚 (石化)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "state" : "needs_review",
+      "text" : "Fairy's Tear (Silence)",
+      "translation" : "妖精之淚 (沉默)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "state" : "needs_review",
+      "text" : "Fairy's Tear (Blind)",
+      "translation" : "妖精之淚 (失明)"
+    },
+    {
+      "kind" : "option",
+      "line" : 91,
+      "state" : "needs_review",
+      "text" : "View other items.",
+      "translation" : "檢視其他物品"
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "state" : "needs_review",
+      "text" : "You've decided to view other items.",
+      "translation" : "您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 126,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou have selected a list of good gifts!\nThe price for each item is listed separately, meow!",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您選擇了優質禮物列表！\n每件物品的價格單獨列出，喵！"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "state" : "needs_review",
+      "text" : "Old Card Album -500 Coins",
+      "translation" : "老舊 收集冊 -500 硬幣"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "state" : "needs_review",
+      "text" : "Old Purple Box -300 Coins",
+      "translation" : "神秘紫箱 -300 硬幣"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "state" : "needs_review",
+      "text" : "Old Blue Box -100 Coins",
+      "translation" : "神秘箱子 -100 硬幣"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "state" : "needs_review",
+      "text" : "Jewelry Box -500 Coins",
+      "translation" : "寶石盒 -500 硬幣"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "state" : "needs_review",
+      "text" : "Wrapped Mask -500 Coins",
+      "translation" : "包裝的面具 -500 硬幣"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "state" : "needs_review",
+      "text" : "Feather Beret",
+      "translation" : "羽毛貝雷帽"
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "state" : "needs_review",
+      "text" : "Leave",
+      "translation" : "離開"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou have selected a nice beret decorated with feathers!\nWe have Feather Berets and Feather Beret Costumes to which you can install cards, meow!",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您選擇了裝飾有羽毛的漂亮貝雷帽！\n我們有羽毛貝雷帽和羽毛貝雷帽套裝，可以安裝卡片，喵！"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "state" : "needs_review",
+      "text" : "Feather Beret[1] -1500 Coins",
+      "translation" : "羽毛貝雷帽[1] -1500 硬幣"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "state" : "needs_review",
+      "text" : "Feather Beret Costume -800 Coins",
+      "translation" : "羽毛貝雷帽套裝 -800 硬幣"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "state" : "needs_review",
+      "text" : "Purchase a Beret",
+      "translation" : "購買貝雷帽"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "state" : "needs_review",
+      "text" : "View other items.",
+      "translation" : "檢視其他物品"
+    },
+    {
+      "kind" : "message",
+      "line" : 153,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nIt's a feather beret to which you can install cards!\nIt is worth 1500 Commemorative Coins. Do you want to purchase it?",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n這是一款可以安裝卡片的羽毛貝雷帽！\n它的價格是1500枚紀念幣。您想要購買嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 157,
+      "state" : "needs_review",
+      "text" : "Yes!",
+      "translation" : "準備好了！"
+    },
+    {
+      "kind" : "option",
+      "line" : 157,
+      "state" : "needs_review",
+      "text" : "No!",
+      "translation" : "不！"
+    },
+    {
+      "kind" : "message",
+      "line" : 159,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nThank you for using our service, meow!",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n感謝您使用我們的服務，喵！"
+    },
+    {
+      "kind" : "message",
+      "line" : 159,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou need 1500 Commemorative Coins in order to purchase the selected item.\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n購買該物品需要1500枚紀念幣。\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 171,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nIt's a feather beret costume!\nIt is worth 800 Commemorative Coins. Do you want to purchase it?",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n這是一款羽毛貝雷帽套裝！\n它的價格是800枚紀念幣。您想要購買嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 182,
+      "state" : "needs_review",
+      "text" : "Yes!",
+      "translation" : "準備好了！"
+    },
+    {
+      "kind" : "option",
+      "line" : 182,
+      "state" : "needs_review",
+      "text" : "No!",
+      "translation" : "不！"
+    },
+    {
+      "kind" : "message",
+      "line" : 184,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nThank you for using our service, meow!",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n感謝您使用我們的服務，喵！"
+    },
+    {
+      "kind" : "message",
+      "line" : 184,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou need 800 Commemorative Coins in order to purchase the selected item.\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n購買該物品需要800枚紀念幣。\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 196,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 203,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nThe preparations for changing the color of feather beret costumes are under way.\nPlease come back later!\nLet me show you other items!",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n羽毛貝雷帽套裝的變色功能正在準備中。\n請稍後再來！\n讓我給您看看其他物品吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 210,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nDo not use the exchange machine.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n請勿使用兌換機器。"
+    },
+    {
+      "kind" : "message",
+      "line" : 224,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nThis is the category of Kvasir's Rings.\nYou can view the description for each ring and purchase one here.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n這裡是誇西爾之戒的分類。\n您可以檢視每枚戒指的說明並在此處購買。"
+    },
+    {
+      "kind" : "option",
+      "line" : 228,
+      "state" : "needs_review",
+      "text" : "Trade for Kvasir's Ring (Blue)",
+      "translation" : "兌換誇西爾之戒 (藍)"
+    },
+    {
+      "kind" : "option",
+      "line" : 228,
+      "state" : "needs_review",
+      "text" : "Trade for Kvasir's Ring (Red)",
+      "translation" : "兌換誇西爾之戒 (紅)"
+    },
+    {
+      "kind" : "option",
+      "line" : 228,
+      "state" : "needs_review",
+      "text" : "Trade for Kvasir's Ring (Green)",
+      "translation" : "兌換誇西爾之戒 (綠)"
+    },
+    {
+      "kind" : "option",
+      "line" : 228,
+      "state" : "needs_review",
+      "text" : "Trade for Kvasir's Ring (Brown)",
+      "translation" : "兌換誇西爾之戒 (棕)"
+    },
+    {
+      "kind" : "option",
+      "line" : 228,
+      "state" : "needs_review",
+      "text" : "Leave",
+      "translation" : "離開"
+    },
+    {
+      "kind" : "message",
+      "line" : 230,
+      "state" : "needs_review",
+      "text" : "= Kvasir's Ring (Blue) =\nA ring that is rumored to be filled with the power of Kvasir, a sage god. \n^4d4dffMSP + 30. 'Snow Flip' 1Lv available^000000\nAccessory. Available to all job classes. Required Level: 1",
+      "translation" : "= 誇西爾之戒 (藍) =\n據傳蘊含了賢者之神誇西爾之力的戒指。\n^4d4dffMSP + 30. 可使用1級“冰雪寒葉”^000000\n飾品。所有職業均可使用。需求等級：1"
+    },
+    {
+      "kind" : "message",
+      "line" : 235,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nKvasir's Ring (Blue) can be purchased with ^4d4dff20Blood of Frost Giant and 20 Core of Golem^000000\nor ^4d4dff1Kvasir's Ring in different color and 10 Commemorative Coins!^000000\nDo you want to purchase it?",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n誇西爾之戒 (藍) 可以用 ^4d4dff20個冰霜巨人的血液 和 20個巨石怪的核心^000000\n或者 ^4d4dff1枚其他顏色的誇西爾之戒 和 10枚紀念幣^000000 購買！\n您想要購買嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 240,
+      "state" : "needs_review",
+      "text" : "Pay with Blood and Core",
+      "translation" : "使用血液和核心支付"
+    },
+    {
+      "kind" : "option",
+      "line" : 240,
+      "state" : "needs_review",
+      "text" : "Pay with Kvasir's Ring (Red)",
+      "translation" : "使用誇西爾之戒 (紅) 支付"
+    },
+    {
+      "kind" : "option",
+      "line" : 240,
+      "state" : "needs_review",
+      "text" : "Pay with Kvasir's Ring (Green)",
+      "translation" : "使用誇西爾之戒 (綠) 支付"
+    },
+    {
+      "kind" : "option",
+      "line" : 240,
+      "state" : "needs_review",
+      "text" : "Pay with Kvasir's Ring (Brown)",
+      "translation" : "使用誇西爾之戒 (棕) 支付"
+    },
+    {
+      "kind" : "option",
+      "line" : 240,
+      "state" : "needs_review",
+      "text" : "Leave",
+      "translation" : "離開"
+    },
+    {
+      "kind" : "message",
+      "line" : 242,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nKvasir's Ring (Blue) has been purchased.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n已購買誇西爾之戒 (藍)。"
+    },
+    {
+      "kind" : "message",
+      "line" : 242,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nLooks like Kvasir's Ring (Blue) can be purchased with ^4d4dff20Blood of Frost Giant and 20 Core of Golem.^000000\nYou don't have enough items to complete the purchase. View other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n看起來誇西爾之戒 (藍) 可以用 ^4d4dff20個冰霜巨人的血液 和 20個巨石怪的核心^000000 購買。\n您的物品不足，無法完成購買。檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 267,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 274,
+      "state" : "needs_review",
+      "text" : "= Kvasir's Ring (Red) =\nA ring that is rumored to be filled with the power of Kvasir, a sage god. \n^4d4dffMSP + 30. 'Peony Mamy' 1Lv available^000000\nAccessory. Available to all job classes. Required Level: 1",
+      "translation" : "= 誇西爾之戒 (紅) =\n據傳蘊含了賢者之神誇西爾之力的戒指。\n^4d4dffMSP + 30. 可使用1級“牡丹媽媽”^000000\n飾品。所有職業均可使用。需求等級：1"
+    },
+    {
+      "kind" : "message",
+      "line" : 279,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nKvasir's Ring (Red) can be purchased with ^4d4dff1Kvasir's Ring and 10 Commemorative Coins.^000000\nWhich of the followings do you want to trade for Kvasir's Ring (Red)?",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n誇西爾之戒 (紅) 可以用 ^4d4dff1個誇西爾之戒 和 10個紀念幣^000000 購買。\n您想用以下哪樣物品來交換誇西爾之戒 (紅)？"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "state" : "needs_review",
+      "text" : "Kvasir's Ring (Blue)",
+      "translation" : "誇西爾之戒 (藍)"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "state" : "needs_review",
+      "text" : "Kvasir's Ring (Green)",
+      "translation" : "誇西爾之戒 (綠)"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "state" : "needs_review",
+      "text" : "Kvasir's Ring (Brown)",
+      "translation" : "誇西爾之戒 (棕)"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "state" : "needs_review",
+      "text" : "Leave",
+      "translation" : "離開"
+    },
+    {
+      "kind" : "message",
+      "line" : 297,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 304,
+      "state" : "needs_review",
+      "text" : "= Kvasir's Ring (Green) =\nA ring that is rumored to be filled with the power of Kvasir, a sage god. \n^4d4dffMSP + 100. 'Sada Ear' 1Lv available^000000\nAccessory. Available to all job classes. Required Level: 1",
+      "translation" : "= 誇西爾之戒 (綠) =\n據傳蘊含了賢者之神誇西爾之力的戒指。\n^4d4dffMSP + 100. 可使用1級“薩達之耳”^000000\n飾品。所有職業均可使用。需求等級：1"
+    },
+    {
+      "kind" : "message",
+      "line" : 309,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nKvasir's Ring (Green) can be purchased with ^4d4dff1Kvasir's Ring and 10 Commemorative Coins.^000000\nWhich of the followings do you want to trade for Kvasir's Ring (Red)?",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n誇西爾之戒 (綠) 可以用 ^4d4dff1個誇西爾之戒 和 10個紀念幣^000000 購買。\n您想用以下哪樣物品來交換誇西爾之戒 (紅)？"
+    },
+    {
+      "kind" : "option",
+      "line" : 313,
+      "state" : "needs_review",
+      "text" : "Kvasir's Ring (Blue)",
+      "translation" : "誇西爾之戒 (藍)"
+    },
+    {
+      "kind" : "option",
+      "line" : 313,
+      "state" : "needs_review",
+      "text" : "Kvasir's Ring (Red)",
+      "translation" : "誇西爾之戒 (紅)"
+    },
+    {
+      "kind" : "option",
+      "line" : 313,
+      "state" : "needs_review",
+      "text" : "Kvasir's Ring (Brown)",
+      "translation" : "誇西爾之戒 (棕)"
+    },
+    {
+      "kind" : "option",
+      "line" : 313,
+      "state" : "needs_review",
+      "text" : "Leave",
+      "translation" : "離開"
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 334,
+      "state" : "needs_review",
+      "text" : "= Kvasir Ring Brown =\nA ring that is rumored to be filled with the power of Kvasir, a sage god. \n^4d4dffMSP + 100. 'Dust of Galaxy' 1Lv available^000000\nAccessory. Available to all job classes. Required Level: 1",
+      "translation" : "= 誇西爾之戒 (棕) =\n據傳蘊含了賢者之神誇西爾之力的戒指。\n^4d4dffMSP + 100. 可使用1級“銀河之塵”^000000\n飾品。所有職業均可使用。需求等級：1"
+    },
+    {
+      "kind" : "message",
+      "line" : 339,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nKvasir's Ring (Brown) can be purchased with ^4d4dff1Kvasir's Ring and 10 Commemorative Coins.^000000\nWhich of the followings do you want to trade for Kvasir's Ring (Red)?",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n誇西爾之戒 (棕) 可以用 ^4d4dff1個誇西爾之戒 和 10個紀念幣^000000 購買。\n您想用以下哪樣物品來交換誇西爾之戒 (紅)？"
+    },
+    {
+      "kind" : "option",
+      "line" : 343,
+      "state" : "needs_review",
+      "text" : "Kvasir's Ring (Blue)",
+      "translation" : "誇西爾之戒 (藍)"
+    },
+    {
+      "kind" : "option",
+      "line" : 343,
+      "state" : "needs_review",
+      "text" : "Kvasir's Ring (Red)",
+      "translation" : "誇西爾之戒 (紅)"
+    },
+    {
+      "kind" : "option",
+      "line" : 343,
+      "state" : "needs_review",
+      "text" : "Kvasir's Ring (Green)",
+      "translation" : "誇西爾之戒 (綠)"
+    },
+    {
+      "kind" : "option",
+      "line" : 343,
+      "state" : "needs_review",
+      "text" : "Leave",
+      "translation" : "離開"
+    },
+    {
+      "kind" : "message",
+      "line" : 357,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 364,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 371,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nDo not use the exchange machine.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n請勿使用兌換機器。"
+    },
+    {
+      "kind" : "message",
+      "line" : 379,
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou're purchasing 1 {0}, meow!\nAre you sure?",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您要購買1個{0}，喵！\n確定嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 383,
+      "state" : "needs_review",
+      "text" : "Yes!",
+      "translation" : "準備好了！"
+    },
+    {
+      "kind" : "option",
+      "line" : 383,
+      "state" : "needs_review",
+      "text" : "No!",
+      "translation" : "不！"
+    },
+    {
+      "kind" : "message",
+      "line" : 385,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nThank you for using our service, meow!",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n感謝您使用我們的服務，喵！"
+    },
+    {
+      "kind" : "message",
+      "line" : 385,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nOne good medicine is worth 300 commemorative coins that you've raked and scraped...",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n一瓶好藥可是值300枚您辛辛苦苦攢下來的紀念幣呢..."
+    },
+    {
+      "kind" : "message",
+      "line" : 395,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 404,
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou're purchasing 1 {0}, meow!\nAre you sure?",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您要購買1個{0}，喵！\n確定嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 408,
+      "state" : "needs_review",
+      "text" : "Yes!",
+      "translation" : "準備好了！"
+    },
+    {
+      "kind" : "option",
+      "line" : 408,
+      "state" : "needs_review",
+      "text" : "No!",
+      "translation" : "不！"
+    },
+    {
+      "kind" : "message",
+      "line" : 410,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nThank you for using our service, meow!",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n感謝您使用我們的服務，喵！"
+    },
+    {
+      "kind" : "message",
+      "line" : 410,
+      "placeholders" : [
+        ".@price"
+      ],
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou need {0} Commemorative Coins in order to purchase the selected item.\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n購買所選物品需要{0}枚紀念幣。\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 422,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 434,
+      "placeholders" : [
+        ".@fromname$",
+        ".@toname$"
+      ],
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou have {0}.\nDo you want to trade this in for {1}?",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您有{0}。\n您想用這個交換{1}嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 434,
+      "placeholders" : [
+        ".@fromname$"
+      ],
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou need 1 {0} and 10 Commemorative Coins in order to complete the purchase.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n完成購買需要1個{0}和10枚紀念幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 440,
+      "placeholders" : [
+        ".@fromname$",
+        ".@toname$"
+      ],
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou have traded {0} for {1}.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您已用{0}交換了{1}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 440,
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou've decided to view other items.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n您決定檢視其他物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 440,
+      "placeholders" : [
+        ".@fromname$"
+      ],
+      "state" : "needs_review",
+      "text" : "[ClickClick MeowMeow-GX]\nYou need 1 {0} and 10 Commemorative Coins in order to complete the purchase.",
+      "translation" : "[咔嚓咔嚓 喵喵-GX]\n完成購買需要1個{0}和10枚紀念幣。"
+    },
+    {
+      "kind" : "option",
+      "line" : 441,
+      "state" : "needs_review",
+      "text" : "Yes!",
+      "translation" : "準備好了！"
+    },
+    {
+      "kind" : "option",
+      "line" : 441,
+      "state" : "needs_review",
+      "text" : "Leave",
+      "translation" : "離開"
+    }
+  ]
+}

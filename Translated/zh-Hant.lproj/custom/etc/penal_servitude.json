@@ -1,0 +1,460 @@
+{
+  "file" : "npc/custom/etc/penal_servitude.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 20,
+      "npc" : "Chief Warder",
+      "placeholders" : [
+        "(Sex==SEX_MALE?\"Mr.\":\"Ms.\")",
+        "BaseLevel",
+        "JobLevel"
+      ],
+      "state" : "translated",
+      "text" : "[Saddeus]\n{0} Prisoner #{1}{2},\nwhat's the noise over there?",
+      "translation" : "[薩德烏斯]\n{0} 囚犯#{1}{2}，\n那邊在吵什麼？"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "Let me free, I'll pay!",
+      "translation" : "放我出去，我付錢！"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "Let me to work off my freedom!",
+      "translation" : "讓我幹活換取自由！"
+    },
+    {
+      "kind" : "option",
+      "line" : 25,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "Nothing",
+      "translation" : "沒什麼"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Chief Warder",
+      "placeholders" : [
+        ".@MUSTPAY"
+      ],
+      "state" : "translated",
+      "text" : "[Saddeus]\nI can't remember you. Is it your 1st time?\nYou again? Somebody hasn't grown wiser from the very first visit...\nOK, we could release you for ^FF0000{0}z^000000.",
+      "translation" : "[薩德烏斯]\n我不記得你。第一次來？\n又是你？看來第一次進來時還沒學乖...\n好吧，交^FF0000{0}z^000000，我們就放你出去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Chief Warder",
+      "placeholders" : [
+        ".@MUSTPAY"
+      ],
+      "state" : "translated",
+      "text" : "[Saddeus]\nYou again? Somebody hasn't grown wiser from the very first visit...\nOK, we could release you for ^FF0000{0}z^000000.",
+      "translation" : "[薩德烏斯]\n又是你？看來第一次進來時還沒學乖...\n好吧，交^FF0000{0}z^000000，我們就放你出去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Chief Warder",
+      "placeholders" : [
+        ".@MUSTPAY"
+      ],
+      "state" : "translated",
+      "text" : "[Saddeus]\nI can't remember you. Is it your 1st time?\nOK, we could release you for ^FF0000{0}z^000000.",
+      "translation" : "[薩德烏斯]\n我不記得你。第一次來？\n好吧，交^FF0000{0}z^000000，我們就放你出去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Chief Warder",
+      "placeholders" : [
+        ".@MUSTPAY"
+      ],
+      "state" : "translated",
+      "text" : "[Saddeus]\nOK, we could release you for ^FF0000{0}z^000000.",
+      "translation" : "[薩德烏斯]\n好吧，交^FF0000{0}z^000000，我們就放你出去。"
+    },
+    {
+      "kind" : "option",
+      "line" : 36,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "I pay cash!",
+      "translation" : "我付現金！"
+    },
+    {
+      "kind" : "option",
+      "line" : 36,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "Do you accept cheques?",
+      "translation" : "你們收支票嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 36,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "I've changed my mind.",
+      "translation" : "我改變主意了"
+    },
+    {
+      "kind" : "message",
+      "line" : 38,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "[Saddeus]\nYou've got some time to think about...",
+      "translation" : "[薩德烏斯]\n你還有時間考慮一下..."
+    },
+    {
+      "kind" : "message",
+      "line" : 45,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "[Saddeus]\nOK, sing here and there.",
+      "translation" : "[薩德烏斯]\n好，在這裡和那裡簽字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "[Saddeus]\nWhat's this? It's not enough!",
+      "translation" : "[薩德烏斯]\n就這麼點？錢不夠！"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "[Saddeus]\nOK, sign your cheque. And put down your name in my book.",
+      "translation" : "[薩德烏斯]\n好吧，籤一下支票。然後在我的賬本上寫下你的名字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "npc" : "Chief Warder",
+      "placeholders" : [
+        "#kafrabank"
+      ],
+      "state" : "translated",
+      "text" : "[Saddeus]\nYour case says nothing about your bank accounts.\nAlas, there's your bank account info... ^FF0000{0}z^000000... in the case. It's not enough.\nStop your silly games now!",
+      "translation" : "[薩德烏斯]\n你的檔案裡沒有銀行賬戶的記錄。\n唉，檔案裡記著你的賬戶餘額...^FF0000{0}z^000000...這點錢不夠。\n別再耍這些無聊的把戲了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "npc" : "Chief Warder",
+      "placeholders" : [
+        "#kafrabank"
+      ],
+      "state" : "translated",
+      "text" : "[Saddeus]\nAlas, there's your bank account info... ^FF0000{0}z^000000... in the case. It's not enough.\nStop your silly games now!",
+      "translation" : "[薩德烏斯]\n唉，檔案裡記著你的賬戶餘額...^FF0000{0}z^000000...這點錢不夠。\n別再耍這些無聊的把戲了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "[Saddeus]\nYour case says nothing about your bank accounts.\nStop your silly games now!",
+      "translation" : "[薩德烏斯]\n你的案卷裡沒有關於你銀行賬戶的資訊。\n別再玩這種無聊的把戲了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "[Saddeus]\nStop your silly games now!",
+      "translation" : "[薩德烏斯]\n別再玩這種無聊的把戲了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 71,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "[Saddeus]\nYou are free now!",
+      "translation" : "[薩德烏斯]\n你現在自由了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 79,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "[Saddeus]\nOur stocks are short of toadstools.  Remember your morning's skilly?  What about some work at our sponsored mushroom farm?",
+      "translation" : "[薩德烏斯]\n我們的毒蘑菇庫存不夠了。還記得你早上喝的稀粥嗎？要不要去我們資助的蘑菇農場乾點活？"
+    },
+    {
+      "kind" : "option",
+      "line" : 82,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "OK, I'll work off!",
+      "translation" : "好的，我去幹活！"
+    },
+    {
+      "kind" : "option",
+      "line" : 82,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "I love this prison!",
+      "translation" : "我愛這座監獄！"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "[Saddeus]\nI'm sorry, you should release your Cart, PecoPeco or Falcon!",
+      "translation" : "[薩德烏斯]\n抱歉，先卸下手推車，放走大嘴鳥或獵鷹吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "[Saddeus]\nTalk to our overseer, Oliver.",
+      "translation" : "[薩德烏斯]\n去找我們的監工奧利弗談談。"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "[Saddeus]\nIs today X-Mas time, huh?\nNow shut up and back off!",
+      "translation" : "[薩德烏斯]\n今天是聖誕節嗎？\n現在閉嘴，退後！"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Chief Warder",
+      "state" : "translated",
+      "text" : "[Saddeus]\nNow shut up and back off!",
+      "translation" : "[薩德烏斯]\n現在閉嘴，退後！"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Overseer",
+      "state" : "translated",
+      "text" : "[Oliver]",
+      "translation" : "[奧利弗]"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "[Oliver]\nI want you to gather ^FF0000{0} Orange Net Mushroom^000000.",
+      "translation" : "[奧利弗]\n我要你採集^FF0000{0}個毒香菇^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q",
+        "countitem(1069)",
+        "countitem(1070)"
+      ],
+      "state" : "translated",
+      "text" : "[Oliver]\nI want you to gather ^FF0000{0} Orange Net Mushroom^000000.\nOK... hand me all the shrooms...\nLet me see... {1} of almost edible ones...\nAnd {2} useless deadly ones.",
+      "translation" : "[奧利弗]\n我要你採集^FF0000{0}個毒香菇^000000。\n好...把蘑菇都交給我...\n讓我看看...{1}個勉強能吃的...\n還有{2}個沒用的劇毒蘑菇。"
+    },
+    {
+      "kind" : "message",
+      "line" : 144,
+      "npc" : "Overseer",
+      "state" : "translated",
+      "text" : "[Oliver]\nThank you. You are free!",
+      "translation" : "[奧利弗]\n謝謝。你自由了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "Hmm... You've been here already... Well-well...\nDrop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then.\nAnd you may eat the deadly ones for breakfast.",
+      "translation" : "嗯...你以前來過這裡...好，好...\n把這些蘑菇扔掉！它們有毒！\n好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。\n你動作真快！看來你得再採一些蘑菇了。\n至於那些致命的，你可以留著當早餐吃。"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "Hmm... You've been here already... Well-well...\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then.\nAnd you may eat the deadly ones for breakfast.",
+      "translation" : "嗯...你以前來過這裡...好，好...\n好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。\n你動作真快！看來你得再採一些蘑菇了。\n至於那些致命的，你可以留著當早餐吃。"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "Hmm... You've been here already... Well-well...\nDrop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nAnd you may eat the deadly ones for breakfast.",
+      "translation" : "嗯...你以前來過這裡...好，好...\n把這些蘑菇扔掉！它們有毒！\n好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。\n至於那些致命的，你可以留著當早餐吃。"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "Hmm... You've been here already... Well-well...\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nAnd you may eat the deadly ones for breakfast.",
+      "translation" : "嗯...你以前來過這裡...好，好...\n好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。\n至於那些致命的，你可以留著當早餐吃。"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "Hmm... You've been here already... Well-well...\nDrop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then.",
+      "translation" : "嗯...你以前來過這裡...好，好...\n把這些蘑菇扔掉！它們有毒！\n好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。\n你動作真快！看來你得再採一些蘑菇了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "Hmm... You've been here already... Well-well...\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then.",
+      "translation" : "嗯...你以前來過這裡...好，好...\n好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。\n你動作真快！看來你得再採一些蘑菇了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "Hmm... You've been here already... Well-well...\nDrop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.",
+      "translation" : "嗯...你以前來過這裡...好，好...\n把這些蘑菇扔掉！它們有毒！\n好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "Hmm... You've been here already... Well-well...\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.",
+      "translation" : "嗯...你以前來過這裡...好，好...\n好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。"
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "Drop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then.\nAnd you may eat the deadly ones for breakfast.",
+      "translation" : "把這些蘑菇扔掉！它們有毒！\n好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。\n你動作真快！看來你得再採一些蘑菇了。\n至於那些致命的，你可以留著當早餐吃。"
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "Drop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nAnd you may eat the deadly ones for breakfast.",
+      "translation" : "把這些蘑菇扔掉！它們有毒！\n好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。\n至於那些致命的，你可以留著當早餐吃。"
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "Drop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then.",
+      "translation" : "把這些蘑菇扔掉！它們有毒！\n好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。\n你動作真快！看來你得再採一些蘑菇了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "Drop these mushrooms!! They are poisonous!\nOK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.",
+      "translation" : "把這些蘑菇扔掉！它們有毒！\n好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。"
+    },
+    {
+      "kind" : "message",
+      "line" : 165,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "OK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then.\nAnd you may eat the deadly ones for breakfast.",
+      "translation" : "好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。\n你動作真快！看來你得再採一些蘑菇了。\n至於那些致命的，你可以留著當早餐吃。"
+    },
+    {
+      "kind" : "message",
+      "line" : 165,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "OK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nAnd you may eat the deadly ones for breakfast.",
+      "translation" : "好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。\n至於那些致命的，你可以留著當早餐吃。"
+    },
+    {
+      "kind" : "message",
+      "line" : 165,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "OK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.\nYou're a fast fella! You'll have to get more shrooms, then.",
+      "translation" : "好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。\n你動作真快！看來你得再採一些蘑菇了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 165,
+      "npc" : "Overseer",
+      "placeholders" : [
+        "PRISON_Q"
+      ],
+      "state" : "translated",
+      "text" : "OK, you must bring me ^FF0000{0}^000000 edible ^FF0000Orange Net Mushroom^000000 toadstoo.. shrooms.",
+      "translation" : "好的，你必須給我帶來^FF0000{0}^000000個能吃的^FF0000毒香菇^000000，毒蘑...蘑菇。"
+    }
+  ]
+}

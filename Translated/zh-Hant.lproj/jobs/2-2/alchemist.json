@@ -1,0 +1,3375 @@
+{
+  "file" : "npc/jobs/2-2/alchemist.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nWelcome to the\nAlchemist Unio--\nI-Impossible! How c-can\nsomething like this happen?",
+      "translation" : "[帕米·吉亞尼諾]\n歡迎來到鍊金術士工會——\n不、不可能！\n怎、怎麼會有這種事？"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nWelcome, {0}.\nThe Alchemist Union\nis busy today, like always.",
+      "translation" : "[帕米·吉亞尼諾]\n歡迎，{0}。\n鍊金術士工會今天也和往常一樣忙碌。"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nWelcome to the\nAlchemist Union.\nWe are recruiting\ntalented people\nwith novel ideas.",
+      "translation" : "[帕米·吉亞尼諾]\n歡迎來到鍊金術士工會。\n我們正在招募才華出眾、富有新意的人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nWelcome to the\nAlchemist Union.\nHow may I help you?",
+      "translation" : "[帕米·吉亞尼諾]\n歡迎來到鍊金術士工會。\n有什麼可以幫您的嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nWell now~!\nYou've brought an\nOld Magic Book and\na Hammer of Blacksmith.\nWe'll put these items\nto good use.",
+      "translation" : "[帕米·吉亞尼諾]\n哎呀~！\n您帶來了古魔法書和高階鐵砧。\n我們會好好利用這些物品的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nSeems like\nyou're all ready.\nThe Union will put\nthese items to good use.",
+      "translation" : "[帕米·吉亞尼諾]\n看來您已經準備好了。\n工會會好好利用這些物品的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\",.@items[1],getitemname(.@items[0]))"
+      ],
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nAren't you ready?\nLike I said before,\nyou must bring\n^551A8B{0}^000000.",
+      "translation" : "[帕米·吉亞尼諾]\n您還沒準備好嗎？\n我之前說過，您必須帶來^551A8B{0}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nGo and talk to\nMr. Raspuchin.\nHe's involved in the\nAlchemist selection process, whatever that might mean.",
+      "translation" : "[帕米·吉亞尼諾]\n去找拉斯普欽先生談談吧。\n他參與鍊金術士的選拔工作，至於具體做什麼，我也不太清楚。"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nAh, I'm sorry, but\nI'm busy right now~",
+      "translation" : "[帕米·吉亞尼諾]\n啊，抱歉，我現在正忙著呢~"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nWait, wait...\nI'm sorry. I was confused,\nthat's all. You look just like\nsomeone I used to know. \nStill, I get this weird\nfeeling about you...",
+      "translation" : "[帕米·吉亞尼諾]\n等等，等等...\n抱歉，剛才是我認錯人了。\n您長得很像我以前認識的一個人。\n不過，您還是給我一種奇怪的感覺..."
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nEveryone is busy with their\nown research, but recently, some headway has been made in the field of biotechnology.",
+      "translation" : "[帕米·吉亞尼諾]\n大家都在忙各自的研究，不過最近生物技術領域取得了一些進展。"
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nEveryone is hoping that the biotechnological studies will yield positive results. Speaking of which, I wonder how the Alchemists working on artificial life are doing...",
+      "translation" : "[帕米·吉亞尼諾]\n大家都希望生物技術研究能取得成果。\n說起來，不知道那些研究人造生命的鍊金術士進展如何了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nIf you're interested in working with chemistry, visit us later when you become more knowledgable.",
+      "translation" : "[帕米·吉亞尼諾]\n如果您對化學研究感興趣，等學識更豐富些再來找我們吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nJust one thing:\nYou've got to have\nknowledge of items\nas a Merchant first.",
+      "translation" : "[帕米·吉亞尼諾]\n有一點要記住：您得先以商人的身份掌握物品知識。"
+    },
+    {
+      "kind" : "message",
+      "line" : 77,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nIf you know any exceptional Merchants, by all means, please refer them to us. Those types of people tend to have a talent for Alchemy and experimentation~",
+      "translation" : "[帕米·吉亞尼諾]\n如果您認識出色的商人，請務必推薦給我們。\n這類人往往很有鍊金術和實驗方面的天賦~"
+    },
+    {
+      "kind" : "option",
+      "line" : 86,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "I would like to learn about Alchemists.",
+      "translation" : "我想了解鍊金術士"
+    },
+    {
+      "kind" : "option",
+      "line" : 86,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "I want to become an Alchemist.",
+      "translation" : "我想成為鍊金術士"
+    },
+    {
+      "kind" : "option",
+      "line" : 86,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "Nothing.",
+      "translation" : "沒什麼"
+    },
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nAlchemists study and create new substances and items out of existing materials. Our knowledge allows us to change the properties of chemicals at the atomic level.",
+      "translation" : "[帕米·吉亞尼諾]\n鍊金術士研究如何用現有材料創造新的物質和物品。\n憑藉這些知識，我們能在原子層面改變化學物質的性質。"
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nMost people think our final goal\nis to create gold, but that's not the entire truth. We also want to create things like medicines\nand new materials.",
+      "translation" : "[帕米·吉亞尼諾]\n大多數人以為我們的最終目標是製造黃金，其實並不盡然。\n我們也希望研製藥物和新材料。"
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nA few of us research the\ncreation of life, although many of us consider that god's territory. That field is so complex, most of us deal with slightly less complicated projects anyway.",
+      "translation" : "[帕米·吉亞尼諾]\n我們當中有少數人在研究如何創造生命，不過很多人認為那是神的領域。\n這個領域太複雜了，所以大多數人還是選擇研究稍微簡單些的課題。"
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nIf you are interested in becoming an Alchemist, I recommend that you first get a lot of experience as a Merchant. Being a Merchant is a great opportunity to learn about materials as you deal with them.",
+      "translation" : "[帕米·吉亞尼諾]\n如果您想成為鍊金術士，我建議先多積累些商人的經驗。\n商人經常接觸各種材料，是瞭解材料的好機會。"
+    },
+    {
+      "kind" : "message",
+      "line" : 103,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nWhether or not you try to become\nan Alchemist is your decision. The road to becoming an Alchemist is very challenging, and you'll need to focus on experimentation and research, instead of commerce.",
+      "translation" : "[帕米·吉亞尼諾]\n要不要成為鍊金術士，由您自己決定。\n這條路充滿挑戰，您得把重心從經商轉向實驗和研究。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nIs that so?\nNice to meet you.\nMy name is Parmy Gianino\nof the Alchemist Union.",
+      "translation" : "[帕米·吉亞尼諾]\n是嗎？\n很高興認識您。\n我是鍊金術士工會的帕米·吉亞尼諾。"
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nIf you join our Union and\ncomplete the training, you\nwill be officially recognized\nas an Alchemist and be able\nto contribute to our research.",
+      "translation" : "[帕米·吉亞尼諾]\n加入我們的工會並完成訓練後，您就會被正式認可為鍊金術士，也能為我們的研究貢獻力量。"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nBut we don't accept everyone.\nYou must have a lot of tenacity\nand sincere devotion in exploring\nthe various fields of science.",
+      "translation" : "[帕米·吉亞尼諾]\n不過，我們可不是來者不拒。\n您必須有堅韌的毅力，並真心投入對各個科學領域的探索。"
+    },
+    {
+      "kind" : "message",
+      "line" : 127,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nThere are a couple\nof requirements to join\nthe Alchemist Union, but\nwe'll discuss that\nafter you apply.",
+      "translation" : "[帕米·吉亞尼諾]\n加入鍊金術士工會需要滿足一些條件，不過等您報名後，我們再詳細談。"
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nWell then, would\nyou like to apply\nfor registration?",
+      "translation" : "[帕米·吉亞尼諾]\n那麼，您想報名嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 139,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "I would like to apply.",
+      "translation" : "我想報名"
+    },
+    {
+      "kind" : "option",
+      "line" : 139,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "I'll do it later.",
+      "translation" : "以後再來"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nHmmm...\nJust a moment.\nI'm sorry to say that\nyou're not experienced\nenough as a Merchant to\njoin us right now.",
+      "translation" : "[帕米·吉亞尼諾]\n嗯...\n請稍等。\n很遺憾，您作為商人的經驗還不夠，目前還不能加入我們。"
+    },
+    {
+      "kind" : "message",
+      "line" : 149,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nYou must be at least\n^551A8BJob Level 40^000000 to become\nan Alchemist. Come back\nlater when you meet the\nJob Level requirement, okay?",
+      "translation" : "[帕米·吉亞尼諾]\n您必須達到^551A8B職業等級40^000000才能成為鍊金術士。\n等達到要求再來，好嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 157,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nAlright, your application has been accepted. Now, you must pay the 50,000 Zeny application fee and bring some items before you can begin your formal training.",
+      "translation" : "[帕米·吉亞尼諾]\n好的，您的申請已受理。\n接下來需要繳納50,000 Zeny報名費，並帶來一些物品，才能開始正式訓練。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nBut if you bring an ^551A8BOld Magic Book^000000 and ^551A8BHammer of Blacksmith^000000,\nwe will accept that as a substitute for the item requirement.",
+      "translation" : "[帕米·吉亞尼諾]\n不過，如果您帶來^551A8B古魔法書^000000和^551A8B高階鐵砧^000000，就可以代替原本要求的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 164,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nNow...\nPlease sign\nthe application.",
+      "translation" : "[帕米·吉亞尼諾]\n現在...\n請在申請表上簽字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nGood, good. Now, if you have\nthe Zeny for your application fee ready, I will tell you which items you will need to bring. Now, pay attention.",
+      "translation" : "[帕米·吉亞尼諾]\n很好，很好。\n如果您已經備好報名費，我就告訴您需要帶哪些物品。\n請聽仔細。"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nUh oh. You don't\nseem to have enough Zeny.\nCome back to me when you have 50,000 Zeny, otherwise we can't process your application.",
+      "translation" : "[帕米·吉亞尼諾]\n哎呀，您的 Zeny 好像不夠。\n請備齊50,000 Zeny再來，否則我們無法辦理您的申請。"
+    },
+    {
+      "kind" : "message",
+      "line" : 182,
+      "npc" : "Alchemist Guildsman",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nLet's see.\n{0}\nneeds to bring...",
+      "translation" : "[帕米·吉亞尼諾]\n讓我看看。\n{0}需要帶來..."
+    },
+    {
+      "kind" : "message",
+      "line" : 182,
+      "npc" : "Alchemist Guildsman",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nLet's see.\n{0}\nneeds to bring...\n^551A8B7 Berserk Potions^000000.",
+      "translation" : "[帕米·吉亞尼諾]\n讓我看看。\n{0}需要帶來...^551A8B7瓶菠色克藥水^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 182,
+      "npc" : "Alchemist Guildsman",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nLet's see.\n{0}\nneeds to bring...\n^551A8B100 Mini Furnaces^000000.",
+      "translation" : "[帕米·吉亞尼諾]\n讓我看看。\n{0}需要帶來...^551A8B100個攜帶用熔礦爐^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 182,
+      "npc" : "Alchemist Guildsman",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nLet's see.\n{0}\nneeds to bring...\n^551A8B7,500 Fire Arrows^000000.",
+      "translation" : "[帕米·吉亞尼諾]\n讓我看看。\n{0}需要帶來...^551A8B7,500支火箭矢^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 203,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nOnce you've gathered\nthose items, come back\nto me and your training\nas an Alchemist will begin.\nSee you soon~",
+      "translation" : "[帕米·吉亞尼諾]\n收集齊這些物品後，請回來找我，就可以開始鍊金術士的訓練了。\n回頭見~"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nTalented Merchants\nare always welcome here.\nPlease come back soon.",
+      "translation" : "[帕米·吉亞尼諾]\n我們隨時歡迎有才華的商人。\n希望您早日回來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nUmm...\nPlease let me know\nif you need anything.",
+      "translation" : "[帕米·吉亞尼諾]\n嗯...\n有什麼需要，請告訴我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 235,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nOkay, now you need to learn\nthe basics to being an Alchemist and learn the procedures for mixing chemicals and medicines.",
+      "translation" : "[帕米·吉亞尼諾]\n接下來，您需要學習鍊金術士的基礎知識，以及調配化學藥品和藥劑的方法。"
+    },
+    {
+      "kind" : "message",
+      "line" : 249,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nBut before all of that, you need to speak to Raspuchin. I'm not really sure what you'll be talking about with him...",
+      "translation" : "[帕米·吉亞尼諾]\n不過在那之前，您得先去找拉斯普欽談談。\n我也不太清楚你們會聊些什麼..."
+    },
+    {
+      "kind" : "message",
+      "line" : 252,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nIt shouldn't be anything extraordinary, but you're still required to speak to Raspuchin, since apparently he's a part of the Alchemist selection process.",
+      "translation" : "[帕米·吉亞尼諾]\n應該不是什麼特別的事，不過您還是得去找拉斯普欽。\n聽說他也參與鍊金術士的選拔。"
+    },
+    {
+      "kind" : "message",
+      "line" : 268,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nOkay, now you need to learn\nthe basics to being an Alchemist and learn the procedures for mixing chemicals and medicines.",
+      "translation" : "[帕米·吉亞尼諾]\n接下來，您需要學習鍊金術士的基礎知識，以及調配化學藥品和藥劑的方法。"
+    },
+    {
+      "kind" : "message",
+      "line" : 282,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nBut before all of that, you need to speak to Raspuchin. I'm not really sure what you'll be talking about with him...",
+      "translation" : "[帕米·吉亞尼諾]\n不過在那之前，您得先去找拉斯普欽談談。\n我也不太清楚你們會聊些什麼..."
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nIt shouldn't be anything extraordinary, but you're still required to speak to Raspuchin, since apparently he's a part of the Alchemist selection process.",
+      "translation" : "[帕米·吉亞尼諾]\n應該不是什麼特別的事，不過您還是得去找拉斯普欽。\n聽說他也參與鍊金術士的選拔。"
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nCome back when you\nhave prepared the\nrequired items.",
+      "translation" : "[帕米·吉亞尼諾]\n準備好所需物品後再來吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nHopefully, it\nwon't be too much of\na problem. I guess he'll just interview you, and ask you\nsome simple questions.",
+      "translation" : "[帕米·吉亞尼諾]\n希望不會太麻煩。\n我想他只是給您面試，問幾個簡單的問題。"
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Alchemist Guildsman",
+      "state" : "translated",
+      "text" : "[Parmy Gianino]\nWhy don't you ask\nsomeone else if you're\nnot sure who to visit\nnext? Good luck~",
+      "translation" : "[帕米·吉亞尼諾]\n如果不清楚接下來該找誰，就問問其他人吧？\n祝您好運~"
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nHeeheehee\nkeheheh~!\nEh? What do you want?!",
+      "translation" : "[拉斯普欽·格雷戈裡]\nHeeheehee\nkeheheh~!\n嗯？你想幹什麼？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nHeeheehee\nkeheheh~!\nHow cute, you've come\nall this way just to play...",
+      "translation" : "[拉斯普欽·格雷戈裡]\nHeeheehee\nkeheheh~!\n真可愛，跑這麼遠就是為了來玩..."
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat is it?!\nYou're curious as\nto what I'm doing?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n怎麼了？！\n你想知道我在做什麼？"
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nHeeheehee\nkeheheh~!\nWhat do you\nwant, kid?",
+      "translation" : "[拉斯普欽·格雷戈裡]\nHeeheehee\nkeheheh~!\n小鬼，你想幹什麼？"
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat...?!\nYou want to take\nthe test again?!\nI thought I told\nyou to leave!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n什麼...？！\n你還想再考一次？！\n我不是叫你走了嗎！"
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]",
+      "translation" : "[拉斯普欽·格雷戈裡]"
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat are you doing?\nGo and find Darwin now.",
+      "translation" : "[拉斯普欽·格雷戈裡]\n你還在幹什麼？\n快去找達爾文。"
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nKeheheheheheheheh~\nDon't think this is the end of it!",
+      "translation" : "[拉斯普欽·格雷戈裡]\nKeheheheheheheheh~\n別以為這就結束了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 334,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nYou're not here to steal my experimental results or plagiarize my work, are you? How dare you consider intellectual theft!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n你該不會是來偷我的實驗成果，或是抄襲我的研究吧？\n竟敢打竊取知識成果的主意！"
+    },
+    {
+      "kind" : "message",
+      "line" : 337,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nYou're not, are you?\nWell, as a colleague,\nlet me just warn you\nthat such tricks aren't\ntolerated here in the\nAlchemist Union!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n你沒這個打算吧？\n好，作為同行，我得警告你：鍊金術士工會絕不容忍這種勾當！"
+    },
+    {
+      "kind" : "message",
+      "line" : 352,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nI'll let you\ngo this time...\nBut next time, don't\nexpect to leave so easily...",
+      "translation" : "[拉斯普欽·格雷戈裡]\n這次就放過你...\n下次可別想這麼輕易就走..."
+    },
+    {
+      "kind" : "message",
+      "line" : 364,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nHeehee\nkeheheh~!\nWhy, I'm busy\nresearching,\nof course!",
+      "translation" : "[拉斯普欽·格雷戈裡]\nHeehee\nkeheheh~!\n我當然是在忙著做研究！"
+    },
+    {
+      "kind" : "message",
+      "line" : 371,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nOnce this\npotion is complete...\nYou can use it to take\nover an entire nation!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n等這種藥水研製成功...\n就能用它征服整個國家！"
+    },
+    {
+      "kind" : "message",
+      "line" : 377,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nHee hee hee!\nSomething this\ndangerous has to\nbe kept a secret!\nUnderstand?",
+      "translation" : "[拉斯普欽·格雷戈裡]\nHee hee hee!\n這麼危險的東西，必須保密！\n明白了嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 392,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nA Merchant should go and set up shop and vend items. Why are you wandering in a place like this?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n商人就該去擺攤賣東西。\n你在這種地方瞎逛什麼？"
+    },
+    {
+      "kind" : "message",
+      "line" : 395,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nHeheheh~!\nGo vend somwhere else!\nAnd leave me to my\ndark enterprise!",
+      "translation" : "[拉斯普欽·格雷戈裡]\nHeheheh~!\n到別處擺攤去！\n別妨礙我的黑暗事業！"
+    },
+    {
+      "kind" : "message",
+      "line" : 408,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat...?\nLearn Alchemy?!\nDon't even speak\nsuch nonsense!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n什麼...？\n學鍊金術？！\n別胡說八道了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 414,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nEven if you tried studying for a thousand years, maybe even more, it'd be useless to you! Forget about it and just worry about your store!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n就算你學上一千年，甚至更久，也是白費力氣！\n別想了，好好顧你的店吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 425,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat...?\nJoin the Union!?\nI don't like it...\nI just don't...!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n什麼...？\n加入工會？！\n我不喜歡...\n就是不喜歡...！"
+    },
+    {
+      "kind" : "message",
+      "line" : 431,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nNowadays, anyone thinks they can\nbe Alchemists just by knowing how to mix a few herbs. That's why my interview is necessary.",
+      "translation" : "[拉斯普欽·格雷戈裡]\n現在的人，會混合幾株草藥，就以為自己能當鍊金術士了。\n所以才需要我來面試！"
+    },
+    {
+      "kind" : "message",
+      "line" : 435,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nHeeheehee\nkeheheh~!\nI plan on weeding out all the dumb and incompetent, and chase them\nall away! We don't need morons!",
+      "translation" : "[拉斯普欽·格雷戈裡]\nHeeheehee\nkeheheh~!\n我要把那些愚蠢無能的傢伙統統篩掉，趕出去！\n我們不需要笨蛋！"
+    },
+    {
+      "kind" : "message",
+      "line" : 442,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWait...\nMaybe I've\nmisjudged you.\nYou might be a pretty boy,\nbut I can tell you're smart\nfrom your eyes.",
+      "translation" : "[拉斯普欽·格雷戈裡]\n等等...\n也許我看走眼了。\n你雖然長得挺俊，但看你的眼神，我知道你腦子也不差。"
+    },
+    {
+      "kind" : "message",
+      "line" : 442,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWait...\nMaybe I've\nmisjudged you.\nHuh. You're a cutie alright,\nbut I can tell you've got brains.",
+      "translation" : "[拉斯普欽·格雷戈裡]\n等等...\n也許我看走眼了。\n嗯，你確實挺可愛，不過我看得出你也有頭腦。"
+    },
+    {
+      "kind" : "message",
+      "line" : 456,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nYou're not just some stupid kid.\nI can tell youve gone through some rough times as a Merchant. Excellent. Keh heh heh~",
+      "translation" : "[拉斯普欽·格雷戈裡]\n你可不是什麼傻小鬼。\n看得出，你當商人的時候吃過不少苦。\n很好。\nKeh heh heh~"
+    },
+    {
+      "kind" : "message",
+      "line" : 460,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nFine, just so we don't insult each other's intelligence, I'll just let you pass the interview.",
+      "translation" : "[拉斯普欽·格雷戈裡]\n好吧，既然你我都不是笨蛋，就免得多此一舉了，面試算你通過。"
+    },
+    {
+      "kind" : "message",
+      "line" : 463,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nSo hurry up, become an Alchemist, do some good research, and you might turn out to be of some help to me. Hahahahahaha~!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n快去成為鍊金術士，好好做研究，也許還能幫上我的忙。\nHahahahahaha~!"
+    },
+    {
+      "kind" : "message",
+      "line" : 466,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nNow go to Darwin!\nHe'll teach you how to do the experiments. Just tell him that\nI sent you.",
+      "translation" : "[拉斯普欽·格雷戈裡]\n現在就去找達爾文！\n他會教你怎麼做實驗。\n告訴他是我讓你去的就行。"
+    },
+    {
+      "kind" : "message",
+      "line" : 475,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nSurprised, are you?\nKeheheh~ If you thought\nbecoming an Alchemist was\njust a matter of changing\nyour clothes, then you're\nsadly mistaken.",
+      "translation" : "[拉斯普欽·格雷戈裡]\n很驚訝，是吧？\nKeheheh~ 如果你以為當鍊金術士只要換身衣服，那可就大錯特錯了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 483,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nNow, try solving\nall these problems.\nLet's see how smart\nreally are.",
+      "translation" : "[拉斯普欽·格雷戈裡]\n來，把這些題都做出來。\n讓我看看你究竟有多聰明。"
+    },
+    {
+      "kind" : "message",
+      "line" : 497,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nI don't like it...\nI don't like this!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n我不喜歡...\n我不喜歡這樣！"
+    },
+    {
+      "kind" : "message",
+      "line" : 501,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nFine...\nI'll try to overlook your pitiful performance last time and give\nyou another chance. Don't screw\nup again, got it?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n好吧...\n我就暫且不計較你上次那糟糕的表現，再給你一次機會。\n別再搞砸了，聽見沒有？"
+    },
+    {
+      "kind" : "message",
+      "line" : 507,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nNow then,\ngive me all the\n^551A8Bright^000000 answers\nthis time.",
+      "translation" : "[拉斯普欽·格雷戈裡]\n那麼，這次每一道題都給我答^551A8B正確^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 516,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n12 + 23 + 34 + 45 = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n12 + 23 + 34 + 45 = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 521,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n1000 - 36 - 227 - 348 = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n1000 - 36 - 227 - 348 = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 526,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n14 * 17 * 3 = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n14 * 17 * 3 = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 531,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n9765 / 3 / 5 / 7 = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n9765 / 3 / 5 / 7 = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 536,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n(47 * 28) - (1376 / 4) = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n(47 * 28) - (1376 / 4) = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 541,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n(2646 / 7) + (13 * 28) = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n(2646 / 7) + (13 * 28) = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 546,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nHow much do\n12 Red Potions,\n1 Butterfly Wing\nand 5 Fly Wings cost\nafter a 24 % discount?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n12瓶紅色藥水、1個蝴蝶翅膀和5個蒼蠅翅膀，打七六折後總價是多少？"
+    },
+    {
+      "kind" : "message",
+      "line" : 555,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat is the\ntotal weight of\n3 Scimiters, 2 Helms\nand 1 Long Coat?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n3把彎刀、2頂頭盔和1件長外套的總重量是多少？"
+    },
+    {
+      "kind" : "message",
+      "line" : 563,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat is the\ntotal defense of\na Biretta, Mantle,\nOpera Mask, Ribbon,\nMuffler, Boots, and\nEar Muffs?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n聖職之帽、斗篷、歌劇面具、髮帶、圍巾、靴子和耳罩各一件，總防禦力是多少？"
+    },
+    {
+      "kind" : "message",
+      "line" : 573,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nIf you buy 5 Helms\nwith a 24 % discount\nand sell it at 20\nhow much profit\ndo you earn?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n如果打七六折買入5頂頭盔，再以20的價格賣出，能賺多少利潤？"
+    },
+    {
+      "kind" : "message",
+      "line" : 584,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n13 + 25 + 37 + 48 = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n13 + 25 + 37 + 48 = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 589,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n1000 - 58 - 214 - 416 = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n1000 - 58 - 214 - 416 = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 594,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n12 * 24 * 3 = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n12 * 24 * 3 = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 599,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n10530 / 3 / 5 / 2 = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n10530 / 3 / 5 / 2 = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n(35 * 19) - (1792 / 7) = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n(35 * 19) - (1792 / 7) = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 609,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n(2368 / 8) + (24 * 17) = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n(2368 / 8) + (24 * 17) = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 614,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n(2646 / 7) + (13 * 28) = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n(2646 / 7) + (13 * 28) = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 619,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat is the\ntotal price of\n15 Green Potions,\n6 Magnifiers and\n4 Traps after\na 24 % discount?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n15瓶綠色藥水、6個放大鏡和4個陷阱，打七六折後總價是多少？"
+    },
+    {
+      "kind" : "message",
+      "line" : 629,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat is the\ntotal weight of\n3 Ring Pommel Sabers,\n4 Caps, and 2 Boots?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n3把圓柄馬刀、4頂帽子和2雙靴子的總重量是多少？"
+    },
+    {
+      "kind" : "message",
+      "line" : 637,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat is the\ntotal defense of\na Buckler, Long Coat,\nGas Mask, Big Ribbon,\nCute Ribbon, Sakkat,\nand Glasses?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n小圓盾、長外套、防毒面具、紅蝶髮帶、粉紗髮圈、草帽和眼鏡各一件，總防禦力是多少？"
+    },
+    {
+      "kind" : "message",
+      "line" : 647,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nHow much profit do you\nmake if you buy Tights\nat a 24 % discount and\nsell it at 20 % of\nthe normal price?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n打七六折買入緊身褲，再以原價的20%賣出，能賺多少利潤？"
+    },
+    {
+      "kind" : "message",
+      "line" : 658,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n12 + 23 + 34 + 45 = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n12 + 23 + 34 + 45 = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 663,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n1000 - 58 - 214 - 416 = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n1000 - 58 - 214 - 416 = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 668,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n14 * 17 * 3 = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n14 * 17 * 3 = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 673,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n10530 / 3 / 5 / 2 = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n10530 / 3 / 5 / 2 = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 678,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n(47 * 28) - (1376 / 4) = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n(47 * 28) - (1376 / 4) = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 683,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\n(2646 / 7) + (13 * 28) = ?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n(2646 / 7) + (13 * 28) = ?"
+    },
+    {
+      "kind" : "message",
+      "line" : 688,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat is the\ntotal cost of\n6 Red Potions,\n7 Green Potions,\nand 8 Fly Wings\nafter a 24 % discount?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n6瓶紅色藥水、7瓶綠色藥水和8個蒼蠅翅膀，打七六折後總價是多少？"
+    },
+    {
+      "kind" : "message",
+      "line" : 698,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat is the\ntotal weight of\n2 Ring Pommel Sabers,\n3 Caps, and 3 boots?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n2把圓柄馬刀、3頂帽子和3雙靴子的總重量是多少？"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nWhat is the\ntotal defense of\na Mirror Shield, Mr. Smile, Leather Jacket, Silk Robe, Wedding Veil, Muffler, and Eye Patch?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n鏡盾、笑臉面具、皮夾克、絲質外袍、婚禮頭紗、圍巾和獨眼龍眼罩各一件，總防禦力是多少？"
+    },
+    {
+      "kind" : "message",
+      "line" : 713,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nIf you buy 4 Padded Armors\nat a 24% discount and sell\nthem at 20% of the original\nprice, how much profit would\nyou make from this sale?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n打七六折買入4件鐵製盔甲，再以原價的20%賣出，這筆買賣能賺多少利潤？"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nOoh...\nExcellent! Great!\nYou got them all correct!?\nKeheheh, I have no choice but to acknowledge you...",
+      "translation" : "[拉斯普欽·格雷戈裡]\nOoh...\n太棒了！真厲害！\n你竟然全答對了？！\nKeheheh，我也只好認可你了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nYou got one wrong!\nBut I'll let it slide.\nYou pass the interview!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n你答錯了一道題！\n不過這次就不計較了。\n面試通過！"
+    },
+    {
+      "kind" : "message",
+      "line" : 739,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nYou've got serious\nweaknesses in math,\nbut I'll let you go this time...",
+      "translation" : "[拉斯普欽·格雷戈裡]\n你的數學實在太差了，不過這次就放過你..."
+    },
+    {
+      "kind" : "message",
+      "line" : 747,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nKeheheh! Idiot!\nJust listening to your\nanswers is making me feel\nstupider! You might as well\nhave got them all wrong!",
+      "translation" : "[拉斯普欽·格雷戈裡]\nKeheheh! 笨蛋！\n光聽你的答案，我都覺得自己變笨了！\n跟全答錯也差不了多少！"
+    },
+    {
+      "kind" : "message",
+      "line" : 754,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nHow can a person that\ncan't even answer all of\nthese simple questions think\nof becoming an Alchemist?!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n連這些簡單的題都答不對，居然還想當鍊金術士？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 760,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nHm...?\nDid you get\nany right?",
+      "translation" : "[拉斯普欽·格雷戈裡]\n嗯...？\n你有哪道題答對了嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 765,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nFool! Even if you make one little mistake, everything goes wrong\nin Alchemy! Now get out of here!\nYou make me sick!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n蠢貨！\n鍊金術哪怕出一點小錯，也會全盤失敗！\n給我滾出去！\n看見你就噁心！"
+    },
+    {
+      "kind" : "message",
+      "line" : 771,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nSo hurry up, become an Alchemist, do some good research, and you might turn out to be of some help to me. Hahahahahaha~!",
+      "translation" : "[拉斯普欽·格雷戈裡]\n快去成為鍊金術士，好好做研究，也許還能幫上我的忙。\nHahahahahaha~!"
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nNow go to Darwin!\nHe'll teach you how to do the experiments. Just tell him that\nI sent you.",
+      "translation" : "[拉斯普欽·格雷戈裡]\n現在就去找達爾文！\n他會教你怎麼做實驗。\n告訴他是我讓你去的就行。"
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Fastidious Alchemist",
+      "state" : "translated",
+      "text" : "[Raspuchin Gregory]\nKeheheheheheheheh~\nDon't think this is the end of it!",
+      "translation" : "[拉斯普欽·格雷戈裡]\nKeheheheheheheheh~\n別以為這就結束了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "- Wait a minute! -\n- Currently you are carrying -\n- too many items with you. -\n- Please come back again -\n- after you store some items into kafra storage. -",
+      "translation" : "- 等一下！ -\n- 您攜帶的物品太多了。 -\n- 請先將部分物品存入卡普拉倉庫，再回來。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 805,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nAh...\nYou...\nYou've become\nan Alchemist.",
+      "translation" : "[達爾文]\n啊...\n你...\n你已經成為鍊金術士了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 805,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nWhen you have\nyour dreams, you\nhave everything.\nWithout them, you have\nnothing more to lose.",
+      "translation" : "[達爾文]\n有夢想，就擁有一切。\n沒有夢想，也就沒什麼可失去的了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 805,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\n...",
+      "translation" : "[達爾文]\n..."
+    },
+    {
+      "kind" : "message",
+      "line" : 805,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\n...\n......",
+      "translation" : "[達爾文]\n...\n......"
+    },
+    {
+      "kind" : "message",
+      "line" : 805,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nI said to go\nto Van Helmont.\nI'd like to teach you\nmore, but I can't.",
+      "translation" : "[達爾文]\n我說過，去找範·赫爾蒙特。\n我也想再多教你一些，可是已經教不了什麼了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 805,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nI have already given you all of my knowledge and have nothing more\nto teach you.",
+      "translation" : "[達爾文]\n我已經把所知的一切都傳授給你了，沒什麼能再教你的了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 813,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nRemember...\nIn your quest\nto make your\ndreams come true,\ndo not lose what\nyou cherish.",
+      "translation" : "[達爾文]\n記住...\n追逐夢想時，別失去自己珍視的東西。"
+    },
+    {
+      "kind" : "message",
+      "line" : 821,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nAh...\nHarmona...\nMy love...",
+      "translation" : "[達爾文]\n啊...\n哈莫娜...\n我的愛人..."
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nThese cursed eyes...\nThey've lost sight of\nmy dreams a long time ago.\nHa ha ha ha...",
+      "translation" : "[達爾文]\n這雙該死的眼睛...\n早就看不見我的夢想了。\nHa ha ha ha..."
+    },
+    {
+      "kind" : "message",
+      "line" : 840,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nDoes paradise\nreally exist...?\nNot without my love...\nNot without Harmona...",
+      "translation" : "[達爾文]\n天堂真的存在嗎...？\n沒有我的愛人，就沒有天堂...\n沒有哈莫娜，就沒有天堂..."
+    },
+    {
+      "kind" : "message",
+      "line" : 851,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\n...\n......",
+      "translation" : "[達爾文]\n...\n......"
+    },
+    {
+      "kind" : "message",
+      "line" : 855,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\n...\n......\nWho is it...?",
+      "translation" : "[達爾文]\n...\n......\n是誰...？"
+    },
+    {
+      "kind" : "message",
+      "line" : 862,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nA wolf?\nOr a human?\nYou must be seeking\nsomething, are you not?",
+      "translation" : "[達爾文]\n是狼？\n還是人？\n你一定在尋求什麼，對吧？"
+    },
+    {
+      "kind" : "message",
+      "line" : 868,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nAfter all...\nEveryone has desires\nto fulfill. Be be careful.\nDo not be like the wild\nwolf drawn to the flowers.",
+      "translation" : "[達爾文]\n畢竟...\n每個人都有想要滿足的慾望。\n不過要小心。\n別像那被花朵吸引的野狼一樣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 875,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nIn your efforts to gain something else, you may end up sacrificing something precious to you.",
+      "translation" : "[達爾文]\n為了得到某樣東西，你可能會犧牲自己珍視的一切。"
+    },
+    {
+      "kind" : "message",
+      "line" : 878,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nCultivating joy and happiness\nis much like cultivating flowers.\nIf something is missing, the\nflower will wilt away...",
+      "translation" : "[達爾文]\n培育喜悅和幸福，就像養花一樣。\n少了什麼，花就會枯萎..."
+    },
+    {
+      "kind" : "message",
+      "line" : 884,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nWhat brings you\nto this kind of place?",
+      "translation" : "[達爾文]\n你為什麼會來這種地方？"
+    },
+    {
+      "kind" : "option",
+      "line" : 888,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "I want to learn how to experiment.",
+      "translation" : "我想學習如何做實驗"
+    },
+    {
+      "kind" : "option",
+      "line" : 888,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Tell me more about flowers.",
+      "translation" : "再講講花的事"
+    },
+    {
+      "kind" : "option",
+      "line" : 888,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Nothing.",
+      "translation" : "沒什麼"
+    },
+    {
+      "kind" : "message",
+      "line" : 890,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nYou wish to\nlearn Alchemy?\nEverything I know,\nI've learned for the\nsake of making my\ndream come true...",
+      "translation" : "[達爾文]\n你想學鍊金術？\n我學會的一切，都是為了實現自己的夢想..."
+    },
+    {
+      "kind" : "message",
+      "line" : 898,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nI'll teach\nyou the basics...\nBut everything you\nlearn afterwards must\nbe directed through\nyour own motivations.",
+      "translation" : "[達爾文]\n我會教你基礎知識...\n不過，之後要學什麼，得由你自己的志向來決定。"
+    },
+    {
+      "kind" : "message",
+      "line" : 906,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nI will teach you\nhow to make simple\nmedicine. So please\nbring the following\nmaterials right away.",
+      "translation" : "[達爾文]\n我會教你製作簡單的藥劑。\n請儘快準備以下材料。"
+    },
+    {
+      "kind" : "message",
+      "line" : 913,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\n^551A8B3 Medicine Bowls^000000,\n^551A8B3 Empty Bottles^000000,\n^551A8B1 Red Herb^000000,\n^551A8B1 Yellow Herb^000000 and\n^551A8B1 White Herb^000000.",
+      "translation" : "[達爾文]\n^551A8B3個藥缽^000000、\n^551A8B3個空瓶^000000、\n^551A8B1株紅色藥草^000000、\n^551A8B1株黃色藥草^000000和\n^551A8B1株白色藥草^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 922,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nOnce you have\nprepared everything,\nreturn to me.",
+      "translation" : "[達爾文]\n東西都準備齊了，再回來找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 928,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nFlowers...?\nIn the darkest\nrecesses of my mind,\nthere is a blossum\nthat I faintly remember...",
+      "translation" : "[達爾文]\n花...？\n在記憶最幽暗的角落，有一朵花，我還依稀記得..."
+    },
+    {
+      "kind" : "message",
+      "line" : 935,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nFor the one that\nI love, I put all\nof my efforts into\nresearching that one thing.",
+      "translation" : "[達爾文]\n為了我愛的人，我把所有心血都投入了那項研究。"
+    },
+    {
+      "kind" : "message",
+      "line" : 941,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nI won't tell you the details,\nbut I was basically researching\nthe relationship between\nwolves and flowers.",
+      "translation" : "[達爾文]\n細節就不說了。\n簡單來說，我研究的是狼與花之間的關係。"
+    },
+    {
+      "kind" : "message",
+      "line" : 947,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nBut yes...\nIt was a flower.\nWith its shine, it was said\nto let you see paradise.\nThe ^551A8BIllusion Flower^000000...",
+      "translation" : "[達爾文]\n是的...\n那是一朵花。\n據說它的光芒能讓人看見天堂。\n^551A8B幻想花^000000..."
+    },
+    {
+      "kind" : "message",
+      "line" : 954,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nI even made\na Homunculus,\nbut no one believed that I could create new life from a flower...",
+      "translation" : "[達爾文]\n我甚至創造出了生命體，可是沒人相信我能從一朵花中創造新的生命..."
+    },
+    {
+      "kind" : "message",
+      "line" : 959,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nThen...\nWell, some other things happened, and now I have nothing left. Time no longer has any meaning for me.",
+      "translation" : "[達爾文]\n後來...\n又發生了一些事，如今我已經一無所有。\n時間對我來說，也沒了意義。"
+    },
+    {
+      "kind" : "message",
+      "line" : 963,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nAhh...\nHarmona...\nWhere have you gone?\nI hope you're in a field\nof beautiful flowers...",
+      "translation" : "[達爾文]\nAhh...\n哈莫娜...\n你去了哪裡？\n希望你正置身於一片美麗的花海..."
+    },
+    {
+      "kind" : "message",
+      "line" : 971,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nConsider what\nis most precious\nto you. It cannot\nbe protected if you\ndo not recognize it.",
+      "translation" : "[達爾文]\n想想，什麼對你最珍貴。\n只有認清這一點，才能守護好它。"
+    },
+    {
+      "kind" : "message",
+      "line" : 984,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\n...\n......\nWho is it...?",
+      "translation" : "[達爾文]\n...\n......\n是誰...？"
+    },
+    {
+      "kind" : "message",
+      "line" : 989,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nAh...\nYou are the one who\nwishes to learn Alchemy.\nHave you prepared everything?",
+      "translation" : "[達爾文]\n啊...\n你就是那個想學鍊金術的人。\n東西都準備齊了嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 996,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nWait.\nThat Illusion Flower.\nHow did you get that?",
+      "translation" : "[達爾文]\n等等。\n那朵幻想花，你是怎麼得到的？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1001,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nWhere did you find it?!\nThe flower that slowly\nblooms under the\nmoonlight?\nIt's beautiful...!",
+      "translation" : "[達爾文]\n你在哪裡找到的？！\n那朵在月光下緩緩綻放的花？\n真美...！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1008,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nTh-That flower...\nPlease let me see it.\nThe Illusion Flower!\nUwaaaaaaah!!",
+      "translation" : "[達爾文]\n那、那朵花...\n請讓我看看。\n幻想花！\nUwaaaaaaah!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1014,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nWould you be so kind\nas to let me have this flower?\nI'm sure that this is the Moonlight Flower that I've been seeking!",
+      "translation" : "[達爾文]\n能請你把這朵花給我嗎？\n這一定就是我一直在尋找的月光之花！"
+    },
+    {
+      "kind" : "option",
+      "line" : 1019,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Sorry, I can't give it to you.",
+      "translation" : "抱歉，不能給你"
+    },
+    {
+      "kind" : "option",
+      "line" : 1019,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "I brought it to give to you.",
+      "translation" : "我就是帶來送給你的"
+    },
+    {
+      "kind" : "message",
+      "line" : 1020,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nI understand.\nYou can't give\nsuch a precious\nflower to just anyone.\nWell... It's okay.",
+      "translation" : "[達爾文]\n我明白。\n這麼珍貴的花，不能隨便送人。\n嗯...沒關係。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1027,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nIt just brought back old memories. I shouldn't have asked in the first place. In any case, please bring what is needed for the experiment.",
+      "translation" : "[達爾文]\n它只是勾起了往事。\n我本來就不該開口要的。\n總之，請帶來實驗所需的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1030,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nPlease leave that flower\nsomewhere else. It brings\nback too many memories...",
+      "translation" : "[達爾文]\n請把那朵花放到別處去。\n它勾起了太多回憶..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1036,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nAre you\nserious?!\nThank you!\nSuch a precious flower.\nAh, Harmona, my love...",
+      "translation" : "[達爾文]\n你說真的？！\n謝謝你！\n這麼珍貴的花...\n啊，哈莫娜，我的愛人..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1043,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nYes...\nI shall repay you for this.\nI shall plant all of my knowledge of Alchemy directly into your mind...",
+      "translation" : "[達爾文]\n是的...\n我會報答你的。\n我會把自己所有的鍊金術知識，直接植入你的腦海..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1048,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nOpen your eyes wide,\nand look into my eyes!!\nDon't stop until the end!!",
+      "translation" : "[達爾文]\n睜大眼睛，直視我的雙眼！！\n直到結束都不要移開目光！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1053,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Lorem ipsum dolor sit amet,",
+      "translation" : "Lorem ipsum dolor sit amet,"
+    },
+    {
+      "kind" : "message",
+      "line" : 1055,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.",
+      "translation" : "Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit."
+    },
+    {
+      "kind" : "message",
+      "line" : 1058,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean fermentum ullamcorper.",
+      "translation" : "Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean fermentum ullamcorper."
+    },
+    {
+      "kind" : "message",
+      "line" : 1062,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean fermentum ullamcorper.\nVestibulum ante ipsum primis in",
+      "translation" : "Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean fermentum ullamcorper.\nVestibulum ante ipsum primis in"
+    },
+    {
+      "kind" : "message",
+      "line" : 1067,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean fermentum ullamcorper.\nVestibulum ante ipsum primis in\nfaucibus orci luctus et ultrices",
+      "translation" : "Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean fermentum ullamcorper.\nVestibulum ante ipsum primis in\nfaucibus orci luctus et ultrices"
+    },
+    {
+      "kind" : "message",
+      "line" : 1073,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean fermentum ullamcorper.\nVestibulum ante ipsum primis in\nfaucibus orci luctus et ultrices\nposuere cubilia Curae; Morbi",
+      "translation" : "Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean fermentum ullamcorper.\nVestibulum ante ipsum primis in\nfaucibus orci luctus et ultrices\nposuere cubilia Curae; Morbi"
+    },
+    {
+      "kind" : "message",
+      "line" : 1080,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean fermentum ullamcorper.\nVestibulum ante ipsum primis in\nfaucibus orci luctus et ultrices\nposuere cubilia Curae; Morbi\nmassa, fermentum vitae...",
+      "translation" : "Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean fermentum ullamcorper.\nVestibulum ante ipsum primis in\nfaucibus orci luctus et ultrices\nposuere cubilia Curae; Morbi\nmassa, fermentum vitae..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1089,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\n^666666*Gasp...*^000000\nYou are now\nan Alchemist!!\nGo to the Union\nand cast away the last\nvestiges of Merchant life!!",
+      "translation" : "[達爾文]\n^666666*Gasp...*^000000\n你現在已經是鍊金術士了！！\n去工會，徹底告別商人的身份吧！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1101,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nSeems like you have everything ready. As promised, I will teach you how to make simple medicine.",
+      "translation" : "[達爾文]\n看來東西都準備齊了。\n按之前說好的，我來教你製作簡單的藥劑。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1104,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nFirst, prepare the Medicine Bowl. Then, you put the Herbs inside, like this, and slowly crush them.",
+      "translation" : "[達爾文]\n首先，準備好藥缽。\n然後像這樣，把藥草放進去，慢慢研碎。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1107,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nPour small amounts\nof clean water and stir\nthe mixture until it thickens.\nAfterwards, add some more Herbs.",
+      "translation" : "[達爾文]\n倒入少量清水，攪拌至濃稠。\n然後再加入一些藥草。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1113,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nThat's how you make it. If you think you have enough, gently pour the mixture into an empty bottle.",
+      "translation" : "[達爾文]\n製作方法就是這樣。\n覺得分量足夠了，就小心地把混合物倒入空瓶。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1121,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nThere you go,\nit's complete.\nNow, make some medicine\nusing the simple procedure\nI just explained to you.",
+      "translation" : "[達爾文]\n好了，完成了。\n現在按照我剛才講的簡單步驟，試著製作藥劑吧。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1128,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Prepare the Medicine Bowl.",
+      "translation" : "準備藥缽"
+    },
+    {
+      "kind" : "option",
+      "line" : 1128,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Put the Medicine Bowl on your head.",
+      "translation" : "把藥缽頂在頭上"
+    },
+    {
+      "kind" : "option",
+      "line" : 1128,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Kick the Medicine Bowl.",
+      "translation" : "踢藥缽"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nWhat...?",
+      "translation" : "[達爾文]\n什麼...？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1139,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nNo!",
+      "translation" : "[達爾文]\n不！"
+    },
+    {
+      "kind" : "option",
+      "line" : 1144,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Put some dirt in the Medicine Bowl.",
+      "translation" : "在藥缽裡放些泥土"
+    },
+    {
+      "kind" : "option",
+      "line" : 1144,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Put some Herbs in the Medicine Bowl.",
+      "translation" : "在藥缽裡放入藥草"
+    },
+    {
+      "kind" : "option",
+      "line" : 1144,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Put a Harp in the Medicine Bowl.",
+      "translation" : "在藥缽裡放把豎琴"
+    },
+    {
+      "kind" : "message",
+      "line" : 1147,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\n...Eh!?\nThat's not\nmedicine!",
+      "translation" : "[達爾文]\n...嗯？！\n這可不是藥劑！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1157,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nA Harp?\nAnd how would\nyou do that?",
+      "translation" : "[達爾文]\n豎琴？\n你打算怎麼把它放進去？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1164,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Crush the Herbs.",
+      "translation" : "搗碎藥草"
+    },
+    {
+      "kind" : "option",
+      "line" : 1164,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Crush the Medicine Bowl.",
+      "translation" : "砸碎藥缽"
+    },
+    {
+      "kind" : "option",
+      "line" : 1164,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Crush Darwin's foot.",
+      "translation" : "踩達爾文的腳"
+    },
+    {
+      "kind" : "message",
+      "line" : 1169,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nWh-What are\nyou doing!?",
+      "translation" : "[達爾文]\n你、你在幹什麼？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1176,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nAgh...!\nWhat do you\nthink you're\ndoing?!",
+      "translation" : "[達爾文]\nAgh...!\n你究竟在幹什麼？！"
+    },
+    {
+      "kind" : "option",
+      "line" : 1184,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Spray clean water.",
+      "translation" : "噴灑清水"
+    },
+    {
+      "kind" : "option",
+      "line" : 1184,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Drink clean water.",
+      "translation" : "喝清水"
+    },
+    {
+      "kind" : "option",
+      "line" : 1184,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Pour clean water.",
+      "translation" : "倒入清水"
+    },
+    {
+      "kind" : "message",
+      "line" : 1187,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nHuh?\nWhat are you doing?",
+      "translation" : "[達爾文]\n誒？\n你在做什麼？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1194,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nW-wait...\nAre you\ntaking a break?",
+      "translation" : "[達爾文]\n等、等一下...\n你是在休息嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1203,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Continue crushing the Herbs.",
+      "translation" : "繼續搗碎藥草"
+    },
+    {
+      "kind" : "option",
+      "line" : 1203,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Continue eating the Herbs.",
+      "translation" : "繼續吃藥草"
+    },
+    {
+      "kind" : "option",
+      "line" : 1203,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Continue dancing and singing.",
+      "translation" : "繼續唱歌跳舞"
+    },
+    {
+      "kind" : "message",
+      "line" : 1208,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nEat the Herbs?\nI think you need\nto focus on the\ntask at hand...",
+      "translation" : "[達爾文]\n吃藥草？\n我看你該專心做眼前的事..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1217,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nSinging and\ndancing? Alchemists\ndon't do that, have\nyou gone crazy?",
+      "translation" : "[達爾文]\n唱歌跳舞？\n鍊金術士可不是做這個的，你瘋了嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1225,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Put noodles in and fry it.",
+      "translation" : "放入麵條炒一炒"
+    },
+    {
+      "kind" : "option",
+      "line" : 1225,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Pour it in an empty bottle.",
+      "translation" : "倒入空瓶中"
+    },
+    {
+      "kind" : "option",
+      "line" : 1225,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "Hold the Medicine Bowl and drink it.",
+      "translation" : "端起藥缽喝掉"
+    },
+    {
+      "kind" : "message",
+      "line" : 1228,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nWe're Alchemists,\nnot restaurant chefs.",
+      "translation" : "[達爾文]\n我們是鍊金術士，不是餐廳廚師。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1237,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nHuh...\nPretty sloppy...",
+      "translation" : "[達爾文]\n嗯...\n真夠馬虎的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1244,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\n...\n......",
+      "translation" : "[達爾文]\n...\n......"
+    },
+    {
+      "kind" : "message",
+      "line" : 1248,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nYou messed up the mixture\nsince you didn't follow the procedure! Get some more ingredients so you can try it\nagain until you get it right.",
+      "translation" : "[達爾文]\n你沒按步驟操作，把藥劑弄壞了！\n再去準備些材料，重新試一遍，直到做對為止。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1257,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nGood job.\nIt came out pretty well considering it's your first time. Go ahead and keep the medicines that you've just made.",
+      "translation" : "[達爾文]\n做得好。\n第一次就能做到這樣，已經很不錯了。\n剛才做好的藥劑就留給你吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1263,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nNow, go into the next room\nand speak to Van Helmont to\ncontinue your training.",
+      "translation" : "[達爾文]\n現在去隔壁房間找範·赫爾蒙特，繼續訓練。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1268,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nNever forget...\nYou must always protect\nwhat is most precious to you.",
+      "translation" : "[達爾文]\n千萬別忘了...\n一定要守護好自己最珍視的東西。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1275,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nHave you forgotten\nwhat you need to bring?\nLet me remind you once\nagain. You must come\nback with...",
+      "translation" : "[達爾文]\n忘記要帶什麼了嗎？\n我再提醒你一次。\n你需要帶來..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1282,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\n^551A8B3 Medicine Bowls^000000,\n^551A8B3 Empty Bottle^000000,\n^551A8B1 Red Herb^000000,\n^551A8B1 Yellow Herb^000000 and\n^551A8B1 White Herb^000000.",
+      "translation" : "[達爾文]\n^551A8B3個藥缽^000000、\n^551A8B3個空瓶^000000、\n^551A8B1株紅色藥草^000000、\n^551A8B1株黃色藥草^000000和\n^551A8B1株白色藥草^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1289,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nCome back\nwhen you are\nready...",
+      "translation" : "[達爾文]\n準備好再來..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1302,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nAah...\nHarmona, my love.\nI can't even see the flower anymore. My soul quietly\nwithers as well..",
+      "translation" : "[達爾文]\nAah...\n哈莫娜，我的愛人。\n我連那朵花都看不見了。\n我的靈魂也在悄然枯萎..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1313,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nGo to the second floor and talk to speak to our Union Leader. Once\nyou do that, your life as an Alchemist will begin.",
+      "translation" : "[達爾文]\n去二樓找我們的會長談談。\n之後，你作為鍊金術士的生活就要開始了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1325,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nThese cursed eyes...\nThey've lost sight of\nmy dreams a long time ago.\nHa ha ha ha...",
+      "translation" : "[達爾文]\n這雙該死的眼睛...\n早就看不見我的夢想了。\nHa ha ha ha..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1331,
+      "npc" : "Studying Man",
+      "state" : "translated",
+      "text" : "[Darwin]\nDoes paradise\nreally exist...?\nNot without my love...\nNot without Harmona...",
+      "translation" : "[達爾文]\n天堂真的存在嗎...？\n沒有我的愛人，就沒有天堂...\n沒有哈莫娜，就沒有天堂..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1341,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nWhat do you want?\nI'm busy!! Don't\nbother me and get\non your way.",
+      "translation" : "[範·赫爾蒙特]\n你想幹什麼？\n我很忙！！\n別來煩我，走開。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1341,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nJust a little...\nA little bit more...\nNooo! Just a little\nbit more and it\nwould've been done!",
+      "translation" : "[範·赫爾蒙特]\n就差一點...\n再多一點點...\nNooo! 再差一點點就完成了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1341,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nArrrrgh...!\nWhy isn't this formula working? What's wrong? In theory, it's all correct, but there must be an error in the formula somewhere...",
+      "translation" : "[範·赫爾蒙特]\nArrrrgh...!\n這配方為什麼不管用？\n哪裡出錯了？\n理論上都沒問題，可配方里一定有哪裡錯了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1341,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nAlright, if I make an incision here in the Tentacle, and add a Jellopy and Sticky Mucus solution into the... Where the hell did my Medicine Bowl go?",
+      "translation" : "[範·赫爾蒙特]\n好，在觸手這裡切個口，再把傑勒比結晶和粘稠液體配成的溶液加到...\n我的藥缽到底跑哪去了？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1341,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nWhat...?\nI thought I told you to\ntalk to Nicholas next door?",
+      "translation" : "[範·赫爾蒙特]\n什麼...？\n我不是叫你去找隔壁的尼古拉了嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1349,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nNow, come on...\nYou'll never get\nany research completed if you just slack off. Go out and learn all that you can.",
+      "translation" : "[範·赫爾蒙特]\n好了，快去吧...\n光偷懶可完成不了研究。\n出去儘可能多學點東西。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1354,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nReading science journals and performing experiments. That's what Alchemy is all about. Now, let me get back to work!",
+      "translation" : "[範·赫爾蒙特]\n閱讀科學期刊，動手做實驗，這就是鍊金術。\n好了，讓我繼續工作！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1365,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nWhy...?!\nWhy, another failure?!\nMy calculations were\nall correct! W-Wait...!",
+      "translation" : "[範·赫爾蒙特]\n為什麼...？！\n怎麼又失敗了？！\n我的計算明明都沒錯！\n等、等等...！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1371,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nPerhaps, if I capacitated the thermal flux by using the neutronic gradient, it just might work...!",
+      "translation" : "[範·赫爾蒙特]\n也許利用中子梯度來增強熱流，就能成功...！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1380,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nI pour it in here, and it should stop. Wait, this is the wrong solution! How could I make such\na dumb mistake?! When did these\nget switched?!",
+      "translation" : "[範·赫爾蒙特]\n倒進這裡，應該就能停下了。\n等等，拿錯溶液了！\n我怎麼會犯這麼蠢的錯誤？！\n它們什麼時候被調換的？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1385,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nOkay, okay...\nI just need to fix this part.\nNo need to start over. I just\nneed to fix it... But wait. Wait...",
+      "translation" : "[範·赫爾蒙特]\n好，好...\n只要把這部分修正就行。\n不必重來。\n修正一下就好...\n可是等等。\n等等..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1391,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\n.................",
+      "translation" : "[範·赫爾蒙特]\n................."
+    },
+    {
+      "kind" : "message",
+      "line" : 1394,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nUm...\nWho are you?",
+      "translation" : "[範·赫爾蒙特]\n嗯...\n你是誰？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1398,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "I want to become an Alchemist.",
+      "translation" : "我想成為鍊金術士"
+    },
+    {
+      "kind" : "option",
+      "line" : 1398,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : ".......",
+      "translation" : "......."
+    },
+    {
+      "kind" : "message",
+      "line" : 1399,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nHmm...?\nWhat, did you just want to watch? Fine, fine, but do it quietly and leave right when you're done.",
+      "translation" : "[範·赫爾蒙特]\n嗯...？\n怎麼，只是想看看？\n好，好，不過要安靜，看完就走。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1403,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nStay out of my way and don't go around touching stuff. There might be some volatile materials, so it'd be dangerous to have any accidents.",
+      "translation" : "[範·赫爾蒙特]\n別擋路，也別亂碰東西。\n這裡可能有些不穩定的材料，萬一出事故會很危險。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1407,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nYou...?\nAn Alchemist?\nWhat a funny Merchant.",
+      "translation" : "[範·赫爾蒙特]\n你...？\n想當鍊金術士？\n真是個有趣的商人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1412,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nWell, that's nice, but I have very urgent experiments that require\nmy attention, so don't get\nin the way.",
+      "translation" : "[範·赫爾蒙特]\n嗯，挺好，不過我有緊急的實驗要做，別來妨礙我。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1417,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Teach me something.",
+      "translation" : "教我點東西"
+    },
+    {
+      "kind" : "option",
+      "line" : 1417,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "...",
+      "translation" : "..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1418,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nArgh...!\nDidn't I just tell you not to bother me? What's so hard to understand about that?",
+      "translation" : "[範·赫爾蒙特]\nArgh...!\n我不是剛說了別煩我嗎？\n這話就那麼難懂？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1422,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nFine, fine. I'll give you an assignment. Learn something\nnew and come back. Let's see.\nWhat would be good...",
+      "translation" : "[範·赫爾蒙特]\n好，好。\n給你個任務，去學點新東西再來。\n讓我想想。\n學什麼好呢..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1427,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nOkay, I got it.\nGo learn how to make\na Counteragent and Mixture\nfrom Molgenstein.",
+      "translation" : "[範·赫爾蒙特]\n好，想到了。\n去找莫爾根斯坦，學習製作中和劑和混合劑。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1433,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nYou don't need to bring anything. Just go watch him at work and have him tell you how he makes those solutions. Got it?",
+      "translation" : "[範·赫爾蒙特]\n不用帶任何東西。\n看看他怎麼做，再請他講講這些溶液的製作方法就行。\n明白了？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1436,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nWell then, see you later.\nYou'd better get going as\nsoon as you can.",
+      "translation" : "[範·赫爾蒙特]\n那就回頭見。\n趕緊出發吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1444,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\n...",
+      "translation" : "[範·赫爾蒙特]\n..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1447,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\n...\n......",
+      "translation" : "[範·赫爾蒙特]\n...\n......"
+    },
+    {
+      "kind" : "message",
+      "line" : 1451,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\n...\n......",
+      "translation" : "[範·赫爾蒙特]\n...\n......"
+    },
+    {
+      "kind" : "message",
+      "line" : 1455,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nSo if I recalibrate the combustion rate of this compound, that should negate any cohesive tendencies in this particle flux...",
+      "translation" : "[範·赫爾蒙特]\n那麼，只要重新校準這種化合物的燃燒率，就能消除這股粒子流的凝聚傾向..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1458,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nBut what am I going to do\nabout all of this spontaneous\ncrystallization?! I can't very well remove this matrix, I need it for the catalyst to reach the triple point.",
+      "translation" : "[範·赫爾蒙特]\n可這些自發結晶該怎麼辦？！\n這基質又不能去掉，還得靠它讓催化劑達到三相點。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1463,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nDamn!\nWhat am\nI going to do?!",
+      "translation" : "[範·赫爾蒙特]\n該死！\n我該怎麼辦？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1472,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nDid I use them all at a time like this?! I wonder if Nicholas has any left. Ugh, what a pain. Wait. Wait a minute...",
+      "translation" : "[範·赫爾蒙特]\n偏偏這時候全用光了？！\n不知道尼古拉那裡還有沒有。\n嘖，真麻煩。\n等等。\n等一下..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1475,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\n...",
+      "translation" : "[範·赫爾蒙特]\n..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1478,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\n...\n......\nWho are you?",
+      "translation" : "[範·赫爾蒙特]\n...\n......\n你是誰？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1483,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "I want to become an Alchemist?",
+      "translation" : "我想成為鍊金術士？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1483,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : ".......",
+      "translation" : "......."
+    },
+    {
+      "kind" : "message",
+      "line" : 1484,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nHmm...?\nWhat, did you just want to watch? Fine, fine, but do it quietly and leave right when you're done.",
+      "translation" : "[範·赫爾蒙特]\n嗯...？\n怎麼，只是想看看？\n好，好，不過要安靜，看完就走。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1488,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nStay out of my way and don't go around touching stuff. There might be some volatile materials, so it'd be dangerous to have any accidents.",
+      "translation" : "[範·赫爾蒙特]\n別擋路，也別亂碰東西。\n這裡可能有些不穩定的材料，萬一出事故會很危險。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1492,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nAh, of course. The Merchant from before. So what did you learn from Molgenstein? I didn't just send you there for fun, you know.",
+      "translation" : "[範·赫爾蒙特]\n啊，對，是之前那個商人。\n在莫爾根斯坦那裡學到什麼了？\n我可不是讓你去玩的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1495,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nLet me ask you\nsome questions to\ncheck what you've\nlearned.",
+      "translation" : "[範·赫爾蒙特]\n我問幾個問題，看看你學得怎麼樣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1502,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nWhich item is not\nnecessary to make\na Counteragent?",
+      "translation" : "[範·赫爾蒙特]\n製作中和劑不需要哪種物品？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1507,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Karvodailnirol",
+      "translation" : "卡勒波迪藥水"
+    },
+    {
+      "kind" : "option",
+      "line" : 1507,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Detrimindexta",
+      "translation" : "帝特立米藥水"
+    },
+    {
+      "kind" : "option",
+      "line" : 1507,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Alcohol",
+      "translation" : "酒精"
+    },
+    {
+      "kind" : "message",
+      "line" : 1508,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nWhat item is not\nnecessary to make\na Mixture?",
+      "translation" : "[範·赫爾蒙特]\n製作混合劑不需要哪種物品？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1513,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Karvodailnirol",
+      "translation" : "卡勒波迪藥水"
+    },
+    {
+      "kind" : "option",
+      "line" : 1513,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Detrimindexta",
+      "translation" : "帝特立米藥水"
+    },
+    {
+      "kind" : "option",
+      "line" : 1513,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Alcohol",
+      "translation" : "酒精"
+    },
+    {
+      "kind" : "message",
+      "line" : 1515,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nWeren't you listening to Molgenstein at all? Maybe you\nhave to watch him make it again.",
+      "translation" : "[範·赫爾蒙特]\n你根本沒聽莫爾根斯坦講，是吧？\n看來得再看他做一遍了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1519,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nIf you can't tell the exact items that you need in an experiment,\nyou might end up hurting yourself!",
+      "translation" : "[範·赫爾蒙特]\n連實驗需要哪些材料都弄不清，可能會傷到自己！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1524,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nGood, you've learned well.\nOkay, now you know something about experimentation. You're done here, so now I can continue with my experiments.",
+      "translation" : "[範·赫爾蒙特]\n不錯，學得挺好。\n現在你對實驗也有所瞭解了。\n這裡的訓練結束了，我終於可以繼續做實驗了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1528,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nGo out and find the room next\nto this one and talk to Nicholas. He'll continue your training.",
+      "translation" : "[範·赫爾蒙特]\n出去找隔壁的尼古拉，他會接著指導你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1534,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nWhat are you\nstill doing here?\nGo! We both have\nmore important\nthings to do!",
+      "translation" : "[範·赫爾蒙特]\n怎麼還在這裡？\n快走！\n我們都有更重要的事要做！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1543,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nWhat item do\nyou need to make\na Counteragent?",
+      "translation" : "[範·赫爾蒙特]\n製作中和劑需要哪種物品？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1548,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Feather",
+      "translation" : "羽毛"
+    },
+    {
+      "kind" : "option",
+      "line" : 1548,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Sticky Mucus",
+      "translation" : "粘稠液體"
+    },
+    {
+      "kind" : "option",
+      "line" : 1548,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Animal Gore",
+      "translation" : "家畜血"
+    },
+    {
+      "kind" : "message",
+      "line" : 1549,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nWhat item do\nyou need to make\na Mixture?",
+      "translation" : "[範·赫爾蒙特]\n製作混合劑需要哪種物品？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1554,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Monster Feed",
+      "translation" : "魔物飼料"
+    },
+    {
+      "kind" : "option",
+      "line" : 1554,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Ancient Lips",
+      "translation" : "人魚嘴巴"
+    },
+    {
+      "kind" : "option",
+      "line" : 1554,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "Rotten Bandage",
+      "translation" : "腐爛繃帶"
+    },
+    {
+      "kind" : "message",
+      "line" : 1555,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nBe honest. You don't know, do you?! Didn't I say to go to Molgenstein and have him teach you?!",
+      "translation" : "[範·赫爾蒙特]\n說實話，你根本不知道，對吧？！\n我不是讓你去找莫爾根斯坦學習了嗎？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1558,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nDon't even think about coming back until you talk to him! Now stop bothering me and get out of here!",
+      "translation" : "[範·赫爾蒙特]\n沒跟他談過，就別想回來！\n別再煩我，出去！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1568,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nI need to continue my research,\nand you need to finish becoming an Alchemist. Come on, get moving!",
+      "translation" : "[範·赫爾蒙特]\n我得繼續研究，你也得完成轉職鍊金術士的訓練。\n快點行動！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1580,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nWhy...?!\nWhy, another failure?!\nMy calculations were\nall correct! Wait...",
+      "translation" : "[範·赫爾蒙特]\n為什麼...？！\n怎麼又失敗了？！\n我的計算明明都沒錯！\n等等..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1586,
+      "npc" : "Experiment Expert",
+      "state" : "translated",
+      "text" : "[Van Helmont]\nPerhaps, if I capacitated the thermal flux by using the neutronic gradient, it just might work...",
+      "translation" : "[範·赫爾蒙特]\n也許利用中子梯度來增強熱流，就能成功..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1594,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nYou have transcended...\nExcellent, excellent.",
+      "translation" : "[文森特·卡西阿洛]\n你已經轉生了...\n很好，很好。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1594,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nWelcome!\nSo how is your\nresearch coming along?",
+      "translation" : "[文森特·卡西阿洛]\n歡迎！\n你的研究進展如何？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1594,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nHm...\nA Novice?\nYou shouldn't be\nplaying in a place\nlike this.",
+      "translation" : "[文森特·卡西阿洛]\n嗯...\n初心者？\n你不該在這種地方玩耍。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1594,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nHmm...?\nWhat's an adventurer\ndoing here in the\nAlchemist Union?",
+      "translation" : "[文森特·卡西阿洛]\n嗯...？\n冒險者來鍊金術士工會做什麼？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1594,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nHmm...?\nA Merchant?\nAre you interested\nin learning Alchemy?",
+      "translation" : "[文森特·卡西阿洛]\n嗯...？\n商人？\n你想學鍊金術嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1594,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nHmm...you don't seem to be qualified yet.\nRemember, you must reach at least job level 40 to become an Alchemist.",
+      "translation" : "[文森特·卡西阿洛]\n嗯...你似乎還沒達到要求。\n記住，至少要達到職業等級40，才能成為鍊金術士。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1594,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nAh, you're almost\nready to become an\nAlchemist, but you must\nfirst allocate your unused\nSkill Points.",
+      "translation" : "[文森特·卡西阿洛]\n啊，你馬上就能成為鍊金術士了，不過得先把剩餘的技能點全部分配完。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1594,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nAh, well done.\nI can see that you\nhave learned all of\nthe basics of Alchemy.",
+      "translation" : "[文森特·卡西阿洛]\n啊，做得好。\n看來你已經掌握了鍊金術的全部基礎知識。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1594,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nAh...\nI believe you've\nalready registered\nfor training to become\nan Alchemist.",
+      "translation" : "[文森特·卡西阿洛]\n啊...\n我記得你已經報名參加鍊金術士的訓練了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1599,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nYou don't belong here.\nGo and explore the wide world, my friend.",
+      "translation" : "[文森特·卡西阿洛]\n你不屬於這裡。\n去探索廣闊的世界吧，我的朋友。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1612,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nAt times you get results that are unexpected from an experiment. Although these may be setbacks in your research, such results can also lead to new discoveries.",
+      "translation" : "[文森特·卡西阿洛]\n實驗有時會得出意料之外的結果。\n這或許會讓研究受挫，卻也可能帶來新的發現。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1615,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nIf you discover something new,\ncome and tell us. Don't forget that we are all working together to unlock the mysteries of science!",
+      "translation" : "[文森特·卡西阿洛]\n如果有新發現，記得來告訴我們。\n別忘了，我們都在共同努力，揭開科學的奧秘！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1626,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nThere are a lot of volatile chemicals and dangerous\nmaterials in this building. It'd be a lot better if you just played outside.",
+      "translation" : "[文森特·卡西阿洛]\n這棟樓裡有許多不穩定的化學品和危險材料。\n你還是去外面玩比較好。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1636,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nI'm afraid there's\nnot much we can offer\nyou here if you're not\na member of our Union.",
+      "translation" : "[文森特·卡西阿洛]\n如果不是工會成員，恐怕我們也幫不上你太多忙。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1652,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nThis is the Alchemist Union.\nWe research and experiment with many different substances in order to create new materials without using magic.",
+      "translation" : "[文森特·卡西阿洛]\n這裡是鍊金術士工會。\n我們研究各種物質，開展實驗，希望不用魔法也能創造出新材料。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1656,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nSomeday, we hope to unlock\nthe secret of life, as well as the other mysteries of science.",
+      "translation" : "[文森特·卡西阿洛]\n希望有一天，我們能解開生命的秘密，以及科學的其他奧秘。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1660,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nAfter being traveling as a Merchant for a long time, you must have developed some scientific curiosity. If you'd like to learn Alchemy, why don't you try joining the Alchemist Union?",
+      "translation" : "[文森特·卡西阿洛]\n你當商人四處旅行這麼久，一定也對科學產生了好奇吧。\n如果想學鍊金術，不妨加入鍊金術士工會？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1682,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nTalk to me again\nonce you have spent\nall of your extra\nSkill Points.",
+      "translation" : "[文森特·卡西阿洛]\n把剩餘的技能點都用完，再來找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1707,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nHenceforth, you are\nnow a member of our\nillustrious Union.\nI hope you learn a lot...",
+      "translation" : "[文森特·卡西阿洛]\n從今以後，你就是我們這個享有盛譽的工會的一員了。\n希望你能學有所成..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1715,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nLet me give you\nsomething special.\nYou can use this to\nbegin your life\nof research.",
+      "translation" : "[文森特·卡西阿洛]\n我送你一份特別的禮物。\n用它開啟你的研究生涯吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1742,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nAnd...\nHere's a little\nsomething to help\nyou begin your\nresearch.",
+      "translation" : "[文森特·卡西阿洛]\n還有...\n這點東西能幫你開始研究。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1750,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nI'll see\nyou later then...\nRemember to carry\nyourself with pride\nas an Alchemist!",
+      "translation" : "[文森特·卡西阿洛]\n那麼，回頭見...\n記住，身為鍊金術士，要時刻保持自豪！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1767,
+      "npc" : "Master Alchemist",
+      "state" : "translated",
+      "text" : "[Vincent Carsciallo]\nPlease listen to the\nother Alchemists and follow their instructions carefully. You will learn much from them.",
+      "translation" : "[文森特·卡西阿洛]\n認真聽其他鍊金術士講解，仔細按照他們的指導去做。\n你會從他們那裡學到很多。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1778,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "- Wait a minute! -\n- Currently you are carrying -\n- too many items with you. -\n- Please come back again -\n- after you store some items into kafra storage. -",
+      "translation" : "- 等一下！ -\n- 您攜帶的物品太多了。 -\n- 請先將部分物品存入卡普拉倉庫，再回來。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 1787,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nOoh...\nYou're the upstart\nMerchant that wants\nto become an Alchemist?",
+      "translation" : "[尼古拉·弗拉梅爾]\nOoh...\n你就是那個想成為鍊金術士的新晉商人？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1793,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nNot just anyone can become an Alchemist, you know. You've got to have motivation and clear goals and a strong sense of focus.",
+      "translation" : "[尼古拉·弗拉梅爾]\n不是誰都能當鍊金術士的。\n你得有動力，有明確的目標，還要足夠專注。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1796,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nAlchemists must memorize many chemical equations, scientific laws and a lot of other information. It's actually pretty tough.",
+      "translation" : "[尼古拉·弗拉梅爾]\n鍊金術士要記住許多化學方程式、科學定律和其他知識。\n這可不容易。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1799,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nIf you can't focus, you'll be confused later when you look at Alchemy charts. My test will judge your ability to do just that.",
+      "translation" : "[尼古拉·弗拉梅爾]\n如果不能集中注意力，以後看鍊金術圖表時，就會一頭霧水。\n我的測試就是要檢驗你的專注力。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1803,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nFind the words scrambled\nin the group of letters I give you. They can be made by using some\nor all of the letters.",
+      "translation" : "[尼古拉·弗拉梅爾]\n從我給出的字母組裡，找出能用這些字母拼成的單詞。\n可以用其中一部分，也可以全部用上。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1808,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nYou pass if you\nchoose the word\nthat is ^551A8BIN^000000 the puzzle.",
+      "translation" : "[尼古拉·弗拉梅爾]\n選出^551A8B能用題目中的字母拼成^000000的單詞，就算通過。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1815,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "t m y a n y e o b n e g p r i",
+      "translation" : "t m y a n y e o b n e g p r i"
+    },
+    {
+      "kind" : "option",
+      "line" : 1817,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "Brake",
+      "translation" : "Brake"
+    },
+    {
+      "kind" : "option",
+      "line" : 1817,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "Brass",
+      "translation" : "Brass"
+    },
+    {
+      "kind" : "option",
+      "line" : 1817,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "Bug",
+      "translation" : "Bug"
+    },
+    {
+      "kind" : "option",
+      "line" : 1817,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "Broken",
+      "translation" : "Broken"
+    },
+    {
+      "kind" : "option",
+      "line" : 1817,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "Brigan?",
+      "translation" : "Brigan?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1818,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "o n c u t a p j l e r s v m u",
+      "translation" : "o n c u t a p j l e r s v m u"
+    },
+    {
+      "kind" : "option",
+      "line" : 1820,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "vendor",
+      "translation" : "vendor"
+    },
+    {
+      "kind" : "option",
+      "line" : 1820,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "storage",
+      "translation" : "storage"
+    },
+    {
+      "kind" : "option",
+      "line" : 1820,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "weapon",
+      "translation" : "weapon"
+    },
+    {
+      "kind" : "option",
+      "line" : 1820,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "simple",
+      "translation" : "simple"
+    },
+    {
+      "kind" : "option",
+      "line" : 1820,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "streetshop",
+      "translation" : "streetshop"
+    },
+    {
+      "kind" : "message",
+      "line" : 1821,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "t v a r m e g p h e u b o y l",
+      "translation" : "t v a r m e g p h e u b o y l"
+    },
+    {
+      "kind" : "option",
+      "line" : 1823,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "molasses",
+      "translation" : "molasses"
+    },
+    {
+      "kind" : "option",
+      "line" : 1823,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "party",
+      "translation" : "party"
+    },
+    {
+      "kind" : "option",
+      "line" : 1823,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "leader",
+      "translation" : "leader"
+    },
+    {
+      "kind" : "option",
+      "line" : 1823,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "sweets",
+      "translation" : "sweets"
+    },
+    {
+      "kind" : "option",
+      "line" : 1823,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "treacle",
+      "translation" : "treacle"
+    },
+    {
+      "kind" : "message",
+      "line" : 1824,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "q z a h n a i n b r d p t n c",
+      "translation" : "q z a h n a i n b r d p t n c"
+    },
+    {
+      "kind" : "option",
+      "line" : 1826,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "partisan",
+      "translation" : "partisan"
+    },
+    {
+      "kind" : "option",
+      "line" : 1826,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "partizan",
+      "translation" : "partizan"
+    },
+    {
+      "kind" : "option",
+      "line" : 1826,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "pato",
+      "translation" : "pato"
+    },
+    {
+      "kind" : "option",
+      "line" : 1826,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "paros",
+      "translation" : "paros"
+    },
+    {
+      "kind" : "option",
+      "line" : 1826,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "pack",
+      "translation" : "pack"
+    },
+    {
+      "kind" : "message",
+      "line" : 1829,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "m p d i c f a r o g n k w a s",
+      "translation" : "m p d i c f a r o g n k w a s"
+    },
+    {
+      "kind" : "option",
+      "line" : 1831,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "packman",
+      "translation" : "packman"
+    },
+    {
+      "kind" : "option",
+      "line" : 1831,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "sunshine",
+      "translation" : "sunshine"
+    },
+    {
+      "kind" : "option",
+      "line" : 1831,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "ragnarok",
+      "translation" : "ragnarok"
+    },
+    {
+      "kind" : "option",
+      "line" : 1831,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "wonderland",
+      "translation" : "wonderland"
+    },
+    {
+      "kind" : "option",
+      "line" : 1831,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "frost",
+      "translation" : "frost"
+    },
+    {
+      "kind" : "message",
+      "line" : 1832,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "g b n o p r e f a r e t a s k",
+      "translation" : "g b n o p r e f a r e t a s k"
+    },
+    {
+      "kind" : "option",
+      "line" : 1834,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "purple",
+      "translation" : "purple"
+    },
+    {
+      "kind" : "option",
+      "line" : 1834,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "smoker",
+      "translation" : "smoker"
+    },
+    {
+      "kind" : "option",
+      "line" : 1834,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "ragnarok",
+      "translation" : "ragnarok"
+    },
+    {
+      "kind" : "option",
+      "line" : 1834,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "bolt",
+      "translation" : "bolt"
+    },
+    {
+      "kind" : "option",
+      "line" : 1834,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "burnt wood",
+      "translation" : "burnt wood"
+    },
+    {
+      "kind" : "message",
+      "line" : 1835,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "u g n i s j e k c e o g n d p",
+      "translation" : "u g n i s j e k c e o g n d p"
+    },
+    {
+      "kind" : "option",
+      "line" : 1837,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "scab",
+      "translation" : "scab"
+    },
+    {
+      "kind" : "option",
+      "line" : 1837,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "kinship",
+      "translation" : "kinship"
+    },
+    {
+      "kind" : "option",
+      "line" : 1837,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "donate",
+      "translation" : "donate"
+    },
+    {
+      "kind" : "option",
+      "line" : 1837,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "source",
+      "translation" : "source"
+    },
+    {
+      "kind" : "option",
+      "line" : 1837,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "opening",
+      "translation" : "opening"
+    },
+    {
+      "kind" : "message",
+      "line" : 1838,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "r o e h n r o m c a i n p t t",
+      "translation" : "r o e h n r o m c a i n p t t"
+    },
+    {
+      "kind" : "option",
+      "line" : 1840,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "forgemerchant",
+      "translation" : "forgemerchant"
+    },
+    {
+      "kind" : "option",
+      "line" : 1840,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "potionmerchant",
+      "translation" : "potionmerchant"
+    },
+    {
+      "kind" : "option",
+      "line" : 1840,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "dcmerchant",
+      "translation" : "dcmerchant"
+    },
+    {
+      "kind" : "option",
+      "line" : 1840,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "vendingmerchant",
+      "translation" : "vendingmerchant"
+    },
+    {
+      "kind" : "option",
+      "line" : 1840,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "battlemerchant",
+      "translation" : "battlemerchant"
+    },
+    {
+      "kind" : "message",
+      "line" : 1843,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "s m i e x b w u n e t a g l r",
+      "translation" : "s m i e x b w u n e t a g l r"
+    },
+    {
+      "kind" : "option",
+      "line" : 1845,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "tiger",
+      "translation" : "tiger"
+    },
+    {
+      "kind" : "option",
+      "line" : 1845,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "wolf",
+      "translation" : "wolf"
+    },
+    {
+      "kind" : "option",
+      "line" : 1845,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "pumpkin",
+      "translation" : "pumpkin"
+    },
+    {
+      "kind" : "option",
+      "line" : 1845,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "tripped",
+      "translation" : "tripped"
+    },
+    {
+      "kind" : "option",
+      "line" : 1845,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "tore",
+      "translation" : "tore"
+    },
+    {
+      "kind" : "message",
+      "line" : 1846,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "n i e g b o p d s o a u w r v",
+      "translation" : "n i e g b o p d s o a u w r v"
+    },
+    {
+      "kind" : "option",
+      "line" : 1848,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "bash",
+      "translation" : "bash"
+    },
+    {
+      "kind" : "option",
+      "line" : 1848,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "provoke",
+      "translation" : "provoke"
+    },
+    {
+      "kind" : "option",
+      "line" : 1848,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "endure",
+      "translation" : "endure"
+    },
+    {
+      "kind" : "option",
+      "line" : 1848,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "stun",
+      "translation" : "stun"
+    },
+    {
+      "kind" : "option",
+      "line" : 1848,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "abracadabra",
+      "translation" : "abracadabra"
+    },
+    {
+      "kind" : "message",
+      "line" : 1849,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "l r m g r e x t a v i n e d e",
+      "translation" : "l r m g r e x t a v i n e d e"
+    },
+    {
+      "kind" : "option",
+      "line" : 1851,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "alberta",
+      "translation" : "alberta"
+    },
+    {
+      "kind" : "option",
+      "line" : 1851,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "latifoliate",
+      "translation" : "latifoliate"
+    },
+    {
+      "kind" : "option",
+      "line" : 1851,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "crimson",
+      "translation" : "crimson"
+    },
+    {
+      "kind" : "option",
+      "line" : 1851,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "maple",
+      "translation" : "maple"
+    },
+    {
+      "kind" : "option",
+      "line" : 1851,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "evergreen",
+      "translation" : "evergreen"
+    },
+    {
+      "kind" : "message",
+      "line" : 1852,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "r o e h n r o m c a i n p t t",
+      "translation" : "r o e h n r o m c a i n p t t"
+    },
+    {
+      "kind" : "option",
+      "line" : 1854,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "forgemerchant",
+      "translation" : "forgemerchant"
+    },
+    {
+      "kind" : "option",
+      "line" : 1854,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "potionmerchant",
+      "translation" : "potionmerchant"
+    },
+    {
+      "kind" : "option",
+      "line" : 1854,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "dcmerchant",
+      "translation" : "dcmerchant"
+    },
+    {
+      "kind" : "option",
+      "line" : 1854,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "vendingmerchant",
+      "translation" : "vendingmerchant"
+    },
+    {
+      "kind" : "option",
+      "line" : 1854,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "battlemerchant",
+      "translation" : "battlemerchant"
+    },
+    {
+      "kind" : "message",
+      "line" : 1857,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nAh, you finished.\nNow, let's see...\nExcellent job!",
+      "translation" : "[尼古拉·弗拉梅爾]\n啊，答完了。\n讓我看看...\n做得很好！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1857,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nAh, you finished.\nNow, let's see...\n^666666*Gasp!*^000000 H-horrible!",
+      "translation" : "[尼古拉·弗拉梅爾]\n啊，答完了。\n讓我看看...\n^666666*Gasp!*^000000 太、太糟糕了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1864,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nGreat, you found all of those hidden words. With that kind of concentration, you should have no problem memorizing information.",
+      "translation" : "[尼古拉·弗拉梅爾]\n很好，所有隱藏的單詞都找到了。\n有這樣的專注力，記憶知識應該不成問題。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1867,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nCome back in a little bit while\nI prepare the next assignment\nfor your training.",
+      "translation" : "[尼古拉·弗拉梅爾]\n稍後再來吧，我先準備下一個訓練任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1872,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nOh, and before you talk to\nme again, make sure you have\n^551A8Bplenty of room in your inventory^000000.",
+      "translation" : "[尼古拉·弗拉梅爾]\n哦，對了，再來找我之前，記得確保^551A8B物品欄有足夠的空位^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1882,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nJudging from these results, you obviously have a problem with concentrating.",
+      "translation" : "[尼古拉·弗拉梅爾]\n從結果來看，你顯然不夠專注。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1885,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nIf you can't even solve these easy word puzzles, how can you keep track of your experiments and research?",
+      "translation" : "[尼古拉·弗拉梅爾]\n連這麼簡單的字母題都解不出來，以後怎麼理清實驗和研究中的各種細節？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1888,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nWhy don't you relax\nand rest a bit before\nyou take the test again?",
+      "translation" : "[尼古拉·弗拉梅爾]\n先放鬆一下，休息會兒再來考試吧？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1898,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nWhoa...\nYou're carrying too much stuff! First, put some of your things in Kafra Storage.",
+      "translation" : "[尼古拉·弗拉梅爾]\nWhoa...\n你帶的東西太多了！\n先把一些物品存進卡普拉倉庫吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1903,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nAlright...\nFor your next\nassignment, you'll\nneed to travel to ^551A8BJuno^000000.",
+      "translation" : "[尼古拉·弗拉梅爾]\n好...\n下一個任務，需要你前往^551A8B朱諾^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1909,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nThere, you'll need to talk to ^551A8BBain^000000 and ^551A8BBajin^000000. Those two are doing Alchemy research with the Sages\nin Juno. You'll learn something by assisting them with their project.",
+      "translation" : "[尼古拉·弗拉梅爾]\n到那裡找^551A8B貝恩^000000和^551A8B巴金^000000。\n他們正在和朱諾的賢者一起研究鍊金術。\n協助他們的研究，你也能學到一些東西。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1913,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nCome back here to me after you\nhelp them out. They'll need all of these items to continue their experiments.",
+      "translation" : "[尼古拉·弗拉梅爾]\n幫完他們後，再回來找我。\n他們需要這些物品來繼續實驗。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1919,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\n1 Mixture,\n5 Burnt Tree,\n5 Fine Sand,\n3 Rough Oridecon\nand 3 Rough Elunium.",
+      "translation" : "[尼古拉·弗拉梅爾]\n1瓶混合劑、\n5塊燃燒一半的木材、\n5份黃晶沙、\n3個神之金屬原石和\n3個鋁原石。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1931,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nAlright.\nHave a safe trip\nand come back in\none piece.",
+      "translation" : "[尼古拉·弗拉梅爾]\n好。\n一路平安，記得平安回來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1939,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nDidn't I say to\ngo to Juno and help\nBain and Bajin with\ntheir Alchemy research?",
+      "translation" : "[尼古拉·弗拉梅爾]\n我不是叫你去朱諾，幫貝恩和巴金研究鍊金術嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1949,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nAh, you're back!\nI just got a message from Bain\nand Bajin. They let me know that they were very happy with your assistance.",
+      "translation" : "[尼古拉·弗拉梅爾]\n啊，你回來了！\n我剛收到貝恩和巴金的訊息。\n他們說你的幫助讓他們非常滿意。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1954,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nIf you were good enough\nto help out those brothers,\nyou definitely qualify to be\nan Alchemist.",
+      "translation" : "[尼古拉·弗拉梅爾]\n能幫上那兄弟倆的忙，就說明你完全有資格成為鍊金術士。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1960,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nGood work!\nAll you have to do now is speak to the Union Leader on the 2nd floor! Congratulations, you'll become an Alchemist very soon!",
+      "translation" : "[尼古拉·弗拉梅爾]\n做得好！\n現在只要去二樓找會長談談就行了！\n恭喜，你很快就能成為鍊金術士了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1966,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nAll you have to do now is speak to the Union Leader on the 2nd floor! Congratulations, you'll become an Alchemist very soon!",
+      "translation" : "[尼古拉·弗拉梅爾]\n現在只要去二樓找會長談談就行了！\n恭喜，你很快就能成為鍊金術士了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1971,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nLorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nVivamus sem. Sed metus\nlacus, viverra id, rutrum eget,\nrhoncus sit amet, lectus.",
+      "translation" : "[尼古拉·弗拉梅爾]\nLorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nVivamus sem. Sed metus\nlacus, viverra id, rutrum eget,\nrhoncus sit amet, lectus."
+    },
+    {
+      "kind" : "message",
+      "line" : 1978,
+      "npc" : "Chief Researcher",
+      "state" : "translated",
+      "text" : "[Nicholas Flamel]\nSuspendisse sit amet urna in\nnisl fringilla faucibus. Nulla scelerisque eros...\n^666666*Mumble Mumble*^000000",
+      "translation" : "[尼古拉·弗拉梅爾]\nSuspendisse sit amet urna in\nnisl fringilla faucibus. Nulla scelerisque eros...\n^666666*Mumble Mumble*^000000"
+    }
+  ]
+}

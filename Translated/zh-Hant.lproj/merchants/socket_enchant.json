@@ -1,0 +1,982 @@
+{
+  "file" : "npc/merchants/socket_enchant.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 36,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "- Wait a minute !! -\n- Currently you're carrying -\n- too many items with you. -\n- Please try again -\n- after you lose some weight. -",
+      "translation" : "- 等等！！ -\n- 您現在攜帶的物品 -\n- 太多了。 -\n- 請在減輕負重後 -\n- 再試一次。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nI'm an engineer that specializes in adding Slots to normal Weapons and Armor.\nMy service fee, the required materials and the chance of success all depend on the specific item I'm working on.",
+      "translation" : "[賽亞佈雷姆]\n我是一名專門負責為普通武器和防具新增插槽的工程師。\n我的服務費用、所需材料以及成功率，都取決於具體操作的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 47,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nAdding Slots may seem simple, but it's far more complicated than it looks.\nIf you're interested in my service, let me know.",
+      "translation" : "[賽亞佈雷姆]\n新增插槽看似簡單，實則遠比表面複雜。\n如果您對我的服務感興趣，請告訴我。"
+    },
+    {
+      "kind" : "option",
+      "line" : 51,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Add Slot to Weapon",
+      "translation" : "為武器新增插槽"
+    },
+    {
+      "kind" : "option",
+      "line" : 51,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Add Slot to Armor",
+      "translation" : "為防具新增插槽"
+    },
+    {
+      "kind" : "option",
+      "line" : 51,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Slot Attempt Info",
+      "translation" : "開槽須知"
+    },
+    {
+      "kind" : "option",
+      "line" : 51,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 54,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nYou want to add a Slot to a weapon?\nI categorize weapons by their difficulty in adding a Slot, C Class being easiest and S Class the most difficult.\nWhich class would you like to try?",
+      "translation" : "[賽亞佈雷姆]\n您想為武器新增插槽？\n我會根據新增插槽的難度對武器進行分類，C級最容易，S級最難。\n您想嘗試哪個等級？"
+    },
+    {
+      "kind" : "option",
+      "line" : 59,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "C Class",
+      "translation" : "C級"
+    },
+    {
+      "kind" : "option",
+      "line" : 59,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "B Class",
+      "translation" : "B級"
+    },
+    {
+      "kind" : "option",
+      "line" : 59,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "A Class",
+      "translation" : "A級"
+    },
+    {
+      "kind" : "option",
+      "line" : 59,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "S Class",
+      "translation" : "S級"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nC Class, eh?\nNow, I can only upgrade certain equipment in that class, so please choose one of the following items, so we can try to add a Slot to it.",
+      "translation" : "[賽亞佈雷姆]\nC級，是嗎？\n我只能為該等級中的特定裝備新增插槽，請從以下物品中選擇一件，我來嘗試為其新增插槽。"
+    },
+    {
+      "kind" : "option",
+      "line" : 66,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Trident",
+      "translation" : "三叉戟"
+    },
+    {
+      "kind" : "option",
+      "line" : 66,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Rope",
+      "translation" : "繩索"
+    },
+    {
+      "kind" : "option",
+      "line" : 66,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Violin",
+      "translation" : "小提琴"
+    },
+    {
+      "kind" : "message",
+      "line" : 73,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nB Class?\nAlright, this is the average equipment category.\nPlease choose the weapon to which you'd like me to try to add a Slot.",
+      "translation" : "[賽亞佈雷姆]\nB級？\n好的，這是中等難度的裝備類別。\n請選擇您希望我嘗試新增插槽的武器。"
+    },
+    {
+      "kind" : "option",
+      "line" : 78,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Chain",
+      "translation" : "鎖鏈"
+    },
+    {
+      "kind" : "option",
+      "line" : 78,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Gladius",
+      "translation" : "長柄短劍"
+    },
+    {
+      "kind" : "option",
+      "line" : 78,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Gakkung Bow",
+      "translation" : "角弓"
+    },
+    {
+      "kind" : "option",
+      "line" : 78,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Pike",
+      "translation" : "長矛"
+    },
+    {
+      "kind" : "option",
+      "line" : 78,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Haedonggum",
+      "translation" : "海東劍"
+    },
+    {
+      "kind" : "option",
+      "line" : 78,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Lute",
+      "translation" : "魯特琴"
+    },
+    {
+      "kind" : "option",
+      "line" : 78,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Wire",
+      "translation" : "鋼絲"
+    },
+    {
+      "kind" : "option",
+      "line" : 78,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Waghnakh",
+      "translation" : "虎爪拳套"
+    },
+    {
+      "kind" : "option",
+      "line" : 78,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Arbalest Bow",
+      "translation" : "埃布林雷弓"
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nOoh, A Class.\nThis is some high risk territory!\nAlright, which weapon would you like me to try adding a Slot?",
+      "translation" : "[賽亞佈雷姆]\n哦，A級。\n這可不好辦，風險很高！\n好吧，您想讓我嘗試為哪把武器新增插槽？"
+    },
+    {
+      "kind" : "option",
+      "line" : 96,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Hunter Bow",
+      "translation" : "獵人之弓"
+    },
+    {
+      "kind" : "option",
+      "line" : 96,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Survivor's Rod(INT)",
+      "translation" : "生存的魔杖(INT)"
+    },
+    {
+      "kind" : "option",
+      "line" : 96,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Zweihander",
+      "translation" : "巨大雙手劍"
+    },
+    {
+      "kind" : "option",
+      "line" : 96,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Flamberge",
+      "translation" : "水紋之劍"
+    },
+    {
+      "kind" : "option",
+      "line" : 96,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Infiltrator",
+      "translation" : "刺殺拳刃"
+    },
+    {
+      "kind" : "option",
+      "line" : 96,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Ballista",
+      "translation" : "貝利斯塔強弩"
+    },
+    {
+      "kind" : "option",
+      "line" : 96,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Stunner",
+      "translation" : "昏迷之錘"
+    },
+    {
+      "kind" : "option",
+      "line" : 96,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Berserk",
+      "translation" : "秘拳套 閃光"
+    },
+    {
+      "kind" : "option",
+      "line" : 96,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Claymore",
+      "translation" : "雙手劍"
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nWhoa, whoa, whoa...\nS class? Alright...\nIt'd be a near miracle if I can actually pull this off.\nOkay... Which weapon shall we try adding a Slot to?",
+      "translation" : "[賽亞佈雷姆]\n哇，哇，哇...\nS級？好吧...\n要是真能成功，那簡直就是奇蹟。\n那麼...您想嘗試為哪把武器新增插槽？"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Gungnir",
+      "translation" : "剛尼爾長矛"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Poison Knife",
+      "translation" : "巨毒短劍"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Ice Pick",
+      "translation" : "破甲短錐"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Sucsamad",
+      "translation" : "砂塵短劍"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Ginnungagap",
+      "translation" : "卡卡普劍"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Cutlas",
+      "translation" : "短刀"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Crescent Scythe",
+      "translation" : "死神之鐮"
+    },
+    {
+      "kind" : "option",
+      "line" : 115,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Survivor's Rod(DEX)",
+      "translation" : "生存的魔杖(DEX)"
+    },
+    {
+      "kind" : "message",
+      "line" : 128,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nArmor, you said?\nSure, no problem.\nArmor is divided into 4 different classes, depending on the work difficulty.\nC Class is the easiest one, and S Class he hardest one.\nWhich class would you like to try?",
+      "translation" : "[賽亞佈雷姆]\n您想為防具新增插槽？\n當然，沒問題。\n我會根據加工難度，把防具分成4個等級。\nC級最容易，S級最難。\n您想嘗試哪個等級？"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "C Class",
+      "translation" : "C級"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "B Class",
+      "translation" : "B級"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "A Class",
+      "translation" : "A級"
+    },
+    {
+      "kind" : "option",
+      "line" : 135,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "S Class",
+      "translation" : "S級"
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nC Class Armor, eh?\nSounds reasonable.\nWhich armor would you like to try adding a Slot?",
+      "translation" : "[賽亞佈雷姆]\nC級防具，是嗎？\n這個選擇挺穩妥。\n您想嘗試為哪件防具新增插槽？"
+    },
+    {
+      "kind" : "option",
+      "line" : 143,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Mantle",
+      "translation" : "斗篷"
+    },
+    {
+      "kind" : "option",
+      "line" : 143,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Coat",
+      "translation" : "大衣"
+    },
+    {
+      "kind" : "option",
+      "line" : 143,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Circlet",
+      "translation" : "頭冠"
+    },
+    {
+      "kind" : "option",
+      "line" : 143,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Biretta",
+      "translation" : "小圓帽"
+    },
+    {
+      "kind" : "message",
+      "line" : 151,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nYou have chosen average B Class.\nSo, what kind of armor do you have?",
+      "translation" : "[賽亞佈雷姆]\n您選擇了難度適中的B級。\n那麼，您帶了什麼防具？"
+    },
+    {
+      "kind" : "option",
+      "line" : 155,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Mirror Shield",
+      "translation" : "鏡盾"
+    },
+    {
+      "kind" : "option",
+      "line" : 155,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Chain Mail",
+      "translation" : "鋼鐵鎖子甲"
+    },
+    {
+      "kind" : "option",
+      "line" : 155,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Saint Robe",
+      "translation" : "聖袍"
+    },
+    {
+      "kind" : "option",
+      "line" : 155,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Silk Robe",
+      "translation" : "絲質外袍"
+    },
+    {
+      "kind" : "option",
+      "line" : 155,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Boots",
+      "translation" : "靴子"
+    },
+    {
+      "kind" : "option",
+      "line" : 155,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Shoes",
+      "translation" : "長靴"
+    },
+    {
+      "kind" : "option",
+      "line" : 155,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Muffler",
+      "translation" : "圍巾"
+    },
+    {
+      "kind" : "option",
+      "line" : 155,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Guard",
+      "translation" : "鐵盾"
+    },
+    {
+      "kind" : "option",
+      "line" : 155,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Buckler",
+      "translation" : "小圓盾"
+    },
+    {
+      "kind" : "option",
+      "line" : 155,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Shield",
+      "translation" : "盾牌"
+    },
+    {
+      "kind" : "option",
+      "line" : 155,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Bongun Hat",
+      "translation" : "妖道帽"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nOoh, A Class.\nThis is some high risk territory!\nAlright, which armor would you like me to try adding a Slot?",
+      "translation" : "[賽亞佈雷姆]\n哦，A級。\n這可不好辦，風險很高！\n好吧，您想讓我嘗試為哪件防具新增插槽？"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Gemmed Sallet",
+      "translation" : "寶石頭盔"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Bucket Hat",
+      "translation" : "軟呢帽"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Memory Book",
+      "translation" : "謊言記錄本"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Tights",
+      "translation" : "緊身褲"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Legion Plate Armor",
+      "translation" : "秘銀金屬盔甲"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Full Plate",
+      "translation" : "鋼鐵盔甲"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Thief Clothes",
+      "translation" : "盜賊之衣"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Greaves",
+      "translation" : "護脛"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Coif",
+      "translation" : "頭巾"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Manteau",
+      "translation" : "短斗篷"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Helm",
+      "translation" : "頭盔"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Ninja Suit",
+      "translation" : "忍服 血櫻"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Orc Helm",
+      "translation" : "獸人頭盔"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Ancient Cape",
+      "translation" : "伯爵斗篷"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Monk Hat",
+      "translation" : "神聖之帽"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Golden Gear",
+      "translation" : "黃金帽"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Brooch",
+      "translation" : "胸針"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Munak Hat",
+      "translation" : "殭屍帽"
+    },
+    {
+      "kind" : "message",
+      "line" : 197,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nUm... S Class?\nYou sure about this?\nAlright... Let me know the Armor to which you'd like to add a Slot, and I'll tell what I need to try it.",
+      "translation" : "[賽亞佈雷姆]\n嗯...S級？\n您確定嗎？\n好吧...告訴我您想為哪件防具新增插槽，我會說明需要準備什麼。"
+    },
+    {
+      "kind" : "option",
+      "line" : 202,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Majestic Goat",
+      "translation" : "山羊頭盔"
+    },
+    {
+      "kind" : "option",
+      "line" : 202,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Spiky Band",
+      "translation" : "尖角髮圈"
+    },
+    {
+      "kind" : "option",
+      "line" : 202,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Bone Helm",
+      "translation" : "骨制頭盔"
+    },
+    {
+      "kind" : "option",
+      "line" : 202,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Corsair",
+      "translation" : "海盜帽"
+    },
+    {
+      "kind" : "option",
+      "line" : 202,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Crown",
+      "translation" : "王冠"
+    },
+    {
+      "kind" : "option",
+      "line" : 202,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Tiara",
+      "translation" : "后冠"
+    },
+    {
+      "kind" : "option",
+      "line" : 202,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Sphinx Hat",
+      "translation" : "人面獅身帽"
+    },
+    {
+      "kind" : "option",
+      "line" : 202,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Robe of Cast",
+      "translation" : "創作者外袍"
+    },
+    {
+      "kind" : "option",
+      "line" : 202,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Earring",
+      "translation" : "耳環"
+    },
+    {
+      "kind" : "option",
+      "line" : 202,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Ring",
+      "translation" : "戒指"
+    },
+    {
+      "kind" : "option",
+      "line" : 202,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "Bow Thimble",
+      "translation" : "神射手套"
+    },
+    {
+      "kind" : "message",
+      "line" : 218,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nWell, I haven't really refined the art of Slot Addition.\nIt's so complicated that I'd be lying if I told you that I knew every factor that affected the process.\nStill, I do notice a few trends...",
+      "translation" : "[賽亞佈雷姆]\n嗯，我還沒完全掌握開槽這門技術。\n它太複雜了，要說我知道所有影響開槽的因素，那就是騙人。\n不過，我倒是發現了一些規律..."
+    },
+    {
+      "kind" : "message",
+      "line" : 223,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nIn some towns, Slot addition attempts are more successful for equipment with fewer upgrades.\nIn other towns, the opposite is true.\nisn't that really peculiar?",
+      "translation" : "[賽亞佈雷姆]\n在有些城鎮，精煉等級越低的裝備，開槽成功率越高。\n在另一些城鎮，情況卻恰好相反。\n是不是很奇怪？"
+    },
+    {
+      "kind" : "message",
+      "line" : 228,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nOh, there's also something really important that you should know.\nIf you ask me to add a Slot to something, make sure that you don't have multiples of it in your inventory.",
+      "translation" : "[賽亞佈雷姆]\n哦，還有一件很重要的事。\n如果您要讓我為某件裝備新增插槽，請確保背包裡沒有其他同款裝備。"
+    },
+    {
+      "kind" : "message",
+      "line" : 232,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nHere's an example: if you have a +7 Manteau and a normal Manteau in your inventory, then I will randomly pick one of them for my Slot Addition attempt.\nJust remember to be careful.",
+      "translation" : "[賽亞佈雷姆]\n比如，您的背包裡同時有一件+7短斗篷和一件普通短斗篷，我就會隨機選一件來開槽。\n千萬要注意。"
+    },
+    {
+      "kind" : "message",
+      "line" : 236,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nAgain, ^FF0000only carry one of the equipment to which you want me to add a Slot^000000.\nAll other equipment with the same name should be placed in your Kafra Storage, got it?",
+      "translation" : "[賽亞佈雷姆]\n再強調一次，^FF0000您想讓我開槽的裝備，只帶一件就好^000000。\n其他同名裝備都要放進卡普拉倉庫，明白了嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 241,
+      "npc" : "Seiyablem",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nTake it easy, adventurer.\nIf you ever want to try adding a Slot to some of your equipment, come back and let me know.\nSeeya~",
+      "translation" : "[賽亞佈雷姆]\n放輕鬆，冒險者。\n以後想給裝備新增插槽，就回來找我。\n再見~"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Func_Socket",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        "(.@req_amount[0] > 1 && .@item_req[0] != 999 ? \"s\":\"\")",
+        "(.@item_req[1] != 0 && .@req_amount[1] != 0 ? (\"^FF0000\"+ .@req_amount[1] +\" \"+ getitemname(.@item_req[1]) + (.@req_amount[1] > 1 && .@item_req[1] != 999 ? \"s\":\"\") + \"^000000 \") : \"\")",
+        "(.@zeny_req >= 1000 ? (.@zeny_req /1000 +\",000\") : .@zeny_req)",
+        "getitemname(.@item_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}{3}^000000, {4}and my ^FF0000{5},000 zeny^000000 service fee.\nAh, and don't forget to bring that {6}!",
+      "translation" : "[賽亞佈雷姆]\n您想為{0}新增插槽？\n好，請帶來^FF0000{1} {2}{3}^000000、{4}以及^FF0000{5},000 Zeny^000000的服務費。\n啊，別忘了帶上{6}！"
+    },
+    {
+      "kind" : "message",
+      "line" : 261,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nI can try to add a slot now if you have the required items and zeny.\nHowever, you should know that there's a chance that I might fail.\nTherefore, I need to give you a fair warning...",
+      "translation" : "[賽亞佈雷姆]\n只要您備齊所需物品和Zeny，我現在就能嘗試開槽。\n不過，開槽是有可能失敗的。\n所以，有些風險我得先說明白..."
+    },
+    {
+      "kind" : "message",
+      "line" : 261,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nIf you have all the required materials, my zeny service fee and the Armor, then we can go ahead with the Slot Addition attempt.\nBut before that, I must warn you of the risk.",
+      "translation" : "[賽亞佈雷姆]\n只要您帶齊所需材料、服務費和防具，我們就能嘗試開槽。\n不過，在動手之前，我必須先說明風險。"
+    },
+    {
+      "kind" : "message",
+      "line" : 268,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nIf this attempt to add a Slot to your Weapon fails, then the ^FF0000Weapon^000000, ^FF0000and any Cards compounded to it will be destroyed^000000.\nDo you still want to try to add a Slot?",
+      "translation" : "[賽亞佈雷姆]\n如果武器開槽失敗，^FF0000武器^000000^FF0000和上面鑲嵌的所有卡片都會被摧毀^000000。\n您還要嘗試開槽嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 276,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nIf this attempt to add a Slot to your Armor fails, then the ^FF0000Armor^000000, ^FF0000it's upgrades^000000 ^FF0000and any Cards compounded to it will be destroyed^000000.\nDo you still want to try to add a Slot?",
+      "translation" : "[賽亞佈雷姆]\n如果防具開槽失敗，^FF0000防具^000000會被摧毀，^FF0000精煉等級^000000^FF0000和上面鑲嵌的所有卡片也都會消失^000000。\n您還要嘗試開槽嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 281,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "Attempt Slot Addition",
+      "translation" : "嘗試新增插槽"
+    },
+    {
+      "kind" : "option",
+      "line" : 281,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nAlright then, let the work begin!\nYou'd better pray for a successful result.",
+      "translation" : "[賽亞佈雷姆]\n好，那就開工吧！\n祈禱這次能成功吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nGreat, it seems to be successful.\nIt looks pretty well done. Congratulations!",
+      "translation" : "[賽亞佈雷姆]\n太好了，看來成功了。\n做得還不錯，恭喜您！"
+    },
+    {
+      "kind" : "message",
+      "line" : 304,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nSee you again, buddy!",
+      "translation" : "[賽亞佈雷姆]\n下次見，朋友！"
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nWah! ...I am so sorry, it failed.\nHowever, I am completely innocent.\nThis is your luck, and it is destined by god, okay?\nDon't be so disappointed, and try next time.",
+      "translation" : "[賽亞佈雷姆]\n哇！...真抱歉，失敗了。\n不過，這可不能怪我。\n這得看您的運氣，成敗都是上天註定的，明白嗎？\n別太失望，下次再試吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 322,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nI wish you good luck next time!",
+      "translation" : "[賽亞佈雷姆]\n祝您下次好運！"
+    },
+    {
+      "kind" : "message",
+      "line" : 329,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nI'd like to go ahead with this Slot Addition attempt, but you're missing a few things.\nYou sure that you have the equipment, required materials and the zeny?",
+      "translation" : "[賽亞佈雷姆]\n我倒是想幫您開槽，可您還缺點東西。\n您確定裝備、所需材料和Zeny都帶齊了嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 335,
+      "npc" : "Func_Socket",
+      "state" : "translated",
+      "text" : "[Seiyablem]\nNeed some time to think about it, huh?\nAlright, I can understand.\nJust remember that life's no fun if you're always playing it safe~",
+      "translation" : "[賽亞佈雷姆]\n還需要時間考慮一下，是嗎？\n好，我能理解。\n不過，凡事都求穩，人生可就沒什麼樂趣了~"
+    },
+    {
+      "kind" : "message",
+      "line" : 349,
+      "npc" : "Young Man",
+      "state" : "translated",
+      "text" : "[Young Man]\nI'm considering becoming a Slotting Engineer.\nIt's a new field where you can add Slots to equipment, and it'd be cool if I can work in such a lucrative career.",
+      "translation" : "[年輕男子]\n我正在考慮成為一名開槽工程師。\n這是個給裝備新增插槽的新行當，要是能幹上這麼賺錢的工作，那該多好。"
+    },
+    {
+      "kind" : "message",
+      "line" : 353,
+      "npc" : "Young Man",
+      "state" : "translated",
+      "text" : "[Young Man]\nThere's a huge element of luck involved in successfully adding Slots from what I can understand.\nYou fail sometimes, but if you're super lucky, you can add two Slots.\nCrazy. Huh?",
+      "translation" : "[年輕男子]\n據我瞭解，開槽能不能成功，很大程度上得看運氣。\n有時候會失敗，但要是運氣特別好，還能加出兩個插槽。\n厲害吧？"
+    },
+    {
+      "kind" : "message",
+      "line" : 358,
+      "npc" : "Young Man",
+      "state" : "translated",
+      "text" : "[Young Man]\nBut don't get too excited.\nOnly certain equipment can handle the addition of two extra Slots.\nThere's so much more I have to learn before I can even be an apprentice...",
+      "translation" : "[年輕男子]\n不過，先別高興得太早。\n只有特定裝備才能增加兩個插槽。\n想當個學徒，我都還有好多東西要學..."
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "file" : "npc/pre-re/merchants/ammo_dealer.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 19,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "[Tony]\nI'm Tony, the Bullet Dealer.\nCome to me whenever you're\nshort on ammo. Just bring me\nthe materials, and I'll make\nyou the bullets you need.",
+      "translation" : "[托尼]\n我是托尼，子彈商人。\n如果你缺彈藥，隨時來找我。\n只要把材料交給我，我就能幫你製作所需的子彈。"
+    },
+    {
+      "kind" : "message",
+      "line" : 19,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "[Tony]\nHey, I'm Tony. I'm in\ncharge of distributing\nand making bullets for\nGunslingers. It's just\nhow our guild likes\nto do things.",
+      "translation" : "[托尼]\n嘿，我是托尼。\n我負責為神槍手分發和製作子彈。\n這就是我們公會的做事方式。"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "Poison Sphere",
+      "translation" : "毒球"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "Flare Sphere",
+      "translation" : "閃光球"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "Lighting Sphere",
+      "translation" : "電球"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "Blind Sphere",
+      "translation" : "致盲球"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "Freezing Sphere",
+      "translation" : "冰凍球"
+    },
+    {
+      "kind" : "option",
+      "line" : 27,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "[Tony]\nChanged your mind?\nWell, if you ever need\nany bullets, I'll be right\nhere. Come back whenever\nyou think you'll need more\nammunition, Gunslinger.",
+      "translation" : "[托尼]\n改變主意了？\n沒關係，如果你以後需要子彈，我就在這裡。\n覺得彈藥不夠時，隨時回來吧，神槍手。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "Hey, I'm Tony. I'm in\ncharge of distributing\nand making bullets for\nGunslingers. It's just\nhow our guild likes\nto do things.",
+      "translation" : "嘿，我是托尼。\n我負責為神槍手們製造和分發子彈。\n我們公會就是喜歡這麼辦事。"
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "[Tony]\nI'm sorry if you came\nhere to buy some bullets.\nI can only do business with\nfully fledged Gunslingers.",
+      "translation" : "[托尼]\n如果你是想買子彈，我很抱歉。\n我只能與正式的神槍手進行交易。"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Bullet Dealer Tony",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\",30,getitemname(.@bullet_id))",
+        "callfunc(\"F_InsertPlural\",.@required_amount,getitemname(.@required_id))"
+      ],
+      "state" : "translated",
+      "text" : "[Tony]\nFor every set of\n{0},\nyou must give me\n1 Emveretarcon,\n1 Phracon, and\n{1}.",
+      "translation" : "[托尼]\n每製作{0}發子彈，你需要給我1個強化武器金屬-級數二，1個強化武器金屬-級數一，以及{1}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 71,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "[Tony]\nRemember that I can give\na maximum of 500 sets of\n30 bullets at a time. Please\nenter the number of bullet sets\nthat you'd like. If you want to\ncancel, then just enter ''0.''",
+      "translation" : "[托尼]\n請記住，我一次最多隻能提供500組，每組30發子彈。\n請輸入你想要的子彈組數。\n如果你想取消，請輸入“0”。"
+    },
+    {
+      "kind" : "message",
+      "line" : 80,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "[Tony]\nHey, I can't give you\nthat many bullets. Don't\nforget to enter a number\nthat's no higher than 500\nif you want to trade your\nitems for some bullets.",
+      "translation" : "[托尼]\n嘿，我不能給你那麼多子彈。\n如果你想用物品交換子彈，請輸入不超過500的數字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 80,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "[Tony]\nEh? Your Inventory doesn't\nhave enough space for this\nmany bullets. Come back later\nafter you make more space\navailable. Try putting some of\nyour things into Kafra Storage.",
+      "translation" : "[托尼]\n嗯？你的物品欄空間不足，放不下這麼多子彈。\n請稍後騰出空間後再來。\n試著把一些東西放進卡普拉倉庫吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 80,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "[Tony]\nGreat, everything seems\nto be in order. Let me take\nthese materials, and here are\nyour bullets. It's a pleasure\nto do business with you~",
+      "translation" : "[托尼]\n很好，一切看起來都沒問題。\n請把這些材料給我，這是你的子彈。\n很高興能與你做生意~"
+    },
+    {
+      "kind" : "message",
+      "line" : 80,
+      "npc" : "Bullet Dealer Tony",
+      "state" : "translated",
+      "text" : "[Tony]\nHuh. It looks like you\ndon't have enough materials\nfor that many bullets. Well,\nit's no problem. Just come\nback after gathering everything\nthat you need, okay?",
+      "translation" : "[托尼]\n嗯。看起來你的材料不足以製作那麼多子彈。\n沒關係，等你集齊所有需要的材料後再來吧，好嗎？"
+    }
+  ]
+}

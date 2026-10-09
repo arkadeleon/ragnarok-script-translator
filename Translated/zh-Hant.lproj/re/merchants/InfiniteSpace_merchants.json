@@ -1,0 +1,592 @@
+{
+  "file" : "npc/re/merchants/InfiniteSpace_merchants.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 16,
+      "npc" : "Emergency Food Merchant",
+      "state" : "needs_review",
+      "text" : "[Emergency Food Merchant]\nI have a lot of stuff over here, of course, not for free.",
+      "translation" : "[應急食品商人]\n我這裡有很多東西，當然，不是免費的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 25,
+      "npc" : "Ruins Black Trader",
+      "state" : "needs_review",
+      "text" : "[Ruins Black Trader]\nHey, isn't it hard to walk in and out of here every time? For just ^0000ff20,000^000000 Zeny, you can have a scroll that will take you directly to the entrance of the ruins, what do you think?",
+      "translation" : "[廢墟黑市商人]\n嘿，每次進出這裡是不是很麻煩？只要^0000ff20,000^000000 Zeny，你就能買到一張直接傳送到廢墟入口的卷軸，你覺得怎麼樣？"
+    },
+    {
+      "kind" : "option",
+      "line" : 29,
+      "npc" : "Ruins Black Trader",
+      "state" : "needs_review",
+      "text" : "Give me one",
+      "translation" : "給我一張"
+    },
+    {
+      "kind" : "option",
+      "line" : 29,
+      "npc" : "Ruins Black Trader",
+      "state" : "needs_review",
+      "text" : "I don't think so",
+      "translation" : "我不需要"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Ruins Black Trader",
+      "state" : "needs_review",
+      "text" : "You can't proceed with the conversation because you have a large quantity of items.\nPlease organize your items and try again.",
+      "translation" : "由於您持有的物品數量過多，無法繼續對話。\n請整理您的物品後重試。"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Ruins Black Trader",
+      "state" : "needs_review",
+      "text" : "[Ruins Black Trader]\nYou don't seem to have any more money. A scroll costs 20,000 Zeny.",
+      "translation" : "[廢墟黑市商人]\n您似乎沒有足夠的錢。一張卷軸需要20,000 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Ruins Black Trader",
+      "state" : "needs_review",
+      "text" : "[Ruins Black Trader]\nIt was a good deal. Need more?",
+      "translation" : "[廢墟黑市商人]\n這筆交易很划算。還需要嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 47,
+      "npc" : "Ruins Black Trader",
+      "state" : "needs_review",
+      "text" : "[Ruins Black Trader]\nCome back anytime",
+      "translation" : "[廢墟黑市商人]\n隨時歡迎回來"
+    },
+    {
+      "kind" : "message",
+      "line" : 56,
+      "npc" : "Artifact Appraiser",
+      "state" : "needs_review",
+      "text" : "You can't proceed with the conversation because you have a large quantity of items.\nPlease organize your items and try again.",
+      "translation" : "由於您持有的物品數量過多，無法繼續對話。\n請整理您的物品後重試。"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "Artifact Appraiser",
+      "placeholders" : [
+        "getitemname(.@stone_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[ Artifact Appraiser ]\nChoose the type of equipment that you want to purchase. You can purchase as many as you want, as long as you have {0}.",
+      "translation" : "[神器鑑定師]\n請選擇您想要購買的裝備型別。只要您擁有{0}，就可以購買任意數量。"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Artifact Appraiser",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Artifact Appraiser",
+      "state" : "needs_review",
+      "text" : "Weapons",
+      "translation" : "武器"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Artifact Appraiser",
+      "state" : "needs_review",
+      "text" : "Armors",
+      "translation" : "防具"
+    },
+    {
+      "kind" : "message",
+      "line" : 66,
+      "npc" : "Artifact Appraiser",
+      "state" : "needs_review",
+      "text" : "[ Artifact Appraiser ]\nPlease come back whenever you want~",
+      "translation" : "[神器鑑定師]\n歡迎隨時回來~"
+    },
+    {
+      "kind" : "message",
+      "line" : 86,
+      "npc" : "Artifact Appraiser",
+      "state" : "needs_review",
+      "text" : "[ Artifact Appraiser ]\nPlease come back whenever you want~",
+      "translation" : "[神器鑑定師]\n歡迎隨時回來~"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Artifact Appraiser",
+      "placeholders" : [
+        ".@price",
+        "getitemname(.@stone_id)",
+        "getitemname(.@equip_id[.@s])"
+      ],
+      "state" : "needs_review",
+      "text" : "[ Artifact Appraiser ]\nYou need ^0000FF{0}^000000 {1} to purchase the {2}~",
+      "translation" : "[神器鑑定師]\n購買{2}需要^0000FF{0}^000000 {1}~"
+    },
+    {
+      "kind" : "option",
+      "line" : 95,
+      "npc" : "Artifact Appraiser",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 95,
+      "npc" : "Artifact Appraiser",
+      "state" : "needs_review",
+      "text" : "Purchase",
+      "translation" : "購買"
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Artifact Appraiser",
+      "state" : "needs_review",
+      "text" : "[ Artifact Appraiser ]\nPlease come back whenever you want~",
+      "translation" : "[神器鑑定師]\n歡迎隨時回來~"
+    },
+    {
+      "kind" : "message",
+      "line" : 101,
+      "npc" : "Artifact Appraiser",
+      "placeholders" : [
+        "getitemname(.@stone_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[ Artifact Appraiser ]\nYou don't have enough {0} to purchase this item.",
+      "translation" : "[神器鑑定師]\n您的{0}不足，無法購買該物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "Artifact Appraiser",
+      "state" : "needs_review",
+      "text" : "[ Artifact Appraiser ]\nThank you for your trust. Please come back again next time.",
+      "translation" : "[神器鑑定師]\n感謝您的信任。下次請再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "You can't proceed with the conversation because you have a large quantity of items.\nPlease organize your items and try again.",
+      "translation" : "由於您持有的物品數量過多，無法繼續對話。\n請整理您的物品後重試。"
+    },
+    {
+      "kind" : "message",
+      "line" : 123,
+      "npc" : "Artifact Enhancer",
+      "placeholders" : [
+        "getitemname(.@stone_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nIf you're looking to strengthen the equipment that you've obtained in the Infinite Space, you have come to the right place.\nDo you have any {0}?",
+      "translation" : "[神器強化師]\n如果您想強化在無限空間獲得的裝備，那就來對地方了。\n您有{0}嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "How do I enchant my equipment?",
+      "translation" : "如何強化裝備？"
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Enchant equipment.",
+      "translation" : "強化裝備"
+    },
+    {
+      "kind" : "option",
+      "line" : 127,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Initialize equipment's enchant.",
+      "translation" : "重置裝備強化"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Artifact Enhancer",
+      "placeholders" : [
+        "getitemname(.@stone_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nYou'll be able to obtain {0}, if you explore the space under the Paros Lighthouse.",
+      "translation" : "[神器強化師]\n如果您探索帕羅斯燈塔下方的空間，就能獲得{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 132,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nFor that material, I can reinforce the equipment that you got from the Infinite Space.",
+      "translation" : "[神器強化師]\n用那種材料，我可以強化您從無限空間獲得的裝備。"
+    },
+    {
+      "kind" : "message",
+      "line" : 135,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nI can only enchant the 3rd and the 4th slot.",
+      "translation" : "[神器強化師]\n我只能強化第3和第4個槽位。"
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nThere is no chance of the equipment being destroyed during the enchanting process, but there's a high probability that it will be destroyed when initializing the enchants.",
+      "translation" : "[神器強化師]\n強化過程中裝備不會損壞，但重置強化時裝備有很高的機率會損壞。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nThen come visit me when you want to enchant the equipment.",
+      "translation" : "[神器強化師]\n那麼，當您想要強化裝備時，再來找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nPlease select the equipment that you want to enchant.",
+      "translation" : "[神器強化師]\n請選擇您想要強化的裝備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Weapon",
+      "translation" : "武器"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Armor",
+      "translation" : "防具"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Shoes",
+      "translation" : "長靴"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Garment",
+      "translation" : "服裝"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Helm",
+      "translation" : "頭盔"
+    },
+    {
+      "kind" : "message",
+      "line" : 153,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nThen come visit me when you want to enchant the equipment.",
+      "translation" : "[神器強化師]\n那麼，當您想要強化裝備時，再來找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nI can only enchant up to the third slot. Your equipment can't be further enchanted.",
+      "translation" : "[神器強化師]\n我只能強化到第3個槽位。您的裝備無法繼續強化了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 212,
+      "npc" : "Artifact Enhancer",
+      "placeholders" : [
+        ".@fee",
+        "getitemname(.@stone_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nYou can choose 3 types of enchant, and the enchant fee is {0} {1}.\nI'll make sure it gets enchanted without a problem.",
+      "translation" : "[神器強化師]\n您可以選擇3種強化，強化費用為{0} {1}。\n我會確保強化過程萬無一失。"
+    },
+    {
+      "kind" : "option",
+      "line" : 216,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Quit",
+      "translation" : "退出"
+    },
+    {
+      "kind" : "option",
+      "line" : 216,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Physical",
+      "translation" : "物理"
+    },
+    {
+      "kind" : "option",
+      "line" : 216,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Magical",
+      "translation" : "魔法"
+    },
+    {
+      "kind" : "option",
+      "line" : 216,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Range",
+      "translation" : "範圍"
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nOkay, let's begin the first enchantment.",
+      "translation" : "[神器強化師]\n好的，讓我們開始第一次強化。"
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nOkay, let's proceed with the second enchantment.",
+      "translation" : "[神器強化師]\n好的，讓我們進行第二次強化。"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "I'll return later.",
+      "translation" : "我稍後再來。"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Please proceed.",
+      "translation" : "請繼續。"
+    },
+    {
+      "kind" : "message",
+      "line" : 224,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nIf you change your mind, just return to me.",
+      "translation" : "[神器強化師]\n如果您改變主意，隨時回來找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 229,
+      "npc" : "Artifact Enhancer",
+      "placeholders" : [
+        "getitemname(.@stone_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nHm. By the way, I don't think you were listening, you don't have enough {0}.",
+      "translation" : "[神器強化師]\n嗯。順便說一句，我想你剛才沒在聽，你的{0}不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nHm. It was well done. Check your equipment at once.",
+      "translation" : "[神器強化師]\n嗯。做得很好。請立即檢查您的裝備。"
+    },
+    {
+      "kind" : "message",
+      "line" : 251,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nPlease select the equipment that you want to enchant.",
+      "translation" : "[神器強化師]\n請選擇您想要強化的裝備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 254,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 254,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Weapon",
+      "translation" : "武器"
+    },
+    {
+      "kind" : "option",
+      "line" : 254,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Armor",
+      "translation" : "防具"
+    },
+    {
+      "kind" : "option",
+      "line" : 254,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Shoes",
+      "translation" : "長靴"
+    },
+    {
+      "kind" : "option",
+      "line" : 254,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Garment",
+      "translation" : "服裝"
+    },
+    {
+      "kind" : "option",
+      "line" : 254,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Helm",
+      "translation" : "頭盔"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nThen come visit me when you want to enchant the equipment.",
+      "translation" : "[神器強化師]\n那麼，當您想要強化裝備時，再來找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 288,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nYour equipment doesn't have any enchant on it.",
+      "translation" : "[神器強化師]\n您的裝備沒有任何強化。"
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nThere is a chance that your infinite space equipment will be destroyed on the initializion process. Are you still willing to proceed?",
+      "translation" : "[神器強化師]\n在重置過程中，您的無限空間裝備有損壞的風險。您確定要繼續嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 295,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Quit",
+      "translation" : "退出"
+    },
+    {
+      "kind" : "option",
+      "line" : 295,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "Proceed",
+      "translation" : "繼續"
+    },
+    {
+      "kind" : "message",
+      "line" : 296,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nIf you change your mind, just return to me.",
+      "translation" : "[神器強化師]\n如果您改變主意，隨時回來找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 301,
+      "npc" : "Artifact Enhancer",
+      "placeholders" : [
+        "getitemname(.@stone_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nHm. By the way, I don't think you were listening, you don't have enough {0}.",
+      "translation" : "[神器強化師]\n嗯。順便說一句，我想你剛才沒在聽，你的{0}不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 312,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nHm. It was well done. Check your equipment at once.",
+      "translation" : "[神器強化師]\n嗯。做得很好。請立即檢查您的裝備。"
+    },
+    {
+      "kind" : "message",
+      "line" : 316,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nWell, I did warn you. You aren't lucky, eh?",
+      "translation" : "[神器強化師]\n唉，我早就警告過你了。看來你運氣不太好嘛？"
+    },
+    {
+      "kind" : "message",
+      "line" : 326,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nDid you take off your equipment?",
+      "translation" : "[神器強化師]\n您把裝備取下來了嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 331,
+      "npc" : "Artifact Enhancer",
+      "state" : "needs_review",
+      "text" : "[ Artifact Enhancer ]\nThis equipment is not suitable for enchanting. Don't forget that only the infinite equipment series can be enchanted.",
+      "translation" : "[神器強化師]\n這件裝備不適合強化。請記住，只有無限空間系列的裝備才能強化。"
+    }
+  ]
+}

@@ -1,0 +1,1080 @@
+{
+  "file" : "npc/re/merchants/refine.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Vestri",
+      "state" : "needs_review",
+      "text" : "[Vestri]\nI'm the most skillful blacksmith!",
+      "translation" : "[韋斯特里]\n我是技術最精湛的鐵匠！"
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nI am the best Armsmith ever!\nI don't refine normal, boring items.\nI only refine items that are Level 10 or higher.",
+      "translation" : "[{0}]\n我是有史以來最偉大的武器大師！\n我不精煉那些普通、乏味的物品。\n我只精煉等級10或以上的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 60,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nAnyway, you may use my services if your item is Level 10 or higher.\nWhat do you want me to refine?",
+      "translation" : "[{0}]\n總之，如果你的物品等級在10或以上，就可以使用我的服務。\n你想讓我精煉什麼？"
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nI don't think I can refine any items you have...",
+      "translation" : "[{0}]\n我覺得你身上沒有我可以精煉的物品..."
+    },
+    {
+      "kind" : "message",
+      "line" : 81,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou're not wearing\nanything there that\nI can refine.",
+      "translation" : "[{0}]\n你身上沒有\n我可以精煉的\n東西。"
+    },
+    {
+      "kind" : "message",
+      "line" : 89,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nI don't think I can\nrefine this item at all...",
+      "translation" : "[{0}]\n我覺得我完全\n無法精煉\n這個物品..."
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nI said I don't work with items that are lower than Level 10.",
+      "translation" : "[{0}]\n我說過，我不處理等級低於10的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 101,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nI can't refine this\nany more. This is as\nrefined as it gets!",
+      "translation" : "[{0}]\n這個已經無法\n再精煉了。這已經\n是最高精煉度了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@article$",
+        ".@type$",
+        ".@type$",
+        "getitemname(.@material)",
+        "callfunc(\"F_InsertComma\",.@price)"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nHmm {1} {2}, is that ok?\nIf you want to refine this {3},\nI will need 1 ^003366{4}^000000 and {5} zeny.\nAre you sure you want to continue?",
+      "translation" : "[{0}]\n嗯，{1} {2}，這樣可以嗎？\n如果你想精煉這件{3}，\n我需要1個^003366{4}^000000和{5} Zeny。\n你確定要繼續嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 131,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 131,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 132,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nHm... if you mind... never mind...",
+      "translation" : "[{0}]\n嗯...如果你介意的話...算了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@type$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nThis {1} already has been refined several times.\nIt could be destroyed if I try again.\nIt won't break for sure, but there is has a small chance.",
+      "translation" : "[{0}]\n這件{1}已經被精煉過很多次了。\n如果我再次嘗試，它可能會損壞。\n它不一定會壞，但還是有小機率會失敗。"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@type$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou could be ^FF0000lowering the upgrade level^000000 of the {1},\nor if it breaks, you will lose ^FF0000any cards^000000 or special properties added to it.",
+      "translation" : "[{0}]\n你可能會^FF0000降低{1}的強化等級^000000，\n或者如果它損壞，你將失去^FF0000任何卡片^000000或附加的特殊屬性。"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nDo you still want me to refine it?\nI think I have given you enough warning.",
+      "translation" : "[{0}]\n你還要我繼續精煉嗎？\n我想我已經給了你足夠的警告。"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "Yes.",
+      "translation" : "是的"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "No.",
+      "translation" : "不。"
+    },
+    {
+      "kind" : "message",
+      "line" : 152,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nWell, no challenge is one way to go...\nNo risk... that could be wise.",
+      "translation" : "[{0}]\n好吧，不挑戰也是一種選擇...\n沒有風險...那可能是明智的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 159,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$",
+        "getitemname(.@material)"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nHm. You don't seem to have enough money or {1}.\nPlease come back when you have them.",
+      "translation" : "[{0}]\n嗯。你似乎沒有足夠的錢或{1}。\n請等你準備好後再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nWait a second...\nDo you think I'm stupid?!\nYou switched the item while I wasn't looking! Get out of here!",
+      "translation" : "[{0}]\n等一下...\n你覺得我傻嗎？！\n趁我不注意你換了物品！給我滾出去！"
+    },
+    {
+      "kind" : "message",
+      "line" : 179,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "Clang! Clang! Clang! Clang!",
+      "translation" : "叮！叮！叮！叮！"
+    },
+    {
+      "kind" : "message",
+      "line" : 183,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nGood! Succes!!!\nI am the best Armsmith.",
+      "translation" : "[{0}]\n好！成功！！！\n我是最偉大的武器大師。"
+    },
+    {
+      "kind" : "message",
+      "line" : 189,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nClang! Clang! Clang! Clang!",
+      "translation" : "[{0}]\n鐺！鐺！鐺！鐺！"
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nAhhh!!!",
+      "translation" : "[{0}]\n啊！！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 197,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nOh my god!\nThe upgrade level has dropped...\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be.",
+      "translation" : "[{0}]\n天哪！\n強化等級下降了...\n即使我是有史以來最偉大的武器大師，我也可能犯錯了。\n只是命運使然。"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nClang! Clang! Clang!",
+      "translation" : "[{0}]\n鐺！鐺！鐺！"
+    },
+    {
+      "kind" : "message",
+      "line" : 206,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nHmmm!",
+      "translation" : "[{0}]\n嗯！"
+    },
+    {
+      "kind" : "message",
+      "line" : 209,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nOh my! I've failed to refine stuff...\nI didn't mean it!\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be.",
+      "translation" : "[{0}]\n天哪！我精煉失敗了...\n我不是故意的！\n即使我是有史以來最偉大的武器大師，我也可能犯錯了。\n只是命運使然。"
+    },
+    {
+      "kind" : "message",
+      "line" : 216,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nI will do a better job next time! Don't worry!",
+      "translation" : "[{0}]\n下次我會做得更好！別擔心！"
+    },
+    {
+      "kind" : "message",
+      "line" : 223,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nI can refine this to the safe limit or a desired number of times. It's your choice.",
+      "translation" : "[{0}]\n我可以精煉到安全上限或指定的次數。由你選擇。"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "To the safe limit, please.",
+      "translation" : "請精煉到安全上限"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "I'll decide how many times.",
+      "translation" : "我來決定次數"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "I've changed my mind...",
+      "translation" : "我改變主意了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 234,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nHow many times would you like me to refine your item?",
+      "translation" : "[{0}]\n你想讓我精煉你的物品多少次？"
+    },
+    {
+      "kind" : "message",
+      "line" : 240,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nI can't refine this item that many times.",
+      "translation" : "[{0}]\n我無法精煉這個物品那麼多次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 246,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@refinecheck"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nThis will try to refine the equipment {1} times past the safe limit. Your equipment may be destroyed... is that ok?",
+      "translation" : "[{0}]\n這將嘗試在安全上限之外再精煉{1}次。你的裝備可能會被破壞...這樣可以嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 249,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "Yes...",
+      "translation" : "是的..."
+    },
+    {
+      "kind" : "option",
+      "line" : 249,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "No...",
+      "translation" : "沒有..."
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou said so... So be it.",
+      "translation" : "[{0}]\n你說是...那就這樣吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 257,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou said so... So be it.",
+      "translation" : "[{0}]\n你說是...那就這樣吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 262,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@refinecnt",
+        "getitemname(.@material)",
+        ".@fullprice"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nThat will cost you {1} {2} and {3} Zeny. Is that ok?",
+      "translation" : "[{0}]\n這將花費你 {1} {2} 和 {3} Zeny。這樣可以嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 265,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 265,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "No...",
+      "translation" : "沒有..."
+    },
+    {
+      "kind" : "message",
+      "line" : 266,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou said so... So be it.",
+      "translation" : "[{0}]\n你說是...那就這樣吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 271,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$",
+        "getitemname(.@material)"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nHm. You don't seem to have enough money or {1}.\nPlease come back when you have them.",
+      "translation" : "[{0}]\n嗯。你似乎沒有足夠的錢或{1}。\n請等你準備好後再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 280,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nLook here... you don't have any items on...",
+      "translation" : "[{0}]\n喂...你身上沒有材料..."
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nClang... No, but did you imagine I could be so stupid?!\nYou changed it...\nGet out before I stun you with my Hammer!!",
+      "translation" : "[{0}]\n哐當...不，難道你以為我會那麼蠢嗎？！\n你換了材料...\n在我用錘子把你敲暈之前，給我滾出去！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 297,
+      "npc" : "refinenew",
+      "state" : "needs_review",
+      "text" : "Clang! Clang! Clang! Clang!",
+      "translation" : "叮！叮！叮！叮！"
+    },
+    {
+      "kind" : "message",
+      "line" : 303,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nClang! Clang! Clang! Clang!",
+      "translation" : "[{0}]\n鐺！鐺！鐺！鐺！"
+    },
+    {
+      "kind" : "message",
+      "line" : 308,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nAhhh!!!",
+      "translation" : "[{0}]\n啊！！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nOh my god!\nThe upgrade level has dropped...\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be.",
+      "translation" : "[{0}]\n天哪！\n強化等級下降了...\n即使我是有史以來最偉大的武器大師，我也可能犯錯了。\n只是命運使然。"
+    },
+    {
+      "kind" : "message",
+      "line" : 315,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nClang! Clang! Clang!",
+      "translation" : "[{0}]\n鐺！鐺！鐺！"
+    },
+    {
+      "kind" : "message",
+      "line" : 320,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nHmmm!",
+      "translation" : "[{0}]\n嗯！"
+    },
+    {
+      "kind" : "message",
+      "line" : 323,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nOh my! I've failed to refine stuff...\nI didn't mean it!\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be.",
+      "translation" : "[{0}]\n天哪！我精煉失敗了...\n我不是故意的！\n即使我是有史以來最偉大的武器大師，我也可能犯錯了。\n只是命運使然。"
+    },
+    {
+      "kind" : "message",
+      "line" : 330,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nI will do a better job next time! Don't worry!",
+      "translation" : "[{0}]\n下次我會做得更好！別擔心！"
+    },
+    {
+      "kind" : "message",
+      "line" : 337,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nGood! Succes!!!\nI am the best Blacksmith.",
+      "translation" : "[{0}]\n好！成功！！！\n我是最偉大的鐵匠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 347,
+      "npc" : "Austri",
+      "state" : "needs_review",
+      "text" : "- Wait a minute !! -\n- Currently you're carrying -\n- too many items with you. -\n- Please try again -\n- after you lose some weight. -",
+      "translation" : "- 等等！！ -\n- 您現在攜帶的物品 -\n- 太多了。 -\n- 請在減輕負重後 -\n- 再試一次。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 354,
+      "npc" : "Austri",
+      "state" : "needs_review",
+      "text" : "[Austri]\nIf you bring me 3\nOridecon or Elunium\nI can exchange them for\nBradium or Carnium.\nJust give me 50,000z.",
+      "translation" : "[奧斯特里]\n如果你給我3個\n神之金屬或鋁，\n我可以把它們換成\n魔力之石或混沌金屬。\n只要給我50,000 Zeny就行。"
+    },
+    {
+      "kind" : "option",
+      "line" : 361,
+      "npc" : "Austri",
+      "state" : "needs_review",
+      "text" : "Oridecon to Bradium.",
+      "translation" : "神之金屬換魔力之石"
+    },
+    {
+      "kind" : "option",
+      "line" : 361,
+      "npc" : "Austri",
+      "state" : "needs_review",
+      "text" : "Elunium to Carnium.",
+      "translation" : "鋁換混沌金屬"
+    },
+    {
+      "kind" : "option",
+      "line" : 361,
+      "npc" : "Austri",
+      "state" : "needs_review",
+      "text" : "Purified Bradium to Carnium.",
+      "translation" : "精煉魔力之石換混沌金屬"
+    },
+    {
+      "kind" : "option",
+      "line" : 361,
+      "npc" : "Austri",
+      "state" : "needs_review",
+      "text" : "No thanks.",
+      "translation" : "不用了，謝謝。"
+    },
+    {
+      "kind" : "message",
+      "line" : 372,
+      "npc" : "Austri",
+      "state" : "needs_review",
+      "text" : "[Austri]\nHmm...",
+      "translation" : "[奧斯特里]\n嗯..."
+    },
+    {
+      "kind" : "message",
+      "line" : 380,
+      "npc" : "Austri",
+      "state" : "needs_review",
+      "text" : "[Austri]\nRefining with Refined Bradium\ncan be a little expensive.\nI can exchange it for some Carnium.\nTake it and use it well.",
+      "translation" : "[奧斯特里]\n用精煉魔力之石精煉\n可能會稍微貴一點。\n我可以把它換成一些混沌金屬。\n拿去好好用吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 380,
+      "npc" : "Austri",
+      "placeholders" : [
+        "getitemname(.@i[2])"
+      ],
+      "state" : "needs_review",
+      "text" : "[Austri]\nOk! Here's your {0}.\nTake it and use it well.",
+      "translation" : "[奧斯特里]\n好的！這是你的{0}。\n拿去好好用吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 390,
+      "npc" : "Austri",
+      "placeholders" : [
+        "getitemname(.@i[0])"
+      ],
+      "state" : "needs_review",
+      "text" : "[Austri]\nYou better not be trying\nto cheat me because you\ndon't have enough money\nor {0}.",
+      "translation" : "[奧斯特里]\n你最好別想騙我，\n因為你沒有足夠的Zeny\n或{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 405,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nMy cool dad Holink said I have the world's greatest refine hammer!!\nMeow Meow~\nWho do you think I am?\nYes!!! You!! You want to refine?",
+      "translation" : "[克林克]\n我帥氣的爸爸霍林克說我有世界上最棒的精煉錘！！\n喵喵~\n你以為我是誰？\n是的！！！就是你！你想精煉？"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]",
+      "translation" : "[克林克]"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nDad said. There's no cure for stupidity...",
+      "translation" : "[克林克]\n爸爸說。愚蠢是沒有藥可治的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nThere's nothing to see here!!",
+      "translation" : "[克林克]\n這裡沒什麼好看的！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nWhat an arrogant left hand this is!",
+      "translation" : "[克林克]\n這隻左手真傲慢！"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nWhat an arrogant right hand this is!",
+      "translation" : "[克林克]\n這隻右手真傲慢！"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nGet that dirty thing off my face!!",
+      "translation" : "[克林克]\n把這個髒東西從我臉上弄走！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nKyaong~! Do not provoke me.",
+      "translation" : "[克林克]\n喵嗚~！不要挑釁我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nWhere is the accessory?",
+      "translation" : "[克林克]\n飾品在哪裡？"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nAre you talking about the other head part?",
+      "translation" : "[克林克]\n你在說另一個頭部部件嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 448,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nThis can't be refined!!",
+      "translation" : "[克林克]\n這個不能精煉！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 454,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nPerfect refining. Did I do this for you?",
+      "translation" : "[克林克]\n完美精煉。這是我為你做的嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]",
+      "translation" : "[克林克]"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "Clink",
+      "placeholders" : [
+        "getitemname(.@material)",
+        ".@price"
+      ],
+      "state" : "needs_review",
+      "text" : "[Clink]\nHmm, an armor refine? Someone like you?\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?",
+      "translation" : "[克林克]\n嗯，防具精煉？像你這樣的人？\n你需要^ff9999{0}^000000和^ff9999{1}^000000 Zeny。你有嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "Clink",
+      "placeholders" : [
+        "getitemname(.@material)",
+        ".@price"
+      ],
+      "state" : "needs_review",
+      "text" : "[Clink]\nA level 1 weapon?\nUrr... Annoying... Okay, let's try...\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?",
+      "translation" : "[克林克]\n1級武器？\n呃...真煩人...好吧，試試看...\n你需要^ff9999{0}^000000和^ff9999{1}^000000 Zeny。你有嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "Clink",
+      "placeholders" : [
+        "getitemname(.@material)",
+        ".@price"
+      ],
+      "state" : "needs_review",
+      "text" : "[Clink]\nA level 2 weapon?\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?",
+      "translation" : "[克林克]\n2級武器？\n你需要^ff9999{0}^000000和^ff9999{1}^000000 Zeny。你有嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "Clink",
+      "placeholders" : [
+        "getitemname(.@material)",
+        ".@price"
+      ],
+      "state" : "needs_review",
+      "text" : "[Clink]\nWoot!! A level 3 weapon? Impressive~\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?",
+      "translation" : "[克林克]\n哇哦！！3級武器？真厲害~\n你需要^ff9999{0}^000000和^ff9999{1}^000000 Zeny。你有嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "Clink",
+      "placeholders" : [
+        "getitemname(.@material)",
+        ".@price"
+      ],
+      "state" : "needs_review",
+      "text" : "[Clink]\nWow!... A level 4 weapon~!!\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?",
+      "translation" : "[克林克]\n哇！...4級武器~！！\n你需要^ff9999{0}^000000和^ff9999{1}^000000 Zeny。你有嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 504,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "Yes, I do!!",
+      "translation" : "是的，我要！！"
+    },
+    {
+      "kind" : "option",
+      "line" : 504,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "Forget about it!!",
+      "translation" : "算了吧！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 505,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nI knew it!!\nI knew you were not worth trying my magical refining hammer for.",
+      "translation" : "[克林克]\n我就知道！！\n我就知道你不配讓我用我的魔法精煉錘。"
+    },
+    {
+      "kind" : "message",
+      "line" : 511,
+      "npc" : "Clink",
+      "placeholders" : [
+        ".@type$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Clink]\nWow!!\nThis {0} has been refined quite a bit, huh?\nYou do know that this might break, right?",
+      "translation" : "[克林克]\n哇！！\n這把{0}已經精煉得挺高了，是吧？\n你知道這可能會壞掉嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 516,
+      "npc" : "Clink",
+      "placeholders" : [
+        ".@type$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Clink]\nIf you break the {0}, you can never use it again.\nCards and enchant effects...\nthe ^ff0000whole thing will disappear^000000.\nYou still up for this~?",
+      "translation" : "[克林克]\n如果{0}壞了，你就再也用不了了。\n卡片和附魔效果...\n^ff0000整件東西都會消失^000000。\n你還想繼續嗎~？"
+    },
+    {
+      "kind" : "option",
+      "line" : 522,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "Yes, I am!!",
+      "translation" : "是的，我想！"
+    },
+    {
+      "kind" : "option",
+      "line" : 522,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "Forget about it!!",
+      "translation" : "算了吧！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 523,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nI knew it!!\nYou can't even take this big step. Don't think about refining...",
+      "translation" : "[克林克]\n我就知道！！\n你連這一步都邁不出去。別想精煉了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 530,
+      "npc" : "Clink",
+      "placeholders" : [
+        "getitemname(.@material)",
+        ".@price"
+      ],
+      "state" : "needs_review",
+      "text" : "[Clink]\nHey you!! Didn't I tell you\nthat you need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny??!!",
+      "translation" : "[克林克]\n嘿！！我不是告訴你\n你需要^ff9999{0}^000000和^ff9999{1}^000000 Zeny嗎？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 541,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nWait a second...\nDo you think I'm stupid?!\nYou switched the item while I wasn't looking! Get out of here!",
+      "translation" : "[克林克]\n等一下...\n你以為我傻嗎？！\n趁我不注意你換了物品！滾出去！"
+    },
+    {
+      "kind" : "message",
+      "line" : 551,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nCry Hammer!! Cry!!!",
+      "translation" : "[克林克]\n哭吧錘子！！哭吧！！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 561,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nHuh?! I failed?!",
+      "translation" : "[克林克]\n什麼？！我失敗了？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 564,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nArrgg~ It's all~ Broken...? What a pity~",
+      "translation" : "[克林克]\n啊嗚~全~碎了...？真可惜~"
+    },
+    {
+      "kind" : "message",
+      "line" : 567,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nHey...!! Get me another one.\nThis is not possible.\nHow can my hammer fail from refining?",
+      "translation" : "[克林克]\n嘿...！！再給我拿一個。\n這不可能。\n我的錘子怎麼會精煉失敗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 574,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nCry Hammer!! Cry!!!",
+      "translation" : "[克林克]\n哭吧錘子！！哭吧！！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 578,
+      "npc" : "Clink",
+      "state" : "needs_review",
+      "text" : "[Clink]\nOk!! Perfect!!\nThere's nothing I can't refine\nwith this special hammer.\nYou can praise me!!\nWhat a day!!",
+      "translation" : "[克林克]\n好！！完美！！\n用這把特別的錘子，沒有我精煉不了的東西。\n你可以誇我了！！\n真是美好的一天！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 647,
+      "npc" : "Dietrich",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nWe sell and exchange various ores used in smelting.",
+      "translation" : "[{0}]\n我們出售和交換用於冶煉的各種礦石。"
+    },
+    {
+      "kind" : "option",
+      "line" : 650,
+      "npc" : "Dietrich",
+      "state" : "needs_review",
+      "text" : "View basic smelting ores",
+      "translation" : "檢視基礎冶煉礦石"
+    },
+    {
+      "kind" : "option",
+      "line" : 650,
+      "npc" : "Dietrich",
+      "state" : "needs_review",
+      "text" : "View advanced smelting ores",
+      "translation" : "檢視高階冶煉礦石"
+    },
+    {
+      "kind" : "option",
+      "line" : 650,
+      "npc" : "Dietrich",
+      "state" : "needs_review",
+      "text" : "View Ether smelting ores",
+      "translation" : "檢視以太冶煉礦石"
+    },
+    {
+      "kind" : "option",
+      "line" : 650,
+      "npc" : "Dietrich",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 652,
+      "npc" : "Dietrich",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nPhracon and Emveretarcon are available for use in smelting low-level weapons.",
+      "translation" : "[{0}]\n強化武器金屬-級數一和強化武器金屬-級數二可用於冶煉低等級武器。"
+    },
+    {
+      "kind" : "message",
+      "line" : 658,
+      "npc" : "Dietrich",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nWe are purifying Elunium Stone or Oridecon Stone, or exchanging them with Bradium or Carnium.",
+      "translation" : "[{0}]\n我們純化鋁或神之金屬，或者將其與魔力之石或混沌金屬進行交換。"
+    },
+    {
+      "kind" : "message",
+      "line" : 664,
+      "npc" : "Dietrich",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nWe add Etel Dust to existing smelting ores and replace them with Ether-bearing smelting ores.",
+      "translation" : "[{0}]\n我們在現有冶煉礦石中加入以太粉塵，將其替換為含以太的冶煉礦石。"
+    },
+    {
+      "kind" : "message",
+      "line" : 670,
+      "npc" : "Dietrich",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nIf you lack the materials used for smelting, come anytime.",
+      "translation" : "[{0}]\n如果您缺少冶煉所需的材料，請隨時過來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 689,
+      "npc" : "Pauline",
+      "placeholders" : [
+        "strnpcinfo(1)",
+        "mesitemlink( 25728 )",
+        "mesitemlink( 25730 )"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nDo you have {1} or {2}?\nWe will exchange them for refined products for use as smelting goods.",
+      "translation" : "[{0}]\n您有{1}或{2}嗎？\n我們會將其兌換為可用於冶煉的成品。"
+    }
+  ]
+}

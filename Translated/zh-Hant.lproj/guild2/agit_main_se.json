@@ -1,0 +1,1812 @@
+{
+  "file" : "npc/guild2/agit_main_se.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 210,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nI await for the master\nwhom destiny will choose\nfor me. Do you think you\nhave to courage and strength\nto conquer this stronghold?",
+      "translation" : "[管家]\n我在等待命運為我選定的主人。\n您有勇氣和力量征服這座要塞嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "Steward",
+      "placeholders" : [
+        "getguildmaster(.@GID)"
+      ],
+      "state" : "translated",
+      "text" : "[ Steward ]\nHmpf. Your threats don't\nscare me! Guardians, drive\nthis infidel away from here!\nI will always be loyal to the\nmaster of this stronghold,\nthe one and only ^FF0000{0}^000000.",
+      "translation" : "[管家]\n哼，你的威脅嚇不倒我！\n守衛，把這個異教徒趕出去！\n我永遠只效忠這座要塞的主人，^FF0000{0}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 228,
+      "npc" : "Steward",
+      "placeholders" : [
+        "getguildmaster(.@GID)"
+      ],
+      "state" : "translated",
+      "text" : "[ Steward ]\nAh, Master ^FF0000{0}^000000...\nHow shall I serve you today?\nWas there an aspect of this\nstronghold's maintenance\nyou wanted to discuss?",
+      "translation" : "[管家]\n啊，主人^FF0000{0}^000000...\n今天有什麼可以為您效勞？\n您想商議要塞的管理事務嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 235,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Stronghold Briefing",
+      "translation" : "檢視要塞概況"
+    },
+    {
+      "kind" : "option",
+      "line" : 235,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Invest in Commercial Growth",
+      "translation" : "投資商業發展"
+    },
+    {
+      "kind" : "option",
+      "line" : 235,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Invest in Defense growth",
+      "translation" : "投資防禦建設"
+    },
+    {
+      "kind" : "option",
+      "line" : 235,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Hire/Fire Storage Staff",
+      "translation" : "僱傭/解僱倉庫職員"
+    },
+    {
+      "kind" : "option",
+      "line" : 235,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Go to Master's room",
+      "translation" : "前往會長房間"
+    },
+    {
+      "kind" : "message",
+      "line" : 237,
+      "npc" : "Steward",
+      "placeholders" : [
+        "getcastledata(strnpcinfo(4),CD_CURRENT_ECONOMY)",
+        "getcastledata(strnpcinfo(4),CD_INVESTED_ECONOMY)"
+      ],
+      "state" : "translated",
+      "text" : "[ Steward ]\nThe Commercial Growth\nLevel of the stronghold is ^0000ff{0}.\nLast time, you invested in\nCommercial Growth {1}.",
+      "translation" : "[管家]\n要塞的商業發展等級為^0000ff{0}。\n上次商業投資的次數為{1}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 237,
+      "npc" : "Steward",
+      "placeholders" : [
+        "getcastledata(strnpcinfo(4),CD_CURRENT_ECONOMY)"
+      ],
+      "state" : "translated",
+      "text" : "[ Steward ]\nThe Commercial Growth\nLevel of the stronghold is ^0000ff{0}.",
+      "translation" : "[管家]\n這座要塞的商業發展等級是^0000ff{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 245,
+      "npc" : "Steward",
+      "placeholders" : [
+        "getcastledata(strnpcinfo(4),CD_CURRENT_DEFENSE)",
+        "getcastledata(strnpcinfo(4),CD_INVESTED_DEFENSE)"
+      ],
+      "state" : "translated",
+      "text" : "[ Steward ]\nOur stronghold's\nsafeguard level is {0}.\nLast time, you invested\nin defense {1} times.\n \nThat is all, master.",
+      "translation" : "[管家]\n要塞的防禦等級為{0}。\n上次防禦投資的次數為{1}。\n\n報告完畢，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 245,
+      "npc" : "Steward",
+      "placeholders" : [
+        "getcastledata(strnpcinfo(4),CD_CURRENT_DEFENSE)"
+      ],
+      "state" : "translated",
+      "text" : "[ Steward ]\nOur stronghold's\nsafeguard level is {0}.\n \nThat is all, master.",
+      "translation" : "[管家]\n要塞的防禦等級為{0}。\n\n報告完畢，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 268,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nRaising the stronghold's\ncommercial growth will\nincrease the quantity of\ngoods produced for the guild.\nInvesting in commercial growth\nwill help the guild's future.",
+      "translation" : "[管家]\n提升要塞的商業發展等級，可以增加公會的物資產量。\n這方面的投資有利於公會的長遠發展。"
+    },
+    {
+      "kind" : "message",
+      "line" : 276,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nYou can make one investment\neach day, but if you can make\ntwo investments if you pay\nmore Zeny: this will speed\nup commercial development,\nbut can be quite expensive.",
+      "translation" : "[管家]\n每天可以投資一次，若支付更多Zeny，就能投資兩次。\n這樣可以加快商業發展，但花費也會高得多。"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nHowever, our stronghold's\ncommerical growth level is\nat 100%. It's not possible to\ndevelop commercial growth\nany further than that.",
+      "translation" : "[管家]\n不過，要塞的商業發展已達到100%，無法繼續提升。"
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nYou've already made two\ninvestments today, so you'll\nhave to wait until tomorrow\nto make another investment.",
+      "translation" : "[管家]\n您今天已經投資兩次，必須等到明天才能再次投資。"
+    },
+    {
+      "kind" : "message",
+      "line" : 302,
+      "npc" : "Steward",
+      "placeholders" : [
+        ".@eco_invest"
+      ],
+      "state" : "translated",
+      "text" : "[ Steward ]\nYou must pay ^FF0000{0}^000000 Zeny\nto make an investment\nWill you invest in this\nstronghold's commerical\ndevelopment now?",
+      "translation" : "[管家]\n本次投資需要^FF0000{0}^000000 Zeny。\n您現在要投資要塞的商業發展嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 310,
+      "npc" : "Steward",
+      "placeholders" : [
+        ".@eco_invest"
+      ],
+      "state" : "translated",
+      "text" : "[ Steward ]\nYou must pay ^FF0000{0}^000000\nmore Zeny to make a second\ninvestment today. Will you\ninvest one more time?",
+      "translation" : "[管家]\n若要在今天進行第二次投資，還需支付^FF0000{0}^000000 Zeny。\n您要再投資一次嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 317,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Invest in Commercial Growth",
+      "translation" : "投資商業發展"
+    },
+    {
+      "kind" : "option",
+      "line" : 317,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 320,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nYou've already made two\ninvestments today, so you'll\nhave to wait until tomorrow\nto make another investment.",
+      "translation" : "[管家]\n您今天已經投資兩次，必須等到明天才能再次投資。"
+    },
+    {
+      "kind" : "message",
+      "line" : 328,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nI'm sorry, Master, but\nyou do not have enough\nZeny to make an investment\nfor the guild today.",
+      "translation" : "[管家]\n很抱歉，主人，您的Zeny不足，無法為公會投資。"
+    },
+    {
+      "kind" : "message",
+      "line" : 337,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nA wise use of the guild's\nfunds, Master. We can expect\nto see the results of this\ninvestment by tomorrow.",
+      "translation" : "[管家]\n主人，這筆公會資金用得很明智。\n預計明天就能看到投資的成效。"
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nAs you command, Master.",
+      "translation" : "[管家]\n遵命，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 361,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nInvesting in our stronghold's\ndefense will enhance the\ndurability of our Guardians\nand the Emperium. We'll need\nevery advantage to protect\nourselves from our enemies.",
+      "translation" : "[管家]\n投資要塞防禦可以提升守衛和華麗金屬的耐久度。\n為了抵禦敵人，我們必須充分利用每一項優勢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 369,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nYou can invest in defense\nonce per day, but if you pay\nmore Zeny, you can invest\na maximum of two times daily.",
+      "translation" : "[管家]\n每天可以投資防禦一次，若支付更多Zeny，每天最多可投資兩次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nThe Defense Level of this\nstronghold is 100%, and\ncannot be increased further.",
+      "translation" : "[管家]\n要塞的防禦等級已達到100%，無法繼續提升。"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nMaster, you've already\ninvested in Defense twice\ntoday. You'll need to wait\nuntil tomorrow if you really\nwant to increase our defenses.",
+      "translation" : "[管家]\n主人，您今天已經投資防禦兩次了。\n若要繼續加強防禦，請等到明天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Steward",
+      "placeholders" : [
+        ".@def_invest"
+      ],
+      "state" : "translated",
+      "text" : "[ Steward ]\nWe need ^FF0000{0}^000000\nZeny to invest in our\nstronghold's defenses.\nWill you invest now?",
+      "translation" : "[管家]\n投資要塞防禦需要^FF0000{0}^000000 Zeny。\n您現在要投資嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Steward",
+      "placeholders" : [
+        ".@def_invest"
+      ],
+      "state" : "translated",
+      "text" : "[ Steward ]\nWe need ^FF0000{0}^000000\nZeny to invest in our\nstronghold's defenses\na second time today.\nWill you invest now?",
+      "translation" : "[管家]\n今天第二次投資要塞防禦需要^FF0000{0}^000000 Zeny。\n您現在要投資嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 404,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Invest in Defense",
+      "translation" : "投資防禦"
+    },
+    {
+      "kind" : "option",
+      "line" : 404,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 407,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nMaster, you've already\ninvested in Defense twice\ntoday. You'll need to wait\nuntil tomorrow if you really\nwant to increase our defenses.",
+      "translation" : "[管家]\n主人，您今天已經投資防禦兩次了。\n若要繼續加強防禦，請等到明天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nI'm sorry, Master, but\nyou do not have enough\nZeny to make an investment\nfor the guild today.",
+      "translation" : "[管家]\n很抱歉，主人，您的Zeny不足，無法為公會投資。"
+    },
+    {
+      "kind" : "message",
+      "line" : 425,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nA wise use of the guild's\nfunds, Master. Increasing\nthe frequency of treasure\nprocured by the guild will\ndefinitely help us all.",
+      "translation" : "[管家]\n主人，這筆公會資金用得很明智。\n讓公會更頻繁地獲得寶物，對大家都有好處。"
+    },
+    {
+      "kind" : "message",
+      "line" : 433,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nAs you command, Master.",
+      "translation" : "[管家]\n遵命，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 439,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nDo you wish to dismiss\nthe Kafra Employee that\nwe've hired for the guild?",
+      "translation" : "[管家]\n您要解僱公會僱傭的卡普拉職員嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 444,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Dismiss",
+      "translation" : "解僱"
+    },
+    {
+      "kind" : "option",
+      "line" : 444,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 447,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Hired Kafra Employee ]\nMaster, please reconsider!\nI've been working very hard\nfor the success of the guild!\nI'll try harder to serve the\nguild members of this\nstronghold, I promise!",
+      "translation" : "[受僱的卡普拉 職員]\n主人，請再考慮一下！\n為了公會，我一直在努力工作！\n我保證會更加用心地為要塞裡的公會成員服務！"
+    },
+    {
+      "kind" : "option",
+      "line" : 455,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Dismiss",
+      "translation" : "解僱"
+    },
+    {
+      "kind" : "option",
+      "line" : 455,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 457,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Hired Kafra Employee ]\nWhy?! What have I done\nto deserve this? Waaah~!",
+      "translation" : "[受僱的卡普拉 職員]\n為什麼？！我到底做錯了什麼，要這樣對我？\n嗚哇~！"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Hired Kafra Employee ]\nThank you, Master!\nI'll obey your every\ncommand as best I can!\nYou won't regret this!",
+      "translation" : "[受僱的卡普拉 職員]\n謝謝您，主人！\n我一定盡力完成您的每一道吩咐！\n您不會後悔的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 473,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nShe works very hard,\nin my opinion. It was in\nall of our best interests to\nallow her to stay with us.",
+      "translation" : "[管家]\n我覺得她工作很努力。\n讓她留下，對我們大家都有好處。"
+    },
+    {
+      "kind" : "message",
+      "line" : 482,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nThat Kafra Employee\nhas been dismissed.\nWere really dissatisfied\nby the quality of her service?",
+      "translation" : "[管家]\n那名卡普拉職員已被解僱。\n您真的對她的服務那麼不滿意嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 490,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nWill you hire a\nKafra Employee to serve\nour stronghold? You must\npay ^FF000010,000 Zeny^000000 to hire one.",
+      "translation" : "[管家]\n您要僱傭一名卡普拉職員，為要塞提供服務嗎？\n僱傭費用為^FF000010,000 Zeny^000000。"
+    },
+    {
+      "kind" : "option",
+      "line" : 496,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Hire",
+      "translation" : "僱傭"
+    },
+    {
+      "kind" : "option",
+      "line" : 496,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 499,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nMaster, we cannot hire a\nKafra Employee because\nyou have not yet attained\nthe ^FF0000Contract with Kafra^000000\nguild skill.",
+      "translation" : "[管家]\n主人，您尚未習得公會技能^FF0000和卡普拉訂契約^000000，因此無法僱傭卡普拉職員。"
+    },
+    {
+      "kind" : "message",
+      "line" : 508,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nMaster, we cannot hire a\nKafra Employee because\nwe do not have enough\nfunds to pay the contract fee.",
+      "translation" : "[管家]\n主人，資金不足以支付契約費用，無法僱傭卡普拉職員。"
+    },
+    {
+      "kind" : "message",
+      "line" : 518,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nVery well. We have formed\na contract with the Kafra\nHead Office, and hired a\nKafra Employee for our\nstronghold. Here she is~",
+      "translation" : "[管家]\n好的，我們已與卡普拉總部簽訂契約，為要塞僱傭了一名職員。\n她來了~"
+    },
+    {
+      "kind" : "message",
+      "line" : 526,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Hired Kafra Employee ]\nHow do you do? I've\nbeen dispatched by the\nKafra Head Office to\nserve your guild's needs.\nI'll do my best to follow\nyour every command, Master.",
+      "translation" : "[受僱的卡普拉 職員]\n您好，我是卡普拉總部派來為貴公會服務的職員。\n主人，我會盡力完成您的每一道吩咐。"
+    },
+    {
+      "kind" : "message",
+      "line" : 535,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nOur contract will expire\nafter one month, so we must\npay additional fees to keep\nthis Kafra Employee in\nthe service of our guild.",
+      "translation" : "[管家]\n契約一個月後到期，屆時需要另外付費，才能讓這名卡普拉職員繼續為公會服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 543,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nAs you command, Master.\nHowever, I suggest hiring\na Kafra Employee as soon\nas possible since our guild\nwould greatly benefit from\nthe convenient Kafra services.",
+      "translation" : "[管家]\n遵命，主人。\n不過，我建議儘快僱傭一名卡普拉職員，她提供的便捷服務會對公會大有幫助。"
+    },
+    {
+      "kind" : "message",
+      "line" : 554,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nDo you wish to enter the\nGuild Treasure Room?\nOnly you, the Guild Master,\nare permitted to enter.",
+      "translation" : "[管家]\n您要進入公會寶庫嗎？\n只有您這位公會會長才有權進入。"
+    },
+    {
+      "kind" : "message",
+      "line" : 560,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nPlease remember to open\nthe Treasure Boxes at the\nproper time. Otherwise, the\ntreasure may disappear if\nsomething unexpected happens.",
+      "translation" : "[管家]\n請及時開啟寶箱。\n否則，一旦發生意外，寶物可能會消失。"
+    },
+    {
+      "kind" : "option",
+      "line" : 567,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Go to Treasure Room",
+      "translation" : "前往寶庫"
+    },
+    {
+      "kind" : "option",
+      "line" : 567,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 569,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nAllow me to guide you\non the secret path to\nthe Treasure Room.\nPress the secret switch\nwhen you wish to return here.",
+      "translation" : "[管家]\n我來帶您走通往寶庫的秘密通道。\n要返回這裡時，請按下秘密開關。"
+    },
+    {
+      "kind" : "message",
+      "line" : 589,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nItems in the Treasure Room\nare produced once each day.\nTherefore, you must obtain\nthe treasure items everyday.\nFor the sake of the guild,\nprioritize treasure harvesting!",
+      "translation" : "[管家]\n寶庫每天生成一次物品，因此需要每天取走寶物。\n為了公會，請優先處理寶物的收取！"
+    },
+    {
+      "kind" : "message",
+      "line" : 643,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nGreat job. Now, all you\nneed to do is destroy this\nEmperium to gain ownership\nover this stronghold.",
+      "translation" : "{0}\n幹得好。\n現在只要摧毀這塊華麗金屬，就能獲得要塞的所有權。"
+    },
+    {
+      "kind" : "message",
+      "line" : 652,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nAs guardian of this\nstronghold, I answer only\nto the master of the guild\nthat controls this place.",
+      "translation" : "{0}\n我是這座要塞的守衛，只聽命於佔領此地的公會會長。"
+    },
+    {
+      "kind" : "message",
+      "line" : 661,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$",
+        "strnpcinfo(1)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nI am {1}, guardian of\nthis stronghold. For now,\nall is quiet in this place.",
+      "translation" : "{0}\n我是{1}，這座要塞的守衛。\n目前，這裡一切平靜。"
+    },
+    {
+      "kind" : "option",
+      "line" : 666,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "Converse",
+      "translation" : "交談"
+    },
+    {
+      "kind" : "option",
+      "line" : 666,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 668,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nDo you have any questions\nabout this stronghold?",
+      "translation" : "{0}\n你對這座要塞有什麼疑問嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 672,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "Guardian Stones",
+      "translation" : "守護石"
+    },
+    {
+      "kind" : "option",
+      "line" : 672,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "Fortress Gates",
+      "translation" : "要塞大門"
+    },
+    {
+      "kind" : "option",
+      "line" : 672,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "Link Flags",
+      "translation" : "傳送旗幟"
+    },
+    {
+      "kind" : "option",
+      "line" : 672,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "Battle Strategy",
+      "translation" : "戰鬥策略"
+    },
+    {
+      "kind" : "option",
+      "line" : 672,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 674,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nThere is one Emperium\nand two Guardian Stones in\neach fortress. These stones\nare the first line of defense,\nand must be destroyed before\nenemies can even enter.",
+      "translation" : "{0}\n每座要塞有一塊華麗金屬和兩塊守護石。\n守護石是第一道防線，敵人必須先摧毀它們，才能進入要塞。"
+    },
+    {
+      "kind" : "message",
+      "line" : 682,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nThe stones are located in\n^4D4DFFGate Houses^000000 which must be\nprotected to prevent enemies\nfrom reaching the Emperium.\nGuardian Stones can ^4D4DFFrecall\nyour Guardians^000000 for protection.",
+      "translation" : "{0}\n守護石位於^4D4DFF門樓^000000，必須守住這裡，阻止敵人接近華麗金屬。\n守護石還能^4D4DFF召回守衛^000000，提供保護。"
+    },
+    {
+      "kind" : "message",
+      "line" : 690,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nFortresses with higher levels\nof defense can summon more\nGuardians: this is why it is\nso important for guilds to\ninvest in Defense Growth.",
+      "translation" : "{0}\n要塞的防禦等級越高，能召喚的守衛就越多。\n因此，公會投資防禦建設至關重要。"
+    },
+    {
+      "kind" : "message",
+      "line" : 697,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nGuardian Stones that have\nbeen destroyed can be revived\nafter a certain time, but one of the guild members must give\nme the order. I can also report the status of the Guardian Stones.",
+      "translation" : "{0}\n被摧毀的守護石經過一段時間後可以重建，但需要公會成員向我下達指令。\n我也可以向你報告守護石的狀態。"
+    },
+    {
+      "kind" : "message",
+      "line" : 704,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\n^4D4DFFFortress Gates^000000 are the second line of guild stronghold defense,\nand are protected by extra barricades activated by the Guardian Stones.\nThese gates are located in three different parts of the fortress.",
+      "translation" : "{0}\n^4D4DFF要塞大門^000000是公會要塞的第二道防線，外面還有由守護石啟用的額外路障保護。\n這些大門分別位於要塞的三個區域。"
+    },
+    {
+      "kind" : "message",
+      "line" : 709,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nBarricades are protected by\nGuardian Stones, and are\nrestored when the Guardian\nStones are retrieved. However,\nit is not as easy to restore\ndestroyed Fortress Gates.",
+      "translation" : "{0}\n路障受守護石保護，重建守護石後，路障也會恢復。\n不過，被摧毀的要塞大門就沒那麼容易修復了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 717,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nFortress Gates can only be\nrestored when the ^4D4DFFguild\nmaster of a stronghold\nchanges^000000, or if ^4D4DFFrestoration\nis requested by the guild\nmaster of the stronghold^000000.",
+      "translation" : "{0}\n要塞大門只能在^4D4DFF佔領要塞的公會會長變更^000000，或^4D4DFF現任公會會長提出修復請求^000000時重建。"
+    },
+    {
+      "kind" : "message",
+      "line" : 726,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nStrongholds have many\nLink Flags that allow you\nto access vital areas within\nrestrictions placed by the\nBarricades. Usually, ^4D4DFFFlag 1\nlinks to the Gate House^000000.",
+      "translation" : "{0}\n要塞裡有許多傳送旗幟，可以讓你在路障所限定的範圍內前往重要區域。\n通常，^4D4DFF1號旗幟通往門樓^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nMany flags link directly to\nthe flag near the Emperium.\nThe final numbered flag is\nlinked to the Convenience\nFacility of the stronghold's\nowner. Keep this in mind.",
+      "translation" : "{0}\n許多旗幟可以直接傳送到華麗金屬附近的旗幟。\n編號最後的旗幟通往要塞所屬公會的便利設施。\n請記住這一點。"
+    },
+    {
+      "kind" : "message",
+      "line" : 743,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nStrategy? It would be better\nto develop your battle plan to\nexploit your guild's advantages\nand your enemies' weaknesses.\nUse the Gate Houses and Barricades, and rebuild as quickly as you can!",
+      "translation" : "{0}\n戰術？最好結合公會的優勢和敵人的弱點制定作戰計劃。\n充分利用門樓和路障，並儘快重建防禦！"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nYou have no questions\nto ask of me? Well, I'm\nhere to serve your needs.",
+      "translation" : "{0}\n沒有什麼要問我的嗎？\n我隨時為你效勞。"
+    },
+    {
+      "kind" : "message",
+      "line" : 758,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nI'm always here, so\nfeel free to request my\nassistance whenever\nthe need arises.",
+      "translation" : "{0}\n我一直都在，有需要就來找我幫忙。"
+    },
+    {
+      "kind" : "message",
+      "line" : 767,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nGreetings, {1}.\nWhat are your orders?",
+      "translation" : "{0}\n您好，{1}。\n請問有何吩咐？"
+    },
+    {
+      "kind" : "option",
+      "line" : 771,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "Increase Stronghold Defense",
+      "translation" : "增強要塞防禦"
+    },
+    {
+      "kind" : "option",
+      "line" : 771,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "Situational Briefing",
+      "translation" : "局勢簡報"
+    },
+    {
+      "kind" : "option",
+      "line" : 771,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 775,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nI'm sorry, but the Guardian\nStones aren't powerful enough\nto summon Guardians yet. We\nneed to accumulate more\nknowledge before they can\nsummon any Guardians.",
+      "translation" : "{0}\n很抱歉，守護石的力量還不足以召喚守衛。\n我們需要積累更多知識，才能通過守護石召喚守衛。"
+    },
+    {
+      "kind" : "message",
+      "line" : 785,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nI shall endeavor to summon\na Guardian through a Guardian\nStone. However, keep in mind\nthat this will not work if the\nGuardian Stone is destroyed.",
+      "translation" : "{0}\n我會嘗試通過守護石召喚守衛。\n不過，如果守護石被摧毀，就無法召喚了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 800,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nYou've already commanded\nme to summon a Guardian\nto defend the stronghold.",
+      "translation" : "{0}\n您已經下令召喚守衛來保衛要塞了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$",
+        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[0]\")]",
+        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[1]\")]",
+        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[2]\")]",
+        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[3]\")]",
+        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[4]\")]"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: {2}^000000\n1st Fortress Gate: {3}^000000\n2nd Fortress Gate: {4}^000000\n3rd Fortress Gate: {5}^000000",
+      "translation" : "{0}\n我們的防禦狀態是...\n第一守護石：{1}^000000\n第二守護石：{2}^000000\n第一要塞大門：{3}^000000\n第二要塞大門：{4}^000000\n第三要塞大門：{5}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 817,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nI'll be standing by,\nawaiting your orders.",
+      "translation" : "{0}\n我會在此待命，聽候您的吩咐。"
+    },
+    {
+      "kind" : "message",
+      "line" : 826,
+      "npc" : "Guardian",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nWho are you? Scoundrel!\nLeave this stronghold now!",
+      "translation" : "{0}\n你是誰？無賴！\n立刻離開這座要塞！"
+    },
+    {
+      "kind" : "message",
+      "line" : 843,
+      "npc" : "Kafra",
+      "placeholders" : [
+        "GetGuildName(.@GID)"
+      ],
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nWelcome, proud member\nof the ^FF0000{0}^000000 Guild!\nThe Kafra Corporation is ready\nto assist you wherever you go!",
+      "translation" : "[卡普拉 職員]\n歡迎光臨，光榮的^FF0000{0}^000000公會成員！\n無論您去往何處，卡普拉公司都隨時為您服務！"
+    },
+    {
+      "kind" : "option",
+      "line" : 849,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "Use Storage",
+      "translation" : "使用倉庫"
+    },
+    {
+      "kind" : "option",
+      "line" : 849,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "Use Warp Service",
+      "translation" : "使用傳送服務"
+    },
+    {
+      "kind" : "option",
+      "line" : 849,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "Rent Pushcart",
+      "translation" : "租用手推車"
+    },
+    {
+      "kind" : "option",
+      "line" : 849,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nI'm so sorry, but you must\nhave at least Novice Skill\nLv.6 to use the Storage.",
+      "translation" : "[卡普拉 職員]\n很抱歉，您的初心者基本技能至少需要達到6級，才能使用倉庫。"
+    },
+    {
+      "kind" : "message",
+      "line" : 860,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nPlease tell me your\nWarp destination.",
+      "translation" : "[卡普拉 職員]\n請告訴我您的傳送目的地。"
+    },
+    {
+      "kind" : "option",
+      "line" : 864,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "Rachel -> 200 z",
+      "translation" : "拉赫 -> 200 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 864,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 867,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nI'm sorry, but you don't\nhave enough Zeny to pay\nthe warp fee. Would you\nplease check your funds again?",
+      "translation" : "[卡普拉 職員]\n很抱歉，您的Zeny不足以支付傳送費用。\n請再檢查一下您持有的Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 886,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nI'm sorry, but the Pushcart\nrental service can only be\nused by Merchant, Blacksmith,\nand Alchemist class characters.",
+      "translation" : "[卡普拉 職員]\n很抱歉，手推車租賃服務僅限商人、鐵匠和鍊金術士使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 893,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nHm? You've already\nrented a Pushcart.",
+      "translation" : "[卡普拉 職員]\n嗯？您已經租用手推車了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 898,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nThe Pushcart rental fee\nis 800 Zeny. Would you\nlike to rent a Pushcart?",
+      "translation" : "[卡普拉 職員]\n手推車租賃費用為800 Zeny。\n您想要租用手推車嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 903,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "Rent Pushcart",
+      "translation" : "租用手推車"
+    },
+    {
+      "kind" : "option",
+      "line" : 903,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 906,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nI'm sorry, but you don't\nhave enough Zeny to rent\none of our Pushcarts.",
+      "translation" : "[卡普拉 職員]\n很抱歉，您的Zeny不足以租用手推車。"
+    },
+    {
+      "kind" : "message",
+      "line" : 923,
+      "npc" : "Kafra",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nThank you for using the\nKafra Service. Wherever\nyou go, Kafra will be\nthere to support you!",
+      "translation" : "[卡普拉 職員]\n感謝您使用卡普拉服務。\n無論您去往何處，卡普拉都將支援您！"
+    },
+    {
+      "kind" : "message",
+      "line" : 937,
+      "npc" : "Kafra",
+      "placeholders" : [
+        "getguildname(.@GID)"
+      ],
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nI'm sorry, but I've been\nexclusively contracted\nto the members of the\n^FF0000{0}^000000 Guild.\nYou'll have to ask another\nKafra Employee to help you...",
+      "translation" : "[卡普拉 職員]\n很抱歉，根據契約，我只能為^FF0000{0}^000000公會的成員提供服務。\n請找其他卡普拉職員幫忙..."
+    },
+    {
+      "kind" : "message",
+      "line" : 957,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFYou will need the\nfollowing materials to\nrebuild a destroyed\nGuardian Stone.^000000",
+      "translation" : "^3355FF重建被摧毀的守護石，需要以下材料。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 962,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "1 Oridecon\n1 Elunium\n30 Stones\n5 Blue Gemstones\n5 Yellow Gemstones\n5 Red Gemstones",
+      "translation" : "1個神之金屬\n1個鋁\n30個寶石原石\n5個藍色魔力礦石\n5個黃色魔力礦石\n5個紅色魔力礦石"
+    },
+    {
+      "kind" : "message",
+      "line" : 969,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFDo you want to continue?^000000",
+      "translation" : "^3355FF您想要繼續嗎？^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 971,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "option",
+      "line" : 971,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Continue",
+      "translation" : "繼續"
+    },
+    {
+      "kind" : "message",
+      "line" : 972,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFWork canceled.^000000",
+      "translation" : "^3355FF工作已取消。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 976,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFArrange Stones, Elunium, and\nOridecon, in that order, in the\ncenter. Then you must arrange\nthe enchanted Gemstones to\nrebuild the Guardian Stone.^000000",
+      "translation" : "^3355FF請依次在中央放置寶石原石、鋁和神之金屬。\n然後排列蘊含魔力的魔力礦石，重建守護石。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 983,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Elunium",
+      "translation" : "鋁"
+    },
+    {
+      "kind" : "option",
+      "line" : 983,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Oridecon",
+      "translation" : "神之金屬"
+    },
+    {
+      "kind" : "option",
+      "line" : 983,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Stone",
+      "translation" : "寶石原石"
+    },
+    {
+      "kind" : "message",
+      "line" : 985,
+      "npc" : "Guardian Stone",
+      "placeholders" : [
+        ".@stone$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "^3355FF{0} has been\nplaced in the center.^000000",
+      "translation" : "^3355FF已將{0}放在中央。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 988,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Elunium",
+      "translation" : "鋁"
+    },
+    {
+      "kind" : "option",
+      "line" : 988,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Oridecon",
+      "translation" : "神之金屬"
+    },
+    {
+      "kind" : "option",
+      "line" : 988,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Stone",
+      "translation" : "寶石原石"
+    },
+    {
+      "kind" : "message",
+      "line" : 990,
+      "npc" : "Guardian Stone",
+      "placeholders" : [
+        ".@stone$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "^3355FFYou have lined the\noutside of the center\nwith some {0}.^000000",
+      "translation" : "^3355FF已在中央周圍鋪上一些{0}。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 994,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Elunium",
+      "translation" : "鋁"
+    },
+    {
+      "kind" : "option",
+      "line" : 994,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Oridecon",
+      "translation" : "神之金屬"
+    },
+    {
+      "kind" : "option",
+      "line" : 994,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Stone",
+      "translation" : "寶石原石"
+    },
+    {
+      "kind" : "message",
+      "line" : 996,
+      "npc" : "Guardian Stone",
+      "placeholders" : [
+        ".@stone$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "^3355FFYou covered the\nrest of the materials\nwith some {0}.^000000",
+      "translation" : "^3355FF已用一些{0}覆蓋其餘材料。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1000,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFNow you need to arrange\nthe enchanted Gemstones\naccordingly. You can identify\ntheir Magic properties by\ntheir casting effect.^000000",
+      "translation" : "^3355FF接下來，需要按順序排列蘊含魔力的魔力礦石。\n可以通過它們的施法效果辨別魔法屬性。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1012,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFThe Gemstones must\nbe arranged in the correct\norder according to their\nmagic properties and power.^000000",
+      "translation" : "^3355FF必須根據魔法屬性和力量，將魔力礦石按正確的順序排列。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1017,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Red Gemstone",
+      "translation" : "紅色魔力礦石"
+    },
+    {
+      "kind" : "option",
+      "line" : 1017,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Yellow Gemstone",
+      "translation" : "黃色魔力礦石"
+    },
+    {
+      "kind" : "option",
+      "line" : 1017,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "Blue Gemstone",
+      "translation" : "藍色魔力礦石"
+    },
+    {
+      "kind" : "message",
+      "line" : 1018,
+      "npc" : "Guardian Stone",
+      "placeholders" : [
+        ".@color$[.@j]"
+      ],
+      "state" : "translated",
+      "text" : "^3355FFYou placed the {0} Gemstone.^000000\n^3355FFHowever, the Guardian Stone\nRepair System failed because\nof a magic power conflict.^000000",
+      "translation" : "^3355FF已放置{0}魔力礦石。^000000\n^3355FF但由於魔力衝突，守護石修復失敗了。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1018,
+      "npc" : "Guardian Stone",
+      "placeholders" : [
+        ".@color$[.@j]"
+      ],
+      "state" : "translated",
+      "text" : "^3355FFYou placed the {0} Gemstone.^000000",
+      "translation" : "^3355FF已放置{0}魔力礦石。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1032,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFThe Guardian Stone\nRepair System has\nalready completed.^000000",
+      "translation" : "^3355FF守護石已修復完畢。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1039,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFIt is impossible to\nrebuild the Guardian\nStone because the\nEmperium is not present.^000000",
+      "translation" : "^3355FF華麗金屬已不在這裡，無法重建守護石。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1046,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFThe Gemstones have been\narranged, and the Guardian\nStone is successfully repaired.^000000",
+      "translation" : "^3355FF魔力礦石已排列完畢，守護石修復成功。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1073,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFAfter all of that work...\nIt looks like you failed\nto fix the Guardian Stone,\nand lost some materials.^000000",
+      "translation" : "^3355FF忙碌了一番...\n卻沒能修復守護石，還損失了一些材料。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1085,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFYou don't have enough\nmaterials to repair\nthe Guardian Stone.^000000",
+      "translation" : "^3355FF修復守護石所需的材料不足。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1113,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFDemolished Fortress\nGates can be repaired,\nbut you will need to gather\nthe following materials.^000000",
+      "translation" : "^3355FF被摧毀的要塞大門可以修復，但需要收集以下材料。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1118,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^4D4DFF10 Steel^000000,\n^4D4DFF30 Trunks^000000,\n^4D4DFF5 Oridecon^000000, and\n^4D4DFF10 Emveretarcon^000000.",
+      "translation" : "^4D4DFF10個鋼鐵^000000，\n^4D4DFF30個樹幹^000000，\n^4D4DFF5個神之金屬^000000，以及\n^4D4DFF10個強化武器金屬-級數二^000000。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1123,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Continue",
+      "translation" : "繼續"
+    },
+    {
+      "kind" : "message",
+      "line" : 1125,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou will need Trunks to\nrepair the support frame,\nOridecon to enhance the\ngate's endurance, and\nEmveretarcon to basically\nhold everything together.^000000",
+      "translation" : "^3355FF需要用樹幹修復支撐框架，用神之金屬增強大門的耐久度，再用強化武器金屬-級數二固定各個部件。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1138,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFThe support frame\nis badly damaged:\nfixing this part\nis a top priority.^000000",
+      "translation" : "^3355FF支撐框架損壞嚴重，需要優先修復。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1143,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Trunk",
+      "translation" : "樹幹"
+    },
+    {
+      "kind" : "option",
+      "line" : 1143,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Steel",
+      "translation" : "鋼鐵"
+    },
+    {
+      "kind" : "option",
+      "line" : 1143,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Emveretarcon",
+      "translation" : "強化武器金屬-級數二"
+    },
+    {
+      "kind" : "option",
+      "line" : 1143,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Oridecon",
+      "translation" : "神之金屬"
+    },
+    {
+      "kind" : "message",
+      "line" : 1145,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFThe frame has been\nreinforced with wood.^000000",
+      "translation" : "^3355FF框架已經用木材加固了。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1153,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou tried using steel,\nbut it's not working very\nwell. You'll have to try\nsomething else.^000000",
+      "translation" : "^3355FF試著用了鋼鐵，但效果不理想。\n得換一種材料試試。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1159,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou tried using emveretarcon\nto reinforce the gate, but it's\nnot working well at all.\nYou'll have to start over.^000000",
+      "translation" : "^3355FF試著用強化武器金屬-級數二加固大門，但完全不起作用。\n得重新開始。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1165,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou tried using oridecon,\nbut it's not working very\nwell. You'll have to try\nsomething else.^000000",
+      "translation" : "^3355FF試著用了神之金屬，但效果不理想。\n得換一種材料試試。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1173,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFIt looks like the gate's\noverall endurance needs to\nbe reinforced with something.^000000",
+      "translation" : "^3355FF看來需要用某種材料，提高大門整體的耐久度。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1177,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Trunk",
+      "translation" : "樹幹"
+    },
+    {
+      "kind" : "option",
+      "line" : 1177,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Steel",
+      "translation" : "鋼鐵"
+    },
+    {
+      "kind" : "option",
+      "line" : 1177,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Emveretarcon",
+      "translation" : "強化武器金屬-級數二"
+    },
+    {
+      "kind" : "option",
+      "line" : 1177,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Oridecon",
+      "translation" : "神之金屬"
+    },
+    {
+      "kind" : "message",
+      "line" : 1179,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou tried using wood\nto reinforce the gate.^000000",
+      "translation" : "^3355FF試著用木材加固大門。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1185,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou tried using steel\nto reinforce the gate, but\nit's not working well at all.\nYou'll have to start over.^000000",
+      "translation" : "^3355FF試著用鋼鐵加固大門，但完全不起作用。\n得重新開始。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1191,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou tried using emveretarcon\nto reinforce the gate, but it's\nnot working well at all.\nYou'll have to start over.^000000",
+      "translation" : "^3355FF試著用強化武器金屬-級數二加固大門，但完全不起作用。\n得重新開始。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1197,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou hammered the\noridecon: it looks\nlike this will work.^000000",
+      "translation" : "^3355FF錘打了神之金屬，看來這個辦法有效。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1208,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFThe damage to the gate\nhas caused all these\ncracks. You'll have to\nweld them solid somehow.^000000",
+      "translation" : "^3355FF大門受損，裂開了許多縫隙。\n得想辦法把它們焊牢。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Trunk",
+      "translation" : "樹幹"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Steel",
+      "translation" : "鋼鐵"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Emveretarcon",
+      "translation" : "強化武器金屬-級數二"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Oridecon",
+      "translation" : "神之金屬"
+    },
+    {
+      "kind" : "message",
+      "line" : 1215,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou tried using wood to fix\nthis problem, but it seems\nto have made it worse.\nYou'll have to start all over.^000000",
+      "translation" : "^3355FF試著用木材修補，卻似乎讓情況更糟了。\n得從頭再來。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1221,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou used steel to weld\nall the cracks: the gate is\nis starting to look more solid.^000000",
+      "translation" : "^3355FF用鋼鐵焊好了所有裂縫，大門看起來更堅固了。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1230,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou tried using emveretarcon\nto reinforce the gate, but it's\nnot working well at all.\nYou'll have to start over.^000000",
+      "translation" : "^3355FF試著用強化武器金屬-級數二加固大門，但完全不起作用。\n得重新開始。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1236,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou tried using oridecon,\nbut it's not working very\nwell. You'll have to try\nsomething else.^000000",
+      "translation" : "^3355FF試著用了神之金屬，但效果不理想。\n得換一種材料試試。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1244,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFNow you need to make\nsure that the gate is held\ntogether pretty solidly.^000000",
+      "translation" : "^3355FF接下來，需要把大門的各個部件牢牢固定在一起。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1248,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Trunk",
+      "translation" : "樹幹"
+    },
+    {
+      "kind" : "option",
+      "line" : 1248,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Steel",
+      "translation" : "鋼鐵"
+    },
+    {
+      "kind" : "option",
+      "line" : 1248,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Emveretarcon",
+      "translation" : "強化武器金屬-級數二"
+    },
+    {
+      "kind" : "option",
+      "line" : 1248,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "Oridecon",
+      "translation" : "神之金屬"
+    },
+    {
+      "kind" : "message",
+      "line" : 1250,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou tried using wood to fix\nthis problem, but it seems\nto have made it worse.\nYou'll have to start all over.^000000",
+      "translation" : "^3355FF試著用木材修補，卻似乎讓情況更糟了。\n得從頭再來。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1256,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou tried using steel,\nbut it's not working very\nwell. You'll have to try\nsomething else.^000000",
+      "translation" : "^3355FF試著用了鋼鐵，但效果不理想。\n得換一種材料試試。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1262,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou successfully used\nthe emveretarcon to repair\nmuch of the gate's damage.^000000",
+      "translation" : "^3355FF成功用強化武器金屬-級數二修復了大門的大部分損傷。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1271,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou tried using oridecon,\nbut it's not working very\nwell. You'll have to try\nsomething else.^000000",
+      "translation" : "^3355FF試著用了神之金屬，但效果不理想。\n得換一種材料試試。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1280,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFWell, it looks like\nyou're just about done\nwith repairing the gate.^000000",
+      "translation" : "^3355FF嗯，看起來大門差不多修好了。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1285,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFUnfortunately, the Fortress\nGate can't be reconstructed:\nthe Emperium is no longer here.^000000",
+      "translation" : "^3355FF很遺憾，華麗金屬已不在這裡，無法重建要塞大門。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1292,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFThe Fortress Gate has\nbeen successfully repaired!^000000",
+      "translation" : "^3355FF要塞大門已成功修復！^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1313,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFThe wall has been breached,\nand the attempt to repair the\nFortress Gate has failed.\nYou lost some of your\nrepair resources...^000000",
+      "translation" : "^3355FF牆壁已被攻破，要塞大門修復失敗。\n損失了一些修復材料...^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1327,
+      "npc" : "Control",
+      "state" : "translated",
+      "text" : "^3355FFYou can't attempt to repair\nthe Fortress Gate if you don't\nhave all the needed materials.^000000",
+      "translation" : "^3355FF沒有備齊所需材料，無法修復要塞大門。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1715,
+      "npc" : "LinkFlag",
+      "state" : "translated",
+      "text" : "^3355FFThis is the Stronghold\nTeleport Service. Would\nyou like to teleport to the\nConvenience Facility for\nguild members?^000000",
+      "translation" : "^3355FF這裡提供要塞瞬間移動服務。\n要前往公會成員使用的便利設施嗎？^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1720,
+      "npc" : "LinkFlag",
+      "state" : "translated",
+      "text" : "Go to Convenience Facility",
+      "translation" : "前往便利設施"
+    },
+    {
+      "kind" : "option",
+      "line" : 1720,
+      "npc" : "LinkFlag",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1725,
+      "npc" : "LinkFlag",
+      "state" : "translated",
+      "text" : "^3355FFThis is the Stronghold\nTeleport Service. Would\nyou like to teleport to\nthe Emperium Center?^000000",
+      "translation" : "^3355FF這裡提供要塞瞬間移動服務。\n要前往華麗金屬中心嗎？^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1729,
+      "npc" : "LinkFlag",
+      "state" : "translated",
+      "text" : "Teleport",
+      "translation" : "瞬間移動"
+    },
+    {
+      "kind" : "option",
+      "line" : 1729,
+      "npc" : "LinkFlag",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1733,
+      "npc" : "LinkFlag",
+      "state" : "translated",
+      "text" : "^3355FFThis is the Stronghold\nTeleport Service. Please\nchoose a destination\nwithin the stronghold.^000000",
+      "translation" : "^3355FF這裡提供要塞瞬間移動服務。\n請選擇要塞內的目的地。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1753,
+      "npc" : "ReturnFlag",
+      "placeholders" : [
+        ".@str$",
+        ".@str$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} Royal Edict ]\nThe Holy Kingdom of\n{1} declares that\none has yet to claim lordship\nover this stronghold. The one\nthat breaks the Emperium will\nbe recognized as its new owner.",
+      "translation" : "[{0}王國敕令]\n神聖的{1}王國宣佈，此要塞尚無領主。\n摧毀華麗金屬者，將被認定為要塞的新主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1763,
+      "npc" : "ReturnFlag",
+      "state" : "translated",
+      "text" : "[ Ringing Voice ]\nCourageous one,\ndo you wish to return\nto your stronghold?",
+      "translation" : "[迴響的聲音]\n勇士啊，你要返回自己的要塞嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 1768,
+      "npc" : "ReturnFlag",
+      "state" : "translated",
+      "text" : "Return to the Stronghold",
+      "translation" : "返回要塞"
+    },
+    {
+      "kind" : "option",
+      "line" : 1768,
+      "npc" : "ReturnFlag",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1783,
+      "npc" : "ReturnFlag",
+      "placeholders" : [
+        ".@str$",
+        ".@str$",
+        "getguildname(.@GID)"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} Royal Edict ]\nThe Holy Kingdom of\n{1} decrees that\nthis stronghold is owned\nby the ^FF0000{2}^000000 Guild.",
+      "translation" : "[{0}王國敕令]\n神聖的{1}王國頒佈敕令：此要塞歸^FF0000{2}^000000公會所有。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1789,
+      "npc" : "ReturnFlag",
+      "placeholders" : [
+        ".@str$",
+        "getguildmaster(.@GID)",
+        "getguildname(.@GID)"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} Royal Edict ]\n^FF0000{1}^000000 is\nGuild Master of ^FF0000{2}^000000.\nAny that object must claim this\nstronghold through strength of\nsteel and magic during the\nappointed Guild Siege times.",
+      "translation" : "[{0}王國敕令]\n^FF0000{1}^000000是^FF0000{2}^000000公會的會長。\n若有異議，請在指定的攻城戰時間內，以刀劍與魔法之力奪取此要塞。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1802,
+      "npc" : "Switch",
+      "state" : "translated",
+      "text" : " \n^3355FFWill you pull\nthis small lever?^000000",
+      "translation" : " \n^3355FF要拉動這個小拉桿嗎？^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1806,
+      "npc" : "Switch",
+      "state" : "translated",
+      "text" : "Pull Lever",
+      "translation" : "拉動拉桿"
+    },
+    {
+      "kind" : "option",
+      "line" : 1806,
+      "npc" : "Switch",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1825,
+      "npc" : "Sunflower",
+      "state" : "translated",
+      "text" : "- It's an amazingly huge sunflower; as big as a human! ... You feel something mysterious emanating from the flower. -",
+      "translation" : "- 這是一朵大得驚人的向日葵，足有一個人那麼高！...你感覺到花朵散發著神秘的氣息。 -"
+    },
+    {
+      "kind" : "option",
+      "line" : 1827,
+      "npc" : "Sunflower",
+      "state" : "translated",
+      "text" : "Hold the stem.",
+      "translation" : "握住莖部"
+    },
+    {
+      "kind" : "option",
+      "line" : 1827,
+      "npc" : "Sunflower",
+      "state" : "translated",
+      "text" : "Do nothing.",
+      "translation" : "什麼都不做"
+    },
+    {
+      "kind" : "message",
+      "line" : 1843,
+      "npc" : "Sunflower",
+      "state" : "translated",
+      "text" : "It's too scary to touch unknown things.",
+      "translation" : "隨便碰不認識的東西，太嚇人了。"
+    }
+  ]
+}

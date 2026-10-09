@@ -1,0 +1,231 @@
+{
+  "file" : "npc/custom/etc/bank.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 20,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "[Banker]\nWelcome to the First Bank of Prontera. How can I help you today?",
+      "translation" : "[銀行家]\n歡迎光臨普隆德拉第一銀行。\n請問今天有什麼可以幫您的嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 23,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "I'd like to make a deposit.",
+      "translation" : "存款"
+    },
+    {
+      "kind" : "option",
+      "line" : 23,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "I'd like to make a withdrawal.",
+      "translation" : "取款"
+    },
+    {
+      "kind" : "option",
+      "line" : 23,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "What's my current balance?",
+      "translation" : "查詢餘額"
+    },
+    {
+      "kind" : "option",
+      "line" : 23,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 25,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "[Banker]\nVery well... How much would you like to deposit? The maximum you can deposit at once is 999,999 Zeny.",
+      "translation" : "[銀行家]\n好的...您想存多少？\n單次存款上限為999,999 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Banker",
+      "placeholders" : [
+        "@cost"
+      ],
+      "state" : "translated",
+      "text" : "[Banker]\nOh, and do realize there is a {0} Zeny charge on all transactions!",
+      "translation" : "[銀行家]\n另外，每筆交易都要收取{0} Zeny的手續費！"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "Make sure you ask me to deposit a real amount.",
+      "translation" : "請確保您輸入的是一個有效的存款金額。"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "It does not appear like you have the amount of zeny you're trying to deposit!",
+      "translation" : "您身上的Zeny不夠，無法存入這筆金額！"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Banker",
+      "placeholders" : [
+        "@cost"
+      ],
+      "state" : "translated",
+      "text" : "You need {0} Zeny to cover the transaction fee!",
+      "translation" : "您需要{0} Zeny來支付交易手續費！"
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "[Banker]\nThank you very much... Your zeny is in good hands.",
+      "translation" : "[銀行家]\n非常感謝...您的Zeny由我們妥善保管。"
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "[Banker]\nVery well... How much would you like to withdraw? The maximum you can withdraw at one time is 999,999 Zeny",
+      "translation" : "[銀行家]\n好的...您想取多少？\n單次取款上限為999,999 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 59,
+      "npc" : "Banker",
+      "placeholders" : [
+        "@cost"
+      ],
+      "state" : "translated",
+      "text" : "[Banker]\nOh, and do realize there is a {0} Zeny charge on all transactions!",
+      "translation" : "[銀行家]\n另外，每筆交易都要收取{0} Zeny的手續費！"
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "Please don't play games. I need a real amount to withdraw.",
+      "translation" : "別開玩笑了，請輸入有效的取款金額。"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Banker",
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\",#bankstorage)"
+      ],
+      "state" : "translated",
+      "text" : "You only have ^00FF00{0}^000000 zeny in your account!",
+      "translation" : "您的賬戶中只有^00FF00{0}^000000 Zeny！"
+    },
+    {
+      "kind" : "message",
+      "line" : 73,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "[Banker]\nYou don't have the Zeny for the transaction fee right now. Would you like me to take the fee directly from your withdrawal?",
+      "translation" : "[銀行家]\n您目前身上沒有足夠的Zeny支付交易手續費。\n您希望我直接從您的取款金額中扣除手續費嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 76,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "Yes please.",
+      "translation" : "好，請直接扣除"
+    },
+    {
+      "kind" : "option",
+      "line" : 76,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "No, Thanks",
+      "translation" : "不用，謝謝"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Banker",
+      "placeholders" : [
+        "@cost"
+      ],
+      "state" : "translated",
+      "text" : "[Banker]\nRemoving {0} from your withdrawal to cover the deposit fee...",
+      "translation" : "[銀行家]\n正在從您的取款金額中扣除{0}，用於支付手續費..."
+    },
+    {
+      "kind" : "message",
+      "line" : 87,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "[Banker]\nThere's your Zeny. Have a good day.",
+      "translation" : "[銀行家]\n這是您的Zeny。祝您今天愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "[Banker]\nVery well... come again soon.",
+      "translation" : "[銀行家]\n好的...歡迎下次光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "[Banker]\nThere's your Zeny. Have a good day.",
+      "translation" : "[銀行家]\n這是您的Zeny。祝您今天愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "[Banker]\nHmmmm... let me check some paper work.",
+      "translation" : "[銀行家]\n嗯...讓我查一下記錄。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "*Rustle, Rustle*",
+      "translation" : "*沙沙，沙沙*"
+    },
+    {
+      "kind" : "message",
+      "line" : 110,
+      "npc" : "Banker",
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\",#bankstorage)"
+      ],
+      "state" : "translated",
+      "text" : "[Banker]\nYou currently have {0} Zeny in your account.",
+      "translation" : "[銀行家]\n您目前賬戶中有{0} Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "Banker",
+      "state" : "translated",
+      "text" : "[Banker]\nVery well... come again soon.",
+      "translation" : "[銀行家]\n好的...歡迎下次光臨。"
+    }
+  ]
+}

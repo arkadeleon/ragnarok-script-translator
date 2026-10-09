@@ -1,0 +1,237 @@
+{
+  "file" : "npc/custom/events/mvp_ladder.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 16,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nSay... do you want to play the MvP Ladder game?",
+      "translation" : "[MVP階梯傳送員]\n請問...你想玩MVP階梯遊戲嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 19,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "Yes, let's get it on!",
+      "translation" : "好，開始吧！"
+    },
+    {
+      "kind" : "option",
+      "line" : 19,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "Information.",
+      "translation" : "瞭解規則"
+    },
+    {
+      "kind" : "option",
+      "line" : 19,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "Show me the best record.",
+      "translation" : "檢視最佳紀錄"
+    },
+    {
+      "kind" : "option",
+      "line" : 19,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "No.",
+      "translation" : "不"
+    },
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\", .finish_item_amount, getitemname( .finish_item_id ))",
+        "callfunc( \"F_InsertComma\", .register_cost )"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.\nIf your party can finish the MVP ladder game, each member will earn {0}.\nBut the entrance fee is {1} zeny.",
+      "translation" : "[MVP階梯傳送員]\n你的隊伍要按從弱到強的順序，擊敗所有MVP魔物。\n完成挑戰後，每位成員都能獲得{0}。\n入場費為{1} Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "callfunc( \"F_InsertComma\", .register_cost )"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.\nBut the entrance fee is {0} zeny.",
+      "translation" : "[MVP階梯傳送員]\n你的隊伍要按從弱到強的順序，擊敗所有MVP魔物。\n入場費為{0} Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\", .finish_item_amount, getitemname( .finish_item_id ))"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.\nIf your party can finish the MVP ladder game, each member will earn {0}.",
+      "translation" : "[MVP階梯傳送員]\n你的隊伍要按從弱到強的順序，擊敗所有MVP魔物。\n完成挑戰後，每位成員都能獲得{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.",
+      "translation" : "[MVP階梯傳送員]\n你的隊伍要按從弱到強的順序，擊敗所有MVP魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        ".timeout"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nYou lose the game if you can't finish in {0} minutes, or if your entire party is killed.\nGood luck!",
+      "translation" : "[MVP階梯傳送員]\n如果沒能在{0}分鐘內完成挑戰，或者全隊陣亡，就算失敗。\n祝你好運！"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nNobody has finished this game yet.",
+      "translation" : "[MVP階梯傳送員]\n目前還沒有人完成這個遊戲。"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "( $mvpladdderparty_time / 60 )",
+        "( $mvpladdderparty_time % 60 )",
+        "$mvpladdderparty_name$",
+        "( .@i +1 )",
+        "$mvpladderparty_member$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.\n^000000{3}. ^0000FF{4}",
+      "translation" : "[MVP階梯傳送員]\n最佳紀錄：\n[ {0}分{1}秒 ]\n由隊伍^FF0000{2}^000000創造。\n^000000{3}. ^0000FF{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "( $mvpladdderparty_time / 60 )",
+        "( $mvpladdderparty_time % 60 )",
+        "$mvpladdderparty_name$"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.",
+      "translation" : "[MVP階梯傳送員]\n最佳紀錄是\n[ {0} 分 {1} 秒 ]\n由隊伍 ^FF0000{2}^000000 創造。"
+    },
+    {
+      "kind" : "option",
+      "line" : 48,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "Close.",
+      "translation" : "關閉"
+    },
+    {
+      "kind" : "option",
+      "line" : 48,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "Reset the record.",
+      "translation" : "重置紀錄"
+    },
+    {
+      "kind" : "option",
+      "line" : 49,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "Never mind.",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "option",
+      "line" : 49,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "I really want to reset it.",
+      "translation" : "我確實想重置它"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nRecord reset successfully.",
+      "translation" : "[MVP階梯傳送員]\n紀錄重置成功。"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nWhen you are strong enough to complete the game, please come back.",
+      "translation" : "[MVP階梯傳送員]\n等你有實力完成挑戰時，再來找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nYou have to form a party to play.",
+      "translation" : "[MVP階梯傳送員]\n你必須組建隊伍才能玩。"
+    },
+    {
+      "kind" : "message",
+      "line" : 67,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nOnly the party leader can register.",
+      "translation" : "[MVP階梯傳送員]\n只有隊長才能報名。"
+    },
+    {
+      "kind" : "message",
+      "line" : 83,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        ".register_min"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nYou have to form a party with exactly {0} members to play.",
+      "translation" : "[MVP階梯傳送員]\n隊伍必須恰好有{0}名成員才能參加。"
+    },
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        ".register_min",
+        "strnpcinfo(4)"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nYour party must have {0} members online on map '{1}'.",
+      "translation" : "[MVP階梯傳送員]\n你的隊伍必須在地圖'{1}'上有{0}名成員線上。"
+    },
+    {
+      "kind" : "message",
+      "line" : 93,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nYou don't have enough zeny. Please come back when you do.",
+      "translation" : "[MVP階梯傳送員]\n你的Zeny不夠，攢夠再來吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nI'm sorry, but a party is currently playing the game. Please standby until the party is finished.\nThank you.",
+      "translation" : "[MVP階梯傳送員]\n抱歉，已經有隊伍在挑戰了。請等他們結束。\n謝謝。"
+    }
+  ]
+}

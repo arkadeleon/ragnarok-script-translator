@@ -1,0 +1,1373 @@
+{
+  "file" : "npc/re/instances/AirshipAssault.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 16,
+      "npc" : "Adventurer Leon",
+      "state" : "needs_review",
+      "text" : "[Adventurer Leon]\nHm...after several days of observation, this place seems to be a device imprinted with the memories of an airship.",
+      "translation" : "[冒險者 雷恩]\n嗯……經過幾天的觀察，這個地方似乎是一個刻有飛空艇記憶的裝置。"
+    },
+    {
+      "kind" : "message",
+      "line" : 19,
+      "npc" : "Adventurer Leon",
+      "state" : "needs_review",
+      "text" : "[Adventurer Leon]\n...that is different. I don't have any more information...",
+      "translation" : "[冒險者 雷恩]\n……情況有些不同。我沒有更多的資訊了……"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Dimensional Device",
+      "state" : "needs_review",
+      "text" : "^ff0000Memorial Dungeon cannot be reentered within 23 hours after your last entrance.^000000",
+      "translation" : "^ff0000距離上次進入記憶地下城不足23小時，無法再次進入。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 38,
+      "npc" : "Dimensional Device",
+      "state" : "needs_review",
+      "text" : "^ff0000Users below level 125 cannot enter this dungeon^000000",
+      "translation" : "^ff0000等級低於125級的玩家無法進入此地下城^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Dimensional Device",
+      "state" : "needs_review",
+      "text" : "^ff0000To enter, you must create or join a party of 1 or more members.^000000",
+      "translation" : "^ff0000進入地下城需要建立或加入至少1名成員的隊伍。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Dimensional Device",
+      "state" : "needs_review",
+      "text" : "^ff0000This Memorial Dungeon is only for 1 person. Only the party leader can enter.^000000",
+      "translation" : "^ff0000此記憶地下城僅限1人進入。只有隊伍首領可以進入。^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 49,
+      "npc" : "Dimensional Device",
+      "state" : "needs_review",
+      "text" : "Power Up the Device",
+      "translation" : "強化裝置"
+    },
+    {
+      "kind" : "option",
+      "line" : 49,
+      "npc" : "Dimensional Device",
+      "state" : "needs_review",
+      "text" : "Use the Device",
+      "translation" : "使用裝置"
+    },
+    {
+      "kind" : "option",
+      "line" : 49,
+      "npc" : "Dimensional Device",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "npc" : "Dimensional Device",
+      "state" : "needs_review",
+      "text" : "^ff0000This Memorial Dungeon is only for 1 person. Only the party leader can enter.^000000",
+      "translation" : "^ff0000此記憶地下城僅限1人進入。只有隊伍首領可以進入。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "Dimensional Device",
+      "placeholders" : [
+        "getpartyname( getcharid(1) )",
+        "strcharinfo(0)",
+        ".@md_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "Party name: {0}\nCharacter name: {1}\n^0000ff{2}^000000 - Creation failed!",
+      "translation" : "隊伍名稱：{0}\n角色名稱：{1}\n^0000ff{2}^000000 - 建立失敗！"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "npc" : "Dimensional Device",
+      "state" : "needs_review",
+      "text" : "^ff0000After dimension device has formed^000000\n^ff0000click to enter again.^000000",
+      "translation" : "^ff0000次元裝置形成後^000000\n^ff0000點選再次進入。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 77,
+      "npc" : "Dimensional Device",
+      "state" : "needs_review",
+      "text" : "^ff0000To enter, you must create or join a party of 1 or more members.^000000",
+      "translation" : "^ff0000進入地下城需要建立或加入至少1名成員的隊伍。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 80,
+      "npc" : "Dimensional Device",
+      "state" : "needs_review",
+      "text" : "^ff0000The party leader has not used the device.^000000",
+      "translation" : "^ff0000隊伍首領尚未使用裝置。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 83,
+      "npc" : "Dimensional Device",
+      "state" : "needs_review",
+      "text" : "An unknown error has occurred.",
+      "translation" : "發生未知錯誤。"
+    },
+    {
+      "kind" : "message",
+      "line" : 104,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "[Loki]\n...Glad there aren't any of those pesky things here...",
+      "translation" : "[洛基]\n……還好這裡沒有那些討厭的傢伙……"
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Loki",
+      "state" : "needs_review",
+      "text" : "[Loki]\n...I will defend this place no matter what. Go down into the airship...!!",
+      "translation" : "[洛基]\n……無論如何，我都會守護這個地方。去飛空艇的下面……！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\nFlying in the air through with the strength of machinery... the development of technology is truly marvelous.",
+      "translation" : "[芬里爾]\n憑藉機械的力量在空中飛行……科技的發展真是令人驚歎。"
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\nBut I feel there's a power of some kind... I think this airship won't be able to fly solely just by technology.",
+      "translation" : "[芬里爾]\n但我感覺到有一種力量……我覺得這艘飛空艇不可能僅靠科技就能飛行。"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\nI will face them here. Chaos, go down to the lower floor of the airship with Iris!",
+      "translation" : "[芬里爾]\n我會在這裡迎戰。混沌，和艾莉絲一起下到飛空艇的下一層！"
+    },
+    {
+      "kind" : "message",
+      "line" : 136,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Iris]\nWhoa~ this is great!! The wind is so cool~!!\nHooray~ we are flying through the sky! For free on top of that!",
+      "translation" : "[艾莉絲]\n哇~太棒了！！風好涼爽~！！\n萬歲~我們在天空中飛翔！而且還是免費的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Iris]\nIs it not marvelous how this huge ship can fly without the use of magic? Chaos?",
+      "translation" : "[艾莉絲]\n這艘巨大的船不用魔法就能飛，是不是很神奇？混沌？"
+    },
+    {
+      "kind" : "message",
+      "line" : 144,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Chaos]\n......",
+      "translation" : "[混沌]\n……"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Iris]\n...?? Chaos?",
+      "translation" : "[艾莉絲]\n……？？混沌？"
+    },
+    {
+      "kind" : "message",
+      "line" : 152,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Chaos]\n.....Sage Kadmon..",
+      "translation" : "[混沌]\n……賢者 卡德蒙……"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Iris]\nWhat are you doing instead of listening to me!!!!",
+      "translation" : "[艾莉絲]\n你居然不聽我說話！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nArgh! Aaah~!!",
+      "translation" : "[混沌]\n啊！啊啊~！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 164,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Iris]\nHumph! That's what you get for being absent-minded!",
+      "translation" : "[艾莉絲]\n哼！活該，誰讓你走神了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nAh...Iris!! Are you trying to kill me~!!",
+      "translation" : "[混沌]\n啊……艾莉絲！！你想殺了我嗎~！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 172,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Iris]\nHumph! I don't care if you die or not...",
+      "translation" : "[艾莉絲]\n哼！你死不死我才不在乎……"
+    },
+    {
+      "kind" : "message",
+      "line" : 176,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nHey!! No horsing around on the ship!!\nThis is what's wrong with young humans. They have no manners! If you act up I will toss all of you off!!",
+      "translation" : "[船長 費爾洛克]\n喂！！在船上不許打鬧！！\n這就是你們這些年輕人類的問題。一點禮貌都沒有！再鬧我就把你們全部扔下去！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 181,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Iris]\nOops... By the way captain, how does this big airship fly through the sky? It is so marvelous!",
+      "translation" : "[艾莉絲]\n哎呀……對了船長，這艘巨大的飛空艇是怎麼在天空中飛行的呢？真是太神奇了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nHuh? That's a good question.\nAs you can see, we heat the large boiler to boil water then use the pressure of the steam to move the pistons which turns the cogwheel and moves the turbine to turn the propeller.",
+      "translation" : "[船長 費爾洛克]\n嗯？問得好。\n正如你所見，我們加熱巨大的鍋爐把水燒開，利用蒸汽的壓力推動活塞，帶動齒輪轉動渦輪，從而驅動螺旋槳。"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Iris]\nEh... So that's how this big ship floats... but now the feeling of the mystery is gone. I thought there would be some mystical device... a little disappointed...",
+      "translation" : "[艾莉絲]\n原來……這艘大船是這樣漂浮的……不過現在神秘感全沒了。我還以為會有什麼神秘裝置呢……有點失望……"
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nThat's right. This big ship can't be in the sky with just steam. So it uses an amplifier called a 'Rune Engine'.",
+      "translation" : "[船長 費爾洛克]\n沒錯。光靠蒸汽，這艘大船是飛不上天的。所以它使用了一種叫做“符文引擎”的增幅器。"
+    },
+    {
+      "kind" : "message",
+      "line" : 198,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Iris]\nRune Engine? What is that?",
+      "translation" : "[艾莉絲]\n符文引擎？那是什麼？"
+    },
+    {
+      "kind" : "message",
+      "line" : 202,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nIt's a device that uses a magical stone.\nSomething about fallen fragments of a broken heart according to the legends... a ridiculous legend but that doesn't matter...",
+      "translation" : "[船長 費爾洛克]\n它是一種利用輪迴之石碎片的裝置。\n傳說那是破碎之心的碎片……雖然是個荒謬的傳說，但這並不重要……"
+    },
+    {
+      "kind" : "message",
+      "line" : 206,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nThe stone is the so-called 'Tear of Ymir.' If put in junction with locomotive engines like steam engines, the rune exuded from the stone amplifies the energy.",
+      "translation" : "[船長 費爾洛克]\n這種石頭被稱為“尤彌爾的淚滴”。如果與蒸汽機之類的動力引擎結合，石頭散發出的符文會放大能量。"
+    },
+    {
+      "kind" : "message",
+      "line" : 209,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nIn all honesty it is not an overstatement to say a rock the size of a thumb is moving this ship. It possesses an incredible power.",
+      "translation" : "[船長 費爾洛克]\n說實話，說這塊拇指大小的石頭在驅動這艘船，一點也不誇張。它擁有不可思議的力量。"
+    },
+    {
+      "kind" : "message",
+      "line" : 213,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Iris]\nThat little thing...!!!",
+      "translation" : "[艾莉絲]\n就這麼一小塊……！！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Loki]\n......huh?\nSomething is coming this way...",
+      "translation" : "[洛基]\n……嗯？\n有什麼東西正朝這邊過來……"
+    },
+    {
+      "kind" : "message",
+      "line" : 222,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Guard]\nAlert!! Alert!! A large Wyvern unit at 7 o'clock!!",
+      "translation" : "[衛兵]\n警報！！警報！！7點鐘方向發現大量雙足飛龍！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 226,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nWhat?!",
+      "translation" : "[船長 費爾洛克]\n什麼？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 230,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Guard]\nGre...Gremlins!! Gremlins have landed from the Wyvern!!",
+      "translation" : "[衛兵]\n小……小鬼！！小鬼從雙足飛龍上降落了！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 244,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nHm... What is this now?",
+      "translation" : "[混沌]\n嗯……這是什麼情況？"
+    },
+    {
+      "kind" : "message",
+      "line" : 248,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Arcana]\nHahahaha~ You have waited long!!\nBeautiful sorceress Arcana's surprise airborne monster show!!",
+      "translation" : "[阿爾卡納]\n哈哈哈哈~ 你們等很久了吧！！\n美麗的魔女阿爾卡納的空中魔物表演秀！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 253,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nWha...what show?",
+      "translation" : "[混沌]\n什……什麼表演？"
+    },
+    {
+      "kind" : "message",
+      "line" : 257,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Arcana]\nNow... Let us get started! Gremlins~!!\nIt's PARTY TIME~!!",
+      "translation" : "[阿爾卡納]\n好了……讓我們開始吧！小鬼們~！！\n派對時間到~！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 262,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Guard]\nCap..Captain! This is serious!\nGremlins are all over the ship!!",
+      "translation" : "[衛兵]\n船……船長！情況很嚴重！\n小鬼們已經遍佈整艘飛空艇了！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 267,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nWhat?! These are Gremlins?!\nYou bastards!! Come down from there now!!",
+      "translation" : "[船長 費爾洛克]\n什麼？！這些是小鬼？！\n你們這群混蛋！！快從上面下來！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Iris]\nCaptain. There is no need to be so agitated.\nGremlins are just monsters that tinker with machines. Rather...",
+      "translation" : "[艾莉絲]\n船長。不必如此激動。\n小鬼只是喜歡搗鼓機器的魔物。而且……"
+    },
+    {
+      "kind" : "message",
+      "line" : 277,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nYou don't know what you're talking about!!\nWe're at an altitude of 8000!! Even a minor malfunction could lead to a deadly crash!",
+      "translation" : "[船長 費爾洛克]\n你根本不懂！！\n我們現在在8000米的高空！！哪怕是一點小小的故障都可能導致墜機！"
+    },
+    {
+      "kind" : "message",
+      "line" : 282,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Guard]\nArgh!! Rear engine number 1!!\n...This is serious! They are heading towards the engine room! We have to protect the Rune Engine!!",
+      "translation" : "[衛兵]\n啊！！1號後引擎！！\n……情況很嚴重！它們正朝引擎室衝去！我們必須保護符文引擎！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nDamn it... Where did I put my weapon...\nHey humans!! Block that nuisance while I go to the captain's room to look for my weapon!!",
+      "translation" : "[船長 費爾洛克]\n該死……我把武器放哪了……\n喂，人類！！你們先擋住這些麻煩的傢伙，我去船長室找武器！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nWe have to especially stop them from getting to the Rune Engine!! If that is destroyed the ship can no longer fly!!",
+      "translation" : "[船長 費爾洛克]\n我們必須特別阻止它們接近符文引擎！！如果符文引擎被毀，飛空艇就無法繼續飛行了！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nDamn... if only I had my weapon...",
+      "translation" : "[船長 費爾洛克]\n該死……要是我有武器就好了……"
+    },
+    {
+      "kind" : "message",
+      "line" : 299,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nIris!! Let's go down to the engine room! Loki and Fenrir, hold this place!",
+      "translation" : "[混沌]\n艾莉絲！！我們去引擎室！洛基和芬里爾，守住這裡！"
+    },
+    {
+      "kind" : "message",
+      "line" : 303,
+      "npc" : "Captain Ferlock",
+      "state" : "needs_review",
+      "text" : "[Iris]\nOh...okay! Alright... Let's go!!",
+      "translation" : "[艾莉絲]\n哦……好的！好吧……我們走！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 398,
+      "npc" : "Traveling Knight",
+      "state" : "needs_review",
+      "text" : "[Traveling Knight]\nWhat are these things?\nShould I cut them all down? ...No it is not enough money for me to be involved...",
+      "translation" : "[遊歷的騎士]\n這些是什麼東西？\n我要把它們全部砍倒嗎？……不，為了這點錢我可不想捲入其中……"
+    },
+    {
+      "kind" : "message",
+      "line" : 407,
+      "npc" : "Passed out Drunkard",
+      "state" : "needs_review",
+      "text" : "[Passed out Drunkard]\nUgh... Getting drunk... hiccup\n....Snore...Zzz",
+      "translation" : "[醉倒的酒鬼]\n唔……喝醉啦……嗝\n……呼……呼……"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Wealthy man at a meal",
+      "state" : "needs_review",
+      "text" : "[Wealthy man at a meal]\nWha... what are these monsters?!\nHow dare you interrupt my precious meal time! Guard! Where are you!",
+      "translation" : "[用餐的富人]\n什……什麼魔物？！\n竟敢打擾我寶貴的用餐時間！衛兵！你們在哪！"
+    },
+    {
+      "kind" : "message",
+      "line" : 423,
+      "npc" : "Free Riding Bard",
+      "state" : "needs_review",
+      "text" : "[Free Riding Bard]\nWhoa... Gorgeous~ Fantastic~\nEven the exploding ship is incredible~ Whoa~",
+      "translation" : "[搭便車的詩人]\n哇……好壯觀~ 太精彩了~\n連飛空艇爆炸都這麼不可思議~ 哇~"
+    },
+    {
+      "kind" : "message",
+      "line" : 430,
+      "npc" : "Airship Cafeteria Manager",
+      "state" : "needs_review",
+      "text" : "[Airship Cafeteria Manager]\nThey might look menacing but those monsters are also customers to my cafeteria.\nWhat would you like monster customer?",
+      "translation" : "[飛空艇餐廳經理]\n它們看起來可能很兇，但對我來說它們也是餐廳的顧客。\n請問魔物顧客您想點什麼？"
+    },
+    {
+      "kind" : "message",
+      "line" : 434,
+      "npc" : "Airship Cafeteria Manager",
+      "state" : "needs_review",
+      "text" : "[Airship Cafeteria Manager]\nAh... Argh! Help me!!",
+      "translation" : "[飛空艇餐廳經理]\n啊……啊！救命！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 440,
+      "npc" : "Gambling Spirit",
+      "state" : "needs_review",
+      "text" : "[Gambling Spirit]\nHey! Don't touch my cards!\nOff with your hands and neck!",
+      "translation" : "[賭博之魂]\n嘿！別碰我的牌！\n把你的手和脖子都給我砍下來！"
+    },
+    {
+      "kind" : "message",
+      "line" : 444,
+      "npc" : "Gambling Spirit",
+      "state" : "needs_review",
+      "text" : "[Gambling Spirit]\nHuh..?!\nI was just getting a feel for this and these monsters show up?! Are you trying to steal my money because I won a little? Huh?!",
+      "translation" : "[賭博之魂]\n什……什麼？！\n我剛開始摸牌，這些魔物就出現了？！難道是因為我贏了一點，你們就想搶我的錢嗎？哼？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 511,
+      "npc" : "Airship Crew",
+      "state" : "needs_review",
+      "text" : "[Airship Crew]\nThis is the entrance to the engine room. Stop them from getting in!",
+      "translation" : "[飛空艇船員]\n這裡是引擎室的入口。阻止它們進來！"
+    },
+    {
+      "kind" : "message",
+      "line" : 517,
+      "npc" : "Airship Crew",
+      "state" : "needs_review",
+      "text" : "[Airship Crew]\nDamn... There are too many of them! The engine room could get overrun!!",
+      "translation" : "[飛空艇船員]\n該死……它們太多了！引擎室要被攻陷了！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 523,
+      "npc" : "King's Escort",
+      "state" : "needs_review",
+      "text" : "[King's Escort]\nWe must not waken our sleeping King no matter what happens!",
+      "translation" : "[國王的護衛]\n無論發生什麼，都絕不能吵醒正在熟睡的國王！"
+    },
+    {
+      "kind" : "message",
+      "line" : 530,
+      "npc" : "Tourist",
+      "placeholders" : [
+        "strnpcinfo(1)"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\n....Snore...Zzz",
+      "translation" : "[{0}]\n……呼……呼……"
+    },
+    {
+      "kind" : "message",
+      "line" : 543,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nDamn... They have already reached this far! Thanks to you the Rune Engine was defended.",
+      "translation" : "[混沌]\n該死……它們已經追到這裡了！多虧了你，符文引擎才得以保全。"
+    },
+    {
+      "kind" : "message",
+      "line" : 547,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Iris]\nUh...oh!! There's a gremlin heading towards the engine room!!",
+      "translation" : "[艾莉絲]\n呃……啊！！有一隻小鬼正朝引擎室跑去！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 551,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Chaos]\n.....!! We have to stop him!!",
+      "translation" : "[混沌]\n……！！我們必須阻止它！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 555,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Gremlin]\nSqueak..!!",
+      "translation" : "[小鬼]\n吱……！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 567,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "- Pop! Pop pop!",
+      "translation" : "- 砰！砰砰！"
+    },
+    {
+      "kind" : "message",
+      "line" : 570,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Iris]\nEeek!!",
+      "translation" : "[艾莉絲]\n呀！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 574,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Crew Member]\nArgh! The Rune Engine!! The engine room has exploded!! Fire suppression team! Put out the fire!!",
+      "translation" : "[船員]\n啊！符文引擎！！引擎室爆炸了！！消防隊！快滅火！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 578,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nDamn it!! It's dangerous here! Let's get out of here first! Iris, hurry!!",
+      "translation" : "[混沌]\n該死！！這裡太危險了！先撤出去！艾莉絲，快！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 665,
+      "npc" : "Traveling Knight",
+      "state" : "needs_review",
+      "text" : "[Traveling Knight]\nAh.. Argh!!\nIt's going to explode! Have to go over... I have to go over to that Airship on the other side!!",
+      "translation" : "[遊歷的騎士]\n啊……啊！！\n要爆炸了！得過去……我必須去對面那艘飛空艇！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 672,
+      "npc" : "Free Riding Bard",
+      "state" : "needs_review",
+      "text" : "[Free Riding Bard]\nWhoa... Gorgeous~ Fantastic~\nEven the exploding ship is incredible~ Whoa~",
+      "translation" : "[搭便車的詩人]\n哇……好壯觀~ 太精彩了~\n連飛空艇爆炸都這麼不可思議~ 哇~"
+    },
+    {
+      "kind" : "message",
+      "line" : 679,
+      "npc" : "Gambling Spirit",
+      "state" : "needs_review",
+      "text" : "[Gambling Spirit]\nWhat is this? Fire?\nAhhhhhh~",
+      "translation" : "[賭博之魂]\n這是什麼？火？\n啊啊啊啊~"
+    },
+    {
+      "kind" : "message",
+      "line" : 686,
+      "npc" : "Airship Cafeteria Manager",
+      "state" : "needs_review",
+      "text" : "[Airship Cafeteria Manager]\nIs this ship.. going to fall..\nHowever I will share fate with this ship. This ship and I are one!",
+      "translation" : "[飛空艇餐廳經理]\n這艘船……要墜毀了嗎……\n無論如何，我將與這艘船共存亡。我與這艘船是一體的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 690,
+      "npc" : "Airship Cafeteria Manager",
+      "state" : "needs_review",
+      "text" : "[Airship Cafeteria Manager]\nAh... Argh! Help me!!",
+      "translation" : "[飛空艇餐廳經理]\n啊……啊！救命！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 739,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\n...These bastards just keep coming.",
+      "translation" : "[芬里爾]\n……這群混蛋沒完沒了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 743,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[?????]\nAs expected. Our intuition wasn't wrong. It was fruitful to have followed the wave of evil and come this far.",
+      "translation" : "[?????]\n果然如此。我們的直覺沒有錯。追隨邪惡的波動來到這裡，真是值得。"
+    },
+    {
+      "kind" : "message",
+      "line" : 747,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Iris]\n...?? Who goes there!!",
+      "translation" : "[艾莉絲]\n……？？是誰在那裡！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[?????]\nLet me introduce...",
+      "translation" : "[?????]\n請允許我們自我介紹..."
+    },
+    {
+      "kind" : "message",
+      "line" : 754,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[?????]\nShiva! Basara! Laksmi!\nWe are the invincible Rangers!",
+      "translation" : "[?????]\n溼婆！婆娑羅！拉克什米！\n我們是無敵的遊俠！"
+    },
+    {
+      "kind" : "message",
+      "line" : 759,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Guardian Heroines]\nGuardian Heroines!!",
+      "translation" : "[守護女英雄]\n守護女英雄！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 763,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Chaos]\n......",
+      "translation" : "[混沌]\n……"
+    },
+    {
+      "kind" : "message",
+      "line" : 767,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\n......",
+      "translation" : "[芬里爾]\n......"
+    },
+    {
+      "kind" : "message",
+      "line" : 771,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Shiva]\nHm? What's with the reaction? Everybody is kind of a lukewarm... Was it too much?",
+      "translation" : "[溼婆]\n嗯？怎麼這個反應？大家好像都挺冷淡的...是不是太誇張了？"
+    },
+    {
+      "kind" : "message",
+      "line" : 774,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Basara]\nHm, no, no. Everybody is just captivated by our great entrance.",
+      "translation" : "[婆娑羅]\n嗯，不不不。大家只是被我們華麗的登場迷住了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 777,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Laksmi]\nRight, right. This much production for a hero's entrance is a bit too much!!",
+      "translation" : "[拉克什米]\n沒錯沒錯。作為英雄的登場，這點排場還是太少了！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 781,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Iris]\nPu....\nPuhahahahahahahahaha",
+      "translation" : "[艾莉絲]\n噗....\n噗哈哈哈哈哈哈哈哈哈"
+    },
+    {
+      "kind" : "message",
+      "line" : 785,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Iris]\nWhat? Who are these idiots?!\nJust look at their clothes!!\nAre those stage costumes? Are they celebrities and not heroes?",
+      "translation" : "[艾莉絲]\n什麼？這些白痴是誰？！\n看看她們穿的衣服！！\n那是舞臺服裝嗎？她們是明星而不是英雄嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 791,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Shiva]\nHumph. You don't know what you're talking about!\nDo you know how much these clothes cost? That is what's wrong with people who are dull to the latest fashion~",
+      "translation" : "[溼婆]\n哼。你根本不懂！\n你知道這些衣服多少錢嗎？這就是不懂最新時尚的人的毛病~"
+    },
+    {
+      "kind" : "message",
+      "line" : 795,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Basara]\nYou guys! This isn't the time to be chatting like this! Let's root out the wave of evil!!",
+      "translation" : "[婆娑羅]\n你們！現在不是閒聊的時候！讓我們剷除邪惡的波動吧！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Shiva]\nRoger, Basara! Let's end it with a swift attack!!\nHuuma Metal Shuriken!! Hiyah!",
+      "translation" : "[溼婆]\n收到，婆娑羅！讓我們用迅捷的攻擊結束這一切吧！！\n飛鏢！！嗨呀！"
+    },
+    {
+      "kind" : "message",
+      "line" : 803,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "- Pop! Pop pop!",
+      "translation" : "- 砰！砰砰！"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Iris]\nWhat, what are they... Absolute morons...",
+      "translation" : "[艾莉絲]\n什麼，她們在幹什麼... 絕對的白痴..."
+    },
+    {
+      "kind" : "message",
+      "line" : 811,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Arcana]\nOh? Gee!\nAn unexpected ally?\nThis could turn out to be a fun party~",
+      "translation" : "[阿爾卡納]\n哦？哎呀！\n意想不到的盟友？\n這可能會變成一場有趣的隊伍~"
+    },
+    {
+      "kind" : "message",
+      "line" : 817,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\nWait!\nIt would be better to end this party now... What is this? Did Freyja send you?",
+      "translation" : "[芬里爾]\n等等！\n現在結束這場隊伍比較好... 這是什麼？是弗蕾雅派你們來的嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 822,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Arcana]\nOh. You have no fear.\nHow dare a mere lowly human say Freyja's name.",
+      "translation" : "[阿爾卡納]\n哦。你竟然毫不畏懼。\n區區低賤的人類，竟敢直呼弗蕾雅的名諱。"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\nAs expected. You are Freyja's pawn?",
+      "translation" : "[芬里爾]\n果然。你是弗蕾雅的棋子？"
+    },
+    {
+      "kind" : "message",
+      "line" : 831,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Arcana]\n...Careful. If you keep going on like that...\nYou will receive a divine punishment!",
+      "translation" : "[阿爾卡納]\n...小心。如果你繼續這樣下去...\n你將受到神罰！"
+    },
+    {
+      "kind" : "message",
+      "line" : 837,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\n...!!",
+      "translation" : "[芬里爾]\n...!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 841,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Arcana]\nOkay~ I will show you something good. Something to cool your heads.",
+      "translation" : "[阿爾卡納]\n好吧~ 我會給你看點好東西。讓你冷靜一下。"
+    },
+    {
+      "kind" : "message",
+      "line" : 845,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\nCould it be... Wyvern's Breath?!!",
+      "translation" : "[芬里爾]\n難道說...是雙足飛龍的吐息？！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 849,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Arcana]\nB.I.N.G.O. ~",
+      "translation" : "[阿爾卡納]\n賓果~"
+    },
+    {
+      "kind" : "message",
+      "line" : 853,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Wyvern]\nWooooo..!!",
+      "translation" : "[雙足飛龍]\n嗚哇哇哇..！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 857,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\nNo... no!! The ship!!",
+      "translation" : "[芬里爾]\n不...不！！船！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 863,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "- Boom!!!",
+      "translation" : "- 轟隆！！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 866,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\n...?! Loki!!",
+      "translation" : "[芬里爾]\n...？！洛基！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Loki]\nHm...\nMy new clothes are ruined...",
+      "translation" : "[洛基]\n嗯...\n我的新衣服弄髒了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 875,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Arcana]\nOoh.. you threw back Wyvern's Breath... an unexpected outcome. But can you withstand this one?",
+      "translation" : "[阿爾卡納]\n哦...你竟然把雙足飛龍的吐息吐了回去...真是出乎意料的結果。不過，你能承受住這一招嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 879,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Wyvern]\nWooooo..!!",
+      "translation" : "[雙足飛龍]\n嗚哇哇哇..！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 883,
+      "npc" : "Fenrir",
+      "state" : "needs_review",
+      "text" : "[Loki]\nBothersome pests...\nYou! I will face one while you face the other...",
+      "translation" : "[洛基]\n討厭的小鬼...\n你！我來對付一個，你去對付另一個..."
+    },
+    {
+      "kind" : "message",
+      "line" : 921,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Gremlins]\nSqueak... Kooar~!!",
+      "translation" : "[小鬼]\n吱吱...庫阿~！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 925,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Iris]\nEek! There are still more of these!!",
+      "translation" : "[艾莉絲]\n呀！還有這麼多！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 929,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Captain Felrock]\nFound it! My weapon! Hehehehe",
+      "translation" : "[船長 費爾洛克]\n找到了！我的武器！嘿嘿嘿嘿"
+    },
+    {
+      "kind" : "message",
+      "line" : 932,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nI will show you what happens when you attack my ship!",
+      "translation" : "[船長 費爾洛克]\n我要讓你們看看攻擊我的船會有什麼下場！"
+    },
+    {
+      "kind" : "message",
+      "line" : 935,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nI will end this with my specially manufactured Exodus Joker XIII Doom Rifle!",
+      "translation" : "[船長 費爾洛克]\n我要用我特製的“出埃及記”十三號末日步槍結束這一切！"
+    },
+    {
+      "kind" : "message",
+      "line" : 939,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Iris]\nJust.. just a minute...\nYou're really going to fire that?!",
+      "translation" : "[艾莉絲]\n等...等一下...\n你真的要開火嗎？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 944,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nOf course!\nHehehehehehehehe!",
+      "translation" : "[船長 費爾洛克]\n當然！\n嘿嘿嘿嘿嘿嘿嘿！"
+    },
+    {
+      "kind" : "message",
+      "line" : 950,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "- Bang! Babang! Bang!",
+      "translation" : "- 砰！砰砰！砰！"
+    },
+    {
+      "kind" : "message",
+      "line" : 952,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Gremlins]\nUrrrk!!",
+      "translation" : "[小鬼]\n嗚嚕嚕！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 956,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nMuhahahaha!\nHow do you like that!!\nMuhahahahaha",
+      "translation" : "[船長 費爾洛克]\n穆哈哈哈哈哈哈！\n感覺如何！！\n穆哈哈哈哈哈哈"
+    },
+    {
+      "kind" : "message",
+      "line" : 963,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "- Bang! Babang! Bang!",
+      "translation" : "- 砰！砰砰！砰！"
+    },
+    {
+      "kind" : "message",
+      "line" : 965,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Guard]\nArrgh... the en..engine!",
+      "translation" : "[衛兵]\n啊...引擎...引擎！"
+    },
+    {
+      "kind" : "message",
+      "line" : 969,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nWhat?! Those bastards are breaking the engine more?!! You're making me angry!!",
+      "translation" : "[船長 費爾洛克]\n什麼？！那群混蛋還在破壞引擎？！\n你們讓我很生氣！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 973,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Iris]\nYou're the one who did it!!!",
+      "translation" : "[艾莉絲]\n明明是你自己乾的！！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 978,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "- Bang! Babang! Bang!",
+      "translation" : "- 砰！砰砰！砰！"
+    },
+    {
+      "kind" : "message",
+      "line" : 981,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nBastards! Die! Die!\nMuhahahaha!!",
+      "translation" : "[船長 費爾洛克]\n混蛋！去死！去死！\n穆哈哈哈哈哈哈！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 986,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Iris]\nThe way things are going the ship will crash because of that reindeer captain!! Stop that captain!! I'm scared...",
+      "translation" : "[艾莉絲]\n照這樣下去，船會因為那個馴鹿船長而墜毀的！！\n快阻止那個船長！！我好害怕..."
+    },
+    {
+      "kind" : "message",
+      "line" : 989,
+      "npc" : "Iris",
+      "state" : "needs_review",
+      "text" : "[Iris]\nHow can we stop him? ...Maybe he will regain his senses if you beat him just enough to not die... I'm counting on you!!",
+      "translation" : "[艾莉絲]\n我們要怎麼阻止他？...也許只要把他打暈，讓他恢復理智...就足夠了...拜託你了！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1028,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nYou get out of here now!! This ship is in danger!!",
+      "translation" : "[混沌]\n你們現在立刻離開！！\n這艘船正處於危險之中！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1033,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nOops.. I was shooting like crazy. Looks like a lot of the Gremlins are gone? Hehehehe",
+      "translation" : "[船長 費爾洛克]\n哎呀...我剛才亂射了一通。\n看起來很多小鬼都沒了？嘿嘿嘿嘿"
+    },
+    {
+      "kind" : "message",
+      "line" : 1037,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Iris]\nThe ship is damaged because of you!!",
+      "translation" : "[艾莉絲]\n船是因為你才受損的！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1041,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Arcana]\nDoing our work for us. Hm, I guess this is enough?",
+      "translation" : "[阿爾卡納]\n替我們做了工作。嗯，看來這樣就夠了？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1044,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Arcana]\nThen it's time for us to slip away...",
+      "translation" : "[阿爾卡納]\n那麼，是時候撤退了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1048,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Laksmi]\nOh? ... There, Basara. Looks like they are retreating.",
+      "translation" : "[拉克什米]\n哦？...婆娑羅，看來他們正在撤退。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1051,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Basara]\nOf course!! They got a sense of our skill!! Hohoho~",
+      "translation" : "[婆娑羅]\n那是當然！！他們感受到了我們的實力！！呼呼呼~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1054,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Basara]\nOn that note, one last Huuma Metal Shuriken!!",
+      "translation" : "[婆娑羅]\n趁此機會，最後一發虎紋金屬飛鏢！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1063,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "- Babang! Bang!",
+      "translation" : "- 砰砰！砰！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1066,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\nEek!! Looks like we'll fall!!\n...too short... Can't reach...",
+      "translation" : "[芬里爾]\n呀！！我們要掉下去了！！\n...太短了...夠不到..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1070,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\n...is this the end?\n...A place I can't reach like before...\nChaos...",
+      "translation" : "[芬里爾]\n...這就是結局嗎？\n...像以前一樣，一個我夠不到的地方...\n混沌..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1076,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Loki]\n...Grab on",
+      "translation" : "[洛基]\n...抓住"
+    },
+    {
+      "kind" : "message",
+      "line" : 1080,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Fenrir]\nLo...ki?",
+      "translation" : "[芬里爾]\n洛...基？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1084,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Loki]\nWhat are you looking at? Here, come up...",
+      "translation" : "[洛基]\n看什麼看？上來，快..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1088,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Guard]\nAll engines confirmed halted!!\nWe have to quickly escape!",
+      "translation" : "[衛兵]\n所有引擎已確認停止！！\n我們必須迅速撤離！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1093,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nDamn...\nEverybody get on the lifeboats!\nBoard the lifeboats with the passengers being first priority! Release the lifeboats that have completed boarding!",
+      "translation" : "[船長 費爾洛克]\n該死...\n所有人上救生艇！\n乘客優先登艇！登滿的救生艇立即放艇！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1099,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nWait!! There are still people remaining!!",
+      "translation" : "[混沌]\n等等！！還有人在上面！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1103,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nThere's nothing we can do!\nIf we keep stalling the rest will be in danger!! It's too bad but we have done all we can!",
+      "translation" : "[船長 費爾洛克]\n我們無能為力了！\n再拖延下去，剩下的人也會陷入危險！！雖然很遺憾，但我們已經盡力了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1108,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nBut the remaining people are precious lives as well! You're going to leave them?!! Huh?!!",
+      "translation" : "[混沌]\n但剩下的人也是寶貴的生命啊！你要拋棄他們嗎？！什麼？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1112,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Captain Ferlock]\nYeah, you are right...\nOn that note I will leave you to take care of the aftermath. I'm off!!",
+      "translation" : "[船長 費爾洛克]\n是啊，你說得對...\n既然如此，善後工作就交給你了。我走了！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1118,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nHey! Where are you going! Argh!!\nI will catch you. I will kill you!!",
+      "translation" : "[混沌]\n喂！你要去哪！可惡！！\n我會追上你的。我會殺了你！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1123,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Basara]\nIt is not the time for us to be facing these trivial Gremlins.",
+      "translation" : "[婆娑羅]\n現在不是對付這些小鬼的時候。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1126,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Basara]\nI can feel a larger wave of evil.\nLet's leave these little ones to them. Let's go!",
+      "translation" : "[婆娑羅]\n我感覺到一股更強大的邪惡氣息。\n把這些小傢伙交給她們吧。走！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1130,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Laksmi&Shiva]\nRoger!! Ranger Flying form!!",
+      "translation" : "[拉克什米與溼婆]\n收到！！遊俠飛行形態！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1134,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Iris]\nHuh? Hey!!\nWhere do you think you're going after destroying the ship?!",
+      "translation" : "[艾莉絲]\n什麼？喂！！\n你毀了船就想跑嗎？！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1138,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Iris]\nIf I catch you next time I will make sure you die!! Be nervous!! You got it?! Be ready, you yokels!!",
+      "translation" : "[艾莉絲]\n下次讓我抓住你，我絕對要你死！！給我小心點！！聽到了嗎？！鄉巴佬們！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1142,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Guardian Heroines]\n...yokels? (Rage)",
+      "translation" : "[守護女英雄]\n...鄉巴佬？（憤怒）"
+    },
+    {
+      "kind" : "message",
+      "line" : 1145,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Guardian Heroines]\nThe ones who denigrate and condemn the path of righteousness... We should mercilessly hand down righteous judgment, right?",
+      "translation" : "[守護女英雄]\n詆譭並譴責正義之道的人...我們應該毫不留情地給予正義的審判，對吧？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1148,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Guardian Heroines]\nDie villains!! Huuma Metal Shuriken!!",
+      "translation" : "[守護女英雄]\n去死吧，惡棍們！！華麗金屬飛鏢！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1153,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "- Bang! Babang! Bang!",
+      "translation" : "- 砰！砰砰！砰！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1156,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Iris]\nEeek!!",
+      "translation" : "[艾莉絲]\n呀！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1160,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Guardian Heroines]\nAhahahahaha!!\nServes you right~!! Let's go!!",
+      "translation" : "[守護女英雄]\n啊哈哈哈哈！！\n活該~！！走！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1165,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nIris!! Come here!!\nLet's quickly find Fenrir and Loki and get out of here!!",
+      "translation" : "[混沌]\n艾莉絲！！過來！！\n我們快去找芬里爾和洛基，然後離開這裡！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1170,
+      "npc" : "Chaos",
+      "state" : "needs_review",
+      "text" : "[Chaos]\nYou get out of here now!! This ship is in danger!!",
+      "translation" : "[混沌]\n你們現在立刻離開！！\n這艘船正處於危險之中！！"
+    }
+  ]
+}

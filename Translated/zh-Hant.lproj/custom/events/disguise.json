@@ -1,0 +1,270 @@
+{
+  "file" : "npc/custom/events/disguise.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nSelect an option.",
+      "translation" : "{0}\n請選擇一個選項。"
+    },
+    {
+      "kind" : "option",
+      "line" : 30,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "Turn ON/OFF Event",
+      "translation" : "開啟/關閉活動"
+    },
+    {
+      "kind" : "option",
+      "line" : 30,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "Event Settings",
+      "translation" : "活動設定"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nThe Event is currently: [^0000FFON^000000]\nWould you like to turn it OFF?",
+      "translation" : "{0}\n當前活動狀態：[^0000FF開啟^000000]\n您確定要關閉它嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nThe Event is currently: [^FF0000OFF^000000]\nWould you like to turn it ON?",
+      "translation" : "{0}\n當前活動狀態：[^FF0000關閉^000000]\n您確定要開啟它嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 40,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 40,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nPick a setting to modify.",
+      "translation" : "{0}\n請選擇要修改的設定。"
+    },
+    {
+      "kind" : "option",
+      "line" : 58,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "Monster Display",
+      "translation" : "魔物顯示"
+    },
+    {
+      "kind" : "option",
+      "line" : 58,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "Number of Rounds",
+      "translation" : "回合數"
+    },
+    {
+      "kind" : "option",
+      "line" : 58,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "Prize Settings",
+      "translation" : "獎勵設定"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nChoose a disguise rule.",
+      "translation" : "{0}\n請選擇變裝規則。"
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$",
+        ".@r$[.Rule-1]"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nThe Disguise Rule has been set:\n  > ^0055FF{1}^000000",
+      "translation" : "{0}\n變裝規則已設定為：\n  > ^0055FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 70,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$",
+        ".Rounds"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nInput the number of rounds you want the event to last.\nCurrent number: [^0000FF{1}^000000]",
+      "translation" : "{0}\n請輸入您希望活動持續的回合數。\n當前回合數：[^0000FF{1}^000000]"
+    },
+    {
+      "kind" : "message",
+      "line" : 76,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$",
+        ".Rounds"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nThe number of rounds has been changed to {1}.",
+      "translation" : "{0}\n回合數已改為{1}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 80,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$",
+        "getitemname(.Prize)",
+        ".Prize"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nInput the Item ID of the prize given each round.\nCurrent item: [^0000FF{1}^000000] (ID #{2})",
+      "translation" : "{0}\n請輸入每輪獎勵物品的物品ID。\n當前物品：[^0000FF{1}^000000] (ID #{2})"
+    },
+    {
+      "kind" : "message",
+      "line" : 85,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nThat item does not exist. Please try again.",
+      "translation" : "{0}\n該物品不存在。請重試。"
+    },
+    {
+      "kind" : "message",
+      "line" : 85,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nInput the amount to be given.",
+      "translation" : "{0}\n請輸入發放的數量。"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nThat amount is invalid. Using default amount of 1.",
+      "translation" : "{0}\n數量無效，將使用預設數量1。"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$",
+        ".PrizeAmt",
+        "getitemname(.Prize)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nThe Prize has been changed successfully.\nPrize: {1}x [^0000FF{2}^000000]",
+      "translation" : "{0}\n獎勵設定已成功更改。\n獎勵：{1}x [^0000FF{2}^000000]"
+    },
+    {
+      "kind" : "message",
+      "line" : 99,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$",
+        ".PrizeAmt",
+        "getitemname(.Prize)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nThe Prize has been changed successfully.\nPrize: {1}x [^0000FF{2}^000000]",
+      "translation" : "{0}\n獎勵設定已成功更改。\n獎勵：{1}x [^0000FF{2}^000000]"
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nWelcome.\nHow may I be of assistance?",
+      "translation" : "{0}\n歡迎光臨。\n有什麼可以幫您的嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 112,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "Information",
+      "translation" : "瞭解規則"
+    },
+    {
+      "kind" : "option",
+      "line" : 112,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "Nothing, just passing through.",
+      "translation" : "沒什麼，只是路過"
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "Disguise Event",
+      "placeholders" : [
+        ".@n$"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nThis event is quite simple.\nAt the start of the event, I will\ndisguise myself as a random\nmonster. You have to shout\nthat monster's name out loud.",
+      "translation" : "{0}\n這個活動很簡單。\n活動開始時，我會隨機變成一種魔物，您需要大聲喊出它的名字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "If you are correct, you will receive\na prize. If not, keep trying!\nThat's all that there is to this event.",
+      "translation" : "答對就能獲得獎勵，答錯就繼續試！\n活動就是這麼簡單。"
+    }
+  ]
+}

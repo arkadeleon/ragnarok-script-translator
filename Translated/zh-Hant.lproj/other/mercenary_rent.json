@@ -1,0 +1,405 @@
+{
+  "file" : "npc/other/mercenary_rent.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Mercenary Manager",
+      "placeholders" : [
+        ".@name$[.@type]"
+      ],
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nWelcome to the\n{0} Mercenary Guild.\nWhat can I do for you?",
+      "translation" : "[傭兵管理員]\n歡迎來到{0}傭兵公會。\n有什麼需要幫忙的嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 37,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "Hire Mercenary",
+      "translation" : "僱用傭兵"
+    },
+    {
+      "kind" : "option",
+      "line" : 37,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "Mercenary Info",
+      "translation" : "傭兵資訊"
+    },
+    {
+      "kind" : "option",
+      "line" : 37,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "Nothing",
+      "translation" : "沒什麼"
+    },
+    {
+      "kind" : "option",
+      "line" : 37,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "10th Grade Mercenaries",
+      "translation" : "10階傭兵"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Mercenary Manager",
+      "placeholders" : [
+        ".@name$[.@type]"
+      ],
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nYou want to hire a\n{0} Mercenary?\nWhich Grade were you\ninterested in hiring?",
+      "translation" : "[傭兵管理員]\n想僱用一名{0}傭兵嗎？\n你想僱用哪一階的？"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Mercenary Manager",
+      "placeholders" : [
+        "callfunc(\"F_GetNumSuffix\",.@Grade)",
+        ".@name$[.@type]",
+        ".@BaseLevel",
+        ".@ZenyCost"
+      ],
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nSo you want to hire a {0}\nGrade {1} Mercenary?\nYou need to have attained\nBase Level {2} or higher, and\nmust pay the {3},000 zeny fee.",
+      "translation" : "[傭兵管理員]\n你想僱用{0}階{1}傭兵嗎？\n你的基本等級必須達到{2}級，並支付{3},000 Zeny的費用。"
+    },
+    {
+      "kind" : "option",
+      "line" : 60,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 60,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nOh, really? Well, now\nmight not be a good time\nfor you to consider hiring\na Mercenary, but please feel\nfree to come back if your\nneeds change. Thank you~",
+      "translation" : "[傭兵管理員]\n哦，是嗎？\n看來你現在還不打算僱用傭兵。\n以後有需要，隨時回來找我。\n謝謝~"
+    },
+    {
+      "kind" : "message",
+      "line" : 70,
+      "npc" : "Mercenary Manager",
+      "placeholders" : [
+        ".@name$[.@type]",
+        ".@FaithCost"
+      ],
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nOh... Your Loyalty rating\nwith the {0} Mercenary\nGuild isn't high enough to\nhire this Mercenary. Please\ncome back after you earn\n{1} or more Loyalty with us.",
+      "translation" : "[傭兵管理員]\n哦...你在{0}傭兵公會的忠誠度不足，無法僱用這名傭兵。\n等忠誠度達到{1}後再來吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 79,
+      "npc" : "Mercenary Manager",
+      "placeholders" : [
+        ".@BaseLevel"
+      ],
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nI'm sorry, but your Base\nLevel isn't high enough\nto hire this Mercenary.\nPlease come back to me\nonce you reach Base Level {0}.",
+      "translation" : "[傭兵管理員]\n抱歉，你的基本等級不足，無法僱用這名傭兵。\n達到基本等級{0}級後，再來找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 87,
+      "npc" : "Mercenary Manager",
+      "placeholders" : [
+        ".@ZenyCost"
+      ],
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nI'm sorry, but you\ndon't have enough zeny\nto hire this Mercenary.\nThe hiring fee is {0},000 zeny.",
+      "translation" : "[傭兵管理員]\n抱歉，你的Zeny不夠，無法僱用這名傭兵。\n僱用費用為{0},000 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nGreat! Our Mercenaries\nare sincere and devoted\nto protecting their clients.\nSummoned Mercenaries will\noffer their support to you for\n30 minutes. Take care now.",
+      "translation" : "[傭兵管理員]\n太好了！\n我們的傭兵忠誠盡責，會全心保護僱主。\n召喚後，他們會協助你戰鬥30分鐘。\n保重。"
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nMercenaries are soldiers\nthat will fight at your side\non the battlefield, but there\nare a few terms and conditions\nyou must fulfill to hire them.",
+      "translation" : "[傭兵管理員]\n傭兵是與你在戰場上並肩作戰計程車兵。\n不過，僱用他們需要滿足一些條件。"
+    },
+    {
+      "kind" : "message",
+      "line" : 113,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nYou must fulfill a level\nrequirement and pay a zeny\nfee to hire a Mercenary.\nHigher grade Mercenaries\nwill also require that you\nbuild a Loyalty rating with us.",
+      "translation" : "[傭兵管理員]\n僱用傭兵需要達到規定等級，並支付Zeny。\n僱用高階傭兵，還需要在我們公會積累一定的忠誠度。"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nMercenary contracts can't be\ntransferred to other people,\nand we only allow a 5 Base Level difference between the Mercenary\nand client so you can't hire one much stronger than you.",
+      "translation" : "[傭兵管理員]\n傭兵契約不能轉讓給他人。\n傭兵和僱主的基本等級差距只允許在5級以內，所以你不能僱用比自己強太多的傭兵。"
+    },
+    {
+      "kind" : "message",
+      "line" : 127,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nWell, you can figure out the\ndetails when you actually form\na contract with one of our\nMercenaries, and receive\nthe Summon Scroll that will\ncall a Mercenary to your side.",
+      "translation" : "[傭兵管理員]\n簽訂傭兵契約時，你就能瞭解具體細節，並領取一張能將傭兵召喚到身邊的召喚卷軸。"
+    },
+    {
+      "kind" : "message",
+      "line" : 135,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nYou can't give this scroll\nto anyone else, and the\nMercenary will only remain\nwith you for 30 minutes after\nyou summon him. Don't forget\nabout the time limit, okay?",
+      "translation" : "[傭兵管理員]\n卷軸不能交給別人，召喚出的傭兵也只會陪伴你30分鐘。\n記得留意時間限制，好嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 144,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nNo? You didn't need any\nhelp? Well, feel free to\nask me if you have any\nquestions about Mercenaries.",
+      "translation" : "[傭兵管理員]\n哦，不需要幫忙嗎？\n有什麼關於傭兵的問題，隨時來問我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 151,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\n10th Grade Mercenaries are\nthe best we have to offer,\nand we use different criteria\nfor our clients to hire them.\nThere's no zeny fee, but you\nmust have 500 Loyalty.",
+      "translation" : "[傭兵管理員]\n10階傭兵是我們最強的傭兵，僱用條件也有所不同。\n不需要支付Zeny，但忠誠度必須達到500。"
+    },
+    {
+      "kind" : "message",
+      "line" : 159,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nOnce you make a contract\nwith a 10th Grade Mercenary,\nyour Loyalty rating will be\ndecreased by 400. In other\nwords, you pay 400 Loyalty\nto hire a 10th Grade Mercenary.",
+      "translation" : "[傭兵管理員]\n與10階傭兵簽訂契約後，你的忠誠度會減少400。\n也就是說，僱用一名10階傭兵需要消耗400忠誠度。"
+    },
+    {
+      "kind" : "message",
+      "line" : 167,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nYou must also be at\nBase Level 90 or higher to\nhire a 10th Grade Mercenary.\nAre you still interested in\nforming this contract?",
+      "translation" : "[傭兵管理員]\n另外，僱用10階傭兵還需要基本等級達到90級。\n你仍然想簽訂這份契約嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 174,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 174,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nI understand... It takes\nhard work and sacrifice to\neven reach the point where\nyou can hire a 10th Grade\nMercenary. Have you considered\nhiring a lower grade Mercenary?",
+      "translation" : "[傭兵管理員]\n我理解...\n光是達到僱用10階傭兵的條件，就需要付出很多努力和犧牲。\n要不要考慮僱用低階一些的傭兵？"
+    },
+    {
+      "kind" : "message",
+      "line" : 184,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nI'm sorry, but your\nLoyalty rating is too\nlow to hire a 10th Grade\nMercenary. You must have\n500 or more Loyalty to\nform a contract with one.",
+      "translation" : "[傭兵管理員]\n抱歉，你的忠誠度不足，無法僱用10階傭兵。\n忠誠度必須達到500，才能簽訂契約。"
+    },
+    {
+      "kind" : "message",
+      "line" : 193,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nI'm sorry, but you must\nbe at Base Level 90 or\nhigher to form a contract\nwith a 10th Grade Mercenary.",
+      "translation" : "[傭兵管理員]\n抱歉，基本等級必須達到90級，才能與10階傭兵簽訂契約。"
+    },
+    {
+      "kind" : "message",
+      "line" : 200,
+      "npc" : "Mercenary Manager",
+      "state" : "translated",
+      "text" : "[Mercenary Manager]\nCongratulations! It looks\nlike you're planning in taking\non some very dangerous work\nsince you're hiring a 10th\nGrade Mercenary. I wish you\nthe best of luck with him.",
+      "translation" : "[傭兵管理員]\n恭喜！\n既然僱用了10階傭兵，看來你是打算挑戰非常危險的任務了。\n祝你們一切順利。"
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "Mercenary Merchant",
+      "state" : "translated",
+      "text" : "[Mercenary Goods Merchant]\nHello, I sell goods\nthat Mercenaries can\nuse. Is there anything\nin particular that\nyou're looking for?",
+      "translation" : "[傭兵用品商人]\n你好，我出售傭兵專用的物品。\n有什麼特別想買的嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 234,
+      "npc" : "Mercenary Merchant",
+      "placeholders" : [
+        "getitemname(.@item[.@m])",
+        ".@str_cost$"
+      ],
+      "state" : "translated",
+      "text" : "[Mercenary Goods Merchant]\n{0}\neach cost {1} zeny.\nHow many would you like?",
+      "translation" : "[傭兵用品商人]\n{0}每個售價{1} Zeny。\n想買多少？"
+    },
+    {
+      "kind" : "message",
+      "line" : 241,
+      "npc" : "Mercenary Merchant",
+      "state" : "translated",
+      "text" : "[Mercenary Goods Merchant]\nYou changed your mind?\nAlright, feel free to come\nback to me whenever you want\nto buy any Mercenary Potions.",
+      "translation" : "[傭兵用品商人]\n改變主意了嗎？\n沒關係，想買傭兵藥水時，隨時來找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 249,
+      "npc" : "Mercenary Merchant",
+      "state" : "translated",
+      "text" : "[Mercenary Goods Merchant]\nI'm sorry, but you\ncan only buy up to\n10,000 of these potions\nat a time. Please enter\na number from 1 to 10,000.",
+      "translation" : "[傭兵用品商人]\n抱歉，這種藥水一次最多隻能購買10,000瓶。\n請輸入1～10,000之間的數值。"
+    },
+    {
+      "kind" : "message",
+      "line" : 258,
+      "npc" : "Mercenary Merchant",
+      "state" : "translated",
+      "text" : "[Mercenary Goods Merchant]\nI'm sorry, but you don't\nhave enough zeny for this\nmany potions. Well, I'll be\nbe here when you're ready\nto purchase something\nfor your Mercenaries.",
+      "translation" : "[傭兵用品商人]\n抱歉，你的Zeny不夠買這麼多藥水。\n準備好為傭兵購買物品後，再來找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 268,
+      "npc" : "Mercenary Merchant",
+      "state" : "translated",
+      "text" : "[Mercenary Goods Merchant]\nIf I gave you that many\npotions, you wouldn't be\nable to carry them with you.\nPlease come back after\nyou free up some space\nin your Inventory.",
+      "translation" : "[傭兵用品商人]\n這麼多藥水，你可帶不走。\n請先騰出一些物品欄空間，再來購買。"
+    },
+    {
+      "kind" : "message",
+      "line" : 277,
+      "npc" : "Mercenary Merchant",
+      "placeholders" : [
+        "getitemname(.@item[.@m])"
+      ],
+      "state" : "translated",
+      "text" : "[Mercenary Goods Merchant]\nHere's your {0}.\nThank you, and please come\nagain when you need more\npotions for your Mercenaries.",
+      "translation" : "[傭兵用品商人]\n這是你的{0}。\n謝謝，需要更多傭兵藥水時，歡迎再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 277,
+      "npc" : "Mercenary Merchant",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\",.@input,getitemname(.@item[.@m]))"
+      ],
+      "state" : "translated",
+      "text" : "[Mercenary Goods Merchant]\nHere you are, this is exactly\n{0}.\nThank you, and please come\nagain when you need more\npotions for your Mercenaries.",
+      "translation" : "[傭兵用品商人]\n給你，正好是{0}。\n謝謝，需要更多傭兵藥水時，歡迎再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 303,
+      "npc" : "Mercenary_Switch",
+      "state" : "translated",
+      "text" : "[Checker]\nPlease input a password.",
+      "translation" : "[查驗員]\n請輸入密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 307,
+      "npc" : "Mercenary_Switch",
+      "state" : "translated",
+      "text" : "[Checker]\nPlease select.",
+      "translation" : "[查驗員]\n請選擇。"
+    },
+    {
+      "kind" : "message",
+      "line" : 307,
+      "npc" : "Mercenary_Switch",
+      "state" : "translated",
+      "text" : "[Checker]\nError.",
+      "translation" : "[查驗員]\n錯誤。"
+    },
+    {
+      "kind" : "message",
+      "line" : 307,
+      "npc" : "Mercenary_Switch",
+      "state" : "translated",
+      "text" : "[Checker]\nWrong number",
+      "translation" : "[查驗員]\n數值錯誤"
+    },
+    {
+      "kind" : "message",
+      "line" : 307,
+      "npc" : "Mercenary_Switch",
+      "state" : "translated",
+      "text" : "[Checker]",
+      "translation" : "[查驗員]"
+    },
+    {
+      "kind" : "option",
+      "line" : 315,
+      "npc" : "Mercenary_Switch",
+      "state" : "translated",
+      "text" : "Turn off Mercenary NPC",
+      "translation" : "關閉傭兵NPC"
+    },
+    {
+      "kind" : "option",
+      "line" : 315,
+      "npc" : "Mercenary_Switch",
+      "state" : "translated",
+      "text" : "Turn on Mercenary NPC",
+      "translation" : "開啟傭兵NPC"
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Mercenary_Switch",
+      "state" : "translated",
+      "text" : "NPCs are turned off.",
+      "translation" : "NPC已關閉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 322,
+      "npc" : "Mercenary_Switch",
+      "state" : "translated",
+      "text" : "NPCs are turned on.",
+      "translation" : "NPC已開啟。"
+    }
+  ]
+}

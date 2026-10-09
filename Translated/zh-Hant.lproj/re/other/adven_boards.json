@@ -1,0 +1,3927 @@
+{
+  "file" : "npc/re/other/adven_boards.txt",
+  "scripts" : [
+    {
+      "kind" : "option",
+      "line" : 12,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "Look up monsters by floor",
+      "translation" : "按樓層查詢魔物"
+    },
+    {
+      "kind" : "option",
+      "line" : 12,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "Monster Information Retrieval System",
+      "translation" : "怪物資訊檢索系統"
+    },
+    {
+      "kind" : "option",
+      "line" : 12,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 20,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "[Monster Information Retrieval System]\nThis is Monster Information Retrieval System. Information of the monsters that appear in this dungeon can be searched. Enter Monster Name, including spaces, when searching.",
+      "translation" : "[怪物資訊檢索系統]\n這裡是怪物資訊檢索系統。\n可以查詢出現在此迷宮中的魔物資訊。\n搜尋時請輸入魔物名稱（包含空格）。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "[Monster Information Retrieval System]\nNow searching",
+      "translation" : "[怪物資訊檢索系統]\n正在搜尋..."
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "[Monster Information Retrieval System]\nSearch has been completed.\nNow showing the search results.",
+      "translation" : "[怪物資訊檢索系統]\n搜尋完成。\n正在顯示搜尋結果。"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "[Monster Information Retrieval System]\nThere is no information available for that monster.\nPlease check your monster name.",
+      "translation" : "[怪物資訊檢索系統]\n沒有該魔物的資訊。\n請檢查魔物名稱是否正確。"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        "getarg(.@i+1)",
+        ".@element$[ getmonsterinfo(.@mob_id,MOB_ELEMENT) ]",
+        ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]",
+        ".@race$[ getmonsterinfo(.@mob_id,MOB_RACE) ]",
+        "getarg(.@i+2)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : {1}\n- Size : {2}\n- Race : {3}\n--------------------------------^FD8D02\n{4}",
+      "translation" : "[怪物資訊檢索系統]\n- 名稱 : {0}\n- 屬性 : {1}\n- 體型 : {2}\n- 種族 : {3}\n--------------------------------^FD8D02\n{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 52,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "[Monster Information Retrieval System]\nWould you like to search for other monster information?",
+      "translation" : "[怪物資訊檢索系統]\n您要查詢其他魔物資訊嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 55,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "Search",
+      "translation" : "檢視"
+    },
+    {
+      "kind" : "option",
+      "line" : 55,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "[Monster Information Retrieval System]\nMonster search system will now shut down.",
+      "translation" : "[怪物資訊檢索系統]\n魔物搜尋系統即將關閉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "Requested information will appear - There's no problem if it appears",
+      "translation" : "請求的資訊將顯示 - 如果顯示則沒有問題"
+    },
+    {
+      "kind" : "message",
+      "line" : 71,
+      "npc" : "F_AvenBoard",
+      "state" : "needs_review",
+      "text" : "Operation Error.",
+      "translation" : "操作錯誤。"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "F_InfoBoard",
+      "state" : "needs_review",
+      "text" : "[Adventurer Group]\nFor more Information on the monsters\nMonster Information Retrieval System\nMust be used.",
+      "translation" : "[冒險者團體]\n如需瞭解更多魔物資訊\n必須使用\n怪物資訊檢索系統。"
+    },
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ant Hell]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[螞蟻地獄]\n為了讓冒險者能輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集的資訊。\n請向冒險者團體提供資訊線索，以便我們修正資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 103,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ant Hell]\nAnt Hell dungeon is infested with gigantic insects, when one is attacked others may join the fight.",
+      "translation" : "[螞蟻地獄]\n螞蟻地獄迷宮中棲息著巨大的昆蟲，\n當其中一隻被攻擊時，其他昆蟲可能會加入戰鬥。"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Ant Hell B1",
+      "translation" : "螞蟻地獄 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Ant Hell B2",
+      "translation" : "螞蟻地獄 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ant Hell B1]\n------------ Monster ------------\nFamiliar(24)\nAnt Egg(28)\nDeniro(31)\nPiere(32)\nAndre(33)\nVitata(35)\nGiearth(42)\nMaya Purple(81)\n--------------------------------",
+      "translation" : "[螞蟻地獄 B1]\n------------ 魔物 ------------\n使魔(24)\n螞蟻卵(28)\n兵蟻(31)\n工蟻(32)\n白蟻(33)\n黑蟻(35)\n基爾瑟(42)\n狂暴蟻后(81)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Maya Purple? What the hell difference with Maya! Hand who knows--I wonder Grape killing explorer.>",
+      "translation" : "<狂暴蟻后？這和蟻后有什麼區別！誰知道呢——我在想葡萄獵人。>"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ant Hell B2]\n------------ Monster ------------\nFamiliar(24)\nAnt Egg(28)\nDeniro(31)\nPiere(32)\nAndre(33)\nVitata(35)\nGiearth(42)\n--------------------------------",
+      "translation" : "[螞蟻地獄 B2]\n------------ 魔物 ------------\n使魔(24)\n螞蟻卵(28)\n兵蟻(31)\n工蟻(32)\n白蟻(33)\n黑蟻(35)\n基爾瑟(42)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 136,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<The Queen of ants! Boss Monster Maya! I view it's disgusting - huh? Maya did not get two? Okay I got it. Drop the rock! - Maya love grape explorer>",
+      "translation" : "<螞蟻的女王！Boss魔物蟻后！我覺得它很噁心 - 咦？蟻后沒有兩個嗎？好吧我明白了。掉落岩石！ - 蟻后喜歡葡萄獵人>"
+    },
+    {
+      "kind" : "message",
+      "line" : 149,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Geffen Dungeon]\nCaution! Geffen Dungeon consists of 3 levels that are too dangerous for new adventurers. Please provide information tips to the adventurer group to revise the information.\nRecommended for players around level 60~70.",
+      "translation" : "[吉芬地下城]\n注意！吉芬地下城共有3層，對新晉冒險者來說過於危險。請向冒險者團體提供資訊提示，以修正資訊。\n推薦等級60~70的玩家挑戰。"
+    },
+    {
+      "kind" : "message",
+      "line" : 169,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Geffen Dungeon]\nWhich part of the dungeon would you like to read about?",
+      "translation" : "[吉芬地下城]\n您想檢視地下城的哪一部分？"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Geffen Dungeon B1",
+      "translation" : "吉芬地下城 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Geffen Dungeon B2",
+      "translation" : "吉芬地下城 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Geffen Dungeon B3",
+      "translation" : "吉芬地下城 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 173,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Geffen Dungeon B1]\n------------ Monster ------------\nPoison Spore(26)\nPoPoring(30),\nHunter Fly(63)\n--------------------------------",
+      "translation" : "[吉芬地下城 B1]\n------------ 魔物 ------------\n毒魔菇(26)\n波波利(30)\n赤蒼蠅(63)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 184,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Geffen Dungeon B2]\n------------ Monster ------------\nZombie(17)\nDrainliar(47)\nGhoul(61)\nJakk(63)\nNightmare(69)\nOgretooth(114)\n--------------------------------",
+      "translation" : "[吉芬地下城 B2]\n------------ 魔物 ------------\n腐屍(17)\n紅蝙蝠(47)\n綠腐屍(61)\n南瓜先生(63)\n夢魘(69)\n獸牙怪(114)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<This dungeon is home to the rare spawn sword monster Ogretooth.>",
+      "translation" : "<這裡是稀有掉落劍的魔物獸牙怪的棲息地。>"
+    },
+    {
+      "kind" : "message",
+      "line" : 198,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Geffen Dungeon B3]\n------------ Monster ------------\nWhisper(34)\nGhoul(61)\nHunter Fly(63)\nNightmare(69)\nDeviruchi(93)\nMarionette(90)\n--------------------------------",
+      "translation" : "[吉芬地下城 B3]\n------------ 魔物 ------------\n白幽靈(34)\n綠腐屍(61)\n赤蒼蠅(63)\n夢魘(69)\n小惡魔(93)\n傀儡娃娃(90)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 208,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<The home of demonic ponies, cute demons and puppet demons. If you like demons, you should get in here.>",
+      "translation" : "<這裡是惡魔小馬、可愛惡魔和傀儡惡魔的棲息地。如果你喜歡惡魔，就該來這裡。>"
+    },
+    {
+      "kind" : "message",
+      "line" : 220,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim]\nGlast Heim is an enormous dungeon with countless levels. Recommended for adventurers levels 70~130.\n-- Adventurer Group --",
+      "translation" : "[葛拉斯特海姆]\n葛拉斯特海姆是一個擁有無數層級的巨大地下城。推薦等級70~130的冒險者挑戰。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 267,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim]\nThe dungeons consist of several underground levels connected by ancient tunnels. Be prepared for attacks from Undead or demonic monsters within.",
+      "translation" : "[葛拉斯特海姆]\n地下城由通過古代隧道連線的多個地下層級組成。請做好應對不死族或惡魔系魔物攻擊的準備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Indoor",
+      "translation" : "葛拉斯特海姆 內部"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Level B1",
+      "translation" : "葛拉斯特海姆 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Level B2",
+      "translation" : "葛拉斯特海姆 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Chivalry B1",
+      "translation" : "葛拉斯特海姆 騎士團 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Chivalry B2",
+      "translation" : "葛拉斯特海姆 騎士團 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim St. Abbey",
+      "translation" : "葛拉斯特海姆 修道院"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Churchyard",
+      "translation" : "葛拉斯特海姆 教堂墓地"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Cave B1",
+      "translation" : "葛拉斯特海姆 洞穴 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Cave B2",
+      "translation" : "葛拉斯特海姆 洞穴 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glast Heim Underprison B1",
+      "translation" : "葛拉斯特海姆 地下監獄 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glast Heim Underprison B2",
+      "translation" : "葛拉斯特海姆 地下監獄 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Culvert B1",
+      "translation" : "葛拉斯特海姆 下水道 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Culvert B2",
+      "translation" : "葛拉斯特海姆 下水道 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Culvert B3",
+      "translation" : "葛拉斯特海姆 下水道 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Culvert B4",
+      "translation" : "葛拉斯特海姆 下水道 B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Glastheim Staircase",
+      "translation" : "葛拉斯特海姆 階梯"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Indoor]\n------------ Monster ------------\nSageworm(70)\nRideword(74)\nDark Frame(76)\nMarionette(90)\nAlice(100)\nWanderer(120)\n--------------------------------",
+      "translation" : "[葛拉斯特海姆 內部]\n------------ 魔物 ------------\n智慧蠕蟲(70)\n飛行魔書(74)\n鏡妖(76)\n傀儡娃娃(90)\n愛麗絲(100)\n浪姬舞者(120)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Level B1]\n------------ Monster ------------\nWhisper(34)\nSageworm(70)\nRideword(74)\nDark Frame(76)\nOwl Duke(92)\nAlice(100)\nCarat(103)\nOwl Baron(120)\n--------------------------------\nMiddle 6 o'clock - Level B2\nMiddle 9 o'clock, 3 o'clock, Big 1 o'clock - Under Prison B1",
+      "translation" : "[葛拉斯特海姆 B1]\n------------ 魔物 ------------\n白幽靈(34)\n智慧蠕蟲(70)\n飛行魔書(74)\n鏡妖(76)\n鶚梟首領(92)\n愛麗絲(100)\n卡拉特小丑(103)\n鶚梟男爵(120)\n--------------------------------\n中間 6點鐘方向 - B2\n中間 9點鐘方向、3點鐘方向、大鐘 1點鐘方向 - 地下監獄 B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 301,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Level B2]\n------------ Monster ------------\nMimic(59)\nChimera(70)\nRideword(74)\nEvil Druid(80)\nRaydric Archer(82)\nAlice(100)\nOgretooth(114)\nRaydric(115)\nKhalitzburg(118)\nWanderer(120)\nAbysmal Knight(122)\nMysteltainn(130)\n--------------------------------\nBig 6 o'clock - Level B1",
+      "translation" : "[葛拉斯特海姆 B2]\n------------ 魔物 ------------\n邪惡箱(59)\n凱美拉(70)\n飛行魔書(74)\n暗神官(80)\n幽靈弓箭手(82)\n愛麗絲(100)\n獸牙怪(114)\n幽靈劍士(115)\n卡利斯格(118)\n浪姬舞者(120)\n深淵騎士(122)\n弒神者(130)\n--------------------------------\n大鐘 6點鐘方向 - B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 320,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Chivalry B1]\n------------ Monster ------------\nGiantWhisper(66)\nRideword(74)\nRaydric Archer(82)\nAlice(100)\nRaydric(115)\nKhalitzburg(118)\nAbysmal Knight(122)\n--------------------------------\nBig 9 o'clock, 12 o'clock, 3 o'clock - Chivalry B2\nMiddle 2 o'clock - Culvert B2",
+      "translation" : "[葛拉斯特海姆 騎士團 B1]\n------------ 魔物 ------------\n巨型白幽靈(66)\n飛行魔書(74)\n幽靈弓箭手(82)\n愛麗絲(100)\n幽靈劍士(115)\n卡利斯格(118)\n深淵騎士(122)\n--------------------------------\n大鐘 9點鐘方向、12點鐘方向、3點鐘方向 - 騎士團 B2\n中間 2點鐘方向 - 下水道 B2"
+    },
+    {
+      "kind" : "message",
+      "line" : 335,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Chivalry B2]\n------------ Monster ------------\nRaydric Archer(82)\nAlice(100)\nRaydric(115)\nBloody Knight(116)\nKhalitzburg(118)\nAbysmal Knight(122)\nMysteltainn(130)\n--------------------------------\nBig 9 o'clock, 12 o'clock, 3 o'clock - Chivalry B1",
+      "translation" : "[葛拉斯特海姆 騎士團 B2]\n------------ 魔物 ------------\n幽靈弓箭手(82)\n愛麗絲(100)\n幽靈劍士(115)\n血腥騎士(116)\n卡利斯格(118)\n深淵騎士(122)\n弒神者(130)\n--------------------------------\n大鐘 9點鐘方向、12點鐘方向、3點鐘方向 - 騎士團 B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 349,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim St. Abbey]\n------------ Monster ------------\nMimic(56)\nGhoul(61)\nWraith(77)\nEvil Druid(80)\nDark Illusion(96)\nDark Priest(98)\n--------------------------------\nBig 11 o'clock, 5 o'clock - Churchyard",
+      "translation" : "[葛拉斯特海姆 修道院]\n------------ 魔物 ------------\n邪惡箱(56)\n綠腐屍(61)\n惡靈(77)\n暗神官(80)\n迷幻之王(96)\n暗黑祭司(98)\n--------------------------------\n大鐘 11點鐘方向、5點鐘方向 - 教堂墓地"
+    },
+    {
+      "kind" : "message",
+      "line" : 362,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Churchyard]\n------------ Monster ------------\nZombie(17)\nMimic(56)\nGhoul(61)\nHunter Fly(63)\nWraith(77)\nEvil Druid(80)\nDark Lord(96)MVP\n--------------------------------\nBig 12 o'clock, 6 o'clock - St. Abbey\nBig 9 o'clock - Culvert B2",
+      "translation" : "[葛拉斯特海姆 教堂墓地]\n------------ 魔物 ------------\n腐屍(17)\n邪惡箱(56)\n綠腐屍(61)\n赤蒼蠅(63)\n惡靈(77)\n暗神官(80)\n暗黑之王(96)MVP\n--------------------------------\n大鐘 12點鐘方向、6點鐘方向 - 修道院\n大鐘 9點鐘方向 - 下水道 B2"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Dark Lord is quite tall. Dark Illusion is also tall. ... Damn.. - Short Explorer Grape>",
+      "translation" : "<暗黑之王相當高大。迷幻之王也很高。... 該死.. - 矮小的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 379,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Cave B1]\n------------ Monster ------------\nSting(104)\nArclouze(107)\n--------------------------------\nBig 11 o'clock - Culvert B4\nBig 5 o'clock - Cave B2",
+      "translation" : "[葛拉斯特海姆 洞穴 B1]\n------------ 魔物 ------------\n史汀(104)\n卷甲蟲(107)\n--------------------------------\n大鐘 11點鐘方向 - 下水道 B4\n大鐘 5點鐘方向 - 洞穴 B2"
+    },
+    {
+      "kind" : "message",
+      "line" : 389,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Cave B2]\n------------ Monster ------------\nGargoyle(100)\nMajoruros(107)\n--------------------------------\nBig 2 o'clock - Cave B1",
+      "translation" : "[葛拉斯特海姆 洞穴 B2]\n------------ 魔物 ------------\n蝙蝠弓箭手(100)\n狂暴米諾斯(107)\n--------------------------------\n大鐘 2點鐘方向 - 洞穴 B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 398,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glast Heim Underprison B1]\n------------ Monster ------------\nHunter Fly(63)\nZombie Prisoner(89)\nInjustice(95)\nRybio(98)\n--------------------------------\nBig 1 o'clock - Under Prison B2\nBig 8 o'clock - Level B1",
+      "translation" : "[葛拉斯特海姆 地下監獄 B1]\n------------ 魔物 ------------\n赤蒼蠅(63)\n腐屍戰俘(89)\n邪惡使者(95)\n裡比奧(98)\n--------------------------------\n大鐘 1點鐘方向 - 地下監獄 B2\n大鐘 8點鐘方向 - B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 410,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glast Heim Underprison B2]\n------------ Monster ------------\nHunter Fly(63)\nCramp(82)\nSkel Prisoner(91)\nInjustice(95)\nRybio(98)\nPhendark(102)\nZealotus(105)\n--------------------------------\nBig 11 o'clock - Culvert B1\nBig 5 o'clock - Under Prison B1",
+      "translation" : "[葛拉斯特海姆 地下監獄 B2]\n------------ 魔物 ------------\n赤蒼蠅(63)\n藍鼠(82)\n骷髏戰俘(91)\n邪惡使者(95)\n裡比奧(98)\n芬達克(102)\n澤洛圖斯(105)\n--------------------------------\n大鐘 11點鐘方向 - 下水道 B1\n大鐘 5點鐘方向 - 地下監獄 B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 425,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Culvert B1]\n------------ Monster ------------\nWhisper(34)\nGargoyle(100)\nArclouze(107)\n--------------------------------\nBig 1 o'clock - Under Prison B2\nBig 8 o'clock - Culvert B2",
+      "translation" : "[葛拉斯特海姆 下水道 B1]\n------------ 魔物 ------------\n白幽靈(34)\n蝙蝠弓箭手(100)\n卷甲蟲(107)\n--------------------------------\n大鐘 1點鐘方向 - 地下監獄 B2\n大鐘 8點鐘方向 - 下水道 B2"
+    },
+    {
+      "kind" : "message",
+      "line" : 436,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Culvert B2]\n------------ Monster ------------\nCramp(82)\nGargoyle(100)\n--------------------------------\nBig 11 o'clock - Culvert B1\nBig 1 o'clock - Culvert B3\nBig 3 o'clock - Staircase Dungeon\nBig 5 o'clock - Chivalry B1\nBig 7 o'clock - Under Prison B2\nBig 10 o'clock - Churchyard",
+      "translation" : "[葛拉斯特海姆 下水道 B2]\n------------ 魔物 ------------\n藍鼠(82)\n蝙蝠弓箭手(100)\n--------------------------------\n大鐘 11點鐘方向 - 下水道 B1\n大鐘 1點鐘方向 - 下水道 B3\n大鐘 3點鐘方向 - 樓梯密穴\n大鐘 5點鐘方向 - 騎士團 B1\n大鐘 7點鐘方向 - 地下監獄 B2\n大鐘 10點鐘方向 - 墓地"
+    },
+    {
+      "kind" : "message",
+      "line" : 450,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Culvert B3]\n------------ Monster ------------\nGargoyle(100)\nSting(104)\n--------------------------------\nBig 12 o'clock - Culvert B2\nBig 7 o'clock - Culvert B4",
+      "translation" : "[葛拉斯特海姆 下水道 B3]\n------------ 魔物 ------------\n蝙蝠弓箭手(100)\n史汀(104)\n--------------------------------\n大鐘 12點鐘方向 - 下水道 B2\n大鐘 7點鐘方向 - 下水道 B4"
+    },
+    {
+      "kind" : "message",
+      "line" : 460,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Culvert B4]\n------------ Monster ------------\nDrainliar(47)\nGargoyle(100)\nAnolian(109)\n--------------------------------\nBig 11 o'clock - Culvert B3\nMiddle 7 o'clock - Cave B1",
+      "translation" : "[葛拉斯特海姆 下水道 B4]\n------------ 魔物 ------------\n紅蝙蝠(47)\n蝙蝠弓箭手(100)\n虎蜥人(109)\n--------------------------------\n大鐘 11點鐘方向 - 下水道 B3\n中間 7點鐘方向 - 洞穴 B1"
+    },
+    {
+      "kind" : "message",
+      "line" : 471,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Glastheim Staircase]\n------------ Monster ------------\nMimic(56)\nWind Ghost(80)\nRaydric Archer(82)\n--------------------------------\nMiddle - Culvert B2\nBig 7 o'clock - Glastheim Field",
+      "translation" : "[葛拉斯特海姆 階梯]\n------------ 魔物 ------------\n邪惡箱(56)\n風魔巫師(80)\n幽靈弓箭手(82)\n--------------------------------\n中間 - 下水道 B2\n大鐘 7點鐘方向 - 葛拉斯特海姆 平原"
+    },
+    {
+      "kind" : "message",
+      "line" : 490,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Magma Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[熔岩地下城]\n為了讓冒險者能夠輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 506,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Magma Dungeon]\nNogg road is a B2 dungeon that houses fierce monsters. Inexperienced adventurer should not enter this place. Furthermore roads within the dungeon are very narrow, so be careful to not cause inconvenience to other players.",
+      "translation" : "[熔岩地下城]\n熔岩地下城 B2 是一個棲息著兇猛魔物的地下城。沒有經驗的冒險者不應進入此地。此外，地下城內的道路非常狹窄，請注意不要給其他玩家造成不便。"
+    },
+    {
+      "kind" : "option",
+      "line" : 510,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Magma Dungeon B1",
+      "translation" : "熔岩地下城 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 510,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Magma Dungeon B2",
+      "translation" : "熔岩地下城 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 510,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 512,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Magma Dungeon B1]\n------------ Monster ------------\nGrizzly(66)\nKaho(98)\nExplosion(100)\nBlazer(101)\nLava Golem(103)\n--------------------------------",
+      "translation" : "[熔岩地下城 B1]\n------------ 魔物 ------------\n暴焰野熊(66)\n卡浩(98)\n爆炎蝙蝠(100)\n火焰妖(101)\n熔岩巨石(103)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 523,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Magma Dungeon B2]\n------------ Monster ------------\nGig(100)\nBlazer(101)\nDiabolic(104)\nDeleter (Sky)(105)\nDeleter (Ground)(105)\nNightmare terror(107)\n--------------------------------",
+      "translation" : "[熔岩地下城 B2]\n------------ 魔物 ------------\n沙漠毒蠍(100)\n火焰妖(101)\n赤焰小惡魔(104)\n七彩地龍 (天空)(105)\n七彩地龍 (地面)(105)\n七彩夢魘(107)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 533,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<B1 is too hot.. B2 is also hot, but not hot as B1~ - Melted Explorer Grape>",
+      "translation" : "<B1 太熱了.. B2 也很熱，但沒有 B1 那麼熱~ - 融化的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 545,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Mjolnir Dead Pit]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[妙勒尼爾死亡之坑]\n為了讓冒險者能夠輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 559,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Mjolnir Dead Pit]\nMjolnir Dead Pit is a dungeon comprised of B3 levels. This place is designed for beginner to intermediate adventurers. Adventurers may want to visit this dungeon to obtain Various ores can be found in this dungeon.",
+      "translation" : "[妙勒尼爾死亡之坑]\n妙勒尼爾死亡之坑是一個由 B3 層組成的地下城。這個地方是為初級到中級冒險者設計的。冒險者可以訪問這個地下城以獲取各種礦石。"
+    },
+    {
+      "kind" : "option",
+      "line" : 563,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Mjolnir Dead Pit B1",
+      "translation" : "妙勒尼爾死亡之坑 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 563,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Mjolnir Dead Pit B2",
+      "translation" : "妙勒尼爾死亡之坑 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 563,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Mjolnir Dead Pit B3",
+      "translation" : "妙勒尼爾死亡之坑 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 563,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 565,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Mjolnir Dead Pit B1]\n------------ Monster ------------\nTarou(22)\nFamiliar(24)\nMartin(39)\n--------------------------------",
+      "translation" : "[妙勒尼爾死亡之坑 B1]\n------------ 魔物 ------------\n白鼠(22)\n使魔(24)\n土撥鼠(39)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 574,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Mjolnir Dead Pit B2]\n------------ Monster ------------\nMartin(39)\nGiearth(42)\nSkel Worker(44)\nDrainliar(47)\n--------------------------------",
+      "translation" : "[妙勒尼爾死亡之坑 B2]\n------------ 魔物 ------------\n土撥鼠(39)\n基爾瑟(42)\n骷髏工人(44)\n紅蝙蝠(47)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 582,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<B2 of the dungeon is practically a labyrinth of tunnels created by Skel Workers. Be careful to not to get lost in the labyrinth. I didn't have any problem, but you might have some. - Expert Navigator Explorer Grape>",
+      "translation" : "<地下城的 B2 層基本上是由骷髏工人挖掘的隧道迷宮。小心不要迷失在迷宮中。我沒有遇到任何問題，但你可能會有。 - 專業導航員 探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 586,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Mjolnir Dead Pit B3]\n------------ Monster ------------\nMartin(39)\nGiearth(42)\nSkel Worker(44)\nMyst(49)\nCramp(82)\n--------------------------------",
+      "translation" : "[妙勒尼爾死亡之坑 B3]\n------------ 魔物 ------------\n土撥鼠(39)\n基爾瑟(42)\n骷髏工人(44)\n麥斯特(49)\n藍鼠(82)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 595,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Monsters regularly surround you in mass numbers. It happens all the time !! I'm glad I brought flywings. Phew ~ - Ragged Explorer Grape>",
+      "translation" : "<魔物經常成群結隊地包圍你。這種情況經常發生！！幸好我帶了飛行翅膀。呼~ - 衣衫襤褸的探險家 葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 607,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Forest of Labyrinth]\nA twisty, turny maze with varying levels of monsters within.\n-- Adventurer Group --",
+      "translation" : "[迷宮森林]\n一個曲折蜿蜒的迷宮，其中棲息著不同等級的魔物。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 651,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Forest of Labyrinth]\nForest of Labyrinth is comprised of B3 floors, where various monsters reside in 1, 2, B3. Be well prepared before venturing to this dungeon.",
+      "translation" : "[迷宮森林]\n迷宮森林由B1、B2、B3三層組成，各層棲息著不同的魔物。在進入該地下城之前，請做好充分準備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Forest of Labyrinth B1",
+      "translation" : "迷宮森林 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Forest of Labyrinth B2",
+      "translation" : "迷宮森林 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Forest of Labyrinth B3",
+      "translation" : "迷宮森林 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 657,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Forest of Labyrinth B1]\n------------ Monster ------------\nPoring(1)\nLunatic(3)\nPupa(4)\nChonchon(5)\nFabre(6)\nRocker(15)\nBoa(18)\nStainer(21)\nCreamy(23)\nCaramel(25)\nBigfoot(29)\nSmokie(29)\nPoPoring(30)\nHorn(32)\nCoco(38)\nYoyo(38)\nMartin(39)\nWolf(45)\nArgos(47)\nSteel Chonchon(48)\nChoco(48)\nSavage(59)\nDustiness(62)\nHunter Fly(63)\nMantis(65)\nSide Winder(70)\nArgiope(75)\nVagabond Wolf(93)\n--------------------------------",
+      "translation" : "[迷宮森林 B1]\n------------ 魔物 ------------\n波利(1)\n瘋兔(3)\n蟲蛹(4)\n蒼蠅(5)\n綠棉蟲(6)\n蝗蟲(15)\n青蛇(18)\n瓢蟲(21)\n克瑞米(23)\n刺蝟蟲(25)\n大腳怪(29)\n狸貓(29)\n波波利(30)\n鍬形蟲(32)\n可可(38)\n溜溜猴(38)\n土撥鼠(39)\n狼(45)\n艾斯蜘蛛(47)\n綠蒼蠅(48)\n巧克猴(48)\n野豬(59)\n獵蠅(63)\n螳螂(65)\n黑蛇(70)\n艾吉歐蜈蚣(75)\n流浪之狼(93)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 691,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Forest of Labyrinth B2]\n------------ Monster ------------\nBigfoot(29)\nPoPoring(30)\nSasquatch(72)\nLeib Olmai(87)\n--------------------------------",
+      "translation" : "[迷宮森林 B2]\n------------ 魔物 ------------\n大腳怪(29)\n波波利(30)\n雪熊(72)\n狂暴大腳熊(87)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 701,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Forest of Labyrinth B3]\n------------ Monster ------------\nVocal(18)\nPoPoring(30)\nEclipse(31)\nMastering(42)\nBaphomet Jr.(57)\nHunter Fly(63)\nMantis(65)\nSide Winder(70)\nStem Worm(84)\nGhostring(90)\nKiller Mantis(91)\nVagabond Wolf(93)\n--------------------------------",
+      "translation" : "[迷宮森林 B3]\n------------ 魔物 ------------\n搖滾蝗蟲(18)\n波波利(30)\n可愛小玉兔(31)\n波利之王(42)\n小巴風特(57)\n赤蒼蠅(63)\n螳螂(65)\n黑蛇(70)\n灰森靈(84)\n幽靈波利(90)\n狂暴螳螂(91)\n流浪之狼(93)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 717,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Looking at all those Baphomet Jr., Don't you think Baphomet is vigorous? No? - Jealous Explorer Grape>",
+      "translation" : "<看著這麼多小巴風特，你不覺得巴風特很健壯嗎？不覺得嗎？ - 嫉妒的探險家 葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 729,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Forest of Labyrinth]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[迷宮森林]\n為了讓冒險者能夠輕鬆地在世界各地旅行，我們公開了從各種冒險者那裡收集到的資訊。請向冒險者團體提供資訊提示，以修訂這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 773,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Forest of Labyrinth]\nForest of Labyrinth is comprised of B3 floors, where various monsters reside in 1, 2, B3. Be well prepared before venturing to this dungeon.",
+      "translation" : "[迷宮森林]\n迷宮森林由B1、B2、B3三層組成，各層棲息著不同的魔物。在進入該地下城之前，請做好充分準備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 777,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Forest of Labyrinth B1",
+      "translation" : "迷宮森林 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 777,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Forest of Labyrinth B2",
+      "translation" : "迷宮森林 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 777,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Forest of Labyrinth B3",
+      "translation" : "迷宮森林 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 777,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 779,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Forest of Labyrinth B1]\n------------ Monster ------------\nPoring(1)\nLunatic(3)\nPupa(4)\nChonchon(5)\nFabre(6)\nRocker(15)\nBoa(18)\nStainer(21)\nCreamy(23)\nCaramel(25)\nBigfoot(29)\nSmokie(29)\nPoPoring(30)\nHorn(32)\nCoco(38)\nYoyo(38)\nMartin(39)\nWolf(45)\nArgos(47)\nSteel Chonchon(48)\nChoco(48)\nSavage(59)\nDustiness(62)\nHunter Fly(63)\nMantis(65)\nSide Winder(70)\nArgiope(75)\nVagabond Wolf(93)\n--------------------------------",
+      "translation" : "[迷宮森林 B1]\n------------ 魔物 ------------\n波利(1)\n瘋兔(3)\n蟲蛹(4)\n蒼蠅(5)\n綠棉蟲(6)\n蝗蟲(15)\n青蛇(18)\n瓢蟲(21)\n克瑞米(23)\n刺蝟蟲(25)\n大腳怪(29)\n狸貓(29)\n波波利(30)\n鍬形蟲(32)\n可可(38)\n溜溜猴(38)\n土撥鼠(39)\n狼(45)\n艾斯蜘蛛(47)\n綠蒼蠅(48)\n巧克猴(48)\n野豬(59)\n獵蠅(63)\n螳螂(65)\n黑蛇(70)\n艾吉歐蜈蚣(75)\n流浪之狼(93)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 813,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Forest of Labyrinth B2]\n------------ Monster ------------\nSmokie(29)\nPoPoring(30)\nSasquatch(72)\nLeib Olmai(87)\n--------------------------------",
+      "translation" : "[迷宮森林 B2]\n------------ 魔物 ------------\n狸貓(29)\n波波利(30)\n雪熊(72)\n狂暴大腳熊(87)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 823,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Forest of Labyrinth B3]\n------------ Monster ------------\nVocal(18)\nPoPoring(30)\nEclipse(31)\nMastering(42)\nBaphomet Jr.(57)\nHunter Fly(63)\nMantis(65)\nSide Winder(70)\nStem Worm(84)\nGhostring(90)\nKiller Mantis(91)\nVagabond Wolf(93)\n--------------------------------",
+      "translation" : "[迷宮森林 B3]\n------------ 魔物 ------------\n搖滾蝗蟲(18)\n波波利(30)\n可愛小玉兔(31)\n波利之王(42)\n小巴風特(57)\n赤蒼蠅(63)\n螳螂(65)\n黑蛇(70)\n灰森靈(84)\n幽靈波利(90)\n狂暴螳螂(91)\n流浪之狼(93)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 839,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Looking at all those Baphomet Jr., Don't you think Baphomet is vigorous? No? - Jealous Explorer Grape>",
+      "translation" : "<看著這麼多小巴風特，你不覺得巴風特很健壯嗎？不覺得嗎？ - 嫉妒的探險家 葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 851,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Sphinx]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[斯芬克斯]\n為了讓冒險者能夠輕鬆地在世界各地旅行，我們公開了從各種冒險者那裡收集到的資訊。請向冒險者團體提供資訊提示，以修訂這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 868,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Sphinx]\nSphinx is comprised of 5 underground floors. This dungeon's difficulty is appropriate for intermediate to expert adventurers. All monsters in this dungeon are aggressive, so adventurers are advised to have a method to escape in emergencies.",
+      "translation" : "[斯芬克斯]\n斯芬克斯由5個地下樓層組成。該地下城的難度適合中級到高階冒險者。該地下城中的所有魔物都具有攻擊性，因此建議冒險者準備緊急逃生手段。"
+    },
+    {
+      "kind" : "option",
+      "line" : 872,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Sphinx B1",
+      "translation" : "斯芬克斯 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 872,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Sphinx B2",
+      "translation" : "斯芬克斯 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 872,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Sphinx B3",
+      "translation" : "斯芬克斯 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 872,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Sphinx B4",
+      "translation" : "斯芬克斯 B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 872,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Sphinx B5",
+      "translation" : "斯芬克斯 B5"
+    },
+    {
+      "kind" : "option",
+      "line" : 872,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 874,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Sphinx B1]\n------------ Monster ------------\nDrainliar(47)\nMatyr(58)\nZerom(70)\nRequiem(71)\n--------------------------------",
+      "translation" : "[斯芬克斯 B1]\n------------ 魔物 ------------\n紅蝙蝠(47)\n黑狐(58)\n傑洛米(70)\n諾可伊(71)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 884,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Sphinx B2]\n------------ Monster ------------\nDrainliar(47)\nMatyr(58)\nZerom(70)\nRequiem(71)\n--------------------------------",
+      "translation" : "[斯芬克斯 B2]\n------------ 魔物 ------------\n紅蝙蝠(47)\n黑狐(58)\n傑洛米(70)\n諾可伊(71)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 894,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Sphinx B3]\n------------ Monster ------------\nMimic(56)\nMatyr(58)\nMarduk(73)\nPasana(79)\n--------------------------------",
+      "translation" : "[斯芬克斯 B3]\n------------ 魔物 ------------\n邪惡箱(56)\n黑狐(58)\n馬爾杜克(73)\n帕莎納(79)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 904,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Sphinx B4]\n------------ Monster ------------\nMimic(56)\nMinorous(58)\nPasana(79)\nAnubis(105)\n--------------------------------",
+      "translation" : "[斯芬克斯 B4]\n------------ 魔物 ------------\n邪惡箱(56)\n米洛斯(58)\n帕莎納(79)\n安畢斯(105)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 914,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Sphinx B5]\n------------ Monster ------------\nMimic(56)\nMatyr(58)\nSide Winder(70)\nPasana(79)\nPharaoh(85)\nAnubis(105)\n--------------------------------",
+      "translation" : "[斯芬克斯 B5]\n------------ 魔物 ------------\n邪惡箱(56)\n黑狐(58)\n黑蛇(70)\n帕莎納(79)\n法老王(85)\n安畢斯(105)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 924,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Selling Pharaoh Mask~ Oops.. Sorry, when I saw Pharaoh, I remembered a bard's farfetched story. - Frozen Explorer Grape>",
+      "translation" : "<出售法老王面具~ 哎呀...抱歉，看到法老王，我就想起了詩人講的那個荒誕不經的故事。 - 冰凍探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 936,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Clock Tower Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[鐘樓地下城]\n為了讓冒險者能夠輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊線索，以便修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 960,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Clock Tower Dungeon]\nClock Tower Dungeon is comprised of B4 ground floors and B4 underground floors. Warp points inside the dungeon are complex, sending adventurers to random locations. Exercise caution to not get lost inside the dungeon.",
+      "translation" : "[鐘樓地下城]\n鐘樓地下城由地上4層和地下4層組成。地下城內的傳送點錯綜複雜，會將冒險者傳送到隨機位置。請務必小心，以免在地下城中迷路。"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Ground Floor B1",
+      "translation" : "地上 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Ground Floor B2",
+      "translation" : "地上 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Ground Floor B3",
+      "translation" : "地上 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Ground Floor B4",
+      "translation" : "地上 B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Underground Floor B1",
+      "translation" : "地下 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Underground Floor B2",
+      "translation" : "地下 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Underground Floor B3",
+      "translation" : "地下 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Underground Floor B4",
+      "translation" : "地下 B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 964,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 966,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Clock Tower Dungeon Ground Floor B1]\n------------ Monster ------------\nRideword(74)\nPunk(82)\nBathory(86)\nTower Keeper(90)\n--------------------------------",
+      "translation" : "[鐘樓地下城 地上 B1]\n------------ 魔物 ------------\n飛行魔書(74)\n朽魔(82)\n巴托里(86)\n守塔人(90)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 976,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Clock Tower Dungeon Ground Floor B2]\n------------ Monster ------------\nMimic(56)\nRideword(74)\nClock(81)\nPunk(82)\nTower Keeper(90)\nElder(92)\n--------------------------------",
+      "translation" : "[鐘樓地下城 地上 B2]\n------------ 魔物 ------------\n邪惡箱(56)\n飛行魔書(74)\n古鐘魔(81)\n朽魔(82)\n守塔人(90)\n長老(92)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Clock Tower Dungeon Ground Floor B3]\n------------ Monster ------------\nMimic(56)\nRideword(74)\nAlarm(88)\nTower Keeper(90)\n--------------------------------",
+      "translation" : "[鐘樓地下城 地上 B3]\n------------ 魔物 ------------\n邪惡箱(56)\n飛行魔書(74)\n鍾怪(88)\n守塔人(90)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 998,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Clock Tower Dungeon Ground Floor B4]\n------------ Monster ------------\nWhisper(34)\nMimic(56)\nRideword(74)\nClock(81)\nAlarm(88)\nTower Keeper(90)\nOwl Duke(92)\nElder(92)\n--------------------------------",
+      "translation" : "[鐘樓地下城 地上 B4]\n------------ 魔物 ------------\n白幽靈(34)\n邪惡箱(56)\n飛行魔書(74)\n古鐘魔(81)\n鍾怪(88)\n守塔人(90)\n鶚梟首領(92)\n長老(92)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1010,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Owl Duke's lightning bolt hurts! - Bankrupt Explorer Grape>",
+      "translation" : "<鶚梟首領的雷擊術很痛！ - 破產探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1014,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Clock Tower Dungeon Underground Floor B1]\n------------ Monster ------------\nDrainliar(47)\nArclouze(107)\n--------------------------------",
+      "translation" : "[鐘樓地下城 地下 B1]\n------------ 魔物 ------------\n紅蝙蝠(47)\n卷甲蟲(107)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1022,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Clock Tower Dungeon Underground Floor B2]\n------------ Monster ------------\nBrilight(71)\nOrc Archer(78)\nHigh Orc(81)\nArclouze(107)\n--------------------------------",
+      "translation" : "[鐘樓地下城 地下 B2]\n------------ 魔物 ------------\n伊特瓢蟲(71)\n獸人弓箭手(78)\n獸人戰士長(81)\n卷甲蟲(107)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1032,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Clock Tower Dungeon Underground Floor B3]\n------------ Monster ------------\nDrainliar(47)\nCramp(82)\nPenomena(85)\n--------------------------------",
+      "translation" : "[鐘樓地下城 地下 B3]\n------------ 魔物 ------------\n紅蝙蝠(47)\n藍鼠(82)\n梅納海葵(85)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1041,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Clock Tower Dungeon Underground Floor B4]\n------------ Monster ------------\nWhisper(34)\nBathory(86)\nJoker(90)\n--------------------------------",
+      "translation" : "[鐘樓地下城 地下 B4]\n------------ 魔物 ------------\n白幽靈(34)\n巴托里(86)\n裘卡(90)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1048,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Bathory.. is it a grandma? girl? it'd be better if it was a girl? Don't you agree? - Starsand hunting Explorer Grape>",
+      "translation" : "<巴托里...是老奶奶嗎？還是女孩？要是女孩就好了，對吧？ - 尋找星星沙的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1060,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Orc Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[獸人地下城]\n為了讓冒險者能輕鬆地在世界各地旅行，我們公開了從各冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1073,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Orc Dungeon]\nOrc Dungeon is comprised of 2 floors. Monsters that appear in this dungeon are not strong individually, but adventurers may be overwhelmed by the number. Holy element weapons will make adventurer's life easier in this dungeon. You can also utilize Priest skill, Aspersio.",
+      "translation" : "[獸人地下城]\n獸人地下城由2層組成。此地下城中出現的魔物單體並不強大，但冒險者可能會被數量壓倒。神聖屬性的武器會讓冒險者在此地下城中更輕鬆。您也可以利用牧師技能，灑水祈福。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1077,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Orc Dungeon B1",
+      "translation" : "獸人地下城 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1077,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Orc Dungeon B2",
+      "translation" : "獸人地下城 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1077,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1079,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Orc Dungeon B1]\n------------ Monster ------------\nFamiliar(24)\nDrainliar(47)\nSteel Chonchon(48)\nOrc Zombie(51)\nOrc Skeleton(53)\n--------------------------------",
+      "translation" : "[獸人地下城 B1]\n------------ 魔物 ------------\n使魔(24)\n紅蝙蝠(47)\n綠蒼蠅(48)\n獸人腐屍(51)\n邪骸獸人(53)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1090,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Orc Dungeon B2]\n------------ Monster ------------\nDrainliar(47)\nSteel Chonchon(48)\nOrc Skeleton(53)\nZenorc(54)\nOrc Archer(78)\n--------------------------------",
+      "translation" : "[獸人地下城 B2]\n------------ 魔物 ------------\n紅蝙蝠(47)\n綠蒼蠅(48)\n邪骸獸人(53)\n茲諾克(54)\n獸人弓箭手(78)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1099,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Why are there so many monsters?? There are way too many... - Irritated Explorer Grape>",
+      "translation" : "<為什麼有這麼多魔物？？數量太多了... - 煩躁的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1111,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Juperos Ruins]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[朱佩羅斯遺蹟]\n為了讓冒險者能輕鬆地在世界各地旅行，我們公開了從各冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1128,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Juperos Ruins]\nJuperos Ruins is comprised to 2 floors that can be accessed normally, and 1 center floor that can only be accessed by completing specific challenges.",
+      "translation" : "[朱佩羅斯遺蹟]\n朱佩羅斯遺蹟由2層可正常進入的樓層，以及1層只能通過完成特定挑戰才能進入的中樞樓層組成。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1132,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Juperos Ruins B1",
+      "translation" : "朱佩羅斯遺蹟 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1132,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Juperos Ruins B2",
+      "translation" : "朱佩羅斯遺蹟 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1132,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Juperos Ruins Center",
+      "translation" : "朱佩羅斯遺蹟 中樞"
+    },
+    {
+      "kind" : "option",
+      "line" : 1132,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1134,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Juperos Ruins B1]\n------------ Monster ------------\nVenatu (Green)(113)\nVenatu (Purple)(113)\nVenatu (Orange)(113)\nVenatu (Blue)(113)\nDimik (Green)(116)\nDimik (Blue)(116)\nDimik (Orange)(116)\nDimik (Red)(116)\n--------------------------------",
+      "translation" : "[朱佩羅斯遺蹟 B1]\n------------ 魔物 ------------\n橘凡娜圖 (綠色)(113)\n橘凡娜圖 (紫色)(113)\n橘凡娜圖 (橙色)(113)\n橘凡娜圖 (藍色)(113)\n冰凍迪靡克 (綠色)(116)\n冰凍迪靡克 (藍色)(116)\n冰凍迪靡克 (橙色)(116)\n冰凍迪靡克 (紅色)(116)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1148,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Juperos Ruins B2]\n------------ Monster ------------\nVenatu (Green)(113)\nVenatu (Purple)(113)\nVenatu (Orange)(113)\nVenatu (Blue)(113)\nApocalipse(121)\n--------------------------------",
+      "translation" : "[朱佩羅斯遺蹟 B2]\n------------ 魔物 ------------\n橘凡娜圖 (綠色)(113)\n橘凡娜圖 (紫色)(113)\n橘凡娜圖 (橙色)(113)\n橘凡娜圖 (藍色)(113)\n末日審判(121)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1159,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Juperos Ruins Center]\n------------ Monster ------------\nVenatu (Green)(113)\nVenatu (Purple)(113)\nVenatu (Orange)(113)\nDimik (Green)(116)\nDimik (Blue)(116)\nDimik (Orange)(116)\nDimik (Red)(116)\nArchdam(119)\n--------------------------------",
+      "translation" : "[朱佩羅斯遺蹟 中樞]\n------------ 魔物 ------------\n橘凡娜圖 (綠色)(113)\n橘凡娜圖 (紫色)(113)\n橘凡娜圖 (橙色)(113)\n冰凍迪靡克 (綠色)(116)\n冰凍迪靡克 (藍色)(116)\n冰凍迪靡克 (橙色)(116)\n冰凍迪靡克 (紅色)(116)\n阿克坦(119)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1171,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Whoever that's reading this! Have you seen MVP monster, Vesper?? I can't understand! How is that a brute? Just how could it be... - Conspiracy suspecting Explorer Grape>",
+      "translation" : "<讀到這段話的人！你見過MVP魔物貝思波嗎？？我完全無法理解！那怎麼能算是個蠻力怪呢？它到底是怎麼做到的... - 懷疑陰謀的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1183,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Izlude Undersea Tunnel]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[依斯魯得海底隧道]\n為了讓冒險者能輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1209,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Izlude Undersea Tunnel]\nByalan Island's Undersea Tunnel is comprised of 6 floors. This dungeon is appropriate for beginners to expert adventurers. Most monsters in this dungeon are water element, therefore having wind element weapons will prove to be helpful.",
+      "translation" : "[依斯魯得海底隧道]\n拜蘭島的海底隧道共有6層。這個副本適合從新手到專家的冒險者。由於這裡的魔物大多具有水屬性，使用風屬性武器會有幫助。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Izlude Undersea Tunnel B1",
+      "translation" : "依斯魯得海底隧道 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Izlude Undersea Tunnel B2",
+      "translation" : "依斯魯得海底隧道 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Izlude Undersea Tunnel B3",
+      "translation" : "依斯魯得海底隧道 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Izlude Undersea Tunnel B4",
+      "translation" : "依斯魯得海底隧道 B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Izlude Undersea Tunnel B5",
+      "translation" : "依斯魯得海底隧道 B5"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Izlude Undersea Tunnel B6",
+      "translation" : "依斯魯得海底隧道 B6"
+    },
+    {
+      "kind" : "option",
+      "line" : 1213,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1215,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Izlude Undersea Tunnel B1]\n------------ Monster ------------\nHydra(34)\nPlankton(40)\nKukre(42)\nMarina(42)\nVadon(45)\n--------------------------------",
+      "translation" : "[依斯魯得海底隧道 B1]\n------------ 魔物 ------------\n海葵(34)\n漂浮蟲(40)\n庫克雷(42)\n瑪麗娜(42)\n螃蟹(45)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1226,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Izlude Undersea Tunnel B2]\n------------ Monster ------------\nHydra(34)\nPlankton(40)\nKukre(42)\nMarina(42)\nVadon(45)\nCornutus(48)\n--------------------------------",
+      "translation" : "[依斯魯得海底隧道 B2]\n------------ 魔物 ------------\n海葵(34)\n漂浮蟲(40)\n庫克雷(42)\n瑪麗娜(42)\n螃蟹(45)\n卡那多斯(48)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1238,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Izlude Undersea Tunnel B3]\n------------ Monster ------------\nHydra(34)\nMarse(47)\nCornutus(48)\nObeaune(53)\nMerman(60)\n--------------------------------",
+      "translation" : "[依斯魯得海底隧道 B3]\n------------ 魔物 ------------\n海葵(34)\n烏賊(47)\n卡那多斯(48)\n人魚(53)\n人魚士兵(60)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1249,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Izlude Undersea Tunnel B4]\n------------ Monster ------------\nHydra(34)\nMarine Sphere(51)\nPhen(52)\nMarc(56)\nSwordfish(57)\nMerman(60)\n--------------------------------",
+      "translation" : "[依斯魯得海底隧道 B4]\n------------ 魔物 ------------\n海葵(34)\n氣泡蟲(51)\n劍魚(52)\n馬克(56)\n異變魚(57)\n人魚士兵(60)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1261,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Izlude Undersea Tunnel B5]\n------------ Monster ------------\nHydra(34)\nMarine Sphere(51)\nSwordfish(57)\nDeviace(60)\nMerman(60)\nStrouf(61)\n--------------------------------",
+      "translation" : "[依斯魯得海底隧道 B5]\n------------ 魔物 ------------\n海葵(34)\n氣泡蟲(51)\n異變魚(57)\n狄奧斯(60)\n人魚士兵(60)\n海神(61)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1271,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Where is this? You don't know? Are you scared? This is definitely underwater, but I can breathe. Did I just grow gills out of nowhere? - Silly Explorer Grape>",
+      "translation" : "<這是哪裡？你不知道嗎？你害怕了嗎？這裡肯定是在水下，但我能呼吸。難道我剛才突然長出了鰓嗎？ - 愚蠢的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1275,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Izlude Undersea Tunnel B6]\n------------ Monster ------------\nLamp Rey(110)\nSquidgitte(113)\nOcto Pot(115)\nKing Kray(117)\n--------------------------------",
+      "translation" : "[依斯魯得海底隧道 B6]\n------------ 魔物 ------------\n燈魚(110)\n小章魚(113)\n章魚腳(115)\n魔鬼大烏賊(117)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1283,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Kraken is a squid? But why does it have octopus legs?! A.. Amazing..? - Visiting Explorer Grape>",
+      "translation" : "<魔鬼大烏賊是烏賊嗎？但它為什麼有章魚腳？！哇...太神奇了...？ - 來訪的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1295,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Toy Factory]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[玩具工廠]\n為了讓冒險者能輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1313,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Toy Factory]\nToy Factory is comprised of 2 floors. Strong monsters sometimes appear within the dungeon. This dungeon is appropriate for leisure adventure experience, however some caution should be exercised.",
+      "translation" : "[玩具工廠]\n玩具工廠共有2層。副本中偶爾會出現強大的魔物。這個副本適合休閒冒險體驗，但請保持一定的警惕。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1317,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Toy Factory B1",
+      "translation" : "玩具工廠 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1317,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Toy Factory B2",
+      "translation" : "玩具工廠 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1317,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1319,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Toy Factory B1]\n------------ Monster ------------\nPoring(1)\nDrops(2)\nPoPoring(30)\nCookie (Green)(35)\nMarin(37)\nCookie (Red)(37)\nMyst Case(39)\nMastering(42)\nChepet(42)\nAngeling(77)\n--------------------------------",
+      "translation" : "[玩具工廠 B1]\n------------ 魔物 ------------\n波波利(1)\n土波利(2)\n綠波利(30)\n綠餅人(35)\n冰波利(37)\n紅餅人(37)\n邪惡禮盒(39)\n波利之王(42)\n魔靈娃娃(42)\n天使波利(77)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1333,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Do you think Porings are cute? Would you change your mind if you met Angeling? It loves harassing people. Be wary of Angeling beginners! Be wary! That's all~ - Orc masked explorer grape>",
+      "translation" : "<你覺得波波利很可愛嗎？如果你遇到天使波利，你的想法可能會改變。它喜歡騷擾別人。新手們小心天使波利！小心！就這樣~ - 戴著獸人面具的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1337,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Toy Factory B2]\n------------ Monster ------------\nCookie (Green)(35)\nCookie (Red)(37)\nMyst Case(39)\nCruiser(41)\n--------------------------------",
+      "translation" : "[玩具工廠 B2]\n------------ 魔物 ------------\n綠餅人(35)\n紅餅人(37)\n邪惡禮盒(39)\n玩具士兵(41)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1345,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<I approached a new monster out of sheer curiosity. I actually witnessed it. Stormy Knight with red nose with christmas stockings on its feet, commandeering cookie monsters!! I might just become its fan. - Thick glove-wearing explorer Grape>",
+      "translation" : "<出於純粹的好奇心，我接近了一隻新魔物。我親眼目睹了它。一隻紅鼻子、腳上穿著聖誕襪的冰暴騎士，正在指揮餅人魔物！！我可能會成為它的粉絲。 - 戴著厚手套的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1357,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Sunken Ship]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[沉船]\n為了讓冒險者能輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1373,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Sunken Ship]\nSunken Ship is not completely submerged in water, allowing access to a total of 2 floors. Despite the size of the map, many monsters appear in this dungeon. Exercise caution inside the dungeon.",
+      "translation" : "[沉船]\n沉船並未完全沉沒在水中，可以進入總共2層。儘管地圖規模不大，但副本中會出現許多魔物。請在副本內保持警惕。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1377,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Sunken Ship B1",
+      "translation" : "沉船 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1377,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Sunken Ship B2",
+      "translation" : "沉船 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1377,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1379,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Sunken Ship B1]\n------------ Monster ------------\nPoison Spore(26)\nHydra(34)\nWhisper(34)\nKukre(42)\nPirate Skeleton(48)\n--------------------------------",
+      "translation" : "[沉船 B1]\n------------ 魔物 ------------\n毒魔菇(26)\n海葵(34)\n白幽靈(34)\n庫克雷(42)\n邪骸海盜(48)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1390,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Sunken Ship B2]\n------------ Monster ------------\nHydra(34)\nWhisper(34)\nKukre(42)\nPirate Skeleton(48)\nMimic(56)\nPenomena(85)\nGhostring(90)\nMarionette(90)\nWanderer(120)\n--------------------------------",
+      "translation" : "[沉船 B2]\n------------ 魔物 ------------\n海葵(34)\n白幽靈(34)\n庫克雷(42)\n邪骸海盜(48)\n邪惡箱(56)\n梅納海葵(85)\n幽靈波利(90)\n傀儡娃娃(90)\n浪姬舞者(120)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1403,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Ghostring runs away when it sees me.. It must be shy. Former captain of this sunken ship is also very rude. Pfft~! - Jealous of Captain's hat, Explorer Grape>",
+      "translation" : "<幽靈波利看到我時會逃跑...它一定是害羞了。這艘沉船的前任船長也很無禮。哼~！ - 嫉妒船長帽子的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1415,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Comodo East Cave, Mao]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[克魔島東洞 茂]\n為了讓冒險者能輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1425,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Comodo East Cave, Mao]\nEast Cave, Mao is a tunnel that leads to Papuchicha Forest. This place is popular for highly sought after cards, Thara Frog and Hydra. Visit this place if you are in dire need of zeny.",
+      "translation" : "[克魔島東洞 茂]\n克魔島東洞 茂是一條通往普勒斯特森林的隧道。這裡因高需求的卡片——達拉蛙和海葵而頗受歡迎。如果你急需Zeny，不妨來這裡看看。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1428,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Comodo East Cave, Mao]\n------------ Monster ------------\nHydra(34)\nThara Frog(40)\nMegalodon(46)\nNereid(98)\n--------------------------------",
+      "translation" : "[克魔島東洞 茂]\n------------ 魔物 ------------\n海葵(34)\n達拉蛙(40)\n邪骸食人魚(46)\n奈利蟲(98)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1436,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Thara Frog.. It's just a frog right? Ew.. It looks hideous.. - Frog loving Explorer Grape>",
+      "translation" : "<達拉蛙...它只是一隻青蛙對吧？嘔...它看起來很醜陋... - 喜愛青蛙的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1444,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Comodo West Cave, Karu]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[克魔島西洞 卡魯]\n為了讓冒險者能輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1455,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Comodo West Cave, Karu]\nThis dungeon introduces Medusa monster that will surely cause you to turn to stone if you look at it in the eyes. There are no other exits in this cave.",
+      "translation" : "[克魔島西洞 卡魯]\n這個副本會出現米杜沙魔物，如果你直視它的眼睛，肯定會變成石頭。這個洞穴沒有其他出口。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1458,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Comodo West Cave, Karu]\n------------ Monster ------------\nMerman(60)\nPest(89)\nNereid(98)\nMedusa(102)\n--------------------------------",
+      "translation" : "[克魔島西洞 卡魯]\n------------ 魔物 ------------\n人魚士兵(60)\n單眼蟲(89)\n奈利蟲(98)\n米杜沙(102)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1466,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Tao Gunka? That monster with huge face? How strong is it? It's weak.. very weak.. Oh!! It might be strong for you.. - Trolling Explorer Grape>",
+      "translation" : "<塔奧群卡？就是那個臉很大的魔物嗎？它很強嗎？很弱...非常弱...哦！！對你來說可能很強... - 愛捉弄人的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1474,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Comodo North Cave, Ruande]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[克魔島北洞 魯安德]\n為了讓冒險者能輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1485,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Comodo North Cave, Ruande]\nAdventurers can reach Umbala by going through Ruande cave. Stalactic Golem monster can only be seen in this cave.",
+      "translation" : "[克魔島北洞 魯安德]\n冒險者可以通過魯安德洞穴前往汶巴拉。鍾乳巨石怪只在這個洞穴出現。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1488,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Comodo North Cave, Ruande]\n------------ Monster ------------\nHydra(34)\nMegalith(65)\nTri Joint(66)\nStalactic Golem(68)\nNereid(98)\n--------------------------------",
+      "translation" : "[克魔島北洞 魯安德]\n------------ 魔物 ------------\n海葵(34)\n邪惡摩艾(65)\n三葉蟲(66)\n鍾乳巨石怪(68)\n奈利蟲(98)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1497,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Stalactic Golem? Phew~ Why did I come here? Ah! That's right I came here to go to Umbala..!! - Passing explorer Grape>",
+      "translation" : "<鍾乳巨石怪？呼~ 我為什麼來這裡？啊！對了，我是來去汶巴拉的..!! - 路過的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1505,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Payon Cave]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[斐揚洞穴]\n為了讓冒險者能輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1533,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Payon Cave]\nPayon Cave is comprised of 5 floors. Most monsters are Undead or Demon. Holy property weapons will prove to be useful in this dungeon.",
+      "translation" : "[斐揚洞穴]\n斐揚洞穴共有5層。大多數魔物是亡靈或惡魔。神聖屬性的武器在這個副本中會很有用。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1537,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Payon Cave B1",
+      "translation" : "斐揚洞穴 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1537,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Payon Cave B2",
+      "translation" : "斐揚洞穴 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1537,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Payon Cave B3",
+      "translation" : "斐揚洞穴 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1537,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Payon Cave B4",
+      "translation" : "斐揚洞穴 B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 1537,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Payon Cave B5",
+      "translation" : "斐揚洞穴 B5"
+    },
+    {
+      "kind" : "option",
+      "line" : 1537,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1539,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Payon Cave B1]\n------------ Monster ------------\nZombie(17)\nFamiliar(24)\nSkeleton(27)\nPoPoring(30)\n--------------------------------",
+      "translation" : "[斐揚洞穴 B1]\n------------ 魔物 ------------\n腐屍(17)\n使魔(24)\n邪骸戰士(27)\n波波利(30)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1549,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Payon Cave B2]\n------------ Monster ------------\nSoldier Skeleton(34)\nDrainliar(47)\nArcher Skeleton(50)\nEggyra(53)\n--------------------------------",
+      "translation" : "[斐揚洞穴 B2]\n------------ 魔物 ------------\n邪骸士兵(34)\n紅蝙蝠(47)\n邪骸弓箭手(50)\n轉轉蛋(53)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1559,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Payon Cave B3]\n------------ Monster ------------\nMandragora(13)\nPoPoring(30)\nSoldier Skeleton(34)\nHydra(34)\nArcher Skeleton(50)\nMunak(58)\nBongun(59)\nNine Tail(72)\n--------------------------------",
+      "translation" : "[斐揚洞穴 B3]\n------------ 魔物 ------------\n曼陀羅魔花(13)\n波波利(30)\n邪骸士兵(34)\n海葵(34)\n邪骸弓箭手(50)\n殭屍(58)\n妖道(59)\n九尾狐(72)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1573,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Payon Cave B4]\n------------ Monster ------------\nMandragora(13)\nHydra(34)\nGreatest General(55)\nMunak(58)\nBongun(59)\nSohee(64)\nGiantWhisper(66)\nNine Tail(72)\n--------------------------------",
+      "translation" : "[斐揚洞穴 B4]\n------------ 魔物 ------------\n曼陀羅魔花(13)\n海葵(34)\n將軍魔碑(55)\n殭屍(58)\n妖道(59)\n鬼女(64)\n巨人低語(66)\n九尾狐(72)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1587,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Payon Cave B5]\n------------ Monster ------------\nArcher Skeleton(50)\nGreatest General(55)\nHorong(66)\nDokebi(68)\nNine Tail(72)\nAm Mut(76)\nSkeleton General(88)\n--------------------------------",
+      "translation" : "[斐揚洞穴 B5]\n------------ 魔物 ------------\n邪骸弓箭手(50)\n將軍魔碑(55)\n鬼火(66)\n土人(68)\n九尾狐(72)\n狂暴小土人(76)\n邪骸戰士長(88)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1598,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<Cat O'Nine Tails wears an underwear, but I'm not wearing one. Hey you over there, don't just watch!! - Extremely embarrassed Explorer Grape>",
+      "translation" : "<九尾狐貓穿著內褲，但我沒穿。喂，那邊的你，別光看著啊！！ - 極度尷尬的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1610,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Pyramid]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[金字塔]\n為了讓冒險者能輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1631,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Pyramid]\nPyramid is comprised of B4 ground floors and B3 underground floors. This dungeon is appropriate for beginner to expert adventurers. Thief Guild is located in underground B1 floor.",
+      "translation" : "[金字塔]\n金字塔由4層地面和3層地下組成。這個副本適合從新手到專家的冒險者。盜賊公會位於地下B1層。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Pyramid Ground Floor B1",
+      "translation" : "金字塔 地上 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Pyramid Ground Floor B2",
+      "translation" : "金字塔 地上 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Pyramid Ground Floor B3",
+      "translation" : "金字塔 地上 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Pyramid Ground Floor B4",
+      "translation" : "金字塔 地上 B4"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Pyramid Underground Floor B2",
+      "translation" : "金字塔 地下 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Pyramid Underground Floor B3",
+      "translation" : "金字塔 地下 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1635,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1637,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Pyramid Ground Floor B1]\n------------ Monster ------------\nFamiliar(24)\nPoPoring(30)\n--------------------------------",
+      "translation" : "[金字塔 地上 B1]\n------------ 魔物 ------------\n使魔(24)\n波波利(30)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1645,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Pyramid Ground Floor B2]\n------------ Monster ------------\nPoPoring(30)\nSoldier Skeleton(34)\nDrainliar(47)\nArcher Skeleton(50)\nMummy(55)\nIsis(59)\n--------------------------------",
+      "translation" : "[金字塔 地上 B2]\n------------ 魔物 ------------\n波波利(30)\n邪骸士兵(34)\n紅蝙蝠(47)\n邪骸弓箭手(50)\n木乃伊(55)\n蛇女伊絲(59)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1657,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Pyramid Ground Floor B3]\n------------ Monster ------------\nDrainliar(47)\nVerit(52)\nMummy(55)\nMimic(56)\nMatyr(58)\n--------------------------------",
+      "translation" : "[金字塔 地上 B3]\n------------ 魔物 ------------\n紅蝙蝠(47)\n畢萊特(52)\n木乃伊(55)\n邪惡箱(56)\n黑狐(58)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1668,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Pyramid Ground Floor B4]\n------------ Monster ------------\nMummy(55)\nMimic(56)\nMatyr(58)\nIsis(59)\nAncient Mummy(114)\n--------------------------------",
+      "translation" : "[金字塔 地上 B4]\n------------ 魔物 ------------\n木乃伊(55)\n邪惡箱(56)\n黑狐(58)\n蛇女伊絲(59)\n狂暴木乃伊(114)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1677,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<King of the pyramid! I should change his bandages. His bandages have turned purple over the ages. He's dangerous? It's ok~ It's ok~ - Bandage carrying Explorer Grape>",
+      "translation" : "<金字塔的國王！我應該幫他換繃帶。他的繃帶因為年代久遠變成了紫色。他很危險嗎？沒事的~ 沒事的~ - 攜帶繃帶的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1681,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Pyramid Underground Floor B2]\n------------ Monster ------------\nVerit(52)\nMummy(55)\nMinorous(58)\n--------------------------------",
+      "translation" : "[金字塔 地下 B2]\n------------ 魔物 ------------\n畢萊特(52)\n木乃伊(55)\n米洛斯(58)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1690,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "[Pyramid Underground Floor B3]\n------------ Monster ------------\nVerit(52)\nMimic(56)\nArclouze(107)\nAncient Mummy(114)\n--------------------------------",
+      "translation" : "[金字塔 地下 B3]\n------------ 魔物 ------------\n畢萊特(52)\n邪惡箱(56)\n卷甲蟲(107)\n狂暴木乃伊(114)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1698,
+      "npc" : "Signposts",
+      "state" : "needs_review",
+      "text" : "<There's an MVP monster that attacks while sitting on its chair. He must have been very lazy. It didn't even move from the spot. That happens to be sometimes. - Lazy Explorer Grape>",
+      "translation" : "<有一隻MVP魔物坐在椅子上攻擊。他一定非常懶散。它甚至沒有從那個位置移動過。這種情況偶爾會發生。 - 懶散的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1712,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Abyss Lake Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[深淵之湖地下城]\n為了讓冒險者能輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊建議，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1730,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Abyss Lake Dungeon]\nAbyss Lake Dungeon is comprised of B3 floors, and monsters in this dungeon are mostly Dragon race. Prepare yourself before venturing into this dungeon.",
+      "translation" : "[深淵之湖地下城]\n深淵之湖地下城由B3層組成，該副本中的魔物大多屬於龍族。請在進入該副本前做好充分準備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1734,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Abyss Lake Dungeon B1",
+      "translation" : "深淵之湖地下城 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1734,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Abyss Lake Dungeon B2",
+      "translation" : "深淵之湖地下城 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1734,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Abyss Lake Dungeon B3",
+      "translation" : "深淵之湖地下城 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1734,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1736,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Abyss Lake Dungeon B1]\n------------ Monster ------------\nMimic(56)\nNovus (Red)(84)\nPenomena(85)\nNovus (Yellow)(90)\nAncient Mimic(112)\nDragon Egg(119)\nFerus (Red)(126)\nFerus (Green)(126)\n--------------------------------",
+      "translation" : "[深淵之湖地下城 B1]\n------------ 魔物 ------------\n邪惡箱(56)\n紅諾博斯(84)\n梅納海葵(85)\n黃諾博斯(90)\n狂暴邪惡箱(112)\n龍蛋(119)\n紅貝勒斯(126)\n綠貝勒斯(126)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1750,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Abyss Lake Dungeon B2]\n------------ Monster ------------\nMimic(56)\nNovus (Red)(84)\nNovus (Yellow)(90)\nAncient Mimic(112)\nDragon Egg(119)\nFerus (Red)(126)\nAcidus (Gold)(130)\nAcidus (Blue)(130)\n--------------------------------",
+      "translation" : "[深淵之湖地下城 B2]\n------------ 魔物 ------------\n邪惡箱(56)\n紅諾博斯(84)\n黃諾博斯(90)\n狂暴邪惡箱(112)\n龍蛋(119)\n紅貝勒斯(126)\n金灰俄希托斯(130)\n藍灰俄希托斯(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1764,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Abyss Lake Dungeon B3]\n------------ Monster ------------\nMimic(56)\nAncient Mimic(112)\nDragon Egg(119)\nHydrolancer(121)\nFerus (Red)(126)\nFerus (Green)(126)\nAcidus (Gold)(130)\nAcidus (Blue)(130)\n--------------------------------",
+      "translation" : "[深淵之湖地下城 B3]\n------------ 魔物 ------------\n邪惡箱(56)\n狂暴邪惡箱(112)\n龍蛋(119)\n三頭龍(121)\n紅貝勒斯(126)\n綠貝勒斯(126)\n金灰俄希托斯(130)\n藍灰俄希托斯(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1776,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Detardeurus is so big!! Doesn't it look strong? If you are not interested, nevermind. - Eager to ride the dragon, Explorer Grape>",
+      "translation" : "<迪塔勒泰晤勒斯好大啊！！看起來很強吧？如果你不感興趣的話，那就當我沒說。 - 渴望騎龍的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1788,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Einbech Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[艾音貝赫地下城]\n為了讓冒險者能夠輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊提示，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1804,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Einbech Dungeon]\nEinbech Dungeon is comprised of 2 floors, and most of the monsters that appear in this dungeon are Formless. Prepare before venturing into this dungeon.",
+      "translation" : "[艾音貝赫地下城]\n艾音貝赫地下城共有2層，其中出現的魔物大多為無屬性。請在進入該地下城前做好準備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1808,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Einbech Dungeon 1f",
+      "translation" : "艾音貝赫地下城 1層"
+    },
+    {
+      "kind" : "option",
+      "line" : 1808,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Einbech Dungeon 2f",
+      "translation" : "艾音貝赫地下城 2層"
+    },
+    {
+      "kind" : "option",
+      "line" : 1808,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1810,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Einbech Dungeon 1f]\n------------ Monster ------------\nPorcellio(85)\nNoxious(87)\nVenomous(87)\nPitman(90)\nWaste Stove(92)\nUngoliant(94)\n--------------------------------",
+      "translation" : "[艾音貝赫地下城 1層]\n------------ 魔物 ------------\n三葉鐵甲蟲(85)\n廢氣魔(87)\n毒液魔(87)\n礦工魔(90)\n廢棄爐灶(92)\n溫古力安特(94)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1822,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Einbech Dungeon 2f]\n------------ Monster ------------\nTeddy Bear(91)\nWaste Stove(92)\nMineral(96)\nObsidian(97)\n--------------------------------",
+      "translation" : "[艾音貝赫地下城 2層]\n------------ 魔物 ------------\n泰迪熊(91)\n廢棄爐灶(92)\n礦石魔(96)\n黑曜石(97)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1830,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<RSX-0806 ... That name is complex. - Intelligent Explorer Grape>",
+      "translation" : "<RSX-0806 ... 這個名字好複雜。 - 聰明的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1842,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ice Cave]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[冰洞]\n為了讓冒險者能夠輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊提示，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1856,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ice Cave]\nIce Cave is comprised of B3 floors, and most monsters within the dungeon are Water element. Prepare before venturing into this dungeon.",
+      "translation" : "[冰洞]\n冰洞共有B3層，其中出現的魔物大多為水屬性。請在進入該地下城前做好準備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1860,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Ice Cave B1",
+      "translation" : "冰洞 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1860,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Ice Cave B2",
+      "translation" : "冰洞 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1860,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Ice Cave B3",
+      "translation" : "冰洞 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1860,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1862,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ice Cave B1]\n------------ Monster ------------\nRoween(95)\nSiroma(98)\nMuscipular(105)\nGazeti(106)\n--------------------------------",
+      "translation" : "[冰洞 B1]\n------------ 魔物 ------------\n土狼(95)\n小雪怪(98)\n邪惡噬人花(105)\n寒冰雕像(106)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1872,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ice Cave B2]\n------------ Monster ------------\nSiroma(98)\nIceicle(100)\nSnowier(103)\nGazeti(106)\nIce Titan(110)\n--------------------------------",
+      "translation" : "[冰洞 B2]\n------------ 魔物 ------------\n小雪怪(98)\n冰錐(100)\n雪怪(103)\n寒冰雕像(106)\n寒冰巨人(110)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1883,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ice Cave B3]\n------------ Monster ------------\nIceicle(100)\nSnowier(103)\nGazeti(106)\nIce Titan(110)\n--------------------------------",
+      "translation" : "[冰洞 B3]\n------------ 魔物 ------------\n冰錐(100)\n雪怪(103)\n寒冰雕像(106)\n寒冰巨人(110)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1891,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Rare monster Ktullanux.. Sigh.. Even it's name is complex.. How would Ktullanux ice shave taste like? - Ice shave hungering Explorer Grape>",
+      "translation" : "<稀有魔物寒冰龍.. 唉.. 連名字都這麼複雜.. 寒冰龍刨冰會是什麼味道呢？ - 渴望冰刨的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1903,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Thor Volcano Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[雷神火山地下城]\n為了讓冒險者能夠輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊提示，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1919,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Thor Volcano Dungeon]\nThor Volcano Dungeon is comprised of B3 floors, and the monsters that appear in this dungeon are mostly Fire element. Prepare before venturing into this dungeon.",
+      "translation" : "[雷神火山地下城]\n雷神火山地下城共有3層，\n出現的魔物大多為火屬性。\n請做好充分準備後再進入地下城。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1923,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Thor Volcano Dungeon B1",
+      "translation" : "雷神火山地下城 B1"
+    },
+    {
+      "kind" : "option",
+      "line" : 1923,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Thor Volcano Dungeon B2",
+      "translation" : "雷神火山地下城 B2"
+    },
+    {
+      "kind" : "option",
+      "line" : 1923,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Thor Volcano Dungeon B3",
+      "translation" : "雷神火山地下城 B3"
+    },
+    {
+      "kind" : "option",
+      "line" : 1923,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1925,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Thor Volcano Dungeon B1]\n------------ Monster ------------\nMagmaring(110)\nImp(129)\nBow Guardian(132)\nSword Guardian(133)\nKasa(135)\nByorgue(135)\nSalamander(138)\n--------------------------------",
+      "translation" : "[雷神火山地下城 B1]\n------------ 魔物 ------------\n熔岩波利(110)\n熔岩魔(129)\n機械狙擊手(132)\n劍士監護人魔物(133)\n不死鳥(135)\n巨魔(135)\n熔岩蜥蜴(138)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1938,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Thor Volcano Dungeon B2]\n------------ Monster ------------\nKaho(98)\nMagmaring(110)\nKnocker(126)\nImp(129)\nBow Guardian(132)\nSword Guardian(133)\nSalamander(138)\n--------------------------------",
+      "translation" : "[雷神火山地下城 B2]\n------------ 魔物 ------------\n卡浩(98)\n熔岩波利(110)\n敲擊者(126)\n熔岩魔(129)\n機械狙擊手(132)\n劍士監護人魔物(133)\n熔岩蜥蜴(138)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1951,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Thor Volcano Dungeon B3]\n------------ Monster ------------\nBow Guardian(132)\nSword Guardian(133)\nKasa(135)\nByorgue(135)\nSalamander(138)\n--------------------------------",
+      "translation" : "[雷神火山地下城 B3]\n------------ 魔物 ------------\n機械狙擊手(132)\n劍士監護人魔物(133)\n不死鳥(135)\n巨魔(135)\n熔岩蜥蜴(138)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1960,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Young explorer~ Why are you here in Thor Volcano Dungeon~ Why are you crying~ Wah~ Wah~ Ifrit is scalding hot~ - Thor Sauna representative explorer Grape>",
+      "translation" : "<年輕的探險家~ 你為什麼會在雷神火山地下城~ 為什麼在哭~ 哇~ 哇~ 伊夫利特好燙~ - 雷神桑拿代表 探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 1972,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Odin Temple]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[奧丁神殿]\n為了讓冒險者能夠輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊提示，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 1990,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Odin Temple]\nOdin Temple is comprised of 3 areas , and most monsters that appear here have fast movement speed. Be prepared to get ambushed by multiple monsters.",
+      "translation" : "[奧丁神殿]\n奧丁神殿由3個區域組成，\n這裡出現的魔物大多移動速度很快。\n請做好被多隻魔物伏擊的準備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1994,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Odin Temple West",
+      "translation" : "奧丁神殿 西側"
+    },
+    {
+      "kind" : "option",
+      "line" : 1994,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Odin Temple South",
+      "translation" : "奧丁神殿 南側"
+    },
+    {
+      "kind" : "option",
+      "line" : 1994,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Odin Temple North",
+      "translation" : "奧丁神殿 北側"
+    },
+    {
+      "kind" : "option",
+      "line" : 1994,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 1996,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Odin Temple West]\n------------ Monster ------------\nBreeze(92)\nPlasma (Blue)(115)\nPlasma (Green)(116)\nPlasma (Purple)(117)\nPlasma (Red)(118)\nPlasma (Yellow)(119)\nSkogul(126)\nFrus(128)\n--------------------------------",
+      "translation" : "[奧丁神殿 西側]\n------------ 魔物 ------------\n微風(92)\n藍色等離子體(115)\n綠色等離子體(116)\n紫色等離子體(117)\n紅色等離子體(118)\n黃色等離子體(119)\n皮影魔(126)\n彩妝皮影魔(128)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2010,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Odin Temple South]\n------------ Monster ------------\nPlasma (Yellow)(119)\nSkogul(126)\nFrus(128)\nSkeggiold (Black)(131)\nSkeggiold (Blue)(131)\nValkyrie(141)\n--------------------------------",
+      "translation" : "[奧丁神殿 南側]\n------------ 魔物 ------------\n黃色等離子體(119)\n皮影魔(126)\n彩妝皮影魔(128)\n黑色褐方體惡魔(131)\n藍色褐方體惡魔(131)\n瓦爾基里(141)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2022,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Odin Temple North]\n------------ Monster ------------\nPlasma (Yellow)(119)\nSkogul(126)\nFrus(128)\nSkeggiold (Black)(131)\nSkeggiold (Blue)(131)\nValkyrie(141)\n--------------------------------",
+      "translation" : "[奧丁神殿 北側]\n------------ 魔物 ------------\n黃色等離子體(119)\n皮影魔(126)\n彩妝皮影魔(128)\n黑色褐方體惡魔(131)\n藍色褐方體惡魔(131)\n瓦爾基里(141)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2032,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Valkyrie Randgris, how I wish to be wrapped around your soft wings - Dreamy explorer Grape>",
+      "translation" : "<蘭特克力斯，我多麼希望能被你那柔軟的翅膀環繞 - 夢幻探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2044,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Starlight Reef]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[星光礁]\n為了讓冒險者能夠輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊提示，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2056,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Starlight Reef]\nStarlight Reef introduces rather weak monsters. Be careful around Red Eruma monsters as it will assist other monsters in its vicinity. Prepare before venturing into this dungeon.",
+      "translation" : "[星光礁]\n星光礁出現的魔物相對較弱。\n但請注意紅海星，它會協助附近的魔物。\n請做好充分準備後再進入地下城。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2060,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Starlight Reef",
+      "translation" : "星光礁"
+    },
+    {
+      "kind" : "option",
+      "line" : 2060,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 2062,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Starlight Reef]\n------------ Monster ------------\nCrab(43)\nShellfish(50)\nAster(50)\nSiorava(87)\nRed Eruma(91)\nWild Rider(95)\n--------------------------------",
+      "translation" : "[星光礁]\n------------ 魔物 ------------\n卡拉蟹(43)\n貝殼魔靈(50)\n海星(50)\n胖胖波利(87)\n紅海星(91)\n野貓騎士(95)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2072,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Wild Rider..? Huh? Is it a cat? Why is a cat riding on a swordfish? - Mounted on picky, explorer Grape>",
+      "translation" : "<野貓騎士..? 咦？是貓嗎？為什麼貓會騎在異變魚上？ - 騎在小雞上的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2083,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Geffenia]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[吉芬尼亞]\n為了讓冒險者能夠輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊提示，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2099,
+      "npc" : "Signpost",
+      "placeholders" : [
+        "charat( strnpcinfo(2),8 )"
+      ],
+      "state" : "needs_review",
+      "text" : "[Geffenia Section {0}]\nAncient Elf's lost city, Geffenia is comprised of 4 sections. Most monsters that appear in this dungeon are strong, so be prepared before you venture into this dungeon.",
+      "translation" : "[吉芬尼亞 第{0}區]\n古代精靈遺失的城市，吉芬尼亞由4個區域組成。此地下城中出現的魔物大多很強，請做好充分準備後再進入。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2103,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Geffenia Section 1",
+      "translation" : "吉芬尼亞 第1區"
+    },
+    {
+      "kind" : "option",
+      "line" : 2103,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Geffenia Section 2",
+      "translation" : "吉芬尼亞 第2區"
+    },
+    {
+      "kind" : "option",
+      "line" : 2103,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Geffenia Section 3",
+      "translation" : "吉芬尼亞 第3區"
+    },
+    {
+      "kind" : "option",
+      "line" : 2103,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Geffenia Section 4",
+      "translation" : "吉芬尼亞 第4區"
+    },
+    {
+      "kind" : "option",
+      "line" : 2103,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 2105,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Geffenia Section 1]\n------------ Monster ------------\nExecutioner(101)\nFalse Angel(105)\nOgretooth(114)\nBloody Knight(116)\nMini Demon(117)\nVioly(118)\nSuccubus(118)\nIncubus(120)\nAbysmal Knight(122)\nMysteltainn(130)\n--------------------------------",
+      "translation" : "[吉芬尼亞 第1區]\n------------ 魔物 ------------\n行刑者(101)\n偽天使(105)\n獸牙怪(114)\n血腥騎士(116)\n狂暴小惡魔(117)\n薇歐莉(118)\n夢魔(118)\n惡魔侍者(120)\n深淵騎士(122)\n弒神者(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2121,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Geffenia Section 2]\n------------ Monster ------------\nExecutioner(101)\nFalse Angel(105)\nOgretooth(114)\nBloody Knight(116)\nMini Demon(117)\nVioly(118)\nSuccubus(118)\nIncubus(120)\nAbysmal Knight(122)\nMysteltainn(130)\n--------------------------------",
+      "translation" : "[吉芬尼亞 第2區]\n------------ 魔物 ------------\n行刑者(101)\n偽天使(105)\n獸牙怪(114)\n血腥騎士(116)\n狂暴小惡魔(117)\n薇歐莉(118)\n夢魔(118)\n惡魔侍者(120)\n深淵騎士(122)\n弒神者(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2137,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Geffenia Section 3]\n------------ Monster ------------\nExecutioner(101)\nFalse Angel(105)\nOgretooth(114)\nBloody Knight(116)\nMini Demon(117)\nVioly(118)\nSuccubus(118)\nIncubus(120)\nAbysmal Knight(122)\nMysteltainn(130)\n--------------------------------",
+      "translation" : "[吉芬尼亞 第3區]\n------------ 魔物 ------------\n行刑者(101)\n偽天使(105)\n獸牙怪(114)\n血腥騎士(116)\n狂暴小惡魔(117)\n薇歐莉(118)\n夢魔(118)\n惡魔侍者(120)\n深淵騎士(122)\n弒神者(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2153,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Geffenia Section 4]\n------------ Monster ------------\nExecutioner(101)\nFalse Angel(105)\nOgretooth(114)\nBloody Knight(116)\nMini Demon(117)\nVioly(118)\nSuccubus(118)\nIncubus(120)\nAbysmal Knight(122)\nMysteltainn(130)\n--------------------------------",
+      "translation" : "[吉芬尼亞 第4區]\n------------ 魔物 ------------\n行刑者(101)\n偽天使(105)\n獸牙怪(114)\n血腥騎士(116)\n狂暴小惡魔(117)\n薇歐莉(118)\n夢魔(118)\n惡魔侍者(120)\n深淵騎士(122)\n弒神者(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2167,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Hey Incubus~ Look at... Ugh... - Embarrassed Explorer Grape>",
+      "translation" : "<嘿，惡魔侍者~ 看看... 呃... - 害羞的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2182,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Nameless Island St. Abbey]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[無名島修道院]\n為了讓冒險者能夠輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊提示，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2197,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Nameless Island St. Abbey]\nNameless Island St. Abbey is comprised of 3 floors, and most monsters that appear in this dungeon are Undead or demon. Prepare before venturing into this dungeon.",
+      "translation" : "[無名島修道院]\n無名島修道院共有3層，此地下城中出現的魔物大多為不死系或惡魔系。請做好充分準備後再進入。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2201,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Nameless Island St. Abbey 1F",
+      "translation" : "無名島修道院 1樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2201,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Nameless Island St. Abbey 2F",
+      "translation" : "無名島修道院 2樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2201,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Nameless Island St. Abbey 3F",
+      "translation" : "無名島修道院 3樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2201,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 2203,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Nameless Island St. Abbey 1F]\n------------ Monster ------------\nGhoul(61)\nHell Poodle(115)\nFlame Skull(121)\nRagged Zombie(123)\nZombie Slaughter(124)\nBanshee(130)\n--------------------------------",
+      "translation" : "[無名島修道院 1樓]\n------------ 魔物 ------------\n綠腐屍(61)\n地獄貴賓犬(115)\n火焰顱骨(121)\n變異殭屍(123)\n殭屍屠戮者(124)\n女妖(130)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2215,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Nameless Island St. Abbey 2F]\n------------ Monster ------------\nFlame Skull(121)\nRagged Zombie(123)\nZombie Slaughter(124)\nNecromancer(133)\n--------------------------------",
+      "translation" : "[無名島修道院 2樓]\n------------ 魔物 ------------\n火焰顱骨(121)\n變異殭屍(123)\n殭屍屠戮者(124)\n亡靈巫師(133)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2223,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Do you know how scary a Bishop can be when it becomes fallen..? Hibram.. I saw it.. - All knowing Explorer Grape>",
+      "translation" : "<你知道墮落的主教有多可怕嗎...？希布拉姆...我看見了... - 全知探索者 葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2227,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Nameless Island St. Abbey 3F]\n------------ Monster ------------\nFlame Skull(121)\nBanshee(130)\nNecromancer(133)\n--------------------------------",
+      "translation" : "[無名島修道院 3樓]\n------------ 魔物 ------------\n火焰顱骨(121)\n女妖(130)\n亡靈巫師(133)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2234,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Beelzebub is not a Steel Chonchon, because Chonchons are weak. ... ... ... Run away! - Fleeing Explorer Grape>",
+      "translation" : "<受詛咒的蠅王 貝雷傑不是綠蒼蠅，因為蒼蠅很弱。... ... ... 快跑！ - 逃跑的探索者 葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2246,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Somatology Laboratory]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[人體實驗室]\n為了讓冒險者能夠輕鬆地在世界各地旅行，我們公開了從各種冒險者那裡收集到的資訊。請向冒險者團體提供資訊提示以修正資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2275,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Somatology Laboratory]\nSomatology Laboratory is comprised of 3 floors, and monsters that appear are mostly Demi-human. These monsters are very powerful so be sure to explore with another adventurer.",
+      "translation" : "[人體實驗室]\n人體實驗室由3層組成，出現的魔物大多是人型魔物。這些魔物非常強大，請務必與其他冒險者一起探索。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2279,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Somatology Laboratory 1F",
+      "translation" : "人體實驗室 1樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2279,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Somatology Laboratory 2F",
+      "translation" : "人體實驗室 2樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2279,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Somatology Laboratory 3F",
+      "translation" : "人體實驗室 3樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2279,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 2281,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Somatology Laboratory 1F]\n------------ Monster ------------\nMetaling(81)\nAnopheles(95)\nRemover(121)\nWickebine Tres(132)\nErrende Ebecee(133)\nLaurell Weinder(133)\nArmeyer Dinze(134)\nKavach Icarus(135)\nGemini-S58(135)\nEgnigem Cenia(136)\n--------------------------------",
+      "translation" : "[人體實驗室 1樓]\n------------ 魔物 ------------\n金屬波利(81)\n瘧蚊(95)\n消防魔(121)\n暗●盜賊(132)\n暗●服事(133)\n暗●魔法師(133)\n暗●商人(134)\n暗●弓箭手(135)\nGemini-S58(135)\n暗●劍士(136)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2297,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Somatology Laboratory 2F]\n------------ Monster ------------\nRemover(121)\nWickebine Tres(132)\nErrende Ebecee(133)\nLaurell Weinder(133)\nArmeyer Dinze(134)\nKavach Icarus(135)\nGemini-S58(135)\nEgnigem Cenia(136)\nEremes Guile(140)\n--------------------------------",
+      "translation" : "[人體實驗室 2樓]\n------------ 魔物 ------------\n消防魔(121)\n暗●盜賊(132)\n暗●服事(133)\n暗●魔法師(133)\n暗●商人(134)\n暗●弓箭手(135)\nGemini-S58(135)\n暗●劍士(136)\n暗●十字刺客(140)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2310,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<There are even places like these.. Conducting experiments on human specimen.. MVP Egnigem Cenia... She's.. - Tearful Explorer Grape>",
+      "translation" : "<竟然有像這樣的地方...對人體標本進行實驗... MVP 暗●劍士...她... - 淚流滿面的探索者 葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2314,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Somatology Laboratory 3F]\n------------ Monster ------------\nEremes Guile(140)\nMargaretha Sorin(140)\nCecil Damon(141)\nKathryne Keyron(141)\nSeyren Windsor(142)\nHoward Alt-Eisen(142)\n--------------------------------",
+      "translation" : "[人體實驗室 3樓]\n------------ 魔物 ------------\n暗●十字刺客(140)\n暗●大主教(140)\n暗●神射手(141)\n暗●超魔導士(141)\n暗●盧恩騎士(142)\n暗●神工匠(142)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2324,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<I've finally reached here.. Who's conducting these experiments.. What did they do to these people? Eremes.. Margaretha.. Cecil.. Kathryne.. Seyren.. Howard.. ... - Extremely tearful explorer Grape>",
+      "translation" : "<我終於來到這裡了...是誰在進行這些實驗...他們對這些人做了什麼？艾倫德...索林...塞西爾...凱瑟琳...塞倫...霍華德... ... - 極度淚流滿面的探索者 葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2336,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Holy Ground\n- High Priest Zhed -",
+      "translation" : "聖地\n- 大祭司 澤德 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 2341,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Holy Ground]\nOnly those that have requested permission from High Priest Zhed may enter this dungeon. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[聖地]\n只有獲得大祭司 澤德許可的人才能進入這個地下城。請向冒險者團體提供資訊提示以修正資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2356,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Holy Ground]\nHoly Ground is comprised of 5 floors, and monsters that appear in this dungeon use magic skills. Prepare before venturing into this dungeon.",
+      "translation" : "[聖地]\n聖地由5層組成，在這個地下城中出現的魔物會使用魔法技能。進入這個地下城前請做好準備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2360,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Holy Ground 1F",
+      "translation" : "聖地 1樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2360,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Holy Ground 2F",
+      "translation" : "聖地 2樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2360,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Holy Ground 3F",
+      "translation" : "聖地 3樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2360,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Holy Ground 4F",
+      "translation" : "聖地 4樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2360,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Holy Ground 5F",
+      "translation" : "聖地 5樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2360,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 2362,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Holy Ground 1F]\n------------ Monster ------------\nGremlin(118)\nBeholder(120)\nHodremlin(122)\nVanberk(123)\nIsilla(124)\n--------------------------------",
+      "translation" : "[聖地 1樓]\n------------ 魔物 ------------\n小鬼(118)\n眼魔(120)\n邪惡妖精(122)\n凡貝爾克(123)\n依斯拉(124)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2373,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Holy Ground 2F]\n------------ Monster ------------\nGremlin(118)\nBeholder(120)\nHodremlin(122)\nVanberk(123)\nIsilla(124)\nSeeker(124)\n--------------------------------",
+      "translation" : "[聖地 2樓]\n------------ 魔物 ------------\n小鬼(118)\n眼魔(120)\n邪惡妖精(122)\n凡貝爾克(123)\n依斯拉(124)\n搜尋者(124)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2385,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Holy Ground 3F]\n------------ Monster ------------\nGremlin(118)\nBeholder(120)\nHodremlin(122)\nSeeker(124)\n--------------------------------",
+      "translation" : "[聖地 3樓]\n------------ 魔物 ------------\n小鬼(118)\n眼魔(120)\n邪惡妖精(122)\n搜尋者(124)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2395,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Holy Ground 4F]\n------------ Monster ------------\nHodremlin(122)\nSeeker(124)\nEchio(126)\nAgav(128)\n--------------------------------",
+      "translation" : "[聖地 4樓]\n------------ 魔物 ------------\n邪惡妖精(122)\n搜尋者(124)\n艾基奧(126)\n阿加波(128)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2405,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Holy Ground 5F]\n------------ Monster ------------\nHodremlin(122)\nIsilla(124)\nSeeker(124)\nEchio(126)\nAgav(128)\n--------------------------------",
+      "translation" : "[聖地 5樓]\n------------ 魔物 ------------\n邪惡妖精(122)\n依斯拉(124)\n搜尋者(124)\n艾基奧(126)\n阿加波(128)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2414,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Gloom Under Night's eyes are so round and cute. I want to make it my pet.. But what's its taming item? I probably can't tame it then.. - Hopeful Explorer Grape>",
+      "translation" : "<影魔的眼睛圓滾滾的，好可愛。我想把它變成我的寵物...但是它的馴服道具是什麼？我大概馴服不了它吧... - 充滿希望的探險家 葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2426,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "- Your ^0000FFLuxurious Keycard^000000resonates with Signpost and uncovers new information. -",
+      "translation" : "- 您的^0000FF華麗的鑰匙卡片^000000與路標產生共鳴，揭示了新的資訊。 -"
+    },
+    {
+      "kind" : "message",
+      "line" : 2430,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Kiel Hyre Academy students cannot enter here.",
+      "translation" : "基爾·海爾學院的學生不能進入這裡。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2434,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Robot Factory]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[機器人工廠]\n為了讓冒險者能夠輕鬆地在世界各地旅行，我們公開了從各種冒險者那裡收集到的資訊。請向冒險者團體提供資訊線索，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2447,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Robot Factory]\nRobot Factory is comprised of 2 floors, and monsters that appear here are mostly formless. Constant monster self destructs to repel any invaders, so be cautious.",
+      "translation" : "[機器人工廠]\n機器人工廠由2層組成，這裡出現的魔物大多是無形的。恆量魔會自爆以擊退入侵者，請小心。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2451,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Robot Factory 1F",
+      "translation" : "機器人工廠 1樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2451,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Robot Factory 2F",
+      "translation" : "機器人工廠 2樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2451,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 2453,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Robot Factory 1F]\n------------ Monster ------------\nAlice(100)\nConstant(108)\nAliot(112)\nAliza(112)\nAlicel(115)\n--------------------------------",
+      "translation" : "[機器人工廠 1樓]\n------------ 魔物 ------------\n愛麗絲(100)\n恆量魔(108)\n愛麗俄(112)\n愛麗哲(112)\n愛麗削(115)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2464,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Robot Factory 2F]\n------------ Monster ------------\nKiel(90)\nConstant(108)\nAliot(112)\nAliza(112)\nAlicel(115)\n--------------------------------",
+      "translation" : "[機器人工廠 2樓]\n------------ 魔物 ------------\n基爾(90)\n恆量魔(108)\n愛麗俄(112)\n愛麗哲(112)\n愛麗削(115)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2473,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<I don't know why but there are 2 types of Kiel. Kiel and Kiel-D-01... Kiel-D-01 is the newer version of the two.. Should I request Kiel to make me a robot too? - Greedy Explorer Grape>",
+      "translation" : "<我不知道為什麼，有兩種基爾。基爾和基爾-D-01...基爾-D-01是兩者的新版本...我應該要求基爾也給我做一個機器人嗎？ - 貪婪的探險家 葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2484,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower Guide]\nThanatos Tower is comprised of 12 floors, but only 3 floors are open to the public. If you wish to progress, you must have signed a contract with '^0000FFRenkenber^000000'.",
+      "translation" : "[薩納托斯塔嚮導]\n薩納托斯塔由12層組成，但只有3層對公眾開放。如果您想繼續前進，必須與'^0000FFRenkenber^000000'簽訂契約。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2484,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower Guide]\nThanatos Tower is comprised of 12 floors, but only 3 floors are open to the public. If you wish to progress, you must have signed a contract with'^0000FFRenkenber^000000'.",
+      "translation" : "[薩納托斯塔嚮導]\n薩納托斯塔由12層組成，但只有3層對公眾開放。如果您想繼續前進，必須與'^0000FFRenkenber^000000'簽訂契約。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2488,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower Guide]\nAccording to the information there are a total of 12 floors. Prepare for all kinds of situation before venturing in this dungeon....",
+      "translation" : "[薩納托斯塔嚮導]\n根據資訊，這裡總共有12層。在進入這個地下城之前，請為各種情況做好準備...."
+    },
+    {
+      "kind" : "message",
+      "line" : 2491,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Public Announcement]\nPlease don't touch it. Only those that have a contract with '^0000FFRenkenber^000000' can progress.",
+      "translation" : "[公告]\n請不要觸碰它。只有與'^0000FFRenkenber^000000'簽訂契約的人才能繼續前進。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2498,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower Guide]\nAccording to the information there are a total of 12 floors. Prepare for all kinds of situation before venturing in this dungeon.",
+      "translation" : "[薩納托斯塔嚮導]\n根據資訊，這裡總共有12層。在進入這個地下城之前，請為各種情況做好準備。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2502,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower Guide]\nYou have signed the contract with '^0000FFRenkenber^000000', the following information are now available. To revise the information, contact Adventurer Group or '^0000FFRenkenber^000000'with information tip.\n-- Adventurer Group --",
+      "translation" : "[薩納托斯塔嚮導]\n您已與'^0000FFRenkenber^000000'簽訂契約，以下資訊現已可用。若要修改資訊，請聯絡冒險者團體或向'^0000FFRenkenber^000000'提供資訊提示。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2530,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower Guide]\nPlease choose an appropriate floor for monster information.",
+      "translation" : "[薩納托斯塔嚮導]\n請選擇適當的樓層以檢視魔物資訊。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower 1F",
+      "translation" : "薩納托斯塔 1樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower 2F",
+      "translation" : "薩納托斯塔 2樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower 3F",
+      "translation" : "薩納托斯塔 3樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower 4F",
+      "translation" : "薩納托斯塔 4樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower 5F",
+      "translation" : "薩納托斯塔 5樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower 6F",
+      "translation" : "薩納托斯塔 6樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower 7F",
+      "translation" : "薩納托斯塔 7樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower 8F",
+      "translation" : "薩納托斯塔 8樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower 9F",
+      "translation" : "薩納托斯塔 9樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower 10F",
+      "translation" : "薩納托斯塔 10樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower 11F",
+      "translation" : "薩納托斯塔 11樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower 12F",
+      "translation" : "薩納托斯塔 12樓"
+    },
+    {
+      "kind" : "option",
+      "line" : 2534,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "Thanatos Tower Top Floor",
+      "translation" : "薩納托斯塔 頂層"
+    },
+    {
+      "kind" : "message",
+      "line" : 2536,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower 1F]\n------------ Monster ------------\nMimic(56)\nRideword(74)\nAlice(100)\nPlasma (Green)(116)\nLady Solace(123)\n--------------------------------",
+      "translation" : "[薩納托斯塔 1樓]\n------------ 魔物 ------------\n邪惡箱(56)\n飛行魔書(74)\n愛麗絲(100)\n綠色等離子體(116)\n慰勞者(123)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2547,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower 2F]\n------------ Monster ------------\nMimic(56)\nRideword(74)\nElder(92)\nAlice(100)\nAncient Mimic(112)\nDeath Word(114)\nPlasma (Blue)(116)\nBaroness of Retribution(121)\n--------------------------------",
+      "translation" : "[薩納托斯塔 2樓]\n------------ 魔物 ------------\n邪惡箱(56)\n飛行魔書(74)\n長老(92)\n愛麗絲(100)\n狂暴邪惡箱(112)\n死亡魔書(114)\n藍色等離子體(116)\n代行刑者(121)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2561,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower 3F]\n------------ Monster ------------\nMimic(56)\nRideword(74)\nElder(92)\nAncient Mimic(112)\nDeath Word(114)\nPlasma (Purple)(117)\nMistress of Shelter(125)\n--------------------------------",
+      "translation" : "[薩納托斯塔 3樓]\n------------ 魔物 ------------\n邪惡箱(56)\n飛行魔書(74)\n長老(92)\n狂暴邪惡箱(112)\n死亡魔書(114)\n紫色等離子體(117)\n安息者(125)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2574,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower 4F]\n------------ Monster ------------\nMimic(56)\nRideword(74)\nOwl Duke(92)\nElder(92)\nAncient Mimic(112)\nDeath Word(114)\nPlasma (Red)(118)\nOwl Baron(120)\nDame of Sentinel(127)\n--------------------------------",
+      "translation" : "[薩納托斯塔 4樓]\n------------ 魔物 ------------\n邪惡箱(56)\n飛行魔書(74)\n鶚梟首領(92)\n長老(92)\n狂暴邪惡箱(112)\n死亡魔書(114)\n紅色等離子體(118)\n鶚梟男爵(120)\n監視者(127)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2589,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower 5F]\n------------ Monster ------------\nOwl Duke(92)\nElder(92)\nAncient Mimic(112)\nDeath Word(114)\nPlasma (Blue)(115)\nPlasma (Green)(116)\nPlasma (Purple)(117)\nPlasma (Red)(118)\nOwl Baron(120)\nDolor of Thanatos(129)\n--------------------------------",
+      "translation" : "[薩納托斯塔 5樓]\n------------ 魔物 ------------\n鶚梟首領(92)\n長老(92)\n狂暴邪惡箱(112)\n死亡魔書(114)\n藍色等離子體(115)\n綠色等離子體(116)\n紫色等離子體(117)\n紅色等離子體(118)\n鶚梟男爵(120)\n達納托斯的苦惱(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2605,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower 6F]\n------------ Monster ------------\nOwl Duke(92)\nElder(92)\nAncient Mimic(112)\nDeath Word(114)\nPlasma (Blue)(115)\nPlasma (Green)(116)\nPlasma (Purple)(117)\nPlasma (Red)(118)\nOwl Baron(120)\nMaero of Thanatos(129)\n--------------------------------",
+      "translation" : "[薩納托斯塔 6樓]\n------------ 魔物 ------------\n鶚梟首領(92)\n長老(92)\n狂暴邪惡箱(112)\n死亡魔書(114)\n藍色等離子體(115)\n綠色等離子體(116)\n紫色等離子體(117)\n紅色等離子體(118)\n鶚梟男爵(120)\n達納托斯的悲哀(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2621,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower 7F]\n------------ Monster ------------\nAncient Mimic(112)\nDeath Word(114)\nBaroness of Retribution(121)\nLady Solace(123)\nMistress of Shelter(125)\nDame of Sentinel(127)\nDespero of Thanatos(129)\n--------------------------------",
+      "translation" : "[薩納托斯塔 7樓]\n------------ 魔物 ------------\n狂暴邪惡箱(112)\n死亡魔書(114)\n代行刑者(121)\n慰勞者(123)\n安息者(125)\n監視者(127)\n達納托斯的絕望(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2634,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower 8F]\n------------ Monster ------------\nAncient Mimic(112)\nDeath Word(114)\nBaroness of Retribution(121)\nLady Solace(123)\nMistress of Shelter(125)\nDame of Sentinel(127)\nOdium of Thanatos(129)\n--------------------------------",
+      "translation" : "[薩納托斯塔 8樓]\n------------ 魔物 ------------\n狂暴邪惡箱(112)\n死亡魔書(114)\n代行刑者(121)\n慰勞者(123)\n安息者(125)\n監視者(127)\n達納托斯的憎恨(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2647,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower 9F]\n------------ Monster ------------\nPlasma (Red)(118)\nBaroness of Retribution(121)\nLady Solace(123)\nMistress of Shelter(125)\nDame of Sentinel(127)\nOdium of Thanatos(129)\n--------------------------------",
+      "translation" : "[薩納托斯塔 9樓]\n------------ 魔物 ------------\n紅色等離子體(118)\n代行刑者(121)\n慰勞者(123)\n安息者(125)\n監視者(127)\n達納托斯的憎恨(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2659,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower 10F]\n------------ Monster ------------\nPlasma (Blue)(115)\nBaroness of Retribution(121)\nLady Solace(123)\nMistress of Shelter(125)\nDame of Sentinel(127)\nMaero of Thanatos(129)\n--------------------------------",
+      "translation" : "[薩納托斯塔 10樓]\n------------ 魔物 ------------\n藍色等離子體(115)\n代行刑者(121)\n慰勞者(123)\n安息者(125)\n監視者(127)\n達納托斯的悲哀(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2671,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower 11F]\n------------ Monster ------------\nPlasma (Green)(116)\nBaroness of Retribution(121)\nLady Solace(123)\nMistress of Shelter(125)\nDame of Sentinel(127)\nDespero of Thanatos(129)\n--------------------------------",
+      "translation" : "[薩納托斯塔 11樓]\n------------ 魔物 ------------\n綠色等離子體(116)\n代行刑者(121)\n慰勞者(123)\n安息者(125)\n監視者(127)\n達納托斯的絕望(129)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2683,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower 12F]\n------------ Monster ------------\nPlasma (Yellow)(119)\nBaroness of Retribution(121)\nLady Solace(123)\nMistress of Shelter(125)\nDame of Sentinel(127)\n--------------------------------",
+      "translation" : "[薩納托斯塔 12樓]\n------------ 魔物 ------------\n黃色等離子體(119)\n代行刑者(121)\n慰勞者(123)\n安息者(125)\n監視者(127)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2694,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "[Thanatos Tower Top Floor]\n------------ Monster ------------\n- Adventurer's tips are needed -\n--------------------------------",
+      "translation" : "[薩納托斯塔 頂層]\n------------ 魔物 ------------\n- 需要冒險者的提示 -\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2699,
+      "npc" : "Guide",
+      "state" : "needs_review",
+      "text" : "<It's so empty.. I came all the way up here but there's nothing here.. - Angry Explorer Grape>",
+      "translation" : "<這裡好空曠...我特意爬上這裡，卻什麼也沒有... - 憤怒的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2712,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Prontera Culvert]\nProntera Culvert can only be accessed by adventurers who have the permission from Rune-Midgarts Kingdom.\n-- Adventurer Group --",
+      "translation" : "[普隆德拉下水道]\n普隆德拉下水道僅允許獲得盧恩·米德加茲王國許可的冒險者進入。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2717,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Prontera Culvert]\nProntera Culvert can only be accessed by adventurers who have signed a volunteer form at Prontera Chivalry. Would you like to go sign the volunteer form?",
+      "translation" : "[普隆德拉下水道]\n普隆德拉下水道僅允許在普隆德拉騎士團簽署志願者表的冒險者進入。您想去簽署志願者表嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 2720,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Volunteer",
+      "translation" : "自願參加"
+    },
+    {
+      "kind" : "option",
+      "line" : 2720,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Do not volunteer",
+      "translation" : "不加入志願者"
+    },
+    {
+      "kind" : "message",
+      "line" : 2722,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Prontera Culvert]\nYou will be warped to Prontera Chivalry.",
+      "translation" : "[普隆德拉下水道]\n您將被傳送到普隆德拉騎士團。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2728,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Prontera Culvert]\nProntera Chivalry is looking to enlist brave adventurers.",
+      "translation" : "[普隆德拉下水道]\n普隆德拉騎士團正在招募勇敢的冒險者。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2747,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Prontera Culvert]\nProntera Culvert is comprised of B4 floors. This dungeon is appropriate for beginner adventurers and most monsters that appear here will assist others monsters with the same name.",
+      "translation" : "[普隆德拉下水道]\n普隆德拉下水道共有B4層。這個副本適合初級冒險者，且這裡出現的魔物大多會與同名的其他魔物協同作戰。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2751,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Prontera Culvert 1F",
+      "translation" : "普隆德拉下水道 1層"
+    },
+    {
+      "kind" : "option",
+      "line" : 2751,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Prontera Culvert 2F",
+      "translation" : "普隆德拉下水道 2層"
+    },
+    {
+      "kind" : "option",
+      "line" : 2751,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Prontera Culvert 3F",
+      "translation" : "普隆德拉下水道 3層"
+    },
+    {
+      "kind" : "option",
+      "line" : 2751,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Prontera Culvert 4F",
+      "translation" : "普隆德拉下水道 4層"
+    },
+    {
+      "kind" : "option",
+      "line" : 2751,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 2753,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Prontera Culvert 1F]\n------------ Monster ------------\nThief Bug Egg(20)\nThief Bug(21)\nTarou(22)\nFamiliar(24)\n--------------------------------",
+      "translation" : "[普隆德拉下水道 1層]\n------------ 魔物 ------------\n盜蟲卵(20)\n浮勒盜蟲(21)\n白鼠(22)\n使魔(24)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2763,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Prontera Culvert 2F]\n------------ Monster ------------\nSpore(18)\nThief Bug Egg(20)\nThief Bug(21)\nTarou(22)\nFamiliar(24)\nFemale Thief Bug(28)\nPlankton(40)\n--------------------------------",
+      "translation" : "[普隆德拉下水道 2層]\n------------ 魔物 ------------\n魔菇(18)\n盜蟲卵(20)\n浮勒盜蟲(21)\n白鼠(22)\n使魔(24)\n雌性浮勒盜蟲(28)\n漂浮蟲(40)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2776,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Prontera Culvert 3F]\n------------ Monster ------------\nThief Bug Egg(20)\nThief Bug(21)\nTarou(22)\nFamiliar(24)\nPoison Spore(26)\nFemale Thief Bug(28)\nMale Thief Bug(30)\n--------------------------------",
+      "translation" : "[普隆德拉下水道 3層]\n------------ 魔物 ------------\n盜蟲卵(20)\n浮勒盜蟲(21)\n白鼠(22)\n使魔(24)\n毒魔菇(26)\n雌性浮勒盜蟲(28)\n雄性浮勒盜蟲(30)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2789,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Prontera Culvert 4F]\n------------ Monster ------------\nThief Bug Egg(20)\nThief Bug(21)\nFemale Thief Bug(28)\nMale Thief Bug(30)\nDrainliar(47)\nGolden Thief Bug(65)\nCramp(82)\n--------------------------------",
+      "translation" : "[普隆德拉下水道 4層]\n------------ 魔物 ------------\n盜蟲卵(20)\n浮勒盜蟲(21)\n雌性浮勒盜蟲(28)\n雄性浮勒盜蟲(30)\n紅蝙蝠(47)\n黃金蟲(65)\n藍鼠(82)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2800,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<There is a shiny bug living in Prontera Culvert 4F. It's called Golden Thief Bug. Prontera Sewage system regularly blocked by this monster. Ew~ It's nasty. - Irritated Explorer Grape>",
+      "translation" : "<普隆德拉下水道 4層住著一隻閃閃發光的蟲子。它叫黃金蟲。普隆德拉的下水道系統經常會被這種魔物堵塞。嘔~ 真噁心。 - 煩躁的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2812,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Turtle Island]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[海龜島]\n為了讓冒險者能夠輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊線索，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2825,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Turtle Island]\nTurtle Island is comprised of 3 floors, and the monsters that appear here are mostly brute. Prepare before venturing into this dungeon.",
+      "translation" : "[海龜島]\n海龜島由3層組成，這裡出現的魔物大多比較兇猛。在進入這個地下城之前請做好準備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2829,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Turtle Island",
+      "translation" : "海龜島"
+    },
+    {
+      "kind" : "option",
+      "line" : 2829,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Turtles Village",
+      "translation" : "海龜村"
+    },
+    {
+      "kind" : "option",
+      "line" : 2829,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Turtle Palace",
+      "translation" : "舊良宮"
+    },
+    {
+      "kind" : "option",
+      "line" : 2829,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 2831,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Turtle Island]\n------------ Monster ------------\nPest(89)\nPermeter(90)\nSolider(92)\nFreezer(94)\n--------------------------------",
+      "translation" : "[海龜島]\n------------ 魔物 ------------\n單眼蟲(89)\n果樹龜(90)\n岩石龜(92)\n水靈龜(94)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2841,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Turtle Island - Turtle Village]\n------------ Monster ------------\nPermeter(90)\nFreezer(94)\nHeater(98)\nAssaulter(100)\n--------------------------------",
+      "translation" : "[海龜島 - 海龜村]\n------------ 魔物 ------------\n果樹龜(90)\n水靈龜(94)\n火焰龜(98)\n風靈龜(100)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2851,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Turtle Island - Turtle Palace]\n------------ Monster ------------\nPermeter(90)\nFreezer(94)\nHeater(98)\nAssaulter(100)\n--------------------------------",
+      "translation" : "[海龜島 - 舊良宮]\n------------ 魔物 ------------\n果樹龜(90)\n水靈龜(94)\n火焰龜(98)\n風靈龜(100)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2859,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Turtles are known for their longevity right? How old is Turtle General? - Young explorer Grape>",
+      "translation" : "<烏龜以長壽著稱，對吧？烏龜將軍多大了？ - 年輕的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2873,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Amatsu Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[櫻花城地下城]\n為了讓冒險者能夠輕鬆地在世界各地旅行，我們公開了從各位冒險者那裡收集到的資訊。請向冒險者團體提供資訊線索，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2888,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Amatsu Dungeon]\nAmatsu Dungeon is comprised of 3 floors. This dungeon's maze is very complex and fly wings cannot be used. Prepare before venturing into this dungeon.",
+      "translation" : "[櫻花城地下城]\n櫻花城地下城由3層組成。這個地下城的迷宮非常複雜，且無法使用蒼蠅翅膀。在進入這個地下城之前請做好準備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2892,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Amatsu Dungeon - Tatami Maze",
+      "translation" : "櫻花城地下城 - 榻榻米迷宮"
+    },
+    {
+      "kind" : "option",
+      "line" : 2892,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Amatsu Dungeon - Battle Field in the Underground Forest",
+      "translation" : "櫻花城地下城 - 地下森林戰場"
+    },
+    {
+      "kind" : "option",
+      "line" : 2892,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Amatsu Dungeon - Amatsu Underground Shrine",
+      "translation" : "櫻花城地下城 - 櫻花城地下神社"
+    },
+    {
+      "kind" : "option",
+      "line" : 2892,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 2894,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Amatsu Dungeon - Tatami Maze]\n------------ Monster ------------\nMiyabi Doll(85)\nFirelock Soldier(88)\nShinobi(95)\n--------------------------------",
+      "translation" : "[櫻花城地下城 - 榻榻米迷宮]\n------------ 魔物 ------------\n米雅畢(85)\n武士火槍兵(88)\n火忍西怒畢(95)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2903,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Amatsu Dungeon - Battle Field in the Underground Forest]\n------------ Monster ------------\nHorong(66)\nMiyabi Doll(85)\nPoisonous Toad(87)\nFirelock Soldier(88)\nShinobi(95)\nThe Paper(97)\n--------------------------------",
+      "translation" : "[櫻花城地下城 - 地下森林戰場]\n------------ 魔物 ------------\n鬼火(66)\n米雅畢(85)\n牛蛙(87)\n武士火槍兵(88)\n火忍西怒畢(95)\n紙妖(97)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2915,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Amatsu Dungeon - Amatsu Underground Shrine]\n------------ Monster ------------\nMimic(56)\nMiyabi Doll(85)\nFirelock Soldier(88)\nShinobi(95)\nThe Paper(97)\nTengu(98)\n--------------------------------",
+      "translation" : "[櫻花城地下城 - 櫻花城地下神社]\n------------ 魔物 ------------\n邪惡箱(56)\n米雅畢(85)\n武士火槍兵(88)\n火忍西怒畢(95)\n紙妖(97)\n天狗(98)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2925,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Samurai Specter is very rude. I wanted to introduce myself to him by giving him my name card, but he wasn't happy about it.. Pfft - Dejected Explorer Grape>",
+      "translation" : "<元靈武士非常無禮。我想遞上名片自我介紹，但他似乎很不高興... 噗- 沮喪的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2937,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Kunlun Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[崑崙地下城]\n為了讓冒險者能輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊線索，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 2951,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Kunlun Dungeon]\nKunlun Dungeon is comprised of 3 floors. Royal Jelly and Dead Branch items can be obtained from monsters in this dungeon.",
+      "translation" : "[崑崙地下城]\n崑崙地下城共有3層。在此地擊敗魔物可獲得蜂膠和枯樹枝。"
+    },
+    {
+      "kind" : "option",
+      "line" : 2955,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Kunlun Dungeon - Shrine of Kunlun Queen",
+      "translation" : "崑崙地下城 - 西王母神殿"
+    },
+    {
+      "kind" : "option",
+      "line" : 2955,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Kunlun Dungeon - Hermit's Checkers",
+      "translation" : "崑崙地下城 - 仙人棋局"
+    },
+    {
+      "kind" : "option",
+      "line" : 2955,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Kunlun Dungeon - Arcadia",
+      "translation" : "崑崙地下城 - 世外桃源"
+    },
+    {
+      "kind" : "option",
+      "line" : 2955,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 2957,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Kunlun Dungeon - Shrine of Kunlun Queen]\n------------ Monster ------------\nZipper Bear(90)\nEnchanted Peach Tree(92)\nBloody Butterfly(94)\n--------------------------------",
+      "translation" : "[崑崙地下城 - 西王母神殿]\n------------ 魔物 ------------\n拉鏈熊(90)\n猴桃木(92)\n血蝴蝶(94)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2966,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Kunlun Dungeon - Hermit's Checkers]\n------------ Monster ------------\nBaby Leopard(68)\nEnchanted Peach Tree(92)\nBloody Butterfly(94)\nTaoist Hermit(96)\n--------------------------------",
+      "translation" : "[崑崙地下城 - 仙人棋局]\n------------ 魔物 ------------\n小花豹(68)\n猴桃木(92)\n血蝴蝶(94)\n惡雲仙人(96)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2976,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Kunlun Dungeon - Arcadia]\n------------ Monster ------------\nHermit Plant(90)\nTaoist Hermit(96)\nEvil Nymph(97)\n--------------------------------",
+      "translation" : "[崑崙地下城 - 世外桃源]\n------------ 魔物 ------------\n人參精(90)\n惡雲仙人(96)\n妖仙女(97)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 2983,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Is it true that Evil Snake Lord's caligraphy is phenomenal? I went there to take a look at it.. But I couldn't see its caligraphy.. - Forgetful Explorer Grape>",
+      "translation" : "<聽說墨蛇君的書法非常驚人？我特意去看了... 但我沒看到他的書法... - 健忘的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 2995,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Luoyang Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[龍之城地下城]\n為了讓冒險者能輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊線索，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3014,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Luoyang Dungeon]\nLuoyang Dungeon is comprised of 3 floors and the monsters that appear here tend to overpower adventurers in mass numbers. Prepare before venturing into this dungeon.",
+      "translation" : "[龍之城地下城]\n龍之城地下城共有3層，這裡出現的魔物往往成群結隊，實力強大。進入前請做好充分準備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 3018,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Luoyang Dungeon - Suei Long Gon",
+      "translation" : "龍之城地下城 - 審良宮"
+    },
+    {
+      "kind" : "option",
+      "line" : 3018,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Luoyang Dungeon - The Royal Tomb",
+      "translation" : "龍之城地下城 - 皇陵"
+    },
+    {
+      "kind" : "option",
+      "line" : 3018,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Luoyang Dungeon - Inside the Royal Tomb",
+      "translation" : "龍之城地下城 - 皇陵內部"
+    },
+    {
+      "kind" : "option",
+      "line" : 3018,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 3020,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Luoyang Dungeon - Suei Long Gon]\n------------ Monster ------------\nHorong(66)\nGrizzly(66)\nSide Winder(70)\nJing Guai(80)\nMi Gao(83)\nLeib Olmai(87)\n--------------------------------",
+      "translation" : "[龍之城地下城 - 審良宮]\n------------ 魔物 ------------\n鬼火(66)\n暴焰野熊(66)\n黑蛇(70)\n豹皮怪(80)\n米糕(83)\n狂暴大腳熊(87)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3032,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Luoyang Dungeon - The Royal Tomb]\n------------ Monster ------------\nMimic(56)\nMunak(58)\nZhu Po Long(82)\nYao Jun(87)\n--------------------------------",
+      "translation" : "[龍之城地下城 - 皇陵]\n------------ 魔物 ------------\n邪惡箱(56)\n殭屍(58)\n年獸(82)\n妖君(87)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3042,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Luoyang Dungeon - Inside the Royal Tomb]\n------------ Monster ------------\nZhu Po Long(82)\nGreen Maiden(82)\nYao Jun(87)\nMao Guai(89)\n--------------------------------",
+      "translation" : "[龍之城地下城 - 皇陵內部]\n------------ 魔物 ------------\n年獸(82)\n小青(82)\n妖君(87)\n狐仙(89)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3050,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<White Lady.. She's.. Beautiful.. She's Kind.. If it wasn't for Green Maidens.. Pfft - Dejected Explorer Grape>",
+      "translation" : "<白素貞...她...真美...她真好...要不是有小青...哼 - 沮喪的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 3062,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ayothaya Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[哎喲泰雅地下城]\n為了讓冒險者能輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊線索，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3074,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ayothaya Dungeon]\nAyothaya Dungeon is comprised of 2 floors. Monsters in this dungeon can be found hiding in the labyrinth.",
+      "translation" : "[哎喲泰雅地下城]\n哎喲泰雅地下城由2層組成。該地下城的魔物通常隱藏在迷宮中。"
+    },
+    {
+      "kind" : "option",
+      "line" : 3078,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Ayothaya Dungeon - Ancient Shrine Maze",
+      "translation" : "哎喲泰雅地下城 - 古神殿迷宮"
+    },
+    {
+      "kind" : "option",
+      "line" : 3078,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Ayothaya Dungeon - Inside Ancient Shrine",
+      "translation" : "哎喲泰雅地下城 - 古神殿內部"
+    },
+    {
+      "kind" : "option",
+      "line" : 3078,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 3080,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ayothaya Dungeon - Ancient Shrine Maze]\n------------ Monster ------------\nWhisper(34)\nGhoul(61)\nLeaf Cat(64)\nKraben(70)\n--------------------------------",
+      "translation" : "[哎喲泰雅地下城 - 古神殿迷宮]\n------------ 魔物 ------------\n白幽靈(34)\n綠腐屍(61)\n群葉貓(64)\n克萊本(70)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3090,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Ayothaya Dungeon - Inside Ancient Shrine]\n------------ Monster ------------\nWhisper(34)\nKraben(70)\nTamruan(73)\n--------------------------------",
+      "translation" : "[哎喲泰雅地下城 - 古神殿內部]\n------------ 魔物 ------------\n白幽靈(34)\n克萊本(70)\n塔嚕安(73)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3097,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Oh Lady Tanee, don't be so shy and run away~ - Catch me ~ Explorer Grape>",
+      "translation" : "<嗒妮小姐，別害羞跑開嘛~ - 來抓我呀~ 探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 3109,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Moscovia Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[莫斯科比亞地下城]\n為了讓冒險者能輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊線索，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3123,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Moscovia Dungeon]\nMoscovia Dungeon is comprised of 3 areas, introducing passive and aggressive monsters in each areas. Prepare before venturing into this area.",
+      "translation" : "[莫斯科比亞地下城]\n莫斯科比亞地下城由3個區域組成，每個區域都有被動和主動攻擊的魔物。進入該區域前請做好準備。"
+    },
+    {
+      "kind" : "option",
+      "line" : 3127,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Moscovia Dungeon - Forest",
+      "translation" : "莫斯科比亞地下城 - 森林"
+    },
+    {
+      "kind" : "option",
+      "line" : 3127,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Moscovia Dungeon - Deep within the Forest",
+      "translation" : "莫斯科比亞地下城 - 森林深處"
+    },
+    {
+      "kind" : "option",
+      "line" : 3127,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Moscovia Dungeon - Extremely Deep within the forest",
+      "translation" : "莫斯科比亞地下城 - 森林極深處"
+    },
+    {
+      "kind" : "option",
+      "line" : 3127,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 3129,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Moscovia Dungeon - Forest]\n------------ Monster ------------\nPoPoring(30)\nMantis(65)\nWood Goblin(81)\nLes(82)\n--------------------------------",
+      "translation" : "[莫斯科比亞地下城 - 森林]\n------------ 魔物 ------------\n波波利(30)\n螳螂(65)\n刺刀哥布靈(81)\n萊絲(82)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3139,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Moscovia Dungeon - Deep within the Forest]\n------------ Monster ------------\nWood Goblin(81)\nLes(82)\nUzhas(85)\nBaba Yaga(87)\n--------------------------------",
+      "translation" : "[莫斯科比亞地下城 - 森林深處]\n------------ 魔物 ------------\n刺刀哥布靈(81)\n萊絲(82)\n烏扎斯(85)\n芭芭雅嘎(87)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3149,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Moscovia Dungeon - Extremely Deep within the Forest]\n------------ Monster ------------\nMavka(84)\nUzhas(85)\nBaba Yaga(87)\n--------------------------------",
+      "translation" : "[莫斯科比亞地下城 - 森林極深處]\n------------ 魔物 ------------\n森林妖精(84)\n烏扎斯(85)\n芭芭雅嘎(87)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3156,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Gopinch is 3 headed yah? Yes, well just telling you that it has 3 heads. - One headed Explorer Grape>",
+      "translation" : "<戈平奇是三個頭的嗎？是的，只是告訴你它有三個頭而已。 - 單頭探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 3168,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Brasilis Dungeon]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[巴西地下城]\n為了讓冒險者能輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊線索，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3180,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Brasilis Dungeon]\nBrasilis Dungeon is comprised of 2 floors, and the monsters that appear in this dungeon are mostly water element. Wind element weapon will prove to be exceptional useful in this dungeon.",
+      "translation" : "[巴西地下城]\n巴西地下城由2層組成，該地下城出現的魔物大多為水屬性。風屬性武器在此地下城中將非常有效。"
+    },
+    {
+      "kind" : "option",
+      "line" : 3184,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Brasilis Dungeon Entrance",
+      "translation" : "巴西地下城 入口"
+    },
+    {
+      "kind" : "option",
+      "line" : 3184,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Brasilis Dungeon Interior",
+      "translation" : "巴西地下城 內部"
+    },
+    {
+      "kind" : "option",
+      "line" : 3184,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 3186,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Brasilis Dungeon Entrance]\n------------ Monster ------------\nHydra(34)\nKukre(42)\nMarina(42)\nPiranha(75)\nIara(79)\n--------------------------------",
+      "translation" : "[巴西地下城 入口]\n------------ 魔物 ------------\n海葵(34)\n庫克雷(42)\n瑪麗娜(42)\n食人魚(75)\n亞拉(79)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3197,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Brasilis Dungeon Interior]\n------------ Monster ------------\nHydra(34)\nKukre(42)\nMarina(42)\nPiranha(75)\nIara(79)\n--------------------------------",
+      "translation" : "[巴西地下城 內部]\n------------ 魔物 ------------\n海葵(34)\n庫克雷(42)\n瑪麗娜(42)\n食人魚(75)\n亞拉(79)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3206,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<There is a monster named Boitata making a bell sound. Why is it making such noise? - Misperceiving it as a pet dog - Explorer Grape>",
+      "translation" : "<有一隻名叫波伊塔塔的魔物正在發出鈴聲。它為什麼這麼吵？ - 誤以為是寵物狗 - 探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 3218,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Krakatau Volcano]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[喀拉喀托火山]\n為了讓冒險者能輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊線索，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3228,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Krakatau Volcano]\nDewata Volcano can only be accessed by adventurers who have received permission from the Jati tribe. All of the monsters that appear in this place are aggressive. Only experienced adventurers should venture here.",
+      "translation" : "[喀拉喀托火山]\n德瓦他火山僅對獲得賈提部落許可的冒險者開放。此處出現的魔物全部具有攻擊性。只有經驗豐富的冒險者才應前往此處。"
+    },
+    {
+      "kind" : "message",
+      "line" : 3231,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Krakatau Volcano]\n------------ Monster ------------\nComodo(81)\nAncient Worm(83)\nGullinbursti(89)\n--------------------------------",
+      "translation" : "[喀拉喀托火山]\n------------ 魔物 ------------\n科摩多龍(81)\n狂暴蜈蚣(83)\n狂暴野豬(89)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3238,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<Scary MVP Leak lives in Krakatau Volcano.. What's so scary about it though? - It's more cute than scary(?) Explorer Grape>",
+      "translation" : "<可怕的MVP讓特住在喀拉喀托火山...它有什麼可怕的？ - 比起可怕更可愛(?) 探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 3240,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Adventurer Group]\nFor more Information on the monsters\nMonster Information Retrieval System\nMust be used.",
+      "translation" : "[冒險者團體]\n如需瞭解更多魔物資訊\n必須使用\n怪物資訊檢索系統。"
+    },
+    {
+      "kind" : "message",
+      "line" : 3251,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Istana Cave]\nIn order for Adventurers to travel all over the world for a relaxing adventure, Information gathered from various adventurers are made public. Please provide information tips to the adventurer group to revise the information.\n-- Adventurer Group --",
+      "translation" : "[伊斯塔納洞穴]\n為了讓冒險者能輕鬆愉快地環遊世界，我們公開了從各地冒險者那裡收集到的資訊。請向冒險者團體提供資訊線索，以修正這些資訊。\n-- 冒險者團體 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3261,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Istana Cave]\nMonsters that appear in Istana Cave are all aggressive. Only experienced adventurers should venture here.",
+      "translation" : "[伊斯塔納洞穴]\n伊斯塔納洞穴中出現的魔物全部具有攻擊性。只有經驗豐富的冒險者才應前往此處。"
+    },
+    {
+      "kind" : "message",
+      "line" : 3264,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Istana Cave]\n------------ Monster ------------\nAm Mut(76)\nGajomart(81)\nBanaspaty(85)\nButoijo(88)\n--------------------------------",
+      "translation" : "[伊斯塔納洞穴]\n------------ 魔物 ------------\n狂暴小土人(76)\n狂暴鬼火(81)\n巴拿斯帕堤(85)\n布托異竺(88)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3272,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Dewata's Jaty tribe holds their trial of strength here. - Brave Explorer Grape>",
+      "translation" : "德瓦他的賈提部落在此舉行力量試煉。 - 勇敢的探險家葡萄>"
+    },
+    {
+      "kind" : "message",
+      "line" : 3274,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Adventurer Group]\nFor more Information on the monsters\nMonster Information Retrieval System\nMust be used.",
+      "translation" : "[冒險者團體]\n如需瞭解更多魔物資訊\n必須使用\n怪物資訊檢索系統。"
+    },
+    {
+      "kind" : "message",
+      "line" : 3287,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Kamidal Tunnel]\nAdventurers who travel all over the world, combining the information gathered from the public.\n-- Adventurer Tip --",
+      "translation" : "[卡米達爾隧道]\n環遊世界的冒險者們，正在整合公開收集到的資訊。\n-- 冒險者資訊 --"
+    },
+    {
+      "kind" : "message",
+      "line" : 3302,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Kamidal Tunnel]\nThis tunnel consists of two floors, and most monsters that appear here are insect-type.",
+      "translation" : "[卡米達爾隧道]\n該隧道由2層組成，此處出現的魔物大多為昆蟲型。"
+    },
+    {
+      "kind" : "option",
+      "line" : 3306,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Kamidal Tunnel",
+      "translation" : "卡米達爾隧道"
+    },
+    {
+      "kind" : "option",
+      "line" : 3306,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Scaraba Hall",
+      "translation" : "聖甲蟲大廳"
+    },
+    {
+      "kind" : "option",
+      "line" : 3306,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 3308,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Kamidal Tunnel]\n------------ Monster ------------\nUni-horn Scaraba Egg(125)\nHorn Scaraba Egg(126)\nUni-horn Scaraba(130)\nHorn Scaraba(134)\n--------------------------------",
+      "translation" : "[卡米達爾隧道]\n------------ 魔物 ------------\n雙角甲蟲卵(125)\n尖角甲蟲卵(126)\n雙角甲蟲(130)\n尖角甲蟲(134)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3318,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "[Scaraba Hall]\n------------ Monster ------------\nAntler Scaraba Egg(127)\nRake Scaraba Egg(128)\nAntler Scaraba(136)\nRake Scaraba(139)\n--------------------------------",
+      "translation" : "[聖甲蟲大廳]\n------------ 魔物 ------------\n鹿角甲蟲卵(127)\n尖角甲蟲卵(128)\n鹿角甲蟲(136)\n尖角甲蟲(139)\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 3326,
+      "npc" : "Signpost",
+      "state" : "needs_review",
+      "text" : "<MVP Queen Scaraba... You'll have to explore to find it.>",
+      "translation" : "<MVP黃金女王甲蟲...你需要去探索才能找到它。>"
+    }
+  ]
+}

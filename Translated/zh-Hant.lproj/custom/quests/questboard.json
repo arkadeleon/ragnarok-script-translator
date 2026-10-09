@@ -1,0 +1,333 @@
+{
+  "file" : "npc/custom/quests/questboard.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "((getd(\".\" +currentquest$+\"_collectionprize\"))?getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))+\" - \"+getd(\".\" +currentquest$+\"_collectionamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{4}\nZeny: ^0000FF{5}^000000\nBase EXP: ^0000FF{6}^000000\nJob EXP: ^0000FF{7}^000000",
+      "translation" : "[^FF7700任務板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 個^000000\n--------------------------------\n[獎勵]\n物品： ^0000FF{4}\nZeny： ^0000FF{5}^000000\n基本經驗： ^0000FF{6}^000000\n職業經驗： ^0000FF{7}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "((getd(\".\" +currentquest$+\"_collectionprize\"))?getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))+\" - \"+getd(\".\" +currentquest$+\"_collectionamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1}\nZeny: ^0000FF{2}^000000\nBase EXP: ^0000FF{3}^000000\nJob EXP: ^0000FF{4}^000000",
+      "translation" : "[^FF7700任務板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[獎勵]\n物品： ^0000FF{1}\nZeny： ^0000FF{2}^000000\n基本經驗： ^0000FF{3}^000000\n職業經驗： ^0000FF{4}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 38,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Finish",
+      "translation" : "完成"
+    },
+    {
+      "kind" : "option",
+      "line" : 38,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Abort",
+      "translation" : "放棄"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nQuest aborted.",
+      "translation" : "[^FF7700任務板^000000]\n任務已放棄。"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "((getd(\".\" +currentquest$+\"_huntingprize\"))?getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))+\" - \"+getd(\".\" +currentquest$+\"_huntingamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{4}\nZeny: ^0000FF{5}^000000\nBase EXP: ^0000FF{6}^000000\nJob EXP: ^0000FF{7}^000000",
+      "translation" : "[^FF7700任務板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 個^000000\n--------------------------------\n[獎勵]\n物品： ^0000FF{4}\nZeny： ^0000FF{5}^000000\n基本經驗： ^0000FF{6}^000000\n職業經驗： ^0000FF{7}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "((getd(\".\" +currentquest$+\"_huntingprize\"))?getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))+\" - \"+getd(\".\" +currentquest$+\"_huntingamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1}\nZeny: ^0000FF{2}^000000\nBase EXP: ^0000FF{3}^000000\nJob EXP: ^0000FF{4}^000000",
+      "translation" : "[^FF7700任務板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[獎勵]\n物品： ^0000FF{1}\nZeny： ^0000FF{2}^000000\n基本經驗： ^0000FF{3}^000000\n職業經驗： ^0000FF{4}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Finish",
+      "translation" : "完成"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Abort",
+      "translation" : "放棄"
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nQuest aborted.",
+      "translation" : "[^FF7700任務板^000000]\n任務已放棄。"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nSelect category:",
+      "translation" : "[^FF7700任務板^000000]\n請選擇分類："
+    },
+    {
+      "kind" : "option",
+      "line" : 82,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Exit",
+      "translation" : "退出"
+    },
+    {
+      "kind" : "message",
+      "line" : 95,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "Time2Str(getd(.@selection + \"_collection_delay\"))"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0}^000000 to do this quest again.",
+      "translation" : "[^FF7700任務板^000000]\n還要等待 ^0000FF{0}^000000 才能再次接取這個任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 102,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou already did this quest.\nPlease choose another one.",
+      "translation" : "[^FF7700任務板^000000]\n你已經完成過這個任務了。\n請選擇其他任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "((getd(\".\" +.@selection+\"_collectionprize\"))?getitemname(getd(\".\" +.@selection+\"_collectionprize\"))+\" - \"+getd(\".\" +.@selection+\"_collectionamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{3}\nZeny: ^0000FF{4}^000000\nBase EXP: ^0000FF{5}^000000\nJob EXP: ^0000FF{6}^000000",
+      "translation" : "[^FF7700任務板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 個^000000\n--------------------------------\n[獎勵]\n物品： ^0000FF{3}\nZeny： ^0000FF{4}^000000\n基本經驗： ^0000FF{5}^000000\n職業經驗： ^0000FF{6}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "((getd(\".\" +.@selection+\"_collectionprize\"))?getitemname(getd(\".\" +.@selection+\"_collectionprize\"))+\" - \"+getd(\".\" +.@selection+\"_collectionamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1}\nZeny: ^0000FF{2}^000000\nBase EXP: ^0000FF{3}^000000\nJob EXP: ^0000FF{4}^000000",
+      "translation" : "[^FF7700任務板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[獎勵]\n物品： ^0000FF{1}\nZeny： ^0000FF{2}^000000\n基本經驗： ^0000FF{3}^000000\n職業經驗： ^0000FF{4}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 122,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Accept",
+      "translation" : "接受"
+    },
+    {
+      "kind" : "option",
+      "line" : 122,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Decline",
+      "translation" : "拒絕"
+    },
+    {
+      "kind" : "message",
+      "line" : 126,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nQuest accepted.",
+      "translation" : "[^FF7700任務板^000000]\n任務已接受。"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou don't have the required\nlevel to do this quest.",
+      "translation" : "[^FF7700任務板^000000]\n你的等級未達到這個任務的要求。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "Time2Str(getd(.@selection + \"_hunting_delay\"))"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0}^000000 to do this quest again.",
+      "translation" : "[^FF7700任務板^000000]\n還要等待 ^0000FF{0}^000000 才能再次接取這個任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 155,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou already did this quest.\nPlease choose another one.",
+      "translation" : "[^FF7700任務板^000000]\n你已經完成過這個任務了。\n請選擇其他任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "((getd(\".\" +.@selection+\"_huntingprize\"))?getitemname(getd(\".\" +.@selection+\"_huntingprize\"))+\" - \"+getd(\".\" +.@selection+\"_huntingamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{3}\nZeny: ^0000FF{4}^000000\nBase EXP: ^0000FF{5}^000000\nJob EXP: ^0000FF{6}^000000",
+      "translation" : "[^FF7700任務板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 個^000000\n--------------------------------\n[獎勵]\n物品： ^0000FF{3}\nZeny： ^0000FF{4}^000000\n基本經驗： ^0000FF{5}^000000\n職業經驗： ^0000FF{6}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "((getd(\".\" +.@selection+\"_huntingprize\"))?getitemname(getd(\".\" +.@selection+\"_huntingprize\"))+\" - \"+getd(\".\" +.@selection+\"_huntingamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1}\nZeny: ^0000FF{2}^000000\nBase EXP: ^0000FF{3}^000000\nJob EXP: ^0000FF{4}^000000",
+      "translation" : "[^FF7700任務板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[獎勵]\n物品： ^0000FF{1}\nZeny： ^0000FF{2}^000000\n基本經驗： ^0000FF{3}^000000\n職業經驗： ^0000FF{4}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Accept",
+      "translation" : "接受"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Decline",
+      "translation" : "拒絕"
+    },
+    {
+      "kind" : "message",
+      "line" : 179,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nQuest accepted.",
+      "translation" : "[^FF7700任務板^000000]\n任務已接受。"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou don't have the required\nlevel to do this quest.",
+      "translation" : "[^FF7700任務板^000000]\n你的等級未達到這個任務的要求。"
+    },
+    {
+      "kind" : "message",
+      "line" : 204,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou don't have everything.",
+      "translation" : "[^FF7700任務板^000000]\n所需物品還沒收集齊。"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nCongratulation! Here is your Reward.",
+      "translation" : "[^FF7700任務板^000000]\n恭喜！這是你的獎勵。"
+    },
+    {
+      "kind" : "message",
+      "line" : 239,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou didn't kill everything.",
+      "translation" : "[^FF7700任務板^000000]\n你還沒有擊殺所有目標。"
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nCongratulation! Here is your Reward.",
+      "translation" : "[^FF7700任務板^000000]\n恭喜！這是你的獎勵。"
+    }
+  ]
+}

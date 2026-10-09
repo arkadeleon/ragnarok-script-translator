@@ -17,6 +17,7 @@ struct RagnarokScriptTranslator: AsyncParsableCommand {
             Import.self,
             GenerateGlossary.self,
             Translate.self,
+            ConvertChinese.self,
             Export.self,
         ]
     )

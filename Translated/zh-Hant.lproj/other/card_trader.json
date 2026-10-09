@@ -1,0 +1,265 @@
+{
+  "file" : "npc/other/card_trader.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nHi there.\nI don't know if I can be\nof any assistance, but I\nam trying to help older veterans\nby exchaning the cards that\nthey are no longer using.",
+      "translation" : "[帕蒂]\n你好。\n不知道能不能幫上忙，我正在為資深冒險者提供兌換服務，收下他們不再使用的卡片。"
+    },
+    {
+      "kind" : "option",
+      "line" : 72,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "Ask for more information!",
+      "translation" : "瞭解更多"
+    },
+    {
+      "kind" : "option",
+      "line" : 72,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "I don't have any cards right now.",
+      "translation" : "我現在沒有卡片"
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nI am giving 1 point for each card that you bring me.\nThe points can be used to exchange for items that I have.",
+      "translation" : "[帕蒂]\n每交給我一張卡片，我就給你1點積分。\n積分可以用來兌換我這裡的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nFor ^CC0000100 points^000000: ^0000CC1 Old Card Album^000000.\nFor ^CC000050 points^000000: ^0000CC20 Yggdrasil Berry^000000.\nFor ^CC000020 points^000000: ^0000CC10 Blue Potion^000000.\nFor ^CC00001 point^000000: ^0000CC4 Honey^000000.",
+      "translation" : "[帕蒂]\n^CC0000100積分^000000：^0000CC1本老舊 收集冊^000000\n^CC000050積分^000000：^0000CC20個天地樹果實^000000\n^CC000020積分^000000：^0000CC10瓶藍色藥水^000000\n^CC00001積分^000000：^0000CC4份蜂蜜^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 86,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nWell, remember this offer!",
+      "translation" : "[帕蒂]\n記得我這裡可以兌換哦！"
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "Putty",
+      "placeholders" : [
+        ".@points"
+      ],
+      "state" : "translated",
+      "text" : "[Putty]\nWelcome back!\nI see you already have some\ntrading points. Actually, you currently have ^00cc00{0}^000000.",
+      "translation" : "[帕蒂]\n歡迎回來！\n看來你已經攢了些兌換積分，目前有^00cc00{0}^000000點。"
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nWould you like to exchange these\npoints now, or you would like to exchange more cards?",
+      "translation" : "[帕蒂]\n你想現在用積分兌換物品，還是再用卡片換些積分？"
+    },
+    {
+      "kind" : "option",
+      "line" : 101,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "I would like to exchange cards.",
+      "translation" : "用卡片換積分"
+    },
+    {
+      "kind" : "option",
+      "line" : 101,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "Can I exchange the points?",
+      "translation" : "用積分換物品"
+    },
+    {
+      "kind" : "message",
+      "line" : 103,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nPlease tell me what card you want to exchange.",
+      "translation" : "[帕蒂]\n請告訴我你想拿哪種卡片來兌換。"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Putty",
+      "placeholders" : [
+        "callfunc(\"F_GetPlural\",getitemname(.@card))"
+      ],
+      "state" : "translated",
+      "text" : "[Putty]\nYou don't have any ^0055FF{0}^000000 with you!",
+      "translation" : "[帕蒂]\n你沒有攜帶^0055FF{0}^000000！"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Putty",
+      "placeholders" : [
+        "callfunc(\"F_InsertPlural\",.@count,getitemname(.@card))"
+      ],
+      "state" : "translated",
+      "text" : "[Putty]\nYou've got ^0055FF{0}^000000.\n \nWould you like to exchange 1 point for each of them?",
+      "translation" : "[帕蒂]\n你有^0055FF{0}^000000。\n \n要將這些卡片按每張1積分兌換嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nPlease, come back here if you want to exchange a monster card.",
+      "translation" : "[帕蒂]\n想用魔物卡片換積分時，隨時來找我。"
+    },
+    {
+      "kind" : "option",
+      "line" : 131,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "Yes, please!",
+      "translation" : "好的，幫我兌換"
+    },
+    {
+      "kind" : "option",
+      "line" : 131,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "No, thank you.",
+      "translation" : "不用了，謝謝"
+    },
+    {
+      "kind" : "message",
+      "line" : 135,
+      "npc" : "Putty",
+      "placeholders" : [
+        ".@count"
+      ],
+      "state" : "translated",
+      "text" : "[Putty]\nAlright, you have received ^CC0000{0}^000000 points.",
+      "translation" : "[帕蒂]\n好，你獲得了^CC0000{0}^000000積分。"
+    },
+    {
+      "kind" : "message",
+      "line" : 139,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nOkay, let me know if I can help you with something else.",
+      "translation" : "[帕蒂]\n好的，如果還有其他需要幫忙的，請告訴我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nThese are the items that I have.",
+      "translation" : "[帕蒂]\n我這裡有這些物品可供兌換。"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "1 Old Card Album - 50 Points",
+      "translation" : "1本老舊 收集冊 - 50積分"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "20 Yggdrasil Berry - 50 Points",
+      "translation" : "20個天地樹果實 - 50積分"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "10 Blue Potion - 20 Points",
+      "translation" : "10瓶藍色藥水 - 20積分"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "4 Honey - 1 Point",
+      "translation" : "4份蜂蜜 - 1積分"
+    },
+    {
+      "kind" : "option",
+      "line" : 150,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "^777777Nerver mind.^000000",
+      "translation" : "^777777算了^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 153,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nGreat, I wish you the best\nof luck with this album. I have a\nvery good feeling about this one!",
+      "translation" : "[帕蒂]\n太好了，祝你從這本收集冊裡開出好東西。\n我對這一本很有信心！"
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nOh, you must like adventures.\nHere you go, just what you need!",
+      "translation" : "[帕蒂]\n哦，你一定喜歡冒險。\n給你，這正是你需要的！"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nBlue Potions? Are you sure?\nIf that's what you want, here they are!",
+      "translation" : "[帕蒂]\n藍色藥水？你確定嗎？\n如果你想要，那就給你！"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nIt took many bees\nto make all of this.\nMake good use of it.",
+      "translation" : "[帕蒂]\n這些蜂蜜可是許多蜜蜂辛辛苦苦釀出來的。\n好好利用吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nAlright, come back when you have more points.",
+      "translation" : "[帕蒂]\n好的，等你有更多積分時再來吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nSorry, but you don't have enough points.",
+      "translation" : "[帕蒂]\n抱歉，你的積分不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]\nYou have 0 points. You need at least 1 point to exchange.",
+      "translation" : "[帕蒂]\n你目前沒有積分。\n兌換至少需要1積分。"
+    }
+  ]
+}

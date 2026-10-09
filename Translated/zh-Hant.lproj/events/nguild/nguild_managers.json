@@ -1,0 +1,321 @@
+{
+  "file" : "npc/events/nguild/nguild_managers.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nI am waiting for my master.  Brave adventurer, follow your destiny!",
+      "translation" : "[{0}]\n我在等待我的主人。\n勇敢的冒險者，追隨你的命運吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$",
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nI am here to follow ^5533FF{1}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!",
+      "translation" : "[{0}]\n我是來聽從^5533FF{1}^000000的命令的！嘿！你根本不是公會的成員！！\n守衛們在哪裡？消滅這些入侵者！"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$",
+        "getguildmaster(.@gid)",
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nYou're not ^5533FF{1}^000000! I am here to follow ^5533FF{2}^000000's command only",
+      "translation" : "[{0}]\n你不是^5533FF{1}^000000！我只聽從^5533FF{2}^000000的命令。"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$",
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nWelcome Master ^5533FF{1}^000000 ! I will assist you in any way I can!",
+      "translation" : "[{0}]\n歡迎您，會長^5533FF{1}^000000！\n我會盡全力協助您！"
+    },
+    {
+      "kind" : "option",
+      "line" : 50,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Kafra Staff Employment / Dismissal",
+      "translation" : "僱傭／解僱卡普拉職員"
+    },
+    {
+      "kind" : "option",
+      "line" : 50,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Enter Treasure Room",
+      "translation" : "進入寶物室"
+    },
+    {
+      "kind" : "option",
+      "line" : 50,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]",
+      "translation" : "[{0}]"
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000.",
+      "translation" : "[{0}]\n會長，您還沒有與卡普拉公司簽訂契約。\n要僱傭卡普拉職員，必須先學會公會技能^5533FF和卡普拉訂契約^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Would you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... ",
+      "translation" : "要僱傭卡普拉職員嗎？\n需要支付^5533FF10,000 Zeny^000000..."
+    },
+    {
+      "kind" : "option",
+      "line" : 66,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Employ Kafra.",
+      "translation" : "僱傭卡普拉"
+    },
+    {
+      "kind" : "option",
+      "line" : 66,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 68,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled.",
+      "translation" : "[{0}]\n會長，您的錢不夠僱傭卡普拉職員，僱傭已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 68,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nYou have created a contract with the Kafra Staff Company.",
+      "translation" : "[{0}]\n您已與卡普拉公司簽訂契約。"
+    },
+    {
+      "kind" : "message",
+      "line" : 79,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nHow do you do? I'm here to provide you with helpful service! I'll do the best I can to serve you.",
+      "translation" : "[卡普拉 職員]\n您好！我將竭誠為您服務！"
+    },
+    {
+      "kind" : "message",
+      "line" : 83,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nI think the Kafra Staff will benefit our guild members.",
+      "translation" : "[{0}]\n我想，卡普拉職員會給公會成員帶來不少便利。"
+    },
+    {
+      "kind" : "message",
+      "line" : 89,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nAs you wish Master.  But I suggest we get a Kafra as soon as possible!",
+      "translation" : "[{0}]\n遵命，會長。\n不過，我建議儘快僱傭一名卡普拉職員！"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Would you like to dismiss the current Kafra?",
+      "translation" : "要解僱現在的卡普拉職員嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 96,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Dismissal",
+      "translation" : "解僱"
+    },
+    {
+      "kind" : "option",
+      "line" : 96,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 99,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nHave I done anything wrong? If I did, will you please forgive me?",
+      "translation" : "[卡普拉 職員]\n我做錯了什麼嗎？\n如果有，請您原諒我，好嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 102,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Dismiss",
+      "translation" : "解僱"
+    },
+    {
+      "kind" : "option",
+      "line" : 102,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 104,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nIt's unfortunate that I won't be able to serve your guild anymore....",
+      "translation" : "[卡普拉 職員]\n很遺憾，不能繼續為貴公會服務了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 110,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nThe Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!",
+      "translation" : "[{0}]\n卡普拉職員已經被解僱了。但是...我們真的應該儘快再僱一名卡普拉職員！"
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nThank you master, I'll do my best! ^^.",
+      "translation" : "[卡普拉 職員]\n謝謝會長，我會努力的！^^."
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nMaster, I think you should keep the current Kafra Staff because she is already trying her best to serve us",
+      "translation" : "[{0}]\n會長，我建議留下現在的卡普拉職員，她已經在盡力為我們服務了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 126,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nWould you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room.",
+      "translation" : "[{0}]\n您要去寶物室嗎？\n只有公會會長，也就是您，才有權進入。"
+    },
+    {
+      "kind" : "option",
+      "line" : 129,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Enter Treasure room.",
+      "translation" : "進入寶物室"
+    },
+    {
+      "kind" : "option",
+      "line" : 129,
+      "npc" : "F_GldManager",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 131,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nPlease follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out.",
+      "translation" : "[{0}]\n請跟我穿過這條秘密通道。\n您必須拉下秘密開關才能出去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nThe goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time.",
+      "translation" : "[{0}]\n每天都會產出寶物，請及時領取。\n錯過時間的話，寶物可能會消失。"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nAs you wish, master.",
+      "translation" : "[{0}]\n遵命，會長。"
+    }
+  ]
+}

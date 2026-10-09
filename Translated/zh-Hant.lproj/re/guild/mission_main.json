@@ -1,0 +1,700 @@
+{
+  "file" : "npc/re/guild/mission_main.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 18,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "You have too many items to proceed with the quest.\nPlease lighten your load and try again.",
+      "translation" : "您攜帶的物品過多，無法繼續任務。\n請減輕負重後再試一次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".region$[.@zoneid]"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWe provide missions and daily quests that you can complete in the region of {1}.\nThere are simple daily quests as well as missions that you have to complete within the siege hours only. So, think about it~",
+      "translation" : "{0}\n我們提供可以在{1}地區完成的委託任務和每日任務。\n既有簡單的每日任務，也有僅在攻城戰期間才能完成的委託任務。請好好考慮一下~"
+    },
+    {
+      "kind" : "option",
+      "line" : 59,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".region$[.@zoneid]"
+      ],
+      "state" : "needs_review",
+      "text" : "Conquering {0}",
+      "translation" : "征服{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 59,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "Guild Dungeon Daily Quests",
+      "translation" : "公會副本每日任務"
+    },
+    {
+      "kind" : "option",
+      "line" : 59,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "About quests",
+      "translation" : "關於任務"
+    },
+    {
+      "kind" : "option",
+      "line" : 59,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "I don't need it.",
+      "translation" : "我不需要。"
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIt's been less than an hour since the last time we've checked!\nCome back when the waiting time is over.",
+      "translation" : "{0}\n距離上次檢查還不到一小時！\n請等待時間結束後再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIf you have luck on your side, you'll have good results.",
+      "translation" : "{0}\n如果運氣好，結果就會不錯。"
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI have confirmed that the waiting time for conquering missions has ended.\nI'll delete unnecessary records for you.",
+      "translation" : "{0}\n已確認征服任務的等待時間已結束。\n我將為您刪除不必要的記錄。"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nAccording to ^4d4dffthe number of fortresses that your guild has conquered at this very moment,^000000 I'll give you a reward.\nDo you want to check right now? You're aware that ^4d4dffthe number can change even as we speak,^000000 right?",
+      "translation" : "{0}\n根據^4d4dff貴公會此刻已征服的據點數量，^000000我將給予獎勵。\n您想現在檢視嗎？請注意，^4d4dff數量隨時可能發生變化，^000000您明白嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 88,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "I'll come back later.",
+      "translation" : "我稍後再來。"
+    },
+    {
+      "kind" : "option",
+      "line" : 88,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "Let's check right now!",
+      "translation" : "現在檢視！"
+    },
+    {
+      "kind" : "message",
+      "line" : 89,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nRight. Life is all about timing.\nCome back when it's shining the most.",
+      "translation" : "{0}\n沒錯，人生講究時機。\n請在光芒最盛的時候再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nUnfortunately, there is no fortress that your guild has conquered.\nTry again!",
+      "translation" : "{0}\n很遺憾，貴公會尚未征服任何據點。\n請再試一次！"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
+        ".region$[.@zoneid]"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIncredible.\n{1}{2}\nYour guild has conquered {3}!",
+      "translation" : "{0}\n難以置信。\n{1}{2}\n貴公會已征服{3}！"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
+        ".region$[.@zoneid]"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}{2}\nYour guild has conquered {3}!",
+      "translation" : "{0}\n目前，貴公會已征服的據點總數為\n{1}{2}\n貴公會已征服{3}！"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".region$[.@zoneid]"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIncredible.\nYour guild has conquered {1}!",
+      "translation" : "{0}\n難以置信。\n貴公會已征服{1}！"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".region$[.@zoneid]"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\nYour guild has conquered {1}!",
+      "translation" : "{0}\n目前，貴公會已征服的據點總數為\n貴公會已征服{1}！"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
+        ".@total"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIncredible.\n{1}{2}\nis {3}!",
+      "translation" : "{0}\n難以置信。\n{1}{2}\n是{3}！"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
+        ".@total"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}{2}\nis {3}!",
+      "translation" : "{0}\n目前，貴公會已征服的據點總數為\n{1}{2}\n是{3}！"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".@total"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIncredible.\nis {1}!",
+      "translation" : "{0}\n難以置信。\n是{1}！"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".@total"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\nis {1}!",
+      "translation" : "{0}\n目前，貴公會已征服的據點總數為\n是{1}！"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI'll give you a reward accordingly. I hope you make good use of it.\nYou have an hour of waiting time until the next report. Keep that in mind and try again.",
+      "translation" : "{0}\n我會給予相應的獎勵。希望您能善加利用。\n距離下次報告還有一小時的等待時間。請留意這一點，再試一次吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI'm sorry but you can complete this mission only during the siege hours. I'm afraid I can't do anything here.",
+      "translation" : "{0}\n很抱歉，您只能在攻城戰期間完成此任務。恐怕我無能為力。"
+    },
+    {
+      "kind" : "message",
+      "line" : 135,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI'm sorry but conquering missions are for guild masters only.\nMembers should try guild dungeon daily quests instead.",
+      "translation" : "{0}\n很抱歉，征服任務僅限公會會長執行。\n成員們可以嘗試公會副本的日常任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 142,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".region$[.@zoneid]"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThese are missions that you can complete in guild dungeons of {1} area.\nYou can cancel them if you want to. Feel free to challenge yourself.",
+      "translation" : "{0}\n這些是可以在{1}區域的公會副本中完成的任務。\n如果您願意，可以取消它們。請隨意挑戰自己。"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nYou don't need to rush since these missions take place in guild dungeons.\nFeel free to give it a try whenever you want to.",
+      "translation" : "{0}\n既然這些任務是在公會副本中進行的，您不必著急。\n請隨時嘗試。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".level_req[.@index]"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nHmm, unfortunately, this mission is limited to users with ^4d4dfflevel {1}^000000 or higher only.\nYour level is not high enough.",
+      "translation" : "{0}\n嗯，很遺憾，此任務僅限^4d4dff等級{1}^000000及以上的使用者。\n您的等級還不夠高。"
+    },
+    {
+      "kind" : "message",
+      "line" : 169,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nOh, you've done a good job.\nIt isn't much, but hopefully it will be helpful.",
+      "translation" : "{0}\n哦，您做得很好。\n雖然不多，但希望能對您有所幫助。"
+    },
+    {
+      "kind" : "message",
+      "line" : 177,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nHmm? It seems like you haven't completed the mission yet..\nIs there any problem?",
+      "translation" : "{0}\n嗯？看來您還沒有完成任務。\n有什麼問題嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 181,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "No.",
+      "translation" : "不。"
+    },
+    {
+      "kind" : "option",
+      "line" : 181,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "Give up the quest.",
+      "translation" : "放棄任務"
+    },
+    {
+      "kind" : "message",
+      "line" : 182,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI'm not sure how long you can use the guild dungeon, but good luck.",
+      "translation" : "{0}\n我不確定您能使用公會副本多久，但祝您好運。"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWell, no one's forcing you.\nDo whatever you like to do.\nI'll cancel the mission then.",
+      "translation" : "{0}\n好吧，沒人強迫您。\n請隨意。\n那麼，我將取消該任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 196,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThe rule is set here so that you're only allowed to complete one mission each day.\nI would like you to come back when the waiting time is over.",
+      "translation" : "{0}\n這裡的規則規定，您每天只能完成一次任務。\n請在等待時間結束後再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 202,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI have confirmed that the waiting time for this mission is over.\nI'll delete the records used for confirmation.\nNow, give it a try to complete the quest!",
+      "translation" : "{0}\n我已確認此任務的等待時間已結束。\n我將刪除用於確認的記錄。\n現在，請嘗試完成任務吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 208,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        ".ordinal$[.@sel]",
+        ".region$[.@zoneid]"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nThis is the {1} mission in {2}.",
+      "translation" : "{0}\n這是{2}中的{1}任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 212,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI'll reward you accordingly upon completing this mission.",
+      "translation" : "{0}\n完成此任務後，我會給予相應的獎勵。"
+    },
+    {
+      "kind" : "message",
+      "line" : 212,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nI'll give you experience points in return.",
+      "translation" : "{0}\n我會給予經驗值作為回報。"
+    },
+    {
+      "kind" : "option",
+      "line" : 218,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "Accept it.",
+      "translation" : "接受"
+    },
+    {
+      "kind" : "option",
+      "line" : 218,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "Reject it.",
+      "translation" : "拒絕"
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nEntrance to the guild dungeon is restricted. But it's not like you can't find a way to go there, either.\nI'll pray for your success in fighting those monsters.",
+      "translation" : "{0}\n公會副本的入口是受限的。但這並不意味著您找不到進入的方法。\n我祈禱您在戰鬥中戰勝那些魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 225,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nWell, do as you wish.",
+      "translation" : "{0}\n好吧，隨您便。"
+    },
+    {
+      "kind" : "message",
+      "line" : 233,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIt's not difficult at all.\nI give a reward ^4d4dffdepending on how many fortresses you have conquered.^000000\n^4d4dffThe type and quality of the reward depend on the number of conquered fortresses at the very moment I check.^000000",
+      "translation" : "{0}\n這並不難。\n我會根據您攻陷的堡壘數量給予^4d4dff獎勵。^000000\n^4d4dff獎勵的種類和品質取決於我檢查時您已攻陷的堡壘數量。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 238,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nAnd of course, I check during the siege hours only.\n^4d4dffReceiving a reward is followed by an hour of waiting time. So you'd better figure out the right timing as well.^000000",
+      "translation" : "{0}\n當然，我只會在攻城戰期間進行檢查。\n^4d4dff領取獎勵後需要等待一小時。所以您最好也把握好時機。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 242,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nIf you are a master of a guild that is currently participating in siege battles, you should give it a try.",
+      "translation" : "{0}\n如果您是正在參加攻城戰的公會的會長，建議您嘗試一下。"
+    },
+    {
+      "kind" : "message",
+      "line" : 245,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nGuild dungeon daily quests consist of combat quests that you can complete in guild dungeons.\nIt's simple.",
+      "translation" : "{0}\n公會副本日常任務由可以在公會副本中完成的戰鬥任務組成。\n很簡單。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$"
+      ],
+      "state" : "needs_review",
+      "text" : "{0}\nYou're really something else~!",
+      "translation" : "{0}\n您真是與眾不同呢~！"
+    },
+    {
+      "kind" : "message",
+      "line" : 323,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "It is to deal with the powerful creatures that appear in the Corridor of the Abyss.",
+      "translation" : "任務是處理出現在深淵迴廊中的強大生物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 326,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "It is to eliminate the monsters that appear in the guild dungeon.",
+      "translation" : "任務是消滅出現在公會副本中的魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 335,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "You should hunt 50 or more Caterpillars and Creamy Fear monsters..",
+      "translation" : "您需要獵殺50只或以上的狂暴綠棉蟲和狂暴克瑞米。"
+    },
+    {
+      "kind" : "message",
+      "line" : 338,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "Hunt down 30 or more of all 3 types of Abyss Kobolds.",
+      "translation" : "獵殺30只或以上的所有3種深淵刺錘犬妖。"
+    },
+    {
+      "kind" : "message",
+      "line" : 341,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffYou should kill furious 'Pyuriel' and warrior 'Lora'.^000000",
+      "translation" : "^4d4dff您需要擊敗狂暴的'Pyuriel'和戰士'Lora'。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 50 or more of Giant Hornets and Ancient Worms, respectively.^000000",
+      "translation" : "^4d4dff分別獵殺50只或以上的狂暴蜂兵和狂暴蜈蚣。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 347,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 40 or more of Killer Mantises and 50 or more of Angra Mantises.^000000",
+      "translation" : "^4d4dff獵殺40只或以上的殺手螳螂和50只或以上的安格拉螳螂。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 350,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "They are ^4d4dff'Elvira' and 'Gioia,' which is a strange mechanical creature of heroes' tears.^000000",
+      "translation" : "它們是^4d4dff'埃維亞'和'喬伊亞'，一種由英雄之淚構成的奇異機械生物。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 353,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 50 or more Zombie Masters and Wraith Deads, respectively.^000000",
+      "translation" : "^4d4dff分別獵殺50只或以上的腐屍首領和狂暴惡靈。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 356,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 50 GLD_DARK_SHADOW, 20 GLD_DARK_FRAME, and 20 GLD_DARK_PRIEST monsters.^000000",
+      "translation" : "^4d4dff獵殺50只GLD_DARK_SHADOW、20只GLD_DARK_FRAME和20只GLD_DARK_PRIEST。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 359,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "They are ^4d4dff'Kades' and 'Rudo' who wander around the dead's hill.^000000",
+      "translation" : "它們是^4d4dff在死者之丘遊蕩的'Kades'和'魯盜'。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 362,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 50 or more Gullinbursti and Leib Olmai, respectively.^000000",
+      "translation" : "^4d4dff分別獵殺50只或以上的狂暴野豬和狂暴大腳熊。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 365,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 45 or more Skeleton General, 20 or more Am Mut and 25 or more Gajomart, respectively.^000000",
+      "translation" : "^4d4dff分別獵殺45只或以上的邪骸戰士長、20只或以上的狂暴小土人和25只或以上的狂暴鬼火。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 368,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffThey are Old Empire's General 'Daehyon' and Guard 'Soheon'.^000000",
+      "translation" : "^4d4dff它們是舊帝國的將軍'Daehyon'和衛兵'Soheon'。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 371,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 50 or more Hell Apocalypse and Zakudam, respectively.^000000",
+      "translation" : "^4d4dff分別獵殺50只或以上的地獄阿修羅機械戰士和扎庫坦。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 374,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 35 or more Heavy Metaling and Cobalt Mineral, respectively.^000000",
+      "translation" : "^4d4dff分別獵殺35只或以上的礦石波利和鈷礦石魔。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 377,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt more than 50 Banshee Masters and 30 Beholder Masters.^000000",
+      "translation" : "^4d4dff獵殺50只以上的女妖首領和30只以上的大眼怪首領。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 380,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 50 Aunoes, and 20 Fanats.^000000",
+      "translation" : "^4d4dff獵殺50只阿烏奴艾和20只法恩特。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 383,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 30 or more Knight, Blacksmith, Assassin, respectively.^000000",
+      "translation" : "^4d4dff分別獵殺30只或以上的騎士、鐵匠和刺客。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 386,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 30 or more Wizard, Priest, Hunter respectively.^000000",
+      "translation" : "^4d4dff分別獵殺30只或以上的巫師、牧師和獵人。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 389,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 30 or more, Crusader, Rogue, Alchemist, respectively.^000000",
+      "translation" : "^4d4dff分別獵殺30只或以上的十字軍、流氓和鍊金術士。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 392,
+      "npc" : "gld_mission",
+      "state" : "needs_review",
+      "text" : "^4d4dffHunt 30 or more Sage, Monk, Bard, respectively.^000000",
+      "translation" : "^4d4dff分別獵殺30只或以上的賢者、武僧和詩人。^000000"
+    }
+  ]
+}

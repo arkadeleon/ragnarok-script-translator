@@ -1,0 +1,913 @@
+{
+  "file" : "npc/custom/quests/thq/THQS_TTShop.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 22,
+      "npc" : "Treasure Hunter's Shop",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "#Treasure_Token"
+      ],
+      "state" : "translated",
+      "text" : "[Ash]\nAhh, {0}! Welcome to the Official Treasure Hunter's Guild Shop.\nYou currently have ^FF0000{1}^000000 treasure tokens!!!",
+      "translation" : "[阿什]\n啊，{0}！歡迎來到尋寶獵人公會的官方商店。\n你現在有^FF0000{1}^000000枚尋寶代幣！"
+    },
+    {
+      "kind" : "option",
+      "line" : 26,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "How does this place work?",
+      "translation" : "這裡怎麼兌換"
+    },
+    {
+      "kind" : "option",
+      "line" : 26,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "What do you have in stock?",
+      "translation" : "有什麼商品"
+    },
+    {
+      "kind" : "option",
+      "line" : 26,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nWell you see here you can exchange your treasure hunter tokens for zeny or rare weapons forged by our blacksmiths.\n \nEverything has its own price value and the only way you can get the tokens is by completing quests assigned to you,the system normally works like this.\n \nThe harder the mission the more Tokens you will earn. All red quests are worth 4-8 Tokens, and the rest are worth 1-5.\n \nHope that solves your problem and questions.",
+      "translation" : "[阿什]\n在這裡，你可以用尋寶代幣兌換 Zeny，或是我們鐵匠打造的稀有武器。\n\n每件商品都有對應的價格，而獲取代幣的唯一途徑，就是完成分配給你的任務。\n\n任務越難，獲得的代幣越多。\n紅色任務獎勵 4 至 8 枚代幣，其他任務獎勵 1 至 5 枚。\n\n希望這樣能解答你的疑問。"
+    },
+    {
+      "kind" : "message",
+      "line" : 41,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nOk here is our Big list of goods.\n \n(Note T stands for a Treasure Token.)",
+      "translation" : "[阿什]\n好，這是我們的商品清單。\n\n（T 代表一枚尋寶代幣。）"
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Trade for Zeny",
+      "translation" : "兌換 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Trade for Weapons",
+      "translation" : "兌換武器"
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Trade for Cards",
+      "translation" : "兌換卡片"
+    },
+    {
+      "kind" : "option",
+      "line" : 46,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 47,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer.",
+      "translation" : "[阿什]\n這就是我們提供的商品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 50,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "1000z - 1T",
+      "translation" : "1000z - 1T"
+    },
+    {
+      "kind" : "option",
+      "line" : 50,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "10000z - 10T",
+      "translation" : "10000z - 10T"
+    },
+    {
+      "kind" : "option",
+      "line" : 50,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "100000z - 100T",
+      "translation" : "100000z - 100T"
+    },
+    {
+      "kind" : "option",
+      "line" : 50,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 52,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "You don't have enough tokens!",
+      "translation" : "你的代幣不足！"
+    },
+    {
+      "kind" : "message",
+      "line" : 60,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "You don't have enough tokens!",
+      "translation" : "你的代幣不足！"
+    },
+    {
+      "kind" : "message",
+      "line" : 68,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "You don't have enough tokens!",
+      "translation" : "你的代幣不足！"
+    },
+    {
+      "kind" : "message",
+      "line" : 76,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer.",
+      "translation" : "[阿什]\n這就是我們提供的商品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Axe's",
+      "translation" : "斧頭"
+    },
+    {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "1 Handed Swords",
+      "translation" : "單手劍"
+    },
+    {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "2 Handed Swords",
+      "translation" : "雙手劍"
+    },
+    {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Book's",
+      "translation" : "書籍"
+    },
+    {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Bow's",
+      "translation" : "弓"
+    },
+    {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Katar's",
+      "translation" : "拳刃"
+    },
+    {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Knuckle's",
+      "translation" : "拳套"
+    },
+    {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Mace's",
+      "translation" : "鈍器"
+    },
+    {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Whips",
+      "translation" : "鞭子"
+    },
+    {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Wands",
+      "translation" : "法杖"
+    },
+    {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 81,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer.",
+      "translation" : "[阿什]\n這就是我們提供的商品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 84,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Sabbath - 160T",
+      "translation" : "薩巴特 - 160T"
+    },
+    {
+      "kind" : "option",
+      "line" : 84,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Slaughter - 160T",
+      "translation" : "屠戮 - 160T"
+    },
+    {
+      "kind" : "option",
+      "line" : 84,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Tomahawk - 180T",
+      "translation" : "風靈之斧 - 180T"
+    },
+    {
+      "kind" : "option",
+      "line" : 84,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Great Axe - 200T",
+      "translation" : "克萊伊特斧 - 200T"
+    },
+    {
+      "kind" : "option",
+      "line" : 84,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Guillotine - 200T",
+      "translation" : "斬首之斧 - 200T"
+    },
+    {
+      "kind" : "option",
+      "line" : 84,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nYou don't have enough tokens!",
+      "translation" : "[阿什]\n你的代幣不夠！"
+    },
+    {
+      "kind" : "message",
+      "line" : 122,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer.",
+      "translation" : "[阿什]\n這就是我們提供的商品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 125,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Edge - 130T",
+      "translation" : "利刃 - 130T"
+    },
+    {
+      "kind" : "option",
+      "line" : 125,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Solar Sword - 150T",
+      "translation" : "烈陽之劍 - 150T"
+    },
+    {
+      "kind" : "option",
+      "line" : 125,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Caesar's Sword - 170T",
+      "translation" : "利剪劍 - 170T"
+    },
+    {
+      "kind" : "option",
+      "line" : 125,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Nagan - 180T",
+      "translation" : "多刃尖刺刀 - 180T"
+    },
+    {
+      "kind" : "option",
+      "line" : 125,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Immaterial Sword - 200T",
+      "translation" : "聖劍 混沌 - 200T"
+    },
+    {
+      "kind" : "option",
+      "line" : 125,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Excalibur - 200T",
+      "translation" : "石中劍 - 200T"
+    },
+    {
+      "kind" : "option",
+      "line" : 125,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Byeollungum - 240T",
+      "translation" : "首領之劍 - 240T"
+    },
+    {
+      "kind" : "option",
+      "line" : 125,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Talefing - 320T",
+      "translation" : "魔刀 吞神 - 320T"
+    },
+    {
+      "kind" : "option",
+      "line" : 125,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 177,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer.",
+      "translation" : "[阿什]\n這就是我們提供的商品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 180,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Dragon Slayer - 140T",
+      "translation" : "龍牙劍 - 140T"
+    },
+    {
+      "kind" : "option",
+      "line" : 180,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Schweizersabel - 200T",
+      "translation" : "風靈之劍 - 200T"
+    },
+    {
+      "kind" : "option",
+      "line" : 180,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Katzbalger - 300T",
+      "translation" : "亞藍斯之劍 - 300T"
+    },
+    {
+      "kind" : "option",
+      "line" : 180,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Muramasa - 300T",
+      "translation" : "名刀 不知火 - 300T"
+    },
+    {
+      "kind" : "option",
+      "line" : 180,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Masamune - 400T",
+      "translation" : "秘刀 十六夜月 - 400T"
+    },
+    {
+      "kind" : "option",
+      "line" : 180,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Balmung - 2000T",
+      "translation" : "神器 三十二朔月 - 2000T"
+    },
+    {
+      "kind" : "option",
+      "line" : 180,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 220,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer.",
+      "translation" : "[阿什]\n這就是我們提供的商品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Book of the Burning Sun - 80T",
+      "translation" : "火靈之書 - 80T"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Book of the Rough Seas - 80T",
+      "translation" : "水靈之書 - 80T"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Book of the Dry Winds - 80T",
+      "translation" : "風靈之書 - 80T"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Book of the Ripe Earth - 80T",
+      "translation" : "地靈之書 - 80T"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Book of the Revelations - 80T",
+      "translation" : "預言錄 - 80T"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Bible - 90T",
+      "translation" : "聖經 - 90T"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Tablet - 120T",
+      "translation" : "石板 - 120T"
+    },
+    {
+      "kind" : "option",
+      "line" : 223,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 268,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer.",
+      "translation" : "[阿什]\n這就是我們提供的商品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Rudra's Bow - 150T",
+      "translation" : "熾天使之弓 - 150T"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Roguemaster's Bow - 150T",
+      "translation" : "盜賊之弓 - 150T"
+    },
+    {
+      "kind" : "option",
+      "line" : 271,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer.",
+      "translation" : "[阿什]\n這就是我們提供的商品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Katar of the Blazing Rage - 70T",
+      "translation" : "火靈拳刃 - 70T"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Katar of the Cold Icicle - 70T",
+      "translation" : "冰靈拳刃 - 70T"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Katar of the Piercing Wind - 70T",
+      "translation" : "風靈拳刃 - 70T"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Katar of the Dusty Thornbush - 70T",
+      "translation" : "刺藤拳刃 - 70T"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Sharpened Legbone of Ghoul - 125T",
+      "translation" : "骸靈拳刃 - 125T"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Infiltrator - 150T",
+      "translation" : "刺殺拳刃 - 150T"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 328,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer.",
+      "translation" : "[阿什]\n這就是我們提供的商品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 331,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Kaiser Knuckle - 75T",
+      "translation" : "風靈拳套 - 75T"
+    },
+    {
+      "kind" : "option",
+      "line" : 331,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Berserk - 75T",
+      "translation" : "貝爾斯拳套 - 75T"
+    },
+    {
+      "kind" : "option",
+      "line" : 331,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 346,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer.",
+      "translation" : "[阿什]\n這就是我們提供的商品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 349,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Spike - 65T",
+      "translation" : "致盲之錘 - 65T"
+    },
+    {
+      "kind" : "option",
+      "line" : 349,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Slash - 90T",
+      "translation" : "魔錘 安魂曲 - 90T"
+    },
+    {
+      "kind" : "option",
+      "line" : 349,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Grand Cross - 100T",
+      "translation" : "聖錘 十字星 - 100T"
+    },
+    {
+      "kind" : "option",
+      "line" : 349,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Quadrille - 110T",
+      "translation" : "秘錘 冷月 - 110T"
+    },
+    {
+      "kind" : "option",
+      "line" : 349,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Mjolnir - 1000T",
+      "translation" : "雷神之錘 - 1000T"
+    },
+    {
+      "kind" : "option",
+      "line" : 349,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 382,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer.",
+      "translation" : "[阿什]\n這就是我們提供的商品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 385,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Rapture Rose - 50T",
+      "translation" : "毒鞭 薔薇 - 50T"
+    },
+    {
+      "kind" : "option",
+      "line" : 385,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Chemeti - 65T",
+      "translation" : "秘鞭 眷戀 - 65T"
+    },
+    {
+      "kind" : "option",
+      "line" : 385,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 400,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer.",
+      "translation" : "[阿什]\n這就是我們提供的商品。"
+    },
+    {
+      "kind" : "option",
+      "line" : 403,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Mighty Staff - 90T",
+      "translation" : "巫杖 魂咬 - 90T"
+    },
+    {
+      "kind" : "option",
+      "line" : 403,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Wizardry Staff - 150T",
+      "translation" : "大巫師之杖 - 150T"
+    },
+    {
+      "kind" : "option",
+      "line" : 403,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Bone Wand - 110T",
+      "translation" : "骷髏魔杖 - 110T"
+    },
+    {
+      "kind" : "option",
+      "line" : 403,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Staff of Soul - 120T",
+      "translation" : "靈魂之杖 - 120T"
+    },
+    {
+      "kind" : "option",
+      "line" : 403,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 430,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "[Ash]\nThis is what we have to offer. All Cards are 300T",
+      "translation" : "[阿什]\n這是我們出售的卡片，每張都是 300T。"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Poring Card - 2T",
+      "translation" : "波利卡片 - 2T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Pasana Card - 420T",
+      "translation" : "帕莎納卡片 - 420T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Dokebi Card - 420T",
+      "translation" : "土人卡片 - 420T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Swordfish Card - 420T",
+      "translation" : "異變魚卡片 - 420T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Sandman Card - 420T",
+      "translation" : "泥人卡片 - 420T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Drainliar Card - 360T",
+      "translation" : "紅蝙蝠卡片 - 360T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Kaho Card - 360T",
+      "translation" : "卡浩卡片 - 360T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Mandragora Card - 360T",
+      "translation" : "曼陀羅魔花卡片 - 360T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Vadon Card - 360T",
+      "translation" : "螃蟹卡片 - 360T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Mummy Card - 540T",
+      "translation" : "木乃伊卡片 - 540T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Zenorc Card - 240T",
+      "translation" : "茲諾克卡片 - 240T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Condor Card - 240T",
+      "translation" : "禿鷹卡片 - 240T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Zombie Card - 210T",
+      "translation" : "腐屍卡片 - 210T"
+    },
+    {
+      "kind" : "option",
+      "line" : 433,
+      "npc" : "Treasure Hunter's Shop",
+      "state" : "translated",
+      "text" : "Never mind",
+      "translation" : "算了"
+    }
+  ]
+}

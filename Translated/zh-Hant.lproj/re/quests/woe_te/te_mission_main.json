@@ -1,0 +1,723 @@
+{
+  "file" : "npc/re/quests/woe_te/te_mission_main.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "You have too many items to proceed with the quest.\nPlease lighten your load and try again.",
+      "translation" : "您攜帶的物品過多，無法繼續任務。\n請減輕負重後再試一次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nAh... you...\nbased on TE rules, I won't be ordering you or asking you favors unfortunately.",
+      "translation" : "[{0}]\n啊……你……\n根據TE的規則，很遺憾，我不能向你下達命令，也不能請你幫忙。"
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nThere are missions you can complete in TE region.\nLet's see, what do you want?",
+      "translation" : "[{0}]\n在TE區域有一些可以完成的任務。\n讓我看看，你想要什麼？"
+    },
+    {
+      "kind" : "message",
+      "line" : 167,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nHey now, since this place is just for primary and secondary job classes as well as users without expanded levels, could you leave if you got nothing else to do here?",
+      "translation" : "[{0}]\n喂，這裡只面向初級和轉職職業，以及未擴充套件等級的玩家。\n如果你沒什麼事，請離開這裡好嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 174,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "Accept/Conform Missions",
+      "translation" : "接受/確認任務"
+    },
+    {
+      "kind" : "option",
+      "line" : 174,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "What do you mean a mission?",
+      "translation" : "任務是什麼意思？"
+    },
+    {
+      "kind" : "option",
+      "line" : 174,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "I don't have any.",
+      "translation" : "我沒有。"
+    },
+    {
+      "kind" : "message",
+      "line" : 176,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nMm, I'm sorry but missions are for users with ^4d4dff70 level^000000 or higher.\nHonestly, it's hard to complete a mission if your level is too low.",
+      "translation" : "[{0}]\n嗯，很抱歉，任務需要^4d4dff70級^000000或以上的玩家才能接取。\n說實話，等級太低的話，任務很難完成。"
+    },
+    {
+      "kind" : "message",
+      "line" : 176,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou already know that you have to accept a mission in a certain period of time, right?\nUnfortunately, you can't accept missions right now.",
+      "translation" : "[{0}]\n你知道必須在一定時間內接取任務，對吧？\n很遺憾，你現在無法接取任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 176,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou already know that you have to accept a mission in a certain period of time, right?\nMoreover, you have to keep in mind that you can't accept both high-level and low-level missions simultaneously if they are of the same content.",
+      "translation" : "[{0}]\n你知道必須在一定時間內接取任務，對吧？\n另外，請注意，如果任務內容相同，你不能同時接取高階和低階任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nMm, you were taking a break?\nWell, it doesn't matter anymore.\nYou can only check the results of the missions you've already accepted.",
+      "translation" : "[{0}]\n嗯，你是在休息嗎？\n算了，這不重要。\n你只能檢視已接取任務的結果。"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou can only check the results of the missions you've already accepted.",
+      "translation" : "[{0}]\n你只能檢視已接取任務的結果。"
+    },
+    {
+      "kind" : "option",
+      "line" : 200,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nSee you later then.",
+      "translation" : "[{0}]\n那再見了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@mob_name$[0]"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou did it in time.\nI don't understand why {1} appear at that time of the day.\nAnyway, good job.",
+      "translation" : "[{0}]\n你在規定時間內完成了。\n我不明白為什麼{1}會在那個時間出現。\n總之，幹得好。"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]",
+      "translation" : "[{0}]"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nTime's up.\nUnfortunately, mission failed!\nMaybe next time!",
+      "translation" : "[{0}]\n時間到了。\n很遺憾，任務失敗！\n下次再試吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou're not on this mission currently.\nCould you check again?",
+      "translation" : "[{0}]\n你目前不在該任務中。\n請再確認一下。"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou are already on a high-level mission!\nYou cannot accept a low-level mission if you're already on a high-level mission of the same content!",
+      "translation" : "[{0}]\n你已經在進行高階任務了！\n如果任務內容相同，你不能在高階任務期間接取低階任務！"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou're already on a elimination mission!\nI would like you to take care of what you already have unless you want to cancel it.",
+      "translation" : "[{0}]\n你已經在進行殲滅任務了！\n除非你想取消，否則請先完成手頭的工作。"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@mob_name$[1]",
+        ".@fortress$",
+        ".@num_kill",
+        ".@mob_name$[1]"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nI've been told that {1} appear during the busy siege hours at the fortress in {2}.\nI would like you to ^4d4dffeliminate {3} or more of {4}^000000.",
+      "translation" : "[{0}]\n我聽說{1}會在{2}要塞的繁忙攻城時段出現。\n我希望你^4d4dff殲滅{3}只或以上的{4}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nIncredible!\nBreaking Emperiums is definitely not an easy job.\nYou must be contributing a lot to your guild. Good job!",
+      "translation" : "[{0}]\n不可思議！\n破壞華麗金屬絕對不是一件容易的事。\n你一定為公會做出了很大的貢獻。幹得好！"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou're already on a mission of the same content,\nthe level is different though\nI would like you to take care of what you already have unless you want to cancel it.",
+      "translation" : "[{0}]\n你已經在進行相同內容的任務了，\n只是等級不同。\n除非你想取消，否則請先完成手頭的工作。"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nThere is something called 'commercial development level' in each fortress.\nIt increases as much as each guild invests.",
+      "translation" : "[{0}]\n每個要塞都有一個叫“商業發展等級”的東西。\n它會隨著公會的投入而增加。"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nThe break for commercial development of the fortress is over now.\nGood. Think about what kind of missions you want and come back again.",
+      "translation" : "[{0}]\n要塞的商業發展休息時間結束了。\n很好，想想你想要什麼樣的任務，然後再回來吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nWhat is the most important thing in siege battles?\nIt's destroying Emperiums! Let me give you that exact mission of destroying Emperiums!",
+      "translation" : "[{0}]\n攻城戰中最重要的是什麼？\n當然是破壞華麗金屬！讓我給你佈置一個破壞華麗金屬的任務吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@num_items",
+        ".@string$[0]",
+        ".@string$[1]"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\n{1} or more of {2} let's see you've done it right.\n{3}\nAnyway, good job.",
+      "translation" : "[{0}]\n{2}中的{1}個以上，讓我看看你是否做對了。\n{3}\n總之，幹得好。"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@string$[2]",
+        ".@fortress$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nHmm you wouldn't believe it, but this mission is related to a theft.\nThey told me a bunch of {1} is missing from the fortress in {2}.",
+      "translation" : "[{0}]\n嗯，你肯定不敢相信，但這個任務與一起盜竊案有關。\n他們告訴我，{2}要塞裡丟失了一批{1}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\n[{1}]\nSince TE Region has more of a casual atmosphere,\nit's not fun doing just siege battles, right?\nSo, I brought ^4d4dffsome works you can do during the siege hours^000000~",
+      "translation" : "[{0}]\n[{1}]\n既然TE區域的氣氛比較輕鬆，\n光是打攻城戰未免太無趣了，對吧？\n所以，我準備了一些^4d4dff你可以在攻城期間完成的工作^000000~"
+    },
+    {
+      "kind" : "message",
+      "line" : 251,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@num_tool_box"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nSince you've done a good job, I'll let you open my tool box {1} times.\nAlthough you won't find anything mostly...\nIt's a bonus, so don't complaint even if you don't find anything.",
+      "translation" : "[{0}]\n既然你表現不錯，我就讓你開啟我的工具箱{1}次。\n雖然裡面大多沒什麼東西...\n這是額外獎勵，就算沒找到什麼也別抱怨哦。"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "Just like {0} said, you went through the box in front, and...",
+      "translation" : "就像{0}說的，你翻遍了前面的箱子，然後..."
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "Time's up.\nUnfortunately, mission failed!\nMaybe next time!",
+      "translation" : "時間到了。\n很遺憾，任務失敗！\n下次再試試吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nIt only makes sense that way, doesn't it?\nDon't you think so?",
+      "translation" : "[{0}]\n這樣才說得通，不是嗎？\n你不覺得嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 320,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@num_tool_box"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nSince you've done a good job, I'll let you open my tool box {1} times.\nAlthough you won't find anything mostly...\nIt's a bonus, so don't complaint even if you don't find anything.",
+      "translation" : "[{0}]\n既然你表現不錯，我就讓你開啟我的工具箱{1}次。\n雖然裡面大多沒什麼東西...\n這是額外獎勵，就算沒找到什麼也別抱怨哦。"
+    },
+    {
+      "kind" : "message",
+      "line" : 325,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "Just like {0} said, you went through the box in front, and...",
+      "translation" : "就像{0}說的，你翻遍了前面的箱子，然後..."
+    },
+    {
+      "kind" : "message",
+      "line" : 334,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "Time's up.\nUnfortunately, mission failed!\nMaybe next time!",
+      "translation" : "時間到了。\n很遺憾，任務失敗！\n下次再試試吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 350,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nIt only makes sense that way, doesn't it?\nDon't you think so?",
+      "translation" : "[{0}]\n這樣才說得通，不是嗎？\n你不覺得嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 360,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nHowever, this is closely related to Emperiums.\nDestroying Emperiums repeatedly staggers commercial development level.",
+      "translation" : "[{0}]\n不過，這與華麗金屬密切相關。\n反覆破壞華麗金屬會動搖商業發展等級。"
+    },
+    {
+      "kind" : "message",
+      "line" : 364,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nSo, now we take a break in order to prevent an excessive decrease in commercial development level.\nSee you in a bit.",
+      "translation" : "[{0}]\n所以，現在我們要休息一下，以防止商業發展等級過度下降。\n稍後見。"
+    },
+    {
+      "kind" : "message",
+      "line" : 378,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@num_kill"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nGloria or Kafragarten, wherever it is! Right now, at this very hour, ^4d4dffdestroy Emperiums!^000000\n^4d4dffTarget number is {1} or more!^000000",
+      "translation" : "[{0}]\n無論是格洛麗亞還是卡普拉賈登，不管在哪裡！就在此刻，^4d4dff破壞華麗金屬！^000000\n^4d4dff目標數量是{1}個以上！^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 418,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@string$[0]"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nLet me take the rest of the {1}.\nI'll return it to its original owner.",
+      "translation" : "[{0}]\n剩下的{1}就交給我吧。\n我會把它歸還給原主。"
+    },
+    {
+      "kind" : "message",
+      "line" : 422,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@num_tool_box"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nSince you've done a good job, I'll let you open my tool box {1} times.\nAlthough you won't find anything mostly...\nIt's a bonus, so don't complaint even if you don't find anything.",
+      "translation" : "[{0}]\n既然你表現不錯，我就讓你開啟我的工具箱{1}次。\n雖然裡面大多沒什麼東西...\n這是額外獎勵，就算沒找到什麼也別抱怨哦。"
+    },
+    {
+      "kind" : "message",
+      "line" : 427,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "Just like {0} said, you went through the box in front, and...",
+      "translation" : "就像{0}說的，你翻遍了前面的箱子，然後..."
+    },
+    {
+      "kind" : "message",
+      "line" : 436,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "Time's up.\nUnfortunately, mission failed!\nMaybe next time!",
+      "translation" : "時間到了。\n很遺憾，任務失敗！\n下次再試試吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 452,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nIt only makes sense that way, doesn't it?\nDon't you think so?",
+      "translation" : "[{0}]\n這樣才說得通，不是嗎？\n你不覺得嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 460,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@num_items",
+        ".@string$[2]"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nThe thief probably took advantage of the siege hours.\nIt's a request to find ^4d4dff{1} or more of {2}^000000.",
+      "translation" : "[{0}]\n小偷很可能利用了攻城時間。\n這是一個尋找^4d4dff{2}中{1}個以上^000000的請求。"
+    },
+    {
+      "kind" : "message",
+      "line" : 466,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nSince TE Region has more of a casual atmosphere,\nit's not fun doing just siege battles, right?\nSo, I brought ^4d4dffsome works you can do during the siege hours^000000~",
+      "translation" : "[{0}]\n既然TE區域的氣氛比較輕鬆，\n光是打攻城戰未免太無趣了，對吧？\n所以，我準備了一些^4d4dff你可以在攻城期間完成的工作^000000~"
+    },
+    {
+      "kind" : "message",
+      "line" : 471,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nYou can accept missions ^4d4dffstarting from 1 hour before the beginning of the siege and until the end of the siege battle TE^000000,\nand every mission has ^4d4dffa 4-hour time limit^000000 for completion.",
+      "translation" : "[{0}]\n你可以在^4d4dff攻城開始前1小時至TE攻城戰結束期間^000000接受任務，\n且每個任務都有^4d4dff4小時的完成時限^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 475,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nSimply put, you accept a mission from me during the siege hours and\n^4d4dffcome back to give me a report within the time limit^000000.",
+      "translation" : "[{0}]\n簡單來說，你在攻城期間從我這裡接受任務，\n然後^4d4dff在時限內回來向我彙報^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 479,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nTry it for fun.",
+      "translation" : "[{0}]\n就當是玩玩看吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 483,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nI see.\nCome back anytime if you change your mind.\nI might not be available, though. Hehehe.",
+      "translation" : "[{0}]\n明白了。\n如果你改變主意，隨時可以回來。\n不過我可能不在哦。呵呵呵。"
+    },
+    {
+      "kind" : "message",
+      "line" : 493,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        "getarg(2)"
+      ],
+      "state" : "needs_review",
+      "text" : "It seems like you haven't accomplished the mission yet?\n{0}",
+      "translation" : "看起來你還沒有完成任務？\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 496,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nDo you want to cancel by any chance?",
+      "translation" : "[{0}]\n你是想取消任務嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 499,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "No.",
+      "translation" : "不。"
+    },
+    {
+      "kind" : "option",
+      "line" : 499,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "Yes.",
+      "translation" : "是的"
+    },
+    {
+      "kind" : "message",
+      "line" : 501,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nGood luck!",
+      "translation" : "[{0}]\n祝你好運！"
+    },
+    {
+      "kind" : "message",
+      "line" : 505,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nAs you wanted, this mission is canceled.",
+      "translation" : "[{0}]\n如你所願，該任務已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 512,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "Hmm you still have some time left, but it's not the siege hour yet\nI don't think you should go on.\nYou should cancel this mission. I would say it's failed.",
+      "translation" : "雖然你還有剩餘時間，但現在還沒到攻城時段。\n我覺得你不該繼續了。\n你應該取消這個任務。我會判定它失敗。"
+    },
+    {
+      "kind" : "option",
+      "line" : 516,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "I would like to go on.",
+      "translation" : "我想繼續。"
+    },
+    {
+      "kind" : "option",
+      "line" : 516,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "Yes, I'll cancel it.",
+      "translation" : "是的，我要取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 518,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nI don't think it's worth it. Well, good luck!",
+      "translation" : "[{0}]\n我覺得不值得。好吧，祝你好運！"
+    },
+    {
+      "kind" : "message",
+      "line" : 522,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nAs you wanted, this mission is canceled.",
+      "translation" : "[{0}]\n如你所願，該任務已取消。"
+    },
+    {
+      "kind" : "option",
+      "line" : 532,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "Accept it.",
+      "translation" : "接受"
+    },
+    {
+      "kind" : "option",
+      "line" : 532,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "Do not accept it.",
+      "translation" : "不接受。"
+    },
+    {
+      "kind" : "message",
+      "line" : 534,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\n^4d4dffThe time limit is 4 hours.^000000\nAccomplish the mission with in that time and report to me.",
+      "translation" : "[{0}]\n^4d4dff時限為4小時。^000000\n請在規定時間內完成任務並向我彙報。"
+    },
+    {
+      "kind" : "message",
+      "line" : 540,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "state" : "needs_review",
+      "text" : "[{0}]\nTry another mission then.",
+      "translation" : "[{0}]\n那就試試別的任務吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 550,
+      "npc" : "Training_Instructor_TE",
+      "state" : "needs_review",
+      "text" : "You didn't find anything.",
+      "translation" : "你什麼也沒找到。"
+    },
+    {
+      "kind" : "message",
+      "line" : 553,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        "getitemname(.@item_id[ .@miss_item01 ])"
+      ],
+      "state" : "needs_review",
+      "text" : "You found '{0} !'",
+      "translation" : "你找到了'{0}'！"
+    }
+  ]
+}

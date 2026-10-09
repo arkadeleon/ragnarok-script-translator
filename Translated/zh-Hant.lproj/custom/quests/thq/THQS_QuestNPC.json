@@ -1,0 +1,892 @@
+{
+  "file" : "npc/custom/quests/thq/THQS_QuestNPC.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 22,
+      "npc" : "Quest Manager",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Guy]\nWelcome to the Treasure Hunters Guild {0}.",
+      "translation" : "[蓋伊]\n歡迎來到尋寶獵人公會，{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Quest Manager",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Guy]\nLook {0}, you can only 1 quest at a time, you should finish the quest unless you have given up.\nGiving up will cost you ^FF00002500z^000000.",
+      "translation" : "[蓋伊]\n聽著，{0}，一次只能接一個任務。\n除非你打算放棄，否則得先把手頭的任務完成。\n放棄任務要支付^FF00002500 Zeny^000000。"
+    },
+    {
+      "kind" : "option",
+      "line" : 30,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "No, never would I leave a quest!",
+      "translation" : "不，我絕不放棄任務"
+    },
+    {
+      "kind" : "option",
+      "line" : 30,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Yah I'm pathetic... Pay 2500z",
+      "translation" : "唉，我真沒用... 支付 2500 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nGood well get back out there.",
+      "translation" : "[蓋伊]\n很好，那就繼續去完成任務吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nIts sad to see someone give a quest up...\nShame on you.",
+      "translation" : "[蓋伊]\n看到有人放棄任務真讓人難過...\n真丟人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nThats sad you don't even have ^FF00002500z^000000.",
+      "translation" : "[蓋伊]\n真慘，你連^FF00002500 Zeny^000000都沒有。"
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "Quest Manager",
+      "placeholders" : [
+        "#Treasure_Token"
+      ],
+      "state" : "translated",
+      "text" : "[Guy]\nAhh welcome fellow Treasure Hunter.\nYou currently have ^FF0000{0}^000000 treasure tokens!!!\nWould you like me to assign you a Quest?",
+      "translation" : "[蓋伊]\n啊，歡迎，尋寶獵人同伴。\n你現在有^FF0000{0}^000000枚尋寶代幣！\n要我給你安排一個任務嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 70,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Yes I would like a Quest Please.",
+      "translation" : "請給我一個任務"
+    },
+    {
+      "kind" : "option",
+      "line" : 70,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Sorry Guy no time today.",
+      "translation" : "抱歉，蓋伊，今天沒空"
+    },
+    {
+      "kind" : "message",
+      "line" : 72,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nOk lets see what quest we can give you today.\nThe quest names in ^FF0000This Colour^000000 mean that they are more challenging then the rest, but have better rewards.",
+      "translation" : "[蓋伊]\n好，看看今天有什麼任務適合你。\n名稱用^FF0000這種顏色^000000標出的任務比較難，不過獎勵也更豐厚。"
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "Quest Manager",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Guy]\nAlright maybe next time {0}.",
+      "translation" : "[蓋伊]\n好吧，下次再來吧，{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 97,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nI'm afraid you must sign up for the guild before you can go on a quest!",
+      "translation" : "[蓋伊]\n恐怕你必須先加入公會，才能開始任務！"
+    },
+    {
+      "kind" : "message",
+      "line" : 103,
+      "npc" : "Quest Manager",
+      "placeholders" : [
+        "(#THQ_DELAY - (GetTime(DT_YEAR)*12*31*24+GetTime(DT_MONTH)*31*24+GetTime(DT_DAYOFMONTH)*24+GetTime(DT_HOUR)) )"
+      ],
+      "state" : "translated",
+      "text" : "[Guy]\nI'm afraid there aren't any Quests for you yet.\nCall in {0} hours later.",
+      "translation" : "[蓋伊]\n目前還沒有適合你的任務。\n過 {0} 小時再來吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nOk you have a couple quests that can be done here.",
+      "translation" : "[蓋伊]\n好的，這裡有幾個任務可以接。"
+    },
+    {
+      "kind" : "option",
+      "line" : 119,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Lost Old Man.",
+      "translation" : "迷路的老頭"
+    },
+    {
+      "kind" : "option",
+      "line" : 119,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Master needs his Bow.",
+      "translation" : "師父需要他的弓"
+    },
+    {
+      "kind" : "option",
+      "line" : 119,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "The Hit List.",
+      "translation" : "通緝名單"
+    },
+    {
+      "kind" : "option",
+      "line" : 119,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000The Sad Widow.^000000",
+      "translation" : "^FF0000悲傷的寡婦^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\n^FF0000Lost Old Man^000000\n^FF0000------------^000000\nThis is an easy and low payed quest.\n \nA wife came in asking us to find his husband, she seems to come in a lot asking us to find him over and over again.",
+      "translation" : "[蓋伊]\n^FF0000迷路的老頭^000000\n^FF0000------------^000000\n這是個簡單的小任務，報酬不高。\n\n一位太太請我們尋找她的丈夫。\n她常來這裡，一次又一次地讓我們幫她找人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 127,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nBut he always seems to be around the same place so there isn't much looking involved,check the mountains 1 west and 1 north of Prontera.",
+      "translation" : "[蓋伊]\n不過他總在同一個地方，不用費太多工夫。\n從普隆德拉往西走一張地圖，再往北走一張地圖，去那裡的山上看看。"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\n^FF0000Master needs his Bow^000000\n^FF0000--------------------^000000\nThis is just a package delivery run, no big deal or anything.\n \nTake this to an archer in the Archer Village outside of Payon.",
+      "translation" : "[蓋伊]\n^FF0000師父需要他的弓^000000\n^FF0000--------------------^000000\n這只是一次簡單的送貨任務，沒什麼大不了的。\n \n請把這個送到斐揚外面的弓箭手村，交給那裡的弓箭手。"
+    },
+    {
+      "kind" : "message",
+      "line" : 144,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\n^FF0000The Hit List^000000\n^FF0000------------^000000\nIn this quest you get to see some action.\n \nThere has been a farmer that keeps having all his crops eaten by ^FF0000Thief Bugs, Porings, and Lunatics^000000 here is a lost of what I need you to do. He is waiting East of Prontera.",
+      "translation" : "[蓋伊]\n^FF0000通緝名單^000000\n^FF0000------------^000000\n這個任務能讓你活動活動筋骨。\n\n有位農夫的莊稼總被^FF0000浮勒盜蟲、波利和瘋兔^000000吃掉。\n這是要你消滅的目標名單。\n他在普隆德拉東邊等你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 151,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nOk go to the east and bash those little bastards like there is no tomorrow. When you are done with that list you have just discard it, but you will NOT get another one!.",
+      "translation" : "[蓋伊]\n去東邊，狠狠收拾那些小混蛋吧。\n名單上的目標處理完就可以把名單丟掉，不過我可不會再給你一份！"
+    },
+    {
+      "kind" : "message",
+      "line" : 157,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000The Sad Widow^000000\n^FF0000*************^000000\nThis is just another quest with possible well pay.\n \nThere is an old Widow in Prontera, she recently lost her husband due to a monster attack.She has requested a Guild member to come talk to her at the Prontera Graveyard.",
+      "translation" : "^FF0000悲傷的寡婦^000000\n^FF0000*************^000000\n這又是一個可能報酬不錯的任務。\n \n普隆德拉有一位老寡婦，她最近因魔物襲擊失去了丈夫。她請求公會成員去普隆德拉墓地與她交談。"
+    },
+    {
+      "kind" : "message",
+      "line" : 167,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nOk you have a couple quests that can be done here.",
+      "translation" : "[蓋伊]\n好的，這裡有幾個任務可以接。"
+    },
+    {
+      "kind" : "option",
+      "line" : 170,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "The Strange Letter",
+      "translation" : "奇怪的信件"
+    },
+    {
+      "kind" : "option",
+      "line" : 170,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Jur for Jeramiah",
+      "translation" : "送給傑拉邁亞的刺擊拳刃"
+    },
+    {
+      "kind" : "option",
+      "line" : 170,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Bee Keepers Hunny",
+      "translation" : "養蜂人的蜂蜜"
+    },
+    {
+      "kind" : "option",
+      "line" : 170,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000The Wander Man^000000",
+      "translation" : "^FF0000流浪的男子^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 172,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000The Strange Letter^000000\n^FF0000------------------^000000\nI do not know much about this quest.\n \nA strange man came in here yesterday and asked me to deliver this ^FF0000Strange Letter^000000 to some woman in Morocc. Knowing us we do not ask questions so you must take care of this delivery.\nThe Woman is in located in Morocc and her name is Erika.",
+      "translation" : "^FF0000奇怪的信件^000000\n^FF0000------------------^000000\n我對這個任務也不太瞭解。\n\n昨天有個奇怪的男人來這裡，讓我把這封^FF0000奇怪的信件^000000交給夢羅克的一位女士。\n你也知道，我們向來不過問，所以這趟就交給你了。\n那位女士叫艾麗卡，住在夢羅克。"
+    },
+    {
+      "kind" : "message",
+      "line" : 183,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Jur for Jeramiah^000000\n^FF0000----------------^000000\nStandard delivery quest.\n \nJeramiah ordered a Special Jur from our weapon shop.Your Job is to deliver it to him in the Assasin Temple.",
+      "translation" : "^FF0000送給傑拉邁亞的刺擊拳刃^000000\n^FF0000----------------^000000\n普通的送貨任務。\n\n傑拉邁亞在我們的武器店訂了一把特製的刺擊拳刃。\n你把它送到刺客神殿，交給他就行。"
+    },
+    {
+      "kind" : "message",
+      "line" : 193,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Bee Keepers Hunny^000000\n^FF0000-----------------^000000\nStrange man in the marsh need your help.\n \nThere is a strange man in the forest in ^FF00001 south and 1 west^000000 of Prontera, he need your help with something.",
+      "translation" : "^FF0000養蜂人的蜂蜜^000000\n^FF0000-----------------^000000\n沼澤裡的怪人需要你的幫助。\n\n從普隆德拉往^FF0000南走一張地圖，再往西走一張地圖^000000，那裡的森林中有個奇怪的男人。\n他有事需要你幫忙。"
+    },
+    {
+      "kind" : "message",
+      "line" : 202,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000The Wander Man^000000\n^FF0000**************^000000\nThere is a woman in Payon that is in desperate for aid.\n \nThere is a woman in Payon named Molly please get to her as soon as possible the letter she sent here sounded like someone was killing her.",
+      "translation" : "^FF0000流浪的男子^000000\n^FF0000**************^000000\n斐揚有位女士急需幫助。\n\n她叫莫莉，請儘快去見她。\n她寄來的信急得像是有人要殺她一樣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 212,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nOk you have a couple quests that can be done here.",
+      "translation" : "[蓋伊]\n好的，這裡有幾個任務可以接。"
+    },
+    {
+      "kind" : "option",
+      "line" : 215,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Damn Pixies!",
+      "translation" : "該死的小妖精"
+    },
+    {
+      "kind" : "option",
+      "line" : 215,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Package Delivery",
+      "translation" : "包裹投遞"
+    },
+    {
+      "kind" : "option",
+      "line" : 215,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Prontera Culvert",
+      "translation" : "普隆德拉下水道"
+    },
+    {
+      "kind" : "option",
+      "line" : 215,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Trouble at the Coal Mine^000000",
+      "translation" : "^FF0000煤礦的麻煩^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 216,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Damn Pixies!^000000\n^FF0000------------^000000\nHave you ever been to Hell?\n \nA man outside of ^FF0000Ant Hell^000000 has requested your audience, I suggest you hurry.",
+      "translation" : "^FF0000該死的小妖精^000000\n^FF0000------------^000000\n你去過地獄嗎？\n\n^FF0000螞蟻地獄^000000外有個男人想見你，最好趕緊過去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 225,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Package Delivery^000000\n^FF0000----------------^000000\nStandard drop off quest.\n \nIn this quest you need to deliver a mystery box to someone names ^FF0000Flank at the bridge between Aldebaran and Juno^000000.",
+      "translation" : "^FF0000包裹投遞^000000\n^FF0000----------------^000000\n普通的送貨任務。\n\n把這個神秘盒子送給^FF0000艾爾帕蘭和朱諾之間橋上的弗蘭克^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 235,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Prontera Culvert^000000\n^FF0000----------------^000000\nThe bugs,They are everywhere!.\n \nThe ^FF0000Prontera Culvert^000000 is out of control!Sign up as a volunteer to clean out some of the culvert.",
+      "translation" : "^FF0000普隆德拉下水道^000000\n^FF0000----------------^000000\n蟲子，到處都是蟲子！\n\n^FF0000普隆德拉下水道^000000裡的情況已經失控了！\n去報名當志願者，幫忙清理下水道吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 241,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "I know it seems like there is no stopping them but however many you kill does makes a difference. After you have signed up, inside the Culvert there will be a Knight that will give you a quest.",
+      "translation" : "雖然看起來它們無窮無盡，但每消滅一隻都有意義。報名後，在下水道里你會遇到一位騎士，他會給你釋出任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 246,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Trouble at the Coal Mine^000000\n^FF0000************************^000000\nThe fun...err...trouble never stops in Rune-Midgarts.\n \nRecently there was an accident at the coal mines. There was a huge chasm that released some undead Evil Druids.",
+      "translation" : "^FF0000煤礦的麻煩^000000\n^FF0000************************^000000\n在盧恩·米德加茲，樂趣...呃...麻煩從未停止。\n \n最近煤礦發生了一起事故。巨大的裂縫中湧出了許多亡靈暗神官。"
+    },
+    {
+      "kind" : "message",
+      "line" : 252,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "The Evil Druids started to turn all the workers into the undead. We do not know why, but we do not want to find out, contact a man named Rudolfo outside the Coal Mines.",
+      "translation" : "暗神官開始將工人們變成亡靈。我們不知道原因，也不想知道。請去煤礦外找一位名叫魯道夫的男子。"
+    },
+    {
+      "kind" : "message",
+      "line" : 258,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nOk you have a couple quests that can be done here.",
+      "translation" : "[蓋伊]\n好的，這裡有幾個任務可以接。"
+    },
+    {
+      "kind" : "option",
+      "line" : 261,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Zombie Attack",
+      "translation" : "腐屍襲擊"
+    },
+    {
+      "kind" : "option",
+      "line" : 261,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Mystic Wizard",
+      "translation" : "神秘巫師"
+    },
+    {
+      "kind" : "option",
+      "line" : 261,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Aww shoot!",
+      "translation" : "哎呀！"
+    },
+    {
+      "kind" : "option",
+      "line" : 261,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Emperium^000000",
+      "translation" : "^FF0000華麗金屬^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 262,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Zombie Attack^000000\n^FF0000-------------^000000\nThe undead have invaded Payon Cave!\n \nI remember when Payon Cave used to be a safe place to visit, but now undead Zombies have infested the cave! Please contact ^FF0000Flora outside on Payon Cave^000000 and aid her.",
+      "translation" : "^FF0000腐屍襲擊^000000\n^FF0000-------------^000000\n不死者入侵了斐揚洞穴！\n \n我記得斐揚洞穴曾經是一個安全的去處，但現在那裡已經佈滿了腐屍！請聯絡^FF0000斐揚洞穴外的芙羅拉^000000，協助她。"
+    },
+    {
+      "kind" : "message",
+      "line" : 271,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Mystic Wizard^000000\n^FF0000-------------^000000\nProto-type of a Staff must be delivered to Zed the Wizard.\n \nZed the Wizard has requested to try out a new un-named proto-type staff. It will be your job to deliver this to him. Zed tend to stay within the general area of Juno.",
+      "translation" : "^FF0000神秘巫師^000000\n^FF0000-------------^000000\n把法杖樣品送給巫師澤德。\n\n巫師澤德想試用一款尚未命名的新法杖。\n你的任務就是送過去，他通常在朱諾附近活動。"
+    },
+    {
+      "kind" : "message",
+      "line" : 281,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Aww shoot!^000000\n^FF0000----------^000000\nA little girl is in trouble.\n \nThere is a little girl in trouble, her name is Dassy and she is ^FF0000east of the Prontera fountain^000000.",
+      "translation" : "^FF0000哎呀！^000000\n^FF0000----------^000000\n一個小女孩遇到了麻煩。\n \n有個名叫達西的小女孩遇到了麻煩，她在^FF0000普隆德拉噴泉的東邊^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Emperium^000000\n^FF0000********^000000\nThis is a strange quest that I know little about.\n \nSomeone in ^FF0000Prontera Guild Hall^000000 has requested to see one of our members, his name is Czhore.",
+      "translation" : "^FF0000華麗金屬^000000\n^FF0000********^000000\n這是一個奇怪的任務，我知之甚少。\n \n^FF0000普隆德拉公會大廳^000000裡有人想見我們的成員，他的名字是茨霍雷。"
+    },
+    {
+      "kind" : "message",
+      "line" : 300,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nOk you have a couple quests that can be done here.",
+      "translation" : "[蓋伊]\n好的，這裡有幾個任務可以接。"
+    },
+    {
+      "kind" : "option",
+      "line" : 303,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Savage Land",
+      "translation" : "荒野之地"
+    },
+    {
+      "kind" : "option",
+      "line" : 303,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Pyramid's part 1",
+      "translation" : "金字塔 第一部分"
+    },
+    {
+      "kind" : "option",
+      "line" : 303,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Thinking first",
+      "translation" : "三思而後行"
+    },
+    {
+      "kind" : "option",
+      "line" : 303,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000The not so friendly ghost^000000",
+      "translation" : "^FF0000不太友好的幽靈^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 304,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Savage Land^000000\n^FF0000-----------^000000\nEasy for some very hard for others.\n \nA man named Lithin wishes to give you a quest, you can find him north of Prontera inside of ^FF0000The Hidden Temple^000000",
+      "translation" : "^FF0000荒野之地^000000\n^FF0000-----------^000000\n有人覺得簡單，有人覺得很難。\n\n一個叫莉辛的男人有任務給你。\n他在普隆德拉北邊的^FF0000隱藏神殿^000000裡。"
+    },
+    {
+      "kind" : "message",
+      "line" : 313,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Pyramid's^000000\n^FF0000---------^000000\nIts funny cause no one knows how these were really made.\n \nApparently the Pyramids have are beginning to be infested with undead activity,outside the pyramids a man will be waiting for you. He did no give us his name but he asked for you to hurry.",
+      "translation" : "^FF0000金字塔^000000\n^FF0000---------^000000\n說來也怪，沒人知道這些金字塔究竟是怎麼建起來的。\n\n最近裡面的不死魔物似乎越來越多了。\n入口外有個男人在等你，他沒留名字，只說讓你趕緊過去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 322,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Thinking first^000000\n^FF0000--------------^000000\nThis sounds like another one of those ditzy girl quests...\n \nDazzy the local blond around Geffen has asked for you to deliver her these flowers. I don't know why someone would send flowers to herself...",
+      "translation" : "^FF0000三思而後行^000000\n^FF0000--------------^000000\n這聽起來又是那種迷糊女孩的任務...\n \n吉芬當地的金髮女子達西請你把這些花送給她。我不知道為什麼有人要送花給自己..."
+    },
+    {
+      "kind" : "message",
+      "line" : 332,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000The not so friendly ghost^000000\n^FF0000*************************^000000\nWell no one ever said Casper was nice behind the scenes.\n \nA wizard on the 3rd floor of Geffen tower wants to talk to you about the ancient ruins underneath the city.",
+      "translation" : "^FF0000不太友好的幽靈^000000\n^FF0000*************************^000000\n誰知道卡斯珀私底下是不是也那麼友善呢。\n\n吉芬塔三樓有位巫師，想跟你談談城下的古代遺蹟。"
+    },
+    {
+      "kind" : "message",
+      "line" : 342,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nOk you have a couple quests that can be done here.",
+      "translation" : "[蓋伊]\n好的，這裡有幾個任務可以接。"
+    },
+    {
+      "kind" : "option",
+      "line" : 345,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Package for thieves",
+      "translation" : "給盜賊的包裹"
+    },
+    {
+      "kind" : "option",
+      "line" : 345,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Pyramid's part 2",
+      "translation" : "金字塔 第二部分"
+    },
+    {
+      "kind" : "option",
+      "line" : 345,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Special delivery",
+      "translation" : "特殊快遞"
+    },
+    {
+      "kind" : "option",
+      "line" : 345,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Geffenia^000000",
+      "translation" : "^FF0000吉芬尼亞^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 346,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Package for thieves^000000\n^FF0000------------------^000000\nHow ironic.\n \nDeliver this Box to the Thieves guild.",
+      "translation" : "^FF0000給盜賊的包裹^000000\n^FF0000------------------^000000\n真是諷刺。\n \n把這個箱子送到盜賊公會。"
+    },
+    {
+      "kind" : "message",
+      "line" : 356,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Pyramid's part 2^000000\n^FF0000----------------^000000\nMore undead action in this triangle!\n \nTalk to a man outside the entrance of the pyramids, he seems to have another quest for you.",
+      "translation" : "^FF0000金字塔 第二部分^000000\n^FF0000----------------^000000\n這座三角形建築裡，不死魔物又鬧起來了！\n\n去找金字塔入口外的那個男人，他似乎又有任務給你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 365,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Special delivery^000000\n^FF0000----------------^000000\nWell most of what we do is run packages, this is no different from other's.\n \nTake this box, DO NOT OPEN IT! To a little girl in Lutie named Chirach she should be around Santa.",
+      "translation" : "^FF0000特殊快遞^000000\n^FF0000----------------^000000\n我們大多是在送包裹，這次也不例外。\n\n把這個箱子送給薑餅城的小女孩奇拉克，她應該在聖誕老人附近。\n千萬別開啟！"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Geffenia^000000\n^FF0000********^000000\nThe little children of Geffen have been having strange nightmares.\n \nWe believe that the ruins underneath Geffen are causing this problem, talk to a Wizard named Zuuzuu inside Geffen Tower for your mission.",
+      "translation" : "^FF0000吉芬尼亞^000000\n^FF0000********^000000\n吉芬的孩子們最近總做奇怪的噩夢。\n\n我們懷疑是城下遺蹟在作祟。\n去吉芬塔找名叫祖祖的巫師接任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 385,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nOk you have a couple quests that can be done here.",
+      "translation" : "[蓋伊]\n好的，這裡有幾個任務可以接。"
+    },
+    {
+      "kind" : "option",
+      "line" : 388,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Apple Juice",
+      "translation" : "蘋果汁"
+    },
+    {
+      "kind" : "option",
+      "line" : 388,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Delivery",
+      "translation" : "快遞"
+    },
+    {
+      "kind" : "option",
+      "line" : 388,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Golden Thief Bug^000000",
+      "translation" : "^FF0000黃金蟲^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 388,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Evil Pirates^000000",
+      "translation" : "^FF0000邪惡海盜^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 389,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Apple Juice^000000\n^FF0000-----------^000000\nCan't say no to some good apple juice.\n \nThere is a little girl up in Prontera Square a bit north from the fountain, go talk to her.",
+      "translation" : "^FF0000蘋果汁^000000\n^FF0000-----------^000000\n面對美味的蘋果汁，誰都無法拒絕。\n \n普隆德拉廣場噴泉北邊一點有個小女孩，去和她談談。"
+    },
+    {
+      "kind" : "message",
+      "line" : 398,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Delivery^000000\n^FF0000--------^000000\nSo many packages so little time.\n \nTake this box to a man in Alberta named Charles.",
+      "translation" : "^FF0000快遞^000000\n^FF0000--------^000000\n包裹這麼多，時間卻這麼少。\n \n把這個箱子送到艾爾貝塔一個叫查爾斯的男人那裡。"
+    },
+    {
+      "kind" : "message",
+      "line" : 408,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Golden Thief Bug^000000\n^FF0000****************^000000\nThe Prontera Culvert has never been the same...\n \nWell there have been reports of a Golden Thief Bug running around the bottom of the Culvert. Talk to a Knight inside the Culvert.",
+      "translation" : "^FF0000黃金蟲^000000\n^FF0000****************^000000\n普隆德拉下水道已經不再是從前的樣子了...\n \n有報告說下水道底部有一隻黃金蟲在四處遊蕩。去下水道里找一位騎士談談。"
+    },
+    {
+      "kind" : "message",
+      "line" : 417,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Evil Pirates^000000\n^FF0000************^000000\nA ghost ship has washed up on shore on an island outside of Izlude.\n \nA female assassin has a quest for you, she is waiting outside the Ghost Ship. There have been reports of evil undead pirates lurking around inside the ship.",
+      "translation" : "^FF0000邪惡海盜^000000\n^FF0000************^000000\n一艘幽靈船被衝到了依斯魯得附近一座島嶼的岸上。\n\n船外有位女刺客等著你，她有任務要交給你。\n據說船裡潛伏著邪惡的不死海盜。"
+    },
+    {
+      "kind" : "message",
+      "line" : 427,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nOk you have a couple quests that can be done here.",
+      "translation" : "[蓋伊]\n好的，這裡有幾個任務可以接。"
+    },
+    {
+      "kind" : "option",
+      "line" : 430,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Banana Juice",
+      "translation" : "香蕉汁"
+    },
+    {
+      "kind" : "option",
+      "line" : 430,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Another Delivery",
+      "translation" : "又一次送貨"
+    },
+    {
+      "kind" : "option",
+      "line" : 430,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "My lost beeds",
+      "translation" : "丟失的玻璃珠"
+    },
+    {
+      "kind" : "option",
+      "line" : 430,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Baphomet!^000000",
+      "translation" : "^FF0000巴風特^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 431,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Banana Juice^000000\n^FF0000------------^000000\nSound gross to some good to others.\n \nThere is a little girl up in Prontera Square a bit north from the fountain, go talk to her.",
+      "translation" : "^FF0000香蕉汁^000000\n^FF0000------------^000000\n有人覺得難喝，有人卻覺得美味。\n\n普隆德拉廣場噴泉往北一點有個小女孩，去跟她談談。"
+    },
+    {
+      "kind" : "message",
+      "line" : 440,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Another Delivery^000000\n^FF0000----------------^000000\nWell yah box delivering is in high demand,lots of lazy people.\n \nTake this package to a man in Morocc named Klye.",
+      "translation" : "^FF0000又一次送貨^000000\n^FF0000----------------^000000\n懶人太多，送包裹的生意可火了。\n\n把這個包裹送給夢羅克一個叫克萊的男人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 450,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Baphomet!^000000\n^FF0000*********^000000\nHidden in the Temple he watches and guards.\n \nRumor has it that a Goat Man is lurking in the Hidden Temple, There is also a man in the Hidden Temple names Zack that needs you help with this Goat Man known as Baphomet.",
+      "translation" : "^FF0000巴風特！^000000\n^FF0000*********^000000\n他隱藏在神殿中，監視並守護著那裡。\n\n傳聞在隱藏神殿中潛伏著一隻山羊人。那裡還有一位名叫扎克的男子，他需要你的幫助來對付這隻被稱為巴風特的山羊人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 459,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000My lost Beeds^000000\n^FF0000-------------^000000\nOh great I smell stupidity...\n \nA little girl in Payon wants to talk to you, her name is Flower, What a stupid name,Hahaha.",
+      "translation" : "^FF0000丟失的玻璃珠^000000\n^FF0000-------------^000000\n得，又是一樁蠢事...\n\n斐揚有個叫花兒的小女孩想見你。\n這名字真傻，哈哈哈。"
+    },
+    {
+      "kind" : "message",
+      "line" : 469,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nOk you have a couple quests that can be done here.",
+      "translation" : "[蓋伊]\n好的，這裡有幾個任務可以接。"
+    },
+    {
+      "kind" : "option",
+      "line" : 472,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Smelly Box",
+      "translation" : "臭盒子"
+    },
+    {
+      "kind" : "option",
+      "line" : 472,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "Payon Cave",
+      "translation" : "斐揚洞穴"
+    },
+    {
+      "kind" : "option",
+      "line" : 472,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Sohee's Everywhere!^000000",
+      "translation" : "^FF0000到處都是鬼女^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 472,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Moonlight Flower^000000",
+      "translation" : "^FF0000月夜貓^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 473,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Smelly Box^000000\n^FF0000----------^000000\nOh god please get this out of here fast.\n \nOh man smells like someone died in here.Take this to the Magic School in Geffen and hurry,ahh the smell its burning my eye's!!!",
+      "translation" : "^FF0000臭盒子^000000\n^FF0000----------^000000\n天哪，請快點把這個東西弄走。\n\n天哪，聞起來像是有個人死在裡面了。把它送到吉芬的魔法學校，快一點，啊，這味道燻得我眼睛都疼了！！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 483,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Sohee's Everywhere!^000000\n^FF0000******************^000000\nHmmm seems a man named Jack wants to speak to you in the Archer Guild House.\n \nWell what we know about Payon is that a while ago there was a freak fire that burnt down the old school.",
+      "translation" : "^FF0000鬼女無處不在！^000000\n^FF0000******************^000000\n嗯，似乎有個叫傑克的男子想在弓箭手公會和你說話。\n\n關於斐揚，我們只知道不久前發生了一場怪火，燒燬了舊學校。"
+    },
+    {
+      "kind" : "message",
+      "line" : 489,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "The strange thing about what happened was that the children inside did not seem to die from the flames.\nSpeak to the little school girl somewhere in Payon.",
+      "translation" : "奇怪的是，裡面的孩子們似乎並沒有死於火焰。\n去斐揚找那個女學生談談。"
+    },
+    {
+      "kind" : "message",
+      "line" : 495,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Moonlight Flower^000000\n^FF0000****************^000000\nHmmm seems a man named Jack wants to speak to you in the Archer Guild House.\n \nWell I don't know much about this, it has to do with the deepest regions of Payon Cave, We don't know much because no one ever seems to make it back alive.",
+      "translation" : "^FF0000月夜貓^000000\n^FF0000****************^000000\n嗯，似乎有個叫傑克的男子想在弓箭手公會和你說話。\n\n我對這件事知之甚少，這似乎與斐揚洞穴的最深處有關。我們瞭解得不多，因為似乎沒人能活著回來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 504,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Payon Cave^000000\n^FF0000----------^000000\nHmmm seems a man named Jack wants to speak to you in the Archer Guild House.\n \nThe farther we go into the cave the stranger it gets.",
+      "translation" : "^FF0000斐揚洞穴^000000\n^FF0000----------^000000\n嗯，似乎有個叫傑克的男子想在弓箭手公會和你說話。\n\n我們越深入洞穴，裡面的情況就越奇怪。"
+    },
+    {
+      "kind" : "message",
+      "line" : 514,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "[Guy]\nOk you have a couple quests that can be done here.",
+      "translation" : "[蓋伊]\n好的，這裡有幾個任務可以接。"
+    },
+    {
+      "kind" : "option",
+      "line" : 517,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "The Blank Box",
+      "translation" : "沒有標記的盒子"
+    },
+    {
+      "kind" : "option",
+      "line" : 517,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Eddga^000000",
+      "translation" : "^FF0000虎王^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 517,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Phreeoni^000000",
+      "translation" : "^FF0000皮裡恩^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 517,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Maya^000000",
+      "translation" : "^FF0000蟻后^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 519,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000The Blank Box^000000\n^FF0000-------------^000000\nPackage to Morocc\n \nThere is nothing written on this box but a notice to deliver it to a man Kreg.",
+      "translation" : "^FF0000沒有標記的盒子^000000\n^FF0000-------------^000000\n寄往夢羅克的包裹。\n\n盒子上什麼也沒寫，只有一張便條，叫我們把它送給克雷格。"
+    },
+    {
+      "kind" : "message",
+      "line" : 529,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Eddga^000000\n^FF0000*****^000000\nTony the Tiger is on crack and destroying the forest.\n \nTalk to a man outside the 'Hidden' Hunter Guild, He needs your help.",
+      "translation" : "^FF0000虎王^000000\n^FF0000*****^000000\n托尼這隻老虎瘋了，正在破壞森林。\n\n去“隱藏”獵人公會外面找那個男子談談，他需要你的幫助。"
+    },
+    {
+      "kind" : "message",
+      "line" : 538,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Phreeoni^000000\n^FF0000********^000000\nHe is big and Pink and you run and hide!\n \nThis guy just poped into some hole one day, He doesn't look that tough but you would be surprised. Talk to a man named Caral outside of Ant Hell.",
+      "translation" : "^FF0000皮裡恩^000000\n^FF0000********^000000\n又大又粉紅，趕快跑，趕快躲！\n\n這傢伙某天突然鑽進了一個洞。\n看著不怎麼厲害，交手就知道了。\n去螞蟻地獄外找一個叫卡拉爾的男人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 547,
+      "npc" : "Quest Manager",
+      "state" : "translated",
+      "text" : "^FF0000Maya^000000\n^FF0000****^000000\nSomething scary!\n \nThis half naked freak need an army to take down, now its your job, good luck. Meet a girl named Jeni outside of the back entrance to Ant Hell.",
+      "translation" : "^FF0000蟻后^000000\n^FF0000****^000000\n可怕的傢伙！\n\n這個半裸的怪物，得一支軍隊才能收拾。\n現在交給你了，祝你好運。\n去螞蟻地獄後門外找名叫傑妮的女孩。"
+    }
+  ]
+}

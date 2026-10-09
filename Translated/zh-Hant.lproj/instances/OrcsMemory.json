@@ -1,0 +1,371 @@
+{
+  "file" : "npc/instances/OrcsMemory.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "Dimensional Gorge Piece",
+      "state" : "translated",
+      "text" : "Only users between Levels ^ff000030 ~ 80^000000 can enter this Dungeon.",
+      "translation" : "只有等級在 ^ff000030 ~ 80^000000 之間的玩家才能進入該地下城。"
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "npc" : "Dimensional Gorge Piece",
+      "placeholders" : [
+        ".@md_name$"
+      ],
+      "state" : "translated",
+      "text" : "Party status confirmed. Would you like to book entrance to the {0}?",
+      "translation" : "隊伍狀態已確認。\n要預約進入 {0} 嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 53,
+      "npc" : "Dimensional Gorge Piece",
+      "placeholders" : [
+        ".@md_name$"
+      ],
+      "state" : "translated",
+      "text" : "Reserve the {0}",
+      "translation" : "預約 {0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 53,
+      "npc" : "Dimensional Gorge Piece",
+      "state" : "translated",
+      "text" : "Enter the Dungeon",
+      "translation" : "進入地下城"
+    },
+    {
+      "kind" : "option",
+      "line" : 53,
+      "npc" : "Dimensional Gorge Piece",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 56,
+      "npc" : "Dimensional Gorge Piece",
+      "placeholders" : [
+        "getpartyname(.@party_id)",
+        "strcharinfo(0)",
+        ".@md_name$"
+      ],
+      "state" : "translated",
+      "text" : "Party Name: {0}\nParty Leader: {1}\n^0000ff{2} ^000000 - Reservation Failed.",
+      "translation" : "隊伍名稱：{0}\n隊長：{1}\n^0000ff{2} ^000000 - 預約失敗。"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "Dimensional Gorge Piece",
+      "placeholders" : [
+        ".@md_name$",
+        ".@md_name$"
+      ],
+      "state" : "translated",
+      "text" : "^0000ff{0}^000000- Attempting to book an entrance\nAfter making a reservation, you have to select 'Enter the Dungeon' from the menu if you wish to enter the {1}.",
+      "translation" : "^0000ff{0}^000000- 正在嘗試預約進入\n預約後，要進入 {1}，請從選單中選擇“進入地下城”。"
+    },
+    {
+      "kind" : "option",
+      "line" : 70,
+      "npc" : "Dimensional Gorge Piece",
+      "placeholders" : [
+        ".@md_name$"
+      ],
+      "state" : "translated",
+      "text" : "{0} Enter the Memorial Dungeon",
+      "translation" : "{0} 進入記憶地下城"
+    },
+    {
+      "kind" : "option",
+      "line" : 70,
+      "npc" : "Dimensional Gorge Piece",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "npc" : "Dimensional Gorge Piece",
+      "state" : "translated",
+      "text" : "You can enter the Dungeon if it has been generated.",
+      "translation" : "地下城建立完成後即可進入。"
+    },
+    {
+      "kind" : "option",
+      "line" : 76,
+      "npc" : "Dimensional Gorge Piece",
+      "placeholders" : [
+        ".@md_name$"
+      ],
+      "state" : "translated",
+      "text" : "Enter the Dungeon {0}",
+      "translation" : "進入地下城 {0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 76,
+      "npc" : "Dimensional Gorge Piece",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 80,
+      "npc" : "Dimensional Gorge Piece",
+      "state" : "translated",
+      "text" : "^0000ffAll records and after-effects related to the Orc's Memory Dungeon are deleted. You can now regenerate or re-enter the dungeon.^000000",
+      "translation" : "^0000ff獸人記憶地下城的相關記錄及殘留效果已全部清除，現在可以重新建立或進入。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Dimensional Gorge Piece",
+      "state" : "translated",
+      "text" : "In order to generate a dungeon you must be the Party Leader and have at least 2 members in the party.",
+      "translation" : "只有隊長才能建立地下城，且隊伍至少需要 2 名成員。"
+    },
+    {
+      "kind" : "message",
+      "line" : 89,
+      "npc" : "Dimensional Gorge Piece",
+      "state" : "translated",
+      "text" : "An unknown error has occurred.",
+      "translation" : "發生未知錯誤。"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Dimensional Gorge Piece",
+      "state" : "translated",
+      "text" : "Memorial Dungeon Orc's Memory does not exist.\nMemorial Dungeon has been destroyed by the Party Leader, or because of the time limit. Please try again after 2 hours.",
+      "translation" : "記憶地下城“獸人記憶”不存在。\n可能已被隊長解散，或因超時而關閉。\n請在 2 小時後重試。"
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Dimensional Gorge Piece",
+      "state" : "translated",
+      "text" : "Only a member of the party can enter the Memorial Dungeon.",
+      "translation" : "只有隊伍成員才能進入記憶地下城。"
+    },
+    {
+      "kind" : "message",
+      "line" : 110,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "The Mad Scientist doesn't seem to notice you and keeps mumbling to himself...",
+      "translation" : "瘋狂科學家似乎沒有注意到你，他一直在自言自語..."
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "[Mad Scientist]\nHaha, no Orcs are coming near me!\nThe power of the Dimensional Gorge is undefeatable!!",
+      "translation" : "[瘋狂科學家]\n哈哈，沒有獸人會靠近我！\n次元峽谷的力量是無敵的！！"
+    },
+    {
+      "kind" : "option",
+      "line" : 118,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "Orcs don't attack you?",
+      "translation" : "獸人不會攻擊你"
+    },
+    {
+      "kind" : "option",
+      "line" : 118,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "You wish!",
+      "translation" : "你做夢吧"
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "[Mad Scientist]\nYeah, yeah.. I know it's hard to belive. I don't blame ya.\nI used to study the Dimensional Gorge discovered near Morocc.\nAccording to my research, the minerals found there have enormous power inside them!",
+      "translation" : "[瘋狂科學家]\n是啊，是啊... 我知道很難相信，不怪你。\n我以前研究過夢羅克附近發現的次元峽谷。\n根據研究，那裡的礦石蘊藏著巨大的能量！"
+    },
+    {
+      "kind" : "message",
+      "line" : 127,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "[Mad Scientist]\nYou are a pretty distrustful person, huh?",
+      "translation" : "[瘋狂科學家]\n你真是個多疑的人，不是嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 132,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "Oh? Like what, travel to alternate space?",
+      "translation" : "比如前往異次元空間"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "[Mad Scientist]\nVery smart! I have actually just done that! See that statue over there? It's not your normal Monolith!",
+      "translation" : "[瘋狂科學家]\n真聰明！我剛剛就辦到了！\n看到那邊的雕像了嗎？\n它可不是普通的石碑！"
+    },
+    {
+      "kind" : "message",
+      "line" : 136,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "[Mad Scientist]\nI have created it with a combination of our technology and the unlimited energy I discovered from the Gorge! Want to try it?",
+      "translation" : "[瘋狂科學家]\n我結合我們的科技與峽谷中發現的無限能量，造出了它！\n想試試嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 139,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "...Um, that doesn't sound legal?",
+      "translation" : "... 這好像不合法吧"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "[Mad Scientist]\nHey, since when did something so interesting have to be legal!? How about it! You can talk to the Orcs! C'mon!",
+      "translation" : "[瘋狂科學家]\n嘿，這麼有趣的事，什麼時候非得合法了？！\n怎麼樣？你可以和獸人對話！\n來嘛！"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "[Mad Scientist]\nChances are they'll just give you lots of instructions once they see you, so just wing it! They're always saying the same thing, to the point where I memorized them!",
+      "translation" : "[瘋狂科學家]\n他們一見到你，多半就會讓你做這做那，到時隨機應變就行！\n他們總說同樣的話，我都背下來了！"
+    },
+    {
+      "kind" : "option",
+      "line" : 146,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "Alright... What do I do?",
+      "translation" : "好吧... 該怎麼做"
+    },
+    {
+      "kind" : "option",
+      "line" : 146,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "Umm, maybe not.",
+      "translation" : "還是算了"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "[Mad Scientist]\nVery good! Just sit in the hands of this statue! And try to act natural when you're in there!",
+      "translation" : "[瘋狂科學家]\n很好！坐到雕像的手上就行！\n進去後自然一點，別露餡！"
+    },
+    {
+      "kind" : "message",
+      "line" : 153,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "[Mad Scientist]\nOh fine, be that way!",
+      "translation" : "[瘋狂科學家]\n哦，隨你吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "[Mad Scientist]\nHmm? Put your hand on that Monemus Statue if you want to experience traveling through dimensions!",
+      "translation" : "[瘋狂科學家]\n嗯？想體驗穿越次元，就把手放到莫內雕像上吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Kruger",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Kruger]\n*Coughing*\n{0}, it's you...",
+      "translation" : "[克魯格]\n*咳嗽*\n{0}，是你..."
+    },
+    {
+      "kind" : "message",
+      "line" : 874,
+      "npc" : "Kruger",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[{0}] \nDon't move! You are wounded!",
+      "translation" : "[{0}] \n別動！你受傷了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 877,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "[Kruger]\nIt's... all right.. I'm dying...\n....\nThe Shaman? What about the Shaman?",
+      "translation" : "[克魯格]\n沒... 沒關係... 我快死了...\n...\n薩滿呢？薩滿怎麼樣了？"
+    },
+    {
+      "kind" : "message",
+      "line" : 882,
+      "npc" : "Kruger",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[{0}] \nThe Shaman's dead now. Who was that Shaman really?",
+      "translation" : "[{0}] \n薩滿已經死了。那個薩滿到底是誰？"
+    },
+    {
+      "kind" : "message",
+      "line" : 885,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "Kruger seemed to be relieved as he hears of the death of the Shaman, but you notice the bitter expression on his face.",
+      "translation" : "聽到薩滿的死訊，克魯格似乎鬆了口氣，臉上卻帶著苦澀。"
+    },
+    {
+      "kind" : "message",
+      "line" : 887,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "[Kruger]\nI.. I just couldn't kill my own daughter...\nThank you, I'm sure she's finally free from the nightmare that used to choke her soul.",
+      "translation" : "[克魯格]\n我... 我下不了手殺自己的女兒...\n謝謝你，她終於擺脫了那個折磨她靈魂的噩夢。"
+    },
+    {
+      "kind" : "message",
+      "line" : 891,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "Kruger was about to say something more, but he breathed his last breath before he could...",
+      "translation" : "克魯格還想說什麼，卻沒能說出口就嚥了氣..."
+    },
+    {
+      "kind" : "message",
+      "line" : 896,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "You can see the dead body of Kruger, peacefully lying on the ground.",
+      "translation" : "克魯格的遺體安詳地躺在地上。"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "file" : "npc/re/merchants/ticket_refiner.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nHello!\nWhat's up?\nI'm a specialist\nfor refining items,\nbut I don't work anymore.",
+      "translation" : "[精煉大師]\n你好！\n最近怎麼樣？\n我是專門負責精煉裝備的，\n不過我現在已經不再工作了。"
+    },
+    {
+      "kind" : "option",
+      "line" : 71,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "I'll go on my way.",
+      "translation" : "我先走了。"
+    },
+    {
+      "kind" : "option",
+      "line" : 71,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "Hmm... this makes me curious.",
+      "translation" : "嗯...這讓我很好奇。"
+    },
+    {
+      "kind" : "message",
+      "line" : 73,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nTake care, adventurer.",
+      "translation" : "[精煉大師]\n保重，冒險者。"
+    },
+    {
+      "kind" : "message",
+      "line" : 77,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nActually, I sometimes provide refine services for adventurers with a ^006400Refine Ticket^000000...\nBye bye~!",
+      "translation" : "[精煉大師]\n其實，我偶爾也會為持有^006400精煉券^000000的冒險者提供精煉服務...\n再見啦~！"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nGreetings!\nI can refine an item up to the ^006400same level as your ticket^000000.\nYou don't have to worry! There's no chance of breaking your item.",
+      "translation" : "[精煉大師]\n你好！\n我可以將裝備精煉到^006400與你的精煉券相同的等級^000000。\n請放心！裝備不會損壞。"
+    },
+    {
+      "kind" : "option",
+      "line" : 89,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "I'll come back later.",
+      "translation" : "我稍後再來。"
+    },
+    {
+      "kind" : "option",
+      "line" : 89,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "Refine item with ticket.",
+      "translation" : "使用精煉券精煉裝備。"
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nOkay.\nYou can come again later.",
+      "translation" : "[精煉大師]\n好的。\n你稍後可以再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 95,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nWhich equipment would you like to refine?",
+      "translation" : "[精煉大師]\n你想精煉哪件裝備？"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nYou have to equip the item you want to refine.",
+      "translation" : "[精煉大師]\n你必須裝備想要精煉的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nOh, I'm sorry.\nThis item is impossible to refine.",
+      "translation" : "[精煉大師]\n哦，抱歉。\n這件物品無法精煉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Refine Master",
+      "placeholders" : [
+        ".@type$",
+        ".@type$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nIf you want to refine this ^006400{0}^000000, please come along with ^006400{1} Refine Ticket^000000.\nSee you later!",
+      "translation" : "[精煉大師]\n如果你想精煉這件^006400{0}^000000，請攜帶^006400{1}張精煉券^000000過來。\n回頭見！"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Refine Master",
+      "placeholders" : [
+        ".@type$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nPlease choose which ^006400{0} Refine Ticket^000000 you want to use.",
+      "translation" : "[精煉大師]\n請選擇你想使用哪張^006400{0}精煉券^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 173,
+      "npc" : "Refine Master",
+      "placeholders" : [
+        "getitemname(.@ticket_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Refine Master]\n{0} is not in your inventory. Did you put it in your storage?\nPlease check again.\nSee you later!",
+      "translation" : "[精煉大師]\n你的物品欄裡沒有{0}。你把它放進倉庫了嗎？\n請再次確認。\n回頭見！"
+    },
+    {
+      "kind" : "message",
+      "line" : 181,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "[Refine Master]\n^8B4513This item is already refined as much as your deed.^000000\nPlease come along with an item refined less than your ticket.",
+      "translation" : "[精煉大師]\n^8B4513這件裝備的精煉等級已經達到你的精煉券上限。^000000\n請攜帶精煉等級低於精煉券上限的裝備過來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Refine Master",
+      "placeholders" : [
+        "getequipname(.@part)",
+        ".@ticket_lv",
+        "getitemname(.@ticket_id)"
+      ],
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nI'm going to refine ^006400{0}^8B4513 up to the +{1} level^000000 with ^006400{2}^000000.\nMay I proceed?",
+      "translation" : "[精煉大師]\n我將使用^006400{2}^000000將^006400{0}^8B4513精煉到+{1}^000000。\n可以開始嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 190,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "No.",
+      "translation" : "不。"
+    },
+    {
+      "kind" : "option",
+      "line" : 190,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "Yes.",
+      "translation" : "是的"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nOh, you changed your mind.\nOk.\nYou can come back later.",
+      "translation" : "[精煉大師]\n哦，你改變主意了。\n好的。\n你稍後可以再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 198,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nGreat.\nAs you wish!\nI have my own special way to refine...\n.......ka boom!",
+      "translation" : "[精煉大師]\n很好。\n如你所願！\n我有自己特殊的精煉方式...\n.......轟！"
+    },
+    {
+      "kind" : "message",
+      "line" : 198,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nGreat.\nAs you wish!\nI have my own special way to refine...\n.......ka boom!\n[Refine Master]\nWait a second...\nDo you think I'm stupid?!\nYou switched the item while I wasn't looking! Get out of here!",
+      "translation" : "[精煉大師]\n很好。\n如你所願！\n我有自己特殊的精煉方式...\n.......轟！\n[精煉大師]\n等一下...\n你以為我傻嗎？！\n趁我不注意你換了裝備！給我滾出去！"
+    },
+    {
+      "kind" : "message",
+      "line" : 206,
+      "npc" : "Refine Master",
+      "state" : "needs_review",
+      "text" : "Error!\nPlease report this.",
+      "translation" : "錯誤！\n請報告此問題。"
+    },
+    {
+      "kind" : "message",
+      "line" : 225,
+      "npc" : "Refine Master",
+      "placeholders" : [
+        "strcharinfo(0)",
+        ".@type$"
+      ],
+      "state" : "needs_review",
+      "text" : "[Refine Master]\nAlright, here it is~\nWell, ^0000FF{0}^000000!\nCongratulations on your shining {1}.\nYou look GREAT!\nFarewell~!",
+      "translation" : "[精煉大師]\n好了，給你~\n哇，^0000FF{0}^000000！\n恭喜你，你的{1}閃閃發光。\n看起來真棒！\n再見~！"
+    }
+  ]
+}

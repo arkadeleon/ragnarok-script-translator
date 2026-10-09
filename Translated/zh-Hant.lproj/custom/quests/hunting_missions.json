@@ -1,0 +1,313 @@
+{
+  "file" : "npc/custom/quests/hunting_missions.txt",
+  "scripts" : [
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nHello, {0}!",
+      "translation" : "[狩獵任務]\n你好，{0}！"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "F_Rand(\"Working hard, as always...\", \"Not slacking, I hope...\")",
+        "F_InsertPlural(Mission_Total,\"mission\",0,\"^0055FF%d^777777 %s\")"
+      ],
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nHello, {0}!\n{1}\nIs there anything I can help\nyou with?\n \n^777777~ You've completed {2}. ~^000000",
+      "translation" : "[狩獵任務]\n你好，{0}！\n{1}\n有什麼可以幫您的嗎？\n \n^777777~ 您已完成 {2}。~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nI can't find any records...\nYou must be new here!",
+      "translation" : "[狩獵任務]\n我找不到任何記錄...\n您一定是新來的吧！"
+    },
+    {
+      "kind" : "option",
+      "line" : 48,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : " ~ Information",
+      "translation" : " ~ 瞭解規則"
+    },
+    {
+      "kind" : "option",
+      "line" : 48,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : " ~ Mission Shop",
+      "translation" : " ~ 任務商店"
+    },
+    {
+      "kind" : "option",
+      "line" : 48,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : " ~ View Top Hunters",
+      "translation" : " ~ 檢視獵人排行榜"
+    },
+    {
+      "kind" : "option",
+      "line" : 48,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : " ~ ^777777Cancel^000000",
+      "translation" : " ~ ^777777取消^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nYou've started a mission\non another character.",
+      "translation" : "[狩獵任務]\n您已經在另一個角色上開始了任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "Time2Str(#Mission_Delay)"
+      ],
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nI'm afraid you'll have to wait {0} before taking another mission.",
+      "translation" : "[狩獵任務]\n恐怕您需要等待 {0} 才能接受下一個任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nYou must hunt:",
+      "translation" : "[狩獵任務]\n您需要狩獵："
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nI can't seem to find any records\nfor that character, though...\nOne moment, please.",
+      "translation" : "[狩獵任務]\n不過，我似乎找不到那個角色的任何記錄...\n請稍等。"
+    },
+    {
+      "kind" : "message",
+      "line" : 86,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nReport back when\nyou've finished.\nGood luck!",
+      "translation" : "[狩獵任務]\n完成後請回來報告。\n祝您好運！"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nMission status:",
+      "translation" : "[狩獵任務]\n任務狀態："
+    },
+    {
+      "kind" : "message",
+      "line" : 97,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nDo you really want to\nabandon your mission?\nYour delay time will not be reset.",
+      "translation" : "[狩獵任務]\n您確定要放棄任務嗎？\n您的冷卻時間不會重置。"
+    },
+    {
+      "kind" : "message",
+      "line" : 97,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "F_InsertComma(.Reset)"
+      ],
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nDo you really want to\nabandon your mission?\nIt will cost {0} Zeny.",
+      "translation" : "[狩獵任務]\n您確定要放棄任務嗎？\n需要支付{0} Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 97,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nDo you really want to\nabandon your mission?",
+      "translation" : "[狩獵任務]\n您確定要放棄任務嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 105,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : " ~ Abandon...",
+      "translation" : " ~ 放棄..."
+    },
+    {
+      "kind" : "option",
+      "line" : 105,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : " ~ ^777777Cancel^000000",
+      "translation" : " ~ ^777777取消^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nYou don't have enough\nZeny to drop this mission.",
+      "translation" : "[狩獵任務]\n您的Zeny不足，無法放棄此任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nAlright, I've dropped\nyour current mission.",
+      "translation" : "[狩獵任務]\n好的，我已取消您當前的任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 131,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nI knew you were kidding!\nKeep up the good work.",
+      "translation" : "[狩獵任務]\n我就知道您在開玩笑！\n請繼續努力。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "#Mission_Points"
+      ],
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nYou have ^0055FF{0}^000000 Mission Points.\nUse them well!",
+      "translation" : "[狩獵任務]\n您有^0055FF{0}^000000任務點數。\n請好好利用！"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "(.@i+1)",
+        "((.@name$[.@i] == \"\") ? \"^777777none\" : \"^0055FF\" + .@name$[.@i]+\"^000000 : ^FF0000\" + .@val[.@i] + \" pt.\")"
+      ],
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank {0}]  {1}^000000",
+      "translation" : "[狩獵任務]\n獵人排行榜：\n  [排名 {0}]  {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nThe top hunters are:",
+      "translation" : "[狩獵任務]\n獵人排行榜："
+    },
+    {
+      "kind" : "message",
+      "line" : 155,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nNothing? Okay...",
+      "translation" : "[狩獵任務]\n沒有嗎？好吧..."
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "Chk(getd(\"Mission\"+.@i+\"_\"),#Mission_Count)",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "state" : "translated",
+      "text" : " > {0}{1} ({2}/{3})^000000",
+      "translation" : " > {0}{1} ({2}/{3})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "F_InsertComma(.@Base_Exp)",
+        "F_InsertComma(.@Job_Exp)",
+        "F_InsertComma(.@Zeny)"
+      ],
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000",
+      "translation" : "[狩獵任務]\n任務獎勵：\n > 任務點數：^0055FF{0}^000000\n > Base經驗值：^0055FF{1}^000000\n > Job經驗值：^0055FF{2}^000000\n > Zeny：^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nOh, you're done!\nGood work.\nHere's your reward.",
+      "translation" : "[狩獵任務]\n哦，您完成了！\n幹得好。\n這是您的獎勵。"
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nIf you so choose, I can assign\nyou a random hunting quest.\nSome are easier than others, but\nthe rewards increase with difficulty.",
+      "translation" : "[狩獵任務]\n如果您願意，我可以隨機分配一個狩獵任務。\n任務難度各不相同，難度越高，獎勵越豐厚。"
+    },
+    {
+      "kind" : "message",
+      "line" : 223,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nMissions points are shared\namongst all your characters.\nDelay time is, too.\nYou can't take missions on\nmultiple characters at once.",
+      "translation" : "[狩獵任務]\n任務點數在所有角色之間共享。\n冷卻時間也是如此。\n您不能同時在多個角色身上接取任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 223,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nMissions points are shared\namongst all your characters.\nYou can't take missions on\nmultiple characters at once.",
+      "translation" : "[狩獵任務]\n任務點數在所有角色之間共享。\n您不能同時在多個角色身上接取任務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 231,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "(.Delay ? \"every \" + ((.Delay == 1) ? \"hour.\" : .Delay + \" hours.\") : \"whenever you want.\")"
+      ],
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nYou can start a quest\n{0}\nThat's everything~",
+      "translation" : "[狩獵任務]\n您可以開始任務\n{0}\n說明就這些~"
+    },
+    {
+      "kind" : "message",
+      "line" : 251,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nYou don't have enough Mission Points.",
+      "translation" : "[狩獵任務]\n您的任務點數不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 251,
+      "npc" : "Hunting Missions",
+      "state" : "translated",
+      "text" : "[Hunting Missions]\nDeal completed.",
+      "translation" : "[狩獵任務]\n交易完成。"
+    }
+  ]
+}
