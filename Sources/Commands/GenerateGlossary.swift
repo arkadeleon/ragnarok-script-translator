@@ -178,6 +178,11 @@ struct GenerateGlossary: ParsableCommand {
                   term != "Unknown Item" else {
                 continue
             }
+            // The client prefixes skills with the job that owns them ("<Job>Name"), so the bare
+            // English word ("Energy", "Illusion") would inject the job marker into ordinary prose.
+            if translation.hasPrefix("<") {
+                continue
+            }
             // A single everyday word ("Apple", "Milk", "Staff") is more likely prose than an item.
             if !isProperName, !term.contains(" "), dictionaryWords.contains(term.lowercased()) {
                 continue
