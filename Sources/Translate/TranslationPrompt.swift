@@ -26,6 +26,7 @@ enum TranslationPrompt {
         - Keep placeholders like {0}, {1} exactly as they are; they are substituted at runtime.
         - Keep color codes like ^FF0000 and ^000000 exactly where they are.
         - A first line in square brackets, like [Kafra Employee], is the speaker's name: translate the name, keep the brackets and keep it on its own first line. A first line of exactly [{0}] is the player's own name: keep it exactly as it is.
+        - Do not translate, transliterate or otherwise alter invented or unintelligible language. Keep its words, punctuation and line breaks exactly as written. For example, leave "Makumalagu!\nSaampa joojimbo\nkaku na jedi Solo.\nBwahahahahahahaah!" unchanged.
         - The source is hard-wrapped for a narrow English text box. Join its lines into natural sentences and break lines only where a sentence ends; keep blank lines and one-item-per-line lists as they are. The game wraps long lines itself.
         - Write ellipses as three half-width periods "...".
         - Do not add explanations or notes.
