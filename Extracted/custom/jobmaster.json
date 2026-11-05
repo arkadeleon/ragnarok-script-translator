@@ -5,13 +5,27 @@
       "kind" : "message",
       "line" : 27,
       "npc" : "Job Master",
+      "text" : "Level requirement:"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Job Master",
       "placeholders" : [
         "((getarg(0)>1)? \n\t\t\t\"^bb0000\"+getarg(0)+\"^000000 (^bb0000Base^000000) / \":\"\")",
-        "getarg(1)",
+        "getarg(1)"
+      ],
+      "text" : "{0}^00bb00{1}^000000 (^00bb00Job^000000)"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Job Master",
+      "placeholders" : [
         "((.@blvl > 0) ? \"^bb0000\"+.@blvl+\"^000000 more base levels \" + \n\t\t\t\t((.@jlvl > 0) ? \"and \" : \"\") : \"\")",
         "((.@jlvl > 0) ? \"^00bb00\"+.@jlvl+\"^000000 more job levels \" : \"\")"
       ],
-      "text" : "Level requirement:\n{0}^00bb00{1}^000000 (^00bb00Job^000000)\nYou need {2}{3}to continue."
+      "text" : "You need {0}{1}to continue."
     },
     {
       "kind" : "message",
@@ -33,12 +47,9 @@
     },
     {
       "kind" : "message",
-      "line" : 141,
+      "line" : 259,
       "npc" : "Job Master",
-      "placeholders" : [
-        ".NPCName$"
-      ],
-      "text" : "{0}\nAn error has occurred."
+      "text" : "An error has occurred."
     },
     {
       "kind" : "message",
@@ -54,24 +65,22 @@
     },
     {
       "kind" : "message",
-      "line" : 322,
+      "line" : 331,
       "npc" : "Job Master",
       "placeholders" : [
-        ".NPCName$",
         ".SNovice",
         "jobname(.@class)"
       ],
-      "text" : "{0}\nA base level of {1} is required to turn into a {2}."
+      "text" : "A base level of {0} is required to turn into a {1}."
     },
     {
       "kind" : "message",
-      "line" : 349,
+      "line" : 350,
       "npc" : "Job Master",
       "placeholders" : [
-        ".NPCName$",
         "callfunc(\"F_InsertArticle\", jobname(.@to_cls))"
       ],
-      "text" : "{0}\nYou are now {1}!"
+      "text" : "You are now {0}!"
     },
     {
       "kind" : "message",

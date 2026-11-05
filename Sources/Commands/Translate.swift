@@ -8,7 +8,7 @@
 import ArgumentParser
 import Foundation
 
-/// Translates extracted pages with an instruction model, one source file at a time: batches in
+/// Translates extracted messages and options with an instruction model, one source file at a time: batches in
 /// dialogue order, each preceded by the lines before it so the model sees the conversation flow,
 /// terminology in the prompt, mechanical validation, and a translated copy of each file written as
 /// soon as it is done.

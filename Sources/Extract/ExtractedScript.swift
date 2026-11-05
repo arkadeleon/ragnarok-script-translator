@@ -12,10 +12,10 @@ struct ExtractedFile: Codable {
     var scripts: [ExtractedScript]
 }
 
-/// One unit of text the client looks up at runtime: a page of dialog or a single menu option.
+/// One unit of text the client looks up at runtime: one `mes` argument or a single menu option.
 struct ExtractedScript: Codable {
     enum Kind: String, Codable {
-        /// Consecutive `mes` lines shown together, joined by `\n`.
+        /// One `mes` argument, sent as one dialog packet by the server.
         case message
         /// One entry of a `select`, `prompt` or `menu`.
         case option

@@ -5,10 +5,28 @@
       "kind" : "message",
       "line" : 32,
       "npc" : "Mercenary Manager",
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Mercenary Manager",
+      "text" : "Welcome to the"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "Mercenary Manager",
       "placeholders" : [
         ".@name$[.@type]"
       ],
-      "text" : "[Mercenary Manager]\nWelcome to the\n{0} Mercenary Guild.\nWhat can I do for you?"
+      "text" : "{0} Mercenary Guild."
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "Mercenary Manager",
+      "text" : "What can I do for you?"
     },
     {
       "kind" : "option",
@@ -38,22 +56,82 @@
       "kind" : "message",
       "line" : 39,
       "npc" : "Mercenary Manager",
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "npc" : "Mercenary Manager",
+      "text" : "You want to hire a"
+    },
+    {
+      "kind" : "message",
+      "line" : 41,
+      "npc" : "Mercenary Manager",
       "placeholders" : [
         ".@name$[.@type]"
       ],
-      "text" : "[Mercenary Manager]\nYou want to hire a\n{0} Mercenary?\nWhich Grade were you\ninterested in hiring?"
+      "text" : "{0} Mercenary?"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Mercenary Manager",
+      "text" : "Which Grade were you"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Mercenary Manager",
+      "text" : "interested in hiring?"
     },
     {
       "kind" : "message",
       "line" : 53,
       "npc" : "Mercenary Manager",
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 54,
+      "npc" : "Mercenary Manager",
       "placeholders" : [
-        "callfunc(\"F_GetNumSuffix\",.@Grade)",
-        ".@name$[.@type]",
-        ".@BaseLevel",
+        "callfunc(\"F_GetNumSuffix\",.@Grade)"
+      ],
+      "text" : "So you want to hire a {0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "Mercenary Manager",
+      "placeholders" : [
+        ".@name$[.@type]"
+      ],
+      "text" : "Grade {0} Mercenary?"
+    },
+    {
+      "kind" : "message",
+      "line" : 56,
+      "npc" : "Mercenary Manager",
+      "text" : "You need to have attained"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "Mercenary Manager",
+      "placeholders" : [
+        ".@BaseLevel"
+      ],
+      "text" : "Base Level {0} or higher, and"
+    },
+    {
+      "kind" : "message",
+      "line" : 58,
+      "npc" : "Mercenary Manager",
+      "placeholders" : [
         ".@ZenyCost"
       ],
-      "text" : "[Mercenary Manager]\nSo you want to hire a {0}\nGrade {1} Mercenary?\nYou need to have attained\nBase Level {2} or higher, and\nmust pay the {3},000 zeny fee."
+      "text" : "must pay the {0},000 zeny fee."
     },
     {
       "kind" : "option",
@@ -71,95 +149,547 @@
       "kind" : "message",
       "line" : 61,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nOh, really? Well, now\nmight not be a good time\nfor you to consider hiring\na Mercenary, but please feel\nfree to come back if your\nneeds change. Thank you~"
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "npc" : "Mercenary Manager",
+      "text" : "Oh, really? Well, now"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Mercenary Manager",
+      "text" : "might not be a good time"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Mercenary Manager",
+      "text" : "for you to consider hiring"
+    },
+    {
+      "kind" : "message",
+      "line" : 65,
+      "npc" : "Mercenary Manager",
+      "text" : "a Mercenary, but please feel"
+    },
+    {
+      "kind" : "message",
+      "line" : 66,
+      "npc" : "Mercenary Manager",
+      "text" : "free to come back if your"
+    },
+    {
+      "kind" : "message",
+      "line" : 67,
+      "npc" : "Mercenary Manager",
+      "text" : "needs change. Thank you~"
     },
     {
       "kind" : "message",
       "line" : 70,
       "npc" : "Mercenary Manager",
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 71,
+      "npc" : "Mercenary Manager",
+      "text" : "Oh... Your Loyalty rating"
+    },
+    {
+      "kind" : "message",
+      "line" : 72,
+      "npc" : "Mercenary Manager",
       "placeholders" : [
-        ".@name$[.@type]",
+        ".@name$[.@type]"
+      ],
+      "text" : "with the {0} Mercenary"
+    },
+    {
+      "kind" : "message",
+      "line" : 73,
+      "npc" : "Mercenary Manager",
+      "text" : "Guild isn't high enough to"
+    },
+    {
+      "kind" : "message",
+      "line" : 74,
+      "npc" : "Mercenary Manager",
+      "text" : "hire this Mercenary. Please"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "Mercenary Manager",
+      "text" : "come back after you earn"
+    },
+    {
+      "kind" : "message",
+      "line" : 76,
+      "npc" : "Mercenary Manager",
+      "placeholders" : [
         ".@FaithCost"
       ],
-      "text" : "[Mercenary Manager]\nOh... Your Loyalty rating\nwith the {0} Mercenary\nGuild isn't high enough to\nhire this Mercenary. Please\ncome back after you earn\n{1} or more Loyalty with us."
+      "text" : "{0} or more Loyalty with us."
     },
     {
       "kind" : "message",
       "line" : 79,
       "npc" : "Mercenary Manager",
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 80,
+      "npc" : "Mercenary Manager",
+      "text" : "I'm sorry, but your Base"
+    },
+    {
+      "kind" : "message",
+      "line" : 81,
+      "npc" : "Mercenary Manager",
+      "text" : "Level isn't high enough"
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Mercenary Manager",
+      "text" : "to hire this Mercenary."
+    },
+    {
+      "kind" : "message",
+      "line" : 83,
+      "npc" : "Mercenary Manager",
+      "text" : "Please come back to me"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Mercenary Manager",
       "placeholders" : [
         ".@BaseLevel"
       ],
-      "text" : "[Mercenary Manager]\nI'm sorry, but your Base\nLevel isn't high enough\nto hire this Mercenary.\nPlease come back to me\nonce you reach Base Level {0}."
+      "text" : "once you reach Base Level {0}."
     },
     {
       "kind" : "message",
       "line" : 87,
       "npc" : "Mercenary Manager",
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "Mercenary Manager",
+      "text" : "I'm sorry, but you"
+    },
+    {
+      "kind" : "message",
+      "line" : 89,
+      "npc" : "Mercenary Manager",
+      "text" : "don't have enough zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "Mercenary Manager",
+      "text" : "to hire this Mercenary."
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "Mercenary Manager",
       "placeholders" : [
         ".@ZenyCost"
       ],
-      "text" : "[Mercenary Manager]\nI'm sorry, but you\ndon't have enough zeny\nto hire this Mercenary.\nThe hiring fee is {0},000 zeny."
+      "text" : "The hiring fee is {0},000 zeny."
     },
     {
       "kind" : "message",
       "line" : 94,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nGreat! Our Mercenaries\nare sincere and devoted\nto protecting their clients.\nSummoned Mercenaries will\noffer their support to you for\n30 minutes. Take care now."
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 95,
+      "npc" : "Mercenary Manager",
+      "text" : "Great! Our Mercenaries"
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "Mercenary Manager",
+      "text" : "are sincere and devoted"
+    },
+    {
+      "kind" : "message",
+      "line" : 97,
+      "npc" : "Mercenary Manager",
+      "text" : "to protecting their clients."
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Mercenary Manager",
+      "text" : "Summoned Mercenaries will"
+    },
+    {
+      "kind" : "message",
+      "line" : 99,
+      "npc" : "Mercenary Manager",
+      "text" : "offer their support to you for"
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
+      "npc" : "Mercenary Manager",
+      "text" : "30 minutes. Take care now."
     },
     {
       "kind" : "message",
       "line" : 106,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nMercenaries are soldiers\nthat will fight at your side\non the battlefield, but there\nare a few terms and conditions\nyou must fulfill to hire them."
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 107,
+      "npc" : "Mercenary Manager",
+      "text" : "Mercenaries are soldiers"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Mercenary Manager",
+      "text" : "that will fight at your side"
+    },
+    {
+      "kind" : "message",
+      "line" : 109,
+      "npc" : "Mercenary Manager",
+      "text" : "on the battlefield, but there"
+    },
+    {
+      "kind" : "message",
+      "line" : 110,
+      "npc" : "Mercenary Manager",
+      "text" : "are a few terms and conditions"
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Mercenary Manager",
+      "text" : "you must fulfill to hire them."
     },
     {
       "kind" : "message",
       "line" : 113,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nYou must fulfill a level\nrequirement and pay a zeny\nfee to hire a Mercenary.\nHigher grade Mercenaries\nwill also require that you\nbuild a Loyalty rating with us."
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "Mercenary Manager",
+      "text" : "You must fulfill a level"
+    },
+    {
+      "kind" : "message",
+      "line" : 115,
+      "npc" : "Mercenary Manager",
+      "text" : "requirement and pay a zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "npc" : "Mercenary Manager",
+      "text" : "fee to hire a Mercenary."
+    },
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "Mercenary Manager",
+      "text" : "Higher grade Mercenaries"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "Mercenary Manager",
+      "text" : "will also require that you"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Mercenary Manager",
+      "text" : "build a Loyalty rating with us."
     },
     {
       "kind" : "message",
       "line" : 121,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nMercenary contracts can't be\ntransferred to other people,\nand we only allow a 5 Base Level difference between the Mercenary\nand client so you can't hire one much stronger than you."
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 122,
+      "npc" : "Mercenary Manager",
+      "text" : "Mercenary contracts can't be"
+    },
+    {
+      "kind" : "message",
+      "line" : 123,
+      "npc" : "Mercenary Manager",
+      "text" : "transferred to other people,"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Mercenary Manager",
+      "text" : "and we only allow a 5 Base Level difference between the Mercenary"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "Mercenary Manager",
+      "text" : "and client so you can't hire one much stronger than you."
     },
     {
       "kind" : "message",
       "line" : 127,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nWell, you can figure out the\ndetails when you actually form\na contract with one of our\nMercenaries, and receive\nthe Summon Scroll that will\ncall a Mercenary to your side."
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 128,
+      "npc" : "Mercenary Manager",
+      "text" : "Well, you can figure out the"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Mercenary Manager",
+      "text" : "details when you actually form"
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Mercenary Manager",
+      "text" : "a contract with one of our"
+    },
+    {
+      "kind" : "message",
+      "line" : 131,
+      "npc" : "Mercenary Manager",
+      "text" : "Mercenaries, and receive"
+    },
+    {
+      "kind" : "message",
+      "line" : 132,
+      "npc" : "Mercenary Manager",
+      "text" : "the Summon Scroll that will"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Mercenary Manager",
+      "text" : "call a Mercenary to your side."
     },
     {
       "kind" : "message",
       "line" : 135,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nYou can't give this scroll\nto anyone else, and the\nMercenary will only remain\nwith you for 30 minutes after\nyou summon him. Don't forget\nabout the time limit, okay?"
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 136,
+      "npc" : "Mercenary Manager",
+      "text" : "You can't give this scroll"
+    },
+    {
+      "kind" : "message",
+      "line" : 137,
+      "npc" : "Mercenary Manager",
+      "text" : "to anyone else, and the"
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "Mercenary Manager",
+      "text" : "Mercenary will only remain"
+    },
+    {
+      "kind" : "message",
+      "line" : 139,
+      "npc" : "Mercenary Manager",
+      "text" : "with you for 30 minutes after"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "Mercenary Manager",
+      "text" : "you summon him. Don't forget"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Mercenary Manager",
+      "text" : "about the time limit, okay?"
     },
     {
       "kind" : "message",
       "line" : 144,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nNo? You didn't need any\nhelp? Well, feel free to\nask me if you have any\nquestions about Mercenaries."
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 145,
+      "npc" : "Mercenary Manager",
+      "text" : "No? You didn't need any"
+    },
+    {
+      "kind" : "message",
+      "line" : 146,
+      "npc" : "Mercenary Manager",
+      "text" : "help? Well, feel free to"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "Mercenary Manager",
+      "text" : "ask me if you have any"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Mercenary Manager",
+      "text" : "questions about Mercenaries."
     },
     {
       "kind" : "message",
       "line" : 151,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\n10th Grade Mercenaries are\nthe best we have to offer,\nand we use different criteria\nfor our clients to hire them.\nThere's no zeny fee, but you\nmust have 500 Loyalty."
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 152,
+      "npc" : "Mercenary Manager",
+      "text" : "10th Grade Mercenaries are"
+    },
+    {
+      "kind" : "message",
+      "line" : 153,
+      "npc" : "Mercenary Manager",
+      "text" : "the best we have to offer,"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Mercenary Manager",
+      "text" : "and we use different criteria"
+    },
+    {
+      "kind" : "message",
+      "line" : 155,
+      "npc" : "Mercenary Manager",
+      "text" : "for our clients to hire them."
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Mercenary Manager",
+      "text" : "There's no zeny fee, but you"
+    },
+    {
+      "kind" : "message",
+      "line" : 157,
+      "npc" : "Mercenary Manager",
+      "text" : "must have 500 Loyalty."
     },
     {
       "kind" : "message",
       "line" : 159,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nOnce you make a contract\nwith a 10th Grade Mercenary,\nyour Loyalty rating will be\ndecreased by 400. In other\nwords, you pay 400 Loyalty\nto hire a 10th Grade Mercenary."
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "Mercenary Manager",
+      "text" : "Once you make a contract"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Mercenary Manager",
+      "text" : "with a 10th Grade Mercenary,"
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "Mercenary Manager",
+      "text" : "your Loyalty rating will be"
+    },
+    {
+      "kind" : "message",
+      "line" : 163,
+      "npc" : "Mercenary Manager",
+      "text" : "decreased by 400. In other"
+    },
+    {
+      "kind" : "message",
+      "line" : 164,
+      "npc" : "Mercenary Manager",
+      "text" : "words, you pay 400 Loyalty"
+    },
+    {
+      "kind" : "message",
+      "line" : 165,
+      "npc" : "Mercenary Manager",
+      "text" : "to hire a 10th Grade Mercenary."
     },
     {
       "kind" : "message",
       "line" : 167,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nYou must also be at\nBase Level 90 or higher to\nhire a 10th Grade Mercenary.\nAre you still interested in\nforming this contract?"
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Mercenary Manager",
+      "text" : "You must also be at"
+    },
+    {
+      "kind" : "message",
+      "line" : 169,
+      "npc" : "Mercenary Manager",
+      "text" : "Base Level 90 or higher to"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Mercenary Manager",
+      "text" : "hire a 10th Grade Mercenary."
+    },
+    {
+      "kind" : "message",
+      "line" : 171,
+      "npc" : "Mercenary Manager",
+      "text" : "Are you still interested in"
+    },
+    {
+      "kind" : "message",
+      "line" : 172,
+      "npc" : "Mercenary Manager",
+      "text" : "forming this contract?"
     },
     {
       "kind" : "option",
@@ -177,113 +707,448 @@
       "kind" : "message",
       "line" : 175,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nI understand... It takes\nhard work and sacrifice to\neven reach the point where\nyou can hire a 10th Grade\nMercenary. Have you considered\nhiring a lower grade Mercenary?"
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 176,
+      "npc" : "Mercenary Manager",
+      "text" : "I understand... It takes"
+    },
+    {
+      "kind" : "message",
+      "line" : 177,
+      "npc" : "Mercenary Manager",
+      "text" : "hard work and sacrifice to"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Mercenary Manager",
+      "text" : "even reach the point where"
+    },
+    {
+      "kind" : "message",
+      "line" : 179,
+      "npc" : "Mercenary Manager",
+      "text" : "you can hire a 10th Grade"
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "Mercenary Manager",
+      "text" : "Mercenary. Have you considered"
+    },
+    {
+      "kind" : "message",
+      "line" : 181,
+      "npc" : "Mercenary Manager",
+      "text" : "hiring a lower grade Mercenary?"
     },
     {
       "kind" : "message",
       "line" : 184,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nI'm sorry, but your\nLoyalty rating is too\nlow to hire a 10th Grade\nMercenary. You must have\n500 or more Loyalty to\nform a contract with one."
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Mercenary Manager",
+      "text" : "I'm sorry, but your"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Mercenary Manager",
+      "text" : "Loyalty rating is too"
+    },
+    {
+      "kind" : "message",
+      "line" : 187,
+      "npc" : "Mercenary Manager",
+      "text" : "low to hire a 10th Grade"
+    },
+    {
+      "kind" : "message",
+      "line" : 188,
+      "npc" : "Mercenary Manager",
+      "text" : "Mercenary. You must have"
+    },
+    {
+      "kind" : "message",
+      "line" : 189,
+      "npc" : "Mercenary Manager",
+      "text" : "500 or more Loyalty to"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Mercenary Manager",
+      "text" : "form a contract with one."
     },
     {
       "kind" : "message",
       "line" : 193,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nI'm sorry, but you must\nbe at Base Level 90 or\nhigher to form a contract\nwith a 10th Grade Mercenary."
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "Mercenary Manager",
+      "text" : "I'm sorry, but you must"
+    },
+    {
+      "kind" : "message",
+      "line" : 195,
+      "npc" : "Mercenary Manager",
+      "text" : "be at Base Level 90 or"
+    },
+    {
+      "kind" : "message",
+      "line" : 196,
+      "npc" : "Mercenary Manager",
+      "text" : "higher to form a contract"
+    },
+    {
+      "kind" : "message",
+      "line" : 197,
+      "npc" : "Mercenary Manager",
+      "text" : "with a 10th Grade Mercenary."
     },
     {
       "kind" : "message",
       "line" : 200,
       "npc" : "Mercenary Manager",
-      "text" : "[Mercenary Manager]\nCongratulations! It looks\nlike you're planning in taking\non some very dangerous work\nsince you're hiring a 10th\nGrade Mercenary. I wish you\nthe best of luck with him."
+      "text" : "[Mercenary Manager]"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Mercenary Manager",
+      "text" : "Congratulations! It looks"
+    },
+    {
+      "kind" : "message",
+      "line" : 202,
+      "npc" : "Mercenary Manager",
+      "text" : "like you're planning in taking"
+    },
+    {
+      "kind" : "message",
+      "line" : 203,
+      "npc" : "Mercenary Manager",
+      "text" : "on some very dangerous work"
+    },
+    {
+      "kind" : "message",
+      "line" : 204,
+      "npc" : "Mercenary Manager",
+      "text" : "since you're hiring a 10th"
+    },
+    {
+      "kind" : "message",
+      "line" : 205,
+      "npc" : "Mercenary Manager",
+      "text" : "Grade Mercenary. I wish you"
+    },
+    {
+      "kind" : "message",
+      "line" : 206,
+      "npc" : "Mercenary Manager",
+      "text" : "the best of luck with him."
     },
     {
       "kind" : "message",
       "line" : 219,
       "npc" : "Mercenary Merchant",
-      "text" : "[Mercenary Goods Merchant]\nHello, I sell goods\nthat Mercenaries can\nuse. Is there anything\nin particular that\nyou're looking for?"
+      "text" : "[Mercenary Goods Merchant]"
+    },
+    {
+      "kind" : "message",
+      "line" : 220,
+      "npc" : "Mercenary Merchant",
+      "text" : "Hello, I sell goods"
+    },
+    {
+      "kind" : "message",
+      "line" : 221,
+      "npc" : "Mercenary Merchant",
+      "text" : "that Mercenaries can"
+    },
+    {
+      "kind" : "message",
+      "line" : 222,
+      "npc" : "Mercenary Merchant",
+      "text" : "use. Is there anything"
+    },
+    {
+      "kind" : "message",
+      "line" : 223,
+      "npc" : "Mercenary Merchant",
+      "text" : "in particular that"
+    },
+    {
+      "kind" : "message",
+      "line" : 224,
+      "npc" : "Mercenary Merchant",
+      "text" : "you're looking for?"
     },
     {
       "kind" : "message",
       "line" : 234,
       "npc" : "Mercenary Merchant",
+      "text" : "[Mercenary Goods Merchant]"
+    },
+    {
+      "kind" : "message",
+      "line" : 236,
+      "npc" : "Mercenary Merchant",
       "placeholders" : [
-        "getitemname(.@item[.@m])",
         ".@str_cost$"
       ],
-      "text" : "[Mercenary Goods Merchant]\n{0}\neach cost {1} zeny.\nHow many would you like?"
+      "text" : "each cost {0} zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 237,
+      "npc" : "Mercenary Merchant",
+      "text" : "How many would you like?"
     },
     {
       "kind" : "message",
       "line" : 241,
       "npc" : "Mercenary Merchant",
-      "text" : "[Mercenary Goods Merchant]\nYou changed your mind?\nAlright, feel free to come\nback to me whenever you want\nto buy any Mercenary Potions."
+      "text" : "[Mercenary Goods Merchant]"
+    },
+    {
+      "kind" : "message",
+      "line" : 242,
+      "npc" : "Mercenary Merchant",
+      "text" : "You changed your mind?"
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "npc" : "Mercenary Merchant",
+      "text" : "Alright, feel free to come"
+    },
+    {
+      "kind" : "message",
+      "line" : 244,
+      "npc" : "Mercenary Merchant",
+      "text" : "back to me whenever you want"
+    },
+    {
+      "kind" : "message",
+      "line" : 245,
+      "npc" : "Mercenary Merchant",
+      "text" : "to buy any Mercenary Potions."
     },
     {
       "kind" : "message",
       "line" : 249,
       "npc" : "Mercenary Merchant",
-      "text" : "[Mercenary Goods Merchant]\nI'm sorry, but you\ncan only buy up to\n10,000 of these potions\nat a time. Please enter\na number from 1 to 10,000."
+      "text" : "[Mercenary Goods Merchant]"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "Mercenary Merchant",
+      "text" : "I'm sorry, but you"
+    },
+    {
+      "kind" : "message",
+      "line" : 251,
+      "npc" : "Mercenary Merchant",
+      "text" : "can only buy up to"
+    },
+    {
+      "kind" : "message",
+      "line" : 252,
+      "npc" : "Mercenary Merchant",
+      "text" : "10,000 of these potions"
+    },
+    {
+      "kind" : "message",
+      "line" : 253,
+      "npc" : "Mercenary Merchant",
+      "text" : "at a time. Please enter"
+    },
+    {
+      "kind" : "message",
+      "line" : 254,
+      "npc" : "Mercenary Merchant",
+      "text" : "a number from 1 to 10,000."
     },
     {
       "kind" : "message",
       "line" : 258,
       "npc" : "Mercenary Merchant",
-      "text" : "[Mercenary Goods Merchant]\nI'm sorry, but you don't\nhave enough zeny for this\nmany potions. Well, I'll be\nbe here when you're ready\nto purchase something\nfor your Mercenaries."
+      "text" : "[Mercenary Goods Merchant]"
+    },
+    {
+      "kind" : "message",
+      "line" : 259,
+      "npc" : "Mercenary Merchant",
+      "text" : "I'm sorry, but you don't"
+    },
+    {
+      "kind" : "message",
+      "line" : 260,
+      "npc" : "Mercenary Merchant",
+      "text" : "have enough zeny for this"
+    },
+    {
+      "kind" : "message",
+      "line" : 261,
+      "npc" : "Mercenary Merchant",
+      "text" : "many potions. Well, I'll be"
+    },
+    {
+      "kind" : "message",
+      "line" : 262,
+      "npc" : "Mercenary Merchant",
+      "text" : "be here when you're ready"
+    },
+    {
+      "kind" : "message",
+      "line" : 263,
+      "npc" : "Mercenary Merchant",
+      "text" : "to purchase something"
+    },
+    {
+      "kind" : "message",
+      "line" : 264,
+      "npc" : "Mercenary Merchant",
+      "text" : "for your Mercenaries."
     },
     {
       "kind" : "message",
       "line" : 268,
       "npc" : "Mercenary Merchant",
-      "text" : "[Mercenary Goods Merchant]\nIf I gave you that many\npotions, you wouldn't be\nable to carry them with you.\nPlease come back after\nyou free up some space\nin your Inventory."
+      "text" : "[Mercenary Goods Merchant]"
+    },
+    {
+      "kind" : "message",
+      "line" : 269,
+      "npc" : "Mercenary Merchant",
+      "text" : "If I gave you that many"
+    },
+    {
+      "kind" : "message",
+      "line" : 270,
+      "npc" : "Mercenary Merchant",
+      "text" : "potions, you wouldn't be"
+    },
+    {
+      "kind" : "message",
+      "line" : 271,
+      "npc" : "Mercenary Merchant",
+      "text" : "able to carry them with you."
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Mercenary Merchant",
+      "text" : "Please come back after"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Mercenary Merchant",
+      "text" : "you free up some space"
+    },
+    {
+      "kind" : "message",
+      "line" : 274,
+      "npc" : "Mercenary Merchant",
+      "text" : "in your Inventory."
     },
     {
       "kind" : "message",
       "line" : 277,
+      "npc" : "Mercenary Merchant",
+      "text" : "[Mercenary Goods Merchant]"
+    },
+    {
+      "kind" : "message",
+      "line" : 279,
       "npc" : "Mercenary Merchant",
       "placeholders" : [
         "getitemname(.@item[.@m])"
       ],
-      "text" : "[Mercenary Goods Merchant]\nHere's your {0}.\nThank you, and please come\nagain when you need more\npotions for your Mercenaries."
+      "text" : "Here's your {0}."
     },
     {
       "kind" : "message",
-      "line" : 277,
+      "line" : 281,
+      "npc" : "Mercenary Merchant",
+      "text" : "Here you are, this is exactly"
+    },
+    {
+      "kind" : "message",
+      "line" : 282,
       "npc" : "Mercenary Merchant",
       "placeholders" : [
         "callfunc(\"F_InsertPlural\",.@input,getitemname(.@item[.@m]))"
       ],
-      "text" : "[Mercenary Goods Merchant]\nHere you are, this is exactly\n{0}.\nThank you, and please come\nagain when you need more\npotions for your Mercenaries."
+      "text" : "{0}."
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Mercenary Merchant",
+      "text" : "Thank you, and please come"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Mercenary Merchant",
+      "text" : "again when you need more"
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Mercenary Merchant",
+      "text" : "potions for your Mercenaries."
     },
     {
       "kind" : "message",
       "line" : 303,
       "npc" : "Mercenary_Switch",
-      "text" : "[Checker]\nPlease input a password."
+      "text" : "[Checker]"
     },
     {
       "kind" : "message",
-      "line" : 307,
+      "line" : 304,
       "npc" : "Mercenary_Switch",
-      "text" : "[Checker]\nPlease select."
-    },
-    {
-      "kind" : "message",
-      "line" : 307,
-      "npc" : "Mercenary_Switch",
-      "text" : "[Checker]\nError."
-    },
-    {
-      "kind" : "message",
-      "line" : 307,
-      "npc" : "Mercenary_Switch",
-      "text" : "[Checker]\nWrong number"
+      "text" : "Please input a password."
     },
     {
       "kind" : "message",
       "line" : 307,
       "npc" : "Mercenary_Switch",
       "text" : "[Checker]"
+    },
+    {
+      "kind" : "message",
+      "line" : 309,
+      "npc" : "Mercenary_Switch",
+      "text" : "Error."
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Mercenary_Switch",
+      "text" : "Wrong number"
+    },
+    {
+      "kind" : "message",
+      "line" : 313,
+      "npc" : "Mercenary_Switch",
+      "text" : "Please select."
     },
     {
       "kind" : "option",

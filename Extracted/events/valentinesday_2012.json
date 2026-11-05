@@ -3,13 +3,30 @@
   "scripts" : [
     {
       "kind" : "message",
-      "line" : 23,
+      "line" : 24,
       "npc" : "Pinkamenia",
       "placeholders" : [
-        ".@n$",
         "strcharinfo(0)"
       ],
-      "text" : "{0}\nHello {1}, do\nyou want to buy some items?\nYou'll have to give me Love\nFlowers for them, of course!"
+      "text" : "Hello {0}, do"
+    },
+    {
+      "kind" : "message",
+      "line" : 25,
+      "npc" : "Pinkamenia",
+      "text" : "you want to buy some items?"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Pinkamenia",
+      "text" : "You'll have to give me Love"
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Pinkamenia",
+      "text" : "Flowers for them, of course!"
     },
     {
       "kind" : "option",
@@ -25,43 +42,31 @@
     },
     {
       "kind" : "message",
-      "line" : 31,
+      "line" : 32,
       "npc" : "Pinkamenia",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nSelect an item.\nThe amount of Love Flowers you'll need is in brackets."
+      "text" : "Select an item."
     },
     {
       "kind" : "message",
-      "line" : 38,
+      "line" : 33,
       "npc" : "Pinkamenia",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nYou'll need more Love Flowers if you want that!"
+      "text" : "The amount of Love Flowers you'll need is in brackets."
     },
     {
       "kind" : "message",
-      "line" : 38,
+      "line" : 40,
+      "npc" : "Pinkamenia",
+      "text" : "You'll need more Love Flowers if you want that!"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
       "npc" : "Pinkamenia",
       "placeholders" : [
-        ".@n$",
         ".@SweetsCost[.@choice]",
         "getitemname(.@SweetsID[.@choice])"
       ],
-      "text" : "{0}\nAre you sure you want to trade ^00aa00{1}x Love Flower ^000000 for ^0055FF{2}^000000?"
-    },
-    {
-      "kind" : "message",
-      "line" : 38,
-      "npc" : "Pinkamenia",
-      "placeholders" : [
-        ".@n$",
-        ".@SweetsCost[.@choice]",
-        "getitemname(.@SweetsID[.@choice])"
-      ],
-      "text" : "{0}\nAre you sure you want to trade ^00aa00{1}x Love Flower ^000000 for ^0055FF{2}^000000?\nHave fun with your item!"
+      "text" : "Are you sure you want to trade ^00aa00{0}x Love Flower ^000000 for ^0055FF{1}^000000?"
     },
     {
       "kind" : "option",
@@ -77,141 +82,294 @@
     },
     {
       "kind" : "message",
-      "line" : 52,
+      "line" : 49,
       "npc" : "Pinkamenia",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nYou have to bring me 15 Love Flowers!"
+      "text" : "Have fun with your item!"
     },
     {
       "kind" : "message",
-      "line" : 52,
+      "line" : 54,
       "npc" : "Pinkamenia",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nThank you so much for\ngetting our Flowers back!"
+      "text" : "You have to bring me 15 Love Flowers!"
     },
     {
       "kind" : "message",
-      "line" : 61,
+      "line" : 57,
       "npc" : "Pinkamenia",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nTake this as a little\n'thank you'."
+      "text" : "Thank you so much for"
     },
     {
       "kind" : "message",
-      "line" : 68,
+      "line" : 58,
       "npc" : "Pinkamenia",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nIf you get more Love\nFlowers, you can exchange\nthem for some sweets here.\nSee you soon!"
+      "text" : "getting our Flowers back!"
     },
     {
       "kind" : "message",
-      "line" : 76,
+      "line" : 62,
       "npc" : "Pinkamenia",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nPlease bring a +8 Cake Hat\nto the Baker Extraordinaire\nstanding next to me!"
+      "text" : "Take this as a little"
     },
     {
       "kind" : "message",
-      "line" : 82,
+      "line" : 63,
+      "npc" : "Pinkamenia",
+      "text" : "'thank you'."
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Pinkamenia",
+      "text" : "If you get more Love"
+    },
+    {
+      "kind" : "message",
+      "line" : 70,
+      "npc" : "Pinkamenia",
+      "text" : "Flowers, you can exchange"
+    },
+    {
+      "kind" : "message",
+      "line" : 71,
+      "npc" : "Pinkamenia",
+      "text" : "them for some sweets here."
+    },
+    {
+      "kind" : "message",
+      "line" : 72,
+      "npc" : "Pinkamenia",
+      "text" : "See you soon!"
+    },
+    {
+      "kind" : "message",
+      "line" : 77,
+      "npc" : "Pinkamenia",
+      "text" : "Please bring a +8 Cake Hat"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Pinkamenia",
+      "text" : "to the Baker Extraordinaire"
+    },
+    {
+      "kind" : "message",
+      "line" : 79,
+      "npc" : "Pinkamenia",
+      "text" : "standing next to me!"
+    },
+    {
+      "kind" : "message",
+      "line" : 83,
       "npc" : "Pinkamenia",
       "placeholders" : [
-        ".@n$",
         "strcharinfo(0)"
       ],
-      "text" : "{0}\nHello {1}, it's\nValentine's Day and we\nlove to deliver sweet\nchocolates."
+      "text" : "Hello {0}, it's"
     },
     {
       "kind" : "message",
-      "line" : 88,
+      "line" : 84,
+      "npc" : "Pinkamenia",
+      "text" : "Valentine's Day and we"
+    },
+    {
+      "kind" : "message",
+      "line" : 85,
+      "npc" : "Pinkamenia",
+      "text" : "love to deliver sweet"
+    },
+    {
+      "kind" : "message",
+      "line" : 86,
+      "npc" : "Pinkamenia",
+      "text" : "chocolates."
+    },
+    {
+      "kind" : "message",
+      "line" : 89,
+      "npc" : "Pinkamenia",
+      "text" : "Our problem is that we"
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "Pinkamenia",
+      "text" : "need a strong person"
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "Pinkamenia",
+      "text" : "like you who could help"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Pinkamenia",
+      "text" : "us, but first you'll have"
+    },
+    {
+      "kind" : "message",
+      "line" : 93,
+      "npc" : "Pinkamenia",
+      "text" : "to bring a +8 Cake Hat"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Pinkamenia",
+      "text" : "to the Baker Extraordinaire, who"
+    },
+    {
+      "kind" : "message",
+      "line" : 95,
+      "npc" : "Pinkamenia",
+      "text" : "is standing right next to me!"
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
       "npc" : "Pinkamenia",
       "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nOur problem is that we\nneed a strong person\nlike you who could help\nus, but first you'll have\nto bring a +8 Cake Hat\nto the Baker Extraordinaire, who\nis standing right next to me!"
-    },
-    {
-      "kind" : "message",
-      "line" : 99,
-      "npc" : "Pinkamenia",
-      "placeholders" : [
-        ".@n$",
         "strcharinfo(0)"
       ],
-      "text" : "{0}\nHello {1}!"
+      "text" : "Hello {0}!"
     },
     {
       "kind" : "message",
-      "line" : 112,
+      "line" : 113,
       "npc" : "Baker Extraordinaire",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nExchange your Love Flowers with Pinkamenia!"
+      "text" : "Exchange your Love Flowers with Pinkamenia!"
     },
     {
       "kind" : "message",
-      "line" : 116,
+      "line" : 117,
       "npc" : "Baker Extraordinaire",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nBring 15 Love Flowers to Pinkamenia!"
+      "text" : "Bring 15 Love Flowers to Pinkamenia!"
     },
     {
       "kind" : "message",
-      "line" : 120,
+      "line" : 122,
       "npc" : "Baker Extraordinaire",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nAh, so Pinkamenia told you\nto bring me the +8 Cake\nHat. Now I'm going\nto exchange your +8 Cake\nHat for another Cake Hat."
+      "text" : "Ah, so Pinkamenia told you"
     },
     {
       "kind" : "message",
-      "line" : 120,
+      "line" : 123,
       "npc" : "Baker Extraordinaire",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nSorry, but where is your\n+8 Cake Hat? Bring\nit to me, and remember\nto have it equipped!"
+      "text" : "to bring me the +8 Cake"
     },
     {
       "kind" : "message",
-      "line" : 128,
+      "line" : 124,
       "npc" : "Baker Extraordinaire",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nNow, if you wear the\nnew Cake Hat, there\nis a chance that\nDemi-Human Monsters will\ndrop a Love Flower!"
+      "text" : "Hat. Now I'm going"
     },
     {
       "kind" : "message",
-      "line" : 138,
+      "line" : 125,
       "npc" : "Baker Extraordinaire",
-      "placeholders" : [
-        ".@n$"
-      ],
-      "text" : "{0}\nThe mobs stole our Flowers,\nwhich we need to create \nour chocolates. Now get\n15 Love Flowers and bring\nthem to Pinkamenia!"
+      "text" : "to exchange your +8 Cake"
     },
     {
       "kind" : "message",
-      "line" : 154,
+      "line" : 126,
+      "npc" : "Baker Extraordinaire",
+      "text" : "Hat for another Cake Hat."
+    },
+    {
+      "kind" : "message",
+      "line" : 132,
+      "npc" : "Baker Extraordinaire",
+      "text" : "Now, if you wear the"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Baker Extraordinaire",
+      "text" : "new Cake Hat, there"
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "npc" : "Baker Extraordinaire",
+      "text" : "is a chance that"
+    },
+    {
+      "kind" : "message",
+      "line" : 135,
+      "npc" : "Baker Extraordinaire",
+      "text" : "Demi-Human Monsters will"
+    },
+    {
+      "kind" : "message",
+      "line" : 136,
+      "npc" : "Baker Extraordinaire",
+      "text" : "drop a Love Flower!"
+    },
+    {
+      "kind" : "message",
+      "line" : 139,
+      "npc" : "Baker Extraordinaire",
+      "text" : "The mobs stole our Flowers,"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "Baker Extraordinaire",
+      "text" : "which we need to create "
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Baker Extraordinaire",
+      "text" : "our chocolates. Now get"
+    },
+    {
+      "kind" : "message",
+      "line" : 142,
+      "npc" : "Baker Extraordinaire",
+      "text" : "15 Love Flowers and bring"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Baker Extraordinaire",
+      "text" : "them to Pinkamenia!"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "Baker Extraordinaire",
+      "text" : "Sorry, but where is your"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Baker Extraordinaire",
+      "text" : "+8 Cake Hat? Bring"
+    },
+    {
+      "kind" : "message",
+      "line" : 149,
+      "npc" : "Baker Extraordinaire",
+      "text" : "it to me, and remember"
+    },
+    {
+      "kind" : "message",
+      "line" : 150,
+      "npc" : "Baker Extraordinaire",
+      "text" : "to have it equipped!"
+    },
+    {
+      "kind" : "message",
+      "line" : 155,
       "npc" : "Baker Extraordinaire",
       "placeholders" : [
-        ".@n$",
         "strcharinfo(0)"
       ],
-      "text" : "{0}\nHello, {1}!"
+      "text" : "Hello, {0}!"
     }
   ]
 }
