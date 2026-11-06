@@ -7,7 +7,7 @@
       "npc" : "Dimensional Gorge Piece",
       "state" : "translated",
       "text" : "Only users between Levels ^ff000030 ~ 80^000000 can enter this Dungeon.",
-      "translation" : "只有等級在 ^ff000030 ~ 80^000000 之間的玩家才能進入該地下城。"
+      "translation" : "只有等級在^ff000030至80級^000000之間的玩家才能進入這個副本。"
     },
     {
       "kind" : "message",
@@ -18,7 +18,7 @@
       ],
       "state" : "translated",
       "text" : "Party status confirmed. Would you like to book entrance to the {0}?",
-      "translation" : "隊伍狀態已確認。\n要預約進入 {0} 嗎？"
+      "translation" : "隊伍狀態已確認。要預約進入{0}嗎？"
     },
     {
       "kind" : "option",
@@ -29,7 +29,7 @@
       ],
       "state" : "translated",
       "text" : "Reserve the {0}",
-      "translation" : "預約 {0}"
+      "translation" : "預約{0}"
     },
     {
       "kind" : "option",
@@ -37,7 +37,7 @@
       "npc" : "Dimensional Gorge Piece",
       "state" : "translated",
       "text" : "Enter the Dungeon",
-      "translation" : "進入地下城"
+      "translation" : "進入副本"
     },
     {
       "kind" : "option",
@@ -52,25 +52,55 @@
       "line" : 56,
       "npc" : "Dimensional Gorge Piece",
       "placeholders" : [
-        "getpartyname(.@party_id)",
-        "strcharinfo(0)",
+        "getpartyname(.@party_id)"
+      ],
+      "state" : "translated",
+      "text" : "Party Name: {0}",
+      "translation" : "隊伍名稱：{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 57,
+      "npc" : "Dimensional Gorge Piece",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Party Leader: {0}",
+      "translation" : "隊長：{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 58,
+      "npc" : "Dimensional Gorge Piece",
+      "placeholders" : [
         ".@md_name$"
       ],
       "state" : "translated",
-      "text" : "Party Name: {0}\nParty Leader: {1}\n^0000ff{2} ^000000 - Reservation Failed.",
-      "translation" : "隊伍名稱：{0}\n隊長：{1}\n^0000ff{2} ^000000 - 預約失敗。"
+      "text" : "^0000ff{0} ^000000 - Reservation Failed.",
+      "translation" : "^0000ff{0} ^000000 - 預約失敗。"
     },
     {
       "kind" : "message",
       "line" : 61,
       "npc" : "Dimensional Gorge Piece",
       "placeholders" : [
-        ".@md_name$",
         ".@md_name$"
       ],
       "state" : "translated",
-      "text" : "^0000ff{0}^000000- Attempting to book an entrance\nAfter making a reservation, you have to select 'Enter the Dungeon' from the menu if you wish to enter the {1}.",
-      "translation" : "^0000ff{0}^000000- 正在嘗試預約進入\n預約後，要進入 {1}，請從選單中選擇“進入地下城”。"
+      "text" : "^0000ff{0}^000000- Attempting to book an entrance",
+      "translation" : "^0000ff{0}^000000- 正在嘗試預約入口"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "npc" : "Dimensional Gorge Piece",
+      "placeholders" : [
+        ".@md_name$"
+      ],
+      "state" : "translated",
+      "text" : "After making a reservation, you have to select 'Enter the Dungeon' from the menu if you wish to enter the {0}.",
+      "translation" : "預約後，如果想進入{0}，請從選單中選擇“進入副本”。"
     },
     {
       "kind" : "option",
@@ -81,7 +111,7 @@
       ],
       "state" : "translated",
       "text" : "{0} Enter the Memorial Dungeon",
-      "translation" : "{0} 進入記憶地下城"
+      "translation" : "{0} 進入紀念副本"
     },
     {
       "kind" : "option",
@@ -97,7 +127,7 @@
       "npc" : "Dimensional Gorge Piece",
       "state" : "translated",
       "text" : "You can enter the Dungeon if it has been generated.",
-      "translation" : "地下城建立完成後即可進入。"
+      "translation" : "副本生成後即可進入。"
     },
     {
       "kind" : "option",
@@ -108,7 +138,7 @@
       ],
       "state" : "translated",
       "text" : "Enter the Dungeon {0}",
-      "translation" : "進入地下城 {0}"
+      "translation" : "進入副本{0}"
     },
     {
       "kind" : "option",
@@ -124,7 +154,7 @@
       "npc" : "Dimensional Gorge Piece",
       "state" : "translated",
       "text" : "^0000ffAll records and after-effects related to the Orc's Memory Dungeon are deleted. You can now regenerate or re-enter the dungeon.^000000",
-      "translation" : "^0000ff獸人記憶地下城的相關記錄及殘留效果已全部清除，現在可以重新建立或進入。^000000"
+      "translation" : "^0000ff與獸人記憶副本相關的所有記錄和後續效果都已刪除。現在可以重新生成或再次進入副本。^000000"
     },
     {
       "kind" : "message",
@@ -132,7 +162,7 @@
       "npc" : "Dimensional Gorge Piece",
       "state" : "translated",
       "text" : "In order to generate a dungeon you must be the Party Leader and have at least 2 members in the party.",
-      "translation" : "只有隊長才能建立地下城，且隊伍至少需要 2 名成員。"
+      "translation" : "要生成副本，你必須是隊長，且隊伍中至少有2名成員。"
     },
     {
       "kind" : "message",
@@ -140,15 +170,23 @@
       "npc" : "Dimensional Gorge Piece",
       "state" : "translated",
       "text" : "An unknown error has occurred.",
-      "translation" : "發生未知錯誤。"
+      "translation" : "發生了未知錯誤。"
     },
     {
       "kind" : "message",
       "line" : 92,
       "npc" : "Dimensional Gorge Piece",
       "state" : "translated",
-      "text" : "Memorial Dungeon Orc's Memory does not exist.\nMemorial Dungeon has been destroyed by the Party Leader, or because of the time limit. Please try again after 2 hours.",
-      "translation" : "記憶地下城“獸人記憶”不存在。\n可能已被隊長解散，或因超時而關閉。\n請在 2 小時後重試。"
+      "text" : "Memorial Dungeon Orc's Memory does not exist.",
+      "translation" : "獸人記憶紀念副本不存在。"
+    },
+    {
+      "kind" : "message",
+      "line" : 93,
+      "npc" : "Dimensional Gorge Piece",
+      "state" : "translated",
+      "text" : "Memorial Dungeon has been destroyed by the Party Leader, or because of the time limit. Please try again after 2 hours.",
+      "translation" : "紀念副本已被隊長關閉，或因時間限制而消失。請在2小時後重試。"
     },
     {
       "kind" : "message",
@@ -156,7 +194,7 @@
       "npc" : "Dimensional Gorge Piece",
       "state" : "translated",
       "text" : "Only a member of the party can enter the Memorial Dungeon.",
-      "translation" : "只有隊伍成員才能進入記憶地下城。"
+      "translation" : "只有隊伍成員才能進入紀念副本。"
     },
     {
       "kind" : "message",
@@ -164,15 +202,31 @@
       "npc" : "Mad Scientist",
       "state" : "translated",
       "text" : "The Mad Scientist doesn't seem to notice you and keeps mumbling to himself...",
-      "translation" : "瘋狂科學家似乎沒有注意到你，他一直在自言自語..."
+      "translation" : "瘋狂科學家似乎沒有注意到你，仍在不停地自言自語..."
     },
     {
       "kind" : "message",
       "line" : 114,
       "npc" : "Mad Scientist",
       "state" : "translated",
-      "text" : "[Mad Scientist]\nHaha, no Orcs are coming near me!\nThe power of the Dimensional Gorge is undefeatable!!",
-      "translation" : "[瘋狂科學家]\n哈哈，沒有獸人會靠近我！\n次元峽谷的力量是無敵的！！"
+      "text" : "[Mad Scientist]",
+      "translation" : "[瘋狂科學家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 115,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "Haha, no Orcs are coming near me!",
+      "translation" : "哈哈，獸人根本不敢靠近我！"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "The power of the Dimensional Gorge is undefeatable!!",
+      "translation" : "次元裂隙的力量不可戰勝！！"
     },
     {
       "kind" : "option",
@@ -180,7 +234,7 @@
       "npc" : "Mad Scientist",
       "state" : "translated",
       "text" : "Orcs don't attack you?",
-      "translation" : "獸人不會攻擊你"
+      "translation" : "獸人不攻擊你？"
     },
     {
       "kind" : "option",
@@ -188,23 +242,55 @@
       "npc" : "Mad Scientist",
       "state" : "translated",
       "text" : "You wish!",
-      "translation" : "你做夢吧"
+      "translation" : "你想得美！"
     },
     {
       "kind" : "message",
       "line" : 120,
       "npc" : "Mad Scientist",
       "state" : "translated",
-      "text" : "[Mad Scientist]\nYeah, yeah.. I know it's hard to belive. I don't blame ya.\nI used to study the Dimensional Gorge discovered near Morocc.\nAccording to my research, the minerals found there have enormous power inside them!",
-      "translation" : "[瘋狂科學家]\n是啊，是啊... 我知道很難相信，不怪你。\n我以前研究過夢羅克附近發現的次元峽谷。\n根據研究，那裡的礦石蘊藏著巨大的能量！"
+      "text" : "[Mad Scientist]",
+      "translation" : "[瘋狂科學家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "Yeah, yeah.. I know it's hard to belive. I don't blame ya.",
+      "translation" : "好吧好吧...我知道這很難相信。我不怪你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 122,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "I used to study the Dimensional Gorge discovered near Morocc.",
+      "translation" : "我以前一直在研究夢羅克附近發現的次元裂隙。"
+    },
+    {
+      "kind" : "message",
+      "line" : 123,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "According to my research, the minerals found there have enormous power inside them!",
+      "translation" : "根據我的研究，那裡發現的礦物蘊藏著巨大的能量！"
     },
     {
       "kind" : "message",
       "line" : 127,
       "npc" : "Mad Scientist",
       "state" : "translated",
-      "text" : "[Mad Scientist]\nYou are a pretty distrustful person, huh?",
-      "translation" : "[瘋狂科學家]\n你真是個多疑的人，不是嗎？"
+      "text" : "[Mad Scientist]",
+      "translation" : "[瘋狂科學家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 128,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "You are a pretty distrustful person, huh?",
+      "translation" : "你這人還真多疑，是吧？"
     },
     {
       "kind" : "option",
@@ -212,23 +298,39 @@
       "npc" : "Mad Scientist",
       "state" : "translated",
       "text" : "Oh? Like what, travel to alternate space?",
-      "translation" : "比如前往異次元空間"
+      "translation" : "哦？比如什麼，穿越到異空間？"
     },
     {
       "kind" : "message",
       "line" : 133,
       "npc" : "Mad Scientist",
       "state" : "translated",
-      "text" : "[Mad Scientist]\nVery smart! I have actually just done that! See that statue over there? It's not your normal Monolith!",
-      "translation" : "[瘋狂科學家]\n真聰明！我剛剛就辦到了！\n看到那邊的雕像了嗎？\n它可不是普通的石碑！"
+      "text" : "[Mad Scientist]",
+      "translation" : "[瘋狂科學家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "Very smart! I have actually just done that! See that statue over there? It's not your normal Monolith!",
+      "translation" : "真聰明！我剛剛真的辦到了！看到那邊的雕像了嗎？那可不是普通的石碑！"
     },
     {
       "kind" : "message",
       "line" : 136,
       "npc" : "Mad Scientist",
       "state" : "translated",
-      "text" : "[Mad Scientist]\nI have created it with a combination of our technology and the unlimited energy I discovered from the Gorge! Want to try it?",
-      "translation" : "[瘋狂科學家]\n我結合我們的科技與峽谷中發現的無限能量，造出了它！\n想試試嗎？"
+      "text" : "[Mad Scientist]",
+      "translation" : "[瘋狂科學家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 137,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "I have created it with a combination of our technology and the unlimited energy I discovered from the Gorge! Want to try it?",
+      "translation" : "我結合我們的技術和從裂隙中發現的無限能量製造了它！想試試嗎？"
     },
     {
       "kind" : "option",
@@ -236,23 +338,39 @@
       "npc" : "Mad Scientist",
       "state" : "translated",
       "text" : "...Um, that doesn't sound legal?",
-      "translation" : "... 這好像不合法吧"
+      "translation" : "...嗯，這聽起來不太合法吧？"
     },
     {
       "kind" : "message",
       "line" : 140,
       "npc" : "Mad Scientist",
       "state" : "translated",
-      "text" : "[Mad Scientist]\nHey, since when did something so interesting have to be legal!? How about it! You can talk to the Orcs! C'mon!",
-      "translation" : "[瘋狂科學家]\n嘿，這麼有趣的事，什麼時候非得合法了？！\n怎麼樣？你可以和獸人對話！\n來嘛！"
+      "text" : "[Mad Scientist]",
+      "translation" : "[瘋狂科學家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "Hey, since when did something so interesting have to be legal!? How about it! You can talk to the Orcs! C'mon!",
+      "translation" : "喂，這麼有趣的事什麼時候還需要合法了！？怎麼樣！你可以和獸人說話！快來！"
     },
     {
       "kind" : "message",
       "line" : 143,
       "npc" : "Mad Scientist",
       "state" : "translated",
-      "text" : "[Mad Scientist]\nChances are they'll just give you lots of instructions once they see you, so just wing it! They're always saying the same thing, to the point where I memorized them!",
-      "translation" : "[瘋狂科學家]\n他們一見到你，多半就會讓你做這做那，到時隨機應變就行！\n他們總說同樣的話，我都背下來了！"
+      "text" : "[Mad Scientist]",
+      "translation" : "[瘋狂科學家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 144,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "Chances are they'll just give you lots of instructions once they see you, so just wing it! They're always saying the same thing, to the point where I memorized them!",
+      "translation" : "他們一看到你，很可能就會給你一堆指示，你隨機應變就行！他們總說同樣的話，我都背下來了！"
     },
     {
       "kind" : "option",
@@ -260,7 +378,7 @@
       "npc" : "Mad Scientist",
       "state" : "translated",
       "text" : "Alright... What do I do?",
-      "translation" : "好吧... 該怎麼做"
+      "translation" : "好吧...我要做什麼？"
     },
     {
       "kind" : "option",
@@ -268,42 +386,82 @@
       "npc" : "Mad Scientist",
       "state" : "translated",
       "text" : "Umm, maybe not.",
-      "translation" : "還是算了"
+      "translation" : "嗯...還是算了。"
     },
     {
       "kind" : "message",
       "line" : 148,
       "npc" : "Mad Scientist",
       "state" : "translated",
-      "text" : "[Mad Scientist]\nVery good! Just sit in the hands of this statue! And try to act natural when you're in there!",
-      "translation" : "[瘋狂科學家]\n很好！坐到雕像的手上就行！\n進去後自然一點，別露餡！"
+      "text" : "[Mad Scientist]",
+      "translation" : "[瘋狂科學家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 149,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "Very good! Just sit in the hands of this statue! And try to act natural when you're in there!",
+      "translation" : "很好！坐到這尊雕像的手掌上！進去之後儘量表現自然！"
     },
     {
       "kind" : "message",
       "line" : 153,
       "npc" : "Mad Scientist",
       "state" : "translated",
-      "text" : "[Mad Scientist]\nOh fine, be that way!",
-      "translation" : "[瘋狂科學家]\n哦，隨你吧！"
+      "text" : "[Mad Scientist]",
+      "translation" : "[瘋狂科學家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "Oh fine, be that way!",
+      "translation" : "好吧，隨你！"
     },
     {
       "kind" : "message",
       "line" : 158,
       "npc" : "Mad Scientist",
       "state" : "translated",
-      "text" : "[Mad Scientist]\nHmm? Put your hand on that Monemus Statue if you want to experience traveling through dimensions!",
-      "translation" : "[瘋狂科學家]\n嗯？想體驗穿越次元，就把手放到莫內雕像上吧！"
+      "text" : "[Mad Scientist]",
+      "translation" : "[瘋狂科學家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 159,
+      "npc" : "Mad Scientist",
+      "state" : "translated",
+      "text" : "Hmm? Put your hand on that Monemus Statue if you want to experience traveling through dimensions!",
+      "translation" : "嗯？想體驗次元旅行的話，就把手放在那尊莫涅莫斯雕像上！"
     },
     {
       "kind" : "message",
       "line" : 870,
       "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "[Kruger]",
+      "translation" : "[克魯格]"
+    },
+    {
+      "kind" : "message",
+      "line" : 871,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "*Coughing*",
+      "translation" : "*咳嗽*"
+    },
+    {
+      "kind" : "message",
+      "line" : 872,
+      "npc" : "Kruger",
       "placeholders" : [
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "[Kruger]\n*Coughing*\n{0}, it's you...",
-      "translation" : "[克魯格]\n*咳嗽*\n{0}，是你..."
+      "text" : "{0}, it's you...",
+      "translation" : "{0}，是你啊..."
     },
     {
       "kind" : "message",
@@ -313,16 +471,48 @@
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "[{0}] \nDon't move! You are wounded!",
-      "translation" : "[{0}] \n別動！你受傷了！"
+      "text" : "[{0}] ",
+      "translation" : "[{0}]"
+    },
+    {
+      "kind" : "message",
+      "line" : 875,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "Don't move! You are wounded!",
+      "translation" : "別動！你受傷了！"
     },
     {
       "kind" : "message",
       "line" : 877,
       "npc" : "Kruger",
       "state" : "translated",
-      "text" : "[Kruger]\nIt's... all right.. I'm dying...\n....\nThe Shaman? What about the Shaman?",
-      "translation" : "[克魯格]\n沒... 沒關係... 我快死了...\n...\n薩滿呢？薩滿怎麼樣了？"
+      "text" : "[Kruger]",
+      "translation" : "[克魯格]"
+    },
+    {
+      "kind" : "message",
+      "line" : 878,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "It's... all right.. I'm dying...",
+      "translation" : "我...沒事...我快死了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 879,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "....",
+      "translation" : "..."
+    },
+    {
+      "kind" : "message",
+      "line" : 880,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "The Shaman? What about the Shaman?",
+      "translation" : "薩滿？薩滿怎麼了？"
     },
     {
       "kind" : "message",
@@ -332,8 +522,16 @@
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "[{0}] \nThe Shaman's dead now. Who was that Shaman really?",
-      "translation" : "[{0}] \n薩滿已經死了。那個薩滿到底是誰？"
+      "text" : "[{0}] ",
+      "translation" : "[{0}]"
+    },
+    {
+      "kind" : "message",
+      "line" : 883,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "The Shaman's dead now. Who was that Shaman really?",
+      "translation" : "薩滿已經死了。那薩滿到底是什麼人？"
     },
     {
       "kind" : "message",
@@ -341,15 +539,31 @@
       "npc" : "Kruger",
       "state" : "translated",
       "text" : "Kruger seemed to be relieved as he hears of the death of the Shaman, but you notice the bitter expression on his face.",
-      "translation" : "聽到薩滿的死訊，克魯格似乎鬆了口氣，臉上卻帶著苦澀。"
+      "translation" : "克魯格聽到薩滿死訊後似乎鬆了口氣，但你注意到他的臉上仍帶著苦澀。"
     },
     {
       "kind" : "message",
       "line" : 887,
       "npc" : "Kruger",
       "state" : "translated",
-      "text" : "[Kruger]\nI.. I just couldn't kill my own daughter...\nThank you, I'm sure she's finally free from the nightmare that used to choke her soul.",
-      "translation" : "[克魯格]\n我... 我下不了手殺自己的女兒...\n謝謝你，她終於擺脫了那個折磨她靈魂的噩夢。"
+      "text" : "[Kruger]",
+      "translation" : "[克魯格]"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "I.. I just couldn't kill my own daughter...",
+      "translation" : "我...我就是下不了手殺自己的女兒..."
+    },
+    {
+      "kind" : "message",
+      "line" : 889,
+      "npc" : "Kruger",
+      "state" : "translated",
+      "text" : "Thank you, I'm sure she's finally free from the nightmare that used to choke her soul.",
+      "translation" : "謝謝你，我相信她終於擺脫了曾經扼住她靈魂的噩夢。"
     },
     {
       "kind" : "message",
@@ -357,7 +571,7 @@
       "npc" : "Kruger",
       "state" : "translated",
       "text" : "Kruger was about to say something more, but he breathed his last breath before he could...",
-      "translation" : "克魯格還想說什麼，卻沒能說出口就嚥了氣..."
+      "translation" : "克魯格似乎還想說些什麼，但話未出口便嚥下了最後一口氣..."
     },
     {
       "kind" : "message",
@@ -365,7 +579,7 @@
       "npc" : "Kruger",
       "state" : "translated",
       "text" : "You can see the dead body of Kruger, peacefully lying on the ground.",
-      "translation" : "克魯格的遺體安詳地躺在地上。"
+      "translation" : "你看見克魯格的遺體安詳地躺在地上。"
     }
   ]
 }

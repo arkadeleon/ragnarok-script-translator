@@ -5,15 +5,33 @@
       "kind" : "message",
       "line" : 27,
       "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "Level requirement:",
+      "translation" : "等級要求："
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Job Master",
       "placeholders" : [
         "((getarg(0)>1)? \n\t\t\t\"^bb0000\"+getarg(0)+\"^000000 (^bb0000Base^000000) / \":\"\")",
-        "getarg(1)",
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "{0}^00bb00{1}^000000 (^00bb00Job^000000)",
+      "translation" : "{0}^00bb00{1}^000000（^00bb00職業等級^000000）"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Job Master",
+      "placeholders" : [
         "((.@blvl > 0) ? \"^bb0000\"+.@blvl+\"^000000 more base levels \" + \n\t\t\t\t((.@jlvl > 0) ? \"and \" : \"\") : \"\")",
         "((.@jlvl > 0) ? \"^00bb00\"+.@jlvl+\"^000000 more job levels \" : \"\")"
       ],
       "state" : "translated",
-      "text" : "Level requirement:\n{0}^00bb00{1}^000000 (^00bb00Job^000000)\nYou need {2}{3}to continue.",
-      "translation" : "等級要求：\n{0}^00bb00{1}^000000（^00bb00職業等級^000000）\n您需要{2}{3}才能繼續。"
+      "text" : "You need {0}{1}to continue.",
+      "translation" : "繼續之前，你還需要{0}{1}。"
     },
     {
       "kind" : "message",
@@ -27,7 +45,7 @@
       ],
       "state" : "translated",
       "text" : "Please remove your {0}{1}{2}{3} before proceeding.",
-      "translation" : "請卸下您的{0}{1}{2}{3}後再繼續。"
+      "translation" : "請先卸下{0}{1}{2}{3}再繼續。"
     },
     {
       "kind" : "message",
@@ -35,18 +53,15 @@
       "npc" : "Job Master",
       "state" : "translated",
       "text" : "Please use all your skill points before proceeding.",
-      "translation" : "請分配完所有技能點後再繼續。"
+      "translation" : "請先用完所有技能點再繼續。"
     },
     {
       "kind" : "message",
-      "line" : 141,
+      "line" : 259,
       "npc" : "Job Master",
-      "placeholders" : [
-        ".NPCName$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nAn error has occurred.",
-      "translation" : "{0}\n發生了一個錯誤。"
+      "text" : "An error has occurred.",
+      "translation" : "發生了錯誤。"
     },
     {
       "kind" : "message",
@@ -54,7 +69,7 @@
       "npc" : "Job Master",
       "state" : "translated",
       "text" : "No more jobs are available.",
-      "translation" : "沒有可以繼續轉職的職業了。"
+      "translation" : "目前沒有更多可選職業。"
     },
     {
       "kind" : "message",
@@ -66,28 +81,26 @@
     },
     {
       "kind" : "message",
-      "line" : 322,
+      "line" : 331,
       "npc" : "Job Master",
       "placeholders" : [
-        ".NPCName$",
         ".SNovice",
         "jobname(.@class)"
       ],
       "state" : "translated",
-      "text" : "{0}\nA base level of {1} is required to turn into a {2}.",
-      "translation" : "{0}\n基礎等級達到{1}級後，可轉職為{2}。"
+      "text" : "A base level of {0} is required to turn into a {1}.",
+      "translation" : "基礎等級達到{0}級後，才能轉職為{1}。"
     },
     {
       "kind" : "message",
-      "line" : 349,
+      "line" : 350,
       "npc" : "Job Master",
       "placeholders" : [
-        ".NPCName$",
         "callfunc(\"F_InsertArticle\", jobname(.@to_cls))"
       ],
       "state" : "translated",
-      "text" : "{0}\nYou are now {1}!",
-      "translation" : "{0}\n您現在是{1}了！"
+      "text" : "You are now {0}!",
+      "translation" : "你現在是{0}了！"
     },
     {
       "kind" : "message",
@@ -106,7 +119,7 @@
       ],
       "state" : "translated",
       "text" : "Do you want to change into ^0055FF{0}^000000 class?",
-      "translation" : "您想轉職為^0055FF{0}^000000嗎？"
+      "translation" : "你想轉職為^0055FF{0}^000000嗎？"
     },
     {
       "kind" : "option",

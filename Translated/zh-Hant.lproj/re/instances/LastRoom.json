@@ -6,32 +6,64 @@
       "line" : 12,
       "npc" : "Mark",
       "state" : "translated",
-      "text" : "[Mark]\nIt's dangerous here.\nIt would be better to come back next time when we are stronger.",
-      "translation" : "[馬克]\n這裡很危險，等我們更強些再來吧。"
+      "text" : "[Mark]",
+      "translation" : "[馬克]"
     },
     {
       "kind" : "message",
-      "line" : 12,
+      "line" : 16,
       "npc" : "Mark",
       "state" : "translated",
-      "text" : "[Mark]\nUnlike the other doors we saw this door has traces of it being blocked from this side.",
-      "translation" : "[馬克]\n這扇門跟之前見過的不同，像是被人從這一側堵住了。"
+      "text" : "It's dangerous here.",
+      "translation" : "這裡很危險。"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "It would be better to come back next time when we are stronger.",
+      "translation" : "等我們變強一些，下次再來會更好。"
+    },
+    {
+      "kind" : "message",
+      "line" : 20,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "Unlike the other doors we saw this door has traces of it being blocked from this side.",
+      "translation" : "和之前看到的門不同，這扇門似乎是從這邊被堵住的。"
     },
     {
       "kind" : "message",
       "line" : 22,
       "npc" : "Mark",
       "state" : "translated",
-      "text" : "[Mark]\nIs there something inside?",
-      "translation" : "[馬克]\n裡面有什麼東西嗎？"
+      "text" : "[Mark]",
+      "translation" : "[馬克]"
+    },
+    {
+      "kind" : "message",
+      "line" : 23,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "Is there something inside?",
+      "translation" : "裡面有什麼嗎？"
     },
     {
       "kind" : "message",
       "line" : 29,
       "npc" : "Mark",
       "state" : "translated",
-      "text" : "...It doesn't feel right here.\nIt may be dangerous alone so it might be better to form a party.",
-      "translation" : "...這裡感覺不對勁。\n一個人去可能很危險，最好組個隊伍。"
+      "text" : "...It doesn't feel right here.",
+      "translation" : "...這裡感覺不太對勁。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "It may be dangerous alone so it might be better to form a party.",
+      "translation" : "一個人進去可能很危險，最好先組隊。"
     },
     {
       "kind" : "option",
@@ -39,7 +71,7 @@
       "npc" : "Mark",
       "state" : "translated",
       "text" : "Go in.",
-      "translation" : "進入"
+      "translation" : "進入。"
     },
     {
       "kind" : "option",
@@ -47,238 +79,528 @@
       "npc" : "Mark",
       "state" : "translated",
       "text" : "Quit.",
-      "translation" : "退出"
+      "translation" : "退出。"
     },
     {
       "kind" : "message",
       "line" : 38,
       "npc" : "Mark",
       "placeholders" : [
-        "getpartyname( getcharid(1) )",
+        "getpartyname( getcharid(1) )"
+      ],
+      "state" : "translated",
+      "text" : "Party: {0}",
+      "translation" : "隊伍：{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Mark",
+      "placeholders" : [
         "getpartyleader( getcharid(1) )"
       ],
       "state" : "translated",
-      "text" : "Party: {0}\nLeader: {1}\n^0000ffLast room ^000000- Creation failed",
-      "translation" : "隊伍：{0}\n隊長：{1}\n^0000ff最後的房間^000000 - 建立失敗"
+      "text" : "Leader: {0}",
+      "translation" : "隊長：{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "^0000ffLast room ^000000- Creation failed",
+      "translation" : "^0000ff最後的房間 ^000000- 建立失敗"
     },
     {
       "kind" : "message",
       "line" : 43,
       "npc" : "Mark",
       "state" : "translated",
-      "text" : "[Mark]\nI'm opening the door.\nGo in when the door is completely open.",
-      "translation" : "[馬克]\n我要開門了。\n等門完全開啟後再進去。"
+      "text" : "[Mark]",
+      "translation" : "[馬克]"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "I'm opening the door.",
+      "translation" : "我來開門。"
+    },
+    {
+      "kind" : "message",
+      "line" : 45,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "Go in when the door is completely open.",
+      "translation" : "門完全開啟後再進去。"
     },
     {
       "kind" : "message",
       "line" : 50,
       "npc" : "Mark",
       "state" : "translated",
-      "text" : "[Mark]\n...feel very suspicious!\nIt's a little dangerous to be alone. It is recommended to team up!",
-      "translation" : "[馬克]\n...這裡很可疑！\n一個人太危險，還是組隊吧！"
+      "text" : "[Mark]",
+      "translation" : "[馬克]"
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "...feel very suspicious!",
+      "translation" : "...感覺非常可疑！"
+    },
+    {
+      "kind" : "message",
+      "line" : 52,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "It's a little dangerous to be alone. It is recommended to team up!",
+      "translation" : "獨自行動有點危險，建議組隊！"
     },
     {
       "kind" : "message",
       "line" : 55,
       "npc" : "Mark",
       "state" : "translated",
-      "text" : "[Mark]\nThe door does not seem to be fully open.",
-      "translation" : "[馬克]\n門似乎沒有完全開啟。"
+      "text" : "[Mark]",
+      "translation" : "[馬克]"
+    },
+    {
+      "kind" : "message",
+      "line" : 56,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "The door does not seem to be fully open.",
+      "translation" : "門好像還沒有完全開啟。"
     },
     {
       "kind" : "message",
       "line" : 59,
       "npc" : "Mark",
       "state" : "translated",
-      "text" : "[Mark]\nHey... what is going on?",
-      "translation" : "[馬克]\n嘿...這是怎麼回事？"
+      "text" : "[Mark]",
+      "translation" : "[馬克]"
+    },
+    {
+      "kind" : "message",
+      "line" : 60,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "Hey... what is going on?",
+      "translation" : "喂...這是怎麼回事？"
     },
     {
       "kind" : "message",
       "line" : 76,
       "npc" : "Mark",
       "state" : "translated",
-      "text" : "[Mark]\n...You look tired.\nSince you went there you should take a day to rest.",
-      "translation" : "[馬克]\n...你看起來很累，去過那裡後，最好休息一天。"
+      "text" : "[Mark]",
+      "translation" : "[馬克]"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "...You look tired.",
+      "translation" : "...你看起來很疲憊。"
+    },
+    {
+      "kind" : "message",
+      "line" : 79,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "Since you went there you should take a day to rest.",
+      "translation" : "既然去過那裡了，就休息一天吧。"
     },
     {
       "kind" : "message",
       "line" : 82,
       "npc" : "Mark",
       "state" : "translated",
-      "text" : "[Mark]\nI can't believe you want to enter a place like this again...",
-      "translation" : "[馬克]\n真不敢相信你想再次進入這種地方..."
+      "text" : "[Mark]",
+      "translation" : "[馬克]"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Mark",
+      "state" : "translated",
+      "text" : "I can't believe you want to enter a place like this again...",
+      "translation" : "真不敢相信你還想再次進入這種地方..."
     },
     {
       "kind" : "message",
       "line" : 117,
       "npc" : "Tamarin",
       "state" : "translated",
-      "text" : "[Tamarin]\nVerity, are you alright?\nYou do not look good...",
-      "translation" : "[塔馬林]\n薇麗蒂，你沒事吧？\n你看起來氣色不好..."
+      "text" : "[Tamarin]",
+      "translation" : "[塔瑪琳]"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "Tamarin",
+      "state" : "translated",
+      "text" : "Verity, are you alright?",
+      "translation" : "薇莉蒂，你還好嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Tamarin",
+      "state" : "translated",
+      "text" : "You do not look good...",
+      "translation" : "你看起來不太好..."
     },
     {
       "kind" : "message",
       "line" : 125,
       "npc" : "Du",
       "state" : "translated",
-      "text" : "[Du]\nI have a bad feeling about this...",
-      "translation" : "[杜]\n我對這裡有種不好的預感..."
+      "text" : "[Du]",
+      "translation" : "[杜]"
+    },
+    {
+      "kind" : "message",
+      "line" : 126,
+      "npc" : "Du",
+      "state" : "translated",
+      "text" : "I have a bad feeling about this...",
+      "translation" : "我有種不祥的預感..."
     },
     {
       "kind" : "message",
       "line" : 133,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\nUmph...I suddenly have a feeling that's not good.\nI wish to talk with the leader.",
-      "translation" : "[薇麗蒂]\n唔...突然有種不好的預感。\n我想和隊長談談。"
+      "text" : "[Verity]",
+      "translation" : "[薇莉蒂]"
     },
     {
       "kind" : "message",
-      "line" : 133,
+      "line" : 134,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\nUmph...I suddenly have a feeling that's not good.",
-      "translation" : "[薇麗蒂]\n唔...突然有種不好的預感。"
+      "text" : "Umph...I suddenly have a feeling that's not good.",
+      "translation" : "呃...我突然有種不好的感覺。"
+    },
+    {
+      "kind" : "message",
+      "line" : 137,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "I wish to talk with the leader.",
+      "translation" : "我想和隊長談談。"
     },
     {
       "kind" : "message",
       "line" : 142,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\nSomething is splitting my head....Ugh....",
-      "translation" : "[薇麗蒂]\n頭好像要裂開了...嗚..."
+      "text" : "[Verity]",
+      "translation" : "[薇莉蒂]"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Something is splitting my head....Ugh....",
+      "translation" : "我的頭快裂開了...呃..."
     },
     {
       "kind" : "message",
       "line" : 146,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\n....Ugh....",
-      "translation" : "[薇麗蒂]\n...嗚..."
+      "text" : "[Verity]",
+      "translation" : "[薇莉蒂]"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "....Ugh....",
+      "translation" : "...呃..."
     },
     {
       "kind" : "message",
       "line" : 150,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Du]\nSister! Are you alright?!",
-      "translation" : "[杜]\n姐姐！你沒事吧？！"
+      "text" : "[Du]",
+      "translation" : "[杜]"
+    },
+    {
+      "kind" : "message",
+      "line" : 151,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Sister! Are you alright?!",
+      "translation" : "姐姐！你還好嗎？！"
     },
     {
       "kind" : "message",
       "line" : 155,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\n....Have to go back....",
-      "translation" : "[薇麗蒂]\n...必須回去..."
+      "text" : "[Verity]",
+      "translation" : "[薇莉蒂]"
+    },
+    {
+      "kind" : "message",
+      "line" : 156,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "....Have to go back....",
+      "translation" : "...得回去..."
     },
     {
       "kind" : "message",
       "line" : 160,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Tamarin]\nVerity, are you alright?\nCan you walk?",
-      "translation" : "[塔馬林]\n薇麗蒂，你沒事吧？\n你能走路嗎？"
+      "text" : "[Tamarin]",
+      "translation" : "[塔瑪琳]"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Verity, are you alright?",
+      "translation" : "薇莉蒂，你還好嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 162,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Can you walk?",
+      "translation" : "你能走嗎？"
     },
     {
       "kind" : "message",
       "line" : 166,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\nUgh...",
-      "translation" : "[薇麗蒂]\n嗚..."
+      "text" : "[Verity]",
+      "translation" : "[薇莉蒂]"
+    },
+    {
+      "kind" : "message",
+      "line" : 167,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Ugh...",
+      "translation" : "呃..."
     },
     {
       "kind" : "message",
       "line" : 171,
       "npc" : "Verity",
+      "state" : "translated",
+      "text" : "[Du]",
+      "translation" : "[杜]"
+    },
+    {
+      "kind" : "message",
+      "line" : 172,
+      "npc" : "Verity",
       "placeholders" : [
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "[Du]\n{0}! I think it is better that you go back.",
-      "translation" : "[杜]\n{0}！我覺得你最好先回去。"
+      "text" : "{0}! I think it is better that you go back.",
+      "translation" : "{0}！我覺得你最好先回去。"
     },
     {
       "kind" : "message",
       "line" : 176,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\nN...no. I will catch up soon so go on ahead.",
-      "translation" : "[薇麗蒂]\n不...不用，我馬上跟上，你們先走。"
+      "text" : "[Verity]",
+      "translation" : "[薇莉蒂]"
+    },
+    {
+      "kind" : "message",
+      "line" : 177,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "N...no. I will catch up soon so go on ahead.",
+      "translation" : "不...不用。我很快就會追上來，你們先走吧。"
     },
     {
       "kind" : "message",
       "line" : 181,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Tamarin]\nThen I will stay with Verity until she recovers so you can go on ahead.",
-      "translation" : "[塔馬林]\n我留下照顧薇麗蒂，等她恢復。\n你們先走吧。"
+      "text" : "[Tamarin]",
+      "translation" : "[塔瑪琳]"
+    },
+    {
+      "kind" : "message",
+      "line" : 182,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Then I will stay with Verity until she recovers so you can go on ahead.",
+      "translation" : "那我留下來陪薇莉蒂，等她恢復後你們再繼續前進。"
     },
     {
       "kind" : "message",
       "line" : 273,
       "npc" : "Tamarin",
       "state" : "translated",
-      "text" : "[Tamarin]\nHuff huff... Verity suddenly huff huff couldn't even stand straight before huff huff...",
-      "translation" : "[塔馬林]\n呼，呼...薇麗蒂剛才突然...呼，呼...連站都站不穩了..."
+      "text" : "[Tamarin]",
+      "translation" : "[塔瑪琳]"
+    },
+    {
+      "kind" : "message",
+      "line" : 274,
+      "npc" : "Tamarin",
+      "state" : "translated",
+      "text" : "Huff huff... Verity suddenly huff huff couldn't even stand straight before huff huff...",
+      "translation" : "呼...呼...薇莉蒂突然...呼...呼...站都站不穩了...呼...呼..."
     },
     {
       "kind" : "message",
       "line" : 278,
       "npc" : "Tamarin",
       "state" : "translated",
-      "text" : "[Tamarin]\nI don't think this is a problem we can solve by talking amongst ourselves.\nLet's ask the leader's opinion first.",
-      "translation" : "[塔馬林]\n我覺得這不是我們私下商量就能解決的問題。\n先去問問隊長的意見吧。"
+      "text" : "[Tamarin]",
+      "translation" : "[塔瑪琳]"
+    },
+    {
+      "kind" : "message",
+      "line" : 279,
+      "npc" : "Tamarin",
+      "state" : "translated",
+      "text" : "I don't think this is a problem we can solve by talking amongst ourselves.",
+      "translation" : "我覺得這不是我們幾個私下商量就能解決的問題。"
+    },
+    {
+      "kind" : "message",
+      "line" : 280,
+      "npc" : "Tamarin",
+      "state" : "translated",
+      "text" : "Let's ask the leader's opinion first.",
+      "translation" : "我們先聽聽隊長的意見吧。"
     },
     {
       "kind" : "message",
       "line" : 285,
       "npc" : "Tamarin",
       "state" : "translated",
-      "text" : "[Tamarin]\nRan off so fast huff...huff... to even catch up. Huff huff",
-      "translation" : "[塔馬林]\n跑得太快了，呼...呼...追都追不上...呼，呼..."
+      "text" : "[Tamarin]",
+      "translation" : "[塔瑪琳]"
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Tamarin",
+      "state" : "translated",
+      "text" : "Ran off so fast huff...huff... to even catch up. Huff huff",
+      "translation" : "跑得太快了，呼...呼...根本追不上。呼...呼..."
     },
     {
       "kind" : "message",
       "line" : 290,
       "npc" : "Tamarin",
       "state" : "translated",
-      "text" : "[Tamarin]\nUh... Could Verity have gone that far?",
-      "translation" : "[塔馬林]\n呃...薇麗蒂真的能跑那麼遠嗎？"
+      "text" : "[Tamarin]",
+      "translation" : "[塔瑪琳]"
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Tamarin",
+      "state" : "translated",
+      "text" : "Uh... Could Verity have gone that far?",
+      "translation" : "嗯...薇莉蒂能跑那麼遠嗎？"
     },
     {
       "kind" : "message",
       "line" : 295,
       "npc" : "Tamarin",
       "state" : "translated",
-      "text" : "[Tamarin]\nWe need to find Verity quickly",
-      "translation" : "[塔馬林]\n我們需要儘快找到薇麗蒂。"
+      "text" : "[Tamarin]",
+      "translation" : "[塔瑪琳]"
+    },
+    {
+      "kind" : "message",
+      "line" : 296,
+      "npc" : "Tamarin",
+      "state" : "translated",
+      "text" : "We need to find Verity quickly",
+      "translation" : "我們得趕快找到薇莉蒂。"
     },
     {
       "kind" : "message",
       "line" : 299,
       "npc" : "Tamarin",
       "state" : "translated",
-      "text" : "[Tamarin]\nThere is only the route going up so go ahead.",
-      "translation" : "[塔馬林]\n只有往上走的路，你先去吧。"
+      "text" : "[Tamarin]",
+      "translation" : "[塔瑪琳]"
+    },
+    {
+      "kind" : "message",
+      "line" : 300,
+      "npc" : "Tamarin",
+      "state" : "translated",
+      "text" : "There is only the route going up so go ahead.",
+      "translation" : "只有往上的路，繼續前進吧。"
     },
     {
       "kind" : "message",
       "line" : 341,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\nAh...Where am I..\nWhat happened?",
-      "translation" : "[薇麗蒂]\n啊...我在哪裡...\n發生了什麼？"
+      "text" : "[Verity]",
+      "translation" : "[薇莉蒂]"
+    },
+    {
+      "kind" : "message",
+      "line" : 342,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Ah...Where am I..",
+      "translation" : "啊...我在哪裡..."
+    },
+    {
+      "kind" : "message",
+      "line" : 343,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "What happened?",
+      "translation" : "發生什麼事了？"
     },
     {
       "kind" : "message",
       "line" : 346,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\nMy head...is splitting.\nA sound coming from this...door...",
-      "translation" : "[薇麗蒂]\n頭...要裂開了。\n這扇門...裡面有聲音..."
+      "text" : "[Verity]",
+      "translation" : "[薇莉蒂]"
+    },
+    {
+      "kind" : "message",
+      "line" : 347,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "My head...is splitting.",
+      "translation" : "我的頭...快裂開了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 348,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "A sound coming from this...door...",
+      "translation" : "這扇...門裡...有聲音傳出來..."
     },
     {
       "kind" : "option",
@@ -286,7 +608,7 @@
       "npc" : "Verity",
       "state" : "translated",
       "text" : "Quit.",
-      "translation" : "退出"
+      "translation" : "退出。"
     },
     {
       "kind" : "option",
@@ -294,39 +616,87 @@
       "npc" : "Verity",
       "state" : "translated",
       "text" : "Go inside.",
-      "translation" : "進去看看"
+      "translation" : "進去。"
     },
     {
       "kind" : "message",
       "line" : 351,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\nGo back...we have to go back...",
-      "translation" : "[薇麗蒂]\n回去...我們必須回去..."
+      "text" : "[Verity]",
+      "translation" : "[薇莉蒂]"
+    },
+    {
+      "kind" : "message",
+      "line" : 352,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Go back...we have to go back...",
+      "translation" : "回去...我們必須回去..."
     },
     {
       "kind" : "message",
       "line" : 356,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\nQuickly...we have to go back...",
-      "translation" : "[薇麗蒂]\n快...我們必須回去..."
+      "text" : "[Verity]",
+      "translation" : "[薇莉蒂]"
+    },
+    {
+      "kind" : "message",
+      "line" : 357,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Quickly...we have to go back...",
+      "translation" : "快點...我們得回去..."
     },
     {
       "kind" : "message",
       "line" : 366,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\nFinally.. We came back...\nFinally.....",
-      "translation" : "[薇麗蒂]\n終於...我們回來了...\n終於..."
+      "text" : "[Verity]",
+      "translation" : "[薇莉蒂]"
+    },
+    {
+      "kind" : "message",
+      "line" : 367,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Finally.. We came back...",
+      "translation" : "終於...我們回來了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 368,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Finally.....",
+      "translation" : "終於..."
     },
     {
       "kind" : "message",
       "line" : 449,
       "npc" : "Verity",
       "state" : "translated",
-      "text" : "[Verity]\nWho am I?\nWho am I...",
-      "translation" : "[薇麗蒂]\n我是誰？\n我是誰..."
+      "text" : "[Verity]",
+      "translation" : "[薇莉蒂]"
+    },
+    {
+      "kind" : "message",
+      "line" : 450,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Who am I?",
+      "translation" : "我是誰？"
+    },
+    {
+      "kind" : "message",
+      "line" : 451,
+      "npc" : "Verity",
+      "state" : "translated",
+      "text" : "Who am I...",
+      "translation" : "我是誰..."
     }
   ]
 }
