@@ -5,53 +5,53 @@
       "kind" : "message",
       "line" : 17,
       "npc" : "Private MVP Room",
-      "placeholders" : [
-        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
-        "callfunc(\"F_InsertComma\", getvariableofnpc( .rentcost, \"MVP Summoner\" ) )",
-        ".@i",
-        ".color$[ .type[.@i] ]",
-        ".whoinuse$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #{2} = {3}{4}^000000",
-      "translation" : "[私人MVP房间]\n请选择一个私人MVP房间。\n租用{0}分钟的费用为{1} Zeny。\n \n房间 #{2} = {3}{4}^000000"
+      "text" : "[Private MVP Room]",
+      "translation" : "[私人MVP房间]"
     },
     {
       "kind" : "message",
-      "line" : 17,
+      "line" : 18,
       "npc" : "Private MVP Room",
-      "placeholders" : [
-        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
-        ".@i",
-        ".color$[ .type[.@i] ]",
-        ".whoinuse$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #{1} = {2}{3}^000000",
-      "translation" : "[私人MVP房间]\n请选择一个私人MVP房间。\n使用时间为{0}分钟。\n \n房间 #{1} = {2}{3}^000000"
+      "text" : "Please select a private MVP room.",
+      "translation" : "请选择一个私人MVP房间。"
     },
     {
       "kind" : "message",
-      "line" : 17,
+      "line" : 20,
       "npc" : "Private MVP Room",
       "placeholders" : [
         "getvariableofnpc( .timeout, \"MVP Summoner\" )",
         "callfunc(\"F_InsertComma\", getvariableofnpc( .rentcost, \"MVP Summoner\" ) )"
       ],
       "state" : "translated",
-      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n ",
-      "translation" : "[私人MVP房间]\n请选择一个私人MVP房间。\n租用{0}分钟的费用为{1} Zeny。\n "
+      "text" : "The cost to rent a room for {0} minutes is {1} zeny.",
+      "translation" : "租用{0}分钟需要{1}金币。"
     },
     {
       "kind" : "message",
-      "line" : 17,
+      "line" : 22,
       "npc" : "Private MVP Room",
       "placeholders" : [
         "getvariableofnpc( .timeout, \"MVP Summoner\" )"
       ],
       "state" : "translated",
-      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n ",
-      "translation" : "[私人MVP房间]\n请选择一个私人MVP房间。\n使用时间为{0}分钟。\n "
+      "text" : "You can only use the room for only {0} minutes.",
+      "translation" : "房间限用{0}分钟。"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".@i",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "Room #{0} = {1}{2}^000000",
+      "translation" : "房间#{0} = {1}{2}^000000"
     },
     {
       "kind" : "option",
@@ -62,7 +62,7 @@
       ],
       "state" : "translated",
       "text" : "MVP Room 1 [{0}]",
-      "translation" : "MVP房间 1 [{0}]"
+      "translation" : "MVP房间1 [{0}]"
     },
     {
       "kind" : "option",
@@ -73,7 +73,7 @@
       ],
       "state" : "translated",
       "text" : "MVP Room 2 [{0}]",
-      "translation" : "MVP房间 2 [{0}]"
+      "translation" : "MVP房间2 [{0}]"
     },
     {
       "kind" : "option",
@@ -84,7 +84,7 @@
       ],
       "state" : "translated",
       "text" : "MVP Room 3 [{0}]",
-      "translation" : "MVP房间 3 [{0}]"
+      "translation" : "MVP房间3 [{0}]"
     },
     {
       "kind" : "option",
@@ -95,7 +95,7 @@
       ],
       "state" : "translated",
       "text" : "MVP Room 4 [{0}]",
-      "translation" : "MVP房间 4 [{0}]"
+      "translation" : "MVP房间4 [{0}]"
     },
     {
       "kind" : "option",
@@ -106,7 +106,7 @@
       ],
       "state" : "translated",
       "text" : "MVP Room 5 [{0}]",
-      "translation" : "MVP房间 5 [{0}]"
+      "translation" : "MVP房间5 [{0}]"
     },
     {
       "kind" : "option",
@@ -117,7 +117,7 @@
       ],
       "state" : "translated",
       "text" : "MVP Room 6 [{0}]",
-      "translation" : "MVP房间 6 [{0}]"
+      "translation" : "MVP房间6 [{0}]"
     },
     {
       "kind" : "option",
@@ -128,7 +128,7 @@
       ],
       "state" : "translated",
       "text" : "MVP Room 7 [{0}]",
-      "translation" : "MVP房间 7 [{0}]"
+      "translation" : "MVP房间7 [{0}]"
     },
     {
       "kind" : "option",
@@ -139,27 +139,59 @@
       ],
       "state" : "translated",
       "text" : "MVP Room 8 [{0}]",
-      "translation" : "MVP房间 8 [{0}]"
+      "translation" : "MVP房间8 [{0}]"
     },
     {
       "kind" : "message",
       "line" : 42,
+      "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "[Private MVP Room]",
+      "translation" : "[私人MVP房间]"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "This room is reserved for ",
+      "translation" : "此房间已预留给"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
       "npc" : "Private MVP Room",
       "placeholders" : [
         ".color$[ .type[.@room] ]",
         ".whoinuse$[.@room]"
       ],
       "state" : "translated",
-      "text" : "[Private MVP Room]\nThis room is reserved for \n{0}{1}^000000.\nPlease select another.",
-      "translation" : "[私人MVP房间]\n此房间已预留给{0}{1}^000000。\n请选择其他房间。"
+      "text" : "{0}{1}^000000.",
+      "translation" : "{0}{1}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 45,
+      "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "Please select another.",
+      "translation" : "请选择其他房间。"
     },
     {
       "kind" : "message",
       "line" : 49,
       "npc" : "Private MVP Room",
       "state" : "translated",
-      "text" : "[Private MVP Room]\nReserve this room for...",
-      "translation" : "[私人MVP房间]\n将此房间预留给..."
+      "text" : "[Private MVP Room]",
+      "translation" : "[私人MVP房间]"
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "Reserve this room for...",
+      "translation" : "将房间预留给..."
     },
     {
       "kind" : "option",
@@ -189,12 +221,20 @@
       "kind" : "message",
       "line" : 54,
       "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "[Private MVP Room]",
+      "translation" : "[私人MVP房间]"
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "Private MVP Room",
       "placeholders" : [
         "( ( .@type == 1 )? \"Party\" : \"Guild\" )"
       ],
       "state" : "translated",
-      "text" : "[Private MVP Room]\nYou do not own a {0}.",
-      "translation" : "[私人MVP房间]\n您没有{0}。"
+      "text" : "You do not own a {0}.",
+      "translation" : "你没有{0}。"
     },
     {
       "kind" : "message",
@@ -202,155 +242,259 @@
       "npc" : "Private MVP Room",
       "state" : "translated",
       "text" : "You don't have enough zeny to rent a room.",
-      "translation" : "您的Zeny不足，无法租用房间。"
+      "translation" : "你的金币不足，无法租用房间。"
     },
     {
       "kind" : "message",
       "line" : 63,
       "npc" : "Private MVP Room",
       "state" : "translated",
-      "text" : "[Private MVP Room]\nI'm sorry, somebody else has already registered this room faster than you.",
-      "translation" : "[私人MVP房间]\n很抱歉，已经有人抢先预订了这个房间。"
+      "text" : "[Private MVP Room]",
+      "translation" : "[私人MVP房间]"
+    },
+    {
+      "kind" : "message",
+      "line" : 64,
+      "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "I'm sorry, somebody else has already registered this room faster than you.",
+      "translation" : "抱歉，已经有人比你更快登记了这个房间。"
     },
     {
       "kind" : "message",
       "line" : 69,
       "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "[Private MVP Room]",
+      "translation" : "[私人MVP房间]"
+    },
+    {
+      "kind" : "message",
+      "line" : 70,
+      "npc" : "Private MVP Room",
       "placeholders" : [
         ".@i"
       ],
       "state" : "translated",
-      "text" : "[Private MVP Room]\nYou already rented Room#{0}. Use that room instead.",
-      "translation" : "[私人MVP房间]\n您已经租用了房间#{0}。请使用该房间。"
+      "text" : "You already rented Room#{0}. Use that room instead.",
+      "translation" : "你已经租用了房间#{0}。请使用那个房间。"
     },
     {
       "kind" : "message",
       "line" : 90,
       "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "MVP Summoner",
       "placeholders" : [
         "callfunc( \"Time2Str\", .renttime[ atoi( strnpcinfo(2) ) ] + .timeout * 60 )"
       ],
       "state" : "translated",
-      "text" : "[MVP Summoner]\nTime left: {0}\nHi, what can I do for you?",
-      "translation" : "[MVP召唤师]\n剩余时间：{0}\n您好，有什么可以帮您的吗？"
+      "text" : "Time left: {0}",
+      "translation" : "剩余时间：{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "Hi, what can I do for you?",
+      "translation" : "你好，有什么可以帮你的吗？"
     },
     {
       "kind" : "message",
       "line" : 96,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nI cannot offer heal service when there are monsters around.",
-      "translation" : "[MVP召唤师]\n周围有魔物时，我无法为您恢复状态。"
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
     },
     {
       "kind" : "message",
-      "line" : 96,
+      "line" : 98,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nYou are completely healed.",
-      "translation" : "[MVP召唤师]\n您的状态已经完全恢复。"
+      "text" : "I cannot offer heal service when there are monsters around.",
+      "translation" : "附近有魔物时，我无法提供治疗服务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "You are completely healed.",
+      "translation" : "你的HP和SP已完全恢复。"
     },
     {
       "kind" : "message",
       "line" : 129,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nI cannot summon another MVP when there are monsters around.",
-      "translation" : "[MVP召唤师]\n周围有魔物时，我无法召唤其他MVP。"
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "I cannot summon another MVP when there are monsters around.",
+      "translation" : "附近有魔物时，我无法再召唤MVP。"
     },
     {
       "kind" : "message",
       "line" : 133,
       "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "npc" : "MVP Summoner",
       "placeholders" : [
         "callfunc( \"F_InsertComma\", .mvpcost )"
       ],
       "state" : "translated",
-      "text" : "[MVP Summoner]\nThe cost to summon an MVP is {0} zeny.",
-      "translation" : "[MVP召唤师]\n召唤MVP的费用是{0} Zeny。"
+      "text" : "The cost to summon an MVP is {0} zeny.",
+      "translation" : "召唤MVP需要{0}金币。"
     },
     {
       "kind" : "message",
       "line" : 137,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nYou don't have enough zeny to summon an MVP.",
-      "translation" : "[MVP召唤师]\n您的Zeny不足，无法召唤MVP。"
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
     },
     {
       "kind" : "message",
-      "line" : 137,
+      "line" : 139,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nPlease get ready.",
-      "translation" : "[MVP召唤师]\n请做好准备。"
+      "text" : "You don't have enough zeny to summon an MVP.",
+      "translation" : "你的金币不足，无法召唤MVP。"
     },
     {
       "kind" : "message",
       "line" : 144,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nPlease get ready.",
-      "translation" : "[MVP召唤师]\n请做好准备。"
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
+    },
+    {
+      "kind" : "message",
+      "line" : 146,
+      "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "Please get ready.",
+      "translation" : "请做好准备。"
     },
     {
       "kind" : "message",
       "line" : 154,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nI cannot summon another mini-boss when there are monsters around.",
-      "translation" : "[MVP召唤师]\n周围有魔物时，我无法召唤其他小Boss。"
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
+    },
+    {
+      "kind" : "message",
+      "line" : 155,
+      "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "I cannot summon another mini-boss when there are monsters around.",
+      "translation" : "附近有魔物时，我无法再召唤迷你首领。"
     },
     {
       "kind" : "message",
       "line" : 158,
       "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
+    },
+    {
+      "kind" : "message",
+      "line" : 159,
+      "npc" : "MVP Summoner",
       "placeholders" : [
         "callfunc( \"F_InsertComma\", .bosscost )"
       ],
       "state" : "translated",
-      "text" : "[MVP Summoner]\nThe cost to summon a mini-boss is {0} zeny.",
-      "translation" : "[MVP召唤师]\n召唤小Boss的费用是{0} Zeny。"
+      "text" : "The cost to summon a mini-boss is {0} zeny.",
+      "translation" : "召唤迷你首领需要{0}金币。"
     },
     {
       "kind" : "message",
       "line" : 162,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nYou doesn't have enough zeny to summon a mini-boss.",
-      "translation" : "[MVP召唤师]\n您的Zeny不足，无法召唤小Boss。"
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
     },
     {
       "kind" : "message",
-      "line" : 162,
+      "line" : 164,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nPlease get ready.",
-      "translation" : "[MVP召唤师]\n请做好准备。"
+      "text" : "You doesn't have enough zeny to summon a mini-boss.",
+      "translation" : "你的金币不足，无法召唤迷你首领。"
     },
     {
       "kind" : "message",
       "line" : 169,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nPlease get ready.",
-      "translation" : "[MVP召唤师]\n请做好准备。"
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
+    },
+    {
+      "kind" : "message",
+      "line" : 171,
+      "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "Please get ready.",
+      "translation" : "请做好准备。"
     },
     {
       "kind" : "message",
       "line" : 179,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nI cannot offer this service when there are monsters around.",
-      "translation" : "[MVP召唤师]\n周围有魔物时，我无法提供此服务。"
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "I cannot offer this service when there are monsters around.",
+      "translation" : "附近有魔物时，我无法提供这项服务。"
     },
     {
       "kind" : "message",
       "line" : 187,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nAre you sure you want to leave this room?",
-      "translation" : "[MVP召唤师]\n您确定要离开这个房间吗？"
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
+    },
+    {
+      "kind" : "message",
+      "line" : 188,
+      "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "Are you sure you want to leave this room?",
+      "translation" : "确定要离开这个房间吗？"
     },
     {
       "kind" : "option",
@@ -373,24 +517,32 @@
       "line" : 194,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nThere are still some players in this room. Make sure you are the last member in this room to use this option.",
-      "translation" : "[MVP召唤师]\n房间里还有其他玩家。只有最后留在房间里的成员才能使用这个选项。"
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
     },
     {
       "kind" : "message",
-      "line" : 194,
+      "line" : 196,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nAre you sure you want to give up this room?\nYou will need to pay again to enter this room.",
-      "translation" : "[MVP召唤师]\n您确定要放弃这个房间吗？\n再次进入该房间需要重新付费。"
+      "text" : "There are still some players in this room. Make sure you are the last member in this room to use this option.",
+      "translation" : "房间里还有其他玩家。只有在你是房间里最后一名成员时，才能使用这个选项。"
     },
     {
       "kind" : "message",
-      "line" : 194,
+      "line" : 199,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nAre you sure you want to give up this room?",
-      "translation" : "[MVP召唤师]\n您确定要放弃这个房间吗？"
+      "text" : "Are you sure you want to give up this room?",
+      "translation" : "确定要放弃这个房间吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "You will need to pay again to enter this room.",
+      "translation" : "再次进入房间时，你需要重新付费。"
     },
     {
       "kind" : "option",

@@ -3,14 +3,11 @@
   "scripts" : [
     {
       "kind" : "message",
-      "line" : 27,
+      "line" : 28,
       "npc" : "Disguise Event",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nSelect an option.",
-      "translation" : "{0}\n请选择一个选项。"
+      "text" : "Select an option.",
+      "translation" : "请选择一项。"
     },
     {
       "kind" : "option",
@@ -30,25 +27,35 @@
     },
     {
       "kind" : "message",
-      "line" : 32,
+      "line" : 34,
       "npc" : "Disguise Event",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nThe Event is currently: [^0000FFON^000000]\nWould you like to turn it OFF?",
-      "translation" : "{0}\n当前活动状态：[^0000FF开启^000000]\n您确定要关闭它吗？"
+      "text" : "The Event is currently: [^0000FFON^000000]",
+      "translation" : "活动当前状态：[^0000FF开启^000000]"
     },
     {
       "kind" : "message",
-      "line" : 32,
+      "line" : 35,
       "npc" : "Disguise Event",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nThe Event is currently: [^FF0000OFF^000000]\nWould you like to turn it ON?",
-      "translation" : "{0}\n当前活动状态：[^FF0000关闭^000000]\n您确定要开启它吗？"
+      "text" : "Would you like to turn it OFF?",
+      "translation" : "要关闭活动吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "The Event is currently: [^FF0000OFF^000000]",
+      "translation" : "活动当前状态：[^FF0000关闭^000000]"
+    },
+    {
+      "kind" : "message",
+      "line" : 38,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "Would you like to turn it ON?",
+      "translation" : "要开启活动吗？"
     },
     {
       "kind" : "option",
@@ -68,14 +75,11 @@
     },
     {
       "kind" : "message",
-      "line" : 55,
+      "line" : 56,
       "npc" : "Disguise Event",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nPick a setting to modify.",
-      "translation" : "{0}\n请选择要修改的设置。"
+      "text" : "Pick a setting to modify.",
+      "translation" : "请选择要修改的设置。"
     },
     {
       "kind" : "option",
@@ -83,7 +87,7 @@
       "npc" : "Disguise Event",
       "state" : "translated",
       "text" : "Monster Display",
-      "translation" : "魔物显示"
+      "translation" : "魔物显示方式"
     },
     {
       "kind" : "option",
@@ -99,137 +103,144 @@
       "npc" : "Disguise Event",
       "state" : "translated",
       "text" : "Prize Settings",
-      "translation" : "奖励设置"
+      "translation" : "奖品设置"
     },
     {
       "kind" : "message",
-      "line" : 61,
+      "line" : 62,
       "npc" : "Disguise Event",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nChoose a disguise rule.",
-      "translation" : "{0}\n请选择变装规则。"
+      "text" : "Choose a disguise rule.",
+      "translation" : "选择一种伪装规则。"
     },
     {
       "kind" : "message",
-      "line" : 65,
+      "line" : 66,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "The Disguise Rule has been set:",
+      "translation" : "伪装规则已设定："
+    },
+    {
+      "kind" : "message",
+      "line" : 67,
       "npc" : "Disguise Event",
       "placeholders" : [
-        ".@n$",
         ".@r$[.Rule-1]"
       ],
       "state" : "translated",
-      "text" : "{0}\nThe Disguise Rule has been set:\n  > ^0055FF{1}^000000",
-      "translation" : "{0}\n变装规则已设置为：\n  > ^0055FF{1}^000000"
+      "text" : "  > ^0055FF{0}^000000",
+      "translation" : "  > ^0055FF{0}^000000"
     },
     {
       "kind" : "message",
-      "line" : 70,
+      "line" : 71,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "Input the number of rounds you want the event to last.",
+      "translation" : "输入活动持续的回合数。"
+    },
+    {
+      "kind" : "message",
+      "line" : 72,
       "npc" : "Disguise Event",
       "placeholders" : [
-        ".@n$",
         ".Rounds"
       ],
       "state" : "translated",
-      "text" : "{0}\nInput the number of rounds you want the event to last.\nCurrent number: [^0000FF{1}^000000]",
-      "translation" : "{0}\n请输入您希望活动持续的回合数。\n当前回合数：[^0000FF{1}^000000]"
+      "text" : "Current number: [^0000FF{0}^000000]",
+      "translation" : "当前回合数：[^0000FF{0}^000000]"
     },
     {
       "kind" : "message",
-      "line" : 76,
+      "line" : 77,
       "npc" : "Disguise Event",
       "placeholders" : [
-        ".@n$",
         ".Rounds"
       ],
       "state" : "translated",
-      "text" : "{0}\nThe number of rounds has been changed to {1}.",
-      "translation" : "{0}\n回合数已改为{1}。"
+      "text" : "The number of rounds has been changed to {0}.",
+      "translation" : "回合数已更改为{0}。"
     },
     {
       "kind" : "message",
-      "line" : 80,
+      "line" : 81,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "Input the Item ID of the prize given each round.",
+      "translation" : "输入每回合奖品的物品编号。"
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
       "npc" : "Disguise Event",
       "placeholders" : [
-        ".@n$",
         "getitemname(.Prize)",
         ".Prize"
       ],
       "state" : "translated",
-      "text" : "{0}\nInput the Item ID of the prize given each round.\nCurrent item: [^0000FF{1}^000000] (ID #{2})",
-      "translation" : "{0}\n请输入每轮奖励物品的物品ID。\n当前物品：[^0000FF{1}^000000] (ID #{2})"
+      "text" : "Current item: [^0000FF{0}^000000] (ID #{1})",
+      "translation" : "当前物品：[^0000FF{0}^000000]（编号#{1}）"
     },
     {
       "kind" : "message",
-      "line" : 85,
+      "line" : 87,
       "npc" : "Disguise Event",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nThat item does not exist. Please try again.",
-      "translation" : "{0}\n该物品不存在。请重试。"
+      "text" : "That item does not exist. Please try again.",
+      "translation" : "该物品不存在，请重试。"
     },
     {
       "kind" : "message",
-      "line" : 85,
+      "line" : 91,
       "npc" : "Disguise Event",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nInput the amount to be given.",
-      "translation" : "{0}\n请输入发放的数量。"
+      "text" : "Input the amount to be given.",
+      "translation" : "输入发放数量。"
     },
     {
       "kind" : "message",
-      "line" : 94,
+      "line" : 96,
       "npc" : "Disguise Event",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nThat amount is invalid. Using default amount of 1.",
-      "translation" : "{0}\n数量无效，将使用默认数量1。"
+      "text" : "That amount is invalid. Using default amount of 1.",
+      "translation" : "数量无效，将使用默认数量1。"
     },
     {
       "kind" : "message",
-      "line" : 94,
+      "line" : 102,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "The Prize has been changed successfully.",
+      "translation" : "奖品设置成功。"
+    },
+    {
+      "kind" : "message",
+      "line" : 103,
       "npc" : "Disguise Event",
       "placeholders" : [
-        ".@n$",
         ".PrizeAmt",
         "getitemname(.Prize)"
       ],
       "state" : "translated",
-      "text" : "{0}\nThe Prize has been changed successfully.\nPrize: {1}x [^0000FF{2}^000000]",
-      "translation" : "{0}\n奖励设置已成功更改。\n奖励：{1}个[^0000FF{2}^000000]"
+      "text" : "Prize: {0}x [^0000FF{1}^000000]",
+      "translation" : "奖品：{0}个[^0000FF{1}^000000]"
     },
     {
       "kind" : "message",
-      "line" : 99,
+      "line" : 110,
       "npc" : "Disguise Event",
-      "placeholders" : [
-        ".@n$",
-        ".PrizeAmt",
-        "getitemname(.Prize)"
-      ],
       "state" : "translated",
-      "text" : "{0}\nThe Prize has been changed successfully.\nPrize: {1}x [^0000FF{2}^000000]",
-      "translation" : "{0}\n奖励设置已成功更改。\n奖励：{1}个[^0000FF{2}^000000]"
+      "text" : "Welcome.",
+      "translation" : "欢迎。"
     },
     {
       "kind" : "message",
-      "line" : 109,
+      "line" : 111,
       "npc" : "Disguise Event",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nWelcome.\nHow may I be of assistance?",
-      "translation" : "{0}\n欢迎光临。\n有什么可以帮您的吗？"
+      "text" : "How may I be of assistance?",
+      "translation" : "有什么可以帮你？"
     },
     {
       "kind" : "option",
@@ -237,7 +248,7 @@
       "npc" : "Disguise Event",
       "state" : "translated",
       "text" : "Information",
-      "translation" : "了解规则"
+      "translation" : "活动说明"
     },
     {
       "kind" : "option",
@@ -245,26 +256,71 @@
       "npc" : "Disguise Event",
       "state" : "translated",
       "text" : "Nothing, just passing through.",
-      "translation" : "没什么，只是路过"
+      "translation" : "没什么，我只是路过。"
     },
     {
       "kind" : "message",
-      "line" : 114,
+      "line" : 115,
       "npc" : "Disguise Event",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nThis event is quite simple.\nAt the start of the event, I will\ndisguise myself as a random\nmonster. You have to shout\nthat monster's name out loud.",
-      "translation" : "{0}\n这个活动很简单。\n活动开始时，我会随机变成一种魔物，您需要大声喊出它的名字。"
+      "text" : "This event is quite simple.",
+      "translation" : "这个活动很简单。"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "At the start of the event, I will",
+      "translation" : "活动开始时，我会"
+    },
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "disguise myself as a random",
+      "translation" : "随机伪装成一种"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "monster. You have to shout",
+      "translation" : "魔物。你要大声喊出"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "that monster's name out loud.",
+      "translation" : "那种魔物的名字。"
     },
     {
       "kind" : "message",
       "line" : 121,
       "npc" : "Disguise Event",
       "state" : "translated",
-      "text" : "If you are correct, you will receive\na prize. If not, keep trying!\nThat's all that there is to this event.",
-      "translation" : "答对就能获得奖励，答错就继续试！\n活动就是这么简单。"
+      "text" : "If you are correct, you will receive",
+      "translation" : "如果你答对了，就会获得"
+    },
+    {
+      "kind" : "message",
+      "line" : 122,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "a prize. If not, keep trying!",
+      "translation" : "一份奖品。答错了就继续尝试！"
+    },
+    {
+      "kind" : "message",
+      "line" : 123,
+      "npc" : "Disguise Event",
+      "state" : "translated",
+      "text" : "That's all that there is to this event.",
+      "translation" : "活动规则就是这些。"
     }
   ]
 }

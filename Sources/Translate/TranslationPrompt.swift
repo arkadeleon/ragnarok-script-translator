@@ -20,13 +20,15 @@ enum TranslationPrompt {
         "option" is one choice of a menu the player picks from. "context" holds the lines just before \
         the items, with their "translation" where one exists already: read it to follow the \
         conversation and keep names, tone and forms of address consistent with it, but do not \
-        translate it or return it.
+        translate it or return it. Source order does not guarantee a continuous conversation: \
+        nearby items may belong to different NPCs or alternative branches. Use context only where \
+        it fits the current item.
 
         Rules:
         - Keep placeholders like {0}, {1} exactly as they are; they are substituted at runtime.
         - Keep color codes like ^FF0000 and ^000000 exactly where they are.
-        - A first line in square brackets, like [Kafra Employee], is the speaker's name: translate the name, keep the brackets and keep it on its own first line. A first line of exactly [{0}] is the player's own name: keep it exactly as it is.
-        - Each message is sent separately to the client and may be a sentence fragment. Use context to understand it, but translate only that item; do not merge text across items or move text between them. Keep blank lines and one-item-per-line lists as they are. The game wraps long lines itself.
+        - A speaker name in square brackets, like [Kafra Employee], may be an item on its own: translate the name and keep the brackets. Do not copy it into other items. If it is the first line of a longer item, keep it on its own first line. Keep [{0}] exactly as it is when it is the player's name.
+        - Each message is sent separately to the client and may be a sentence fragment. Use context to understand it, but translate only that item; do not merge text across items or move text between them. Do not complete a fragment by adding missing words or turn every fragment into a full sentence. Keep blank lines and one-item-per-line lists as they are. The game wraps long lines itself.
         - Write ellipses as three half-width periods "...".
         - Do not add explanations or notes.
         - Options (kind "option") and item names are short; translate them as short labels, without adding a full stop.
@@ -43,7 +45,7 @@ enum TranslationPrompt {
             }
         }
         if !examples.isEmpty {
-            prompt += "\n\nExamples of the expected style (strings in JSON notation):\n"
+            prompt += "\n\nExamples of terminology and tone (strings in JSON notation). Some examples show whole pages; they do not define item boundaries. Always translate each actual input item separately:\n"
             for example in examples {
                 prompt += "\n\(example.kind.rawValue): \(jsonString(example.text))\n=> \(jsonString(example.translation))\n"
             }
