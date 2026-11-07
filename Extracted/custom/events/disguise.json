@@ -23,12 +23,6 @@
       "kind" : "message",
       "line" : 32,
       "npc" : "Disguise Event",
-      "text" : "[^0000FFDisguise NPC^000000]\nThe Event is currently: [^0000FFON^000000]\nWould you like to turn it OFF?"
-    },
-    {
-      "kind" : "message",
-      "line" : 32,
-      "npc" : "Disguise Event",
       "text" : "[^0000FFDisguise NPC^000000]\nThe Event is currently: [^FF0000OFF^000000]\nWould you like to turn it ON?"
     },
     {
@@ -98,10 +92,7 @@
       "kind" : "message",
       "line" : 70,
       "npc" : "Disguise Event",
-      "placeholders" : [
-        ".Rounds"
-      ],
-      "text" : "[^0000FFDisguise NPC^000000]\nInput the number of rounds you want the event to last.\nCurrent number: [^0000FF{0}^000000]"
+      "text" : "[^0000FFDisguise NPC^000000]\nInput the number of rounds you want the event to last.\nCurrent number: [^0000FF10^000000]"
     },
     {
       "kind" : "message",
@@ -117,22 +108,21 @@
       "line" : 80,
       "npc" : "Disguise Event",
       "placeholders" : [
-        "getitemname(.Prize)",
-        ".Prize"
+        "getitemname(.Prize)"
       ],
-      "text" : "[^0000FFDisguise NPC^000000]\nInput the Item ID of the prize given each round.\nCurrent item: [^0000FF{0}^000000] (ID #{1})"
-    },
-    {
-      "kind" : "message",
-      "line" : 85,
-      "npc" : "Disguise Event",
-      "text" : "[^0000FFDisguise NPC^000000]\nThat item does not exist. Please try again."
+      "text" : "[^0000FFDisguise NPC^000000]\nInput the Item ID of the prize given each round.\nCurrent item: [^0000FF{0}^000000] (ID #512)"
     },
     {
       "kind" : "message",
       "line" : 85,
       "npc" : "Disguise Event",
       "text" : "[^0000FFDisguise NPC^000000]\nInput the amount to be given."
+    },
+    {
+      "kind" : "message",
+      "line" : 85,
+      "npc" : "Disguise Event",
+      "text" : "[^0000FFDisguise NPC^000000]\nThat item does not exist. Please try again."
     },
     {
       "kind" : "message",
@@ -155,10 +145,9 @@
       "line" : 99,
       "npc" : "Disguise Event",
       "placeholders" : [
-        ".PrizeAmt",
         "getitemname(.Prize)"
       ],
-      "text" : "[^0000FFDisguise NPC^000000]\nThe Prize has been changed successfully.\nPrize: {0}x [^0000FF{1}^000000]"
+      "text" : "[^0000FFDisguise NPC^000000]\nThe Prize has been changed successfully.\nPrize: 1x [^0000FF{0}^000000]"
     },
     {
       "kind" : "message",

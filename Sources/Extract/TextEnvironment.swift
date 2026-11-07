@@ -8,15 +8,26 @@
 import Foundation
 
 /// A scalar is element zero of the corresponding rAthena array.
-struct TextReference {
+struct TextReference: Equatable {
     var name: String
     var index: String?
     var source: String
+    var line = 1
+}
+
+enum ArgumentTarget: Equatable {
+    case variable(TextReference)
+    case argument(Int)
 }
 
 /// Eager snapshots prevent aliases and self-referential appends from resolving against later
 /// assignments. Each execution variant owns its environment; unrelated branches never share writes.
 struct TextEnvironment: Equatable {
+    var arguments: [TextExpression] = []
+    var argumentsKnown = false
+    private var argumentTargets: [ArgumentTarget?] = []
+    private var argumentWrites: [Int: TextExpression] = [:]
+    private var argumentInvalidations: Set<Int> = []
     private var strings: [String: [Int: [[Segment]]]] = [:]
     private var integers: [String: Int] = [:]
     private var unknownIndices: Set<String> = []
@@ -80,7 +91,10 @@ struct TextEnvironment: Equatable {
             // Numeric constants are useful for fixed array subscripts; arithmetic stays dynamic.
             unknownIndices.remove(reference.name)
             if start == 0, !append, let expression = expressions.first {
-                integers[reference.name] = integer(expression.sourceText)
+                integers[reference.name] = expression.integer(in: self)
+            } else if start == 0, append, let old = integers[reference.name], let value = expressions.first?.integer(in: self) {
+                let (sum, overflow) = old.addingReportingOverflow(value)
+                integers[reference.name] = overflow ? nil : sum
             } else {
                 integers.removeValue(forKey: reference.name)
             }
@@ -121,6 +135,14 @@ struct TextEnvironment: Equatable {
         // Keep "unknown" bindings only when all reaching paths agree; otherwise the union
         // below must retain candidate text for subsequent reads.
         if let first = environments.first {
+            result.arguments = first.arguments
+            result.argumentsKnown = environments.allSatisfy { $0.argumentsKnown }
+            result.argumentTargets = first.argumentTargets
+            for index in first.arguments.indices {
+                if environments.contains(where: { $0.argumentInvalidations.contains(index) || $0.argumentWrites[index] != first.argumentWrites[index] }) {
+                    result.argumentInvalidations.insert(index)
+                } else if let value = first.argumentWrites[index] { result.argumentWrites[index] = value }
+            }
             result.unknownIndices = first.unknownIndices.filter { index in
                 environments.allSatisfy { $0.unknownIndices.contains(index) }
             }
@@ -147,6 +169,114 @@ struct TextEnvironment: Equatable {
         return result
     }
 
+    func arraySize(_ reference: TextReference) -> Int? {
+        guard let elements = strings[reference.name] else { return nil }
+        var last = -1
+        for (index, variants) in elements {
+            var occupied: Set<Bool> = []
+            for segments in variants {
+                var text = ""
+                for segment in segments {
+                    guard case .literal(let value) = segment else { return nil }
+                    text += value
+                }
+                occupied.insert(!text.isEmpty)
+            }
+            guard occupied.count == 1 else { return nil }
+            if occupied.contains(true) { last = max(last, index) }
+        }
+        return last == Int.max ? nil : last + 1
+    }
+
+    func integerValue(_ reference: TextReference) -> Int? {
+        guard offset(of: reference) == 0 else { return nil }
+        return integers[reference.name]
+    }
+
+    func enteringCall(arguments: [TextExpression], targets: [ArgumentTarget?] = [], separateNPC: Bool = false) -> TextEnvironment {
+        var result = self
+        result.strings = strings.filter { !$0.key.hasPrefix(separateNPC ? "." : ".@") }
+        result.integers = integers.filter { !$0.key.hasPrefix(separateNPC ? "." : ".@") }
+        result.unknownIndices = unknownIndices.filter { !$0.hasPrefix(separateNPC ? "." : ".@") }
+        result.arguments = arguments
+        result.argumentsKnown = true
+        result.argumentTargets = targets
+        result.argumentWrites = [:]
+        result.argumentInvalidations = []
+        return result
+    }
+
+    func returning(to caller: TextEnvironment, separateNPC: Bool = false) -> TextEnvironment {
+        var result = enteringCall(arguments: caller.arguments, separateNPC: separateNPC)
+        result.argumentsKnown = caller.argumentsKnown
+        result.argumentTargets = caller.argumentTargets
+        result.argumentWrites = caller.argumentWrites
+        result.argumentInvalidations = caller.argumentInvalidations
+        for (name, value) in caller.strings where name.hasPrefix(separateNPC ? "." : ".@") { result.strings[name] = value }
+        for (name, value) in caller.integers where name.hasPrefix(separateNPC ? "." : ".@") { result.integers[name] = value }
+        result.unknownIndices.formUnion(caller.unknownIndices.filter { $0.hasPrefix(separateNPC ? "." : ".@") })
+        for index in argumentInvalidations.sorted() where argumentTargets.indices.contains(index) {
+            switch argumentTargets[index] {
+            case .variable(let target): result.forget([target.name])
+            case .argument(let position): result.invalidateArgument(position)
+            case nil: break
+            }
+        }
+        for index in argumentWrites.keys.sorted() where argumentTargets.indices.contains(index) && !argumentInvalidations.contains(index) {
+            guard let value = argumentWrites[index] else { continue }
+            switch argumentTargets[index] {
+            case .variable(let target): result.assign(target, values: [value], append: false)
+            case .argument(let position): result.writeArgument(position, value: value)
+            case nil: break
+            }
+        }
+        return result
+    }
+
+    func argumentTarget(for expression: TextExpression) -> ArgumentTarget? {
+        if case .reference(var target) = expression {
+            if target.index != nil, let index = offset(of: target) { target.index = String(index) }
+            target.line = 1
+            target.source = target.name + (target.index.map { "[" + $0 + "]" } ?? "")
+            return .variable(target)
+        }
+        if case .call(let name, let parameters, _, _) = expression, name.lowercased() == "getarg",
+           let index = parameters.first?.integer(in: self) { return .argument(index) }
+        return nil
+    }
+
+    mutating func writeArgument(_ index: Int, value: TextExpression) {
+        guard arguments.indices.contains(index) else { return }
+        arguments[index] = value
+        argumentWrites[index] = value
+        argumentInvalidations.remove(index)
+        if argumentTargets.indices.contains(index), let target = argumentTargets[index] {
+            for alias in argumentTargets.indices where alias != index && argumentTargets[alias] == target {
+                arguments[alias] = value
+                argumentWrites[alias] = value
+                argumentInvalidations.remove(alias)
+            }
+        }
+    }
+
+    mutating func invalidateAllArguments() {
+        for index in arguments.indices { invalidateArgument(index) }
+    }
+
+    mutating func invalidateArgument(_ index: Int) {
+        guard arguments.indices.contains(index) else { return }
+        argumentInvalidations.insert(index)
+        arguments[index] = .unknown("getarg(\(index))")
+        argumentWrites.removeValue(forKey: index)
+    }
+
+    func initializationValues() -> TextEnvironment {
+        var result = TextEnvironment()
+        result.strings = strings.filter { $0.key.hasPrefix(".") && !$0.key.hasPrefix(".@") }
+        result.integers = integers.filter { $0.key.hasPrefix(".") && !$0.key.hasPrefix(".@") }
+        return result
+    }
+
     func offset(of reference: TextReference) -> Int? {
         guard let index = reference.index else { return 0 }
         return integer(index)
@@ -156,6 +286,11 @@ struct TextEnvironment: Equatable {
         let value = source.trimmingCharacters(in: .whitespacesAndNewlines)
         if let number = Int(value) { return number }
         if value.hasPrefix("0x") { return Int(value.dropFirst(2), radix: 16) }
-        return integers[value]
+        if let known = integers[value] { return known }
+        if value.contains(where: { "+-*/%[]".contains($0) }) {
+            var tokenizer = ScriptTokenizer(expression: value)
+            return ExpressionParser(source: Array(value.utf8)).parse(tokenizer.tokenize()).integer(in: self)
+        }
+        return nil
     }
 }

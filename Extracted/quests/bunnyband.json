@@ -35,10 +35,27 @@
       "kind" : "message",
       "line" : 39,
       "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nOoh, I'm sorry\nbut you need to\nbring at least"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Kafra Employee",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@Items[.@i+1],getitemname(.@Items[.@i]))"
+        "sprintf(\"%d\", getarg(0))",
+        "getarg(1)"
       ],
-      "text" : "[Kafra Employee]\nOoh, I'm sorry\nbut you need to\nbring at least\n{0}."
+      "text" : "[Kafra Employee]\nOoh, I'm sorry\nbut you need to\nbring at least\n{0} {1}."
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Kafra Employee",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "{0} {1}."
     },
     {
       "kind" : "message",
@@ -50,10 +67,27 @@
       "kind" : "message",
       "line" : 56,
       "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nHm? I'm sorry,\nbut I actually can't\nmake this right now. You"
+    },
+    {
+      "kind" : "message",
+      "line" : 56,
+      "npc" : "Kafra Employee",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@Items[.@i+1],getitemname(.@Items[.@i]))"
+        "sprintf(\"%d\", getarg(0))",
+        "getarg(1)"
       ],
-      "text" : "[Kafra Employee]\nHm? I'm sorry,\nbut I actually can't\nmake this right now. You\nneed {0}\nin order for me to put this\nBunny Band together..."
+      "text" : "[Kafra Employee]\nHm? I'm sorry,\nbut I actually can't\nmake this right now. You\nneed {0} {1}\nin order for me to put this\nBunny Band together..."
+    },
+    {
+      "kind" : "message",
+      "line" : 60,
+      "npc" : "Kafra Employee",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "need {0} {1}\nin order for me to put this\nBunny Band together..."
     },
     {
       "kind" : "message",

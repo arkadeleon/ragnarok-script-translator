@@ -474,46 +474,150 @@
       "line" : 306,
       "npc" : "Old Sign",
       "placeholders" : [
-        ".@face_name$",
-        ".@face_member",
-        "callfunc( \"F_InsertPlural\", .@time_s, \"Second\" )"
-      ],
-      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000 with ^ff0044{1} party members^000000.\nCurrent record time is ^0000ff{2}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 306,
-      "npc" : "Old Sign",
-      "placeholders" : [
-        ".@face_name$",
-        ".@face_member",
-        "callfunc( \"F_InsertPlural\", .@time_m, \"Minute\" )",
-        "callfunc( \"F_InsertPlural\", .@time_s, \"Second\" )"
-      ],
-      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000 with ^ff0044{1} party members^000000.\nCurrent record time is ^0000ff{2} {3}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 306,
-      "npc" : "Old Sign",
-      "placeholders" : [
-        ".@face_name$",
+        "$120719_str_face$",
         ".@string$",
-        "callfunc( \"F_InsertPlural\", .@time_s, \"Second\" )"
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(\"%d\", getarg(0))"
       ],
-      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000{1}.\nCurrent record time is ^0000ff{2}^000000."
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000{1}.\nCurrent record time is ^0000ff{2} Minute {3} Second^000000."
     },
     {
       "kind" : "message",
       "line" : 306,
       "npc" : "Old Sign",
       "placeholders" : [
-        ".@face_name$",
+        "$120719_str_face$",
         ".@string$",
-        "callfunc( \"F_InsertPlural\", .@time_m, \"Minute\" )",
-        "callfunc( \"F_InsertPlural\", .@time_s, \"Second\" )"
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000{1}.\nCurrent record time is ^0000ff{2} Minute {3} {4}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        "$120719_str_face$",
+        ".@string$",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000{1}.\nCurrent record time is ^0000ff{2} {3} {4} Second^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        "$120719_str_face$",
+        ".@string$",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000{1}.\nCurrent record time is ^0000ff{2} {3} {4} {5}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        "$120719_str_face$",
+        ".@string$",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000{1}.\nCurrent record time is ^0000ff{2} Second^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        "$120719_str_face$",
+        ".@string$",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
       ],
       "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000{1}.\nCurrent record time is ^0000ff{2} {3}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        "$120719_str_face$",
+        ".@face_member",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000 with ^ff0044{1} party members^000000.\nCurrent record time is ^0000ff{2} Minute {3} Second^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        "$120719_str_face$",
+        ".@face_member",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000 with ^ff0044{1} party members^000000.\nCurrent record time is ^0000ff{2} Minute {3} {4}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        "$120719_str_face$",
+        ".@face_member",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000 with ^ff0044{1} party members^000000.\nCurrent record time is ^0000ff{2} {3} {4} Second^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        "$120719_str_face$",
+        ".@face_member",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000 with ^ff0044{1} party members^000000.\nCurrent record time is ^0000ff{2} {3} {4} {5}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        "$120719_str_face$",
+        ".@face_member",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000 with ^ff0044{1} party members^000000.\nCurrent record time is ^0000ff{2} Second^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        "$120719_str_face$",
+        ".@face_member",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000 with ^ff0044{1} party members^000000.\nCurrent record time is ^0000ff{2} {3}^000000."
     },
     {
       "kind" : "message",

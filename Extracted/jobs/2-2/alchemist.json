@@ -11,6 +11,12 @@
       "kind" : "message",
       "line" : 24,
       "npc" : "Alchemist Guildsman",
+      "text" : "[Parmy Gianino]\nWelcome to the\nAlchemist Union.\nHow may I help you?"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
       "placeholders" : [
         "strcharinfo(0)"
       ],
@@ -20,34 +26,7 @@
       "kind" : "message",
       "line" : 24,
       "npc" : "Alchemist Guildsman",
-      "text" : "[Parmy Gianino]\nWelcome to the\nAlchemist Union.\nWe are recruiting\ntalented people\nwith novel ideas."
-    },
-    {
-      "kind" : "message",
-      "line" : 24,
-      "npc" : "Alchemist Guildsman",
-      "text" : "[Parmy Gianino]\nWelcome to the\nAlchemist Union.\nHow may I help you?"
-    },
-    {
-      "kind" : "message",
-      "line" : 24,
-      "npc" : "Alchemist Guildsman",
-      "text" : "[Parmy Gianino]\nWell now~!\nYou've brought an\nOld Magic Book and\na Hammer of Blacksmith.\nWe'll put these items\nto good use."
-    },
-    {
-      "kind" : "message",
-      "line" : 24,
-      "npc" : "Alchemist Guildsman",
-      "text" : "[Parmy Gianino]\nSeems like\nyou're all ready.\nThe Union will put\nthese items to good use."
-    },
-    {
-      "kind" : "message",
-      "line" : 24,
-      "npc" : "Alchemist Guildsman",
-      "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@items[1],getitemname(.@items[0]))"
-      ],
-      "text" : "[Parmy Gianino]\nAren't you ready?\nLike I said before,\nyou must bring\n^551A8B{0}^000000."
+      "text" : "[Parmy Gianino]\nAh, I'm sorry, but\nI'm busy right now~"
     },
     {
       "kind" : "message",
@@ -59,7 +38,35 @@
       "kind" : "message",
       "line" : 24,
       "npc" : "Alchemist Guildsman",
-      "text" : "[Parmy Gianino]\nAh, I'm sorry, but\nI'm busy right now~"
+      "text" : "[Parmy Gianino]\nWelcome to the\nAlchemist Union.\nWe are recruiting\ntalented people\nwith novel ideas."
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "text" : "[Parmy Gianino]\nAren't you ready?\nLike I said before,\nyou must bring"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "getarg(1)"
+      ],
+      "text" : "[Parmy Gianino]\nAren't you ready?\nLike I said before,\nyou must bring\n^551A8B{0} {1}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "text" : "[Parmy Gianino]\nSeems like\nyou're all ready.\nThe Union will put\nthese items to good use."
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Alchemist Guildsman",
+      "text" : "[Parmy Gianino]\nWell now~!\nYou've brought an\nOld Magic Book and\na Hammer of Blacksmith.\nWe'll put these items\nto good use."
     },
     {
       "kind" : "message",
@@ -245,7 +252,7 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[Parmy Gianino]\nLet's see.\n{0}\nneeds to bring...\n^551A8B7 Berserk Potions^000000."
+      "text" : "[Parmy Gianino]\nLet's see.\n{0}\nneeds to bring...\n^551A8B7,500 Fire Arrows^000000."
     },
     {
       "kind" : "message",
@@ -263,7 +270,7 @@
       "placeholders" : [
         "strcharinfo(0)"
       ],
-      "text" : "[Parmy Gianino]\nLet's see.\n{0}\nneeds to bring...\n^551A8B7,500 Fire Arrows^000000."
+      "text" : "[Parmy Gianino]\nLet's see.\n{0}\nneeds to bring...\n^551A8B7 Berserk Potions^000000."
     },
     {
       "kind" : "message",
@@ -321,6 +328,16 @@
     },
     {
       "kind" : "message",
+      "line" : 292,
+      "npc" : "Alchemist Guildsman",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "^551A8B{0} {1}^000000."
+    },
+    {
+      "kind" : "message",
       "line" : 294,
       "npc" : "Alchemist Guildsman",
       "text" : "[Parmy Gianino]\nCome back when you\nhave prepared the\nrequired items."
@@ -347,13 +364,7 @@
       "kind" : "message",
       "line" : 327,
       "npc" : "Fastidious Alchemist",
-      "text" : "[Raspuchin Gregory]\nHeeheehee\nkeheheh~!\nHow cute, you've come\nall this way just to play..."
-    },
-    {
-      "kind" : "message",
-      "line" : 327,
-      "npc" : "Fastidious Alchemist",
-      "text" : "[Raspuchin Gregory]\nWhat is it?!\nYou're curious as\nto what I'm doing?"
+      "text" : "[Raspuchin Gregory]"
     },
     {
       "kind" : "message",
@@ -365,19 +376,25 @@
       "kind" : "message",
       "line" : 327,
       "npc" : "Fastidious Alchemist",
-      "text" : "[Raspuchin Gregory]\nWhat...?!\nYou want to take\nthe test again?!\nI thought I told\nyou to leave!"
-    },
-    {
-      "kind" : "message",
-      "line" : 327,
-      "npc" : "Fastidious Alchemist",
-      "text" : "[Raspuchin Gregory]"
+      "text" : "[Raspuchin Gregory]\nWhat is it?!\nYou're curious as\nto what I'm doing?"
     },
     {
       "kind" : "message",
       "line" : 327,
       "npc" : "Fastidious Alchemist",
       "text" : "[Raspuchin Gregory]\nWhat are you doing?\nGo and find Darwin now."
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "npc" : "Fastidious Alchemist",
+      "text" : "[Raspuchin Gregory]\nHeeheehee\nkeheheh~!\nHow cute, you've come\nall this way just to play..."
+    },
+    {
+      "kind" : "message",
+      "line" : 327,
+      "npc" : "Fastidious Alchemist",
+      "text" : "[Raspuchin Gregory]\nWhat...?!\nYou want to take\nthe test again?!\nI thought I told\nyou to leave!"
     },
     {
       "kind" : "message",
@@ -467,13 +484,13 @@
       "kind" : "message",
       "line" : 442,
       "npc" : "Fastidious Alchemist",
-      "text" : "[Raspuchin Gregory]\nWait...\nMaybe I've\nmisjudged you.\nYou might be a pretty boy,\nbut I can tell you're smart\nfrom your eyes."
+      "text" : "[Raspuchin Gregory]\nWait...\nMaybe I've\nmisjudged you.\nHuh. You're a cutie alright,\nbut I can tell you've got brains."
     },
     {
       "kind" : "message",
       "line" : 442,
       "npc" : "Fastidious Alchemist",
-      "text" : "[Raspuchin Gregory]\nWait...\nMaybe I've\nmisjudged you.\nHuh. You're a cutie alright,\nbut I can tell you've got brains."
+      "text" : "[Raspuchin Gregory]\nWait...\nMaybe I've\nmisjudged you.\nYou might be a pretty boy,\nbut I can tell you're smart\nfrom your eyes."
     },
     {
       "kind" : "message",
@@ -785,18 +802,6 @@
       "kind" : "message",
       "line" : 805,
       "npc" : "Studying Man",
-      "text" : "[Darwin]\nAh...\nYou...\nYou've become\nan Alchemist."
-    },
-    {
-      "kind" : "message",
-      "line" : 805,
-      "npc" : "Studying Man",
-      "text" : "[Darwin]\nWhen you have\nyour dreams, you\nhave everything.\nWithout them, you have\nnothing more to lose."
-    },
-    {
-      "kind" : "message",
-      "line" : 805,
-      "npc" : "Studying Man",
       "text" : "[Darwin]\n..."
     },
     {
@@ -809,13 +814,25 @@
       "kind" : "message",
       "line" : 805,
       "npc" : "Studying Man",
-      "text" : "[Darwin]\nI said to go\nto Van Helmont.\nI'd like to teach you\nmore, but I can't."
+      "text" : "[Darwin]\nAh...\nYou...\nYou've become\nan Alchemist."
     },
     {
       "kind" : "message",
       "line" : 805,
       "npc" : "Studying Man",
       "text" : "[Darwin]\nI have already given you all of my knowledge and have nothing more\nto teach you."
+    },
+    {
+      "kind" : "message",
+      "line" : 805,
+      "npc" : "Studying Man",
+      "text" : "[Darwin]\nWhen you have\nyour dreams, you\nhave everything.\nWithout them, you have\nnothing more to lose."
+    },
+    {
+      "kind" : "message",
+      "line" : 805,
+      "npc" : "Studying Man",
+      "text" : "[Darwin]\nI said to go\nto Van Helmont.\nI'd like to teach you\nmore, but I can't."
     },
     {
       "kind" : "message",
@@ -1397,13 +1414,7 @@
       "kind" : "message",
       "line" : 1341,
       "npc" : "Experiment Expert",
-      "text" : "[Van Helmont]\nWhat do you want?\nI'm busy!! Don't\nbother me and get\non your way."
-    },
-    {
-      "kind" : "message",
-      "line" : 1341,
-      "npc" : "Experiment Expert",
-      "text" : "[Van Helmont]\nJust a little...\nA little bit more...\nNooo! Just a little\nbit more and it\nwould've been done!"
+      "text" : "[Van Helmont]\nAlright, if I make an incision here in the Tentacle, and add a Jellopy and Sticky Mucus solution into the... Where the hell did my Medicine Bowl go?"
     },
     {
       "kind" : "message",
@@ -1415,13 +1426,19 @@
       "kind" : "message",
       "line" : 1341,
       "npc" : "Experiment Expert",
-      "text" : "[Van Helmont]\nAlright, if I make an incision here in the Tentacle, and add a Jellopy and Sticky Mucus solution into the... Where the hell did my Medicine Bowl go?"
+      "text" : "[Van Helmont]\nWhat do you want?\nI'm busy!! Don't\nbother me and get\non your way."
     },
     {
       "kind" : "message",
       "line" : 1341,
       "npc" : "Experiment Expert",
       "text" : "[Van Helmont]\nWhat...?\nI thought I told you to\ntalk to Nicholas next door?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1341,
+      "npc" : "Experiment Expert",
+      "text" : "[Van Helmont]\nJust a little...\nA little bit more...\nNooo! Just a little\nbit more and it\nwould've been done!"
     },
     {
       "kind" : "message",
@@ -1811,18 +1828,6 @@
       "kind" : "message",
       "line" : 1594,
       "npc" : "Master Alchemist",
-      "text" : "[Vincent Carsciallo]\nHm...\nA Novice?\nYou shouldn't be\nplaying in a place\nlike this."
-    },
-    {
-      "kind" : "message",
-      "line" : 1594,
-      "npc" : "Master Alchemist",
-      "text" : "[Vincent Carsciallo]\nHmm...?\nWhat's an adventurer\ndoing here in the\nAlchemist Union?"
-    },
-    {
-      "kind" : "message",
-      "line" : 1594,
-      "npc" : "Master Alchemist",
       "text" : "[Vincent Carsciallo]\nHmm...?\nA Merchant?\nAre you interested\nin learning Alchemy?"
     },
     {
@@ -1835,6 +1840,24 @@
       "kind" : "message",
       "line" : 1594,
       "npc" : "Master Alchemist",
+      "text" : "[Vincent Carsciallo]\nHmm...?\nWhat's an adventurer\ndoing here in the\nAlchemist Union?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1594,
+      "npc" : "Master Alchemist",
+      "text" : "[Vincent Carsciallo]\nAh...\nI believe you've\nalready registered\nfor training to become\nan Alchemist."
+    },
+    {
+      "kind" : "message",
+      "line" : 1594,
+      "npc" : "Master Alchemist",
+      "text" : "[Vincent Carsciallo]\nHm...\nA Novice?\nYou shouldn't be\nplaying in a place\nlike this."
+    },
+    {
+      "kind" : "message",
+      "line" : 1594,
+      "npc" : "Master Alchemist",
       "text" : "[Vincent Carsciallo]\nAh, you're almost\nready to become an\nAlchemist, but you must\nfirst allocate your unused\nSkill Points."
     },
     {
@@ -1842,12 +1865,6 @@
       "line" : 1594,
       "npc" : "Master Alchemist",
       "text" : "[Vincent Carsciallo]\nAh, well done.\nI can see that you\nhave learned all of\nthe basics of Alchemy."
-    },
-    {
-      "kind" : "message",
-      "line" : 1594,
-      "npc" : "Master Alchemist",
-      "text" : "[Vincent Carsciallo]\nAh...\nI believe you've\nalready registered\nfor training to become\nan Alchemist."
     },
     {
       "kind" : "message",
@@ -2411,13 +2428,13 @@
       "kind" : "message",
       "line" : 1857,
       "npc" : "Chief Researcher",
-      "text" : "[Nicholas Flamel]\nAh, you finished.\nNow, let's see...\nExcellent job!"
+      "text" : "[Nicholas Flamel]\nAh, you finished.\nNow, let's see...\n^666666*Gasp!*^000000 H-horrible!"
     },
     {
       "kind" : "message",
       "line" : 1857,
       "npc" : "Chief Researcher",
-      "text" : "[Nicholas Flamel]\nAh, you finished.\nNow, let's see...\n^666666*Gasp!*^000000 H-horrible!"
+      "text" : "[Nicholas Flamel]\nAh, you finished.\nNow, let's see...\nExcellent job!"
     },
     {
       "kind" : "message",

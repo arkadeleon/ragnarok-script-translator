@@ -41,10 +41,7 @@
       "kind" : "message",
       "line" : 29,
       "npc" : "Banker",
-      "placeholders" : [
-        "@cost"
-      ],
-      "text" : "[Banker]\nOh, and do realize there is a {0} Zeny charge on all transactions!"
+      "text" : "[Banker]\nOh, and do realize there is a 500 Zeny charge on all transactions!"
     },
     {
       "kind" : "message",
@@ -62,10 +59,7 @@
       "kind" : "message",
       "line" : 43,
       "npc" : "Banker",
-      "placeholders" : [
-        "@cost"
-      ],
-      "text" : "You need {0} Zeny to cover the transaction fee!"
+      "text" : "You need 500 Zeny to cover the transaction fee!"
     },
     {
       "kind" : "message",
@@ -83,10 +77,7 @@
       "kind" : "message",
       "line" : 59,
       "npc" : "Banker",
-      "placeholders" : [
-        "@cost"
-      ],
-      "text" : "[Banker]\nOh, and do realize there is a {0} Zeny charge on all transactions!"
+      "text" : "[Banker]\nOh, and do realize there is a 500 Zeny charge on all transactions!"
     },
     {
       "kind" : "message",
@@ -99,7 +90,16 @@
       "line" : 69,
       "npc" : "Banker",
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",#bankstorage)"
+        "getarg(0)"
+      ],
+      "text" : "You only have ^00FF00{0}^000000 zeny in your account!"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Banker",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "text" : "You only have ^00FF00{0}^000000 zeny in your account!"
     },
@@ -125,10 +125,7 @@
       "kind" : "message",
       "line" : 78,
       "npc" : "Banker",
-      "placeholders" : [
-        "@cost"
-      ],
-      "text" : "[Banker]\nRemoving {0} from your withdrawal to cover the deposit fee..."
+      "text" : "[Banker]\nRemoving 500 from your withdrawal to cover the deposit fee..."
     },
     {
       "kind" : "message",
@@ -165,7 +162,16 @@
       "line" : 110,
       "npc" : "Banker",
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",#bankstorage)"
+        "getarg(0)"
+      ],
+      "text" : "[Banker]\nYou currently have {0} Zeny in your account."
+    },
+    {
+      "kind" : "message",
+      "line" : 110,
+      "npc" : "Banker",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "text" : "[Banker]\nYou currently have {0} Zeny in your account."
     },

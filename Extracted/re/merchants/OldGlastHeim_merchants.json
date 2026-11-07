@@ -164,15 +164,6 @@
       "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Lucky^000000 Boots? There's no refunds."
     },
     {
-      "kind" : "message",
-      "line" : 82,
-      "npc" : "Hugin's Butler",
-      "placeholders" : [
-        ".@type$[.@s]"
-      ],
-      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000{0}^000000 Boots? There's no refunds."
-    },
-    {
       "kind" : "option",
       "line" : 85,
       "npc" : "Hugin's Butler",
@@ -291,10 +282,9 @@
       "line" : 184,
       "npc" : "Hugin's Magician",
       "placeholders" : [
-        "getequipname(EQI_SHOES)",
-        ".@cost"
+        "getequipname(EQI_SHOES)"
       ],
-      "text" : "[Hugin's Magician]\nWant to enchant ^0000FF{0}^000000?\nFor the 1st enchanting, you need ^0000FF{1}^000000 Coagulated Spell items."
+      "text" : "[Hugin's Magician]\nWant to enchant ^0000FF{0}^000000?\nFor the 1st enchanting, you need ^0000FF1^000000 Coagulated Spell items."
     },
     {
       "kind" : "option",
@@ -346,18 +336,13 @@
     },
     {
       "kind" : "message",
-      "line" : 205,
-      "npc" : "Hugin's Magician",
-      "text" : "[Hugin's Magician]\nSomething wrong happened."
-    },
-    {
-      "kind" : "message",
       "line" : 211,
       "npc" : "Hugin's Magician",
       "placeholders" : [
+        "getequipname(EQI_SHOES)",
         ".@cost"
       ],
-      "text" : "[Hugin's Magician]\n4th slot is already upgraded to the final option. Would you like a random bonus effect for the 3rd slot? You need ^0000ff{0}^000000 Coagulated Spell items."
+      "text" : "[Hugin's Magician]\nEnchanting ^0000FF{0}^000000's 4th slot as ^0000FF2^000000 level effect. Requires ^0000FF{1}^000000 Coagulated Spell items."
     },
     {
       "kind" : "message",
@@ -365,10 +350,9 @@
       "npc" : "Hugin's Magician",
       "placeholders" : [
         "getequipname(EQI_SHOES)",
-        ".@number",
         ".@cost"
       ],
-      "text" : "[Hugin's Magician]\nEnchanting ^0000FF{0}^000000's 4th slot as ^0000FF{1}^000000 level effect. Requires ^0000FF{2}^000000 Coagulated Spell items."
+      "text" : "[Hugin's Magician]\nEnchanting ^0000FF{0}^000000's 4th slot as ^0000FF3^000000 level effect. Requires ^0000FF{1}^000000 Coagulated Spell items."
     },
     {
       "kind" : "option",
@@ -401,10 +385,19 @@
       "kind" : "message",
       "line" : 243,
       "npc" : "Hugin's Magician",
-      "placeholders" : [
-        ".@string$"
-      ],
-      "text" : "[Hugin's Magician]\nTrying for {0}"
+      "text" : "[Hugin's Magician]\nTrying for enchant number ^6300001^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "npc" : "Hugin's Magician",
+      "text" : "[Hugin's Magician]\nTrying for enchant number ^6300002^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "npc" : "Hugin's Magician",
+      "text" : "[Hugin's Magician]\nTrying for enchant number ^6300003^000000."
     },
     {
       "kind" : "message",
@@ -462,75 +455,657 @@
     },
     {
       "kind" : "message",
-      "line" : 296,
-      "npc" : "Hugin's Craftsman",
-      "text" : "[Hugin's Craftsman]\nThis is not it! We need ^0000FFAdvanced Temporal Boots^000000 items! The item ^0000FFwith a stat effect and without a slot^000000!"
-    },
-    {
-      "kind" : "message",
-      "line" : 303,
+      "line" : 282,
       "npc" : "Hugin's Craftsman",
       "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?"
     },
     {
       "kind" : "option",
-      "line" : 307,
+      "line" : 282,
       "npc" : "Hugin's Craftsman",
       "text" : "Cancel"
     },
     {
       "kind" : "option",
-      "line" : 307,
+      "line" : 282,
       "npc" : "Hugin's Craftsman",
       "text" : "I am ok with it!"
     },
     {
       "kind" : "message",
-      "line" : 308,
-      "npc" : "Hugin's Craftsman",
-      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
-    },
-    {
-      "kind" : "message",
-      "line" : 312,
+      "line" : 282,
       "npc" : "Hugin's Craftsman",
       "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?"
     },
     {
       "kind" : "option",
-      "line" : 316,
-      "npc" : "Hugin's Craftsman",
-      "text" : "Cancel"
-    },
-    {
-      "kind" : "option",
-      "line" : 316,
+      "line" : 282,
       "npc" : "Hugin's Craftsman",
       "text" : "I understand. Try to slot it."
     },
     {
       "kind" : "message",
-      "line" : 317,
+      "line" : 282,
       "npc" : "Hugin's Craftsman",
       "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
     },
     {
       "kind" : "message",
-      "line" : 322,
+      "line" : 282,
       "npc" : "Hugin's Craftsman",
       "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know..."
     },
     {
       "kind" : "message",
-      "line" : 330,
+      "line" : 282,
       "npc" : "Hugin's Craftsman",
       "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time."
     },
     {
       "kind" : "message",
-      "line" : 335,
+      "line" : 282,
       "npc" : "Hugin's Craftsman",
       "text" : "[Hugin's Craftsman]\nSuccessful! Here you go."
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I am ok with it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I understand. Try to slot it."
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go."
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I am ok with it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?"
+    },
+    {
+      "kind" : "option",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I understand. Try to slot it."
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go."
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I am ok with it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?"
+    },
+    {
+      "kind" : "option",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I understand. Try to slot it."
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go."
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I am ok with it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?"
+    },
+    {
+      "kind" : "option",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I understand. Try to slot it."
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go."
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I am ok with it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?"
+    },
+    {
+      "kind" : "option",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I understand. Try to slot it."
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go."
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I am ok with it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I understand. Try to slot it."
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go."
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I am ok with it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?"
+    },
+    {
+      "kind" : "option",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I understand. Try to slot it."
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go."
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I am ok with it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?"
+    },
+    {
+      "kind" : "option",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I understand. Try to slot it."
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go."
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I am ok with it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?"
+    },
+    {
+      "kind" : "option",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I understand. Try to slot it."
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go."
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I am ok with it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?"
+    },
+    {
+      "kind" : "option",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I understand. Try to slot it."
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go."
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?"
+    },
+    {
+      "kind" : "option",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I am ok with it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?"
+    },
+    {
+      "kind" : "option",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "text" : "I understand. Try to slot it."
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want."
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time."
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go."
+    },
+    {
+      "kind" : "message",
+      "line" : 296,
+      "npc" : "Hugin's Craftsman",
+      "text" : "[Hugin's Craftsman]\nThis is not it! We need ^0000FFAdvanced Temporal Boots^000000 items! The item ^0000FFwith a stat effect and without a slot^000000!"
     },
     {
       "kind" : "message",
@@ -573,7 +1148,17 @@
       "line" : 366,
       "npc" : "Dark magic master",
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",.@cost_zeny)",
+        "getitemname(.@polluted_id)",
+        "getitemname(.@coagulated_id)"
+      ],
+      "text" : "[Dark magic master]\nI need 4 items. ^0000ff100000, {0}, {1}, Temporal Boots(Socket) Series^000000. If you don't have any of these, I cannot help you."
+    },
+    {
+      "kind" : "message",
+      "line" : 366,
+      "npc" : "Dark magic master",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
         "getitemname(.@polluted_id)",
         "getitemname(.@coagulated_id)"
       ],
@@ -620,14 +1205,23 @@
       "line" : 436,
       "npc" : "Dark magic master",
       "placeholders" : [
-        ".@equip_name$",
-        ".@amount_poll",
+        "getequipname(EQI_SHOES)",
         "getitemname(.@polluted_id)",
-        ".@amount_coag",
-        "getitemname(.@coagulated_id)",
-        "callfunc(\"F_InsertComma\",.@cost_zeny)"
+        "getitemname(.@coagulated_id)"
       ],
-      "text" : "[Dark magic master]\nWant to enchant ^0000ff{0} (Socket)^000000? For the 1st enchanting, you need ^0000ff{1} {2}, {3} {4}, and {5} zeny^000000.\nIt has some risk of failing.."
+      "text" : "[Dark magic master]\nWant to enchant ^0000ff{0} (Socket)^000000? For the 1st enchanting, you need ^0000ff1 {1}, 3 {2}, and 100000 zeny^000000.\nIt has some risk of failing.."
+    },
+    {
+      "kind" : "message",
+      "line" : 436,
+      "npc" : "Dark magic master",
+      "placeholders" : [
+        "getequipname(EQI_SHOES)",
+        "getitemname(.@polluted_id)",
+        "getitemname(.@coagulated_id)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Dark magic master]\nWant to enchant ^0000ff{0} (Socket)^000000? For the 1st enchanting, you need ^0000ff1 {1}, 3 {2}, and {3} zeny^000000.\nIt has some risk of failing.."
     },
     {
       "kind" : "option",
@@ -679,37 +1273,57 @@
     },
     {
       "kind" : "message",
-      "line" : 458,
+      "line" : 465,
       "npc" : "Dark magic master",
-      "text" : "[Dark magic master]\nSomething wrong happened."
+      "placeholders" : [
+        "getequipname(EQI_SHOES)",
+        ".@amount_poll",
+        "getitemname(.@polluted_id)",
+        ".@amount_coag",
+        "getitemname(.@coagulated_id)"
+      ],
+      "text" : "[Dark magic master]\nEnchanting ^0000ff{0} (Socket)^000000's 4th slot as ^0000ff2^000000 level effect. Requires ^0000ff{1} {2}, {3} {4}, and 100000 z^000000. It has some risk of failing.."
     },
     {
       "kind" : "message",
       "line" : 465,
       "npc" : "Dark magic master",
       "placeholders" : [
+        "getequipname(EQI_SHOES)",
         ".@amount_poll",
         "getitemname(.@polluted_id)",
         ".@amount_coag",
         "getitemname(.@coagulated_id)",
-        "callfunc(\"F_InsertComma\",.@cost_zeny)"
+        "insertchar(.@str$,\",\",.@i)"
       ],
-      "text" : "[Dark magic master]\nWould you like a random bonus effect for the 3rd slot? You need ^0000ff{0} {1}, {2} {3}, and {4} zeny^000000. But it has high risk of failing.."
+      "text" : "[Dark magic master]\nEnchanting ^0000ff{0} (Socket)^000000's 4th slot as ^0000ff2^000000 level effect. Requires ^0000ff{1} {2}, {3} {4}, and {5} z^000000. It has some risk of failing.."
     },
     {
       "kind" : "message",
       "line" : 465,
       "npc" : "Dark magic master",
       "placeholders" : [
-        ".@equip_name$",
-        ".@level",
+        "getequipname(EQI_SHOES)",
+        ".@amount_poll",
+        "getitemname(.@polluted_id)",
+        ".@amount_coag",
+        "getitemname(.@coagulated_id)"
+      ],
+      "text" : "[Dark magic master]\nEnchanting ^0000ff{0} (Socket)^000000's 4th slot as ^0000ff3^000000 level effect. Requires ^0000ff{1} {2}, {3} {4}, and 100000 z^000000. It has some risk of failing.."
+    },
+    {
+      "kind" : "message",
+      "line" : 465,
+      "npc" : "Dark magic master",
+      "placeholders" : [
+        "getequipname(EQI_SHOES)",
         ".@amount_poll",
         "getitemname(.@polluted_id)",
         ".@amount_coag",
         "getitemname(.@coagulated_id)",
-        "callfunc(\"F_InsertComma\",.@cost_zeny)"
+        "insertchar(.@str$,\",\",.@i)"
       ],
-      "text" : "[Dark magic master]\nEnchanting ^0000ff{0} (Socket)^000000's 4th slot as ^0000ff{1}^000000 level effect. Requires ^0000ff{2} {3}, {4} {5}, and {6} z^000000. It has some risk of failing.."
+      "text" : "[Dark magic master]\nEnchanting ^0000ff{0} (Socket)^000000's 4th slot as ^0000ff3^000000 level effect. Requires ^0000ff{1} {2}, {3} {4}, and {5} z^000000. It has some risk of failing.."
     },
     {
       "kind" : "option",
@@ -753,8 +1367,14 @@
       "kind" : "message",
       "line" : 495,
       "npc" : "Dark magic master",
+      "text" : "[Dark magic master]\nYou must bring ^0000ff100000 zeny^000000. Nothing is free you know..."
+    },
+    {
+      "kind" : "message",
+      "line" : 495,
+      "npc" : "Dark magic master",
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",.@cost_zeny)"
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "text" : "[Dark magic master]\nYou must bring ^0000ff{0} zeny^000000. Nothing is free you know..."
     },
@@ -768,10 +1388,19 @@
       "kind" : "message",
       "line" : 515,
       "npc" : "Dark magic master",
-      "placeholders" : [
-        ".@string$"
-      ],
-      "text" : "[Hugin's Magician]\nTrying for {0}"
+      "text" : "[Hugin's Magician]\nTrying for enchant number ^6300001^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 515,
+      "npc" : "Dark magic master",
+      "text" : "[Hugin's Magician]\nTrying for enchant number ^9900002^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 515,
+      "npc" : "Dark magic master",
+      "text" : "[Hugin's Magician]\nTrying for enchant number ^9900003^000000."
     },
     {
       "kind" : "message",
@@ -851,28 +1480,8 @@
       "line" : 566,
       "npc" : "Portrait collector",
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",.@amount_coag)",
-        "getitemname(.@coagulated_id)"
-      ],
-      "text" : "^666666{0} {1}^000000"
-    },
-    {
-      "kind" : "option",
-      "line" : 566,
-      "npc" : "Portrait collector",
-      "placeholders" : [
-        "callfunc(\"F_InsertComma\",.@amount_polluted)",
-        "getitemname(.@polluted_id)"
-      ],
-      "text" : "^666666{0} {1}^000000"
-    },
-    {
-      "kind" : "option",
-      "line" : 566,
-      "npc" : "Portrait collector",
-      "placeholders" : [
         ".@color$[0]",
-        "callfunc(\"F_InsertComma\",.@amount_coag)",
+        "getarg(0)",
         "getitemname(.@coagulated_id)"
       ],
       "text" : "{0}{1} {2}^000000"
@@ -883,10 +1492,148 @@
       "npc" : "Portrait collector",
       "placeholders" : [
         ".@color$[1]",
-        "callfunc(\"F_InsertComma\",.@amount_polluted)",
+        "getarg(0)",
         "getitemname(.@polluted_id)"
       ],
       "text" : "{0}{1} {2}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[1]",
+        "insertchar(.@str$,\",\",.@i)",
+        "getitemname(.@polluted_id)"
+      ],
+      "text" : "{0}{1} {2}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[0]",
+        "insertchar(.@str$,\",\",.@i)",
+        "getitemname(.@coagulated_id)"
+      ],
+      "text" : "{0}{1} {2}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "getarg(0)",
+        "getitemname(.@polluted_id)"
+      ],
+      "text" : "^666666{0} {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "getitemname(.@polluted_id)"
+      ],
+      "text" : "^666666{0} {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "getarg(0)",
+        "getitemname(.@coagulated_id)"
+      ],
+      "text" : "^666666{0} {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "getitemname(.@coagulated_id)"
+      ],
+      "text" : "^666666{0} {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[0]",
+        "getitemname(.@coagulated_id)"
+      ],
+      "text" : "{0}5000 {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[1]",
+        "getitemname(.@polluted_id)"
+      ],
+      "text" : "{0}100 {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[0]",
+        "getitemname(.@coagulated_id)"
+      ],
+      "text" : "{0}3000 {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[1]",
+        "getitemname(.@polluted_id)"
+      ],
+      "text" : "{0}70 {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "getitemname(.@polluted_id)"
+      ],
+      "text" : "^666666100 {0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "getitemname(.@coagulated_id)"
+      ],
+      "text" : "^6666665000 {0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "getitemname(.@polluted_id)"
+      ],
+      "text" : "^66666670 {0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "getitemname(.@coagulated_id)"
+      ],
+      "text" : "^6666663000 {0}^000000"
     },
     {
       "kind" : "message",
@@ -898,13 +1645,37 @@
       "kind" : "message",
       "line" : 581,
       "npc" : "Portrait collector",
+      "text" : "[Portrait collector]"
+    },
+    {
+      "kind" : "message",
+      "line" : 581,
+      "npc" : "Portrait collector",
       "text" : "[Portrait collector]\nHmm, you don't have enough Spell now. Go get more."
+    },
+    {
+      "kind" : "message",
+      "line" : 582,
+      "npc" : "Portrait collector",
+      "text" : "Hmm, you don't have enough Spell now. Go get more."
     },
     {
       "kind" : "message",
       "line" : 585,
       "npc" : "Portrait collector",
       "text" : "[Portrait collector]\nAre you sure that you won't regret it?"
+    },
+    {
+      "kind" : "message",
+      "line" : 585,
+      "npc" : "Portrait collector",
+      "text" : "[Portrait collector]"
+    },
+    {
+      "kind" : "message",
+      "line" : 586,
+      "npc" : "Portrait collector",
+      "text" : "Are you sure that you won't regret it?"
     },
     {
       "kind" : "option",
@@ -922,13 +1693,37 @@
       "kind" : "message",
       "line" : 589,
       "npc" : "Portrait collector",
+      "text" : "[Portrait collector]"
+    },
+    {
+      "kind" : "message",
+      "line" : 589,
+      "npc" : "Portrait collector",
       "text" : "[Portrait collector]\nWell, OK. Come back when you are ready."
+    },
+    {
+      "kind" : "message",
+      "line" : 590,
+      "npc" : "Portrait collector",
+      "text" : "Well, OK. Come back when you are ready."
+    },
+    {
+      "kind" : "message",
+      "line" : 593,
+      "npc" : "Portrait collector",
+      "text" : "[Portrait collector]"
     },
     {
       "kind" : "message",
       "line" : 593,
       "npc" : "Portrait collector",
       "text" : "[Portrait collector]\nCool, let's make a deal."
+    },
+    {
+      "kind" : "message",
+      "line" : 594,
+      "npc" : "Portrait collector",
+      "text" : "Cool, let's make a deal."
     }
   ]
 }

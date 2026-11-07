@@ -7,12 +7,10 @@
       "npc" : "Private MVP Room",
       "placeholders" : [
         "getvariableofnpc( .timeout, \"MVP Summoner\" )",
-        "callfunc(\"F_InsertComma\", getvariableofnpc( .rentcost, \"MVP Summoner\" ) )",
-        ".@i",
-        ".color$[ .type[.@i] ]",
+        "insertchar(.@str$,\",\",.@i)",
         ".whoinuse$[.@i]"
       ],
-      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #{2} = {3}{4}^000000"
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^0000FF{2}^000000"
     },
     {
       "kind" : "message",
@@ -20,11 +18,11 @@
       "npc" : "Private MVP Room",
       "placeholders" : [
         "getvariableofnpc( .timeout, \"MVP Summoner\" )",
-        ".@i",
+        "insertchar(.@str$,\",\",.@i)",
         ".color$[ .type[.@i] ]",
         ".whoinuse$[.@i]"
       ],
-      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #{1} = {2}{3}^000000"
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = {2}{3}^000000"
     },
     {
       "kind" : "message",
@@ -32,7 +30,17 @@
       "npc" : "Private MVP Room",
       "placeholders" : [
         "getvariableofnpc( .timeout, \"MVP Summoner\" )",
-        "callfunc(\"F_InsertComma\", getvariableofnpc( .rentcost, \"MVP Summoner\" ) )"
+        "getarg(0)"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n "
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n "
     },
@@ -44,6 +52,768 @@
         "getvariableofnpc( .timeout, \"MVP Summoner\" )"
       ],
       "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n "
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #2 = ^EE8800{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #2 = ^70CC11{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #2 = ^0000FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #2 = {1}{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^EE8800{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^70CC11{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^0000FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = {1}{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = ^0000FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = {2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^0000FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = {2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = ^0000FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = {2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^EE8800{1}^000000\nRoom #2 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^EE8800{1}^000000\nRoom #2 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^EE8800{1}^000000\nRoom #2 = ^0000FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^EE8800{1}^000000\nRoom #2 = {2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^70CC11{1}^000000\nRoom #2 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^70CC11{1}^000000\nRoom #2 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^70CC11{1}^000000\nRoom #2 = ^0000FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^70CC11{1}^000000\nRoom #2 = {2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^0000FF{1}^000000\nRoom #2 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^0000FF{1}^000000\nRoom #2 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^0000FF{1}^000000\nRoom #2 = ^0000FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^0000FF{1}^000000\nRoom #2 = {2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = {1}{2}^000000\nRoom #2 = ^EE8800{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = {1}{2}^000000\nRoom #2 = ^70CC11{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = {1}{2}^000000\nRoom #2 = ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = {1}{2}^000000\nRoom #2 = {3}{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = ^EE8800{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = ^70CC11{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = {3}{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = ^EE8800{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = ^70CC11{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = {3}{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^0000FF{2}^000000\nRoom #2 = ^EE8800{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^0000FF{2}^000000\nRoom #2 = ^70CC11{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^0000FF{2}^000000\nRoom #2 = ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^0000FF{2}^000000\nRoom #2 = {3}{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = {2}{3}^000000\nRoom #2 = ^EE8800{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = {2}{3}^000000\nRoom #2 = ^70CC11{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = {2}{3}^000000\nRoom #2 = ^0000FF{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = {2}{3}^000000\nRoom #2 = {4}{5}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = ^EE8800{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = ^70CC11{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = {3}{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = ^EE8800{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = ^70CC11{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = {3}{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".@i",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "Room #{0} = ^EE8800{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".@i",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "Room #{0} = ^70CC11{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".@i",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "Room #{0} = ^0000FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".@i",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "text" : "Room #{0} = {1}{2}^000000"
     },
     {
       "kind" : "option",
@@ -122,6 +892,33 @@
       "line" : 42,
       "npc" : "Private MVP Room",
       "placeholders" : [
+        ".whoinuse$[.@room]"
+      ],
+      "text" : "[Private MVP Room]\nThis room is reserved for \n^EE8800{0}^000000.\nPlease select another."
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".whoinuse$[.@room]"
+      ],
+      "text" : "[Private MVP Room]\nThis room is reserved for \n^70CC11{0}^000000.\nPlease select another."
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".whoinuse$[.@room]"
+      ],
+      "text" : "[Private MVP Room]\nThis room is reserved for \n^0000FF{0}^000000.\nPlease select another."
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
         ".color$[ .type[.@room] ]",
         ".whoinuse$[.@room]"
       ],
@@ -179,19 +976,67 @@
       "kind" : "message",
       "line" : 69,
       "npc" : "Private MVP Room",
+      "text" : "[Private MVP Room]"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "text" : "[Private MVP Room]\nYou already rented Room#1. Use that room instead."
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "text" : "[Private MVP Room]\nYou already rented Room#2. Use that room instead."
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "text" : "[Private MVP Room]\nYou already rented Room#3. Use that room instead."
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "text" : "[Private MVP Room]\nYou already rented Room#4. Use that room instead."
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "text" : "[Private MVP Room]\nYou already rented Room#5. Use that room instead."
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "text" : "[Private MVP Room]\nYou already rented Room#6. Use that room instead."
+    },
+    {
+      "kind" : "message",
+      "line" : 70,
+      "npc" : "Private MVP Room",
       "placeholders" : [
         ".@i"
       ],
-      "text" : "[Private MVP Room]\nYou already rented Room#{0}. Use that room instead."
+      "text" : "You already rented Room#{0}. Use that room instead."
     },
     {
       "kind" : "message",
       "line" : 90,
       "npc" : "MVP Summoner",
+      "text" : "[MVP Summoner]"
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "MVP Summoner",
       "placeholders" : [
-        "callfunc( \"Time2Str\", .renttime[ atoi( strnpcinfo(2) ) ] + .timeout * 60 )"
+        ".@Time$"
       ],
-      "text" : "[MVP Summoner]\nTime left: {0}\nHi, what can I do for you?"
+      "text" : "Time left: {0}\nHi, what can I do for you?"
     },
     {
       "kind" : "message",
@@ -216,7 +1061,16 @@
       "line" : 133,
       "npc" : "MVP Summoner",
       "placeholders" : [
-        "callfunc( \"F_InsertComma\", .mvpcost )"
+        "getarg(0)"
+      ],
+      "text" : "[MVP Summoner]\nThe cost to summon an MVP is {0} zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "MVP Summoner",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "text" : "[MVP Summoner]\nThe cost to summon an MVP is {0} zeny."
     },
@@ -224,13 +1078,13 @@
       "kind" : "message",
       "line" : 137,
       "npc" : "MVP Summoner",
-      "text" : "[MVP Summoner]\nYou don't have enough zeny to summon an MVP."
+      "text" : "[MVP Summoner]\nPlease get ready."
     },
     {
       "kind" : "message",
       "line" : 137,
       "npc" : "MVP Summoner",
-      "text" : "[MVP Summoner]\nPlease get ready."
+      "text" : "[MVP Summoner]\nYou don't have enough zeny to summon an MVP."
     },
     {
       "kind" : "message",
@@ -249,7 +1103,16 @@
       "line" : 158,
       "npc" : "MVP Summoner",
       "placeholders" : [
-        "callfunc( \"F_InsertComma\", .bosscost )"
+        "getarg(0)"
+      ],
+      "text" : "[MVP Summoner]\nThe cost to summon a mini-boss is {0} zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "MVP Summoner",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "text" : "[MVP Summoner]\nThe cost to summon a mini-boss is {0} zeny."
     },
@@ -257,13 +1120,13 @@
       "kind" : "message",
       "line" : 162,
       "npc" : "MVP Summoner",
-      "text" : "[MVP Summoner]\nYou doesn't have enough zeny to summon a mini-boss."
+      "text" : "[MVP Summoner]\nPlease get ready."
     },
     {
       "kind" : "message",
       "line" : 162,
       "npc" : "MVP Summoner",
-      "text" : "[MVP Summoner]\nPlease get ready."
+      "text" : "[MVP Summoner]\nYou doesn't have enough zeny to summon a mini-boss."
     },
     {
       "kind" : "message",
@@ -299,7 +1162,7 @@
       "kind" : "message",
       "line" : 194,
       "npc" : "MVP Summoner",
-      "text" : "[MVP Summoner]\nThere are still some players in this room. Make sure you are the last member in this room to use this option."
+      "text" : "[MVP Summoner]\nAre you sure you want to give up this room?"
     },
     {
       "kind" : "message",
@@ -311,7 +1174,7 @@
       "kind" : "message",
       "line" : 194,
       "npc" : "MVP Summoner",
-      "text" : "[MVP Summoner]\nAre you sure you want to give up this room?"
+      "text" : "[MVP Summoner]\nThere are still some players in this room. Make sure you are the last member in this room to use this option."
     },
     {
       "kind" : "option",

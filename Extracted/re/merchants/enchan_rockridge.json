@@ -125,25 +125,25 @@
       "kind" : "message",
       "line" : 93,
       "npc" : "Contraband Processor",
-      "text" : "[Contraband Processor]\nOh, do you really want to reset it? As I told you before, contraband Vigilante Badges are prone to destruction.\n[Contraband Processor]\nI charge 2 Rock Ridge Coins for this service. Bring them to me."
-    },
-    {
-      "kind" : "message",
-      "line" : 93,
-      "npc" : "Contraband Processor",
       "text" : "[Contraband Processor]\nOh, do you really want to reset it? As I told you before, contraband Vigilante Badges are prone to destruction."
     },
     {
       "kind" : "message",
       "line" : 93,
       "npc" : "Contraband Processor",
-      "text" : "[Contraband Processor]\nOh, do you really want to reset it? As I told you before, contraband Vigilante Badges are prone to destruction.\n[Contraband Processor]\nAh, that didn't turn out well.\nWell, just my luck."
+      "text" : "[Contraband Processor]\nOh, do you really want to reset it? As I told you before, contraband Vigilante Badges are prone to destruction.\n[Contraband Processor]\nI charge 2 Rock Ridge Coins for this service. Bring them to me."
     },
     {
       "kind" : "message",
       "line" : 93,
       "npc" : "Contraband Processor",
       "text" : "[Contraband Processor]\nOh, do you really want to reset it? As I told you before, contraband Vigilante Badges are prone to destruction.\n[Contraband Processor]\nDone. Check it out."
+    },
+    {
+      "kind" : "message",
+      "line" : 93,
+      "npc" : "Contraband Processor",
+      "text" : "[Contraband Processor]\nOh, do you really want to reset it? As I told you before, contraband Vigilante Badges are prone to destruction.\n[Contraband Processor]\nAh, that didn't turn out well.\nWell, just my luck."
     },
     {
       "kind" : "option",
@@ -179,7 +179,25 @@
       "kind" : "message",
       "line" : 214,
       "npc" : "Contraband Processor",
+      "text" : "[Contraband Processor]"
+    },
+    {
+      "kind" : "message",
+      "line" : 214,
+      "npc" : "Contraband Processor",
       "text" : "[Contraband Processor]\nI charge 2 Rock Ridge Coins for this service. Bring them to me."
+    },
+    {
+      "kind" : "message",
+      "line" : 215,
+      "npc" : "Contraband Processor",
+      "text" : "I charge 2 Rock Ridge Coins for this service. Bring them to me."
+    },
+    {
+      "kind" : "message",
+      "line" : 227,
+      "npc" : "Contraband Processor",
+      "text" : "[Contraband Processor]"
     },
     {
       "kind" : "message",
@@ -189,9 +207,33 @@
     },
     {
       "kind" : "message",
+      "line" : 228,
+      "npc" : "Contraband Processor",
+      "text" : "Ah, that didn't turn out well."
+    },
+    {
+      "kind" : "message",
+      "line" : 229,
+      "npc" : "Contraband Processor",
+      "text" : "Well, just my luck."
+    },
+    {
+      "kind" : "message",
+      "line" : 234,
+      "npc" : "Contraband Processor",
+      "text" : "[Contraband Processor]"
+    },
+    {
+      "kind" : "message",
       "line" : 234,
       "npc" : "Contraband Processor",
       "text" : "[Contraband Processor]\nDone. Check it out."
+    },
+    {
+      "kind" : "message",
+      "line" : 235,
+      "npc" : "Contraband Processor",
+      "text" : "Done. Check it out."
     },
     {
       "kind" : "message",
@@ -330,10 +372,28 @@
       "line" : 297,
       "npc" : "Affable Lady",
       "placeholders" : [
+        "mesitemlink( .@item_id[.@s], false, .@item_name$[.@s] )"
+      ],
+      "text" : "[Affable Lady]\nAh, you're interested in the\n[{0}].\nClick the name for the detailed description.\nAs I told you, it's ^0000CD3000000 Zeny^000000. Do you want to buy it?"
+    },
+    {
+      "kind" : "message",
+      "line" : 297,
+      "npc" : "Affable Lady",
+      "placeholders" : [
         "mesitemlink( .@item_id[.@s], false, .@item_name$[.@s] )",
-        "callfunc(\"F_InsertComma\",.@cost)"
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "text" : "[Affable Lady]\nAh, you're interested in the\n[{0}].\nClick the name for the detailed description.\nAs I told you, it's ^0000CD{1} Zeny^000000. Do you want to buy it?"
+    },
+    {
+      "kind" : "message",
+      "line" : 297,
+      "npc" : "Affable Lady",
+      "placeholders" : [
+        "mesitemlink( .@item_id[.@s], false, .@item_name$[.@s] )"
+      ],
+      "text" : "[Affable Lady]\nAh, you're interested in the\n[{0}].\nClick the name for the detailed description.\nAs I told you, it's ^0000CD1500000 Zeny^000000. Do you want to buy it?"
     },
     {
       "kind" : "option",
@@ -369,10 +429,40 @@
       "kind" : "message",
       "line" : 319,
       "npc" : "Affable Lady",
+      "text" : "[Affable Lady]\nSure. Here's your Elemental Cape."
+    },
+    {
+      "kind" : "message",
+      "line" : 319,
+      "npc" : "Affable Lady",
+      "text" : "[Affable Lady]\nSure. Here's your Golden Scarf."
+    },
+    {
+      "kind" : "message",
+      "line" : 319,
+      "npc" : "Affable Lady",
+      "text" : "[Affable Lady]\nSure. Here's your Mine Worker Backpack."
+    },
+    {
+      "kind" : "message",
+      "line" : 319,
+      "npc" : "Affable Lady",
       "placeholders" : [
         ".@item_name$[.@s]"
       ],
       "text" : "[Affable Lady]\nSure. Here's your {0}."
+    },
+    {
+      "kind" : "message",
+      "line" : 319,
+      "npc" : "Affable Lady",
+      "text" : "[Affable Lady]\nSure. Here's your Vigilante Badge."
+    },
+    {
+      "kind" : "message",
+      "line" : 319,
+      "npc" : "Affable Lady",
+      "text" : "[Affable Lady]\nSure. Here's your Hippie Feather."
     },
     {
       "kind" : "message",
@@ -409,6 +499,75 @@
       "line" : 352,
       "npc" : "Howard",
       "text" : "[Howard]\nWhat would you like to have?"
+    },
+    {
+      "kind" : "option",
+      "line" : 371,
+      "npc" : "Howard",
+      "placeholders" : [
+        ".@menu$"
+      ],
+      "text" : "{0}Vigilante Suit"
+    },
+    {
+      "kind" : "option",
+      "line" : 371,
+      "npc" : "Howard",
+      "text" : "Elemental Robe"
+    },
+    {
+      "kind" : "option",
+      "line" : 371,
+      "npc" : "Howard",
+      "text" : "Golden Ninja Suit"
+    },
+    {
+      "kind" : "option",
+      "line" : 371,
+      "npc" : "Howard",
+      "text" : "Mine Worker Vest"
+    },
+    {
+      "kind" : "option",
+      "line" : 371,
+      "npc" : "Howard",
+      "text" : "Hippie Clothes"
+    },
+    {
+      "kind" : "option",
+      "line" : 371,
+      "npc" : "Howard",
+      "text" : "Drifter's Cape"
+    },
+    {
+      "kind" : "option",
+      "line" : 371,
+      "npc" : "Howard",
+      "text" : "Spurred Boots"
+    },
+    {
+      "kind" : "option",
+      "line" : 371,
+      "npc" : "Howard",
+      "text" : "Liquor Bottle"
+    },
+    {
+      "kind" : "option",
+      "line" : 371,
+      "npc" : "Howard",
+      "text" : "Elder Staff"
+    },
+    {
+      "kind" : "option",
+      "line" : 371,
+      "npc" : "Howard",
+      "text" : "Costume Black Cowboy Hat"
+    },
+    {
+      "kind" : "option",
+      "line" : 371,
+      "npc" : "Howard",
+      "text" : "Costume Cactus Flower Corsage"
     },
     {
       "kind" : "message",

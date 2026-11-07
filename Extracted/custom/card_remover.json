@@ -32,17 +32,6 @@
       "text" : "[Wise Old Woman]\nVery well. Which item shall I examine for you?"
     },
     {
-      "kind" : "option",
-      "line" : 39,
-      "npc" : "Wise Old Woman",
-      "placeholders" : [
-        ".@menu$",
-        "F_getpositionname(.@indices[.@i])",
-        "getequipname(.@indices[.@i])"
-      ],
-      "text" : "{0}{1}-[{2}]"
-    },
-    {
       "kind" : "message",
       "line" : 41,
       "npc" : "Wise Old Woman",
@@ -164,9 +153,33 @@
       "kind" : "message",
       "line" : 141,
       "npc" : "Wise Old Woman",
+      "text" : "[Wise Old Woman]\nI charge a flat fee of 200000 zeny, plus 25000 zeny for each card I remove from the item. In addition, I need a star crumb and a yellow gemstone to work my magic."
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Wise Old Woman",
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",.zenycost)",
-        "callfunc(\"F_InsertComma\",.percardcost)"
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Wise Old Woman]\nI charge a flat fee of 200000 zeny, plus {0} zeny for each card I remove from the item. In addition, I need a star crumb and a yellow gemstone to work my magic."
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Wise Old Woman",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Wise Old Woman]\nI charge a flat fee of {0} zeny, plus 25000 zeny for each card I remove from the item. In addition, I need a star crumb and a yellow gemstone to work my magic."
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Wise Old Woman",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "text" : "[Wise Old Woman]\nI charge a flat fee of {0} zeny, plus {1} zeny for each card I remove from the item. In addition, I need a star crumb and a yellow gemstone to work my magic."
     },

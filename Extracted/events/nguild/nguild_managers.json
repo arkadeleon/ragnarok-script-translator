@@ -6,19 +6,19 @@
       "line" : 32,
       "npc" : "F_GldManager",
       "placeholders" : [
-        "getarg(0)"
+        "getarg(0)",
+        "getguildmaster(.@gid)"
       ],
-      "text" : "[ {0} ]\nI am waiting for my master.  Brave adventurer, follow your destiny!"
+      "text" : "[ {0} ]\nWelcome Master ^5533FF{1}^000000 ! I will assist you in any way I can!"
     },
     {
       "kind" : "message",
       "line" : 32,
       "npc" : "F_GldManager",
       "placeholders" : [
-        "getarg(0)",
-        "getguildmaster(.@gid)"
+        "getarg(0)"
       ],
-      "text" : "[ {0} ]\nI am here to follow ^5533FF{1}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!"
+      "text" : "[ {0} ]\nI am waiting for my master.  Brave adventurer, follow your destiny!"
     },
     {
       "kind" : "message",
@@ -39,7 +39,7 @@
         "getarg(0)",
         "getguildmaster(.@gid)"
       ],
-      "text" : "[ {0} ]\nWelcome Master ^5533FF{1}^000000 ! I will assist you in any way I can!"
+      "text" : "[ {0} ]\nI am here to follow ^5533FF{1}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!"
     },
     {
       "kind" : "option",
@@ -64,24 +64,27 @@
       "line" : 55,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
-      "text" : "[ {0} ]"
+      "text" : "[ {0} ]\nWould you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... "
     },
     {
       "kind" : "message",
       "line" : 55,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
-      "text" : "[ {0} ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000."
+      "text" : "[ {0} ]\nWould you like to dismiss the current Kafra?"
     },
     {
       "kind" : "message",
-      "line" : 64,
+      "line" : 55,
       "npc" : "F_GldManager",
-      "text" : "Would you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... "
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[ {0} ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000."
     },
     {
       "kind" : "option",
@@ -100,18 +103,18 @@
       "line" : 68,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
-      "text" : "[ {0} ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled."
+      "text" : "[ {0} ]\nYou have created a contract with the Kafra Staff Company."
     },
     {
       "kind" : "message",
       "line" : 68,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
-      "text" : "[ {0} ]\nYou have created a contract with the Kafra Staff Company."
+      "text" : "[ {0} ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled."
     },
     {
       "kind" : "message",
@@ -124,7 +127,7 @@
       "line" : 83,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[ {0} ]\nI think the Kafra Staff will benefit our guild members."
     },
@@ -133,15 +136,9 @@
       "line" : 89,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[ {0} ]\nAs you wish Master.  But I suggest we get a Kafra as soon as possible!"
-    },
-    {
-      "kind" : "message",
-      "line" : 94,
-      "npc" : "F_GldManager",
-      "text" : "Would you like to dismiss the current Kafra?"
     },
     {
       "kind" : "option",
@@ -184,7 +181,7 @@
       "line" : 110,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[ {0} ]\nThe Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!"
     },
@@ -199,7 +196,7 @@
       "line" : 119,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[ {0} ]\nMaster, I think you should keep the current Kafra Staff because she is already trying her best to serve us"
     },
@@ -208,7 +205,7 @@
       "line" : 126,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[ {0} ]\nWould you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room."
     },
@@ -229,7 +226,7 @@
       "line" : 131,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[ {0} ]\nPlease follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out."
     },
@@ -238,7 +235,7 @@
       "line" : 138,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[ {0} ]\nThe goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time."
     },
@@ -247,9 +244,721 @@
       "line" : 147,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[ {0} ]\nAs you wish, master."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "text" : "[ Frolo ]\nWelcome Master ^5533FF{0}^000000 ! I will assist you in any way I can!"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "Kafra Staff Employment / Dismissal"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "Enter Treasure Room"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nWould you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room."
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "Enter Treasure room."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nWould you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... "
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nWould you like to dismiss the current Kafra?"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "Employ Kafra."
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "Dismissal"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nPlease follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Kafra Staff ]\nHave I done anything wrong? If I did, will you please forgive me?"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "Dismiss"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nYou have created a contract with the Kafra Staff Company."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Kafra Staff ]\nIt's unfortunate that I won't be able to serve your guild anymore...."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Kafra Staff ]\nHow do you do? I'm here to provide you with helpful service! I'll do the best I can to serve you."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nI am waiting for my master.  Brave adventurer, follow your destiny!"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "placeholders" : [
+        "getguildmaster(.@gid)",
+        "getguildmaster(.@gid)"
+      ],
+      "text" : "[ Frolo ]\nYou're not ^5533FF{0}^000000! I am here to follow ^5533FF{1}^000000's command only"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "text" : "[ Frolo ]\nI am here to follow ^5533FF{0}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nAs you wish, master."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nThe goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nAs you wish Master.  But I suggest we get a Kafra as soon as possible!"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nMaster, I think you should keep the current Kafra Staff because she is already trying her best to serve us"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Kafra Staff ]\nThank you master, I'll do my best! ^^."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nThe Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "text" : "[ Frolo ]\nI think the Kafra Staff will benefit our guild members."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "text" : "[ Leiber ]\nWelcome Master ^5533FF{0}^000000 ! I will assist you in any way I can!"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "Kafra Staff Employment / Dismissal"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "Enter Treasure Room"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nWould you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room."
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "Enter Treasure room."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nWould you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... "
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nWould you like to dismiss the current Kafra?"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "Employ Kafra."
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "Dismissal"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nPlease follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Kafra Staff ]\nHave I done anything wrong? If I did, will you please forgive me?"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "Dismiss"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nYou have created a contract with the Kafra Staff Company."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Kafra Staff ]\nIt's unfortunate that I won't be able to serve your guild anymore...."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Kafra Staff ]\nHow do you do? I'm here to provide you with helpful service! I'll do the best I can to serve you."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nI am waiting for my master.  Brave adventurer, follow your destiny!"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "placeholders" : [
+        "getguildmaster(.@gid)",
+        "getguildmaster(.@gid)"
+      ],
+      "text" : "[ Leiber ]\nYou're not ^5533FF{0}^000000! I am here to follow ^5533FF{1}^000000's command only"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "text" : "[ Leiber ]\nI am here to follow ^5533FF{0}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nAs you wish, master."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nThe goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nAs you wish Master.  But I suggest we get a Kafra as soon as possible!"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nMaster, I think you should keep the current Kafra Staff because she is already trying her best to serve us"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Kafra Staff ]\nThank you master, I'll do my best! ^^."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nThe Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "text" : "[ Leiber ]\nI think the Kafra Staff will benefit our guild members."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "text" : "[ Dundar ]\nWelcome Master ^5533FF{0}^000000 ! I will assist you in any way I can!"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "Kafra Staff Employment / Dismissal"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "Enter Treasure Room"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nWould you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room."
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "Enter Treasure room."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nWould you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... "
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nWould you like to dismiss the current Kafra?"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "Employ Kafra."
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "Dismissal"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nPlease follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Kafra Staff ]\nHave I done anything wrong? If I did, will you please forgive me?"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "Dismiss"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nYou have created a contract with the Kafra Staff Company."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Kafra Staff ]\nIt's unfortunate that I won't be able to serve your guild anymore...."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Kafra Staff ]\nHow do you do? I'm here to provide you with helpful service! I'll do the best I can to serve you."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nI am waiting for my master.  Brave adventurer, follow your destiny!"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "placeholders" : [
+        "getguildmaster(.@gid)",
+        "getguildmaster(.@gid)"
+      ],
+      "text" : "[ Dundar ]\nYou're not ^5533FF{0}^000000! I am here to follow ^5533FF{1}^000000's command only"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "text" : "[ Dundar ]\nI am here to follow ^5533FF{0}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nAs you wish, master."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nThe goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nAs you wish Master.  But I suggest we get a Kafra as soon as possible!"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nMaster, I think you should keep the current Kafra Staff because she is already trying her best to serve us"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Kafra Staff ]\nThank you master, I'll do my best! ^^."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nThe Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "text" : "[ Dundar ]\nI think the Kafra Staff will benefit our guild members."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "text" : "[ Thefton ]\nWelcome Master ^5533FF{0}^000000 ! I will assist you in any way I can!"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "Kafra Staff Employment / Dismissal"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "Enter Treasure Room"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nWould you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room."
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "Enter Treasure room."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nWould you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... "
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nWould you like to dismiss the current Kafra?"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "Employ Kafra."
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "Dismissal"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nPlease follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Kafra Staff ]\nHave I done anything wrong? If I did, will you please forgive me?"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "Dismiss"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nYou have created a contract with the Kafra Staff Company."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Kafra Staff ]\nIt's unfortunate that I won't be able to serve your guild anymore...."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Kafra Staff ]\nHow do you do? I'm here to provide you with helpful service! I'll do the best I can to serve you."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nI am waiting for my master.  Brave adventurer, follow your destiny!"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "placeholders" : [
+        "getguildmaster(.@gid)",
+        "getguildmaster(.@gid)"
+      ],
+      "text" : "[ Thefton ]\nYou're not ^5533FF{0}^000000! I am here to follow ^5533FF{1}^000000's command only"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "text" : "[ Thefton ]\nI am here to follow ^5533FF{0}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nAs you wish, master."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nThe goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nAs you wish Master.  But I suggest we get a Kafra as soon as possible!"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nMaster, I think you should keep the current Kafra Staff because she is already trying her best to serve us"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Kafra Staff ]\nThank you master, I'll do my best! ^^."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nThe Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "text" : "[ Thefton ]\nI think the Kafra Staff will benefit our guild members."
     }
   ]
 }

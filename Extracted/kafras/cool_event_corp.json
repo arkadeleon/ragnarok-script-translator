@@ -36,6 +36,12 @@
     },
     {
       "kind" : "message",
+      "line" : 46,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~\nEnter your storage password:"
+    },
+    {
+      "kind" : "message",
       "line" : 74,
       "npc" : "F_CoolEventCorp",
       "text" : "Please choose\nyour destination."
@@ -45,10 +51,9 @@
       "line" : 82,
       "npc" : "F_CoolEventCorp",
       "placeholders" : [
-        "getarg(5)",
-        ".@cost"
+        "getarg(5)"
       ],
-      "text" : "{0} -> {1} z"
+      "text" : "{0} -> 2200 z"
     },
     {
       "kind" : "option",
@@ -57,26 +62,31 @@
       "text" : "Cancel"
     },
     {
+      "kind" : "option",
+      "line" : 82,
+      "npc" : "F_CoolEventCorp",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "{0} -> 4400 z"
+    },
+    {
       "kind" : "message",
       "line" : 96,
       "npc" : "F_CoolEventCorp",
       "placeholders" : [
-        "getarg(5)",
-        ".@cost"
+        "getarg(5)"
       ],
-      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto {0} is {1} zeny."
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto {0} is 2200 zeny."
     },
     {
       "kind" : "message",
-      "line" : 106,
+      "line" : 96,
       "npc" : "F_CoolEventCorp",
-      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchant classes."
-    },
-    {
-      "kind" : "message",
-      "line" : 106,
-      "npc" : "F_CoolEventCorp",
-      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, White Smiths,\nAlchemists and Creators."
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto {0} is 4400 zeny."
     },
     {
       "kind" : "message",
@@ -88,7 +98,7 @@
       "kind" : "message",
       "line" : 106,
       "npc" : "F_CoolEventCorp",
-      "text" : "[Cool Event Corp. Staff]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time."
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchant classes."
     },
     {
       "kind" : "message",
@@ -101,6 +111,18 @@
       "line" : 106,
       "npc" : "F_CoolEventCorp",
       "text" : "[Cool Event Corp. Staff]\nThe Pushcart rental\nfee is 800 Zeny. Would\nyou like to rent a Pushcart?"
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, White Smiths,\nAlchemists and Creators."
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time."
     },
     {
       "kind" : "option",
@@ -122,9 +144,1173 @@
     },
     {
       "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nYour storage is protected with a password. What would you do now?"
+    },
+    {
+      "kind" : "option",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "Change old password -> 5000z"
+    },
+    {
+      "kind" : "option",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "Remove storage password -> 1000z"
+    },
+    {
+      "kind" : "option",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. proudly presents you a new service:\nAdditional storage protection with a password."
+    },
+    {
+      "kind" : "option",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "Set new password -> 5000z"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nWrong password. We won't return your 1000z.\nPlease, next time enter correct password."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nYou've successfully cleared your storage password.\nThank you for using Cool Event Corp.."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nYou don't have enough zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nYou've protected your storage with a secret password.\nThank you for using Cool Event Corp.."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou can't use such big password.\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
       "line" : 164,
       "npc" : "F_CoolEventCorp",
       "text" : "[Cool Event Corp. Staff]\nCool Event Corp. is always\nstriving to provide the best\nservices for our customers.\nHelp us become the best by\nproviding us with your opinions\nand honest feedback. Thank you."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nWelcome to Cool Event Corp.\nOur staff is always working\nto surpass your expactations\nfor quality service. So how\nmay I assist you today?"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "Save"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "Use Storage"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "Rent a Pushcart"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "Storage Password Service"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nYour storage is protected with a password. What would you do now?"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "Change old password -> 5000z"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "Remove storage password -> 1000z"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. proudly presents you a new service:\nAdditional storage protection with a password."
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "Set new password -> 5000z"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nWrong password. We won't return your 1000z.\nPlease, next time enter correct password."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou've successfully cleared your storage password.\nThank you for using Cool Event Corp.."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou don't have enough zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou've protected your storage with a secret password.\nThank you for using Cool Event Corp.."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou can't use such big password.\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou can only rent a cart after\nlearning the Pushcart Skill."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\nneed the Novice's\nBasic Skill Level 6 to\nuse the Storage Service."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchant classes."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nYour Respawn Point\nhas been saved here\nin the town of Lighthalzen.\nThank you for using the\nCool Event Corp. service~"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't\nhave enough Zeny to use\nthe Storage Service. Our\nStorage access fee is 40 Zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. is always\nstriving to provide the best\nservices for our customers.\nHelp us become the best by\nproviding us with your opinions\nand honest feedback. Thank you."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nThe Pushcart rental\nfee is 800 Zeny. Would\nyou like to rent a Pushcart?"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, White Smiths,\nAlchemists and Creators."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time."
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~\nEnter your storage password:"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\ndon't have enough\nZeny to pay the Pushcart\nrental fee of 800 Zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nWelcome to Cool Event Corp.\nOur staff is always working\nto surpass your expactations\nfor quality service. So how\nmay I assist you today?"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Save"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Use Storage"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Rent a Pushcart"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Storage Password Service"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYour storage is protected with a password. What would you do now?"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Change old password -> 5000z"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Remove storage password -> 1000z"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. proudly presents you a new service:\nAdditional storage protection with a password."
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Set new password -> 5000z"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nWrong password. We won't return your 1000z.\nPlease, next time enter correct password."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou've successfully cleared your storage password.\nThank you for using Cool Event Corp.."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou don't have enough zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou've protected your storage with a secret password.\nThank you for using Cool Event Corp.."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou can't use such big password.\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou can only rent a cart after\nlearning the Pushcart Skill."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\nneed the Novice's\nBasic Skill Level 6 to\nuse the Storage Service."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchant classes."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYour Respawn Point\nhas been saved here\nin the village of Hugel.\nThank you for using the\nCool Event Corp. service~"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't\nhave enough Zeny to use\nthe Storage Service. Our\nStorage access fee is 40 Zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. is always\nstriving to provide the best\nservices for our customers.\nHelp us become the best by\nproviding us with your opinions\nand honest feedback. Thank you."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nThe Pushcart rental\nfee is 800 Zeny. Would\nyou like to rent a Pushcart?"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, White Smiths,\nAlchemists and Creators."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time."
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~\nEnter your storage password:"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\ndon't have enough\nZeny to pay the Pushcart\nrental fee of 800 Zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nWelcome to Cool Event Corp.\nOur staff is always working\nto surpass your expactations\nfor quality service. So how\nmay I assist you today?"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Save"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Use Storage"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Teleport Service"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Rent a Pushcart"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Storage Password Service"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYour storage is protected with a password. What would you do now?"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Change old password -> 5000z"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Remove storage password -> 1000z"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. proudly presents you a new service:\nAdditional storage protection with a password."
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Set new password -> 5000z"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nWrong password. We won't return your 1000z.\nPlease, next time enter correct password."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou've successfully cleared your storage password.\nThank you for using Cool Event Corp.."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou don't have enough zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou've protected your storage with a secret password.\nThank you for using Cool Event Corp.."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou can't use such big password.\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Please choose\nyour destination."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou can only rent a cart after\nlearning the Pushcart Skill."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\nneed the Novice's\nBasic Skill Level 6 to\nuse the Storage Service."
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Veins -> 2200 z"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Veins -> 4400 z"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchant classes."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYour Respawn Point\nhas been saved here\nin the town of Rachel.\nThank you for using the\nCool Event Corp. service~"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't\nhave enough Zeny to use\nthe Storage Service. Our\nStorage access fee is 40 Zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. is always\nstriving to provide the best\nservices for our customers.\nHelp us become the best by\nproviding us with your opinions\nand honest feedback. Thank you."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nThe Pushcart rental\nfee is 800 Zeny. Would\nyou like to rent a Pushcart?"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, White Smiths,\nAlchemists and Creators."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~\nEnter your storage password:"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto Veins is 2200 zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto Veins is 4400 zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\ndon't have enough\nZeny to pay the Pushcart\nrental fee of 800 Zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nWelcome to Cool Event Corp.\nOur staff is always working\nto surpass your expactations\nfor quality service. So how\nmay I assist you today?"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Save"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Use Storage"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Teleport Service"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Rent a Pushcart"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Storage Password Service"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Cancel"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYour storage is protected with a password. What would you do now?"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Change old password -> 5000z"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Remove storage password -> 1000z"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. proudly presents you a new service:\nAdditional storage protection with a password."
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Set new password -> 5000z"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nWrong password. We won't return your 1000z.\nPlease, next time enter correct password."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou've successfully cleared your storage password.\nThank you for using Cool Event Corp.."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been changed."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou don't have enough zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou've protected your storage with a secret password.\nThank you for using Cool Event Corp.."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou can't use such big password.\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nWrong password. You can't set a new password."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been removed."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Please choose\nyour destination."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou can only rent a cart after\nlearning the Pushcart Skill."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\nneed the Novice's\nBasic Skill Level 6 to\nuse the Storage Service."
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Rachel -> 2200 z"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "Rachel -> 4400 z"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchant classes."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYour Respawn Point\nhas been saved here\nin the town of Veins.\nThank you for using the\nCool Event Corp. service~"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't\nhave enough Zeny to use\nthe Storage Service. Our\nStorage access fee is 40 Zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. is always\nstriving to provide the best\nservices for our customers.\nHelp us become the best by\nproviding us with your opinions\nand honest feedback. Thank you."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nThe Pushcart rental\nfee is 800 Zeny. Would\nyou like to rent a Pushcart?"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, White Smiths,\nAlchemists and Creators."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~\nEnter your storage password:"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto Rachel is 2200 zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto Rachel is 4400 zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\ndon't have enough\nZeny to pay the Pushcart\nrental fee of 800 Zeny."
     }
   ]
 }

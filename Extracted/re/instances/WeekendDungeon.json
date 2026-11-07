@@ -5,13 +5,13 @@
       "kind" : "message",
       "line" : 11,
       "npc" : "Marry Jae",
-      "text" : "[Marry Jae]\nYour base level is too low, come back when you hit level 60+."
+      "text" : "[Marry Jae]\n^ff0000If you attempt to tame any monsters, it will not count as a kill. Please be careful.^000000"
     },
     {
       "kind" : "message",
       "line" : 11,
       "npc" : "Marry Jae",
-      "text" : "[Marry Jae]\n^ff0000If you attempt to tame any monsters, it will not count as a kill. Please be careful.^000000"
+      "text" : "[Marry Jae]\nYour base level is too low, come back when you hit level 60+."
     },
     {
       "kind" : "message",
@@ -89,12 +89,6 @@
       "kind" : "option",
       "line" : 83,
       "npc" : "Marry Jae",
-      "text" : "Prepare Memorial Dungeon"
-    },
-    {
-      "kind" : "option",
-      "line" : 83,
-      "npc" : "Marry Jae",
       "text" : "Enter Weekend Dungeon"
     },
     {
@@ -102,6 +96,12 @@
       "line" : 83,
       "npc" : "Marry Jae",
       "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 83,
+      "npc" : "Marry Jae",
+      "text" : "Prepare Memorial Dungeon"
     },
     {
       "kind" : "message",
@@ -145,8 +145,18 @@
       "npc" : "Gift Supplies Clerk",
       "placeholders" : [
         "getitemname(23143)",
+        "getitemname(23142)"
+      ],
+      "text" : "[Gift Supplies Clerk]\nIf you have 5 units of <ITEM>{0}<INFO>23143</INFO></ITEM> or <ITEM>{1}<INFO>23142</INFO></ITEM>, I can pack it for just ^FF000060000^000000 Zeny!\nDo you want to pack it right now?"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "Gift Supplies Clerk",
+      "placeholders" : [
+        "getitemname(23143)",
         "getitemname(23142)",
-        "F_InsertComma(.@zeny)"
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "text" : "[Gift Supplies Clerk]\nIf you have 5 units of <ITEM>{0}<INFO>23143</INFO></ITEM> or <ITEM>{1}<INFO>23142</INFO></ITEM>, I can pack it for just ^FF0000{2}^000000 Zeny!\nDo you want to pack it right now?"
     },
@@ -178,16 +188,49 @@
       "kind" : "message",
       "line" : 143,
       "npc" : "Gift Supplies Clerk",
-      "text" : "[Gift Supplies Clerk]\nPlease come back when you have enough materials."
+      "placeholders" : [
+        "getitemname(.@item)",
+        "getitemname(.@box)"
+      ],
+      "text" : "[Gift Supplies Clerk]\nConfirm to spend 60000z to package 5 <ITEM>{0}<INFO>23142</INFO></ITEM> into <ITEM>{1}<INFO>23144</INFO></ITEM>?"
     },
     {
       "kind" : "message",
       "line" : 143,
       "npc" : "Gift Supplies Clerk",
       "placeholders" : [
-        "F_InsertComma(.@zeny)"
+        "insertchar(.@str$,\",\",.@i)",
+        "getitemname(.@item)",
+        "getitemname(.@box)"
       ],
-      "text" : "[Gift Supplies Clerk]\nPlease come back when you have enough Zeny.\n{0}z to be specific."
+      "text" : "[Gift Supplies Clerk]\nConfirm to spend {0}z to package 5 <ITEM>{1}<INFO>23142</INFO></ITEM> into <ITEM>{2}<INFO>23144</INFO></ITEM>?"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Gift Supplies Clerk",
+      "placeholders" : [
+        "getitemname(.@item)",
+        "getitemname(.@box)"
+      ],
+      "text" : "[Gift Supplies Clerk]\nConfirm to spend 60000z to package 5 <ITEM>{0}<INFO>23143</INFO></ITEM> into <ITEM>{1}<INFO>23145</INFO></ITEM>?"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Gift Supplies Clerk",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "getitemname(.@item)",
+        "getitemname(.@box)"
+      ],
+      "text" : "[Gift Supplies Clerk]\nConfirm to spend {0}z to package 5 <ITEM>{1}<INFO>23143</INFO></ITEM> into <ITEM>{2}<INFO>23145</INFO></ITEM>?"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Gift Supplies Clerk",
+      "text" : "[Gift Supplies Clerk]\nPlease come back when you have enough materials."
     },
     {
       "kind" : "message",
@@ -199,20 +242,22 @@
       "kind" : "message",
       "line" : 143,
       "npc" : "Gift Supplies Clerk",
-      "text" : "[Gift Supplies Clerk]\nCan't continue because you have too many heavy objects. Reduce your total weight by clearing your inventory."
+      "text" : "[Gift Supplies Clerk]\nPlease come back when you have enough Zeny.\n60000z to be specific."
     },
     {
       "kind" : "message",
       "line" : 143,
       "npc" : "Gift Supplies Clerk",
       "placeholders" : [
-        "F_InsertComma(.@zeny)",
-        "getitemname(.@item)",
-        ".@item",
-        "getitemname(.@box)",
-        ".@box"
+        "insertchar(.@str$,\",\",.@i)"
       ],
-      "text" : "[Gift Supplies Clerk]\nConfirm to spend {0}z to package 5 <ITEM>{1}<INFO>{2}</INFO></ITEM> into <ITEM>{3}<INFO>{4}</INFO></ITEM>?"
+      "text" : "[Gift Supplies Clerk]\nPlease come back when you have enough Zeny.\n{0}z to be specific."
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Gift Supplies Clerk",
+      "text" : "[Gift Supplies Clerk]\nCan't continue because you have too many heavy objects. Reduce your total weight by clearing your inventory."
     },
     {
       "kind" : "option",
@@ -284,10 +329,37 @@
       "kind" : "message",
       "line" : 211,
       "npc" : "Marry Jae",
-      "placeholders" : [
-        ".@min_level"
-      ],
-      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level {0} + ."
+      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level 60 + ."
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Marry Jae",
+      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level 80 + ."
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Marry Jae",
+      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level 100 + ."
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Marry Jae",
+      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level 120 + ."
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Marry Jae",
+      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level 140 + ."
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Marry Jae",
+      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level 160 + ."
     },
     {
       "kind" : "message",

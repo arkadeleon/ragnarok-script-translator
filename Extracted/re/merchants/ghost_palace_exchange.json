@@ -44,18 +44,6 @@
       "kind" : "message",
       "line" : 19,
       "npc" : "Dimension Traveler",
-      "text" : "[Dimension Traveler]\nGoodbye friend~ Come again!"
-    },
-    {
-      "kind" : "message",
-      "line" : 19,
-      "npc" : "Dimension Traveler",
-      "text" : "[Dimension Traveler]"
-    },
-    {
-      "kind" : "message",
-      "line" : 19,
-      "npc" : "Dimension Traveler",
       "text" : "[Dimension Traveler]\nOh! Are you interested in weapons? We have all the weapons we can get from the Ghost Palace. Why don't you choose one?"
     },
     {
@@ -69,6 +57,12 @@
       "line" : 19,
       "npc" : "Dimension Traveler",
       "text" : "[Dimension Traveler]\nHuhh! It seems like many of them already heard that I have the best stuff. Feel free to check out my collections."
+    },
+    {
+      "kind" : "message",
+      "line" : 19,
+      "npc" : "Dimension Traveler",
+      "text" : "[Dimension Traveler]\nGoodbye friend~ Come again!"
     },
     {
       "kind" : "message",
@@ -91,6 +85,26 @@
       "text" : "{0}{1} - {2}"
     },
     {
+      "kind" : "option",
+      "line" : 80,
+      "npc" : "Dimension Traveler",
+      "placeholders" : [
+        "getitemname(.@items[.@i])",
+        ".@items[.@i+1]"
+      ],
+      "text" : "{0} - {1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 81,
+      "npc" : "Dimension Traveler",
+      "placeholders" : [
+        ".@items[.@s+1]",
+        "getitemname(6672)"
+      ],
+      "text" : "[Dimension Traveler]\n{0} ^006400{1}^000000 are required in exchange."
+    },
+    {
       "kind" : "message",
       "line" : 81,
       "npc" : "Dimension Traveler",
@@ -106,10 +120,19 @@
       "line" : 81,
       "npc" : "Dimension Traveler",
       "placeholders" : [
+        "mesitemlink( .@items[.@s] )"
+      ],
+      "text" : "[Dimension Traveler]\nDo you mean {0}?"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Dimension Traveler",
+      "placeholders" : [
         ".@items[.@s+1]",
         "getitemname(6672)"
       ],
-      "text" : "[Dimension Traveler]\n{0} ^006400{1}^000000 are required in exchange."
+      "text" : "{0} ^006400{1}^000000 are required in exchange."
     },
     {
       "kind" : "option",
@@ -133,12 +156,6 @@
       "kind" : "message",
       "line" : 90,
       "npc" : "Dimension Traveler",
-      "text" : "[Dimension Traveler]"
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Dimension Traveler",
       "text" : "[Dimension Traveler]\nI have more than enough weapons."
     },
     {
@@ -155,6 +172,12 @@
         "getitemname(6672)"
       ],
       "text" : "[Dimension Traveler]\nIf you bring me {0}, I will trade it with anything you want."
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "Dimension Traveler",
+      "text" : "[Dimension Traveler]"
     },
     {
       "kind" : "message",

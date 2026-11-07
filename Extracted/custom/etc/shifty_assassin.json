@@ -57,10 +57,9 @@
       "line" : 37,
       "npc" : "Shifty Assassin",
       "placeholders" : [
-        "$ninja_avail",
-        ".@ninja_price"
+        "$ninja_avail"
       ],
-      "text" : "[Shifty Assassin]\nHow many ninjas do you want buy?\nThere are ^0000FF{0}^000000 ninjas available.\nThey cost ^0000FF{1} zeny ^000000each."
+      "text" : "[Shifty Assassin]\nHow many ninjas do you want buy?\nThere are ^0000FF{0}^000000 ninjas available.\nThey cost ^0000FF250000 zeny ^000000each."
     },
     {
       "kind" : "message",
@@ -124,13 +123,37 @@
         "#ninjas",
         "#ninjasr"
       ],
-      "text" : "[Shifty Assassin]\nActive Ninjas: {0}\nResting Ninjas: {1}\nHow many do you want to send?"
+      "text" : "[Shifty Assassin]\nActive Ninjas: {0}\nResting Ninjas: {1}\nHow many do you want to send?\n[Shifty Assassin]\nYou can't kill anyone without ninjas."
     },
     {
       "kind" : "message",
-      "line" : 92,
+      "line" : 77,
       "npc" : "Shifty Assassin",
-      "text" : "Sending ninjas now."
+      "placeholders" : [
+        "#ninjas",
+        "#ninjasr"
+      ],
+      "text" : "[Shifty Assassin]\nActive Ninjas: {0}\nResting Ninjas: {1}\nHow many do you want to send?\n[Shifty Assassin]\nYou do not have that many ninjas."
+    },
+    {
+      "kind" : "message",
+      "line" : 77,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        "#ninjas",
+        "#ninjasr"
+      ],
+      "text" : "[Shifty Assassin]\nActive Ninjas: {0}\nResting Ninjas: {1}\nHow many do you want to send?\n[Shifty Assassin]\nYou can only send 10 ninjas max."
+    },
+    {
+      "kind" : "message",
+      "line" : 77,
+      "npc" : "Shifty Assassin",
+      "placeholders" : [
+        "#ninjas",
+        "#ninjasr"
+      ],
+      "text" : "[Shifty Assassin]\nActive Ninjas: {0}\nResting Ninjas: {1}\nHow many do you want to send?\nSending ninjas now."
     },
     {
       "kind" : "message",
@@ -140,12 +163,6 @@
         "#ninjasr"
       ],
       "text" : "[Shifty Assassin]\nYour attack succeeded but only ^FF0000{0}^000000 Ninjas survived."
-    },
-    {
-      "kind" : "message",
-      "line" : 106,
-      "npc" : "Shifty Assassin",
-      "text" : "Sending ninjas now."
     },
     {
       "kind" : "message",
@@ -174,18 +191,6 @@
     },
     {
       "kind" : "message",
-      "line" : 134,
-      "npc" : "Shifty Assassin",
-      "text" : "[Shifty Assassin]\nYou can't kill anyone without ninjas."
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "Shifty Assassin",
-      "text" : "[Shifty Assassin]\nYou can only send 10 ninjas max."
-    },
-    {
-      "kind" : "message",
       "line" : 146,
       "npc" : "Shifty Assassin",
       "text" : "[Shifty Assassin]\nYou do not have enough zeny."
@@ -201,12 +206,6 @@
       "line" : 157,
       "npc" : "Shifty Assassin",
       "text" : "[Shifty Assassin]\nThere are no ninjas left to buy."
-    },
-    {
-      "kind" : "message",
-      "line" : 162,
-      "npc" : "Shifty Assassin",
-      "text" : "[Shifty Assassin]\nYou do not have that many ninjas."
     },
     {
       "kind" : "message",

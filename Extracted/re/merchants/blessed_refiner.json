@@ -17,15 +17,6 @@
       "text" : "[Blacksmith Dister]\nHow about it? Do you want to refine?"
     },
     {
-      "kind" : "option",
-      "line" : 33,
-      "placeholders" : [
-        ".@menu$",
-        "F_getpositionname(.@indices[.@i])"
-      ],
-      "text" : "{0}{1}-[Unequipped]"
-    },
-    {
       "kind" : "message",
       "line" : 35,
       "text" : "[Blacksmith Dister]"
@@ -33,32 +24,7 @@
     {
       "kind" : "message",
       "line" : 35,
-      "text" : "[Blacksmith Dister]\nI'm a blacksmith, not a hairstylist."
-    },
-    {
-      "kind" : "message",
-      "line" : 35,
-      "text" : "[Blacksmith Dister]\nWith my hammer, I will make you a star of the sky."
-    },
-    {
-      "kind" : "message",
-      "line" : 35,
-      "text" : "[Blacksmith Dister]\nMaking artificial hands is not my specialty."
-    },
-    {
-      "kind" : "message",
-      "line" : 35,
-      "text" : "[Blacksmith Dister]\nBring out the item so I can refine it!"
-    },
-    {
-      "kind" : "message",
-      "line" : 35,
-      "text" : "[Blacksmith Dister]\nWhere is this weird smell coming from?"
-    },
-    {
-      "kind" : "message",
-      "line" : 35,
-      "text" : "[Blacksmith Dister]\nWhere is the accessory?"
+      "text" : "[Blacksmith Dister]\nHuh? What do you want me to do?"
     },
     {
       "kind" : "message",
@@ -68,7 +34,32 @@
     {
       "kind" : "message",
       "line" : 35,
-      "text" : "[Blacksmith Dister]\nHuh? What do you want me to do?"
+      "text" : "[Blacksmith Dister]\nWhere is the accessory?"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "text" : "[Blacksmith Dister]\nWhere is this weird smell coming from?"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "text" : "[Blacksmith Dister]\nBring out the item so I can refine it!"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "text" : "[Blacksmith Dister]\nMaking artificial hands is not my specialty."
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "text" : "[Blacksmith Dister]\nWith my hammer, I will make you a star of the sky."
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "text" : "[Blacksmith Dister]\nI'm a blacksmith, not a hairstylist."
     },
     {
       "kind" : "message",
@@ -87,12 +78,59 @@
       "kind" : "message",
       "line" : 124,
       "placeholders" : [
-        ".@type$",
-        ".@equip_refine",
-        ".@ore$",
-        "callfunc(\"F_InsertComma\",.@price)"
+        ".@equip_refine"
       ],
-      "text" : "[Blacksmith Dister]\nThis {0} has been refined to {1}. To refine it, I need {2} and a {3} zeny refining fee.\nDo you want to proceed?"
+      "text" : "[Blacksmith Dister]\nThis Armor has been refined to {0}. To refine it, I need ^ff9999Blessed Armor Ore^000000 and a 20000 zeny refining fee.\nDo you want to proceed?"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "placeholders" : [
+        ".@equip_refine",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Blacksmith Dister]\nThis Armor has been refined to {0}. To refine it, I need ^ff9999Blessed Armor Ore^000000 and a {1} zeny refining fee.\nDo you want to proceed?"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "placeholders" : [
+        ".@equip_refine"
+      ],
+      "text" : "[Blacksmith Dister]\nThis Weapon has been refined to {0}. To refine it, I need ^ff9999Blessed Weapon Ore^000000 and a 40000 zeny refining fee.\nDo you want to proceed?"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "placeholders" : [
+        ".@equip_refine",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Blacksmith Dister]\nThis Weapon has been refined to {0}. To refine it, I need ^ff9999Blessed Weapon Ore^000000 and a {1} zeny refining fee.\nDo you want to proceed?"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "placeholders" : [
+        ".@equip_refine"
+      ],
+      "text" : "[Blacksmith Dister]\nThis Weapon has been refined to {0}. To refine it, I need ^ff9999Blessed Weapon Ore^000000 and a 20000 zeny refining fee.\nDo you want to proceed?"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "placeholders" : [
+        ".@equip_refine"
+      ],
+      "text" : "[Blacksmith Dister]\nThis Weapon has been refined to {0}. To refine it, I need ^ff9999Blessed Weapon Ore^000000 and a 2000 zeny refining fee.\nDo you want to proceed?"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "placeholders" : [
+        ".@equip_refine"
+      ],
+      "text" : "[Blacksmith Dister]\nThis Weapon has been refined to {0}. To refine it, I need ^ff9999Blessed Weapon Ore^000000 and a 1000 zeny refining fee.\nDo you want to proceed?"
     },
     {
       "kind" : "option",
@@ -112,11 +150,12 @@
     {
       "kind" : "message",
       "line" : 134,
-      "placeholders" : [
-        ".@type$",
-        ".@ore$"
-      ],
-      "text" : "[Blacksmith Dister]\nThis {0} has been refined many times. Although it will not disappear upon failure, the {1} will disappear!"
+      "text" : "[Blacksmith Dister]\nThis Armor has been refined many times. Although it will not disappear upon failure, the ^ff9999Blessed Armor Ore^000000 will disappear!"
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "text" : "[Blacksmith Dister]\nThis Weapon has been refined many times. Although it will not disappear upon failure, the ^ff9999Blessed Weapon Ore^000000 will disappear!"
     },
     {
       "kind" : "message",
@@ -142,12 +181,59 @@
       "kind" : "message",
       "line" : 147,
       "placeholders" : [
-        ".@equip_lv",
-        ".@type$",
-        ".@ore$",
-        "callfunc(\"F_InsertComma\",.@price)"
+        ".@equip_lv"
       ],
-      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} {1}, I need {2} and a {3} zeny refining fee."
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Armor, I need ^ff9999Blessed Armor Ore^000000 and a 20000 zeny refining fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "placeholders" : [
+        ".@equip_lv",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Armor, I need ^ff9999Blessed Armor Ore^000000 and a {1} zeny refining fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "placeholders" : [
+        ".@equip_lv"
+      ],
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Weapon, I need ^ff9999Blessed Weapon Ore^000000 and a 40000 zeny refining fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "placeholders" : [
+        ".@equip_lv",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Weapon, I need ^ff9999Blessed Weapon Ore^000000 and a {1} zeny refining fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "placeholders" : [
+        ".@equip_lv"
+      ],
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Weapon, I need ^ff9999Blessed Weapon Ore^000000 and a 20000 zeny refining fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "placeholders" : [
+        ".@equip_lv"
+      ],
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Weapon, I need ^ff9999Blessed Weapon Ore^000000 and a 2000 zeny refining fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "placeholders" : [
+        ".@equip_lv"
+      ],
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Weapon, I need ^ff9999Blessed Weapon Ore^000000 and a 1000 zeny refining fee."
     },
     {
       "kind" : "message",
@@ -172,10 +258,12 @@
     {
       "kind" : "message",
       "line" : 179,
-      "placeholders" : [
-        ".@ore$"
-      ],
-      "text" : "[Blacksmith Dister]\nOh! Although it was blessed by {0} to retain the equipment..."
+      "text" : "[Blacksmith Dister]\nOh! Although it was blessed by ^ff9999Blessed Armor Ore^000000 to retain the equipment..."
+    },
+    {
+      "kind" : "message",
+      "line" : 179,
+      "text" : "[Blacksmith Dister]\nOh! Although it was blessed by ^ff9999Blessed Weapon Ore^000000 to retain the equipment..."
     },
     {
       "kind" : "message",

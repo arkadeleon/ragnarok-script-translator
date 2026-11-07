@@ -33,13 +33,16 @@ struct Extract: ParsableCommand {
         var totalScripts = 0
         var totalFiles = 0
 
-        for fileURL in files {
+        let inputs = try files.map { fileURL -> (path: String, extractor: ScriptExtractor) in
             let relativePath = fileURL.path.replacingOccurrences(of: npcURL.path + "/", with: "")
             let data = try Data(contentsOf: fileURL)
-            let source = String(decoding: data, as: UTF8.self)
+            return (relativePath, ScriptExtractor(source: String(decoding: data, as: UTF8.self)))
+        }
+        let library = ScriptLibrary(scripts: inputs.flatMap { $0.extractor.scripts })
 
-            let extractor = ScriptExtractor(source: source)
-            let scripts = extractor.extract()
+        for input in inputs {
+            let relativePath = input.path
+            let scripts = input.extractor.extract(library: library)
             guard !scripts.isEmpty else {
                 continue
             }

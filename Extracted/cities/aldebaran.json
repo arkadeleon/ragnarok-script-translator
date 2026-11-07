@@ -1325,17 +1325,17 @@
       "kind" : "message",
       "line" : 786,
       "npc" : "Kafra Service",
-      "text" : "[Kafra Pavianne]\nLet's see...\nYou have 1 Kafra Pass.\nYou can sell that pass to us for 2000 zeny. Would you like to sell this Kafra Pass back to the Kafra Corporation?"
-    },
-    {
-      "kind" : "message",
-      "line" : 786,
-      "npc" : "Kafra Service",
       "placeholders" : [
         "countitem(1084)",
         ".@kafrapassmoney"
       ],
       "text" : "[Kafra Pavianne]\nLet's see...\nYou have {0} Kafra Passes.\nIf you want to sell them to us, you will receive {1} zeny. Would you like to sell these back to the Kafra Corporation?"
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Kafra Service",
+      "text" : "[Kafra Pavianne]\nLet's see...\nYou have 1 Kafra Pass.\nYou can sell that pass to us for 2000 zeny. Would you like to sell this Kafra Pass back to the Kafra Corporation?"
     },
     {
       "kind" : "option",
@@ -1931,18 +1931,18 @@
       "line" : 1111,
       "npc" : "Kafra Employee",
       "placeholders" : [
-        ".@points"
+        ".@total"
       ],
-      "text" : "[Kafra Employee]\nI'm sorry, but you don't\nenough Special Reserve\nPoints to exchange for this\nreward. You need at least\n^0000FF{0}^000000 more points."
+      "text" : "[Kafra Employee]\nAfter receiving this\nreward, you'll have\n^AC0000{0}^000000 Special Reserve\nPoints left. Would you\nlike to redeem your\npoints for this reward?"
     },
     {
       "kind" : "message",
       "line" : 1111,
       "npc" : "Kafra Employee",
       "placeholders" : [
-        ".@total"
+        ".@points"
       ],
-      "text" : "[Kafra Employee]\nAfter receiving this\nreward, you'll have\n^AC0000{0}^000000 Special Reserve\nPoints left. Would you\nlike to redeem your\npoints for this reward?"
+      "text" : "[Kafra Employee]\nI'm sorry, but you don't\nenough Special Reserve\nPoints to exchange for this\nreward. You need at least\n^0000FF{0}^000000 more points."
     },
     {
       "kind" : "option",
@@ -2002,13 +2002,19 @@
       "kind" : "message",
       "line" : 1181,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nOoh, something\ncame out! Let's see\nwhat you've won~\nOh goodness, it's...!"
+      "text" : "[Kafra Employee]\nIt looks like\nsomething came\nout! What could it be?\nOoh, you just won..."
     },
     {
       "kind" : "message",
       "line" : 1181,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nIt looks like\nsomething came\nout! What could it be?\nOoh, you just won..."
+      "text" : "[Kafra Employee]\nOoh, something\ncame out! Let's see\nwhat you've won~\nOh goodness, it's...!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1188,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]"
     },
     {
       "kind" : "message",
@@ -2036,15 +2042,15 @@
     },
     {
       "kind" : "message",
-      "line" : 1188,
-      "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]"
-    },
-    {
-      "kind" : "message",
       "line" : 1222,
       "npc" : "Kafra Employee",
       "text" : "set of Wooden Mail!\nToday must be your\nlucky day, adventurer!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1233,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]"
     },
     {
       "kind" : "message",
@@ -2069,12 +2075,6 @@
       "line" : 1233,
       "npc" : "Kafra Employee",
       "text" : "[Kafra Employee]\nOh wow...!\nFirst Prize!\n3 Blue Potions~\nWith enough of these,\nyou can use your skills\nwith a bit more impunity~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1233,
-      "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]"
     },
     {
       "kind" : "message",
@@ -2119,16 +2119,16 @@
       "kind" : "message",
       "line" : 1298,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\n....Oh dear... What are you carrying so many things...?\nI don't think you can keep the received items~"
+      "placeholders" : [
+        "RESRVPTS"
+      ],
+      "text" : "[Kafra Employee]\nYour special reserve points are ^FF0000{0}^000000~\nChoose a category to test your luck."
     },
     {
       "kind" : "message",
       "line" : 1298,
       "npc" : "Kafra Employee",
-      "placeholders" : [
-        "RESRVPTS"
-      ],
-      "text" : "[Kafra Employee]\nYour special reserve points are ^FF0000{0}^000000~\nChoose a category to test your luck."
+      "text" : "[Kafra Employee]\n....Oh dear... What are you carrying so many things...?\nI don't think you can keep the received items~"
     },
     {
       "kind" : "message",
@@ -2164,16 +2164,25 @@
       "kind" : "message",
       "line" : 1315,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nI'm sorry~ dear~\nYou can't choose the selected chance because you do not have enough special reserve points.\nPlease check your special reserve points and choose another one~"
+      "text" : "[Kafra Employee]\n^0000FF1st Lottery Chance!!^000000"
     },
     {
       "kind" : "message",
       "line" : 1315,
       "npc" : "Kafra Employee",
-      "placeholders" : [
-        "F_GetNumSuffix(.@s)"
-      ],
-      "text" : "[Kafra Employee]\n^0000FF{0} Lottery Chance!!^000000"
+      "text" : "[Kafra Employee]\n^0000FF2nd Lottery Chance!!^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1315,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\n^0000FF3rd Lottery Chance!!^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1315,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nI'm sorry~ dear~\nYou can't choose the selected chance because you do not have enough special reserve points.\nPlease check your special reserve points and choose another one~"
     },
     {
       "kind" : "message",
@@ -2233,19 +2242,13 @@
       "kind" : "message",
       "line" : 1346,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nThe 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF003 Blue Potions~^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 1346,
-      "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nWhoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF001 Yggdrasil Seed~^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 1346,
-      "npc" : "Kafra Employee",
       "text" : "[Kafra Employee]\nWhat a pity!\nYou got the 4th prize!!\nThe prize is ^00FF0010 White Potions~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nThe 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF003 Blue Potions~^000000"
     },
     {
       "kind" : "message",
@@ -2257,25 +2260,31 @@
       "kind" : "message",
       "line" : 1346,
       "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nThe 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF0010 Berserk Potions~^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 1346,
-      "npc" : "Kafra Employee",
-      "text" : "[Kafra Employee]\nWhoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF001 Yggdrasilberry~^000000\nThe prize is ^00FF001 Yggdrasil Seed~^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 1346,
-      "npc" : "Kafra Employee",
       "text" : "[Kafra Employee]\nWhat a pity!\nYou got the 4th prize!!\nThe prize is ^00FF0030 White Potions~^000000"
     },
     {
       "kind" : "message",
       "line" : 1346,
       "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nWhoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF001 Yggdrasil Seed~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nThe 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF0010 Berserk Potions~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
       "text" : "[Kafra Employee]\nThe 3rd~~\nThe 3rd prize!\nThe prize is ^00FF0010 Blue Potions~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "text" : "[Kafra Employee]\nWhoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF001 Yggdrasilberry~^000000\nThe prize is ^00FF001 Yggdrasil Seed~^000000"
     },
     {
       "kind" : "message",
@@ -2372,6 +2381,210 @@
       "line" : 1475,
       "npc" : "Kafra Employee",
       "text" : "[Kafra Employee]\nNo Problem~\nCollect more~ and more~ special reserve points~\nThank you for using Kafra Corporation's services~~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nWelcome to\nKinase - Blue Gallino\nThe one of Local Speciality in Aldebaran.\nYou can't go through from 4th Floor,\nPlease go back."
+    },
+    {
+      "kind" : "option",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "About Clock Tower"
+    },
+    {
+      "kind" : "option",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "About the 4th Floor"
+    },
+    {
+      "kind" : "option",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "Move to the 4th Floor"
+    },
+    {
+      "kind" : "option",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "End Dialogue"
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nAncient Alchemists\nSealed the Gate of 4th Floor using an Alchemistic Device \nTo keep something\nFrom Evil Creatures and Human Enemies.\nTo go through this door"
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nHmm! I already felt that you are not an Ordinary person,\nNow it seems to be successful in Speculation.\nPlease, you may enter.\nMay God bless you .."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nHomeland of Alchemy, Aldebaran!\nLong Time ago, there were\n3 Legendary Alchemists...They are\nBruke Seimer\nPhilip Warisez\nAnd .."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nIt needs a Key.\nThat Key has rumored to be possessed by Gatekeeper Creatures\nProwling around here."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nRomero Specialre!\nThis venerable architecture is\ntheir masterpiece.\nI assume you would feel something unusual\nWhile on the way to this floor,\nEvery feature of This Clocktower "
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nThe Key is the Intensiveness of Ancient Alchemy,\nBy hearsay When used once,\nIt will be released from being spelled\nAnd be disappeared."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nConsists of Mysterious Ancient Magics.\nIf you just wander around here,\n without any intention"
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nIf that key\nComes into your possession,\nPlease show me.\nThe one who possesses the Key\nWill have access to go through\nThis Gate with his own will!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nThis Clock Tower\nIs the place where the 3 Ancient Legendary Alchemists\nHas left their Spirits and Skills.\nPlease Do not Scribble or Damage on the Interior."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\n. . . . . .\nUnfortunately you don't have a privilege\nTo enter this Gate ..\nYou won't be able to go through\nAs long as Ancient Alchemists\n Don't grant you."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nBy any means,\nYou will meet with a mishap\nby Gatekeeper Creatures.\nPlease be careful .."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nI will give you a chance.\n. . . . ."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nWelcome to\nKinase - Blue Gallino\nThe one of Local Speciality in Aldebaran.\nYou can't go through from B4th Floor,\nPlease go back."
+    },
+    {
+      "kind" : "option",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "About Clock Tower"
+    },
+    {
+      "kind" : "option",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "About the B4th Floor"
+    },
+    {
+      "kind" : "option",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "Move to the B4th Floor"
+    },
+    {
+      "kind" : "option",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "End Dialogue"
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nAncient Alchemists\nSealed the Gate of 4th Floor using an Alchemistic Device \nTo keep something\nFrom Evil Creatures and Human Enemies.\nTo go through this door"
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nHmm! I already felt that you are not an Ordinary person,\nNow it seems to be successful in Speculation.\nPlease, you may enter.\nMay God bless you .."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nHomeland of Alchemy, Aldebaran!\nLong Time ago, there were\n3 Legendary Alchemists...They are\nBruke Seimer\nPhilip Warisez\nAnd .."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nIt needs a Key.\nThat Key has rumored to be possessed by Gatekeeper Creatures\nProwling around here."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nRomero Specialre!\nThis venerable architecture is\ntheir masterpiece.\nI assume you would feel something unusual\nWhile on the way to this floor,\nEvery feature of This Clocktower "
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nThe Key is the Intensiveness of Ancient Alchemy,\nBy hearsay When used once,\nIt will be released from being spelled\nAnd be disappeared."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nConsists of Mysterious Ancient Magics.\nIf you just wander around here,\n without any intention"
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nIf that key\nComes into your possession,\nPlease show me.\nThe one who possesses the Key\nWill have access to go through\nThis Gate with his own will!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nThis Clock Tower\nIs the place where the 3 Ancient Legendary Alchemists\nHas left their Spirits and Skills.\nPlease Do not Scribble or Damage on the Interior."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\n. . . . . .\nUnfortunately you don't have a privilege\nTo enter this Gate ..\nYou won't be able to go through\nAs long as Ancient Alchemists\n Don't grant you."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nBy any means,\nYou will meet with a mishap\nby Gatekeeper Creatures.\nPlease be careful .."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "text" : "[Gatekeeper Boy]\nI will give you a chance.\n. . . . ."
     },
     {
       "kind" : "message",

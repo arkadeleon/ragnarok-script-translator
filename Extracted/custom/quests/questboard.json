@@ -7,6 +7,32 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
         "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
         "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
         "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
@@ -39,13 +65,19 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
         "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
         "getd(\".\" +currentquest$+\"_collectionamount\")",
         "getd(\".\" +currentquest$+\"_collectionzeny\")",
         "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
         "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
       ],
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{7} - {8} ea.^000000\nZeny: ^0000FF{9}^000000\nBase EXP: ^0000FF{10}^000000\nJob EXP: ^0000FF{11}^000000"
     },
     {
       "kind" : "message",
@@ -53,11 +85,392 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
         "getd(\".\" +currentquest$+\"_collectionzeny\")",
         "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
         "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
       ],
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{7}^000000\nBase EXP: ^0000FF{8}^000000\nJob EXP: ^0000FF{9}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{10} - {11} ea.^000000\nZeny: ^0000FF{12}^000000\nBase EXP: ^0000FF{13}^000000\nJob EXP: ^0000FF{14}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{10}^000000\nBase EXP: ^0000FF{11}^000000\nJob EXP: ^0000FF{12}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{13} - {14} ea.^000000\nZeny: ^0000FF{15}^000000\nBase EXP: ^0000FF{16}^000000\nJob EXP: ^0000FF{17}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{13}^000000\nBase EXP: ^0000FF{14}^000000\nJob EXP: ^0000FF{15}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{16} - {17} ea.^000000\nZeny: ^0000FF{18}^000000\nBase EXP: ^0000FF{19}^000000\nJob EXP: ^0000FF{20}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{16}^000000\nBase EXP: ^0000FF{17}^000000\nJob EXP: ^0000FF{18}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{19} - {20} ea.^000000\nZeny: ^0000FF{21}^000000\nBase EXP: ^0000FF{22}^000000\nJob EXP: ^0000FF{23}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{19}^000000\nBase EXP: ^0000FF{20}^000000\nJob EXP: ^0000FF{21}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{22} - {23} ea.^000000\nZeny: ^0000FF{24}^000000\nBase EXP: ^0000FF{25}^000000\nJob EXP: ^0000FF{26}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{22}^000000\nBase EXP: ^0000FF{23}^000000\nJob EXP: ^0000FF{24}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n^FF0000{22} - {23}/{24} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{25} - {26} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n^FF0000{22} - {23}/{24} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +currentquest$+\"_collectionzeny\")"
+      ],
+      "text" : "Zeny: ^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")"
+      ],
+      "text" : "Base EXP: ^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 36,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "Job EXP: ^0000FF{0}^000000"
     },
     {
       "kind" : "option",
@@ -83,6 +496,32 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
         "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
         "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
         "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
@@ -115,13 +554,19 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
         "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
         "getd(\".\" +currentquest$+\"_huntingamount\")",
         "getd(\".\" +currentquest$+\"_huntingzeny\")",
         "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
         "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
       ],
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{7} - {8} ea.^000000\nZeny: ^0000FF{9}^000000\nBase EXP: ^0000FF{10}^000000\nJob EXP: ^0000FF{11}^000000"
     },
     {
       "kind" : "message",
@@ -129,11 +574,330 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
         "getd(\".\" +currentquest$+\"_huntingzeny\")",
         "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
         "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
       ],
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{7}^000000\nBase EXP: ^0000FF{8}^000000\nJob EXP: ^0000FF{9}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{10} - {11} ea.^000000\nZeny: ^0000FF{12}^000000\nBase EXP: ^0000FF{13}^000000\nJob EXP: ^0000FF{14}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{10}^000000\nBase EXP: ^0000FF{11}^000000\nJob EXP: ^0000FF{12}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{13} - {14} ea.^000000\nZeny: ^0000FF{15}^000000\nBase EXP: ^0000FF{16}^000000\nJob EXP: ^0000FF{17}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{13}^000000\nBase EXP: ^0000FF{14}^000000\nJob EXP: ^0000FF{15}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{16} - {17} ea.^000000\nZeny: ^0000FF{18}^000000\nBase EXP: ^0000FF{19}^000000\nJob EXP: ^0000FF{20}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{16}^000000\nBase EXP: ^0000FF{17}^000000\nJob EXP: ^0000FF{18}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{19} - {20} ea.^000000\nZeny: ^0000FF{21}^000000\nBase EXP: ^0000FF{22}^000000\nJob EXP: ^0000FF{23}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{19}^000000\nBase EXP: ^0000FF{20}^000000\nJob EXP: ^0000FF{21}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{22} - {23} ea.^000000\nZeny: ^0000FF{24}^000000\nBase EXP: ^0000FF{25}^000000\nJob EXP: ^0000FF{26}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{22}^000000\nBase EXP: ^0000FF{23}^000000\nJob EXP: ^0000FF{24}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n^FF0000{22} - {23}/{24} ea.^000000\n--------------------------------\n[Reward]"
     },
     {
       "kind" : "option",
@@ -192,16 +956,42 @@
       "kind" : "message",
       "line" : 95,
       "npc" : "Questboard",
-      "placeholders" : [
-        "Time2Str(getd(.@selection + \"_collection_delay\"))"
-      ],
-      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0}^000000 to do this quest again."
+      "text" : "[^FF7700Questboard^000000]"
     },
     {
       "kind" : "message",
-      "line" : 102,
+      "line" : 96,
       "npc" : "Questboard",
-      "text" : "[^FF7700Questboard^000000]\nYou already did this quest.\nPlease choose another one."
+      "placeholders" : [
+        ".@Time$"
+      ],
+      "text" : "You have to wait ^0000FF{0}^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000"
     },
     {
       "kind" : "message",
@@ -239,13 +1029,17 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
         "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
         "getd(\".\" +.@selection+\"_collectionamount\")",
         "getd(\".\" +.@selection+\"_collectionzeny\")",
         "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
         "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
       ],
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{5} - {6} ea.^000000\nZeny: ^0000FF{7}^000000\nBase EXP: ^0000FF{8}^000000\nJob EXP: ^0000FF{9}^000000"
     },
     {
       "kind" : "message",
@@ -253,11 +1047,428 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
         "getd(\".\" +.@selection+\"_collectionzeny\")",
         "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
         "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
       ],
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{5}^000000\nBase EXP: ^0000FF{6}^000000\nJob EXP: ^0000FF{7}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{7} - {8} ea.^000000\nZeny: ^0000FF{9}^000000\nBase EXP: ^0000FF{10}^000000\nJob EXP: ^0000FF{11}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{7}^000000\nBase EXP: ^0000FF{8}^000000\nJob EXP: ^0000FF{9}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{9} - {10} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{3} - {4} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{7} - {8} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{11} - {12} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{5} - {6} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n^FF0000{11} - {12} ea.^000000\n^FF0000{13} - {14} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n^FF0000{11} - {12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{13} - {14} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n^FF0000{11} - {12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 113,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "^FF0000{0} - {1} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 115,
+      "npc" : "Questboard",
+      "text" : "--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "npc" : "Questboard",
+      "text" : "[Reward]"
+    },
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "text" : "Item: ^0000FF{0} - {1} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "Questboard",
+      "text" : "Item: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +.@selection+\"_collectionzeny\")"
+      ],
+      "text" : "Zeny: ^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")"
+      ],
+      "text" : "Base EXP: ^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "text" : "Job EXP: ^0000FF{0}^000000"
     },
     {
       "kind" : "option",
@@ -279,9 +1490,27 @@
     },
     {
       "kind" : "message",
+      "line" : 126,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]"
+    },
+    {
+      "kind" : "message",
       "line" : 133,
       "npc" : "Questboard",
       "text" : "[^FF7700Questboard^000000]\nYou don't have the required\nlevel to do this quest."
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nYou don't have the required"
     },
     {
       "kind" : "option",
@@ -298,16 +1527,135 @@
       "kind" : "message",
       "line" : 148,
       "npc" : "Questboard",
-      "placeholders" : [
-        "Time2Str(getd(.@selection + \"_hunting_delay\"))"
-      ],
-      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0}^000000 to do this quest again."
+      "text" : "[^FF7700Questboard^000000]"
     },
     {
       "kind" : "message",
-      "line" : 155,
+      "line" : 148,
       "npc" : "Questboard",
-      "text" : "[^FF7700Questboard^000000]\nYou already did this quest.\nPlease choose another one."
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Time_Left"
+      ],
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} seconds^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Minutes"
+      ],
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} minutes, ^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Minutes",
+        ".@Time_Left"
+      ],
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} minutes, {1} seconds^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Hours"
+      ],
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} hours, ^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Hours",
+        ".@Time_Left"
+      ],
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} hours, {1} seconds^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Hours",
+        ".@Minutes"
+      ],
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} hours, {1} minutes, ^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Hours",
+        ".@Minutes",
+        ".@Time_Left"
+      ],
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} hours, {1} minutes, {2} seconds^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Days"
+      ],
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} days, ^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Days",
+        ".@Time_Left"
+      ],
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} days, {1} seconds^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 149,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Time$"
+      ],
+      "text" : "You have to wait ^0000FF{0}^000000 to do this quest again."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000"
     },
     {
       "kind" : "message",
@@ -345,13 +1693,17 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
         "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
         "getd(\".\" +.@selection+\"_huntingamount\")",
         "getd(\".\" +.@selection+\"_huntingzeny\")",
         "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
         "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
       ],
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{5} - {6} ea.^000000\nZeny: ^0000FF{7}^000000\nBase EXP: ^0000FF{8}^000000\nJob EXP: ^0000FF{9}^000000"
     },
     {
       "kind" : "message",
@@ -359,11 +1711,428 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
         "getd(\".\" +.@selection+\"_huntingzeny\")",
         "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
         "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
       ],
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{5}^000000\nBase EXP: ^0000FF{6}^000000\nJob EXP: ^0000FF{7}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{7} - {8} ea.^000000\nZeny: ^0000FF{9}^000000\nBase EXP: ^0000FF{10}^000000\nJob EXP: ^0000FF{11}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{7}^000000\nBase EXP: ^0000FF{8}^000000\nJob EXP: ^0000FF{9}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{9} - {10} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{3} - {4} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{7} - {8} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{11} - {12} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{5} - {6} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n^FF0000{11} - {12} ea.^000000\n^FF0000{13} - {14} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n^FF0000{11} - {12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{13} - {14} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n^FF0000{11} - {12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")"
+      ],
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 166,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "text" : "^FF0000{0} - {1} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Questboard",
+      "text" : "--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 169,
+      "npc" : "Questboard",
+      "text" : "[Reward]"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "text" : "Item: ^0000FF{0} - {1} ea.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Questboard",
+      "text" : "Item: ^0000FFNothing^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 171,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +.@selection+\"_huntingzeny\")"
+      ],
+      "text" : "Zeny: ^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 172,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")"
+      ],
+      "text" : "Base EXP: ^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 173,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "text" : "Job EXP: ^0000FF{0}^000000"
     },
     {
       "kind" : "option",
@@ -385,9 +2154,33 @@
     },
     {
       "kind" : "message",
+      "line" : 179,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]"
+    },
+    {
+      "kind" : "message",
       "line" : 186,
       "npc" : "Questboard",
       "text" : "[^FF7700Questboard^000000]\nYou don't have the required\nlevel to do this quest."
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]\nYou don't have the required"
+    },
+    {
+      "kind" : "message",
+      "line" : 204,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]"
     },
     {
       "kind" : "message",
@@ -397,9 +2190,27 @@
     },
     {
       "kind" : "message",
+      "line" : 205,
+      "npc" : "Questboard",
+      "text" : "You don't have everything."
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]"
+    },
+    {
+      "kind" : "message",
       "line" : 211,
       "npc" : "Questboard",
       "text" : "[^FF7700Questboard^000000]\nCongratulation! Here is your Reward."
+    },
+    {
+      "kind" : "message",
+      "line" : 212,
+      "npc" : "Questboard",
+      "text" : "Congratulation! Here is your Reward."
     },
     {
       "kind" : "message",
@@ -409,9 +2220,21 @@
     },
     {
       "kind" : "message",
+      "line" : 239,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]"
+    },
+    {
+      "kind" : "message",
       "line" : 243,
       "npc" : "Questboard",
       "text" : "[^FF7700Questboard^000000]\nCongratulation! Here is your Reward."
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "npc" : "Questboard",
+      "text" : "[^FF7700Questboard^000000]"
     }
   ]
 }

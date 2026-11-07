@@ -59,12 +59,6 @@
       "kind" : "option",
       "line" : 60,
       "npc" : "Marry Jay",
-      "text" : "Prepare Friday Memorial"
-    },
-    {
-      "kind" : "option",
-      "line" : 60,
-      "npc" : "Marry Jay",
       "text" : "Enter Friday Memorial"
     },
     {
@@ -72,6 +66,12 @@
       "line" : 60,
       "npc" : "Marry Jay",
       "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 60,
+      "npc" : "Marry Jay",
+      "text" : "Prepare Friday Memorial"
     },
     {
       "kind" : "message",
@@ -149,10 +149,13 @@
       "kind" : "message",
       "line" : 132,
       "npc" : "Marry Jay",
-      "placeholders" : [
-        "'mob[0]"
-      ],
-      "text" : "[Marry Jay]\nYour base level is too low to select this, you need to be level {0} or above."
+      "text" : "[Marry Jay]\nYour base level is too low to select this, you need to be level 130 or above."
+    },
+    {
+      "kind" : "message",
+      "line" : 132,
+      "npc" : "Marry Jay",
+      "text" : "[Marry Jay]\nYour base level is too low to select this, you need to be level 200 or above."
     },
     {
       "kind" : "message",
@@ -263,6 +266,24 @@
       "text" : "[Amateur Collector]\n^0000FFIf the accessory has a random option, the random option will be removed after initialization.^000000"
     },
     {
+      "kind" : "option",
+      "line" : 405,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "getitemname(getequipid(EQI_ACC_R))"
+      ],
+      "text" : "Right Acc - {0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 405,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "getitemname(getequipid(EQI_ACC_L))"
+      ],
+      "text" : "Left Acc - {0}"
+    },
+    {
       "kind" : "message",
       "line" : 412,
       "npc" : "Amateur Collector",
@@ -273,10 +294,18 @@
       "line" : 539,
       "npc" : "Amateur Collector",
       "placeholders" : [
-        ".@type_name$",
         "mesitemlink(.@equip_id, false)"
       ],
-      "text" : "[Amateur Collector]\nI cannot {0} this {1} accessory."
+      "text" : "[Amateur Collector]\nI cannot enchant this {0} accessory."
+    },
+    {
+      "kind" : "message",
+      "line" : 539,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)"
+      ],
+      "text" : "[Amateur Collector]\nI cannot reset this {0} accessory."
     },
     {
       "kind" : "message",
@@ -425,10 +454,18 @@
       "line" : 663,
       "npc" : "Amateur Collector",
       "placeholders" : [
-        "mesitemlink(.@equip_id, false)",
-        ".@success"
+        "mesitemlink(.@equip_id, false)"
       ],
-      "text" : "[Amateur Collector]\nAll enchanted effects will be removed from the {0}?\n^FF0000There is a {1}% chance of success. The accessory will be destroyed if the reset fails!^000000"
+      "text" : "[Amateur Collector]\nAll enchanted effects will be removed from the {0}?\n^FF0000There is a 20% chance of success. The accessory will be destroyed if the reset fails!^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 663,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)"
+      ],
+      "text" : "[Amateur Collector]\nAll enchanted effects will be removed from the {0}?\n^FF0000There is a 80% chance of success. The accessory will be destroyed if the reset fails!^000000"
     },
     {
       "kind" : "option",
@@ -471,24 +508,6 @@
         "mesitemlink(.@equip_id, false)"
       ],
       "text" : "[Amateur Collector]\nI have succeeded.\nThe {0} has been initialized."
-    },
-    {
-      "kind" : "option",
-      "line" : 709,
-      "npc" : "Amateur Collector",
-      "placeholders" : [
-        "getitemname(getequipid(EQI_ACC_R))"
-      ],
-      "text" : "Right Acc - {0}"
-    },
-    {
-      "kind" : "option",
-      "line" : 709,
-      "npc" : "Amateur Collector",
-      "placeholders" : [
-        "getitemname(getequipid(EQI_ACC_L))"
-      ],
-      "text" : "Left Acc - {0}"
     }
   ]
 }

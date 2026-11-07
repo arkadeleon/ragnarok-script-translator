@@ -29,43 +29,70 @@
       "kind" : "message",
       "line" : 39,
       "npc" : "Reno",
-      "text" : "[Reno]\nThe waiting time for a highest collection quest has expired. You can now take another request."
-    },
-    {
-      "kind" : "message",
-      "line" : 39,
-      "npc" : "Reno",
-      "placeholders" : [
-        ".@type$[.@i]"
-      ],
-      "text" : "[Reno]\nThe waiting time for a {0} collection quest has expired. You can now take another request."
-    },
-    {
-      "kind" : "message",
-      "line" : 39,
-      "npc" : "Reno",
-      "text" : "[Reno]\nThe waiting time for storing Rough Energy Crystals has expired. You can now store them again."
-    },
-    {
-      "kind" : "message",
-      "line" : 39,
-      "npc" : "Reno",
-      "text" : "[Reno]\nThe waiting time for storing Purified Energy Crystals has expired. You can now store them again."
-    },
-    {
-      "kind" : "message",
-      "line" : 39,
-      "npc" : "Reno",
-      "text" : "[Reno]\nThe waiting time for storing High Energy Crystals has expired. You can now store them again."
-    },
-    {
-      "kind" : "message",
-      "line" : 39,
-      "npc" : "Reno",
       "placeholders" : [
         ".@crystal$[.@i]"
       ],
       "text" : "[Reno]\nThe waiting time for storing {0} Energy Crystals has expired. You can now store them again."
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Reno",
+      "text" : "[Reno]\nFinished lower collection hunting quest."
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Reno",
+      "placeholders" : [
+        "getitemname(getarg(4))"
+      ],
+      "text" : "You receive 10 {0}s as the lower collection reward."
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Reno",
+      "text" : "[Reno]\nFinished intermediate collection hunting quest."
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Reno",
+      "placeholders" : [
+        "getitemname(getarg(4))"
+      ],
+      "text" : "You receive 10 {0}s as the intermediate collection reward."
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "npc" : "Reno",
+      "text" : "[Reno]\nFinished advanced collection hunting quest."
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "npc" : "Reno",
+      "placeholders" : [
+        "getitemname(getarg(4))"
+      ],
+      "text" : "You receive 5 {0}s as the advanced collection reward."
+    },
+    {
+      "kind" : "message",
+      "line" : 52,
+      "npc" : "Reno",
+      "text" : "[Reno]\nFinished highest collection hunting quest."
+    },
+    {
+      "kind" : "message",
+      "line" : 52,
+      "npc" : "Reno",
+      "placeholders" : [
+        "getitemname(getarg(4))"
+      ],
+      "text" : "You receive 10 {0}s as the highest collection reward."
     },
     {
       "kind" : "message",
@@ -222,49 +249,97 @@
       "kind" : "message",
       "line" : 119,
       "npc" : "Reno",
+      "text" : "[Reno]\nI am sorry but the request for the lower collection is only available for those level 60 and higher. You do not seem to be capable of carrying out this request."
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Reno",
       "placeholders" : [
-        ".@type$[.@select]",
         ".@min_level[.@select]"
       ],
-      "text" : "[Reno]\nI am sorry but the request for the {0} collection is only available for those level {1} and higher. You do not seem to be capable of carrying out this request."
+      "text" : "[Reno]\nI am sorry but the request for the intermediate collection is only available for those level {0} and higher. You do not seem to be capable of carrying out this request."
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Reno",
+      "placeholders" : [
+        ".@min_level[.@select]"
+      ],
+      "text" : "[Reno]\nI am sorry but the request for the advanced collection is only available for those level {0} and higher. You do not seem to be capable of carrying out this request."
     },
     {
       "kind" : "message",
       "line" : 124,
       "npc" : "Reno",
-      "placeholders" : [
-        ".@type$[.@select]"
-      ],
-      "text" : "[Reno]\nYou seem to be under the other request of {0} collection. If the quest seems to be too hard... how about you ^FF0000give up on the request^000000?"
+      "text" : "[Reno]\nYou seem to be under the other request of lower collection. If the quest seems to be too hard... how about you ^FF0000give up on the request^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Reno",
+      "text" : "[Reno]\nYou seem to be under the other request of intermediate collection. If the quest seems to be too hard... how about you ^FF0000give up on the request^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Reno",
+      "text" : "[Reno]\nYou seem to be under the other request of advanced collection. If the quest seems to be too hard... how about you ^FF0000give up on the request^000000?"
     },
     {
       "kind" : "message",
       "line" : 130,
       "npc" : "Reno",
-      "placeholders" : [
-        ".@type$[.@select]"
-      ],
-      "text" : "[Reno]\nCurrently waiting for the {0} collection commission. Tasks in each collection can only be completed once per day."
+      "text" : "[Reno]\nCurrently waiting for the lower collection commission. Tasks in each collection can only be completed once per day."
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Reno",
+      "text" : "[Reno]\nCurrently waiting for the intermediate collection commission. Tasks in each collection can only be completed once per day."
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Reno",
+      "text" : "[Reno]\nCurrently waiting for the advanced collection commission. Tasks in each collection can only be completed once per day."
     },
     {
       "kind" : "message",
       "line" : 134,
       "npc" : "Reno",
-      "placeholders" : [
-        ".@type$[.@select]",
-        ".@crystal$[.@select]"
-      ],
-      "text" : "[Reno]\nYou selected to hunt a monster from the {0} collection. After hunting these monsters you will receive 10 ^0000FF{1} Energy Crystals^000000 when you return to me."
+      "text" : "[Reno]\nYou selected to hunt a monster from the lower collection. After hunting these monsters you will receive 10 ^0000FFRough Energy Crystals^000000 when you return to me."
     },
     {
       "kind" : "message",
       "line" : 134,
       "npc" : "Reno",
-      "placeholders" : [
-        ".@type$[.@select]",
-        ".@crystal$[.@select]"
-      ],
-      "text" : "[Reno]\nYou selected to hunt a monster from the {0} collection. After hunting these monsters you will receive ^0000FF{1} Energy Crystals^000000 when you return to me."
+      "text" : "[Reno]\nYou selected to hunt a monster from the lower collection. After hunting these monsters you will receive ^0000FFRough Energy Crystals^000000 when you return to me."
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "npc" : "Reno",
+      "text" : "[Reno]\nYou selected to hunt a monster from the intermediate collection. After hunting these monsters you will receive 10 ^0000FFPurified Energy Crystals^000000 when you return to me."
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "npc" : "Reno",
+      "text" : "[Reno]\nYou selected to hunt a monster from the intermediate collection. After hunting these monsters you will receive ^0000FFPurified Energy Crystals^000000 when you return to me."
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "npc" : "Reno",
+      "text" : "[Reno]\nYou selected to hunt a monster from the advanced collection. After hunting these monsters you will receive 10 ^0000FFHigh Energy Crystals^000000 when you return to me."
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "npc" : "Reno",
+      "text" : "[Reno]\nYou selected to hunt a monster from the advanced collection. After hunting these monsters you will receive ^0000FFHigh Energy Crystals^000000 when you return to me."
     },
     {
       "kind" : "message",
@@ -399,19 +474,76 @@
       "kind" : "message",
       "line" : 179,
       "npc" : "Reno",
+      "text" : "[Reno]"
+    },
+    {
+      "kind" : "message",
+      "line" : 179,
+      "npc" : "Reno",
+      "text" : "[Reno]\nThe request for lower collection monsters has been issued. Please check the details on the issued document."
+    },
+    {
+      "kind" : "message",
+      "line" : 179,
+      "npc" : "Reno",
+      "text" : "[Reno]\nThe request for intermediate collection monsters has been issued. Please check the details on the issued document."
+    },
+    {
+      "kind" : "message",
+      "line" : 179,
+      "npc" : "Reno",
+      "text" : "[Reno]\nThe request for advanced collection monsters has been issued. Please check the details on the issued document."
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "Reno",
+      "text" : "The request for lower collection monsters has been issued. Please check the details on the issued document."
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "Reno",
+      "text" : "The request for intermediate collection monsters has been issued. Please check the details on the issued document."
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "Reno",
+      "text" : "The request for advanced collection monsters has been issued. Please check the details on the issued document."
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "Reno",
+      "text" : "The request for highest collection monsters has been issued. Please check the details on the issued document."
+    },
+    {
+      "kind" : "message",
+      "line" : 180,
+      "npc" : "Reno",
       "placeholders" : [
         ".@type$[.@select]"
       ],
-      "text" : "[Reno]\nThe request for {0} collection monsters has been issued. Please check the details on the issued document."
+      "text" : "The request for {0} collection monsters has been issued. Please check the details on the issued document."
     },
     {
       "kind" : "message",
       "line" : 186,
       "npc" : "Reno",
-      "placeholders" : [
-        ".@type$[.@i]"
-      ],
-      "text" : "[Reno]\nYou are currently under the request of the {0} collection. If you give up now, all your history will be lost. Do you really want to give up?"
+      "text" : "[Reno]\nYou are currently under the request of the lower collection. If you give up now, all your history will be lost. Do you really want to give up?"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Reno",
+      "text" : "[Reno]\nYou are currently under the request of the intermediate collection. If you give up now, all your history will be lost. Do you really want to give up?"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Reno",
+      "text" : "[Reno]\nYou are currently under the request of the advanced collection. If you give up now, all your history will be lost. Do you really want to give up?"
     },
     {
       "kind" : "option",
@@ -501,11 +633,19 @@
       "kind" : "message",
       "line" : 261,
       "npc" : "Reno",
-      "placeholders" : [
-        ".@crystal$[.@select-2]",
-        ".@min_level"
-      ],
-      "text" : "[Reno]\nWith a body like that, you can't accumulate {0} Energy Crystals. You must be level {1} or your body will be harmed in the process."
+      "text" : "[Reno]\nWith a body like that, you can't accumulate Rough Energy Crystals. You must be level 60 or your body will be harmed in the process."
+    },
+    {
+      "kind" : "message",
+      "line" : 261,
+      "npc" : "Reno",
+      "text" : "[Reno]\nWith a body like that, you can't accumulate Purified Energy Crystals. You must be level 80 or your body will be harmed in the process."
+    },
+    {
+      "kind" : "message",
+      "line" : 261,
+      "npc" : "Reno",
+      "text" : "[Reno]\nWith a body like that, you can't accumulate High Energy Crystals. You must be level 90 or your body will be harmed in the process."
     },
     {
       "kind" : "message",
@@ -523,10 +663,19 @@
       "kind" : "message",
       "line" : 276,
       "npc" : "Reno",
-      "placeholders" : [
-        ".@crystal$[.@select-2]"
-      ],
-      "text" : "[Reno]\nIt takes 3 hours for your body to accumulate 2 to 4 {0} Energy Crystals. Do you want to start?"
+      "text" : "[Reno]\nIt takes 3 hours for your body to accumulate 2 to 4 Rough Energy Crystals. Do you want to start?"
+    },
+    {
+      "kind" : "message",
+      "line" : 276,
+      "npc" : "Reno",
+      "text" : "[Reno]\nIt takes 3 hours for your body to accumulate 2 to 4 Purified Energy Crystals. Do you want to start?"
+    },
+    {
+      "kind" : "message",
+      "line" : 276,
+      "npc" : "Reno",
+      "text" : "[Reno]\nIt takes 3 hours for your body to accumulate 2 to 4 High Energy Crystals. Do you want to start?"
     },
     {
       "kind" : "option",
@@ -562,11 +711,19 @@
       "kind" : "message",
       "line" : 295,
       "npc" : "Reno",
-      "placeholders" : [
-        ".@crystal$[.@select-2]",
-        ".@crystal$[.@select-2]"
-      ],
-      "text" : "[Reno]\nEverything seems to be in order. Let's start accumulating {0} Energy Crystals. Remember to come back to me after 3 hours to get the {1} Energy Crystals."
+      "text" : "[Reno]\nEverything seems to be in order. Let's start accumulating Rough Energy Crystals. Remember to come back to me after 3 hours to get the Rough Energy Crystals."
+    },
+    {
+      "kind" : "message",
+      "line" : 295,
+      "npc" : "Reno",
+      "text" : "[Reno]\nEverything seems to be in order. Let's start accumulating Purified Energy Crystals. Remember to come back to me after 3 hours to get the Purified Energy Crystals."
+    },
+    {
+      "kind" : "message",
+      "line" : 295,
+      "npc" : "Reno",
+      "text" : "[Reno]\nEverything seems to be in order. Let's start accumulating High Energy Crystals. Remember to come back to me after 3 hours to get the High Energy Crystals."
     },
     {
       "kind" : "message",
@@ -769,7 +926,19 @@
       "kind" : "message",
       "line" : 423,
       "npc" : "Reno",
+      "text" : "[Reno]"
+    },
+    {
+      "kind" : "message",
+      "line" : 423,
+      "npc" : "Reno",
       "text" : "[Reno]\nThe materials to make a Safety Ring[1] are insufficient. Please check your inventory."
+    },
+    {
+      "kind" : "message",
+      "line" : 424,
+      "npc" : "Reno",
+      "text" : "The materials to make a Safety Ring[1] are insufficient. Please check your inventory."
     },
     {
       "kind" : "message",
@@ -779,9 +948,39 @@
     },
     {
       "kind" : "message",
+      "line" : 427,
+      "npc" : "Reno",
+      "text" : "[Reno]"
+    },
+    {
+      "kind" : "message",
+      "line" : 428,
+      "npc" : "Reno",
+      "text" : "Before upgrading your Safety Ring, please listen to these ^FF0000precautions^000000."
+    },
+    {
+      "kind" : "message",
       "line" : 430,
       "npc" : "Reno",
       "text" : "[Reno]\n^FF0000In addition to the Safety Ring, all refinements and cards of the required materials will also disappear.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 430,
+      "npc" : "Reno",
+      "text" : "[Reno]"
+    },
+    {
+      "kind" : "message",
+      "line" : 431,
+      "npc" : "Reno",
+      "text" : "^FF0000In addition to the Safety Ring, all refinements and cards of the required materials will also disappear.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 435,
+      "npc" : "Reno",
+      "text" : "[Reno]"
     },
     {
       "kind" : "message",
@@ -791,9 +990,27 @@
     },
     {
       "kind" : "message",
+      "line" : 436,
+      "npc" : "Reno",
+      "text" : "The materials are insufficient. Please check your materials."
+    },
+    {
+      "kind" : "message",
       "line" : 439,
       "npc" : "Reno",
       "text" : "[Reno]\nBefore upgrading your equipment, please listen to these ^FF0000precautions^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 439,
+      "npc" : "Reno",
+      "text" : "[Reno]"
+    },
+    {
+      "kind" : "message",
+      "line" : 440,
+      "npc" : "Reno",
+      "text" : "Before upgrading your equipment, please listen to these ^FF0000precautions^000000."
     },
     {
       "kind" : "message",
@@ -803,9 +1020,33 @@
     },
     {
       "kind" : "message",
+      "line" : 442,
+      "npc" : "Reno",
+      "text" : "[Reno]"
+    },
+    {
+      "kind" : "message",
+      "line" : 443,
+      "npc" : "Reno",
+      "text" : "^FF0000When using Energy Crystals to upgrade equipment, all previous refinements, enchantments, and cards will be lost.^000000"
+    },
+    {
+      "kind" : "message",
       "line" : 446,
       "npc" : "Reno",
       "text" : "[Reno]\nAre you familiar with the ^FF0000precautions^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 446,
+      "npc" : "Reno",
+      "text" : "[Reno]"
+    },
+    {
+      "kind" : "message",
+      "line" : 447,
+      "npc" : "Reno",
+      "text" : "Are you familiar with the ^FF0000precautions^000000?"
     },
     {
       "kind" : "option",
@@ -823,7 +1064,19 @@
       "kind" : "message",
       "line" : 450,
       "npc" : "Reno",
+      "text" : "[Reno]"
+    },
+    {
+      "kind" : "message",
+      "line" : 450,
+      "npc" : "Reno",
       "text" : "[Reno]\nOkay. Next time, then."
+    },
+    {
+      "kind" : "message",
+      "line" : 451,
+      "npc" : "Reno",
+      "text" : "Okay. Next time, then."
     },
     {
       "kind" : "message",
@@ -846,9 +1099,46 @@
     },
     {
       "kind" : "message",
+      "line" : 454,
+      "npc" : "Reno",
+      "text" : "[Reno]"
+    },
+    {
+      "kind" : "message",
+      "line" : 455,
+      "npc" : "Reno",
+      "placeholders" : [
+        "getitemname(.@material)",
+        ".@showslot[.@index]"
+      ],
+      "text" : "Then let's begin to upgrade {0}[{1}]."
+    },
+    {
+      "kind" : "message",
+      "line" : 455,
+      "npc" : "Reno",
+      "placeholders" : [
+        "getitemname(.@material)"
+      ],
+      "text" : "Then let's begin to upgrade {0}."
+    },
+    {
+      "kind" : "message",
+      "line" : 470,
+      "npc" : "Reno",
+      "text" : "[Reno]"
+    },
+    {
+      "kind" : "message",
       "line" : 470,
       "npc" : "Reno",
       "text" : "[Reno]\nThe upgrade was successful. Your Energy Crystals will help our research greatly."
+    },
+    {
+      "kind" : "message",
+      "line" : 471,
+      "npc" : "Reno",
+      "text" : "The upgrade was successful. Your Energy Crystals will help our research greatly."
     },
     {
       "kind" : "message",
@@ -957,26 +1247,6 @@
       "line" : 583,
       "npc" : "Reno",
       "text" : "[Reno]\nThis is the brochure regarding the equipment upgrade that our Energy Crystal research association provides. Please take a look around."
-    },
-    {
-      "kind" : "message",
-      "line" : 594,
-      "npc" : "Reno",
-      "placeholders" : [
-        "getarg(3)"
-      ],
-      "text" : "[Reno]\nFinished {0} collection hunting quest."
-    },
-    {
-      "kind" : "message",
-      "line" : 600,
-      "npc" : "Reno",
-      "placeholders" : [
-        "getarg(5)",
-        "getitemname(getarg(4))",
-        "getarg(3)"
-      ],
-      "text" : "You receive {0} {1}s as the {2} collection reward."
     }
   ]
 }

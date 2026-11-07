@@ -20,21 +20,6 @@
       "text" : "[Coin Exchanger CX-1]\nWelcome to CX-1. If you have coins, you can exchange them to high or low grade coins."
     },
     {
-      "kind" : "option",
-      "line" : 47,
-      "npc" : "Coin Exchanger CX-1",
-      "text" : "Stop"
-    },
-    {
-      "kind" : "option",
-      "line" : 47,
-      "npc" : "Coin Exchanger CX-1",
-      "placeholders" : [
-        "getitemname(.@coins[.@i])"
-      ],
-      "text" : "^aaaaaa{0} (None)^000000"
-    },
-    {
       "kind" : "message",
       "line" : 50,
       "npc" : "Coin Exchanger CX-1",
@@ -75,40 +60,15 @@
       "line" : 85,
       "npc" : "Coin Exchanger CX-1",
       "placeholders" : [
-        ".@exchange_name$[.@i]"
+        "getitemname(.@coin)"
       ],
-      "text" : "^ff3333Unavailable exchange to {0} coin^000000"
+      "text" : "Exchange to higher coin - {0} (30 needed)"
     },
     {
       "kind" : "option",
       "line" : 85,
       "npc" : "Coin Exchanger CX-1",
       "text" : "^aaaaaaExchange to higher coin (null)^000000"
-    },
-    {
-      "kind" : "option",
-      "line" : 85,
-      "npc" : "Coin Exchanger CX-1",
-      "text" : "^aaaaaaExchange to lower coin (null)^000000"
-    },
-    {
-      "kind" : "option",
-      "line" : 85,
-      "npc" : "Coin Exchanger CX-1",
-      "placeholders" : [
-        ".@exchange_name$[.@i]"
-      ],
-      "text" : "^aaaaaaExchange to {0} coin (null)^000000"
-    },
-    {
-      "kind" : "option",
-      "line" : 85,
-      "npc" : "Coin Exchanger CX-1",
-      "placeholders" : [
-        "getitemname(.@coin)",
-        ".@exchange_rate[.@i]"
-      ],
-      "text" : "Exchange to higher coin - {0} ({1} needed)"
     },
     {
       "kind" : "option",
@@ -124,18 +84,34 @@
       "kind" : "option",
       "line" : 85,
       "npc" : "Coin Exchanger CX-1",
-      "placeholders" : [
-        ".@exchange_name$[.@i]",
-        "getitemname(.@coin)",
-        ".@exchange_rate[.@i]"
-      ],
-      "text" : "Exchange to {0} coin - {1} ({2} needed)"
+      "text" : "^aaaaaaExchange to lower coin (null)^000000"
     },
     {
       "kind" : "message",
       "line" : 87,
       "npc" : "Coin Exchanger CX-1",
       "text" : "[Coin Exchanger CX-1]\nThank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "text" : "[Coin Exchanger CX-1]\nThis coin is not available to exchange to {0} coin."
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "[Coin Exchanger CX-1]\nThis coin is not available to exchange to higher coin."
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "[Coin Exchanger CX-1]\nThis coin is not available to exchange to lower coin."
     },
     {
       "kind" : "message",
@@ -160,6 +136,33 @@
     },
     {
       "kind" : "message",
+      "line" : 94,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to higher coin."
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to lower coin."
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to {0} coin."
+    },
+    {
+      "kind" : "message",
       "line" : 98,
       "npc" : "Coin Exchanger CX-1",
       "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to higher coin.\nThank you for coming."
@@ -178,6 +181,12 @@
         ".@exchange_name$[.@i]"
       ],
       "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to {0} coin.\nThank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
+      "npc" : "Coin Exchanger CX-1",
+      "text" : "Thank you for coming."
     },
     {
       "kind" : "message",
@@ -218,6 +227,17 @@
     },
     {
       "kind" : "message",
+      "line" : 106,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        "getitemname(.@coin)",
+        ".@exchange_loss[(!.@i)]",
+        ".@exchange_total"
+      ],
+      "text" : "[Coin Exchanger CX-1]\n^00339930^000000 unit(s) of ^003399 {0}^000000 taken.\nI exchanged them for ^003399higher coins^000000, after deducting ^003399{1}^000000 unit(s), ^003399{2}^000000 unit(s) remaining."
+    },
+    {
+      "kind" : "message",
       "line" : 114,
       "npc" : "Special Vending Machine",
       "text" : "You have too many kinds of objects. Let's try to continue after reducing those objects."
@@ -233,6 +253,216 @@
       "line" : 121,
       "npc" : "Special Vending Machine",
       "text" : "[Special Vending Machine]\nWelcome to CX-82. You have a Silvervine Fruit, so you can purchase the Malangdo Specialty that has special ability."
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Explanation"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Seagod's Protection [23 hours]"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Seagod's Protection [7 days]"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Seagod's Protection [15 days]"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Octopus Hunting Stick [23 hours]"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Octopus Hunting Stick [3 days]"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Octopus Hunting Stick [7 days]"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Premium Lubricant"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Ordinary Lubricant"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Sillit Pong"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nSeagod's Protection is an item used for entering the Culvert memorial dungeon during a certain period."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Seagod's Protection [23 hours]^000000. For purchasing, you need ^0055004^000000 unit(s) of Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Seagod's Protection [7 days]^000000. For purchasing, you need ^00550012^000000 unit(s) of Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Seagod's Protection [15 days]^000000. For purchasing, you need ^00550024^000000 unit(s) of Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Octopus Hunting Stick [23 hours]^000000. For purchasing, you need ^0055002^000000 unit(s) of Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Octopus Hunting Stick [3 days]^000000. For purchasing, you need ^0055005^000000 unit(s) of Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Octopus Hunting Stick [7 days]^000000. For purchasing, you need ^00550010^000000 unit(s) of Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Premium Lubricant^000000. For purchasing, you need ^00550056^000000 unit(s) of Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Ordinary Lubricant^000000. For purchasing, you need ^00550036^000000 unit(s) of Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Sillit Pong^000000. For purchasing, you need ^005500192^000000 unit(s) of Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nOctopus Hunting Stick is an item used for entering the Culvert memorial dungeon during a certain period."
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Stop"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "placeholders" : [
+        "countitem(6417)"
+      ],
+      "text" : "Purchase - Silvervine Fruit (have {0})"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "placeholders" : [
+        ".@cost - countitem(6417)"
+      ],
+      "text" : "^999999Silvervine Fruit (missing {0})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nPremium and Ordinary Lubricant are items used for separation of equipment and cards. If you visit the specialist Jeremy with either item, he will explain more details of the effects."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "The transaction is completed. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Not enough Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "Closing the transaction."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nThank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nSillit Pong is special item that separates sockets with MVP cards. Unable to separate MVP card by Premium and Ordinary Lubricant."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nThe transaction is completed. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "text" : "[Special Vending Machine]\nNot enough Silvervine Fruit.\nClosing the transaction.\nThank you for coming."
     },
     {
       "kind" : "option",
@@ -285,18 +515,18 @@
       "line" : 161,
       "npc" : "Special Vending Machine",
       "placeholders" : [
-        ".@cost - countitem(6417)"
+        "countitem(6417)"
       ],
-      "text" : "^999999Silvervine Fruit (missing {0})^000000"
+      "text" : "Purchase - Silvervine Fruit (have {0})"
     },
     {
       "kind" : "option",
       "line" : 161,
       "npc" : "Special Vending Machine",
       "placeholders" : [
-        "countitem(6417)"
+        ".@cost - countitem(6417)"
       ],
-      "text" : "Purchase - Silvervine Fruit (have {0})"
+      "text" : "^999999Silvervine Fruit (missing {0})^000000"
     },
     {
       "kind" : "message",
@@ -338,16 +568,19 @@
       "kind" : "option",
       "line" : 204,
       "npc" : "Dark Merchant K",
-      "placeholders" : [
-        ".@coin_amount[.@i]/10"
-      ],
-      "text" : "Exchange {0} Mora Coin"
+      "text" : "Quit"
     },
     {
       "kind" : "option",
       "line" : 204,
       "npc" : "Dark Merchant K",
-      "text" : "Quit"
+      "text" : "^aaaaaaExchange 1 Mora Coin (Not Enough)^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 204,
+      "npc" : "Dark Merchant K",
+      "text" : "Exchange 1 Mora Coin"
     },
     {
       "kind" : "option",
@@ -359,10 +592,43 @@
       "text" : "^aaaaaaExchange {0} Mora Coin (Not Enough)^000000"
     },
     {
+      "kind" : "option",
+      "line" : 204,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]/10"
+      ],
+      "text" : "Exchange {0} Mora Coin"
+    },
+    {
+      "kind" : "message",
+      "line" : 206,
+      "npc" : "Dark Merchant K",
+      "text" : "[Merchant K]"
+    },
+    {
       "kind" : "message",
       "line" : 206,
       "npc" : "Dark Merchant K",
       "text" : "[Merchant K]\nLet's exchange some other time."
+    },
+    {
+      "kind" : "message",
+      "line" : 207,
+      "npc" : "Dark Merchant K",
+      "text" : "Let's exchange some other time."
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Dark Merchant K",
+      "text" : "[Merchant K]"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Dark Merchant K",
+      "text" : "[Merchant K]\nYou need ^ff000010^000000 C Grade Coin to perform the exchange. But you don't seem to have enough now."
     },
     {
       "kind" : "message",
@@ -372,6 +638,21 @@
         ".@coin_amount[.@i]"
       ],
       "text" : "[Merchant K]\nYou need ^ff0000{0}^000000 C Grade Coin to perform the exchange. But you don't seem to have enough now."
+    },
+    {
+      "kind" : "message",
+      "line" : 212,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]"
+      ],
+      "text" : "You need ^ff0000{0}^000000 C Grade Coin to perform the exchange. But you don't seem to have enough now."
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "npc" : "Dark Merchant K",
+      "text" : "[Merchant K]\nC Grade Coin ^00339910^000000 well received.\nExchanged to ^0033991^000000 Mora Coin."
     },
     {
       "kind" : "message",
@@ -385,9 +666,45 @@
     },
     {
       "kind" : "message",
+      "line" : 217,
+      "npc" : "Dark Merchant K",
+      "text" : "[Merchant K]"
+    },
+    {
+      "kind" : "message",
+      "line" : 218,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]"
+      ],
+      "text" : "C Grade Coin ^003399{0}^000000 well received."
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]/10"
+      ],
+      "text" : "Exchanged to ^003399{0}^000000 Mora Coin."
+    },
+    {
+      "kind" : "message",
       "line" : 221,
       "npc" : "Dark Merchant K",
       "text" : "[Merchant K]\nWould you like to continue?"
+    },
+    {
+      "kind" : "message",
+      "line" : 221,
+      "npc" : "Dark Merchant K",
+      "text" : "[Merchant K]"
+    },
+    {
+      "kind" : "message",
+      "line" : 222,
+      "npc" : "Dark Merchant K",
+      "text" : "Would you like to continue?"
     },
     {
       "kind" : "message",
@@ -412,31 +729,6 @@
       "line" : 239,
       "npc" : "Dark MachineTX100",
       "text" : "[Dark Machine TX100]\nFor a lower level coin exchange you can do 500 as a 1 time maximum, and for higher level coin exchange you can do 99 as a 1 time maximum."
-    },
-    {
-      "kind" : "option",
-      "line" : 256,
-      "npc" : "Dark MachineTX100",
-      "text" : "Quit"
-    },
-    {
-      "kind" : "option",
-      "line" : 256,
-      "npc" : "Dark MachineTX100",
-      "placeholders" : [
-        "getitemname(.@coins[.@i])",
-        "countitem(.@coins[.@i])"
-      ],
-      "text" : "{0} (have {1})"
-    },
-    {
-      "kind" : "option",
-      "line" : 256,
-      "npc" : "Dark MachineTX100",
-      "placeholders" : [
-        "getitemname(.@coins[.@i])"
-      ],
-      "text" : "^aaaaaa{0} (None)^000000"
     },
     {
       "kind" : "message",
@@ -484,16 +776,16 @@
       "kind" : "option",
       "line" : 304,
       "npc" : "Dark MachineTX100",
-      "placeholders" : [
-        "getitemname(.@coin)"
-      ],
-      "text" : "Exchange 99 {0} into higher level coin"
+      "text" : "^aaaaaaExchange to higher level coin (Not enough)^000000"
     },
     {
       "kind" : "option",
       "line" : 304,
       "npc" : "Dark MachineTX100",
-      "text" : "^aaaaaaExchange to higher level coin (Not enough)^000000"
+      "placeholders" : [
+        "getitemname(.@coin)"
+      ],
+      "text" : "Exchange 99 {0} into higher level coin"
     },
     {
       "kind" : "option",
@@ -508,6 +800,12 @@
       "kind" : "option",
       "line" : 304,
       "npc" : "Dark MachineTX100",
+      "text" : "^aaaaaaExchange to lower level coin (Not enough)^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 304,
+      "npc" : "Dark MachineTX100",
       "placeholders" : [
         "countitem(.@coin)",
         "getitemname(.@coin)"
@@ -515,22 +813,10 @@
       "text" : "Exchange {0} {1} into lower level coin"
     },
     {
-      "kind" : "option",
-      "line" : 304,
-      "npc" : "Dark MachineTX100",
-      "text" : "^aaaaaaExchange to lower level coin (Not enough)^000000"
-    },
-    {
       "kind" : "message",
       "line" : 306,
       "npc" : "Dark MachineTX100",
       "text" : "[Dark Machine TX100]\nThank you for coming."
-    },
-    {
-      "kind" : "message",
-      "line" : 311,
-      "npc" : "Dark MachineTX100",
-      "text" : "[Dark Machine TX100]\nThis coin cannot be exchanged to a higher level coin."
     },
     {
       "kind" : "message",
@@ -549,9 +835,45 @@
     },
     {
       "kind" : "message",
+      "line" : 311,
+      "npc" : "Dark MachineTX100",
+      "text" : "[Dark Machine TX100]\nThis coin cannot be exchanged to a higher level coin."
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Dark MachineTX100",
+      "text" : "[Dark Machine TX100]\nThis coin cannot be exchanged to a higher level coin.\nAborting process. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Dark MachineTX100",
+      "text" : "[Dark Machine TX100]\nThis coin cannot be exchanged to a lower level coin.\nAborting process. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "text" : "[Dark Machine TX100]\nThis coin cannot be exchanged to a {0} level coin.\nAborting process. Thank you for coming."
+    },
+    {
+      "kind" : "message",
       "line" : 313,
       "npc" : "Dark MachineTX100",
       "text" : "Aborting process. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "text" : "[Dark Machine TX100]\nYou have not enough coins for a {0} level coin exchange."
     },
     {
       "kind" : "message",
@@ -569,16 +891,37 @@
       "kind" : "message",
       "line" : 317,
       "npc" : "Dark MachineTX100",
+      "text" : "[Dark Machine TX100]\nYou have not enough coins for a higher level coin exchange.\nAborting process. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Dark MachineTX100",
+      "text" : "[Dark Machine TX100]\nYou have not enough coins for a lower level coin exchange.\nAborting process. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Dark MachineTX100",
       "placeholders" : [
         ".@exchange_name$[.@i]"
       ],
-      "text" : "[Dark Machine TX100]\nYou have not enough coins for a {0} level coin exchange."
+      "text" : "[Dark Machine TX100]\nYou have not enough coins for a {0} level coin exchange.\nAborting process. Thank you for coming."
     },
     {
       "kind" : "message",
       "line" : 319,
       "npc" : "Dark MachineTX100",
       "text" : "Aborting process. Thank you for coming."
+    },
+    {
+      "kind" : "message",
+      "line" : 323,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "text" : "[Dark Machine TX100]\nYou have too many {0} level coins already. Please come back with less coins."
     },
     {
       "kind" : "message",
@@ -594,12 +937,9 @@
     },
     {
       "kind" : "message",
-      "line" : 323,
+      "line" : 342,
       "npc" : "Dark MachineTX100",
-      "placeholders" : [
-        ".@exchange_name$[.@i]"
-      ],
-      "text" : "[Dark Machine TX100]\nYou have too many {0} level coins already. Please come back with less coins."
+      "text" : "[Dark Machine TX100]"
     },
     {
       "kind" : "message",
@@ -620,11 +960,21 @@
       "npc" : "Dark MachineTX100",
       "placeholders" : [
         "getitemname(.@coin)",
-        ".@payment_amount",
         ".@reward_amount-.@fee",
         ".@fee"
       ],
-      "text" : "[Dark Machine TX100]\nReceived ^003399{0}^000000 for ^003399{1}^000000 unit(s).\nWe have exchanged your coin to ^003399{2}^000000 unit(s) of ^003399High Level Coin^000000, deducted ^003399{3}^000000 unit(s) as exchanging fee."
+      "text" : "[Dark Machine TX100]\nReceived ^003399{0}^000000 for ^00339999^000000 unit(s).\nWe have exchanged your coin to ^003399{1}^000000 unit(s) of ^003399High Level Coin^000000, deducted ^003399{2}^000000 unit(s) as exchanging fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 342,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        "getitemname(.@coin)",
+        ".@reward_amount-.@fee",
+        ".@fee"
+      ],
+      "text" : "[Dark Machine TX100]\nReceived ^003399{0}^000000 for ^003399500^000000 unit(s).\nWe have exchanged your coin to ^003399{1}^000000 unit(s) of ^003399Low Level Coin^000000, deducted ^003399{2}^000000 unit(s) as exchanging fee."
     },
     {
       "kind" : "message",
@@ -637,6 +987,47 @@
         ".@fee"
       ],
       "text" : "[Dark Machine TX100]\nReceived ^003399{0}^000000 for ^003399{1}^000000 unit(s).\nWe have exchanged your coin to ^003399{2}^000000 unit(s) of ^003399Low Level Coin^000000, deducted ^003399{3}^000000 unit(s) as exchanging fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 343,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        "getitemname(.@coin)",
+        ".@payment_amount"
+      ],
+      "text" : "Received ^003399{0}^000000 for ^003399{1}^000000 unit(s)."
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@reward_amount-.@fee",
+        ".@coin_text$",
+        ".@fee"
+      ],
+      "text" : "We have exchanged your coin to ^003399{0}^000000 unit(s) of ^003399{1} Level Coin^000000, deducted ^003399{2}^000000 unit(s) as exchanging fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@reward_amount-.@fee",
+        ".@fee"
+      ],
+      "text" : "We have exchanged your coin to ^003399{0}^000000 unit(s) of ^003399High Level Coin^000000, deducted ^003399{1}^000000 unit(s) as exchanging fee."
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@reward_amount-.@fee",
+        ".@fee"
+      ],
+      "text" : "We have exchanged your coin to ^003399{0}^000000 unit(s) of ^003399Low Level Coin^000000, deducted ^003399{1}^000000 unit(s) as exchanging fee."
     },
     {
       "kind" : "message",
@@ -757,6 +1148,24 @@
       "line" : 417,
       "npc" : "Can Agency Guard",
       "text" : "[Can Agency Guard]\nUmm? I don't think you have enough to exchange... Come to me again when the amount is exactly decided."
+    },
+    {
+      "kind" : "message",
+      "line" : 424,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nExchanged 1 Malangdo Cat Can to 3 E Class Coin. Check it out."
+    },
+    {
+      "kind" : "message",
+      "line" : 424,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nExchanged 10 Malangdo Cat Can to 30 E Class Coin. Check it out."
+    },
+    {
+      "kind" : "message",
+      "line" : 424,
+      "npc" : "Can Agency Guard",
+      "text" : "[Can Agency Guard]\nExchanged 100 Malangdo Cat Can to 300 E Class Coin. Check it out."
     },
     {
       "kind" : "message",
@@ -883,9 +1292,9 @@
       "placeholders" : [
         "getarg(1)",
         "getarg(2)",
-        "getarg(5)"
+        "getarg(6)"
       ],
-      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} Malangdo Canned Specialties."
+      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} Silvervine Fruit."
     },
     {
       "kind" : "message",
@@ -894,9 +1303,9 @@
       "placeholders" : [
         "getarg(1)",
         "getarg(2)",
-        "getarg(6)"
+        "getarg(5)"
       ],
-      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} Silvervine Fruit."
+      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} Malangdo Canned Specialties."
     },
     {
       "kind" : "message",
@@ -947,16 +1356,6 @@
       "line" : 551,
       "npc" : "F_mal_coin",
       "placeholders" : [
-        "getarg(1)",
-        ".@str$"
-      ],
-      "text" : "{0}\nI'm sorry, you need more {1}."
-    },
-    {
-      "kind" : "message",
-      "line" : 551,
-      "npc" : "F_mal_coin",
-      "placeholders" : [
         "getarg(1)"
       ],
       "text" : "{0}\nI'm sorry, you need more coins."
@@ -968,7 +1367,7 @@
       "placeholders" : [
         "getarg(1)"
       ],
-      "text" : "{0}\nI'm sorry, you need more cans."
+      "text" : "{0}\nI'm sorry, you need more Silvervine Fruit."
     },
     {
       "kind" : "message",
@@ -977,7 +1376,7 @@
       "placeholders" : [
         "getarg(1)"
       ],
-      "text" : "{0}\nI'm sorry, you need more Silvervine Fruit."
+      "text" : "{0}\nI'm sorry, you need more cans."
     },
     {
       "kind" : "message",
@@ -1005,6 +1404,72 @@
         "getarg(1)"
       ],
       "text" : "{0}\nAlways be careful\nwhen you purchase items."
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nNice to meet you~~\nI am! YES~~ That's right!\nI'm selling special stuff\nwhich you can see only here on Meow Meow Island!"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nHow about it? What are you waiting for?\nWhy don't you take a look at\nwhat kinds of stuff I have?"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nOh~\nThese are rental items, so make sure you know if you have the ^0000FF1 hour^000000 or ^0000FF7 day^000000 version."
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWell then, do you want to take a look at what I have now?"
+    },
+    {
+      "kind" : "option",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWell, take a good look at them~~~"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nAhaaa~\nIf you want to buy this stuff,\nyou can talk to me\nwhen you grow up a little more.\nThis stuff is too expensive\nfor a child~"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWell, then. I'll see you next time.\nGoodbye."
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nIt seems that there are too many items in your inventory.\nPlease make space and come back again~"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nIt seems that you're overweight.\nPlease reduce your weight and come back again~"
     },
     {
       "kind" : "option",
@@ -1094,199 +1559,7 @@
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail (7Days)]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish (7Days)]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel (7Days)]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna (7Days)]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel (7Days)]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab (7Days)]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail (7Days)]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish (7Days)]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel (7Days)]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna (7Days)]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel (7Days)]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab (7Days)]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish]^000000?\nThis fish looks like a long belt."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna]^000000?\nThis fish looks like a long belt."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
       "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail]^000000?\nThis fish looks like a long belt."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel]^000000?\nThis fish looks like a long belt."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab]^000000?\nThis fish looks like a long belt."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel]^000000?\nThis fish looks like a long belt."
     },
     {
       "kind" : "message",
@@ -1298,58 +1571,7 @@
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish (7Days)]^000000?\nThis fish looks like a long belt."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel (7Days)]^000000?\nThis fish looks like a long belt."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna (7Days)]^000000?\nThis fish looks like a long belt."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel (7Days)]^000000?\nThis fish looks like a long belt."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab (7Days)]^000000?\nThis fish looks like a long belt."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis fish looks like a long belt."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
     },
     {
       "kind" : "message",
@@ -1361,25 +1583,7 @@
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail (7Days)]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish (7Days)]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish (7Days)]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
     },
     {
       "kind" : "message",
@@ -1391,94 +1595,7 @@
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna (7Days)]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel (7Days)]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab (7Days)]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
       "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail (7Days)]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish (7Days)]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel (7Days)]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna (7Days)]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel (7Days)]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
     },
     {
       "kind" : "message",
@@ -1490,40 +1607,7 @@
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
     },
     {
       "kind" : "message",
@@ -1535,52 +1619,13 @@
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail (7Days)]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish (7Days)]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel (7Days)]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna (7Days)]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna (7Days)]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000."
     },
     {
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
       "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel (7Days)]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab (7Days)]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180."
-    },
-    {
-      "kind" : "message",
-      "line" : 604,
-      "npc" : "Wandering Merchant",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish]^000000?"
     },
     {
       "kind" : "message",
@@ -1659,6 +1704,18 @@
     },
     {
       "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it"
+    },
+    {
+      "kind" : "message",
+      "line" : 609,
+      "npc" : "Wandering Merchant",
+      "text" : "This is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~"
+    },
+    {
+      "kind" : "message",
       "line" : 612,
       "npc" : "Wandering Merchant",
       "text" : "[Wandering Merchant]\nOf course, this is ^DC143CTwo-Handed Spear^000000.\nIt gives a high chance of\ncausing the Bleeding status\nwhen you're using Pierce or Clashing Spiral~"
@@ -1668,6 +1725,12 @@
       "line" : 618,
       "npc" : "Wandering Merchant",
       "text" : "[Wandering Merchant]\nMore details are...\nIncrease 100% of Clashing Spiral ATK and 50% of Inspiration ATK,\nadditional ATK + 30 when Base Lv. is over 100.\nBase ATK is 220."
+    },
+    {
+      "kind" : "message",
+      "line" : 627,
+      "npc" : "Wandering Merchant",
+      "text" : "This is a very popular fish\nwhich is used in various dishes."
     },
     {
       "kind" : "message",
@@ -1683,9 +1746,21 @@
     },
     {
       "kind" : "message",
+      "line" : 645,
+      "npc" : "Wandering Merchant",
+      "text" : "This fish looks like a long belt."
+    },
+    {
+      "kind" : "message",
       "line" : 647,
       "npc" : "Wandering Merchant",
       "text" : "[Wandering Merchant]\nThis is a ^DC143CTwo-Handed Sword^000000\nwhich most swordmen can use.\nIt increases 50% of critical damage when attacking and CRI + 20.\nBase ATK is 220."
+    },
+    {
+      "kind" : "message",
+      "line" : 647,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]"
     },
     {
       "kind" : "message",
@@ -1695,9 +1770,21 @@
     },
     {
       "kind" : "message",
+      "line" : 660,
+      "npc" : "Wandering Merchant",
+      "text" : "This is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks."
+    },
+    {
+      "kind" : "message",
       "line" : 663,
       "npc" : "Wandering Merchant",
       "text" : "[Wandering Merchant]\nMore details are...\ngives MATK + 20 for 7sec at a certain rate with magical attacks\nand additional MATK + 10, ATK + 10 when Base Lv. is over 100.\nBase ATK is 160."
+    },
+    {
+      "kind" : "message",
+      "line" : 672,
+      "npc" : "Wandering Merchant",
+      "text" : "This is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100."
     },
     {
       "kind" : "message",
@@ -1707,9 +1794,617 @@
     },
     {
       "kind" : "message",
+      "line" : 683,
+      "npc" : "Wandering Merchant",
+      "text" : "This is a ^DC143CBow^000000.\nBecause it has elastic force,"
+    },
+    {
+      "kind" : "message",
       "line" : 688,
       "npc" : "Wandering Merchant",
       "text" : "[Wandering Merchant]\nMore details are...\nAGI + 3, and ASPD + 2 for 5sec at a certain rate with long range physical attacks.\nAlso gives additional 20% of long range physical ATK when Base Lv. is over 100.\nHunter, Bard, and Dancer classes can use it."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Malang Snow Crab]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Malang Snow Crab]^000000 is\n{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Malang Snow Crab]^000000 is\n{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Malang Snow Crab]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Malang Snow Crab]^000000?"
+    },
+    {
+      "kind" : "option",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "Yes."
+    },
+    {
+      "kind" : "option",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "No, I'll purchase with cans."
+    },
+    {
+      "kind" : "option",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "I don't want to purchase any."
+    },
+    {
+      "kind" : "option",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "No."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Malang Snow Crab (7Days)]^000000 is\n{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Malang Snow Crab (7Days)]^000000 is\n{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Malang Snow Crab (7Days)]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Saurel]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Saurel]^000000 is\n{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Saurel]^000000 is\n{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Saurel]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Saurel]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nThank you."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Saurel (7Days)]^000000 is\n{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Saurel (7Days)]^000000 is\n{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Saurel (7Days)]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Brindle Eel]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Brindle Eel]^000000 is\n{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Brindle Eel]^000000 is\n{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Brindle Eel]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Brindle Eel]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Brindle Eel (7Days)]^000000 is\n{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Brindle Eel (7Days)]^000000 is\n{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Brindle Eel (7Days)]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Hairtail]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Hairtail]^000000 is\n{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Hairtail]^000000 is\n{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Hairtail]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Hairtail]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Hairtail (7Days)]^000000 is\n{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Hairtail (7Days)]^000000 is\n{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Hairtail (7Days)]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Spearfish]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Spearfish]^000000 is\n{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Spearfish]^000000 is\n{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Spearfish]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Spearfish]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Tuna]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Tuna]^000000 is\n{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Tuna]^000000 is\n{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Tuna]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Tuna]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Spearfish (7Days)]^000000 is\n{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Spearfish (7Days)]^000000 is\n{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Spearfish (7Days)]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Tuna (7Days)]^000000 is\n{0} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Tuna (7Days)]^000000 is\n{0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Tuna (7Days)]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]",
+        "getarg(6)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[{0}]^000000 is\n{1} Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]",
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[{0}]^000000 is\n{1} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[{0}]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nAlways be careful\nwhen you purchase items."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nI'm sorry, you need more Silvervine Fruit."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nI'm sorry, you need more cans."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nSorry, you've purchased too many.\nYou need to make more space in your inventory. Please come back later."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Hairtail (7Days)]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Hairtail (7Days)]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Spearfish (7Days)]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Spearfish (7Days)]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Saurel (7Days)]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Saurel (7Days)]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Tuna (7Days)]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Tuna (7Days)]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Brindle Eel (7Days)]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Brindle Eel (7Days)]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Malang Snow Crab (7Days)]^000000 is"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "text" : "[Wandering Merchant]\nI'm sorry, you need more coins."
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nNice to meet you~~\nI am! YES~~ That's right!\nI'm selling special stuff\nwhich you can see only here on Meow Meow Island!"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nHow about it? What are you waiting for?\nWhy don't you take a look at\nwhat kinds of stuff I have?"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nWell then, do you want to take a look at what I have now?"
+    },
+    {
+      "kind" : "option",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nWell, take a good look at them~~~"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nWell, then. I'll see you next time.\nGoodbye."
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nIt seems that there are too many items in your inventory.\nPlease make space and come back again~"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nIt seems that you're overweight.\nPlease reduce your weight and come back again~"
     },
     {
       "kind" : "option",
@@ -1745,58 +2440,7 @@
       "kind" : "message",
       "line" : 721,
       "npc" : "Stinky Merchant",
-      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[Cat Club]^000000?\nThis is a glove which can give happiness\njust by wearing it."
-    },
-    {
-      "kind" : "message",
-      "line" : 721,
-      "npc" : "Stinky Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a glove which can give happiness\njust by wearing it."
-    },
-    {
-      "kind" : "message",
-      "line" : 721,
-      "npc" : "Stinky Merchant",
-      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[Cat Paw Glove]^000000?\nIt looks like it wouldn't hurt, don't you think so?\nBut I'm telling you, it can hurt someone."
-    },
-    {
-      "kind" : "message",
-      "line" : 721,
-      "npc" : "Stinky Merchant",
       "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[Cat Club]^000000?\nIt looks like it wouldn't hurt, don't you think so?\nBut I'm telling you, it can hurt someone."
-    },
-    {
-      "kind" : "message",
-      "line" : 721,
-      "npc" : "Stinky Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nIt looks like it wouldn't hurt, don't you think so?\nBut I'm telling you, it can hurt someone."
-    },
-    {
-      "kind" : "message",
-      "line" : 721,
-      "npc" : "Stinky Merchant",
-      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[Cat Paw Glove]^000000?"
-    },
-    {
-      "kind" : "message",
-      "line" : 721,
-      "npc" : "Stinky Merchant",
-      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[Cat Club]^000000?"
-    },
-    {
-      "kind" : "message",
-      "line" : 721,
-      "npc" : "Stinky Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?"
     },
     {
       "kind" : "message",
@@ -1815,6 +2459,144 @@
       "line" : 743,
       "npc" : "Stinky Merchant",
       "text" : "[Stinky Merchant]\nThis is a ^DC143CMace^000000 that increases 15% of damage to the animal type of monster.\nBase ATK is 88.\nThe other details are\nWeapon Lv : 1 / SLOT : 3 / Refine : Able / Destruction : Unable"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nThe price of ^0000FF[Cat Club]^000000 is\n32 E Grade Coin or 200 Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nWould you like to purchase\n^0000FF[Cat Club]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "option",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "text" : "Yes."
+    },
+    {
+      "kind" : "option",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "text" : "No, I'll purchase with cans."
+    },
+    {
+      "kind" : "option",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "text" : "I don't want to purchase any."
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nThank you."
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nThe price of ^0000FF[Cat Paw Glove]^000000 is\n32 E Grade Coin or 200 Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nWould you like to purchase\n^0000FF[Cat Paw Glove]^000000 with E Grade Coins?"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nAlways be careful\nwhen you purchase items."
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nI'm sorry, you need more coins."
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nI'm sorry, you need more cans."
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "text" : "[Stinky Merchant]\nSorry, you've purchased too many.\nYou need to make more space in your inventory. Please come back later."
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nNice to meet you~~\nI am! YES~~ That's right!\nI'm selling special stuff\nwhich you can see only here on Meow Meow Island!"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nHow about it? What are you waiting for?\nWhy don't you take a look at\nwhat kinds of stuff I have?"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nJust for your information,\nSow Bug, Starfish, Dried Squid, and Flying Fish are the items which you can use for 1 hour."
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nWell then, do you want to take a look at what I have now?"
+    },
+    {
+      "kind" : "option",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "text" : "Yes"
+    },
+    {
+      "kind" : "option",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "text" : "No"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nWell, take a good look at them~~~"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nAhaaa~\nIf you want to buy this stuff,\nyou can talk to me\nwhen you grow up a little more.\nThis stuff is too expensive\nfor a child~"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nWell, then. I'll see you next time.\nGoodbye."
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nIt seems that there are too many items in your inventory.\nPlease make space and come back again~"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nIt seems that you're overweight.\nPlease reduce your weight and come back again~"
     },
     {
       "kind" : "option",
@@ -1862,112 +2644,7 @@
       "kind" : "message",
       "line" : 774,
       "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Sow Bug]^000000?\nThis is the one that flies\nwith a big pectoral."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Dried Squid]^000000?\nThis is the one that flies\nwith a big pectoral."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Starfish]^000000?\nThis is the one that flies\nwith a big pectoral."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is the one that flies\nwith a big pectoral."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Flying Fish]^000000?\nIn that case, I'll explain for you.\nThis is a ^DC143CBullet^000000 which stuns the enemy at a certain rate when attacking."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
       "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Sow Bug]^000000?\nIn that case, I'll explain for you.\nThis is a ^DC143CBullet^000000 which stuns the enemy at a certain rate when attacking."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Dried Squid]^000000?\nIn that case, I'll explain for you.\nThis is a ^DC143CBullet^000000 which stuns the enemy at a certain rate when attacking."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Starfish]^000000?\nIn that case, I'll explain for you.\nThis is a ^DC143CBullet^000000 which stuns the enemy at a certain rate when attacking."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nIn that case, I'll explain for you.\nThis is a ^DC143CBullet^000000 which stuns the enemy at a certain rate when attacking."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Flying Fish]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which causes darkness at a certain rate.\nIt's neutral property and its ATK is 50."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Sow Bug]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which causes darkness at a certain rate.\nIt's neutral property and its ATK is 50."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Dried Squid]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which causes darkness at a certain rate.\nIt's neutral property and its ATK is 50."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Starfish]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which causes darkness at a certain rate.\nIt's neutral property and its ATK is 50."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which causes darkness at a certain rate.\nIt's neutral property and its ATK is 50."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Flying Fish]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which stuns the enemy at a certain rate."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Sow Bug]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which stuns the enemy at a certain rate."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Dried Squid]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which stuns the enemy at a certain rate."
     },
     {
       "kind" : "message",
@@ -1979,43 +2656,7 @@
       "kind" : "message",
       "line" : 774,
       "npc" : "Roving Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which stuns the enemy at a certain rate."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Flying Fish]^000000?\n[Roving Merchant]\nFor your information,\none box contains\n200 units."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Sow Bug]^000000?\n[Roving Merchant]\nFor your information,\none box contains\n200 units."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Dried Squid]^000000?\n[Roving Merchant]\nFor your information,\none box contains\n200 units."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Starfish]^000000?\n[Roving Merchant]\nFor your information,\none box contains\n200 units."
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\n[Roving Merchant]\nFor your information,\none box contains\n200 units."
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Dried Squid]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which causes darkness at a certain rate.\nIt's neutral property and its ATK is 50."
     },
     {
       "kind" : "message",
@@ -2052,6 +2693,90 @@
       "line" : 822,
       "npc" : "Roving Merchant",
       "text" : "[Roving Merchant]\nFor your information,\none box contains\n200 units."
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nThe price of ^0000FF[Sow Bug]^000000 is\n200 Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nWould you like to\npurchase ^0000FF[Sow Bug]^000000?"
+    },
+    {
+      "kind" : "option",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "Yes."
+    },
+    {
+      "kind" : "option",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "No."
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nThe price of ^0000FF[Starfish]^000000 is\n200 Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nWould you like to\npurchase ^0000FF[Starfish]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nThank you."
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nThe price of ^0000FF[Dried Squid]^000000 is\n200 Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nWould you like to\npurchase ^0000FF[Dried Squid]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nThe price of ^0000FF[Flying Fish]^000000 is\n200 Malangdo Canned Specialties."
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nWould you like to\npurchase ^0000FF[Flying Fish]^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nAlways be careful\nwhen you purchase items."
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nI'm sorry, you need more cans."
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "text" : "[Roving Merchant]\nSorry, you've purchased too many.\nYou need to make more space in your inventory. Please come back later."
     },
     {
       "kind" : "message",
@@ -2100,12 +2825,6 @@
       "line" : 847,
       "npc" : "Armor Merchant Naphara",
       "text" : "Luk Glove"
-    },
-    {
-      "kind" : "message",
-      "line" : 848,
-      "npc" : "Armor Merchant Naphara",
-      "text" : "[Armor Merchant]\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options."
     },
     {
       "kind" : "message",
@@ -2360,19 +3079,7 @@
       "kind" : "message",
       "line" : 988,
       "npc" : "Herb Merchant Plafina",
-      "placeholders" : [
-        ".cost[.@item]"
-      ],
-      "text" : "[Herb Merchant]\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each."
-    },
-    {
-      "kind" : "message",
-      "line" : 988,
-      "npc" : "Herb Merchant Plafina",
-      "placeholders" : [
-        ".cost[.@item]"
-      ],
-      "text" : "[Herb Merchant]\nSnow Flip has special effects on ^3131FFBurning, Bleeding, Deep Sleep, Sleep^000000.\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each."
+      "text" : "[Herb Merchant]\nSnow Flip has special effects on ^3131FFBurning, Bleeding, Deep Sleep, Sleep^000000.\nRequires 5 seconds between uses.\nIt costs 5 Splendide Coins for each."
     },
     {
       "kind" : "message",
@@ -2424,10 +3131,18 @@
       "line" : 1013,
       "npc" : "Herb Merchant Plafina",
       "placeholders" : [
-        ".@buy",
         "getitemname(.items[.@item])"
       ],
-      "text" : "[Herb Merchant]\nWould you like to buy {0} {1}?"
+      "text" : "[Herb Merchant]\nWould you like to buy 1 {0}?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1013,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        "getitemname(.items[.@item])"
+      ],
+      "text" : "[Herb Merchant]\nWould you like to buy 10 {0}?"
     },
     {
       "kind" : "option",
@@ -2635,7 +3350,7 @@
         ".@menu$",
         "getitemname(.@items[.@i])"
       ],
-      "text" : "{0}{1} (^2502FDAble to Replicate^000000)"
+      "text" : "{0}{1} (^777777Insufficient ingredients^000000)"
     },
     {
       "kind" : "option",
@@ -2645,7 +3360,25 @@
         ".@menu$",
         "getitemname(.@items[.@i])"
       ],
-      "text" : "{0}{1} (^777777Insufficient ingredients^000000)"
+      "text" : "{0}{1} (^2502FDAble to Replicate^000000)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1134,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        "getitemname(.@items[.@i])"
+      ],
+      "text" : "{0} (^777777Insufficient ingredients^000000)"
+    },
+    {
+      "kind" : "option",
+      "line" : 1134,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        "getitemname(.@items[.@i])"
+      ],
+      "text" : "{0} (^2502FDAble to Replicate^000000)"
     },
     {
       "kind" : "message",
@@ -2658,9 +3391,36 @@
     },
     {
       "kind" : "message",
+      "line" : 1135,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1136,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        "getitemname(.@items[.@i])"
+      ],
+      "text" : "Is ^0571B0{0}^000000 what you wanted?"
+    },
+    {
+      "kind" : "message",
       "line" : 1140,
       "npc" : "Replication Expert Paltu",
       "text" : "[Paltu]\nAy... Credit purchases are difficult for me."
+    },
+    {
+      "kind" : "message",
+      "line" : 1140,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1141,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Ay... Credit purchases are difficult for me."
     },
     {
       "kind" : "message",
@@ -2673,15 +3433,60 @@
     },
     {
       "kind" : "message",
+      "line" : 1143,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1144,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        "getitemname(.@items[.@i])"
+      ],
+      "text" : "^0571B0{0}^000000 and"
+    },
+    {
+      "kind" : "message",
+      "line" : 1145,
+      "npc" : "Replication Expert Paltu",
+      "text" : "^E1281E50 Splendide Coins, 4 Crystal Mirrors, 1 Fairy Magic Powder, 10 of each Emerald, Ruby, Sapphire, Topaz, and Zircon^000000 are necessary."
+    },
+    {
+      "kind" : "message",
+      "line" : 1147,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
       "line" : 1147,
       "npc" : "Replication Expert Paltu",
       "text" : "[Paltu]\nI'm in a tight spot myself. Please consider my situation also."
     },
     {
       "kind" : "message",
+      "line" : 1148,
+      "npc" : "Replication Expert Paltu",
+      "text" : "I'm in a tight spot myself. Please consider my situation also."
+    },
+    {
+      "kind" : "message",
       "line" : 1152,
       "npc" : "Replication Expert Paltu",
       "text" : "[Paltu]\nYes, this is more than enough. Should I make it now?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1152,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1153,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Yes, this is more than enough. Should I make it now?"
     },
     {
       "kind" : "option",
@@ -2699,7 +3504,19 @@
       "kind" : "message",
       "line" : 1157,
       "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1157,
+      "npc" : "Replication Expert Paltu",
       "text" : "[Paltu]\nHey.. Hey! Hey! Where you going?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1158,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Hey.. Hey! Hey! Where you going?"
     },
     {
       "kind" : "message",
@@ -2709,9 +3526,33 @@
     },
     {
       "kind" : "message",
+      "line" : 1162,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1163,
+      "npc" : "Replication Expert Paltu",
+      "text" : "I got it. Oh right! Almost forgot again."
+    },
+    {
+      "kind" : "message",
       "line" : 1165,
       "npc" : "Replication Expert Paltu",
       "text" : "[Paltu]\n^FF0000In the process of replication, magic intervention phenomenon causes the hat to lose all of its refinements, cards, and hidden enchantments.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1165,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1166,
+      "npc" : "Replication Expert Paltu",
+      "text" : "^FF0000In the process of replication, magic intervention phenomenon causes the hat to lose all of its refinements, cards, and hidden enchantments.^000000"
     },
     {
       "kind" : "message",
@@ -2721,9 +3562,33 @@
     },
     {
       "kind" : "message",
+      "line" : 1168,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1169,
+      "npc" : "Replication Expert Paltu",
+      "text" : "^FF0000And if you possess multiple hats of the same type, the one you don't want can undergo the replication process, so please check to make sure.^000000"
+    },
+    {
+      "kind" : "message",
       "line" : 1171,
       "npc" : "Replication Expert Paltu",
       "text" : "[Paltu]\nSo any problems with that?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1171,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1172,
+      "npc" : "Replication Expert Paltu",
+      "text" : "So any problems with that?"
     },
     {
       "kind" : "option",
@@ -2741,7 +3606,19 @@
       "kind" : "message",
       "line" : 1175,
       "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1175,
+      "npc" : "Replication Expert Paltu",
       "text" : "[Paltu]\nYeah, please make sure!"
+    },
+    {
+      "kind" : "message",
+      "line" : 1176,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Yeah, please make sure!"
     },
     {
       "kind" : "message",
@@ -2751,9 +3628,39 @@
     },
     {
       "kind" : "message",
+      "line" : 1180,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1181,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Woohoo- Got it."
+    },
+    {
+      "kind" : "message",
+      "line" : 1182,
+      "npc" : "Replication Expert Paltu",
+      "text" : "It's finally time for me to use my skills again."
+    },
+    {
+      "kind" : "message",
       "line" : 1185,
       "npc" : "Replication Expert Paltu",
       "text" : "[Paltu]\nDo this thing here, and do that thing there, and then do this thing here again..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1185,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1186,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Do this thing here, and do that thing there, and then do this thing here again..."
     },
     {
       "kind" : "message",
@@ -2763,9 +3670,39 @@
     },
     {
       "kind" : "message",
+      "line" : 1190,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1191,
+      "npc" : "Replication Expert Paltu",
+      "text" : "... .. ..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1212,
+      "npc" : "Replication Expert Paltu",
+      "text" : "[Paltu]"
+    },
+    {
+      "kind" : "message",
       "line" : 1212,
       "npc" : "Replication Expert Paltu",
       "text" : "[Paltu]\nGood. This is a satisfying result.\nI'll do even a better job next time. Please tell others about my work. Have a good day~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1213,
+      "npc" : "Replication Expert Paltu",
+      "text" : "Good. This is a satisfying result."
+    },
+    {
+      "kind" : "message",
+      "line" : 1214,
+      "npc" : "Replication Expert Paltu",
+      "text" : "I'll do even a better job next time. Please tell others about my work. Have a good day~"
     }
   ]
 }

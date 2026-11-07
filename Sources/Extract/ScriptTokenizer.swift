@@ -8,7 +8,7 @@
 struct Token {
     enum Kind: Equatable {
         /// Header line of a script (`map,x,y,dir<TAB>script<TAB>name<TAB>sprite,{`), carrying the NPC display name.
-        case header(npc: String?)
+        case header(npc: String?, name: String, isFunction: Bool)
         case identifier
         case string
         case number
@@ -36,6 +36,12 @@ struct ScriptTokenizer {
 
     init(source: String) {
         bytes = Array(source.utf8)
+    }
+
+    /// Tokenize an isolated numeric subscript without fabricating an NPC definition.
+    init(expression: String) {
+        bytes = Array(expression.utf8)
+        depth = 1
     }
 
     mutating func tokenize() -> [Token] {
@@ -95,7 +101,7 @@ struct ScriptTokenizer {
             depth = 1
         }
 
-        return Token(kind: .header(npc: displayName(of: fields[2])), text: text, line: startLine, range: start..<index)
+        return Token(kind: .header(npc: displayName(of: fields[2]), name: fields[2], isFunction: fields[0] == "function"), text: text, line: startLine, range: start..<index)
     }
 
     /// `Guard#pront::prtguard` -> `Guard`
@@ -249,7 +255,7 @@ struct ScriptTokenizer {
         while cursor < bytes.count, bytes[cursor].isVariablePrefix {
             cursor += 1
         }
-        guard cursor < bytes.count, bytes[cursor].isIdentifierStart else {
+        guard cursor < bytes.count, bytes[cursor].isIdentifierStart || (cursor > start && bytes[cursor].isDigit) else {
             return nil
         }
         while cursor < bytes.count, bytes[cursor].isIdentifierPart {

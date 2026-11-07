@@ -10,6 +10,27 @@
       "text" : "[ Auto-Potion ]\nSelect a {0} item."
     },
     {
+      "kind" : "message",
+      "line" : 128,
+      "text" : "[ Auto-Potion ]"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "placeholders" : [
+        "strtoupper(.@command$[0])"
+      ],
+      "text" : "Select a {0} item."
+    },
+    {
+      "kind" : "option",
+      "line" : 130,
+      "placeholders" : [
+        ".@menu$"
+      ],
+      "text" : "{0}   ^777777Cancel^000000"
+    },
+    {
       "kind" : "option",
       "line" : 130,
       "placeholders" : [
@@ -53,14 +74,6 @@
         "sprintf(\"%d\", countitem(@inventorylist_id[.@i]))"
       ],
       "text" : "{0}~ ^0055FF{1}^000000 ({2}x)"
-    },
-    {
-      "kind" : "option",
-      "line" : 130,
-      "placeholders" : [
-        ".@menu$"
-      ],
-      "text" : "{0}   ^777777Cancel^000000"
     }
   ]
 }

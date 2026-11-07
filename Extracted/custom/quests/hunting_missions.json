@@ -16,16 +16,75 @@
       "npc" : "Hunting Missions",
       "placeholders" : [
         "strcharinfo(0)",
-        "F_Rand(\"Working hard, as always...\", \"Not slacking, I hope...\")",
-        "F_InsertPlural(Mission_Total,\"mission\",0,\"^0055FF%d^777777 %s\")"
+        "getarg(rand(getargcount()))"
       ],
-      "text" : "[Hunting Missions]\nHello, {0}!\n{1}\nIs there anything I can help\nyou with?\n \n^777777~ You've completed {2}. ~^000000"
+      "text" : "[Hunting Missions]\nHello, {0}!\n{1}\nIs there anything I can help\nyou with?\n "
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "getarg(rand(getargcount()))",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "text" : "[Hunting Missions]\nHello, {0}!\n{1}\nIs there anything I can help\nyou with?\n \n^777777~ You've completed ^0055FF{2}^777777 mission. ~^000000"
     },
     {
       "kind" : "message",
       "line" : 32,
       "npc" : "Hunting Missions",
       "text" : "[Hunting Missions]\nI can't find any records...\nYou must be new here!"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nIf you so choose, I can assign\nyou a random hunting quest.\nSome are easier than others, but\nthe rewards increase with difficulty."
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nMissions points are shared\namongst all your characters.\nYou can't take missions on\nmultiple characters at once."
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nMissions points are shared\namongst all your characters.\nDelay time is, too.\nYou can't take missions on\nmultiple characters at once."
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nYou can start a quest\nevery hour.\nThat's everything~"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".Delay"
+      ],
+      "text" : "[Hunting Missions]\nYou can start a quest\nevery {0} hours.\nThat's everything~"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nYou can start a quest\nwhenever you want.\nThat's everything~"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "^777777~ You've completed ^0055FF{0}^777777 {1}. ~^000000"
     },
     {
       "kind" : "option",
@@ -73,16 +132,13 @@
       "kind" : "message",
       "line" : 53,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nYou've started a mission\non another character."
+      "text" : "[Hunting Missions]"
     },
     {
       "kind" : "message",
       "line" : 53,
       "npc" : "Hunting Missions",
-      "placeholders" : [
-        "Time2Str(#Mission_Delay)"
-      ],
-      "text" : "[Hunting Missions]\nI'm afraid you'll have to wait {0} before taking another mission."
+      "text" : "[Hunting Missions]\nYou've started a mission\non another character."
     },
     {
       "kind" : "message",
@@ -92,9 +148,822 @@
     },
     {
       "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000\n > ^00FF00{12} ({13}/{14})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nYou must hunt:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000\n > ^FF0000{12} ({13}/{14})^000000"
+    },
+    {
+      "kind" : "message",
       "line" : 61,
       "npc" : "Hunting Missions",
       "text" : "[Hunting Missions]\nI can't seem to find any records\nfor that character, though...\nOne moment, please."
+    },
+    {
+      "kind" : "message",
+      "line" : 73,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Time$"
+      ],
+      "text" : "I'm afraid you'll have to wait {0} before taking another mission."
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)",
+        "getarg(0)",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)",
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : " > Zeny: ^0055FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : " > Zeny: ^0055FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : " > ^00FF00{0} ({1}/{2})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : " > ^FF0000{0} ({1}/{2})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : " > Job Experience: ^0055FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : " > Job Experience: ^0055FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nOh, you're done!\nGood work.\nHere's your reward."
     },
     {
       "kind" : "message",
@@ -110,6 +979,816 @@
     },
     {
       "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^FF0000{0} ({1}/{2})^000000\n > ^FF0000{3} ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^FF0000{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000\n > ^00FF00{12} ({13}/{14})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count",
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : "[Hunting Missions]\nMission status:\n > ^00FF00{0} ({1}/{2})^000000\n > ^00FF00{3} ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000\n > ^00FF00{9} ({10}/{11})^000000\n > ^FF0000{12} ({13}/{14})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)",
+        "getarg(0)",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)",
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : " > Zeny: ^0055FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : " > Zeny: ^0055FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : " > ^00FF00{0} ({1}/{2})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getmonsterinfo(.@j[.@i], MOB_NAME)",
+        "getd(\"Mission\"+.@i+\"_\")",
+        "#Mission_Count"
+      ],
+      "text" : " > ^FF0000{0} ({1}/{2})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "getarg(0)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@Mission_Points",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : " > Job Experience: ^0055FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : " > Job Experience: ^0055FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nOh, you're done!\nGood work.\nHere's your reward."
+    },
+    {
+      "kind" : "message",
+      "line" : 97,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nDo you really want to\nabandon your mission?"
+    },
+    {
+      "kind" : "message",
       "line" : 97,
       "npc" : "Hunting Missions",
       "text" : "[Hunting Missions]\nDo you really want to\nabandon your mission?\nYour delay time will not be reset."
@@ -119,7 +1798,7 @@
       "line" : 97,
       "npc" : "Hunting Missions",
       "placeholders" : [
-        "F_InsertComma(.Reset)"
+        "getarg(0)"
       ],
       "text" : "[Hunting Missions]\nDo you really want to\nabandon your mission?\nIt will cost {0} Zeny."
     },
@@ -127,7 +1806,10 @@
       "kind" : "message",
       "line" : 97,
       "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nDo you really want to\nabandon your mission?"
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "text" : "[Hunting Missions]\nDo you really want to\nabandon your mission?\nIt will cost {0} Zeny."
     },
     {
       "kind" : "option",
@@ -161,6 +1843,45 @@
     },
     {
       "kind" : "message",
+      "line" : 138,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nIf you so choose, I can assign\nyou a random hunting quest.\nSome are easier than others, but\nthe rewards increase with difficulty."
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nMissions points are shared\namongst all your characters.\nYou can't take missions on\nmultiple characters at once."
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nMissions points are shared\namongst all your characters.\nDelay time is, too.\nYou can't take missions on\nmultiple characters at once."
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nYou can start a quest\nevery hour.\nThat's everything~"
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".Delay"
+      ],
+      "text" : "[Hunting Missions]\nYou can start a quest\nevery {0} hours.\nThat's everything~"
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nYou can start a quest\nwhenever you want.\nThat's everything~"
+    },
+    {
+      "kind" : "message",
       "line" : 141,
       "npc" : "Hunting Missions",
       "placeholders" : [
@@ -173,101 +1894,226 @@
       "line" : 148,
       "npc" : "Hunting Missions",
       "placeholders" : [
-        ".@i+1"
+        ".@name$[.@i]",
+        ".@val[.@i]"
       ],
-      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank {0}]  ^777777none^000000"
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^777777none^000000\n  [Rank 2]  ^777777none^000000\n  [Rank 3]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 4]  ^777777none^000000"
     },
     {
       "kind" : "message",
       "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^777777none^000000\n  [Rank 2]  ^777777none^000000\n  [Rank 3]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 4]  ^0055FF{2}^000000 : ^FF0000{3} pt.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^777777none^000000\n  [Rank 2]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 3]  ^777777none^000000\n  [Rank 4]  ^777777none^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^777777none^000000\n  [Rank 2]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 3]  ^777777none^000000\n  [Rank 4]  ^0055FF{2}^000000 : ^FF0000{3} pt.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^777777none^000000\n  [Rank 2]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 3]  ^0055FF{2}^000000 : ^FF0000{3} pt.^000000\n  [Rank 4]  ^777777none^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^777777none^000000\n  [Rank 2]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 3]  ^0055FF{2}^000000 : ^FF0000{3} pt.^000000\n  [Rank 4]  ^0055FF{4}^000000 : ^FF0000{5} pt.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 2]  ^777777none^000000\n  [Rank 3]  ^777777none^000000\n  [Rank 4]  ^777777none^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 2]  ^777777none^000000\n  [Rank 3]  ^777777none^000000\n  [Rank 4]  ^0055FF{2}^000000 : ^FF0000{3} pt.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 2]  ^777777none^000000\n  [Rank 3]  ^0055FF{2}^000000 : ^FF0000{3} pt.^000000\n  [Rank 4]  ^777777none^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 2]  ^777777none^000000\n  [Rank 3]  ^0055FF{2}^000000 : ^FF0000{3} pt.^000000\n  [Rank 4]  ^0055FF{4}^000000 : ^FF0000{5} pt.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 2]  ^0055FF{2}^000000 : ^FF0000{3} pt.^000000\n  [Rank 3]  ^777777none^000000\n  [Rank 4]  ^777777none^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 2]  ^0055FF{2}^000000 : ^FF0000{3} pt.^000000\n  [Rank 3]  ^777777none^000000\n  [Rank 4]  ^0055FF{4}^000000 : ^FF0000{5} pt.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 2]  ^0055FF{2}^000000 : ^FF0000{3} pt.^000000\n  [Rank 3]  ^0055FF{4}^000000 : ^FF0000{5} pt.^000000\n  [Rank 4]  ^777777none^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]",
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000\n  [Rank 2]  ^0055FF{2}^000000 : ^FF0000{3} pt.^000000\n  [Rank 3]  ^0055FF{4}^000000 : ^FF0000{5} pt.^000000\n  [Rank 4]  ^0055FF{6}^000000 : ^FF0000{7} pt.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^777777none^000000\n  [Rank 2]  ^777777none^000000\n  [Rank 3]  ^777777none^000000\n  [Rank 4]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^777777none^000000\n  [Rank 2]  ^777777none^000000\n  [Rank 3]  ^777777none^000000\n  [Rank 4]  ^777777none^000000\n  [Rank 5]  ^777777none^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank 1]  ^777777none^000000\n  [Rank 2]  ^777777none^000000\n  [Rank 3]  ^777777none^000000\n  [Rank 4]  ^777777none^000000\n  [Rank 5]  ^0055FF{0}^000000 : ^FF0000{1} pt.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 152,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@i+1"
+      ],
+      "text" : "  [Rank {0}]  ^777777none^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 152,
       "npc" : "Hunting Missions",
       "placeholders" : [
         ".@i+1",
         ".@name$[.@i]",
         ".@val[.@i]"
       ],
-      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank {0}]  ^0055FF{1}^000000 : ^FF0000{2} pt.^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 148,
-      "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nThe top hunters are:"
+      "text" : "  [Rank {0}]  ^0055FF{1}^000000 : ^FF0000{2} pt.^000000"
     },
     {
       "kind" : "message",
       "line" : 155,
       "npc" : "Hunting Missions",
       "text" : "[Hunting Missions]\nNothing? Okay..."
-    },
-    {
-      "kind" : "message",
-      "line" : 170,
-      "npc" : "Hunting Missions",
-      "placeholders" : [
-        "Chk(getd(\"Mission\"+.@i+\"_\"),#Mission_Count)",
-        "getmonsterinfo(.@j[.@i], MOB_NAME)",
-        "getd(\"Mission\"+.@i+\"_\")",
-        "#Mission_Count"
-      ],
-      "text" : " > {0}{1} ({2}/{3})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 180,
-      "npc" : "Hunting Missions",
-      "placeholders" : [
-        ".@Mission_Points",
-        "F_InsertComma(.@Base_Exp)",
-        "F_InsertComma(.@Job_Exp)",
-        "F_InsertComma(.@Zeny)"
-      ],
-      "text" : "[Hunting Missions]\nMission rewards:\n > Mission Points: ^0055FF{0}^000000\n > Base Experience: ^0055FF{1}^000000\n > Job Experience: ^0055FF{2}^000000\n > Zeny: ^0055FF{3}^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 191,
-      "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nOh, you're done!\nGood work.\nHere's your reward."
-    },
-    {
-      "kind" : "message",
-      "line" : 217,
-      "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nIf you so choose, I can assign\nyou a random hunting quest.\nSome are easier than others, but\nthe rewards increase with difficulty."
-    },
-    {
-      "kind" : "message",
-      "line" : 223,
-      "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nMissions points are shared\namongst all your characters.\nDelay time is, too.\nYou can't take missions on\nmultiple characters at once."
-    },
-    {
-      "kind" : "message",
-      "line" : 223,
-      "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nMissions points are shared\namongst all your characters.\nYou can't take missions on\nmultiple characters at once."
-    },
-    {
-      "kind" : "message",
-      "line" : 231,
-      "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nYou can start a quest\nevery hour.\nThat's everything~"
-    },
-    {
-      "kind" : "message",
-      "line" : 231,
-      "npc" : "Hunting Missions",
-      "placeholders" : [
-        ".Delay"
-      ],
-      "text" : "[Hunting Missions]\nYou can start a quest\nevery {0} hours.\nThat's everything~"
-    },
-    {
-      "kind" : "message",
-      "line" : 231,
-      "npc" : "Hunting Missions",
-      "text" : "[Hunting Missions]\nYou can start a quest\nwhenever you want.\nThat's everything~"
     },
     {
       "kind" : "message",

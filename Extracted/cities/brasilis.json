@@ -9,12 +9,12 @@
     {
       "kind" : "message",
       "line" : 21,
-      "text" : "[Crewman]\nWe recently found a new ocean route to get there easily.\nIt's just 10,000 zeny for a round trip, and 1,000 for VIP! So do you want to go?"
+      "text" : "[Crewman]\nWe recently found a new ocean route to get there easily.\nIt's just 10,000 zeny for a round trip! So do you want to go?"
     },
     {
       "kind" : "message",
       "line" : 21,
-      "text" : "[Crewman]\nWe recently found a new ocean route to get there easily.\nIt's just 10,000 zeny for a round trip! So do you want to go?"
+      "text" : "[Crewman]\nWe recently found a new ocean route to get there easily.\nIt's just 10,000 zeny for a round trip, and 1,000 for VIP! So do you want to go?"
     },
     {
       "kind" : "option",
@@ -29,10 +29,20 @@
     {
       "kind" : "message",
       "line" : 34,
+      "text" : "[Crewman]\nI said 10000 zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",.@cost)"
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "text" : "[Crewman]\nI said {0} zeny."
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "text" : "[Crewman]\nI said 1000 zeny."
     },
     {
       "kind" : "message",

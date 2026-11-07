@@ -2,26 +2,22 @@
   "file" : "npc/custom/quests/quest_shop.txt",
   "scripts" : [
     {
-      "kind" : "message",
-      "line" : 140,
+      "kind" : "option",
+      "line" : 114,
       "npc" : "quest_shop",
-      "placeholders" : [
-        ".@q[2]",
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        ".@q[4]*.@q[1]",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        ".@q[5]*.@q[1]",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        ".@q[5]*.@q[1]",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        ".@q[.@i]",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000\n > {9}{{10}} {11} ({12}/{13})^000000"
+      "text" : "Headgears"
+    },
+    {
+      "kind" : "option",
+      "line" : 114,
+      "npc" : "quest_shop",
+      "text" : "Weapons"
+    },
+    {
+      "kind" : "option",
+      "line" : 114,
+      "npc" : "quest_shop",
+      "text" : "Other"
     },
     {
       "kind" : "message",
@@ -29,350 +25,7 @@
       "npc" : "quest_shop",
       "placeholders" : [
         ".@q[2]",
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        ".@q[4]*.@q[1]",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        ".@q[5]*.@q[1]",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        ".@q[5]*.@q[1]",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000\n > {9}{10} ({11}/{12})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        ".@q[4]*.@q[1]",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        ".@q[5]*.@q[1]",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        ".@q[5]*.@q[1]",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        ".@q[.@i]",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > {1}{2} Zeny^000000\n > {3}{4} {5} ({6}/{7})^000000\n > {8}{{9}} {10} ({11}/{12})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        ".@q[4]*.@q[1]",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        ".@q[5]*.@q[1]",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        ".@q[5]*.@q[1]",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > {1}{2} Zeny^000000\n > {3}{4} {5} ({6}/{7})^000000\n > {8}{9} ({10}/{11})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        ".@q[2]",
-        "Slot(.@q[0])",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        ".@q[5]*.@q[1]",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        ".@q[5]*.@q[1]",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        ".@q[.@i]",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > {2}{3} {4} ({5}/{6})^000000\n > {7}{{8}} {9} ({10}/{11})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        ".@q[2]",
-        "Slot(.@q[0])",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        ".@q[5]*.@q[1]",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        ".@q[5]*.@q[1]",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > {2}{3} {4} ({5}/{6})^000000\n > {7}{8} ({9}/{10})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "Slot(.@q[0])",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        ".@q[5]*.@q[1]",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        ".@q[5]*.@q[1]",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        ".@q[.@i]",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > {1}{2} {3} ({4}/{5})^000000\n > {6}{{7}} {8} ({9}/{10})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "Slot(.@q[0])",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        ".@q[5]*.@q[1]",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        ".@q[5]*.@q[1]",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > {1}{2} {3} ({4}/{5})^000000\n > {6}{7} ({8}/{9})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        ".@q[2]",
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        ".@q[4]*.@q[1]",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        ".@q[.@i]",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{{5}} {6} ({7}/{8})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        ".@q[2]",
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        ".@q[4]*.@q[1]",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5} ({6}/{7})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        ".@q[4]*.@q[1]",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        ".@q[.@i]",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > {1}{2} Zeny^000000\n > {3}{{4}} {5} ({6}/{7})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        ".@q[4]*.@q[1]",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > {1}{2} Zeny^000000\n > {3}{4} ({5}/{6})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        ".@q[2]",
-        "Slot(.@q[0])",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        ".@q[.@i]",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > {2}{{3}} {4} ({5}/{6})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        ".@q[2]",
-        "Slot(.@q[0])",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > {2}{3} ({4}/{5})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "Slot(.@q[0])",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        ".@q[.@i]",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > {1}{{2}} {3} ({4}/{5})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "Slot(.@q[0])",
-        "Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])",
-        "Slot(.@q[.@i])",
-        "countitem(.@q[.@i])",
-        ".@q[.@i+1]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > {1}{2} ({3}/{4})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        ".@q[2]",
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        ".@q[4]*.@q[1]",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        ".@q[5]*.@q[1]",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        ".@q[5]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > {2}{3} Zeny^000000\n > {4}{5} {6} ({7}/{8})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        ".@q[4]*.@q[1]",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        ".@q[5]*.@q[1]",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        ".@q[5]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > {1}{2} Zeny^000000\n > {3}{4} {5} ({6}/{7})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        ".@q[2]",
-        "Slot(.@q[0])",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        ".@q[5]*.@q[1]",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        ".@q[5]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > {2}{3} {4} ({5}/{6})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "Slot(.@q[0])",
-        "Chk(getd(.Points$[0]),.@q[5]*.@q[1])",
-        ".@q[5]*.@q[1]",
-        ".Points$[1]",
-        "getd(.Points$[0])",
-        ".@q[5]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > {1}{2} {3} ({4}/{5})^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        ".@q[2]",
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        ".@q[4]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > {2}{3} Zeny^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        "Slot(.@q[0])",
-        "Chk(Zeny,.@q[4]*.@q[1])",
-        ".@q[4]*.@q[1]"
-      ],
-      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > {1}{2} Zeny^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 140,
-      "npc" : "quest_shop",
-      "placeholders" : [
-        ".@q[2]",
-        "Slot(.@q[0])"
+        "getitemname(getarg(0))"
       ],
       "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:"
     },
@@ -381,9 +34,1452 @@
       "line" : 140,
       "npc" : "quest_shop",
       "placeholders" : [
-        "Slot(.@q[0])"
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))"
       ],
       "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:\n > ^00FF00{2} Cash Points ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:\n > ^FF0000{2} Cash Points ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:\n > ^00FF00{2} Zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:\n > ^FF0000{2} Zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} Cash Points ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} Cash Points ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} Zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} Zeny^000000\n > ^00FF00{3} Cash Points ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} Zeny^000000\n > ^FF0000{3} Cash Points ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} Zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} Zeny^000000\n > ^00FF00{3} Cash Points ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} Zeny^000000\n > ^FF0000{3} Cash Points ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} Cash Points ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} Cash Points ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} Zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} Zeny^000000\n > ^00FF00{4} Cash Points ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} Zeny^000000\n > ^FF0000{4} Cash Points ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} Zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} Zeny^000000\n > ^00FF00{4} Cash Points ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} Zeny^000000\n > ^FF0000{4} Cash Points ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} Cash Points ({2}/{3})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} Cash Points ({2}/{3})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} Zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} Zeny^000000\n > ^00FF00{2} Cash Points ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} Zeny^000000\n > ^FF0000{2} Cash Points ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} Zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} Zeny^000000\n > ^00FF00{2} Cash Points ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} Zeny^000000\n > ^FF0000{2} Cash Points ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:\n > ^00FF00{2} Zeny^000000\n > ^00FF00{3} Cash Points ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:\n > ^00FF00{2} Zeny^000000\n > ^FF0000{3} Cash Points ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:\n > ^FF0000{2} Zeny^000000\n > ^00FF00{3} Cash Points ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:\n > ^FF0000{2} Zeny^000000\n > ^FF0000{3} Cash Points ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} [{3}] ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} [{3}] ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} Cash Points ({3}/{4})^000000\n > ^00FF00{5} ({6}/{7})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} Cash Points ({3}/{4})^000000\n > ^00FF00{5} [{6}] ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} Cash Points ({3}/{4})^000000\n > ^FF0000{5} ({6}/{7})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} Cash Points ({3}/{4})^000000\n > ^FF0000{5} [{6}] ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} Cash Points ({3}/{4})^000000\n > ^00FF00{5} ({6}/{7})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} Cash Points ({3}/{4})^000000\n > ^00FF00{5} [{6}] ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} Cash Points ({3}/{4})^000000\n > ^FF0000{5} ({6}/{7})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} Cash Points ({3}/{4})^000000\n > ^FF0000{5} [{6}] ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} Zeny^000000\n > ^00FF00{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} Zeny^000000\n > ^00FF00{3} [{4}] ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} Zeny^000000\n > ^FF0000{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^00FF00{2} Zeny^000000\n > ^FF0000{3} [{4}] ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} Zeny^000000\n > ^00FF00{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} Zeny^000000\n > ^00FF00{3} [{4}] ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} Zeny^000000\n > ^FF0000{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1}^000000\nRequirements:\n > ^FF0000{2} Zeny^000000\n > ^FF0000{3} [{4}] ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} [{4}] ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} [{4}] ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} Cash Points ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} Cash Points ({4}/{5})^000000\n > ^00FF00{6} [{7}] ({8}/{9})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} Cash Points ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} Cash Points ({4}/{5})^000000\n > ^FF0000{6} [{7}] ({8}/{9})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} Cash Points ({4}/{5})^000000\n > ^00FF00{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} Cash Points ({4}/{5})^000000\n > ^00FF00{6} [{7}] ({8}/{9})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} Cash Points ({4}/{5})^000000\n > ^FF0000{6} ({7}/{8})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} Cash Points ({4}/{5})^000000\n > ^FF0000{6} [{7}] ({8}/{9})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} Zeny^000000\n > ^00FF00{4} ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} Zeny^000000\n > ^00FF00{4} [{5}] ({6}/{7})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} Zeny^000000\n > ^FF0000{4} ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^00FF00{3} Zeny^000000\n > ^FF0000{4} [{5}] ({6}/{7})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} Zeny^000000\n > ^00FF00{4} ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} Zeny^000000\n > ^00FF00{4} [{5}] ({6}/{7})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} Zeny^000000\n > ^FF0000{4} ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        ".@q[2]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}x {1} [{2}]^000000\nRequirements:\n > ^FF0000{3} Zeny^000000\n > ^FF0000{4} [{5}] ({6}/{7})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} ({2}/{3})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} [{2}] ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} ({2}/{3})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} [{2}] ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} Cash Points ({2}/{3})^000000\n > ^00FF00{4} ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} Cash Points ({2}/{3})^000000\n > ^00FF00{4} [{5}] ({6}/{7})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} Cash Points ({2}/{3})^000000\n > ^FF0000{4} ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} Cash Points ({2}/{3})^000000\n > ^FF0000{4} [{5}] ({6}/{7})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} Cash Points ({2}/{3})^000000\n > ^00FF00{4} ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} Cash Points ({2}/{3})^000000\n > ^00FF00{4} [{5}] ({6}/{7})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} Cash Points ({2}/{3})^000000\n > ^FF0000{4} ({5}/{6})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[5]*.@q[1]",
+        "getd(.Points$[0])",
+        ".@q[5]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} Cash Points ({2}/{3})^000000\n > ^FF0000{4} [{5}] ({6}/{7})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} Zeny^000000\n > ^00FF00{2} ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} Zeny^000000\n > ^00FF00{2} [{3}] ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} Zeny^000000\n > ^FF0000{2} ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^00FF00{1} Zeny^000000\n > ^FF0000{2} [{3}] ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} Zeny^000000\n > ^00FF00{2} ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} Zeny^000000\n > ^00FF00{2} [{3}] ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} Zeny^000000\n > ^FF0000{2} ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        ".@q[4]*.@q[1]",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0}^000000\nRequirements:\n > ^FF0000{1} Zeny^000000\n > ^FF0000{2} [{3}] ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:\n > ^00FF00{2} ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:\n > ^00FF00{2} [{3}] ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:\n > ^FF0000{2} ({3}/{4})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : "[Quest Shop]\nReward: ^0055FF{0} [{1}]^000000\nRequirements:\n > ^FF0000{2} [{3}] ({4}/{5})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : " > ^00FF00{0} ({1}/{2})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : " > ^00FF00{0} [{1}] ({2}/{3})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : " > ^FF0000{0} ({1}/{2})^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "npc" : "quest_shop",
+      "placeholders" : [
+        "getitemname(getarg(0))",
+        "getitemslots(getarg(0))",
+        "countitem(.@q[.@i])",
+        ".@q[.@i+1]*.@q[1]"
+      ],
+      "text" : " > ^FF0000{0} [{1}] ({2}/{3})^000000"
     },
     {
       "kind" : "option",

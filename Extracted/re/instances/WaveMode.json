@@ -17,12 +17,6 @@
       "kind" : "option",
       "line" : 79,
       "npc" : "Zonda Rep",
-      "text" : "Request entry."
-    },
-    {
-      "kind" : "option",
-      "line" : 79,
-      "npc" : "Zonda Rep",
       "text" : "Enter ^6B9900<Wave Mode - Forest>^000000."
     },
     {
@@ -36,6 +30,12 @@
       "line" : 79,
       "npc" : "Zonda Rep",
       "text" : "Cancel."
+    },
+    {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Zonda Rep",
+      "text" : "Request entry."
     },
     {
       "kind" : "message",
@@ -66,12 +66,6 @@
       "line" : 93,
       "npc" : "Zonda Rep",
       "text" : "[Belka]\nDo you have any questions about Zonda's ambitious new project, Wave Mode?"
-    },
-    {
-      "kind" : "message",
-      "line" : 93,
-      "npc" : "Zonda Rep",
-      "text" : "[Belka]\nDo you have any questions about Zonda's ambitious new project, Wave Mode?\n[Belka]\nWhich Wave Mode would you like to enter: Forest or Sky?"
     },
     {
       "kind" : "option",
@@ -125,7 +119,19 @@
       "kind" : "message",
       "line" : 120,
       "npc" : "Zonda Rep",
-      "text" : "[Belka]\nAny other questions?\n[Belka]\nWhich Wave Mode would you like to enter: Forest or Sky?"
+      "text" : "[Belka]\nAny other questions?"
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "npc" : "Zonda Rep",
+      "text" : "[Belka]"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Zonda Rep",
+      "text" : "Any other questions?"
     },
     {
       "kind" : "message",
@@ -189,29 +195,93 @@
       "kind" : "message",
       "line" : 129,
       "npc" : "Zonda Rep",
-      "placeholders" : [
-        ".@count_online",
-        "strcharinfo(0)",
-        ".@instance_name$[.@s]"
-      ],
-      "text" : "[Belka]\n{0} party member found {1}, right? To enter the ^6B9900<{2}>^000000, please sign here."
+      "text" : "[Belka]"
     },
     {
       "kind" : "message",
-      "line" : 129,
+      "line" : 130,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)"
+      ],
+      "text" : "{0} party member found {1}, right? To enter the ^6B9900<Wave Mode - Forest>^000000, please sign here."
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)"
+      ],
+      "text" : "{0} party member found {1}, right? To enter the ^6B9900<Wave Mode - Sky>^000000, please sign here."
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
       "npc" : "Zonda Rep",
       "placeholders" : [
         ".@count_online",
         "strcharinfo(0)",
         ".@instance_name$[.@s]"
       ],
-      "text" : "[Belka]\n{0} party members found {1}, right? To enter the ^6B9900<{2}>^000000, please sign here."
+      "text" : "{0} party member found {1}, right? To enter the ^6B9900<{2}>^000000, please sign here."
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)"
+      ],
+      "text" : "{0} party members found {1}, right? To enter the ^6B9900<Wave Mode - Forest>^000000, please sign here."
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)"
+      ],
+      "text" : "{0} party members found {1}, right? To enter the ^6B9900<Wave Mode - Sky>^000000, please sign here."
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)",
+        ".@instance_name$[.@s]"
+      ],
+      "text" : "{0} party members found {1}, right? To enter the ^6B9900<{2}>^000000, please sign here."
     },
     {
       "kind" : "option",
       "line" : 132,
       "npc" : "Zonda Rep",
       "text" : "Sign."
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[Belka]\n{0} has requested to enter the ^6B9900<Wave Mode - Forest>^000000. Please come back when it's your turn to enter."
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[Belka]\n{0} has requested to enter the ^6B9900<Wave Mode - Sky>^000000. Please come back when it's your turn to enter."
     },
     {
       "kind" : "message",
@@ -241,40 +311,22 @@
       "npc" : "Zonda Rep",
       "placeholders" : [
         "strcharinfo(0)",
+        ".@instance_name$[.@s]"
+      ],
+      "text" : "[Belka]\n{0} has requested to enter the ^6B9900<{1}>^000000. Please come back when it's your turn to enter."
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        "strcharinfo(0)",
         ".@instance_name$[.@s]",
         "getpartyname( getcharid(1) )",
         "strcharinfo(0)",
         ".@instance_name$[.@s]"
       ],
       "text" : "[Belka]\n{0} has requested to enter the ^6B9900<{1}>^000000. Please come back when it's your turn to enter.\nParty Name: {2}\nParty Leader: {3}\n^0000ff{4} ^000000 - Reservation Failed."
-    },
-    {
-      "kind" : "message",
-      "line" : 133,
-      "npc" : "Zonda Rep",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "text" : "[Belka]\n{0} has requested to enter the ^6B9900<Wave Mode - Forest>^000000. Please come back when it's your turn to enter."
-    },
-    {
-      "kind" : "message",
-      "line" : 133,
-      "npc" : "Zonda Rep",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "text" : "[Belka]\n{0} has requested to enter the ^6B9900<Wave Mode - Sky>^000000. Please come back when it's your turn to enter."
-    },
-    {
-      "kind" : "message",
-      "line" : 133,
-      "npc" : "Zonda Rep",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@instance_name$[.@s]"
-      ],
-      "text" : "[Belka]\n{0} has requested to enter the ^6B9900<{1}>^000000. Please come back when it's your turn to enter."
     },
     {
       "kind" : "message",

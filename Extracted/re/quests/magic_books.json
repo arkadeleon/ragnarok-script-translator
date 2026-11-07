@@ -593,12 +593,6 @@
       "kind" : "message",
       "line" : 302,
       "npc" : "Lea",
-      "text" : "[Lea]\nNo problem."
-    },
-    {
-      "kind" : "message",
-      "line" : 302,
-      "npc" : "Lea",
       "text" : "[Lea]\nYou already have that Magic Book. You can't borrow a new book until you return the current one."
     },
     {
@@ -606,6 +600,12 @@
       "line" : 302,
       "npc" : "Lea",
       "text" : "[Lea]\nThank you for your deposit. The book's return date is written on the lending card on the back cover of the book. Please try not to lose or damage the book and avoid paying compensation."
+    },
+    {
+      "kind" : "message",
+      "line" : 302,
+      "npc" : "Lea",
+      "text" : "[Lea]\nNo problem."
     },
     {
       "kind" : "message",
@@ -677,12 +677,6 @@
       "kind" : "message",
       "line" : 335,
       "npc" : "Lea",
-      "text" : "[Lea]\nNo problem."
-    },
-    {
-      "kind" : "message",
-      "line" : 335,
-      "npc" : "Lea",
       "text" : "[Lea]\nYou already have that Magic Book. You can't borrow a new book until you return the current one."
     },
     {
@@ -690,6 +684,12 @@
       "line" : 335,
       "npc" : "Lea",
       "text" : "[Lea]\nThank you for your deposit. The book's return date is written on the lending card on the back cover of the book. Please try not to lose or damage the book and avoid paying compensation."
+    },
+    {
+      "kind" : "message",
+      "line" : 335,
+      "npc" : "Lea",
+      "text" : "[Lea]\nNo problem."
     },
     {
       "kind" : "message",
@@ -995,13 +995,13 @@
       "kind" : "message",
       "line" : 518,
       "npc" : "Galfos",
-      "text" : "[Galfos]\nAre you kidding me? You already have the book!"
+      "text" : "[Galfos]\nOh my, I sense incredible energy coming from you. This is great! Now we're ready to make the Ultimate Magic Book."
     },
     {
       "kind" : "message",
       "line" : 518,
       "npc" : "Galfos",
-      "text" : "[Galfos]\nOh my, I sense incredible energy coming from you. This is great! Now we're ready to make the Ultimate Magic Book."
+      "text" : "[Galfos]\nAre you kidding me? You already have the book!"
     },
     {
       "kind" : "message",
@@ -1260,10 +1260,22 @@
       "line" : 713,
       "npc" : "Magic_Book_Essence",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@req_amount,getitemname(.@item_req))",
+        "sprintf(\"%d\", getarg(0))",
+        "getarg(1)",
         "getarg(3)"
       ],
-      "text" : "You have used {0} to create ^999900{1} Essence^000000."
+      "text" : "You have used {0} {1} to create ^999900{2} Essence^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 713,
+      "npc" : "Magic_Book_Essence",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "getarg(3)"
+      ],
+      "text" : "You have used {0} {1} to create ^999900{2} Essence^000000."
     },
     {
       "kind" : "message",
@@ -1279,9 +1291,20 @@
       "line" : 720,
       "npc" : "Magic_Book_Essence",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@req_amount,getitemname(.@item_req))"
+        "sprintf(\"%d\", getarg(0))",
+        "getarg(1)"
       ],
-      "text" : "^008888You have failed to refine the essence using {0}.^000000"
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 720,
+      "npc" : "Magic_Book_Essence",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000"
     },
     {
       "kind" : "message",
@@ -1297,6 +1320,226 @@
       "line" : 727,
       "npc" : "Magic_Book_Essence",
       "text" : "Someone already used this area."
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Powerful Lava Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "You have used {0} {1} to create ^999900Lava Essence^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Powerful Lava Energy",
+      "text" : "Please lighten your bag."
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Powerful Lava Energy",
+      "text" : "Someone already used this area."
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Powerful Lava Energy",
+      "text" : "You've already created Lava Essence in this area."
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Powerful Lava Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Powerful Lava Energy",
+      "text" : "^008800The Lava Essence will last permanently, unless there's a problem.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Powerful Flame Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "You have used {0} {1} to create ^999900Flame Essence^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Powerful Flame Energy",
+      "text" : "Please lighten your bag."
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Powerful Flame Energy",
+      "text" : "Someone already used this area."
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Powerful Flame Energy",
+      "text" : "You've already created Flame Essence in this area."
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Powerful Flame Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Powerful Flame Energy",
+      "text" : "^008800The Flame Essence will last permanently, unless there's a problem.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Powerful Glacier Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "You have used {0} {1} to create ^999900Glacier Essence^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Powerful Glacier Energy",
+      "text" : "Please lighten your bag."
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Powerful Glacier Energy",
+      "text" : "Someone already used this area."
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Powerful Glacier Energy",
+      "text" : "You've already created Glacier Essence in this area."
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Powerful Glacier Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Powerful Glacier Energy",
+      "text" : "^008800The Glacier Essence will last permanently, unless there's a problem.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Powerful Fossil Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "You have used {0} {1} to create ^999900Fossil Essence^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Powerful Fossil Energy",
+      "text" : "Please lighten your bag."
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Powerful Fossil Energy",
+      "text" : "Someone already used this area."
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Powerful Fossil Energy",
+      "text" : "You've already created Fossil Essence in this area."
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Powerful Fossil Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Powerful Fossil Energy",
+      "text" : "^008800The Fossil Essence will last permanently, unless there's a problem.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Powerful Storm Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "You have used {0} {1} to create ^999900Storm Essence^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Powerful Storm Energy",
+      "text" : "Please lighten your bag."
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Powerful Storm Energy",
+      "text" : "Someone already used this area."
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Powerful Storm Energy",
+      "text" : "You've already created Storm Essence in this area."
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Powerful Storm Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Powerful Storm Energy",
+      "text" : "^008800The Storm Essence will last permanently, unless there's a problem.^000000"
     }
   ]
 }
