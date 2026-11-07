@@ -240,7 +240,7 @@
       "line" : 82,
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
-        ".@bullet_str$"
+        "getitemname(.@bullet_id)"
       ],
       "text" : "[Kenny]\nHey~ You need the exact amount of items to exchange. Go get some more.\nYou must have 500 or more of ^FF0000{0}^000000, ok? Also, make sure not to ^FF0000wear^000000 them if you want to exchange."
     },
@@ -249,9 +249,9 @@
       "line" : 88,
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
-        ".@pack_str$",
-        ".@bullet_str$",
-        ".@bullet_str$"
+        "getitemname(.@pack_id)",
+        "getitemname(.@bullet_id)",
+        "getitemname(.@bullet_id)"
       ],
       "text" : "[Kenny]\nYou've chosen ^FF0000{0}^000000.\nYou need 500 ^3131FF{1}^000000 to make 1 ^3131FF{2}^000000 item, and it will cost ^3131FF500^000000 zeny.\nHow many do you want to exchange?"
     },
@@ -334,7 +334,7 @@
       "line" : 147,
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
-        ".@old_str$"
+        "getitemname(.@old_id)"
       ],
       "text" : "[Kenny]\nHey~ You need the exact amount of items to exchange. Go get some more.\nYou must have 10 or more of ^FF0000{0}^000000, ok? Also, make sure not to ^FF0000wear^000000 them if you want to exchange."
     },
@@ -343,9 +343,9 @@
       "line" : 153,
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
-        ".@old_str$",
-        ".@old_str$",
-        ".@new_str$"
+        "getitemname(.@old_id)",
+        "getitemname(.@old_id)",
+        "getitemname(.@new_id)"
       ],
       "text" : "[Kenny]\nYou've chosen ^FF0000{0}^000000.\nYou need 10 ^3131FF{1}^000000 to make 1 ^3131FF{2}^000000 item.\nHow many do you want to exchange?"
     },
@@ -372,9 +372,9 @@
       "line" : 160,
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
-        ".@old_str$",
+        "getitemname(.@old_id)",
         ".@old_count",
-        ".@new_str$",
+        "getitemname(.@new_id)",
         ".@new_count"
       ],
       "text" : "[Kenny]\n{0} count: ^3131FF{1}\n{2} count: ^3131FF{3}"
@@ -414,7 +414,7 @@
       "line" : 194,
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
-        ".@old_str$"
+        "getitemname(.@old_id)"
       ],
       "text" : "[Kenny]\nHey~ You need the exact amount of items to exchange. Go get some more.\nYou must have 1 or more of ^FF0000{0}^000000, ok? Also, make sure not to ^FF0000wear^000000 them if you want to exchange."
     },
@@ -423,9 +423,9 @@
       "line" : 200,
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
-        ".@old_str$",
-        ".@old_str$",
-        ".@new_str$"
+        "getitemname(.@old_id)",
+        "getitemname(.@old_id)",
+        "getitemname(.@new_id)"
       ],
       "text" : "[Kenny]\nYou've chosen ^FF0000{0}^000000.\nYou need 1 ^3131FF{1}^000000 to make 1 ^3131FF{2}^000000 item.\nHow many do you want to exchange?"
     },
@@ -452,9 +452,9 @@
       "line" : 207,
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
-        ".@old_str$",
+        "getitemname(.@old_id)",
         ".@old_count",
-        ".@new_str$",
+        "getitemname(.@new_id)",
         ".@old_count"
       ],
       "text" : "[Kenny]\n{0} count: ^3131FF{1}\n{2} count: ^3131FF{3}"
@@ -495,7 +495,7 @@
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
         ".@req_count",
-        ".@slug_str$"
+        "getitemname(.@slug_id)"
       ],
       "text" : "[Kenny]\nHey~ You need the exact amount of items to exchange. Go get some more.\nYou must have {0} or more of ^FF0000{1}^000000, ok? Also, make sure not to ^FF0000wear^000000 them if you want to exchange."
     },
@@ -504,10 +504,10 @@
       "line" : 248,
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
-        ".@slug_str$",
+        "getitemname(.@slug_id)",
         ".@req_count",
-        ".@slug_str$",
-        ".@new_slug_str$"
+        "getitemname(.@slug_id)",
+        "getitemname(25187)"
       ],
       "text" : "[Kenny]\nYou've chosen ^FF0000{0}^000000.\nYou need {1} ^3131FF{2}^000000 to make 1 ^3131FF{3}^000000 item.\nHow many do you want to exchange?"
     },
@@ -534,9 +534,9 @@
       "line" : 255,
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
-        ".@slug_str$",
+        "getitemname(.@slug_id)",
         ".@count",
-        ".@new_slug_str$",
+        "getitemname(25187)",
         ".@new_count"
       ],
       "text" : "[Kenny]\n{0} count: ^3131FF{1}\n{2} count: ^3131FF{3}"

@@ -5,61 +5,49 @@
       "kind" : "message",
       "line" : 72,
       "npc" : "Vomars",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nYou have my blessings, have a wonderful married life."
+      "text" : "[Vomars]\nYou have my blessings, have a wonderful married life."
     },
     {
       "kind" : "message",
       "line" : 77,
       "npc" : "Vomars",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nYou must apply for\nmarriage with Happy Marry\nbefore you can get married.\nHappy Marry will let you know\nwhat else you'll need to do\nto prepare for marriage"
+      "text" : "[Vomars]\nYou must apply for\nmarriage with Happy Marry\nbefore you can get married.\nHappy Marry will let you know\nwhat else you'll need to do\nto prepare for marriage"
+    },
+    {
+      "kind" : "message",
+      "line" : 95,
+      "npc" : "Vomars",
+      "text" : "[Vomars]\nThere is a wedding being planned. I would appreciate it if you would not interrupt me."
     },
     {
       "kind" : "message",
       "line" : 95,
       "npc" : "Vomars",
       "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nThere is a wedding being planned. I would appreciate it if you would not interrupt me."
-    },
-    {
-      "kind" : "message",
-      "line" : 95,
-      "npc" : "Vomars",
-      "placeholders" : [
-        "@name$",
         "$wed_groom$",
         "$wed_bride$"
       ],
-      "text" : "[{0}]\nI am wedding {1} and {2}, and it's already too late to object. Please let me continue."
+      "text" : "[Vomars]\nI am wedding {0} and {1}, and it's already too late to object. Please let me continue."
     },
     {
       "kind" : "message",
       "line" : 95,
       "npc" : "Vomars",
       "placeholders" : [
-        "@name$",
         "$wed_groom$",
         "$wed_bride$"
       ],
-      "text" : "[{0}]\nI am going to wed {1} and {2}, do you have an objection to it?\nWhy should they not be wed?"
+      "text" : "[Vomars]\nI am going to wed {0} and {1}, do you have an objection to it?\nWhy should they not be wed?"
     },
     {
       "kind" : "message",
       "line" : 95,
       "npc" : "Vomars",
       "placeholders" : [
-        "@name$",
         "$wed_groom$",
         "$wed_bride$"
       ],
-      "text" : "[{0}]\nI am going to wed {1} and {2}, do you have an objection to it?\nVery well, go sit and enjoy the ceremony."
+      "text" : "[Vomars]\nI am going to wed {0} and {1}, do you have an objection to it?\nVery well, go sit and enjoy the ceremony."
     },
     {
       "kind" : "option",
@@ -374,7 +362,17 @@
       "npc" : "Vomars",
       "placeholders" : [
         "@name$",
-        "$@msg$"
+        "$wed_bride$"
+      ],
+      "text" : "[{0}]\nWhere is {1}?? I can't marry you both if one is missing..."
+    },
+    {
+      "kind" : "message",
+      "line" : 328,
+      "npc" : "Vomars",
+      "placeholders" : [
+        "@name$",
+        "$wed_groom$"
       ],
       "text" : "[{0}]\nWhere is {1}?? I can't marry you both if one is missing..."
     },
@@ -412,19 +410,13 @@
       "kind" : "message",
       "line" : 441,
       "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nIsn't marriage beautiful?"
+      "text" : "[Marry]\nIsn't marriage beautiful?"
     },
     {
       "kind" : "message",
       "line" : 458,
       "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nMarriage... is such a beautiful thing.\nWould you like to get married with someone?"
+      "text" : "[Marry]\nMarriage... is such a beautiful thing.\nWould you like to get married with someone?"
     },
     {
       "kind" : "option",
@@ -454,10 +446,7 @@
       "kind" : "message",
       "line" : 470,
       "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nIn that case, enjoy your bachelor's life."
+      "text" : "[Marry]\nIn that case, enjoy your bachelor's life."
     },
     {
       "kind" : "message",
@@ -1224,10 +1213,18 @@
       "line" : 681,
       "npc" : "Happy Marry",
       "placeholders" : [
-        "@name$",
-        "@type$"
+        "@name$"
       ],
-      "text" : "[{0}]\nBefore registering as {1}, let me check if you meet all the requirements..."
+      "text" : "[{0}]\nBefore registering as bride, let me check if you meet all the requirements..."
+    },
+    {
+      "kind" : "message",
+      "line" : 681,
+      "npc" : "Happy Marry",
+      "placeholders" : [
+        "@name$"
+      ],
+      "text" : "[{0}]\nBefore registering as groom, let me check if you meet all the requirements..."
     },
     {
       "kind" : "message",
@@ -1359,166 +1356,6 @@
         "getitemname(7170)",
         "getitemname(2338)",
         "getitemname(2206)",
-        "getitemname($@wed_ring)",
-        "$@wed_groom_reg",
-        "$@wed_bride_reg"
-      ],
-      "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- Females must also wear a {3}.\n- Both must own a {4} each.\n- The registration fee for the groom is {5}z.\n- The registration fee for the bride is {6}z."
-    },
-    {
-      "kind" : "message",
-      "line" : 769,
-      "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$",
-        "getitemname(7170)",
-        "getitemname(2338)",
-        "getitemname($@wed_ring)",
-        "$@wed_groom_reg",
-        "$@wed_bride_reg"
-      ],
-      "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- Both must own a {3} each.\n- The registration fee for the groom is {4}z.\n- The registration fee for the bride is {5}z."
-    },
-    {
-      "kind" : "message",
-      "line" : 769,
-      "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$",
-        "getitemname(7170)",
-        "getitemname(2338)",
-        "getitemname(2206)",
-        "$@wed_groom_reg",
-        "$@wed_bride_reg"
-      ],
-      "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- Females must also wear a {3}.\n- The registration fee for the groom is {4}z.\n- The registration fee for the bride is {5}z."
-    },
-    {
-      "kind" : "message",
-      "line" : 769,
-      "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$",
-        "getitemname(7170)",
-        "getitemname(2338)",
-        "$@wed_groom_reg",
-        "$@wed_bride_reg"
-      ],
-      "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- The registration fee for the groom is {3}z.\n- The registration fee for the bride is {4}z."
-    },
-    {
-      "kind" : "message",
-      "line" : 769,
-      "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$",
-        "getitemname(7170)",
-        "getitemname(2338)",
-        "getitemname(2206)",
-        "getitemname($@wed_ring)",
-        "$@wed_bride_reg"
-      ],
-      "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- Females must also wear a {3}.\n- Both must own a {4} each.\n- The registration fee for the bride is {5}z."
-    },
-    {
-      "kind" : "message",
-      "line" : 769,
-      "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$",
-        "getitemname(7170)",
-        "getitemname(2338)",
-        "getitemname($@wed_ring)",
-        "$@wed_bride_reg"
-      ],
-      "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- Both must own a {3} each.\n- The registration fee for the bride is {4}z."
-    },
-    {
-      "kind" : "message",
-      "line" : 769,
-      "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$",
-        "getitemname(7170)",
-        "getitemname(2338)",
-        "getitemname(2206)",
-        "$@wed_bride_reg"
-      ],
-      "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- Females must also wear a {3}.\n- The registration fee for the bride is {4}z."
-    },
-    {
-      "kind" : "message",
-      "line" : 769,
-      "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$",
-        "getitemname(7170)",
-        "getitemname(2338)",
-        "$@wed_bride_reg"
-      ],
-      "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- The registration fee for the bride is {3}z."
-    },
-    {
-      "kind" : "message",
-      "line" : 769,
-      "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$",
-        "getitemname(7170)",
-        "getitemname(2338)",
-        "getitemname(2206)",
-        "getitemname($@wed_ring)",
-        "$@wed_groom_reg"
-      ],
-      "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- Females must also wear a {3}.\n- Both must own a {4} each.\n- The registration fee for the groom is {5}z."
-    },
-    {
-      "kind" : "message",
-      "line" : 769,
-      "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$",
-        "getitemname(7170)",
-        "getitemname(2338)",
-        "getitemname($@wed_ring)",
-        "$@wed_groom_reg"
-      ],
-      "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- Both must own a {3} each.\n- The registration fee for the groom is {4}z."
-    },
-    {
-      "kind" : "message",
-      "line" : 769,
-      "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$",
-        "getitemname(7170)",
-        "getitemname(2338)",
-        "getitemname(2206)",
-        "$@wed_groom_reg"
-      ],
-      "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- Females must also wear a {3}.\n- The registration fee for the groom is {4}z."
-    },
-    {
-      "kind" : "message",
-      "line" : 769,
-      "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$",
-        "getitemname(7170)",
-        "getitemname(2338)",
-        "$@wed_groom_reg"
-      ],
-      "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- The registration fee for the groom is {3}z."
-    },
-    {
-      "kind" : "message",
-      "line" : 769,
-      "npc" : "Happy Marry",
-      "placeholders" : [
-        "@name$",
-        "getitemname(7170)",
-        "getitemname(2338)",
-        "getitemname(2206)",
         "getitemname($@wed_ring)"
       ],
       "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}.\n- Females must also wear a {3}.\n- Both must own a {4} each."
@@ -1557,6 +1394,34 @@
         "getitemname(2338)"
       ],
       "text" : "[{0}]\nThe registration requirements are:\n- Males must be wearing a {1}.\n- Females must be wearing a {2}."
+    },
+    {
+      "kind" : "message",
+      "line" : 775,
+      "npc" : "Happy Marry",
+      "placeholders" : [
+        "$@wed_groom_reg",
+        "$@wed_bride_reg"
+      ],
+      "text" : "- The registration fee for the groom is {0}z.\n- The registration fee for the bride is {1}z."
+    },
+    {
+      "kind" : "message",
+      "line" : 775,
+      "npc" : "Happy Marry",
+      "placeholders" : [
+        "$@wed_groom_reg"
+      ],
+      "text" : "- The registration fee for the groom is {0}z."
+    },
+    {
+      "kind" : "message",
+      "line" : 776,
+      "npc" : "Happy Marry",
+      "placeholders" : [
+        "$@wed_bride_reg"
+      ],
+      "text" : "- The registration fee for the bride is {0}z."
     },
     {
       "kind" : "message",
@@ -1753,19 +1618,13 @@
       "kind" : "message",
       "line" : 826,
       "npc" : "Sister Lisa",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nDivorcing can be such a sad event...\nPeople shouldn't make shallow vows to others, don't you think?"
+      "text" : "[Lisa]\nDivorcing can be such a sad event...\nPeople shouldn't make shallow vows to others, don't you think?"
     },
     {
       "kind" : "message",
       "line" : 826,
       "npc" : "Sister Lisa",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nDivorcing can be such a sad event...\nYou wouldn't want to divorce, by any chance?"
+      "text" : "[Lisa]\nDivorcing can be such a sad event...\nYou wouldn't want to divorce, by any chance?"
     },
     {
       "kind" : "option",
@@ -1795,56 +1654,40 @@
       "kind" : "message",
       "line" : 842,
       "npc" : "Sister Lisa",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nGood to hear."
+      "text" : "[Lisa]\nGood to hear."
     },
     {
       "kind" : "message",
       "line" : 846,
       "npc" : "Sister Lisa",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nEven though it is said that once the wedlocks have been made they cannot be undone, sometimes it is necessary to undo our mistakes from the past.."
+      "text" : "[Lisa]\nEven though it is said that once the wedlocks have been made they cannot be undone, sometimes it is necessary to undo our mistakes from the past.."
     },
     {
       "kind" : "message",
       "line" : 849,
       "npc" : "Sister Lisa",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nIt is sad, but true. If you happen to have married the wrong person, it is possible to divorce, rather than spend the rest of your life with the wrong one."
+      "text" : "[Lisa]\nIt is sad, but true. If you happen to have married the wrong person, it is possible to divorce, rather than spend the rest of your life with the wrong one."
     },
     {
       "kind" : "message",
       "line" : 854,
       "npc" : "Sister Lisa",
       "placeholders" : [
-        "@name$",
         "$@wed_divorce_fee"
       ],
-      "text" : "[{0}]\nIn order to file for divorce, I need you both to agree to it.\nAfter you file in for divorce, your spouse has one minute to agree, and then you will both be divorced.\nThe fee is of {1}z and is paid by the person who confirms the divorce, so plan ahead of time how you will divide the costs."
+      "text" : "[Lisa]\nIn order to file for divorce, I need you both to agree to it.\nAfter you file in for divorce, your spouse has one minute to agree, and then you will both be divorced.\nThe fee is of {0}z and is paid by the person who confirms the divorce, so plan ahead of time how you will divide the costs."
     },
     {
       "kind" : "message",
       "line" : 854,
       "npc" : "Sister Lisa",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nIn order to file for divorce, I need you both to agree to it.\nAfter you file in for divorce, your spouse has one minute to agree, and then you will both be divorced."
+      "text" : "[Lisa]\nIn order to file for divorce, I need you both to agree to it.\nAfter you file in for divorce, your spouse has one minute to agree, and then you will both be divorced."
     },
     {
       "kind" : "message",
       "line" : 861,
       "npc" : "Sister Lisa",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nYou should not regret the choices you've made in life.\nAre you positively sure about getting divorced?"
+      "text" : "[Lisa]\nYou should not regret the choices you've made in life.\nAre you positively sure about getting divorced?"
     },
     {
       "kind" : "option",
@@ -1862,19 +1705,13 @@
       "kind" : "message",
       "line" : 866,
       "npc" : "Sister Lisa",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nYou should think this through."
+      "text" : "[Lisa]\nYou should think this through."
     },
     {
       "kind" : "message",
       "line" : 870,
       "npc" : "Sister Lisa",
-      "placeholders" : [
-        "@name$"
-      ],
-      "text" : "[{0}]\nVery well, get your partner to confirm, and I will collect the fee for filing the divorce then."
+      "text" : "[Lisa]\nVery well, get your partner to confirm, and I will collect the fee for filing the divorce then."
     },
     {
       "kind" : "message",

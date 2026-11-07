@@ -2798,7 +2798,24 @@
     {
       "kind" : "option",
       "line" : 2308,
+      "placeholders" : [
+        ".@menu$",
+        ".@i"
+      ],
+      "text" : "{0}Send me to Level {1}"
+    },
+    {
+      "kind" : "option",
+      "line" : 2308,
       "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 2308,
+      "placeholders" : [
+        ".@menu$"
+      ],
+      "text" : "{0}Cancel"
     },
     {
       "kind" : "message",
@@ -3295,6 +3312,30 @@
       "text" : "[Lark]\n{0} You have destroyed the street punks.\nAfter clearing up the mess, you approach the person who was being attacked.\nDo you think the person who was surrounded by punks is a man or a woman?"
     },
     {
+      "kind" : "message",
+      "line" : 2742,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nYou subdue them easily. You have destroyed the street punks.\nAfter clearing up the mess, you approach the person who was being attacked.\nDo you think the person who was surrounded by punks is a man or a woman?"
+    },
+    {
+      "kind" : "message",
+      "line" : 2742,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nYou cast a spell on them. You have destroyed the street punks.\nAfter clearing up the mess, you approach the person who was being attacked.\nDo you think the person who was surrounded by punks is a man or a woman?"
+    },
+    {
+      "kind" : "message",
+      "line" : 2742,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nYou call for help and Guards come to your aid. You have destroyed the street punks.\nAfter clearing up the mess, you approach the person who was being attacked.\nDo you think the person who was surrounded by punks is a man or a woman?"
+    },
+    {
+      "kind" : "message",
+      "line" : 2742,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nYou skillfully throw rocks at the punks. You have destroyed the street punks.\nAfter clearing up the mess, you approach the person who was being attacked.\nDo you think the person who was surrounded by punks is a man or a woman?"
+    },
+    {
       "kind" : "option",
       "line" : 2747,
       "npc" : "Job Guide Lark",
@@ -3311,12 +3352,28 @@
       "line" : 2757,
       "npc" : "Job Guide Lark",
       "placeholders" : [
-        ".@question_02_01$",
-        ".@question_02_02$",
-        ".@question_02_01$",
+        "\"You find out that \"+.@question_02_01$+\" is the \"+.@question_02_02$+\" of a very rich family in Alberta and Punks attacked while \"+.@question_02_01$+\" was on an errand for the family.\"",
         ".@question_02_01$"
       ],
-      "text" : "[Lark]\nYou find out that {0} is the {1} of a very rich family in Alberta and Punks attacked while {2} was on an errand for the family.\nWhat kind of errand was {3} doing?"
+      "text" : "[Lark]\n{0}\nWhat kind of errand was {1} doing?"
+    },
+    {
+      "kind" : "message",
+      "line" : 2757,
+      "npc" : "Job Guide Lark",
+      "placeholders" : [
+        "\"You find out that \"+.@question_02_01$+\" is the \"+.@question_02_02$+\" of a very rich family in Alberta and Punks attacked while \"+.@question_02_01$+\" was on an errand for the family.\""
+      ],
+      "text" : "[Lark]\n{0}\nWhat kind of errand was he doing?"
+    },
+    {
+      "kind" : "message",
+      "line" : 2757,
+      "npc" : "Job Guide Lark",
+      "placeholders" : [
+        "\"You find out that \"+.@question_02_01$+\" is the \"+.@question_02_02$+\" of a very rich family in Alberta and Punks attacked while \"+.@question_02_01$+\" was on an errand for the family.\""
+      ],
+      "text" : "[Lark]\n{0}\nWhat kind of errand was she doing?"
     },
     {
       "kind" : "option",
@@ -3344,6 +3401,18 @@
         ".@question_02_01$"
       ],
       "text" : "[Lark]\nThanks to your bravery, {0} becomes your friend and decides to go on a trip.\nWhere are you going?"
+    },
+    {
+      "kind" : "message",
+      "line" : 2775,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nThanks to your bravery, he becomes your friend and decides to go on a trip.\nWhere are you going?"
+    },
+    {
+      "kind" : "message",
+      "line" : 2775,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nThanks to your bravery, she becomes your friend and decides to go on a trip.\nWhere are you going?"
     },
     {
       "kind" : "option",
@@ -3949,28 +4018,115 @@
       "kind" : "message",
       "line" : 3271,
       "npc" : "Job Guide Lark",
-      "placeholders" : [
-        ".@job$"
-      ],
-      "text" : "[Lark]\n^8014EB{0} is the job that suits you.^000000"
+      "text" : "[Lark]\n^8014EBSwordman is the job that suits you.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 3271,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\n^8014EBWizard is the job that suits you.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 3271,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\n^8014EBArcher is the job that suits you.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 3271,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\n^8014EBMerchant is the job that suits you.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 3271,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\n^8014EBThief is the job that suits you.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 3271,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\n^8014EBAcolyte is the job that suits you.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 3271,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\n^8014EBTaekwon Boy/Girl is the job that suits you.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 3271,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\n^8014EBGunslinger is the job that suits you.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 3271,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\n^8014EBNinja is the job that suits you.^000000"
     },
     {
       "kind" : "message",
       "line" : 3274,
       "npc" : "Job Guide Lark",
-      "placeholders" : [
-        ".@job$"
-      ],
-      "text" : "[Lark]\nWell, {0}, you can choose among various career pathways.\nDo you want to determine the job that suits you?\nDo you want to select a job?"
+      "text" : "[Lark]\nWell, Swordman, you can choose among various career pathways.\nDo you want to determine the job that suits you?\nDo you want to select a job?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3274,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nWell, Wizard, you can choose among various career pathways.\nDo you want to determine the job that suits you?\nDo you want to select a job?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3274,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nWell, Archer, you can choose among various career pathways.\nDo you want to determine the job that suits you?\nDo you want to select a job?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3274,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nWell, Merchant, you can choose among various career pathways.\nDo you want to determine the job that suits you?\nDo you want to select a job?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3274,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nWell, Thief, you can choose among various career pathways.\nDo you want to determine the job that suits you?\nDo you want to select a job?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3274,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nWell, Acolyte, you can choose among various career pathways.\nDo you want to determine the job that suits you?\nDo you want to select a job?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3274,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nWell, Taekwon Boy/Girl, you can choose among various career pathways.\nDo you want to determine the job that suits you?\nDo you want to select a job?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3274,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nWell, Gunslinger, you can choose among various career pathways.\nDo you want to determine the job that suits you?\nDo you want to select a job?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3274,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nWell, Ninja, you can choose among various career pathways.\nDo you want to determine the job that suits you?\nDo you want to select a job?"
     },
     {
       "kind" : "option",
       "line" : 3279,
       "npc" : "Job Guide Lark",
-      "placeholders" : [
-        ".@job$"
-      ],
-      "text" : "{0}."
+      "text" : "Swordman."
     },
     {
       "kind" : "option",
@@ -3979,13 +4135,106 @@
       "text" : "Any other profession."
     },
     {
+      "kind" : "option",
+      "line" : 3279,
+      "npc" : "Job Guide Lark",
+      "text" : "Wizard."
+    },
+    {
+      "kind" : "option",
+      "line" : 3279,
+      "npc" : "Job Guide Lark",
+      "text" : "Archer."
+    },
+    {
+      "kind" : "option",
+      "line" : 3279,
+      "npc" : "Job Guide Lark",
+      "text" : "Merchant."
+    },
+    {
+      "kind" : "option",
+      "line" : 3279,
+      "npc" : "Job Guide Lark",
+      "text" : "Thief."
+    },
+    {
+      "kind" : "option",
+      "line" : 3279,
+      "npc" : "Job Guide Lark",
+      "text" : "Acolyte."
+    },
+    {
+      "kind" : "option",
+      "line" : 3279,
+      "npc" : "Job Guide Lark",
+      "text" : "Taekwon Boy/Girl."
+    },
+    {
+      "kind" : "option",
+      "line" : 3279,
+      "npc" : "Job Guide Lark",
+      "text" : "Gunslinger."
+    },
+    {
+      "kind" : "option",
+      "line" : 3279,
+      "npc" : "Job Guide Lark",
+      "text" : "Ninja."
+    },
+    {
       "kind" : "message",
       "line" : 3281,
       "npc" : "Job Guide Lark",
-      "placeholders" : [
-        ".@job$"
-      ],
-      "text" : "[Lark]\nThe Novice Training Center course is now shut down, {0}. Would you like to make this occupation your profession?"
+      "text" : "[Lark]\nThe Novice Training Center course is now shut down, Swordman. Would you like to make this occupation your profession?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3281,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nThe Novice Training Center course is now shut down, Wizard. Would you like to make this occupation your profession?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3281,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nThe Novice Training Center course is now shut down, Archer. Would you like to make this occupation your profession?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3281,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nThe Novice Training Center course is now shut down, Merchant. Would you like to make this occupation your profession?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3281,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nThe Novice Training Center course is now shut down, Thief. Would you like to make this occupation your profession?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3281,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nThe Novice Training Center course is now shut down, Acolyte. Would you like to make this occupation your profession?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3281,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nThe Novice Training Center course is now shut down, Taekwon Boy/Girl. Would you like to make this occupation your profession?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3281,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nThe Novice Training Center course is now shut down, Gunslinger. Would you like to make this occupation your profession?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3281,
+      "npc" : "Job Guide Lark",
+      "text" : "[Lark]\nThe Novice Training Center course is now shut down, Ninja. Would you like to make this occupation your profession?"
     },
     {
       "kind" : "option",
@@ -4106,81 +4355,81 @@
       "line" : 3316,
       "npc" : "Job Guide Lark",
       "placeholders" : [
-        ".@str$"
+        "strcharinfo(0)"
       ],
-      "text" : "[Lark]\nWe will send you\nto the swordman guild in Izlude, the Satelite city.\n{0}\nGood bye."
+      "text" : "[Lark]\nWe will send you\nto the swordman guild in Izlude, the Satelite city.\n^A62A2A'{0}^000000'! Take care and may Freya bless you on your journey.\nGood bye."
     },
     {
       "kind" : "message",
       "line" : 3326,
       "npc" : "Job Guide Lark",
       "placeholders" : [
-        ".@str$"
+        "strcharinfo(0)"
       ],
-      "text" : "[Lark]\nWe will send you\nto the magician guild in Geffen, the Magical City.\n{0}\nGood bye."
+      "text" : "[Lark]\nWe will send you\nto the magician guild in Geffen, the Magical City.\n^A62A2A'{0}^000000'! Take care and may Freya bless you on your journey.\nGood bye."
     },
     {
       "kind" : "message",
       "line" : 3336,
       "npc" : "Job Guide Lark",
       "placeholders" : [
-        ".@str$"
+        "strcharinfo(0)"
       ],
-      "text" : "[Lark]\nWe will send you\nto the Archer Guild in Payon, the city of mountains.\n{0}\nGood bye."
+      "text" : "[Lark]\nWe will send you\nto the Archer Guild in Payon, the city of mountains.\n^A62A2A'{0}^000000'! Take care and may Freya bless you on your journey.\nGood bye."
     },
     {
       "kind" : "message",
       "line" : 3346,
       "npc" : "Job Guide Lark",
       "placeholders" : [
-        ".@str$"
+        "strcharinfo(0)"
       ],
-      "text" : "[Lark]\nWe will send you\nto the merchant guild in Alberta, the Port City.\n{0}\nGood bye."
+      "text" : "[Lark]\nWe will send you\nto the merchant guild in Alberta, the Port City.\n^A62A2A'{0}^000000'! Take care and may Freya bless you on your journey.\nGood bye."
     },
     {
       "kind" : "message",
       "line" : 3356,
       "npc" : "Job Guide Lark",
       "placeholders" : [
-        ".@str$"
+        "strcharinfo(0)"
       ],
-      "text" : "[Lark]\nWe will send you\nto the thief guild in Morocc, the desert city.\n{0}\nGood bye."
+      "text" : "[Lark]\nWe will send you\nto the thief guild in Morocc, the desert city.\n^A62A2A'{0}^000000'! Take care and may Freya bless you on your journey.\nGood bye."
     },
     {
       "kind" : "message",
       "line" : 3366,
       "npc" : "Job Guide Lark",
       "placeholders" : [
-        ".@str$"
+        "strcharinfo(0)"
       ],
-      "text" : "[Lark]\nWe will send you\nto the Prontera, the capital city of the Rune-Midgarts Kingdom.\n{0}\nGood bye."
+      "text" : "[Lark]\nWe will send you\nto the Prontera, the capital city of the Rune-Midgarts Kingdom.\n^A62A2A'{0}^000000'! Take care and may Freya bless you on your journey.\nGood bye."
     },
     {
       "kind" : "message",
       "line" : 3376,
       "npc" : "Job Guide Lark",
       "placeholders" : [
-        ".@str$"
+        "strcharinfo(0)"
       ],
-      "text" : "[Lark]\nWe will send you\nto the Phoenix in Payon, the city of mountains.\n{0}\nGood bye."
+      "text" : "[Lark]\nWe will send you\nto the Phoenix in Payon, the city of mountains.\n^A62A2A'{0}^000000'! Take care and may Freya bless you on your journey.\nGood bye."
     },
     {
       "kind" : "message",
       "line" : 3386,
       "npc" : "Job Guide Lark",
       "placeholders" : [
-        ".@str$"
+        "strcharinfo(0)"
       ],
-      "text" : "[Lark]\nYou will be sent to the flyship\nin Izlude, the Satelite city.\nYou can get on the flyship to go to Einbroch, the city of industries.\n{0}\nGood bye."
+      "text" : "[Lark]\nYou will be sent to the flyship\nin Izlude, the Satelite city.\nYou can get on the flyship to go to Einbroch, the city of industries.\n^A62A2A'{0}^000000'! Take care and may Freya bless you on your journey.\nGood bye."
     },
     {
       "kind" : "message",
       "line" : 3397,
       "npc" : "Job Guide Lark",
       "placeholders" : [
-        ".@str$"
+        "strcharinfo(0)"
       ],
-      "text" : "[Lark]\nWe will send you\nto the captain of the smuggling ship.\nYou can move to Amatsu\nwith the captain's help.\n{0}\nGood bye."
+      "text" : "[Lark]\nWe will send you\nto the captain of the smuggling ship.\nYou can move to Amatsu\nwith the captain's help.\n^A62A2A'{0}^000000'! Take care and may Freya bless you on your journey.\nGood bye."
     },
     {
       "kind" : "message",

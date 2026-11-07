@@ -30,7 +30,7 @@
       "line" : 122,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nSo you've decided to invest in Zeny.\nMinimum investment unit is ^4d4dff10,000 Zeny^000000.\nYou can invest a maximum of 50 units which is ^4d4dff500,000 Zeny^000000."
     },
@@ -69,7 +69,7 @@
       "line" : 138,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nPlease enter the amount you want to invest.\nPlease choose between 1 to 200.\nPlease enter 0 to cancel."
     },
@@ -78,7 +78,7 @@
       "line" : 145,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nYou've exceeded the amount per investment.\nPlease try again."
     },
@@ -87,7 +87,7 @@
       "line" : 150,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nCanceled."
     },
@@ -96,7 +96,7 @@
       "line" : 156,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nCanceled."
     },
@@ -105,7 +105,7 @@
       "line" : 162,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nYou do not have enough money."
     },
@@ -114,7 +114,7 @@
       "line" : 166,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(1)",
         "callfunc(\"F_InsertPlural\",.@units,\"unit\")",
         "callfunc(\"F_InsertComma\",.@zeny)",
         "getarg(2,\"\")"
@@ -126,7 +126,7 @@
       "line" : 174,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nWow, you've brought Investment Certificates.\nHow many certificates will you submit?"
     },
@@ -159,7 +159,7 @@
       "line" : 186,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nPlease enter the number of Investment Certificates you want to submit.\nPlease choose between 1 to 20.\nPlease enter 0 to cancel."
     },
@@ -168,7 +168,7 @@
       "line" : 193,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nYou've exceeded the amount per investment.\nPlease try again."
     },
@@ -177,7 +177,7 @@
       "line" : 198,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nCanceled."
     },
@@ -186,7 +186,7 @@
       "line" : 204,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nCanceled."
     },
@@ -195,7 +195,7 @@
       "line" : 209,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nLooks like you have fewer Investment Certificates than you want to submit."
     },
@@ -204,7 +204,7 @@
       "line" : 214,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(1)",
         ".@tickets",
         ".@units",
         ".@units",
@@ -217,7 +217,7 @@
       "line" : 214,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(1)",
         ".@tickets",
         ".@units",
         "insertchar(\"\"+.@units,\",\",1)",
@@ -230,7 +230,7 @@
       "line" : 214,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(1)",
         ".@tickets",
         ".@units",
         ".@units",
@@ -243,7 +243,7 @@
       "line" : 214,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(1)",
         ".@tickets",
         ".@units",
         "insertchar(\"\"+.@units,\",\",1)",
@@ -256,7 +256,7 @@
       "line" : 222,
       "npc" : "F_Invest_Abyss",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "{0}\nCanceled."
     },
@@ -363,12 +363,36 @@
       "kind" : "message",
       "line" : 724,
       "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nI'm Megrez, the Luina Branch Manager in Al De Baran of the Cat Paw Merchant Guild.\nI consult about investments for the Abyss Gate development.\nHow may I help you?"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nI'm Meraq, the Britoniah Branch Manager of the Cat Paw Merchant Guild.\nI consult about investments for the Abyss Gate development.\nHow may I help you?"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nI'm Phecda, the Payon Greenwood Lake Branch Manager of the Cat Paw Merchant Guild.\nI consult about investments for the Abyss Gate development.\nHow may I help you?"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nI'm Dubae, the Prontera Valkyrie Realm Branch Manager of the Cat Paw Merchant Guild.\nI consult about investments for the Abyss Gate development.\nHow may I help you?"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$",
+        ".@name$",
         ".@name$",
         ".@intro$"
       ],
-      "text" : "{0}\nI'm {1}, the {2} of the Cat Paw Merchant Guild.\nI consult about investments for the Abyss Gate development.\nHow may I help you?"
+      "text" : "[{0}]\nI'm {1}, the {2} of the Cat Paw Merchant Guild.\nI consult about investments for the Abyss Gate development.\nHow may I help you?"
     },
     {
       "kind" : "option",
@@ -398,82 +422,298 @@
       "kind" : "message",
       "line" : 731,
       "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nIt is only called the Abyss Gate for convenience but it's simply a ^4d4dffgap to another dimension^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nIt is only called the Abyss Gate for convenience but it's simply a ^4d4dffgap to another dimension^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nIt is only called the Abyss Gate for convenience but it's simply a ^4d4dffgap to another dimension^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nIt is only called the Abyss Gate for convenience but it's simply a ^4d4dffgap to another dimension^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nIt is only called the Abyss Gate for convenience but it's simply a ^4d4dffgap to another dimension^000000."
+      "text" : "[{0}]\nIt is only called the Abyss Gate for convenience but it's simply a ^4d4dffgap to another dimension^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nMore of these gaps are found here and there after Morocc created the Crack of Dimension.\nI personally think that the Abyss Gate found recently is part of the past or even from the future."
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nMore of these gaps are found here and there after Morocc created the Crack of Dimension.\nI personally think that the Abyss Gate found recently is part of the past or even from the future."
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nMore of these gaps are found here and there after Morocc created the Crack of Dimension.\nI personally think that the Abyss Gate found recently is part of the past or even from the future."
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nMore of these gaps are found here and there after Morocc created the Crack of Dimension.\nI personally think that the Abyss Gate found recently is part of the past or even from the future."
     },
     {
       "kind" : "message",
       "line" : 734,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nMore of these gaps are found here and there after Morocc created the Crack of Dimension.\nI personally think that the Abyss Gate found recently is part of the past or even from the future."
+      "text" : "[{0}]\nMore of these gaps are found here and there after Morocc created the Crack of Dimension.\nI personally think that the Abyss Gate found recently is part of the past or even from the future."
+    },
+    {
+      "kind" : "message",
+      "line" : 738,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nIt is said that the Abyss Gate forcefully connects to another dimension beyond our world.\nProbably because there are those that follow the Emperium's power."
+    },
+    {
+      "kind" : "message",
+      "line" : 738,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nIt is said that the Abyss Gate forcefully connects to another dimension beyond our world.\nProbably because there are those that follow the Emperium's power."
+    },
+    {
+      "kind" : "message",
+      "line" : 738,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nIt is said that the Abyss Gate forcefully connects to another dimension beyond our world.\nProbably because there are those that follow the Emperium's power."
+    },
+    {
+      "kind" : "message",
+      "line" : 738,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nIt is said that the Abyss Gate forcefully connects to another dimension beyond our world.\nProbably because there are those that follow the Emperium's power."
     },
     {
       "kind" : "message",
       "line" : 738,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nIt is said that the Abyss Gate forcefully connects to another dimension beyond our world.\nProbably because there are those that follow the Emperium's power."
+      "text" : "[{0}]\nIt is said that the Abyss Gate forcefully connects to another dimension beyond our world.\nProbably because there are those that follow the Emperium's power."
+    },
+    {
+      "kind" : "message",
+      "line" : 742,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nThere are a total of 4 Abyss Gates found so far. They all connect to the Agit region overflowing with the Emperium's force."
+    },
+    {
+      "kind" : "message",
+      "line" : 742,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nThere are a total of 4 Abyss Gates found so far. They all connect to the Agit region overflowing with the Emperium's force."
+    },
+    {
+      "kind" : "message",
+      "line" : 742,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nThere are a total of 4 Abyss Gates found so far. They all connect to the Agit region overflowing with the Emperium's force."
+    },
+    {
+      "kind" : "message",
+      "line" : 742,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nThere are a total of 4 Abyss Gates found so far. They all connect to the Agit region overflowing with the Emperium's force."
     },
     {
       "kind" : "message",
       "line" : 742,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nThere are a total of 4 Abyss Gates found so far. They all connect to the Agit region overflowing with the Emperium's force."
+      "text" : "[{0}]\nThere are a total of 4 Abyss Gates found so far. They all connect to the Agit region overflowing with the Emperium's force."
+    },
+    {
+      "kind" : "message",
+      "line" : 745,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nWe named each by dimension beyond the gap.\n^4d4dffWay of the Warrior, Hill of the Dead, Winds of the Ancient, and the Hero's Tears.^000000\nAnd all these four gaps are called the ^4d4dffAbyss Gate^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 745,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nWe named each by dimension beyond the gap.\n^4d4dffWay of the Warrior, Hill of the Dead, Winds of the Ancient, and the Hero's Tears.^000000\nAnd all these four gaps are called the ^4d4dffAbyss Gate^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 745,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nWe named each by dimension beyond the gap.\n^4d4dffWay of the Warrior, Hill of the Dead, Winds of the Ancient, and the Hero's Tears.^000000\nAnd all these four gaps are called the ^4d4dffAbyss Gate^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 745,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nWe named each by dimension beyond the gap.\n^4d4dffWay of the Warrior, Hill of the Dead, Winds of the Ancient, and the Hero's Tears.^000000\nAnd all these four gaps are called the ^4d4dffAbyss Gate^000000."
     },
     {
       "kind" : "message",
       "line" : 745,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nWe named each by dimension beyond the gap.\n^4d4dffWay of the Warrior, Hill of the Dead, Winds of the Ancient, and the Hero's Tears.^000000\nAnd all these four gaps are called the ^4d4dffAbyss Gate^000000."
+      "text" : "[{0}]\nWe named each by dimension beyond the gap.\n^4d4dffWay of the Warrior, Hill of the Dead, Winds of the Ancient, and the Hero's Tears.^000000\nAnd all these four gaps are called the ^4d4dffAbyss Gate^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 750,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nThe gap may lead to the past, future or even an unknown world.\nThe power the Abyss Gate holds is both fearful but sweet"
+    },
+    {
+      "kind" : "message",
+      "line" : 750,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nThe gap may lead to the past, future or even an unknown world.\nThe power the Abyss Gate holds is both fearful but sweet"
+    },
+    {
+      "kind" : "message",
+      "line" : 750,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nThe gap may lead to the past, future or even an unknown world.\nThe power the Abyss Gate holds is both fearful but sweet"
+    },
+    {
+      "kind" : "message",
+      "line" : 750,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nThe gap may lead to the past, future or even an unknown world.\nThe power the Abyss Gate holds is both fearful but sweet"
     },
     {
       "kind" : "message",
       "line" : 750,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nThe gap may lead to the past, future or even an unknown world.\nThe power the Abyss Gate holds is both fearful but sweet"
+      "text" : "[{0}]\nThe gap may lead to the past, future or even an unknown world.\nThe power the Abyss Gate holds is both fearful but sweet"
+    },
+    {
+      "kind" : "message",
+      "line" : 754,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nAre you also interested in exploring the Abyss Gate?\nHa ha. You'll need to go through several steps before exploring."
+    },
+    {
+      "kind" : "message",
+      "line" : 754,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nAre you also interested in exploring the Abyss Gate?\nHa ha. You'll need to go through several steps before exploring."
+    },
+    {
+      "kind" : "message",
+      "line" : 754,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nAre you also interested in exploring the Abyss Gate?\nHa ha. You'll need to go through several steps before exploring."
+    },
+    {
+      "kind" : "message",
+      "line" : 754,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nAre you also interested in exploring the Abyss Gate?\nHa ha. You'll need to go through several steps before exploring."
     },
     {
       "kind" : "message",
       "line" : 754,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nAre you also interested in exploring the Abyss Gate?\nHa ha. You'll need to go through several steps before exploring."
+      "text" : "[{0}]\nAre you also interested in exploring the Abyss Gate?\nHa ha. You'll need to go through several steps before exploring."
+    },
+    {
+      "kind" : "message",
+      "line" : 758,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nIf you are interested,\nwill you take the time to sit down and talk about investing in maintaining the Abyss Gate?"
+    },
+    {
+      "kind" : "message",
+      "line" : 758,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nIf you are interested,\nwill you take the time to sit down and talk about investing in maintaining the Abyss Gate?"
+    },
+    {
+      "kind" : "message",
+      "line" : 758,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nIf you are interested,\nwill you take the time to sit down and talk about investing in maintaining the Abyss Gate?"
+    },
+    {
+      "kind" : "message",
+      "line" : 758,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nIf you are interested,\nwill you take the time to sit down and talk about investing in maintaining the Abyss Gate?"
     },
     {
       "kind" : "message",
       "line" : 758,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nIf you are interested,\nwill you take the time to sit down and talk about investing in maintaining the Abyss Gate?"
+      "text" : "[{0}]\nIf you are interested,\nwill you take the time to sit down and talk about investing in maintaining the Abyss Gate?"
+    },
+    {
+      "kind" : "message",
+      "line" : 763,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nAre you curious about investing in the Gate development?\nWhat do you want to know about?"
+    },
+    {
+      "kind" : "message",
+      "line" : 763,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nAre you curious about investing in the Gate development?\nWhat do you want to know about?"
+    },
+    {
+      "kind" : "message",
+      "line" : 763,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nAre you curious about investing in the Gate development?\nWhat do you want to know about?"
+    },
+    {
+      "kind" : "message",
+      "line" : 763,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nAre you curious about investing in the Gate development?\nWhat do you want to know about?"
     },
     {
       "kind" : "message",
       "line" : 763,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nAre you curious about investing in the Gate development?\nWhat do you want to know about?"
+      "text" : "[{0}]\nAre you curious about investing in the Gate development?\nWhat do you want to know about?"
     },
     {
       "kind" : "option",
@@ -503,235 +743,859 @@
       "kind" : "message",
       "line" : 769,
       "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nThe Gate is what it is named after, a door.\nA dimensional passageway that connects here to there."
+    },
+    {
+      "kind" : "message",
+      "line" : 769,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nThe Gate is what it is named after, a door.\nA dimensional passageway that connects here to there."
+    },
+    {
+      "kind" : "message",
+      "line" : 769,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nThe Gate is what it is named after, a door.\nA dimensional passageway that connects here to there."
+    },
+    {
+      "kind" : "message",
+      "line" : 769,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nThe Gate is what it is named after, a door.\nA dimensional passageway that connects here to there."
+    },
+    {
+      "kind" : "message",
+      "line" : 769,
+      "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nThe Gate is what it is named after, a door.\nA dimensional passageway that connects here to there."
+      "text" : "[{0}]\nThe Gate is what it is named after, a door.\nA dimensional passageway that connects here to there."
+    },
+    {
+      "kind" : "message",
+      "line" : 773,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nThe Abyss Gate was created as a very unstable path from beyond the dimensional gap,\ntherefore traveling through the Gate will need an artificial dimension connection."
+    },
+    {
+      "kind" : "message",
+      "line" : 773,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nThe Abyss Gate was created as a very unstable path from beyond the dimensional gap,\ntherefore traveling through the Gate will need an artificial dimension connection."
+    },
+    {
+      "kind" : "message",
+      "line" : 773,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nThe Abyss Gate was created as a very unstable path from beyond the dimensional gap,\ntherefore traveling through the Gate will need an artificial dimension connection."
+    },
+    {
+      "kind" : "message",
+      "line" : 773,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nThe Abyss Gate was created as a very unstable path from beyond the dimensional gap,\ntherefore traveling through the Gate will need an artificial dimension connection."
     },
     {
       "kind" : "message",
       "line" : 773,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nThe Abyss Gate was created as a very unstable path from beyond the dimensional gap,\ntherefore traveling through the Gate will need an artificial dimension connection."
+      "text" : "[{0}]\nThe Abyss Gate was created as a very unstable path from beyond the dimensional gap,\ntherefore traveling through the Gate will need an artificial dimension connection."
+    },
+    {
+      "kind" : "message",
+      "line" : 777,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nHumans are far from having the advanced technology that's needed\nbut our Cat Paw Merchant Guild holds the high technology to use the Crack of Dimension."
+    },
+    {
+      "kind" : "message",
+      "line" : 777,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nHumans are far from having the advanced technology that's needed\nbut our Cat Paw Merchant Guild holds the high technology to use the Crack of Dimension."
+    },
+    {
+      "kind" : "message",
+      "line" : 777,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nHumans are far from having the advanced technology that's needed\nbut our Cat Paw Merchant Guild holds the high technology to use the Crack of Dimension."
+    },
+    {
+      "kind" : "message",
+      "line" : 777,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nHumans are far from having the advanced technology that's needed\nbut our Cat Paw Merchant Guild holds the high technology to use the Crack of Dimension."
     },
     {
       "kind" : "message",
       "line" : 777,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nHumans are far from having the advanced technology that's needed\nbut our Cat Paw Merchant Guild holds the high technology to use the Crack of Dimension."
+      "text" : "[{0}]\nHumans are far from having the advanced technology that's needed\nbut our Cat Paw Merchant Guild holds the high technology to use the Crack of Dimension."
+    },
+    {
+      "kind" : "message",
+      "line" : 781,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nSo we made a proposal.\nWith the promise of support the Cat Paw Merchant Guild and paying for the immense expense for maintaining the connection with the Gate,\nwe will make the connection to the Crack of Dimension."
+    },
+    {
+      "kind" : "message",
+      "line" : 781,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nSo we made a proposal.\nWith the promise of support the Cat Paw Merchant Guild and paying for the immense expense for maintaining the connection with the Gate,\nwe will make the connection to the Crack of Dimension."
+    },
+    {
+      "kind" : "message",
+      "line" : 781,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nSo we made a proposal.\nWith the promise of support the Cat Paw Merchant Guild and paying for the immense expense for maintaining the connection with the Gate,\nwe will make the connection to the Crack of Dimension."
+    },
+    {
+      "kind" : "message",
+      "line" : 781,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nSo we made a proposal.\nWith the promise of support the Cat Paw Merchant Guild and paying for the immense expense for maintaining the connection with the Gate,\nwe will make the connection to the Crack of Dimension."
     },
     {
       "kind" : "message",
       "line" : 781,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nSo we made a proposal.\nWith the promise of support the Cat Paw Merchant Guild and paying for the immense expense for maintaining the connection with the Gate,\nwe will make the connection to the Crack of Dimension."
+      "text" : "[{0}]\nSo we made a proposal.\nWith the promise of support the Cat Paw Merchant Guild and paying for the immense expense for maintaining the connection with the Gate,\nwe will make the connection to the Crack of Dimension."
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nOf course working on the Crack of Dimension is no easy job and it does come with risks.\nThere are cases where people go missing from traveling between."
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nOf course working on the Crack of Dimension is no easy job and it does come with risks.\nThere are cases where people go missing from traveling between."
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nOf course working on the Crack of Dimension is no easy job and it does come with risks.\nThere are cases where people go missing from traveling between."
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nOf course working on the Crack of Dimension is no easy job and it does come with risks.\nThere are cases where people go missing from traveling between."
     },
     {
       "kind" : "message",
       "line" : 786,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nOf course working on the Crack of Dimension is no easy job and it does come with risks.\nThere are cases where people go missing from traveling between."
+      "text" : "[{0}]\nOf course working on the Crack of Dimension is no easy job and it does come with risks.\nThere are cases where people go missing from traveling between."
+    },
+    {
+      "kind" : "message",
+      "line" : 790,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nThe best maintaining duration is about 4 days\nYou invest in us and we create the door that connects to the dimensional gap."
+    },
+    {
+      "kind" : "message",
+      "line" : 790,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nThe best maintaining duration is about 4 days\nYou invest in us and we create the door that connects to the dimensional gap."
+    },
+    {
+      "kind" : "message",
+      "line" : 790,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nThe best maintaining duration is about 4 days\nYou invest in us and we create the door that connects to the dimensional gap."
+    },
+    {
+      "kind" : "message",
+      "line" : 790,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nThe best maintaining duration is about 4 days\nYou invest in us and we create the door that connects to the dimensional gap."
     },
     {
       "kind" : "message",
       "line" : 790,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nThe best maintaining duration is about 4 days\nYou invest in us and we create the door that connects to the dimensional gap."
+      "text" : "[{0}]\nThe best maintaining duration is about 4 days\nYou invest in us and we create the door that connects to the dimensional gap."
+    },
+    {
+      "kind" : "message",
+      "line" : 794,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nDoesn't this sound like the perfect win-win proposal?"
+    },
+    {
+      "kind" : "message",
+      "line" : 794,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nDoesn't this sound like the perfect win-win proposal?"
+    },
+    {
+      "kind" : "message",
+      "line" : 794,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nDoesn't this sound like the perfect win-win proposal?"
+    },
+    {
+      "kind" : "message",
+      "line" : 794,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nDoesn't this sound like the perfect win-win proposal?"
     },
     {
       "kind" : "message",
       "line" : 794,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nDoesn't this sound like the perfect win-win proposal?"
+      "text" : "[{0}]\nDoesn't this sound like the perfect win-win proposal?"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nForcing through the unstable dimensional gap and creating a passageway is very dangerous.\nNot to mention the huge resources needed."
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nForcing through the unstable dimensional gap and creating a passageway is very dangerous.\nNot to mention the huge resources needed."
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nForcing through the unstable dimensional gap and creating a passageway is very dangerous.\nNot to mention the huge resources needed."
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nForcing through the unstable dimensional gap and creating a passageway is very dangerous.\nNot to mention the huge resources needed."
     },
     {
       "kind" : "message",
       "line" : 798,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nForcing through the unstable dimensional gap and creating a passageway is very dangerous.\nNot to mention the huge resources needed."
+      "text" : "[{0}]\nForcing through the unstable dimensional gap and creating a passageway is very dangerous.\nNot to mention the huge resources needed."
+    },
+    {
+      "kind" : "message",
+      "line" : 802,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nIf you take care of the charges and also the danger pay by investing in the Cat Paw Merchant Guild,\nwe'll create and maintain the gate regardless of the risks."
+    },
+    {
+      "kind" : "message",
+      "line" : 802,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nIf you take care of the charges and also the danger pay by investing in the Cat Paw Merchant Guild,\nwe'll create and maintain the gate regardless of the risks."
+    },
+    {
+      "kind" : "message",
+      "line" : 802,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nIf you take care of the charges and also the danger pay by investing in the Cat Paw Merchant Guild,\nwe'll create and maintain the gate regardless of the risks."
+    },
+    {
+      "kind" : "message",
+      "line" : 802,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nIf you take care of the charges and also the danger pay by investing in the Cat Paw Merchant Guild,\nwe'll create and maintain the gate regardless of the risks."
     },
     {
       "kind" : "message",
       "line" : 802,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nIf you take care of the charges and also the danger pay by investing in the Cat Paw Merchant Guild,\nwe'll create and maintain the gate regardless of the risks."
+      "text" : "[{0}]\nIf you take care of the charges and also the danger pay by investing in the Cat Paw Merchant Guild,\nwe'll create and maintain the gate regardless of the risks."
+    },
+    {
+      "kind" : "message",
+      "line" : 806,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nBut then of course the money involved for the gate costs will be extreme.\nIt will be easy if you can find investors to share the amount."
+    },
+    {
+      "kind" : "message",
+      "line" : 806,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nBut then of course the money involved for the gate costs will be extreme.\nIt will be easy if you can find investors to share the amount."
+    },
+    {
+      "kind" : "message",
+      "line" : 806,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nBut then of course the money involved for the gate costs will be extreme.\nIt will be easy if you can find investors to share the amount."
+    },
+    {
+      "kind" : "message",
+      "line" : 806,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nBut then of course the money involved for the gate costs will be extreme.\nIt will be easy if you can find investors to share the amount."
     },
     {
       "kind" : "message",
       "line" : 806,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nBut then of course the money involved for the gate costs will be extreme.\nIt will be easy if you can find investors to share the amount."
+      "text" : "[{0}]\nBut then of course the money involved for the gate costs will be extreme.\nIt will be easy if you can find investors to share the amount."
+    },
+    {
+      "kind" : "message",
+      "line" : 810,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nThere is a basic charge to start connecting the gate.\nResults depend on the how much investment money is collected."
+    },
+    {
+      "kind" : "message",
+      "line" : 810,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nThere is a basic charge to start connecting the gate.\nResults depend on the how much investment money is collected."
+    },
+    {
+      "kind" : "message",
+      "line" : 810,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nThere is a basic charge to start connecting the gate.\nResults depend on the how much investment money is collected."
+    },
+    {
+      "kind" : "message",
+      "line" : 810,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nThere is a basic charge to start connecting the gate.\nResults depend on the how much investment money is collected."
     },
     {
       "kind" : "message",
       "line" : 810,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nThere is a basic charge to start connecting the gate.\nResults depend on the how much investment money is collected."
+      "text" : "[{0}]\nThere is a basic charge to start connecting the gate.\nResults depend on the how much investment money is collected."
+    },
+    {
+      "kind" : "message",
+      "line" : 814,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nThe Abyss Gate exists in each Agit region.\nCan you imagine how much money and sacrifice our guild will have to go through to develop in all areas?"
+    },
+    {
+      "kind" : "message",
+      "line" : 814,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nThe Abyss Gate exists in each Agit region.\nCan you imagine how much money and sacrifice our guild will have to go through to develop in all areas?"
+    },
+    {
+      "kind" : "message",
+      "line" : 814,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nThe Abyss Gate exists in each Agit region.\nCan you imagine how much money and sacrifice our guild will have to go through to develop in all areas?"
+    },
+    {
+      "kind" : "message",
+      "line" : 814,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nThe Abyss Gate exists in each Agit region.\nCan you imagine how much money and sacrifice our guild will have to go through to develop in all areas?"
     },
     {
       "kind" : "message",
       "line" : 814,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nThe Abyss Gate exists in each Agit region.\nCan you imagine how much money and sacrifice our guild will have to go through to develop in all areas?"
+      "text" : "[{0}]\nThe Abyss Gate exists in each Agit region.\nCan you imagine how much money and sacrifice our guild will have to go through to develop in all areas?"
+    },
+    {
+      "kind" : "message",
+      "line" : 818,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nThis explains the regional competition in investments.\nIf not enough gate maintenance costs are collected then it is obvious the region with the most investments will receive the benefits"
+    },
+    {
+      "kind" : "message",
+      "line" : 818,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nThis explains the regional competition in investments.\nIf not enough gate maintenance costs are collected then it is obvious the region with the most investments will receive the benefits"
+    },
+    {
+      "kind" : "message",
+      "line" : 818,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nThis explains the regional competition in investments.\nIf not enough gate maintenance costs are collected then it is obvious the region with the most investments will receive the benefits"
+    },
+    {
+      "kind" : "message",
+      "line" : 818,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nThis explains the regional competition in investments.\nIf not enough gate maintenance costs are collected then it is obvious the region with the most investments will receive the benefits"
     },
     {
       "kind" : "message",
       "line" : 818,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nThis explains the regional competition in investments.\nIf not enough gate maintenance costs are collected then it is obvious the region with the most investments will receive the benefits"
+      "text" : "[{0}]\nThis explains the regional competition in investments.\nIf not enough gate maintenance costs are collected then it is obvious the region with the most investments will receive the benefits"
+    },
+    {
+      "kind" : "message",
+      "line" : 822,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nIf ^4d4dffthe Abyss Gate is successfully connected then the dungeon of the hideout area\nwill be open to others instead of being guild exclusive^000000 which will be very attractive for investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 822,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nIf ^4d4dffthe Abyss Gate is successfully connected then the dungeon of the hideout area\nwill be open to others instead of being guild exclusive^000000 which will be very attractive for investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 822,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nIf ^4d4dffthe Abyss Gate is successfully connected then the dungeon of the hideout area\nwill be open to others instead of being guild exclusive^000000 which will be very attractive for investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 822,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nIf ^4d4dffthe Abyss Gate is successfully connected then the dungeon of the hideout area\nwill be open to others instead of being guild exclusive^000000 which will be very attractive for investment."
     },
     {
       "kind" : "message",
       "line" : 822,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nIf ^4d4dffthe Abyss Gate is successfully connected then the dungeon of the hideout area\nwill be open to others instead of being guild exclusive^000000 which will be very attractive for investment."
+      "text" : "[{0}]\nIf ^4d4dffthe Abyss Gate is successfully connected then the dungeon of the hideout area\nwill be open to others instead of being guild exclusive^000000 which will be very attractive for investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 826,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nBut then again, this is only for when the gate is connected."
+    },
+    {
+      "kind" : "message",
+      "line" : 826,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nBut then again, this is only for when the gate is connected."
+    },
+    {
+      "kind" : "message",
+      "line" : 826,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nBut then again, this is only for when the gate is connected."
+    },
+    {
+      "kind" : "message",
+      "line" : 826,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nBut then again, this is only for when the gate is connected."
     },
     {
       "kind" : "message",
       "line" : 826,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nBut then again, this is only for when the gate is connected."
+      "text" : "[{0}]\nBut then again, this is only for when the gate is connected."
+    },
+    {
+      "kind" : "message",
+      "line" : 830,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nIt's simple.\nVisit the branch manager of the ^4d4dffregion you want to invest in during the investment duration^000000 and make your investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 830,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nIt's simple.\nVisit the branch manager of the ^4d4dffregion you want to invest in during the investment duration^000000 and make your investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 830,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nIt's simple.\nVisit the branch manager of the ^4d4dffregion you want to invest in during the investment duration^000000 and make your investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 830,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nIt's simple.\nVisit the branch manager of the ^4d4dffregion you want to invest in during the investment duration^000000 and make your investment."
     },
     {
       "kind" : "message",
       "line" : 830,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nIt's simple.\nVisit the branch manager of the ^4d4dffregion you want to invest in during the investment duration^000000 and make your investment."
+      "text" : "[{0}]\nIt's simple.\nVisit the branch manager of the ^4d4dffregion you want to invest in during the investment duration^000000 and make your investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nWe usually receive ^4d4dffthe common currency here, Zeny^000000.\nBut since we're talking about supporting our Cat Paw Merchant Guild, you can also invest with items in demand in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nWe usually receive ^4d4dffthe common currency here, Zeny^000000.\nBut since we're talking about supporting our Cat Paw Merchant Guild, you can also invest with items in demand in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nWe usually receive ^4d4dffthe common currency here, Zeny^000000.\nBut since we're talking about supporting our Cat Paw Merchant Guild, you can also invest with items in demand in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nWe usually receive ^4d4dffthe common currency here, Zeny^000000.\nBut since we're talking about supporting our Cat Paw Merchant Guild, you can also invest with items in demand in Malangdo."
     },
     {
       "kind" : "message",
       "line" : 834,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nWe usually receive ^4d4dffthe common currency here, Zeny^000000.\nBut since we're talking about supporting our Cat Paw Merchant Guild, you can also invest with items in demand in Malangdo."
+      "text" : "[{0}]\nWe usually receive ^4d4dffthe common currency here, Zeny^000000.\nBut since we're talking about supporting our Cat Paw Merchant Guild, you can also invest with items in demand in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 838,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nProvide the items in need to Namis in Malangdo who is in charge of general affairs in our guild.\nBring back your Investment Certificate to add it to the investment tribute."
+    },
+    {
+      "kind" : "message",
+      "line" : 838,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nProvide the items in need to Namis in Malangdo who is in charge of general affairs in our guild.\nBring back your Investment Certificate to add it to the investment tribute."
+    },
+    {
+      "kind" : "message",
+      "line" : 838,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nProvide the items in need to Namis in Malangdo who is in charge of general affairs in our guild.\nBring back your Investment Certificate to add it to the investment tribute."
+    },
+    {
+      "kind" : "message",
+      "line" : 838,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nProvide the items in need to Namis in Malangdo who is in charge of general affairs in our guild.\nBring back your Investment Certificate to add it to the investment tribute."
     },
     {
       "kind" : "message",
       "line" : 838,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nProvide the items in need to Namis in Malangdo who is in charge of general affairs in our guild.\nBring back your Investment Certificate to add it to the investment tribute."
+      "text" : "[{0}]\nProvide the items in need to Namis in Malangdo who is in charge of general affairs in our guild.\nBring back your Investment Certificate to add it to the investment tribute."
+    },
+    {
+      "kind" : "message",
+      "line" : 842,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nYou must visit and invest at the region you want in order for your investment to be counted as a tribute."
+    },
+    {
+      "kind" : "message",
+      "line" : 842,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nYou must visit and invest at the region you want in order for your investment to be counted as a tribute."
+    },
+    {
+      "kind" : "message",
+      "line" : 842,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nYou must visit and invest at the region you want in order for your investment to be counted as a tribute."
+    },
+    {
+      "kind" : "message",
+      "line" : 842,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nYou must visit and invest at the region you want in order for your investment to be counted as a tribute."
     },
     {
       "kind" : "message",
       "line" : 842,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nYou must visit and invest at the region you want in order for your investment to be counted as a tribute."
+      "text" : "[{0}]\nYou must visit and invest at the region you want in order for your investment to be counted as a tribute."
+    },
+    {
+      "kind" : "message",
+      "line" : 846,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nThe Abyss Gate is basically contracting and connecting with the castle that owns the Agit;\ntherefore, we will provide all we have once the costs for connecting and maintaining the gate are sufficient."
+    },
+    {
+      "kind" : "message",
+      "line" : 846,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nThe Abyss Gate is basically contracting and connecting with the castle that owns the Agit;\ntherefore, we will provide all we have once the costs for connecting and maintaining the gate are sufficient."
+    },
+    {
+      "kind" : "message",
+      "line" : 846,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nThe Abyss Gate is basically contracting and connecting with the castle that owns the Agit;\ntherefore, we will provide all we have once the costs for connecting and maintaining the gate are sufficient."
+    },
+    {
+      "kind" : "message",
+      "line" : 846,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nThe Abyss Gate is basically contracting and connecting with the castle that owns the Agit;\ntherefore, we will provide all we have once the costs for connecting and maintaining the gate are sufficient."
     },
     {
       "kind" : "message",
       "line" : 846,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nThe Abyss Gate is basically contracting and connecting with the castle that owns the Agit;\ntherefore, we will provide all we have once the costs for connecting and maintaining the gate are sufficient."
+      "text" : "[{0}]\nThe Abyss Gate is basically contracting and connecting with the castle that owns the Agit;\ntherefore, we will provide all we have once the costs for connecting and maintaining the gate are sufficient."
+    },
+    {
+      "kind" : "message",
+      "line" : 850,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nIn terms of the minimum and maximum costs for the whole work,\nif the collected investment ^4d4dffexceeds the minimum costs^000000, we can connect you to the ^4d4dffdeepest layer of an unknown guild dungeon^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 850,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nIn terms of the minimum and maximum costs for the whole work,\nif the collected investment ^4d4dffexceeds the minimum costs^000000, we can connect you to the ^4d4dffdeepest layer of an unknown guild dungeon^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 850,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nIn terms of the minimum and maximum costs for the whole work,\nif the collected investment ^4d4dffexceeds the minimum costs^000000, we can connect you to the ^4d4dffdeepest layer of an unknown guild dungeon^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 850,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nIn terms of the minimum and maximum costs for the whole work,\nif the collected investment ^4d4dffexceeds the minimum costs^000000, we can connect you to the ^4d4dffdeepest layer of an unknown guild dungeon^000000."
     },
     {
       "kind" : "message",
       "line" : 850,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nIn terms of the minimum and maximum costs for the whole work,\nif the collected investment ^4d4dffexceeds the minimum costs^000000, we can connect you to the ^4d4dffdeepest layer of an unknown guild dungeon^000000."
+      "text" : "[{0}]\nIn terms of the minimum and maximum costs for the whole work,\nif the collected investment ^4d4dffexceeds the minimum costs^000000, we can connect you to the ^4d4dffdeepest layer of an unknown guild dungeon^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 854,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nIf investments exceed the maximum costs, that region will be connected to the\n^4d4dffAbyss Gate^000000 regardless of the investment rank which includes the deepest layer of the guild dungeon."
+    },
+    {
+      "kind" : "message",
+      "line" : 854,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nIf investments exceed the maximum costs, that region will be connected to the\n^4d4dffAbyss Gate^000000 regardless of the investment rank which includes the deepest layer of the guild dungeon."
+    },
+    {
+      "kind" : "message",
+      "line" : 854,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nIf investments exceed the maximum costs, that region will be connected to the\n^4d4dffAbyss Gate^000000 regardless of the investment rank which includes the deepest layer of the guild dungeon."
+    },
+    {
+      "kind" : "message",
+      "line" : 854,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nIf investments exceed the maximum costs, that region will be connected to the\n^4d4dffAbyss Gate^000000 regardless of the investment rank which includes the deepest layer of the guild dungeon."
     },
     {
       "kind" : "message",
       "line" : 854,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nIf investments exceed the maximum costs, that region will be connected to the\n^4d4dffAbyss Gate^000000 regardless of the investment rank which includes the deepest layer of the guild dungeon."
+      "text" : "[{0}]\nIf investments exceed the maximum costs, that region will be connected to the\n^4d4dffAbyss Gate^000000 regardless of the investment rank which includes the deepest layer of the guild dungeon."
+    },
+    {
+      "kind" : "message",
+      "line" : 858,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\n^ff0000If there is no Agit region that reached the maximum investment, then the region with the\nhighest investment participation will get the Abyss Gate connected with the investment collected from all regions.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 858,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\n^ff0000If there is no Agit region that reached the maximum investment, then the region with the\nhighest investment participation will get the Abyss Gate connected with the investment collected from all regions.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 858,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\n^ff0000If there is no Agit region that reached the maximum investment, then the region with the\nhighest investment participation will get the Abyss Gate connected with the investment collected from all regions.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 858,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\n^ff0000If there is no Agit region that reached the maximum investment, then the region with the\nhighest investment participation will get the Abyss Gate connected with the investment collected from all regions.^000000"
     },
     {
       "kind" : "message",
       "line" : 858,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\n^ff0000If there is no Agit region that reached the maximum investment, then the region with the\nhighest investment participation will get the Abyss Gate connected with the investment collected from all regions.^000000"
+      "text" : "[{0}]\n^ff0000If there is no Agit region that reached the maximum investment, then the region with the\nhighest investment participation will get the Abyss Gate connected with the investment collected from all regions.^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 862,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nOnce the Abyss Gate is connected, the deepest layer (2F) of the guild dungeon\nwill be open to all adventurers that participated in the regional investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 862,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nOnce the Abyss Gate is connected, the deepest layer (2F) of the guild dungeon\nwill be open to all adventurers that participated in the regional investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 862,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nOnce the Abyss Gate is connected, the deepest layer (2F) of the guild dungeon\nwill be open to all adventurers that participated in the regional investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 862,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nOnce the Abyss Gate is connected, the deepest layer (2F) of the guild dungeon\nwill be open to all adventurers that participated in the regional investment."
     },
     {
       "kind" : "message",
       "line" : 862,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nOnce the Abyss Gate is connected, the deepest layer (2F) of the guild dungeon\nwill be open to all adventurers that participated in the regional investment."
+      "text" : "[{0}]\nOnce the Abyss Gate is connected, the deepest layer (2F) of the guild dungeon\nwill be open to all adventurers that participated in the regional investment."
+    },
+    {
+      "kind" : "message",
+      "line" : 866,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nVisits to the dungeon will be counted for the next investment for the Agit region\nso being in good terms with the guild that claims the Agit castle will be a bonus."
+    },
+    {
+      "kind" : "message",
+      "line" : 866,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nVisits to the dungeon will be counted for the next investment for the Agit region\nso being in good terms with the guild that claims the Agit castle will be a bonus."
+    },
+    {
+      "kind" : "message",
+      "line" : 866,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nVisits to the dungeon will be counted for the next investment for the Agit region\nso being in good terms with the guild that claims the Agit castle will be a bonus."
+    },
+    {
+      "kind" : "message",
+      "line" : 866,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nVisits to the dungeon will be counted for the next investment for the Agit region\nso being in good terms with the guild that claims the Agit castle will be a bonus."
     },
     {
       "kind" : "message",
       "line" : 866,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nVisits to the dungeon will be counted for the next investment for the Agit region\nso being in good terms with the guild that claims the Agit castle will be a bonus."
+      "text" : "[{0}]\nVisits to the dungeon will be counted for the next investment for the Agit region\nso being in good terms with the guild that claims the Agit castle will be a bonus."
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nBy the way, it isn't easy to maintain the connection with the Abyss Gate and investments and reconnection is needed weekly\nso please continue your support and investment if you want the power of the unknown."
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nBy the way, it isn't easy to maintain the connection with the Abyss Gate and investments and reconnection is needed weekly\nso please continue your support and investment if you want the power of the unknown."
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nBy the way, it isn't easy to maintain the connection with the Abyss Gate and investments and reconnection is needed weekly\nso please continue your support and investment if you want the power of the unknown."
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nBy the way, it isn't easy to maintain the connection with the Abyss Gate and investments and reconnection is needed weekly\nso please continue your support and investment if you want the power of the unknown."
     },
     {
       "kind" : "message",
       "line" : 870,
       "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nBy the way, it isn't easy to maintain the connection with the Abyss Gate and investments and reconnection is needed weekly\nso please continue your support and investment if you want the power of the unknown."
+      "text" : "[{0}]\nBy the way, it isn't easy to maintain the connection with the Abyss Gate and investments and reconnection is needed weekly\nso please continue your support and investment if you want the power of the unknown."
     },
     {
       "kind" : "message",
@@ -743,10 +1607,34 @@
       "kind" : "message",
       "line" : 884,
       "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nYou have too many Thank You Tickets to receive any more.\nCannot give you any more tickets. Please use your ticket and come back.\nThe ticket can be exchanged with various items in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 884,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nYou have too many Thank You Tickets to receive any more.\nCannot give you any more tickets. Please use your ticket and come back.\nThe ticket can be exchanged with various items in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 884,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nYou have too many Thank You Tickets to receive any more.\nCannot give you any more tickets. Please use your ticket and come back.\nThe ticket can be exchanged with various items in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 884,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nYou have too many Thank You Tickets to receive any more.\nCannot give you any more tickets. Please use your ticket and come back.\nThe ticket can be exchanged with various items in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 884,
+      "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nYou have too many Thank You Tickets to receive any more.\nCannot give you any more tickets. Please use your ticket and come back.\nThe ticket can be exchanged with various items in Malangdo."
+      "text" : "[{0}]\nYou have too many Thank You Tickets to receive any more.\nCannot give you any more tickets. Please use your ticket and come back.\nThe ticket can be exchanged with various items in Malangdo."
     },
     {
       "kind" : "message",
@@ -771,7 +1659,37 @@
       "kind" : "option",
       "line" : 912,
       "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@menu$",
+        ".@castle_name$[.@i]",
+        ".@owner_name$[.@i]"
+      ],
+      "text" : "{0}{1} [{2}] Guild"
+    },
+    {
+      "kind" : "option",
+      "line" : 912,
+      "npc" : "Cat Paw Merchant Guild",
       "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 912,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@menu$",
+        ".@castle_name$[.@i]"
+      ],
+      "text" : "{0}^aaaaaaNot the guild that claimed {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 912,
+      "npc" : "Cat Paw Merchant Guild",
+      "placeholders" : [
+        ".@menu$"
+      ],
+      "text" : "{0}Cancel"
     },
     {
       "kind" : "message",
@@ -808,10 +1726,34 @@
       "kind" : "message",
       "line" : 934,
       "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Megrez]\nIs that so?\nPlease come back whenever you are interested in investing in the Abyss Gate development."
+    },
+    {
+      "kind" : "message",
+      "line" : 934,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Meraq]\nIs that so?\nPlease come back whenever you are interested in investing in the Abyss Gate development."
+    },
+    {
+      "kind" : "message",
+      "line" : 934,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Phecda]\nIs that so?\nPlease come back whenever you are interested in investing in the Abyss Gate development."
+    },
+    {
+      "kind" : "message",
+      "line" : 934,
+      "npc" : "Cat Paw Merchant Guild",
+      "text" : "[Dubae]\nIs that so?\nPlease come back whenever you are interested in investing in the Abyss Gate development."
+    },
+    {
+      "kind" : "message",
+      "line" : 934,
+      "npc" : "Cat Paw Merchant Guild",
       "placeholders" : [
-        ".@n$"
+        ".@name$"
       ],
-      "text" : "{0}\nIs that so?\nPlease come back whenever you are interested in investing in the Abyss Gate development."
+      "text" : "[{0}]\nIs that so?\nPlease come back whenever you are interested in investing in the Abyss Gate development."
     },
     {
       "kind" : "message",
@@ -960,10 +1902,58 @@
       "kind" : "message",
       "line" : 1061,
       "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\n^aaaaaa[Valkyrie Realm] below minimum^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\n^aaaaaa[Greenwood Lake] below minimum^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\n^aaaaaa[Britoniah] below minimum^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\n^aaaaaa[Luina] below minimum^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
       "placeholders" : [
         ".@invest_region$[.@i]"
       ],
       "text" : "!- Investment Results of All Agit Regions -!\n^aaaaaa[{0}] below minimum^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\n[Valkyrie Realm] minimum achieved\n-> Guild Dungeon Deepest Layer (2F) available"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\n[Greenwood Lake] minimum achieved\n-> Guild Dungeon Deepest Layer (2F) available"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\n[Britoniah] minimum achieved\n-> Guild Dungeon Deepest Layer (2F) available"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\n[Luina] minimum achieved\n-> Guild Dungeon Deepest Layer (2F) available"
     },
     {
       "kind" : "message",
@@ -978,10 +1968,58 @@
       "kind" : "message",
       "line" : 1061,
       "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\n^4d4dff[Valkyrie Realm] maximum achieved^000000\n-> Abyss Gate available"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\n^4d4dff[Greenwood Lake] maximum achieved^000000\n-> Abyss Gate available"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\n^4d4dff[Britoniah] maximum achieved^000000\n-> Abyss Gate available"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\n^4d4dff[Luina] maximum achieved^000000\n-> Abyss Gate available"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
       "placeholders" : [
         ".@invest_region$[.@i]"
       ],
       "text" : "!- Investment Results of All Agit Regions -!\n^4d4dff[{0}] maximum achieved^000000\n-> Abyss Gate available"
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\nNo data for [Valkyrie Realm]."
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\nNo data for [Greenwood Lake]."
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\nNo data for [Britoniah]."
+    },
+    {
+      "kind" : "message",
+      "line" : 1061,
+      "npc" : "Investment Status Board",
+      "text" : "!- Investment Results of All Agit Regions -!\nNo data for [Luina]."
     },
     {
       "kind" : "message",
@@ -1003,6 +2041,30 @@
       "line" : 1076,
       "npc" : "Investment Status Board",
       "text" : "!- Notice -!\nNo investment information will be announced now."
+    },
+    {
+      "kind" : "message",
+      "line" : 1103,
+      "npc" : "Gate Manager",
+      "text" : "[Gate Manager]\nYou don't seem to be the member of guild owning this castle.\nIf you need any help, please visit any of our guild members at Luina Square."
+    },
+    {
+      "kind" : "message",
+      "line" : 1103,
+      "npc" : "Gate Manager",
+      "text" : "[Gate Manager]\nYou don't seem to be the member of guild owning this castle.\nIf you need any help, please visit any of our guild members at Britoniah Square."
+    },
+    {
+      "kind" : "message",
+      "line" : 1103,
+      "npc" : "Gate Manager",
+      "text" : "[Gate Manager]\nYou don't seem to be the member of guild owning this castle.\nIf you need any help, please visit any of our guild members at Greenwood Lake Square."
+    },
+    {
+      "kind" : "message",
+      "line" : 1103,
+      "npc" : "Gate Manager",
+      "text" : "[Gate Manager]\nYou don't seem to be the member of guild owning this castle.\nIf you need any help, please visit any of our guild members at Valkyrie Realm Square."
     },
     {
       "kind" : "message",
@@ -1174,6 +2236,12 @@
       "line" : 1278,
       "npc" : "Cat Paw Merchants Notice",
       "text" : "'^C379CEInvest Unused Items for Prizes!^000000'\nThere are details of Event 1."
+    },
+    {
+      "kind" : "option",
+      "line" : 1289,
+      "npc" : "Cat Paw Merchants Notice",
+      "text" : "Quit"
     },
     {
       "kind" : "message",

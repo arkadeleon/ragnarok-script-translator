@@ -239,10 +239,49 @@
       "kind" : "message",
       "line" : 191,
       "npc" : "Teleporter",
-      "placeholders" : [
-        ".@mapname$[0]"
-      ],
-      "text" : "[Teleporter]\nYou will be sent back to {0}."
+      "text" : "[Teleporter]\nYou will be sent back to Prontera.."
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Teleporter",
+      "text" : "[Teleporter]\nYou will be sent back to Morocc Ruins.."
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Teleporter",
+      "text" : "[Teleporter]\nYou will be sent back to Al De Baran.."
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Teleporter",
+      "text" : "[Teleporter]\nYou will be sent back to Geffen.."
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Teleporter",
+      "text" : "[Teleporter]\nYou will be sent back to Payon.."
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Teleporter",
+      "text" : "[Teleporter]\nYou will be sent back to Lighthalzen.."
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Teleporter",
+      "text" : "[Teleporter]\nYou will be sent back to Rachel.."
+    },
+    {
+      "kind" : "message",
+      "line" : 191,
+      "npc" : "Teleporter",
+      "text" : "[Teleporter]\nYou will be sent back to Morocc.."
     },
     {
       "kind" : "message",
@@ -461,15 +500,42 @@
       "text" : "[Erundek]\nThe following weapons are available in the ^3131FFRevolver / Rifle / Gatling Gun / Shotgun / Grenade Launcher^000000 category."
     },
     {
+      "kind" : "option",
+      "line" : 447,
+      "npc" : "Erundek",
+      "placeholders" : [
+        "getitemname(.@Weapons[.@i])"
+      ],
+      "text" : "{0}(BB)"
+    },
+    {
+      "kind" : "option",
+      "line" : 447,
+      "npc" : "Erundek",
+      "placeholders" : [
+        "getitemname(.@Weapons[.@i])"
+      ],
+      "text" : "{0}(VB)"
+    },
+    {
       "kind" : "message",
       "line" : 449,
       "npc" : "Erundek",
       "placeholders" : [
         "getitemname(.@Weapons[.@i])",
-        ".@type$",
         "getitemname(.@Weapons[.@i+1])"
       ],
-      "text" : "[Erundek]\nYou chose ^3131FF{0}{1}^000000.\nYou can exchange for this item with ^FF0000100 {2}^000000.\nWould you like to exchange?"
+      "text" : "[Erundek]\nYou chose ^3131FF{0}(BB)^000000.\nYou can exchange for this item with ^FF0000100 {1}^000000.\nWould you like to exchange?"
+    },
+    {
+      "kind" : "message",
+      "line" : 449,
+      "npc" : "Erundek",
+      "placeholders" : [
+        "getitemname(.@Weapons[.@i])",
+        "getitemname(.@Weapons[.@i+1])"
+      ],
+      "text" : "[Erundek]\nYou chose ^3131FF{0}(VB)^000000.\nYou can exchange for this item with ^FF0000100 {1}^000000.\nWould you like to exchange?"
     },
     {
       "kind" : "option",
@@ -489,10 +555,19 @@
       "npc" : "Erundek",
       "placeholders" : [
         "getitemname(.@Weapons[.@i+1])",
-        "getitemname(.@Weapons[.@i])",
-        ".@type$"
+        "getitemname(.@Weapons[.@i])"
       ],
-      "text" : "[Erundek]\nWould you like to spend ^FF0000100 {0}^000000 and receive a ^3131FF{1}{2}^000000?"
+      "text" : "[Erundek]\nWould you like to spend ^FF0000100 {0}^000000 and receive a ^3131FF{1}(BB)^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 458,
+      "npc" : "Erundek",
+      "placeholders" : [
+        "getitemname(.@Weapons[.@i+1])",
+        "getitemname(.@Weapons[.@i])"
+      ],
+      "text" : "[Erundek]\nWould you like to spend ^FF0000100 {0}^000000 and receive a ^3131FF{1}(VB)^000000?"
     },
     {
       "kind" : "message",
@@ -567,108 +642,130 @@
       "text" : "[Erundek]\nWe have many items, so please take a look and purchase deliberately."
     },
     {
-      "kind" : "message",
-      "line" : 525,
+      "kind" : "option",
+      "line" : 524,
       "npc" : "Erundek",
-      "placeholders" : [
-        "getitemname(.@Items[.@i])",
-        ".@Items[.@i+1]",
-        "getitemname(7828)",
-        ".@Items[.@i+1]",
-        "getitemname(7829)"
-      ],
-      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Swordman and Taekwon Master Class only.\nYou can exchange for this item with ^FF0000{1} {2} or {3} {4}^000000.\nWould you like to exchange?"
+      "text" : "Gunslinger"
+    },
+    {
+      "kind" : "option",
+      "line" : 524,
+      "npc" : "Erundek",
+      "text" : "Swordman/Taekwon Master"
+    },
+    {
+      "kind" : "option",
+      "line" : 524,
+      "npc" : "Erundek",
+      "text" : "Thief"
+    },
+    {
+      "kind" : "option",
+      "line" : 524,
+      "npc" : "Erundek",
+      "text" : "Acolyte"
+    },
+    {
+      "kind" : "option",
+      "line" : 524,
+      "npc" : "Erundek",
+      "text" : "Magician"
+    },
+    {
+      "kind" : "option",
+      "line" : 524,
+      "npc" : "Erundek",
+      "text" : "Archer"
+    },
+    {
+      "kind" : "option",
+      "line" : 524,
+      "npc" : "Erundek",
+      "text" : "Merchant"
     },
     {
       "kind" : "message",
       "line" : 525,
       "npc" : "Erundek",
       "placeholders" : [
-        "getitemname(.@Items[.@i])",
-        ".@Items[.@i+1]",
-        "getitemname(7828)",
-        ".@Items[.@i+1]",
-        "getitemname(7829)"
+        "getitemname(.@Items[.@i])"
       ],
-      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Thief Class only.\nYou can exchange for this item with ^FF0000{1} {2} or {3} {4}^000000.\nWould you like to exchange?"
+      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Swordman and Taekwon Master Class only."
     },
     {
       "kind" : "message",
       "line" : 525,
       "npc" : "Erundek",
       "placeholders" : [
-        "getitemname(.@Items[.@i])",
-        ".@Items[.@i+1]",
-        "getitemname(7828)",
-        ".@Items[.@i+1]",
-        "getitemname(7829)"
+        "getitemname(.@Items[.@i])"
       ],
-      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Acolyte Class only.\nYou can exchange for this item with ^FF0000{1} {2} or {3} {4}^000000.\nWould you like to exchange?"
+      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Thief Class only."
     },
     {
       "kind" : "message",
       "line" : 525,
       "npc" : "Erundek",
       "placeholders" : [
-        "getitemname(.@Items[.@i])",
-        ".@Items[.@i+1]",
-        "getitemname(7828)",
-        ".@Items[.@i+1]",
-        "getitemname(7829)"
+        "getitemname(.@Items[.@i])"
       ],
-      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Magician Class only.\nYou can exchange for this item with ^FF0000{1} {2} or {3} {4}^000000.\nWould you like to exchange?"
+      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Acolyte Class only."
     },
     {
       "kind" : "message",
       "line" : 525,
       "npc" : "Erundek",
       "placeholders" : [
-        "getitemname(.@Items[.@i])",
-        ".@Items[.@i+1]",
-        "getitemname(7828)",
-        ".@Items[.@i+1]",
-        "getitemname(7829)"
+        "getitemname(.@Items[.@i])"
       ],
-      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Archer Class only.\nYou can exchange for this item with ^FF0000{1} {2} or {3} {4}^000000.\nWould you like to exchange?"
+      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Magician Class only."
     },
     {
       "kind" : "message",
       "line" : 525,
       "npc" : "Erundek",
       "placeholders" : [
-        "getitemname(.@Items[.@i])",
-        ".@Items[.@i+1]",
-        "getitemname(7828)",
-        ".@Items[.@i+1]",
-        "getitemname(7829)"
+        "getitemname(.@Items[.@i])"
       ],
-      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Merchant Class only.\nYou can exchange for this item with ^FF0000{1} {2} or {3} {4}^000000.\nWould you like to exchange?"
+      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Archer Class only."
     },
     {
       "kind" : "message",
       "line" : 525,
       "npc" : "Erundek",
       "placeholders" : [
-        "getitemname(.@Items[.@i])",
-        ".@Items[.@i+1]",
-        "getitemname(7828)",
-        ".@Items[.@i+1]",
-        "getitemname(7829)"
+        "getitemname(.@Items[.@i])"
       ],
-      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Gunslinger only.\nYou can exchange for this item with ^FF0000{1} {2} or {3} {4}^000000.\nWould you like to exchange?"
+      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Merchant Class only."
     },
     {
       "kind" : "message",
       "line" : 525,
       "npc" : "Erundek",
       "placeholders" : [
-        "getitemname(.@Items[.@i])",
+        "getitemname(.@Items[.@i])"
+      ],
+      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nThis item is for Gunslinger only."
+    },
+    {
+      "kind" : "message",
+      "line" : 525,
+      "npc" : "Erundek",
+      "placeholders" : [
+        "getitemname(.@Items[.@i])"
+      ],
+      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 537,
+      "npc" : "Erundek",
+      "placeholders" : [
         ".@Items[.@i+1]",
         "getitemname(7828)",
         ".@Items[.@i+1]",
         "getitemname(7829)"
       ],
-      "text" : "[Erundek]\nYou chose ^3131FF{0}^000000.\nYou can exchange for this item with ^FF0000{1} {2} or {3} {4}^000000.\nWould you like to exchange?"
+      "text" : "You can exchange for this item with ^FF0000{0} {1} or {2} {3}^000000.\nWould you like to exchange?"
     },
     {
       "kind" : "option",

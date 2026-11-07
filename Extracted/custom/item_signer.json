@@ -128,6 +128,17 @@
       "text" : "[Perchik]\nShow me your items to sign..."
     },
     {
+      "kind" : "option",
+      "line" : 60,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@menu$",
+        "F_getpositionname(.@indices[.@i])",
+        "getequipname(.@indices[.@i])"
+      ],
+      "text" : "{0}{1} [^0055FF{2}^000000]"
+    },
+    {
       "kind" : "message",
       "line" : 63,
       "npc" : "Perchik",
@@ -164,20 +175,18 @@
       "placeholders" : [
         ".@Item[.@i+1]",
         "getitemname(.@Item[.@i])",
-        ".@price",
-        "getitemname(.@id)"
+        ".@price"
       ],
-      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2} Zeny\nShall I sign your ^0055FF{3}^000000?"
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2} Zeny"
     },
     {
       "kind" : "message",
       "line" : 63,
       "npc" : "Perchik",
       "placeholders" : [
-        ".@price",
-        "getitemname(.@id)"
+        ".@price"
       ],
-      "text" : "[Perchik]\nI will need:\n ~ {0} Zeny\nShall I sign your ^0055FF{1}^000000?"
+      "text" : "[Perchik]\nI will need:\n ~ {0} Zeny"
     },
     {
       "kind" : "message",
@@ -185,19 +194,15 @@
       "npc" : "Perchik",
       "placeholders" : [
         ".@Item[.@i+1]",
-        "getitemname(.@Item[.@i])",
-        "getitemname(.@id)"
+        "getitemname(.@Item[.@i])"
       ],
-      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\nShall I sign your ^0055FF{2}^000000?"
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}"
     },
     {
       "kind" : "message",
       "line" : 63,
       "npc" : "Perchik",
-      "placeholders" : [
-        "getitemname(.@id)"
-      ],
-      "text" : "[Perchik]\nI will need:\nShall I sign your ^0055FF{0}^000000?"
+      "text" : "[Perchik]\nI will need:"
     },
     {
       "kind" : "message",
@@ -207,6 +212,15 @@
         "getitemname(.@id)"
       ],
       "text" : "[Perchik]\nShall I sign your ^0055FF{0}^000000?"
+    },
+    {
+      "kind" : "message",
+      "line" : 104,
+      "npc" : "Perchik",
+      "placeholders" : [
+        "getitemname(.@id)"
+      ],
+      "text" : "Shall I sign your ^0055FF{0}^000000?"
     },
     {
       "kind" : "option",

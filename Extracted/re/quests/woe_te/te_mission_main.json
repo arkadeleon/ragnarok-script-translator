@@ -101,7 +101,19 @@
       "kind" : "option",
       "line" : 200,
       "npc" : "Training_Instructor_TE",
-      "text" : "Cancel"
+      "placeholders" : [
+        "callsub( S_Menu, .@quest_id,\n\t\t\t7510,\"1 Suspicious Poring\",\n\t\t\t7511,\"10 Suspicious Poring\",\n\t\t\t7512,\"30 Suspicious Poring\",\n\t\t\t7504,\"Destroy 1 Emperium\",\n\t\t\t7505,\"Destroy 3 Emperiums\",\n\t\t\t7506,\"Destroy 5 Emperiums\",\n\t\t\t7513,\"10 Kafra's Paychecks\",\n\t\t\t7514,\"20 Kafra's Paychecks\",\n\t\t\t7515,\"30 Kafra's Paychecks\" )"
+      ],
+      "text" : "{0}Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 200,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        "callsub( S_Menu, .@quest_id,\n\t\t\t7501,\"1 Suspicious Babee\",\n\t\t\t7502,\"10 Suspicious Babee\",\n\t\t\t7503,\"30 Suspicious Babee\",\n\t\t\t7504,\"Destroy 1 Emperium\",\n\t\t\t7505,\"Destroy 3 Emperiums\",\n\t\t\t7506,\"Destroy 5 Emperiums\",\n\t\t\t7507,\"10 Small Wooden Boxes\",\n\t\t\t7508,\"20 Small Wooden Boxes\",\n\t\t\t7509,\"30 Small Wooden Boxes\" )"
+      ],
+      "text" : "{0}Cancel"
     },
     {
       "kind" : "message",
@@ -117,10 +129,18 @@
       "line" : 201,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
-        ".@npc_name$",
-        ".@mob_name$[0]"
+        ".@npc_name$"
       ],
-      "text" : "[{0}]\nYou did it in time.\nI don't understand why {1} appear at that time of the day.\nAnyway, good job."
+      "text" : "[{0}]\nYou did it in time.\nI don't understand why Porings appear at that time of the day.\nAnyway, good job."
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nYou did it in time.\nI don't understand why Orc Babies appear at that time of the day.\nAnyway, good job."
     },
     {
       "kind" : "message",
@@ -130,15 +150,6 @@
         ".@npc_name$"
       ],
       "text" : "[{0}]"
-    },
-    {
-      "kind" : "message",
-      "line" : 201,
-      "npc" : "Training_Instructor_TE",
-      "placeholders" : [
-        ".@npc_name$"
-      ],
-      "text" : "[{0}]\nTime's up.\nUnfortunately, mission failed!\nMaybe next time!"
     },
     {
       "kind" : "message",
@@ -173,12 +184,21 @@
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
         ".@npc_name$",
-        ".@mob_name$[1]",
         ".@fortress$",
-        ".@num_kill",
-        ".@mob_name$[1]"
+        ".@num_kill"
       ],
-      "text" : "[{0}]\nI've been told that {1} appear during the busy siege hours at the fortress in {2}.\nI would like you to ^4d4dffeliminate {3} or more of {4}^000000."
+      "text" : "[{0}]\nI've been told that suspicious Porings appear during the busy siege hours at the fortress in {1}.\nI would like you to ^4d4dffeliminate {2} or more of suspicious Porings^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@fortress$",
+        ".@num_kill"
+      ],
+      "text" : "[{0}]\nI've been told that suspicious creatures appear during the busy siege hours at the fortress in {1}.\nI would like you to ^4d4dffeliminate {2} or more of suspicious creatures^000000."
     },
     {
       "kind" : "message",
@@ -188,6 +208,15 @@
         ".@npc_name$"
       ],
       "text" : "[{0}]\nIncredible!\nBreaking Emperiums is definitely not an easy job.\nYou must be contributing a lot to your guild. Good job!"
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nTime's up.\nUnfortunately, mission failed!\nMaybe next time!"
     },
     {
       "kind" : "message",
@@ -231,11 +260,9 @@
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
         ".@npc_name$",
-        ".@num_items",
-        ".@string$[0]",
-        ".@string$[1]"
+        ".@num_items"
       ],
-      "text" : "[{0}]\n{1} or more of {2} let's see you've done it right.\n{3}\nAnyway, good job."
+      "text" : "[{0}]\n{1} or more of paychecks let's see you've done it right.\nI don't understand why Porings would steal Kafra's Paychecks\nAnyway, good job."
     },
     {
       "kind" : "message",
@@ -243,10 +270,29 @@
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
         ".@npc_name$",
-        ".@string$[2]",
+        ".@num_items"
+      ],
+      "text" : "[{0}]\n{1} or more of wooden boxes let's see you've done it right.\nSo, those Orc Babies were after this, huh?\nAnyway, good job."
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
         ".@fortress$"
       ],
-      "text" : "[{0}]\nHmm you wouldn't believe it, but this mission is related to a theft.\nThey told me a bunch of {1} is missing from the fortress in {2}."
+      "text" : "[{0}]\nHmm you wouldn't believe it, but this mission is related to a theft.\nThey told me a bunch of Kafra's stolen paychecks is missing from the fortress in {1}."
+    },
+    {
+      "kind" : "message",
+      "line" : 201,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@fortress$"
+      ],
+      "text" : "[{0}]\nHmm you wouldn't believe it, but this mission is related to a theft.\nThey told me a bunch of wooden boxes is missing from the fortress in {1}."
     },
     {
       "kind" : "message",
@@ -359,10 +405,18 @@
       "line" : 418,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
-        ".@npc_name$",
-        ".@string$[0]"
+        ".@npc_name$"
       ],
-      "text" : "[{0}]\nLet me take the rest of the {1}.\nI'll return it to its original owner."
+      "text" : "[{0}]\nLet me take the rest of the paychecks.\nI'll return it to its original owner."
+    },
+    {
+      "kind" : "message",
+      "line" : 418,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$"
+      ],
+      "text" : "[{0}]\nLet me take the rest of the wooden boxes.\nI'll return it to its original owner."
     },
     {
       "kind" : "message",
@@ -404,10 +458,19 @@
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
         ".@npc_name$",
-        ".@num_items",
-        ".@string$[2]"
+        ".@num_items"
       ],
-      "text" : "[{0}]\nThe thief probably took advantage of the siege hours.\nIt's a request to find ^4d4dff{1} or more of {2}^000000."
+      "text" : "[{0}]\nThe thief probably took advantage of the siege hours.\nIt's a request to find ^4d4dff{1} or more of Kafra's stolen paychecks^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 460,
+      "npc" : "Training_Instructor_TE",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@num_items"
+      ],
+      "text" : "[{0}]\nThe thief probably took advantage of the siege hours.\nIt's a request to find ^4d4dff{1} or more of wooden boxes^000000."
     },
     {
       "kind" : "message",
@@ -468,7 +531,7 @@
       "line" : 496,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "[{0}]\nDo you want to cancel by any chance?"
     },
@@ -489,7 +552,7 @@
       "line" : 501,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "[{0}]\nGood luck!"
     },
@@ -498,7 +561,7 @@
       "line" : 505,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "[{0}]\nAs you wanted, this mission is canceled."
     },
@@ -525,7 +588,7 @@
       "line" : 518,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "[{0}]\nI don't think it's worth it. Well, good luck!"
     },
@@ -534,7 +597,7 @@
       "line" : 522,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "[{0}]\nAs you wanted, this mission is canceled."
     },
@@ -555,7 +618,7 @@
       "line" : 534,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "[{0}]\n^4d4dffThe time limit is 4 hours.^000000\nAccomplish the mission with in that time and report to me."
     },
@@ -564,7 +627,7 @@
       "line" : 540,
       "npc" : "Training_Instructor_TE",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(1)"
       ],
       "text" : "[{0}]\nTry another mission then."
     },

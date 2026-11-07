@@ -36,7 +36,7 @@
       "line" : 61,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "text" : "[{0}]\nI've sailed a few times... But now that I think about it, I've never gone across the continent."
     },
@@ -81,7 +81,7 @@
       "line" : 82,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "text" : "[{0}]\nWhy didn't you go in there with them?"
     },
@@ -120,7 +120,7 @@
       "line" : 99,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "text" : "[{0}]\nHow about hiring me as your first mate?"
     },
@@ -135,7 +135,7 @@
       "line" : 105,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "text" : "[{0}]\nNo...\n.\n.\nAs an adventurer, there's my obligation to those in need. I'm also very curious about that place..."
     },
@@ -204,7 +204,7 @@
       "line" : 142,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "text" : "[{0}]\nI'm sorry, but I don't have that much money. I'll come back when I save enough."
     },
@@ -261,7 +261,7 @@
       "line" : 175,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "text" : "[{0}]\nI'm sorry, but you've got the wrong person to ask that."
     },
@@ -288,7 +288,7 @@
       "line" : 190,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "text" : "[{0}]\nI don't know why you'd need so much money, but here. You can take it."
     },
@@ -320,10 +320,7 @@
       "kind" : "option",
       "line" : 222,
       "npc" : "Tower Protection Stone",
-      "placeholders" : [
-        ".@md_name$"
-      ],
-      "text" : "Generate dungeon {0}"
+      "text" : "Generate dungeon Endless Tower"
     },
     {
       "kind" : "option",
@@ -349,19 +346,15 @@
       "npc" : "Tower Protection Stone",
       "placeholders" : [
         "getpartyname(.@party_id)",
-        "strcharinfo(0)",
-        ".@md_name$"
+        "strcharinfo(0)"
       ],
-      "text" : "Party Name: {0}\nParty Leader: {1}\n^0000ff{2} ^000000- Reservation Failed!"
+      "text" : "Party Name: {0}\nParty Leader: {1}\n^0000ffEndless Tower ^000000- Reservation Failed!"
     },
     {
       "kind" : "message",
       "line" : 230,
       "npc" : "Tower Protection Stone",
-      "placeholders" : [
-        ".@md_name$"
-      ],
-      "text" : "^0000ff{0}^000000 - Try to reserve\nAfter making a reservation, you have to talk to NPC behind and select the menu 'Enter the Dungeon' to enter the dungeon."
+      "text" : "^0000ffEndless Tower^000000 - Try to reserve\nAfter making a reservation, you have to talk to NPC behind and select the menu 'Enter the Dungeon' to enter the dungeon."
     },
     {
       "kind" : "message",
@@ -373,10 +366,7 @@
       "kind" : "option",
       "line" : 244,
       "npc" : "Tower Protection Stone",
-      "placeholders" : [
-        ".@md_name$"
-      ],
-      "text" : "Enter the {0}"
+      "text" : "Enter the Endless Tower"
     },
     {
       "kind" : "option",
@@ -406,10 +396,7 @@
       "kind" : "option",
       "line" : 260,
       "npc" : "Tower Protection Stone",
-      "placeholders" : [
-        ".@md_name$"
-      ],
-      "text" : "Enter the {0}"
+      "text" : "Enter the Endless Tower"
     },
     {
       "kind" : "option",
@@ -545,6 +532,33 @@
       "line" : 1198,
       "npc" : "Immortal Brazier",
       "text" : "76th Level"
+    },
+    {
+      "kind" : "message",
+      "line" : 1201,
+      "npc" : "Immortal Brazier",
+      "placeholders" : [
+        ".@i"
+      ],
+      "text" : "-Warning-\nTo warp to the 26th Level, you need {0} Ashes of the Darkness."
+    },
+    {
+      "kind" : "message",
+      "line" : 1201,
+      "npc" : "Immortal Brazier",
+      "placeholders" : [
+        ".@i"
+      ],
+      "text" : "-Warning-\nTo warp to the 51st Level, you need {0} Ashes of the Darkness."
+    },
+    {
+      "kind" : "message",
+      "line" : 1201,
+      "npc" : "Immortal Brazier",
+      "placeholders" : [
+        ".@i"
+      ],
+      "text" : "-Warning-\nTo warp to the 76th Level, you need {0} Ashes of the Darkness."
     },
     {
       "kind" : "message",

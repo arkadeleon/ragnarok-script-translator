@@ -12,7 +12,7 @@
       "line" : 55,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$",
+        ".npcname$[.@zoneid]",
         ".region$[.@zoneid]"
       ],
       "text" : "{0}\nWe provide missions and daily quests that you can complete in the region of {1}.\nThere are simple daily quests as well as missions that you have to complete within the siege hours only. So, think about it~"
@@ -49,7 +49,7 @@
       "line" : 65,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nIt's been less than an hour since the last time we've checked!\nCome back when the waiting time is over."
     },
@@ -58,7 +58,7 @@
       "line" : 69,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nIf you have luck on your side, you'll have good results."
     },
@@ -67,7 +67,7 @@
       "line" : 74,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nI have confirmed that the waiting time for conquering missions has ended.\nI'll delete unnecessary records for you."
     },
@@ -76,7 +76,7 @@
       "line" : 84,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nAccording to ^4d4dffthe number of fortresses that your guild has conquered at this very moment,^000000 I'll give you a reward.\nDo you want to check right now? You're aware that ^4d4dffthe number can change even as we speak,^000000 right?"
     },
@@ -97,7 +97,7 @@
       "line" : 89,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nRight. Life is all about timing.\nCome back when it's shining the most."
     },
@@ -106,7 +106,7 @@
       "line" : 100,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nUnfortunately, there is no fortress that your guild has conquered.\nTry again!"
     },
@@ -115,135 +115,83 @@
       "line" : 105,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$",
+        ".npcname$[.@zoneid]"
+      ],
+      "text" : "{0}\nIncredible."
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".npcname$[.@zoneid]"
+      ],
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered"
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "gld_mission",
+      "placeholders" : [
         "getcastlename(.castle$[.@i+.@zoneid*5])",
         ".region$[.@zoneid]"
       ],
-      "text" : "{0}\nIncredible.\n{1}: ^4d4dffOccupied^000000\nYour guild has conquered {2}!"
+      "text" : "{0}: ^4d4dffOccupied^000000\nYour guild has conquered {1}!"
     },
     {
       "kind" : "message",
-      "line" : 105,
+      "line" : 111,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$",
         "getcastlename(.castle$[.@i+.@zoneid*5])",
         ".region$[.@zoneid]"
       ],
-      "text" : "{0}\nIncredible.\n{1}\nYour guild has conquered {2}!"
+      "text" : "{0}\nYour guild has conquered {1}!"
     },
     {
       "kind" : "message",
-      "line" : 105,
+      "line" : 111,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$",
         "getcastlename(.castle$[.@i+.@zoneid*5])",
+        ".@total"
+      ],
+      "text" : "{0}: ^4d4dffOccupied^000000\nis {1}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        ".@total"
+      ],
+      "text" : "{0}\nis {1}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 114,
+      "npc" : "gld_mission",
+      "placeholders" : [
         ".region$[.@zoneid]"
       ],
-      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}: ^4d4dffOccupied^000000\nYour guild has conquered {2}!"
+      "text" : "Your guild has conquered {0}!"
     },
     {
       "kind" : "message",
-      "line" : 105,
+      "line" : 116,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$",
-        "getcastlename(.castle$[.@i+.@zoneid*5])",
-        ".region$[.@zoneid]"
-      ],
-      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}\nYour guild has conquered {2}!"
-    },
-    {
-      "kind" : "message",
-      "line" : 105,
-      "npc" : "gld_mission",
-      "placeholders" : [
-        ".@npcname$",
-        ".region$[.@zoneid]"
-      ],
-      "text" : "{0}\nIncredible.\nYour guild has conquered {1}!"
-    },
-    {
-      "kind" : "message",
-      "line" : 105,
-      "npc" : "gld_mission",
-      "placeholders" : [
-        ".@npcname$",
-        ".region$[.@zoneid]"
-      ],
-      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\nYour guild has conquered {1}!"
-    },
-    {
-      "kind" : "message",
-      "line" : 105,
-      "npc" : "gld_mission",
-      "placeholders" : [
-        ".@npcname$",
-        "getcastlename(.castle$[.@i+.@zoneid*5])",
         ".@total"
       ],
-      "text" : "{0}\nIncredible.\n{1}: ^4d4dffOccupied^000000\nis {2}!"
-    },
-    {
-      "kind" : "message",
-      "line" : 105,
-      "npc" : "gld_mission",
-      "placeholders" : [
-        ".@npcname$",
-        "getcastlename(.castle$[.@i+.@zoneid*5])",
-        ".@total"
-      ],
-      "text" : "{0}\nIncredible.\n{1}\nis {2}!"
-    },
-    {
-      "kind" : "message",
-      "line" : 105,
-      "npc" : "gld_mission",
-      "placeholders" : [
-        ".@npcname$",
-        "getcastlename(.castle$[.@i+.@zoneid*5])",
-        ".@total"
-      ],
-      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}: ^4d4dffOccupied^000000\nis {2}!"
-    },
-    {
-      "kind" : "message",
-      "line" : 105,
-      "npc" : "gld_mission",
-      "placeholders" : [
-        ".@npcname$",
-        "getcastlename(.castle$[.@i+.@zoneid*5])",
-        ".@total"
-      ],
-      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}\nis {2}!"
-    },
-    {
-      "kind" : "message",
-      "line" : 105,
-      "npc" : "gld_mission",
-      "placeholders" : [
-        ".@npcname$",
-        ".@total"
-      ],
-      "text" : "{0}\nIncredible.\nis {1}!"
-    },
-    {
-      "kind" : "message",
-      "line" : 105,
-      "npc" : "gld_mission",
-      "placeholders" : [
-        ".@npcname$",
-        ".@total"
-      ],
-      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\nis {1}!"
+      "text" : "is {0}!"
     },
     {
       "kind" : "message",
       "line" : 118,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nI'll give you a reward accordingly. I hope you make good use of it.\nYou have an hour of waiting time until the next report. Keep that in mind and try again."
     },
@@ -252,7 +200,7 @@
       "line" : 129,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nI'm sorry but you can complete this mission only during the siege hours. I'm afraid I can't do anything here."
     },
@@ -261,7 +209,7 @@
       "line" : 135,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nI'm sorry but conquering missions are for guild masters only.\nMembers should try guild dungeon daily quests instead."
     },
@@ -270,17 +218,39 @@
       "line" : 142,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$",
+        ".npcname$[.@zoneid]",
         ".region$[.@zoneid]"
       ],
       "text" : "{0}\nThese are missions that you can complete in guild dungeons of {1} area.\nYou can cancel them if you want to. Feel free to challenge yourself."
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@menu$",
+        ".region$[.@zoneid]",
+        ".@i+1"
+      ],
+      "text" : "{0}{1} Mission {2} ^4d4dffCheck the result^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 151,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@menu$",
+        ".region$[.@zoneid]",
+        ".@i+1"
+      ],
+      "text" : "{0}{1} Mission {2}"
     },
     {
       "kind" : "message",
       "line" : 154,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nYou don't need to rush since these missions take place in guild dungeons.\nFeel free to give it a try whenever you want to."
     },
@@ -289,7 +259,7 @@
       "line" : 160,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$",
+        ".npcname$[.@zoneid]",
         ".level_req[.@index]"
       ],
       "text" : "{0}\nHmm, unfortunately, this mission is limited to users with ^4d4dfflevel {1}^000000 or higher only.\nYour level is not high enough."
@@ -299,7 +269,7 @@
       "line" : 169,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nOh, you've done a good job.\nIt isn't much, but hopefully it will be helpful."
     },
@@ -308,7 +278,7 @@
       "line" : 177,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nHmm? It seems like you haven't completed the mission yet..\nIs there any problem?"
     },
@@ -329,7 +299,7 @@
       "line" : 182,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nI'm not sure how long you can use the guild dungeon, but good luck."
     },
@@ -338,7 +308,7 @@
       "line" : 186,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nWell, no one's forcing you.\nDo whatever you like to do.\nI'll cancel the mission then."
     },
@@ -347,7 +317,7 @@
       "line" : 196,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nThe rule is set here so that you're only allowed to complete one mission each day.\nI would like you to come back when the waiting time is over."
     },
@@ -356,7 +326,7 @@
       "line" : 202,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nI have confirmed that the waiting time for this mission is over.\nI'll delete the records used for confirmation.\nNow, give it a try to complete the quest!"
     },
@@ -365,7 +335,7 @@
       "line" : 208,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$",
+        ".npcname$[.@zoneid]",
         ".ordinal$[.@sel]",
         ".region$[.@zoneid]"
       ],
@@ -376,7 +346,7 @@
       "line" : 212,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nI'll reward you accordingly upon completing this mission."
     },
@@ -385,7 +355,7 @@
       "line" : 212,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nI'll give you experience points in return."
     },
@@ -406,7 +376,7 @@
       "line" : 219,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nEntrance to the guild dungeon is restricted. But it's not like you can't find a way to go there, either.\nI'll pray for your success in fighting those monsters."
     },
@@ -415,7 +385,7 @@
       "line" : 225,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nWell, do as you wish."
     },
@@ -424,7 +394,7 @@
       "line" : 233,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nIt's not difficult at all.\nI give a reward ^4d4dffdepending on how many fortresses you have conquered.^000000\n^4d4dffThe type and quality of the reward depend on the number of conquered fortresses at the very moment I check.^000000"
     },
@@ -433,7 +403,7 @@
       "line" : 238,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nAnd of course, I check during the siege hours only.\n^4d4dffReceiving a reward is followed by an hour of waiting time. So you'd better figure out the right timing as well.^000000"
     },
@@ -442,7 +412,7 @@
       "line" : 242,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nIf you are a master of a guild that is currently participating in siege battles, you should give it a try."
     },
@@ -451,7 +421,7 @@
       "line" : 245,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nGuild dungeon daily quests consist of combat quests that you can complete in guild dungeons.\nIt's simple."
     },
@@ -460,7 +430,7 @@
       "line" : 250,
       "npc" : "gld_mission",
       "placeholders" : [
-        ".@npcname$"
+        ".npcname$[.@zoneid]"
       ],
       "text" : "{0}\nYou're really something else~!"
     },

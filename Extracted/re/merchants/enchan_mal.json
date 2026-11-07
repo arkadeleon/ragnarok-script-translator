@@ -108,9 +108,46 @@
       "line" : 355,
       "npc" : "Mayomayo",
       "placeholders" : [
-        ".@equip_name$"
+        "getitemname(.@equip_id)",
+        "getitemslots(.@equip_id)"
+      ],
+      "text" : "[Mayomayo]\n^0000ff{0}[{1}]^000000! Do you want to enchant this equipment? How will you pay for this?"
+    },
+    {
+      "kind" : "message",
+      "line" : 355,
+      "npc" : "Mayomayo",
+      "placeholders" : [
+        "getitemname(.@equip_id)"
       ],
       "text" : "[Mayomayo]\n^0000ff{0}^000000! Do you want to enchant this equipment? How will you pay for this?"
+    },
+    {
+      "kind" : "option",
+      "line" : 374,
+      "npc" : "Mayomayo",
+      "text" : "Stop"
+    },
+    {
+      "kind" : "option",
+      "line" : 374,
+      "npc" : "Mayomayo",
+      "placeholders" : [
+        "getitemname(.@coin[.@i])",
+        ".@total[.@i]-.@count[.@i]"
+      ],
+      "text" : "^999999{0} (missing {1})^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 374,
+      "npc" : "Mayomayo",
+      "placeholders" : [
+        "getitemname(.@coin[.@i])",
+        ".@count[.@i]",
+        ".@total[.@i]"
+      ],
+      "text" : "{0} (have {1}, need {2})"
     },
     {
       "kind" : "message",
@@ -173,10 +210,13 @@
       "kind" : "message",
       "line" : 430,
       "npc" : "Mayomayo",
-      "placeholders" : [
-        ".@str$"
-      ],
-      "text" : "[Mayomayo]\nI'm trying for the {0} enchant. ^ff0000It will not touch previous refinement and cards. Also, the equipment will not be destroyed.^000000 Can I continue?"
+      "text" : "[Mayomayo]\nI'm trying for the 1st enchant. ^ff0000It will not touch previous refinement and cards. Also, the equipment will not be destroyed.^000000 Can I continue?"
+    },
+    {
+      "kind" : "message",
+      "line" : 430,
+      "npc" : "Mayomayo",
+      "text" : "[Mayomayo]\nI'm trying for the 2nd enchant. ^ff0000It will not touch previous refinement and cards. Also, the equipment will not be destroyed.^000000 Can I continue?"
     },
     {
       "kind" : "option",

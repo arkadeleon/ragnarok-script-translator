@@ -80,13 +80,24 @@
       "text" : "[Dimension Traveler]\nAh! The number that is written beside {0} will be needed.\nPlease keep that in mind."
     },
     {
+      "kind" : "option",
+      "line" : 80,
+      "npc" : "Dimension Traveler",
+      "placeholders" : [
+        ".@menu$",
+        "getitemname(.@items[.@i])",
+        ".@items[.@i+1]"
+      ],
+      "text" : "{0}{1} - {2}"
+    },
+    {
       "kind" : "message",
       "line" : 81,
       "npc" : "Dimension Traveler",
       "placeholders" : [
         "mesitemlink( .@items[.@s] )",
         ".@items[.@s+1]",
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "text" : "[Dimension Traveler]\nDo you mean {0}?\n{1} ^006400{2}^000000 are required in exchange."
     },
@@ -96,7 +107,7 @@
       "npc" : "Dimension Traveler",
       "placeholders" : [
         ".@items[.@s+1]",
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "text" : "[Dimension Traveler]\n{0} ^006400{1}^000000 are required in exchange."
     },
@@ -122,73 +133,28 @@
       "kind" : "message",
       "line" : 90,
       "npc" : "Dimension Traveler",
-      "placeholders" : [
-        ".@item_name_req$",
-        ".@items[.@s+1]",
-        ".@item_name_req$"
-      ],
-      "text" : "[Dimension Traveler]\n[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {0}. I will exchange it for ^006400{1} {2}^000000."
+      "text" : "[Dimension Traveler]"
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "Dimension Traveler",
+      "text" : "[Dimension Traveler]\nI have more than enough weapons."
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "Dimension Traveler",
+      "text" : "[Dimension Traveler]\nWe have many armors for you. Why don't you pick one?"
     },
     {
       "kind" : "message",
       "line" : 90,
       "npc" : "Dimension Traveler",
       "placeholders" : [
-        ".@item_name_req$",
-        ".@items[.@s+1]",
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
-      "text" : "[Dimension Traveler]\nI have more than enough weapons.\n[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {0}. I will exchange it for ^006400{1} {2}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Dimension Traveler",
-      "placeholders" : [
-        ".@item_name_req$",
-        ".@items[.@s+1]",
-        ".@item_name_req$"
-      ],
-      "text" : "[Dimension Traveler]\nWe have many armors for you. Why don't you pick one?\n[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {0}. I will exchange it for ^006400{1} {2}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Dimension Traveler",
-      "placeholders" : [
-        ".@item_name_req$",
-        ".@item_name_req$",
-        ".@items[.@s+1]",
-        ".@item_name_req$"
-      ],
-      "text" : "[Dimension Traveler]\nIf you bring me {0}, I will trade it with anything you want.\n[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {1}. I will exchange it for ^006400{2} {3}^000000."
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Dimension Traveler",
-      "text" : "[Dimension Traveler]\n[Dimension Traveler]\nThank you. Come back if you need anything else."
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Dimension Traveler",
-      "text" : "[Dimension Traveler]\nI have more than enough weapons.\n[Dimension Traveler]\nThank you. Come back if you need anything else."
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Dimension Traveler",
-      "text" : "[Dimension Traveler]\nWe have many armors for you. Why don't you pick one?\n[Dimension Traveler]\nThank you. Come back if you need anything else."
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Dimension Traveler",
-      "placeholders" : [
-        ".@item_name_req$"
-      ],
-      "text" : "[Dimension Traveler]\nIf you bring me {0}, I will trade it with anything you want.\n[Dimension Traveler]\nThank you. Come back if you need anything else."
+      "text" : "[Dimension Traveler]\nIf you bring me {0}, I will trade it with anything you want."
     },
     {
       "kind" : "message",
@@ -201,9 +167,9 @@
       "line" : 109,
       "npc" : "Dimension Traveler",
       "placeholders" : [
-        ".@item_name_req$",
+        "getitemname(6672)",
         ".@items[.@s+1]",
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "text" : "[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {0}. I will exchange it for ^006400{1} {2}^000000."
     },

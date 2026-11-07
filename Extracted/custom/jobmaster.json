@@ -253,6 +253,27 @@
       "text" : "Select a job."
     },
     {
+      "kind" : "option",
+      "line" : 318,
+      "npc" : "Job Master",
+      "text" : " ~ ^0055FFRebirth^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 318,
+      "npc" : "Job Master",
+      "text" : " ~ ^777777Cancel^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 318,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "jobname(getelementofarray(getarg(0), .@i))"
+      ],
+      "text" : " ~ {0}"
+    },
+    {
       "kind" : "message",
       "line" : 322,
       "npc" : "Job Master",
@@ -262,6 +283,16 @@
         "jobname(.@class)"
       ],
       "text" : "{0}\nA base level of {1} is required to turn into a {2}."
+    },
+    {
+      "kind" : "message",
+      "line" : 331,
+      "npc" : "Job Master",
+      "placeholders" : [
+        ".SNovice",
+        "jobname(.@class)"
+      ],
+      "text" : "A base level of {0} is required to turn into a {1}."
     },
     {
       "kind" : "message",
@@ -292,6 +323,12 @@
       "kind" : "option",
       "line" : 385,
       "npc" : "Job Master",
+      "text" : " ~ ^0055FFRebirth^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 385,
+      "npc" : "Job Master",
       "text" : " ~ ^777777Go back^000000"
     },
     {
@@ -299,6 +336,15 @@
       "line" : 385,
       "npc" : "Job Master",
       "text" : " ~ ^777777Cancel^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 385,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "jobname(.@class)"
+      ],
+      "text" : " ~ Change into ^0055FF{0}^000000 class"
     }
   ]
 }

@@ -475,10 +475,45 @@
       "npc" : "Old Sign",
       "placeholders" : [
         ".@face_name$",
+        ".@face_member",
+        "callfunc( \"F_InsertPlural\", .@time_s, \"Second\" )"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000 with ^ff0044{1} party members^000000.\nCurrent record time is ^0000ff{2}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        ".@face_name$",
+        ".@face_member",
+        "callfunc( \"F_InsertPlural\", .@time_m, \"Minute\" )",
+        "callfunc( \"F_InsertPlural\", .@time_s, \"Second\" )"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000 with ^ff0044{1} party members^000000.\nCurrent record time is ^0000ff{2} {3}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        ".@face_name$",
         ".@string$",
-        ".@time_txt$"
+        "callfunc( \"F_InsertPlural\", .@time_s, \"Second\" )"
       ],
       "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000{1}.\nCurrent record time is ^0000ff{2}^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Old Sign",
+      "placeholders" : [
+        ".@face_name$",
+        ".@string$",
+        "callfunc( \"F_InsertPlural\", .@time_m, \"Minute\" )",
+        "callfunc( \"F_InsertPlural\", .@time_s, \"Second\" )"
+      ],
+      "text" : "-- Faceworm's Nest Records --\nBest time belongs to adventurer ^ff0044{0}^000000{1}.\nCurrent record time is ^0000ff{2} {3}^000000."
     },
     {
       "kind" : "message",
@@ -641,7 +676,7 @@
       "line" : 458,
       "npc" : "Chaos",
       "placeholders" : [
-        ".@player_name$"
+        "strcharinfo(0)"
       ],
       "text" : "[{0}]\nNo! I think you're mistaken! We are not bounty hunters..."
     },
@@ -662,7 +697,7 @@
       "line" : 469,
       "npc" : "Chaos",
       "placeholders" : [
-        ".@player_name$"
+        "strcharinfo(0)"
       ],
       "text" : "[{0}]\nFaceworm? I've never heard about it."
     },

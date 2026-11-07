@@ -73,6 +73,62 @@
       "text" : " ~ Manage sessions..."
     },
     {
+      "kind" : "option",
+      "line" : 413,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".Regions$[.@i]"
+      ],
+      "text" : " ~ ^0055FF{0} Castles^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 413,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".Regions$[.@i]"
+      ],
+      "text" : " ~ ^777777{0} Castles^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 413,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".@clr$",
+        ".Regions$[.@i]"
+      ],
+      "text" : " ~ {0}{1} Castles^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 421,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        "getcastlename(.Castles$[.@index])"
+      ],
+      "text" : " ~ ^0055FF{0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 421,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        "getcastlename(.Castles$[.@index])"
+      ],
+      "text" : " ~ ^777777{0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 421,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".@clr$",
+        "getcastlename(.Castles$[.@index])"
+      ],
+      "text" : " ~ {0}{1}^000000"
+    },
+    {
       "kind" : "message",
       "line" : 426,
       "npc" : "WOE_CONTROL",
@@ -262,6 +318,15 @@
       "text" : "[New Session]\nSelect a start time for ^0055FF{0}^000000."
     },
     {
+      "kind" : "option",
+      "line" : 472,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        "Add_Zero(.@i,1)"
+      ],
+      "text" : " ~ {0}"
+    },
+    {
       "kind" : "message",
       "line" : 473,
       "npc" : "WOE_CONTROL",
@@ -269,6 +334,15 @@
         ".Days$[.@Day]"
       ],
       "text" : "[New Session]\nSelect an end time for ^0055FF{0}^000000."
+    },
+    {
+      "kind" : "option",
+      "line" : 479,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        "Add_Zero(.@i,1)"
+      ],
+      "text" : " ~ {0}"
     },
     {
       "kind" : "message",
@@ -295,9 +369,21 @@
         ".Days$[.@Day]",
         "Add_Zero(.@Start)",
         "Add_Zero(.@End)",
-        ".@string$"
+        "getcastlename(.Castles$[.@i])",
+        ".Castles$[.@i]"
       ],
-      "text" : "[New Session]\n^0055FF{0} ({1}-{2})^000000\n > Castles:\n{3}"
+      "text" : "[New Session]\n^0055FF{0} ({1}-{2})^000000\n > Castles:\n   ~ {3} ({4})"
+    },
+    {
+      "kind" : "message",
+      "line" : 494,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".Days$[.@Day]",
+        "Add_Zero(.@Start)",
+        "Add_Zero(.@End)"
+      ],
+      "text" : "[New Session]\n^0055FF{0} ({1}-{2})^000000\n > Castles:\n"
     },
     {
       "kind" : "message",
@@ -309,6 +395,32 @@
         "Add_Zero(.@End)"
       ],
       "text" : "[New Session]\n^0055FF{0} ({1}-{2})^000000\n > Castles:"
+    },
+    {
+      "kind" : "option",
+      "line" : 509,
+      "npc" : "WOE_CONTROL",
+      "text" : " ~ ^FF0000Finished...^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 509,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        "getcastlename(.Castles$[.@i])",
+        ".Castles$[.@i]"
+      ],
+      "text" : " ~ ^0055FF{0} ({1})^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 509,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        "getcastlename(.Castles$[.@i])",
+        ".Castles$[.@i]"
+      ],
+      "text" : " ~ {0} ({1})^000000"
     },
     {
       "kind" : "message",
@@ -357,6 +469,23 @@
       "line" : 541,
       "npc" : "WOE_CONTROL",
       "text" : "[Remove Session]\nSelect a session to remove."
+    },
+    {
+      "kind" : "option",
+      "line" : 553,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".Days$[$WOE_CONTROL[.@i]]",
+        "Add_Zero($WOE_CONTROL[.@i+1],1)",
+        "Add_Zero($WOE_CONTROL[.@i+2],1)"
+      ],
+      "text" : " ~ {0} ({1}-{2})"
+    },
+    {
+      "kind" : "option",
+      "line" : 553,
+      "npc" : "WOE_CONTROL",
+      "text" : " ~ ^777777Cancel^000000"
     },
     {
       "kind" : "message",

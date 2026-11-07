@@ -41,10 +41,7 @@
       "kind" : "message",
       "line" : 40,
       "npc" : "Marry Jay",
-      "placeholders" : [
-        ".@md_name$"
-      ],
-      "text" : "[Marry Jay]\nSorry, but the entry period to the {0} has expired.\nTake a rest while waiting for the dungeon to be available again."
+      "text" : "[Marry Jay]\nSorry, but the entry period to the Friday Dungeon has expired.\nTake a rest while waiting for the dungeon to be available again."
     },
     {
       "kind" : "message",
@@ -57,6 +54,12 @@
       "line" : 51,
       "npc" : "Marry Jay",
       "text" : "[Marry Jay]\nYou came just in time.\nThe memorial dungeon is just ready to be opened.\nWould you like to enter now?"
+    },
+    {
+      "kind" : "option",
+      "line" : 60,
+      "npc" : "Marry Jay",
+      "text" : "Prepare Friday Memorial"
     },
     {
       "kind" : "option",
@@ -468,6 +471,24 @@
         "mesitemlink(.@equip_id, false)"
       ],
       "text" : "[Amateur Collector]\nI have succeeded.\nThe {0} has been initialized."
+    },
+    {
+      "kind" : "option",
+      "line" : 709,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "getitemname(getequipid(EQI_ACC_R))"
+      ],
+      "text" : "Right Acc - {0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 709,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "getitemname(getequipid(EQI_ACC_L))"
+      ],
+      "text" : "Left Acc - {0}"
     }
   ]
 }

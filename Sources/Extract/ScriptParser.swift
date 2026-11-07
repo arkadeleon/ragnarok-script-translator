@@ -7,7 +7,7 @@
 
 /// One `mes` argument: a single line of dialog.
 struct DialogLine {
-    var variants: [[Segment]]
+    var expression: TextExpression
     var line: Int
 }
 
@@ -18,6 +18,11 @@ indirect enum Statement {
 
     /// A statement that does not touch the dialog box (`set`, `getitem`, ...).
     case transparent
+
+    case assign(TextReference, values: [TextExpression], append: Bool)
+    case forget([String])
+    case forgetAll
+    case options([TextExpression], line: Int)
 
     /// Ends the current page but lets the script continue on a fresh one (`next`, `clear`, `select`, ...).
     case newPage
@@ -135,11 +140,12 @@ struct ScriptParser {
 
         switch token.text.lowercased() {
         case "if":
+            var conditions: [Statement] = []
             var alternatives: [Statement] = []
             var otherwise: Statement?
             while true {
                 index += 1 // `if`
-                skipParenthesized()
+                conditions += skipParenthesized()
                 alternatives.append(parseStatement() ?? .transparent)
                 guard index < tokens.count, tokens[index].kind == .identifier, tokens[index].text.lowercased() == "else" else {
                     break
@@ -151,30 +157,31 @@ struct ScriptParser {
                 otherwise = parseStatement() ?? .transparent
                 break
             }
-            return .branch(alternatives: alternatives, otherwise: otherwise)
+            return .block(conditions + [.branch(alternatives: alternatives, otherwise: otherwise)])
         case "else":
             // Dangling else (e.g. after a `;` we did not model); treat its body as unconditional.
             index += 1
             return parseStatement()
         case "switch":
             index += 1
-            skipParenthesized()
-            return parseSwitchBody()
+            let options = skipParenthesized()
+            return .block(options + [parseSwitchBody()])
         case "while", "for":
             index += 1
-            skipParenthesized()
-            return .loop(parseStatement() ?? .transparent)
+            let options = skipParenthesized()
+            return .block(options + [.loop(parseStatement() ?? .transparent)])
         case "do":
             index += 1
             let body = parseStatement() ?? .transparent
+            var condition: [Statement] = []
             if index < tokens.count, tokens[index].kind == .identifier, tokens[index].text.lowercased() == "while" {
                 index += 1
-                skipParenthesized()
+                condition = skipParenthesized()
                 if isPunctuation(";") {
                     index += 1
                 }
             }
-            return .loop(body)
+            return .block([.loop(body)] + condition)
         case "case", "default":
             // Outside a switch body we parsed; skip to the colon.
             while index < tokens.count, !isPunctuation(":") {
@@ -185,10 +192,12 @@ struct ScriptParser {
             }
             return .label
         case "mes":
-            let (arguments, end) = parseArguments(from: index + 1, until: ";")
+            let start = index + 1
+            let (arguments, end) = parseArguments(from: start, until: ";")
             index = end
-            let lines = arguments.map { DialogLine(variants: $0, line: token.line) }
-            return .mes(lines)
+            let lines = arguments.map { DialogLine(expression: $0, line: token.line) }
+            let invalidation: [Statement] = containsScriptCall(from: start, to: end) ? [.forgetAll] : []
+            return .block(options(from: start, to: end) + invalidation + [.mes(lines)])
         default:
             if index + 1 < tokens.count, tokens[index + 1].kind == .punctuation, tokens[index + 1].text == ":" {
                 index += 2
@@ -253,6 +262,7 @@ struct ScriptParser {
 
     /// Consumes tokens up to and including the next `;` at nesting depth 0 and classifies the statement.
     private mutating func parseSimpleStatement() -> Statement {
+        let start = index
         var depth = 0
         var command: String?
         var mentionsMenu = false
@@ -270,12 +280,12 @@ struct ScriptParser {
                     depth -= 1
                 case "{", "}":
                     if depth <= 0 {
-                        return classify(command, mentionsMenu)
+                        return simpleStatement(from: start, to: index, command: command, mentionsMenu: mentionsMenu)
                     }
                 case ";":
                     if depth <= 0 {
                         index += 1
-                        return classify(command, mentionsMenu)
+                        return simpleStatement(from: start, to: index, command: command, mentionsMenu: mentionsMenu)
                     }
                 default:
                     break
@@ -291,7 +301,100 @@ struct ScriptParser {
             }
             index += 1
         }
-        return classify(command, mentionsMenu)
+        return simpleStatement(from: start, to: index, command: command, mentionsMenu: mentionsMenu)
+    }
+
+    private func simpleStatement(from start: Int, to end: Int, command: String?, mentionsMenu: Bool) -> Statement {
+        var body = Array(tokens[start..<end])
+        if body.last?.text == ";" { body.removeLast() }
+        var statements = options(from: start, to: end)
+        let expressionParser = ExpressionParser(source: source)
+        let rawArguments: [TextExpression]
+        if ["set", "setarray", "input", "cleararray", "deletearray", "copyarray", "explode", "query_sql", "query_logsql"].contains(command ?? "") {
+            rawArguments = parseArguments(from: start + 1, until: ";").arguments
+        } else {
+            rawArguments = []
+        }
+        if command == "set" || command == "setarray" {
+            if let first = rawArguments.first, case .reference(let target) = first, rawArguments.count >= 2 {
+                let values = command == "setarray" ? Array(rawArguments.dropFirst()) : [rawArguments[1]]
+                statements.append(.assign(target, values: values, append: false))
+            }
+        } else if body.count >= 3, body[0].kind == .identifier {
+            // Assignments are statement-level only. Do not confuse == or nested assignments
+            // in expressions with an update of this variable.
+            var nesting = 0
+            for position in body.indices {
+                let token = body[position]
+                guard token.kind == .punctuation else { continue }
+                if token.text == "[" || token.text == "(" { nesting += 1 }
+                if token.text == "]" || token.text == ")" { nesting -= 1 }
+                if token.text == "=", nesting == 0 {
+                    let compound = position > 0 && body[position - 1].kind == .punctuation && "+-*/%&|^".contains(body[position - 1].text)
+                    let appending = compound && body[position - 1].text == "+"
+                    let targetEnd = compound ? position - 1 : position
+                    let target = expressionParser.parse(Array(body[..<targetEnd]))
+                    if case .reference(let reference) = target {
+                        let value = expressionParser.parse(Array(body[(position + 1)...]))
+                        if compound && !appending {
+                            statements.append(.forget([reference.name]))
+                        } else {
+                            statements.append(.assign(reference, values: [value], append: appending))
+                        }
+                    }
+                    break
+                }
+            }
+        }
+        if body.count >= 3 {
+            let prefix = body[0].text == body[1].text && ["+", "-"].contains(body[0].text)
+            let suffix = body[body.count - 1].text == body[body.count - 2].text && ["+", "-"].contains(body[body.count - 1].text)
+            let targetTokens = prefix ? Array(body.dropFirst(2)) : suffix ? Array(body.dropLast(2)) : []
+            if case .reference(let target) = expressionParser.parse(targetTokens) {
+                statements.append(.forget([target.name]))
+            }
+        }
+        // Commands writing external or unmodelled values must invalidate earlier constants.
+        let destinations = ["input", "cleararray", "deletearray", "copyarray", "explode"]
+        if destinations.contains(command ?? ""), let first = rawArguments.first, case .reference(let target) = first {
+            statements.append(.forget([target.name]))
+        }
+        if command == "query_sql" || command == "query_logsql" {
+            statements.append(.forget(rawArguments.dropFirst().compactMap {
+                if case .reference(let target) = $0 { return target.name }
+                return nil
+            }))
+        }
+        if containsScriptCall(from: start, to: end) || command == "setd" {
+            // Calls may mutate variables before their result is assigned.
+            statements.insert(.forgetAll, at: 0)
+        }
+        statements.append(classify(command, mentionsMenu))
+        return .block(statements)
+    }
+
+    /// Find menu calls even inside assignments and conditions. Evaluation happens later,
+    /// against the environment of the path reaching the enclosing statement.
+    private func options(from start: Int, to end: Int) -> [Statement] {
+        var statements: [Statement] = []
+        var cursor = start
+        while cursor < end {
+            let token = tokens[cursor]
+            guard token.kind == .identifier else { cursor += 1; continue }
+            let name = token.text.lowercased()
+            if (name == "select" || name == "prompt"), cursor + 1 < end, tokens[cursor + 1].text == "(" {
+                let result = parseArguments(from: cursor + 2, until: ")")
+                statements.append(.options(result.arguments, line: token.line))
+                cursor = max(cursor + 1, result.end)
+            } else if name == "menu" {
+                let result = parseArguments(from: cursor + 1, until: ";")
+                statements.append(.options(result.arguments.enumerated().filter { $0.offset.isMultiple(of: 2) }.map(\.element), line: token.line))
+                cursor = max(cursor + 1, result.end)
+            } else {
+                cursor += 1
+            }
+        }
+        return statements
     }
 
     private func classify(_ command: String?, _ mentionsMenu: Bool) -> Statement {
@@ -313,14 +416,15 @@ struct ScriptParser {
         return mentionsMenu ? .newPage : .transparent
     }
 
-    private mutating func skipParenthesized() {
+    private mutating func skipParenthesized() -> [Statement] {
+        let start = index
         guard isPunctuation("(") else {
-            return
+            return []
         }
         var depth = 0
         while index < tokens.count {
             if case .header = tokens[index].kind {
-                return
+                return []
             }
             if tokens[index].kind == .punctuation {
                 if tokens[index].text == "(" {
@@ -330,11 +434,37 @@ struct ScriptParser {
                     depth -= 1
                     if depth == 0 {
                         index += 1
-                        return
+                        return options(from: start, to: index) + conditionWrites(from: start, to: index)
                     }
                 }
             }
             index += 1
+        }
+        return options(from: start, to: index) + conditionWrites(from: start, to: index)
+    }
+
+    private func conditionWrites(from start: Int, to end: Int) -> [Statement] {
+        var names: [String] = []
+        for position in start..<end where tokens[position].kind == .identifier {
+            let next = position + 1
+            guard next + 1 < end, tokens[next].kind == .punctuation else { continue }
+            let operation = tokens[next].text
+            let following = tokens[next + 1].text
+            if (operation == "=" && following != "=") ||
+               (["+", "-", "*", "/", "%", "&", "|", "^"].contains(operation) && following == "=") ||
+               (["+", "-"].contains(operation) && following == operation) {
+                names.append(tokens[position].text)
+            }
+        }
+        if containsScriptCall(from: start, to: end) { return [.forgetAll] }
+        return names.isEmpty ? [] : [.forget(names)]
+    }
+
+    private func containsScriptCall(from start: Int, to end: Int) -> Bool {
+        tokens[start..<end].contains { token in
+            guard token.kind == .identifier else { return false }
+            let name = token.text.lowercased()
+            return name == "callsub" || name == "callfunc" || name.hasPrefix("f_")
         }
     }
 
@@ -345,16 +475,16 @@ struct ScriptParser {
     // MARK: - Arguments
 
     /// Reads comma-separated arguments up to `terminator` at nesting depth 0.
-    /// Returns the arguments as segments and the index just past the terminator.
-    func parseArguments(from start: Int, until terminator: String) -> (arguments: [[[Segment]]], end: Int) {
-        var arguments: [[[Segment]]] = []
+    /// Returns the arguments as expressions and the index just past the terminator.
+    func parseArguments(from start: Int, until terminator: String) -> (arguments: [TextExpression], end: Int) {
+        var arguments: [TextExpression] = []
         var current: [Token] = []
         var depth = 0
         var index = start
 
         func finishArgument() {
             if !current.isEmpty {
-                arguments.append(ExpressionParser(source: source).parse(current).variants())
+                arguments.append(ExpressionParser(source: source).parse(current))
                 current.removeAll()
             }
         }

@@ -532,6 +532,39 @@
       "text" : "[RS26]\nI'm stopping here."
     },
     {
+      "kind" : "option",
+      "line" : 495,
+      "npc" : "RS26",
+      "text" : "Cancel."
+    },
+    {
+      "kind" : "option",
+      "line" : 495,
+      "npc" : "RS26",
+      "placeholders" : [
+        "replacestr(.@item_name$,\")\",\"\")"
+      ],
+      "text" : "^AAAAAA{0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 495,
+      "npc" : "RS26",
+      "placeholders" : [
+        "replacestr(.@item_name$,\")\",\"\")"
+      ],
+      "text" : "^AAAAAA{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 495,
+      "npc" : "RS26",
+      "placeholders" : [
+        "replacestr(.@item_name$,\")\",\"\")"
+      ],
+      "text" : "{0}^000000"
+    },
+    {
       "kind" : "message",
       "line" : 498,
       "npc" : "RS26",
@@ -585,7 +618,7 @@
       "npc" : "RS26",
       "placeholders" : [
         "getitemname(.@equip_id)",
-        ".@item_name$",
+        "replacestr(.@item_name$,\")\",\"\")",
         ".@s$[2]",
         ".@s$[1]"
       ],
@@ -597,7 +630,7 @@
       "npc" : "RS26",
       "placeholders" : [
         "getitemname(.@equip_id)",
-        ".@item_name$",
+        "replacestr(.@item_name$,\")\",\"\")",
         ".@s$[2]",
         ".@s$[1]"
       ],

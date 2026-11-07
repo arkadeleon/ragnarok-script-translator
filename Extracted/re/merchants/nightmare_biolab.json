@@ -437,28 +437,37 @@
       "kind" : "option",
       "line" : 421,
       "npc" : "Veteran Adventurer",
-      "placeholders" : [
-        ".@color$[0]"
-      ],
-      "text" : "{0}1 Will of Warrior (200 Energy pieces)"
+      "text" : "^7777771 Will of Warrior (200 Energy pieces)"
     },
     {
       "kind" : "option",
       "line" : 421,
       "npc" : "Veteran Adventurer",
-      "placeholders" : [
-        ".@color$[0]"
-      ],
-      "text" : "{0}1 Blood Thirst (200 energy pieces)"
+      "text" : "^7777771 Blood Thirst (200 energy pieces)"
     },
     {
       "kind" : "option",
       "line" : 421,
       "npc" : "Veteran Adventurer",
-      "placeholders" : [
-        ".@color$[1]"
-      ],
-      "text" : "{0}1 Ghost Chill (300 energy pieces)^000000"
+      "text" : "^7777771 Ghost Chill (300 energy pieces)^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 421,
+      "npc" : "Veteran Adventurer",
+      "text" : "^0000001 Ghost Chill (300 energy pieces)^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 421,
+      "npc" : "Veteran Adventurer",
+      "text" : "^0000001 Will of Warrior (200 Energy pieces)"
+    },
+    {
+      "kind" : "option",
+      "line" : 421,
+      "npc" : "Veteran Adventurer",
+      "text" : "^0000001 Blood Thirst (200 energy pieces)"
     },
     {
       "kind" : "message",
@@ -756,6 +765,26 @@
       "line" : 571,
       "npc" : "Silent Mind",
       "text" : "[Silent Mind]\n. . . . . .!\n...\n^FF0000*You can obtain the Death's Chest when you give 3 of the same types of souls to the mind.*^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Silent Mind",
+      "placeholders" : [
+        ".@menu$",
+        "getitemname(.@item[.@i])"
+      ],
+      "text" : "{0}^777777Not enough {1}.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 583,
+      "npc" : "Silent Mind",
+      "placeholders" : [
+        ".@menu$",
+        "getitemname(.@item[.@i])"
+      ],
+      "text" : "{0}Hand over 3 {1}."
     },
     {
       "kind" : "message",
@@ -1067,6 +1096,41 @@
       "npc" : "Wandering Mind",
       "placeholders" : [
         ".@string$[0]",
+        "getitemname(.@i)",
+        ".@string$[1]",
+        ".@string$[2]"
+      ],
+      "text" : "[Wandering Mind]\nDo you want... power?... If so, you... need to have... the old Helmet..\n^FF0000*You can enchant it into the {0}{1}, \n{2}\n{3}.*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1019,
+      "npc" : "Wandering Mind",
+      "placeholders" : [
+        ".@string$[0]",
+        ".@string$[1]",
+        "getitemname(.@i)",
+        ".@string$[2]"
+      ],
+      "text" : "[Wandering Mind]\nDo you want... power?... If so, you... need to have... the old Helmet..\n^FF0000*You can enchant it into the {0}\n{1}{2}, \n{3}.*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1019,
+      "npc" : "Wandering Mind",
+      "placeholders" : [
+        ".@string$[0]",
+        ".@string$[1]",
+        "getitemname(.@i)"
+      ],
+      "text" : "[Wandering Mind]\nDo you want... power?... If so, you... need to have... the old Helmet..\n^FF0000*You can enchant it into the {0}\n{1}\n{2}.*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1019,
+      "npc" : "Wandering Mind",
+      "placeholders" : [
+        ".@string$[0]",
         ".@string$[1]",
         ".@string$[2]"
       ],
@@ -1187,6 +1251,30 @@
       "text" : "Musical instrument, Whip, Knuckle"
     },
     {
+      "kind" : "option",
+      "line" : 1183,
+      "npc" : "Victimized Soul's Mind",
+      "text" : "Go back to previous menu."
+    },
+    {
+      "kind" : "option",
+      "line" : 1183,
+      "npc" : "Victimized Soul's Mind",
+      "placeholders" : [
+        "getitemname(getarg(.@i))"
+      ],
+      "text" : "^999999Not enough {0}.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1183,
+      "npc" : "Victimized Soul's Mind",
+      "placeholders" : [
+        "getitemname(getarg(.@i))"
+      ],
+      "text" : "You have {0}."
+    },
+    {
       "kind" : "message",
       "line" : 1186,
       "npc" : "Victimized Soul's Mind",
@@ -1293,7 +1381,7 @@
       "line" : 1308,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[14]"
+        "getitemname(20749)"
       ],
       "text" : "{0}[1]"
     },
@@ -1302,7 +1390,7 @@
       "line" : 1312,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[0]"
+        "getitemname(18971)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1, MDEF+ 5^000000\n^006400ATK + 4 per 1 refinement level increase^000000\n^006400ASPD + 1 per 5 refinement level increase^000000\n^006400Increases MHP, MSP by 1% 2 each refinement level increase^000000\n^006400Increases Ignition Break damage by 20%^000000\n^006400per 2 refinement level increase^000000\n^006400Increases Hundred Spear damage by 15%^000000\n^006400per 2 refinement level increase^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Rune Knight^000000"
     },
@@ -1311,7 +1399,7 @@
       "line" : 1332,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[1]"
+        "getitemname(18972)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1, MDEF+ 5^000000\n^006400MATK + 2, ATK + 4, Heal Amount + 2% per 1 refinement level increase.^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Judex damage by 20% per 2 refinement level increase.^000000\n^006400Increases Magnus Exorcismus damage by 10% per 2 refinement level increase.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Archbishop^000000"
     },
@@ -1320,7 +1408,7 @@
       "line" : 1349,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[2]"
+        "getitemname(18973)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1^000000\n^006400ATK + 4 per 1 refinement level increase^000000\n^006400ASPD + 1 per 5 refinement level increase^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Power Swing damage by 20% per 2 refinement level increase.^000000\n^006400Increases Axe Tornado damage by 20% per 2 refinement level increase.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Mechanic^000000"
     },
@@ -1329,7 +1417,7 @@
       "line" : 1367,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[3]"
+        "getitemname(18974)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1^000000\n^006400ATK + 4 per 1 refinement level increase^000000\n^006400ASPD + 1 per 5 refinement level increase^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Arm Cannon damage by 5% per 2 refinement level increase.^000000\n^006400Reduces Suicidal Destruction cooldown by 10 seconds per 4 refinement level increase.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Mechanic^000000"
     },
@@ -1338,7 +1426,7 @@
       "line" : 1385,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[4]"
+        "getitemname(18975)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1^000000\n^006400ATK + 4, MATK + 4 per each refinement level increase.^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Triangle Shot damage by 25% per 2 refinement level increase.^000000\n^006400Reduces Masquerade-unlock key, Enervation cooldown by 1 second when your character's refinement level reaches 6.^000000\n^006400Reduces Masquerade-Laziness, Weakness cooldown by 1 second when your character's refinement level reaches 8.^000000\n^006400Reduces Masquerade-Ignorance, Gloomy cooldown by 1 second when your character's refinement level reaches 10.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Shadow_Chaser^000000"
     },
@@ -1347,7 +1435,7 @@
       "line" : 1404,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[5]"
+        "getitemname(18976)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1^000000\n^006400Increases ranged physical damage by 1% per each refinement level increase.^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Arrow Vulcan damage by 20% per 2 refinement level increase.^000000\n^006400Increases Severe Rainstorm damage by 5% per 2 refinement level increase.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Minstrel^000000"
     },
@@ -1356,7 +1444,7 @@
       "line" : 1421,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[6]"
+        "getitemname(18977)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1^000000\n^006400ATK + 4 per 1 refinement level increase^000000\n^006400Increases ranged physical damage by 1% per 2 refinement level increase.^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Cart Cannon damage by 15% per 2 refinement level increase.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Generic^000000"
     },
@@ -1365,7 +1453,7 @@
       "line" : 1438,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[7]"
+        "getitemname(18978)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1 MDEF+ 5^000000\n^006400Increases SP regen by 20%.^000000\n^006400MATK + 1% per each refinement level increase.^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Soul Expansion damage by 5% per 2 refinement level increase.^000000\n^006400Reduces Crimson Rock cooldown by 1 second.^000000\n^006400Reduces Crimson Rock cooldown by 0.1 depending on refinement level.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Warlock^000000"
     },
@@ -1374,7 +1462,7 @@
       "line" : 1457,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[8]"
+        "getitemname(18979)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1^000000\n^006400ATK + 4, CRI + 2 per each refinement level increase.^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Rampage Blaster damage by 15% per 2 refinement level increase.^000000\n^006400Increases Lightning Shot damage by 20% per 2 refinement level increase.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Sura^000000"
     },
@@ -1383,7 +1471,7 @@
       "line" : 1474,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[9]"
+        "getitemname(18980)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1 MDEF+ 5.^000000\n^006400MATK + 1%, ATK + 4 per each refinement level increase.^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Poison Burst damage by 15% per 2 refinement level increase.^000000\n^006400Increases Varetyr Spear damage by 20% per 2 refinement level increase.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Sorcerer^000000"
     },
@@ -1392,7 +1480,7 @@
       "line" : 1491,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[10]"
+        "getitemname(18981)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1^000000\n^006400Increases ranged physical damage by 1% per each refinement level increase.^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Arrow Vulcan damage by 20% per 2 refinement level increase.^000000\n^006400Increases Severe Rainstorm damage by 5% per 2 refinement level increase.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Wanderer^000000"
     },
@@ -1401,7 +1489,7 @@
       "line" : 1508,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[11]"
+        "getitemname(18984)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1^000000\n^006400Increases ranged physical damage by 1% per each refinement level increase.^000000\n^006400Complete evasion +1 per 3 refinement level increase.^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Cluster Bomb damage by 15% per 2 refinement level increase.^000000\n^006400Increases Warg Strike damage by 10% per 2 refinement level increase.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Ranger^000000"
     },
@@ -1410,7 +1498,7 @@
       "line" : 1526,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[12]"
+        "getitemname(18982)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1^000000\n^006400Increases critical damage by 1% and attack speed per each refinement level increase (Reduces attack delay 1%)^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Cross Impact damage by 10% per 2 refinement level increase.^000000\n^006400Increases Cross Reaper Slash damage by 20% per 2 refinement level increase.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Guillotine_Cross^000000"
     },
@@ -1419,7 +1507,7 @@
       "line" : 1543,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[13]"
+        "getitemname(18983)"
       ],
       "text" : "- {0} -\n^006400This item cannot be traded with other accounts.^000000\n^006400All State + 1 MDEF+ 5.^000000\n^006400ATK + 4 per 1 refinement level increase^000000\n^006400ASPD + 1 per 5 refinement level increase^000000\n^006400Increases MHP, MSP by 1% per 2 refinement level increase^000000\n^006400Increases Cannon Spear damage by 20% per 2 refinement level increase.^000000\n^006400Increases Over Brand damage by 5% per 2 refinement level increase.^000000\n^006400Type: Helmet Defense: 10^000000\n^006400Location: Top Weight: 10^000000\n^006400SLOT: 1^000000\n^006400Required Level: 170 Job: Royal Guard^000000"
     },
@@ -1428,7 +1516,7 @@
       "line" : 1561,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        ".@item_name$[14]"
+        "getitemname(20749)"
       ],
       "text" : "- {0}[1] -\n^006400Legendary clock known to have been worn by those^000000 ^006400who fought bravely and were killed in the battle.\nIncreases MHP, MSP by 1% per 2 refinement level increase\nATK + 10 when your character's pure STR reaches 90.\n(Additional ATK + 2 per each refinement level increase)\nMATK + 20 when your character's pure INT reaches 90.\n(Additional MATK + 3 per each refinement level increase)\nwhen your character's pure VIT reaches 90\n3% resistance against normal attack\n(Additional 3% when refinement level reaches 8,\nAdditional 4% when refinement level reaches 10)\nwhen your character's pure AGI reaches 90\nIncreased attack speed (3% attack delay reduction)\n(Attack delay additionally decreased by 1% per 2 refinement level increase)\n(Additional ASPD + 1 when your character's refinement level reaches 10.)\nWhen your character's pure DEX reaches 90\nIncreases ranged attack power by 3%\n(Additional 1% per 2 refinement level increase)\nWhen your character's LUK reaches 90\nIncreases critical damage by 5%.\n(Additional 1% per each refinement level increase)\nType: Robe Defense: 30\nWeight: 60\nSLOT: 1\nRequired Level: 170 Job: All^000000"
     },
@@ -1437,11 +1525,18 @@
       "line" : 1610,
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
-        "getitemname(.@reward_id)",
-        ".@string$[0]",
-        ".@string$[1]"
+        "getitemname(.@reward_id)"
       ],
-      "text" : "[Sorrowful Soul's Mind]\nIn order to make... ^006400{0}^000000...\nBring their... wandering {1}, {2}... the vessel to hold the soul and... the dark energy... filling up this place..."
+      "text" : "[Sorrowful Soul's Mind]\nIn order to make... ^006400{0}^000000...\nBring their... wandering chill, cloak... the vessel to hold the soul and... the dark energy... filling up this place..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1610,
+      "npc" : "Sorrowful Soul's Mind",
+      "placeholders" : [
+        "getitemname(.@reward_id)"
+      ],
+      "text" : "[Sorrowful Soul's Mind]\nIn order to make... ^006400{0}^000000...\nBring their... wandering soul, hat... the vessel to hold the soul and... the dark energy... filling up this place..."
     },
     {
       "kind" : "message",
@@ -1453,10 +1548,23 @@
         "getitemname(.@item_misc_req)",
         ".@material[1]",
         "getitemname(6820)",
-        "getitemname(6820)",
-        ".@string$[0]"
+        "getitemname(6820)"
       ],
-      "text" : "[Sorrowful Soul's Mind]\nI need 1 {0}, {1} {2}... {3} {4}..\nIf 5 times of {5} and {6}s are collected... you... will never fail...\nHow... would... you do it?"
+      "text" : "[Sorrowful Soul's Mind]\nI need 1 {0}, {1} {2}... {3} {4}..\nIf 5 times of {5} and chills are collected... you... will never fail...\nHow... would... you do it?"
+    },
+    {
+      "kind" : "message",
+      "line" : 1614,
+      "npc" : "Sorrowful Soul's Mind",
+      "placeholders" : [
+        "getitemname(.@equipment_req)",
+        ".@material[0]",
+        "getitemname(.@item_misc_req)",
+        ".@material[1]",
+        "getitemname(6820)",
+        "getitemname(6820)"
+      ],
+      "text" : "[Sorrowful Soul's Mind]\nI need 1 {0}, {1} {2}... {3} {4}..\nIf 5 times of {5} and souls are collected... you... will never fail...\nHow... would... you do it?"
     },
     {
       "kind" : "option",
@@ -1470,10 +1578,9 @@
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
         ".@material[1]",
-        ".@material[0]",
-        ".@string$[0]"
+        ".@material[0]"
       ],
-      "text" : "Use {0} energies, {1} {2}"
+      "text" : "Use {0} energies, {1} chill"
     },
     {
       "kind" : "option",
@@ -1481,10 +1588,29 @@
       "npc" : "Sorrowful Soul's Mind",
       "placeholders" : [
         ".@material[1] * 5",
-        ".@material[0] * 5",
-        ".@string$[0]"
+        ".@material[0] * 5"
       ],
-      "text" : "Use {0} energies, {1} {2}s"
+      "text" : "Use {0} energies, {1} chills"
+    },
+    {
+      "kind" : "option",
+      "line" : 1619,
+      "npc" : "Sorrowful Soul's Mind",
+      "placeholders" : [
+        ".@material[1]",
+        ".@material[0]"
+      ],
+      "text" : "Use {0} energies, {1} soul"
+    },
+    {
+      "kind" : "option",
+      "line" : 1619,
+      "npc" : "Sorrowful Soul's Mind",
+      "placeholders" : [
+        ".@material[1] * 5",
+        ".@material[0] * 5"
+      ],
+      "text" : "Use {0} energies, {1} souls"
     },
     {
       "kind" : "message",

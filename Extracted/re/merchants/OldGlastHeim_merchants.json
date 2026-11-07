@@ -131,6 +131,42 @@
       "kind" : "message",
       "line" : 82,
       "npc" : "Hugin's Butler",
+      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Strength^000000 Boots? There's no refunds."
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Hugin's Butler",
+      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Intelligence^000000 Boots? There's no refunds."
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Hugin's Butler",
+      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Agility^000000 Boots? There's no refunds."
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Hugin's Butler",
+      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Vitality^000000 Boots? There's no refunds."
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Hugin's Butler",
+      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Dexterity^000000 Boots? There's no refunds."
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Hugin's Butler",
+      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Lucky^000000 Boots? There's no refunds."
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Hugin's Butler",
       "placeholders" : [
         ".@type$[.@s]"
       ],
@@ -255,7 +291,7 @@
       "line" : 184,
       "npc" : "Hugin's Magician",
       "placeholders" : [
-        ".@equip_name$",
+        "getequipname(EQI_SHOES)",
         ".@cost"
       ],
       "text" : "[Hugin's Magician]\nWant to enchant ^0000FF{0}^000000?\nFor the 1st enchanting, you need ^0000FF{1}^000000 Coagulated Spell items."
@@ -328,7 +364,7 @@
       "line" : 211,
       "npc" : "Hugin's Magician",
       "placeholders" : [
-        ".@equip_name$",
+        "getequipname(EQI_SHOES)",
         ".@number",
         ".@cost"
       ],
@@ -809,6 +845,26 @@
       "line" : 566,
       "npc" : "Portrait collector",
       "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\",.@amount_coag)",
+        "getitemname(.@coagulated_id)"
+      ],
+      "text" : "^666666{0} {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "callfunc(\"F_InsertComma\",.@amount_polluted)",
+        "getitemname(.@polluted_id)"
+      ],
+      "text" : "^666666{0} {1}^000000"
     },
     {
       "kind" : "option",

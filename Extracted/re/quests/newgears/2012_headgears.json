@@ -11,10 +11,52 @@
       "kind" : "message",
       "line" : 39,
       "npc" : "Reno",
+      "text" : "[Reno]\nThe waiting time for a lower collection quest has expired. You can now take another request."
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Reno",
+      "text" : "[Reno]\nThe waiting time for a intermediate collection quest has expired. You can now take another request."
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Reno",
+      "text" : "[Reno]\nThe waiting time for a advanced collection quest has expired. You can now take another request."
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Reno",
+      "text" : "[Reno]\nThe waiting time for a highest collection quest has expired. You can now take another request."
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Reno",
       "placeholders" : [
         ".@type$[.@i]"
       ],
       "text" : "[Reno]\nThe waiting time for a {0} collection quest has expired. You can now take another request."
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Reno",
+      "text" : "[Reno]\nThe waiting time for storing Rough Energy Crystals has expired. You can now store them again."
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Reno",
+      "text" : "[Reno]\nThe waiting time for storing Purified Energy Crystals has expired. You can now store them again."
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Reno",
+      "text" : "[Reno]\nThe waiting time for storing High Energy Crystals has expired. You can now store them again."
     },
     {
       "kind" : "message",
@@ -701,6 +743,29 @@
       "text" : "[Reno]\nPlease select the equipment to exchange for {0}s."
     },
     {
+      "kind" : "option",
+      "line" : 413,
+      "npc" : "Reno",
+      "placeholders" : [
+        "getitemname(.@materials[.@i])",
+        ".@showslot[.@i]",
+        "sprintf(\"%d\", .@crystal_count)",
+        "sprintf(\"%d\", .@costs[.@i])"
+      ],
+      "text" : "{0}[{1}] ({2}/{3})"
+    },
+    {
+      "kind" : "option",
+      "line" : 413,
+      "npc" : "Reno",
+      "placeholders" : [
+        "getitemname(.@materials[.@i])",
+        "sprintf(\"%d\", .@crystal_count)",
+        "sprintf(\"%d\", .@costs[.@i])"
+      ],
+      "text" : "{0} ({1}/{2})"
+    },
+    {
       "kind" : "message",
       "line" : 423,
       "npc" : "Reno",
@@ -765,7 +830,17 @@
       "line" : 454,
       "npc" : "Reno",
       "placeholders" : [
-        ".@item_name$"
+        "getitemname(.@material)",
+        ".@showslot[.@index]"
+      ],
+      "text" : "[Reno]\nThen let's begin to upgrade {0}[{1}]."
+    },
+    {
+      "kind" : "message",
+      "line" : 454,
+      "npc" : "Reno",
+      "placeholders" : [
+        "getitemname(.@material)"
       ],
       "text" : "[Reno]\nThen let's begin to upgrade {0}."
     },

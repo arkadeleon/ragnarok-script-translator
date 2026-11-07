@@ -12,23 +12,25 @@ import Foundation
 indirect enum TextExpression {
     case literal(String)
     case unknown(String)
+    case reference(TextReference)
     case concatenate([TextExpression], source: String)
     case choice(TextExpression, TextExpression, source: String)
     case format([TextExpression], source: String)
 
     /// Bound expression expansion separately from page expansion. On overflow preserve the
     /// original expression rather than silently dropping one of its alternatives.
-    func variants(limit: Int = 16) -> [[Segment]] {
+    func variants(in environment: TextEnvironment = TextEnvironment(), limit: Int = 16) -> [[Segment]] {
         switch self {
         case .literal(let text): return [[.literal(text)]]
         case .unknown(let source): return [[.placeholder(source)]]
+        case .reference(let reference): return environment.values(for: reference, limit: limit)
         case .choice(let yes, let no, let source):
-            let values = unique(yes.variants(limit: limit) + no.variants(limit: limit))
+            let values = unique(yes.variants(in: environment, limit: limit) + no.variants(in: environment, limit: limit))
             return values.count <= limit ? values : [[.placeholder(source)]]
         case .concatenate(let terms, let source):
             var result: [[Segment]] = [[]]
             for term in terms {
-                let values = term.variants(limit: limit)
+                let values = term.variants(in: environment, limit: limit)
                 guard result.count * values.count <= limit else { return [[.placeholder(source)]] }
                 result = result.flatMap { prefix in values.map { prefix + $0 } }
             }
@@ -36,18 +38,27 @@ indirect enum TextExpression {
         case .format(let arguments, let source):
             guard let format = arguments.first else { return [[.placeholder(source)]] }
             var result: [[Segment]] = []
-            for variant in format.variants(limit: limit) {
+            for variant in format.variants(in: environment, limit: limit) {
                 // A dynamic format cannot be interpreted safely.
                 var text = ""
                 for segment in variant {
                     guard case .literal(let value) = segment else { return [[.placeholder(source)]] }
                     text += value
                 }
-                guard let values = formatted(text, arguments: Array(arguments.dropFirst()), limit: limit),
+                guard let values = formatted(text, arguments: Array(arguments.dropFirst()), environment: environment, limit: limit),
                       result.count + values.count <= limit else { return [[.placeholder(source)]] }
                 result += values
             }
             return unique(result)
+        }
+    }
+
+    var references: [TextReference] {
+        switch self {
+        case .reference(let reference): return [reference]
+        case .concatenate(let terms, _), .format(let terms, _): return terms.flatMap(\.references)
+        case .choice(let yes, let no, _): return yes.references + no.references
+        case .literal, .unknown: return []
         }
     }
 
@@ -57,7 +68,7 @@ indirect enum TextExpression {
         return result
     }
 
-    private func formatted(_ format: String, arguments: [TextExpression], limit: Int) -> [[Segment]]? {
+    private func formatted(_ format: String, arguments: [TextExpression], environment: TextEnvironment, limit: Int) -> [[Segment]]? {
         // rAthena returns the format verbatim when there are no value arguments.
         if arguments.isEmpty { return [[.literal(format)]] }
         let chars = Array(format)
@@ -86,12 +97,13 @@ indirect enum TextExpression {
             index += 1
         }
         parts.append(.literal(literal))
-        return TextExpression.concatenate(parts, source: format).variants(limit: limit)
+        return TextExpression.concatenate(parts, source: format).variants(in: environment, limit: limit)
     }
 
-    private var sourceText: String {
+    var sourceText: String {
         switch self {
         case .literal(let value): return String(reflecting: value)
+        case .reference(let reference): return reference.source
         case .unknown(let source), .concatenate(_, let source), .format(_, let source), .choice(_, _, let source): return source
         }
     }
@@ -107,6 +119,15 @@ struct ExpressionParser {
         let raw = spelling(tokens)
         guard !tokens.isEmpty, depth < 128 else { return .unknown(raw) }
         if tokens.count == 1, tokens[0].kind == .string { return .literal(tokens[0].text) }
+        if tokens[0].kind == .identifier {
+            if tokens.count == 1 { return .reference(TextReference(name: raw, index: nil, source: raw)) }
+            if tokens.count >= 4, punctuation(tokens[1], "["), punctuation(tokens.last, "]") {
+                let inner = Array(tokens.dropFirst(2).dropLast())
+                if !inner.isEmpty, topLevel(tokens).count == 1 {
+                    return .reference(TextReference(name: tokens[0].text, index: spelling(inner), source: raw))
+                }
+            }
+        }
         let top = topLevel(tokens)
         if punctuation(tokens.first, "("), matchingClose(tokens, from: 0) == tokens.count - 1 {
             return parse(Array(tokens.dropFirst().dropLast()), depth: depth + 1)

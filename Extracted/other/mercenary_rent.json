@@ -5,6 +5,24 @@
       "kind" : "message",
       "line" : 32,
       "npc" : "Mercenary Manager",
+      "text" : "[Mercenary Manager]\nWelcome to the\nSpear Mercenary Guild.\nWhat can I do for you?"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Mercenary Manager",
+      "text" : "[Mercenary Manager]\nWelcome to the\nSword Mercenary Guild.\nWhat can I do for you?"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Mercenary Manager",
+      "text" : "[Mercenary Manager]\nWelcome to the\nBow Mercenary Guild.\nWhat can I do for you?"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "Mercenary Manager",
       "placeholders" : [
         ".@name$[.@type]"
       ],
@@ -38,10 +56,39 @@
       "kind" : "message",
       "line" : 39,
       "npc" : "Mercenary Manager",
+      "text" : "[Mercenary Manager]\nYou want to hire a\nSpear Mercenary?\nWhich Grade were you\ninterested in hiring?"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Mercenary Manager",
+      "text" : "[Mercenary Manager]\nYou want to hire a\nSword Mercenary?\nWhich Grade were you\ninterested in hiring?"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Mercenary Manager",
+      "text" : "[Mercenary Manager]\nYou want to hire a\nBow Mercenary?\nWhich Grade were you\ninterested in hiring?"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Mercenary Manager",
       "placeholders" : [
         ".@name$[.@type]"
       ],
       "text" : "[Mercenary Manager]\nYou want to hire a\n{0} Mercenary?\nWhich Grade were you\ninterested in hiring?"
+    },
+    {
+      "kind" : "option",
+      "line" : 47,
+      "npc" : "Mercenary Manager",
+      "placeholders" : [
+        ".@menu$",
+        "callfunc(\"F_GetNumSuffix\",.@i)",
+        ".@name$[.@type]"
+      ],
+      "text" : "{0}{1} Grade {2} Mercenary"
     },
     {
       "kind" : "message",
@@ -209,7 +256,17 @@
       "npc" : "Mercenary Merchant",
       "placeholders" : [
         "getitemname(.@item[.@m])",
-        ".@str_cost$"
+        ".@cost[.@m]"
+      ],
+      "text" : "[Mercenary Goods Merchant]\n{0}\neach cost {1} zeny.\nHow many would you like?"
+    },
+    {
+      "kind" : "message",
+      "line" : 234,
+      "npc" : "Mercenary Merchant",
+      "placeholders" : [
+        "getitemname(.@item[.@m])",
+        "insertchar(.@str$,\",\",.@len-3)"
       ],
       "text" : "[Mercenary Goods Merchant]\n{0}\neach cost {1} zeny.\nHow many would you like?"
     },

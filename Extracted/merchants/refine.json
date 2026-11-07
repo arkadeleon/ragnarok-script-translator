@@ -774,7 +774,7 @@
       "line" : 636,
       "npc" : "refinemain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nI'm the Armsmith.\nI can refine all kinds of weapons, armor and equipment, so let me\nknow what you want me to refine."
     },
@@ -789,10 +789,39 @@
     },
     {
       "kind" : "message",
+      "line" : 651,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nI don't think I can refine any items you have..."
+    },
+    {
+      "kind" : "option",
+      "line" : 655,
+      "npc" : "refinemain",
+      "placeholders" : [
+        ".@menu$",
+        "F_getpositionname(.@indices[.@i])",
+        "getequipname(.@indices[.@i])"
+      ],
+      "text" : "{0}{1}-[{2}]"
+    },
+    {
+      "kind" : "message",
       "line" : 658,
       "npc" : "refinemain",
       "placeholders" : [
         ".@npc_name$"
+      ],
+      "text" : "[{0}]\nYou're not wearing\nanything there that\nI can refine."
+    },
+    {
+      "kind" : "message",
+      "line" : 658,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
       ],
       "text" : "[{0}]\nYou're not wearing\nanything there that\nI can refine."
     },
@@ -807,6 +836,15 @@
     },
     {
       "kind" : "message",
+      "line" : 667,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nI don't think I can\nrefine this item at all..."
+    },
+    {
+      "kind" : "message",
       "line" : 674,
       "npc" : "refinemain",
       "placeholders" : [
@@ -816,10 +854,30 @@
     },
     {
       "kind" : "message",
+      "line" : 674,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nI can't refine this\nany more. This is as\nrefined as it gets!"
+    },
+    {
+      "kind" : "message",
       "line" : 759,
       "npc" : "refinemain",
       "placeholders" : [
         ".@npc_name$",
+        "getitemname(.@material)",
+        ".@price"
+      ],
+      "text" : "[{0}]\nTo refine this I need\none ^003366{1}^000000 and\na service fee of {2} Zeny.\nDo you really wish to continue?"
+    },
+    {
+      "kind" : "message",
+      "line" : 759,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)",
         "getitemname(.@material)",
         ".@price"
       ],
@@ -848,6 +906,15 @@
     },
     {
       "kind" : "message",
+      "line" : 766,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nYeah...\nThere's no need to\nrush. Take your time."
+    },
+    {
+      "kind" : "message",
       "line" : 773,
       "npc" : "refinemain",
       "placeholders" : [
@@ -860,7 +927,25 @@
       "line" : 773,
       "npc" : "refinemain",
       "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nOh no! If I continue to\nrefine this, there's a risk it could\nbe destroyed! That means that ^FF0000this equipment^000000, and ^FF0000any cards^000000 or special properties added to this armor, ^FF0000will be gone^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 773,
+      "npc" : "refinemain",
+      "placeholders" : [
         ".@npc_name$"
+      ],
+      "text" : "[{0}]\nOh no! If I continue to\nrefine this, there's a risk it could\nbe destroyed, and you'd ^FF0000lose the weapon^000000, any ^FF0000cards in the weapon^000000,\nor any added special properties."
+    },
+    {
+      "kind" : "message",
+      "line" : 773,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
       ],
       "text" : "[{0}]\nOh no! If I continue to\nrefine this, there's a risk it could\nbe destroyed, and you'd ^FF0000lose the weapon^000000, any ^FF0000cards in the weapon^000000,\nor any added special properties."
     },
@@ -896,10 +981,29 @@
     },
     {
       "kind" : "message",
+      "line" : 795,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nI completely agree...\nI might be a great refiner, but sometimes even I make mistakes."
+    },
+    {
+      "kind" : "message",
       "line" : 802,
       "npc" : "refinemain",
       "placeholders" : [
         ".@npc_name$",
+        "getitemname(.@material)"
+      ],
+      "text" : "[{0}]\nYou don't seem to have\nenough Zeny or {1}...\nGo get some more. I'll be\nhere all day if you need me."
+    },
+    {
+      "kind" : "message",
+      "line" : 802,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)",
         "getitemname(.@material)"
       ],
       "text" : "[{0}]\nYou don't seem to have\nenough Zeny or {1}...\nGo get some more. I'll be\nhere all day if you need me."
@@ -977,6 +1081,15 @@
       "text" : "[{0}]\nI can refine this to the safe limit or a desired number of times. It's your choice."
     },
     {
+      "kind" : "message",
+      "line" : 872,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nI can refine this to the safe limit or a desired number of times. It's your choice."
+    },
+    {
       "kind" : "option",
       "line" : 875,
       "npc" : "refinemain",
@@ -1005,6 +1118,15 @@
     },
     {
       "kind" : "message",
+      "line" : 884,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nHow many times would you like me to refine your item?"
+    },
+    {
+      "kind" : "message",
       "line" : 890,
       "npc" : "refinemain",
       "placeholders" : [
@@ -1014,10 +1136,29 @@
     },
     {
       "kind" : "message",
+      "line" : 890,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nI can't refine this item that many times."
+    },
+    {
+      "kind" : "message",
       "line" : 896,
       "npc" : "refinemain",
       "placeholders" : [
         ".@npc_name$",
+        ".@refinecheck"
+      ],
+      "text" : "[{0}]\nThis will try to refine the equipment {1} times past the safe limit. Your equipment may be destroyed... is that ok?"
+    },
+    {
+      "kind" : "message",
+      "line" : 896,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)",
         ".@refinecheck"
       ],
       "text" : "[{0}]\nThis will try to refine the equipment {1} times past the safe limit. Your equipment may be destroyed... is that ok?"
@@ -1045,6 +1186,15 @@
     },
     {
       "kind" : "message",
+      "line" : 900,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nYou said so... So be it."
+    },
+    {
+      "kind" : "message",
       "line" : 908,
       "npc" : "refinemain",
       "placeholders" : [
@@ -1054,10 +1204,31 @@
     },
     {
       "kind" : "message",
+      "line" : 908,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nYou said so... So be it."
+    },
+    {
+      "kind" : "message",
       "line" : 913,
       "npc" : "refinemain",
       "placeholders" : [
         ".@npc_name$",
+        ".@refinecnt",
+        "getitemname(.@material)",
+        ".@fullprice"
+      ],
+      "text" : "[{0}]\nThat will cost you {1} {2} and {3} Zeny. Is that ok?"
+    },
+    {
+      "kind" : "message",
+      "line" : 913,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)",
         ".@refinecnt",
         "getitemname(.@material)",
         ".@fullprice"
@@ -1087,6 +1258,15 @@
     },
     {
       "kind" : "message",
+      "line" : 917,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nYou said so... So be it."
+    },
+    {
+      "kind" : "message",
       "line" : 922,
       "npc" : "refinemain",
       "placeholders" : [
@@ -1096,10 +1276,28 @@
     },
     {
       "kind" : "message",
+      "line" : 922,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nIs that all you got? Unfortunately I can't work for you at a lower price. Try putting yourself in my shoes."
+    },
+    {
+      "kind" : "message",
       "line" : 930,
       "npc" : "refinemain",
       "placeholders" : [
         ".@npc_name$"
+      ],
+      "text" : "[{0}]\nLook here... you don't have any items on..."
+    },
+    {
+      "kind" : "message",
+      "line" : 930,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
       ],
       "text" : "[{0}]\nLook here... you don't have any items on..."
     },
@@ -1147,6 +1345,15 @@
     },
     {
       "kind" : "message",
+      "line" : 963,
+      "npc" : "refinemain",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nAll finished... Come again soon."
+    },
+    {
+      "kind" : "message",
       "line" : 1003,
       "npc" : "phramain",
       "text" : "- Wait a minute !! -\n- Currently you're carrying -\n- too many items with you. -\n- Please try again -\n- after you lose some weight. -"
@@ -1156,7 +1363,7 @@
       "line" : 1011,
       "npc" : "phramain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nI sell 2 kinds of Metal\nfor tempering weaponry.\nI have ^007777Phracon^000000 for Level 1\nWeapons, and ^007777Emveretarcon^000000\nfor Level 2 Weapons."
     },
@@ -1183,7 +1390,7 @@
       "line" : 1028,
       "npc" : "phramain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nOther metals?\nWell, you'll need special metals to upgrade higher level weapons, or any kind of armor. But you know, Oridecon and Elunium is really\nhard to just find..."
     },
@@ -1192,7 +1399,7 @@
       "line" : 1034,
       "npc" : "phramain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nSo how many do you wish to buy?\nIf you don't want any, please enter the number, '0.'"
     },
@@ -1201,7 +1408,7 @@
       "line" : 1041,
       "npc" : "phramain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nThe deal has\nbeen cancelled."
     },
@@ -1210,7 +1417,7 @@
       "line" : 1047,
       "npc" : "phramain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nAlright, you can\npuchase up to 500.\nNo more than that,\ngot it? Good."
     },
@@ -1219,7 +1426,7 @@
       "line" : 1060,
       "npc" : "phramain",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(0)",
         ".@input"
       ],
       "text" : "[{0}]\nErr...\nYou don't have\nenough Zeny to buy\n{1} of them."
@@ -1229,7 +1436,7 @@
       "line" : 1068,
       "npc" : "phramain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nHmm...\nI can't give you anything if you don't have enough room in your inventory. Why don't you put your extra things in Kafra Storage and try again?"
     },
@@ -1238,7 +1445,7 @@
       "line" : 1075,
       "npc" : "phramain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nHere you are!\nThank you for\nyour patronage."
     },
@@ -1253,7 +1460,7 @@
       "line" : 1125,
       "npc" : "orimain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nI can purify your\nRough Oridecons or\nRough Eluniums. I'll need\n5 Rough Stones to make\n1 pure one for you."
     },
@@ -1280,7 +1487,7 @@
       "line" : 1137,
       "npc" : "orimain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nHere's your Oridecon.\nYou're welcome to come\nback whenever you want."
     },
@@ -1289,7 +1496,7 @@
       "line" : 1144,
       "npc" : "orimain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nYou're kidding me, right?\nI just told you that I need 5 Rough Oridecons to make a pure Oridecon."
     },
@@ -1298,7 +1505,7 @@
       "line" : 1153,
       "npc" : "orimain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nHere's your Elunium.\nYou're welcome to come\nback whenever you want."
     },
@@ -1307,7 +1514,7 @@
       "line" : 1160,
       "npc" : "orimain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nYou're kidding me, right?\nI just told you that I need 5 Rough Eluniums to make a pure Elunium."
     },
@@ -1316,7 +1523,7 @@
       "line" : 1166,
       "npc" : "orimain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nEnchanted Stones...?\nI've been a stonesmith for 20 years, so I've heard a lot about them. Supposedly, there are\nfour different kinds."
     },
@@ -1325,7 +1532,7 @@
       "line" : 1171,
       "npc" : "orimain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nEach Enchanted Stone possesses one of the following elemental properties: Earth, Wind, Water and Fire."
     },
@@ -1334,7 +1541,7 @@
       "line" : 1174,
       "npc" : "orimain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nIf someone combines a Enchanted Stone with a weapon while smithing, that weapon will possess the same property as the Stone."
     },
@@ -1343,7 +1550,7 @@
       "line" : 1177,
       "npc" : "orimain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nNeedless to say, you need to have some smithing skill to produce this kind of elemental weapon."
     },
@@ -1352,7 +1559,7 @@
       "line" : 1260,
       "npc" : "repairmain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nHey there!\nDo you want me\nto repair any items?\nYou can count on me\nfor item repairs!"
     },
@@ -1373,7 +1580,7 @@
       "line" : 1278,
       "npc" : "repairmain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nOh wow, this is incredible!\nYou must take very good care of your things. None of your items are damaged!"
     },
@@ -1382,7 +1589,7 @@
       "line" : 1282,
       "npc" : "repairmain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nIf everyone is like you, I'm going to be unemployed!! Haha~!"
     },
@@ -1391,7 +1598,7 @@
       "line" : 1286,
       "npc" : "repairmain",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(0)",
         ".@checkitem"
       ],
       "text" : "[{0}]\nHmm...\nLet's see...\nOut of all your items,\n{1} are damaged.\nWould you like to repair?"
@@ -1401,7 +1608,7 @@
       "line" : 1294,
       "npc" : "repairmain",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(0)",
         ".@repairprice",
         ".@totalcost"
       ],
@@ -1424,7 +1631,7 @@
       "line" : 1300,
       "npc" : "repairmain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nWhoa whoa...\nCheck your wallet before you receive the repair bill! I can't repair anything because you don't have enough Zeny."
     },
@@ -1433,7 +1640,7 @@
       "line" : 1319,
       "npc" : "repairmain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nOkay! All done. Now, try to be a little more careful. Items have lives too you know."
     },
@@ -1442,7 +1649,7 @@
       "line" : 1324,
       "npc" : "repairmain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nMmm? Something's wrong. Wait... Equip the items you need to repair and then come back to me."
     },
@@ -1451,7 +1658,7 @@
       "line" : 1329,
       "npc" : "repairmain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nWell, it's no skin off my nose, but it's not good to leave items damaged. You should get them repaired as soon as possible!"
     },
@@ -1460,7 +1667,7 @@
       "line" : 1334,
       "npc" : "repairmain",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nHohoho...\nYou don't have\nany business with me\nif you don't have any\nitems to repair."
     }

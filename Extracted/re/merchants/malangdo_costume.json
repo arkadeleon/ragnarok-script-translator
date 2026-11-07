@@ -281,6 +281,23 @@
       "text" : "[Aver De Dosh]\nPlease check our other upgrading services~"
     },
     {
+      "kind" : "option",
+      "line" : 1265,
+      "npc" : "Aver De Dosh",
+      "placeholders" : [
+        "sprintf(\"%d\", (.@i/2)+1)",
+        "getitemname(.@stone_id[.@i])",
+        "sprintf(\"%d\", countitem(.@stone_id[.@i]))"
+      ],
+      "text" : "{0}. {1} [{2}] left"
+    },
+    {
+      "kind" : "option",
+      "line" : 1265,
+      "npc" : "Aver De Dosh",
+      "text" : "^0000ffNext^000000"
+    },
+    {
       "kind" : "message",
       "line" : 1275,
       "npc" : "Aver De Dosh",
@@ -384,6 +401,33 @@
         "getitemname(.@equip_id)"
       ],
       "text" : "[Lace La Zard]\nWow a ^0000FF{0}^000000!!! You got some taste right there, don't you?\nGreat!! I'm fully ready for this upgrade!!"
+    },
+    {
+      "kind" : "option",
+      "line" : 1426,
+      "npc" : "Lace La Zard",
+      "placeholders" : [
+        ".@menu$",
+        "sprintf(\"%d\", .@j+1)",
+        "getitemname(.@id)",
+        "sprintf(\"%d\", countitem(.@id))"
+      ],
+      "text" : "{0}{1}. {2} ({3}) left"
+    },
+    {
+      "kind" : "option",
+      "line" : 1426,
+      "npc" : "Lace La Zard",
+      "text" : "End Conversation."
+    },
+    {
+      "kind" : "option",
+      "line" : 1426,
+      "npc" : "Lace La Zard",
+      "placeholders" : [
+        ".@menu$"
+      ],
+      "text" : "{0}End Conversation."
     },
     {
       "kind" : "message",

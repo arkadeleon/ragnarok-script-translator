@@ -83,6 +83,18 @@
       "kind" : "message",
       "line" : 53,
       "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nWhich part of Reinforced parts do you want to select?"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Mass Charleston",
+      "text" : "[Mass Charleston]\nWhich part of Supplementary device do you want to select?"
+    },
+    {
+      "kind" : "message",
+      "line" : 53,
+      "npc" : "Mass Charleston",
       "placeholders" : [
         ".@job_aft$[.@s]"
       ],
@@ -138,6 +150,24 @@
       "line" : 82,
       "npc" : "Mass Charleston",
       "text" : "[Mass Charleston]\nIf you find enough Charleston parts, can you come to me again?"
+    },
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(6752)"
+      ],
+      "text" : "[Mass Charleston]\nExchanged 10 {0} for Reinforced parts. If you find more part, come to me again!"
+    },
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(6752)"
+      ],
+      "text" : "[Mass Charleston]\nExchanged 10 {0} for Supplementary device. If you find more part, come to me again!"
     },
     {
       "kind" : "message",
@@ -215,6 +245,24 @@
     },
     {
       "kind" : "message",
+      "line" : 128,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "strtolower(.@string$)"
+      ],
+      "text" : "[Mass Charleston]\nUpgrading a Charleston product costs 1 Charleston Component and 100,000 zeny. Please know that all the expenses go into {0} your product."
+    },
+    {
+      "kind" : "message",
+      "line" : 128,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "strtolower(.@string$)"
+      ],
+      "text" : "[Mass Charleston]\nResetting a Charleston product costs 1 Charleston Component and 100,000 zeny. Please know that all the expenses go into {0} your product."
+    },
+    {
+      "kind" : "message",
       "line" : 132,
       "npc" : "Mass Charleston",
       "text" : "[Mass Charleston]\nPlease make sure you're equipped with the Equipment you want to upgrade."
@@ -287,6 +335,54 @@
       "line" : 223,
       "npc" : "Mass Charleston",
       "text" : "[Mass Charleston]\nThis is a considerable level of enhanced equipment, this type can give enhanced expansion performance, choose from the following series of desirable to strengthen it!"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "text" : "Acceleration enhancements"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "text" : "Attack enhancement"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "text" : "Garment upgrade"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "text" : "Advanced Garment upgrade"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "text" : "Shoes upgrade"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "text" : "Advanced Shoes upgrade"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "text" : "Accessory upgrade"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "text" : "Defense enhancement"
     },
     {
       "kind" : "message",
@@ -1010,6 +1106,18 @@
       "text" : "Quit."
     },
     {
+      "kind" : "option",
+      "line" : 1100,
+      "npc" : "PLUTO_09",
+      "text" : "^aaaaaaInsufficient fuel for making design drawings.^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1100,
+      "npc" : "PLUTO_09",
+      "text" : "Production design (^ff0000 success rate 30%^000000)"
+    },
+    {
       "kind" : "message",
       "line" : 1101,
       "npc" : "PLUTO_09",
@@ -1260,6 +1368,16 @@
       "line" : 1293,
       "npc" : "MARS_01",
       "text" : "Quit."
+    },
+    {
+      "kind" : "option",
+      "line" : 1293,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        ".@menu$",
+        "getitemname(.@list[.@i])"
+      ],
+      "text" : "{0}^aaaaaa{1} (Missing)^000000"
     },
     {
       "kind" : "message",

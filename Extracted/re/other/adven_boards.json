@@ -47,7 +47,91 @@
       "kind" : "message",
       "line" : 37,
       "npc" : "F_AvenBoard",
-      "text" : "[Monster Information Retrieval System]\nThere is no information available for that monster.\nPlease check your monster name."
+      "placeholders" : [
+        "getarg(.@i+1)"
+      ],
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : Neutral"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        "getarg(.@i+1)"
+      ],
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : Water"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        "getarg(.@i+1)"
+      ],
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : Earth"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        "getarg(.@i+1)"
+      ],
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : Fire"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        "getarg(.@i+1)"
+      ],
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : Wind"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        "getarg(.@i+1)"
+      ],
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : Poison"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        "getarg(.@i+1)"
+      ],
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : Holy"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        "getarg(.@i+1)"
+      ],
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : Shadow"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        "getarg(.@i+1)"
+      ],
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : Ghost"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        "getarg(.@i+1)"
+      ],
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : Undead"
     },
     {
       "kind" : "message",
@@ -55,12 +139,331 @@
       "npc" : "F_AvenBoard",
       "placeholders" : [
         "getarg(.@i+1)",
-        ".@element$[ getmonsterinfo(.@mob_id,MOB_ELEMENT) ]",
+        ".@element$[ getmonsterinfo(.@mob_id,MOB_ELEMENT) ]"
+      ],
+      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : {1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "npc" : "F_AvenBoard",
+      "text" : "[Monster Information Retrieval System]\nThere is no information available for that monster.\nPlease check your monster name."
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Medium\n- Race : Formless"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Medium\n- Race : Undead"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Medium\n- Race : Animal"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Medium\n- Race : Plant"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Medium\n- Race : Insect"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Medium\n- Race : Fish"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Medium\n- Race : Demon"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Medium\n- Race : Demihuman"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Medium\n- Race : Angel"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Medium\n- Race : Dragon"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@race$[ getmonsterinfo(.@mob_id,MOB_RACE) ]"
+      ],
+      "text" : "- Size : Medium\n- Race : {0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Small\n- Race : Formless"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Small\n- Race : Undead"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Small\n- Race : Animal"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Small\n- Race : Plant"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Small\n- Race : Insect"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Small\n- Race : Fish"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Small\n- Race : Demon"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Small\n- Race : Demihuman"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Small\n- Race : Angel"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Small\n- Race : Dragon"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@race$[ getmonsterinfo(.@mob_id,MOB_RACE) ]"
+      ],
+      "text" : "- Size : Small\n- Race : {0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Big\n- Race : Formless"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Big\n- Race : Undead"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Big\n- Race : Animal"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Big\n- Race : Plant"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Big\n- Race : Insect"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Big\n- Race : Fish"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Big\n- Race : Demon"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Big\n- Race : Demihuman"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Big\n- Race : Angel"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "text" : "- Size : Big\n- Race : Dragon"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@race$[ getmonsterinfo(.@mob_id,MOB_RACE) ]"
+      ],
+      "text" : "- Size : Big\n- Race : {0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]"
+      ],
+      "text" : "- Size : {0}\n- Race : Formless"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]"
+      ],
+      "text" : "- Size : {0}\n- Race : Undead"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]"
+      ],
+      "text" : "- Size : {0}\n- Race : Animal"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]"
+      ],
+      "text" : "- Size : {0}\n- Race : Plant"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]"
+      ],
+      "text" : "- Size : {0}\n- Race : Insect"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]"
+      ],
+      "text" : "- Size : {0}\n- Race : Fish"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]"
+      ],
+      "text" : "- Size : {0}\n- Race : Demon"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]"
+      ],
+      "text" : "- Size : {0}\n- Race : Demihuman"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]"
+      ],
+      "text" : "- Size : {0}\n- Race : Angel"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
+        ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]"
+      ],
+      "text" : "- Size : {0}\n- Race : Dragon"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
         ".@size$[ getmonsterinfo(.@mob_id,MOB_SIZE) ]",
-        ".@race$[ getmonsterinfo(.@mob_id,MOB_RACE) ]",
+        ".@race$[ getmonsterinfo(.@mob_id,MOB_RACE) ]"
+      ],
+      "text" : "- Size : {0}\n- Race : {1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "npc" : "F_AvenBoard",
+      "placeholders" : [
         "getarg(.@i+2)"
       ],
-      "text" : "[Monster Information Retrieval System]\n- Name : {0}\n- Element : {1}\n- Size : {2}\n- Race : {3}\n--------------------------------^FD8D02\n{4}"
+      "text" : "--------------------------------^FD8D02\n{0}"
     },
     {
       "kind" : "message",

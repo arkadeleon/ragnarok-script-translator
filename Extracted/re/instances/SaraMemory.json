@@ -248,15 +248,32 @@
       "text" : "[Adventurer Leon]\nBefore you enter you need to organize a party! Don't you know how? Type /organize PARTYNAMEHERE."
     },
     {
+      "kind" : "option",
+      "line" : 187,
+      "npc" : "Dimensional Device",
+      "text" : "Boot up the dimensional device."
+    },
+    {
+      "kind" : "option",
+      "line" : 187,
+      "npc" : "Dimensional Device",
+      "text" : "Use the dimensional device."
+    },
+    {
+      "kind" : "option",
+      "line" : 187,
+      "npc" : "Dimensional Device",
+      "text" : "Cancel."
+    },
+    {
       "kind" : "message",
       "line" : 190,
       "npc" : "Dimensional Device",
       "placeholders" : [
-        ".@p_name$",
-        "strcharinfo(0)",
-        ".@md_name$"
+        "getpartyname(.@party_id)",
+        "strcharinfo(0)"
       ],
-      "text" : "Party Name: {0}\nParty Leader: {1}\n^0000ff{2} ^000000- Reservation Failed!"
+      "text" : "Party Name: {0}\nParty Leader: {1}\n^0000ffSara's Memories ^000000- Reservation Failed!"
     },
     {
       "kind" : "message",
@@ -274,19 +291,13 @@
       "kind" : "message",
       "line" : 203,
       "npc" : "Dimensional Device",
-      "placeholders" : [
-        ".@md_name$"
-      ],
-      "text" : "The memorial dungeon {0} does not exist.\nThe party leader did not generate the dungeon yet."
+      "text" : "The memorial dungeon Sara's Memories does not exist.\nThe party leader did not generate the dungeon yet."
     },
     {
       "kind" : "message",
       "line" : 207,
       "npc" : "Dimensional Device",
-      "placeholders" : [
-        ".@md_name$"
-      ],
-      "text" : "Only the registered members can enter the instance {0}."
+      "text" : "Only the registered members can enter the instance Sara's Memories."
     },
     {
       "kind" : "message",

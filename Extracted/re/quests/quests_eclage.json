@@ -14,6 +14,33 @@
       "text" : "[Teleport Cat]\nWe provide teleport service between various regions based on our accumulated knowledge. We accept Malangdo Canned Specialties or Zeny, so you can pay however you like it~"
     },
     {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Teleport Cat",
+      "placeholders" : [
+        ".@menu$",
+        ".@map$[.@i]",
+        ".@cost[.@i]"
+      ],
+      "text" : "{0}{1} ({2} Canned Food)"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Teleport Cat",
+      "placeholders" : [
+        ".@map$[.@i]",
+        "callfunc(\"F_InsertComma\",.@cost[.@i]*1000)"
+      ],
+      "text" : "{0} ({1} Zeny)"
+    },
+    {
+      "kind" : "option",
+      "line" : 64,
+      "npc" : "Teleport Cat",
+      "text" : "Forget it"
+    },
+    {
       "kind" : "message",
       "line" : 66,
       "npc" : "Teleport Cat",
@@ -7949,6 +7976,30 @@
       "text" : "[Wandering Merchant]\nIf you try a bit harder, you might be able to\nget something like a ^006400Card Album^000000\n...\nYou want to give it a try?"
     },
     {
+      "kind" : "option",
+      "line" : 5795,
+      "npc" : "Wandering Merchant",
+      "text" : "Magic Card Album! Whoaaa!"
+    },
+    {
+      "kind" : "option",
+      "line" : 5795,
+      "npc" : "Wandering Merchant",
+      "text" : "Is this some kind of fraud? Huh?"
+    },
+    {
+      "kind" : "option",
+      "line" : 5795,
+      "npc" : "Wandering Merchant",
+      "text" : "Yes."
+    },
+    {
+      "kind" : "option",
+      "line" : 5795,
+      "npc" : "Wandering Merchant",
+      "text" : "Is this some kind of fraud?"
+    },
+    {
       "kind" : "message",
       "line" : 5796,
       "npc" : "Wandering Merchant",
@@ -8838,63 +8889,72 @@
       "line" : 6355,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nEveryone!\nThe reason why I asked all of you to come is the stolen necklace."
+      "text" : "[{0}]\nEveryone!\nThe reason why I asked all of you to come is the stolen necklace."
     },
     {
       "kind" : "message",
       "line" : 6355,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nI'll think about it more\nand continue my explanations again."
+      "text" : "[{0}]\nI'll think about it more\nand continue my explanations again."
     },
     {
       "kind" : "message",
       "line" : 6355,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nWho is the Thief?\nThis is complicated."
+      "text" : "[{0}]\nWho is the Thief?\nThis is complicated."
     },
     {
       "kind" : "message",
       "line" : 6355,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\n[Daughter Luen]\nThank you for lightening \nour burdens...\nCruyan and I will resolve\nthe rest of this issue.\nWould you please go outside now?"
+      "text" : "[{0}]\n[Daughter Luen]\nThank you for lightening \nour burdens...\nCruyan and I will resolve\nthe rest of this issue.\nWould you please go outside now?"
+    },
+    {
+      "kind" : "message",
+      "line" : 6355,
+      "npc" : "Daughter Luen",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[{0}]"
     },
     {
       "kind" : "message",
       "line" : 6360,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nI invited everyone to\ngather in one place\nso that we can reveal\ntogether why the robbery\ntook place and who\nthe robber is."
+      "text" : "[{0}]\nI invited everyone to\ngather in one place\nso that we can reveal\ntogether why the robbery\ntook place and who\nthe robber is."
     },
     {
       "kind" : "message",
       "line" : 6368,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nFirst... Let me reveal\nthe thief straight up!!"
+      "text" : "[{0}]\nFirst... Let me reveal\nthe thief straight up!!"
     },
     {
       "kind" : "message",
       "line" : 6372,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nThe thief who stole \nthe necklace is!!"
+      "text" : "[{0}]\nThe thief who stole \nthe necklace is!!"
     },
     {
       "kind" : "option",
@@ -8937,64 +8997,64 @@
       "line" : 6377,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nThe robber is none other than\n^006400Rosa^000000!!"
+      "text" : "[{0}]\nThe robber is none other than\n^006400Rosa^000000!!"
     },
     {
       "kind" : "message",
       "line" : 6377,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nThe robber is none other than\nthe ^006400Wandering Merchant^000000!!"
+      "text" : "[{0}]\nThe robber is none other than\nthe ^006400Wandering Merchant^000000!!"
     },
     {
       "kind" : "message",
       "line" : 6377,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nThe robber is none other than\n^006400Dames^000000!!"
+      "text" : "[{0}]\nThe robber is none other than\n^006400Dames^000000!!"
     },
     {
       "kind" : "message",
       "line" : 6377,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nThe robber is none other than\n^006400Balumin^000000!!"
+      "text" : "[{0}]\nThe robber is none other than\n^006400Balumin^000000!!"
     },
     {
       "kind" : "message",
       "line" : 6377,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nThe robber is none other than\n^006400Cruyan^000000!!"
+      "text" : "[{0}]\nThe robber is none other than\n^006400Cruyan^000000!!"
     },
     {
       "kind" : "message",
       "line" : 6377,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nI'll continue my explanations\nafter I think through things\na bit more..."
+      "text" : "[{0}]\nI'll continue my explanations\nafter I think through things\na bit more..."
     },
     {
       "kind" : "message",
       "line" : 6377,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$",
-        ".@header$"
+        "strcharinfo(0)",
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\n{1}\nI... I guess\nI must have gotten something wrong.\nI'll think about it more and figure out who the robber is..."
+      "text" : "[{0}]\n[{1}]\nI... I guess\nI must have gotten something wrong.\nI'll think about it more and figure out who the robber is..."
     },
     {
       "kind" : "message",
@@ -9007,9 +9067,9 @@
       "line" : 6386,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nRosa is the thief for sure!!\nThe reason for the robbery is that~!!"
+      "text" : "[{0}]\nRosa is the thief for sure!!\nThe reason for the robbery is that~!!"
     },
     {
       "kind" : "option",
@@ -9022,54 +9082,54 @@
       "line" : 6391,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nWhen I interrogated her, Rosa said that she doesn't suspect anyone in the family and that the necklace is something that she values very much."
+      "text" : "[{0}]\nWhen I interrogated her, Rosa said that she doesn't suspect anyone in the family and that the necklace is something that she values very much."
     },
     {
       "kind" : "message",
       "line" : 6394,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nDames said that they have been arguing more often and that she has been asking for more things, etc, demonstrating that their marriage hasn't been doing well."
+      "text" : "[{0}]\nDames said that they have been arguing more often and that she has been asking for more things, etc, demonstrating that their marriage hasn't been doing well."
     },
     {
       "kind" : "message",
       "line" : 6397,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nAccording to Luen she thought she was the first one to arrive at home.\nBut she found out that Rosa had arrived before her and still left me lying there unconscious."
+      "text" : "[{0}]\nAccording to Luen she thought she was the first one to arrive at home.\nBut she found out that Rosa had arrived before her and still left me lying there unconscious."
     },
     {
       "kind" : "message",
       "line" : 6401,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nTaking all of this together!\nRosa!\nSince you were not suspecting anyone in your family, I could sense that you love and care for your family."
+      "text" : "[{0}]\nTaking all of this together!\nRosa!\nSince you were not suspecting anyone in your family, I could sense that you love and care for your family."
     },
     {
       "kind" : "message",
       "line" : 6406,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nHowever, since your marriage was suffering, you wanted to gain more attention and care from the family!!"
+      "text" : "[{0}]\nHowever, since your marriage was suffering, you wanted to gain more attention and care from the family!!"
     },
     {
       "kind" : "message",
       "line" : 6409,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nBy making it seem like the necklace, you got from Dames, was stolen you tried to bring the family closer and bring more attention to yourself.\nNow~ would you show everyone the necklace and confess?"
+      "text" : "[{0}]\nBy making it seem like the necklace, you got from Dames, was stolen you tried to bring the family closer and bring more attention to yourself.\nNow~ would you show everyone the necklace and confess?"
     },
     {
       "kind" : "message",
@@ -9130,9 +9190,9 @@
       "line" : 6444,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nThe Wandering Merchant\nis definitely the robber!!\nThe reason being~!!"
+      "text" : "[{0}]\nThe Wandering Merchant\nis definitely the robber!!\nThe reason being~!!"
     },
     {
       "kind" : "option",
@@ -9145,45 +9205,45 @@
       "line" : 6450,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nAccording to Luen's statements, an unfamiliar person with short, red hair was hurriedly running somewhere."
+      "text" : "[{0}]\nAccording to Luen's statements, an unfamiliar person with short, red hair was hurriedly running somewhere."
     },
     {
       "kind" : "message",
       "line" : 6453,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nThis kind of robbery is rare in this neighborhood.\nIn other words, it's very likely that a stranger to this area would be responsible."
+      "text" : "[{0}]\nThis kind of robbery is rare in this neighborhood.\nIn other words, it's very likely that a stranger to this area would be responsible."
     },
     {
       "kind" : "message",
       "line" : 6457,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nMore importantly, smell of alcohol wreaks from you right now!!\nAmong the stolen items were two bottles of alcohol as well!"
+      "text" : "[{0}]\nMore importantly, smell of alcohol wreaks from you right now!!\nAmong the stolen items were two bottles of alcohol as well!"
     },
     {
       "kind" : "message",
       "line" : 6461,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nTaking all of this together!\nWandering Merchant!\nSince your business was suffering, you broke into the house and stole things."
+      "text" : "[{0}]\nTaking all of this together!\nWandering Merchant!\nSince your business was suffering, you broke into the house and stole things."
     },
     {
       "kind" : "message",
       "line" : 6466,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nAll the while, you took\n2 bottles of alcohol and\ndrank them!!\nNow~ would you show everyone the necklace and confess?"
+      "text" : "[{0}]\nAll the while, you took\n2 bottles of alcohol and\ndrank them!!\nNow~ would you show everyone the necklace and confess?"
     },
     {
       "kind" : "message",
@@ -9244,9 +9304,9 @@
       "line" : 6502,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nDames is definitely the one!!\nThe reason being~!!"
+      "text" : "[{0}]\nDames is definitely the one!!\nThe reason being~!!"
     },
     {
       "kind" : "option",
@@ -9259,45 +9319,45 @@
       "line" : 6507,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nDuring interrogation, Dames said he was getting tired of the constant fighting and was getting exhuasted from his wife asking him to buy him this and that all the time."
+      "text" : "[{0}]\nDuring interrogation, Dames said he was getting tired of the constant fighting and was getting exhuasted from his wife asking him to buy him this and that all the time."
     },
     {
       "kind" : "message",
       "line" : 6510,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nDames said he was fighting more often and that their marriage was suffering."
+      "text" : "[{0}]\nDames said he was fighting more often and that their marriage was suffering."
     },
     {
       "kind" : "message",
       "line" : 6513,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nDames! I could sense that\nyou wanted to release\nthe stress you got from\nyour wife."
+      "text" : "[{0}]\nDames! I could sense that\nyou wanted to release\nthe stress you got from\nyour wife."
     },
     {
       "kind" : "message",
       "line" : 6519,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nThat's why\nyou wanted to take revenge on\nyour wife, hid the necklace,\nand acted like the house\nwas robbed."
+      "text" : "[{0}]\nThat's why\nyou wanted to take revenge on\nyour wife, hid the necklace,\nand acted like the house\nwas robbed."
     },
     {
       "kind" : "message",
       "line" : 6526,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nNow~ would you show everyone\nthe necklace and confess?"
+      "text" : "[{0}]\nNow~ would you show everyone\nthe necklace and confess?"
     },
     {
       "kind" : "message",
@@ -9358,9 +9418,9 @@
       "line" : 6565,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nBalumin is\ndefinitely the robber!!\nThe reason being~!!"
+      "text" : "[{0}]\nBalumin is\ndefinitely the robber!!\nThe reason being~!!"
     },
     {
       "kind" : "option",
@@ -9373,36 +9433,36 @@
       "line" : 6571,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nHe said that he met with Dames\nand that his financial state \nis unstable recently.\nAnd I heard that you secretly\nasked to borrow some money."
+      "text" : "[{0}]\nHe said that he met with Dames\nand that his financial state \nis unstable recently.\nAnd I heard that you secretly\nasked to borrow some money."
     },
     {
       "kind" : "message",
       "line" : 6578,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nBut I know that Dames didn't\nlend you money.\nAnd I'm sure that made you\nfeel disappointed and upset."
+      "text" : "[{0}]\nBut I know that Dames didn't\nlend you money.\nAnd I'm sure that made you\nfeel disappointed and upset."
     },
     {
       "kind" : "message",
       "line" : 6584,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nWith the financial need,\nyou ultimately decided\nto rob the house!!!!"
+      "text" : "[{0}]\nWith the financial need,\nyou ultimately decided\nto rob the house!!!!"
     },
     {
       "kind" : "message",
       "line" : 6589,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nNow~ would you show everyone\nthe necklace and confess?"
+      "text" : "[{0}]\nNow~ would you show everyone\nthe necklace and confess?"
     },
     {
       "kind" : "message",
@@ -9469,9 +9529,9 @@
       "line" : 6633,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nCruyan is definitely the robber!\nThe reason being~!!"
+      "text" : "[{0}]\nCruyan is definitely the robber!\nThe reason being~!!"
     },
     {
       "kind" : "option",
@@ -9496,18 +9556,18 @@
       "line" : 6639,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nHe must have stolen the \nnecklace to take revenge on \nthe opposition he faced from\nRosa regarding his relationship with Luen!"
+      "text" : "[{0}]\nHe must have stolen the \nnecklace to take revenge on \nthe opposition he faced from\nRosa regarding his relationship with Luen!"
     },
     {
       "kind" : "message",
       "line" : 6645,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nAs you saw earlier, Rosa would\nfrequently yell at Cruyan, and\nanyone who received that kind of \ntreatment will begin developing\nsome kind of vindictiveness."
+      "text" : "[{0}]\nAs you saw earlier, Rosa would\nfrequently yell at Cruyan, and\nanyone who received that kind of \ntreatment will begin developing\nsome kind of vindictiveness."
     },
     {
       "kind" : "message",
@@ -9568,36 +9628,36 @@
       "line" : 6682,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nSince you ran out of your\npersonal money, you\ndecided to rob the necklace\nof your girlfriend's mother!!"
+      "text" : "[{0}]\nSince you ran out of your\npersonal money, you\ndecided to rob the necklace\nof your girlfriend's mother!!"
     },
     {
       "kind" : "message",
       "line" : 6688,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nHe didn't end just there.\nHe also stole two\nbottles of alcohol as well."
+      "text" : "[{0}]\nHe didn't end just there.\nHe also stole two\nbottles of alcohol as well."
     },
     {
       "kind" : "message",
       "line" : 6693,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nThe Wandering Merchant was \ndrunk and you may think he could\nhave been the culprit, but \nI'm sure it was Cruyan who traded\nthe alcohol for more gambling\nas he ran out of money."
+      "text" : "[{0}]\nThe Wandering Merchant was \ndrunk and you may think he could\nhave been the culprit, but \nI'm sure it was Cruyan who traded\nthe alcohol for more gambling\nas he ran out of money."
     },
     {
       "kind" : "message",
       "line" : 6701,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nAnd the main reason for\nhis relationship with Luen\nbeing opposed is probably that\nhe likes such things as gambling\nand alcohol. He must have\ninstinctively commited the crime!!"
+      "text" : "[{0}]\nAnd the main reason for\nhis relationship with Luen\nbeing opposed is probably that\nhe likes such things as gambling\nand alcohol. He must have\ninstinctively commited the crime!!"
     },
     {
       "kind" : "message",
@@ -9658,9 +9718,9 @@
       "line" : 6741,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nHe committed such a crime\nto earn the approval for\nhis relationship with Luen!"
+      "text" : "[{0}]\nHe committed such a crime\nto earn the approval for\nhis relationship with Luen!"
     },
     {
       "kind" : "message",
@@ -9679,18 +9739,18 @@
       "line" : 6754,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nFrom the beginning,\nCruyan who likes gambling and alcohol was never liked by Rosa. \nHe tried to change himself in a variety of ways, but..."
+      "text" : "[{0}]\nFrom the beginning,\nCruyan who likes gambling and alcohol was never liked by Rosa. \nHe tried to change himself in a variety of ways, but..."
     },
     {
       "kind" : "message",
       "line" : 6759,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nit's never easy to change anyone's first impression.\nThus, he stole the necklace first and wanted to earn Rosa's trust by acting like he found it again."
+      "text" : "[{0}]\nit's never easy to change anyone's first impression.\nThus, he stole the necklace first and wanted to earn Rosa's trust by acting like he found it again."
     },
     {
       "kind" : "message",
@@ -9739,18 +9799,18 @@
       "line" : 6781,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nLuen said she definitely\ndidn't see you before\nyou came over."
+      "text" : "[{0}]\nLuen said she definitely\ndidn't see you before\nyou came over."
     },
     {
       "kind" : "message",
       "line" : 6786,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nHowever, if you were really\nhunting in the land\nof blooming flowers,\nwould it have been possible\nfor you to get from there\nto the house in such a short time?"
+      "text" : "[{0}]\nHowever, if you were really\nhunting in the land\nof blooming flowers,\nwould it have been possible\nfor you to get from there\nto the house in such a short time?"
     },
     {
       "kind" : "message",
@@ -9775,18 +9835,18 @@
       "line" : 6808,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nBalumin said\nthat even though he hunted \nin the land of blooming flowers\nwhere you presumably were\nhunting also, he never caught\na sight of you."
+      "text" : "[{0}]\nBalumin said\nthat even though he hunted \nin the land of blooming flowers\nwhere you presumably were\nhunting also, he never caught\na sight of you."
     },
     {
       "kind" : "message",
       "line" : 6816,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nFurthermore, the Concentration Potion you gave me as a proof of your alibi is not something you can obtain in the land of the blooming flowers.\nIt was confirmed that you can get it from the Wandering Merchant."
+      "text" : "[{0}]\nFurthermore, the Concentration Potion you gave me as a proof of your alibi is not something you can obtain in the land of the blooming flowers.\nIt was confirmed that you can get it from the Wandering Merchant."
     },
     {
       "kind" : "message",
@@ -9829,90 +9889,90 @@
       "line" : 6834,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nNo... No way?\nDid I make a mistake?"
+      "text" : "[{0}]\nNo... No way?\nDid I make a mistake?"
     },
     {
       "kind" : "message",
       "line" : 6838,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nThere's no way!\nLet's think about it again."
+      "text" : "[{0}]\nThere's no way!\nLet's think about it again."
     },
     {
       "kind" : "message",
       "line" : 6843,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nThat's because when you\nwere about to steal the\nnecklace, you were caught\nby Luen."
+      "text" : "[{0}]\nThat's because when you\nwere about to steal the\nnecklace, you were caught\nby Luen."
     },
     {
       "kind" : "message",
       "line" : 6849,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nAlthough Luen \nwas shocked to see her\nboyfriend trying to rob and \ngoing through the house,\nshe got to hear his side of\nthe story."
+      "text" : "[{0}]\nAlthough Luen \nwas shocked to see her\nboyfriend trying to rob and \ngoing through the house,\nshe got to hear his side of\nthe story."
     },
     {
       "kind" : "message",
       "line" : 6857,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nShe must have sympathized\nwith how you felt, but probably\ndisagreed with you. She must \nhave physically resisted you \ntrying to steal the necklace, and\nin the process, the necklace was lost..."
+      "text" : "[{0}]\nShe must have sympathized\nwith how you felt, but probably\ndisagreed with you. She must \nhave physically resisted you \ntrying to steal the necklace, and\nin the process, the necklace was lost..."
     },
     {
       "kind" : "message",
       "line" : 6865,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nAnd that's when I was coming in\nfrom outside. And since you\ndidn't want to be caught,\nyou knocked me out..."
+      "text" : "[{0}]\nAnd that's when I was coming in\nfrom outside. And since you\ndidn't want to be caught,\nyou knocked me out..."
     },
     {
       "kind" : "message",
       "line" : 6871,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nYou were both afraid of\nwhat might have happened to me..\nThe necklace was lost in the process..\nAnd since your parents were about\nto return home, you hurriedly\nleft the house."
+      "text" : "[{0}]\nYou were both afraid of\nwhat might have happened to me..\nThe necklace was lost in the process..\nAnd since your parents were about\nto return home, you hurriedly\nleft the house."
     },
     {
       "kind" : "message",
       "line" : 6879,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nYou tried to do something\nwith me, but Rosa was\nalready on her way back at\nthe time, so you couldn't do anything."
+      "text" : "[{0}]\nYou tried to do something\nwith me, but Rosa was\nalready on her way back at\nthe time, so you couldn't do anything."
     },
     {
       "kind" : "message",
       "line" : 6885,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nAnd Cruyan, as soon as you\ngot to the house, you said\nthat the necklace was stolen.\nHow did you know that when\nnobody had told you\nabout it?"
+      "text" : "[{0}]\nAnd Cruyan, as soon as you\ngot to the house, you said\nthat the necklace was stolen.\nHow did you know that when\nnobody had told you\nabout it?"
     },
     {
       "kind" : "message",
       "line" : 6893,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nStrangely chaotic furnitures,\nPoppy who didn't bark at the robber, and Luen and Cruyan who made up an ill-prepared story at the shock of it all, and if you follow these leads..."
+      "text" : "[{0}]\nStrangely chaotic furnitures,\nPoppy who didn't bark at the robber, and Luen and Cruyan who made up an ill-prepared story at the shock of it all, and if you follow these leads..."
     },
     {
       "kind" : "message",
@@ -9949,9 +10009,9 @@
       "line" : 6939,
       "npc" : "Daughter Luen",
       "placeholders" : [
-        ".@header$"
+        "strcharinfo(0)"
       ],
-      "text" : "{0}\nI... I guess\nI must have gotten something wrong.\nI'll think about it more and figure out who the robber is..."
+      "text" : "[{0}]\nI... I guess\nI must have gotten something wrong.\nI'll think about it more and figure out who the robber is..."
     },
     {
       "kind" : "message",
@@ -26054,6 +26114,36 @@
       "kind" : "message",
       "line" : 16918,
       "npc" : "Desk",
+      "text" : "Where should the First book be placed?"
+    },
+    {
+      "kind" : "message",
+      "line" : 16918,
+      "npc" : "Desk",
+      "text" : "Where should the Second book be placed?"
+    },
+    {
+      "kind" : "message",
+      "line" : 16918,
+      "npc" : "Desk",
+      "text" : "Where should the Third book be placed?"
+    },
+    {
+      "kind" : "message",
+      "line" : 16918,
+      "npc" : "Desk",
+      "text" : "Where should the Fourth book be placed?"
+    },
+    {
+      "kind" : "message",
+      "line" : 16918,
+      "npc" : "Desk",
+      "text" : "Where should the Fifth book be placed?"
+    },
+    {
+      "kind" : "message",
+      "line" : 16918,
+      "npc" : "Desk",
       "placeholders" : [
         ".@books$[.@i]"
       ],
@@ -26088,6 +26178,36 @@
       "line" : 16920,
       "npc" : "Desk",
       "text" : "Fifth"
+    },
+    {
+      "kind" : "message",
+      "line" : 16921,
+      "npc" : "Desk",
+      "text" : "Book 1 was placed at the First spot."
+    },
+    {
+      "kind" : "message",
+      "line" : 16921,
+      "npc" : "Desk",
+      "text" : "Book 1 was placed at the Second spot."
+    },
+    {
+      "kind" : "message",
+      "line" : 16921,
+      "npc" : "Desk",
+      "text" : "Book 1 was placed at the Third spot."
+    },
+    {
+      "kind" : "message",
+      "line" : 16921,
+      "npc" : "Desk",
+      "text" : "Book 1 was placed at the Fourth spot."
+    },
+    {
+      "kind" : "message",
+      "line" : 16921,
+      "npc" : "Desk",
+      "text" : "Book 1 was placed at the Fifth spot."
     },
     {
       "kind" : "message",

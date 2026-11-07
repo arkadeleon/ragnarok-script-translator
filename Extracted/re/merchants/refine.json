@@ -12,7 +12,7 @@
       "line" : 55,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nI am the best Armsmith ever!\nI don't refine normal, boring items.\nI only refine items that are Level 10 or higher."
     },
@@ -21,7 +21,7 @@
       "line" : 60,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "text" : "[{0}]\nAnyway, you may use my services if your item is Level 10 or higher.\nWhat do you want me to refine?"
     },
@@ -36,10 +36,39 @@
     },
     {
       "kind" : "message",
+      "line" : 74,
+      "npc" : "refinenew",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nI don't think I can refine any items you have..."
+    },
+    {
+      "kind" : "option",
+      "line" : 78,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@menu$",
+        "F_getpositionname(.@indices[.@i])",
+        "getequipname(.@indices[.@i])"
+      ],
+      "text" : "{0}{1}-[{2}]"
+    },
+    {
+      "kind" : "message",
       "line" : 81,
       "npc" : "refinenew",
       "placeholders" : [
         ".@npc_name$"
+      ],
+      "text" : "[{0}]\nYou're not wearing\nanything there that\nI can refine."
+    },
+    {
+      "kind" : "message",
+      "line" : 81,
+      "npc" : "refinenew",
+      "placeholders" : [
+        "getarg(0)"
       ],
       "text" : "[{0}]\nYou're not wearing\nanything there that\nI can refine."
     },
@@ -54,10 +83,28 @@
     },
     {
       "kind" : "message",
+      "line" : 89,
+      "npc" : "refinenew",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nI don't think I can\nrefine this item at all..."
+    },
+    {
+      "kind" : "message",
       "line" : 96,
       "npc" : "refinenew",
       "placeholders" : [
         ".@npc_name$"
+      ],
+      "text" : "[{0}]\nI said I don't work with items that are lower than Level 10."
+    },
+    {
+      "kind" : "message",
+      "line" : 96,
+      "npc" : "refinenew",
+      "placeholders" : [
+        "getarg(0)"
       ],
       "text" : "[{0}]\nI said I don't work with items that are lower than Level 10."
     },
@@ -72,17 +119,56 @@
     },
     {
       "kind" : "message",
+      "line" : 101,
+      "npc" : "refinenew",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "text" : "[{0}]\nI can't refine this\nany more. This is as\nrefined as it gets!"
+    },
+    {
+      "kind" : "message",
       "line" : 125,
       "npc" : "refinenew",
       "placeholders" : [
         ".@npc_name$",
-        ".@article$",
-        ".@type$",
-        ".@type$",
         "getitemname(.@material)",
         "callfunc(\"F_InsertComma\",.@price)"
       ],
-      "text" : "[{0}]\nHmm {1} {2}, is that ok?\nIf you want to refine this {3},\nI will need 1 ^003366{4}^000000 and {5} zeny.\nAre you sure you want to continue?"
+      "text" : "[{0}]\nHmm a weapon, is that ok?\nIf you want to refine this weapon,\nI will need 1 ^003366{1}^000000 and {2} zeny.\nAre you sure you want to continue?"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "refinenew",
+      "placeholders" : [
+        "getarg(0)",
+        "getitemname(.@material)",
+        "callfunc(\"F_InsertComma\",.@price)"
+      ],
+      "text" : "[{0}]\nHmm a weapon, is that ok?\nIf you want to refine this weapon,\nI will need 1 ^003366{1}^000000 and {2} zeny.\nAre you sure you want to continue?"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "refinenew",
+      "placeholders" : [
+        ".@npc_name$",
+        "getitemname(.@material)",
+        "callfunc(\"F_InsertComma\",.@price)"
+      ],
+      "text" : "[{0}]\nHmm an armor, is that ok?\nIf you want to refine this armor,\nI will need 1 ^003366{1}^000000 and {2} zeny.\nAre you sure you want to continue?"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "refinenew",
+      "placeholders" : [
+        "getarg(0)",
+        "getitemname(.@material)",
+        "callfunc(\"F_InsertComma\",.@price)"
+      ],
+      "text" : "[{0}]\nHmm an armor, is that ok?\nIf you want to refine this armor,\nI will need 1 ^003366{1}^000000 and {2} zeny.\nAre you sure you want to continue?"
     },
     {
       "kind" : "option",
@@ -549,6 +635,16 @@
       "text" : "[Clink]\nMy cool dad Holink said I have the world's greatest refine hammer!!\nMeow Meow~\nWho do you think I am?\nYes!!! You!! You want to refine?"
     },
     {
+      "kind" : "option",
+      "line" : 414,
+      "npc" : "Clink",
+      "placeholders" : [
+        ".@menu$",
+        "F_getpositionname(.@indices[.@i])"
+      ],
+      "text" : "{0}{1}-[Empty]"
+    },
+    {
       "kind" : "message",
       "line" : 416,
       "npc" : "Clink",
@@ -692,19 +788,25 @@
       "kind" : "message",
       "line" : 511,
       "npc" : "Clink",
-      "placeholders" : [
-        ".@type$"
-      ],
-      "text" : "[Clink]\nWow!!\nThis {0} has been refined quite a bit, huh?\nYou do know that this might break, right?"
+      "text" : "[Clink]\nWow!!\nThis armor has been refined quite a bit, huh?\nYou do know that this might break, right?"
+    },
+    {
+      "kind" : "message",
+      "line" : 511,
+      "npc" : "Clink",
+      "text" : "[Clink]\nWow!!\nThis weapon has been refined quite a bit, huh?\nYou do know that this might break, right?"
     },
     {
       "kind" : "message",
       "line" : 516,
       "npc" : "Clink",
-      "placeholders" : [
-        ".@type$"
-      ],
-      "text" : "[Clink]\nIf you break the {0}, you can never use it again.\nCards and enchant effects...\nthe ^ff0000whole thing will disappear^000000.\nYou still up for this~?"
+      "text" : "[Clink]\nIf you break the armor, you can never use it again.\nCards and enchant effects...\nthe ^ff0000whole thing will disappear^000000.\nYou still up for this~?"
+    },
+    {
+      "kind" : "message",
+      "line" : 516,
+      "npc" : "Clink",
+      "text" : "[Clink]\nIf you break the weapon, you can never use it again.\nCards and enchant effects...\nthe ^ff0000whole thing will disappear^000000.\nYou still up for this~?"
     },
     {
       "kind" : "option",

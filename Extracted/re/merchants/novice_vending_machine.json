@@ -18,7 +18,7 @@
       "line" : 18,
       "npc" : "novice_vending_machine",
       "placeholders" : [
-        ".@storage_ticket_name$"
+        "getitemname(.@storage_ticket)"
       ],
       "text" : "Trade {0}"
     },
@@ -33,8 +33,8 @@
       "line" : 20,
       "npc" : "novice_vending_machine",
       "placeholders" : [
-        ".@storage_ticket_name$",
-        ".@storage_ticket_name$"
+        "getitemname(.@storage_ticket)",
+        "getitemname(.@storage_ticket)"
       ],
       "text" : "[Exchange {0}]\n4 {1} can be exchanged into 1 Free Ticket for Warp, Airship or the Cart Service, or 1 Free Ticket for Peco Ride, 15 Novice Fly Wing, 5 Novice Butterfly Wing, 30 Novice Potion."
     },
@@ -43,7 +43,7 @@
       "line" : 23,
       "npc" : "novice_vending_machine",
       "placeholders" : [
-        ".@storage_ticket_name$"
+        "getitemname(.@storage_ticket)"
       ],
       "text" : "[Trade Novice Gears]\nArmor, Hood, Sandals, Main Gauche and Guard for Novice from Criatura Academy can be exchanged into 4 {0}."
     },
@@ -58,7 +58,7 @@
       "line" : 47,
       "npc" : "novice_vending_machine",
       "placeholders" : [
-        ".@storage_ticket_name$"
+        "getitemname(.@storage_ticket)"
       ],
       "text" : "The number of {0} is insufficient to proceed with the exchange."
     },
@@ -67,7 +67,18 @@
       "line" : 52,
       "npc" : "novice_vending_machine",
       "placeholders" : [
-        ".@storage_ticket_name$",
+        "getitemname(.@storage_ticket)",
+        ".@exchange[.@s+1]",
+        "getitemname(.@exchange[.@s])"
+      ],
+      "text" : "Exchanged 4 {0} to {1} {2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 52,
+      "npc" : "novice_vending_machine",
+      "placeholders" : [
+        "getitemname(.@storage_ticket)",
         ".@amount$",
         "getitemname(.@exchange[.@s])"
       ],
