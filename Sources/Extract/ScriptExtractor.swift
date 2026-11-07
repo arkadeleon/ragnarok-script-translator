@@ -95,9 +95,9 @@ struct ScriptExtractor {
     }
 
     /// Menu arguments may hold several options separated by `:`; empty options are hidden by the client.
-    private func makeOptions(npc: String?, line: Int, arguments: [[Segment]]) -> [ExtractedScript] {
+    private func makeOptions(npc: String?, line: Int, arguments: [[[Segment]]]) -> [ExtractedScript] {
         var options: [ExtractedScript] = []
-        for argument in arguments {
+        for argument in arguments.flatMap({ $0 }) {
             var current: [Segment] = []
             func finishOption() {
                 if let option = ExtractedScript(kind: .option, npc: npc, line: line, lines: [current]) {
@@ -159,11 +159,20 @@ private struct PageWalker {
             if open.isEmpty {
                 open = [PageWalker.Variant()]
             }
-            for index in open.indices {
-                if open[index].lines.isEmpty, let first = lines.first {
-                    open[index].line = first.line
+            for line in lines {
+                var expanded: [Variant] = []
+                for page in open {
+                    for segments in line.variants {
+                        var variant = page
+                        if variant.lines.isEmpty {
+                            variant.line = line.line
+                        }
+                        variant.lines.append(segments)
+                        expanded.append(variant)
+                    }
                 }
-                open[index].lines.append(contentsOf: lines.map(\.segments))
+                open = []
+                merge(expanded)
             }
             return []
         case .transparent:

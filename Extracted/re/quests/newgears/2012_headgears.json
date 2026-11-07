@@ -84,10 +84,13 @@
       "kind" : "option",
       "line" : 77,
       "npc" : "Reno",
-      "placeholders" : [
-        "((.@features_iRO)?\":See Equipment List\":\"\")"
-      ],
-      "text" : "Random Gear for Crystals{0}"
+      "text" : "Random Gear for Crystals"
+    },
+    {
+      "kind" : "option",
+      "line" : 77,
+      "npc" : "Reno",
+      "text" : "See Equipment List"
     },
     {
       "kind" : "message",
@@ -207,10 +210,19 @@
       "npc" : "Reno",
       "placeholders" : [
         ".@type$[.@select]",
-        "((.@features_iRO)?\"10 \":\"\")",
         ".@crystal$[.@select]"
       ],
-      "text" : "[Reno]\nYou selected to hunt a monster from the {0} collection. After hunting these monsters you will receive {1}^0000FF{2} Energy Crystals^000000 when you return to me."
+      "text" : "[Reno]\nYou selected to hunt a monster from the {0} collection. After hunting these monsters you will receive 10 ^0000FF{1} Energy Crystals^000000 when you return to me."
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "npc" : "Reno",
+      "placeholders" : [
+        ".@type$[.@select]",
+        ".@crystal$[.@select]"
+      ],
+      "text" : "[Reno]\nYou selected to hunt a monster from the {0} collection. After hunting these monsters you will receive ^0000FF{1} Energy Crystals^000000 when you return to me."
     },
     {
       "kind" : "message",
@@ -561,18 +573,23 @@
       "line" : 328,
       "npc" : "Reno",
       "placeholders" : [
-        "sprintf(\"^FF0000%d %s^000000 = ^FF00001 %s^000000\",.@rate,getitemname(.@crystal),getitemname(.@crystal_))"
+        "sprintf(\"%d\", .@rate)",
+        "getitemname(.@crystal)",
+        "getitemname(.@crystal_)"
       ],
-      "text" : "[Reno]\n{0}"
+      "text" : "[Reno]\n^FF0000{0} {1}^000000 = ^FF00001 {2}^000000"
     },
     {
       "kind" : "message",
       "line" : 331,
       "npc" : "Reno",
       "placeholders" : [
-        "sprintf(\"%d %ss will be compressed to %d %ss.\",.@crystal_count,getitemname(.@crystal),.@crystal_get,getitemname(.@crystal_))"
+        "sprintf(\"%d\", .@crystal_count)",
+        "getitemname(.@crystal)",
+        "sprintf(\"%d\", .@crystal_get)",
+        "getitemname(.@crystal_)"
       ],
-      "text" : "[Reno]\n{0}\nDo you want to compress?"
+      "text" : "[Reno]\n{0} {1}s will be compressed to {2} {3}s.\nDo you want to compress?"
     },
     {
       "kind" : "option",

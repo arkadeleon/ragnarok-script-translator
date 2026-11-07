@@ -633,12 +633,169 @@
         "getitemname(.@item_id)",
         ".@req_amount[0]",
         "getitemname(.@item_req[0])",
-        "(.@req_amount[0] > 1 && .@item_req[0] != 999 ? \"s\":\"\")",
-        "(.@item_req[1] != 0 && .@req_amount[1] != 0 ? (\"^FF0000\"+ .@req_amount[1] +\" \"+ getitemname(.@item_req[1]) + (.@req_amount[1] > 1 && .@item_req[1] != 999 ? \"s\":\"\") + \"^000000 \") : \"\")",
-        "(.@zeny_req >= 1000 ? (.@zeny_req /1000 +\",000\") : .@zeny_req)",
+        ".@req_amount[1]",
+        "getitemname(.@item_req[1])",
+        ".@zeny_req /1000",
         "getitemname(.@item_id)"
       ],
-      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}{3}^000000, {4}and my ^FF0000{5},000 zeny^000000 service fee.\nAh, and don't forget to bring that {6}!"
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}s^000000, ^FF0000{3} {4}s^000000 and my ^FF0000{5},000,000 zeny^000000 service fee.\nAh, and don't forget to bring that {6}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Func_Socket",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        ".@req_amount[1]",
+        "getitemname(.@item_req[1])",
+        ".@zeny_req",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}s^000000, ^FF0000{3} {4}s^000000 and my ^FF0000{5},000 zeny^000000 service fee.\nAh, and don't forget to bring that {6}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Func_Socket",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        ".@req_amount[1]",
+        "getitemname(.@item_req[1])",
+        ".@zeny_req /1000",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}s^000000, ^FF0000{3} {4}^000000 and my ^FF0000{5},000,000 zeny^000000 service fee.\nAh, and don't forget to bring that {6}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Func_Socket",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        ".@req_amount[1]",
+        "getitemname(.@item_req[1])",
+        ".@zeny_req",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}s^000000, ^FF0000{3} {4}^000000 and my ^FF0000{5},000 zeny^000000 service fee.\nAh, and don't forget to bring that {6}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Func_Socket",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        ".@zeny_req /1000",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}s^000000, and my ^FF0000{3},000,000 zeny^000000 service fee.\nAh, and don't forget to bring that {4}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Func_Socket",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        ".@zeny_req",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}s^000000, and my ^FF0000{3},000 zeny^000000 service fee.\nAh, and don't forget to bring that {4}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Func_Socket",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        ".@req_amount[1]",
+        "getitemname(.@item_req[1])",
+        ".@zeny_req /1000",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}^000000, ^FF0000{3} {4}s^000000 and my ^FF0000{5},000,000 zeny^000000 service fee.\nAh, and don't forget to bring that {6}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Func_Socket",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        ".@req_amount[1]",
+        "getitemname(.@item_req[1])",
+        ".@zeny_req",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}^000000, ^FF0000{3} {4}s^000000 and my ^FF0000{5},000 zeny^000000 service fee.\nAh, and don't forget to bring that {6}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Func_Socket",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        ".@req_amount[1]",
+        "getitemname(.@item_req[1])",
+        ".@zeny_req /1000",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}^000000, ^FF0000{3} {4}^000000 and my ^FF0000{5},000,000 zeny^000000 service fee.\nAh, and don't forget to bring that {6}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Func_Socket",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        ".@req_amount[1]",
+        "getitemname(.@item_req[1])",
+        ".@zeny_req",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}^000000, ^FF0000{3} {4}^000000 and my ^FF0000{5},000 zeny^000000 service fee.\nAh, and don't forget to bring that {6}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Func_Socket",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        ".@zeny_req /1000",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}^000000, and my ^FF0000{3},000,000 zeny^000000 service fee.\nAh, and don't forget to bring that {4}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Func_Socket",
+      "placeholders" : [
+        "getitemname(.@item_id)",
+        ".@req_amount[0]",
+        "getitemname(.@item_req[0])",
+        ".@zeny_req",
+        "getitemname(.@item_id)"
+      ],
+      "text" : "[Seiyablem]\nYou want to add a Slot to a {0}?\nAlright, please bring me ^FF0000{1} {2}^000000, and my ^FF0000{3},000 zeny^000000 service fee.\nAh, and don't forget to bring that {4}!"
     },
     {
       "kind" : "message",

@@ -6111,6 +6111,12 @@
       "text" : "Stop."
     },
     {
+      "kind" : "option",
+      "line" : 4536,
+      "npc" : "Battle Instructor",
+      "text" : "Buzzing~ (7~10)"
+    },
+    {
       "kind" : "message",
       "line" : 4543,
       "npc" : "Battle Instructor",
@@ -6261,12 +6267,25 @@
         "getarg(5)",
         "getarg(6)",
         "getarg(7)",
-        "(.@quest_id==11344?\"5\":\"10\")",
         "getarg(5)",
         "getarg(4)",
         "getarg(8)"
       ],
-      "text" : "[Battle Instructor Subino]\n{0} {1} at the ^ff0000West field of Izlude^000000.\n{2} ^ff0000{3} {4}s^000000 and bring ^ff0000{5} {6}^000000.\nYou can check received quests by pressing ^ff0000Alt + U^000000."
+      "text" : "[Battle Instructor Subino]\n{0} {1} at the ^ff0000West field of Izlude^000000.\n{2} ^ff00005 {3}s^000000 and bring ^ff0000{4} {5}^000000.\nYou can check received quests by pressing ^ff0000Alt + U^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 4665,
+      "npc" : "Battle Instructor",
+      "placeholders" : [
+        "getarg(5)",
+        "getarg(6)",
+        "getarg(7)",
+        "getarg(5)",
+        "getarg(4)",
+        "getarg(8)"
+      ],
+      "text" : "[Battle Instructor Subino]\n{0} {1} at the ^ff0000West field of Izlude^000000.\n{2} ^ff000010 {3}s^000000 and bring ^ff0000{4} {5}^000000.\nYou can check received quests by pressing ^ff0000Alt + U^000000."
     },
     {
       "kind" : "message",
@@ -6274,12 +6293,23 @@
       "npc" : "Battle Instructor",
       "placeholders" : [
         "getarg(7)",
-        "(.@quest_id==11344?\"5\":\"10\")",
         "getarg(5)",
         "getarg(4)",
         "getarg(8)"
       ],
-      "text" : "[Battle Instructor Subino]\n{0} ^ff0000{1} {2}s^000000 and bring ^ff0000{3} {4}^000000.\nYou can check received quests by pressing ^ff0000Alt + U^000000."
+      "text" : "[Battle Instructor Subino]\n{0} ^ff00005 {1}s^000000 and bring ^ff0000{2} {3}^000000.\nYou can check received quests by pressing ^ff0000Alt + U^000000."
+    },
+    {
+      "kind" : "message",
+      "line" : 4670,
+      "npc" : "Battle Instructor",
+      "placeholders" : [
+        "getarg(7)",
+        "getarg(5)",
+        "getarg(4)",
+        "getarg(8)"
+      ],
+      "text" : "[Battle Instructor Subino]\n{0} ^ff000010 {1}s^000000 and bring ^ff0000{2} {3}^000000.\nYou can check received quests by pressing ^ff0000Alt + U^000000."
     },
     {
       "kind" : "option",
@@ -11599,10 +11629,13 @@
       "kind" : "message",
       "line" : 8310,
       "npc" : "Arang",
-      "placeholders" : [
-        "(Sex == SEX_MALE ? \"boy\" : \"girl\")"
-      ],
-      "text" : "[Arang]\nIt's time to choose your job? How about Taekwon {0}? You may be a nice adult like me."
+      "text" : "[Arang]\nIt's time to choose your job? How about Taekwon boy? You may be a nice adult like me."
+    },
+    {
+      "kind" : "message",
+      "line" : 8310,
+      "npc" : "Arang",
+      "text" : "[Arang]\nIt's time to choose your job? How about Taekwon girl? You may be a nice adult like me."
     },
     {
       "kind" : "option",

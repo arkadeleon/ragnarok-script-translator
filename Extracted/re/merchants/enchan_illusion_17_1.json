@@ -566,10 +566,18 @@
       "line" : 531,
       "npc" : "RS26",
       "placeholders" : [
-        ".@s$[1]",
-        "(atoi(.@s$[1]) > 1 ? \"times\":\"time\")"
+        ".@s$[1]"
       ],
-      "text" : "[RS26]\nThe capabilities of this module can be enchanted up to {0} {1}. It seems that the module threshold is already at it's limit."
+      "text" : "[RS26]\nThe capabilities of this module can be enchanted up to {0} times. It seems that the module threshold is already at it's limit."
+    },
+    {
+      "kind" : "message",
+      "line" : 531,
+      "npc" : "RS26",
+      "placeholders" : [
+        ".@s$[1]"
+      ],
+      "text" : "[RS26]\nThe capabilities of this module can be enchanted up to {0} time. It seems that the module threshold is already at it's limit."
     },
     {
       "kind" : "message",
@@ -579,10 +587,21 @@
         "getitemname(.@equip_id)",
         ".@item_name$",
         ".@s$[2]",
-        "(atoi(.@s$[2]) > 1 ? \"times\":\"time\")",
         ".@s$[1]"
       ],
-      "text" : "[RS26]\n^0000FFYou have selected {0} {1}^000000\n------------------\nThe selected module can be enchanted up to ^0000FF{2} {3}^000000 on the equipment. This equipment is currently enchanted with this module by ^0000FF{4}.\nDo you want to proceed?"
+      "text" : "[RS26]\n^0000FFYou have selected {0} {1}^000000\n------------------\nThe selected module can be enchanted up to ^0000FF{2} times^000000 on the equipment. This equipment is currently enchanted with this module by ^0000FF{3}.\nDo you want to proceed?"
+    },
+    {
+      "kind" : "message",
+      "line" : 538,
+      "npc" : "RS26",
+      "placeholders" : [
+        "getitemname(.@equip_id)",
+        ".@item_name$",
+        ".@s$[2]",
+        ".@s$[1]"
+      ],
+      "text" : "[RS26]\n^0000FFYou have selected {0} {1}^000000\n------------------\nThe selected module can be enchanted up to ^0000FF{2} time^000000 on the equipment. This equipment is currently enchanted with this module by ^0000FF{3}.\nDo you want to proceed?"
     },
     {
       "kind" : "option",

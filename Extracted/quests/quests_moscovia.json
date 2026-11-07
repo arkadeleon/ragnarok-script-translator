@@ -1926,6 +1926,12 @@
       "kind" : "option",
       "line" : 1749,
       "npc" : "Aged Stranger",
+      "text" : "I want to learn the Gusli"
+    },
+    {
+      "kind" : "option",
+      "line" : 1749,
+      "npc" : "Aged Stranger",
       "text" : "Go back to the mainland."
     },
     {
@@ -4280,6 +4286,12 @@
       "text" : "Stay the night - 5000z"
     },
     {
+      "kind" : "option",
+      "line" : 3379,
+      "npc" : "Landlord",
+      "text" : "Ask her about Mikhail."
+    },
+    {
       "kind" : "message",
       "line" : 3381,
       "npc" : "Landlord",
@@ -4307,20 +4319,37 @@
       "kind" : "message",
       "line" : 3403,
       "npc" : "Landlord",
-      "placeholders" : [
-        "((Sex == SEX_MALE)?\"solid muscle\":\"fair skin\")"
-      ],
-      "text" : "[Landlord]\nOh~! You look great! Look at the {0}!\nBut you look tired. Is it because of a long journey?"
+      "text" : "[Landlord]\nOh~! You look great! Look at the solid muscle!\nBut you look tired. Is it because of a long journey?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3403,
+      "npc" : "Landlord",
+      "text" : "[Landlord]\nOh~! You look great! Look at the fair skin!\nBut you look tired. Is it because of a long journey?"
     },
     {
       "kind" : "message",
       "line" : 3408,
       "npc" : "Landlord",
-      "placeholders" : [
-        "((Sex == SEX_MALE)?\"It's the best in town. How about staying the night?\":\"It's like a princess' room.\")",
-        "(Sex == SEX_MALE)?\"I'll charge you at reasonable price for you, handsome guy.\":\"How about staying the night? I'll mark down the price for you, beautiful lady.\""
-      ],
-      "text" : "[Landlord]\nWe've got a room available just for you. {0}\n{1}"
+      "text" : "[Landlord]\nWe've got a room available just for you. It's the best in town. How about staying the night?\nI'll charge you at reasonable price for you, handsome guy."
+    },
+    {
+      "kind" : "message",
+      "line" : 3408,
+      "npc" : "Landlord",
+      "text" : "[Landlord]\nWe've got a room available just for you. It's the best in town. How about staying the night?\nHow about staying the night? I'll mark down the price for you, beautiful lady."
+    },
+    {
+      "kind" : "message",
+      "line" : 3408,
+      "npc" : "Landlord",
+      "text" : "[Landlord]\nWe've got a room available just for you. It's like a princess' room.\nI'll charge you at reasonable price for you, handsome guy."
+    },
+    {
+      "kind" : "message",
+      "line" : 3408,
+      "npc" : "Landlord",
+      "text" : "[Landlord]\nWe've got a room available just for you. It's like a princess' room.\nHow about staying the night? I'll mark down the price for you, beautiful lady."
     },
     {
       "kind" : "message",
@@ -6554,10 +6583,17 @@
       "kind" : "message",
       "line" : 5287,
       "placeholders" : [
-        ".@menu$[.@m]",
-        "( .@w ? \"smell\" : \"color\" )"
+        ".@menu$[.@m]"
       ],
-      "text" : "-I put the {0} in the pot.\nIts {1} slightly changes.-"
+      "text" : "-I put the {0} in the pot.\nIts smell slightly changes.-"
+    },
+    {
+      "kind" : "message",
+      "line" : 5287,
+      "placeholders" : [
+        ".@menu$[.@m]"
+      ],
+      "text" : "-I put the {0} in the pot.\nIts color slightly changes.-"
     },
     {
       "kind" : "message",
@@ -6688,28 +6724,49 @@
       "kind" : "message",
       "line" : 5388,
       "placeholders" : [
-        ".@menu2$[.@m]",
-        "( .@w ? \"The smell gets worse.-\" : \"The smell has been changed a little.-\" )"
+        ".@menu2$[.@m]"
       ],
-      "text" : "-I put the {0} in the pot.\n{1}"
+      "text" : "-I put the {0} in the pot.\nThe smell gets worse.-"
+    },
+    {
+      "kind" : "message",
+      "line" : 5388,
+      "placeholders" : [
+        ".@menu2$[.@m]"
+      ],
+      "text" : "-I put the {0} in the pot.\nThe smell has been changed a little.-"
     },
     {
       "kind" : "message",
       "line" : 5402,
       "placeholders" : [
-        "((.@m == 5)?\"a\":\"the\")",
         ".@menu3$[.@m]"
       ],
-      "text" : "-I put {0} {1} in the pot.\nThe solution alters in color.-"
+      "text" : "-I put a {0} in the pot.\nThe solution alters in color.-"
     },
     {
       "kind" : "message",
       "line" : 5402,
       "placeholders" : [
-        "((.@m == 5)?\"a\":\"the\")",
         ".@menu3$[.@m]"
       ],
-      "text" : "-I put {0} {1} in the pot.\nThe smell gets worse.-"
+      "text" : "-I put the {0} in the pot.\nThe solution alters in color.-"
+    },
+    {
+      "kind" : "message",
+      "line" : 5402,
+      "placeholders" : [
+        ".@menu3$[.@m]"
+      ],
+      "text" : "-I put a {0} in the pot.\nThe smell gets worse.-"
+    },
+    {
+      "kind" : "message",
+      "line" : 5402,
+      "placeholders" : [
+        ".@menu3$[.@m]"
+      ],
+      "text" : "-I put the {0} in the pot.\nThe smell gets worse.-"
     },
     {
       "kind" : "message",
@@ -13049,9 +13106,18 @@
       "line" : 9918,
       "npc" : "Baba Yaga",
       "placeholders" : [
-        "sprintf( \"To make %s, I need ^0000ff%d %s, %d %s, %d %s, %d %s and %d Zeny^000000.\", getitemname(.@item), .@amount[0], getitemname(.@item_req[0]), .@amount[1], getitemname(.@item_req[1]), .@amount[2], getitemname(.@item_req[2]), .@amount[3], getitemname(.@item_req[3]), .@zeny_req )"
+        "getitemname(.@item)",
+        "sprintf(\"%d\", .@amount[0])",
+        "getitemname(.@item_req[0])",
+        "sprintf(\"%d\", .@amount[1])",
+        "getitemname(.@item_req[1])",
+        "sprintf(\"%d\", .@amount[2])",
+        "getitemname(.@item_req[2])",
+        "sprintf(\"%d\", .@amount[3])",
+        "getitemname(.@item_req[3])",
+        "sprintf(\"%d\", .@zeny_req)"
       ],
-      "text" : "[Baba Yaga]\n{0}"
+      "text" : "[Baba Yaga]\nTo make {0}, I need ^0000ff{1} {2}, {3} {4}, {5} {6}, {7} {8} and {9} Zeny^000000."
     },
     {
       "kind" : "message",

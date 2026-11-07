@@ -46,6 +46,12 @@
       "kind" : "option",
       "line" : 404,
       "npc" : "WOE_CONTROL",
+      "text" : " ~ Warp to castles..."
+    },
+    {
+      "kind" : "option",
+      "line" : 404,
+      "npc" : "WOE_CONTROL",
       "text" : " ~ Check schedule..."
     },
     {
@@ -59,6 +65,12 @@
       "line" : 404,
       "npc" : "WOE_CONTROL",
       "text" : " ~ ^777777Cancel^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 404,
+      "npc" : "WOE_CONTROL",
+      "text" : " ~ Manage sessions..."
     },
     {
       "kind" : "message",
@@ -127,9 +139,19 @@
       "placeholders" : [
         ".Regions$[.@i]",
         "getcastlename(.Castles$[.@index])",
-        "((.@t)?\"^0055FF\"+getguildname(.@t):\"^777777unoccupied\")"
+        "getguildname(.@t)"
       ],
-      "text" : "[Castle Ownership]\n> ^FF0000{0}^000000\n  ~ {1}: {2}^000000\n "
+      "text" : "[Castle Ownership]\n> ^FF0000{0}^000000\n  ~ {1}: ^0055FF{2}^000000\n "
+    },
+    {
+      "kind" : "message",
+      "line" : 441,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".Regions$[.@i]",
+        "getcastlename(.Castles$[.@index])"
+      ],
+      "text" : "[Castle Ownership]\n> ^FF0000{0}^000000\n  ~ {1}: ^777777unoccupied^000000\n "
     },
     {
       "kind" : "message",
@@ -147,9 +169,19 @@
       "placeholders" : [
         ".Regions$[.@i]",
         "getcastlename(.Castles$[.@index])",
-        "((.@t)?\"^0055FF\"+getguildname(.@t):\"^777777unoccupied\")"
+        "getguildname(.@t)"
       ],
-      "text" : "[Castle Ownership]\n> ^FF0000{0}^000000\n  ~ {1}: {2}^000000"
+      "text" : "[Castle Ownership]\n> ^FF0000{0}^000000\n  ~ {1}: ^0055FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 441,
+      "npc" : "WOE_CONTROL",
+      "placeholders" : [
+        ".Regions$[.@i]",
+        "getcastlename(.Castles$[.@index])"
+      ],
+      "text" : "[Castle Ownership]\n> ^FF0000{0}^000000\n  ~ {1}: ^777777unoccupied^000000"
     },
     {
       "kind" : "message",
@@ -171,7 +203,7 @@
       "line" : 456,
       "npc" : "WOE_CONTROL",
       "placeholders" : [
-        "(.Size/4)"
+        ".Size/4"
       ],
       "text" : "[Session Manager]\nThere are ^0055FF{0} session(s)^000000 configured.\nWhat would you like to do?"
     },
@@ -192,6 +224,12 @@
       "line" : 460,
       "npc" : "WOE_CONTROL",
       "text" : " ~ Reload settings..."
+    },
+    {
+      "kind" : "option",
+      "line" : 460,
+      "npc" : "WOE_CONTROL",
+      "text" : " ~ End WOE session..."
     },
     {
       "kind" : "option",
@@ -300,10 +338,13 @@
       "kind" : "message",
       "line" : 529,
       "npc" : "WOE_CONTROL",
-      "placeholders" : [
-        "((.@d)?\"Session added.\":\"cancelled.\")"
-      ],
-      "text" : "[New Session]\n{0}"
+      "text" : "[New Session]\nSession added."
+    },
+    {
+      "kind" : "message",
+      "line" : 529,
+      "npc" : "WOE_CONTROL",
+      "text" : "[New Session]\ncancelled."
     },
     {
       "kind" : "message",
@@ -403,6 +444,12 @@
       "line" : 599,
       "npc" : "WOE_CONTROL",
       "text" : " ~ ^FF0000End session...^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 599,
+      "npc" : "WOE_CONTROL",
+      "text" : " ~ ^FF0000End session without rewards...^000000"
     },
     {
       "kind" : "option",

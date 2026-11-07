@@ -117,10 +117,9 @@
       "placeholders" : [
         ".@npcname$",
         "getcastlename(.castle$[.@i+.@zoneid*5])",
-        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
         ".region$[.@zoneid]"
       ],
-      "text" : "{0}\nIncredible.\n{1}{2}\nYour guild has conquered {3}!"
+      "text" : "{0}\nIncredible.\n{1}: ^4d4dffOccupied^000000\nYour guild has conquered {2}!"
     },
     {
       "kind" : "message",
@@ -129,10 +128,31 @@
       "placeholders" : [
         ".@npcname$",
         "getcastlename(.castle$[.@i+.@zoneid*5])",
-        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
         ".region$[.@zoneid]"
       ],
-      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}{2}\nYour guild has conquered {3}!"
+      "text" : "{0}\nIncredible.\n{1}\nYour guild has conquered {2}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        ".region$[.@zoneid]"
+      ],
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}: ^4d4dffOccupied^000000\nYour guild has conquered {2}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        ".region$[.@zoneid]"
+      ],
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}\nYour guild has conquered {2}!"
     },
     {
       "kind" : "message",
@@ -161,10 +181,9 @@
       "placeholders" : [
         ".@npcname$",
         "getcastlename(.castle$[.@i+.@zoneid*5])",
-        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
         ".@total"
       ],
-      "text" : "{0}\nIncredible.\n{1}{2}\nis {3}!"
+      "text" : "{0}\nIncredible.\n{1}: ^4d4dffOccupied^000000\nis {2}!"
     },
     {
       "kind" : "message",
@@ -173,10 +192,31 @@
       "placeholders" : [
         ".@npcname$",
         "getcastlename(.castle$[.@i+.@zoneid*5])",
-        "(.@gid == getcastledata(.castle$[.@i+.@zoneid*5],CD_GUILD_ID) ? \": ^4d4dffOccupied^000000\" : \"\")",
         ".@total"
       ],
-      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}{2}\nis {3}!"
+      "text" : "{0}\nIncredible.\n{1}\nis {2}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        ".@total"
+      ],
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}: ^4d4dffOccupied^000000\nis {2}!"
+    },
+    {
+      "kind" : "message",
+      "line" : 105,
+      "npc" : "gld_mission",
+      "placeholders" : [
+        ".@npcname$",
+        "getcastlename(.castle$[.@i+.@zoneid*5])",
+        ".@total"
+      ],
+      "text" : "{0}\nCurrently, the total number of fortresses that your guild has conquered\n{1}\nis {2}!"
     },
     {
       "kind" : "message",

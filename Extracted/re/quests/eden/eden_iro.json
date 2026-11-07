@@ -1186,9 +1186,10 @@
       "line" : 919,
       "npc" : "Merry Badger",
       "placeholders" : [
-        "sprintf(\"Ok, I can give you ^ff0000%s^000000 for ^0066CC%d of your Eden Merit Badge(s)^000000.\",\n\t\t\t\tcallfunc(\"F_InsertPlural\",getarg(2),getitemname(getarg(1))), getarg(0))"
+        "callfunc(\"F_InsertPlural\",getarg(2),getitemname(getarg(1)))",
+        "sprintf(\"%d\", getarg(0))"
       ],
-      "text" : "[Merry Badger]\n{0}\nDo you want to?"
+      "text" : "[Merry Badger]\nOk, I can give you ^ff0000{0}^000000 for ^0066CC{1} of your Eden Merit Badge(s)^000000.\nDo you want to?"
     },
     {
       "kind" : "option",

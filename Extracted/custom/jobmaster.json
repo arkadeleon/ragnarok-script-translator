@@ -6,24 +6,224 @@
       "line" : 27,
       "npc" : "Job Master",
       "placeholders" : [
-        "((getarg(0)>1)? \n\t\t\t\"^bb0000\"+getarg(0)+\"^000000 (^bb0000Base^000000) / \":\"\")",
+        "getarg(0)",
         "getarg(1)",
-        "((.@blvl > 0) ? \"^bb0000\"+.@blvl+\"^000000 more base levels \" + \n\t\t\t\t((.@jlvl > 0) ? \"and \" : \"\") : \"\")",
-        "((.@jlvl > 0) ? \"^00bb00\"+.@jlvl+\"^000000 more job levels \" : \"\")"
+        ".@blvl",
+        ".@jlvl"
       ],
-      "text" : "Level requirement:\n{0}^00bb00{1}^000000 (^00bb00Job^000000)\nYou need {2}{3}to continue."
+      "text" : "Level requirement:\n^bb0000{0}^000000 (^bb0000Base^000000) / ^00bb00{1}^000000 (^00bb00Job^000000)\nYou need ^bb0000{2}^000000 more base levels and ^00bb00{3}^000000 more job levels to continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(0)",
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "text" : "Level requirement:\n^bb0000{0}^000000 (^bb0000Base^000000) / ^00bb00{1}^000000 (^00bb00Job^000000)\nYou need ^bb0000{2}^000000 more base levels and to continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(0)",
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "text" : "Level requirement:\n^bb0000{0}^000000 (^bb0000Base^000000) / ^00bb00{1}^000000 (^00bb00Job^000000)\nYou need ^bb0000{2}^000000 more base levels ^00bb00{3}^000000 more job levels to continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(0)",
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "text" : "Level requirement:\n^bb0000{0}^000000 (^bb0000Base^000000) / ^00bb00{1}^000000 (^00bb00Job^000000)\nYou need ^bb0000{2}^000000 more base levels to continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(0)",
+        "getarg(1)",
+        ".@jlvl"
+      ],
+      "text" : "Level requirement:\n^bb0000{0}^000000 (^bb0000Base^000000) / ^00bb00{1}^000000 (^00bb00Job^000000)\nYou need ^00bb00{2}^000000 more job levels to continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(0)",
+        "getarg(1)"
+      ],
+      "text" : "Level requirement:\n^bb0000{0}^000000 (^bb0000Base^000000) / ^00bb00{1}^000000 (^00bb00Job^000000)\nYou need to continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "text" : "Level requirement:\n^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and ^00bb00{2}^000000 more job levels to continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "text" : "Level requirement:\n^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and to continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "text" : "Level requirement:\n^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels ^00bb00{2}^000000 more job levels to continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "text" : "Level requirement:\n^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels to continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@jlvl"
+      ],
+      "text" : "Level requirement:\n^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^00bb00{1}^000000 more job levels to continue."
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "text" : "Level requirement:\n^00bb00{0}^000000 (^00bb00Job^000000)\nYou need to continue."
     },
     {
       "kind" : "message",
       "line" : 111,
       "npc" : "Job Master",
-      "placeholders" : [
-        "((checkfalcon()) ? \"falcon\" : \"\")",
-        "((checkcart()) ? \"cart\" : \"\")",
-        "((checkriding()) ? \"Peco\" : \"\")",
-        "((ismounting()) ? \"mount\" : \"\")"
-      ],
-      "text" : "Please remove your {0}{1}{2}{3} before proceeding."
+      "text" : "Please remove your falconcartPecomount before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your falconcartPeco before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your falconcartmount before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your falconcart before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your falconPecomount before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your falconPeco before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your falconmount before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your falcon before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your cartPecomount before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your cartPeco before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your cartmount before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your cart before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your Pecomount before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your Peco before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your mount before proceeding."
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "npc" : "Job Master",
+      "text" : "Please remove your  before proceeding."
     },
     {
       "kind" : "message",
@@ -92,10 +292,13 @@
       "kind" : "option",
       "line" : 385,
       "npc" : "Job Master",
-      "placeholders" : [
-        "((.@back) ?\"Go back\" : \"Cancel\")"
-      ],
-      "text" : " ~ ^777777{0}^000000"
+      "text" : " ~ ^777777Go back^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 385,
+      "npc" : "Job Master",
+      "text" : " ~ ^777777Cancel^000000"
     }
   ]
 }

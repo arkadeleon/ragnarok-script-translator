@@ -357,7 +357,7 @@
       "line" : 231,
       "npc" : "Hugin's Magician",
       "placeholders" : [
-        "(.@cost - countitem(6608))"
+        ".@cost - countitem(6608)"
       ],
       "text" : "[Hugin's Magician]\nHmm, you are missing {0} Coagulated Spell items. Go get more, and then we can talk about more enchants."
     },
@@ -698,7 +698,7 @@
       "line" : 485,
       "npc" : "Dark magic master",
       "placeholders" : [
-        "(.@amount_coag - countitem(.@coagulated_id))",
+        ".@amount_coag - countitem(.@coagulated_id)",
         "getitemname(.@coagulated_id)"
       ],
       "text" : "[Dark magic master]\nHmm, you are missing {0} {1} items. Go get more, and then we can talk about more enchants."
@@ -708,7 +708,7 @@
       "line" : 490,
       "npc" : "Dark magic master",
       "placeholders" : [
-        "(.@amount_poll - countitem(.@polluted_id))",
+        ".@amount_poll - countitem(.@polluted_id)",
         "getitemname(.@polluted_id)"
       ],
       "text" : "[Dark magic master]\nHmm, you are missing {0} {1} items. Go get more, and then we can talk about more enchants."
@@ -809,6 +809,28 @@
       "line" : 566,
       "npc" : "Portrait collector",
       "text" : "Cancel"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[0]",
+        "callfunc(\"F_InsertComma\",.@amount_coag)",
+        "getitemname(.@coagulated_id)"
+      ],
+      "text" : "{0}{1} {2}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[1]",
+        "callfunc(\"F_InsertComma\",.@amount_polluted)",
+        "getitemname(.@polluted_id)"
+      ],
+      "text" : "{0}{1} {2}^000000"
     },
     {
       "kind" : "message",

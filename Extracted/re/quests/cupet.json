@@ -135,10 +135,22 @@
       "placeholders" : [
         ".@hunt_amount",
         "getitemname(.@hunt_id)",
-        "(.@hunt_id2 ? \", ^FF0000\" + .@hunt_amount2 + \" \" + getitemname(.@hunt_id2) : \"\")",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)",
         "getitemname(.@tame_id)"
       ],
-      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000{2} ^000000 and ^FF00001 Dolly Capsule^000000\nthen you can exchange them\nfor an {3}."
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000\nthen you can exchange them\nfor an {4}."
+    },
+    {
+      "kind" : "message",
+      "line" : 220,
+      "npc" : "cute_pet_manager",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        "getitemname(.@tame_id)"
+      ],
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000\nthen you can exchange them\nfor an {2}."
     }
   ]
 }

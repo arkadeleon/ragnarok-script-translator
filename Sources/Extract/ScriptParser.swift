@@ -7,7 +7,7 @@
 
 /// One `mes` argument: a single line of dialog.
 struct DialogLine {
-    var segments: [Segment]
+    var variants: [[Segment]]
     var line: Int
 }
 
@@ -48,8 +48,7 @@ struct ParsedScript {
     var statements: [Statement]
 }
 
-/// Recursive-descent parser over the token stream. Expressions are skipped, not parsed; only
-/// `mes` arguments are decomposed into segments.
+/// Parses dialog-affecting statements and delegates text expressions to ExpressionParser.
 struct ScriptParser {
     let source: [UInt8]
     let tokens: [Token]
@@ -188,7 +187,7 @@ struct ScriptParser {
         case "mes":
             let (arguments, end) = parseArguments(from: index + 1, until: ";")
             index = end
-            let lines = arguments.map { DialogLine(segments: $0, line: token.line) }
+            let lines = arguments.map { DialogLine(variants: $0, line: token.line) }
             return .mes(lines)
         default:
             if index + 1 < tokens.count, tokens[index + 1].kind == .punctuation, tokens[index + 1].text == ":" {
@@ -347,15 +346,15 @@ struct ScriptParser {
 
     /// Reads comma-separated arguments up to `terminator` at nesting depth 0.
     /// Returns the arguments as segments and the index just past the terminator.
-    func parseArguments(from start: Int, until terminator: String) -> (arguments: [[Segment]], end: Int) {
-        var arguments: [[Segment]] = []
+    func parseArguments(from start: Int, until terminator: String) -> (arguments: [[[Segment]]], end: Int) {
+        var arguments: [[[Segment]]] = []
         var current: [Token] = []
         var depth = 0
         var index = start
 
         func finishArgument() {
             if !current.isEmpty {
-                arguments.append(segments(of: current))
+                arguments.append(ExpressionParser(source: source).parse(current).variants())
                 current.removeAll()
             }
         }
@@ -397,36 +396,4 @@ struct ScriptParser {
         return (arguments, index)
     }
 
-    /// Splits an expression on top-level `+` and classifies each term as literal text or placeholder.
-    private func segments(of tokens: [Token]) -> [Segment] {
-        var terms: [[Token]] = [[]]
-        var depth = 0
-        for token in tokens {
-            if token.kind == .punctuation {
-                switch token.text {
-                case "(", "[":
-                    depth += 1
-                case ")", "]":
-                    depth -= 1
-                case "+" where depth == 0:
-                    terms.append([])
-                    continue
-                default:
-                    break
-                }
-            }
-            terms[terms.count - 1].append(token)
-        }
-
-        return terms.compactMap { term in
-            guard let first = term.first, let last = term.last else {
-                return nil
-            }
-            if term.count == 1, first.kind == .string {
-                return .literal(first.text)
-            }
-            let expression = String(decoding: source[first.range.lowerBound..<last.range.upperBound], as: UTF8.self)
-            return .placeholder(expression)
-        }
-    }
 }

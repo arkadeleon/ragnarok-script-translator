@@ -31,6 +31,12 @@
       "kind" : "option",
       "line" : 48,
       "npc" : "Hunting Missions",
+      "text" : " ~ New Mission"
+    },
+    {
+      "kind" : "option",
+      "line" : 48,
+      "npc" : "Hunting Missions",
       "text" : " ~ Information"
     },
     {
@@ -50,6 +56,18 @@
       "line" : 48,
       "npc" : "Hunting Missions",
       "text" : " ~ ^777777Cancel^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 48,
+      "npc" : "Hunting Missions",
+      "text" : " ~ Mission Status"
+    },
+    {
+      "kind" : "option",
+      "line" : 48,
+      "npc" : "Hunting Missions",
+      "text" : " ~ Abandon Mission"
     },
     {
       "kind" : "message",
@@ -155,10 +173,20 @@
       "line" : 148,
       "npc" : "Hunting Missions",
       "placeholders" : [
-        "(.@i+1)",
-        "((.@name$[.@i] == \"\") ? \"^777777none\" : \"^0055FF\" + .@name$[.@i]+\"^000000 : ^FF0000\" + .@val[.@i] + \" pt.\")"
+        ".@i+1"
       ],
-      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank {0}]  {1}^000000"
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank {0}]  ^777777none^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Hunting Missions",
+      "placeholders" : [
+        ".@i+1",
+        ".@name$[.@i]",
+        ".@val[.@i]"
+      ],
+      "text" : "[Hunting Missions]\nThe top hunters are:\n  [Rank {0}]  ^0055FF{1}^000000 : ^FF0000{2} pt.^000000"
     },
     {
       "kind" : "message",
@@ -224,10 +252,22 @@
       "kind" : "message",
       "line" : 231,
       "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nYou can start a quest\nevery hour.\nThat's everything~"
+    },
+    {
+      "kind" : "message",
+      "line" : 231,
+      "npc" : "Hunting Missions",
       "placeholders" : [
-        "(.Delay ? \"every \" + ((.Delay == 1) ? \"hour.\" : .Delay + \" hours.\") : \"whenever you want.\")"
+        ".Delay"
       ],
-      "text" : "[Hunting Missions]\nYou can start a quest\n{0}\nThat's everything~"
+      "text" : "[Hunting Missions]\nYou can start a quest\nevery {0} hours.\nThat's everything~"
+    },
+    {
+      "kind" : "message",
+      "line" : 231,
+      "npc" : "Hunting Missions",
+      "text" : "[Hunting Missions]\nYou can start a quest\nwhenever you want.\nThat's everything~"
     },
     {
       "kind" : "message",

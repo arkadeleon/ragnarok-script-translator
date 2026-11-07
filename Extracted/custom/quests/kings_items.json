@@ -55,19 +55,31 @@
       "npc" : "King of Prontera",
       "placeholders" : [
         "getd(\".@Items\"+.@i+\"[\"+(.@j+1)+\"]\")",
-        "getitemname(getd(\".@Items\"+.@i+\"[\"+.@j+\"]\"))",
-        "((.@i == 2 )?\"sword.\":\"crown.\")"
+        "getitemname(getd(\".@Items\"+.@i+\"[\"+.@j+\"]\"))"
       ],
-      "text" : "[King of Prontera]\nIf you could get me:\n ~ ^0055FF{0}^000000x {1}\nI'll give my {2}"
+      "text" : "[King of Prontera]\nIf you could get me:\n ~ ^0055FF{0}^000000x {1}\nI'll give my sword."
     },
     {
       "kind" : "message",
       "line" : 34,
       "npc" : "King of Prontera",
       "placeholders" : [
-        "((.@i == 2 )?\"sword.\":\"crown.\")"
+        "getd(\".@Items\"+.@i+\"[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".@Items\"+.@i+\"[\"+.@j+\"]\"))"
       ],
-      "text" : "[King of Prontera]\nIf you could get me:\nI'll give my {0}"
+      "text" : "[King of Prontera]\nIf you could get me:\n ~ ^0055FF{0}^000000x {1}\nI'll give my crown."
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nIf you could get me:\nI'll give my sword."
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nIf you could get me:\nI'll give my crown."
     },
     {
       "kind" : "message",
@@ -97,10 +109,13 @@
       "kind" : "message",
       "line" : 48,
       "npc" : "King of Prontera",
-      "placeholders" : [
-        "((.@i==1)?\"crown.\":\"sword.\")"
-      ],
-      "text" : "[King of Prontera]\nTHANK YOU SOO MUCH!!\nThis will surely calm her down.\nAs promised, here is my {0}"
+      "text" : "[King of Prontera]\nTHANK YOU SOO MUCH!!\nThis will surely calm her down.\nAs promised, here is my crown."
+    },
+    {
+      "kind" : "message",
+      "line" : 48,
+      "npc" : "King of Prontera",
+      "text" : "[King of Prontera]\nTHANK YOU SOO MUCH!!\nThis will surely calm her down.\nAs promised, here is my sword."
     },
     {
       "kind" : "message",

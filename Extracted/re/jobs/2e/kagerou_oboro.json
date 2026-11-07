@@ -446,10 +446,13 @@
       "kind" : "message",
       "line" : 260,
       "npc" : "Old Man",
-      "placeholders" : [
-        "((Sex == SEX_MALE)?\"Kagerou\":\"Oboro\")"
-      ],
-      "text" : "[Leader Gion]\nI can help you on the path you've chosen, the ^33CC71{0}^000000 path."
+      "text" : "[Leader Gion]\nI can help you on the path you've chosen, the ^33CC71Kagerou^000000 path."
+    },
+    {
+      "kind" : "message",
+      "line" : 260,
+      "npc" : "Old Man",
+      "text" : "[Leader Gion]\nI can help you on the path you've chosen, the ^33CC71Oboro^000000 path."
     },
     {
       "kind" : "message",
@@ -461,19 +464,25 @@
       "kind" : "message",
       "line" : 268,
       "npc" : "Old Man",
-      "placeholders" : [
-        "((Sex == SEX_MALE)?\"Kagerou\":\"Oboro\")"
-      ],
-      "text" : "[Leader Gion]\nIf you are prepared to follow me, Leader Gion, on the {0} path, we will meet again."
+      "text" : "[Leader Gion]\nIf you are prepared to follow me, Leader Gion, on the Kagerou path, we will meet again."
+    },
+    {
+      "kind" : "message",
+      "line" : 268,
+      "npc" : "Old Man",
+      "text" : "[Leader Gion]\nIf you are prepared to follow me, Leader Gion, on the Oboro path, we will meet again."
     },
     {
       "kind" : "message",
       "line" : 275,
       "npc" : "Old Man",
-      "placeholders" : [
-        "((Sex == SEX_MALE)?\"Kagerou\":\"Oboro\")"
-      ],
-      "text" : "[Leader Gion]\nI thought you were afraid of the ^33CC71path of the {0}^33CC71 and wouldn't come back."
+      "text" : "[Leader Gion]\nI thought you were afraid of the ^33CC71path of the Kagerou^33CC71 and wouldn't come back."
+    },
+    {
+      "kind" : "message",
+      "line" : 275,
+      "npc" : "Old Man",
+      "text" : "[Leader Gion]\nI thought you were afraid of the ^33CC71path of the Oboro^33CC71 and wouldn't come back."
     },
     {
       "kind" : "message",
@@ -1166,10 +1175,13 @@
       "kind" : "message",
       "line" : 665,
       "npc" : "Old Man",
-      "placeholders" : [
-        "((Sex == SEX_MALE)?\"Kagerou, dancing sun\":\"Oboro, misty moonlight\")"
-      ],
-      "text" : "[Leader Gion]\nMay the blessings of '{0}' be with you."
+      "text" : "[Leader Gion]\nMay the blessings of 'Kagerou, dancing sun' be with you."
+    },
+    {
+      "kind" : "message",
+      "line" : 665,
+      "npc" : "Old Man",
+      "text" : "[Leader Gion]\nMay the blessings of 'Oboro, misty moonlight' be with you."
     },
     {
       "kind" : "message",
@@ -1401,22 +1413,30 @@
       "line" : 849,
       "npc" : "Kuuga Gai",
       "placeholders" : [
-        "(.@i < .@questions)?\"Question number \"",
-        ".@i",
-        "\":\":\"Last question:\""
+        ".@i"
       ],
-      "text" : "[Kuuga Gai]\n{0}{1}{2}"
+      "text" : "[Kuuga Gai]\nQuestion number {0}:"
+    },
+    {
+      "kind" : "message",
+      "line" : 849,
+      "npc" : "Kuuga Gai",
+      "text" : "[Kuuga Gai]\nLast question:"
     },
     {
       "kind" : "message",
       "line" : 849,
       "npc" : "Kuuga Gai",
       "placeholders" : [
-        "(.@i < .@questions)?\"Question number \"",
-        ".@i",
-        "\":\":\"Last question:\""
+        ".@i"
       ],
-      "text" : "[Kuuga Gai]\n{0}{1}{2}\n[Kuuga Gai]\nAn unknown error has occurred.\nPlease contact customer service."
+      "text" : "[Kuuga Gai]\nQuestion number {0}:\n[Kuuga Gai]\nAn unknown error has occurred.\nPlease contact customer service."
+    },
+    {
+      "kind" : "message",
+      "line" : 849,
+      "npc" : "Kuuga Gai",
+      "text" : "[Kuuga Gai]\nLast question:\n[Kuuga Gai]\nAn unknown error has occurred.\nPlease contact customer service."
     },
     {
       "kind" : "message",
@@ -1453,7 +1473,7 @@
       "line" : 927,
       "npc" : "Kuuga Gai",
       "placeholders" : [
-        "(@job_ko_Kuuga)"
+        "@job_ko_Kuuga"
       ],
       "text" : "[Kuuga Gai]\nHmm. {0}?"
     },
@@ -1752,10 +1772,13 @@
       "kind" : "message",
       "line" : 1204,
       "npc" : "Sight",
-      "placeholders" : [
-        "((job_kagero_lp + 7 > 100) ? \"\" : \"7\")"
-      ],
-      "text" : "< Recovered {0} LP >"
+      "text" : "< Recovered  LP >"
+    },
+    {
+      "kind" : "message",
+      "line" : 1204,
+      "npc" : "Sight",
+      "text" : "< Recovered 7 LP >"
     },
     {
       "kind" : "message",
@@ -3628,10 +3651,18 @@
       "line" : 2570,
       "npc" : "Leader Gion",
       "placeholders" : [
-        "strcharinfo(0)",
-        "((Sex == SEX_MALE)?\"Kagerou\":\"Oboro\")"
+        "strcharinfo(0)"
       ],
-      "text" : "[Leader Gion]\nMy friend {0} made it to {1} Path. Congratulations!!"
+      "text" : "[Leader Gion]\nMy friend {0} made it to Kagerou Path. Congratulations!!"
+    },
+    {
+      "kind" : "message",
+      "line" : 2570,
+      "npc" : "Leader Gion",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "text" : "[Leader Gion]\nMy friend {0} made it to Oboro Path. Congratulations!!"
     },
     {
       "kind" : "message",

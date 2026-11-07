@@ -2578,11 +2578,20 @@
       "line" : 2068,
       "npc" : "Blacksmith Pandoi",
       "placeholders" : [
-        "(.@amount * 2)",
-        ".@amount",
-        "((.@amount == 1) ? \"Cross\" : \"Crosses\")"
+        ".@amount * 2",
+        ".@amount"
       ],
-      "text" : "[Pandoi]\nYou need at least {0} Silver Bracelets to make {1} Silver {2}."
+      "text" : "[Pandoi]\nYou need at least {0} Silver Bracelets to make {1} Silver Cross."
+    },
+    {
+      "kind" : "message",
+      "line" : 2068,
+      "npc" : "Blacksmith Pandoi",
+      "placeholders" : [
+        ".@amount * 2",
+        ".@amount"
+      ],
+      "text" : "[Pandoi]\nYou need at least {0} Silver Bracelets to make {1} Silver Crosses."
     },
     {
       "kind" : "message",
@@ -2608,10 +2617,19 @@
       "npc" : "Blacksmith Pandoi",
       "placeholders" : [
         ".@amount",
-        "((.@amount == 1) ? \"Cross\" : \"Crosses\")",
-        "(2 * .@amount)"
+        "2 * .@amount"
       ],
-      "text" : "[Pandoi]\nTo make {0} Silver {1}, I need at least {2} Silver Bracelets."
+      "text" : "[Pandoi]\nTo make {0} Silver Cross, I need at least {1} Silver Bracelets."
+    },
+    {
+      "kind" : "message",
+      "line" : 2091,
+      "npc" : "Blacksmith Pandoi",
+      "placeholders" : [
+        ".@amount",
+        "2 * .@amount"
+      ],
+      "text" : "[Pandoi]\nTo make {0} Silver Crosses, I need at least {1} Silver Bracelets."
     },
     {
       "kind" : "message",
@@ -3916,10 +3934,13 @@
       "kind" : "message",
       "line" : 3162,
       "npc" : "Lost Child",
-      "placeholders" : [
-        "((Sex == SEX_MALE) ? \"mister\" : \"ma'am\")"
-      ],
-      "text" : "[Little Kid]\nWhy~ Do I always go in circles here?\nDo you why, {0}?\nWhat's with this road?\nIs somebody trying to trick me?"
+      "text" : "[Little Kid]\nWhy~ Do I always go in circles here?\nDo you why, mister?\nWhat's with this road?\nIs somebody trying to trick me?"
+    },
+    {
+      "kind" : "message",
+      "line" : 3162,
+      "npc" : "Lost Child",
+      "text" : "[Little Kid]\nWhy~ Do I always go in circles here?\nDo you why, ma'am?\nWhat's with this road?\nIs somebody trying to trick me?"
     },
     {
       "kind" : "message",
@@ -5886,10 +5907,13 @@
       "kind" : "message",
       "line" : 4376,
       "npc" : "Master of Hunting",
-      "placeholders" : [
-        "(Sex == SEX_MALE) ? \"It won't be pleasant but any brave man could easily do it, don't you agree?\" : \"I don't want the hands of a pretty girl to smell bad but I could care less with someone like you. Ha ha!\""
-      ],
-      "text" : "[Master of Hunting]\n{0}"
+      "text" : "[Master of Hunting]\nIt won't be pleasant but any brave man could easily do it, don't you agree?"
+    },
+    {
+      "kind" : "message",
+      "line" : 4376,
+      "npc" : "Master of Hunting",
+      "text" : "[Master of Hunting]\nI don't want the hands of a pretty girl to smell bad but I could care less with someone like you. Ha ha!"
     },
     {
       "kind" : "message",
@@ -5937,10 +5961,13 @@
       "kind" : "message",
       "line" : 4400,
       "npc" : "Master of Hunting",
-      "placeholders" : [
-        "(Sex == SEX_MALE) ? \"It won't be pleasant but any brave man could easily do it, don't you agree?\" : \"I don't want the hands of a pretty girl to smell bad but I could care less with someone like you. Ha ha!\""
-      ],
-      "text" : "[Master of Hunting]\n{0}"
+      "text" : "[Master of Hunting]\nIt won't be pleasant but any brave man could easily do it, don't you agree?"
+    },
+    {
+      "kind" : "message",
+      "line" : 4400,
+      "npc" : "Master of Hunting",
+      "text" : "[Master of Hunting]\nI don't want the hands of a pretty girl to smell bad but I could care less with someone like you. Ha ha!"
     },
     {
       "kind" : "message",
@@ -9020,10 +9047,13 @@
       "kind" : "message",
       "line" : 7242,
       "npc" : "Nurse",
-      "placeholders" : [
-        "((Sex == SEX_MALE)?\"dude\":\"missy\")"
-      ],
-      "text" : "[???]\nHey {0},\nYou're not getting in the hospital."
+      "text" : "[???]\nHey dude,\nYou're not getting in the hospital."
+    },
+    {
+      "kind" : "message",
+      "line" : 7242,
+      "npc" : "Nurse",
+      "text" : "[???]\nHey missy,\nYou're not getting in the hospital."
     },
     {
       "kind" : "message",
@@ -9785,10 +9815,13 @@
       "kind" : "message",
       "line" : 7786,
       "npc" : "Bushes",
-      "placeholders" : [
-        "((Sex == SEX_MALE)?\"man\":\"lady\")"
-      ],
-      "text" : "[???]\nDon't come any closer!\nOld {0}!\nHow'd you know I was here?"
+      "text" : "[???]\nDon't come any closer!\nOld man!\nHow'd you know I was here?"
+    },
+    {
+      "kind" : "message",
+      "line" : 7786,
+      "npc" : "Bushes",
+      "text" : "[???]\nDon't come any closer!\nOld lady!\nHow'd you know I was here?"
     },
     {
       "kind" : "message",
@@ -9941,10 +9974,13 @@
       "kind" : "message",
       "line" : 7870,
       "npc" : "Bushes",
-      "placeholders" : [
-        "((Sex == SEX_MALE)?\"man\":\"lady\")"
-      ],
-      "text" : "[???]\nDon't come any closer!\nOld {0}!\nHow'd you know I was here?"
+      "text" : "[???]\nDon't come any closer!\nOld man!\nHow'd you know I was here?"
+    },
+    {
+      "kind" : "message",
+      "line" : 7870,
+      "npc" : "Bushes",
+      "text" : "[???]\nDon't come any closer!\nOld lady!\nHow'd you know I was here?"
     },
     {
       "kind" : "message",
@@ -10800,28 +10836,46 @@
       "kind" : "option",
       "line" : 8502,
       "npc" : "Festival Helper Boy",
-      "placeholders" : [
-        "(($malaya_pintados_01 > 999)?\"Collection complete\":(1000 - $malaya_pintados_01)+\" short\")"
-      ],
-      "text" : "Lesser Agimat (^FF0000{0}^000000)"
+      "text" : "Lesser Agimat (^FF0000Collection complete^000000)"
+    },
+    {
+      "kind" : "option",
+      "line" : 8502,
+      "npc" : "Festival Helper Boy",
+      "text" : "Silver Cross (^FF0000Collection complete^000000)"
+    },
+    {
+      "kind" : "option",
+      "line" : 8502,
+      "npc" : "Festival Helper Boy",
+      "text" : "Dyestuff (^FF0000Collection complete^000000)"
     },
     {
       "kind" : "option",
       "line" : 8502,
       "npc" : "Festival Helper Boy",
       "placeholders" : [
-        "(($malaya_pintados_02 > 999)?\"Collection complete\":(1000 - $malaya_pintados_02)+\" short\")"
+        "300 - $malaya_pintados_03"
       ],
-      "text" : "Silver Cross (^FF0000{0}^000000)"
+      "text" : "Dyestuff (^FF0000{0} short^000000)"
     },
     {
       "kind" : "option",
       "line" : 8502,
       "npc" : "Festival Helper Boy",
       "placeholders" : [
-        "(($malaya_pintados_03 > 299)?\"Collection complete\":(300 - $malaya_pintados_03)+\" short\")"
+        "1000 - $malaya_pintados_02"
       ],
-      "text" : "Dyestuff (^FF0000{0}^000000)"
+      "text" : "Silver Cross (^FF0000{0} short^000000)"
+    },
+    {
+      "kind" : "option",
+      "line" : 8502,
+      "npc" : "Festival Helper Boy",
+      "placeholders" : [
+        "1000 - $malaya_pintados_01"
+      ],
+      "text" : "Lesser Agimat (^FF0000{0} short^000000)"
     },
     {
       "kind" : "message",
@@ -10848,7 +10902,7 @@
       "line" : 8527,
       "npc" : "Festival Helper Boy",
       "placeholders" : [
-        "(.@total - getd(\"$malaya_pintados_0\"+.@i))",
+        ".@total - getd(\"$malaya_pintados_0\"+.@i)",
         ".@name$"
       ],
       "text" : "[Isco]\nWait. One... two...\nI am {0} short of {1}. How many did you bring?"
@@ -10858,7 +10912,7 @@
       "line" : 8527,
       "npc" : "Festival Helper Boy",
       "placeholders" : [
-        "(.@total - getd(\"$malaya_pintados_0\"+.@i))"
+        ".@total - getd(\"$malaya_pintados_0\"+.@i)"
       ],
       "text" : "[Isco]\nWait. One... two...\nI am {0} short of Dyestuffs. What kind of Dyestuff did you bring?"
     },

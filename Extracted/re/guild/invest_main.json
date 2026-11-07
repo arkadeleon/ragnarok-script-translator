@@ -206,12 +206,50 @@
       "placeholders" : [
         ".@npc_name$",
         ".@tickets",
-        "((.@tickets == 1)?\" is\":\"s are\")",
         ".@units",
-        "((.@units < 100)?.@units:insertchar(\"\"+.@units,\",\",1))",
+        ".@units",
         "getarg(2,\"\")"
       ],
-      "text" : "{0}\n{1} Investment Certificate{2} the same as an investment of {3} units ({4}0,000z){5}.\nNot much but this is a small gift. You can exchange it with items in Malangdo."
+      "text" : "{0}\n{1} Investment Certificate is the same as an investment of {2} units ({3}0,000z){4}.\nNot much but this is a small gift. You can exchange it with items in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 214,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@tickets",
+        ".@units",
+        "insertchar(\"\"+.@units,\",\",1)",
+        "getarg(2,\"\")"
+      ],
+      "text" : "{0}\n{1} Investment Certificate is the same as an investment of {2} units ({3}0,000z){4}.\nNot much but this is a small gift. You can exchange it with items in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 214,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@tickets",
+        ".@units",
+        ".@units",
+        "getarg(2,\"\")"
+      ],
+      "text" : "{0}\n{1} Investment Certificates are the same as an investment of {2} units ({3}0,000z){4}.\nNot much but this is a small gift. You can exchange it with items in Malangdo."
+    },
+    {
+      "kind" : "message",
+      "line" : 214,
+      "npc" : "F_Invest_Abyss",
+      "placeholders" : [
+        ".@npc_name$",
+        ".@tickets",
+        ".@units",
+        "insertchar(\"\"+.@units,\",\",1)",
+        "getarg(2,\"\")"
+      ],
+      "text" : "{0}\n{1} Investment Certificates are the same as an investment of {2} units ({3}0,000z){4}.\nNot much but this is a small gift. You can exchange it with items in Malangdo."
     },
     {
       "kind" : "message",
@@ -895,7 +933,7 @@
         ".@realm$",
         ".@fund[0]",
         ".@realm$",
-        "(.@fund[0]+.@fund[1]+.@fund[2]+.@fund[3]+.@fund[4]+.@fund[5])"
+        ".@fund[0]+.@fund[1]+.@fund[2]+.@fund[3]+.@fund[4]+.@fund[5]"
       ],
       "text" : "{0} total (unit in 10,000z)\n{1} {2} Guild: {3}\n{4} normal: {5}\n{6} Investment Grand Total: {7}"
     },
@@ -908,7 +946,7 @@
         ".@realm$",
         ".@fund[0]",
         ".@realm$",
-        "(.@fund[0]+.@fund[1]+.@fund[2]+.@fund[3]+.@fund[4]+.@fund[5])"
+        ".@fund[0]+.@fund[1]+.@fund[2]+.@fund[3]+.@fund[4]+.@fund[5]"
       ],
       "text" : "{0} total (unit in 10,000z)\n{1} normal: {2}\n{3} Investment Grand Total: {4}"
     },
@@ -1495,7 +1533,16 @@
       "line" : 1662,
       "npc" : "Thanks Ticket Machine",
       "placeholders" : [
-        "((getargcount() > 3)?getarg(3,\"\"):getitemname(getarg(1)))"
+        "getarg(3,\"\")"
+      ],
+      "text" : "The item ^0000FF{0}^000000 has been obtained."
+    },
+    {
+      "kind" : "message",
+      "line" : 1662,
+      "npc" : "Thanks Ticket Machine",
+      "placeholders" : [
+        "getitemname(getarg(1))"
       ],
       "text" : "The item ^0000FF{0}^000000 has been obtained."
     },
@@ -1510,7 +1557,16 @@
       "line" : 1670,
       "npc" : "Thanks Ticket Machine",
       "placeholders" : [
-        "((getargcount() > 2)?getarg(2,\"\"):getitemname(getarg(0)))"
+        "getarg(2,\"\")"
+      ],
+      "text" : "The item ^0000FF{0}^000000 has been obtained."
+    },
+    {
+      "kind" : "message",
+      "line" : 1670,
+      "npc" : "Thanks Ticket Machine",
+      "placeholders" : [
+        "getitemname(getarg(0))"
       ],
       "text" : "The item ^0000FF{0}^000000 has been obtained."
     }
