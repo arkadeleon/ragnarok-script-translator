@@ -13,9 +13,6 @@
       "kind" : "message",
       "line" : 219,
       "npc" : "Steward",
-      "placeholders" : [
-        "getguildmaster(.@GID)"
-      ],
       "state" : "translated",
       "text" : "[ Steward ]\nHmpf. Your threats don't\nscare me! Guardians, drive\nthis infidel away from here!\nI will always be loyal to the\nmaster of this stronghold,\nthe one and only ^FF0000{0}^000000.",
       "translation" : "[管家]\n哼，你的威胁吓不倒我！\n守卫，把这个异教徒赶出去！\n我永远只效忠这座要塞的主人，^FF0000{0}^000000。"
@@ -24,9 +21,6 @@
       "kind" : "message",
       "line" : 228,
       "npc" : "Steward",
-      "placeholders" : [
-        "getguildmaster(.@GID)"
-      ],
       "state" : "translated",
       "text" : "[ Steward ]\nAh, Master ^FF0000{0}^000000...\nHow shall I serve you today?\nWas there an aspect of this\nstronghold's maintenance\nyou wanted to discuss?",
       "translation" : "[管家]\n啊，主人^FF0000{0}^000000...\n今天有什么可以为您效劳？\n您想商议要塞的管理事务吗？"
@@ -75,47 +69,33 @@
       "kind" : "message",
       "line" : 237,
       "npc" : "Steward",
-      "placeholders" : [
-        "getcastledata(strnpcinfo(4),CD_CURRENT_ECONOMY)",
-        "getcastledata(strnpcinfo(4),CD_INVESTED_ECONOMY)"
-      ],
-      "state" : "translated",
-      "text" : "[ Steward ]\nThe Commercial Growth\nLevel of the stronghold is ^0000ff{0}.\nLast time, you invested in\nCommercial Growth {1}.",
-      "translation" : "[管家]\n要塞的商业发展等级为^0000ff{0}。\n上次商业投资的次数为{1}。"
-    },
-    {
-      "kind" : "message",
-      "line" : 237,
-      "npc" : "Steward",
-      "placeholders" : [
-        "getcastledata(strnpcinfo(4),CD_CURRENT_ECONOMY)"
-      ],
       "state" : "translated",
       "text" : "[ Steward ]\nThe Commercial Growth\nLevel of the stronghold is ^0000ff{0}.",
       "translation" : "[管家]\n这座要塞的商业发展等级是^0000ff{0}。"
     },
     {
       "kind" : "message",
-      "line" : 245,
+      "line" : 237,
       "npc" : "Steward",
-      "placeholders" : [
-        "getcastledata(strnpcinfo(4),CD_CURRENT_DEFENSE)",
-        "getcastledata(strnpcinfo(4),CD_INVESTED_DEFENSE)"
-      ],
       "state" : "translated",
-      "text" : "[ Steward ]\nOur stronghold's\nsafeguard level is {0}.\nLast time, you invested\nin defense {1} times.\n \nThat is all, master.",
-      "translation" : "[管家]\n要塞的防御等级为{0}。\n上次防御投资的次数为{1}。\n\n报告完毕，主人。"
+      "text" : "[ Steward ]\nThe Commercial Growth\nLevel of the stronghold is ^0000ff{0}.\nLast time, you invested in\nCommercial Growth {1}.",
+      "translation" : "[管家]\n要塞的商业发展等级为^0000ff{0}。\n上次商业投资的次数为{1}。"
     },
     {
       "kind" : "message",
       "line" : 245,
       "npc" : "Steward",
-      "placeholders" : [
-        "getcastledata(strnpcinfo(4),CD_CURRENT_DEFENSE)"
-      ],
       "state" : "translated",
       "text" : "[ Steward ]\nOur stronghold's\nsafeguard level is {0}.\n \nThat is all, master.",
       "translation" : "[管家]\n要塞的防御等级为{0}。\n\n报告完毕，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 245,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nOur stronghold's\nsafeguard level is {0}.\nLast time, you invested\nin defense {1} times.\n \nThat is all, master.",
+      "translation" : "[管家]\n要塞的防御等级为{0}。\n上次防御投资的次数为{1}。\n\n报告完毕，主人。"
     },
     {
       "kind" : "message",
@@ -127,11 +107,131 @@
     },
     {
       "kind" : "message",
+      "line" : 268,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]",
+      "translation" : "[管家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 269,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Raising the stronghold's",
+      "translation" : "提升要塞的"
+    },
+    {
+      "kind" : "message",
+      "line" : 270,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "commercial growth will",
+      "translation" : "商业发展等级可以"
+    },
+    {
+      "kind" : "message",
+      "line" : 271,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "increase the quantity of",
+      "translation" : "增加"
+    },
+    {
+      "kind" : "message",
+      "line" : 272,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "goods produced for the guild.",
+      "translation" : "公会物资的产量。"
+    },
+    {
+      "kind" : "message",
+      "line" : 273,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Investing in commercial growth",
+      "translation" : "投资商业发展"
+    },
+    {
+      "kind" : "message",
+      "line" : 274,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "will help the guild's future.",
+      "translation" : "有利于公会未来的发展。"
+    },
+    {
+      "kind" : "message",
       "line" : 276,
       "npc" : "Steward",
       "state" : "translated",
       "text" : "[ Steward ]\nYou can make one investment\neach day, but if you can make\ntwo investments if you pay\nmore Zeny: this will speed\nup commercial development,\nbut can be quite expensive.",
       "translation" : "[管家]\n每天可以投资一次，若支付更多Zeny，就能投资两次。\n这样可以加快商业发展，但花费也会高得多。"
+    },
+    {
+      "kind" : "message",
+      "line" : 276,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]",
+      "translation" : "[管家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 277,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "You can make one investment",
+      "translation" : "每天可以投资一次"
+    },
+    {
+      "kind" : "message",
+      "line" : 278,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "each day, but if you can make",
+      "translation" : "若支付更多Zeny，就能"
+    },
+    {
+      "kind" : "message",
+      "line" : 279,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "two investments if you pay",
+      "translation" : "每天投资两次。这样可以"
+    },
+    {
+      "kind" : "message",
+      "line" : 280,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "more Zeny: this will speed",
+      "translation" : "加快商业发展，"
+    },
+    {
+      "kind" : "message",
+      "line" : 281,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "up commercial development,",
+      "translation" : "但花费可能会很高。"
+    },
+    {
+      "kind" : "message",
+      "line" : 282,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "but can be quite expensive.",
+      "translation" : "但费用也可能很高。"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]",
+      "translation" : "[管家]"
     },
     {
       "kind" : "message",
@@ -143,6 +243,54 @@
     },
     {
       "kind" : "message",
+      "line" : 286,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "However, our stronghold's",
+      "translation" : "不过，要塞的"
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "commerical growth level is",
+      "translation" : "商业发展等级已达到"
+    },
+    {
+      "kind" : "message",
+      "line" : 288,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "at 100%. It's not possible to",
+      "translation" : "100%，无法"
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "develop commercial growth",
+      "translation" : "继续提升商业发展等级，"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "any further than that.",
+      "translation" : "已经达到上限。"
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]",
+      "translation" : "[管家]"
+    },
+    {
+      "kind" : "message",
       "line" : 294,
       "npc" : "Steward",
       "state" : "translated",
@@ -151,25 +299,171 @@
     },
     {
       "kind" : "message",
+      "line" : 295,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "You've already made two",
+      "translation" : "您今天已经投资两次，"
+    },
+    {
+      "kind" : "message",
+      "line" : 296,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "investments today, so you'll",
+      "translation" : "必须等到明天"
+    },
+    {
+      "kind" : "message",
+      "line" : 297,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "have to wait until tomorrow",
+      "translation" : "才能再次投资。"
+    },
+    {
+      "kind" : "message",
+      "line" : 298,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "to make another investment.",
+      "translation" : "进行下一次投资。"
+    },
+    {
+      "kind" : "message",
       "line" : 302,
       "npc" : "Steward",
-      "placeholders" : [
-        ".@eco_invest"
-      ],
+      "state" : "translated",
+      "text" : "[ Steward ]\nYou must pay ^FF00005000^000000 Zeny\nto make an investment\nWill you invest in this\nstronghold's commerical\ndevelopment now?",
+      "translation" : "[管家]\n本次投资需要^FF00005000^000000 Zeny。\n您现在要投资要塞的商业发展吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 302,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nYou must pay ^FF000020000^000000 Zeny\nto make an investment\nWill you invest in this\nstronghold's commerical\ndevelopment now?",
+      "translation" : "[管家]\n本次投资需要^FF000020000^000000 Zeny。\n您现在要投资要塞的商业发展吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 302,
+      "npc" : "Steward",
       "state" : "translated",
       "text" : "[ Steward ]\nYou must pay ^FF0000{0}^000000 Zeny\nto make an investment\nWill you invest in this\nstronghold's commerical\ndevelopment now?",
       "translation" : "[管家]\n本次投资需要^FF0000{0}^000000 Zeny。\n您现在要投资要塞的商业发展吗？"
     },
     {
       "kind" : "message",
+      "line" : 302,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]",
+      "translation" : "[管家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 303,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "You must pay ^FF0000{0}^000000 Zeny",
+      "translation" : "需要支付^FF0000{0}^000000 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 304,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "to make an investment",
+      "translation" : "才能进行投资。"
+    },
+    {
+      "kind" : "message",
+      "line" : 305,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Will you invest in this",
+      "translation" : "您要投资这座要塞的"
+    },
+    {
+      "kind" : "message",
+      "line" : 306,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "stronghold's commerical",
+      "translation" : "商业发展吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 307,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "development now?",
+      "translation" : "现在就投资吗？"
+    },
+    {
+      "kind" : "message",
       "line" : 310,
       "npc" : "Steward",
-      "placeholders" : [
-        ".@eco_invest"
-      ],
+      "state" : "translated",
+      "text" : "[ Steward ]\nYou must pay ^FF00005000^000000\nmore Zeny to make a second\ninvestment today. Will you\ninvest one more time?",
+      "translation" : "[管家]\n今天若要进行第二次投资，还需支付^FF00005000^000000 Zeny。\n您要再投资一次吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 310,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nYou must pay ^FF000020000^000000\nmore Zeny to make a second\ninvestment today. Will you\ninvest one more time?",
+      "translation" : "[管家]\n今天若要进行第二次投资，还需支付^FF000020000^000000 Zeny。\n您要再投资一次吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 310,
+      "npc" : "Steward",
       "state" : "translated",
       "text" : "[ Steward ]\nYou must pay ^FF0000{0}^000000\nmore Zeny to make a second\ninvestment today. Will you\ninvest one more time?",
       "translation" : "[管家]\n若要在今天进行第二次投资，还需支付^FF0000{0}^000000 Zeny。\n您要再投资一次吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 310,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]",
+      "translation" : "[管家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "You must pay ^FF0000{0}^000000",
+      "translation" : "需要支付^FF0000{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 312,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "more Zeny to make a second",
+      "translation" : "Zeny，才能进行今天的第二次"
+    },
+    {
+      "kind" : "message",
+      "line" : 313,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "investment today. Will you",
+      "translation" : "投资。您要"
+    },
+    {
+      "kind" : "message",
+      "line" : 314,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "invest one more time?",
+      "translation" : "再投资一次吗？"
     },
     {
       "kind" : "option",
@@ -229,11 +523,163 @@
     },
     {
       "kind" : "message",
+      "line" : 361,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]",
+      "translation" : "[管家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 362,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Investing in our stronghold's",
+      "translation" : "投资要塞的"
+    },
+    {
+      "kind" : "message",
+      "line" : 363,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "defense will enhance the",
+      "translation" : "防御可以提升"
+    },
+    {
+      "kind" : "message",
+      "line" : 364,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "durability of our Guardians",
+      "translation" : "守卫和华丽金属的耐久度。"
+    },
+    {
+      "kind" : "message",
+      "line" : 365,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "and the Emperium. We'll need",
+      "translation" : "为了抵御敌人，"
+    },
+    {
+      "kind" : "message",
+      "line" : 366,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "every advantage to protect",
+      "translation" : "我们必须充分利用每项优势，"
+    },
+    {
+      "kind" : "message",
+      "line" : 367,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "ourselves from our enemies.",
+      "translation" : "保护自己。"
+    },
+    {
+      "kind" : "message",
       "line" : 369,
       "npc" : "Steward",
       "state" : "translated",
       "text" : "[ Steward ]\nYou can invest in defense\nonce per day, but if you pay\nmore Zeny, you can invest\na maximum of two times daily.",
       "translation" : "[管家]\n每天可以投资防御一次，若支付更多Zeny，每天最多可投资两次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 369,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]",
+      "translation" : "[管家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 370,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "You can invest in defense",
+      "translation" : "每天可以投资防御一次"
+    },
+    {
+      "kind" : "message",
+      "line" : 371,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "once per day, but if you pay",
+      "translation" : "若支付更多Zeny，"
+    },
+    {
+      "kind" : "message",
+      "line" : 372,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "more Zeny, you can invest",
+      "translation" : "每天最多可以投资"
+    },
+    {
+      "kind" : "message",
+      "line" : 373,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "a maximum of two times daily.",
+      "translation" : "两次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nWe need ^FF000010000^000000\nZeny to invest in our\nstronghold's defenses.\nWill you invest now?",
+      "translation" : "[管家]\n投资要塞防御需要^FF000010000^000000 Zeny。\n您现在要投资吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nWe need ^FF000010000^000000\nZeny to invest in our\nstronghold's defenses\na second time today.\nWill you invest now?",
+      "translation" : "[管家]\n今天第二次投资要塞防御需要^FF000010000^000000 Zeny。\n您现在要投资吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nWe need ^FF000040000^000000\nZeny to invest in our\nstronghold's defenses.\nWill you invest now?",
+      "translation" : "[管家]\n投资要塞防御需要^FF000040000^000000 Zeny。\n您现在要投资吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nWe need ^FF000040000^000000\nZeny to invest in our\nstronghold's defenses\na second time today.\nWill you invest now?",
+      "translation" : "[管家]\n今天第二次投资要塞防御需要^FF000040000^000000 Zeny。\n您现在要投资吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nWe need ^FF0000{0}^000000\nZeny to invest in our\nstronghold's defenses.\nWill you invest now?",
+      "translation" : "[管家]\n投资要塞防御需要^FF0000{0}^000000 Zeny。\n您现在要投资吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]\nWe need ^FF0000{0}^000000\nZeny to invest in our\nstronghold's defenses\na second time today.\nWill you invest now?",
+      "translation" : "[管家]\n今天第二次投资要塞防御需要^FF0000{0}^000000 Zeny。\n您现在要投资吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 375,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "[ Steward ]",
+      "translation" : "[管家]"
     },
     {
       "kind" : "message",
@@ -253,25 +699,139 @@
     },
     {
       "kind" : "message",
-      "line" : 375,
+      "line" : 377,
       "npc" : "Steward",
-      "placeholders" : [
-        ".@def_invest"
-      ],
       "state" : "translated",
-      "text" : "[ Steward ]\nWe need ^FF0000{0}^000000\nZeny to invest in our\nstronghold's defenses.\nWill you invest now?",
-      "translation" : "[管家]\n投资要塞防御需要^FF0000{0}^000000 Zeny。\n您现在要投资吗？"
+      "text" : "The Defense Level of this",
+      "translation" : "这座要塞的防御等级"
     },
     {
       "kind" : "message",
-      "line" : 375,
+      "line" : 378,
       "npc" : "Steward",
-      "placeholders" : [
-        ".@def_invest"
-      ],
       "state" : "translated",
-      "text" : "[ Steward ]\nWe need ^FF0000{0}^000000\nZeny to invest in our\nstronghold's defenses\na second time today.\nWill you invest now?",
-      "translation" : "[管家]\n今天第二次投资要塞防御需要^FF0000{0}^000000 Zeny。\n您现在要投资吗？"
+      "text" : "stronghold is 100%, and",
+      "translation" : "已达到100%，"
+    },
+    {
+      "kind" : "message",
+      "line" : 379,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "cannot be increased further.",
+      "translation" : "无法继续提升。"
+    },
+    {
+      "kind" : "message",
+      "line" : 383,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Master, you've already",
+      "translation" : "主人，您今天已经"
+    },
+    {
+      "kind" : "message",
+      "line" : 384,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "invested in Defense twice",
+      "translation" : "投资防御两次了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 385,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "today. You'll need to wait",
+      "translation" : "若要继续加强防御，请等到"
+    },
+    {
+      "kind" : "message",
+      "line" : 386,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "until tomorrow if you really",
+      "translation" : "明天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 387,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "want to increase our defenses.",
+      "translation" : "提升要塞防御。"
+    },
+    {
+      "kind" : "message",
+      "line" : 391,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "We need ^FF0000{0}^000000",
+      "translation" : "投资要塞防御需要^FF0000{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 392,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Zeny to invest in our",
+      "translation" : "Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 393,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "stronghold's defenses.",
+      "translation" : "要塞防御。"
+    },
+    {
+      "kind" : "message",
+      "line" : 394,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Will you invest now?",
+      "translation" : "您现在要投资吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 397,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "We need ^FF0000{0}^000000",
+      "translation" : "投资要塞防御需要^FF0000{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 398,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Zeny to invest in our",
+      "translation" : "Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 399,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "stronghold's defenses",
+      "translation" : "要塞防御"
+    },
+    {
+      "kind" : "message",
+      "line" : 400,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "a second time today.",
+      "translation" : "今天的第二次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 401,
+      "npc" : "Steward",
+      "state" : "translated",
+      "text" : "Will you invest now?",
+      "translation" : "您现在要投资吗？"
     },
     {
       "kind" : "option",
@@ -525,35 +1085,25 @@
       "kind" : "message",
       "line" : 643,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nGreat job. Now, all you\nneed to do is destroy this\nEmperium to gain ownership\nover this stronghold.",
-      "translation" : "{0}\n干得好。\n现在只要摧毁这块华丽金属，就能获得要塞的所有权。"
+      "text" : "[{0}]\nGreat job. Now, all you\nneed to do is destroy this\nEmperium to gain ownership\nover this stronghold.",
+      "translation" : "[{0}]\n干得好。现在只要摧毁这座要塞的华丽金属，就能取得它的所有权。"
     },
     {
       "kind" : "message",
       "line" : 652,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nAs guardian of this\nstronghold, I answer only\nto the master of the guild\nthat controls this place.",
-      "translation" : "{0}\n我是这座要塞的守卫，只听命于占领此地的公会会长。"
+      "text" : "[{0}]\nAs guardian of this\nstronghold, I answer only\nto the master of the guild\nthat controls this place.",
+      "translation" : "[{0}]\n身为要塞守护者，我只听命于掌控此地的公会会长。"
     },
     {
       "kind" : "message",
       "line" : 661,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$",
-        "strnpcinfo(1)"
-      ],
       "state" : "translated",
-      "text" : "{0}\nI am {1}, guardian of\nthis stronghold. For now,\nall is quiet in this place.",
-      "translation" : "{0}\n我是{1}，这座要塞的守卫。\n目前，这里一切平静。"
+      "text" : "[{0}]\nI am {1}, guardian of\nthis stronghold. For now,\nall is quiet in this place.",
+      "translation" : "[{0}]\n我是{1}，这座要塞的守护者。目前这里一切平静。"
     },
     {
       "kind" : "option",
@@ -575,12 +1125,9 @@
       "kind" : "message",
       "line" : 668,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nDo you have any questions\nabout this stronghold?",
-      "translation" : "{0}\n你对这座要塞有什么疑问吗？"
+      "text" : "[{0}]\nDo you have any questions\nabout this stronghold?",
+      "translation" : "[{0}]\n你对这座要塞有什么疑问吗？"
     },
     {
       "kind" : "option",
@@ -626,145 +1173,105 @@
       "kind" : "message",
       "line" : 674,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nThere is one Emperium\nand two Guardian Stones in\neach fortress. These stones\nare the first line of defense,\nand must be destroyed before\nenemies can even enter.",
-      "translation" : "{0}\n每座要塞有一块华丽金属和两块守护石。\n守护石是第一道防线，敌人必须先摧毁它们，才能进入要塞。"
+      "text" : "[{0}]\nThere is one Emperium\nand two Guardian Stones in\neach fortress. These stones\nare the first line of defense,\nand must be destroyed before\nenemies can even enter.",
+      "translation" : "[{0}]\n每座要塞都有一块华丽金属和两块守护石。守护石是第一道防线，敌人必须先摧毁它们才能进入。"
     },
     {
       "kind" : "message",
       "line" : 682,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nThe stones are located in\n^4D4DFFGate Houses^000000 which must be\nprotected to prevent enemies\nfrom reaching the Emperium.\nGuardian Stones can ^4D4DFFrecall\nyour Guardians^000000 for protection.",
-      "translation" : "{0}\n守护石位于^4D4DFF门楼^000000，必须守住这里，阻止敌人接近华丽金属。\n守护石还能^4D4DFF召回守卫^000000，提供保护。"
+      "text" : "[{0}]\nThe stones are located in\n^4D4DFFGate Houses^000000 which must be\nprotected to prevent enemies\nfrom reaching the Emperium.\nGuardian Stones can ^4D4DFFrecall\nyour Guardians^000000 for protection.",
+      "translation" : "[{0}]\n守护石位于^4D4DFF守护石室^000000。必须保护这些地点，防止敌人接近华丽金属。守护石还能^4D4DFF召回你的守护者^000000协助防守。"
     },
     {
       "kind" : "message",
       "line" : 690,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nFortresses with higher levels\nof defense can summon more\nGuardians: this is why it is\nso important for guilds to\ninvest in Defense Growth.",
-      "translation" : "{0}\n要塞的防御等级越高，能召唤的守卫就越多。\n因此，公会投资防御建设至关重要。"
+      "text" : "[{0}]\nFortresses with higher levels\nof defense can summon more\nGuardians: this is why it is\nso important for guilds to\ninvest in Defense Growth.",
+      "translation" : "[{0}]\n要塞的防御等级越高，就能召唤越多守护者。因此，公会投资提升防御等级非常重要。"
     },
     {
       "kind" : "message",
       "line" : 697,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nGuardian Stones that have\nbeen destroyed can be revived\nafter a certain time, but one of the guild members must give\nme the order. I can also report the status of the Guardian Stones.",
-      "translation" : "{0}\n被摧毁的守护石经过一段时间后可以重建，但需要公会成员向我下达指令。\n我也可以向你报告守护石的状态。"
+      "text" : "[{0}]\nGuardian Stones that have\nbeen destroyed can be revived\nafter a certain time, but one of the guild members must give\nme the order. I can also report the status of the Guardian Stones.",
+      "translation" : "[{0}]\n守护石被摧毁一段时间后可以复原，但必须由公会成员下令。我也可以报告守护石的状态。"
     },
     {
       "kind" : "message",
       "line" : 704,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\n^4D4DFFFortress Gates^000000 are the second line of guild stronghold defense,\nand are protected by extra barricades activated by the Guardian Stones.\nThese gates are located in three different parts of the fortress.",
-      "translation" : "{0}\n^4D4DFF要塞大门^000000是公会要塞的第二道防线，外面还有由守护石激活的额外路障保护。\n这些大门分别位于要塞的三个区域。"
+      "text" : "[{0}]\n^4D4DFFFortress Gates^000000 are the second line of guild stronghold defense,\nand are protected by extra barricades activated by the Guardian Stones.\nThese gates are located in three different parts of the fortress.",
+      "translation" : "[{0}]\n^4D4DFF要塞城门^000000是公会要塞的第二道防线，由守护石启动的额外路障保护。城门分布在要塞的三个区域。"
     },
     {
       "kind" : "message",
       "line" : 709,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nBarricades are protected by\nGuardian Stones, and are\nrestored when the Guardian\nStones are retrieved. However,\nit is not as easy to restore\ndestroyed Fortress Gates.",
-      "translation" : "{0}\n路障受守护石保护，重建守护石后，路障也会恢复。\n不过，被摧毁的要塞大门就没那么容易修复了。"
+      "text" : "[{0}]\nBarricades are protected by\nGuardian Stones, and are\nrestored when the Guardian\nStones are retrieved. However,\nit is not as easy to restore\ndestroyed Fortress Gates.",
+      "translation" : "[{0}]\n路障由守护石保护，守护石复原后路障也会恢复。不过，被摧毁的要塞城门就没那么容易修复了。"
     },
     {
       "kind" : "message",
       "line" : 717,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nFortress Gates can only be\nrestored when the ^4D4DFFguild\nmaster of a stronghold\nchanges^000000, or if ^4D4DFFrestoration\nis requested by the guild\nmaster of the stronghold^000000.",
-      "translation" : "{0}\n要塞大门只能在^4D4DFF占领要塞的公会会长变更^000000，或^4D4DFF现任公会会长提出修复请求^000000时重建。"
+      "text" : "[{0}]\nFortress Gates can only be\nrestored when the ^4D4DFFguild\nmaster of a stronghold\nchanges^000000, or if ^4D4DFFrestoration\nis requested by the guild\nmaster of the stronghold^000000.",
+      "translation" : "[{0}]\n只有更换要塞的^4D4DFF公会会长^000000，或由要塞公会会长^4D4DFF申请修复^000000，才能修复要塞城门。"
     },
     {
       "kind" : "message",
       "line" : 726,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nStrongholds have many\nLink Flags that allow you\nto access vital areas within\nrestrictions placed by the\nBarricades. Usually, ^4D4DFFFlag 1\nlinks to the Gate House^000000.",
-      "translation" : "{0}\n要塞里有许多传送旗帜，可以让你在路障所限定的范围内前往重要区域。\n通常，^4D4DFF1号旗帜通往门楼^000000。"
+      "text" : "[{0}]\nStrongholds have many\nLink Flags that allow you\nto access vital areas within\nrestrictions placed by the\nBarricades. Usually, ^4D4DFFFlag 1\nlinks to the Gate House^000000.",
+      "translation" : "[{0}]\n要塞内有许多传送旗帜，可以让你在路障限制下前往重要区域。通常，^4D4DFF旗帜1连接到守护石室^000000。"
     },
     {
       "kind" : "message",
       "line" : 734,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nMany flags link directly to\nthe flag near the Emperium.\nThe final numbered flag is\nlinked to the Convenience\nFacility of the stronghold's\nowner. Keep this in mind.",
-      "translation" : "{0}\n许多旗帜可以直接传送到华丽金属附近的旗帜。\n编号最后的旗帜通往要塞所属公会的便利设施。\n请记住这一点。"
+      "text" : "[{0}]\nMany flags link directly to\nthe flag near the Emperium.\nThe final numbered flag is\nlinked to the Convenience\nFacility of the stronghold's\nowner. Keep this in mind.",
+      "translation" : "[{0}]\n许多旗帜直接连接到华丽金属附近的旗帜。编号最大的旗帜则连接到要塞所有者的便利设施。记住这一点。"
     },
     {
       "kind" : "message",
       "line" : 743,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nStrategy? It would be better\nto develop your battle plan to\nexploit your guild's advantages\nand your enemies' weaknesses.\nUse the Gate Houses and Barricades, and rebuild as quickly as you can!",
-      "translation" : "{0}\n战术？最好结合公会的优势和敌人的弱点制定作战计划。\n充分利用门楼和路障，并尽快重建防御！"
+      "text" : "[{0}]\nStrategy? It would be better\nto develop your battle plan to\nexploit your guild's advantages\nand your enemies' weaknesses.\nUse the Gate Houses and Barricades, and rebuild as quickly as you can!",
+      "translation" : "[{0}]\n战略？最好制定作战计划，发挥公会的优势、针对敌人的弱点。善用守护石室和路障，并尽快重建防线！"
     },
     {
       "kind" : "message",
       "line" : 751,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nYou have no questions\nto ask of me? Well, I'm\nhere to serve your needs.",
-      "translation" : "{0}\n没有什么要问我的吗？\n我随时为你效劳。"
+      "text" : "[{0}]\nYou have no questions\nto ask of me? Well, I'm\nhere to serve your needs.",
+      "translation" : "[{0}]\n你没有问题要问我吗？我随时为你效劳。"
     },
     {
       "kind" : "message",
       "line" : 758,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nI'm always here, so\nfeel free to request my\nassistance whenever\nthe need arises.",
-      "translation" : "{0}\n我一直都在，有需要就来找我帮忙。"
+      "text" : "[{0}]\nI'm always here, so\nfeel free to request my\nassistance whenever\nthe need arises.",
+      "translation" : "[{0}]\n我会一直在这里。有需要时，尽管找我帮忙。"
     },
     {
       "kind" : "message",
       "line" : 767,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$",
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
-      "text" : "{0}\nGreetings, {1}.\nWhat are your orders?",
-      "translation" : "{0}\n您好，{1}。\n请问有何吩咐？"
+      "text" : "[{0}]\nGreetings, {1}.\nWhat are your orders?",
+      "translation" : "[{0}]\n你好，{1}。\n有什么吩咐？"
     },
     {
       "kind" : "option",
@@ -794,80 +1301,1390 @@
       "kind" : "message",
       "line" : 775,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nI'm sorry, but the Guardian\nStones aren't powerful enough\nto summon Guardians yet. We\nneed to accumulate more\nknowledge before they can\nsummon any Guardians.",
-      "translation" : "{0}\n很抱歉，守护石的力量还不足以召唤守卫。\n我们需要积累更多知识，才能通过守护石召唤守卫。"
+      "text" : "[{0}]\nI'm sorry, but the Guardian\nStones aren't powerful enough\nto summon Guardians yet. We\nneed to accumulate more\nknowledge before they can\nsummon any Guardians.",
+      "translation" : "[{0}]\n很抱歉，守护石的力量还不足以召唤守护者。我们需要积累更多知识，才能召唤守护者。"
     },
     {
       "kind" : "message",
       "line" : 785,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nI shall endeavor to summon\na Guardian through a Guardian\nStone. However, keep in mind\nthat this will not work if the\nGuardian Stone is destroyed.",
-      "translation" : "{0}\n我会尝试通过守护石召唤守卫。\n不过，如果守护石被摧毁，就无法召唤了。"
+      "text" : "[{0}]\nI shall endeavor to summon\na Guardian through a Guardian\nStone. However, keep in mind\nthat this will not work if the\nGuardian Stone is destroyed.",
+      "translation" : "[{0}]\n我会尝试通过守护石召唤一名守护者。不过，若守护石已被摧毁，就无法召唤。"
     },
     {
       "kind" : "message",
       "line" : 800,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nYou've already commanded\nme to summon a Guardian\nto defend the stronghold.",
-      "translation" : "{0}\n您已经下令召唤守卫来保卫要塞了。"
+      "text" : "[{0}]\nYou've already commanded\nme to summon a Guardian\nto defend the stronghold.",
+      "translation" : "[{0}]\n你已经命令我召唤守护者来保护要塞了。"
     },
     {
       "kind" : "message",
       "line" : 807,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$",
-        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[0]\")]",
-        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[1]\")]",
-        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[2]\")]",
-        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[3]\")]",
-        ".@status$[getd(\"$agit_\"+strnpcinfo(2)+\"[4]\")]"
-      ],
       "state" : "translated",
-      "text" : "{0}\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: {2}^000000\n1st Fortress Gate: {3}^000000\n2nd Fortress Gate: {4}^000000\n3rd Fortress Gate: {5}^000000",
-      "translation" : "{0}\n我们的防御状态是...\n第一守护石：{1}^000000\n第二守护石：{2}^000000\n第一要塞大门：{3}^000000\n第二要塞大门：{4}^000000\n第三要塞大门：{5}^000000"
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^FF0000Destroyed^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^FF0000已被摧毁^000000\n第2块守护石： {1}^000000\n第1道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^008000Repairing^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^008000修复中^000000\n第2块守护石： {1}^000000\n第1道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: {2}^000000\n1st Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： {2}^000000\n第1道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: {2}^000000\n1st Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： {2}^000000\n第1道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: {2}^000000\n1st Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： {2}^000000\n第1道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: {1}^000000\n2nd Guardian Stone: {2}^000000\n1st Fortress Gate: {3}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： {1}^000000\n第2块守护石： {2}^000000\n第1道要塞城门： {3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^FF0000Destroyed^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^FF0000已被摧毁^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^008000Repairing^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^008000修复中^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: {2}^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： {2}^000000\n第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: {2}^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： {2}^000000\n第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: {2}^000000\n2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： {2}^000000\n第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: {1}^000000\n1st Fortress Gate: {2}^000000\n2nd Fortress Gate: {3}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： {1}^000000\n第1道要塞城门： {2}^000000\n第2道要塞城门： {3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: {1}^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： {1}^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: {1}^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： {1}^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: {1}^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： {1}^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^FF0000Destroyed^000000\n2nd Fortress Gate: {1}^000000\n3rd Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^FF0000已被摧毁^000000\n第2道要塞城门： {1}^000000\n第3道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: {1}^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： {1}^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: {1}^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： {1}^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: {1}^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： {1}^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^008000Repairing^000000\n2nd Fortress Gate: {1}^000000\n3rd Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^008000修复中^000000\n第2道要塞城门： {1}^000000\n第3道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: {2}^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： {2}^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: {2}^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： {2}^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: {2}^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： {2}^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: {1}^000000\n2nd Fortress Gate: {2}^000000\n3rd Fortress Gate: {3}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： {1}^000000\n第2道要塞城门： {2}^000000\n第3道要塞城门： {3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^4D4DFFOperational^000000\n3rd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^4D4DFF运作正常^000000\n第3道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^FF0000Destroyed^000000\n3rd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^FF0000已被摧毁^000000\n第3道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: ^008000Repairing^000000\n3rd Fortress Gate: {1}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： ^008000修复中^000000\n第3道要塞城门： {1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: {1}^000000\n3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： {1}^000000\n第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: {1}^000000\n3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： {1}^000000\n第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: {1}^000000\n3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： {1}^000000\n第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 807,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "[{0}]\nOur defense status is...\n1st Guardian Stone: ^4D4DFFOperational^000000\n2nd Guardian Stone: ^4D4DFFOperational^000000\n1st Fortress Gate: ^4D4DFFOperational^000000\n2nd Fortress Gate: {1}^000000\n3rd Fortress Gate: {2}^000000",
+      "translation" : "[{0}]\n我方防守状态如下：\n第1块守护石： ^4D4DFF运作正常^000000\n第2块守护石： ^4D4DFF运作正常^000000\n第1道要塞城门： ^4D4DFF运作正常^000000\n第2道要塞城门： {1}^000000\n第3道要塞城门： {2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 813,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "2nd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "第2道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 813,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "2nd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "第2道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 813,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "2nd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "第2道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 813,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "2nd Fortress Gate: {0}^000000",
+      "translation" : "第2道要塞城门： {0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 814,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "3rd Fortress Gate: ^4D4DFFOperational^000000",
+      "translation" : "第3道要塞城门： ^4D4DFF运作正常^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 814,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "3rd Fortress Gate: ^FF0000Destroyed^000000",
+      "translation" : "第3道要塞城门： ^FF0000已被摧毁^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 814,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "3rd Fortress Gate: ^008000Repairing^000000",
+      "translation" : "第3道要塞城门： ^008000修复中^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 814,
+      "npc" : "Guardian",
+      "state" : "translated",
+      "text" : "3rd Fortress Gate: {0}^000000",
+      "translation" : "第3道要塞城门： {0}^000000"
     },
     {
       "kind" : "message",
       "line" : 817,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nI'll be standing by,\nawaiting your orders.",
-      "translation" : "{0}\n我会在此待命，听候您的吩咐。"
+      "text" : "[{0}]\nI'll be standing by,\nawaiting your orders.",
+      "translation" : "[{0}]\n我会待命，等候你的指示。"
     },
     {
       "kind" : "message",
       "line" : 826,
       "npc" : "Guardian",
-      "placeholders" : [
-        ".@n$"
-      ],
       "state" : "translated",
-      "text" : "{0}\nWho are you? Scoundrel!\nLeave this stronghold now!",
-      "translation" : "{0}\n你是谁？无赖！\n立刻离开这座要塞！"
+      "text" : "[{0}]\nWho are you? Scoundrel!\nLeave this stronghold now!",
+      "translation" : "[{0}]\n你是什么人？无赖！\n马上离开这座要塞！"
     },
     {
       "kind" : "message",
       "line" : 843,
       "npc" : "Kafra",
-      "placeholders" : [
-        "GetGuildName(.@GID)"
-      ],
       "state" : "translated",
       "text" : "[Kafra Employee]\nWelcome, proud member\nof the ^FF0000{0}^000000 Guild!\nThe Kafra Corporation is ready\nto assist you wherever you go!",
       "translation" : "[卡普拉职员]\n欢迎光临，光荣的^FF0000{0}^000000公会成员！\n无论您去往何处，卡普拉总公司都随时为您服务！"
@@ -1004,9 +2821,6 @@
       "kind" : "message",
       "line" : 937,
       "npc" : "Kafra",
-      "placeholders" : [
-        "getguildname(.@GID)"
-      ],
       "state" : "translated",
       "text" : "[Kafra Employee]\nI'm sorry, but I've been\nexclusively contracted\nto the members of the\n^FF0000{0}^000000 Guild.\nYou'll have to ask another\nKafra Employee to help you...",
       "translation" : "[卡普拉职员]\n很抱歉，根据契约，我只能为^FF0000{0}^000000公会的成员提供服务。\n请找其他卡普拉职员帮忙..."
@@ -1095,12 +2909,25 @@
       "kind" : "message",
       "line" : 985,
       "npc" : "Guardian Stone",
-      "placeholders" : [
-        ".@stone$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "^3355FF{0} has been\nplaced in the center.^000000",
-      "translation" : "^3355FF已将{0}放在中央。^000000"
+      "text" : "^3355FFElunium has been\nplaced in the center.^000000",
+      "translation" : "^3355FF铝已放在中心。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 985,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFOridecon has been\nplaced in the center.^000000",
+      "translation" : "^3355FF神之金属已放在中心。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 985,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFStones has been\nplaced in the center.^000000",
+      "translation" : "^3355FF石头已放在中心。^000000"
     },
     {
       "kind" : "option",
@@ -1130,12 +2957,25 @@
       "kind" : "message",
       "line" : 990,
       "npc" : "Guardian Stone",
-      "placeholders" : [
-        ".@stone$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "^3355FFYou have lined the\noutside of the center\nwith some {0}.^000000",
-      "translation" : "^3355FF已在中央周围铺上一些{0}。^000000"
+      "text" : "^3355FFYou have lined the\noutside of the center\nwith some Oridecon.^000000",
+      "translation" : "^3355FF你用神之金属铺在中心外围。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 990,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFYou have lined the\noutside of the center\nwith some Stones.^000000",
+      "translation" : "^3355FF你用石头铺在中心外围。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 990,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFYou have lined the\noutside of the center\nwith some Elunium.^000000",
+      "translation" : "^3355FF你用铝铺在中心外围。^000000"
     },
     {
       "kind" : "option",
@@ -1165,12 +3005,25 @@
       "kind" : "message",
       "line" : 996,
       "npc" : "Guardian Stone",
-      "placeholders" : [
-        ".@stone$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "^3355FFYou covered the\nrest of the materials\nwith some {0}.^000000",
-      "translation" : "^3355FF已用一些{0}覆盖其余材料。^000000"
+      "text" : "^3355FFYou covered the\nrest of the materials\nwith some Elunium.^000000",
+      "translation" : "^3355FF你用铝盖住了剩余材料。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 996,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFYou covered the\nrest of the materials\nwith some Stones.^000000",
+      "translation" : "^3355FF你用石头盖住了剩余材料。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 996,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFYou covered the\nrest of the materials\nwith some Oridecon.^000000",
+      "translation" : "^3355FF你用神之金属盖住了剩余材料。^000000"
     },
     {
       "kind" : "message",
@@ -1216,23 +3069,49 @@
       "kind" : "message",
       "line" : 1018,
       "npc" : "Guardian Stone",
-      "placeholders" : [
-        ".@color$[.@j]"
-      ],
       "state" : "translated",
-      "text" : "^3355FFYou placed the {0} Gemstone.^000000\n^3355FFHowever, the Guardian Stone\nRepair System failed because\nof a magic power conflict.^000000",
-      "translation" : "^3355FF已放置{0}魔力矿石。^000000\n^3355FF但由于魔力冲突，守护石修复失败了。^000000"
+      "text" : "^3355FFYou placed the Red Gemstone.^000000",
+      "translation" : "^3355FF你放入了红色魔力矿石。^000000"
     },
     {
       "kind" : "message",
       "line" : 1018,
       "npc" : "Guardian Stone",
-      "placeholders" : [
-        ".@color$[.@j]"
-      ],
       "state" : "translated",
-      "text" : "^3355FFYou placed the {0} Gemstone.^000000",
-      "translation" : "^3355FF已放置{0}魔力矿石。^000000"
+      "text" : "^3355FFYou placed the Yellow Gemstone.^000000",
+      "translation" : "^3355FF你放入了黄色魔力矿石。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1018,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFYou placed the Blue Gemstone.^000000",
+      "translation" : "^3355FF你放入了蓝色魔力矿石。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1018,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFYou placed the Red Gemstone.^000000\n^3355FFHowever, the Guardian Stone\nRepair System failed because\nof a magic power conflict.^000000",
+      "translation" : "^3355FF你放入了红色魔力矿石。^000000\n^3355FF不过，守护石修复系统因魔力冲突而失败。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1018,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFYou placed the Yellow Gemstone.^000000\n^3355FFHowever, the Guardian Stone\nRepair System failed because\nof a magic power conflict.^000000",
+      "translation" : "^3355FF你放入了黄色魔力矿石。^000000\n^3355FF不过，守护石修复系统因魔力冲突而失败。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1018,
+      "npc" : "Guardian Stone",
+      "state" : "translated",
+      "text" : "^3355FFYou placed the Blue Gemstone.^000000\n^3355FFHowever, the Guardian Stone\nRepair System failed because\nof a magic power conflict.^000000",
+      "translation" : "^3355FF你放入了蓝色魔力矿石。^000000\n^3355FF不过，守护石修复系统因魔力冲突而失败。^000000"
     },
     {
       "kind" : "message",
@@ -1691,16 +3570,36 @@
       "translation" : "^3355FF这里提供要塞瞬间移动服务。\n请选择要塞内的目的地。^000000"
     },
     {
+      "kind" : "option",
+      "line" : 1740,
+      "npc" : "LinkFlag",
+      "state" : "translated",
+      "text" : "{0}Cancel",
+      "translation" : "{0}取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 1740,
+      "npc" : "LinkFlag",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
       "kind" : "message",
       "line" : 1753,
       "npc" : "ReturnFlag",
-      "placeholders" : [
-        ".@str$",
-        ".@str$"
-      ],
       "state" : "translated",
-      "text" : "[ {0} Royal Edict ]\nThe Holy Kingdom of\n{1} declares that\none has yet to claim lordship\nover this stronghold. The one\nthat breaks the Emperium will\nbe recognized as its new owner.",
-      "translation" : "[{0}王国敕令]\n神圣的{1}王国宣布，此要塞尚无领主。\n摧毁华丽金属者，将被认定为要塞的新主人。"
+      "text" : "[ Arunafeltz Royal Edict ]\nThe Holy Kingdom of\nArunafeltz declares that\none has yet to claim lordship\nover this stronghold. The one\nthat breaks the Emperium will\nbe recognized as its new owner.",
+      "translation" : "[阿鲁纳菲尔兹王国敕令]\n阿鲁纳菲尔兹神圣王国宣布，这座要塞目前尚无领主。摧毁华丽金属者，将被承认为这座要塞的新主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1753,
+      "npc" : "ReturnFlag",
+      "state" : "translated",
+      "text" : "[ Schwarzwald Royal Edict ]\nThe Holy Kingdom of\nSchwarzwald declares that\none has yet to claim lordship\nover this stronghold. The one\nthat breaks the Emperium will\nbe recognized as its new owner.",
+      "translation" : "[施瓦茨瓦尔德王国敕令]\n施瓦茨瓦尔德神圣王国宣布，这座要塞目前尚无领主。摧毁华丽金属者，将被承认为这座要塞的新主人。"
     },
     {
       "kind" : "message",
@@ -1730,27 +3629,33 @@
       "kind" : "message",
       "line" : 1783,
       "npc" : "ReturnFlag",
-      "placeholders" : [
-        ".@str$",
-        ".@str$",
-        "getguildname(.@GID)"
-      ],
       "state" : "translated",
-      "text" : "[ {0} Royal Edict ]\nThe Holy Kingdom of\n{1} decrees that\nthis stronghold is owned\nby the ^FF0000{2}^000000 Guild.",
-      "translation" : "[{0}王国敕令]\n神圣的{1}王国颁布敕令：此要塞归^FF0000{2}^000000公会所有。"
+      "text" : "[ Arunafeltz Royal Edict ]\nThe Holy Kingdom of\nArunafeltz decrees that\nthis stronghold is owned\nby the ^FF0000{0}^000000 Guild.",
+      "translation" : "[阿鲁纳菲尔兹王国敕令]\n阿鲁纳菲尔兹神圣王国宣布，这座要塞归^FF0000{0}^000000公会所有。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1783,
+      "npc" : "ReturnFlag",
+      "state" : "translated",
+      "text" : "[ Schwarzwald Royal Edict ]\nThe Holy Kingdom of\nSchwarzwald decrees that\nthis stronghold is owned\nby the ^FF0000{0}^000000 Guild.",
+      "translation" : "[施瓦茨瓦尔德王国敕令]\n施瓦茨瓦尔德神圣王国宣布，这座要塞归^FF0000{0}^000000公会所有。"
     },
     {
       "kind" : "message",
       "line" : 1789,
       "npc" : "ReturnFlag",
-      "placeholders" : [
-        ".@str$",
-        "getguildmaster(.@GID)",
-        "getguildname(.@GID)"
-      ],
       "state" : "translated",
-      "text" : "[ {0} Royal Edict ]\n^FF0000{1}^000000 is\nGuild Master of ^FF0000{2}^000000.\nAny that object must claim this\nstronghold through strength of\nsteel and magic during the\nappointed Guild Siege times.",
-      "translation" : "[{0}王国敕令]\n^FF0000{1}^000000是^FF0000{2}^000000公会的会长。\n若有异议，请在指定的攻城战时间内，以刀剑与魔法之力夺取此要塞。"
+      "text" : "[ Arunafeltz Royal Edict ]\n^FF0000{0}^000000 is\nGuild Master of ^FF0000{1}^000000.\nAny that object must claim this\nstronghold through strength of\nsteel and magic during the\nappointed Guild Siege times.",
+      "translation" : "[阿鲁纳菲尔兹王国敕令]\n^FF0000{0}^000000是^FF0000{1}^000000公会会长。如有异议，请在指定的公会战期间以武力和魔法夺取这座要塞。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1789,
+      "npc" : "ReturnFlag",
+      "state" : "translated",
+      "text" : "[ Schwarzwald Royal Edict ]\n^FF0000{0}^000000 is\nGuild Master of ^FF0000{1}^000000.\nAny that object must claim this\nstronghold through strength of\nsteel and magic during the\nappointed Guild Siege times.",
+      "translation" : "[施瓦茨瓦尔德王国敕令]\n^FF0000{0}^000000是^FF0000{1}^000000公会会长。如有异议，请在指定的公会战期间以武力和魔法夺取这座要塞。"
     },
     {
       "kind" : "message",

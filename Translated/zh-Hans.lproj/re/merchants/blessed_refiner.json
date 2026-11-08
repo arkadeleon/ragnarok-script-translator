@@ -33,43 +33,8 @@
       "kind" : "message",
       "line" : 35,
       "state" : "translated",
-      "text" : "[Blacksmith Dister]\nI'm a blacksmith, not a hairstylist.",
-      "translation" : "[铁匠 迪斯特]\n我是铁匠，不是理发师。"
-    },
-    {
-      "kind" : "message",
-      "line" : 35,
-      "state" : "translated",
-      "text" : "[Blacksmith Dister]\nWith my hammer, I will make you a star of the sky.",
-      "translation" : "[铁匠 迪斯特]\n一锤下去，送你上天当星星。"
-    },
-    {
-      "kind" : "message",
-      "line" : 35,
-      "state" : "translated",
-      "text" : "[Blacksmith Dister]\nMaking artificial hands is not my specialty.",
-      "translation" : "[铁匠 迪斯特]\n制作假手不是我的专长。"
-    },
-    {
-      "kind" : "message",
-      "line" : 35,
-      "state" : "translated",
-      "text" : "[Blacksmith Dister]\nBring out the item so I can refine it!",
-      "translation" : "[铁匠 迪斯特]\n把要精炼的物品拿出来吧！"
-    },
-    {
-      "kind" : "message",
-      "line" : 35,
-      "state" : "translated",
-      "text" : "[Blacksmith Dister]\nWhere is this weird smell coming from?",
-      "translation" : "[铁匠 迪斯特]\n这股奇怪的味道是从哪里来的？"
-    },
-    {
-      "kind" : "message",
-      "line" : 35,
-      "state" : "translated",
-      "text" : "[Blacksmith Dister]\nWhere is the accessory?",
-      "translation" : "[铁匠 迪斯特]\n饰品在哪里？"
+      "text" : "[Blacksmith Dister]\nHuh? What do you want me to do?",
+      "translation" : "[铁匠 迪斯特]\n嗯？你想让我做什么？"
     },
     {
       "kind" : "message",
@@ -82,8 +47,43 @@
       "kind" : "message",
       "line" : 35,
       "state" : "translated",
-      "text" : "[Blacksmith Dister]\nHuh? What do you want me to do?",
-      "translation" : "[铁匠 迪斯特]\n嗯？你想让我做什么？"
+      "text" : "[Blacksmith Dister]\nWhere is the accessory?",
+      "translation" : "[铁匠 迪斯特]\n饰品在哪里？"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nWhere is this weird smell coming from?",
+      "translation" : "[铁匠 迪斯特]\n这股奇怪的味道是从哪里来的？"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nBring out the item so I can refine it!",
+      "translation" : "[铁匠 迪斯特]\n把要精炼的物品拿出来吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nMaking artificial hands is not my specialty.",
+      "translation" : "[铁匠 迪斯特]\n制作假手不是我的专长。"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nWith my hammer, I will make you a star of the sky.",
+      "translation" : "[铁匠 迪斯特]\n一锤下去，送你上天当星星。"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nI'm a blacksmith, not a hairstylist.",
+      "translation" : "[铁匠 迪斯特]\n我是铁匠，不是理发师。"
     },
     {
       "kind" : "message",
@@ -106,14 +106,73 @@
       "kind" : "message",
       "line" : 124,
       "placeholders" : [
-        ".@type$",
-        ".@equip_refine",
-        ".@ore$",
-        "callfunc(\"F_InsertComma\",.@price)"
+        ".@equip_refine"
       ],
       "state" : "translated",
-      "text" : "[Blacksmith Dister]\nThis {0} has been refined to {1}. To refine it, I need {2} and a {3} zeny refining fee.\nDo you want to proceed?",
-      "translation" : "[铁匠 迪斯特]\n{0}目前精炼到{1}，继续精炼需要{2}和{3} Zeny手续费。\n要继续吗？"
+      "text" : "[Blacksmith Dister]\nThis Armor has been refined to {0}. To refine it, I need ^ff9999Blessed Armor Ore^000000 and a 20000 zeny refining fee.\nDo you want to proceed?",
+      "translation" : "[铁匠 迪斯特]\n这件防具已经精炼到{0}。继续精炼需要^ff9999受祝福的防具矿石^000000和20000 Zeny手续费。\n要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "placeholders" : [
+        ".@equip_refine",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nThis Armor has been refined to {0}. To refine it, I need ^ff9999Blessed Armor Ore^000000 and a {1} zeny refining fee.\nDo you want to proceed?",
+      "translation" : "[铁匠 迪斯特]\n这件防具已经精炼到{0}。继续精炼需要^ff9999受祝福的防具矿石^000000和{1} Zeny手续费。\n要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "placeholders" : [
+        ".@equip_refine"
+      ],
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nThis Weapon has been refined to {0}. To refine it, I need ^ff9999Blessed Weapon Ore^000000 and a 40000 zeny refining fee.\nDo you want to proceed?",
+      "translation" : "[铁匠 迪斯特]\n这件武器已经精炼到{0}。继续精炼需要^ff9999受祝福的武器矿石^000000和40000 Zeny手续费。\n要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "placeholders" : [
+        ".@equip_refine",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nThis Weapon has been refined to {0}. To refine it, I need ^ff9999Blessed Weapon Ore^000000 and a {1} zeny refining fee.\nDo you want to proceed?",
+      "translation" : "[铁匠 迪斯特]\n这件武器已经精炼到{0}。继续精炼需要^ff9999受祝福的武器矿石^000000和{1} Zeny手续费。\n要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "placeholders" : [
+        ".@equip_refine"
+      ],
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nThis Weapon has been refined to {0}. To refine it, I need ^ff9999Blessed Weapon Ore^000000 and a 20000 zeny refining fee.\nDo you want to proceed?",
+      "translation" : "[铁匠 迪斯特]\n这件武器已经精炼到{0}。继续精炼需要^ff9999受祝福的武器矿石^000000和20000 Zeny手续费。\n要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "placeholders" : [
+        ".@equip_refine"
+      ],
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nThis Weapon has been refined to {0}. To refine it, I need ^ff9999Blessed Weapon Ore^000000 and a 2000 zeny refining fee.\nDo you want to proceed?",
+      "translation" : "[铁匠 迪斯特]\n这件武器已经精炼到{0}。继续精炼需要^ff9999受祝福的武器矿石^000000和2000 Zeny手续费。\n要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "placeholders" : [
+        ".@equip_refine"
+      ],
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nThis Weapon has been refined to {0}. To refine it, I need ^ff9999Blessed Weapon Ore^000000 and a 1000 zeny refining fee.\nDo you want to proceed?",
+      "translation" : "[铁匠 迪斯特]\n这件武器已经精炼到{0}。继续精炼需要^ff9999受祝福的武器矿石^000000和1000 Zeny手续费。\n要继续吗？"
     },
     {
       "kind" : "option",
@@ -139,13 +198,16 @@
     {
       "kind" : "message",
       "line" : 134,
-      "placeholders" : [
-        ".@type$",
-        ".@ore$"
-      ],
       "state" : "translated",
-      "text" : "[Blacksmith Dister]\nThis {0} has been refined many times. Although it will not disappear upon failure, the {1} will disappear!",
-      "translation" : "[铁匠 迪斯特]\n{0}已经精炼过不少次了，虽然失败不会损毁装备，但{1}还是会消耗掉！"
+      "text" : "[Blacksmith Dister]\nThis Armor has been refined many times. Although it will not disappear upon failure, the ^ff9999Blessed Armor Ore^000000 will disappear!",
+      "translation" : "[铁匠 迪斯特]\n这件防具已经精炼过多次。虽然失败时装备不会消失，但^ff9999受祝福的防具矿石^000000会消失！"
+    },
+    {
+      "kind" : "message",
+      "line" : 134,
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nThis Weapon has been refined many times. Although it will not disappear upon failure, the ^ff9999Blessed Weapon Ore^000000 will disappear!",
+      "translation" : "[铁匠 迪斯特]\n这件武器已经精炼过多次。虽然失败时装备不会消失，但^ff9999受祝福的武器矿石^000000会消失！"
     },
     {
       "kind" : "message",
@@ -179,14 +241,73 @@
       "kind" : "message",
       "line" : 147,
       "placeholders" : [
-        ".@equip_lv",
-        ".@type$",
-        ".@ore$",
-        "callfunc(\"F_InsertComma\",.@price)"
+        ".@equip_lv"
       ],
       "state" : "translated",
-      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} {1}, I need {2} and a {3} zeny refining fee.",
-      "translation" : "[铁匠 迪斯特]\n材料不够。\n精炼等级{0}的{1}，需要{2}和{3} Zeny手续费。"
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Armor, I need ^ff9999Blessed Armor Ore^000000 and a 20000 zeny refining fee.",
+      "translation" : "[铁匠 迪斯特]\n材料不够。\n精炼等级为{0}的防具需要^ff9999受祝福的防具矿石^000000和20000 Zeny手续费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "placeholders" : [
+        ".@equip_lv",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Armor, I need ^ff9999Blessed Armor Ore^000000 and a {1} zeny refining fee.",
+      "translation" : "[铁匠 迪斯特]\n材料不够。\n精炼等级为{0}的防具需要^ff9999受祝福的防具矿石^000000和{1} Zeny手续费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "placeholders" : [
+        ".@equip_lv"
+      ],
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Weapon, I need ^ff9999Blessed Weapon Ore^000000 and a 40000 zeny refining fee.",
+      "translation" : "[铁匠 迪斯特]\n材料不够。\n精炼等级为{0}的武器需要^ff9999受祝福的武器矿石^000000和40000 Zeny手续费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "placeholders" : [
+        ".@equip_lv",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Weapon, I need ^ff9999Blessed Weapon Ore^000000 and a {1} zeny refining fee.",
+      "translation" : "[铁匠 迪斯特]\n材料不够。\n精炼等级为{0}的武器需要^ff9999受祝福的武器矿石^000000和{1} Zeny手续费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "placeholders" : [
+        ".@equip_lv"
+      ],
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Weapon, I need ^ff9999Blessed Weapon Ore^000000 and a 20000 zeny refining fee.",
+      "translation" : "[铁匠 迪斯特]\n材料不够。\n精炼等级为{0}的武器需要^ff9999受祝福的武器矿石^000000和20000 Zeny手续费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "placeholders" : [
+        ".@equip_lv"
+      ],
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Weapon, I need ^ff9999Blessed Weapon Ore^000000 and a 2000 zeny refining fee.",
+      "translation" : "[铁匠 迪斯特]\n材料不够。\n精炼等级为{0}的武器需要^ff9999受祝福的武器矿石^000000和2000 Zeny手续费。"
+    },
+    {
+      "kind" : "message",
+      "line" : 147,
+      "placeholders" : [
+        ".@equip_lv"
+      ],
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nMaterials insufficient.\nTo refine a level {0} Weapon, I need ^ff9999Blessed Weapon Ore^000000 and a 1000 zeny refining fee.",
+      "translation" : "[铁匠 迪斯特]\n材料不够。\n精炼等级为{0}的武器需要^ff9999受祝福的武器矿石^000000和1000 Zeny手续费。"
     },
     {
       "kind" : "message",
@@ -219,12 +340,16 @@
     {
       "kind" : "message",
       "line" : 179,
-      "placeholders" : [
-        ".@ore$"
-      ],
       "state" : "translated",
-      "text" : "[Blacksmith Dister]\nOh! Although it was blessed by {0} to retain the equipment...",
-      "translation" : "[铁匠 迪斯特]\n哎呀！多亏{0}的祝福，装备才保住了..."
+      "text" : "[Blacksmith Dister]\nOh! Although it was blessed by ^ff9999Blessed Armor Ore^000000 to retain the equipment...",
+      "translation" : "[铁匠 迪斯特]\n哎呀！虽然有^ff9999受祝福的防具矿石^000000保住装备……"
+    },
+    {
+      "kind" : "message",
+      "line" : 179,
+      "state" : "translated",
+      "text" : "[Blacksmith Dister]\nOh! Although it was blessed by ^ff9999Blessed Weapon Ore^000000 to retain the equipment...",
+      "translation" : "[铁匠 迪斯特]\n哎呀！虽然有^ff9999受祝福的武器矿石^000000保住装备……"
     },
     {
       "kind" : "message",

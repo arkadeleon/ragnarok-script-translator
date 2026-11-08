@@ -1,5 +1,4 @@
 {
-  "file" : "npc/jobs/2-1/knight.txt",
   "scripts" : [
     {
       "kind" : "message",
@@ -14,8 +13,19 @@
       "line" : 46,
       "npc" : "Chivalry Captain",
       "state" : "translated",
-      "text" : "[Captain Herman]\nAh, a member of our Chivalry.\nI hope you are living up to my expectations. We have vowed to be strong for our kingdom, even if death is upon us...",
-      "translation" : "[团长赫尔曼]\n啊，是我们骑士团的成员。\n希望你没有辜负我的期望。\n我们曾立誓，为王国坚强奋战，纵然死亡降临，也绝不退缩..."
+      "text" : "[Captain Herman]\nWelcome, this is\nthe Prontera Chivalry.\nWhat brings you here?",
+      "translation" : "[团长赫尔曼]\n欢迎，这里是普隆德拉骑士团。\n你来这里有什么事？"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Chivalry Captain",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Captain Herman]\nMmm?\nSwordman {0}.\nHow are the tests?\nAh~ You do not know\nwho to visit next?",
+      "translation" : "[团长赫尔曼]\n嗯？\n剑士{0}，考验进行得怎么样？\n啊~你不知道接下来该找谁？"
     },
     {
       "kind" : "message",
@@ -23,22 +33,6 @@
       "npc" : "Chivalry Captain",
       "state" : "translated",
       "text" : "[Captain Herman]\nWelcome,\nthis is the\nProntera Chivalry.\nWhat brings you here?",
-      "translation" : "[团长赫尔曼]\n欢迎，这里是普隆德拉骑士团。\n你来这里有什么事？"
-    },
-    {
-      "kind" : "message",
-      "line" : 46,
-      "npc" : "Chivalry Captain",
-      "state" : "translated",
-      "text" : "[Captain Herman]\nWelcome. We, the proud Knights of the Prontera Chivalry, will give our lives for king and country! Please enjoy your stay.",
-      "translation" : "[团长赫尔曼]\n欢迎。\n我们是引以为荣的普隆德拉骑士团，愿为国王与国家献出生命！\n请随意参观。"
-    },
-    {
-      "kind" : "message",
-      "line" : 46,
-      "npc" : "Chivalry Captain",
-      "state" : "translated",
-      "text" : "[Captain Herman]\nWelcome, this is\nthe Prontera Chivalry.\nWhat brings you here?",
       "translation" : "[团长赫尔曼]\n欢迎，这里是普隆德拉骑士团。\n你来这里有什么事？"
     },
     {
@@ -57,8 +51,35 @@
       "line" : 46,
       "npc" : "Chivalry Captain",
       "state" : "translated",
-      "text" : "[Captain Herman]",
-      "translation" : "[团长赫尔曼]"
+      "text" : "[Captain Herman]\nOh, have you completed all the tests? But not everyone who completes the tests can\nbecome a Knight.",
+      "translation" : "[团长赫尔曼]\n哦，所有考验都完成了？\n不过，并不是完成考验就一定能成为骑士。"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Chivalry Captain",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Captain Herman]\nMmm?\nSwordman {0}.\nHow are the tests?\nIt may be difficult,\nbut do your best.",
+      "translation" : "[团长赫尔曼]\n嗯？\n剑士{0}，考验进行得怎么样？\n虽然不容易，也要全力以赴。"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Chivalry Captain",
+      "state" : "translated",
+      "text" : "[Captain Herman]\nWelcome. We, the proud Knights of the Prontera Chivalry, will give our lives for king and country! Please enjoy your stay.",
+      "translation" : "[团长赫尔曼]\n欢迎。\n我们是引以为荣的普隆德拉骑士团，愿为国王与国家献出生命！\n请随意参观。"
+    },
+    {
+      "kind" : "message",
+      "line" : 46,
+      "npc" : "Chivalry Captain",
+      "state" : "translated",
+      "text" : "[Captain Herman]\nAh, a member of our Chivalry.\nI hope you are living up to my expectations. We have vowed to be strong for our kingdom, even if death is upon us...",
+      "translation" : "[团长赫尔曼]\n啊，是我们骑士团的成员。\n希望你没有辜负我的期望。\n我们曾立誓，为王国坚强奋战，纵然死亡降临，也绝不退缩..."
     },
     {
       "kind" : "message",
@@ -75,14 +96,6 @@
       "state" : "translated",
       "text" : "[Captain Herman]\nOh...!\nYou cannot change jobs if you have unused skill points remaining. Return once you have distributed all your skill points.",
       "translation" : "[团长赫尔曼]\n哦...！\n技能点还没用完，就不能转职。\n把技能点全部分配好，再回来吧。"
-    },
-    {
-      "kind" : "message",
-      "line" : 46,
-      "npc" : "Chivalry Captain",
-      "state" : "translated",
-      "text" : "[Captain Herman]\nOh, have you completed all the tests? But not everyone who completes the tests can\nbecome a Knight.",
-      "translation" : "[团长赫尔曼]\n哦，所有考验都完成了？\n不过，并不是完成考验就一定能成为骑士。"
     },
     {
       "kind" : "message",
@@ -120,12 +133,17 @@
       "kind" : "message",
       "line" : 68,
       "npc" : "Chivalry Captain",
-      "placeholders" : [
-        "((Sex==SEX_MALE)?\"lad\":\"lass\")"
-      ],
       "state" : "translated",
-      "text" : "[Captain Herman]\nA-ha~\nA Swordman, you say?\nI'm sorry, {0}, but you've\ncome to the wrong place!",
-      "translation" : "[团长赫尔曼]\n啊哈~\n你说，想当剑士？\n抱歉，{0}，你来错地方了！"
+      "text" : "[Captain Herman]\nA-ha~\nA Swordman, you say?\nI'm sorry, lad, but you've\ncome to the wrong place!",
+      "translation" : "[团长赫尔曼]\n啊哈~\n你说想当剑士？\n抱歉，你来错地方了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 68,
+      "npc" : "Chivalry Captain",
+      "state" : "translated",
+      "text" : "[Captain Herman]\nA-ha~\nA Swordman, you say?\nI'm sorry, lass, but you've\ncome to the wrong place!",
+      "translation" : "[团长赫尔曼]\n啊哈~\n你说想当剑士？\n抱歉，你来错地方了！"
     },
     {
       "kind" : "message",
@@ -160,14 +178,6 @@
       "translation" : "[团长赫尔曼]\n啊哈~\n看来你挺闲的。\n与其漫无目的地闲逛，不如去讨伐些魔物？"
     },
     {
-      "kind" : "message",
-      "line" : 98,
-      "npc" : "Chivalry Captain",
-      "state" : "translated",
-      "text" : "Welcome, this is\nthe Prontera Chivalry.\nWhat brings you here?",
-      "translation" : "欢迎，这里是普隆德拉骑士团。\n请问有什么事吗？"
-    },
-    {
       "kind" : "option",
       "line" : 102,
       "npc" : "Chivalry Captain",
@@ -187,12 +197,17 @@
       "kind" : "message",
       "line" : 103,
       "npc" : "Chivalry Captain",
-      "placeholders" : [
-        "((Sex==SEX_MALE)?\"man\":\"lady\")"
-      ],
       "state" : "translated",
-      "text" : "[Captain Herman]\nOhh...\nA young {0} who wishes\nto become a Knight!\nOur Prontera Chivalry\nwill assist you.",
-      "translation" : "[团长赫尔曼]\n哦...\n想当骑士的年轻{0}！\n我们普隆德拉骑士团会帮助你。"
+      "text" : "[Captain Herman]\nOhh...\nA young man who wishes\nto become a Knight!\nOur Prontera Chivalry\nwill assist you.",
+      "translation" : "[团长赫尔曼]\n哦...\n想成为骑士的年轻人！\n我们普隆德拉骑士团会帮助你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 103,
+      "npc" : "Chivalry Captain",
+      "state" : "translated",
+      "text" : "[Captain Herman]\nOhh...\nA young lady who wishes\nto become a Knight!\nOur Prontera Chivalry\nwill assist you.",
+      "translation" : "[团长赫尔曼]\n哦...\n想成为骑士的年轻人！\n我们普隆德拉骑士团会帮助你。"
     },
     {
       "kind" : "message",
@@ -246,20 +261,20 @@
       "kind" : "message",
       "line" : 124,
       "npc" : "Chivalry Captain",
-      "state" : "translated",
-      "text" : "[Captain Herman]\nAh...!\nYou cannot change jobs if you have unused skill points remaining. Return when you have used\nall of your skill points.",
-      "translation" : "[团长赫尔曼]\n啊...！\n技能点还没用完，就不能转职。\n把技能点全部用完再回来。"
-    },
-    {
-      "kind" : "message",
-      "line" : 124,
-      "npc" : "Chivalry Captain",
       "placeholders" : [
         "strcharinfo(0)"
       ],
       "state" : "translated",
       "text" : "[Captain Herman]\nLet me see...\nYour name is\n{0}...\nIs that right?",
       "translation" : "[团长赫尔曼]\n让我看看...\n你的名字是{0}...对吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Chivalry Captain",
+      "state" : "translated",
+      "text" : "[Captain Herman]\nAh...!\nYou cannot change jobs if you have unused skill points remaining. Return when you have used\nall of your skill points.",
+      "translation" : "[团长赫尔曼]\n啊...！\n技能点还没用完，就不能转职。\n把技能点全部用完再回来。"
     },
     {
       "kind" : "message",
@@ -343,17 +358,6 @@
     },
     {
       "kind" : "message",
-      "line" : 183,
-      "npc" : "Chivalry Captain",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Mmm?\n{0},\nwhat can I do for you?\nAh, you don't know\nwho to visit?",
-      "translation" : "嗯？\n{0}，有什么需要帮忙的吗？\n啊，你不知道该找谁？"
-    },
-    {
-      "kind" : "message",
       "line" : 189,
       "npc" : "Chivalry Captain",
       "state" : "translated",
@@ -370,11 +374,11 @@
     },
     {
       "kind" : "message",
-      "line" : 201,
+      "line" : 200,
       "npc" : "Chivalry Captain",
       "state" : "translated",
-      "text" : "It appears that you have finished one test. Let's see. Sir Andrew, who must this Swordman visit next?",
-      "translation" : "看来你已经完成了一项考验。\n让我看看。\n安德鲁爵士，这位剑士接下来该找谁？"
+      "text" : "[Captain Herman]\nIt appears that you have finished one test. Let's see. Sir Andrew, who must this Swordman visit next?",
+      "translation" : "[团长赫尔曼]\n看来你已经完成了一项考验。让我看看。\n安德鲁爵士，这位剑士接下来该找谁？"
     },
     {
       "kind" : "message",
@@ -394,11 +398,11 @@
     },
     {
       "kind" : "message",
-      "line" : 217,
+      "line" : 216,
       "npc" : "Chivalry Captain",
       "state" : "translated",
-      "text" : "Let's see...\nYou've completed two tests.\nSir Siracuse, who must this Swordman visit next?",
-      "translation" : "让我看看...\n你已经完成两项考验了。\n西拉库斯爵士，这位剑士接下来该找谁？"
+      "text" : "[Captain Herman]\nLet's see...\nYou've completed two tests.\nSir Siracuse, who must this Swordman visit next?",
+      "translation" : "[团长赫尔曼]\n让我看看...\n你已经完成两项考验了。\n西拉库斯爵士，这位剑士接下来该找谁？"
     },
     {
       "kind" : "message",
@@ -418,11 +422,11 @@
     },
     {
       "kind" : "message",
-      "line" : 234,
+      "line" : 233,
       "npc" : "Chivalry Captain",
       "state" : "translated",
-      "text" : "Sir Windor...?\nWho must this\nSwordman visit\nnext?",
-      "translation" : "温莎爵士...？\n这位剑士接下来该找谁？"
+      "text" : "[Captain Herman]\nSir Windor...?\nWho must this\nSwordman visit\nnext?",
+      "translation" : "[团长赫尔曼]\n温莎爵士...？\n这位剑士接下来该找谁？"
     },
     {
       "kind" : "message",
@@ -458,11 +462,11 @@
     },
     {
       "kind" : "message",
-      "line" : 257,
+      "line" : 256,
       "npc" : "Chivalry Captain",
       "state" : "translated",
-      "text" : "Let's see...\nLady Amy, who\nmust this Swordman\nvisit next?",
-      "translation" : "让我看看...\n艾米女士，这位剑士接下来该找谁？"
+      "text" : "[Captain Herman]\nLet's see...\nLady Amy, who\nmust this Swordman\nvisit next?",
+      "translation" : "[团长赫尔曼]\n让我看看...\n艾米女士，这位剑士接下来该找谁？"
     },
     {
       "kind" : "message",
@@ -482,11 +486,11 @@
     },
     {
       "kind" : "message",
-      "line" : 278,
+      "line" : 277,
       "npc" : "Chivalry Captain",
       "state" : "translated",
-      "text" : "Don't you only have to visit one more person? The Knight in\ncharge of the final test\nis Sir Gray Prospheiro.",
-      "translation" : "你应该只剩一位考官没拜访了吧？\n最后一项考验，由格雷·普罗斯佩罗爵士负责。"
+      "text" : "[Captain Herman]\nDon't you only have to visit one more person? The Knight in\ncharge of the final test\nis Sir Gray Prospheiro.",
+      "translation" : "[团长赫尔曼]\n你应该只剩一位考官没拜访了吧？\n最后一项考验由格雷·普罗斯佩罗爵士负责。"
     },
     {
       "kind" : "message",
@@ -511,30 +515,6 @@
       "state" : "translated",
       "text" : "[Captain Herman]\nReturn to me\nafter you have\ncompleted the\nfinal test.",
       "translation" : "[团长赫尔曼]\n完成最后一项考验，再回来找我。"
-    },
-    {
-      "kind" : "message",
-      "line" : 300,
-      "npc" : "Chivalry Captain",
-      "state" : "translated",
-      "text" : "Finish the last test.\nOnce that is complete, all the Knights involved in your testing shall gather, and we will evaluate your performance.",
-      "translation" : "去完成最后一项考验吧。\n完成后，负责考验你的骑士们会齐聚一堂，评议你的表现。"
-    },
-    {
-      "kind" : "message",
-      "line" : 306,
-      "npc" : "Chivalry Captain",
-      "state" : "translated",
-      "text" : "Oh...!\nYou cannot change jobs if you have unused skill points remaining. Return once you have distributed all your skill points.",
-      "translation" : "哦...！\n技能点还没用完，就不能转职。\n把技能点全部分配好，再回来吧。"
-    },
-    {
-      "kind" : "message",
-      "line" : 310,
-      "npc" : "Chivalry Captain",
-      "state" : "translated",
-      "text" : "Oh, have you completed all the tests? But not everyone who completes the tests can\nbecome a Knight.",
-      "translation" : "哦，所有考验都完成了？\n不过，并不是完成考验就一定能成为骑士。"
     },
     {
       "kind" : "message",
@@ -565,19 +545,24 @@
       "line" : 325,
       "npc" : "Chivalry Captain",
       "state" : "translated",
-      "text" : "[Sir Andrew]\nWhat can I say?\nI approve!\nHaving lived as\na Swordsman up\nuntil now\nis enough.",
-      "translation" : "[安德鲁爵士]\n还有什么好说的？\n我赞成！\n能以剑士的身份一路走到现在，已经足够了。"
+      "text" : "[Sir Andrew]\nThis one has\ngathered items\nthat are troublesome\nto obtain. I approve!\nI believe he will continue to be loyal after becoming a Knight.",
+      "translation" : "[安德鲁爵士]\n这位收集齐了那些难以取得的物品。\n我赞成！\n我相信他成为骑士后仍会保持忠诚。"
     },
     {
       "kind" : "message",
       "line" : 325,
       "npc" : "Chivalry Captain",
-      "placeholders" : [
-        "((Sex==SEX_MALE)?\"\":\"s\")"
-      ],
       "state" : "translated",
-      "text" : "[Sir Andrew]\nThis one has\ngathered items\nthat are troublesome\nto obtain. I approve!\nI believe {0}he will continue to be loyal after becoming a Knight.",
-      "translation" : "[安德鲁爵士]\n这位收集齐了那些难以取得的物品。\n我赞成！\n我相信{0}成为骑士后仍会保持忠诚。"
+      "text" : "[Sir Andrew]\nThis one has\ngathered items\nthat are troublesome\nto obtain. I approve!\nI believe she will continue to be loyal after becoming a Knight.",
+      "translation" : "[安德鲁爵士]\n这位收集齐了那些难以取得的物品。\n我赞成！\n我相信她成为骑士后仍会保持忠诚。"
+    },
+    {
+      "kind" : "message",
+      "line" : 325,
+      "npc" : "Chivalry Captain",
+      "state" : "translated",
+      "text" : "[Sir Andrew]\nWhat can I say?\nI approve!\nHaving lived as\na Swordsman up\nuntil now\nis enough.",
+      "translation" : "[安德鲁爵士]\n还有什么好说的？\n我赞成！\n能以剑士的身份一路走到现在，已经足够了。"
     },
     {
       "kind" : "message",
@@ -672,16 +657,16 @@
       "line" : 394,
       "npc" : "Chivalry Captain",
       "state" : "translated",
-      "text" : "[Sir Edmond]\nHe seems a little rough, but something bright shines within him. With polish and refinement, his true value will shine forth\nas the sun.",
-      "translation" : "[埃德蒙爵士]\n他还有些粗糙，但内心已有光芒。\n经过磨炼与雕琢，他真正的价值必将如太阳般闪耀。"
+      "text" : "[Sir Edmond]\nIt's difficult to see, but there is a spiritual beauty within her. With polish and refinement, her true value will glow as resplendently\nas the moon.",
+      "translation" : "[埃德蒙爵士]\n虽然不易察觉，但她的心灵有着美好的光辉。\n经过磨炼与雕琢，她真正的价值必将如月亮般灿烂。"
     },
     {
       "kind" : "message",
       "line" : 394,
       "npc" : "Chivalry Captain",
       "state" : "translated",
-      "text" : "[Sir Edmond]\nIt's difficult to see, but there is a spiritual beauty within her. With polish and refinement, her true value will glow as resplendently\nas the moon.",
-      "translation" : "[埃德蒙爵士]\n虽然不易察觉，但她的心灵有着美好的光辉。\n经过磨炼与雕琢，她真正的价值必将如月亮般灿烂。"
+      "text" : "[Sir Edmond]\nHe seems a little rough, but something bright shines within him. With polish and refinement, his true value will shine forth\nas the sun.",
+      "translation" : "[埃德蒙爵士]\n他还有些粗糙，但内心已有光芒。\n经过磨炼与雕琢，他真正的价值必将如太阳般闪耀。"
     },
     {
       "kind" : "message",
@@ -695,12 +680,17 @@
       "kind" : "message",
       "line" : 409,
       "npc" : "Chivalry Captain",
-      "placeholders" : [
-        "((Sex==SEX_MALE)?\"gentleman\":\"lady\")"
-      ],
       "state" : "translated",
-      "text" : "[Gray]\nA young {0} coming here with the determination to become a Knight is enough...",
-      "translation" : "[格雷]\n一位年轻的{0}，怀着成为骑士的决心来到这里，这就足够了..."
+      "text" : "[Gray]\nA young gentleman coming here with the determination to become a Knight is enough...",
+      "translation" : "[格雷]\n一位年轻人怀着成为骑士的决心来到这里，这就足够了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 409,
+      "npc" : "Chivalry Captain",
+      "state" : "translated",
+      "text" : "[Gray]\nA young lady coming here with the determination to become a Knight is enough...",
+      "translation" : "[格雷]\n一位年轻人怀着成为骑士的决心来到这里，这就足够了..."
     },
     {
       "kind" : "message",
@@ -760,49 +750,11 @@
     },
     {
       "kind" : "message",
-      "line" : 453,
-      "npc" : "Chivalry Captain",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Mmm?\nSwordman {0}.\nHow are the tests?\nAh~ You do not know\nwho to visit next?",
-      "translation" : "嗯？\n剑士{0}，考验进行得怎么样？\n啊~你不知道接下来该找谁？"
-    },
-    {
-      "kind" : "message",
-      "line" : 453,
-      "npc" : "Chivalry Captain",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Mmm?\nSwordman {0}.\nHow are the tests?\nIt may be difficult,\nbut do your best.",
-      "translation" : "嗯？\n剑士{0}，考验进行得怎么样？\n虽然不容易，也要全力以赴。"
-    },
-    {
-      "kind" : "message",
       "line" : 460,
       "npc" : "Chivalry Captain",
       "state" : "translated",
       "text" : "[Captain Herman]",
       "translation" : "[团长赫尔曼]"
-    },
-    {
-      "kind" : "message",
-      "line" : 470,
-      "npc" : "Sir Andrew",
-      "state" : "translated",
-      "text" : "[Sir Andrew]\nYou must be\na member of\nthe Chivalry.\nHow are you doing?",
-      "translation" : "[安德鲁爵士]\n你一定是骑士团的成员。\n最近过得怎么样？"
-    },
-    {
-      "kind" : "message",
-      "line" : 470,
-      "npc" : "Sir Andrew",
-      "state" : "translated",
-      "text" : "[Sir Andrew]\nHey there,\nlittle Novice.\nWelcome to the\nProntera Chivalry.",
-      "translation" : "[安德鲁爵士]\n嘿，小初心者。\n欢迎来到普隆德拉骑士团。"
     },
     {
       "kind" : "message",
@@ -819,6 +771,22 @@
       "state" : "translated",
       "text" : "[Sir Andrew]\nGood day.\nMay I help you\nwith something?",
       "translation" : "[安德鲁爵士]\n日安。\n有什么需要帮忙的吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 470,
+      "npc" : "Sir Andrew",
+      "state" : "translated",
+      "text" : "[Sir Andrew]\nYou must be\na member of\nthe Chivalry.\nHow are you doing?",
+      "translation" : "[安德鲁爵士]\n你一定是骑士团的成员。\n最近过得怎么样？"
+    },
+    {
+      "kind" : "message",
+      "line" : 470,
+      "npc" : "Sir Andrew",
+      "state" : "translated",
+      "text" : "[Sir Andrew]\nHey there,\nlittle Novice.\nWelcome to the\nProntera Chivalry.",
+      "translation" : "[安德鲁爵士]\n嘿，小初心者。\n欢迎来到普隆德拉骑士团。"
     },
     {
       "kind" : "message",
@@ -1072,8 +1040,8 @@
       "line" : 674,
       "npc" : "Sir Siracuse",
       "state" : "translated",
-      "text" : "[Sir Siracuse]\nHey there!\nHow are you doing?\nThe Chivalry's been\ndoing pretty well.",
-      "translation" : "[西拉库斯爵士]\n嘿，你好吗？\n骑士团最近还不错。"
+      "text" : "[Sir Siracuse]\nOffense and defense.\nIs there a way to have both without compromising one or the other?",
+      "translation" : "[西拉库斯爵士]\n进攻与防守。\n怎样才能兼顾两者，不必顾此失彼呢？"
     },
     {
       "kind" : "message",
@@ -1088,8 +1056,8 @@
       "line" : 674,
       "npc" : "Sir Siracuse",
       "state" : "translated",
-      "text" : "[Sir Siracuse]\nOffense and defense.\nIs there a way to have both without compromising one or the other?",
-      "translation" : "[西拉库斯爵士]\n进攻与防守。\n怎样才能兼顾两者，不必顾此失彼呢？"
+      "text" : "[Sir Siracuse]\nHey there!\nHow are you doing?\nThe Chivalry's been\ndoing pretty well.",
+      "translation" : "[西拉库斯爵士]\n嘿，你好吗？\n骑士团最近还不错。"
     },
     {
       "kind" : "message",
@@ -1104,8 +1072,8 @@
       "line" : 674,
       "npc" : "Sir Siracuse",
       "state" : "translated",
-      "text" : "[Sir Siracuse]\nOh?\nDo you have\nsomething to\nask me?",
-      "translation" : "[西拉库斯爵士]\n哦？\n有什么想问我的吗？"
+      "text" : "[Sir Siracuse]\n[Sir Siracuse]\nA Knight must possess great strength, defense, speed, and the skill to wield a Two-Handed Sword. Which of the following weapons are not affected by the Two Hand Quicken skill?",
+      "translation" : "[西拉库斯爵士]\n[西拉库斯爵士]\n骑士要有强大的力量、防御与速度，也要熟练掌握双手剑。\n以下哪种武器不受双手剑攻击速度增加技能的影响？"
     },
     {
       "kind" : "message",
@@ -1120,8 +1088,8 @@
       "line" : 674,
       "npc" : "Sir Siracuse",
       "state" : "translated",
-      "text" : "[Sir Siracuse]\n[Sir Siracuse]\nA Knight must possess great strength, defense, speed, and the skill to wield a Two-Handed Sword. Which of the following weapons are not affected by the Two Hand Quicken skill?",
-      "translation" : "[西拉库斯爵士]\n[西拉库斯爵士]\n骑士要有强大的力量、防御与速度，也要熟练掌握双手剑。\n以下哪种武器不受双手剑攻击速度增加技能的影响？"
+      "text" : "[Sir Siracuse]\nOh?\nDo you have\nsomething to\nask me?",
+      "translation" : "[西拉库斯爵士]\n哦？\n有什么想问我的吗？"
     },
     {
       "kind" : "message",
@@ -1231,12 +1199,17 @@
       "kind" : "message",
       "line" : 749,
       "npc" : "Sir Siracuse",
-      "placeholders" : [
-        "((Sex==SEX_MALE)?\"guy\":\"girl\")"
-      ],
       "state" : "translated",
-      "text" : "[Sir Siracuse]\nOh, to become\na Knight? Come to\nthink of it, aren't\nyou the {0} that\njust applied?",
-      "translation" : "[西拉库斯爵士]\n哦，想当骑士？\n说起来，你不就是刚才申请的那个{0}吗？"
+      "text" : "[Sir Siracuse]\nOh, to become\na Knight? Come to\nthink of it, aren't\nyou the guy that\njust applied?",
+      "translation" : "[西拉库斯爵士]\n哦，想当骑士？\n说起来，你不就是刚才申请的那个年轻人吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 749,
+      "npc" : "Sir Siracuse",
+      "state" : "translated",
+      "text" : "[Sir Siracuse]\nOh, to become\na Knight? Come to\nthink of it, aren't\nyou the girl that\njust applied?",
+      "translation" : "[西拉库斯爵士]\n哦，想当骑士？\n说起来，你不就是刚才申请的那个年轻人吗？"
     },
     {
       "kind" : "message",
@@ -1934,39 +1907,7 @@
       "line" : 1066,
       "npc" : "Sir Windsor",
       "state" : "translated",
-      "text" : "[Sir Windsor]\nProtect.",
-      "translation" : "[温莎爵士]\n保护。"
-    },
-    {
-      "kind" : "message",
-      "line" : 1066,
-      "npc" : "Sir Windsor",
-      "state" : "translated",
-      "text" : "[Sir Windsor]\n...Go play\noutside.",
-      "translation" : "[温莎爵士]\n...去外面玩吧。"
-    },
-    {
-      "kind" : "message",
-      "line" : 1066,
-      "npc" : "Sir Windsor",
-      "state" : "translated",
-      "text" : "[Sir Windsor]\n...Hmpf.",
-      "translation" : "[温莎爵士]\n...哼。"
-    },
-    {
-      "kind" : "message",
-      "line" : 1066,
-      "npc" : "Sir Windsor",
-      "state" : "translated",
       "text" : "[Sir Windsor]\n...What?",
-      "translation" : "[温莎爵士]\n...什么？"
-    },
-    {
-      "kind" : "message",
-      "line" : 1066,
-      "npc" : "Sir Windsor",
-      "state" : "translated",
-      "text" : "[Sir Windsor]\n.....What?",
       "translation" : "[温莎爵士]\n...什么？"
     },
     {
@@ -1982,8 +1923,32 @@
       "line" : 1066,
       "npc" : "Sir Windsor",
       "state" : "translated",
-      "text" : "[Sir Windsor]\n...Talk to\nthe captain.",
-      "translation" : "[温莎爵士]\n...去找团长。"
+      "text" : "[Sir Windsor]\n.....What?",
+      "translation" : "[温莎爵士]\n...什么？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1066,
+      "npc" : "Sir Windsor",
+      "state" : "translated",
+      "text" : "[Sir Windsor]\nProtect.",
+      "translation" : "[温莎爵士]\n保护。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1066,
+      "npc" : "Sir Windsor",
+      "state" : "translated",
+      "text" : "[Sir Windsor]\n...Hmpf.",
+      "translation" : "[温莎爵士]\n...哼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1066,
+      "npc" : "Sir Windsor",
+      "state" : "translated",
+      "text" : "[Sir Windsor]\n...Go play\noutside.",
+      "translation" : "[温莎爵士]\n...去外面玩吧。"
     },
     {
       "kind" : "message",
@@ -1992,6 +1957,14 @@
       "state" : "translated",
       "text" : "[Sir Windsor]\n...You're\ndone here.",
       "translation" : "[温莎爵士]\n...这里的考验结束了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1066,
+      "npc" : "Sir Windsor",
+      "state" : "translated",
+      "text" : "[Sir Windsor]\n...Talk to\nthe captain.",
+      "translation" : "[温莎爵士]\n...去找团长。"
     },
     {
       "kind" : "option",
@@ -2042,6 +2015,38 @@
       "translation" : "[温莎爵士]\n..."
     },
     {
+      "kind" : "option",
+      "line" : 1109,
+      "npc" : "Sir Windsor",
+      "state" : "translated",
+      "text" : "I want to try again!",
+      "translation" : "我想再试一次！"
+    },
+    {
+      "kind" : "option",
+      "line" : 1109,
+      "npc" : "Sir Windsor",
+      "state" : "translated",
+      "text" : "...",
+      "translation" : "..."
+    },
+    {
+      "kind" : "option",
+      "line" : 1109,
+      "npc" : "Sir Windsor",
+      "state" : "translated",
+      "text" : "Sir Siracuse sent me to you.",
+      "translation" : "西拉库斯爵士让我来找您。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1109,
+      "npc" : "Sir Windsor",
+      "state" : "translated",
+      "text" : "Oh, nothing.",
+      "translation" : "哦，没什么"
+    },
+    {
       "kind" : "message",
       "line" : 1110,
       "npc" : "Sir Windsor",
@@ -2064,14 +2069,6 @@
       "state" : "translated",
       "text" : "[Sir Windsor]\n...Fine.",
       "translation" : "[温莎爵士]\n...好吧。"
-    },
-    {
-      "kind" : "message",
-      "line" : 1121,
-      "npc" : "Sir Windsor",
-      "state" : "translated",
-      "text" : "[Sir Windsor]\n...Follow me.",
-      "translation" : "[温莎爵士]\n...跟我来。"
     },
     {
       "kind" : "message",
@@ -2318,24 +2315,24 @@
       "line" : 1450,
       "npc" : "Lady Amy",
       "state" : "translated",
-      "text" : "[Lady Amy]\nOh...!\nI wonder, why\nhave you come\nto visit me?",
-      "translation" : "[艾米女士]\n哎呀...！\n怎么想到来看我呀？"
-    },
-    {
-      "kind" : "message",
-      "line" : 1450,
-      "npc" : "Lady Amy",
-      "state" : "translated",
-      "text" : "[Lady Amy]\nAww~\nWhat a cute\nlittle Novice!\nSoooooo cute!",
-      "translation" : "[艾米女士]\n哇~\n好可爱的小初心者！\n真是太可爱了！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1450,
-      "npc" : "Lady Amy",
-      "state" : "translated",
       "text" : "[Lady Amy]\nWelcome to\nthe Prontera Chivalry~",
       "translation" : "[艾米女士]\n欢迎来到普隆德拉骑士团~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1450,
+      "npc" : "Lady Amy",
+      "state" : "translated",
+      "text" : "[Lady Amy]\nHmmm?\nWhy did you\ncome to Amy?",
+      "translation" : "[艾米女士]\n嗯？\n找艾米有什么事呀？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1450,
+      "npc" : "Lady Amy",
+      "state" : "translated",
+      "text" : "[Lady Amy]\nOh...!\nI wonder, why\nhave you come\nto visit me?",
+      "translation" : "[艾米女士]\n哎呀...！\n怎么想到来看我呀？"
     },
     {
       "kind" : "message",
@@ -2350,8 +2347,8 @@
       "line" : 1450,
       "npc" : "Lady Amy",
       "state" : "translated",
-      "text" : "[Lady Amy]\nHmmm?\nWhy did you\ncome to Amy?",
-      "translation" : "[艾米女士]\n嗯？\n找艾米有什么事呀？"
+      "text" : "[Lady Amy]\nAww~\nWhat a cute\nlittle Novice!\nSoooooo cute!",
+      "translation" : "[艾米女士]\n哇~\n好可爱的小初心者！\n真是太可爱了！"
     },
     {
       "kind" : "message",
@@ -2982,16 +2979,16 @@
       "line" : 1717,
       "npc" : "Lady Amy",
       "state" : "translated",
-      "text" : "[Lady Amy]\nWell, it wasn't perfect,\nbut I think you know enough\nabout etiquette to be\na fine Knight.",
-      "translation" : "[艾米女士]\n嗯，虽然不是十全十美，但你已经懂得足够的礼仪，能成为出色的骑士了。"
+      "text" : "[Lady Amy]\nMmm...\nTo be honest, I don't think your attitude is good enough to be a Knight quite yet.",
+      "translation" : "[艾米女士]\n嗯...\n说实话，你现在的态度，还不太适合当骑士。"
     },
     {
       "kind" : "message",
       "line" : 1717,
       "npc" : "Lady Amy",
       "state" : "translated",
-      "text" : "[Lady Amy]\nMmm...\nTo be honest, I don't think your attitude is good enough to be a Knight quite yet.",
-      "translation" : "[艾米女士]\n嗯...\n说实话，你现在的态度，还不太适合当骑士。"
+      "text" : "[Lady Amy]\nWell, it wasn't perfect,\nbut I think you know enough\nabout etiquette to be\na fine Knight.",
+      "translation" : "[艾米女士]\n嗯，虽然不是十全十美，但你已经懂得足够的礼仪，能成为出色的骑士了。"
     },
     {
       "kind" : "message",
@@ -3054,32 +3051,8 @@
       "line" : 1792,
       "npc" : "Sir Edmond",
       "state" : "translated",
-      "text" : "[Sir Edmond]\nThink of your\nmind as if it were\nflowing water.",
-      "translation" : "[埃德蒙爵士]\n试着让心如流水。"
-    },
-    {
-      "kind" : "message",
-      "line" : 1792,
-      "npc" : "Sir Edmond",
-      "state" : "translated",
       "text" : "[Sir Edmond]\nTrees with deep roots don't sway with the wind. The fact that powerful skills must be built on strong basics is immutable...",
       "translation" : "[埃德蒙爵士]\n根深的树，不会随风摇摆。\n强大的技艺必须建立在牢固的基础上，这是不变的道理..."
-    },
-    {
-      "kind" : "message",
-      "line" : 1792,
-      "npc" : "Sir Edmond",
-      "state" : "translated",
-      "text" : "[Sir Edmond]\nEverything in this world exists in harmony. Living without disrupting this harmony is the right way to live...",
-      "translation" : "[埃德蒙爵士]\n世间万物和谐共存。\n顺应这份和谐，而不破坏它，才是正确的生存之道..."
-    },
-    {
-      "kind" : "message",
-      "line" : 1792,
-      "npc" : "Sir Edmond",
-      "state" : "translated",
-      "text" : "[Sir Edmond]\nThose with ominous thoughts will only dream such dreams. It's better to have no dreams at all than to have dreams of sadness and despair.",
-      "translation" : "[埃德蒙爵士]\n心怀不祥之念，梦中也只有不祥。\n与其梦见悲伤和绝望，不如无梦。"
     },
     {
       "kind" : "message",
@@ -3094,8 +3067,32 @@
       "line" : 1792,
       "npc" : "Sir Edmond",
       "state" : "translated",
+      "text" : "[Sir Edmond]\nThink of your\nmind as if it were\nflowing water.",
+      "translation" : "[埃德蒙爵士]\n试着让心如流水。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1792,
+      "npc" : "Sir Edmond",
+      "state" : "translated",
       "text" : "[Sir Edmond]\nWhat is it...\nWandering Swordman.",
       "translation" : "[埃德蒙爵士]\n有什么事吗...\n流浪的剑士。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1792,
+      "npc" : "Sir Edmond",
+      "state" : "translated",
+      "text" : "[Sir Edmond]\nThose with ominous thoughts will only dream such dreams. It's better to have no dreams at all than to have dreams of sadness and despair.",
+      "translation" : "[埃德蒙爵士]\n心怀不祥之念，梦中也只有不祥。\n与其梦见悲伤和绝望，不如无梦。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1792,
+      "npc" : "Sir Edmond",
+      "state" : "translated",
+      "text" : "[Sir Edmond]\nEverything in this world exists in harmony. Living without disrupting this harmony is the right way to live...",
+      "translation" : "[埃德蒙爵士]\n世间万物和谐共存。\n顺应这份和谐，而不破坏它，才是正确的生存之道..."
     },
     {
       "kind" : "message",
@@ -3318,14 +3315,6 @@
       "line" : 2007,
       "npc" : "Sir Gray",
       "state" : "translated",
-      "text" : "[Sir Gray]\nBelieve it\nor not, I was\nonce a Novice\nas well.",
-      "translation" : "[格雷爵士]\n信不信由你，我也曾是初心者。"
-    },
-    {
-      "kind" : "message",
-      "line" : 2007,
-      "npc" : "Sir Gray",
-      "state" : "translated",
       "text" : "[Sir Gray]\nYoung one,\nuse your time\nwisely.",
       "translation" : "[格雷爵士]\n年轻人，要善用时间。"
     },
@@ -3334,48 +3323,8 @@
       "line" : 2007,
       "npc" : "Sir Gray",
       "state" : "translated",
-      "text" : "[Sir Gray]\nOh...\nA young Swordman.\nYes, what can\nI do for you?",
+      "text" : "[Sir Gray]\nOh...\nA young Swordman.\nWhat can I do for you?",
       "translation" : "[格雷爵士]\n哦...\n年轻的剑士。\n有什么需要帮忙的吗？"
-    },
-    {
-      "kind" : "message",
-      "line" : 2007,
-      "npc" : "Sir Gray",
-      "state" : "translated",
-      "text" : "[Sir Gray]\nAh, you again.\nWhat brings you\nto me?",
-      "translation" : "[格雷爵士]\n啊，又是你。\n有什么事？"
-    },
-    {
-      "kind" : "message",
-      "line" : 2007,
-      "npc" : "Sir Gray",
-      "state" : "translated",
-      "text" : "[Sir Gray]\n[Sir Gray]\nTo become stronger, you say?\nYes, Knights are indeed strong.\nBut why gain strength?",
-      "translation" : "[格雷爵士]\n[格雷爵士]\n想变得更强，是吗？\n没错，骑士确实强大。\n但你为什么要追求力量？"
-    },
-    {
-      "kind" : "message",
-      "line" : 2007,
-      "npc" : "Sir Gray",
-      "state" : "translated",
-      "text" : "[Sir Gray]\n[Sir Gray]\nAh, to help your guild, or maybe even your party. Our wise and benevolent King Tristram the 3rd gave us these golden words...",
-      "translation" : "[格雷爵士]\n[格雷爵士]\n啊，为了帮助公会，也可能是队伍。\n英明仁慈的特里斯拉姆三世国王，曾赐予我们这样一句金玉良言..."
-    },
-    {
-      "kind" : "message",
-      "line" : 2007,
-      "npc" : "Sir Gray",
-      "state" : "translated",
-      "text" : "[Sir Gray]\n[Sir Gray]\nSatisfaction, you say.\nIt seems like you are\nalready a fine Swordman.\nIs there a particular reason you wish to be a Knight?",
-      "translation" : "[格雷爵士]\n[格雷爵士]\n为了满足自己，是吗？\n你似乎已经是个出色的剑士了。\n有什么特别的理由，让你想当骑士？"
-    },
-    {
-      "kind" : "message",
-      "line" : 2007,
-      "npc" : "Sir Gray",
-      "state" : "translated",
-      "text" : "[Sir Gray]\n[Sir Gray]\nI understand your thoughts,\nbut there are those who wish to\nbecome Knights without thinking.",
-      "translation" : "[格雷爵士]\n[格雷爵士]\n我理解你的想法。\n不过，有些人想当骑士，却从未认真想过原因。"
     },
     {
       "kind" : "message",
@@ -3390,8 +3339,48 @@
       "line" : 2007,
       "npc" : "Sir Gray",
       "state" : "translated",
-      "text" : "[Sir Gray]\nOh...\nA young Swordman.\nWhat can I do for you?",
+      "text" : "[Sir Gray]\nBelieve it\nor not, I was\nonce a Novice\nas well.",
+      "translation" : "[格雷爵士]\n信不信由你，我也曾是初心者。"
+    },
+    {
+      "kind" : "message",
+      "line" : 2007,
+      "npc" : "Sir Gray",
+      "state" : "translated",
+      "text" : "[Sir Gray]\n[Sir Gray]\nAh, to help your guild, or maybe even your party. Our wise and benevolent King Tristram the 3rd gave us these golden words...",
+      "translation" : "[格雷爵士]\n[格雷爵士]\n啊，为了帮助公会，也可能是队伍。\n英明仁慈的特里斯拉姆三世国王，曾赐予我们这样一句金玉良言..."
+    },
+    {
+      "kind" : "message",
+      "line" : 2007,
+      "npc" : "Sir Gray",
+      "state" : "translated",
+      "text" : "[Sir Gray]\nAh, you again.\nWhat brings you\nto me?",
+      "translation" : "[格雷爵士]\n啊，又是你。\n有什么事？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2007,
+      "npc" : "Sir Gray",
+      "state" : "translated",
+      "text" : "[Sir Gray]\nOh...\nA young Swordman.\nYes, what can\nI do for you?",
       "translation" : "[格雷爵士]\n哦...\n年轻的剑士。\n有什么需要帮忙的吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2007,
+      "npc" : "Sir Gray",
+      "state" : "translated",
+      "text" : "[Sir Gray]\n[Sir Gray]\nTo become stronger, you say?\nYes, Knights are indeed strong.\nBut why gain strength?",
+      "translation" : "[格雷爵士]\n[格雷爵士]\n想变得更强，是吗？\n没错，骑士确实强大。\n但你为什么要追求力量？"
+    },
+    {
+      "kind" : "message",
+      "line" : 2007,
+      "npc" : "Sir Gray",
+      "state" : "translated",
+      "text" : "[Sir Gray]\n[Sir Gray]\nSatisfaction, you say.\nIt seems like you are\nalready a fine Swordman.\nIs there a particular reason you wish to be a Knight?",
+      "translation" : "[格雷爵士]\n[格雷爵士]\n为了满足自己，是吗？\n你似乎已经是个出色的剑士了。\n有什么特别的理由，让你想当骑士？"
     },
     {
       "kind" : "message",
@@ -3528,14 +3517,6 @@
       "state" : "translated",
       "text" : "[Sir Gray]\nI never really planned to become a Knight, but I did decide to become a strong person. Somehow, along my journeys, I ended up joining the Prontera Chivalry. Ha ha ha!",
       "translation" : "[格雷爵士]\n我原本没打算当骑士，只是想成为强者。\n不知不觉，旅途中就加入了普隆德拉骑士团。\n哈哈哈哈！"
-    },
-    {
-      "kind" : "message",
-      "line" : 2099,
-      "npc" : "Sir Gray",
-      "state" : "translated",
-      "text" : "Young one,\nuse your time\nwisely.",
-      "translation" : "年轻人，要善用时间。"
     },
     {
       "kind" : "message",
@@ -4069,12 +4050,17 @@
       "kind" : "message",
       "line" : 2358,
       "npc" : "Sir Gray",
-      "placeholders" : [
-        "((Sex==SEX_MALE)?\"her\":\"him\")"
-      ],
       "state" : "translated",
-      "text" : "[Sir Gray]\nOh, youth!\nBecoming a Knight\nfor your beloved!\nAlways protect {0}...\nEven at the sacrifice\nof your own life!",
-      "translation" : "[格雷爵士]\n哦，青春啊！\n为了挚爱成为骑士！\n要始终保护{0}...\n哪怕牺牲自己的生命！"
+      "text" : "[Sir Gray]\nOh, youth!\nBecoming a Knight\nfor your beloved!\nAlways protect her...\nEven at the sacrifice\nof your own life!",
+      "translation" : "[格雷爵士]\n哦，青春啊！\n为了挚爱成为骑士！\n要始终保护她...\n哪怕牺牲自己的生命！"
+    },
+    {
+      "kind" : "message",
+      "line" : 2358,
+      "npc" : "Sir Gray",
+      "state" : "translated",
+      "text" : "[Sir Gray]\nOh, youth!\nBecoming a Knight\nfor your beloved!\nAlways protect him...\nEven at the sacrifice\nof your own life!",
+      "translation" : "[格雷爵士]\n哦，青春啊！\n为了挚爱成为骑士！\n要始终保护他...\n哪怕牺牲自己的生命！"
     },
     {
       "kind" : "message",
@@ -4250,7 +4236,7 @@
       "npc" : "Sir Gray",
       "state" : "translated",
       "text" : "Oh, nothing.",
-      "translation" : "哦，没什么"
+      "translation" : "哦，没什么。"
     },
     {
       "kind" : "message",

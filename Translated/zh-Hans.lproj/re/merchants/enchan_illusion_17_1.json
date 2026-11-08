@@ -21,7 +21,7 @@
       ],
       "state" : "translated",
       "text" : "[Grace Operator]\nHello.\nWe have ^4d4dffGrace^000000 equipment that can be exchanged for {0}.\nI will guide you to exchange items according to your job.",
-      "translation" : "[格蕾丝操作员]\n你好，这里可以用{0}兑换^4d4dff恩典^000000装备。\n我会根据你的职业，协助你兑换合适的物品。"
+      "translation" : "[格蕾丝操作员]\n你好。这里有^4d4dff格蕾丝^000000装备，可用{0}兑换。\n我会根据你的职业，协助你兑换物品。"
     },
     {
       "kind" : "message",
@@ -219,8 +219,8 @@
         "mesitemlink( 25723 )"
       ],
       "state" : "translated",
-      "text" : "[Rebellion]\nDo you want an Armor Modification Module? It's 30 {0} and 5 {1}.\nYour bag is full. Please make some room first.",
-      "translation" : "[反叛者]\n要兑换防具改造模块吗？\n需要30个{0}和5个{1}。\n你的背包满了，先腾点空间吧。"
+      "text" : "[Rebellion]\nDo you want an Armor Modification Module? It's 30 {0} and 5 {1}.\nThe kind you get is randomly decided.",
+      "translation" : "[反叛者]\n要兑换防具改造模块吗？\n需要30个{0}和5个{1}，模块种类随机。"
     },
     {
       "kind" : "message",
@@ -231,8 +231,8 @@
         "mesitemlink( 25723 )"
       ],
       "state" : "translated",
-      "text" : "[Rebellion]\nDo you want an Armor Modification Module? It's 30 {0} and 5 {1}.\nThe kind you get is randomly decided.",
-      "translation" : "[反叛者]\n要兑换防具改造模块吗？\n需要30个{0}和5个{1}，模块种类随机。"
+      "text" : "[Rebellion]\nDo you want an Armor Modification Module? It's 30 {0} and 5 {1}.\nYour bag is full. Please make some room first.",
+      "translation" : "[反叛者]\n要兑换防具改造模块吗？\n需要30个{0}和5个{1}。\n你的背包满了，先腾点空间吧。"
     },
     {
       "kind" : "option",
@@ -688,106 +688,20 @@
       "translation" : "[RS26]\n到此为止。"
     },
     {
+      "kind" : "option",
+      "line" : 495,
+      "npc" : "RS26",
+      "state" : "translated",
+      "text" : "Cancel.",
+      "translation" : "取消"
+    },
+    {
       "kind" : "message",
       "line" : 498,
       "npc" : "RS26",
       "state" : "translated",
       "text" : "[RS26]\nI'm stopping here.",
       "translation" : "[RS26]\n到此为止。"
-    },
-    {
-      "kind" : "message",
-      "line" : 511,
-      "npc" : "RS26",
-      "state" : "translated",
-      "text" : "[RS26]\nThe equipment needs to be checked. That thing is not something this device can work with.",
-      "translation" : "[RS26]\n请检查装备，本设备无法处理该物品。"
-    },
-    {
-      "kind" : "message",
-      "line" : 519,
-      "npc" : "RS26",
-      "state" : "translated",
-      "text" : "[RS26]\nThe module needs to be checked. This device cannot detect it.",
-      "translation" : "[RS26]\n请检查模块，本设备未检测到模块。"
-    },
-    {
-      "kind" : "message",
-      "line" : 523,
-      "npc" : "RS26",
-      "state" : "translated",
-      "text" : "[RS26]\nLooks like the equipment you're trying to strengthen is already at it's limit.",
-      "translation" : "[RS26]\n看来您试图强化的装备已经达到了上限。"
-    },
-    {
-      "kind" : "message",
-      "line" : 527,
-      "npc" : "RS26",
-      "state" : "translated",
-      "text" : "[RS26]\nYou need to have a module that matches the efficacy to proceed with enhancement.",
-      "translation" : "[RS26]\n需要持有效果对应的模块，才能继续强化。"
-    },
-    {
-      "kind" : "message",
-      "line" : 531,
-      "npc" : "RS26",
-      "placeholders" : [
-        ".@s$[1]",
-        "(atoi(.@s$[1]) > 1 ? \"times\":\"time\")"
-      ],
-      "state" : "translated",
-      "text" : "[RS26]\nThe capabilities of this module can be enchanted up to {0} {1}. It seems that the module threshold is already at it's limit.",
-      "translation" : "[RS26]\n该模块的附魔上限为{0} {1}。\n目前似乎已达到上限。"
-    },
-    {
-      "kind" : "message",
-      "line" : 538,
-      "npc" : "RS26",
-      "placeholders" : [
-        "getitemname(.@equip_id)",
-        ".@item_name$",
-        ".@s$[2]",
-        "(atoi(.@s$[2]) > 1 ? \"times\":\"time\")",
-        ".@s$[1]"
-      ],
-      "state" : "translated",
-      "text" : "[RS26]\n^0000FFYou have selected {0} {1}^000000\n------------------\nThe selected module can be enchanted up to ^0000FF{2} {3}^000000 on the equipment. This equipment is currently enchanted with this module by ^0000FF{4}.\nDo you want to proceed?",
-      "translation" : "[RS26]\n^0000FF您已选择{0} {1}^000000\n------------------\n该模块在装备上的附魔上限为^0000FF{2} {3}^000000，目前已附魔^0000FF{4}。\n是否继续？"
-    },
-    {
-      "kind" : "option",
-      "line" : 544,
-      "npc" : "RS26",
-      "state" : "translated",
-      "text" : "I'll think about it more...",
-      "translation" : "我再考虑一下..."
-    },
-    {
-      "kind" : "option",
-      "line" : 544,
-      "npc" : "RS26",
-      "state" : "translated",
-      "text" : "Let's proceed.",
-      "translation" : "继续"
-    },
-    {
-      "kind" : "message",
-      "line" : 545,
-      "npc" : "RS26",
-      "state" : "translated",
-      "text" : "[RS26]\nThen, please visit me again when you need my help~",
-      "translation" : "[RS26]\n那么，当您再次需要帮助时，请随时来找我~"
-    },
-    {
-      "kind" : "message",
-      "line" : 562,
-      "npc" : "RS26",
-      "placeholders" : [
-        ".@augment_slot"
-      ],
-      "state" : "translated",
-      "text" : "[RS26]\nAttempting to upgrade the slot ^990000{0}^000000 of the equipment.",
-      "translation" : "[RS26]\n正在尝试强化装备的第^990000{0}^000000个插槽。"
     }
   ]
 }

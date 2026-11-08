@@ -1,5 +1,4 @@
 {
-  "file" : "npc/re/merchants/refine.txt",
   "scripts" : [
     {
       "kind" : "message",
@@ -11,10 +10,293 @@
     },
     {
       "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nI am the best Armsmith ever!\nI don't refine normal, boring items.\nI only refine items that are Level 10 or higher.",
+      "translation" : "[韦斯特里]\n我是有史以来最伟大的武器匠！\n我不精炼那些普通、乏味的物品。\n我只精炼+10或以上的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nAnyway, you may use my services if your item is Level 10 or higher.\nWhat do you want me to refine?",
+      "translation" : "[韦斯特里]\n总之，如果你的物品是+10或以上，就可以使用我的服务。\n你想让我精炼什么？"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "placeholders" : [
+        "getitemname(.@material)",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Vestri]\nHmm a weapon, is that ok?\nIf you want to refine this weapon,\nI will need 1 ^003366{0}^000000 and {1} zeny.\nAre you sure you want to continue?",
+      "translation" : "[韦斯特里]\n嗯，是武器啊？\n要精炼这把武器，需要1个^003366{0}^000000和{1} Zeny。\n确定要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "placeholders" : [
+        "getitemname(.@material)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Vestri]\nHmm a weapon, is that ok?\nIf you want to refine this weapon,\nI will need 1 ^003366{0}^000000 and {1} zeny.\nAre you sure you want to continue?",
+      "translation" : "[韦斯特里]\n嗯，是武器啊？\n要精炼这把武器，需要1个^003366{0}^000000和{1} Zeny。\n确定要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "placeholders" : [
+        "getitemname(.@material)",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Vestri]\nHmm an armor, is that ok?\nIf you want to refine this armor,\nI will need 1 ^003366{0}^000000 and {1} zeny.\nAre you sure you want to continue?",
+      "translation" : "[韦斯特里]\n嗯，是防具啊？\n要精炼这件防具，需要1个^003366{0}^000000和{1} Zeny。\n确定要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "placeholders" : [
+        "getitemname(.@material)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Vestri]\nHmm an armor, is that ok?\nIf you want to refine this armor,\nI will need 1 ^003366{0}^000000 and {1} zeny.\nAre you sure you want to continue?",
+      "translation" : "[韦斯特里]\n嗯，是防具啊？\n要精炼这件防具，需要1个^003366{0}^000000和{1} Zeny。\n确定要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nThis weapon already has been refined several times.\nIt could be destroyed if I try again.\nIt won't break for sure, but there is has a small chance.",
+      "translation" : "[韦斯特里]\n这把武器已经精炼过好几次了。\n再试的话可能会损坏。\n虽然不一定会坏，但还是有一定风险。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nThis armor already has been refined several times.\nIt could be destroyed if I try again.\nIt won't break for sure, but there is has a small chance.",
+      "translation" : "[韦斯特里]\n这件防具已经精炼过好几次了。\n再试的话可能会损坏。\n虽然不一定会坏，但还是有一定风险。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "Clang! Clang! Clang! Clang!",
+      "translation" : "铛！铛！铛！铛！"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nYou could be ^FF0000lowering the upgrade level^000000 of the weapon,\nor if it breaks, you will lose ^FF0000any cards^000000 or special properties added to it.",
+      "translation" : "[韦斯特里]\n武器的^FF0000精炼等级可能会下降^000000；\n如果精炼失败，^FF0000卡片^000000和附加的特殊属性也会一并消失。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nYou could be ^FF0000lowering the upgrade level^000000 of the armor,\nor if it breaks, you will lose ^FF0000any cards^000000 or special properties added to it.",
+      "translation" : "[韦斯特里]\n防具的^FF0000精炼等级可能会下降^000000；\n如果精炼失败，^FF0000卡片^000000和附加的特殊属性也会一并消失。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nClang! Clang! Clang!",
+      "translation" : "[韦斯特里]\n铛！铛！铛！"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nClang! Clang! Clang! Clang!",
+      "translation" : "[韦斯特里]\n铛！铛！铛！铛！"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nDo you still want me to refine it?\nI think I have given you enough warning.",
+      "translation" : "[韦斯特里]\n你还要我继续精炼吗？\n我想我已经给了你足够的警告。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nHmmm!",
+      "translation" : "[韦斯特里]\n嗯！"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nAhhh!!!",
+      "translation" : "[韦斯特里]\n啊！！！"
+    },
+    {
+      "kind" : "option",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "Yes.",
+      "translation" : "是的"
+    },
+    {
+      "kind" : "option",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "No.",
+      "translation" : "不"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nOh my! I've failed to refine stuff...\nI didn't mean it!\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be.",
+      "translation" : "[韦斯特里]\n哎呀，精炼失败了...我不是故意的！\n就算我是天下第一的武器匠，也难免失手。\n唉，天意如此。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nOh my god!\nThe upgrade level has dropped...\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be.",
+      "translation" : "[韦斯特里]\n天哪！精炼等级下降了...\n就算我是天下第一的武器匠，也难免失手。\n唉，天意如此。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nI don't think I can refine any items you have...",
+      "translation" : "[韦斯特里]\n我觉得你身上没有我可以精炼的物品..."
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nI don't think I can\nrefine this item at all...",
+      "translation" : "[韦斯特里]\n这件物品恐怕没法精炼..."
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nI said I don't work with items that are lower than Level 10.",
+      "translation" : "[韦斯特里]\n我说过，我不处理低于+10的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nYou're not wearing\nanything there that\nI can refine.",
+      "translation" : "[韦斯特里]\n你没穿戴可以精炼的装备。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nI can't refine this\nany more. This is as\nrefined as it gets!",
+      "translation" : "[韦斯特里]\n已经不能再精炼了，这是最高精炼等级！"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nHm... if you mind... never mind...",
+      "translation" : "[韦斯特里]\n嗯...如果你介意的话...算了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "placeholders" : [
+        "getitemname(.@material)"
+      ],
+      "state" : "translated",
+      "text" : "[Vestri]\nHm. You don't seem to have enough money or {0}.\nPlease come back when you have them.",
+      "translation" : "[韦斯特里]\n嗯，你的钱或{0}似乎不够。\n备齐之后再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nWait a second...\nDo you think I'm stupid?!\nYou switched the item while I wasn't looking! Get out of here!",
+      "translation" : "[韦斯特里]\n等一下...\n你觉得我傻吗？！\n趁我不注意你换了物品！给我滚出去！"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nGood! Succes!!!\nI am the best Armsmith.",
+      "translation" : "[韦斯特里]\n好！成功！！！\n我是最伟大的武器匠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nWell, no challenge is one way to go...\nNo risk... that could be wise.",
+      "translation" : "[韦斯特里]\n好吧，不冒险也是一种选择...\n求个稳妥，或许才明智。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Vestri",
+      "state" : "translated",
+      "text" : "[Vestri]\nI will do a better job next time! Don't worry!",
+      "translation" : "[韦斯特里]\n下次我会做得更好！别担心！"
+    },
+    {
+      "kind" : "message",
       "line" : 55,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI am the best Armsmith ever!\nI don't refine normal, boring items.\nI only refine items that are Level 10 or higher.",
@@ -25,7 +307,7 @@
       "line" : 60,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nAnyway, you may use my services if your item is Level 10 or higher.\nWhat do you want me to refine?",
@@ -36,7 +318,7 @@
       "line" : 74,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI don't think I can refine any items you have...",
@@ -47,7 +329,7 @@
       "line" : 81,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nYou're not wearing\nanything there that\nI can refine.",
@@ -58,7 +340,7 @@
       "line" : 89,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI don't think I can\nrefine this item at all...",
@@ -69,7 +351,7 @@
       "line" : 96,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI said I don't work with items that are lower than Level 10.",
@@ -80,7 +362,7 @@
       "line" : 101,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI can't refine this\nany more. This is as\nrefined as it gets!",
@@ -91,16 +373,52 @@
       "line" : 125,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$",
-        ".@article$",
-        ".@type$",
-        ".@type$",
+        "getarg(0)",
         "getitemname(.@material)",
-        "callfunc(\"F_InsertComma\",.@price)"
+        "getarg(0)"
       ],
       "state" : "translated",
-      "text" : "[{0}]\nHmm {1} {2}, is that ok?\nIf you want to refine this {3},\nI will need 1 ^003366{4}^000000 and {5} zeny.\nAre you sure you want to continue?",
-      "translation" : "[{0}]\n嗯，{1} {2}，没错吧？\n要精炼这件{3}，需要1个^003366{4}^000000和{5} Zeny。\n确定要继续吗？"
+      "text" : "[{0}]\nHmm a weapon, is that ok?\nIf you want to refine this weapon,\nI will need 1 ^003366{1}^000000 and {2} zeny.\nAre you sure you want to continue?",
+      "translation" : "[{0}]\n嗯，是武器啊？\n要精炼这把武器，需要1个^003366{1}^000000和{2} Zeny。\n确定要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "refinenew",
+      "placeholders" : [
+        "getarg(0)",
+        "getitemname(.@material)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[{0}]\nHmm a weapon, is that ok?\nIf you want to refine this weapon,\nI will need 1 ^003366{1}^000000 and {2} zeny.\nAre you sure you want to continue?",
+      "translation" : "[{0}]\n嗯，是武器啊？\n要精炼这把武器，需要1个^003366{1}^000000和{2} Zeny。\n确定要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "refinenew",
+      "placeholders" : [
+        "getarg(0)",
+        "getitemname(.@material)",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[{0}]\nHmm an armor, is that ok?\nIf you want to refine this armor,\nI will need 1 ^003366{1}^000000 and {2} zeny.\nAre you sure you want to continue?",
+      "translation" : "[{0}]\n嗯，是防具啊？\n要精炼这件防具，需要1个^003366{1}^000000和{2} Zeny。\n确定要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "refinenew",
+      "placeholders" : [
+        "getarg(0)",
+        "getitemname(.@material)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[{0}]\nHmm an armor, is that ok?\nIf you want to refine this armor,\nI will need 1 ^003366{1}^000000 and {2} zeny.\nAre you sure you want to continue?",
+      "translation" : "[{0}]\n嗯，是防具啊？\n要精炼这件防具，需要1个^003366{1}^000000和{2} Zeny。\n确定要继续吗？"
     },
     {
       "kind" : "option",
@@ -123,7 +441,7 @@
       "line" : 132,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nHm... if you mind... never mind...",
@@ -134,31 +452,51 @@
       "line" : 138,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$",
-        ".@type$"
+        "getarg(0)"
       ],
       "state" : "translated",
-      "text" : "[{0}]\nThis {1} already has been refined several times.\nIt could be destroyed if I try again.\nIt won't break for sure, but there is has a small chance.",
-      "translation" : "[{0}]\n这件{1}已经精炼过不少次了，再精炼有可能损坏。\n虽说不是一定会坏，但这点风险还是有的。"
+      "text" : "[{0}]\nThis weapon already has been refined several times.\nIt could be destroyed if I try again.\nIt won't break for sure, but there is has a small chance.",
+      "translation" : "[{0}]\n这把武器已经精炼过好几次了。\n再试的话可能会损坏。\n虽然不一定会坏，但还是有一定风险。"
+    },
+    {
+      "kind" : "message",
+      "line" : 138,
+      "npc" : "refinenew",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[{0}]\nThis armor already has been refined several times.\nIt could be destroyed if I try again.\nIt won't break for sure, but there is has a small chance.",
+      "translation" : "[{0}]\n这件防具已经精炼过好几次了。\n再试的话可能会损坏。\n虽然不一定会坏，但还是有一定风险。"
     },
     {
       "kind" : "message",
       "line" : 143,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$",
-        ".@type$"
+        "getarg(0)"
       ],
       "state" : "translated",
-      "text" : "[{0}]\nYou could be ^FF0000lowering the upgrade level^000000 of the {1},\nor if it breaks, you will lose ^FF0000any cards^000000 or special properties added to it.",
-      "translation" : "[{0}]\n{1}的^FF0000精炼等级可能下降^000000。\n一旦损坏，镶嵌的^FF0000所有卡片^000000以及附加的特殊属性也会一起消失。"
+      "text" : "[{0}]\nYou could be ^FF0000lowering the upgrade level^000000 of the weapon,\nor if it breaks, you will lose ^FF0000any cards^000000 or special properties added to it.",
+      "translation" : "[{0}]\n武器的^FF0000精炼等级可能会下降^000000；\n如果精炼失败，^FF0000卡片^000000和附加的特殊属性也会一并消失。"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "refinenew",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[{0}]\nYou could be ^FF0000lowering the upgrade level^000000 of the armor,\nor if it breaks, you will lose ^FF0000any cards^000000 or special properties added to it.",
+      "translation" : "[{0}]\n防具的^FF0000精炼等级可能会下降^000000；\n如果精炼失败，^FF0000卡片^000000和附加的特殊属性也会一并消失。"
     },
     {
       "kind" : "message",
       "line" : 147,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nDo you still want me to refine it?\nI think I have given you enough warning.",
@@ -185,7 +523,7 @@
       "line" : 152,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nWell, no challenge is one way to go...\nNo risk... that could be wise.",
@@ -196,7 +534,7 @@
       "line" : 159,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(0)",
         "getitemname(.@material)"
       ],
       "state" : "translated",
@@ -208,7 +546,7 @@
       "line" : 170,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nWait a second...\nDo you think I'm stupid?!\nYou switched the item while I wasn't looking! Get out of here!",
@@ -227,7 +565,7 @@
       "line" : 183,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nGood! Succes!!!\nI am the best Armsmith.",
@@ -238,7 +576,7 @@
       "line" : 189,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nClang! Clang! Clang! Clang!",
@@ -249,7 +587,7 @@
       "line" : 194,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nAhhh!!!",
@@ -260,7 +598,7 @@
       "line" : 197,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nOh my god!\nThe upgrade level has dropped...\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be.",
@@ -271,7 +609,7 @@
       "line" : 201,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nClang! Clang! Clang!",
@@ -282,7 +620,7 @@
       "line" : 206,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nHmmm!",
@@ -293,7 +631,7 @@
       "line" : 209,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nOh my! I've failed to refine stuff...\nI didn't mean it!\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be.",
@@ -304,7 +642,7 @@
       "line" : 216,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI will do a better job next time! Don't worry!",
@@ -315,7 +653,7 @@
       "line" : 223,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI can refine this to the safe limit or a desired number of times. It's your choice.",
@@ -350,7 +688,7 @@
       "line" : 234,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nHow many times would you like me to refine your item?",
@@ -361,7 +699,7 @@
       "line" : 240,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI can't refine this item that many times.",
@@ -372,7 +710,7 @@
       "line" : 246,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(0)",
         ".@refinecheck"
       ],
       "state" : "translated",
@@ -400,7 +738,7 @@
       "line" : 250,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nYou said so... So be it.",
@@ -411,7 +749,7 @@
       "line" : 257,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nYou said so... So be it.",
@@ -422,7 +760,7 @@
       "line" : 262,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(0)",
         ".@refinecnt",
         "getitemname(.@material)",
         ".@fullprice"
@@ -452,7 +790,7 @@
       "line" : 266,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nYou said so... So be it.",
@@ -463,7 +801,7 @@
       "line" : 271,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(0)",
         "getitemname(.@material)"
       ],
       "state" : "translated",
@@ -475,7 +813,7 @@
       "line" : 280,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nLook here... you don't have any items on...",
@@ -486,7 +824,7 @@
       "line" : 290,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nClang... No, but did you imagine I could be so stupid?!\nYou changed it...\nGet out before I stun you with my Hammer!!",
@@ -505,7 +843,7 @@
       "line" : 303,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nClang! Clang! Clang! Clang!",
@@ -516,7 +854,7 @@
       "line" : 308,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nAhhh!!!",
@@ -527,7 +865,7 @@
       "line" : 311,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nOh my god!\nThe upgrade level has dropped...\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be.",
@@ -538,7 +876,7 @@
       "line" : 315,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nClang! Clang! Clang!",
@@ -549,7 +887,7 @@
       "line" : 320,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nHmmm!",
@@ -560,7 +898,7 @@
       "line" : 323,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nOh my! I've failed to refine stuff...\nI didn't mean it!\nI could have made a mistake even though I am the best Armsmith ever.\nIt just wasn't meant to be.",
@@ -571,7 +909,7 @@
       "line" : 330,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI will do a better job next time! Don't worry!",
@@ -582,7 +920,7 @@
       "line" : 337,
       "npc" : "refinenew",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nGood! Succes!!!\nI am the best Blacksmith.",
@@ -648,20 +986,20 @@
       "kind" : "message",
       "line" : 380,
       "npc" : "Austri",
-      "state" : "translated",
-      "text" : "[Austri]\nRefining with Refined Bradium\ncan be a little expensive.\nI can exchange it for some Carnium.\nTake it and use it well.",
-      "translation" : "[奥斯特里]\n用精炼魔力之石来精炼，可能有点贵。\n我可以帮你换成混沌金属，拿去好好用吧。"
-    },
-    {
-      "kind" : "message",
-      "line" : 380,
-      "npc" : "Austri",
       "placeholders" : [
         "getitemname(.@i[2])"
       ],
       "state" : "translated",
       "text" : "[Austri]\nOk! Here's your {0}.\nTake it and use it well.",
       "translation" : "[奥斯特里]\n好的！这是你的{0}。\n拿去好好用吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 380,
+      "npc" : "Austri",
+      "state" : "translated",
+      "text" : "[Austri]\nRefining with Refined Bradium\ncan be a little expensive.\nI can exchange it for some Carnium.\nTake it and use it well.",
+      "translation" : "[奥斯特里]\n用精炼魔力之石来精炼，可能有点贵。\n我可以帮你换成混沌金属，拿去好好用吧。"
     },
     {
       "kind" : "message",
@@ -695,48 +1033,8 @@
       "line" : 416,
       "npc" : "Clink",
       "state" : "translated",
-      "text" : "[Clink]\nDad said. There's no cure for stupidity...",
-      "translation" : "[克林克]\n爸爸说了，笨是没药医的..."
-    },
-    {
-      "kind" : "message",
-      "line" : 416,
-      "npc" : "Clink",
-      "state" : "translated",
-      "text" : "[Clink]\nThere's nothing to see here!!",
-      "translation" : "[克林克]\n这里没什么好看的！！"
-    },
-    {
-      "kind" : "message",
-      "line" : 416,
-      "npc" : "Clink",
-      "state" : "translated",
-      "text" : "[Clink]\nWhat an arrogant left hand this is!",
-      "translation" : "[克林克]\n这只左手真傲慢！"
-    },
-    {
-      "kind" : "message",
-      "line" : 416,
-      "npc" : "Clink",
-      "state" : "translated",
-      "text" : "[Clink]\nWhat an arrogant right hand this is!",
-      "translation" : "[克林克]\n这只右手真傲慢！"
-    },
-    {
-      "kind" : "message",
-      "line" : 416,
-      "npc" : "Clink",
-      "state" : "translated",
-      "text" : "[Clink]\nGet that dirty thing off my face!!",
-      "translation" : "[克林克]\n把这个脏东西从我脸上弄走！！"
-    },
-    {
-      "kind" : "message",
-      "line" : 416,
-      "npc" : "Clink",
-      "state" : "translated",
-      "text" : "[Clink]\nKyaong~! Do not provoke me.",
-      "translation" : "[克林克]\n喵呜~！不要挑衅我。"
+      "text" : "[Clink]\nAre you talking about the other head part?",
+      "translation" : "[克林克]\n你说的是另一个头饰部位吗？"
     },
     {
       "kind" : "message",
@@ -751,8 +1049,48 @@
       "line" : 416,
       "npc" : "Clink",
       "state" : "translated",
-      "text" : "[Clink]\nAre you talking about the other head part?",
-      "translation" : "[克林克]\n你说的是另一个头饰部位吗？"
+      "text" : "[Clink]\nKyaong~! Do not provoke me.",
+      "translation" : "[克林克]\n喵呜~！不要挑衅我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "translated",
+      "text" : "[Clink]\nGet that dirty thing off my face!!",
+      "translation" : "[克林克]\n把这个脏东西从我脸上弄走！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "translated",
+      "text" : "[Clink]\nWhat an arrogant right hand this is!",
+      "translation" : "[克林克]\n这只右手真傲慢！"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "translated",
+      "text" : "[Clink]\nWhat an arrogant left hand this is!",
+      "translation" : "[克林克]\n这只左手真傲慢！"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "translated",
+      "text" : "[Clink]\nThere's nothing to see here!!",
+      "translation" : "[克林克]\n这里没什么好看的！！"
+    },
+    {
+      "kind" : "message",
+      "line" : 416,
+      "npc" : "Clink",
+      "state" : "translated",
+      "text" : "[Clink]\nDad said. There's no cure for stupidity...",
+      "translation" : "[克林克]\n爸爸说了，笨是没药医的..."
     },
     {
       "kind" : "message",
@@ -769,14 +1107,6 @@
       "state" : "translated",
       "text" : "[Clink]\nPerfect refining. Did I do this for you?",
       "translation" : "[克林克]\n完美精炼。这是我为你做的吗？"
-    },
-    {
-      "kind" : "message",
-      "line" : 464,
-      "npc" : "Clink",
-      "state" : "translated",
-      "text" : "[Clink]",
-      "translation" : "[克林克]"
     },
     {
       "kind" : "message",
@@ -799,20 +1129,8 @@
         ".@price"
       ],
       "state" : "translated",
-      "text" : "[Clink]\nA level 1 weapon?\nUrr... Annoying... Okay, let's try...\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?",
-      "translation" : "[克林克]\n一级武器？\n呃...真麻烦...好吧，试试看...\n需要^ff9999{0}^000000和^ff9999{1}^000000 Zeny，你有吗？"
-    },
-    {
-      "kind" : "message",
-      "line" : 464,
-      "npc" : "Clink",
-      "placeholders" : [
-        "getitemname(.@material)",
-        ".@price"
-      ],
-      "state" : "translated",
-      "text" : "[Clink]\nA level 2 weapon?\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?",
-      "translation" : "[克林克]\n二级武器？\n需要^ff9999{0}^000000和^ff9999{1}^000000 Zeny，你有吗？"
+      "text" : "[Clink]\nWow!... A level 4 weapon~!!\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?",
+      "translation" : "[克林克]\n哇！...四级武器~！！\n需要^ff9999{0}^000000和^ff9999{1}^000000 Zeny，你有吗？"
     },
     {
       "kind" : "message",
@@ -835,8 +1153,28 @@
         ".@price"
       ],
       "state" : "translated",
-      "text" : "[Clink]\nWow!... A level 4 weapon~!!\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?",
-      "translation" : "[克林克]\n哇！...四级武器~！！\n需要^ff9999{0}^000000和^ff9999{1}^000000 Zeny，你有吗？"
+      "text" : "[Clink]\nA level 2 weapon?\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?",
+      "translation" : "[克林克]\n二级武器？\n需要^ff9999{0}^000000和^ff9999{1}^000000 Zeny，你有吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "Clink",
+      "placeholders" : [
+        "getitemname(.@material)",
+        ".@price"
+      ],
+      "state" : "translated",
+      "text" : "[Clink]\nA level 1 weapon?\nUrr... Annoying... Okay, let's try...\nYou need ^ff9999{0}^000000 and ^ff9999{1}^000000 Zeny. Do you have them?",
+      "translation" : "[克林克]\n一级武器？\n呃...真麻烦...好吧，试试看...\n需要^ff9999{0}^000000和^ff9999{1}^000000 Zeny，你有吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 464,
+      "npc" : "Clink",
+      "state" : "translated",
+      "text" : "[Clink]",
+      "translation" : "[克林克]"
     },
     {
       "kind" : "option",
@@ -866,23 +1204,33 @@
       "kind" : "message",
       "line" : 511,
       "npc" : "Clink",
-      "placeholders" : [
-        ".@type$"
-      ],
       "state" : "translated",
-      "text" : "[Clink]\nWow!!\nThis {0} has been refined quite a bit, huh?\nYou do know that this might break, right?",
-      "translation" : "[克林克]\n哇！！\n这把{0}已经精炼得挺高了，是吧？\n你知道这可能会坏掉吗？"
+      "text" : "[Clink]\nWow!!\nThis armor has been refined quite a bit, huh?\nYou do know that this might break, right?",
+      "translation" : "[克林克]\n哇！！\n这件防具已经精炼过很多次了吧？\n你知道它可能会损坏吧？"
+    },
+    {
+      "kind" : "message",
+      "line" : 511,
+      "npc" : "Clink",
+      "state" : "translated",
+      "text" : "[Clink]\nWow!!\nThis weapon has been refined quite a bit, huh?\nYou do know that this might break, right?",
+      "translation" : "[克林克]\n哇！！\n这把武器已经精炼过很多次了吧？\n你知道它可能会损坏吧？"
     },
     {
       "kind" : "message",
       "line" : 516,
       "npc" : "Clink",
-      "placeholders" : [
-        ".@type$"
-      ],
       "state" : "translated",
-      "text" : "[Clink]\nIf you break the {0}, you can never use it again.\nCards and enchant effects...\nthe ^ff0000whole thing will disappear^000000.\nYou still up for this~?",
-      "translation" : "[克林克]\n{0}一旦损坏，就再也用不了了。\n连同卡片、附魔效果...^ff0000全部都会消失^000000。\n还要继续吗~？"
+      "text" : "[Clink]\nIf you break the armor, you can never use it again.\nCards and enchant effects...\nthe ^ff0000whole thing will disappear^000000.\nYou still up for this~?",
+      "translation" : "[克林克]\n防具一旦损坏，就再也不能使用了。\n卡片和附魔效果...\n^ff0000所有东西都会消失^000000。\n你还要继续吗~？"
+    },
+    {
+      "kind" : "message",
+      "line" : 516,
+      "npc" : "Clink",
+      "state" : "translated",
+      "text" : "[Clink]\nIf you break the weapon, you can never use it again.\nCards and enchant effects...\nthe ^ff0000whole thing will disappear^000000.\nYou still up for this~?",
+      "translation" : "[克林克]\n武器一旦损坏，就再也不能使用了。\n卡片和附魔效果...\n^ff0000所有东西都会消失^000000。\n你还要继续吗~？"
     },
     {
       "kind" : "option",

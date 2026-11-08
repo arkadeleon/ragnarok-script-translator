@@ -1,5 +1,4 @@
 {
-  "file" : "npc/re/guides/guides_morroc.txt",
   "scripts" : [
     {
       "kind" : "message",
@@ -8,6 +7,14 @@
       "state" : "translated",
       "text" : "[Morocc Guide]\nWelcome to ^8B4513Morocc^000000,\nthe Desert Town.\nDo you need help navigating the town?",
       "translation" : "[梦罗克向导]\n欢迎来到沙漠城镇^8B4513梦罗克^000000。\n需要我为您指引方向吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nWhen you click on the ^B9062F[location name]^000000, you'll receive the most advanced ^B9062FNavigation^000000 services!",
+      "translation" : "[梦罗克向导]\n点击^B9062F[地点名称]^000000即可享受最先进的^B9062F导航^000000服务！"
     },
     {
       "kind" : "option",
@@ -109,45 +116,113 @@
       "kind" : "message",
       "line" : 33,
       "npc" : "Guide",
-      "placeholders" : [
-        "F_Navi(\"Thief Guild\",\"morocc,26,294\",\"^B9062F\")"
-      ],
       "state" : "translated",
-      "text" : "[Morocc Guide]\nThe {0} is located\ninside the ^B9062FPyramids^000000\nthat is near the ^B9062FOasis^000000.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n{0}位于^B9062F金字塔^000000里面，就在^B9062F绿洲^000000附近。\n您还想查看其他地点吗？"
+      "text" : "[Morocc Guide]\nThe <NAVI>[Thief Guild]<INFO>morocc,26,294,0,000,0</INFO></NAVI> is located\ninside the ^B9062FPyramids^000000\nthat is near the ^B9062FOasis^000000.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n<NAVI>[盗贼公会]<INFO>morocc,26,294,0,000,0</INFO></NAVI>位于^B9062F绿洲^000000附近的^B9062F金字塔^000000内。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nThe ^B9062FThief Guild^000000 is located\ninside the ^B9062FPyramids^000000\nthat is near the ^B9062FOasis^000000.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n^B9062F盗贼公会^000000位于^B9062F绿洲^000000附近的^B9062F金字塔^000000内。\n还想查看其他地点吗？"
     },
     {
       "kind" : "message",
       "line" : 42,
       "npc" : "Guide",
-      "placeholders" : [
-        "F_Navi(\"Sphinx Dungeon\",\"morocc,26,164\",\"^0000FF\")"
-      ],
       "state" : "translated",
-      "text" : "[Morocc Guide]\nThe {0} is\nright outside the western gate.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n{0}就在西门外。\n您还想查看其他地点吗？"
+      "text" : "[Morocc Guide]\nThe <NAVI>[Sphinx Dungeon]<INFO>morocc,26,164,0,000,0</INFO></NAVI> is\nright outside the western gate.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n<NAVI>[斯芬克斯迷宫]<INFO>morocc,26,164,0,000,0</INFO></NAVI>就在西门外。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nThe ^0000FFSphinx Dungeon^000000 is\nright outside the western gate.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n^0000FF斯芬克斯迷宫^000000就在西门外。\n还想查看其他地点吗？"
     },
     {
       "kind" : "message",
       "line" : 50,
       "npc" : "Guide",
-      "placeholders" : [
-        "F_Navi(\"Oasis\",\"morocc,26,294\",\"^FF5400\")"
-      ],
       "state" : "translated",
-      "text" : "[Morocc Guide]\nLet me mark the entrance to the {0}\non your mini-map.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n我会在您的小地图上标记{0}的入口。\n您还想查看其他地点吗？"
+      "text" : "[Morocc Guide]\nLet me mark the entrance to the <NAVI>[Oasis]<INFO>morocc,26,294,0,000,0</INFO></NAVI>\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记<NAVI>[绿洲]<INFO>morocc,26,294,0,000,0</INFO></NAVI>的入口。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 50,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the entrance to the ^FF5400Oasis^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^FF5400绿洲^000000的入口。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 58,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n<NAVI>[Forge]<INFO>morocc,47,47,0,000,0</INFO></NAVI>\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记<NAVI>[锻造所]<INFO>morocc,47,47,0,000,0</INFO></NAVI>的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 58,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n^006400Forge^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^006400锻造所^000000的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n<NAVI>[Weapon & Armor Shop]<INFO>morocc,253,56,0,000,0</INFO></NAVI>\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记<NAVI>[武器防具店]<INFO>morocc,253,56,0,000,0</INFO></NAVI>的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n^7F3300Weapon & Armor Shop^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^7F3300武器防具店^000000的位置。\n还想查看其他地点吗？"
     },
     {
       "kind" : "message",
       "line" : 68,
       "npc" : "Guide",
-      "placeholders" : [
-        "F_Navi(\"Inn\",\"morocc,273,269\",\"^800080\")"
-      ],
       "state" : "translated",
-      "text" : "[Morocc Guide]\nCurrently the {0}\nhas been shut down until further notice,\nbut I'll mark its location\non your mini-map.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n{0}目前已关闭，开放时间另行通知。\n不过，我还是会在您的小地图上标出它的位置。\n您还想查看其他地点吗？"
+      "text" : "[Morocc Guide]\nCurrently the <NAVI>[Inn]<INFO>morocc,273,269,0,000,0</INFO></NAVI>\nhas been shut down until further notice,\nbut I'll mark its location\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n<NAVI>[旅馆]<INFO>morocc,273,269,0,000,0</INFO></NAVI>目前暂时停业，恢复营业时间另行通知。\n不过我可以先在小地图上标出位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 68,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nCurrently the ^800080Inn^000000\nhas been shut down until further notice,\nbut I'll mark its location\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n^800080旅馆^000000目前暂时停业，恢复营业时间另行通知。\n不过我可以先在小地图上标出位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n<NAVI>[Tavern]<INFO>morocc,52,259,0,000,0</INFO></NAVI>\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记<NAVI>[酒馆]<INFO>morocc,52,259,0,000,0</INFO></NAVI>的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 78,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n^B9062FTavern^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^B9062F酒馆^000000的位置。\n还想查看其他地点吗？"
     },
     {
       "kind" : "option",
@@ -191,25 +266,59 @@
     },
     {
       "kind" : "message",
+      "line" : 93,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n^0000FFKafra Employees^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^0000FF卡普拉职员^000000的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 99,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n<NAVI>[Poison Herb Salesman]<INFO>morocc,191,94,0,000,0</INFO></NAVI>\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记<NAVI>[毒草商人]<INFO>morocc,191,94,0,000,0</INFO></NAVI>的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 99,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n^006400Poison Herb Salesman^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^006400毒草商人^000000的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
       "line" : 104,
       "npc" : "Guide",
-      "placeholders" : [
-        "F_Navi(\"Dye Maker\",\"morocc,273,269\",\"^7F3300\")"
-      ],
       "state" : "translated",
-      "text" : "[Morocc Guide]\nThe {0} is\ncurrently staying\non the 1st floor of the Inn.\nLet me mark his location\non your mini-map.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n{0}目前在旅馆一楼。\n我会在您的小地图上标记他的位置。\n您还想查看其他地点吗？"
+      "text" : "[Morocc Guide]\nThe <NAVI>[Dye Maker]<INFO>morocc,273,269,0,000,0</INFO></NAVI> is\ncurrently staying\non the 1st floor of the Inn.\nLet me mark his location\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n<NAVI>[染色师]<INFO>morocc,273,269,0,000,0</INFO></NAVI>目前住在旅馆一楼。\n我来在小地图上标出他的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 104,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nThe ^7F3300Dye Maker^000000 is\ncurrently staying\non the 1st floor of the Inn.\nLet me mark his location\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n^7F3300染色师^000000目前住在旅馆一楼。\n我来在小地图上标出他的位置。\n还想查看其他地点吗？"
     },
     {
       "kind" : "message",
       "line" : 115,
       "npc" : "Guide",
-      "placeholders" : [
-        "F_Navi(\"Seiyablem\",\"morocc,51,41\",\"^800080\")"
-      ],
       "state" : "translated",
-      "text" : "[Morocc Guide]\n{0}\nis a technician\nwho can create ^0000FFslots^000000 on weapons and armors,\nbut not all equipment\ncan be slotted. Well, that's what he says.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n{0}是位技师，能在武器和防具上开出^0000FF插槽^000000。\n不过，并非所有装备都能开槽，至少他是这么说的。\n您还想查看其他地点吗？"
+      "text" : "[Morocc Guide]\n<NAVI>[Seiyablem]<INFO>morocc,51,41,0,000,0</INFO></NAVI>\nis a technician\nwho can create ^0000FFslots^000000 on weapons and armors,\nbut not all equipment\ncan be slotted. Well, that's what he says.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n<NAVI>[赛亚布雷姆]<INFO>morocc,51,41,0,000,0</INFO></NAVI>是一名技术人员，可以为武器和防具^0000FF开槽^000000。\n不过不是所有装备都能开槽。嗯，这是他自己说的。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 115,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\n^800080Seiyablem^000000\nis a technician\nwho can create ^0000FFslots^000000 on weapons and armors,\nbut not all equipment\ncan be slotted. Well, that's what he says.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n^800080赛亚布雷姆^000000是一名技术人员，可以为武器和防具^0000FF开槽^000000。\n不过不是所有装备都能开槽。嗯，这是他自己说的。\n还想查看其他地点吗？"
     },
     {
       "kind" : "message",
@@ -229,22 +338,19 @@
     },
     {
       "kind" : "message",
-      "line" : 159,
-      "npc" : "Guide",
-      "placeholders" : [
-        "getarg(0)"
-      ],
-      "state" : "translated",
-      "text" : "[Morocc Guide]\nLet me mark the location of the\n{0}\non your mini-map.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n我会在您的小地图上标记{0}的位置。\n您还想查看其他地点吗？"
-    },
-    {
-      "kind" : "message",
       "line" : 172,
       "npc" : "Guide",
       "state" : "translated",
       "text" : "[Morocc Guide]\nWelcome to ^8B4513Morocc^000000,\nthe Desert Town.\nDo you need help navigating the town?",
       "translation" : "[梦罗克向导]\n欢迎来到沙漠城镇^8B4513梦罗克^000000。\n需要我为您指引方向吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 176,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nWhen you click on the ^B9062F[location name]^000000, you'll receive the most advanced ^B9062FNavigation^000000 services!",
+      "translation" : "[梦罗克向导]\n点击^B9062F[地点名称]^000000即可享受最先进的^B9062F导航^000000服务！"
     },
     {
       "kind" : "option",
@@ -314,34 +420,49 @@
       "kind" : "message",
       "line" : 185,
       "npc" : "Guide",
-      "placeholders" : [
-        "F_Navi(\"Thief Guild\",\"moc_ruins,56,161\",\"^B9062F\")"
-      ],
       "state" : "translated",
-      "text" : "[Morocc Guide]\nThe {0} is located\ninside the ^B9062FPyramids^000000.\nLet me mark its location\non your mini-map.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n{0}位于^B9062F金字塔^000000内部。\n我会在您的小地图上标记它的位置。\n您还想查看其他地点吗？"
+      "text" : "[Morocc Guide]\nThe <NAVI>[Thief Guild]<INFO>moc_ruins,56,161,0,000,0</INFO></NAVI> is located\ninside the ^B9062FPyramids^000000.\nLet me mark its location\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n<NAVI>[盗贼公会]<INFO>moc_ruins,56,161,0,000,0</INFO></NAVI>位于^B9062F金字塔^000000内。\n我来在小地图上标记它的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nThe ^B9062FThief Guild^000000 is located\ninside the ^B9062FPyramids^000000.\nLet me mark its location\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n^B9062F盗贼公会^000000位于^B9062F金字塔^000000内。\n我来在小地图上标记它的位置。\n还想查看其他地点吗？"
     },
     {
       "kind" : "message",
       "line" : 195,
       "npc" : "Guide",
-      "placeholders" : [
-        "F_Navi(\"Sphinx Dungeon\",\"moc_ruins,71,19\",\"^0000FF\")"
-      ],
       "state" : "translated",
-      "text" : "[Morocc Guide]\nThe {0}\nis outside the south entrance of this Oasis.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n{0}在这片绿洲的南门外。\n您还想查看其他地点吗？"
+      "text" : "[Morocc Guide]\nThe <NAVI>[Sphinx Dungeon]<INFO>moc_ruins,71,19,0,000,0</INFO></NAVI>\nis outside the south entrance of this Oasis.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n<NAVI>[斯芬克斯迷宫]<INFO>moc_ruins,71,19,0,000,0</INFO></NAVI>位于绿洲南入口外。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 195,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nThe ^0000FFSphinx Dungeon^000000\nis outside the south entrance of this Oasis.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n^0000FF斯芬克斯迷宫^000000位于这片绿洲的南入口外。\n还想查看其他地点吗？"
     },
     {
       "kind" : "message",
       "line" : 203,
       "npc" : "Guide",
-      "placeholders" : [
-        "F_Navi(\"Morocc\",\"moc_ruins,158,40\",\"^FF5400\")"
-      ],
       "state" : "translated",
-      "text" : "[Morocc Guide]\n{0} is\nright outside the southeast entrance of this Oasis.\nLet me mark its location\non your mini-map.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n{0}就在这片绿洲的东南门外。\n我会在您的小地图上标记它的位置。\n您还想查看其他地点吗？"
+      "text" : "[Morocc Guide]\n<NAVI>[Morocc]<INFO>moc_ruins,158,40,0,000,0</INFO></NAVI> is\nright outside the southeast entrance of this Oasis.\nLet me mark its location\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n<NAVI>[梦罗克]<INFO>moc_ruins,158,40,0,000,0</INFO></NAVI>就在绿洲东南入口外。\n我来在小地图上标记它的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 203,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\n^FF5400Morocc^000000 is\nright outside the southeast entrance of this Oasis.\nLet me mark its location\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n^FF5400梦罗克^000000就在绿洲东南入口外。\n我来在小地图上标记它的位置。\n还想查看其他地点吗？"
     },
     {
       "kind" : "option",
@@ -409,26 +530,123 @@
     },
     {
       "kind" : "message",
+      "line" : 223,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n<NAVI>[Eden Teleport Officer]<INFO>moc_ruins,68,164,0,000,0</INFO></NAVI>\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记<NAVI>[乐园团传送官]<INFO>moc_ruins,68,164,0,000,0</INFO></NAVI>的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 223,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n^006400Eden Teleport Officer^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^006400乐园团传送官^000000的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
       "line" : 228,
       "npc" : "Guide",
-      "placeholders" : [
-        "F_Navi(\"Northern Tool Dealer\",\"moc_ruins,92,128\",\"^800080\")",
-        "F_Navi(\"Southern Tool Dealer\",\"moc_ruins,114,63\",\"^800080\")"
-      ],
       "state" : "translated",
-      "text" : "[Morocc Guide]\nLet me mark the location of the\n{0}\nand {1}\non your mini-map.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n我会在您的小地图上标记{0}和{1}的位置。\n您还想查看其他地点吗？"
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n<NAVI>[Northern Tool Dealer]<INFO>moc_ruins,92,128,0,000,0</INFO></NAVI>\nand <NAVI>[Southern Tool Dealer]<INFO>moc_ruins,114,63,0,000,0</INFO></NAVI>\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记<NAVI>[北部道具商人]<INFO>moc_ruins,92,128,0,000,0</INFO></NAVI>和<NAVI>[南部道具商人]<INFO>moc_ruins,114,63,0,000,0</INFO></NAVI>的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 228,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n<NAVI>[Northern Tool Dealer]<INFO>moc_ruins,92,128,0,000,0</INFO></NAVI>\nand ^800080Southern Tool Dealer^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记<NAVI>[北部道具商人]<INFO>moc_ruins,92,128,0,000,0</INFO></NAVI>和^800080南部道具商人^000000的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 228,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n^800080Northern Tool Dealer^000000\nand <NAVI>[Southern Tool Dealer]<INFO>moc_ruins,114,63,0,000,0</INFO></NAVI>\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^800080北部道具商人^000000和<NAVI>[南部道具商人]<INFO>moc_ruins,114,63,0,000,0</INFO></NAVI>的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 228,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n^800080Northern Tool Dealer^000000\nand ^800080Southern Tool Dealer^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^800080北部道具商人^000000和^800080南部道具商人^000000的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 239,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n^B9062FKafra Employee^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^B9062F卡普拉职员^000000的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 244,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n<NAVI>[Repairman]<INFO>moc_ruins,107,94,0,000,0</INFO></NAVI>\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记<NAVI>[修理工]<INFO>moc_ruins,107,94,0,000,0</INFO></NAVI>的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 244,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n^0000FFRepairman^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^0000FF修理工^000000的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 249,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n<NAVI>[Pet Groomer]<INFO>moc_ruins,118,170,0,000,0</INFO></NAVI>\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记<NAVI>[宠物美容师]<INFO>moc_ruins,118,170,0,000,0</INFO></NAVI>的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 249,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n^FF5400Pet Groomer^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^FF5400宠物美容师^000000的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 254,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n<NAVI>[Chef Assistant]<INFO>moc_ruins,115,123,0,000,0</INFO></NAVI>\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记<NAVI>[厨师助手]<INFO>moc_ruins,115,123,0,000,0</INFO></NAVI>的位置。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 254,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\nLet me mark the location of the\n^006400Chef Assistant^000000\non your mini-map.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n我来在小地图上标记^006400厨师助手^000000的位置。\n还想查看其他地点吗？"
     },
     {
       "kind" : "message",
       "line" : 259,
       "npc" : "Guide",
-      "placeholders" : [
-        "F_Navi(\"Leablem\",\"moc_ruins,154,86\",\"^7F3300\")"
-      ],
       "state" : "translated",
-      "text" : "[Morocc Guide]\n{0}\nis a technician\nwho can create ^0000FFslots^000000 on weapons and armors,\nbut not all equipment\ncan be slotted. Well, that's what he says.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n{0}是位技师，能在武器和防具上开出^0000FF插槽^000000。\n不过，并非所有装备都能开槽，至少他是这么说的。\n您还想查看其他地点吗？"
+      "text" : "[Morocc Guide]\n<NAVI>[Leablem]<INFO>moc_ruins,154,86,0,000,0</INFO></NAVI>\nis a technician\nwho can create ^0000FFslots^000000 on weapons and armors,\nbut not all equipment\ncan be slotted. Well, that's what he says.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n<NAVI>[利阿布雷姆]<INFO>moc_ruins,154,86,0,000,0</INFO></NAVI>是一名技术人员，可以为武器和防具^0000FF开槽^000000。\n不过不是所有装备都能开槽。嗯，这是他自己说的。\n还想查看其他地点吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 259,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Morocc Guide]\n^7F3300Leablem^000000\nis a technician\nwho can create ^0000FFslots^000000 on weapons and armors,\nbut not all equipment\ncan be slotted. Well, that's what he says.\nWould you like to check any other locations?",
+      "translation" : "[梦罗克向导]\n^7F3300利阿布雷姆^000000是一名技术人员，可以为武器和防具^0000FF开槽^000000。\n不过不是所有装备都能开槽。嗯，这是他自己说的。\n还想查看其他地点吗？"
     },
     {
       "kind" : "message",
@@ -445,17 +663,6 @@
       "state" : "translated",
       "text" : "[Morocc Guide]\nBe safe on your travels.",
       "translation" : "[梦罗克向导]\n祝您旅途平安。"
-    },
-    {
-      "kind" : "message",
-      "line" : 303,
-      "npc" : "Guide",
-      "placeholders" : [
-        "getarg(0)"
-      ],
-      "state" : "translated",
-      "text" : "[Morocc Guide]\nLet me mark the location of the\n{0}\non your mini-map.\nWould you like to check any other locations?",
-      "translation" : "[梦罗克向导]\n我会在您的小地图上标记{0}的位置。\n您还想查看其他地点吗？"
     }
   ]
 }

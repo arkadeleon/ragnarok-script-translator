@@ -33,7 +33,7 @@
       "line" : 27,
       "npc" : "Heart Merchant",
       "placeholders" : [
-        ".@old_item_name$",
+        "getitemname(.@old_item)",
         "mesitemlink( .@new_item )"
       ],
       "state" : "translated",
@@ -59,6 +59,14 @@
       "state" : "translated",
       "text" : "What is it?",
       "translation" : "这是什么？"
+    },
+    {
+      "kind" : "option",
+      "line" : 34,
+      "npc" : "Heart Merchant",
+      "state" : "translated",
+      "text" : "Exchange it please!",
+      "translation" : "请兑换！"
     },
     {
       "kind" : "option",
@@ -96,7 +104,7 @@
       "npc" : "Heart Merchant",
       "placeholders" : [
         "mesitemlink( .@new_item )",
-        ".@new_item_name$"
+        "getitemname(.@new_item)"
       ],
       "state" : "translated",
       "text" : "[Heart Merchant]\n{0} is an item that will prevent the loss of experience on death once by just having it ^EE0000regardless of the duration^000000. Of course, after death, the {1} is consumed.",
@@ -151,8 +159,8 @@
       "line" : 60,
       "npc" : "Heart Merchant",
       "placeholders" : [
-        ".@old_item_name$",
-        ".@new_item_name$"
+        "getitemname(.@old_item)",
+        "getitemname(.@new_item)"
       ],
       "state" : "translated",
       "text" : "[Heart Merchant]\nI can exchange your ^0000cd5 {0} to 1 {1}.",
@@ -163,7 +171,7 @@
       "line" : 63,
       "npc" : "Heart Merchant",
       "placeholders" : [
-        ".@old_item_name$"
+        "getitemname(.@old_item)"
       ],
       "state" : "translated",
       "text" : "[Heart Merchant]\nHowever, ^EE0000[Not for sale] {0} is not eligible for exchange^000000, so it is useless to bring it here and ask for it to be exchanged.",
@@ -198,7 +206,7 @@
       "line" : 71,
       "npc" : "Heart Merchant",
       "placeholders" : [
-        ".@new_item_name$"
+        "getitemname(.@new_item)"
       ],
       "state" : "translated",
       "text" : "[Heart Merchant]\nHow many do you want to exchange? ^0000cdYou can exchange up to 10 {0} at a time^000000.",
@@ -225,7 +233,7 @@
       "line" : 86,
       "npc" : "Heart Merchant",
       "placeholders" : [
-        ".@old_item_name$",
+        "getitemname(.@old_item)",
         "mesitemlink( .@old_item )",
         "mesitemlink( .@new_item )"
       ],
@@ -238,9 +246,9 @@
       "line" : 90,
       "npc" : "Heart Merchant",
       "placeholders" : [
-        ".@old_item_name$",
-        ".@new_item_name$",
-        ".@old_item_name$"
+        "getitemname(.@old_item)",
+        "getitemname(.@new_item)",
+        "getitemname(.@old_item)"
       ],
       "state" : "translated",
       "text" : "[Heart Merchant]\nNow, with this, I've exchanged your ^0000cd{0}^000000 for the ^EE0000{1}^000000!! That was a good deal, wasn't it? The next time you get your hands on a {2}, come see me again!",

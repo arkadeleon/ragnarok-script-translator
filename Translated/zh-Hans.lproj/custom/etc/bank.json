@@ -53,12 +53,9 @@
       "kind" : "message",
       "line" : 29,
       "npc" : "Banker",
-      "placeholders" : [
-        "@cost"
-      ],
       "state" : "translated",
-      "text" : "[Banker]\nOh, and do realize there is a {0} Zeny charge on all transactions!",
-      "translation" : "[银行家]\n另外，每笔交易都要收取{0} Zeny的手续费！"
+      "text" : "[Banker]\nOh, and do realize there is a 500 Zeny charge on all transactions!",
+      "translation" : "[银行家]\n另外请注意，每笔交易都要收取500 Zeny的手续费！"
     },
     {
       "kind" : "message",
@@ -80,12 +77,9 @@
       "kind" : "message",
       "line" : 43,
       "npc" : "Banker",
-      "placeholders" : [
-        "@cost"
-      ],
       "state" : "translated",
-      "text" : "You need {0} Zeny to cover the transaction fee!",
-      "translation" : "您需要{0} Zeny来支付交易手续费！"
+      "text" : "You need 500 Zeny to cover the transaction fee!",
+      "translation" : "您需要500 Zeny才能支付这笔交易的手续费！"
     },
     {
       "kind" : "message",
@@ -107,12 +101,9 @@
       "kind" : "message",
       "line" : 59,
       "npc" : "Banker",
-      "placeholders" : [
-        "@cost"
-      ],
       "state" : "translated",
-      "text" : "[Banker]\nOh, and do realize there is a {0} Zeny charge on all transactions!",
-      "translation" : "[银行家]\n另外，每笔交易都要收取{0} Zeny的手续费！"
+      "text" : "[Banker]\nOh, and do realize there is a 500 Zeny charge on all transactions!",
+      "translation" : "[银行家]\n另外请注意，每笔交易都要收取500 Zeny的手续费！"
     },
     {
       "kind" : "message",
@@ -127,7 +118,18 @@
       "line" : 69,
       "npc" : "Banker",
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",#bankstorage)"
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "You only have ^00FF00{0}^000000 zeny in your account!",
+      "translation" : "您的账户中只有^00FF00{0}^000000 Zeny！"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Banker",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
       "text" : "You only have ^00FF00{0}^000000 zeny in your account!",
@@ -161,12 +163,9 @@
       "kind" : "message",
       "line" : 78,
       "npc" : "Banker",
-      "placeholders" : [
-        "@cost"
-      ],
       "state" : "translated",
-      "text" : "[Banker]\nRemoving {0} from your withdrawal to cover the deposit fee...",
-      "translation" : "[银行家]\n正在从您的取款金额中扣除{0}，用于支付手续费..."
+      "text" : "[Banker]\nRemoving 500 from your withdrawal to cover the deposit fee...",
+      "translation" : "[银行家]\n正在从您的取款金额中扣除500 Zeny作为手续费..."
     },
     {
       "kind" : "message",
@@ -213,7 +212,18 @@
       "line" : 110,
       "npc" : "Banker",
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",#bankstorage)"
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Banker]\nYou currently have {0} Zeny in your account.",
+      "translation" : "[银行家]\n您目前账户中有{0} Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 110,
+      "npc" : "Banker",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
       "text" : "[Banker]\nYou currently have {0} Zeny in your account.",

@@ -109,20 +109,17 @@
       "kind" : "message",
       "line" : 53,
       "npc" : "Mass Charleston",
-      "placeholders" : [
-        ".@job_aft$[.@s]"
-      ],
       "state" : "translated",
-      "text" : "[Mass Charleston]\nWhich part of {0} do you want to select?",
-      "translation" : "[马斯·查尔斯顿]\n您想选择{0}的哪个部位？"
+      "text" : "[Mass Charleston]\nWhich part of Reinforced parts do you want to select?",
+      "translation" : "[马斯·查尔斯顿]\n请选择要强化的部件。"
     },
     {
       "kind" : "message",
-      "line" : 70,
+      "line" : 53,
       "npc" : "Mass Charleston",
       "state" : "translated",
-      "text" : "[Mass Charleston]\nI'll see you next time!",
-      "translation" : "[马斯·查尔斯顿]\n下次再见！"
+      "text" : "[Mass Charleston]\nWhich part of Supplementary device do you want to select?",
+      "translation" : "[马斯·查尔斯顿]\n请选择要安装的辅助装置。"
     },
     {
       "kind" : "option",
@@ -167,7 +164,7 @@
     },
     {
       "kind" : "message",
-      "line" : 77,
+      "line" : 70,
       "npc" : "Mass Charleston",
       "state" : "translated",
       "text" : "[Mass Charleston]\nI'll see you next time!",
@@ -186,12 +183,22 @@
       "line" : 88,
       "npc" : "Mass Charleston",
       "placeholders" : [
-        "getitemname(6752)",
-        ".@job_aft$[.@s]"
+        "getitemname(6752)"
       ],
       "state" : "translated",
-      "text" : "[Mass Charleston]\nExchanged 10 {0} for {1}. If you find more part, come to me again!",
-      "translation" : "[马斯·查尔斯顿]\n已用10个{0}兑换{1}，找到更多零件，欢迎再来！"
+      "text" : "[Mass Charleston]\nExchanged 10 {0} for Reinforced parts. If you find more part, come to me again!",
+      "translation" : "[马斯·查尔斯顿]\n已用10个{0}兑换强化部件。找到更多部件后再来找我！"
+    },
+    {
+      "kind" : "message",
+      "line" : 88,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(6752)"
+      ],
+      "state" : "translated",
+      "text" : "[Mass Charleston]\nExchanged 10 {0} for Supplementary device. If you find more part, come to me again!",
+      "translation" : "[马斯·查尔斯顿]\n已用10个{0}兑换辅助装置。找到更多部件后再来找我！"
     },
     {
       "kind" : "message",
@@ -270,12 +277,22 @@
       "line" : 128,
       "npc" : "Mass Charleston",
       "placeholders" : [
-        ".@string$",
         "strtolower(.@string$)"
       ],
       "state" : "translated",
-      "text" : "[Mass Charleston]\n{0} a Charleston product costs 1 Charleston Component and 100,000 zeny. Please know that all the expenses go into {1} your product.",
-      "translation" : "[马斯·查尔斯顿]\n为查尔斯顿产品进行{0}，需要1个查尔斯顿零件和100,000 Zeny。\n这些费用都会用于为您的产品进行{1}。"
+      "text" : "[Mass Charleston]\nUpgrading a Charleston product costs 1 Charleston Component and 100,000 zeny. Please know that all the expenses go into {0} your product.",
+      "translation" : "[马斯·查尔斯顿]\n升级查尔斯顿系列装备需要1个查尔斯顿零件和100,000 Zeny。请注意，所有费用都会用于{0}您的装备。"
+    },
+    {
+      "kind" : "message",
+      "line" : 128,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "strtolower(.@string$)"
+      ],
+      "state" : "translated",
+      "text" : "[Mass Charleston]\nResetting a Charleston product costs 1 Charleston Component and 100,000 zeny. Please know that all the expenses go into {0} your product.",
+      "translation" : "[马斯·查尔斯顿]\n重置查尔斯顿系列装备需要1个查尔斯顿零件和100,000 Zeny。请注意，所有费用都会用于{0}您的装备。"
     },
     {
       "kind" : "message",
@@ -365,8 +382,32 @@
       "line" : 219,
       "npc" : "Mass Charleston",
       "state" : "translated",
+      "text" : "[Mass Charleston]",
+      "translation" : "[马斯·查尔斯顿]"
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
       "text" : "[Mass Charleston]\nSomething's not right!",
       "translation" : "[马斯·查尔斯顿]\n有些不对劲！"
+    },
+    {
+      "kind" : "message",
+      "line" : 220,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "Something's not right!",
+      "translation" : "好像出错了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 223,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "[Mass Charleston]",
+      "translation" : "[马斯·查尔斯顿]"
     },
     {
       "kind" : "message",
@@ -378,11 +419,99 @@
     },
     {
       "kind" : "message",
+      "line" : 224,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "This is a considerable level of enhanced equipment, this type can give enhanced expansion performance, choose from the following series of desirable to strengthen it!",
+      "translation" : "这件装备的强化等级相当高，可以进一步提升扩展性能。请选择想要强化的项目！"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "Accessory upgrade",
+      "translation" : "饰品升级"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "Shoes upgrade",
+      "translation" : "鞋子升级"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "Advanced Shoes upgrade",
+      "translation" : "高级鞋子升级"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "Garment upgrade",
+      "translation" : "披肩升级"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "Advanced Garment upgrade",
+      "translation" : "高级披肩升级"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "Acceleration enhancements",
+      "translation" : "加速强化"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "Defense enhancement",
+      "translation" : "防御强化"
+    },
+    {
+      "kind" : "option",
+      "line" : 226,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "Attack enhancement",
+      "translation" : "攻击强化"
+    },
+    {
+      "kind" : "message",
+      "line" : 231,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "[Mass Charleston]",
+      "translation" : "[马斯·查尔斯顿]"
+    },
+    {
+      "kind" : "message",
       "line" : 231,
       "npc" : "Mass Charleston",
       "state" : "translated",
       "text" : "[Mass Charleston]\nI'll be Upgrading the first ability. The existing Upgrade level and cards will not be damaged. Do you want to continue?",
       "translation" : "[马斯·查尔斯顿]\n接下来赋予第一项能力，原有的精炼等级和卡片不会受到影响。\n要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 232,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "I'll be Upgrading the first ability. The existing Upgrade level and cards will not be damaged. Do you want to continue?",
+      "translation" : "即将强化第1项能力。现有精炼等级和卡片不会受到影响。要继续吗？"
     },
     {
       "kind" : "option",
@@ -405,8 +534,32 @@
       "line" : 235,
       "npc" : "Mass Charleston",
       "state" : "translated",
+      "text" : "[Mass Charleston]",
+      "translation" : "[马斯·查尔斯顿]"
+    },
+    {
+      "kind" : "message",
+      "line" : 235,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
       "text" : "[Mass Charleston]\nNo problem. Come back if you change your mind.",
       "translation" : "[马斯·查尔斯顿]\n没问题。如果您改变主意，请回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 236,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "No problem. Come back if you change your mind.",
+      "translation" : "没关系，改变主意的话再来找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 242,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "[Mass Charleston]",
+      "translation" : "[马斯·查尔斯顿]"
     },
     {
       "kind" : "message",
@@ -418,11 +571,35 @@
     },
     {
       "kind" : "message",
+      "line" : 243,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "I'll be Upgrading the second ability. The existing Upgrade level and cards will not be damaged.",
+      "translation" : "即将强化第2项能力。现有精炼等级和卡片不会受到影响。"
+    },
+    {
+      "kind" : "message",
+      "line" : 245,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "[Mass Charleston]",
+      "translation" : "[马斯·查尔斯顿]"
+    },
+    {
+      "kind" : "message",
       "line" : 245,
       "npc" : "Mass Charleston",
       "state" : "translated",
       "text" : "[Mass Charleston]\nThough there is a slight chance of failure, in which case the existing Upgrade level will be reset. What would you like to do?",
       "translation" : "[马斯·查尔斯顿]\n不过，仍有小概率失败，失败后现有的强化等级会被重置。\n您想怎么做？"
+    },
+    {
+      "kind" : "message",
+      "line" : 246,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "Though there is a slight chance of failure, in which case the existing Upgrade level will be reset. What would you like to do?",
+      "translation" : "虽然失败机率不高，但失败时现有精炼等级会重置。您想怎么做？"
     },
     {
       "kind" : "option",
@@ -445,8 +622,32 @@
       "line" : 249,
       "npc" : "Mass Charleston",
       "state" : "translated",
+      "text" : "[Mass Charleston]",
+      "translation" : "[马斯·查尔斯顿]"
+    },
+    {
+      "kind" : "message",
+      "line" : 249,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
       "text" : "[Mass Charleston]\nNo problem. Come back if you change your mind.",
       "translation" : "[马斯·查尔斯顿]\n没问题。如果您改变主意，请回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 250,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "No problem. Come back if you change your mind.",
+      "translation" : "没关系，改变主意的话再来找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 256,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "[Mass Charleston]",
+      "translation" : "[马斯·查尔斯顿]"
     },
     {
       "kind" : "message",
@@ -455,6 +656,14 @@
       "state" : "translated",
       "text" : "[Mass Charleston]\nI'll be Upgrading the 3rd ability. This highest Upgrade stage incurs a  chance of ^990000destroying the Equipment or resetting its existing Upgrade level.^000000 Do you want to continue?",
       "translation" : "[马斯·查尔斯顿]\n接下来赋予第三项能力。\n这是最高强化阶段，有可能^990000损坏装备，或重置其现有的强化等级。^000000\n您要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 257,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "I'll be Upgrading the 3rd ability. This highest Upgrade stage incurs a  chance of ^990000destroying the Equipment or resetting its existing Upgrade level.^000000 Do you want to continue?",
+      "translation" : "即将强化第3项能力。这是最高阶段，存在^990000装备损毁或现有精炼等级重置^000000的风险。要继续吗？"
     },
     {
       "kind" : "option",
@@ -477,8 +686,32 @@
       "line" : 260,
       "npc" : "Mass Charleston",
       "state" : "translated",
+      "text" : "[Mass Charleston]",
+      "translation" : "[马斯·查尔斯顿]"
+    },
+    {
+      "kind" : "message",
+      "line" : 260,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
       "text" : "[Mass Charleston]\nNo problem. Come back if you change your mind.",
       "translation" : "[马斯·查尔斯顿]\n没问题。如果您改变主意，请回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 261,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "No problem. Come back if you change your mind.",
+      "translation" : "没关系，改变主意的话再来找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 269,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "[Mass Charleston]",
+      "translation" : "[马斯·查尔斯顿]"
     },
     {
       "kind" : "message",
@@ -487,6 +720,14 @@
       "state" : "translated",
       "text" : "[Mass Charleston]\nThis Equipment is Upgraded to the maximum level. Please bring something else.",
       "translation" : "[马斯·查尔斯顿]\n这件装备已达到强化上限，请换一件。"
+    },
+    {
+      "kind" : "message",
+      "line" : 270,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "This Equipment is Upgraded to the maximum level. Please bring something else.",
+      "translation" : "这件装备已经强化到最高等级。请换一件装备。"
     },
     {
       "kind" : "message",
@@ -555,65 +796,6 @@
     {
       "kind" : "message",
       "line" : 717,
-      "npc" : "Mass Charleston",
-      "state" : "translated",
-      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
-      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
-    },
-    {
-      "kind" : "message",
-      "line" : 722,
-      "npc" : "Mass Charleston",
-      "state" : "translated",
-      "text" : "[Mass Charleston]\nThings needed for commodity upgrades seem inadequate!",
-      "translation" : "[马斯·查尔斯顿]\n用于强化产品的材料不够！"
-    },
-    {
-      "kind" : "message",
-      "line" : 731,
-      "npc" : "Mass Charleston",
-      "state" : "translated",
-      "text" : "[Mass Charleston]\nAn unknown error has occurred.",
-      "translation" : "[马斯·查尔斯顿]\n发生了一个未知错误。"
-    },
-    {
-      "kind" : "message",
-      "line" : 745,
-      "npc" : "Mass Charleston",
-      "state" : "translated",
-      "text" : "[Mass Charleston]\nSince the balance of power does not match, the given existing ability has been destroyed. It is unfortunate but please try again next time.",
-      "translation" : "[马斯·查尔斯顿]\n力量失衡，原有的能力消失了。\n很遗憾，请下次再试。"
-    },
-    {
-      "kind" : "message",
-      "line" : 752,
-      "npc" : "Mass Charleston",
-      "state" : "translated",
-      "text" : "[Mass Charleston]\nThis!\nI'm sorry but the equipment has been destroyed.",
-      "translation" : "[马斯·查尔斯顿]\n哎呀！\n很抱歉，装备已被破坏。"
-    },
-    {
-      "kind" : "message",
-      "line" : 758,
-      "npc" : "Mass Charleston",
-      "placeholders" : [
-        ".@slot"
-      ],
-      "state" : "translated",
-      "text" : "[Mass Charleston]\n^990000Socket{0}^000000 will be Upgrade.",
-      "translation" : "[马斯·查尔斯顿]\n将为^990000第{0}个插槽^000000进行强化。"
-    },
-    {
-      "kind" : "message",
-      "line" : 770,
-      "npc" : "Mass Charleston",
-      "state" : "translated",
-      "text" : "[Mass Charleston]\nReset the product's abilities.",
-      "translation" : "[马斯·查尔斯顿]\n产品的附魔能力已重置。"
-    },
-    {
-      "kind" : "message",
-      "line" : 778,
       "npc" : "Mass Charleston",
       "state" : "translated",
       "text" : "[Mass Charleston]\nAn unknown error has occurred.",
@@ -888,8 +1070,59 @@
       "line" : 886,
       "npc" : "Mass Charleston",
       "state" : "translated",
-      "text" : "[Mass Charleston]\nWeight: 300\nRequired Level: 100",
-      "translation" : "[马斯·查尔斯顿]\n重量：300\n需求等级：100"
+      "text" : "[Mass Charleston]\nWeight: 300\nRequired Level: 100\n^FF0000Mechanic only^000000\n^FF0000Price: 3,999,999 zeny^000000",
+      "translation" : "[马斯·查尔斯顿]\n重量：300\n使用等级：100\n^FF0000机匠专用^000000\n^FF0000价格：3,999,999 Zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 984,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(.@item_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Mass Charleston]\nDo you really want to buy ^FF0000{0}^000000?",
+      "translation" : "[马斯·查尔斯顿]\n确定要购买^FF0000{0}^000000吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 961,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "I suggest you reconsider.",
+      "translation" : "我再考虑一下"
+    },
+    {
+      "kind" : "option",
+      "line" : 961,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "Buy.",
+      "translation" : "购买"
+    },
+    {
+      "kind" : "message",
+      "line" : 962,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "[Mass Charleston]\nIt's a good buy, but you still need to make your decision carefully.",
+      "translation" : "[马斯·查尔斯顿]\n这是一笔划算的交易，但您仍需仔细做出决定。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1000,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "[Mass Charleston]\nGood commodity value is not uncommon, please confirm your pocket depth!",
+      "translation" : "[马斯·查尔斯顿]\n好东西可不便宜，请先看看钱包够不够鼓！"
+    },
+    {
+      "kind" : "message",
+      "line" : 967,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "[Mass Charleston]\nYou won't regret it! She's a Charleston factory!",
+      "translation" : "[马斯·查尔斯顿]\n您不会后悔的！她可是查尔斯顿工厂的产品！"
     },
     {
       "kind" : "message",
@@ -904,8 +1137,59 @@
       "line" : 897,
       "npc" : "Mass Charleston",
       "state" : "translated",
-      "text" : "[Mass Charleston]\nWeight: 200\nRequired Level: 100",
-      "translation" : "[马斯·查尔斯顿]\n重量：200\n需求等级：100"
+      "text" : "[Mass Charleston]\nWeight: 200\nRequired Level: 100\n^FF0000Mechanic only^000000\n^FF0000Price: 3,999,999 zeny^000000",
+      "translation" : "[马斯·查尔斯顿]\n重量：200\n使用等级：100\n^FF0000机匠专用^000000\n^FF0000价格：3,999,999 Zeny^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 900,
+      "npc" : "Mass Charleston",
+      "placeholders" : [
+        "getitemname(.@item_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Mass Charleston]\nDo you really want to buy ^FF0000{0}^000000?",
+      "translation" : "[马斯·查尔斯顿]\n确定要购买^FF0000{0}^000000吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 987,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "I suggest you reconsider.",
+      "translation" : "我再考虑一下"
+    },
+    {
+      "kind" : "option",
+      "line" : 987,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "Buy.",
+      "translation" : "购买"
+    },
+    {
+      "kind" : "message",
+      "line" : 988,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "[Mass Charleston]\nIt's a good buy, but you still need to make your decision carefully.",
+      "translation" : "[马斯·查尔斯顿]\n这是一笔划算的交易，但您仍需仔细做出决定。"
+    },
+    {
+      "kind" : "message",
+      "line" : 900,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "[Mass Charleston]\nGood commodity value is not uncommon, please confirm your pocket depth!",
+      "translation" : "[马斯·查尔斯顿]\n好东西可不便宜，请先看看钱包够不够鼓！"
+    },
+    {
+      "kind" : "message",
+      "line" : 994,
+      "npc" : "Mass Charleston",
+      "state" : "translated",
+      "text" : "[Mass Charleston]\nYou won't regret it! She's a Charleston factory!",
+      "translation" : "[马斯·查尔斯顿]\n您不会后悔的！她可是查尔斯顿工厂的产品！"
     },
     {
       "kind" : "message",
@@ -1045,65 +1329,6 @@
       "state" : "translated",
       "text" : "[Mass Charleston]\nNot enough materials for the Upgrade.",
       "translation" : "[马斯·查尔斯顿]\n升级所需的材料不足。"
-    },
-    {
-      "kind" : "message",
-      "line" : 981,
-      "npc" : "Mass Charleston",
-      "state" : "translated",
-      "text" : "^FF0000Mechanic only^000000\n^FF0000Price: 3,999,999 zeny^000000",
-      "translation" : "^FF0000仅限机匠使用^000000\n^FF0000价格：3,999,999 Zeny^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 984,
-      "npc" : "Mass Charleston",
-      "placeholders" : [
-        "getitemname(.@item_id)"
-      ],
-      "state" : "translated",
-      "text" : "[Mass Charleston]\nDo you really want to buy ^FF0000{0}^000000?",
-      "translation" : "[马斯·查尔斯顿]\n确定要购买^FF0000{0}^000000吗？"
-    },
-    {
-      "kind" : "option",
-      "line" : 987,
-      "npc" : "Mass Charleston",
-      "state" : "translated",
-      "text" : "I suggest you reconsider.",
-      "translation" : "我再考虑一下"
-    },
-    {
-      "kind" : "option",
-      "line" : 987,
-      "npc" : "Mass Charleston",
-      "state" : "translated",
-      "text" : "Buy.",
-      "translation" : "购买"
-    },
-    {
-      "kind" : "message",
-      "line" : 988,
-      "npc" : "Mass Charleston",
-      "state" : "translated",
-      "text" : "[Mass Charleston]\nIt's a good buy, but you still need to make your decision carefully.",
-      "translation" : "[马斯·查尔斯顿]\n这是一笔划算的交易，但您仍需仔细做出决定。"
-    },
-    {
-      "kind" : "message",
-      "line" : 994,
-      "npc" : "Mass Charleston",
-      "state" : "translated",
-      "text" : "[Mass Charleston]\nYou won't regret it! She's a Charleston factory!",
-      "translation" : "[马斯·查尔斯顿]\n您不会后悔的！她可是查尔斯顿工厂的产品！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1000,
-      "npc" : "Mass Charleston",
-      "state" : "translated",
-      "text" : "[Mass Charleston]\nGood commodity value is not uncommon, please confirm your pocket depth!",
-      "translation" : "[马斯·查尔斯顿]\n好东西可不便宜，请先看看钱包够不够鼓！"
     },
     {
       "kind" : "message",
@@ -1322,12 +1547,63 @@
       "translation" : "[PLUTO_09]\n如果你给我5个{0}，我就可以制作设计图纸了！\n----------\n^0000ff小恐龙在屏幕上跑来跑去。^000000"
     },
     {
+      "kind" : "message",
+      "line" : 1095,
+      "npc" : "PLUTO_09",
+      "state" : "translated",
+      "text" : "[PLUTO_09]",
+      "translation" : "[冥王星_09]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1096,
+      "npc" : "PLUTO_09",
+      "placeholders" : [
+        "getitemname(6962)"
+      ],
+      "state" : "translated",
+      "text" : "If you give me 5 {0}, I can do the production of design drawings look!",
+      "translation" : "给我5个{0}，我就可以帮您制作设计图！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1097,
+      "npc" : "PLUTO_09",
+      "state" : "translated",
+      "text" : "----------",
+      "translation" : "----------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1098,
+      "npc" : "PLUTO_09",
+      "state" : "translated",
+      "text" : "^0000ffLittle dinosaur running around on the screen.^000000",
+      "translation" : "^0000ff屏幕上有只小恐龙跑来跑去。^000000"
+    },
+    {
       "kind" : "option",
       "line" : 1100,
       "npc" : "PLUTO_09",
       "state" : "translated",
       "text" : "Quit.",
       "translation" : "退出"
+    },
+    {
+      "kind" : "option",
+      "line" : 1100,
+      "npc" : "PLUTO_09",
+      "state" : "translated",
+      "text" : "Production design (^ff0000 success rate 30%^000000)",
+      "translation" : "制作设计图（^ff0000成功率30%^000000）"
+    },
+    {
+      "kind" : "option",
+      "line" : 1100,
+      "npc" : "PLUTO_09",
+      "state" : "translated",
+      "text" : "^aaaaaaInsufficient fuel for making design drawings.^000000",
+      "translation" : "^aaaaaa制作设计图的燃料不足。^000000"
     },
     {
       "kind" : "message",
@@ -1350,24 +1626,24 @@
       "line" : 1148,
       "npc" : "PLUTO_09",
       "state" : "translated",
-      "text" : "[PLUTO_09]\nWhat a pity, the design failed.",
-      "translation" : "[PLUTO_09]\n真遗憾，设计失败了。"
+      "text" : "[PLUTO_09]\nGreat, the design was made.",
+      "translation" : "[PLUTO_09]\n太好了，设计完成了。"
     },
     {
       "kind" : "message",
       "line" : 1148,
       "npc" : "PLUTO_09",
       "state" : "translated",
-      "text" : "[PLUTO_09]\nGreat, the design was made.",
-      "translation" : "[PLUTO_09]\n太好了，设计完成了。"
+      "text" : "[PLUTO_09]",
+      "translation" : "[冥王星_09]"
     },
     {
       "kind" : "message",
-      "line" : 1158,
+      "line" : 1152,
       "npc" : "PLUTO_09",
       "state" : "translated",
-      "text" : "^0000ffA screen showing howling that a dinosaur may not understand the command.^000000",
-      "translation" : "^0000ff屏幕上显示恐龙在嚎叫，它可能听不懂指令。^000000"
+      "text" : "Great, the design was made.",
+      "translation" : "太好了，设计图制作完成。"
     },
     {
       "kind" : "message",
@@ -1652,12 +1928,70 @@
       "translation" : "[MARS_01]\n{0}，请选择要使用的附魔！"
     },
     {
+      "kind" : "message",
+      "line" : 1289,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]",
+      "translation" : "[火星_01]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1290,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0},",
+      "translation" : "{0}，"
+    },
+    {
+      "kind" : "message",
+      "line" : 1291,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "Choose the enchant you want to use!",
+      "translation" : "请选择要使用的附魔！"
+    },
+    {
       "kind" : "option",
       "line" : 1293,
       "npc" : "MARS_01",
       "state" : "translated",
       "text" : "Quit.",
       "translation" : "退出"
+    },
+    {
+      "kind" : "option",
+      "line" : 1293,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        ".@menu$",
+        "getitemname(.@list[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "{0}^aaaaaa{1} (Missing)^000000",
+      "translation" : "{0}^aaaaaa{1}（缺少）^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 1293,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "getitemname(.@list[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "^aaaaaa{0} (Missing)^000000",
+      "translation" : "^aaaaaa{0}（缺少）^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1295,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]",
+      "translation" : "[火星_01]"
     },
     {
       "kind" : "message",
@@ -1669,11 +2003,43 @@
     },
     {
       "kind" : "message",
+      "line" : 1296,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "So far.",
+      "translation" : "目前为止。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1309,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]",
+      "translation" : "[火星_01]"
+    },
+    {
+      "kind" : "message",
       "line" : 1309,
       "npc" : "MARS_01",
       "state" : "translated",
       "text" : "[MARS_01]\nSo far.",
       "translation" : "[MARS_01]\n到此为止。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1310,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "So far.",
+      "translation" : "目前为止。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1318,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]",
+      "translation" : "[火星_01]"
     },
     {
       "kind" : "message",
@@ -1685,11 +2051,43 @@
     },
     {
       "kind" : "message",
+      "line" : 1319,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "Please contact the administrator.",
+      "translation" : "请联系管理员。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1325,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]",
+      "translation" : "[火星_01]"
+    },
+    {
+      "kind" : "message",
       "line" : 1325,
       "npc" : "MARS_01",
       "state" : "translated",
       "text" : "[MARS_01]\nDid you remove your gear?",
       "translation" : "[MARS_01]\n你卸下装备了吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1326,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "Did you remove your gear?",
+      "translation" : "您把装备卸下来了吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1336,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]",
+      "translation" : "[火星_01]"
     },
     {
       "kind" : "message",
@@ -1701,11 +2099,43 @@
     },
     {
       "kind" : "message",
+      "line" : 1337,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "The design you choose is incompatible with the equipment.",
+      "translation" : "您选择的设计图与这件装备不兼容。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1341,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]",
+      "translation" : "[火星_01]"
+    },
+    {
+      "kind" : "message",
       "line" : 1341,
       "npc" : "MARS_01",
       "state" : "translated",
       "text" : "[MARS_01]\nThis design is only for the first time to strengthen the use, but the equipment has other performance, please use other design to strengthen it!",
       "translation" : "[MARS_01]\n此设计图仅限首次强化使用，而该装备已有其他属性。\n请改用其他设计图！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1342,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "This design is only for the first time to strengthen the use, but the equipment has other performance, please use other design to strengthen it!",
+      "translation" : "这张设计图只能用于首次强化，但该装备已有其他属性，请使用其他设计图进行强化！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]",
+      "translation" : "[火星_01]"
     },
     {
       "kind" : "message",
@@ -1720,11 +2150,46 @@
     },
     {
       "kind" : "message",
+      "line" : 1347,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        ".@max_num_enchant"
+      ],
+      "state" : "translated",
+      "text" : "The maximum number of enchants is {0}. The item has reached the upper limit.",
+      "translation" : "附魔次数上限为{0}次，该物品已达到上限。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1351,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]",
+      "translation" : "[火星_01]"
+    },
+    {
+      "kind" : "message",
       "line" : 1351,
       "npc" : "MARS_01",
       "state" : "translated",
       "text" : "[MARS_01]\nThe number of equipment has reached the limit.",
       "translation" : "[MARS_01]\n装备数量已达到上限。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1352,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "The number of equipment has reached the limit.",
+      "translation" : "装备数量已达上限。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1358,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]",
+      "translation" : "[火星_01]"
     },
     {
       "kind" : "message",
@@ -1736,11 +2201,35 @@
     },
     {
       "kind" : "message",
+      "line" : 1359,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "Please pay special attention if the equipment will be removed.",
+      "translation" : "请特别注意，装备可能会被移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1368,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]",
+      "translation" : "[火星_01]"
+    },
+    {
+      "kind" : "message",
       "line" : 1368,
       "npc" : "MARS_01",
       "state" : "translated",
       "text" : "[MARS_01]\nThe product does not have a serial number, does not meet the specifications of the product can not be strengthened.",
       "translation" : "[MARS_01]\n该物品没有序列号，不符合规格，无法进行强化。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1369,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "The product does not have a serial number, does not meet the specifications of the product can not be strengthened.",
+      "translation" : "该装备没有序列号，不符合强化要求，无法进行强化。"
     },
     {
       "kind" : "message",
@@ -1755,6 +2244,46 @@
       "state" : "translated",
       "text" : "[MARS_01]^0000ff\nChoose {0} + {1},\n^000000------------------\nYour selected design can be upgraded to the equipment limit ^0000ff{2} the same design, ^000000so far, enhanced ^0000ff{3} times^000000, do you want to continue?",
       "translation" : "[MARS_01]\n^0000ff已选择{0} + {1}。\n^000000------------------\n同一张设计图最多可为该装备强化^0000ff{2}次，^000000目前已强化^0000ff{3}次^000000，要继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1372,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]^0000ff",
+      "translation" : "[火星_01]^0000ff"
+    },
+    {
+      "kind" : "message",
+      "line" : 1373,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        "getequipname(.@part)",
+        "getitemname(.@item_req)"
+      ],
+      "state" : "translated",
+      "text" : "Choose {0} + {1},",
+      "translation" : "选择{0} + {1}，"
+    },
+    {
+      "kind" : "message",
+      "line" : 1374,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "^000000------------------",
+      "translation" : "^000000------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1375,
+      "npc" : "MARS_01",
+      "placeholders" : [
+        ".@max_num_enchant",
+        ".@slot_sum"
+      ],
+      "state" : "translated",
+      "text" : "Your selected design can be upgraded to the equipment limit ^0000ff{0} the same design, ^000000so far, enhanced ^0000ff{1} times^000000, do you want to continue?",
+      "translation" : "您选择的设计图可将装备强化至上限^0000ff{0}^000000。该设计图目前已强化^0000ff{1}次^000000，是否继续？"
     },
     {
       "kind" : "option",
@@ -1792,20 +2321,33 @@
       "kind" : "message",
       "line" : 1405,
       "npc" : "MARS_01",
-      "placeholders" : [
-        ".@enchant_count"
-      ],
       "state" : "translated",
-      "text" : "[MARS_01]\nThe first equipment has been upgraded ^990000{0} times^000000.",
-      "translation" : "[MARS_01]\n装备的第^990000{0}次^000000强化已完成。"
+      "text" : "[MARS_01]",
+      "translation" : "[火星_01]"
     },
     {
       "kind" : "message",
       "line" : 1405,
       "npc" : "MARS_01",
       "state" : "translated",
-      "text" : "[MARS_01]\nFor additional performance equipment^990000 ^000000 upgrade.",
-      "translation" : "[MARS_01]\n正在为装备^990000 ^000000添加额外属性。"
+      "text" : "[MARS_01]\nThe first equipment has been upgraded ^9900003 times^000000.",
+      "translation" : "[火星_01]\n第一件装备已升级^9900003次^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]\nThe first equipment has been upgraded ^9900002 times^000000.",
+      "translation" : "[火星_01]\n第一件装备已升级^9900002次^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "MARS_01",
+      "state" : "translated",
+      "text" : "[MARS_01]\nThe first equipment has been upgraded ^9900001 times^000000.",
+      "translation" : "[火星_01]\n第一件装备已升级^9900001次^000000。"
     }
   ]
 }

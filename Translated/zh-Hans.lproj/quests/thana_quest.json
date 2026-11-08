@@ -117,9 +117,6 @@
       "kind" : "message",
       "line" : 82,
       "npc" : "Tower Keeper",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "[Gatei]\nOh, {0}!\nWelcome back! Since you've\ngot a temporary Rekenber\nwork contract, your entrance\nfee is only 3,000 zeny.",
       "translation" : "[加泰]\n哦，{0}！\n欢迎回来！您持有雷根贝勒的临时工作合同，入场费只需3,000 Zeny。"
@@ -408,9 +405,6 @@
       "kind" : "message",
       "line" : 306,
       "npc" : "Guide",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "[Ditze]\nThat's great!\nWould you please fill\nout this employment\nagreement first? Let's\nsee. Your name is...\n{0}, right?",
       "translation" : "[迪策]\n太好了！\n请先填写这份雇佣协议。让我看看...您的名字是{0}，对吧？"
@@ -443,9 +437,6 @@
       "kind" : "message",
       "line" : 326,
       "npc" : "Guide",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "- Employment Agreement -\n \n1. This employment agreement\nis effective between Rekenber\nCorporation (''Employer'') and {0}(''Employee'').\n1-1. This employment agreement\nis classified as a Mercernary\ncontract between both parties.\n2. The terms of this contract\nimmediately take effect once\nit is signed by both parties\n(Employer and Employee).\n3. When the Employee performs\na mission, the mission results\nmust be verified with acceptible physical proof that must be\npresented to the Employer.\n3-1. Please refer to Section\n7A for examples of acceptible\nproof of monster extermination.\n3-2. Acceptible proof is\ndetermined and defined by a\nrepresentative of the Employer.\n4. Employer will allot rewards\nto Employees after receiving\nextermination proof.\n4-1. Possible rewards for\nmonster exterminations may\ninclude the following.\n.................................................\n.................................................\n.................................................\n.................................................\n.................................................\n13. This contract's terms are\nonly applicable witin Thanatos\nTower.\n14. Employees will receive\na discount on the Entry Fee\nto the Thanatos Tower.\n \n \n \nEmployer Signature____________\nEmployee Signature____________",
       "translation" : "- 雇佣协议 -\n \n1. 本雇佣协议由雷根贝勒公司（“雇主”）与{0}（“雇员”）签订。\n1-1. 本协议属于双方之间的佣兵合同。\n2. 本合同经双方（雇主与雇员）签署后立即生效。\n3. 雇员执行任务后，必须向雇主出示可接受的实物证据，以供核实任务结果。\n3-1. 魔物清剿证明的示例，请参阅第7A节。\n3-2. 可接受的证明由雇主代表认定。\n4. 雇主收到清剿证明后，将向雇员发放奖励。\n4-1. 魔物清剿任务可能获得以下奖励。\n.................................................\n.................................................\n.................................................\n.................................................\n.................................................\n13. 本合同条款仅适用于达纳托斯塔。\n14. 雇员可享受达纳托斯塔入场费折扣。\n \n \n \n雇主签名____________\n雇员签名____________"
@@ -511,16 +502,16 @@
       "line" : 414,
       "npc" : "Guide",
       "state" : "translated",
-      "text" : "[Liei]\nGood day, I'm\nLiei Kuniziet of the\nEmployee Mission\nReward Department\nhere in Thanatos Tower.",
-      "translation" : "[莉埃]\n您好，我是达纳托斯塔员工任务奖励部的莉埃·库尼齐特。"
+      "text" : "[Liei]\nAh, hello~\nHow may I help you?",
+      "translation" : "[莉埃]\n啊，你好~\n有什么可以帮您的吗？"
     },
     {
       "kind" : "message",
       "line" : 414,
       "npc" : "Guide",
       "state" : "translated",
-      "text" : "[Liei]\nAh, hello~\nHow may I help you?",
-      "translation" : "[莉埃]\n啊，你好~\n有什么可以帮您的吗？"
+      "text" : "[Liei]\nGood day, I'm\nLiei Kuniziet of the\nEmployee Mission\nReward Department\nhere in Thanatos Tower.",
+      "translation" : "[莉埃]\n您好，我是达纳托斯塔员工任务奖励部的莉埃·库尼齐特。"
     },
     {
       "kind" : "option",
@@ -555,14 +546,6 @@
       "translation" : "[莉埃]\n谢谢。希望您在达纳托斯塔参观愉快。"
     },
     {
-      "kind" : "message",
-      "line" : 440,
-      "npc" : "Guide",
-      "state" : "translated",
-      "text" : "Ah, hello~\nHow may I help you?",
-      "translation" : "啊，你好~有什么可以帮您的吗？"
-    },
-    {
       "kind" : "option",
       "line" : 443,
       "npc" : "Guide",
@@ -590,9 +573,6 @@
       "kind" : "message",
       "line" : 453,
       "npc" : "Guide",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "[Liei]\nYou're {0}, yes?\nLet me check our temp\nemployee records for--ah.\nHere it is. Alright, so would\nyou please tell me what kind\nof mission proof you brought?",
       "translation" : "[莉埃]\n您是{0}，对吧？\n让我查一下我们的临时员工记录——啊。\n在这里。\n好的，那么请告诉我您带来了哪种任务证明？"
@@ -633,89 +613,121 @@
       "kind" : "message",
       "line" : 463,
       "npc" : "Guide",
-      "placeholders" : [
-        "callfunc(\"F_GetPlural\",getitemname(.@Items[.@i]))"
-      ],
       "state" : "translated",
-      "text" : "[Liei]\nI'm sorry, but you are not\ncarrying any {0}.\nPlease check your inventory\none more time, and then come\nto me to redeem your items\nfor a reward later, alright?",
-      "translation" : "[莉埃]\n抱歉，您没有携带{0}。\n请再检查一次物品栏，之后再来兑换奖励，好吗？"
+      "text" : "[Liei]\nI'm sorry, but you are not",
+      "translation" : "[莉埃]\n抱歉，不过你没有"
     },
     {
       "kind" : "message",
       "line" : 463,
       "npc" : "Guide",
-      "placeholders" : [
-        "getitemname(.@Items[.@i])"
-      ],
       "state" : "translated",
       "text" : "[Liei]\nThe reward for each\n{0} is...\n \n1,000 zeny",
       "translation" : "[莉埃]\n每个{0}可兑换...\n \n1,000 Zeny"
     },
     {
       "kind" : "message",
+      "line" : 466,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "carrying any {0}.\nPlease check your inventory\none more time, and then come\nto me to redeem your items\nfor a reward later, alright?",
+      "translation" : "没有携带任何{0}。\n请再检查一次背包，之后再来找我兑换物品领取奖励，好吗？"
+    },
+    {
+      "kind" : "message",
       "line" : 481,
       "npc" : "Guide",
-      "placeholders" : [
-        "callfunc(\"F_InsertPlural\",countitem(.@Items[.@i]),getitemname(.@Items[.@i]))",
-        ".@zeny_tt"
-      ],
       "state" : "translated",
-      "text" : "[Liei]\n{0}, then\nyou will receive a total of...\n \n{1} zeny",
-      "translation" : "[莉埃]\n那么，{0}个可以兑换...\n \n共{1} Zeny"
+      "text" : "[Liei]",
+      "translation" : "[莉埃]"
+    },
+    {
+      "kind" : "message",
+      "line" : 481,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Liei]\n{0} {1}, then\nyou will receive a total of...\n \n{2} zeny",
+      "translation" : "[莉埃]\n兑换{0} {1}后，\n你总共会获得...\n \n{2} 泽尼"
+    },
+    {
+      "kind" : "message",
+      "line" : 482,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "{0} {1}, then\nyou will receive a total of...\n \n{2} zeny",
+      "translation" : "兑换{0} {1}后，\n你总共会获得...\n \n{2} 泽尼"
     },
     {
       "kind" : "message",
       "line" : 488,
       "npc" : "Guide",
-      "placeholders" : [
-        "callfunc(\"F_GetPlural\",getitemname(.@Items[.@i]))"
-      ],
       "state" : "translated",
-      "text" : "[Liei]\nWould you like to exchange\nall of your {0}\nfor your reward right now?",
-      "translation" : "[莉埃]\n您现在要兑换所有的{0}来领取奖励吗？"
-    },
-    {
-      "kind" : "option",
-      "line" : 493,
-      "npc" : "Guide",
-      "state" : "translated",
-      "text" : "Yes",
-      "translation" : "是"
-    },
-    {
-      "kind" : "option",
-      "line" : 493,
-      "npc" : "Guide",
-      "state" : "translated",
-      "text" : "No",
-      "translation" : "否"
+      "text" : "[Liei]\nWould you like to exchange",
+      "translation" : "[莉埃]\n你想兑换"
     },
     {
       "kind" : "message",
-      "line" : 495,
+      "line" : 488,
       "npc" : "Guide",
-      "placeholders" : [
-        ".@zeny_tt"
-      ],
       "state" : "translated",
-      "text" : "[Liei]\nGreat! Here is your\n{0} zeny. Thank you,\nand please keep up\nthe good work~",
-      "translation" : "[莉埃]\n太好了！这是给您的{0} Zeny。\n谢谢，请继续努力工作~"
+      "text" : "[Liei]\nWould you like to exchange\nall of your {0}",
+      "translation" : "[莉埃]\n你想兑换所有的{0}吗？"
     },
     {
       "kind" : "message",
-      "line" : 506,
+      "line" : 488,
       "npc" : "Guide",
       "state" : "translated",
-      "text" : "[Liei]\nSure, no problem.\nJust come back and\ntalk to me whenever\nyou want to receive\nyour reward, alright?",
-      "translation" : "[莉埃]\n好的，没问题。\n想领取奖励时，随时回来找我，好吗？"
+      "text" : "[Liei]\nWould you like to exchange\nall of your {0}es",
+      "translation" : "[莉埃]\n你想兑换所有的{0}吗？"
     },
     {
       "kind" : "message",
-      "line" : 517,
-      "npc" : "Entrance Guide",
+      "line" : 488,
+      "npc" : "Guide",
       "state" : "translated",
-      "text" : "[Burled]\nYou are in front of the entrance to the 3rd Floor. Only contracted\ntemp employees are authorized\nto enter that area. For Rekenber temp contract information, please\nspeak to the 2nd Floor Guide.",
-      "translation" : "[伯尔德]\n这里是3楼入口。只有签订临时工作合同的员工才有权进入。\n如需了解雷根贝勒临时工作合同，请咨询2楼的向导。"
+      "text" : "[Liei]\nWould you like to exchange\nall of your {0}",
+      "translation" : "[莉埃]\n你想兑换所有的{0}吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 488,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Liei]\nWould you like to exchange\nall of your {0}ies",
+      "translation" : "[莉埃]\n你想兑换所有的{0}吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 488,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Liei]\nWould you like to exchange\nall of your {0}ves",
+      "translation" : "[莉埃]\n你想兑换所有的{0}吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 488,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Liei]\nWould you like to exchange\nall of your {0}s",
+      "translation" : "[莉埃]\n你想兑换所有的{0}吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 488,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "[Liei]\nWould you like to exchange\nall of your {0}",
+      "translation" : "[莉埃]\n你想兑换所有的{0}吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 490,
+      "npc" : "Guide",
+      "state" : "translated",
+      "text" : "all of your {0}",
+      "translation" : "你所有的{0}"
     },
     {
       "kind" : "message",
@@ -724,6 +736,14 @@
       "state" : "translated",
       "text" : "[Burled]\nThis is the path to the 3rd floor.\nOnly the contracted staff are allowed to enter.\nHow can I help you?",
       "translation" : "[伯尔德]\n这是通往3楼的通道。只有签约员工才能进入。\n有什么可以帮您的吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 517,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nYou are in front of the entrance to the 3rd Floor. Only contracted\ntemp employees are authorized\nto enter that area. For Rekenber temp contract information, please\nspeak to the 2nd Floor Guide.",
+      "translation" : "[伯尔德]\n这里是3楼入口。只有签订临时工作合同的员工才有权进入。\n如需了解雷根贝勒临时工作合同，请咨询2楼的向导。"
     },
     {
       "kind" : "option",
@@ -753,9 +773,6 @@
       "kind" : "message",
       "line" : 531,
       "npc" : "Entrance Guide",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "[Burled]\nOh, alright. Let me\ncheck and see if you're\non our temp list. Hmmm...\nAh, you're {0}, right?",
       "translation" : "[伯尔德]\n哦，好的。\n让我查一下您是否在我们的临时员工名单上。\n嗯...啊，您是{0}，对吧？"
@@ -764,20 +781,17 @@
       "kind" : "message",
       "line" : 537,
       "npc" : "Entrance Guide",
-      "placeholders" : [
-        "getareausers(\"tha_t02\",226,156,236,166)"
-      ],
       "state" : "translated",
-      "text" : "[Burled]\nFirst, we need to wait until\nat least 5 temps are gathered\nto form a work group. Right\nnow, there are a total of\n{0} temp workers waiting to\nenter the 3rd Floor.",
-      "translation" : "[伯尔德]\n我们得等至少5名临时员工到齐，才能组成工作小组。\n目前有{0}名临时员工等着进入3楼。"
+      "text" : "[Burled]\nGreat, you're just\nin time. We just met\nthe minimum 5 temp group\nrequirement, so we'll open\nthe gate to the 3rd Floor soon.",
+      "translation" : "[伯尔德]\n太好了，您来得正是时候。现在临时小组刚好达到5人的最低要求，我们很快就会开放通往3楼的入口。"
     },
     {
       "kind" : "message",
       "line" : 537,
       "npc" : "Entrance Guide",
       "state" : "translated",
-      "text" : "[Burled]\nGreat, you're just\nin time. We just met\nthe minimum 5 temp group\nrequirement, so we'll open\nthe gate to the 3rd Floor soon.",
-      "translation" : "[伯尔德]\n太好了，您来得正是时候。现在临时小组刚好达到5人的最低要求，我们很快就会开放通往3楼的入口。"
+      "text" : "[Burled]\nFirst, we need to wait until\nat least 5 temps are gathered\nto form a work group. Right\nnow, there are a total of\n{0} temp workers waiting to\nenter the 3rd Floor.",
+      "translation" : "[伯尔德]\n我们得等至少5名临时员工到齐，才能组成工作小组。\n目前有{0}名临时员工等着进入3楼。"
     },
     {
       "kind" : "message",
@@ -1077,11 +1091,72 @@
     },
     {
       "kind" : "message",
+      "line" : 708,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nAh, it's not that difficult.\nAfter you explore the tower, let me know in detail anything you learn.",
+      "translation" : "[伯尔德]\n啊，这没那么难。\n探索完这座塔后，把你了解到的细节告诉我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 708,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\n...I can't believe the Rekenber Corporation. Many colleagues and friends died for them.\nBut the Rekenber Corporation doesn't expose the reason they are dead.",
+      "translation" : "[伯尔德]\n...我真不敢相信雷根贝勒公司。许多同事和朋友都为他们丧命了。\n可雷根贝勒公司却不肯公开死因。"
+    },
+    {
+      "kind" : "message",
+      "line" : 708,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nThe conditions were bad for us from beginning...\nAll of the developed places except research materials would be turned into tourist attractions...\nHonestly, all the personnel are from Cool Event Corp.",
+      "translation" : "[伯尔德]\n从一开始，我们的处境就很糟...\n除了研究设施，所有开发出来的地方都会改成观光景点...\n说实话，酷事件公司的员工全都参与了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 708,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nThey know about it as well.\nThis business needs much sacrifice as well as personnel who are up for it.",
+      "translation" : "[伯尔德]\n他们也知道这一点。\n这项业务需要大量人手，也需要愿意为此冒险的人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 708,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nNow I don't feel victimized anymore, but I just want to know what drives these accidents...\n^4d4dffWhat makes us victimized...?^000000\nThat's what I want to know.",
+      "translation" : "[伯尔德]\n现在我不再觉得自己是受害者了，但我只想知道这些事故究竟是怎么发生的...\n^4d4dff究竟是什么让我们受害...？^000000\n这就是我想知道的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 708,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nWhat's this tower?\nWhy did they develop this dangerous place?\nAnd for what? Should my colleagues be dead for it?",
+      "translation" : "[伯尔德]\n这座塔究竟是什么？\n他们为什么要开发如此危险的地方？\n又是为了什么？难道我的同事就该为此丧命吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 708,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nI seriously want to know about it.\nWhy they must sacrifice themselves...\nLet me know...",
+      "translation" : "[伯尔德]\n我真的很想知道。\n他们为什么非得牺牲自己...\n告诉我吧..."
+    },
+    {
+      "kind" : "message",
+      "line" : 708,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "He seriously wants to know about it.\nHis hands are trembling now...\nI nodd without answering.",
+      "translation" : "他真的很想知道。\n他的双手正在颤抖...\n我没有回答，只是点了点头。"
+    },
+    {
+      "kind" : "message",
       "line" : 710,
       "npc" : "Entrance Guide",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "[{0}]\n(What's the accident...?\nHe might let me know later...)",
       "translation" : "[{0}]\n（那场事故到底是什么...？\n他之后或许会告诉我...）"
@@ -1093,6 +1168,70 @@
       "state" : "translated",
       "text" : "[Burled]\n...there is no way...\nThey request you to explore the internal part.\nYou're employed for this exploration.",
       "translation" : "[伯尔德]\n...实在没办法...\n他们要求你探索塔的内部。\n你受雇执行这项探索任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nAh, it's not that difficult.\nAfter you explore the tower, let me know in detail anything you learn.",
+      "translation" : "[伯尔德]\n啊，这没那么难。\n探索完这座塔后，把你了解到的细节告诉我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\n...I can't believe the Rekenber Corporation. Many colleagues and friends died for them.\nBut the Rekenber Corporation doesn't expose the reason they are dead.",
+      "translation" : "[伯尔德]\n...我真不敢相信雷根贝勒公司。许多同事和朋友都为他们丧命了。\n可雷根贝勒公司却不肯公开死因。"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nThe conditions were bad for us from beginning...\nAll of the developed places except research materials would be turned into tourist attractions...\nHonestly, all the personnel are from Cool Event Corp.",
+      "translation" : "[伯尔德]\n从一开始，我们的处境就很糟...\n除了研究设施，所有开发出来的地方都会改成观光景点...\n说实话，酷事件公司的员工全都参与了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nThey know about it as well.\nThis business needs much sacrifice as well as personnel who are up for it.",
+      "translation" : "[伯尔德]\n他们也知道这一点。\n这项业务需要大量人手，也需要愿意为此冒险的人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nNow I don't feel victimized anymore, but I just want to know what drives these accidents...\n^4d4dffWhat makes us victimized...?^000000\nThat's what I want to know.",
+      "translation" : "[伯尔德]\n现在我不再觉得自己是受害者了，但我只想知道这些事故究竟是怎么发生的...\n^4d4dff究竟是什么让我们受害...？^000000\n这就是我想知道的。"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nWhat's this tower?\nWhy did they develop this dangerous place?\nAnd for what? Should my colleagues be dead for it?",
+      "translation" : "[伯尔德]\n这座塔究竟是什么？\n他们为什么要开发如此危险的地方？\n又是为了什么？难道我的同事就该为此丧命吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "[Burled]\nI seriously want to know about it.\nWhy they must sacrifice themselves...\nLet me know...",
+      "translation" : "[伯尔德]\n我真的很想知道。\n他们为什么非得牺牲自己...\n告诉我吧..."
+    },
+    {
+      "kind" : "message",
+      "line" : 724,
+      "npc" : "Entrance Guide",
+      "state" : "translated",
+      "text" : "He seriously wants to know about it.\nHis hands are trembling now...\nI nodd without answering.",
+      "translation" : "他真的很想知道。\n他的双手正在颤抖...\n我没有回答，只是点了点头。"
     },
     {
       "kind" : "message",
@@ -1210,9 +1349,6 @@
       "kind" : "message",
       "line" : 789,
       "npc" : "Entrance Guide",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "[Burled]\nHow would you like to keep this, {0}?\nDefinitely this should be a secret.\n...um, this is a little revenge for them.",
       "translation" : "[伯尔德]\n{0}，你想把这个留下吗？\n这件事绝对要保密。\n...嗯，算是小小报复他们一下。"
@@ -1221,9 +1357,6 @@
       "kind" : "message",
       "line" : 794,
       "npc" : "Entrance Guide",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "[Burled]\nI can guess that there are several secrets in this tower through this note.\nThis secret should be disclosed by you, {0}, before Rekenber does.",
       "translation" : "[伯尔德]\n从这张纸条来看，塔里肯定还有几个秘密。\n在雷根贝勒之前，由你来揭开这些秘密吧，{0}。"
@@ -1248,9 +1381,6 @@
       "kind" : "message",
       "line" : 808,
       "npc" : "Entrance Guide",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "[Burled]\nI hope that these will be useful for you, {0}.",
       "translation" : "[伯尔德]\n希望这些东西对你有用，{0}。"
@@ -1268,80 +1398,16 @@
       "line" : 822,
       "npc" : "Entrance Guide",
       "state" : "translated",
-      "text" : "[Burled]\nAre you keeping the secrets well?\nIs there a Phantom on the top of this tower?\nYou look tired. This isn't a big deal, but it's for you.",
-      "translation" : "[伯尔德]\n你把秘密守得很好吗？\n这座塔顶端有幻影吗？\n你看起来很累。这不是什么大事，不过这个给你。"
+      "text" : "[Burled]\nAre you keeping the secrets well?\nIs there a Phantom on the top of this tower?",
+      "translation" : "[伯尔德]\n你把秘密守得很好吗？\n这座塔顶端有幻影吗？"
     },
     {
       "kind" : "message",
       "line" : 822,
       "npc" : "Entrance Guide",
       "state" : "translated",
-      "text" : "[Burled]\nAre you keeping the secrets well?\nIs there a Phantom on the top of this tower?",
-      "translation" : "[伯尔德]\n你把秘密守得很好吗？\n这座塔顶端有幻影吗？"
-    },
-    {
-      "kind" : "message",
-      "line" : 834,
-      "npc" : "Entrance Guide",
-      "state" : "translated",
-      "text" : "[Burled]\nAh, it's not that difficult.\nAfter you explore the tower, let me know in detail anything you learn.",
-      "translation" : "[伯尔德]\n啊，这没那么难。\n探索完这座塔后，把你了解到的细节告诉我。"
-    },
-    {
-      "kind" : "message",
-      "line" : 838,
-      "npc" : "Entrance Guide",
-      "state" : "translated",
-      "text" : "[Burled]\n...I can't believe the Rekenber Corporation. Many colleagues and friends died for them.\nBut the Rekenber Corporation doesn't expose the reason they are dead.",
-      "translation" : "[伯尔德]\n...我真不敢相信雷根贝勒公司。许多同事和朋友都为他们丧命了。\n可雷根贝勒公司却不肯公开死因。"
-    },
-    {
-      "kind" : "message",
-      "line" : 842,
-      "npc" : "Entrance Guide",
-      "state" : "translated",
-      "text" : "[Burled]\nThe conditions were bad for us from beginning...\nAll of the developed places except research materials would be turned into tourist attractions...\nHonestly, all the personnel are from Cool Event Corp.",
-      "translation" : "[伯尔德]\n从一开始，我们的处境就很糟...\n除了研究设施，所有开发出来的地方都会改成观光景点...\n说实话，酷事件公司的员工全都参与了。"
-    },
-    {
-      "kind" : "message",
-      "line" : 847,
-      "npc" : "Entrance Guide",
-      "state" : "translated",
-      "text" : "[Burled]\nThey know about it as well.\nThis business needs much sacrifice as well as personnel who are up for it.",
-      "translation" : "[伯尔德]\n他们也知道这一点。\n这项业务需要大量人手，也需要愿意为此冒险的人。"
-    },
-    {
-      "kind" : "message",
-      "line" : 851,
-      "npc" : "Entrance Guide",
-      "state" : "translated",
-      "text" : "[Burled]\nNow I don't feel victimized anymore, but I just want to know what drives these accidents...\n^4d4dffWhat makes us victimized...?^000000\nThat's what I want to know.",
-      "translation" : "[伯尔德]\n现在我不再觉得自己是受害者了，但我只想知道这些事故究竟是怎么发生的...\n^4d4dff究竟是什么让我们受害...？^000000\n这就是我想知道的。"
-    },
-    {
-      "kind" : "message",
-      "line" : 856,
-      "npc" : "Entrance Guide",
-      "state" : "translated",
-      "text" : "[Burled]\nWhat's this tower?\nWhy did they develop this dangerous place?\nAnd for what? Should my colleagues be dead for it?",
-      "translation" : "[伯尔德]\n这座塔究竟是什么？\n他们为什么要开发如此危险的地方？\n又是为了什么？难道我的同事就该为此丧命吗？"
-    },
-    {
-      "kind" : "message",
-      "line" : 861,
-      "npc" : "Entrance Guide",
-      "state" : "translated",
-      "text" : "[Burled]\nI seriously want to know about it.\nWhy they must sacrifice themselves...\nLet me know...",
-      "translation" : "[伯尔德]\n我真的很想知道。\n他们为什么非得牺牲自己...\n告诉我吧..."
-    },
-    {
-      "kind" : "message",
-      "line" : 866,
-      "npc" : "Entrance Guide",
-      "state" : "translated",
-      "text" : "He seriously wants to know about it.\nHis hands are trembling now...\nI nodd without answering.",
-      "translation" : "他真的很想知道。\n他的双手正在颤抖...\n我没有回答，只是点了点头。"
+      "text" : "[Burled]\nAre you keeping the secrets well?\nIs there a Phantom on the top of this tower?\nYou look tired. This isn't a big deal, but it's for you.",
+      "translation" : "[伯尔德]\n你把秘密守得很好吗？\n这座塔顶端有幻影吗？\n你看起来很累。这不是什么大事，不过这个给你。"
     },
     {
       "kind" : "message",
@@ -1371,9 +1437,6 @@
       "kind" : "message",
       "line" : 903,
       "npc" : "Rune Device",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "[{0}]\nThis seems mysterious...\nLet me investigate.",
       "translation" : "[{0}]\n这东西看起来很神秘...\n让我调查一下。"
@@ -1398,9 +1461,6 @@
       "kind" : "message",
       "line" : 918,
       "npc" : "Rune Device",
-      "placeholders" : [
-        "getequipname(EQI_HAND_R)"
-      ],
       "state" : "translated",
       "text" : "^3355FFWith your {0} in\nhand, you smash the energy\nfield with all of your strength. After absorbing the impact, the\nfield fizzles out with a soft,\ngentle ''pzzzzzh'' sound.^000000",
       "translation" : "^3355FF你手持{0}，用尽全力砸向能量场。能量场吸收冲击后，发出一声轻柔的“滋——”，随即消散。^000000"
@@ -1442,16 +1502,16 @@
       "line" : 956,
       "npc" : "Rune Device",
       "state" : "translated",
-      "text" : "- You acquired the powerful Red Key. -",
-      "translation" : "- 你获得了强大的红色钥匙。 -"
+      "text" : "- You acquired the powerful Red Key. -\n^4d4dffOnce you hold the key, a shocking feeling passes through your head.\nYou see an illusion of light...^000000",
+      "translation" : "- 你获得了强大的红色钥匙。 -\n^4d4dff握住钥匙时，一股强烈的感觉涌上脑海。\n你看见一道光的幻象...^000000"
     },
     {
       "kind" : "message",
       "line" : 956,
       "npc" : "Rune Device",
       "state" : "translated",
-      "text" : "- You acquired the powerful Red Key. -\n^4d4dffOnce you hold the key, a shocking feeling passes through your head.\nYou see an illusion of light...^000000",
-      "translation" : "- 你获得了强大的红色钥匙。 -\n^4d4dff握住钥匙时，一股强烈的感觉涌上脑海。\n你看见一道光的幻象...^000000"
+      "text" : "- You acquired the powerful Red Key. -",
+      "translation" : "- 你获得了强大的红色钥匙。 -"
     },
     {
       "kind" : "option",
@@ -1467,7 +1527,7 @@
       "npc" : "Rune Device",
       "state" : "translated",
       "text" : "Concentrate on it.",
-      "translation" : "集中注意力"
+      "translation" : "集中精神"
     },
     {
       "kind" : "message",
@@ -1577,11 +1637,6 @@
       "kind" : "message",
       "line" : 1060,
       "npc" : "Rune Device",
-      "placeholders" : [
-        ".@input100",
-        ".@input10",
-        "(.@input % 10)"
-      ],
       "state" : "translated",
       "text" : "[Screen]\nYou have input...\n^0000ff{0}^000000, ^0000ff{1}^000000, ^0000ff{2}^000000\n \nCalculating Results...\nPlease wait a moment...",
       "translation" : "[屏幕]\n您输入了...\n^0000ff{0}^000000，^0000ff{1}^000000，^0000ff{2}^000000\n \n正在计算结果...\n请稍候..."
@@ -1607,16 +1662,16 @@
       "line" : 1086,
       "npc" : "Rune Device",
       "state" : "translated",
-      "text" : "^4d4dffThe powerful Yellow Key appears.^000000",
-      "translation" : "^4d4dff强大的黄色钥匙出现了。^000000"
+      "text" : "^4d4dffThe powerful Yellow Key appears.^000000\n^4d4dffA fierce feeling passes through your head.\nYou seen an illusion of light, like when you acquired the first key.^000000",
+      "translation" : "^4d4dff强大的黄色钥匙出现了。^000000\n^4d4dff握住钥匙时，一股强烈的感觉涌上脑海。\n你看见一道光的幻象，就像获得第一把钥匙时一样。^000000"
     },
     {
       "kind" : "message",
       "line" : 1086,
       "npc" : "Rune Device",
       "state" : "translated",
-      "text" : "^4d4dffThe powerful Yellow Key appears.^000000\n^4d4dffA fierce feeling passes through your head.\nYou seen an illusion of light, like when you acquired the first key.^000000",
-      "translation" : "^4d4dff强大的黄色钥匙出现了。^000000\n^4d4dff握住钥匙时，一股强烈的感觉涌上脑海。\n你看见一道光的幻象，就像获得第一把钥匙时一样。^000000"
+      "text" : "^4d4dffThe powerful Yellow Key appears.^000000",
+      "translation" : "^4d4dff强大的黄色钥匙出现了。^000000"
     },
     {
       "kind" : "option",
@@ -1632,7 +1687,7 @@
       "npc" : "Rune Device",
       "state" : "translated",
       "text" : "Concentrate on it.",
-      "translation" : "集中注意力"
+      "translation" : "集中精神"
     },
     {
       "kind" : "message",
@@ -1718,23 +1773,102 @@
       "kind" : "message",
       "line" : 1133,
       "npc" : "Rune Device",
-      "placeholders" : [
-        ".@strike",
-        ".@ball"
-      ],
       "state" : "translated",
-      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF0000{0}^000000\n \nCorrect number total: ^FF0000{1}^000000",
-      "translation" : "[屏幕]\n数字及其位置都正确的个数：^FF0000{0}^000000\n \n数字正确的个数：^FF0000{1}^000000"
+      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF00000^000000\n \nCorrect number total: ^FF00000^000000",
+      "translation" : "[屏幕]\n位置和顺序都正确的数字总数： ^FF00000^000000\n \n数字正确总数： ^FF00000^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Rune Device",
+      "state" : "translated",
+      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF00000^000000\n \nCorrect number total: ^FF00001^000000",
+      "translation" : "[屏幕]\n位置和顺序都正确的数字总数： ^FF00000^000000\n \n数字正确总数： ^FF00001^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Rune Device",
+      "state" : "translated",
+      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF00001^000000\n \nCorrect number total: ^FF00000^000000",
+      "translation" : "[屏幕]\n位置和顺序都正确的数字总数： ^FF00001^000000\n \n数字正确总数： ^FF00000^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Rune Device",
+      "state" : "translated",
+      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF00000^000000\n \nCorrect number total: ^FF00002^000000",
+      "translation" : "[屏幕]\n位置和顺序都正确的数字总数： ^FF00000^000000\n \n数字正确总数： ^FF00002^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Rune Device",
+      "state" : "translated",
+      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF00001^000000\n \nCorrect number total: ^FF00001^000000",
+      "translation" : "[屏幕]\n位置和顺序都正确的数字总数： ^FF00001^000000\n \n数字正确总数： ^FF00001^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Rune Device",
+      "state" : "translated",
+      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF00002^000000\n \nCorrect number total: ^FF00000^000000",
+      "translation" : "[屏幕]\n位置和顺序都正确的数字总数： ^FF00002^000000\n \n数字正确总数： ^FF00000^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Rune Device",
+      "state" : "translated",
+      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF00000^000000\n \nCorrect number total: ^FF00003^000000",
+      "translation" : "[屏幕]\n位置和顺序都正确的数字总数： ^FF00000^000000\n \n数字正确总数： ^FF00003^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Rune Device",
+      "state" : "translated",
+      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF00001^000000\n \nCorrect number total: ^FF00002^000000",
+      "translation" : "[屏幕]\n位置和顺序都正确的数字总数： ^FF00001^000000\n \n数字正确总数： ^FF00002^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Rune Device",
+      "state" : "translated",
+      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF00002^000000\n \nCorrect number total: ^FF00001^000000",
+      "translation" : "[屏幕]\n位置和顺序都正确的数字总数： ^FF00002^000000\n \n数字正确总数： ^FF00001^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Rune Device",
+      "state" : "translated",
+      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF00001^000000\n \nCorrect number total: ^FF00003^000000",
+      "translation" : "[屏幕]\n位置和顺序都正确的数字总数： ^FF00001^000000\n \n数字正确总数： ^FF00003^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Rune Device",
+      "state" : "translated",
+      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF00002^000000\n \nCorrect number total: ^FF00002^000000",
+      "translation" : "[屏幕]\n位置和顺序都正确的数字总数： ^FF00002^000000\n \n数字正确总数： ^FF00002^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Rune Device",
+      "state" : "translated",
+      "text" : "[Screen]\nCorrect number\nin correct place\nin sequence total: ^FF00002^000000\n \nCorrect number total: ^FF00003^000000",
+      "translation" : "[屏幕]\n位置和顺序都正确的数字总数： ^FF00002^000000\n \n数字正确总数： ^FF00003^000000"
     },
     {
       "kind" : "message",
       "line" : 1141,
       "npc" : "Rune Device",
-      "placeholders" : [
-        ".@yagu100",
-        ".@yagu10",
-        ".@yagu1"
-      ],
       "state" : "translated",
       "text" : "[Screen]\nCorrect number\nauthorization\nsequence was...\n^ff0000{0}^000000, ^ff0000{1}^000000, ^ff0000{2}^000000\nAuthorization number\nwill change upon retry.",
       "translation" : "[屏幕]\n正确的授权数字序列是...\n^ff0000{0}^000000，^ff0000{1}^000000，^ff0000{2}^000000\n重试后，授权数字会改变。"
@@ -1791,9 +1925,6 @@
       "kind" : "message",
       "line" : 1176,
       "npc" : "Brilliant Statue",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "[{0}]\nI'll try the left wing first.\nWhat key should I put in?",
       "translation" : "[{0}]\n我先试试左翼。\n该插哪把钥匙？"
@@ -1818,9 +1949,6 @@
       "kind" : "message",
       "line" : 1188,
       "npc" : "Brilliant Statue",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "[{0}]\nNow the right side...",
       "translation" : "[{0}]\n现在轮到右边了..."
@@ -1846,16 +1974,16 @@
       "line" : 1200,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "^4d4dffThe powerful Blue Key appears.^000000",
-      "translation" : "^4d4dff强大的蓝色钥匙出现了。^000000"
+      "text" : "^4d4dffThe powerful Blue Key appears.^000000\n^4d4dffOnce you hold the key, a shocking feeling passes through your head.\nYou see an illusion of light...^000000",
+      "translation" : "^4d4dff强大的蓝色钥匙出现了。^000000\n^4d4dff握住钥匙时，一股强烈的感觉涌上脑海。\n你看见一道光的幻象...^000000"
     },
     {
       "kind" : "message",
       "line" : 1200,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "^4d4dffThe powerful Blue Key appears.^000000\n^4d4dffOnce you hold the key, a shocking feeling passes through your head.\nYou see an illusion of light...^000000",
-      "translation" : "^4d4dff强大的蓝色钥匙出现了。^000000\n^4d4dff握住钥匙时，一股强烈的感觉涌上脑海。\n你看见一道光的幻象...^000000"
+      "text" : "^4d4dffThe powerful Blue Key appears.^000000",
+      "translation" : "^4d4dff强大的蓝色钥匙出现了。^000000"
     },
     {
       "kind" : "option",
@@ -1863,7 +1991,7 @@
       "npc" : "Brilliant Statue",
       "state" : "translated",
       "text" : "Concentrate on it.",
-      "translation" : "集中注意力"
+      "translation" : "集中精神"
     },
     {
       "kind" : "option",
@@ -2051,534 +2179,6 @@
     },
     {
       "kind" : "message",
-      "line" : 1293,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFJudging from the machine's\nshaking and jittery noises, the\nwheels may be misaligned.\nYou might be able to activate\nthe machine by properly \naligning all the wheels.^000000\nAs you adjust the wheels,\nthey suddenly activate\nwith a firm click.",
-      "translation" : "^3355FF从机器的摇晃和不稳定的声响判断，齿轮可能没有对齐。\n只要正确对齐所有齿轮，或许就能启动机器。^000000\n你调整齿轮时，机器突然启动，发出清脆的咔哒声。"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: No Change\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：保持不变\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: No Change\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：保持不变\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: No Change\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：保持不变\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Pressed\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：按下\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: Pressed\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：按下\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: Pressed\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：按下\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: Pressed\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：按下\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Down\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：向下\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: Down\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：向下\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: Down\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：向下\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: Down\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：向下\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Up\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：向上\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: Up\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：向上\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: Up\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：向上\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: Up\n1st Big Wheel: No Change",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：向上\n1号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: No Change\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：保持不变\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: No Change\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：保持不变\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: No Change\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：保持不变\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Pressed\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：按下\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: Pressed\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：按下\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: Pressed\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：按下\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: Pressed\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：按下\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Down\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：向下\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: Down\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：向下\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: Down\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：向下\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: Down\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：向下\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Up\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：向上\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: Up\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：向上\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: Up\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：向上\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: Up\n1st Big Wheel: Up",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：向上\n1号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: No Change\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：保持不变\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: No Change\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：保持不变\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: No Change\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：保持不变\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Pressed\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：按下\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: Pressed\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：按下\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: Pressed\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：按下\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: Pressed\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：按下\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Down\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：向下\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: Down\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：向下\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: Down\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：向下\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: Down\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：向下\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Up\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：向上\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: Up\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：向上\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: Up\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：向上\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: Up\n1st Big Wheel: Moved",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：向上\n1号大齿轮：已移动"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: No Change\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：保持不变\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: No Change\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：保持不变\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: No Change\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：保持不变\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Pressed\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：按下\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: Pressed\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：按下\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: Pressed\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：按下\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: Pressed\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：按下\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Down\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：向下\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: Down\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：向下\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: Down\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：向下\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: Down\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：向下\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Up\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：向上\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: Up\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：向上\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: Up\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：向上\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed\n2nd Small Wheel: Up\n1st Big Wheel: Down",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下\n2号小齿轮：向上\n1号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1301,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000",
-      "translation" : "^3355FF你想调整哪个齿轮？^000000"
-    },
-    {
-      "kind" : "message",
       "line" : 1301,
       "npc" : "Brilliant Statue",
       "state" : "translated",
@@ -2600,6 +2200,158 @@
       "state" : "translated",
       "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n^5C246E*Mrreeem*^000000",
       "translation" : "^3355FF你想调整哪个齿轮？^000000\n^5C246E*嗡——*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do",
+      "translation" : "^3355FF你想调整哪个齿轮"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: No Change",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：保持不变"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Pressed",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：按下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Down",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: Moved",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：已移动"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: Down",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Down\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: No Change",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向下\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：保持不变"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Pressed\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: No Change",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：按下\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：保持不变"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: Up\n2nd Big Wheel: No Change\n3rd Big Wheel: No Change",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：向上\n2号大齿轮：保持不变\n3号大齿轮：保持不变"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: Moved\n3rd Big Wheel: No Change",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：已移动\n3号大齿轮：保持不变"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: Down",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: Moved",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：已移动"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: Up\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: No Change",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：向上\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：保持不变"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: Up\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: No Change",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：向上\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：保持不变"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: Down\n2nd Big Wheel: No Change\n3rd Big Wheel: No Change",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：向下\n2号大齿轮：保持不变\n3号大齿轮：保持不变"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: Up\n3rd Big Wheel: No Change",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：向上\n3号大齿轮：保持不变"
+    },
+    {
+      "kind" : "message",
+      "line" : 1301,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^3355FFWhich wheel do\nyou want to shift?^000000\n1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: Up",
+      "translation" : "^3355FF你想调整哪个齿轮？^000000\n1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1302,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "you want to shift?^000000",
+      "translation" : "？^000000"
     },
     {
       "kind" : "option",
@@ -2682,6 +2434,30 @@
       "translation" : "按下齿轮"
     },
     {
+      "kind" : "message",
+      "line" : 1307,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^EE0000*Choom*^000000",
+      "translation" : "^EE0000*咚!*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1312,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^00B2EE*Sneeeep*^000000",
+      "translation" : "^00B2EE*咻——*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1317,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^5C246E*Mrreeem*^000000",
+      "translation" : "^5C246E*嗡——*^000000"
+    },
+    {
       "kind" : "option",
       "line" : 1324,
       "npc" : "Brilliant Statue",
@@ -2706,6 +2482,30 @@
       "translation" : "按下齿轮"
     },
     {
+      "kind" : "message",
+      "line" : 1326,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^5C246E*Mrreeem*^000000",
+      "translation" : "^5C246E*嗡——*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1331,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^EE0000*Choom*^000000",
+      "translation" : "^EE0000*咚!*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1336,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^00B2EE*Sneeeep*^000000",
+      "translation" : "^00B2EE*咻——*^000000"
+    },
+    {
       "kind" : "option",
       "line" : 1343,
       "npc" : "Brilliant Statue",
@@ -2730,6 +2530,30 @@
       "translation" : "垂直移动齿轮"
     },
     {
+      "kind" : "message",
+      "line" : 1345,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^00B2EE*Sneeeep*^000000",
+      "translation" : "^00B2EE*咻——*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1350,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^5C246E*Mrreeem*^000000",
+      "translation" : "^5C246E*嗡——*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1355,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^EE0000*Choom*^000000",
+      "translation" : "^EE0000*咚!*^000000"
+    },
+    {
       "kind" : "option",
       "line" : 1362,
       "npc" : "Brilliant Statue",
@@ -2752,6 +2576,30 @@
       "state" : "translated",
       "text" : "Vertically Shift Wheel",
       "translation" : "垂直移动齿轮"
+    },
+    {
+      "kind" : "message",
+      "line" : 1364,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^EE0000*Choom*^000000",
+      "translation" : "^EE0000*咚!*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1369,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^5C246E*Mrreeem*^000000",
+      "translation" : "^5C246E*嗡——*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1374,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^00B2EE*Sneeeep*^000000",
+      "translation" : "^00B2EE*咻——*^000000"
     },
     {
       "kind" : "option",
@@ -2779,11 +2627,339 @@
     },
     {
       "kind" : "message",
-      "line" : 1415,
+      "line" : 1383,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "2nd Big Wheel: No Change\n3rd Big Wheel: No Change",
-      "translation" : "2号大齿轮：保持不变\n3号大齿轮：保持不变"
+      "text" : "^EE0000*Choom*^000000",
+      "translation" : "^EE0000*咚!*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1388,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^00B2EE*Sneeeep*^000000",
+      "translation" : "^00B2EE*咻——*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1393,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "^5C246E*Mrreeem*^000000",
+      "translation" : "^5C246E*嗡——*^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: Pressed",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：按下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: Up",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: Down",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: Up",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: Down",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: Moved",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：已移动"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: Moved",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：已移动"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: Down",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: Up",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: Down",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: No Change",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：保持不变"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: Moved",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：已移动"
+    },
+    {
+      "kind" : "message",
+      "line" : 1400,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: No Change\n2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: Up",
+      "translation" : "1号小齿轮：保持不变\n2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1401,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: Down",
+      "translation" : "1号小齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1402,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: Up",
+      "translation" : "1号小齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1403,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Small Wheel: Pressed",
+      "translation" : "1号小齿轮：按下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: No Change\n1st Big Wheel: Up",
+      "translation" : "2号小齿轮：保持不变\n1号大齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: No Change\n1st Big Wheel: Down",
+      "translation" : "2号小齿轮：保持不变\n1号大齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: No Change\n1st Big Wheel: Moved",
+      "translation" : "2号小齿轮：保持不变\n1号大齿轮：已移动"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: Moved",
+      "translation" : "2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：已移动"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: Down",
+      "translation" : "2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: Up",
+      "translation" : "2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: Down",
+      "translation" : "2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: No Change",
+      "translation" : "2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：保持不变"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: Moved",
+      "translation" : "2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：已移动"
+    },
+    {
+      "kind" : "message",
+      "line" : 1405,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: No Change\n1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: Up",
+      "translation" : "2号小齿轮：保持不变\n1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1406,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: Pressed",
+      "translation" : "2号小齿轮：按下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1407,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: Down",
+      "translation" : "2号小齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1408,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "2nd Small Wheel: Up",
+      "translation" : "2号小齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1410,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Big Wheel: No Change\n2nd Big Wheel: Moved",
+      "translation" : "1号大齿轮：保持不变\n2号大齿轮：已移动"
+    },
+    {
+      "kind" : "message",
+      "line" : 1410,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Big Wheel: No Change\n2nd Big Wheel: Down",
+      "translation" : "1号大齿轮：保持不变\n2号大齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1410,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Big Wheel: No Change\n2nd Big Wheel: Up",
+      "translation" : "1号大齿轮：保持不变\n2号大齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1410,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: Down",
+      "translation" : "1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：向下"
+    },
+    {
+      "kind" : "message",
+      "line" : 1410,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: No Change",
+      "translation" : "1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：保持不变"
+    },
+    {
+      "kind" : "message",
+      "line" : 1410,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: Moved",
+      "translation" : "1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：已移动"
+    },
+    {
+      "kind" : "message",
+      "line" : 1410,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Big Wheel: No Change\n2nd Big Wheel: No Change\n3rd Big Wheel: Up",
+      "translation" : "1号大齿轮：保持不变\n2号大齿轮：保持不变\n3号大齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1411,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Big Wheel: Up",
+      "translation" : "1号大齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1412,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Big Wheel: Moved",
+      "translation" : "1号大齿轮：已移动"
+    },
+    {
+      "kind" : "message",
+      "line" : 1413,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "1st Big Wheel: Down",
+      "translation" : "1号大齿轮：向下"
     },
     {
       "kind" : "message",
@@ -2798,8 +2974,8 @@
       "line" : 1415,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "2nd Big Wheel: No Change\n3rd Big Wheel: Up",
-      "translation" : "2号大齿轮：保持不变\n3号大齿轮：向上"
+      "text" : "2nd Big Wheel: No Change\n3rd Big Wheel: No Change",
+      "translation" : "2号大齿轮：保持不变\n3号大齿轮：保持不变"
     },
     {
       "kind" : "message",
@@ -2811,99 +2987,67 @@
     },
     {
       "kind" : "message",
-      "line" : 1416,
+      "line" : 1415,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "2nd Big Wheel: Moved\n3rd Big Wheel: No Change",
-      "translation" : "2号大齿轮：已移动\n3号大齿轮：保持不变"
+      "text" : "2nd Big Wheel: No Change\n3rd Big Wheel: Up",
+      "translation" : "2号大齿轮：保持不变\n3号大齿轮：向上"
     },
     {
       "kind" : "message",
       "line" : 1416,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "2nd Big Wheel: Moved\n3rd Big Wheel: Down",
-      "translation" : "2号大齿轮：已移动\n3号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1416,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "2nd Big Wheel: Moved\n3rd Big Wheel: Up",
-      "translation" : "2号大齿轮：已移动\n3号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1416,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "2nd Big Wheel: Moved\n3rd Big Wheel: Moved",
-      "translation" : "2号大齿轮：已移动\n3号大齿轮：已移动"
+      "text" : "2nd Big Wheel: Moved",
+      "translation" : "2号大齿轮：已移动"
     },
     {
       "kind" : "message",
       "line" : 1417,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "2nd Big Wheel: Up\n3rd Big Wheel: No Change",
-      "translation" : "2号大齿轮：向上\n3号大齿轮：保持不变"
-    },
-    {
-      "kind" : "message",
-      "line" : 1417,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "2nd Big Wheel: Up\n3rd Big Wheel: Down",
-      "translation" : "2号大齿轮：向上\n3号大齿轮：向下"
-    },
-    {
-      "kind" : "message",
-      "line" : 1417,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "2nd Big Wheel: Up\n3rd Big Wheel: Up",
-      "translation" : "2号大齿轮：向上\n3号大齿轮：向上"
-    },
-    {
-      "kind" : "message",
-      "line" : 1417,
-      "npc" : "Brilliant Statue",
-      "state" : "translated",
-      "text" : "2nd Big Wheel: Up\n3rd Big Wheel: Moved",
-      "translation" : "2号大齿轮：向上\n3号大齿轮：已移动"
+      "text" : "2nd Big Wheel: Up",
+      "translation" : "2号大齿轮：向上"
     },
     {
       "kind" : "message",
       "line" : 1418,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "2nd Big Wheel: Down\n3rd Big Wheel: No Change",
-      "translation" : "2号大齿轮：向下\n3号大齿轮：保持不变"
+      "text" : "2nd Big Wheel: Down",
+      "translation" : "2号大齿轮：向下"
     },
     {
       "kind" : "message",
-      "line" : 1418,
+      "line" : 1420,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "2nd Big Wheel: Down\n3rd Big Wheel: Down",
-      "translation" : "2号大齿轮：向下\n3号大齿轮：向下"
+      "text" : "3rd Big Wheel: No Change",
+      "translation" : "3号大齿轮：保持不变"
     },
     {
       "kind" : "message",
-      "line" : 1418,
+      "line" : 1421,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "2nd Big Wheel: Down\n3rd Big Wheel: Up",
-      "translation" : "2号大齿轮：向下\n3号大齿轮：向上"
+      "text" : "3rd Big Wheel: Down",
+      "translation" : "3号大齿轮：向下"
     },
     {
       "kind" : "message",
-      "line" : 1418,
+      "line" : 1422,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "2nd Big Wheel: Down\n3rd Big Wheel: Moved",
-      "translation" : "2号大齿轮：向下\n3号大齿轮：已移动"
+      "text" : "3rd Big Wheel: Up",
+      "translation" : "3号大齿轮：向上"
+    },
+    {
+      "kind" : "message",
+      "line" : 1423,
+      "npc" : "Brilliant Statue",
+      "state" : "translated",
+      "text" : "3rd Big Wheel: Moved",
+      "translation" : "3号大齿轮：已移动"
     },
     {
       "kind" : "message",
@@ -2926,16 +3070,16 @@
       "line" : 1445,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "^4d4dffAll of a sudden, the Green Key appears and you can feel great power from it.^000000",
-      "translation" : "^4d4dff突然，绿色钥匙出现了，你能感受到其中蕴含的强大力量。^000000"
+      "text" : "^4d4dffAll of a sudden, the Green Key appears and you can feel great power from it.^000000\n^4d4dffWhen you pick up the key,\nyour body trembles\nwith an unknown power\nand you see a hallucination with some text.^000000",
+      "translation" : "^4d4dff突然，绿色钥匙出现了，你能感受到其中蕴含的强大力量。^000000\n^4d4dff拿起钥匙时，一股未知力量让你浑身颤抖，你看见一段带有文字的幻象。^000000"
     },
     {
       "kind" : "message",
       "line" : 1445,
       "npc" : "Brilliant Statue",
       "state" : "translated",
-      "text" : "^4d4dffAll of a sudden, the Green Key appears and you can feel great power from it.^000000\n^4d4dffWhen you pick up the key,\nyour body trembles\nwith an unknown power\nand you see a hallucination with some text.^000000",
-      "translation" : "^4d4dff突然，绿色钥匙出现了，你能感受到其中蕴含的强大力量。^000000\n^4d4dff拿起钥匙时，一股未知力量让你浑身颤抖，你看见一段带有文字的幻象。^000000"
+      "text" : "^4d4dffAll of a sudden, the Green Key appears and you can feel great power from it.^000000",
+      "translation" : "^4d4dff突然，绿色钥匙出现了，你能感受到其中蕴含的强大力量。^000000"
     },
     {
       "kind" : "option",
@@ -2981,9 +3125,6 @@
       "kind" : "message",
       "line" : 1475,
       "npc" : "Brilliant Statue",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
       "text" : "[{0}]\nIt is hard to read.",
       "translation" : "[{0}]\n字迹难以辨认。"
@@ -3736,12 +3877,41 @@
       "kind" : "message",
       "line" : 2133,
       "npc" : "Memory Seal",
-      "placeholders" : [
-        ".@exact_tt$"
-      ],
       "state" : "translated",
-      "text" : "^3355FFYou insert the\n{0}\ninto the crest, causing\nits glow to intensify.^000000",
-      "translation" : "^3355FF你将{0}插入纹章，纹章的光芒随之增强。^000000"
+      "text" : "^3355FFYou insert the\nFragment of {0}\ninto the crest, causing\nits glow to intensify.^000000",
+      "translation" : "^3355FF你将{0}碎片插入纹章，纹章的光芒随之增强。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 2133,
+      "npc" : "Memory Seal",
+      "state" : "translated",
+      "text" : "^3355FFYou insert the\nFragment of Despair\ninto the crest, causing\nits glow to intensify.^000000",
+      "translation" : "^3355FF你将Despair碎片插入纹章，纹章的光芒随之增强。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 2133,
+      "npc" : "Memory Seal",
+      "state" : "translated",
+      "text" : "^3355FFYou insert the\nFragment of Hatred\ninto the crest, causing\nits glow to intensify.^000000",
+      "translation" : "^3355FF你将Hatred碎片插入纹章，纹章的光芒随之增强。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 2133,
+      "npc" : "Memory Seal",
+      "state" : "translated",
+      "text" : "^3355FFYou insert the\nFragment of Agony\ninto the crest, causing\nits glow to intensify.^000000",
+      "translation" : "^3355FF你将Agony碎片插入纹章，纹章的光芒随之增强。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 2133,
+      "npc" : "Memory Seal",
+      "state" : "translated",
+      "text" : "^3355FFYou insert the\nFragment of Misery\ninto the crest, causing\nits glow to intensify.^000000",
+      "translation" : "^3355FF你将Misery碎片插入纹章，纹章的光芒随之增强。^000000"
     },
     {
       "kind" : "message",
@@ -3757,7 +3927,7 @@
       "npc" : "to 7th Floor",
       "state" : "translated",
       "text" : "The shadow of a Black Key is gleaming in the center of the portal.\nTo pass this way, looks like I need something.",
-      "translation" : "传送门中央闪烁着黑色钥匙的影子。\n看来需要某种东西才能通过这里。"
+      "translation" : "传送门中央闪烁着黑色钥匙的影子。\n看来我需要某种东西才能通过这里。"
     },
     {
       "kind" : "message",

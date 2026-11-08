@@ -46,7 +46,7 @@
       "line" : 61,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI've sailed a few times... But now that I think about it, I've never gone across the continent.",
@@ -105,7 +105,7 @@
       "line" : 82,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nWhy didn't you go in there with them?",
@@ -156,7 +156,7 @@
       "line" : 99,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nHow about hiring me as your first mate?",
@@ -175,7 +175,7 @@
       "line" : 105,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nNo...\n.\n.\nAs an adventurer, there's my obligation to those in need. I'm also very curious about that place...",
@@ -266,7 +266,7 @@
       "line" : 142,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI'm sorry, but I don't have that much money. I'll come back when I save enough.",
@@ -341,7 +341,7 @@
       "line" : 175,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI'm sorry, but you've got the wrong person to ask that.",
@@ -376,7 +376,7 @@
       "line" : 190,
       "npc" : "Captain Janssen",
       "placeholders" : [
-        ".@name$"
+        "strcharinfo(0)"
       ],
       "state" : "translated",
       "text" : "[{0}]\nI don't know why you'd need so much money, but here. You can take it.",
@@ -418,12 +418,9 @@
       "kind" : "option",
       "line" : 222,
       "npc" : "Tower Protection Stone",
-      "placeholders" : [
-        ".@md_name$"
-      ],
       "state" : "translated",
-      "text" : "Generate dungeon {0}",
-      "translation" : "创建地下城 {0}"
+      "text" : "Generate dungeon Endless Tower",
+      "translation" : "创建无尽之塔"
     },
     {
       "kind" : "option",
@@ -455,23 +452,43 @@
       "npc" : "Tower Protection Stone",
       "placeholders" : [
         "getpartyname(.@party_id)",
-        "strcharinfo(0)",
-        ".@md_name$"
+        "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "Party Name: {0}\nParty Leader: {1}\n^0000ff{2} ^000000- Reservation Failed!",
-      "translation" : "队伍名称：{0}\n队长：{1}\n^0000ff{2} ^000000- 预约失败！"
+      "text" : "Party Name: {0}\nParty Leader: {1}\n^0000ffEndless Tower ^000000- Reservation Failed!",
+      "translation" : "队伍名称：{0}\n队长：{1}\n^0000ff无尽之塔 ^000000- 预约失败！"
     },
     {
       "kind" : "message",
       "line" : 230,
       "npc" : "Tower Protection Stone",
-      "placeholders" : [
-        ".@md_name$"
-      ],
       "state" : "translated",
-      "text" : "^0000ff{0}^000000 - Try to reserve\nAfter making a reservation, you have to talk to NPC behind and select the menu 'Enter the Dungeon' to enter the dungeon.",
-      "translation" : "^0000ff{0}^000000 - 正在尝试预约\n预约后，请与后方的 NPC 对话，选择“进入地下城”。"
+      "text" : "^0000ffEndless Tower^000000 - Try to reserve\nAfter making a reservation, you have to talk to NPC behind and select the menu 'Enter the Dungeon' to enter the dungeon.",
+      "translation" : "^0000ff无尽之塔^000000 - 正在预约\n预约后，请与后方的NPC交谈，并选择“进入地下城”菜单，即可进入地下城。"
+    },
+    {
+      "kind" : "message",
+      "line" : 234,
+      "npc" : "Tower Protection Stone",
+      "state" : "translated",
+      "text" : "You can enter the dungeon after making the party.",
+      "translation" : "组建队伍后，你可以进入地下城。"
+    },
+    {
+      "kind" : "message",
+      "line" : 234,
+      "npc" : "Tower Protection Stone",
+      "state" : "translated",
+      "text" : "An unknown error has occurred.",
+      "translation" : "发生未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 234,
+      "npc" : "Tower Protection Stone",
+      "state" : "translated",
+      "text" : "The memorial dungeon Endless Tower does not exist.\nThe party leader did not generate the dungeon yet.",
+      "translation" : "记忆地下城“无尽之塔”不存在。\n队长尚未创建地下城。"
     },
     {
       "kind" : "message",
@@ -485,12 +502,9 @@
       "kind" : "option",
       "line" : 244,
       "npc" : "Tower Protection Stone",
-      "placeholders" : [
-        ".@md_name$"
-      ],
       "state" : "translated",
-      "text" : "Enter the {0}",
-      "translation" : "进入 {0}"
+      "text" : "Enter the Endless Tower",
+      "translation" : "进入无尽之塔"
     },
     {
       "kind" : "option",
@@ -507,6 +521,30 @@
       "state" : "translated",
       "text" : "Cancel",
       "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 246,
+      "npc" : "Tower Protection Stone",
+      "state" : "translated",
+      "text" : "You can enter the dungeon after making the party.",
+      "translation" : "组建队伍后，你可以进入地下城。"
+    },
+    {
+      "kind" : "message",
+      "line" : 246,
+      "npc" : "Tower Protection Stone",
+      "state" : "translated",
+      "text" : "An unknown error has occurred.",
+      "translation" : "发生未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 246,
+      "npc" : "Tower Protection Stone",
+      "state" : "translated",
+      "text" : "The memorial dungeon Endless Tower does not exist.\nThe party leader did not generate the dungeon yet.",
+      "translation" : "记忆地下城“无尽之塔”不存在。\n队长尚未创建地下城。"
     },
     {
       "kind" : "message",
@@ -528,12 +566,9 @@
       "kind" : "option",
       "line" : 260,
       "npc" : "Tower Protection Stone",
-      "placeholders" : [
-        ".@md_name$"
-      ],
       "state" : "translated",
-      "text" : "Enter the {0}",
-      "translation" : "进入 {0}"
+      "text" : "Enter the Endless Tower",
+      "translation" : "进入无尽之塔"
     },
     {
       "kind" : "option",
@@ -550,6 +585,30 @@
       "state" : "translated",
       "text" : "Cancel",
       "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 262,
+      "npc" : "Tower Protection Stone",
+      "state" : "translated",
+      "text" : "You can enter the dungeon after making the party.",
+      "translation" : "组建队伍后，你可以进入地下城。"
+    },
+    {
+      "kind" : "message",
+      "line" : 262,
+      "npc" : "Tower Protection Stone",
+      "state" : "translated",
+      "text" : "An unknown error has occurred.",
+      "translation" : "发生未知错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 262,
+      "npc" : "Tower Protection Stone",
+      "state" : "translated",
+      "text" : "The memorial dungeon Endless Tower does not exist.\nThe party leader did not generate the dungeon yet.",
+      "translation" : "记忆地下城“无尽之塔”不存在。\n队长尚未创建地下城。"
     },
     {
       "kind" : "message",
@@ -720,13 +779,25 @@
       "kind" : "message",
       "line" : 1201,
       "npc" : "Immortal Brazier",
-      "placeholders" : [
-        ".@level$[.@i]",
-        ".@i"
-      ],
       "state" : "translated",
-      "text" : "-Warning-\nTo warp to the {0} Level, you need {1} Ashes of the Darkness.",
-      "translation" : "-警告-\n传送到第 {0} 层需要 {1} 份黑暗灰烬。"
+      "text" : "-Warning-\nTo warp to the 26th Level, you need 1 Ashes of the Darkness.",
+      "translation" : "-警告-\n传送到第26层需要1份黑暗灰烬。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1201,
+      "npc" : "Immortal Brazier",
+      "state" : "translated",
+      "text" : "-Warning-\nTo warp to the 51st Level, you need 2 Ashes of the Darkness.",
+      "translation" : "-警告-\n传送到第51层需要2份黑暗灰烬。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1201,
+      "npc" : "Immortal Brazier",
+      "state" : "translated",
+      "text" : "-Warning-\nTo warp to the 76th Level, you need 3 Ashes of the Darkness.",
+      "translation" : "-警告-\n传送到第76层需要3份黑暗灰烬。"
     },
     {
       "kind" : "message",

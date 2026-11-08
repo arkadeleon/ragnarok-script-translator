@@ -12,15 +12,15 @@
       "kind" : "message",
       "line" : 21,
       "state" : "translated",
-      "text" : "[Crewman]\nWe recently found a new ocean route to get there easily.\nIt's just 10,000 zeny for a round trip, and 1,000 for VIP! So do you want to go?",
-      "translation" : "[船员]\n我们最近发现了一条通往那里的新航线，非常方便。\n往返只要10,000 Zeny，VIP只要1,000 Zeny！你想去吗？"
+      "text" : "[Crewman]\nWe recently found a new ocean route to get there easily.\nIt's just 10,000 zeny for a round trip! So do you want to go?",
+      "translation" : "[船员]\n我们最近发现了一条通往那里的新航线，非常方便。\n往返只要10,000 Zeny！你想去吗？"
     },
     {
       "kind" : "message",
       "line" : 21,
       "state" : "translated",
-      "text" : "[Crewman]\nWe recently found a new ocean route to get there easily.\nIt's just 10,000 zeny for a round trip! So do you want to go?",
-      "translation" : "[船员]\n我们最近发现了一条通往那里的新航线，非常方便。\n往返只要10,000 Zeny！你想去吗？"
+      "text" : "[Crewman]\nWe recently found a new ocean route to get there easily.\nIt's just 10,000 zeny for a round trip, and 1,000 for VIP! So do you want to go?",
+      "translation" : "[船员]\n我们最近发现了一条通往那里的新航线，非常方便。\n往返只要10,000 Zeny，VIP只要1,000 Zeny！你想去吗？"
     },
     {
       "kind" : "option",
@@ -39,12 +39,26 @@
     {
       "kind" : "message",
       "line" : 34,
+      "state" : "translated",
+      "text" : "[Crewman]\nI said 10000 zeny.",
+      "translation" : "[船员]\n我说了，是10,000 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",.@cost)"
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
       "text" : "[Crewman]\nI said {0} zeny.",
       "translation" : "[船员]\n我说了是{0} Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "state" : "translated",
+      "text" : "[Crewman]\nI said 1000 zeny.",
+      "translation" : "[船员]\n我说了，是1,000 Zeny。"
     },
     {
       "kind" : "message",

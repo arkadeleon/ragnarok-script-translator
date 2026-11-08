@@ -1790,14 +1790,25 @@
       "line" : 1065,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
-        ".@n_vit",
+        "strcharinfo(0)",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri : 200 HP\n{0} : 100 HP\n--------------------\n{1}\ninitiated\nan attack!",
+      "translation" : "苏德里 : 200 HP\n{0} : 100 HP\n--------------------\n{1}发动了攻击！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1065,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
         "strcharinfo(0)",
         ".@p_vit",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "Sudri : {0} HP\n{1} : {2} HP\n--------------------\n{3}\ninitiated\nan attack!",
-      "translation" : "苏德里 : {0} HP\n{1} : {2} HP\n--------------------\n{3}发动了攻击！"
+      "text" : "Sudri : 200 HP\n{0} : {1} HP\n--------------------\n{2}\ninitiated\nan attack!",
+      "translation" : "苏德里 : 200 HP\n{0} : {1} HP\n--------------------\n{2}发动了攻击！"
     },
     {
       "kind" : "option",
@@ -1844,12 +1855,35 @@
       "line" : 1092,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nattacks Sudri's head!",
+      "translation" : "{0}攻击苏德里的头部！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1092,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
         "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
       "text" : "{0}\nattacks Sudri's head!\n--------------------\nSudri easily dodges\nyour attack by twisting\nhis small, yet svelte, body.\n--------------------\n{1} misses!",
       "translation" : "{0}攻击苏德里的头部！\n--------------------\n苏德里扭动着他矮小却灵活的身躯，轻松躲开了你的攻击。\n--------------------\n{1}未命中！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1092,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nattacks Sudri's head!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!",
+      "translation" : "{0}攻击苏德里的头部！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！"
     },
     {
       "kind" : "message",
@@ -1869,22 +1903,12 @@
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
+        ".@damage",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}\nattacks Sudri's head!\n--------------------\nSudri dodges your\nattack with a graceful\nleap to the heavens.\n--------------------\n{1} misses!",
-      "translation" : "{0}攻击苏德里的头部！\n--------------------\n苏德里优雅地向天空跃起，躲开了你的攻击。\n--------------------\n{1}未命中！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1092,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nattacks Sudri's head!",
-      "translation" : "{0}攻击苏德里的头部！"
+      "text" : "{0}\nattacks Sudri's head!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!\n{2} wins!",
+      "translation" : "{0}攻击苏德里的头部！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！\n{2}获胜！"
     },
     {
       "kind" : "message",
@@ -1895,19 +1919,8 @@
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}\nattacks Sudri's head!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!\nDefeated...",
-      "translation" : "{0}攻击苏德里的头部！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！\n败北..."
-    },
-    {
-      "kind" : "message",
-      "line" : 1092,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nattacks Sudri's head!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "{0}攻击苏德里的头部！\n--------------------\n发生了意外，战斗停止了！"
+      "text" : "{0}\nattacks Sudri's head!\n--------------------\nSudri dodges your\nattack with a graceful\nleap to the heavens.\n--------------------\n{1} misses!",
+      "translation" : "{0}攻击苏德里的头部！\n--------------------\n苏德里优雅地向天空跃起，躲开了你的攻击。\n--------------------\n{1}未命中！"
     },
     {
       "kind" : "message",
@@ -1920,18 +1933,6 @@
       "state" : "translated",
       "text" : "{0}\nattacks Sudri's head!\n--------------------\n{1}\nhas gained 10 HP!",
       "translation" : "{0}攻击苏德里的头部！\n--------------------\n{1}恢复了10点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1092,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nattacks Sudri's head!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!",
-      "translation" : "{0}攻击苏德里的头部！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！"
     },
     {
       "kind" : "message",
@@ -1971,6 +1972,28 @@
     },
     {
       "kind" : "message",
+      "line" : 1092,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nattacks Sudri's head!\n--------------------\nSomething happened\nand the fight has stopped!",
+      "translation" : "{0}攻击苏德里的头部！\n--------------------\n发生了意外，战斗停止了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1096,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nstrikes Sudri's chest!",
+      "translation" : "{0}攻击苏德里的胸部！"
+    },
+    {
+      "kind" : "message",
       "line" : 1096,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
@@ -1999,76 +2022,6 @@
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nSudri dodges your\nattack with a graceful\nleap to the heavens.\n--------------------\n{1} misses!",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n苏德里优雅地向天空跃起，躲开了你的攻击。\n--------------------\n{1}未命中！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1096,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!",
-      "translation" : "{0}攻击苏德里的胸部！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1096,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!\nDefeated...",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！\n败北..."
-    },
-    {
-      "kind" : "message",
-      "line" : 1096,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n发生了意外，战斗停止了！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1096,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\n{1}\nhas gained 10 HP!",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n{1}恢复了10点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1096,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1096,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
         ".@damage"
       ],
       "state" : "translated",
@@ -2081,23 +2034,22 @@
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nYou successfully hit\nSudri on the legs!\n--------------------\nSudri has\nlost {1} HP!",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n你成功击中了苏德里的腿部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1096,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！"
+      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nSudri dodges your\nattack with a graceful\nleap to the heavens.\n--------------------\n{1} misses!",
+      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n苏德里优雅地向天空跃起，躲开了你的攻击。\n--------------------\n{1}未命中！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1100,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\naims for Sudri's legs!",
+      "translation" : "{0}攻击苏德里的腿部！"
     },
     {
       "kind" : "message",
@@ -2120,18 +2072,6 @@
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\nSudri blocks your\nattack by crossing\nhis stout arms.\n--------------------\n{1}'s attack is blocked!",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n苏德里交叉粗壮的双臂，挡住了你的攻击。\n--------------------\n{1}的攻击被格挡！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1100,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
       "text" : "{0}\naims for Sudri's legs!\n--------------------\nSudri dodges your\nattack with a graceful\nleap to the heavens.\n--------------------\n{1} misses!",
       "translation" : "{0}攻击苏德里的腿部！\n--------------------\n苏德里优雅地向天空跃起，躲开了你的攻击。\n--------------------\n{1}未命中！"
     },
@@ -2140,70 +2080,12 @@
       "line" : 1100,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!",
-      "translation" : "{0}攻击苏德里的腿部！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1100,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
         "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!\nDefeated...",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！\n战败..."
-    },
-    {
-      "kind" : "message",
-      "line" : 1100,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n发生了意外，战斗停止了！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1100,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\n{1}\nhas gained 10 HP!",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n{1}恢复了10点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1100,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1100,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\nYou successfully hit\nSudri on the chest!\n--------------------\nSudri has\nlost {1} HP!",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n你成功击中了苏德里的胸部！\n--------------------\n苏德里失去了{1}点HP！"
+      "text" : "{0}\naims for Sudri's legs!\n--------------------\nSudri blocks your\nattack by crossing\nhis stout arms.\n--------------------\n{1}'s attack is blocked!",
+      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n苏德里交叉粗壮的双臂，挡住了你的攻击。\n--------------------\n{1}的攻击被格挡！"
     },
     {
       "kind" : "message",
@@ -2219,15 +2101,26 @@
     },
     {
       "kind" : "message",
-      "line" : 1100,
+      "line" : 1104,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nrequests a break!",
+      "translation" : "{0}请求休息！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1104,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！"
+      "text" : "{0}\nrequests a break!\n--------------------\n{1}\nhas gained 10 HP!",
+      "translation" : "{0}请求休息！\n--------------------\n{1}恢复了10点HP！"
     },
     {
       "kind" : "message",
@@ -2267,109 +2160,14 @@
     },
     {
       "kind" : "message",
-      "line" : 1104,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!",
-      "translation" : "{0}请求休息！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1104,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!\nDefeated...",
-      "translation" : "{0}请求休息！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！\n战败..."
-    },
-    {
-      "kind" : "message",
-      "line" : 1104,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "{0}请求休息！\n--------------------\n发生了意外，战斗停止了！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1104,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\n{1}\nhas gained 10 HP!",
-      "translation" : "{0}请求休息！\n--------------------\n{1}恢复了10点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1104,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!",
-      "translation" : "{0}请求休息！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1104,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\nYou successfully hit\nSudri on the chest!\n--------------------\nSudri has\nlost {1} HP!",
-      "translation" : "{0}请求休息！\n--------------------\n你成功击中了苏德里的胸部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1104,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\nYou successfully hit\nSudri on the legs!\n--------------------\nSudri has\nlost {1} HP!",
-      "translation" : "{0}请求休息！\n--------------------\n你成功击中了苏德里的腿部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1104,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!",
-      "translation" : "{0}请求休息！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！"
-    },
-    {
-      "kind" : "message",
       "line" : 1108,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
-        "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\nSudri easily dodges\nyour attack by twisting\nhis small, yet svelte, body.\n--------------------\n{1} misses!",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n苏德里扭动着他矮小却灵活的身躯，轻松躲开了你的攻击。\n--------------------\n{1}未命中！"
+      "text" : "{0}'s\nweak point revealed!",
+      "translation" : "{0}的弱点暴露了！"
     },
     {
       "kind" : "message",
@@ -2392,90 +2190,20 @@
         "strcharinfo(0)"
       ],
       "state" : "translated",
+      "text" : "{0}'s\nweak point revealed!\n--------------------\nSudri easily dodges\nyour attack by twisting\nhis small, yet svelte, body.\n--------------------\n{1} misses!",
+      "translation" : "{0}的弱点暴露了！\n--------------------\n苏德里扭动着他矮小却灵活的身躯，轻松躲开了你的攻击。\n--------------------\n{1}未命中！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1108,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
       "text" : "{0}'s\nweak point revealed!\n--------------------\nSudri dodges your\nattack with a graceful\nleap to the heavens.\n--------------------\n{1} misses!",
       "translation" : "{0}的弱点暴露了！\n--------------------\n苏德里优雅地跳向空中，躲开了你的攻击。\n--------------------\n{1}未命中！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1108,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!",
-      "translation" : "{0}的弱点暴露了！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1108,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!\nDefeated...",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！\n战败..."
-    },
-    {
-      "kind" : "message",
-      "line" : 1108,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n发生了意外，战斗停止了！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1108,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\n{1}\nhas gained 10 HP!",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n{1}恢复了10点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1108,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1108,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\nYou successfully hit\nSudri on the chest!\n--------------------\nSudri has\nlost {1} HP!",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n你成功击中了苏德里的胸部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1108,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\nYou successfully hit\nSudri on the legs!\n--------------------\nSudri has\nlost {1} HP!",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n你成功击中了苏德里的腿部！\n--------------------\n苏德里失去了{1}点HP！"
     },
     {
       "kind" : "message",
@@ -2491,6 +2219,222 @@
     },
     {
       "kind" : "message",
+      "line" : 1114,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------",
+      "translation" : "--------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1115,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri easily dodges",
+      "translation" : "苏德里轻松躲开"
+    },
+    {
+      "kind" : "message",
+      "line" : 1116,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "your attack by twisting",
+      "translation" : "你的攻击，同时扭动着"
+    },
+    {
+      "kind" : "message",
+      "line" : 1117,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "his small, yet svelte, body.",
+      "translation" : "他矮小却灵活的身躯。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1118,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------",
+      "translation" : "--------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1119,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0} misses!",
+      "translation" : "{0}未命中！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1122,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------",
+      "translation" : "--------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1123,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri blocks your",
+      "translation" : "苏德里挡住你的"
+    },
+    {
+      "kind" : "message",
+      "line" : 1124,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "attack by crossing",
+      "translation" : "攻击，交叉着"
+    },
+    {
+      "kind" : "message",
+      "line" : 1125,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "his stout arms.",
+      "translation" : "他粗壮的双臂。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1126,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------",
+      "translation" : "--------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1127,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}'s attack is blocked!",
+      "translation" : "{0}的攻击被格挡！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1130,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------",
+      "translation" : "--------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1131,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri dodges your",
+      "translation" : "苏德里躲开你的"
+    },
+    {
+      "kind" : "message",
+      "line" : 1132,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "attack with a graceful",
+      "translation" : "攻击，优雅地"
+    },
+    {
+      "kind" : "message",
+      "line" : 1133,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "leap to the heavens.",
+      "translation" : "腾空跃起。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1134,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------",
+      "translation" : "--------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1135,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0} misses!",
+      "translation" : "{0}未命中！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1141,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\n{0}\nhas gained 10 HP!",
+      "translation" : "--------------------\n{0}恢复了10点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1148,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {0} HP!",
+      "translation" : "--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{0}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1157,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nYou successfully hit\nSudri on the chest!\n--------------------\nSudri has\nlost {0} HP!",
+      "translation" : "--------------------\n你成功击中了苏德里的胸部！\n--------------------\n苏德里失去了{0}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1167,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nYou successfully hit\nSudri on the legs!\n--------------------\nSudri has\nlost {0} HP!",
+      "translation" : "--------------------\n你成功击中了苏德里的腿部！\n--------------------\n苏德里失去了{0}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1177,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{0} has lost 10 HP!",
+      "translation" : "--------------------\n你被苏德里的反击击中了！\n--------------------\n{0}失去了10点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1189,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------\nSomething happened\nand the fight has stopped!",
+      "translation" : "--------------------\n发生了意外，战斗停止了！"
+    },
+    {
+      "kind" : "message",
       "line" : 1195,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
@@ -2499,6 +2443,40 @@
       "state" : "translated",
       "text" : "{0} wins!",
       "translation" : "{0}获胜！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1200,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri : 200 HP\n{0} : 100 HP\n--------------------\nSudri attacks...!",
+      "translation" : "苏德里 : 200 HP\n{0} : 100 HP\n--------------------\n苏德里攻击...！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1200,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        ".@n_vit",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri : {0} HP\n{1} : 100 HP\n--------------------\nSudri attacks...!",
+      "translation" : "苏德里 : {0} HP\n{1} : 100 HP\n--------------------\n苏德里攻击...！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1200,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri : 200 HP\n{0} : 110 HP\n--------------------\nSudri attacks...!",
+      "translation" : "苏德里 : 200 HP\n{0} : 110 HP\n--------------------\n苏德里攻击...！"
     },
     {
       "kind" : "message",
@@ -2557,21 +2535,9 @@
       "kind" : "message",
       "line" : 1225,
       "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
-      "text" : "Sudri aims for the head!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!\n{1} won!",
-      "translation" : "苏德里瞄准头部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！\n{1}获胜！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1225,
-      "npc" : "Dwarf Blacksmith",
-      "state" : "translated",
-      "text" : "Sudri aims for the head!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "苏德里瞄准头部！\n--------------------\n发生了意外，战斗停止了！"
+      "text" : "Sudri aims for the head!",
+      "translation" : "苏德里瞄准头部！"
     },
     {
       "kind" : "message",
@@ -2583,6 +2549,19 @@
       "state" : "translated",
       "text" : "Sudri aims for the head!\n--------------------\n{0}\nquickly dodged!\nSudri's arms were\ntoo short and missed!\n--------------------\nSudri has failed to attack.",
       "translation" : "苏德里瞄准头部！\n--------------------\n{0}迅速闪避！\n苏德里的手臂太短，攻击落空了！\n--------------------\n苏德里攻击失败。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1225,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "Sudri aims for the head!\n--------------------\nSudri successfully\nhit {0}\non the head!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "苏德里瞄准头部！\n--------------------\n苏德里成功击中了{0}的头部！\n--------------------\n{1}失去了{2}点HP！"
     },
     {
       "kind" : "message",
@@ -2605,50 +2584,6 @@
       "state" : "translated",
       "text" : "Sudri aims for the head!\n--------------------\n{0} jumped,\ndodged Sudri's attack at ease.\n--------------------\nSudri has failed to attack.",
       "translation" : "苏德里瞄准头部！\n--------------------\n{0}轻松跳跃，闪避了苏德里的攻击。\n--------------------\n苏德里攻击失败。"
-    },
-    {
-      "kind" : "message",
-      "line" : 1225,
-      "npc" : "Dwarf Blacksmith",
-      "state" : "translated",
-      "text" : "Sudri aims for the head!",
-      "translation" : "苏德里瞄准头部！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1225,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri aims for the head!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
-      "translation" : "苏德里瞄准头部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1225,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri aims for the head!\n--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
-      "translation" : "苏德里瞄准头部！\n--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1225,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "Sudri aims for the head!\n--------------------\nSudri successfully\nhit {0}\non the head!\n--------------------\n{1} has lost {2} HP!",
-      "translation" : "苏德里瞄准头部！\n--------------------\n苏德里成功击中了{0}的头部！\n--------------------\n{1}失去了{2}点HP！"
     },
     {
       "kind" : "message",
@@ -2686,39 +2621,60 @@
         ".@damage"
       ],
       "state" : "translated",
-      "text" : "Sudri aims for the head!\n--------------------\nSudri successfully\nhits {0}\nduring a moment of\nabsent-mindedness!\n--------------------\n{1} has lost {2} HP!",
-      "translation" : "苏德里瞄准头部！\n--------------------\n苏德里趁{0}走神之际，一击得手！\n--------------------\n{1}失去了{2}点HP！"
+      "text" : "Sudri aims for the head!\n--------------------\nSudri successfully\nhit {0}\non the head!\n--------------------\n{1} has lost {2} HP!\nSudri won!",
+      "translation" : "苏德里瞄准头部！\n--------------------\n苏德里成功击中了{0}的头部！\n--------------------\n{1}失去了{2}点HP！\n苏德里获胜！"
     },
     {
       "kind" : "message",
-      "line" : 1228,
+      "line" : 1225,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "Sudri strikes the chest!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!\n{1} won!",
-      "translation" : "苏德里攻击胸部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！\n{1}获胜！"
+      "text" : "Sudri aims for the head!\n--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
+      "translation" : "苏德里瞄准头部！\n--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
     },
     {
       "kind" : "message",
-      "line" : 1228,
+      "line" : 1225,
       "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
       "state" : "translated",
-      "text" : "Sudri strikes the chest!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "苏德里攻击胸部！\n--------------------\n发生了意外，战斗停止了！"
+      "text" : "Sudri aims for the head!\n--------------------\nSudri successfully\nhits {0}\nduring a moment of\nabsent-mindedness!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "苏德里瞄准头部！\n--------------------\n苏德里趁{0}走神之际，一击得手！\n--------------------\n{1}失去了{2}点HP！"
     },
     {
       "kind" : "message",
-      "line" : 1228,
+      "line" : 1225,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "Sudri strikes the chest!\n--------------------\n{0}\nquickly dodged!\nSudri's arms were\ntoo short and missed!\n--------------------\nSudri has failed to attack.",
-      "translation" : "苏德里攻击胸部！\n--------------------\n{0}迅速闪避！\n苏德里的手臂太短，攻击落空了！\n--------------------\n苏德里攻击失败。"
+      "text" : "Sudri aims for the head!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
+      "translation" : "苏德里瞄准头部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1225,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri aims for the head!\n--------------------\nSomething happened\nand the fight has stopped!",
+      "translation" : "苏德里瞄准头部！\n--------------------\n发生了意外，战斗停止了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1228,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri strikes the chest!",
+      "translation" : "苏德里攻击胸部！"
     },
     {
       "kind" : "message",
@@ -2746,37 +2702,6 @@
       "kind" : "message",
       "line" : 1228,
       "npc" : "Dwarf Blacksmith",
-      "state" : "translated",
-      "text" : "Sudri strikes the chest!",
-      "translation" : "苏德里攻击胸部！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1228,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri strikes the chest!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
-      "translation" : "苏德里攻击胸部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1228,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri strikes the chest!\n--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
-      "translation" : "苏德里攻击胸部！\n--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1228,
-      "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
         "strcharinfo(0)",
@@ -2785,6 +2710,17 @@
       "state" : "translated",
       "text" : "Sudri strikes the chest!\n--------------------\nSudri successfully\nhit {0}\non the head!\n--------------------\n{1} has lost {2} HP!",
       "translation" : "苏德里攻击胸部！\n--------------------\n苏德里成功击中了{0}的头部！\n--------------------\n{1}失去了{2}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1228,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri strikes the chest!\n--------------------\n{0}\nquickly dodged!\nSudri's arms were\ntoo short and missed!\n--------------------\nSudri has failed to attack.",
+      "translation" : "苏德里攻击胸部！\n--------------------\n{0}迅速闪避！\n苏德里的手臂太短，攻击落空了！\n--------------------\n苏德里攻击失败。"
     },
     {
       "kind" : "message",
@@ -2818,6 +2754,18 @@
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri strikes the chest!\n--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
+      "translation" : "苏德里攻击胸部！\n--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1228,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
         "strcharinfo(0)",
         ".@damage"
       ],
@@ -2827,23 +2775,54 @@
     },
     {
       "kind" : "message",
-      "line" : 1231,
+      "line" : 1228,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
-        "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "Sudri attacks the legs!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!\n{1} won!",
-      "translation" : "苏德里攻击腿部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！\n{1}获胜！"
+      "text" : "Sudri strikes the chest!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
+      "translation" : "苏德里攻击胸部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1228,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri strikes the chest!\n--------------------\nSomething happened\nand the fight has stopped!",
+      "translation" : "苏德里攻击胸部！\n--------------------\n发生了意外，战斗停止了！"
     },
     {
       "kind" : "message",
       "line" : 1231,
       "npc" : "Dwarf Blacksmith",
       "state" : "translated",
-      "text" : "Sudri attacks the legs!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "苏德里攻击腿部！\n--------------------\n发生了意外，战斗停止了！"
+      "text" : "Sudri attacks the legs!",
+      "translation" : "苏德里攻击腿部！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1231,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri attacks the legs!\n--------------------\n{0} jumped,\ndodged Sudri's attack at ease.\n--------------------\nSudri has failed to attack.",
+      "translation" : "苏德里攻击腿部！\n--------------------\n{0}跳起，轻松躲过了苏德里的攻击。\n--------------------\n苏德里攻击失败。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1231,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "Sudri attacks the legs!\n--------------------\nSudri successfully\nhit {0}\non the head!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "苏德里攻击腿部！\n--------------------\n苏德里成功击中了{0}的头部！\n--------------------\n{1}失去了{2}点HP！"
     },
     {
       "kind" : "message",
@@ -2866,61 +2845,6 @@
       "state" : "translated",
       "text" : "Sudri attacks the legs!\n--------------------\n{0}\nbarely blocked\nSudri's attack.\n--------------------\nSudri has failed to attack.",
       "translation" : "苏德里攻击腿部！\n--------------------\n{0}勉强挡住了苏德里的攻击。\n--------------------\n苏德里攻击失败。"
-    },
-    {
-      "kind" : "message",
-      "line" : 1231,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri attacks the legs!\n--------------------\n{0} jumped,\ndodged Sudri's attack at ease.\n--------------------\nSudri has failed to attack.",
-      "translation" : "苏德里攻击腿部！\n--------------------\n{0}跳起，轻松躲过了苏德里的攻击。\n--------------------\n苏德里攻击失败。"
-    },
-    {
-      "kind" : "message",
-      "line" : 1231,
-      "npc" : "Dwarf Blacksmith",
-      "state" : "translated",
-      "text" : "Sudri attacks the legs!",
-      "translation" : "苏德里攻击腿部！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1231,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri attacks the legs!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
-      "translation" : "苏德里攻击腿部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1231,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri attacks the legs!\n--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
-      "translation" : "苏德里攻击腿部！\n--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1231,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "Sudri attacks the legs!\n--------------------\nSudri successfully\nhit {0}\non the head!\n--------------------\n{1} has lost {2} HP!",
-      "translation" : "苏德里攻击腿部！\n--------------------\n苏德里成功击中了{0}的头部！\n--------------------\n{1}失去了{2}点HP！"
     },
     {
       "kind" : "message",
@@ -2954,12 +2878,159 @@
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri attacks the legs!\n--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
+      "translation" : "苏德里攻击腿部！\n--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1231,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
         "strcharinfo(0)",
         ".@damage"
       ],
       "state" : "translated",
       "text" : "Sudri attacks the legs!\n--------------------\nSudri successfully\nhits {0}\nduring a moment of\nabsent-mindedness!\n--------------------\n{1} has lost {2} HP!",
       "translation" : "苏德里攻击腿部！\n--------------------\n苏德里趁{0}走神之际，一击得手！\n--------------------\n{1}失去了{2}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1231,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri attacks the legs!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
+      "translation" : "苏德里攻击腿部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1231,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri attacks the legs!\n--------------------\nSomething happened\nand the fight has stopped!",
+      "translation" : "苏德里攻击腿部！\n--------------------\n发生了意外，战斗停止了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1236,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\n{0}\nquickly dodged!\nSudri's arms were\ntoo short and missed!\n--------------------\nSudri has failed to attack.",
+      "translation" : "--------------------\n{0}迅速闪避！\n苏德里的手臂太短，攻击落空了！\n--------------------\n苏德里攻击失败。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1245,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\n{0}\nbarely blocked\nSudri's attack.\n--------------------\nSudri has failed to attack.",
+      "translation" : "--------------------\n{0}勉强挡住了苏德里的攻击。\n--------------------\n苏德里攻击失败。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1253,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\n{0} jumped,\ndodged Sudri's attack at ease.\n--------------------\nSudri has failed to attack.",
+      "translation" : "--------------------\n{0}跳起，轻松躲过了苏德里的攻击。\n--------------------\n苏德里攻击失败。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1262,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
+      "translation" : "--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1262,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
+      "translation" : "--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1292,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nSudri successfully\nhit {0}\non the head!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "--------------------\n苏德里成功击中了{0}的头部！\n--------------------\n{1}失去了{2}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1302,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nSudri successfully\nhit {0}\non the chest!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "--------------------\n苏德里成功击中了{0}的胸部！\n--------------------\n{1}失去了{2}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1312,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nSudri successfully\nhit {0}\non the legs!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "--------------------\n苏德里成功击中了{0}的腿部！\n--------------------\n{1}失去了{2}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1322,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nSudri successfully\nhits {0}\nduring a moment of\nabsent-mindedness!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "--------------------\n苏德里趁{0}走神之际，一击得手！\n--------------------\n{1}失去了{2}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1331,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------\nSomething happened\nand the fight has stopped!",
+      "translation" : "--------------------\n发生了意外，战斗停止了！"
     },
     {
       "kind" : "message",
@@ -3198,14 +3269,25 @@
       "line" : 1473,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
-        ".@n_vit",
+        "strcharinfo(0)",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri : 200 HP\n{0} : 100 HP\n--------------------\n{1}\ninitiated\nan attack!",
+      "translation" : "苏德里 : 200 HP\n{0} : 100 HP\n--------------------\n{1}发动了攻击！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1473,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
         "strcharinfo(0)",
         ".@p_vit",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "Sudri : {0} HP\n{1} : {2} HP\n--------------------\n{3}\ninitiated\nan attack!",
-      "translation" : "苏德里 : {0} HP\n{1} : {2} HP\n--------------------\n{3}发动了攻击！"
+      "text" : "Sudri : 200 HP\n{0} : {1} HP\n--------------------\n{2}\ninitiated\nan attack!",
+      "translation" : "苏德里 : 200 HP\n{0} : {1} HP\n--------------------\n{2}发动了攻击！"
     },
     {
       "kind" : "option",
@@ -3252,12 +3334,35 @@
       "line" : 1500,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nattacks Sudri's head!",
+      "translation" : "{0}攻击苏德里的头部！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1500,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
         "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
       "text" : "{0}\nattacks Sudri's head!\n--------------------\nSudri easily dodges\nyour attack by twisting\nhis small, yet svelte, body.\n--------------------\n{1} misses!",
       "translation" : "{0}攻击苏德里的头部！\n--------------------\n苏德里扭动着他矮小却灵活的身躯，轻松躲开了你的攻击。\n--------------------\n{1}未命中！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1500,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nattacks Sudri's head!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!",
+      "translation" : "{0}攻击苏德里的头部！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！"
     },
     {
       "kind" : "message",
@@ -3277,22 +3382,12 @@
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
+        ".@damage",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}\nattacks Sudri's head!\n--------------------\nSudri dodges your\nattack with a graceful\nleap to the heavens.\n--------------------\n{1} misses!",
-      "translation" : "{0}攻击苏德里的头部！\n--------------------\n苏德里优雅地向天空跃起，躲开了你的攻击。\n--------------------\n{1}未命中！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1500,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nattacks Sudri's head!",
-      "translation" : "{0}攻击苏德里的头部！"
+      "text" : "{0}\nattacks Sudri's head!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!\n{2} wins!",
+      "translation" : "{0}攻击苏德里的头部！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！\n{2}获胜！"
     },
     {
       "kind" : "message",
@@ -3303,19 +3398,8 @@
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}\nattacks Sudri's head!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!\nDefeated...",
-      "translation" : "{0}攻击苏德里的头部！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！\n败北..."
-    },
-    {
-      "kind" : "message",
-      "line" : 1500,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nattacks Sudri's head!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "{0}攻击苏德里的头部！\n--------------------\n发生了意外，战斗停止了！"
+      "text" : "{0}\nattacks Sudri's head!\n--------------------\nSudri dodges your\nattack with a graceful\nleap to the heavens.\n--------------------\n{1} misses!",
+      "translation" : "{0}攻击苏德里的头部！\n--------------------\n苏德里优雅地向天空跃起，躲开了你的攻击。\n--------------------\n{1}未命中！"
     },
     {
       "kind" : "message",
@@ -3328,18 +3412,6 @@
       "state" : "translated",
       "text" : "{0}\nattacks Sudri's head!\n--------------------\n{1}\nhas gained 10 HP!",
       "translation" : "{0}攻击苏德里的头部！\n--------------------\n{1}恢复了10点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1500,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nattacks Sudri's head!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!",
-      "translation" : "{0}攻击苏德里的头部！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！"
     },
     {
       "kind" : "message",
@@ -3379,6 +3451,28 @@
     },
     {
       "kind" : "message",
+      "line" : 1500,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nattacks Sudri's head!\n--------------------\nSomething happened\nand the fight has stopped!",
+      "translation" : "{0}攻击苏德里的头部！\n--------------------\n发生了意外，战斗停止了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1504,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nstrikes Sudri's chest!",
+      "translation" : "{0}攻击苏德里的胸部！"
+    },
+    {
+      "kind" : "message",
       "line" : 1504,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
@@ -3407,76 +3501,6 @@
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nSudri dodges your\nattack with a graceful\nleap to the heavens.\n--------------------\n{1} misses!",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n苏德里优雅地向天空跃起，躲开了你的攻击。\n--------------------\n{1}未命中！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1504,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!",
-      "translation" : "{0}攻击苏德里的胸部！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1504,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!\nDefeated...",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！\n败北..."
-    },
-    {
-      "kind" : "message",
-      "line" : 1504,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n发生了意外，战斗停止了！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1504,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\n{1}\nhas gained 10 HP!",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n{1}恢复了10点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1504,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1504,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
         ".@damage"
       ],
       "state" : "translated",
@@ -3489,23 +3513,22 @@
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nYou successfully hit\nSudri on the legs!\n--------------------\nSudri has\nlost {1} HP!",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n你成功击中了苏德里的腿部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1504,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!",
-      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！"
+      "text" : "{0}\nstrikes Sudri's chest!\n--------------------\nSudri dodges your\nattack with a graceful\nleap to the heavens.\n--------------------\n{1} misses!",
+      "translation" : "{0}攻击苏德里的胸部！\n--------------------\n苏德里优雅地向天空跃起，躲开了你的攻击。\n--------------------\n{1}未命中！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1508,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\naims for Sudri's legs!",
+      "translation" : "{0}攻击苏德里的腿部！"
     },
     {
       "kind" : "message",
@@ -3528,18 +3551,6 @@
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\nSudri blocks your\nattack by crossing\nhis stout arms.\n--------------------\n{1}'s attack is blocked!",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n苏德里交叉粗壮的双臂，挡住了你的攻击。\n--------------------\n{1}的攻击被格挡！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1508,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
       "text" : "{0}\naims for Sudri's legs!\n--------------------\nSudri dodges your\nattack with a graceful\nleap to the heavens.\n--------------------\n{1} misses!",
       "translation" : "{0}攻击苏德里的腿部！\n--------------------\n苏德里优雅地向天空跃起，躲开了你的攻击。\n--------------------\n{1}未命中！"
     },
@@ -3548,70 +3559,12 @@
       "line" : 1508,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!",
-      "translation" : "{0}攻击苏德里的腿部！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1508,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
         "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!\nDefeated...",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！\n战败..."
-    },
-    {
-      "kind" : "message",
-      "line" : 1508,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n发生了意外，战斗停止了！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1508,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\n{1}\nhas gained 10 HP!",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n{1}恢复了10点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1508,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1508,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\nYou successfully hit\nSudri on the chest!\n--------------------\nSudri has\nlost {1} HP!",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n你成功击中了苏德里的胸部！\n--------------------\n苏德里失去了{1}点HP！"
+      "text" : "{0}\naims for Sudri's legs!\n--------------------\nSudri blocks your\nattack by crossing\nhis stout arms.\n--------------------\n{1}'s attack is blocked!",
+      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n苏德里交叉粗壮的双臂，挡住了你的攻击。\n--------------------\n{1}的攻击被格挡！"
     },
     {
       "kind" : "message",
@@ -3627,15 +3580,26 @@
     },
     {
       "kind" : "message",
-      "line" : 1508,
+      "line" : 1512,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nrequests a break!",
+      "translation" : "{0}请求休息！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1512,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}\naims for Sudri's legs!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!",
-      "translation" : "{0}攻击苏德里的腿部！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！"
+      "text" : "{0}\nrequests a break!\n--------------------\n{1}\nhas gained 10 HP!",
+      "translation" : "{0}请求休息！\n--------------------\n{1}恢复了10点HP！"
     },
     {
       "kind" : "message",
@@ -3675,109 +3639,14 @@
     },
     {
       "kind" : "message",
-      "line" : 1512,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!",
-      "translation" : "{0}请求休息！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1512,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!\nDefeated...",
-      "translation" : "{0}请求休息！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！\n战败..."
-    },
-    {
-      "kind" : "message",
-      "line" : 1512,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "{0}请求休息！\n--------------------\n发生了意外，战斗停止了！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1512,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\n{1}\nhas gained 10 HP!",
-      "translation" : "{0}请求休息！\n--------------------\n{1}恢复了10点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1512,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!",
-      "translation" : "{0}请求休息！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1512,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\nYou successfully hit\nSudri on the chest!\n--------------------\nSudri has\nlost {1} HP!",
-      "translation" : "{0}请求休息！\n--------------------\n你成功击中了苏德里的胸部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1512,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\nYou successfully hit\nSudri on the legs!\n--------------------\nSudri has\nlost {1} HP!",
-      "translation" : "{0}请求休息！\n--------------------\n你成功击中了苏德里的腿部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1512,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nrequests a break!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!",
-      "translation" : "{0}请求休息！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！"
-    },
-    {
-      "kind" : "message",
       "line" : 1516,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
-        "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\nSudri easily dodges\nyour attack by twisting\nhis small, yet svelte, body.\n--------------------\n{1} misses!",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n苏德里扭动着他矮小却灵活的身躯，轻松躲开了你的攻击。\n--------------------\n{1}未命中！"
+      "text" : "{0}'s\nweak point revealed!",
+      "translation" : "{0}的弱点暴露了！"
     },
     {
       "kind" : "message",
@@ -3800,90 +3669,20 @@
         "strcharinfo(0)"
       ],
       "state" : "translated",
+      "text" : "{0}'s\nweak point revealed!\n--------------------\nSudri easily dodges\nyour attack by twisting\nhis small, yet svelte, body.\n--------------------\n{1} misses!",
+      "translation" : "{0}的弱点暴露了！\n--------------------\n苏德里扭动着他矮小却灵活的身躯，轻松躲开了你的攻击。\n--------------------\n{1}未命中！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1516,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
       "text" : "{0}'s\nweak point revealed!\n--------------------\nSudri dodges your\nattack with a graceful\nleap to the heavens.\n--------------------\n{1} misses!",
       "translation" : "{0}的弱点暴露了！\n--------------------\n苏德里优雅地跳向空中，躲开了你的攻击。\n--------------------\n{1}未命中！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1516,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!",
-      "translation" : "{0}的弱点暴露了！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1516,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{1} has lost 10 HP!\nDefeated...",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n你被苏德里的反击击中了！\n--------------------\n{1}失去了10点HP！\n战败..."
-    },
-    {
-      "kind" : "message",
-      "line" : 1516,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n发生了意外，战斗停止了！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1516,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\n{1}\nhas gained 10 HP!",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n{1}恢复了10点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1516,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {1} HP!",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1516,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\nYou successfully hit\nSudri on the chest!\n--------------------\nSudri has\nlost {1} HP!",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n你成功击中了苏德里的胸部！\n--------------------\n苏德里失去了{1}点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1516,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "{0}'s\nweak point revealed!\n--------------------\nYou successfully hit\nSudri on the legs!\n--------------------\nSudri has\nlost {1} HP!",
-      "translation" : "{0}的弱点暴露了！\n--------------------\n你成功击中了苏德里的腿部！\n--------------------\n苏德里失去了{1}点HP！"
     },
     {
       "kind" : "message",
@@ -3899,6 +3698,222 @@
     },
     {
       "kind" : "message",
+      "line" : 1522,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------",
+      "translation" : "--------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1523,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri easily dodges",
+      "translation" : "苏德里轻松躲开"
+    },
+    {
+      "kind" : "message",
+      "line" : 1524,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "your attack by twisting",
+      "translation" : "你的攻击，同时扭动着"
+    },
+    {
+      "kind" : "message",
+      "line" : 1525,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "his small, yet svelte, body.",
+      "translation" : "他矮小却灵活的身躯。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1526,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------",
+      "translation" : "--------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1527,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0} misses!",
+      "translation" : "{0}未命中！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1530,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------",
+      "translation" : "--------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1531,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri blocks your",
+      "translation" : "苏德里挡住你的"
+    },
+    {
+      "kind" : "message",
+      "line" : 1532,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "attack by crossing",
+      "translation" : "攻击，交叉着"
+    },
+    {
+      "kind" : "message",
+      "line" : 1533,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "his stout arms.",
+      "translation" : "他粗壮的双臂。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1534,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------",
+      "translation" : "--------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1535,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0}'s attack is blocked!",
+      "translation" : "{0}的攻击被格挡！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1538,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------",
+      "translation" : "--------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1539,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri dodges your",
+      "translation" : "苏德里躲开你的"
+    },
+    {
+      "kind" : "message",
+      "line" : 1540,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "attack with a graceful",
+      "translation" : "攻击，优雅地"
+    },
+    {
+      "kind" : "message",
+      "line" : 1541,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "leap to the heavens.",
+      "translation" : "腾空跃起。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1542,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------",
+      "translation" : "--------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 1543,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0} misses!",
+      "translation" : "{0}未命中！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1549,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\n{0}\nhas gained 10 HP!",
+      "translation" : "--------------------\n{0}恢复了10点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1556,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nYou successfully hit\nSudri on the head!\n--------------------\nSudri has lost {0} HP!",
+      "translation" : "--------------------\n你成功击中了苏德里的头部！\n--------------------\n苏德里失去了{0}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1565,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nYou successfully hit\nSudri on the chest!\n--------------------\nSudri has\nlost {0} HP!",
+      "translation" : "--------------------\n你成功击中了苏德里的胸部！\n--------------------\n苏德里失去了{0}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1575,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nYou successfully hit\nSudri on the legs!\n--------------------\nSudri has\nlost {0} HP!",
+      "translation" : "--------------------\n你成功击中了苏德里的腿部！\n--------------------\n苏德里失去了{0}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1585,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nYou were hit by\nSudri's counter attack!\n--------------------\n{0} has lost 10 HP!",
+      "translation" : "--------------------\n你被苏德里的反击击中了！\n--------------------\n{0}失去了10点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1597,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------\nSomething happened\nand the fight has stopped!",
+      "translation" : "--------------------\n发生了意外，战斗停止了！"
+    },
+    {
+      "kind" : "message",
       "line" : 1603,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
@@ -3907,6 +3922,40 @@
       "state" : "translated",
       "text" : "{0} wins!",
       "translation" : "{0}获胜！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1608,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri : 200 HP\n{0} : 100 HP\n--------------------\nSudri attacks...!",
+      "translation" : "苏德里 : 200 HP\n{0} : 100 HP\n--------------------\n苏德里攻击...！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1608,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        ".@n_vit",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri : {0} HP\n{1} : 100 HP\n--------------------\nSudri attacks...!",
+      "translation" : "苏德里 : {0} HP\n{1} : 100 HP\n--------------------\n苏德里攻击...！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1608,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri : 200 HP\n{0} : 110 HP\n--------------------\nSudri attacks...!",
+      "translation" : "苏德里 : 200 HP\n{0} : 110 HP\n--------------------\n苏德里攻击...！"
     },
     {
       "kind" : "message",
@@ -3965,21 +4014,9 @@
       "kind" : "message",
       "line" : 1633,
       "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
       "state" : "translated",
-      "text" : "Sudri aims for the head!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!\n{1} won!",
-      "translation" : "苏德里瞄准头部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！\n{1}获胜！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1633,
-      "npc" : "Dwarf Blacksmith",
-      "state" : "translated",
-      "text" : "Sudri aims for the head!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "苏德里瞄准头部！\n--------------------\n发生了意外，战斗停止了！"
+      "text" : "Sudri aims for the head!",
+      "translation" : "苏德里瞄准头部！"
     },
     {
       "kind" : "message",
@@ -3991,6 +4028,19 @@
       "state" : "translated",
       "text" : "Sudri aims for the head!\n--------------------\n{0} quickly dodged,\nSudri's arms were too\nshort to reach at you.\n--------------------\nSudri has failed to attack.",
       "translation" : "苏德里瞄准头部！\n--------------------\n{0}迅速闪避，苏德里的手臂太短，没能打中你。\n--------------------\n苏德里的攻击落空了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1633,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "Sudri aims for the head!\n--------------------\nSudri successfully\nhit {0}\non the head!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "苏德里瞄准头部！\n--------------------\n苏德里成功击中了{0}的头部！\n--------------------\n{1}失去了{2}点HP！"
     },
     {
       "kind" : "message",
@@ -4013,50 +4063,6 @@
       "state" : "translated",
       "text" : "Sudri aims for the head!\n--------------------\n{0} jumped,\ndodged Sudri's attack at ease.\n--------------------\nSudri has failed to attack.",
       "translation" : "苏德里瞄准头部！\n--------------------\n{0}轻松跳跃，闪避了苏德里的攻击。\n--------------------\n苏德里攻击失败。"
-    },
-    {
-      "kind" : "message",
-      "line" : 1633,
-      "npc" : "Dwarf Blacksmith",
-      "state" : "translated",
-      "text" : "Sudri aims for the head!",
-      "translation" : "苏德里瞄准头部！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1633,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri aims for the head!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
-      "translation" : "苏德里瞄准头部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1633,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri aims for the head!\n--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
-      "translation" : "苏德里瞄准头部！\n--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1633,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)",
-        ".@damage"
-      ],
-      "state" : "translated",
-      "text" : "Sudri aims for the head!\n--------------------\nSudri successfully\nhit {0}\non the head!\n--------------------\n{1} has lost {2} HP!",
-      "translation" : "苏德里瞄准头部！\n--------------------\n苏德里成功击中了{0}的头部！\n--------------------\n{1}失去了{2}点HP！"
     },
     {
       "kind" : "message",
@@ -4094,28 +4100,60 @@
         ".@damage"
       ],
       "state" : "translated",
-      "text" : "Sudri aims for the head!\n--------------------\nSudri successfully\nhits {0}\nduring a moment of\nabsent-mindedness!\n--------------------\n{1} has lost {2} HP!",
-      "translation" : "苏德里瞄准头部！\n--------------------\n苏德里趁{0}走神之际，一击得手！\n--------------------\n{1}失去了{2}点HP！"
+      "text" : "Sudri aims for the head!\n--------------------\nSudri successfully\nhit {0}\non the head!\n--------------------\n{1} has lost {2} HP!\nSudri won!",
+      "translation" : "苏德里瞄准头部！\n--------------------\n苏德里成功击中了{0}的头部！\n--------------------\n{1}失去了{2}点HP！\n苏德里获胜！"
     },
     {
       "kind" : "message",
-      "line" : 1636,
+      "line" : 1633,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "Sudri strikes the chest!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!\n{1} won!",
-      "translation" : "苏德里攻击胸部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！\n{1}获胜！"
+      "text" : "Sudri aims for the head!\n--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
+      "translation" : "苏德里瞄准头部！\n--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1633,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "Sudri aims for the head!\n--------------------\nSudri successfully\nhits {0}\nduring a moment of\nabsent-mindedness!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "苏德里瞄准头部！\n--------------------\n苏德里趁{0}走神之际，一击得手！\n--------------------\n{1}失去了{2}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1633,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri aims for the head!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
+      "translation" : "苏德里瞄准头部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1633,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri aims for the head!\n--------------------\nSomething happened\nand the fight has stopped!",
+      "translation" : "苏德里瞄准头部！\n--------------------\n发生了意外，战斗停止了！"
     },
     {
       "kind" : "message",
       "line" : 1636,
       "npc" : "Dwarf Blacksmith",
       "state" : "translated",
-      "text" : "Sudri strikes the chest!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "苏德里攻击胸部！\n--------------------\n发生了意外，战斗停止了！"
+      "text" : "Sudri strikes the chest!",
+      "translation" : "苏德里攻击胸部！"
     },
     {
       "kind" : "message",
@@ -4149,37 +4187,6 @@
       "state" : "translated",
       "text" : "Sudri strikes the chest!\n--------------------\n{0} jumped,\ndodged Sudri's attack at ease.\n--------------------\nSudri has failed to attack.",
       "translation" : "苏德里攻击胸部！\n--------------------\n{0}轻松跳跃，闪避了苏德里的攻击。\n--------------------\n苏德里攻击失败。"
-    },
-    {
-      "kind" : "message",
-      "line" : 1636,
-      "npc" : "Dwarf Blacksmith",
-      "state" : "translated",
-      "text" : "Sudri strikes the chest!",
-      "translation" : "苏德里攻击胸部！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1636,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri strikes the chest!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
-      "translation" : "苏德里攻击胸部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1636,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri strikes the chest!\n--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
-      "translation" : "苏德里攻击胸部！\n--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
     },
     {
       "kind" : "message",
@@ -4226,6 +4233,18 @@
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri strikes the chest!\n--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
+      "translation" : "苏德里攻击胸部！\n--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1636,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
         "strcharinfo(0)",
         ".@damage"
       ],
@@ -4235,23 +4254,30 @@
     },
     {
       "kind" : "message",
-      "line" : 1639,
+      "line" : 1636,
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
-        "strcharinfo(0)",
         "strcharinfo(0)"
       ],
       "state" : "translated",
-      "text" : "Sudri attacks the legs!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!\n{1} won!",
-      "translation" : "苏德里攻击腿部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！\n{1}获胜！"
+      "text" : "Sudri strikes the chest!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
+      "translation" : "苏德里攻击胸部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1636,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri strikes the chest!\n--------------------\nSomething happened\nand the fight has stopped!",
+      "translation" : "苏德里攻击胸部！\n--------------------\n发生了意外，战斗停止了！"
     },
     {
       "kind" : "message",
       "line" : 1639,
       "npc" : "Dwarf Blacksmith",
       "state" : "translated",
-      "text" : "Sudri attacks the legs!\n--------------------\nSomething happened\nand the fight has stopped!",
-      "translation" : "苏德里攻击腿部！\n--------------------\n发生了意外，战斗停止了！"
+      "text" : "Sudri attacks the legs!",
+      "translation" : "苏德里攻击腿部！"
     },
     {
       "kind" : "message",
@@ -4285,37 +4311,6 @@
       "state" : "translated",
       "text" : "Sudri attacks the legs!\n--------------------\n{0} jumped,\ndodged Sudri's attack at ease.\n--------------------\nSudri has failed to attack.",
       "translation" : "苏德里攻击腿部！\n--------------------\n{0}跳起，轻松躲过了苏德里的攻击。\n--------------------\n苏德里攻击失败。"
-    },
-    {
-      "kind" : "message",
-      "line" : 1639,
-      "npc" : "Dwarf Blacksmith",
-      "state" : "translated",
-      "text" : "Sudri attacks the legs!",
-      "translation" : "苏德里攻击腿部！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1639,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri attacks the legs!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
-      "translation" : "苏德里攻击腿部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
-    },
-    {
-      "kind" : "message",
-      "line" : 1639,
-      "npc" : "Dwarf Blacksmith",
-      "placeholders" : [
-        "strcharinfo(0)",
-        "strcharinfo(0)"
-      ],
-      "state" : "translated",
-      "text" : "Sudri attacks the legs!\n--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
-      "translation" : "苏德里攻击腿部！\n--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
     },
     {
       "kind" : "message",
@@ -4362,12 +4357,159 @@
       "npc" : "Dwarf Blacksmith",
       "placeholders" : [
         "strcharinfo(0)",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri attacks the legs!\n--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
+      "translation" : "苏德里攻击腿部！\n--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1639,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
         "strcharinfo(0)",
         ".@damage"
       ],
       "state" : "translated",
       "text" : "Sudri attacks the legs!\n--------------------\nSudri successfully\nhits {0}\nduring a moment of\nabsent-mindedness!\n--------------------\n{1} has lost {2} HP!",
       "translation" : "苏德里攻击腿部！\n--------------------\n苏德里趁{0}走神之际，一击得手！\n--------------------\n{1}失去了{2}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1639,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "Sudri attacks the legs!\n--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
+      "translation" : "苏德里攻击腿部！\n--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1639,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "Sudri attacks the legs!\n--------------------\nSomething happened\nand the fight has stopped!",
+      "translation" : "苏德里攻击腿部！\n--------------------\n发生了意外，战斗停止了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1644,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\n{0} quickly dodged,\nSudri's arms were too\nshort to reach at you.\n--------------------\nSudri has failed to attack.",
+      "translation" : "--------------------\n{0}迅速闪避！\n苏德里的手臂太短，够不到你。\n--------------------\n苏德里攻击失败。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1652,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\n{0}\nbarely blocked\nSudri's attack.\n--------------------\nSudri has failed to attack.",
+      "translation" : "--------------------\n{0}勉强挡住了苏德里的攻击。\n--------------------\n苏德里攻击失败。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1660,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\n{0} jumped,\ndodged Sudri's attack at ease.\n--------------------\nSudri has failed to attack.",
+      "translation" : "--------------------\n{0}跳起，轻松躲过了苏德里的攻击。\n--------------------\n苏德里攻击失败。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1669,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\n{0}\ncounters!\nYou've taken\ncritical damage\non your weak spot!\n--------------------\n{1} has lost 30 HP!",
+      "translation" : "--------------------\n{0}进行反击！\n你被击中弱点，受到重创！\n--------------------\n{1}失去了30点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1669,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\n{0}\ncounters!\nYou successfully\ncounter attacked!\n--------------------\nSudri has lost 20 HP!",
+      "translation" : "--------------------\n{0}进行反击！\n你成功反击了！\n--------------------\n苏德里失去了20点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1699,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nSudri successfully\nhit {0}\non the head!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "--------------------\n苏德里成功击中了{0}的头部！\n--------------------\n{1}失去了{2}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1709,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nSudri successfully\nhit {0}\non the chest!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "--------------------\n苏德里成功击中了{0}的胸部！\n--------------------\n{1}失去了{2}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1719,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nSudri successfully\nhit {0}\non the legs!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "--------------------\n苏德里成功击中了{0}的腿部！\n--------------------\n{1}失去了{2}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1729,
+      "npc" : "Dwarf Blacksmith",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "strcharinfo(0)",
+        ".@damage"
+      ],
+      "state" : "translated",
+      "text" : "--------------------\nSudri successfully\nhits {0}\nduring a moment of\nabsent-mindedness!\n--------------------\n{1} has lost {2} HP!",
+      "translation" : "--------------------\n苏德里趁{0}走神之际，一击得手！\n--------------------\n{1}失去了{2}点HP！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1738,
+      "npc" : "Dwarf Blacksmith",
+      "state" : "translated",
+      "text" : "--------------------\nSomething happened\nand the fight has stopped!",
+      "translation" : "--------------------\n发生了意外，战斗停止了！"
     },
     {
       "kind" : "message",

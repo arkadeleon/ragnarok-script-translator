@@ -6,16 +6,16 @@
       "line" : 11,
       "npc" : "Marry Jae",
       "state" : "translated",
-      "text" : "[Marry Jae]\nYour base level is too low, come back when you hit level 60+.",
-      "translation" : "[玛丽·杰]\n您的基础等级太低了，请达到60级后再来。"
+      "text" : "[Marry Jae]\n^ff0000If you attempt to tame any monsters, it will not count as a kill. Please be careful.^000000",
+      "translation" : "[玛丽·杰]\n^ff0000请注意，驯服魔物不计入击杀数。^000000"
     },
     {
       "kind" : "message",
       "line" : 11,
       "npc" : "Marry Jae",
       "state" : "translated",
-      "text" : "[Marry Jae]\n^ff0000If you attempt to tame any monsters, it will not count as a kill. Please be careful.^000000",
-      "translation" : "[玛丽·杰]\n^ff0000请注意，驯服魔物不计入击杀数。^000000"
+      "text" : "[Marry Jae]\nYour base level is too low, come back when you hit level 60+.",
+      "translation" : "[玛丽·杰]\n您的基础等级太低了，请达到60级后再来。"
     },
     {
       "kind" : "message",
@@ -93,12 +93,9 @@
       "kind" : "message",
       "line" : 58,
       "npc" : "Marry Jae",
-      "placeholders" : [
-        ".@md_name$"
-      ],
       "state" : "translated",
-      "text" : "[Marry Jae]\nSorry, but the entry period to the {0} has expired.\nTake a rest while waiting for the dungeon to be available again.",
-      "translation" : "[玛丽·杰]\n抱歉，{0}的入场时间已经结束。\n先休息一下，等副本再次开放吧。"
+      "text" : "[Marry Jae]\nSorry, but the entry period to the Weekend Dungeon has expired.\nTake a rest while waiting for the dungeon to be available again.",
+      "translation" : "[玛丽·杰]\n抱歉，周末副本的入场时间已结束。\n请稍作休息，等待副本再次开放。"
     },
     {
       "kind" : "message",
@@ -131,6 +128,14 @@
       "state" : "translated",
       "text" : "Cancel",
       "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 83,
+      "npc" : "Marry Jae",
+      "state" : "translated",
+      "text" : "Prepare Memorial Dungeon",
+      "translation" : "准备记忆副本"
     },
     {
       "kind" : "message",
@@ -186,8 +191,20 @@
       "npc" : "Gift Supplies Clerk",
       "placeholders" : [
         "getitemname(23143)",
+        "getitemname(23142)"
+      ],
+      "state" : "translated",
+      "text" : "[Gift Supplies Clerk]\nIf you have 5 units of <ITEM>{0}<INFO>23143</INFO></ITEM> or <ITEM>{1}<INFO>23142</INFO></ITEM>, I can pack it for just ^FF000060000^000000 Zeny!\nDo you want to pack it right now?",
+      "translation" : "[礼品供应职员]\n带来5个<ITEM>{0}<INFO>23143</INFO></ITEM>或<ITEM>{1}<INFO>23142</INFO></ITEM>，再付^FF000060000^000000 Zeny，就能帮您包装！\n现在要包装吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 125,
+      "npc" : "Gift Supplies Clerk",
+      "placeholders" : [
+        "getitemname(23143)",
         "getitemname(23142)",
-        "F_InsertComma(.@zeny)"
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
       "text" : "[Gift Supplies Clerk]\nIf you have 5 units of <ITEM>{0}<INFO>23143</INFO></ITEM> or <ITEM>{1}<INFO>23142</INFO></ITEM>, I can pack it for just ^FF0000{2}^000000 Zeny!\nDo you want to pack it right now?",
@@ -229,20 +246,59 @@
       "kind" : "message",
       "line" : 143,
       "npc" : "Gift Supplies Clerk",
+      "placeholders" : [
+        "getitemname(.@item)",
+        "getitemname(.@box)"
+      ],
       "state" : "translated",
-      "text" : "[Gift Supplies Clerk]\nPlease come back when you have enough materials.",
-      "translation" : "[礼品供应职员]\n请准备好足够的材料后再回来。"
+      "text" : "[Gift Supplies Clerk]\nConfirm to spend 60000z to package 5 <ITEM>{0}<INFO>23142</INFO></ITEM> into <ITEM>{1}<INFO>23144</INFO></ITEM>?",
+      "translation" : "[礼品供应职员]\n确认花费60000 Zeny，将5个<ITEM>{0}<INFO>23142</INFO></ITEM>包装成<ITEM>{1}<INFO>23144</INFO></ITEM>吗？"
     },
     {
       "kind" : "message",
       "line" : 143,
       "npc" : "Gift Supplies Clerk",
       "placeholders" : [
-        "F_InsertComma(.@zeny)"
+        "insertchar(.@str$,\",\",.@i)",
+        "getitemname(.@item)",
+        "getitemname(.@box)"
       ],
       "state" : "translated",
-      "text" : "[Gift Supplies Clerk]\nPlease come back when you have enough Zeny.\n{0}z to be specific.",
-      "translation" : "[礼品供应职员]\n包装需要{0} Zeny，准备够了再来吧。"
+      "text" : "[Gift Supplies Clerk]\nConfirm to spend {0}z to package 5 <ITEM>{1}<INFO>23142</INFO></ITEM> into <ITEM>{2}<INFO>23144</INFO></ITEM>?",
+      "translation" : "[礼品供应职员]\n确认花费{0} Zeny，将5个<ITEM>{1}<INFO>23142</INFO></ITEM>包装成<ITEM>{2}<INFO>23144</INFO></ITEM>吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Gift Supplies Clerk",
+      "placeholders" : [
+        "getitemname(.@item)",
+        "getitemname(.@box)"
+      ],
+      "state" : "translated",
+      "text" : "[Gift Supplies Clerk]\nConfirm to spend 60000z to package 5 <ITEM>{0}<INFO>23143</INFO></ITEM> into <ITEM>{1}<INFO>23145</INFO></ITEM>?",
+      "translation" : "[礼品供应职员]\n确认花费60000 Zeny，将5个<ITEM>{0}<INFO>23143</INFO></ITEM>包装成<ITEM>{1}<INFO>23145</INFO></ITEM>吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Gift Supplies Clerk",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "getitemname(.@item)",
+        "getitemname(.@box)"
+      ],
+      "state" : "translated",
+      "text" : "[Gift Supplies Clerk]\nConfirm to spend {0}z to package 5 <ITEM>{1}<INFO>23143</INFO></ITEM> into <ITEM>{2}<INFO>23145</INFO></ITEM>?",
+      "translation" : "[礼品供应职员]\n确认花费{0} Zeny，将5个<ITEM>{1}<INFO>23143</INFO></ITEM>包装成<ITEM>{2}<INFO>23145</INFO></ITEM>吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Gift Supplies Clerk",
+      "state" : "translated",
+      "text" : "[Gift Supplies Clerk]\nPlease come back when you have enough materials.",
+      "translation" : "[礼品供应职员]\n请准备好足够的材料后再回来。"
     },
     {
       "kind" : "message",
@@ -257,23 +313,27 @@
       "line" : 143,
       "npc" : "Gift Supplies Clerk",
       "state" : "translated",
-      "text" : "[Gift Supplies Clerk]\nCan't continue because you have too many heavy objects. Reduce your total weight by clearing your inventory.",
-      "translation" : "[礼品供应职员]\n您的负重过高，无法继续。\n请清理背包，减轻负重后再来。"
+      "text" : "[Gift Supplies Clerk]\nPlease come back when you have enough Zeny.\n60000z to be specific.",
+      "translation" : "[礼品供应职员]\n包装需要60000 Zeny，准备够了再来吧。"
     },
     {
       "kind" : "message",
       "line" : 143,
       "npc" : "Gift Supplies Clerk",
       "placeholders" : [
-        "F_InsertComma(.@zeny)",
-        "getitemname(.@item)",
-        ".@item",
-        "getitemname(.@box)",
-        ".@box"
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
-      "text" : "[Gift Supplies Clerk]\nConfirm to spend {0}z to package 5 <ITEM>{1}<INFO>{2}</INFO></ITEM> into <ITEM>{3}<INFO>{4}</INFO></ITEM>?",
-      "translation" : "[礼品供应职员]\n确认花费{0} Zeny，将5个<ITEM>{1}<INFO>{2}</INFO></ITEM>包装成<ITEM>{3}<INFO>{4}</INFO></ITEM>吗？"
+      "text" : "[Gift Supplies Clerk]\nPlease come back when you have enough Zeny.\n{0}z to be specific.",
+      "translation" : "[礼品供应职员]\n包装需要{0} Zeny，准备够了再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Gift Supplies Clerk",
+      "state" : "translated",
+      "text" : "[Gift Supplies Clerk]\nCan't continue because you have too many heavy objects. Reduce your total weight by clearing your inventory.",
+      "translation" : "[礼品供应职员]\n您的负重过高，无法继续。\n请清理背包，减轻负重后再来。"
     },
     {
       "kind" : "option",
@@ -367,12 +427,49 @@
       "kind" : "message",
       "line" : 211,
       "npc" : "Marry Jae",
-      "placeholders" : [
-        ".@min_level"
-      ],
       "state" : "translated",
-      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level {0} + .",
-      "translation" : "[玛丽·杰]\n您的基础等级太低，无法选择此项，需要达到{0}级或以上。"
+      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level 60 + .",
+      "translation" : "[玛丽·杰]\n您的基础等级太低，无法选择此项，需要达到60级或以上。"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Marry Jae",
+      "state" : "translated",
+      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level 80 + .",
+      "translation" : "[玛丽·杰]\n您的基础等级太低，无法选择此项，需要达到80级或以上。"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Marry Jae",
+      "state" : "translated",
+      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level 100 + .",
+      "translation" : "[玛丽·杰]\n您的基础等级太低，无法选择此项，需要达到100级或以上。"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Marry Jae",
+      "state" : "translated",
+      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level 120 + .",
+      "translation" : "[玛丽·杰]\n您的基础等级太低，无法选择此项，需要达到120级或以上。"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Marry Jae",
+      "state" : "translated",
+      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level 140 + .",
+      "translation" : "[玛丽·杰]\n您的基础等级太低，无法选择此项，需要达到140级或以上。"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Marry Jae",
+      "state" : "translated",
+      "text" : "[Marry Jae]\nYour base level is too low to select this, you need to be level 160 + .",
+      "translation" : "[玛丽·杰]\n您的基础等级太低，无法选择此项，需要达到160级或以上。"
     },
     {
       "kind" : "message",

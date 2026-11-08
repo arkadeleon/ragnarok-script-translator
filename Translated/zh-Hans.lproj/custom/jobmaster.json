@@ -3,35 +3,143 @@
   "scripts" : [
     {
       "kind" : "message",
-      "line" : 27,
+      "line" : 141,
       "npc" : "Job Master",
-      "placeholders" : [
-        "((getarg(0)>1)? \n\t\t\t\"^bb0000\"+getarg(0)+\"^000000 (^bb0000Base^000000) / \":\"\")",
-        "getarg(1)",
-        "((.@blvl > 0) ? \"^bb0000\"+.@blvl+\"^000000 more base levels \" + \n\t\t\t\t((.@jlvl > 0) ? \"and \" : \"\") : \"\")",
-        "((.@jlvl > 0) ? \"^00bb00\"+.@jlvl+\"^000000 more job levels \" : \"\")"
-      ],
       "state" : "translated",
-      "text" : "Level requirement:\n{0}^00bb00{1}^000000 (^00bb00Job^000000)\nYou need {2}{3}to continue.",
-      "translation" : "等级要求：\n{0}^00bb00{1}^000000（^00bb00职业等级^000000）\n您需要{2}{3}才能继续。"
+      "text" : "[Job Master]",
+      "translation" : "[转职导师]"
     },
     {
       "kind" : "message",
-      "line" : 111,
+      "line" : 141,
       "npc" : "Job Master",
-      "placeholders" : [
-        "((checkfalcon()) ? \"falcon\" : \"\")",
-        "((checkcart()) ? \"cart\" : \"\")",
-        "((checkriding()) ? \"Peco\" : \"\")",
-        "((ismounting()) ? \"mount\" : \"\")"
-      ],
       "state" : "translated",
-      "text" : "Please remove your {0}{1}{2}{3} before proceeding.",
-      "translation" : "请卸下您的{0}{1}{2}{3}后再继续。"
+      "text" : "[Job Master]\nPlease remove your falconcartPecomount before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：猎鹰、手推车、大嘴鸟骑乘及其他坐骑。"
     },
     {
       "kind" : "message",
-      "line" : 123,
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your falconcartPeco before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：猎鹰、手推车、大嘴鸟骑乘。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your falconcartmount before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：猎鹰、手推车、坐骑。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your falconcart before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：猎鹰、手推车。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your falconPecomount before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：猎鹰、大嘴鸟骑乘及其他坐骑。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your falconPeco before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：猎鹰、大嘴鸟骑乘。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your falconmount before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：猎鹰、坐骑。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your falcon before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：猎鹰。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your cartPecomount before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：手推车、大嘴鸟骑乘及其他坐骑。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your cartPeco before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：手推车、大嘴鸟骑乘。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your cartmount before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：手推车、坐骑。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your cart before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：手推车。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your Pecomount before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：大嘴鸟骑乘及其他坐骑。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your Peco before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：大嘴鸟骑乘。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your mount before proceeding.",
+      "translation" : "[转职导师]\n请先解除以下状态后再继续：坐骑。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nPlease remove your  before proceeding.",
+      "translation" : "[转职导师]\n请先卸下相关装备后再继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
       "npc" : "Job Master",
       "state" : "translated",
       "text" : "Please use all your skill points before proceeding.",
@@ -39,67 +147,764 @@
     },
     {
       "kind" : "message",
-      "line" : 141,
+      "line" : 163,
       "npc" : "Job Master",
       "placeholders" : [
-        ".NPCName$"
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
       ],
       "state" : "translated",
-      "text" : "{0}\nAn error has occurred.",
-      "translation" : "{0}\n发生了一个错误。"
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
     },
     {
       "kind" : "message",
-      "line" : 300,
-      "npc" : "Job Master",
-      "state" : "translated",
-      "text" : "No more jobs are available.",
-      "translation" : "没有可以继续转职的职业了。"
-    },
-    {
-      "kind" : "message",
-      "line" : 308,
-      "npc" : "Job Master",
-      "state" : "translated",
-      "text" : "Select a job.",
-      "translation" : "请选择一个职业。"
-    },
-    {
-      "kind" : "message",
-      "line" : 322,
+      "line" : 163,
       "npc" : "Job Master",
       "placeholders" : [
-        ".NPCName$",
-        ".SNovice",
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 163,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 163,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 163,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^00bb00{1}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^00bb00{1}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 163,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n达到上述等级要求后即可继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^00bb00{1}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^00bb00{1}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n达到上述等级要求后即可继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 173,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 173,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 173,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 173,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 173,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^00bb00{1}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^00bb00{1}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 173,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n达到上述等级要求后即可继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 183,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 183,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 183,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 183,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 183,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^00bb00{1}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^00bb00{1}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 183,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n达到上述等级要求后即可继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^00bb00{1}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^00bb00{1}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 190,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n达到上述等级要求后即可继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 195,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 195,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 195,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 195,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 195,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^00bb00{1}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^00bb00{1}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 195,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n达到上述等级要求后即可继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 200,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 200,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 200,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 200,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 200,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^00bb00{1}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^00bb00{1}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 200,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n达到上述等级要求后即可继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 205,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 205,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 205,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 205,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 205,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^00bb00{1}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^00bb00{1}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 205,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb0000200^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need to continue.",
+      "translation" : "等级要求：\n^bb0000200^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n达到上述等级要求后即可继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 216,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 216,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 216,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 216,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 216,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^00bb00{1}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^00bb00{1}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 216,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^bb000099^000000 (^bb0000Base^000000) / ^00bb00{0}^000000 (^00bb00Job^000000)\nYou need to continue.",
+      "translation" : "等级要求：\n^bb000099^000000（^bb0000基础等级^000000） / ^00bb00{0}^000000（^00bb00职业等级^000000）\n达到上述等级要求后即可继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 225,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 225,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels and to continue.",
+      "translation" : "等级要求：\n^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 225,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels ^00bb00{2}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级和^00bb00{2}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 225,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@blvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^bb0000{1}^000000 more base levels to continue.",
+      "translation" : "等级要求：\n^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^bb0000{1}^000000级基础等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 225,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)",
+        ".@jlvl"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^00bb00{0}^000000 (^00bb00Job^000000)\nYou need ^00bb00{1}^000000 more job levels to continue.",
+      "translation" : "等级要求：\n^00bb00{0}^000000（^00bb00职业等级^000000）\n您还需要提升^00bb00{1}^000000级职业等级才能继续。"
+    },
+    {
+      "kind" : "message",
+      "line" : 225,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "Level requirement:\n^00bb00{0}^000000 (^00bb00Job^000000)\nYou need to continue.",
+      "translation" : "等级要求：\n^00bb00{0}^000000（^00bb00职业等级^000000）\n达到上述等级要求后即可继续。"
+    },
+    {
+      "kind" : "option",
+      "line" : 290,
+      "npc" : "Job Master",
+      "placeholders" : [
         "jobname(.@class)"
       ],
       "state" : "translated",
-      "text" : "{0}\nA base level of {1} is required to turn into a {2}.",
-      "translation" : "{0}\n基础等级达到{1}级后，可转职为{2}。"
+      "text" : " ~ Change into ^0055FF{0}^000000 class",
+      "translation" : " ~ 转职为^0055FF{0}^000000"
     },
     {
-      "kind" : "message",
-      "line" : 349,
-      "npc" : "Job Master",
-      "placeholders" : [
-        ".NPCName$",
-        "callfunc(\"F_InsertArticle\", jobname(.@to_cls))"
-      ],
-      "state" : "translated",
-      "text" : "{0}\nYou are now {1}!",
-      "translation" : "{0}\n您现在是{1}了！"
-    },
-    {
-      "kind" : "message",
-      "line" : 377,
+      "kind" : "option",
+      "line" : 290,
       "npc" : "Job Master",
       "state" : "translated",
-      "text" : "Unknown Class Error.",
-      "translation" : "未知职业错误。"
+      "text" : " ~ ^777777Go back^000000",
+      "translation" : " ~ ^777777返回^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 290,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : " ~ ^777777Cancel^000000",
+      "translation" : " ~ ^777777取消^000000"
     },
     {
       "kind" : "message",
-      "line" : 380,
+      "line" : 290,
       "npc" : "Job Master",
       "placeholders" : [
         "jobname(.@class)"
@@ -110,14 +915,133 @@
     },
     {
       "kind" : "option",
-      "line" : 385,
+      "line" : 290,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : " ~ ^0055FFRebirth^000000",
+      "translation" : " ~ ^0055FF转生^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "Select a job.",
+      "translation" : "请选择一个职业。"
+    },
+    {
+      "kind" : "option",
+      "line" : 290,
       "npc" : "Job Master",
       "placeholders" : [
-        "((.@back) ?\"Go back\" : \"Cancel\")"
+        "jobname(getelementofarray(getarg(0), .@i))"
       ],
       "state" : "translated",
-      "text" : " ~ ^777777{0}^000000",
-      "translation" : " ~ ^777777{0}^000000"
+      "text" : " ~ {0}",
+      "translation" : " ~ {0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "jobname(.@class)"
+      ],
+      "state" : "translated",
+      "text" : "[Job Master]\nDo you want to change into ^0055FF{0}^000000 class?",
+      "translation" : "[转职导师]\n您想转职为^0055FF{0}^000000吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Job Master]\nYou are now a {0}!",
+      "translation" : "[转职导师]\n您现在是{0}了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Job Master]\nYou are now an {0}!",
+      "translation" : "[转职导师]\n您现在是{0}了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]",
+      "translation" : "[转职导师]"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nSelect a job.",
+      "translation" : "[转职导师]\n请选择一个职业。"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "jobname(.@class)"
+      ],
+      "state" : "translated",
+      "text" : "[Job Master]\nA base level of 45 is required to turn into a {0}.",
+      "translation" : "[转职导师]\n基础等级达到45级后，才能转职为{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "No more jobs are available.",
+      "translation" : "没有可供转职的职业了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "Unknown Class Error.",
+      "translation" : "未知职业错误。"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Job Master",
+      "placeholders" : [
+        "jobname(.@class)"
+      ],
+      "state" : "translated",
+      "text" : "A base level of 45 is required to turn into a {0}.",
+      "translation" : "基础等级达到45级后，才能转职为{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nNo more jobs are available.",
+      "translation" : "[转职导师]\n没有可供转职的职业了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Job Master",
+      "state" : "translated",
+      "text" : "[Job Master]\nUnknown Class Error.",
+      "translation" : "[转职导师]\n未知职业错误。"
     }
   ]
 }

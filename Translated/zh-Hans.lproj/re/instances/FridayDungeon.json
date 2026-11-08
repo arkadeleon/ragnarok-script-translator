@@ -53,12 +53,9 @@
       "kind" : "message",
       "line" : 40,
       "npc" : "Marry Jay",
-      "placeholders" : [
-        ".@md_name$"
-      ],
       "state" : "translated",
-      "text" : "[Marry Jay]\nSorry, but the entry period to the {0} has expired.\nTake a rest while waiting for the dungeon to be available again.",
-      "translation" : "[玛丽·杰伊]\n很抱歉，{0}的入场时间已经结束。\n先休息一下，等副本再次开放吧。"
+      "text" : "[Marry Jay]\nSorry, but the entry period to the Friday Dungeon has expired.\nTake a rest while waiting for the dungeon to be available again.",
+      "translation" : "[玛丽·杰伊]\n很抱歉，周五副本的入场时间已经结束。\n先休息一下，等副本再次开放吧。"
     },
     {
       "kind" : "message",
@@ -91,6 +88,14 @@
       "state" : "translated",
       "text" : "Cancel",
       "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 60,
+      "npc" : "Marry Jay",
+      "state" : "translated",
+      "text" : "Prepare Friday Memorial",
+      "translation" : "准备周五记忆副本"
     },
     {
       "kind" : "message",
@@ -192,12 +197,17 @@
       "kind" : "message",
       "line" : 132,
       "npc" : "Marry Jay",
-      "placeholders" : [
-        "'mob[0]"
-      ],
       "state" : "translated",
-      "text" : "[Marry Jay]\nYour base level is too low to select this, you need to be level {0} or above.",
-      "translation" : "[玛丽·杰伊]\n您的基础等级太低，无法选择此项，需要达到{0}级或以上。"
+      "text" : "[Marry Jay]\nYour base level is too low to select this, you need to be level 130 or above.",
+      "translation" : "[玛丽·杰伊]\n您的基础等级太低，无法选择此项，需要达到130级或以上。"
+    },
+    {
+      "kind" : "message",
+      "line" : 132,
+      "npc" : "Marry Jay",
+      "state" : "translated",
+      "text" : "[Marry Jay]\nYour base level is too low to select this, you need to be level 200 or above.",
+      "translation" : "[玛丽·杰伊]\n您的基础等级太低，无法选择此项，需要达到200级或以上。"
     },
     {
       "kind" : "message",
@@ -342,6 +352,28 @@
       "translation" : "[业余收藏家]\n^0000FF如果饰品带有随机属性，重置后这些随机属性就会消失。^000000"
     },
     {
+      "kind" : "option",
+      "line" : 405,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "getitemname(getequipid(EQI_ACC_R))"
+      ],
+      "state" : "translated",
+      "text" : "Right Acc - {0}",
+      "translation" : "右侧饰品 - {0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 405,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "getitemname(getequipid(EQI_ACC_L))"
+      ],
+      "state" : "translated",
+      "text" : "Left Acc - {0}",
+      "translation" : "左侧饰品 - {0}"
+    },
+    {
       "kind" : "message",
       "line" : 412,
       "npc" : "Amateur Collector",
@@ -354,12 +386,22 @@
       "line" : 539,
       "npc" : "Amateur Collector",
       "placeholders" : [
-        ".@type_name$",
         "mesitemlink(.@equip_id, false)"
       ],
       "state" : "translated",
-      "text" : "[Amateur Collector]\nI cannot {0} this {1} accessory.",
-      "translation" : "[业余收藏家]\n我无法{0}这个{1}饰品。"
+      "text" : "[Amateur Collector]\nI cannot enchant this {0} accessory.",
+      "translation" : "[业余收藏家]\n我无法为这个{0}饰品附魔。"
+    },
+    {
+      "kind" : "message",
+      "line" : 539,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)"
+      ],
+      "state" : "translated",
+      "text" : "[Amateur Collector]\nI cannot reset this {0} accessory.",
+      "translation" : "[业余收藏家]\n我无法重置这个{0}饰品的附魔。"
     },
     {
       "kind" : "message",
@@ -546,12 +588,22 @@
       "line" : 663,
       "npc" : "Amateur Collector",
       "placeholders" : [
-        "mesitemlink(.@equip_id, false)",
-        ".@success"
+        "mesitemlink(.@equip_id, false)"
       ],
       "state" : "translated",
-      "text" : "[Amateur Collector]\nAll enchanted effects will be removed from the {0}?\n^FF0000There is a {1}% chance of success. The accessory will be destroyed if the reset fails!^000000",
-      "translation" : "[业余收藏家]\n确定要移除{0}上的所有附魔效果吗？\n^FF0000成功率为{1}%。如果重置失败，饰品将会被销毁！^000000"
+      "text" : "[Amateur Collector]\nAll enchanted effects will be removed from the {0}?\n^FF0000There is a 20% chance of success. The accessory will be destroyed if the reset fails!^000000",
+      "translation" : "[业余收藏家]\n确定要移除{0}上的所有附魔效果吗？\n^FF0000成功率为20%。如果重置失败，饰品将会被销毁！^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 663,
+      "npc" : "Amateur Collector",
+      "placeholders" : [
+        "mesitemlink(.@equip_id, false)"
+      ],
+      "state" : "translated",
+      "text" : "[Amateur Collector]\nAll enchanted effects will be removed from the {0}?\n^FF0000There is a 80% chance of success. The accessory will be destroyed if the reset fails!^000000",
+      "translation" : "[业余收藏家]\n确定要移除{0}上的所有附魔效果吗？\n^FF0000成功率为80%。如果重置失败，饰品将会被销毁！^000000"
     },
     {
       "kind" : "option",

@@ -57,22 +57,6 @@
       "line" : 19,
       "npc" : "Dimension Traveler",
       "state" : "translated",
-      "text" : "[Dimension Traveler]\nGoodbye friend~ Come again!",
-      "translation" : "[次元旅行者]\n再见，朋友~ 欢迎再来！"
-    },
-    {
-      "kind" : "message",
-      "line" : 19,
-      "npc" : "Dimension Traveler",
-      "state" : "translated",
-      "text" : "[Dimension Traveler]",
-      "translation" : "[次元旅行者]"
-    },
-    {
-      "kind" : "message",
-      "line" : 19,
-      "npc" : "Dimension Traveler",
-      "state" : "translated",
       "text" : "[Dimension Traveler]\nOh! Are you interested in weapons? We have all the weapons we can get from the Ghost Palace. Why don't you choose one?",
       "translation" : "[次元旅行者]\n哦！你对武器感兴趣吗？我们这里有从幽灵皇宫弄到的所有武器。要不要挑一件？"
     },
@@ -94,6 +78,14 @@
     },
     {
       "kind" : "message",
+      "line" : 19,
+      "npc" : "Dimension Traveler",
+      "state" : "translated",
+      "text" : "[Dimension Traveler]\nGoodbye friend~ Come again!",
+      "translation" : "[次元旅行者]\n再见，朋友~ 欢迎再来！"
+    },
+    {
+      "kind" : "message",
       "line" : 35,
       "npc" : "Dimension Traveler",
       "placeholders" : [
@@ -104,13 +96,50 @@
       "translation" : "[次元旅行者]\n啊！{0}旁边写的数字是需要的数量。\n请留意这一点。"
     },
     {
+      "kind" : "option",
+      "line" : 80,
+      "npc" : "Dimension Traveler",
+      "placeholders" : [
+        ".@menu$",
+        "getitemname(.@items[.@i])",
+        ".@items[.@i+1]"
+      ],
+      "state" : "translated",
+      "text" : "{0}{1} - {2}",
+      "translation" : "{0}{1}：{2}"
+    },
+    {
+      "kind" : "option",
+      "line" : 80,
+      "npc" : "Dimension Traveler",
+      "placeholders" : [
+        "getitemname(.@items[.@i])",
+        ".@items[.@i+1]"
+      ],
+      "state" : "translated",
+      "text" : "{0} - {1}",
+      "translation" : "{0}：{1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 81,
+      "npc" : "Dimension Traveler",
+      "placeholders" : [
+        ".@items[.@s+1]",
+        "getitemname(6672)"
+      ],
+      "state" : "translated",
+      "text" : "[Dimension Traveler]\n{0} ^006400{1}^000000 are required in exchange.",
+      "translation" : "[次元旅行者]\n需要{0}个^006400{1}^000000作为交换。"
+    },
+    {
       "kind" : "message",
       "line" : 81,
       "npc" : "Dimension Traveler",
       "placeholders" : [
         "mesitemlink( .@items[.@s] )",
         ".@items[.@s+1]",
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "state" : "translated",
       "text" : "[Dimension Traveler]\nDo you mean {0}?\n{1} ^006400{2}^000000 are required in exchange.",
@@ -121,12 +150,23 @@
       "line" : 81,
       "npc" : "Dimension Traveler",
       "placeholders" : [
-        ".@items[.@s+1]",
-        ".@item_name_req$"
+        "mesitemlink( .@items[.@s] )"
       ],
       "state" : "translated",
-      "text" : "[Dimension Traveler]\n{0} ^006400{1}^000000 are required in exchange.",
-      "translation" : "[次元旅行者]\n需要{0}个^006400{1}^000000作为交换。"
+      "text" : "[Dimension Traveler]\nDo you mean {0}?",
+      "translation" : "[次元旅行者]\n您是指{0}吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 84,
+      "npc" : "Dimension Traveler",
+      "placeholders" : [
+        ".@items[.@s+1]",
+        "getitemname(6672)"
+      ],
+      "state" : "translated",
+      "text" : "{0} ^006400{1}^000000 are required in exchange.",
+      "translation" : "{0}个^006400{1}^000000是兑换所需的材料。"
     },
     {
       "kind" : "option",
@@ -156,89 +196,36 @@
       "kind" : "message",
       "line" : 90,
       "npc" : "Dimension Traveler",
-      "placeholders" : [
-        ".@item_name_req$",
-        ".@items[.@s+1]",
-        ".@item_name_req$"
-      ],
       "state" : "translated",
-      "text" : "[Dimension Traveler]\n[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {0}. I will exchange it for ^006400{1} {2}^000000.",
-      "translation" : "[次元旅行者]\n[次元旅行者]\n朋友，这可让我为难了。\n我需要{0}，要拿^006400{1}个{2}^000000来兑换。"
+      "text" : "[Dimension Traveler]\nI have more than enough weapons.",
+      "translation" : "[次元旅行者]\n武器我已经有很多了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 90,
+      "npc" : "Dimension Traveler",
+      "state" : "translated",
+      "text" : "[Dimension Traveler]\nWe have many armors for you. Why don't you pick one?",
+      "translation" : "[次元旅行者]\n我们这里有很多防具，您挑一件吧。"
     },
     {
       "kind" : "message",
       "line" : 90,
       "npc" : "Dimension Traveler",
       "placeholders" : [
-        ".@item_name_req$",
-        ".@items[.@s+1]",
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "state" : "translated",
-      "text" : "[Dimension Traveler]\nI have more than enough weapons.\n[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {0}. I will exchange it for ^006400{1} {2}^000000.",
-      "translation" : "[次元旅行者]\n我这里的武器多得很。\n[次元旅行者]\n朋友，这可让我为难了。\n我需要{0}，要拿^006400{1}个{2}^000000来兑换。"
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Dimension Traveler",
-      "placeholders" : [
-        ".@item_name_req$",
-        ".@items[.@s+1]",
-        ".@item_name_req$"
-      ],
-      "state" : "translated",
-      "text" : "[Dimension Traveler]\nWe have many armors for you. Why don't you pick one?\n[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {0}. I will exchange it for ^006400{1} {2}^000000.",
-      "translation" : "[次元旅行者]\n我们这里有许多防具，挑一件吧？\n[次元旅行者]\n朋友，这可让我为难了。\n我需要{0}，要拿^006400{1}个{2}^000000来兑换。"
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Dimension Traveler",
-      "placeholders" : [
-        ".@item_name_req$",
-        ".@item_name_req$",
-        ".@items[.@s+1]",
-        ".@item_name_req$"
-      ],
-      "state" : "translated",
-      "text" : "[Dimension Traveler]\nIf you bring me {0}, I will trade it with anything you want.\n[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {1}. I will exchange it for ^006400{2} {3}^000000.",
-      "translation" : "[次元旅行者]\n带{0}来，就能兑换你想要的东西。\n[次元旅行者]\n朋友，这可让我为难了。\n我需要{1}，要拿^006400{2}个{3}^000000来兑换。"
+      "text" : "[Dimension Traveler]\nIf you bring me {0}, I will trade it with anything you want.",
+      "translation" : "[次元旅行者]\n带来{0}，我就用它换你想要的任何东西。"
     },
     {
       "kind" : "message",
       "line" : 90,
       "npc" : "Dimension Traveler",
       "state" : "translated",
-      "text" : "[Dimension Traveler]\n[Dimension Traveler]\nThank you. Come back if you need anything else.",
-      "translation" : "[次元旅行者]\n[次元旅行者]\n谢谢。如果还需要什么，欢迎再来。"
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Dimension Traveler",
-      "state" : "translated",
-      "text" : "[Dimension Traveler]\nI have more than enough weapons.\n[Dimension Traveler]\nThank you. Come back if you need anything else.",
-      "translation" : "[次元旅行者]\n我的武器多得是。\n[次元旅行者]\n谢谢。如果还需要什么，欢迎再来。"
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Dimension Traveler",
-      "state" : "translated",
-      "text" : "[Dimension Traveler]\nWe have many armors for you. Why don't you pick one?\n[Dimension Traveler]\nThank you. Come back if you need anything else.",
-      "translation" : "[次元旅行者]\n我们有很多防具给你。要不要挑一件？\n[次元旅行者]\n谢谢。如果还需要什么，欢迎再来。"
-    },
-    {
-      "kind" : "message",
-      "line" : 90,
-      "npc" : "Dimension Traveler",
-      "placeholders" : [
-        ".@item_name_req$"
-      ],
-      "state" : "translated",
-      "text" : "[Dimension Traveler]\nIf you bring me {0}, I will trade it with anything you want.\n[Dimension Traveler]\nThank you. Come back if you need anything else.",
-      "translation" : "[次元旅行者]\n如果你给我{0}，我会用它交换任何你想要的东西。\n[次元旅行者]\n谢谢。如果还需要什么，欢迎再来。"
+      "text" : "[Dimension Traveler]",
+      "translation" : "[次元旅行者]"
     },
     {
       "kind" : "message",
@@ -253,9 +240,9 @@
       "line" : 109,
       "npc" : "Dimension Traveler",
       "placeholders" : [
-        ".@item_name_req$",
+        "getitemname(6672)",
         ".@items[.@s+1]",
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "state" : "translated",
       "text" : "[Dimension Traveler]\nYou put me in a difficult situation, friend.\nI am in need of {0}. I will exchange it for ^006400{1} {2}^000000.",

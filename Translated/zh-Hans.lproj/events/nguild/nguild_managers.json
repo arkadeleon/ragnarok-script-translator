@@ -6,7 +6,19 @@
       "line" : 32,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)",
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nWelcome Master ^5533FF{1}^000000 ! I will assist you in any way I can!",
+      "translation" : "[{0}]\n欢迎您，会长^5533FF{1}^000000！\n我会尽全力协助您！"
+    },
+    {
+      "kind" : "message",
+      "line" : 32,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[ {0} ]\nI am waiting for my master.  Brave adventurer, follow your destiny!",
@@ -17,19 +29,7 @@
       "line" : 32,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$",
-        "getguildmaster(.@gid)"
-      ],
-      "state" : "translated",
-      "text" : "[ {0} ]\nI am here to follow ^5533FF{1}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!",
-      "translation" : "[{0}]\n我是来听从^5533FF{1}^000000的命令的！嘿！你根本不是公会的成员！！\n守卫们在哪里？消灭这些入侵者！"
-    },
-    {
-      "kind" : "message",
-      "line" : 32,
-      "npc" : "F_GldManager",
-      "placeholders" : [
-        ".@npc_name$",
+        "getarg(0)",
         "getguildmaster(.@gid)",
         "getguildmaster(.@gid)"
       ],
@@ -42,12 +42,12 @@
       "line" : 32,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$",
+        "getarg(0)",
         "getguildmaster(.@gid)"
       ],
       "state" : "translated",
-      "text" : "[ {0} ]\nWelcome Master ^5533FF{1}^000000 ! I will assist you in any way I can!",
-      "translation" : "[{0}]\n欢迎您，会长^5533FF{1}^000000！\n我会尽全力协助您！"
+      "text" : "[ {0} ]\nI am here to follow ^5533FF{1}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!",
+      "translation" : "[{0}]\n我是来听从^5533FF{1}^000000的命令的！嘿！你根本不是公会的成员！！\n守卫们在哪里？消灭这些入侵者！"
     },
     {
       "kind" : "option",
@@ -78,30 +78,33 @@
       "line" : 55,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
-      "text" : "[ {0} ]",
-      "translation" : "[{0}]"
+      "text" : "[ {0} ]\nWould you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... ",
+      "translation" : "[{0}]\n您想雇佣一名卡普拉职员吗？为此需要支付^5533FF10,000 Zeny^000000..."
     },
     {
       "kind" : "message",
       "line" : 55,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[ {0} ]\nWould you like to dismiss the current Kafra?",
+      "translation" : "[{0}]\n您想解雇目前的卡普拉职员吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 55,
+      "npc" : "F_GldManager",
+      "placeholders" : [
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[ {0} ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000.",
       "translation" : "[{0}]\n会长，您还没有与卡普拉公司签订契约。\n要雇佣卡普拉职员，必须先学会公会技能^5533FF与卡普拉签订契约^000000。"
-    },
-    {
-      "kind" : "message",
-      "line" : 64,
-      "npc" : "F_GldManager",
-      "state" : "translated",
-      "text" : "Would you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... ",
-      "translation" : "要雇佣卡普拉职员吗？\n需要支付^5533FF10,000 Zeny^000000..."
     },
     {
       "kind" : "option",
@@ -124,22 +127,22 @@
       "line" : 68,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
-      "text" : "[ {0} ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled.",
-      "translation" : "[{0}]\n会长，您的钱不够雇佣卡普拉职员，雇佣已取消。"
+      "text" : "[ {0} ]\nYou have created a contract with the Kafra Staff Company.",
+      "translation" : "[{0}]\n您已与卡普拉公司签订契约。"
     },
     {
       "kind" : "message",
       "line" : 68,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
-      "text" : "[ {0} ]\nYou have created a contract with the Kafra Staff Company.",
-      "translation" : "[{0}]\n您已与卡普拉公司签订契约。"
+      "text" : "[ {0} ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled.",
+      "translation" : "[{0}]\n会长，您的钱不够雇佣卡普拉职员，雇佣已取消。"
     },
     {
       "kind" : "message",
@@ -154,7 +157,7 @@
       "line" : 83,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[ {0} ]\nI think the Kafra Staff will benefit our guild members.",
@@ -165,19 +168,11 @@
       "line" : 89,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[ {0} ]\nAs you wish Master.  But I suggest we get a Kafra as soon as possible!",
       "translation" : "[{0}]\n遵命，会长。\n不过，我建议尽快雇佣一名卡普拉职员！"
-    },
-    {
-      "kind" : "message",
-      "line" : 94,
-      "npc" : "F_GldManager",
-      "state" : "translated",
-      "text" : "Would you like to dismiss the current Kafra?",
-      "translation" : "要解雇现在的卡普拉职员吗？"
     },
     {
       "kind" : "option",
@@ -232,7 +227,7 @@
       "line" : 110,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[ {0} ]\nThe Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!",
@@ -251,7 +246,7 @@
       "line" : 119,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[ {0} ]\nMaster, I think you should keep the current Kafra Staff because she is already trying her best to serve us",
@@ -262,7 +257,7 @@
       "line" : 126,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[ {0} ]\nWould you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room.",
@@ -289,7 +284,7 @@
       "line" : 131,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[ {0} ]\nPlease follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out.",
@@ -300,7 +295,7 @@
       "line" : 138,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[ {0} ]\nThe goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time.",
@@ -311,11 +306,947 @@
       "line" : 147,
       "npc" : "F_GldManager",
       "placeholders" : [
-        ".@npc_name$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[ {0} ]\nAs you wish, master.",
       "translation" : "[{0}]\n遵命，会长。"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ Frolo ]\nWelcome Master ^5533FF{0}^000000 ! I will assist you in any way I can!",
+      "translation" : "[弗洛洛]\n欢迎您，会长^5533FF{0}^000000！我会尽全力协助您！"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "Kafra Staff Employment / Dismissal",
+      "translation" : "雇佣／解雇卡普拉职员"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "Enter Treasure Room",
+      "translation" : "进入宝物室"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nWould you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room.",
+      "translation" : "[弗洛洛]\n您想去宝物室吗？只有公会会长，也就是您，才有权进入。"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "Enter Treasure room.",
+      "translation" : "进入宝物室"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nWould you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... ",
+      "translation" : "[弗洛洛]\n您想雇佣一名卡普拉职员吗？为此需要支付^5533FF10,000 Zeny^000000..."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nWould you like to dismiss the current Kafra?",
+      "translation" : "[弗洛洛]\n您想解雇目前的卡普拉职员吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "Employ Kafra.",
+      "translation" : "雇佣卡普拉"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "Dismissal",
+      "translation" : "解雇"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nPlease follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out.",
+      "translation" : "[弗洛洛]\n请跟我穿过这条秘密通道。您必须拉下秘密开关才能出去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nHave I done anything wrong? If I did, will you please forgive me?",
+      "translation" : "[卡普拉职员]\n我做错了什么吗？\n如果有，请您原谅我，好吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "Dismiss",
+      "translation" : "解雇"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nYou have created a contract with the Kafra Staff Company.",
+      "translation" : "[弗洛洛]\n您已与卡普拉公司签订契约。"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nIt's unfortunate that I won't be able to serve your guild anymore....",
+      "translation" : "[卡普拉职员]\n很遗憾，不能继续为贵公会服务了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nHow do you do? I'm here to provide you with helpful service! I'll do the best I can to serve you.",
+      "translation" : "[卡普拉职员]\n您好！我是来为您提供便利服务的！\n我会尽心尽力为您服务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nI am waiting for my master.  Brave adventurer, follow your destiny!",
+      "translation" : "[弗洛洛]\n我在等待我的主人。勇敢的冒险者，追随你的命运吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "placeholders" : [
+        "getguildmaster(.@gid)",
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ Frolo ]\nYou're not ^5533FF{0}^000000! I am here to follow ^5533FF{1}^000000's command only",
+      "translation" : "[弗洛洛]\n你不是^5533FF{0}^000000！我只听从^5533FF{1}^000000的命令。"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ Frolo ]\nI am here to follow ^5533FF{0}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!",
+      "translation" : "[弗洛洛]\n我是来听从^5533FF{0}^000000的命令！喂！你根本不是公会成员！！\n守卫们在哪里？消灭这些入侵者！"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nAs you wish, master.",
+      "translation" : "[弗洛洛]\n遵命，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000.",
+      "translation" : "[弗洛洛]\n会长，您还没有与卡普拉公司签订契约。要雇佣卡普拉职员，必须先学会公会技能^5533FF与卡普拉签订契约^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nThe goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time.",
+      "translation" : "[弗洛洛]\n宝物每天都会产出，请尽早领取。若错过时机，宝物可能会消失。"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nAs you wish Master.  But I suggest we get a Kafra as soon as possible!",
+      "translation" : "[弗洛洛]\n遵命，会长。不过，我建议尽快雇佣一名卡普拉职员！"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nMaster, I think you should keep the current Kafra Staff because she is already trying her best to serve us",
+      "translation" : "[弗洛洛]\n会长，我建议留下现在的卡普拉职员，她已经在尽力为我们服务了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled.",
+      "translation" : "[弗洛洛]\n会长，您的钱不够雇佣卡普拉职员，雇佣已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nThank you master, I'll do my best! ^^.",
+      "translation" : "[卡普拉职员]\n谢谢您，主人！\n我会尽力的！^^"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nThe Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!",
+      "translation" : "[弗洛洛]\n卡普拉职员已经被解雇了。但是...我们真的应该尽快再雇一名卡普拉职员！"
+    },
+    {
+      "kind" : "message",
+      "line" : 154,
+      "npc" : "Frolo",
+      "state" : "translated",
+      "text" : "[ Frolo ]\nI think the Kafra Staff will benefit our guild members.",
+      "translation" : "[弗洛洛]\n我想，卡普拉职员会给公会成员带来不少便利。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ Leiber ]\nWelcome Master ^5533FF{0}^000000 ! I will assist you in any way I can!",
+      "translation" : "[莱伯]\n欢迎您，会长^5533FF{0}^000000！我会尽全力协助您！"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "Kafra Staff Employment / Dismissal",
+      "translation" : "雇佣／解雇卡普拉职员"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "Enter Treasure Room",
+      "translation" : "进入宝物室"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nWould you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room.",
+      "translation" : "[莱伯]\n您想去宝物室吗？只有公会会长，也就是您，才有权进入。"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "Enter Treasure room.",
+      "translation" : "进入宝物室"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nWould you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... ",
+      "translation" : "[莱伯]\n您想雇佣一名卡普拉职员吗？为此需要支付^5533FF10,000 Zeny^000000..."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nWould you like to dismiss the current Kafra?",
+      "translation" : "[莱伯]\n您想解雇目前的卡普拉职员吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "Employ Kafra.",
+      "translation" : "雇佣卡普拉"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "Dismissal",
+      "translation" : "解雇"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nPlease follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out.",
+      "translation" : "[莱伯]\n请跟我穿过这条秘密通道。您必须拉下秘密开关才能出去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nHave I done anything wrong? If I did, will you please forgive me?",
+      "translation" : "[卡普拉职员]\n我做错了什么吗？\n如果有，请您原谅我，好吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "Dismiss",
+      "translation" : "解雇"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nYou have created a contract with the Kafra Staff Company.",
+      "translation" : "[莱伯]\n您已与卡普拉公司签订契约。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nIt's unfortunate that I won't be able to serve your guild anymore....",
+      "translation" : "[卡普拉职员]\n很遗憾，不能继续为贵公会服务了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nHow do you do? I'm here to provide you with helpful service! I'll do the best I can to serve you.",
+      "translation" : "[卡普拉职员]\n您好！我是来为您提供便利服务的！\n我会尽心尽力为您服务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nI am waiting for my master.  Brave adventurer, follow your destiny!",
+      "translation" : "[莱伯]\n我在等待我的主人。勇敢的冒险者，追随你的命运吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "placeholders" : [
+        "getguildmaster(.@gid)",
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ Leiber ]\nYou're not ^5533FF{0}^000000! I am here to follow ^5533FF{1}^000000's command only",
+      "translation" : "[莱伯]\n你不是^5533FF{0}^000000！我只听从^5533FF{1}^000000的命令。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ Leiber ]\nI am here to follow ^5533FF{0}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!",
+      "translation" : "[莱伯]\n我是来听从^5533FF{0}^000000的命令！喂！你根本不是公会成员！！\n守卫们在哪里？消灭这些入侵者！"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nAs you wish, master.",
+      "translation" : "[莱伯]\n遵命，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000.",
+      "translation" : "[莱伯]\n会长，您还没有与卡普拉公司签订契约。要雇佣卡普拉职员，必须先学会公会技能^5533FF与卡普拉签订契约^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nThe goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time.",
+      "translation" : "[莱伯]\n宝物每天都会产出，请尽早领取。若错过时机，宝物可能会消失。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nAs you wish Master.  But I suggest we get a Kafra as soon as possible!",
+      "translation" : "[莱伯]\n遵命，会长。不过，我建议尽快雇佣一名卡普拉职员！"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nMaster, I think you should keep the current Kafra Staff because she is already trying her best to serve us",
+      "translation" : "[莱伯]\n会长，我建议留下现在的卡普拉职员，她已经在尽力为我们服务了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled.",
+      "translation" : "[莱伯]\n会长，您的钱不够雇佣卡普拉职员，雇佣已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nThank you master, I'll do my best! ^^.",
+      "translation" : "[卡普拉职员]\n谢谢您，主人！\n我会尽力的！^^"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nThe Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!",
+      "translation" : "[莱伯]\n卡普拉职员已经被解雇了。但是...我们真的应该尽快再雇一名卡普拉职员！"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Leiber",
+      "state" : "translated",
+      "text" : "[ Leiber ]\nI think the Kafra Staff will benefit our guild members.",
+      "translation" : "[莱伯]\n我想，卡普拉职员会给公会成员带来不少便利。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ Dundar ]\nWelcome Master ^5533FF{0}^000000 ! I will assist you in any way I can!",
+      "translation" : "[杜达尔]\n欢迎您，会长^5533FF{0}^000000！我会尽全力协助您！"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "Kafra Staff Employment / Dismissal",
+      "translation" : "雇佣／解雇卡普拉职员"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "Enter Treasure Room",
+      "translation" : "进入宝物室"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nWould you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room.",
+      "translation" : "[杜达尔]\n您想去宝物室吗？只有公会会长，也就是您，才有权进入。"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "Enter Treasure room.",
+      "translation" : "进入宝物室"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nWould you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... ",
+      "translation" : "[杜达尔]\n您想雇佣一名卡普拉职员吗？为此需要支付^5533FF10,000 Zeny^000000..."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nWould you like to dismiss the current Kafra?",
+      "translation" : "[杜达尔]\n您想解雇目前的卡普拉职员吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "Employ Kafra.",
+      "translation" : "雇佣卡普拉"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "Dismissal",
+      "translation" : "解雇"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nPlease follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out.",
+      "translation" : "[杜达尔]\n请跟我穿过这条秘密通道。您必须拉下秘密开关才能出去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nHave I done anything wrong? If I did, will you please forgive me?",
+      "translation" : "[卡普拉职员]\n我做错了什么吗？\n如果有，请您原谅我，好吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "Dismiss",
+      "translation" : "解雇"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nYou have created a contract with the Kafra Staff Company.",
+      "translation" : "[杜达尔]\n您已与卡普拉公司签订契约。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nIt's unfortunate that I won't be able to serve your guild anymore....",
+      "translation" : "[卡普拉职员]\n很遗憾，不能继续为贵公会服务了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nHow do you do? I'm here to provide you with helpful service! I'll do the best I can to serve you.",
+      "translation" : "[卡普拉职员]\n您好！我是来为您提供便利服务的！\n我会尽心尽力为您服务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nI am waiting for my master.  Brave adventurer, follow your destiny!",
+      "translation" : "[杜达尔]\n我在等待我的主人。勇敢的冒险者，追随你的命运吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "placeholders" : [
+        "getguildmaster(.@gid)",
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ Dundar ]\nYou're not ^5533FF{0}^000000! I am here to follow ^5533FF{1}^000000's command only",
+      "translation" : "[杜达尔]\n你不是^5533FF{0}^000000！我只听从^5533FF{1}^000000的命令。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ Dundar ]\nI am here to follow ^5533FF{0}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!",
+      "translation" : "[杜达尔]\n我是来听从^5533FF{0}^000000的命令！喂！你根本不是公会成员！！\n守卫们在哪里？消灭这些入侵者！"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nAs you wish, master.",
+      "translation" : "[杜达尔]\n遵命，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000.",
+      "translation" : "[杜达尔]\n会长，您还没有与卡普拉公司签订契约。要雇佣卡普拉职员，必须先学会公会技能^5533FF与卡普拉签订契约^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nThe goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time.",
+      "translation" : "[杜达尔]\n宝物每天都会产出，请尽早领取。若错过时机，宝物可能会消失。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nAs you wish Master.  But I suggest we get a Kafra as soon as possible!",
+      "translation" : "[杜达尔]\n遵命，会长。不过，我建议尽快雇佣一名卡普拉职员！"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nMaster, I think you should keep the current Kafra Staff because she is already trying her best to serve us",
+      "translation" : "[杜达尔]\n会长，我建议留下现在的卡普拉职员，她已经在尽力为我们服务了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled.",
+      "translation" : "[杜达尔]\n会长，您的钱不够雇佣卡普拉职员，雇佣已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nThank you master, I'll do my best! ^^.",
+      "translation" : "[卡普拉职员]\n谢谢您，主人！\n我会尽力的！^^"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nThe Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!",
+      "translation" : "[杜达尔]\n卡普拉职员已经被解雇了。但是...我们真的应该尽快再雇一名卡普拉职员！"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Dundar",
+      "state" : "translated",
+      "text" : "[ Dundar ]\nI think the Kafra Staff will benefit our guild members.",
+      "translation" : "[杜达尔]\n我想，卡普拉职员会给公会成员带来不少便利。"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ Thefton ]\nWelcome Master ^5533FF{0}^000000 ! I will assist you in any way I can!",
+      "translation" : "[瑟夫顿]\n欢迎您，会长^5533FF{0}^000000！我会尽全力协助您！"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "Kafra Staff Employment / Dismissal",
+      "translation" : "雇佣／解雇卡普拉职员"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "Enter Treasure Room",
+      "translation" : "进入宝物室"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nWould you to go to our Treasure Room? Only you, the Guild Master, are allowed to enter this room.",
+      "translation" : "[瑟夫顿]\n您想去宝物室吗？只有公会会长，也就是您，才有权进入。"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "Enter Treasure room.",
+      "translation" : "进入宝物室"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nWould you like to employ the services of a Kafra? You will need ^5533FF10,000 Zeny^000000 to do so... ",
+      "translation" : "[瑟夫顿]\n您想雇佣一名卡普拉职员吗？为此需要支付^5533FF10,000 Zeny^000000..."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nWould you like to dismiss the current Kafra?",
+      "translation" : "[瑟夫顿]\n您想解雇目前的卡普拉职员吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "Employ Kafra.",
+      "translation" : "雇佣卡普拉"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "Dismissal",
+      "translation" : "解雇"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nPlease follow me through the secret passage way.\nYou must pull down on the secret switch in order to get out.",
+      "translation" : "[瑟夫顿]\n请跟我穿过这条秘密通道。您必须拉下秘密开关才能出去。"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nHave I done anything wrong? If I did, will you please forgive me?",
+      "translation" : "[卡普拉职员]\n我做错了什么吗？\n如果有，请您原谅我，好吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "Dismiss",
+      "translation" : "解雇"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nYou have created a contract with the Kafra Staff Company.",
+      "translation" : "[瑟夫顿]\n您已与卡普拉公司签订契约。"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nIt's unfortunate that I won't be able to serve your guild anymore....",
+      "translation" : "[卡普拉职员]\n很遗憾，不能继续为贵公会服务了..."
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nHow do you do? I'm here to provide you with helpful service! I'll do the best I can to serve you.",
+      "translation" : "[卡普拉职员]\n您好！我是来为您提供便利服务的！\n我会尽心尽力为您服务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nI am waiting for my master.  Brave adventurer, follow your destiny!",
+      "translation" : "[瑟夫顿]\n我在等待我的主人。勇敢的冒险者，追随你的命运吧！"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "placeholders" : [
+        "getguildmaster(.@gid)",
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ Thefton ]\nYou're not ^5533FF{0}^000000! I am here to follow ^5533FF{1}^000000's command only",
+      "translation" : "[瑟夫顿]\n你不是^5533FF{0}^000000！我只听从^5533FF{1}^000000的命令。"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "placeholders" : [
+        "getguildmaster(.@gid)"
+      ],
+      "state" : "translated",
+      "text" : "[ Thefton ]\nI am here to follow ^5533FF{0}^000000's command! Hey! Your not even a part of the guild!!\nWhere are the guardians? Destroy these intruders!",
+      "translation" : "[瑟夫顿]\n我是来听从^5533FF{0}^000000的命令！喂！你根本不是公会成员！！\n守卫们在哪里？消灭这些入侵者！"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nAs you wish, master.",
+      "translation" : "[瑟夫顿]\n遵命，主人。"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nMaster, you don't have a contract with the Kafra Staff Company.\nIn order to hire a Kafra, you must first learn the Guild skill ^5533FFContract With Kafra^000000.",
+      "translation" : "[瑟夫顿]\n会长，您还没有与卡普拉公司签订契约。要雇佣卡普拉职员，必须先学会公会技能^5533FF与卡普拉签订契约^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nThe goods are produced everyday.\nYou should get them whenever you can because they might dissapear if you take them at the wrong time.",
+      "translation" : "[瑟夫顿]\n宝物每天都会产出，请尽早领取。若错过时机，宝物可能会消失。"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nAs you wish Master.  But I suggest we get a Kafra as soon as possible!",
+      "translation" : "[瑟夫顿]\n遵命，会长。不过，我建议尽快雇佣一名卡普拉职员！"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nMaster, I think you should keep the current Kafra Staff because she is already trying her best to serve us",
+      "translation" : "[瑟夫顿]\n会长，我建议留下现在的卡普拉职员，她已经在尽力为我们服务了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nMaster, you do not have enough money to employ a Kafra. Employment has been cancelled.",
+      "translation" : "[瑟夫顿]\n会长，您的钱不够雇佣卡普拉职员，雇佣已取消。"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Kafra Staff ]\nThank you master, I'll do my best! ^^.",
+      "translation" : "[卡普拉职员]\n谢谢您，主人！\n我会尽力的！^^"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nThe Kafra has been dismissed.  But... we should really get a Kafra as soon as possible!",
+      "translation" : "[瑟夫顿]\n卡普拉职员已经被解雇了。但是...我们真的应该尽快再雇一名卡普拉职员！"
+    },
+    {
+      "kind" : "message",
+      "line" : 175,
+      "npc" : "Thefton",
+      "state" : "translated",
+      "text" : "[ Thefton ]\nI think the Kafra Staff will benefit our guild members.",
+      "translation" : "[瑟夫顿]\n我想，卡普拉职员会给公会成员带来不少便利。"
     }
   ]
 }

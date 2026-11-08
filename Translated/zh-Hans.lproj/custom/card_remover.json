@@ -71,7 +71,7 @@
       "npc" : "Wise Old Woman",
       "placeholders" : [
         ".@cardcount",
-        "(.zenycost+(.@cardcount * .percardcost))"
+        ".zenycost+(.@cardcount * .percardcost)"
       ],
       "state" : "translated",
       "text" : "[Wise Old Woman]\nThis item has {0} cards compounded on it. To perform my magic, I will need {1} zeny, a ^0000FFStar Crumb^000000, and a ^0000FFYellow Gemstone^000000.",
@@ -201,9 +201,39 @@
       "kind" : "message",
       "line" : 141,
       "npc" : "Wise Old Woman",
+      "state" : "translated",
+      "text" : "[Wise Old Woman]\nI charge a flat fee of 200000 zeny, plus 25000 zeny for each card I remove from the item. In addition, I need a star crumb and a yellow gemstone to work my magic.",
+      "translation" : "[睿智的老妇人]\n基础费用是200,000 Zeny，每拆除一张卡片还要加收25,000 Zeny。此外，施展法术需要一个星星的角和一块黄色魔力矿石。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Wise Old Woman",
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",.zenycost)",
-        "callfunc(\"F_InsertComma\",.percardcost)"
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Wise Old Woman]\nI charge a flat fee of 200000 zeny, plus {0} zeny for each card I remove from the item. In addition, I need a star crumb and a yellow gemstone to work my magic.",
+      "translation" : "[睿智的老妇人]\n基础费用是200,000 Zeny，每拆除一张卡片还要加收{0} Zeny。此外，施展法术需要一个星星的角和一块黄色魔力矿石。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Wise Old Woman",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Wise Old Woman]\nI charge a flat fee of {0} zeny, plus 25000 zeny for each card I remove from the item. In addition, I need a star crumb and a yellow gemstone to work my magic.",
+      "translation" : "[睿智的老妇人]\n基础费用是{0} Zeny，每拆除一张卡片还要加收25,000 Zeny。此外，施展法术需要一个星星的角和一块黄色魔力矿石。"
+    },
+    {
+      "kind" : "message",
+      "line" : 141,
+      "npc" : "Wise Old Woman",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
       "text" : "[Wise Old Woman]\nI charge a flat fee of {0} zeny, plus {1} zeny for each card I remove from the item. In addition, I need a star crumb and a yellow gemstone to work my magic.",

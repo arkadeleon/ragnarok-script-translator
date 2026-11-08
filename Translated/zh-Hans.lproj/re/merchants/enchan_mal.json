@@ -86,32 +86,16 @@
       "line" : 44,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nThat builiding is located to the southeast of where I am. Why don't you go on a field trip there?",
-      "translation" : "[马约马约]\n那栋建筑就在我的东南方，要不要去看看？"
+      "text" : "[Mayomayo]",
+      "translation" : "[马约马约]"
     },
     {
       "kind" : "message",
       "line" : 48,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nIf you go to the place, there is someone who enchants the Archangel Wing. At that time that was amazing, because that was impossible ability by my own skill.",
-      "translation" : "[马约马约]\n那里有人能为永恒之翼附魔。\n当时可把我惊呆了，毕竟凭我自己的技术根本做不到。"
-    },
-    {
-      "kind" : "message",
-      "line" : 51,
-      "npc" : "Mayomayo",
-      "state" : "translated",
-      "text" : "[Mayomayo]\nEvery night I became his butler and did odd jobs. That is how I learned to enchant.",
-      "translation" : "[马约马约]\n我每天晚上都去给他当管家、打杂，这才学会了这门附魔手艺。"
-    },
-    {
-      "kind" : "message",
-      "line" : 54,
-      "npc" : "Mayomayo",
-      "state" : "translated",
-      "text" : "[Mayomayo]\nSeveral rules are changed. Well, you better have experience.",
-      "translation" : "[马约马约]\n规矩改了几条，亲自试试就知道了。"
+      "text" : "[Mayomayo]",
+      "translation" : "[马约马约]"
     },
     {
       "kind" : "message",
@@ -123,50 +107,62 @@
     },
     {
       "kind" : "message",
-      "line" : 336,
-      "npc" : "Mayomayo",
-      "state" : "translated",
-      "text" : "[Mayomayo]\nThis is not a suitable equipment for the enchant. Don't forget we only take care of high class weapons, including level 4 weapons~",
-      "translation" : "[马约马约]\n这件装备不能在这里附魔。\n别忘了，我只处理特定的高级武器，包括四级武器~"
-    },
-    {
-      "kind" : "message",
-      "line" : 336,
-      "npc" : "Mayomayo",
-      "state" : "translated",
-      "text" : "[Mayomayo]\nThis equipment can not be initialized. Don't forget we only handle some luxury weapons, including level 4 weapons~",
-      "translation" : "[马约马约]\n这件装备不能在这里重置附魔。\n别忘了，我只处理特定的高级武器，包括四级武器~"
-    },
-    {
-      "kind" : "message",
-      "line" : 355,
+      "line" : 319,
       "npc" : "Mayomayo",
       "placeholders" : [
-        ".@equip_name$"
+        "getitemname(.@equip_id)",
+        "getitemslots(.@equip_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Mayomayo]\n^0000ff{0}[{1}]^000000! Do you want to enchant this equipment? How will you pay for this?",
+      "translation" : "[马约马约]\n^0000ff{0}[{1}]^000000！你想为这件装备附魔吗？打算如何支付费用？"
+    },
+    {
+      "kind" : "message",
+      "line" : 319,
+      "npc" : "Mayomayo",
+      "placeholders" : [
+        "getitemname(.@equip_id)"
       ],
       "state" : "translated",
       "text" : "[Mayomayo]\n^0000ff{0}^000000! Do you want to enchant this equipment? How will you pay for this?",
       "translation" : "[马约马约]\n^0000ff{0}^000000！你想附魔这件装备吗？你打算怎么支付费用？"
     },
     {
-      "kind" : "message",
-      "line" : 376,
+      "kind" : "option",
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nCome back again if you change your mind.",
-      "translation" : "[马约马约]\n如果你改变主意，欢迎随时再来。"
+      "text" : "Stop",
+      "translation" : "停止"
+    },
+    {
+      "kind" : "option",
+      "line" : 319,
+      "npc" : "Mayomayo",
+      "placeholders" : [
+        "getitemname(.@coin[.@i])",
+        ".@count[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "{0} (have {1}, need 60)",
+      "translation" : "{0}（持有{1}，需要60）"
+    },
+    {
+      "kind" : "option",
+      "line" : 319,
+      "npc" : "Mayomayo",
+      "placeholders" : [
+        "getitemname(.@coin[.@i])",
+        ".@total[.@i]-.@count[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "^999999{0} (missing {1})^000000",
+      "translation" : "^999999{0}（缺少{1}）^000000"
     },
     {
       "kind" : "message",
-      "line" : 380,
-      "npc" : "Mayomayo",
-      "state" : "translated",
-      "text" : "[Mayomayo]\nYou don't have enough coins. Do you want to check again?",
-      "translation" : "[马约马约]\n你的硬币不够，再检查一下吧。"
-    },
-    {
-      "kind" : "message",
-      "line" : 399,
+      "line" : 319,
       "npc" : "Mayomayo",
       "placeholders" : [
         "getitemname(.@coin[.@coin_select])"
@@ -177,15 +173,20 @@
     },
     {
       "kind" : "option",
-      "line" : 402,
+      "line" : 319,
       "npc" : "Mayomayo",
+      "placeholders" : [
+        "getitemname(.@coin[.@i])",
+        ".@count[.@i]",
+        ".@total[.@i]"
+      ],
       "state" : "translated",
-      "text" : "Stop",
-      "translation" : "停止"
+      "text" : "{0} (have {1}, need {2})",
+      "translation" : "{0}（持有{1}，需要{2}）"
     },
     {
       "kind" : "option",
-      "line" : 402,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
       "text" : "Short Range Type",
@@ -193,7 +194,7 @@
     },
     {
       "kind" : "option",
-      "line" : 402,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
       "text" : "Long Range Type",
@@ -201,7 +202,7 @@
     },
     {
       "kind" : "option",
-      "line" : 402,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
       "text" : "Caster Type",
@@ -209,34 +210,31 @@
     },
     {
       "kind" : "message",
-      "line" : 404,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nOk. If you change your mind, let me know.",
-      "translation" : "[马约马约]\n好的。如果你改变主意，请告诉我。"
+      "text" : "[Mayomayo]\nI'm trying for the 1st enchant. ^ff0000It will not touch previous refinement and cards. Also, the equipment will not be destroyed.^000000 Can I continue?",
+      "translation" : "[马约马约]\n这就进行第1次附魔。\n^ff0000之前的精炼等级和卡片不会受影响，装备也不会损坏。^000000\n可以继续吗？"
     },
     {
       "kind" : "message",
-      "line" : 426,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nThis equipment is at the end of enchant. Please initialize the enchant and you will be able to enchant it again, or bring another weapon.",
-      "translation" : "[马约马约]\n这件装备的附魔已达上限。请重置附魔，或者换一件武器再来。"
+      "text" : "[Mayomayo]",
+      "translation" : "[马约马约]"
     },
     {
       "kind" : "message",
-      "line" : 430,
+      "line" : 319,
       "npc" : "Mayomayo",
-      "placeholders" : [
-        ".@str$"
-      ],
       "state" : "translated",
-      "text" : "[Mayomayo]\nI'm trying for the {0} enchant. ^ff0000It will not touch previous refinement and cards. Also, the equipment will not be destroyed.^000000 Can I continue?",
-      "translation" : "[马约马约]\n这就进行{0}附魔。\n^ff0000精炼等级和已镶嵌的卡片不会受到影响，装备也不会损坏。^000000\n可以开始吗？"
+      "text" : "[Mayomayo]\nI'm trying for the 2nd enchant. ^ff0000It will not touch previous refinement and cards. Also, the equipment will not be destroyed.^000000 Can I continue?",
+      "translation" : "[马约马约]\n这就进行第2次附魔。\n^ff0000之前的精炼等级和卡片不会受影响，装备也不会损坏。^000000\n可以继续吗？"
     },
     {
       "kind" : "option",
-      "line" : 433,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
       "text" : "I'll come back later.",
@@ -244,7 +242,7 @@
     },
     {
       "kind" : "option",
-      "line" : 433,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
       "text" : "Please, continue.",
@@ -252,23 +250,47 @@
     },
     {
       "kind" : "message",
-      "line" : 434,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nOk. If you change your mind, come back again.",
-      "translation" : "[马约马约]\n好的。如果你改变主意，欢迎随时再来。"
+      "text" : "This equipment is at the end of enchant. Please initialize the enchant and you will be able to enchant it again, or bring another weapon.",
+      "translation" : "这件装备的附魔已经达到上限。重置附魔后就能再次附魔，也可以换一把武器。"
     },
     {
       "kind" : "message",
-      "line" : 600,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nThere is something wrong. Please try again.",
-      "translation" : "[马约马约]\n出了点问题。请再试一次。"
+      "text" : "I'm trying for the 1st enchant. ^ff0000It will not touch previous refinement and cards. Also, the equipment will not be destroyed.^000000 Can I continue?",
+      "translation" : "这就进行第1次附魔。\n^ff0000之前的精炼等级和卡片不会受影响，装备也不会损坏。^000000\n可以继续吗？"
     },
     {
       "kind" : "message",
-      "line" : 615,
+      "line" : 319,
+      "npc" : "Mayomayo",
+      "state" : "translated",
+      "text" : "I'm trying for the 2nd enchant. ^ff0000It will not touch previous refinement and cards. Also, the equipment will not be destroyed.^000000 Can I continue?",
+      "translation" : "这就进行第2次附魔。\n^ff0000之前的精炼等级和卡片不会受影响，装备也不会损坏。^000000\n可以继续吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 319,
+      "npc" : "Mayomayo",
+      "state" : "translated",
+      "text" : "Ok. If you change your mind, come back again.",
+      "translation" : "好的，改变主意的话再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 319,
+      "npc" : "Mayomayo",
+      "state" : "translated",
+      "text" : "Come back again if you change your mind.",
+      "translation" : "改变主意的话，欢迎再来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
       "text" : "[Mayomayo]\nThis equipment is at the end of enchant. I provide enchant for two times maximum.",
@@ -276,15 +298,31 @@
     },
     {
       "kind" : "message",
-      "line" : 618,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nSurely I don't enchant at card socket, therefore weapons that have 3 slots can be enchanted only 1 time. Don't forget this~",
-      "translation" : "[马约马约]\n附魔不会占用已有的卡片插槽，所以三孔武器只能附魔一次。\n记住哦~"
+      "text" : "This equipment is at the end of enchant. I provide enchant for two times maximum.",
+      "translation" : "这件装备的附魔已达上限。我最多只能附魔两次。"
     },
     {
       "kind" : "message",
-      "line" : 624,
+      "line" : 319,
+      "npc" : "Mayomayo",
+      "state" : "translated",
+      "text" : "I have enchanted ^990000slot 4^000000 of this equipment.",
+      "translation" : "我已经附魔了这件装备的^990000第4个插槽^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 319,
+      "npc" : "Mayomayo",
+      "state" : "translated",
+      "text" : "[Mayomayo]\nI have enchanted ^990000slot 4^000000 of this equipment.",
+      "translation" : "[马约马约]\n我已经附魔了这件装备的^990000第4个插槽^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
       "text" : "[Mayomayo]\nOh my god!\nThis equipment is destroyed because it could not endure powerful ability. I'm so sorry.",
@@ -292,78 +330,59 @@
     },
     {
       "kind" : "message",
-      "line" : 632,
-      "npc" : "Mayomayo",
-      "placeholders" : [
-        ".@socket"
-      ],
-      "state" : "translated",
-      "text" : "[Mayomayo]\nI have enchanted ^990000slot {0}^000000 of this equipment.",
-      "translation" : "[马约马约]\n我已经附魔了这件装备的^990000第{0}个插槽^000000。"
-    },
-    {
-      "kind" : "message",
-      "line" : 642,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nI will only initialize the enchant effect without touching previous refined level and cards.",
-      "translation" : "[马约马约]\n我只会重置附魔效果，不会影响之前的精炼等级和卡片。"
-    },
-    {
-      "kind" : "option",
-      "line" : 645,
-      "npc" : "Mayomayo",
-      "state" : "translated",
-      "text" : "Stop",
-      "translation" : "停止"
-    },
-    {
-      "kind" : "option",
-      "line" : 645,
-      "npc" : "Mayomayo",
-      "state" : "translated",
-      "text" : "Continue",
-      "translation" : "继续"
-    },
-    {
-      "kind" : "message",
-      "line" : 646,
-      "npc" : "Mayomayo",
-      "state" : "translated",
-      "text" : "[Mayomayo]\nIf you change your mind, come back anytime.",
+      "text" : "[Mayomayo]\nCome back again if you change your mind.",
       "translation" : "[马约马约]\n如果你改变主意，欢迎随时再来。"
     },
     {
       "kind" : "message",
-      "line" : 651,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nI'm sorry. You don't have Silvervine Fruit. Please check your inventory again?",
-      "translation" : "[马约马约]\n抱歉，你没有猕猴桃果实，再检查一下物品栏吧。"
+      "text" : "[Mayomayo]\nYou don't have enough coins. Do you want to check again?",
+      "translation" : "[马约马约]\n你的硬币不够，再检查一下吧。"
     },
     {
       "kind" : "message",
-      "line" : 656,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nDid you take off the equipment?",
-      "translation" : "[马约马约]\n你把装备取下来了吗？"
+      "text" : "[Mayomayo]\nThis equipment is at the end of enchant. Please initialize the enchant and you will be able to enchant it again, or bring another weapon.",
+      "translation" : "[马约马约]\n这件装备的附魔已达上限。请重置附魔，或者换一件武器再来。"
     },
     {
       "kind" : "message",
-      "line" : 661,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nThis equipment has nothing to initialize. Please check again.",
-      "translation" : "[马约马约]\n这件装备没有需要重置的附魔效果。请再检查一下。"
+      "text" : "[Mayomayo]\nOk. If you change your mind, let me know.",
+      "translation" : "[马约马约]\n好的。如果你改变主意，请告诉我。"
     },
     {
       "kind" : "message",
-      "line" : 666,
+      "line" : 319,
       "npc" : "Mayomayo",
       "state" : "translated",
-      "text" : "[Mayomayo]\nInitialize the enchant effect from the equipment.",
-      "translation" : "[马约马约]\n装备上的附魔效果已重置。"
+      "text" : "[Mayomayo]\nOk. If you change your mind, come back again.",
+      "translation" : "[马约马约]\n好的。如果你改变主意，欢迎随时再来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 319,
+      "npc" : "Mayomayo",
+      "state" : "translated",
+      "text" : "[Mayomayo]\nThere is something wrong. Please try again.",
+      "translation" : "[马约马约]\n出了点问题。请再试一次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 336,
+      "npc" : "Mayomayo",
+      "state" : "translated",
+      "text" : "[Mayomayo]",
+      "translation" : "[马约马约]"
     }
   ]
 }

@@ -5,12 +5,9 @@
       "kind" : "message",
       "line" : 30,
       "npc" : "CPM1",
-      "placeholders" : [
-        ".@tame_amount"
-      ],
       "state" : "translated",
-      "text" : "[Cute Pet Manager]\nYou have already exchanged\n{0} times for a taming item.\nYou can't exchange anymore.",
-      "translation" : "[宠物管理员]\n您已经兑换过{0}次驯服道具了。\n无法再兑换了。"
+      "text" : "[Cute Pet Manager]\nYou have already exchanged\n3 times for a taming item.\nYou can't exchange anymore.",
+      "translation" : "[宠物管理员]\n您已经兑换过 3 次驯服道具了。\n不能再兑换了。"
     },
     {
       "kind" : "message",
@@ -22,14 +19,310 @@
     },
     {
       "kind" : "message",
-      "line" : 61,
-      "npc" : "CPM2",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nHello~! I am a Cute Pet Manager\nwho is in charge of public relations\nfor the New Upgraded Cute Pet system.",
+      "translation" : "[宠物管理员]\n您好～！我是负责宣传新版宠物系统的宠物管理员。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nIf you have any concerns regarding\nthe Cute Pet system I am here to guide you.\nLet me know which taming\nitem you want,\nthen I will tell you the monster\nthat you can tame with the item.",
+      "translation" : "[宠物管理员]\n如果您对宠物系统有任何疑问，我可以为您介绍。告诉我您想要哪种驯服道具，我会告诉您可以用它驯服哪种魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nAlso I will explain what materials\nyou need to bring in order to\nget the taming item.",
+      "translation" : "[宠物管理员]\n我还会告诉您兑换驯服道具需要准备哪些材料。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nIf you already brought materials\nto exchange for the taming item,\nI can exchange it for taming items immediately.",
+      "translation" : "[宠物管理员]\n如果您已经带齐兑换驯服道具所需的材料，我可以马上为您兑换。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nHowever, there is a limit\nfor exchanging taming items.\nYou can only get taming items\n3 times. So please make sure\nhow many times you have exchanged.",
+      "translation" : "[宠物管理员]\n不过，驯服道具的兑换次数有限，最多只能兑换 3 次。\n请确认自己已经兑换过几次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nSo, which taming item do you want?\nPlease choose one from the list.",
+      "translation" : "[宠物管理员]\n那么，您想要哪种驯服道具？\n请从列表中选择一项。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
       "placeholders" : [
-        ".@tame_amount"
+        "getitemname(.@tame_id)",
+        "getmonsterinfo(.@mob_id, MOB_NAME)"
       ],
       "state" : "translated",
-      "text" : "[Cute Pet Manager]\nYou have already exchanged\n{0} times for a taming item.\nYou can't exchange anymore.",
-      "translation" : "[宠物管理员]\n您已经兑换过{0}次驯服道具了。\n无法再兑换了。"
+      "text" : "[Cute Pet Manager]\nYou have chosen {0}.\nYou can use it for taming\n^FF0000{1}^000000 monsters.",
+      "translation" : "[宠物管理员]\n您选择了 {0}。\n可以用它驯服^FF0000{1}^000000 种魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nAh, you have gathered all items\nwith your friends. You can now\nexchange for an {0}.\nDo you want to exchange with me?",
+      "translation" : "[宠物管理员]\n啊，看来您和朋友们已经集齐了所有材料。现在可以兑换 {0}。\n要和我兑换吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "Exchange",
+      "translation" : "兑换"
+    },
+    {
+      "kind" : "option",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "Don't Exchange",
+      "translation" : "不兑换"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]",
+      "translation" : "[宠物管理员]"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "You have chosen {0}.",
+      "translation" : "您选择了 {0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "Ah, you have gathered all items",
+      "translation" : "啊，看来您和朋友们"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "You can use it for taming",
+      "translation" : "可以用它来驯服"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "with your friends. You can now",
+      "translation" : "已经集齐了所有材料，现在可以"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "placeholders" : [
+        "getmonsterinfo(.@mob_id, MOB_NAME)"
+      ],
+      "state" : "translated",
+      "text" : "^FF0000{0}^000000 monsters.",
+      "translation" : "^FF0000{0}^000000 种魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "exchange for an {0}.",
+      "translation" : "兑换 {0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000、^FF0000{2}个{3} ^000000和^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000 ^000000以及^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "Do you want to exchange with me?",
+      "translation" : "要和我兑换吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "then you can exchange them",
+      "translation" : "然后就可以换"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "for an {0}.",
+      "translation" : "成 {0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)"
+      ],
+      "state" : "translated",
+      "text" : "Bring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "请带上^FF0000{0}个{1}^000000、^FF0000{2}个{3} ^000000和^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)"
+      ],
+      "state" : "translated",
+      "text" : "Bring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "请带上^FF0000{0}个{1}^000000 ^000000以及^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "You don't? You will come back again.",
+      "translation" : "您不兑换吗？之后还会再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "Wise choice.",
+      "translation" : "明智的选择。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "I hope you and your pet get along.",
+      "translation" : "希望您和宠物相处愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)",
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000\nthen you can exchange them\nfor an {4}.",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000、^FF0000{2}个{3} ^000000和^FF00001 个玩偶胶囊^000000，即可兑换 {4}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000\nthen you can exchange them\nfor an {2}.",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000 ^000000以及^FF00001 个玩偶胶囊^000000，即可兑换 {2}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nYou don't? You will come back again.",
+      "translation" : "[宠物管理员]\n您不兑换吗？之后还会再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 44,
+      "npc" : "CPM1",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nWise choice.\nI hope you and your pet get along.",
+      "translation" : "[宠物管理员]\n明智的选择。希望您和宠物相处愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nYou have already exchanged\n2 times for a taming item.\nYou can't exchange anymore.",
+      "translation" : "[宠物管理员]\n您已经兑换过 2 次驯服道具了。\n不能再兑换了。"
     },
     {
       "kind" : "message",
@@ -41,14 +334,310 @@
     },
     {
       "kind" : "message",
-      "line" : 94,
-      "npc" : "CPM3",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nHello~! I am a Cute Pet Manager\nwho is in charge of public relations\nfor the New Upgraded Cute Pet system.",
+      "translation" : "[宠物管理员]\n您好～！我是负责宣传新版宠物系统的宠物管理员。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nIf you have any concerns regarding\nthe Cute Pet system I am here to guide you.\nLet me know which taming\nitem you want,\nthen I will tell you the monster\nthat you can tame with the item.",
+      "translation" : "[宠物管理员]\n如果您对宠物系统有任何疑问，我可以为您介绍。告诉我您想要哪种驯服道具，我会告诉您可以用它驯服哪种魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nAlso I will explain what materials\nyou need to bring in order to\nget the taming item.",
+      "translation" : "[宠物管理员]\n我还会告诉您兑换驯服道具需要准备哪些材料。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nIf you already brought materials\nto exchange for the taming item,\nI can exchange it for taming items immediately.",
+      "translation" : "[宠物管理员]\n如果您已经带齐兑换驯服道具所需的材料，我可以马上为您兑换。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nHowever, there is a limit\nfor exchanging taming items.\nYou can only get taming items\n2 times. So please make sure\nhow many times you have exchanged.",
+      "translation" : "[宠物管理员]\n不过，驯服道具的兑换次数有限，最多只能兑换 2 次。\n请确认自己已经兑换过几次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nSo, which taming item do you want?\nPlease choose one from the list.",
+      "translation" : "[宠物管理员]\n那么，您想要哪种驯服道具？\n请从列表中选择一项。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
       "placeholders" : [
-        ".@tame_amount"
+        "getitemname(.@tame_id)",
+        "getmonsterinfo(.@mob_id, MOB_NAME)"
       ],
       "state" : "translated",
-      "text" : "[Cute Pet Manager]\nYou have already exchanged\n{0} times for a taming item.\nYou can't exchange anymore.",
-      "translation" : "[宠物管理员]\n您已经兑换过{0}次驯服道具了。\n无法再兑换了。"
+      "text" : "[Cute Pet Manager]\nYou have chosen {0}.\nYou can use it for taming\n^FF0000{1}^000000 monsters.",
+      "translation" : "[宠物管理员]\n您选择了 {0}。\n可以用它驯服^FF0000{1}^000000 种魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nAh, you have gathered all items\nwith your friends. You can now\nexchange for an {0}.\nDo you want to exchange with me?",
+      "translation" : "[宠物管理员]\n啊，看来您和朋友们已经集齐了所有材料。现在可以兑换 {0}。\n要和我兑换吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "Exchange",
+      "translation" : "兑换"
+    },
+    {
+      "kind" : "option",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "Don't Exchange",
+      "translation" : "不兑换"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]",
+      "translation" : "[宠物管理员]"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "You have chosen {0}.",
+      "translation" : "您选择了 {0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "Ah, you have gathered all items",
+      "translation" : "啊，看来您和朋友们"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "You can use it for taming",
+      "translation" : "可以用它来驯服"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "with your friends. You can now",
+      "translation" : "已经集齐了所有材料，现在可以"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "placeholders" : [
+        "getmonsterinfo(.@mob_id, MOB_NAME)"
+      ],
+      "state" : "translated",
+      "text" : "^FF0000{0}^000000 monsters.",
+      "translation" : "^FF0000{0}^000000 种魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "exchange for an {0}.",
+      "translation" : "兑换 {0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000、^FF0000{2}个{3} ^000000和^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000 ^000000以及^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "Do you want to exchange with me?",
+      "translation" : "要和我兑换吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "then you can exchange them",
+      "translation" : "然后就可以换"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "for an {0}.",
+      "translation" : "成 {0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)"
+      ],
+      "state" : "translated",
+      "text" : "Bring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "请带上^FF0000{0}个{1}^000000、^FF0000{2}个{3} ^000000和^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)"
+      ],
+      "state" : "translated",
+      "text" : "Bring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "请带上^FF0000{0}个{1}^000000 ^000000以及^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "You don't? You will come back again.",
+      "translation" : "您不兑换吗？之后还会再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "Wise choice.",
+      "translation" : "明智的选择。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "I hope you and your pet get along.",
+      "translation" : "希望您和宠物相处愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)",
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000\nthen you can exchange them\nfor an {4}.",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000、^FF0000{2}个{3} ^000000和^FF00001 个玩偶胶囊^000000，即可兑换 {4}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000\nthen you can exchange them\nfor an {2}.",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000 ^000000以及^FF00001 个玩偶胶囊^000000，即可兑换 {2}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nYou don't? You will come back again.",
+      "translation" : "[宠物管理员]\n您不兑换吗？之后还会再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 75,
+      "npc" : "CPM2",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nWise choice.\nI hope you and your pet get along.",
+      "translation" : "[宠物管理员]\n明智的选择。希望您和宠物相处愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nYou have already exchanged\n1 times for a taming item.\nYou can't exchange anymore.",
+      "translation" : "[宠物管理员]\n您已经兑换过 1 次驯服道具了。\n不能再兑换了。"
     },
     {
       "kind" : "message",
@@ -57,6 +646,305 @@
       "state" : "translated",
       "text" : "[Cute Pet Manager]\nBesides me, there are other\nCute Pet Managers. If you want\nto tame other pets, I suggest\nyou go and see them.",
       "translation" : "[宠物管理员]\n除了我之外，还有其他宠物管理员。\n如果您想驯服其他宠物，\n建议您去找他们看看。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nHello~! I am a Cute Pet Manager\nwho is in charge of public relations\nfor the New Upgraded Cute Pet system.",
+      "translation" : "[宠物管理员]\n您好～！我是负责宣传新版宠物系统的宠物管理员。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nIf you have any concerns regarding\nthe Cute Pet system I am here to guide you.\nLet me know which taming\nitem you want,\nthen I will tell you the monster\nthat you can tame with the item.",
+      "translation" : "[宠物管理员]\n如果您对宠物系统有任何疑问，我可以为您介绍。告诉我您想要哪种驯服道具，我会告诉您可以用它驯服哪种魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nAlso I will explain what materials\nyou need to bring in order to\nget the taming item.",
+      "translation" : "[宠物管理员]\n我还会告诉您兑换驯服道具需要准备哪些材料。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nIf you already brought materials\nto exchange for the taming item,\nI can exchange it for taming items immediately.",
+      "translation" : "[宠物管理员]\n如果您已经带齐兑换驯服道具所需的材料，我可以马上为您兑换。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nHowever, there is a limit\nfor exchanging taming items.\nYou can only get taming items\n1 times. So please make sure\nhow many times you have exchanged.",
+      "translation" : "[宠物管理员]\n不过，驯服道具的兑换次数有限，最多只能兑换 1 次。\n请确认自己已经兑换过几次。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nSo, which taming item do you want?\nPlease choose one from the list.",
+      "translation" : "[宠物管理员]\n那么，您想要哪种驯服道具？\n请从列表中选择一项。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "placeholders" : [
+        "getitemname(.@tame_id)",
+        "getmonsterinfo(.@mob_id, MOB_NAME)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nYou have chosen {0}.\nYou can use it for taming\n^FF0000{1}^000000 monsters.",
+      "translation" : "[宠物管理员]\n您选择了 {0}。\n可以用它驯服^FF0000{1}^000000 种魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nAh, you have gathered all items\nwith your friends. You can now\nexchange for an {0}.\nDo you want to exchange with me?",
+      "translation" : "[宠物管理员]\n啊，看来您和朋友们已经集齐了所有材料。现在可以兑换 {0}。\n要和我兑换吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "Exchange",
+      "translation" : "兑换"
+    },
+    {
+      "kind" : "option",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "Don't Exchange",
+      "translation" : "不兑换"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]",
+      "translation" : "[宠物管理员]"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "You have chosen {0}.",
+      "translation" : "您选择了 {0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "Ah, you have gathered all items",
+      "translation" : "啊，看来您和朋友们"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "You can use it for taming",
+      "translation" : "可以用它来驯服"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "with your friends. You can now",
+      "translation" : "已经集齐了所有材料，现在可以"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "placeholders" : [
+        "getmonsterinfo(.@mob_id, MOB_NAME)"
+      ],
+      "state" : "translated",
+      "text" : "^FF0000{0}^000000 monsters.",
+      "translation" : "^FF0000{0}^000000 种魔物。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "exchange for an {0}.",
+      "translation" : "兑换 {0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000、^FF0000{2}个{3} ^000000和^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000 ^000000以及^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "Do you want to exchange with me?",
+      "translation" : "要和我兑换吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "then you can exchange them",
+      "translation" : "然后就可以换"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "for an {0}.",
+      "translation" : "成 {0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)"
+      ],
+      "state" : "translated",
+      "text" : "Bring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "请带上^FF0000{0}个{1}^000000、^FF0000{2}个{3} ^000000和^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)"
+      ],
+      "state" : "translated",
+      "text" : "Bring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "请带上^FF0000{0}个{1}^000000 ^000000以及^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "You don't? You will come back again.",
+      "translation" : "您不兑换吗？之后还会再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "Wise choice.",
+      "translation" : "明智的选择。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "I hope you and your pet get along.",
+      "translation" : "希望您和宠物相处愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)",
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000\nthen you can exchange them\nfor an {4}.",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000、^FF0000{2}个{3} ^000000和^FF00001 个玩偶胶囊^000000，即可兑换 {4}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000\nthen you can exchange them\nfor an {2}.",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000 ^000000以及^FF00001 个玩偶胶囊^000000，即可兑换 {2}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nYou don't? You will come back again.",
+      "translation" : "[宠物管理员]\n您不兑换吗？之后还会再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "CPM3",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nWise choice.\nI hope you and your pet get along.",
+      "translation" : "[宠物管理员]\n明智的选择。希望您和宠物相处愉快。"
     },
     {
       "kind" : "message",
@@ -121,6 +1009,49 @@
       "translation" : "[宠物管理员]\n啊，您和朋友们已经集齐了所有材料，现在可以兑换{0}了。要和我兑换吗？"
     },
     {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]",
+      "translation" : "[宠物管理员]"
+    },
+    {
+      "kind" : "message",
+      "line" : 193,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
+      "text" : "Ah, you have gathered all items",
+      "translation" : "啊，看来您和朋友们"
+    },
+    {
+      "kind" : "message",
+      "line" : 194,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
+      "text" : "with your friends. You can now",
+      "translation" : "已经集齐了所有材料，现在可以"
+    },
+    {
+      "kind" : "message",
+      "line" : 195,
+      "npc" : "cute_pet_manager",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "exchange for an {0}.",
+      "translation" : "兑换 {0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 196,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
+      "text" : "Do you want to exchange with me?",
+      "translation" : "要和我兑换吗？"
+    },
+    {
       "kind" : "option",
       "line" : 198,
       "npc" : "cute_pet_manager",
@@ -141,8 +1072,32 @@
       "line" : 199,
       "npc" : "cute_pet_manager",
       "state" : "translated",
+      "text" : "[Cute Pet Manager]",
+      "translation" : "[宠物管理员]"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
       "text" : "[Cute Pet Manager]\nYou don't? You will come back again.",
       "translation" : "[宠物管理员]\n您不想兑换吗？之后还会再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 200,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
+      "text" : "You don't? You will come back again.",
+      "translation" : "您不兑换吗？之后还会再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 210,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]",
+      "translation" : "[宠物管理员]"
     },
     {
       "kind" : "message",
@@ -151,6 +1106,22 @@
       "state" : "translated",
       "text" : "[Cute Pet Manager]\nWise choice.\nI hope you and your pet get along.",
       "translation" : "[宠物管理员]\n明智的选择。希望您和宠物相处愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
+      "text" : "Wise choice.",
+      "translation" : "明智的选择。"
+    },
+    {
+      "kind" : "message",
+      "line" : 212,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
+      "text" : "I hope you and your pet get along.",
+      "translation" : "希望您和宠物相处愉快。"
     },
     {
       "kind" : "message",
@@ -166,17 +1137,148 @@
     },
     {
       "kind" : "message",
+      "line" : 215,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]",
+      "translation" : "[宠物管理员]"
+    },
+    {
+      "kind" : "message",
+      "line" : 216,
+      "npc" : "cute_pet_manager",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "You have chosen {0}.",
+      "translation" : "您选择了 {0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
+      "text" : "You can use it for taming",
+      "translation" : "可以用它来驯服"
+    },
+    {
+      "kind" : "message",
+      "line" : 218,
+      "npc" : "cute_pet_manager",
+      "placeholders" : [
+        "getmonsterinfo(.@mob_id, MOB_NAME)"
+      ],
+      "state" : "translated",
+      "text" : "^FF0000{0}^000000 monsters.",
+      "translation" : "^FF0000{0}^000000 种魔物。"
+    },
+    {
+      "kind" : "message",
       "line" : 220,
       "npc" : "cute_pet_manager",
       "placeholders" : [
         ".@hunt_amount",
         "getitemname(.@hunt_id)",
-        "(.@hunt_id2 ? \", ^FF0000\" + .@hunt_amount2 + \" \" + getitemname(.@hunt_id2) : \"\")",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000、^FF0000{2}个{3} ^000000和^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 220,
+      "npc" : "cute_pet_manager",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000 ^000000以及^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 220,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]",
+      "translation" : "[宠物管理员]"
+    },
+    {
+      "kind" : "message",
+      "line" : 220,
+      "npc" : "cute_pet_manager",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)",
         "getitemname(.@tame_id)"
       ],
       "state" : "translated",
-      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000{2} ^000000 and ^FF00001 Dolly Capsule^000000\nthen you can exchange them\nfor an {3}.",
-      "translation" : "[宠物管理员]\n带上^FF0000{0}个{1}^000000{2} ^000000和^FF00001个玩偶胶囊^000000，\n就可以兑换{3}。"
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000\nthen you can exchange them\nfor an {4}.",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000、^FF0000{2}个{3} ^000000和^FF00001 个玩偶胶囊^000000，即可兑换 {4}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 220,
+      "npc" : "cute_pet_manager",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Cute Pet Manager]\nBring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000\nthen you can exchange them\nfor an {2}.",
+      "translation" : "[宠物管理员]\n请带上^FF0000{0}个{1}^000000 ^000000以及^FF00001 个玩偶胶囊^000000，即可兑换 {2}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 221,
+      "npc" : "cute_pet_manager",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)",
+        ".@hunt_amount2",
+        "getitemname(.@hunt_id2)"
+      ],
+      "state" : "translated",
+      "text" : "Bring ^FF0000{0} {1}^000000, ^FF0000{2} {3} ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "请带上^FF0000{0}个{1}^000000、^FF0000{2}个{3} ^000000和^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 221,
+      "npc" : "cute_pet_manager",
+      "placeholders" : [
+        ".@hunt_amount",
+        "getitemname(.@hunt_id)"
+      ],
+      "state" : "translated",
+      "text" : "Bring ^FF0000{0} {1}^000000 ^000000 and ^FF00001 Dolly Capsule^000000",
+      "translation" : "请带上^FF0000{0}个{1}^000000 ^000000以及^FF00001 个玩偶胶囊^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 222,
+      "npc" : "cute_pet_manager",
+      "state" : "translated",
+      "text" : "then you can exchange them",
+      "translation" : "然后就可以换"
+    },
+    {
+      "kind" : "message",
+      "line" : 223,
+      "npc" : "cute_pet_manager",
+      "placeholders" : [
+        "getitemname(.@tame_id)"
+      ],
+      "state" : "translated",
+      "text" : "for an {0}.",
+      "translation" : "成 {0}。"
     }
   ]
 }

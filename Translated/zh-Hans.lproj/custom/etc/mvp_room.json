@@ -7,14 +7,12 @@
       "npc" : "Private MVP Room",
       "placeholders" : [
         "getvariableofnpc( .timeout, \"MVP Summoner\" )",
-        "callfunc(\"F_InsertComma\", getvariableofnpc( .rentcost, \"MVP Summoner\" ) )",
-        ".@i",
-        ".color$[ .type[.@i] ]",
+        "insertchar(.@str$,\",\",.@i)",
         ".whoinuse$[.@i]"
       ],
       "state" : "translated",
-      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #{2} = {3}{4}^000000",
-      "translation" : "[私人MVP房间]\n请选择一个私人MVP房间。\n租用{0}分钟的费用为{1} Zeny。\n \n房间 #{2} = {3}{4}^000000"
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^0000FF{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^0000FF{2}^000000"
     },
     {
       "kind" : "message",
@@ -22,13 +20,13 @@
       "npc" : "Private MVP Room",
       "placeholders" : [
         "getvariableofnpc( .timeout, \"MVP Summoner\" )",
-        ".@i",
+        "insertchar(.@str$,\",\",.@i)",
         ".color$[ .type[.@i] ]",
         ".whoinuse$[.@i]"
       ],
       "state" : "translated",
-      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #{1} = {2}{3}^000000",
-      "translation" : "[私人MVP房间]\n请选择一个私人MVP房间。\n使用时间为{0}分钟。\n \n房间 #{1} = {2}{3}^000000"
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = {2}{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = {2}{3}^000000"
     },
     {
       "kind" : "message",
@@ -36,7 +34,19 @@
       "npc" : "Private MVP Room",
       "placeholders" : [
         "getvariableofnpc( .timeout, \"MVP Summoner\" )",
-        "callfunc(\"F_InsertComma\", getvariableofnpc( .rentcost, \"MVP Summoner\" ) )"
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n ",
+      "translation" : "[私人MVP房间]\n请选择一个私人MVP房间。\n租用{0}分钟的费用为{1} Zeny。\n "
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
       "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n ",
@@ -52,6 +62,900 @@
       "state" : "translated",
       "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n ",
       "translation" : "[私人MVP房间]\n请选择一个私人MVP房间。\n使用时间为{0}分钟。\n "
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #2 = ^EE8800{1}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#2 = ^EE8800{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #2 = ^70CC11{1}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#2 = ^70CC11{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #2 = ^0000FF{1}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#2 = ^0000FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #2 = {1}{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#2 = {1}{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^EE8800{1}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^EE8800{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^70CC11{1}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^70CC11{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^0000FF{1}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^0000FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = {1}{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = {1}{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = ^EE8800{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#2 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = ^70CC11{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#2 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = ^0000FF{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#2 = ^0000FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = {2}{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#2 = {2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^0000FF{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^0000FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = {2}{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = {2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = ^EE8800{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#2 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = ^70CC11{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#2 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = ^0000FF{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#2 = ^0000FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #2 = {2}{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#2 = {2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^EE8800{1}^000000\nRoom #2 = ^EE8800{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^EE8800{1}^000000\n房间#2 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^EE8800{1}^000000\nRoom #2 = ^70CC11{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^EE8800{1}^000000\n房间#2 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^EE8800{1}^000000\nRoom #2 = ^0000FF{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^EE8800{1}^000000\n房间#2 = ^0000FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^EE8800{1}^000000\nRoom #2 = {2}{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^EE8800{1}^000000\n房间#2 = {2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^70CC11{1}^000000\nRoom #2 = ^EE8800{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^70CC11{1}^000000\n房间#2 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^70CC11{1}^000000\nRoom #2 = ^70CC11{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^70CC11{1}^000000\n房间#2 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^70CC11{1}^000000\nRoom #2 = ^0000FF{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^70CC11{1}^000000\n房间#2 = ^0000FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^70CC11{1}^000000\nRoom #2 = {2}{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^70CC11{1}^000000\n房间#2 = {2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^0000FF{1}^000000\nRoom #2 = ^EE8800{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^0000FF{1}^000000\n房间#2 = ^EE8800{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^0000FF{1}^000000\nRoom #2 = ^70CC11{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^0000FF{1}^000000\n房间#2 = ^70CC11{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^0000FF{1}^000000\nRoom #2 = ^0000FF{2}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^0000FF{1}^000000\n房间#2 = ^0000FF{2}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = ^0000FF{1}^000000\nRoom #2 = {2}{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = ^0000FF{1}^000000\n房间#2 = {2}{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = {1}{2}^000000\nRoom #2 = ^EE8800{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = {1}{2}^000000\n房间#2 = ^EE8800{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = {1}{2}^000000\nRoom #2 = ^70CC11{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = {1}{2}^000000\n房间#2 = ^70CC11{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = {1}{2}^000000\nRoom #2 = ^0000FF{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = {1}{2}^000000\n房间#2 = ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nYou can only use the room for only {0} minutes.\n \nRoom #1 = {1}{2}^000000\nRoom #2 = {3}{4}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n每间房间仅限使用{0}分钟。\n \n房间#1 = {1}{2}^000000\n房间#2 = {3}{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = ^EE8800{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^EE8800{2}^000000\n房间#2 = ^EE8800{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = ^70CC11{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^EE8800{2}^000000\n房间#2 = ^70CC11{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = ^0000FF{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^EE8800{2}^000000\n房间#2 = ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = {3}{4}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^EE8800{2}^000000\n房间#2 = {3}{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = ^EE8800{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^70CC11{2}^000000\n房间#2 = ^EE8800{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = ^70CC11{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^70CC11{2}^000000\n房间#2 = ^70CC11{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = ^0000FF{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^70CC11{2}^000000\n房间#2 = ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = {3}{4}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^70CC11{2}^000000\n房间#2 = {3}{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^0000FF{2}^000000\nRoom #2 = ^EE8800{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^0000FF{2}^000000\n房间#2 = ^EE8800{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^0000FF{2}^000000\nRoom #2 = ^70CC11{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^0000FF{2}^000000\n房间#2 = ^70CC11{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^0000FF{2}^000000\nRoom #2 = ^0000FF{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^0000FF{2}^000000\n房间#2 = ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^0000FF{2}^000000\nRoom #2 = {3}{4}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^0000FF{2}^000000\n房间#2 = {3}{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = {2}{3}^000000\nRoom #2 = ^EE8800{4}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = {2}{3}^000000\n房间#2 = ^EE8800{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = {2}{3}^000000\nRoom #2 = ^70CC11{4}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = {2}{3}^000000\n房间#2 = ^70CC11{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = {2}{3}^000000\nRoom #2 = ^0000FF{4}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = {2}{3}^000000\n房间#2 = ^0000FF{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "getarg(0)",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = {2}{3}^000000\nRoom #2 = {4}{5}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = {2}{3}^000000\n房间#2 = {4}{5}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = ^EE8800{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^EE8800{2}^000000\n房间#2 = ^EE8800{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = ^70CC11{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^EE8800{2}^000000\n房间#2 = ^70CC11{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = ^0000FF{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^EE8800{2}^000000\n房间#2 = ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^EE8800{2}^000000\nRoom #2 = {3}{4}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^EE8800{2}^000000\n房间#2 = {3}{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = ^EE8800{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^70CC11{2}^000000\n房间#2 = ^EE8800{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = ^70CC11{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^70CC11{2}^000000\n房间#2 = ^70CC11{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = ^0000FF{3}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^70CC11{2}^000000\n房间#2 = ^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        "getvariableofnpc( .timeout, \"MVP Summoner\" )",
+        "insertchar(.@str$,\",\",.@i)",
+        ".whoinuse$[.@i]",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nPlease select a private MVP room.\nThe cost to rent a room for {0} minutes is {1} zeny.\n \nRoom #1 = ^70CC11{2}^000000\nRoom #2 = {3}{4}^000000",
+      "translation" : "[私人MVP房间]\n请选择一间私人MVP房间。\n租用房间{0}分钟需支付{1} Zeny。\n \n房间#1 = ^70CC11{2}^000000\n房间#2 = {3}{4}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".@i",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "Room #{0} = ^EE8800{1}^000000",
+      "translation" : "房间#{0} = ^EE8800{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".@i",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "Room #{0} = ^70CC11{1}^000000",
+      "translation" : "房间#{0} = ^70CC11{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".@i",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "Room #{0} = ^0000FF{1}^000000",
+      "translation" : "房间#{0} = ^0000FF{1}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".@i",
+        ".color$[ .type[.@i] ]",
+        ".whoinuse$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "Room #{0} = {1}{2}^000000",
+      "translation" : "房间#{0} = {1}{2}^000000"
     },
     {
       "kind" : "option",
@@ -146,6 +1050,39 @@
       "line" : 42,
       "npc" : "Private MVP Room",
       "placeholders" : [
+        ".whoinuse$[.@room]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nThis room is reserved for \n^EE8800{0}^000000.\nPlease select another.",
+      "translation" : "[私人MVP房间]\n此房间已预留给^EE8800{0}^000000。\n请另选一间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".whoinuse$[.@room]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nThis room is reserved for \n^70CC11{0}^000000.\nPlease select another.",
+      "translation" : "[私人MVP房间]\n此房间已预留给^70CC11{0}^000000。\n请另选一间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
+        ".whoinuse$[.@room]"
+      ],
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nThis room is reserved for \n^0000FF{0}^000000.\nPlease select another.",
+      "translation" : "[私人MVP房间]\n此房间已预留给^0000FF{0}^000000。\n请另选一间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 42,
+      "npc" : "Private MVP Room",
+      "placeholders" : [
         ".color$[ .type[.@room] ]",
         ".whoinuse$[.@room]"
       ],
@@ -189,12 +1126,17 @@
       "kind" : "message",
       "line" : 54,
       "npc" : "Private MVP Room",
-      "placeholders" : [
-        "( ( .@type == 1 )? \"Party\" : \"Guild\" )"
-      ],
       "state" : "translated",
-      "text" : "[Private MVP Room]\nYou do not own a {0}.",
-      "translation" : "[私人MVP房间]\n您没有{0}。"
+      "text" : "[Private MVP Room]\nYou do not own a Party.",
+      "translation" : "[私人MVP房间]\n你没有队伍。"
+    },
+    {
+      "kind" : "message",
+      "line" : 54,
+      "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nYou do not own a Guild.",
+      "translation" : "[私人MVP房间]\n你没有公会。"
     },
     {
       "kind" : "message",
@@ -216,23 +1158,87 @@
       "kind" : "message",
       "line" : 69,
       "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "[Private MVP Room]",
+      "translation" : "[私人MVP房间]"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nYou already rented Room#1. Use that room instead.",
+      "translation" : "[私人MVP房间]\n你已经租用了房间#1，请使用该房间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nYou already rented Room#2. Use that room instead.",
+      "translation" : "[私人MVP房间]\n你已经租用了房间#2，请使用该房间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nYou already rented Room#3. Use that room instead.",
+      "translation" : "[私人MVP房间]\n你已经租用了房间#3，请使用该房间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nYou already rented Room#4. Use that room instead.",
+      "translation" : "[私人MVP房间]\n你已经租用了房间#4，请使用该房间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nYou already rented Room#5. Use that room instead.",
+      "translation" : "[私人MVP房间]\n你已经租用了房间#5，请使用该房间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 69,
+      "npc" : "Private MVP Room",
+      "state" : "translated",
+      "text" : "[Private MVP Room]\nYou already rented Room#6. Use that room instead.",
+      "translation" : "[私人MVP房间]\n你已经租用了房间#6，请使用该房间。"
+    },
+    {
+      "kind" : "message",
+      "line" : 70,
+      "npc" : "Private MVP Room",
       "placeholders" : [
         ".@i"
       ],
       "state" : "translated",
-      "text" : "[Private MVP Room]\nYou already rented Room#{0}. Use that room instead.",
-      "translation" : "[私人MVP房间]\n您已经租用了房间#{0}。请使用该房间。"
+      "text" : "You already rented Room#{0}. Use that room instead.",
+      "translation" : "你已经租用了房间#{0}，请使用该房间。"
     },
     {
       "kind" : "message",
       "line" : 90,
       "npc" : "MVP Summoner",
+      "state" : "translated",
+      "text" : "[MVP Summoner]",
+      "translation" : "[MVP召唤师]"
+    },
+    {
+      "kind" : "message",
+      "line" : 91,
+      "npc" : "MVP Summoner",
       "placeholders" : [
-        "callfunc( \"Time2Str\", .renttime[ atoi( strnpcinfo(2) ) ] + .timeout * 60 )"
+        ".@Time$"
       ],
       "state" : "translated",
-      "text" : "[MVP Summoner]\nTime left: {0}\nHi, what can I do for you?",
-      "translation" : "[MVP召唤师]\n剩余时间：{0}\n您好，有什么可以帮您的吗？"
+      "text" : "Time left: {0}\nHi, what can I do for you?",
+      "translation" : "剩余时间：{0}\n你好，有什么可以帮你的吗？"
     },
     {
       "kind" : "message",
@@ -263,7 +1269,18 @@
       "line" : 133,
       "npc" : "MVP Summoner",
       "placeholders" : [
-        "callfunc( \"F_InsertComma\", .mvpcost )"
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[MVP Summoner]\nThe cost to summon an MVP is {0} zeny.",
+      "translation" : "[MVP召唤师]\n召唤MVP的费用是{0} Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "MVP Summoner",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
       "text" : "[MVP Summoner]\nThe cost to summon an MVP is {0} zeny.",
@@ -274,16 +1291,16 @@
       "line" : 137,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nYou don't have enough zeny to summon an MVP.",
-      "translation" : "[MVP召唤师]\n您的Zeny不足，无法召唤MVP。"
+      "text" : "[MVP Summoner]\nPlease get ready.",
+      "translation" : "[MVP召唤师]\n请做好准备。"
     },
     {
       "kind" : "message",
       "line" : 137,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nPlease get ready.",
-      "translation" : "[MVP召唤师]\n请做好准备。"
+      "text" : "[MVP Summoner]\nYou don't have enough zeny to summon an MVP.",
+      "translation" : "[MVP召唤师]\n您的Zeny不足，无法召唤MVP。"
     },
     {
       "kind" : "message",
@@ -306,7 +1323,18 @@
       "line" : 158,
       "npc" : "MVP Summoner",
       "placeholders" : [
-        "callfunc( \"F_InsertComma\", .bosscost )"
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[MVP Summoner]\nThe cost to summon a mini-boss is {0} zeny.",
+      "translation" : "[MVP召唤师]\n召唤小Boss的费用是{0} Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 158,
+      "npc" : "MVP Summoner",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
       "text" : "[MVP Summoner]\nThe cost to summon a mini-boss is {0} zeny.",
@@ -317,16 +1345,16 @@
       "line" : 162,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nYou doesn't have enough zeny to summon a mini-boss.",
-      "translation" : "[MVP召唤师]\n您的Zeny不足，无法召唤小Boss。"
+      "text" : "[MVP Summoner]\nPlease get ready.",
+      "translation" : "[MVP召唤师]\n请做好准备。"
     },
     {
       "kind" : "message",
       "line" : 162,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nPlease get ready.",
-      "translation" : "[MVP召唤师]\n请做好准备。"
+      "text" : "[MVP Summoner]\nYou doesn't have enough zeny to summon a mini-boss.",
+      "translation" : "[MVP召唤师]\n您的Zeny不足，无法召唤小Boss。"
     },
     {
       "kind" : "message",
@@ -373,8 +1401,8 @@
       "line" : 194,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nThere are still some players in this room. Make sure you are the last member in this room to use this option.",
-      "translation" : "[MVP召唤师]\n房间里还有其他玩家。只有最后留在房间里的成员才能使用这个选项。"
+      "text" : "[MVP Summoner]\nAre you sure you want to give up this room?",
+      "translation" : "[MVP召唤师]\n您确定要放弃这个房间吗？"
     },
     {
       "kind" : "message",
@@ -389,8 +1417,8 @@
       "line" : 194,
       "npc" : "MVP Summoner",
       "state" : "translated",
-      "text" : "[MVP Summoner]\nAre you sure you want to give up this room?",
-      "translation" : "[MVP召唤师]\n您确定要放弃这个房间吗？"
+      "text" : "[MVP Summoner]\nThere are still some players in this room. Make sure you are the last member in this room to use this option.",
+      "translation" : "[MVP召唤师]\n房间里还有其他玩家。只有最后留在房间里的成员才能使用这个选项。"
     },
     {
       "kind" : "option",

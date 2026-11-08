@@ -1,5 +1,4 @@
 {
-  "file" : "npc/re/quests/magic_books.txt",
   "scripts" : [
     {
       "kind" : "message",
@@ -790,14 +789,6 @@
       "line" : 302,
       "npc" : "Lea",
       "state" : "translated",
-      "text" : "[Lea]\nNo problem.",
-      "translation" : "[莉亚]\n没问题。"
-    },
-    {
-      "kind" : "message",
-      "line" : 302,
-      "npc" : "Lea",
-      "state" : "translated",
       "text" : "[Lea]\nYou already have that Magic Book. You can't borrow a new book until you return the current one.",
       "translation" : "[莉亚]\n你已经借了这本魔法书。归还之前，不能再借新的。"
     },
@@ -808,6 +799,14 @@
       "state" : "translated",
       "text" : "[Lea]\nThank you for your deposit. The book's return date is written on the lending card on the back cover of the book. Please try not to lose or damage the book and avoid paying compensation.",
       "translation" : "[莉亚]\n押金已收到。归还日期写在书封底的借阅卡上。请妥善保管，别弄丢或损坏，否则要赔偿。"
+    },
+    {
+      "kind" : "message",
+      "line" : 302,
+      "npc" : "Lea",
+      "state" : "translated",
+      "text" : "[Lea]\nNo problem.",
+      "translation" : "[莉亚]\n没问题。"
     },
     {
       "kind" : "message",
@@ -902,14 +901,6 @@
       "line" : 335,
       "npc" : "Lea",
       "state" : "translated",
-      "text" : "[Lea]\nNo problem.",
-      "translation" : "[莉亚]\n没问题。"
-    },
-    {
-      "kind" : "message",
-      "line" : 335,
-      "npc" : "Lea",
-      "state" : "translated",
       "text" : "[Lea]\nYou already have that Magic Book. You can't borrow a new book until you return the current one.",
       "translation" : "[莉亚]\n你已经借了这本魔法书。归还之前，不能再借新的。"
     },
@@ -920,6 +911,14 @@
       "state" : "translated",
       "text" : "[Lea]\nThank you for your deposit. The book's return date is written on the lending card on the back cover of the book. Please try not to lose or damage the book and avoid paying compensation.",
       "translation" : "[莉亚]\n押金已收到。归还日期写在书封底的借阅卡上。请妥善保管，别弄丢或损坏，否则要赔偿。"
+    },
+    {
+      "kind" : "message",
+      "line" : 335,
+      "npc" : "Lea",
+      "state" : "translated",
+      "text" : "[Lea]\nNo problem.",
+      "translation" : "[莉亚]\n没问题。"
     },
     {
       "kind" : "message",
@@ -1326,16 +1325,16 @@
       "line" : 518,
       "npc" : "Galfos",
       "state" : "translated",
-      "text" : "[Galfos]\nAre you kidding me? You already have the book!",
-      "translation" : "[加尔佛斯]\n你在开玩笑吗？你已经有那本书了！"
+      "text" : "[Galfos]\nOh my, I sense incredible energy coming from you. This is great! Now we're ready to make the Ultimate Magic Book.",
+      "translation" : "[加尔佛斯]\n天哪，我感受到你身上涌出惊人的能量。太好了！现在可以制作终极魔法书了。"
     },
     {
       "kind" : "message",
       "line" : 518,
       "npc" : "Galfos",
       "state" : "translated",
-      "text" : "[Galfos]\nOh my, I sense incredible energy coming from you. This is great! Now we're ready to make the Ultimate Magic Book.",
-      "translation" : "[加尔佛斯]\n天哪，我感受到你身上涌出惊人的能量。太好了！现在可以制作终极魔法书了。"
+      "text" : "[Galfos]\nAre you kidding me? You already have the book!",
+      "translation" : "[加尔佛斯]\n你在开玩笑吗？你已经有那本书了！"
     },
     {
       "kind" : "message",
@@ -1678,12 +1677,26 @@
       "line" : 713,
       "npc" : "Magic_Book_Essence",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@req_amount,getitemname(.@item_req))",
+        "sprintf(\"%d\", getarg(0))",
+        "getarg(1)",
         "getarg(3)"
       ],
       "state" : "translated",
-      "text" : "You have used {0} to create ^999900{1} Essence^000000.",
-      "translation" : "你使用{0}制作出了^999900{1}精华^000000。"
+      "text" : "You have used {0} {1} to create ^999900{2} Essence^000000.",
+      "translation" : "你使用了{0}个{1}，制作出^999900{2}精华^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 713,
+      "npc" : "Magic_Book_Essence",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "getarg(3)"
+      ],
+      "state" : "translated",
+      "text" : "You have used {0} {1} to create ^999900{2} Essence^000000.",
+      "translation" : "你使用了{0}个{1}，制作出^999900{2}精华^000000。"
     },
     {
       "kind" : "message",
@@ -1701,11 +1714,24 @@
       "line" : 720,
       "npc" : "Magic_Book_Essence",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@req_amount,getitemname(.@item_req))"
+        "sprintf(\"%d\", getarg(0))",
+        "getarg(1)"
       ],
       "state" : "translated",
-      "text" : "^008888You have failed to refine the essence using {0}.^000000",
-      "translation" : "^008888使用{0}精炼精华失败。^000000"
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000",
+      "translation" : "^008888使用{0}个{1}精炼精华失败。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 720,
+      "npc" : "Magic_Book_Essence",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000",
+      "translation" : "^008888使用{0}个{1}精炼精华失败。^000000"
     },
     {
       "kind" : "message",
@@ -1725,6 +1751,286 @@
       "state" : "translated",
       "text" : "Someone already used this area.",
       "translation" : "该区域已经有人使用过了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Powerful Lava Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "You have used {0} {1} to create ^999900Lava Essence^000000.",
+      "translation" : "你使用了{0}个{1}，制作出^999900熔岩精华^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Powerful Lava Energy",
+      "state" : "translated",
+      "text" : "Please lighten your bag.",
+      "translation" : "请先减轻负重。"
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Powerful Lava Energy",
+      "state" : "translated",
+      "text" : "Someone already used this area.",
+      "translation" : "该区域已经有人使用过了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Powerful Lava Energy",
+      "state" : "translated",
+      "text" : "You've already created Lava Essence in this area.",
+      "translation" : "你已经在该区域制作过熔岩精华。"
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Powerful Lava Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000",
+      "translation" : "^008888使用{0}个{1}精炼精华失败。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 730,
+      "npc" : "Powerful Lava Energy",
+      "state" : "translated",
+      "text" : "^008800The Lava Essence will last permanently, unless there's a problem.^000000",
+      "translation" : "^008800熔岩精华将永久保存，除非出了什么问题。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Powerful Flame Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "You have used {0} {1} to create ^999900Flame Essence^000000.",
+      "translation" : "你使用了{0}个{1}，制作出^999900火焰精华^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Powerful Flame Energy",
+      "state" : "translated",
+      "text" : "Please lighten your bag.",
+      "translation" : "请先减轻负重。"
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Powerful Flame Energy",
+      "state" : "translated",
+      "text" : "Someone already used this area.",
+      "translation" : "该区域已经有人使用过了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Powerful Flame Energy",
+      "state" : "translated",
+      "text" : "You've already created Flame Essence in this area.",
+      "translation" : "你已经在该区域制作过火焰精华。"
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Powerful Flame Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000",
+      "translation" : "^008888使用{0}个{1}精炼精华失败。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 731,
+      "npc" : "Powerful Flame Energy",
+      "state" : "translated",
+      "text" : "^008800The Flame Essence will last permanently, unless there's a problem.^000000",
+      "translation" : "^008800火焰精华将永久保存，除非出了什么问题。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Powerful Glacier Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "You have used {0} {1} to create ^999900Glacier Essence^000000.",
+      "translation" : "你使用了{0}个{1}，制作出^999900冰川精华^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Powerful Glacier Energy",
+      "state" : "translated",
+      "text" : "Please lighten your bag.",
+      "translation" : "请先减轻负重。"
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Powerful Glacier Energy",
+      "state" : "translated",
+      "text" : "Someone already used this area.",
+      "translation" : "该区域已经有人使用过了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Powerful Glacier Energy",
+      "state" : "translated",
+      "text" : "You've already created Glacier Essence in this area.",
+      "translation" : "你已经在该区域制作过冰川精华。"
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Powerful Glacier Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000",
+      "translation" : "^008888使用{0}个{1}精炼精华失败。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 732,
+      "npc" : "Powerful Glacier Energy",
+      "state" : "translated",
+      "text" : "^008800The Glacier Essence will last permanently, unless there's a problem.^000000",
+      "translation" : "^008800冰川精华将永久保存，除非出了什么问题。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Powerful Fossil Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "You have used {0} {1} to create ^999900Fossil Essence^000000.",
+      "translation" : "你使用了{0}个{1}，制作出^999900化石精华^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Powerful Fossil Energy",
+      "state" : "translated",
+      "text" : "Please lighten your bag.",
+      "translation" : "请先减轻负重。"
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Powerful Fossil Energy",
+      "state" : "translated",
+      "text" : "Someone already used this area.",
+      "translation" : "该区域已经有人使用过了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Powerful Fossil Energy",
+      "state" : "translated",
+      "text" : "You've already created Fossil Essence in this area.",
+      "translation" : "你已经在该区域制作过化石精华。"
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Powerful Fossil Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000",
+      "translation" : "^008888使用{0}个{1}精炼精华失败。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 733,
+      "npc" : "Powerful Fossil Energy",
+      "state" : "translated",
+      "text" : "^008800The Fossil Essence will last permanently, unless there's a problem.^000000",
+      "translation" : "^008800化石精华将永久保存，除非出了什么问题。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Powerful Storm Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "You have used {0} {1} to create ^999900Storm Essence^000000.",
+      "translation" : "你使用了{0}个{1}，制作出^999900风暴精华^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Powerful Storm Energy",
+      "state" : "translated",
+      "text" : "Please lighten your bag.",
+      "translation" : "请先减轻负重。"
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Powerful Storm Energy",
+      "state" : "translated",
+      "text" : "Someone already used this area.",
+      "translation" : "该区域已经有人使用过了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Powerful Storm Energy",
+      "state" : "translated",
+      "text" : "You've already created Storm Essence in this area.",
+      "translation" : "你已经在该区域制作过风暴精华。"
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Powerful Storm Energy",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "^008888You have failed to refine the essence using {0} {1}.^000000",
+      "translation" : "^008888使用{0}个{1}精炼精华失败。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 734,
+      "npc" : "Powerful Storm Energy",
+      "state" : "translated",
+      "text" : "^008800The Storm Essence will last permanently, unless there's a problem.^000000",
+      "translation" : "^008800风暴精华将永久保存，除非出了什么问题。^000000"
     }
   ]
 }

@@ -173,12 +173,49 @@
       "kind" : "message",
       "line" : 82,
       "npc" : "Hugin's Butler",
-      "placeholders" : [
-        ".@type$[.@s]"
-      ],
       "state" : "translated",
-      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000{0}^000000 Boots? There's no refunds.",
-      "translation" : "[胡金的管家]\n您确定要购买^FF0000{0}^000000时空之靴吗？此交易不可退款。"
+      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Strength^000000 Boots? There's no refunds.",
+      "translation" : "[胡金的管家]\n确定要购买时光^FF0000力量^000000战靴吗？购买后不予退款。"
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Hugin's Butler",
+      "state" : "translated",
+      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Intelligence^000000 Boots? There's no refunds.",
+      "translation" : "[胡金的管家]\n确定要购买时光^FF0000智慧^000000战靴吗？购买后不予退款。"
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Hugin's Butler",
+      "state" : "translated",
+      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Agility^000000 Boots? There's no refunds.",
+      "translation" : "[胡金的管家]\n确定要购买时光^FF0000敏捷^000000战靴吗？购买后不予退款。"
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Hugin's Butler",
+      "state" : "translated",
+      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Vitality^000000 Boots? There's no refunds.",
+      "translation" : "[胡金的管家]\n确定要购买时光^FF0000体质^000000战靴吗？购买后不予退款。"
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Hugin's Butler",
+      "state" : "translated",
+      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Dexterity^000000 Boots? There's no refunds.",
+      "translation" : "[胡金的管家]\n确定要购买时光^FF0000灵巧^000000战靴吗？购买后不予退款。"
+    },
+    {
+      "kind" : "message",
+      "line" : 82,
+      "npc" : "Hugin's Butler",
+      "state" : "translated",
+      "text" : "[Hugin's Butler]\nAre you sure about buying Temporal ^FF0000Lucky^000000 Boots? There's no refunds.",
+      "translation" : "[胡金的管家]\n确定要购买时光^FF0000幸运^000000战靴吗？购买后不予退款。"
     },
     {
       "kind" : "option",
@@ -337,12 +374,11 @@
       "line" : 184,
       "npc" : "Hugin's Magician",
       "placeholders" : [
-        ".@equip_name$",
-        ".@cost"
+        "getequipname(EQI_SHOES)"
       ],
       "state" : "translated",
-      "text" : "[Hugin's Magician]\nWant to enchant ^0000FF{0}^000000?\nFor the 1st enchanting, you need ^0000FF{1}^000000 Coagulated Spell items.",
-      "translation" : "[胡金的魔法师]\n想要附魔^0000FF{0}^000000吗？\n进行第1次附魔，您需要^0000FF{1}^000000个凝固的魔力。"
+      "text" : "[Hugin's Magician]\nWant to enchant ^0000FF{0}^000000?\nFor the 1st enchanting, you need ^0000FF1^000000 Coagulated Spell items.",
+      "translation" : "[胡金的魔法师]\n要为^0000FF{0}^000000附魔吗？\n首次附魔需要^0000FF1^000000个凝结魔力。"
     },
     {
       "kind" : "option",
@@ -410,35 +446,27 @@
     },
     {
       "kind" : "message",
-      "line" : 205,
+      "line" : 211,
       "npc" : "Hugin's Magician",
+      "placeholders" : [
+        "getequipname(EQI_SHOES)",
+        ".@cost"
+      ],
       "state" : "translated",
-      "text" : "[Hugin's Magician]\nSomething wrong happened.",
-      "translation" : "[胡金的魔法师]\n出了点问题。"
+      "text" : "[Hugin's Magician]\nEnchanting ^0000FF{0}^000000's 4th slot as ^0000FF2^000000 level effect. Requires ^0000FF{1}^000000 Coagulated Spell items.",
+      "translation" : "[胡金的魔法师]\n将^0000FF{0}^000000的第4栏附魔为^0000FF2^000000级效果，需要^0000FF{1}^000000个凝结魔力。"
     },
     {
       "kind" : "message",
       "line" : 211,
       "npc" : "Hugin's Magician",
       "placeholders" : [
+        "getequipname(EQI_SHOES)",
         ".@cost"
       ],
       "state" : "translated",
-      "text" : "[Hugin's Magician]\n4th slot is already upgraded to the final option. Would you like a random bonus effect for the 3rd slot? You need ^0000ff{0}^000000 Coagulated Spell items.",
-      "translation" : "[胡金的魔法师]\n第4个插槽的附魔属性已升到最高级。\n要为第3个插槽添加随机的额外效果吗？\n需要^0000ff{0}^000000个凝固的魔力。"
-    },
-    {
-      "kind" : "message",
-      "line" : 211,
-      "npc" : "Hugin's Magician",
-      "placeholders" : [
-        ".@equip_name$",
-        ".@number",
-        ".@cost"
-      ],
-      "state" : "translated",
-      "text" : "[Hugin's Magician]\nEnchanting ^0000FF{0}^000000's 4th slot as ^0000FF{1}^000000 level effect. Requires ^0000FF{2}^000000 Coagulated Spell items.",
-      "translation" : "[胡金的魔法师]\n将把^0000FF{0}^000000第4个插槽的附魔效果提升至^0000FF{1}^000000级。\n需要^0000FF{2}^000000个凝固的魔力。"
+      "text" : "[Hugin's Magician]\nEnchanting ^0000FF{0}^000000's 4th slot as ^0000FF3^000000 level effect. Requires ^0000FF{1}^000000 Coagulated Spell items.",
+      "translation" : "[胡金的魔法师]\n将^0000FF{0}^000000的第4栏附魔为^0000FF3^000000级效果，需要^0000FF{1}^000000个凝结魔力。"
     },
     {
       "kind" : "option",
@@ -479,12 +507,25 @@
       "kind" : "message",
       "line" : 243,
       "npc" : "Hugin's Magician",
-      "placeholders" : [
-        ".@string$"
-      ],
       "state" : "translated",
-      "text" : "[Hugin's Magician]\nTrying for {0}",
-      "translation" : "[胡金的魔法师]\n正在尝试{0}。"
+      "text" : "[Hugin's Magician]\nTrying for enchant number ^6300001^000000.",
+      "translation" : "[胡金的魔法师]\n正在尝试第^6300001^000000次附魔。"
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "npc" : "Hugin's Magician",
+      "state" : "translated",
+      "text" : "[Hugin's Magician]\nTrying for enchant number ^6300002^000000.",
+      "translation" : "[胡金的魔法师]\n正在尝试第^6300002^000000次附魔。"
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "npc" : "Hugin's Magician",
+      "state" : "translated",
+      "text" : "[Hugin's Magician]\nTrying for enchant number ^6300003^000000.",
+      "translation" : "[胡金的魔法师]\n正在尝试第^6300003^000000次附魔。"
     },
     {
       "kind" : "message",
@@ -560,14 +601,6 @@
     },
     {
       "kind" : "message",
-      "line" : 296,
-      "npc" : "Hugin's Craftsman",
-      "state" : "translated",
-      "text" : "[Hugin's Craftsman]\nThis is not it! We need ^0000FFAdvanced Temporal Boots^000000 items! The item ^0000FFwith a stat effect and without a slot^000000!",
-      "translation" : "[胡金的工匠]\n不是这双！要的是^0000FF进阶时空之靴^000000！\n就是^0000FF带有属性效果、没有卡片插槽^000000的那种！"
-    },
-    {
-      "kind" : "message",
       "line" : 303,
       "npc" : "Hugin's Craftsman",
       "state" : "translated",
@@ -592,14 +625,6 @@
     },
     {
       "kind" : "message",
-      "line" : 308,
-      "npc" : "Hugin's Craftsman",
-      "state" : "translated",
-      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
-      "translation" : "[胡金的工匠]\n好的，随时欢迎回来。"
-    },
-    {
-      "kind" : "message",
       "line" : 312,
       "npc" : "Hugin's Craftsman",
       "state" : "translated",
@@ -611,20 +636,12 @@
       "line" : 316,
       "npc" : "Hugin's Craftsman",
       "state" : "translated",
-      "text" : "Cancel",
-      "translation" : "取消"
-    },
-    {
-      "kind" : "option",
-      "line" : 316,
-      "npc" : "Hugin's Craftsman",
-      "state" : "translated",
       "text" : "I understand. Try to slot it.",
       "translation" : "我明白，开始打孔"
     },
     {
       "kind" : "message",
-      "line" : 317,
+      "line" : 308,
       "npc" : "Hugin's Craftsman",
       "state" : "translated",
       "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
@@ -653,6 +670,806 @@
       "state" : "translated",
       "text" : "[Hugin's Craftsman]\nSuccessful! Here you go.",
       "translation" : "[胡金的工匠]\n成功了！给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?",
+      "translation" : "[胡金的工匠]\n而且，^FF0000如果失败，所有附魔或精炼等级都会丢失。^000000\n还要冒险吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 316,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I am ok with it!",
+      "translation" : "我接受！"
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?",
+      "translation" : "[胡金的工匠]\n再说一次，^FF0000那个魔法师不会附魔任何带有插槽的物品。^000000\n还要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I understand. Try to slot it.",
+      "translation" : "我明白，开始打孔"
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
+      "translation" : "[胡金的工匠]\n好的，随时欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know...",
+      "translation" : "[胡金的工匠]\n你需要携带^0000FF5个时间结晶^000000。天下没有免费的午餐，你知道的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time.",
+      "translation" : "[胡金的工匠]\n啊啊，失败了。\n祝你下次好运吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 283,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go.",
+      "translation" : "[胡金的工匠]\n成功了！给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?",
+      "translation" : "[胡金的工匠]\n而且，^FF0000如果失败，所有附魔或精炼等级都会丢失。^000000\n还要冒险吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I am ok with it!",
+      "translation" : "我接受！"
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?",
+      "translation" : "[胡金的工匠]\n再说一次，^FF0000那个魔法师不会附魔任何带有插槽的物品。^000000\n还要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I understand. Try to slot it.",
+      "translation" : "我明白，开始打孔"
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
+      "translation" : "[胡金的工匠]\n好的，随时欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know...",
+      "translation" : "[胡金的工匠]\n你需要携带^0000FF5个时间结晶^000000。天下没有免费的午餐，你知道的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time.",
+      "translation" : "[胡金的工匠]\n啊啊，失败了。\n祝你下次好运吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 284,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go.",
+      "translation" : "[胡金的工匠]\n成功了！给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?",
+      "translation" : "[胡金的工匠]\n而且，^FF0000如果失败，所有附魔或精炼等级都会丢失。^000000\n还要冒险吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I am ok with it!",
+      "translation" : "我接受！"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?",
+      "translation" : "[胡金的工匠]\n再说一次，^FF0000那个魔法师不会附魔任何带有插槽的物品。^000000\n还要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I understand. Try to slot it.",
+      "translation" : "我明白，开始打孔"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
+      "translation" : "[胡金的工匠]\n好的，随时欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know...",
+      "translation" : "[胡金的工匠]\n你需要携带^0000FF5个时间结晶^000000。天下没有免费的午餐，你知道的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time.",
+      "translation" : "[胡金的工匠]\n啊啊，失败了。\n祝你下次好运吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 285,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go.",
+      "translation" : "[胡金的工匠]\n成功了！给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?",
+      "translation" : "[胡金的工匠]\n而且，^FF0000如果失败，所有附魔或精炼等级都会丢失。^000000\n还要冒险吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I am ok with it!",
+      "translation" : "我接受！"
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?",
+      "translation" : "[胡金的工匠]\n再说一次，^FF0000那个魔法师不会附魔任何带有插槽的物品。^000000\n还要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I understand. Try to slot it.",
+      "translation" : "我明白，开始打孔"
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
+      "translation" : "[胡金的工匠]\n好的，随时欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know...",
+      "translation" : "[胡金的工匠]\n你需要携带^0000FF5个时间结晶^000000。天下没有免费的午餐，你知道的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time.",
+      "translation" : "[胡金的工匠]\n啊啊，失败了。\n祝你下次好运吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 286,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go.",
+      "translation" : "[胡金的工匠]\n成功了！给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?",
+      "translation" : "[胡金的工匠]\n而且，^FF0000如果失败，所有附魔或精炼等级都会丢失。^000000\n还要冒险吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I am ok with it!",
+      "translation" : "我接受！"
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?",
+      "translation" : "[胡金的工匠]\n再说一次，^FF0000那个魔法师不会附魔任何带有插槽的物品。^000000\n还要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I understand. Try to slot it.",
+      "translation" : "我明白，开始打孔"
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
+      "translation" : "[胡金的工匠]\n好的，随时欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know...",
+      "translation" : "[胡金的工匠]\n你需要携带^0000FF5个时间结晶^000000。天下没有免费的午餐，你知道的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time.",
+      "translation" : "[胡金的工匠]\n啊啊，失败了。\n祝你下次好运吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 287,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go.",
+      "translation" : "[胡金的工匠]\n成功了！给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?",
+      "translation" : "[胡金的工匠]\n而且，^FF0000如果失败，所有附魔或精炼等级都会丢失。^000000\n还要冒险吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I am ok with it!",
+      "translation" : "我接受！"
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?",
+      "translation" : "[胡金的工匠]\n再说一次，^FF0000那个魔法师不会附魔任何带有插槽的物品。^000000\n还要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I understand. Try to slot it.",
+      "translation" : "我明白，开始打孔"
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
+      "translation" : "[胡金的工匠]\n好的，随时欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know...",
+      "translation" : "[胡金的工匠]\n你需要携带^0000FF5个时间结晶^000000。天下没有免费的午餐，你知道的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time.",
+      "translation" : "[胡金的工匠]\n啊啊，失败了。\n祝你下次好运吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 289,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go.",
+      "translation" : "[胡金的工匠]\n成功了！给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?",
+      "translation" : "[胡金的工匠]\n而且，^FF0000如果失败，所有附魔或精炼等级都会丢失。^000000\n还要冒险吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I am ok with it!",
+      "translation" : "我接受！"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?",
+      "translation" : "[胡金的工匠]\n再说一次，^FF0000那个魔法师不会附魔任何带有插槽的物品。^000000\n还要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I understand. Try to slot it.",
+      "translation" : "我明白，开始打孔"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
+      "translation" : "[胡金的工匠]\n好的，随时欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know...",
+      "translation" : "[胡金的工匠]\n你需要携带^0000FF5个时间结晶^000000。天下没有免费的午餐，你知道的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time.",
+      "translation" : "[胡金的工匠]\n啊啊，失败了。\n祝你下次好运吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 290,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go.",
+      "translation" : "[胡金的工匠]\n成功了！给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?",
+      "translation" : "[胡金的工匠]\n而且，^FF0000如果失败，所有附魔或精炼等级都会丢失。^000000\n还要冒险吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I am ok with it!",
+      "translation" : "我接受！"
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?",
+      "translation" : "[胡金的工匠]\n再说一次，^FF0000那个魔法师不会附魔任何带有插槽的物品。^000000\n还要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I understand. Try to slot it.",
+      "translation" : "我明白，开始打孔"
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
+      "translation" : "[胡金的工匠]\n好的，随时欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know...",
+      "translation" : "[胡金的工匠]\n你需要携带^0000FF5个时间结晶^000000。天下没有免费的午餐，你知道的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time.",
+      "translation" : "[胡金的工匠]\n啊啊，失败了。\n祝你下次好运吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 291,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go.",
+      "translation" : "[胡金的工匠]\n成功了！给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?",
+      "translation" : "[胡金的工匠]\n而且，^FF0000如果失败，所有附魔或精炼等级都会丢失。^000000\n还要冒险吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I am ok with it!",
+      "translation" : "我接受！"
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?",
+      "translation" : "[胡金的工匠]\n再说一次，^FF0000那个魔法师不会附魔任何带有插槽的物品。^000000\n还要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I understand. Try to slot it.",
+      "translation" : "我明白，开始打孔"
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
+      "translation" : "[胡金的工匠]\n好的，随时欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know...",
+      "translation" : "[胡金的工匠]\n你需要携带^0000FF5个时间结晶^000000。天下没有免费的午餐，你知道的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time.",
+      "translation" : "[胡金的工匠]\n啊啊，失败了。\n祝你下次好运吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 292,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go.",
+      "translation" : "[胡金的工匠]\n成功了！给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?",
+      "translation" : "[胡金的工匠]\n而且，^FF0000如果失败，所有附魔或精炼等级都会丢失。^000000\n还要冒险吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I am ok with it!",
+      "translation" : "我接受！"
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?",
+      "translation" : "[胡金的工匠]\n再说一次，^FF0000那个魔法师不会附魔任何带有插槽的物品。^000000\n还要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I understand. Try to slot it.",
+      "translation" : "我明白，开始打孔"
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
+      "translation" : "[胡金的工匠]\n好的，随时欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know...",
+      "translation" : "[胡金的工匠]\n你需要携带^0000FF5个时间结晶^000000。天下没有免费的午餐，你知道的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time.",
+      "translation" : "[胡金的工匠]\n啊啊，失败了。\n祝你下次好运吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 293,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go.",
+      "translation" : "[胡金的工匠]\n成功了！给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nAnd ^FF0000all enchant or refine rates will be lost if you fail this.^000000\nStill want to risk it?",
+      "translation" : "[胡金的工匠]\n而且，^FF0000如果失败，所有附魔或精炼等级都会丢失。^000000\n还要冒险吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I am ok with it!",
+      "translation" : "我接受！"
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOnce again, ^FF0000That Magician won't enchant any item with a slot.^000000\nStill want to proceed?",
+      "translation" : "[胡金的工匠]\n再说一次，^FF0000那个魔法师不会附魔任何带有插槽的物品。^000000\n还要继续吗？"
+    },
+    {
+      "kind" : "option",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "I understand. Try to slot it.",
+      "translation" : "我明白，开始打孔"
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nOk, come back anytime you want.",
+      "translation" : "[胡金的工匠]\n好的，随时欢迎回来。"
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nYou must bring ^0000FF5 Temporal Crystal items^000000. Nothing is free you know...",
+      "translation" : "[胡金的工匠]\n你需要携带^0000FF5个时间结晶^000000。天下没有免费的午餐，你知道的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nArrggg, we failed. Better luck next time.",
+      "translation" : "[胡金的工匠]\n啊啊，失败了。\n祝你下次好运吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 294,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nSuccessful! Here you go.",
+      "translation" : "[胡金的工匠]\n成功了！给你。"
+    },
+    {
+      "kind" : "message",
+      "line" : 296,
+      "npc" : "Hugin's Craftsman",
+      "state" : "translated",
+      "text" : "[Hugin's Craftsman]\nThis is not it! We need ^0000FFAdvanced Temporal Boots^000000 items! The item ^0000FFwith a stat effect and without a slot^000000!",
+      "translation" : "[胡金的工匠]\n不是这双！要的是^0000FF进阶时空之靴^000000！\n就是^0000FF带有属性效果、没有卡片插槽^000000的那种！"
     },
     {
       "kind" : "message",
@@ -701,6 +1518,18 @@
       "state" : "translated",
       "text" : "[Dark magic master]\nYou should ask Hugin's magic master all the basic things. I want deeper conversation about enchating work.",
       "translation" : "[黑魔法大师]\n基础知识去问胡金的魔法师吧。\n我只想谈更深入的附魔技巧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 366,
+      "npc" : "Dark magic master",
+      "placeholders" : [
+        "getitemname(.@polluted_id)",
+        "getitemname(.@coagulated_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Dark magic master]\nI need 4 items. ^0000ff100000, {0}, {1}, Temporal Boots(Socket) Series^000000. If you don't have any of these, I cannot help you.",
+      "translation" : "[黑暗魔法大师]\n我需要这4样东西：^0000ff100000 Zeny、{0}、{1}和时光战靴（插槽）系列^000000。缺少任何一样我都帮不了你。"
     },
     {
       "kind" : "message",
@@ -768,16 +1597,27 @@
       "line" : 436,
       "npc" : "Dark magic master",
       "placeholders" : [
-        ".@equip_name$",
-        ".@amount_poll",
+        "getequipname(EQI_SHOES)",
         "getitemname(.@polluted_id)",
-        ".@amount_coag",
-        "getitemname(.@coagulated_id)",
-        "callfunc(\"F_InsertComma\",.@cost_zeny)"
+        "getitemname(.@coagulated_id)"
       ],
       "state" : "translated",
-      "text" : "[Dark magic master]\nWant to enchant ^0000ff{0} (Socket)^000000? For the 1st enchanting, you need ^0000ff{1} {2}, {3} {4}, and {5} zeny^000000.\nIt has some risk of failing..",
-      "translation" : "[黑魔法大师]\n要为^0000ff{0}（有孔）^000000附魔吗？\n第一次附魔需要^0000ff{1}个{2}、{3}个{4}，以及{5} Zeny^000000。\n有一定的失败风险..."
+      "text" : "[Dark magic master]\nWant to enchant ^0000ff{0} (Socket)^000000? For the 1st enchanting, you need ^0000ff1 {1}, 3 {2}, and 100000 zeny^000000.\nIt has some risk of failing..",
+      "translation" : "[黑暗魔法大师]\n要为^0000ff{0}（插槽）^000000附魔吗？首次附魔需要^0000ff1个{1}、3个{2}和100000 Zeny^000000。\n附魔有一定失败风险……"
+    },
+    {
+      "kind" : "message",
+      "line" : 436,
+      "npc" : "Dark magic master",
+      "placeholders" : [
+        "getequipname(EQI_SHOES)",
+        "getitemname(.@polluted_id)",
+        "getitemname(.@coagulated_id)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Dark magic master]\nWant to enchant ^0000ff{0} (Socket)^000000? For the 1st enchanting, you need ^0000ff1 {1}, 3 {2}, and {3} zeny^000000.\nIt has some risk of failing..",
+      "translation" : "[黑暗魔法大师]\n要为^0000ff{0}（插槽）^000000附魔吗？首次附魔需要^0000ff1个{1}、3个{2}和{3} Zeny^000000。\n附魔有一定失败风险……"
     },
     {
       "kind" : "option",
@@ -845,43 +1685,65 @@
     },
     {
       "kind" : "message",
-      "line" : 458,
+      "line" : 465,
       "npc" : "Dark magic master",
+      "placeholders" : [
+        "getequipname(EQI_SHOES)",
+        ".@amount_poll",
+        "getitemname(.@polluted_id)",
+        ".@amount_coag",
+        "getitemname(.@coagulated_id)"
+      ],
       "state" : "translated",
-      "text" : "[Dark magic master]\nSomething wrong happened.",
-      "translation" : "[黑魔法大师]\n出了点问题。"
+      "text" : "[Dark magic master]\nEnchanting ^0000ff{0} (Socket)^000000's 4th slot as ^0000ff2^000000 level effect. Requires ^0000ff{1} {2}, {3} {4}, and 100000 z^000000. It has some risk of failing..",
+      "translation" : "[黑暗魔法大师]\n将^0000ff{0}（插槽）^000000的第4栏附魔为^0000ff2^000000级效果，需要^0000ff{1}个{2}、{3}个{4}和100000 Zeny^000000。附魔有一定失败风险……"
     },
     {
       "kind" : "message",
       "line" : 465,
       "npc" : "Dark magic master",
       "placeholders" : [
+        "getequipname(EQI_SHOES)",
         ".@amount_poll",
         "getitemname(.@polluted_id)",
         ".@amount_coag",
         "getitemname(.@coagulated_id)",
-        "callfunc(\"F_InsertComma\",.@cost_zeny)"
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
-      "text" : "[Dark magic master]\nWould you like a random bonus effect for the 3rd slot? You need ^0000ff{0} {1}, {2} {3}, and {4} zeny^000000. But it has high risk of failing..",
-      "translation" : "[黑魔法大师]\n要为第3个插槽添加随机的额外效果吗？\n需要^0000ff{0}个{1}、{2}个{3}，以及{4} Zeny^000000。\n失败的风险很高..."
+      "text" : "[Dark magic master]\nEnchanting ^0000ff{0} (Socket)^000000's 4th slot as ^0000ff2^000000 level effect. Requires ^0000ff{1} {2}, {3} {4}, and {5} z^000000. It has some risk of failing..",
+      "translation" : "[黑暗魔法大师]\n将^0000ff{0}（插槽）^000000的第4栏附魔为^0000ff2^000000级效果，需要^0000ff{1}个{2}、{3}个{4}和{5} Zeny^000000。附魔有一定失败风险……"
     },
     {
       "kind" : "message",
       "line" : 465,
       "npc" : "Dark magic master",
       "placeholders" : [
-        ".@equip_name$",
-        ".@level",
+        "getequipname(EQI_SHOES)",
+        ".@amount_poll",
+        "getitemname(.@polluted_id)",
+        ".@amount_coag",
+        "getitemname(.@coagulated_id)"
+      ],
+      "state" : "translated",
+      "text" : "[Dark magic master]\nEnchanting ^0000ff{0} (Socket)^000000's 4th slot as ^0000ff3^000000 level effect. Requires ^0000ff{1} {2}, {3} {4}, and 100000 z^000000. It has some risk of failing..",
+      "translation" : "[黑暗魔法大师]\n将^0000ff{0}（插槽）^000000的第4栏附魔为^0000ff3^000000级效果，需要^0000ff{1}个{2}、{3}个{4}和100000 Zeny^000000。附魔有一定失败风险……"
+    },
+    {
+      "kind" : "message",
+      "line" : 465,
+      "npc" : "Dark magic master",
+      "placeholders" : [
+        "getequipname(EQI_SHOES)",
         ".@amount_poll",
         "getitemname(.@polluted_id)",
         ".@amount_coag",
         "getitemname(.@coagulated_id)",
-        "callfunc(\"F_InsertComma\",.@cost_zeny)"
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
-      "text" : "[Dark magic master]\nEnchanting ^0000ff{0} (Socket)^000000's 4th slot as ^0000ff{1}^000000 level effect. Requires ^0000ff{2} {3}, {4} {5}, and {6} z^000000. It has some risk of failing..",
-      "translation" : "[黑魔法大师]\n将把^0000ff{0}（有孔）^000000第4个插槽的附魔效果提升至^0000ff{1}^000000级。\n需要^0000ff{2}个{3}、{4}个{5}，以及{6} Zeny^000000。\n有一定的失败风险..."
+      "text" : "[Dark magic master]\nEnchanting ^0000ff{0} (Socket)^000000's 4th slot as ^0000ff3^000000 level effect. Requires ^0000ff{1} {2}, {3} {4}, and {5} z^000000. It has some risk of failing..",
+      "translation" : "[黑暗魔法大师]\n将^0000ff{0}（插槽）^000000的第4栏附魔为^0000ff3^000000级效果，需要^0000ff{1}个{2}、{3}个{4}和{5} Zeny^000000。附魔有一定失败风险……"
     },
     {
       "kind" : "option",
@@ -935,6 +1797,14 @@
       "kind" : "message",
       "line" : 495,
       "npc" : "Dark magic master",
+      "state" : "translated",
+      "text" : "[Dark magic master]\nYou must bring ^0000ff100000 zeny^000000. Nothing is free you know...",
+      "translation" : "[黑暗魔法大师]\n请带来^0000ff100000 Zeny^000000。天下可没有免费的午餐……"
+    },
+    {
+      "kind" : "message",
+      "line" : 495,
+      "npc" : "Dark magic master",
       "placeholders" : [
         "callfunc(\"F_InsertComma\",.@cost_zeny)"
       ],
@@ -954,12 +1824,25 @@
       "kind" : "message",
       "line" : 515,
       "npc" : "Dark magic master",
-      "placeholders" : [
-        ".@string$"
-      ],
       "state" : "translated",
-      "text" : "[Hugin's Magician]\nTrying for {0}",
-      "translation" : "[胡金的魔法师]\n正在尝试{0}。"
+      "text" : "[Hugin's Magician]\nTrying for enchant number ^6300001^000000.",
+      "translation" : "[胡金的魔法师]\n正在尝试第^6300001^000000次附魔。"
+    },
+    {
+      "kind" : "message",
+      "line" : 515,
+      "npc" : "Dark magic master",
+      "state" : "translated",
+      "text" : "[Hugin's Magician]\nTrying for enchant number ^9900002^000000.",
+      "translation" : "[胡金的魔法师]\n正在尝试第^9900002^000000次附魔。"
+    },
+    {
+      "kind" : "message",
+      "line" : 515,
+      "npc" : "Dark magic master",
+      "state" : "translated",
+      "text" : "[Hugin's Magician]\nTrying for enchant number ^9900003^000000.",
+      "translation" : "[胡金的魔法师]\n正在尝试第^9900003^000000次附魔。"
     },
     {
       "kind" : "message",
@@ -1055,6 +1938,198 @@
       "translation" : "取消"
     },
     {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[0]",
+        "getarg(0)",
+        "getitemname(.@coagulated_id)"
+      ],
+      "state" : "translated",
+      "text" : "{0}{1} {2}^000000",
+      "translation" : "{0}{1} {2}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[1]",
+        "getarg(0)",
+        "getitemname(.@polluted_id)"
+      ],
+      "state" : "translated",
+      "text" : "{0}{1} {2}^000000",
+      "translation" : "{0}{1} {2}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[1]",
+        "insertchar(.@str$,\",\",.@i)",
+        "getitemname(.@polluted_id)"
+      ],
+      "state" : "translated",
+      "text" : "{0}{1} {2}^000000",
+      "translation" : "{0}{1} {2}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[0]",
+        "insertchar(.@str$,\",\",.@i)",
+        "getitemname(.@coagulated_id)"
+      ],
+      "state" : "translated",
+      "text" : "{0}{1} {2}^000000",
+      "translation" : "{0}{1} {2}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "getarg(0)",
+        "getitemname(.@polluted_id)"
+      ],
+      "state" : "translated",
+      "text" : "^666666{0} {1}^000000",
+      "translation" : "^666666{0} {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "getitemname(.@polluted_id)"
+      ],
+      "state" : "translated",
+      "text" : "^666666{0} {1}^000000",
+      "translation" : "^666666{0} {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "getarg(0)",
+        "getitemname(.@coagulated_id)"
+      ],
+      "state" : "translated",
+      "text" : "^666666{0} {1}^000000",
+      "translation" : "^666666{0} {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "getitemname(.@coagulated_id)"
+      ],
+      "state" : "translated",
+      "text" : "^666666{0} {1}^000000",
+      "translation" : "^666666{0} {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[0]",
+        "getitemname(.@coagulated_id)"
+      ],
+      "state" : "translated",
+      "text" : "{0}5000 {1}^000000",
+      "translation" : "{0}5000 {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[1]",
+        "getitemname(.@polluted_id)"
+      ],
+      "state" : "translated",
+      "text" : "{0}100 {1}^000000",
+      "translation" : "{0}100 {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[0]",
+        "getitemname(.@coagulated_id)"
+      ],
+      "state" : "translated",
+      "text" : "{0}3000 {1}^000000",
+      "translation" : "{0}3000 {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        ".@color$[1]",
+        "getitemname(.@polluted_id)"
+      ],
+      "state" : "translated",
+      "text" : "{0}70 {1}^000000",
+      "translation" : "{0}70 {1}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "getitemname(.@polluted_id)"
+      ],
+      "state" : "translated",
+      "text" : "^666666100 {0}^000000",
+      "translation" : "^666666100 {0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "getitemname(.@coagulated_id)"
+      ],
+      "state" : "translated",
+      "text" : "^6666665000 {0}^000000",
+      "translation" : "^6666665000 {0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "getitemname(.@polluted_id)"
+      ],
+      "state" : "translated",
+      "text" : "^66666670 {0}^000000",
+      "translation" : "^66666670 {0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 566,
+      "npc" : "Portrait collector",
+      "placeholders" : [
+        "getitemname(.@coagulated_id)"
+      ],
+      "state" : "translated",
+      "text" : "^6666663000 {0}^000000",
+      "translation" : "^6666663000 {0}^000000"
+    },
+    {
       "kind" : "message",
       "line" : 568,
       "npc" : "Portrait collector",
@@ -1067,8 +2142,24 @@
       "line" : 581,
       "npc" : "Portrait collector",
       "state" : "translated",
+      "text" : "[Portrait collector]",
+      "translation" : "[画像收藏家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 581,
+      "npc" : "Portrait collector",
+      "state" : "translated",
       "text" : "[Portrait collector]\nHmm, you don't have enough Spell now. Go get more.",
       "translation" : "[肖像收藏家]\n嗯，你的魔力材料不够，再去收集一些吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 582,
+      "npc" : "Portrait collector",
+      "state" : "translated",
+      "text" : "Hmm, you don't have enough Spell now. Go get more.",
+      "translation" : "嗯，你的凝结魔力不够。再去收集一些吧。"
     },
     {
       "kind" : "message",
@@ -1077,6 +2168,22 @@
       "state" : "translated",
       "text" : "[Portrait collector]\nAre you sure that you won't regret it?",
       "translation" : "[肖像收藏家]\n你确定不会后悔吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 585,
+      "npc" : "Portrait collector",
+      "state" : "translated",
+      "text" : "[Portrait collector]",
+      "translation" : "[画像收藏家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 586,
+      "npc" : "Portrait collector",
+      "state" : "translated",
+      "text" : "Are you sure that you won't regret it?",
+      "translation" : "确定吗？可别后悔哦。"
     },
     {
       "kind" : "option",
@@ -1099,8 +2206,32 @@
       "line" : 589,
       "npc" : "Portrait collector",
       "state" : "translated",
+      "text" : "[Portrait collector]",
+      "translation" : "[画像收藏家]"
+    },
+    {
+      "kind" : "message",
+      "line" : 589,
+      "npc" : "Portrait collector",
+      "state" : "translated",
       "text" : "[Portrait collector]\nWell, OK. Come back when you are ready.",
       "translation" : "[肖像收藏家]\n好吧，没问题。准备好了再回来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 590,
+      "npc" : "Portrait collector",
+      "state" : "translated",
+      "text" : "Well, OK. Come back when you are ready.",
+      "translation" : "好吧，准备好之后再来找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 593,
+      "npc" : "Portrait collector",
+      "state" : "translated",
+      "text" : "[Portrait collector]",
+      "translation" : "[画像收藏家]"
     },
     {
       "kind" : "message",
@@ -1109,6 +2240,14 @@
       "state" : "translated",
       "text" : "[Portrait collector]\nCool, let's make a deal.",
       "translation" : "[肖像收藏家]\n很好，成交。"
+    },
+    {
+      "kind" : "message",
+      "line" : 594,
+      "npc" : "Portrait collector",
+      "state" : "translated",
+      "text" : "Cool, let's make a deal.",
+      "translation" : "好，那就成交吧。"
     }
   ]
 }

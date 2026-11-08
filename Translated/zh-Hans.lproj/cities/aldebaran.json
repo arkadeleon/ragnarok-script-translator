@@ -1765,14 +1765,6 @@
       "kind" : "message",
       "line" : 786,
       "npc" : "Kafra Service",
-      "state" : "translated",
-      "text" : "[Kafra Pavianne]\nLet's see...\nYou have 1 Kafra Pass.\nYou can sell that pass to us for 2000 zeny. Would you like to sell this Kafra Pass back to the Kafra Corporation?",
-      "translation" : "[卡普拉 帕维安]\n让我看看...您有1张卡普拉使用券。\n我们可以用2000 Zeny回购，您要卖给卡普拉公司吗？"
-    },
-    {
-      "kind" : "message",
-      "line" : 786,
-      "npc" : "Kafra Service",
       "placeholders" : [
         "countitem(1084)",
         ".@kafrapassmoney"
@@ -1780,6 +1772,14 @@
       "state" : "translated",
       "text" : "[Kafra Pavianne]\nLet's see...\nYou have {0} Kafra Passes.\nIf you want to sell them to us, you will receive {1} zeny. Would you like to sell these back to the Kafra Corporation?",
       "translation" : "[卡普拉 帕维安]\n让我看看...您有{0}张卡普拉使用券。\n全部卖给我们，可以获得{1} Zeny。\n您要卖给卡普拉公司吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 786,
+      "npc" : "Kafra Service",
+      "state" : "translated",
+      "text" : "[Kafra Pavianne]\nLet's see...\nYou have 1 Kafra Pass.\nYou can sell that pass to us for 2000 zeny. Would you like to sell this Kafra Pass back to the Kafra Corporation?",
+      "translation" : "[卡普拉 帕维安]\n让我看看...您有1张卡普拉使用券。\n我们可以用2000 Zeny回购，您要卖给卡普拉公司吗？"
     },
     {
       "kind" : "option",
@@ -2567,22 +2567,22 @@
       "line" : 1111,
       "npc" : "Kafra Employee",
       "placeholders" : [
-        ".@points"
+        ".@total"
       ],
       "state" : "translated",
-      "text" : "[Kafra Employee]\nI'm sorry, but you don't\nenough Special Reserve\nPoints to exchange for this\nreward. You need at least\n^0000FF{0}^000000 more points.",
-      "translation" : "[卡普拉职员]\n很抱歉，您的特别储备点数不足，无法兑换此奖励。\n您还需要^0000FF{0}^000000点。"
+      "text" : "[Kafra Employee]\nAfter receiving this\nreward, you'll have\n^AC0000{0}^000000 Special Reserve\nPoints left. Would you\nlike to redeem your\npoints for this reward?",
+      "translation" : "[卡普拉职员]\n兑换此奖励后，您还将剩余^AC0000{0}^000000点特别储备点数。\n您确定要用点数兑换此奖励吗？"
     },
     {
       "kind" : "message",
       "line" : 1111,
       "npc" : "Kafra Employee",
       "placeholders" : [
-        ".@total"
+        ".@points"
       ],
       "state" : "translated",
-      "text" : "[Kafra Employee]\nAfter receiving this\nreward, you'll have\n^AC0000{0}^000000 Special Reserve\nPoints left. Would you\nlike to redeem your\npoints for this reward?",
-      "translation" : "[卡普拉职员]\n兑换此奖励后，您还将剩余^AC0000{0}^000000点特别储备点数。\n您确定要用点数兑换此奖励吗？"
+      "text" : "[Kafra Employee]\nI'm sorry, but you don't\nenough Special Reserve\nPoints to exchange for this\nreward. You need at least\n^0000FF{0}^000000 more points.",
+      "translation" : "[卡普拉职员]\n很抱歉，您的特别储备点数不足，无法兑换此奖励。\n您还需要^0000FF{0}^000000点。"
     },
     {
       "kind" : "option",
@@ -2661,16 +2661,24 @@
       "line" : 1181,
       "npc" : "Kafra Employee",
       "state" : "translated",
-      "text" : "[Kafra Employee]\nOoh, something\ncame out! Let's see\nwhat you've won~\nOh goodness, it's...!",
-      "translation" : "[卡普拉职员]\n哦，有东西出来了！\n来看看您抽中了什么~\n天哪，竟然是...！"
+      "text" : "[Kafra Employee]\nIt looks like\nsomething came\nout! What could it be?\nOoh, you just won...",
+      "translation" : "[卡普拉职员]\n好像有东西出来了！\n会是什么呢？\n哦，您抽中了..."
     },
     {
       "kind" : "message",
       "line" : 1181,
       "npc" : "Kafra Employee",
       "state" : "translated",
-      "text" : "[Kafra Employee]\nIt looks like\nsomething came\nout! What could it be?\nOoh, you just won...",
-      "translation" : "[卡普拉职员]\n好像有东西出来了！\n会是什么呢？\n哦，您抽中了..."
+      "text" : "[Kafra Employee]\nOoh, something\ncame out! Let's see\nwhat you've won~\nOh goodness, it's...!",
+      "translation" : "[卡普拉职员]\n哦，有东西出来了！\n来看看您抽中了什么~\n天哪，竟然是...！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1188,
+      "npc" : "Kafra Employee",
+      "state" : "translated",
+      "text" : "[Kafra Employee]",
+      "translation" : "[卡普拉职员]"
     },
     {
       "kind" : "message",
@@ -2706,19 +2714,19 @@
     },
     {
       "kind" : "message",
-      "line" : 1188,
-      "npc" : "Kafra Employee",
-      "state" : "translated",
-      "text" : "[Kafra Employee]",
-      "translation" : "[卡普拉职员]"
-    },
-    {
-      "kind" : "message",
       "line" : 1222,
       "npc" : "Kafra Employee",
       "state" : "translated",
       "text" : "set of Wooden Mail!\nToday must be your\nlucky day, adventurer!",
       "translation" : "一套木制盔甲！\n今天一定是您的幸运之日，冒险者！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1233,
+      "npc" : "Kafra Employee",
+      "state" : "translated",
+      "text" : "[Kafra Employee]",
+      "translation" : "[卡普拉职员]"
     },
     {
       "kind" : "message",
@@ -2751,14 +2759,6 @@
       "state" : "translated",
       "text" : "[Kafra Employee]\nOh wow...!\nFirst Prize!\n3 Blue Potions~\nWith enough of these,\nyou can use your skills\nwith a bit more impunity~",
       "translation" : "[卡普拉职员]\n哇...！一等奖！3瓶蓝色药水~\n备足药水，就能更放心地使用技能了~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1233,
-      "npc" : "Kafra Employee",
-      "state" : "translated",
-      "text" : "[Kafra Employee]",
-      "translation" : "[卡普拉职员]"
     },
     {
       "kind" : "message",
@@ -2815,20 +2815,20 @@
       "kind" : "message",
       "line" : 1298,
       "npc" : "Kafra Employee",
-      "state" : "translated",
-      "text" : "[Kafra Employee]\n....Oh dear... What are you carrying so many things...?\nI don't think you can keep the received items~",
-      "translation" : "[卡普拉职员]\n...哎呀...您怎么带了这么多东西...？\n恐怕装不下领取的奖品了~"
-    },
-    {
-      "kind" : "message",
-      "line" : 1298,
-      "npc" : "Kafra Employee",
       "placeholders" : [
         "RESRVPTS"
       ],
       "state" : "translated",
       "text" : "[Kafra Employee]\nYour special reserve points are ^FF0000{0}^000000~\nChoose a category to test your luck.",
       "translation" : "[卡普拉职员]\n您的特别储备点数为^FF0000{0}^000000~\n请选择一个抽奖档次，试试手气。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1298,
+      "npc" : "Kafra Employee",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\n....Oh dear... What are you carrying so many things...?\nI don't think you can keep the received items~",
+      "translation" : "[卡普拉职员]\n...哎呀...您怎么带了这么多东西...？\n恐怕装不下领取的奖品了~"
     },
     {
       "kind" : "message",
@@ -2875,19 +2875,32 @@
       "line" : 1315,
       "npc" : "Kafra Employee",
       "state" : "translated",
-      "text" : "[Kafra Employee]\nI'm sorry~ dear~\nYou can't choose the selected chance because you do not have enough special reserve points.\nPlease check your special reserve points and choose another one~",
-      "translation" : "[卡普拉职员]\n抱歉，亲爱的~您的特别储备点数不足，无法参加这档抽奖。\n请确认点数，选择其他选项~"
+      "text" : "[Kafra Employee]\n^0000FF1st Lottery Chance!!^000000",
+      "translation" : "[卡普拉职员]\n^0000FF第1次抽奖机会！！^000000"
     },
     {
       "kind" : "message",
       "line" : 1315,
       "npc" : "Kafra Employee",
-      "placeholders" : [
-        "F_GetNumSuffix(.@s)"
-      ],
       "state" : "translated",
-      "text" : "[Kafra Employee]\n^0000FF{0} Lottery Chance!!^000000",
-      "translation" : "[卡普拉职员]\n^0000FF{0}次抽奖机会！！^000000"
+      "text" : "[Kafra Employee]\n^0000FF2nd Lottery Chance!!^000000",
+      "translation" : "[卡普拉职员]\n^0000FF第2次抽奖机会！！^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1315,
+      "npc" : "Kafra Employee",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\n^0000FF3rd Lottery Chance!!^000000",
+      "translation" : "[卡普拉职员]\n^0000FF第3次抽奖机会！！^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1315,
+      "npc" : "Kafra Employee",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nI'm sorry~ dear~\nYou can't choose the selected chance because you do not have enough special reserve points.\nPlease check your special reserve points and choose another one~",
+      "translation" : "[卡普拉职员]\n抱歉，亲爱的~您的特别储备点数不足，无法参加这档抽奖。\n请确认点数，选择其他选项~"
     },
     {
       "kind" : "message",
@@ -2966,24 +2979,16 @@
       "line" : 1346,
       "npc" : "Kafra Employee",
       "state" : "translated",
-      "text" : "[Kafra Employee]\nThe 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF003 Blue Potions~^000000",
-      "translation" : "[卡普拉职员]\n二等~~\n三等奖~~\n奖品是^00FF003瓶蓝色药水~^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 1346,
-      "npc" : "Kafra Employee",
-      "state" : "translated",
-      "text" : "[Kafra Employee]\nWhoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF001 Yggdrasil Seed~^000000",
-      "translation" : "[卡普拉职员]\n哇~！一等...一等奖！\n恭喜您，中了一等奖~\n奖品是^00FF001个天地树芽~^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 1346,
-      "npc" : "Kafra Employee",
-      "state" : "translated",
       "text" : "[Kafra Employee]\nWhat a pity!\nYou got the 4th prize!!\nThe prize is ^00FF0010 White Potions~^000000",
       "translation" : "[卡普拉职员]\n真遗憾！\n您中了四等奖！！\n奖品是^00FF0010瓶白色药水~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nThe 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF003 Blue Potions~^000000",
+      "translation" : "[卡普拉职员]\n二等~~\n三等奖~~\n奖品是^00FF003瓶蓝色药水~^000000"
     },
     {
       "kind" : "message",
@@ -2998,22 +3003,6 @@
       "line" : 1346,
       "npc" : "Kafra Employee",
       "state" : "translated",
-      "text" : "[Kafra Employee]\nThe 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF0010 Berserk Potions~^000000",
-      "translation" : "[卡普拉职员]\n二等~~\n三等奖~~\n奖品是^00FF0010瓶菠色克药水~^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 1346,
-      "npc" : "Kafra Employee",
-      "state" : "translated",
-      "text" : "[Kafra Employee]\nWhoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF001 Yggdrasilberry~^000000\nThe prize is ^00FF001 Yggdrasil Seed~^000000",
-      "translation" : "[卡普拉职员]\n哇~！一等...一等奖！\n恭喜您，中了一等奖~\n奖品是^00FF001个天地树果实~^000000\n奖品是^00FF001个天地树芽~^000000"
-    },
-    {
-      "kind" : "message",
-      "line" : 1346,
-      "npc" : "Kafra Employee",
-      "state" : "translated",
       "text" : "[Kafra Employee]\nWhat a pity!\nYou got the 4th prize!!\nThe prize is ^00FF0030 White Potions~^000000",
       "translation" : "[卡普拉职员]\n真遗憾！\n您中了四等奖！！\n奖品是^00FF0030瓶白色药水~^000000"
     },
@@ -3022,8 +3011,32 @@
       "line" : 1346,
       "npc" : "Kafra Employee",
       "state" : "translated",
+      "text" : "[Kafra Employee]\nWhoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF001 Yggdrasil Seed~^000000",
+      "translation" : "[卡普拉职员]\n哇~！一等...一等奖！\n恭喜您，中了一等奖~\n奖品是^00FF001个天地树芽~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nThe 2nd~~\nThe 3rd prize~~\nThe prize is ^00FF0010 Berserk Potions~^000000",
+      "translation" : "[卡普拉职员]\n二等~~\n三等奖~~\n奖品是^00FF0010瓶菠色克药水~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "state" : "translated",
       "text" : "[Kafra Employee]\nThe 3rd~~\nThe 3rd prize!\nThe prize is ^00FF0010 Blue Potions~^000000",
       "translation" : "[卡普拉职员]\n三等~~\n三等奖！\n奖品是^00FF0010瓶蓝色药水~^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1346,
+      "npc" : "Kafra Employee",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nWhoa~!! The first... The First!!!\nCongratulations~~ You got the 1st prize~\nThe prize is ^00FF001 Yggdrasilberry~^000000\nThe prize is ^00FF001 Yggdrasil Seed~^000000",
+      "translation" : "[卡普拉职员]\n哇~！一等...一等奖！\n恭喜您，中了一等奖~\n奖品是^00FF001个天地树果实~^000000\n奖品是^00FF001个天地树芽~^000000"
     },
     {
       "kind" : "message",
@@ -3155,10 +3168,282 @@
     },
     {
       "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nWelcome to\nKinase - Blue Gallino\nThe one of Local Speciality in Aldebaran.\nYou can't go through from 4th Floor,\nPlease go back.",
+      "translation" : "[守门的男孩]\n欢迎来到基纳兹 - 蓝加利诺，艾尔帕兰的特色建筑之一。\n您无法通过4层，请返回。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "About Clock Tower",
+      "translation" : "关于钟楼"
+    },
+    {
+      "kind" : "option",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "About the 4th Floor",
+      "translation" : "关于4楼"
+    },
+    {
+      "kind" : "option",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "Move to the 4th Floor",
+      "translation" : "前往4楼"
+    },
+    {
+      "kind" : "option",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "End Dialogue",
+      "translation" : "结束对话"
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nAncient Alchemists\nSealed the Gate of 4th Floor using an Alchemistic Device \nTo keep something\nFrom Evil Creatures and Human Enemies.\nTo go through this door",
+      "translation" : "[守门的男孩]\n古代炼金术士用炼金装置封住了第四层的大门，保护其中的东西，不让邪恶生物和人类敌人夺走。\n要通过这扇门..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nHmm! I already felt that you are not an Ordinary person,\nNow it seems to be successful in Speculation.\nPlease, you may enter.\nMay God bless you ..",
+      "translation" : "[守门的男孩]\n嗯！我早就觉得您不是普通人，看来果然没错。\n请进，愿神保佑您..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nHomeland of Alchemy, Aldebaran!\nLong Time ago, there were\n3 Legendary Alchemists...They are\nBruke Seimer\nPhilip Warisez\nAnd ..",
+      "translation" : "[守门的男孩]\n艾尔帕兰，炼金术的故乡！\n很久以前，有三位传奇炼金术士...\n布鲁克·赛默\n菲利普·瓦里泽\n还有..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nIt needs a Key.\nThat Key has rumored to be possessed by Gatekeeper Creatures\nProwling around here.",
+      "translation" : "[守门的男孩]\n需要一把钥匙。\n据说，徘徊在这里的守门生物身上就有。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nRomero Specialre!\nThis venerable architecture is\ntheir masterpiece.\nI assume you would feel something unusual\nWhile on the way to this floor,\nEvery feature of This Clocktower ",
+      "translation" : "[守门的男孩]\n罗梅罗·斯佩西亚尔！这座古老的建筑就是他们的杰作。\n来到这一层的路上，您应该已经察觉了异样。\n这座钟楼的每一处..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nThe Key is the Intensiveness of Ancient Alchemy,\nBy hearsay When used once,\nIt will be released from being spelled\nAnd be disappeared.",
+      "translation" : "[守门的男孩]\n这把钥匙凝聚着古代炼金术的精髓。\n听说使用一次，附着的魔法就会解除，钥匙也随之消失。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nConsists of Mysterious Ancient Magics.\nIf you just wander around here,\n without any intention",
+      "translation" : "[守门的男孩]\n都蕴含着神秘的远古魔法。\n要是在这里漫无目的地闲逛..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nIf that key\nComes into your possession,\nPlease show me.\nThe one who possesses the Key\nWill have access to go through\nThis Gate with his own will!",
+      "translation" : "[守门的男孩]\n得到钥匙的话，请拿给我看。\n持有钥匙的人，就能自行通过这道门！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nThis Clock Tower\nIs the place where the 3 Ancient Legendary Alchemists\nHas left their Spirits and Skills.\nPlease Do not Scribble or Damage on the Interior.",
+      "translation" : "[守门的男孩]\n这座钟楼承载着三位古代传奇炼金术士的精神与技艺。\n请不要在内部涂鸦或破坏设施。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\n. . . . . .\nUnfortunately you don't have a privilege\nTo enter this Gate ..\nYou won't be able to go through\nAs long as Ancient Alchemists\n Don't grant you.",
+      "translation" : "[守门的男孩]\n...\n很遗憾，您还没有进入这道门的资格...\n没有古代炼金术士的许可，就无法通过。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nBy any means,\nYou will meet with a mishap\nby Gatekeeper Creatures.\nPlease be careful ..",
+      "translation" : "[守门的男孩]\n就会遭到守门生物袭击，酿成意外。\n请小心..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1486,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nI will give you a chance.\n. . . . .",
+      "translation" : "[守门的男孩]\n我会给你一个机会。\n..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nWelcome to\nKinase - Blue Gallino\nThe one of Local Speciality in Aldebaran.\nYou can't go through from B4th Floor,\nPlease go back.",
+      "translation" : "[守门的男孩]\n欢迎来到基纳兹 - 蓝加利诺，艾尔帕兰的特色建筑之一。\n您无法通过B4层，请返回。"
+    },
+    {
+      "kind" : "option",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "About Clock Tower",
+      "translation" : "关于钟楼"
+    },
+    {
+      "kind" : "option",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "About the B4th Floor",
+      "translation" : "关于B4楼"
+    },
+    {
+      "kind" : "option",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "Move to the B4th Floor",
+      "translation" : "前往B4楼"
+    },
+    {
+      "kind" : "option",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "End Dialogue",
+      "translation" : "结束对话"
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nAncient Alchemists\nSealed the Gate of 4th Floor using an Alchemistic Device \nTo keep something\nFrom Evil Creatures and Human Enemies.\nTo go through this door",
+      "translation" : "[守门的男孩]\n古代炼金术士用炼金装置封住了第四层的大门，保护其中的东西，不让邪恶生物和人类敌人夺走。\n要通过这扇门..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nHmm! I already felt that you are not an Ordinary person,\nNow it seems to be successful in Speculation.\nPlease, you may enter.\nMay God bless you ..",
+      "translation" : "[守门的男孩]\n嗯！我早就觉得您不是普通人，看来果然没错。\n请进，愿神保佑您..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nHomeland of Alchemy, Aldebaran!\nLong Time ago, there were\n3 Legendary Alchemists...They are\nBruke Seimer\nPhilip Warisez\nAnd ..",
+      "translation" : "[守门的男孩]\n艾尔帕兰，炼金术的故乡！\n很久以前，有三位传奇炼金术士...\n布鲁克·赛默\n菲利普·瓦里泽\n还有..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nIt needs a Key.\nThat Key has rumored to be possessed by Gatekeeper Creatures\nProwling around here.",
+      "translation" : "[守门的男孩]\n需要一把钥匙。\n据说，徘徊在这里的守门生物身上就有。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nRomero Specialre!\nThis venerable architecture is\ntheir masterpiece.\nI assume you would feel something unusual\nWhile on the way to this floor,\nEvery feature of This Clocktower ",
+      "translation" : "[守门的男孩]\n罗梅罗·斯佩西亚尔！这座古老的建筑就是他们的杰作。\n来到这一层的路上，您应该已经察觉了异样。\n这座钟楼的每一处..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nThe Key is the Intensiveness of Ancient Alchemy,\nBy hearsay When used once,\nIt will be released from being spelled\nAnd be disappeared.",
+      "translation" : "[守门的男孩]\n这把钥匙凝聚着古代炼金术的精髓。\n听说使用一次，附着的魔法就会解除，钥匙也随之消失。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nConsists of Mysterious Ancient Magics.\nIf you just wander around here,\n without any intention",
+      "translation" : "[守门的男孩]\n都蕴含着神秘的远古魔法。\n要是在这里漫无目的地闲逛..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nIf that key\nComes into your possession,\nPlease show me.\nThe one who possesses the Key\nWill have access to go through\nThis Gate with his own will!",
+      "translation" : "[守门的男孩]\n得到钥匙的话，请拿给我看。\n持有钥匙的人，就能自行通过这道门！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nThis Clock Tower\nIs the place where the 3 Ancient Legendary Alchemists\nHas left their Spirits and Skills.\nPlease Do not Scribble or Damage on the Interior.",
+      "translation" : "[守门的男孩]\n这座钟楼承载着三位古代传奇炼金术士的精神与技艺。\n请不要在内部涂鸦或破坏设施。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\n. . . . . .\nUnfortunately you don't have a privilege\nTo enter this Gate ..\nYou won't be able to go through\nAs long as Ancient Alchemists\n Don't grant you.",
+      "translation" : "[守门的男孩]\n...\n很遗憾，您还没有进入这道门的资格...\n没有古代炼金术士的许可，就无法通过。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nBy any means,\nYou will meet with a mishap\nby Gatekeeper Creatures.\nPlease be careful ..",
+      "translation" : "[守门的男孩]\n就会遭到守门生物袭击，酿成意外。\n请小心..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1491,
+      "npc" : "Gatekeeper",
+      "state" : "translated",
+      "text" : "[Gatekeeper Boy]\nI will give you a chance.\n. . . . .",
+      "translation" : "[守门的男孩]\n我会给你一个机会。\n..."
+    },
+    {
+      "kind" : "message",
       "line" : 1498,
       "npc" : "F_ClockTowerGate",
       "placeholders" : [
-        ".@floor$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[Gatekeeper Boy]\nWelcome to\nKinase - Blue Gallino\nThe one of Local Speciality in Aldebaran.\nYou can't go through from {0} Floor,\nPlease go back.",
@@ -3177,7 +3462,7 @@
       "line" : 1505,
       "npc" : "F_ClockTowerGate",
       "placeholders" : [
-        ".@floor$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "About the {0} Floor",
@@ -3188,7 +3473,7 @@
       "line" : 1505,
       "npc" : "F_ClockTowerGate",
       "placeholders" : [
-        ".@floor$"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "Move to the {0} Floor",

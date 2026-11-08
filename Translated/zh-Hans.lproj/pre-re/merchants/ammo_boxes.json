@@ -91,55 +91,49 @@
     },
     {
       "kind" : "message",
-      "line" : 36,
+      "line" : 27,
       "npc" : "Magazine Dealer Kenny",
       "state" : "translated",
-      "text" : "[Kenny]\nWell, if you ever find\nthat you have too many\nbullets, come and see me.\nIt's a smart idea to store\nbullets with my Magazines.",
-      "translation" : "[肯尼]\n要是哪天觉得子弹太多、不方便携带，就来找我吧。\n把子弹装进我的弹匣里，是个不错的办法。"
+      "text" : "[Kenny]\nNow, you can trade",
+      "translation" : "[肯尼]\n现在，您可以用"
     },
     {
       "kind" : "message",
-      "line" : 45,
-      "npc" : "Magazine Dealer Kenny",
-      "state" : "translated",
-      "text" : "Welcome to my shop.\nHere, I provide Magazines\nand Cartridges for Gunslingers.\nSorry, but it doesn't look like\nmy services would be of any\nuse to you, adventurer.",
-      "translation" : "欢迎光临。\n我这里专为神枪手提供弹匣和子弹。\n不过，冒险者，很抱歉，这些服务恐怕对您没什么用。"
-    },
-    {
-      "kind" : "message",
-      "line" : 52,
-      "npc" : "Magazine Dealer Kenny",
-      "state" : "translated",
-      "text" : "[Kenny]\nEh, but if you happen to\nknow any Gunslingers, send\nthem my way. You can never\nhave too many bullets.",
-      "translation" : "[肯尼]\n不过，您要是认识神枪手，记得介绍他们来我这里。\n子弹嘛，总是多多益善。"
-    },
-    {
-      "kind" : "message",
-      "line" : 63,
+      "line" : 27,
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",500,getitemname(.@bullet_id))",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
         "getitemname(.@pack_id)"
       ],
       "state" : "translated",
-      "text" : "[Kenny]\nNow, you can trade\n{0}\nand 500 zeny for 1 {1}, so make sure\nyou have sufficient bullets\nand zeny for this exchange.",
-      "translation" : "[肯尼]\n用{0}和500 Zeny就能兑换1个{1}。\n兑换前，请确认子弹和Zeny都带够了。"
+      "text" : "{0} {1}\nand 500 zeny for 1 {2}, so make sure\nyou have sufficient bullets\nand zeny for this exchange.",
+      "translation" : "{0} {1}和500 Zeny兑换1个{2}。请确认子弹和Zeny都带够了。"
     },
     {
       "kind" : "message",
-      "line" : 70,
+      "line" : 27,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]",
+      "translation" : "[肯尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
       "npc" : "Magazine Dealer Kenny",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",500,getitemname(.@bullet_id))",
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
         "getitemname(.@pack_id)"
       ],
       "state" : "translated",
-      "text" : "[Kenny]\nYou can exchange {0} and 500 zeny\nwith 1 {1}.",
-      "translation" : "[肯尼]\n用{0}和500 Zeny可以兑换1个{1}。"
+      "text" : "You can exchange {0} {1} and 500 zeny\nwith 1 {2}.",
+      "translation" : "用{0} {1}和500 Zeny兑换1个{2}。"
     },
     {
       "kind" : "message",
-      "line" : 74,
+      "line" : 27,
       "npc" : "Magazine Dealer Kenny",
       "state" : "translated",
       "text" : "[Kenny]\nRemember that I can't give\nyou more than 50 Magazines\nat a time. Now please enter\nthe number of Magazines you\nwant to receive. If you want to cancel, then just enter ''0.''",
@@ -147,7 +141,7 @@
     },
     {
       "kind" : "message",
-      "line" : 82,
+      "line" : 27,
       "npc" : "Magazine Dealer Kenny",
       "state" : "translated",
       "text" : "[Kenny]\nHey, I can't give you\nthat many Magazines.\nPlease try again, and\nenter a number no\ngreater than 50.",
@@ -155,23 +149,15 @@
     },
     {
       "kind" : "message",
-      "line" : 82,
+      "line" : 27,
       "npc" : "Magazine Dealer Kenny",
       "state" : "translated",
-      "text" : "[Kenny]\nHey, you've got a lot\nof junk crammed in your\nInventory. Free up some\nspace, and then come back\nand trade your bullets for\nsome Magazines later, okay?",
-      "translation" : "[肯尼]\n嘿，您的物品栏塞得满满的。\n先腾出些空间，再来用子弹兑换弹匣，好吗？"
+      "text" : "[Kenny]\nSorry, but you don't\nhave enough bullets for\nthis Magazine exchange.\nMaybe you should double\ncheck your Inventory, and\nthen come back to me later.",
+      "translation" : "[肯尼]\n抱歉，您的子弹不够，无法兑换弹匣。\n请检查一下物品栏，之后再来找我吧。"
     },
     {
       "kind" : "message",
-      "line" : 82,
-      "npc" : "Magazine Dealer Kenny",
-      "state" : "translated",
-      "text" : "[Kenny]\nAlright, here are\nyour Magazines. Thanks\nfor visiting my shop, and\nI hope that you use all\nof your ammo wisely.",
-      "translation" : "[肯尼]\n好了，您的弹匣拿好。\n感谢光临，希望您能善用这些弹药。"
-    },
-    {
-      "kind" : "message",
-      "line" : 82,
+      "line" : 27,
       "npc" : "Magazine Dealer Kenny",
       "state" : "translated",
       "text" : "[Kenny]\nSorry, but you don't\nhave enough zeny for\nthis Magazine exchange.\nCome back to my shop\nafter you've saved up\nsome more money.",
@@ -179,11 +165,338 @@
     },
     {
       "kind" : "message",
-      "line" : 82,
+      "line" : 27,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nHey, you've got a lot\nof junk crammed in your\nInventory. Free up some\nspace, and then come back\nand trade your bullets for\nsome Magazines later, okay?",
+      "translation" : "[肯尼]\n嘿，您的物品栏塞得满满的。\n先腾出些空间，再来用子弹兑换弹匣，好吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nAlright, here are\nyour Magazines. Thanks\nfor visiting my shop, and\nI hope that you use all\nof your ammo wisely.",
+      "translation" : "[肯尼]\n好了，您的弹匣拿好。\n感谢光临，希望您能善用这些弹药。"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nNow, you can trade",
+      "translation" : "[肯尼]\n现在，您可以用"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Magazine Dealer Kenny",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "getitemname(.@pack_id)"
+      ],
+      "state" : "translated",
+      "text" : "{0} {1}\nand 500 zeny for 1 {2}, so make sure\nyou have sufficient bullets\nand zeny for this exchange.",
+      "translation" : "{0} {1}和500 Zeny兑换1个{2}。请确认子弹和Zeny都带够了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]",
+      "translation" : "[肯尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Magazine Dealer Kenny",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "getitemname(.@pack_id)"
+      ],
+      "state" : "translated",
+      "text" : "You can exchange {0} {1} and 500 zeny\nwith 1 {2}.",
+      "translation" : "用{0} {1}和500 Zeny兑换1个{2}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nRemember that I can't give\nyou more than 50 Magazines\nat a time. Now please enter\nthe number of Magazines you\nwant to receive. If you want to cancel, then just enter ''0.''",
+      "translation" : "[肯尼]\n请记住，一次最多只能兑换50个弹匣。\n请输入您要兑换的弹匣数量。\n若要取消，请输入“0”。"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nHey, I can't give you\nthat many Magazines.\nPlease try again, and\nenter a number no\ngreater than 50.",
+      "translation" : "[肯尼]\n嘿，一次可换不了那么多弹匣。\n请重新输入，数量不能超过50。"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
       "npc" : "Magazine Dealer Kenny",
       "state" : "translated",
       "text" : "[Kenny]\nSorry, but you don't\nhave enough bullets for\nthis Magazine exchange.\nMaybe you should double\ncheck your Inventory, and\nthen come back to me later.",
       "translation" : "[肯尼]\n抱歉，您的子弹不够，无法兑换弹匣。\n请检查一下物品栏，之后再来找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nSorry, but you don't\nhave enough zeny for\nthis Magazine exchange.\nCome back to my shop\nafter you've saved up\nsome more money.",
+      "translation" : "[肯尼]\n抱歉，您的Zeny不够，无法兑换弹匣。\n攒够钱后再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nHey, you've got a lot\nof junk crammed in your\nInventory. Free up some\nspace, and then come back\nand trade your bullets for\nsome Magazines later, okay?",
+      "translation" : "[肯尼]\n嘿，您的物品栏塞得满满的。\n先腾出些空间，再来用子弹兑换弹匣，好吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 28,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nAlright, here are\nyour Magazines. Thanks\nfor visiting my shop, and\nI hope that you use all\nof your ammo wisely.",
+      "translation" : "[肯尼]\n好了，您的弹匣拿好。\n感谢光临，希望您能善用这些弹药。"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nNow, you can trade",
+      "translation" : "[肯尼]\n现在，您可以用"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Magazine Dealer Kenny",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "getitemname(.@pack_id)"
+      ],
+      "state" : "translated",
+      "text" : "{0} {1}\nand 500 zeny for 1 {2}, so make sure\nyou have sufficient bullets\nand zeny for this exchange.",
+      "translation" : "{0} {1}和500 Zeny兑换1个{2}。请确认子弹和Zeny都带够了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]",
+      "translation" : "[肯尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Magazine Dealer Kenny",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "getitemname(.@pack_id)"
+      ],
+      "state" : "translated",
+      "text" : "You can exchange {0} {1} and 500 zeny\nwith 1 {2}.",
+      "translation" : "用{0} {1}和500 Zeny兑换1个{2}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nRemember that I can't give\nyou more than 50 Magazines\nat a time. Now please enter\nthe number of Magazines you\nwant to receive. If you want to cancel, then just enter ''0.''",
+      "translation" : "[肯尼]\n请记住，一次最多只能兑换50个弹匣。\n请输入您要兑换的弹匣数量。\n若要取消，请输入“0”。"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nHey, I can't give you\nthat many Magazines.\nPlease try again, and\nenter a number no\ngreater than 50.",
+      "translation" : "[肯尼]\n嘿，一次可换不了那么多弹匣。\n请重新输入，数量不能超过50。"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nSorry, but you don't\nhave enough bullets for\nthis Magazine exchange.\nMaybe you should double\ncheck your Inventory, and\nthen come back to me later.",
+      "translation" : "[肯尼]\n抱歉，您的子弹不够，无法兑换弹匣。\n请检查一下物品栏，之后再来找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nSorry, but you don't\nhave enough zeny for\nthis Magazine exchange.\nCome back to my shop\nafter you've saved up\nsome more money.",
+      "translation" : "[肯尼]\n抱歉，您的Zeny不够，无法兑换弹匣。\n攒够钱后再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nHey, you've got a lot\nof junk crammed in your\nInventory. Free up some\nspace, and then come back\nand trade your bullets for\nsome Magazines later, okay?",
+      "translation" : "[肯尼]\n嘿，您的物品栏塞得满满的。\n先腾出些空间，再来用子弹兑换弹匣，好吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 29,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nAlright, here are\nyour Magazines. Thanks\nfor visiting my shop, and\nI hope that you use all\nof your ammo wisely.",
+      "translation" : "[肯尼]\n好了，您的弹匣拿好。\n感谢光临，希望您能善用这些弹药。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nNow, you can trade",
+      "translation" : "[肯尼]\n现在，您可以用"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Magazine Dealer Kenny",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "getitemname(.@pack_id)"
+      ],
+      "state" : "translated",
+      "text" : "{0} {1}\nand 500 zeny for 1 {2}, so make sure\nyou have sufficient bullets\nand zeny for this exchange.",
+      "translation" : "{0} {1}和500 Zeny兑换1个{2}。请确认子弹和Zeny都带够了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]",
+      "translation" : "[肯尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Magazine Dealer Kenny",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "getitemname(.@pack_id)"
+      ],
+      "state" : "translated",
+      "text" : "You can exchange {0} {1} and 500 zeny\nwith 1 {2}.",
+      "translation" : "用{0} {1}和500 Zeny兑换1个{2}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nRemember that I can't give\nyou more than 50 Magazines\nat a time. Now please enter\nthe number of Magazines you\nwant to receive. If you want to cancel, then just enter ''0.''",
+      "translation" : "[肯尼]\n请记住，一次最多只能兑换50个弹匣。\n请输入您要兑换的弹匣数量。\n若要取消，请输入“0”。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nHey, I can't give you\nthat many Magazines.\nPlease try again, and\nenter a number no\ngreater than 50.",
+      "translation" : "[肯尼]\n嘿，一次可换不了那么多弹匣。\n请重新输入，数量不能超过50。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nSorry, but you don't\nhave enough bullets for\nthis Magazine exchange.\nMaybe you should double\ncheck your Inventory, and\nthen come back to me later.",
+      "translation" : "[肯尼]\n抱歉，您的子弹不够，无法兑换弹匣。\n请检查一下物品栏，之后再来找我吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nSorry, but you don't\nhave enough zeny for\nthis Magazine exchange.\nCome back to my shop\nafter you've saved up\nsome more money.",
+      "translation" : "[肯尼]\n抱歉，您的Zeny不够，无法兑换弹匣。\n攒够钱后再来吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nHey, you've got a lot\nof junk crammed in your\nInventory. Free up some\nspace, and then come back\nand trade your bullets for\nsome Magazines later, okay?",
+      "translation" : "[肯尼]\n嘿，您的物品栏塞得满满的。\n先腾出些空间，再来用子弹兑换弹匣，好吗？"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nAlright, here are\nyour Magazines. Thanks\nfor visiting my shop, and\nI hope that you use all\nof your ammo wisely.",
+      "translation" : "[肯尼]\n好了，您的弹匣拿好。\n感谢光临，希望您能善用这些弹药。"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]\nNow, you can trade",
+      "translation" : "[肯尼]\n现在，您可以用"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Magazine Dealer Kenny",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "getitemname(.@pack_id)"
+      ],
+      "state" : "translated",
+      "text" : "{0} {1}\nand 500 zeny for 1 {2}, so make sure\nyou have sufficient bullets\nand zeny for this exchange.",
+      "translation" : "{0} {1}和500 Zeny兑换1个{2}。请确认子弹和Zeny都带够了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]",
+      "translation" : "[肯尼]"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Magazine Dealer Kenny",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "You can exchange {0} {1} and 500 zeny",
+      "translation" : "用{0} {1}和500 Zeny可以兑换"
+    },
+    {
+      "kind" : "message",
+      "line" : 52,
+      "npc" : "Magazine Dealer Kenny",
+      "state" : "translated",
+      "text" : "[Kenny]",
+      "translation" : "[肯尼]"
     }
   ]
 }

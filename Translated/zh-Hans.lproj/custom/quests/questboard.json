@@ -7,17 +7,15 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + currentquest$ + \"_collectionname$\")",
-        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
-        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
-        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
-        "((getd(\".\" +currentquest$+\"_collectionprize\"))?getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))+\" - \"+getd(\".\" +currentquest$+\"_collectionamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
         "getd(\".\" +currentquest$+\"_collectionzeny\")",
         "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
         "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
       ],
       "state" : "translated",
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{4}\nZeny: ^0000FF{5}^000000\nBase EXP: ^0000FF{6}^000000\nJob EXP: ^0000FF{7}^000000",
-      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n--------------------------------\n[奖励]\n物品： ^0000FF{4}\nZeny： ^0000FF{5}^000000\n基础经验值： ^0000FF{6}^000000\n职业经验值： ^0000FF{7}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品：^0000FF{1} - {2} 个^000000\nZeny：^0000FF{3}^000000\n基础经验：^0000FF{4}^000000\n职业经验：^0000FF{5}^000000"
     },
     {
       "kind" : "message",
@@ -25,14 +23,496 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + currentquest$ + \"_collectionname$\")",
-        "((getd(\".\" +currentquest$+\"_collectionprize\"))?getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))+\" - \"+getd(\".\" +currentquest$+\"_collectionamount\")+\" ea.^000000\":\"Nothing^000000\")",
         "getd(\".\" +currentquest$+\"_collectionzeny\")",
         "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
         "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
       ],
       "state" : "translated",
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1}\nZeny: ^0000FF{2}^000000\nBase EXP: ^0000FF{3}^000000\nJob EXP: ^0000FF{4}^000000",
-      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品： ^0000FF{1}\nZeny： ^0000FF{2}^000000\n基础经验值： ^0000FF{3}^000000\n职业经验值： ^0000FF{4}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{1}^000000\n基础经验：^0000FF{2}^000000\n职业经验：^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{4} - {5} ea.^000000\nZeny: ^0000FF{6}^000000\nBase EXP: ^0000FF{7}^000000\nJob EXP: ^0000FF{8}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{4} - {5} 个^000000\nZeny：^0000FF{6}^000000\n基础经验：^0000FF{7}^000000\n职业经验：^0000FF{8}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{4}^000000\nBase EXP: ^0000FF{5}^000000\nJob EXP: ^0000FF{6}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{4}^000000\n基础经验：^0000FF{5}^000000\n职业经验：^0000FF{6}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{7} - {8} ea.^000000\nZeny: ^0000FF{9}^000000\nBase EXP: ^0000FF{10}^000000\nJob EXP: ^0000FF{11}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{7} - {8} 个^000000\nZeny：^0000FF{9}^000000\n基础经验：^0000FF{10}^000000\n职业经验：^0000FF{11}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{7}^000000\nBase EXP: ^0000FF{8}^000000\nJob EXP: ^0000FF{9}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{7}^000000\n基础经验：^0000FF{8}^000000\n职业经验：^0000FF{9}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{10} - {11} ea.^000000\nZeny: ^0000FF{12}^000000\nBase EXP: ^0000FF{13}^000000\nJob EXP: ^0000FF{14}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{10} - {11} 个^000000\nZeny：^0000FF{12}^000000\n基础经验：^0000FF{13}^000000\n职业经验：^0000FF{14}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{10}^000000\nBase EXP: ^0000FF{11}^000000\nJob EXP: ^0000FF{12}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{10}^000000\n基础经验：^0000FF{11}^000000\n职业经验：^0000FF{12}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{13} - {14} ea.^000000\nZeny: ^0000FF{15}^000000\nBase EXP: ^0000FF{16}^000000\nJob EXP: ^0000FF{17}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{13} - {14} 个^000000\nZeny：^0000FF{15}^000000\n基础经验：^0000FF{16}^000000\n职业经验：^0000FF{17}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{13}^000000\nBase EXP: ^0000FF{14}^000000\nJob EXP: ^0000FF{15}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{13}^000000\n基础经验：^0000FF{14}^000000\n职业经验：^0000FF{15}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{16} - {17} ea.^000000\nZeny: ^0000FF{18}^000000\nBase EXP: ^0000FF{19}^000000\nJob EXP: ^0000FF{20}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{16} - {17} 个^000000\nZeny：^0000FF{18}^000000\n基础经验：^0000FF{19}^000000\n职业经验：^0000FF{20}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{16}^000000\nBase EXP: ^0000FF{17}^000000\nJob EXP: ^0000FF{18}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{16}^000000\n基础经验：^0000FF{17}^000000\n职业经验：^0000FF{18}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{19} - {20} ea.^000000\nZeny: ^0000FF{21}^000000\nBase EXP: ^0000FF{22}^000000\nJob EXP: ^0000FF{23}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n^FF0000{16} - {17}/{18} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{19} - {20} 个^000000\nZeny：^0000FF{21}^000000\n基础经验：^0000FF{22}^000000\n职业经验：^0000FF{23}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{19}^000000\nBase EXP: ^0000FF{20}^000000\nJob EXP: ^0000FF{21}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n^FF0000{16} - {17}/{18} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{19}^000000\n基础经验：^0000FF{20}^000000\n职业经验：^0000FF{21}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{22} - {23} ea.^000000\nZeny: ^0000FF{24}^000000\nBase EXP: ^0000FF{25}^000000\nJob EXP: ^0000FF{26}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n^FF0000{16} - {17}/{18} 个^000000\n^FF0000{19} - {20}/{21} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{22} - {23} 个^000000\nZeny：^0000FF{24}^000000\n基础经验：^0000FF{25}^000000\n职业经验：^0000FF{26}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionzeny\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{22}^000000\nBase EXP: ^0000FF{23}^000000\nJob EXP: ^0000FF{24}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n^FF0000{16} - {17}/{18} 个^000000\n^FF0000{19} - {20}/{21} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{22}^000000\n基础经验：^0000FF{23}^000000\n职业经验：^0000FF{24}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_collectionprize\"))",
+        "getd(\".\" +currentquest$+\"_collectionamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n^FF0000{22} - {23}/{24} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{25} - {26} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n^FF0000{16} - {17}/{18} 个^000000\n^FF0000{19} - {20}/{21} 个^000000\n^FF0000{22} - {23}/{24} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{25} - {26} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 24,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_collectionname$\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "countitem(getd(\".\"+currentquest$+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+currentquest$+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n^FF0000{22} - {23}/{24} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n^FF0000{16} - {17}/{18} 个^000000\n^FF0000{19} - {20}/{21} 个^000000\n^FF0000{22} - {23}/{24} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +currentquest$+\"_collectionzeny\")"
+      ],
+      "state" : "translated",
+      "text" : "Zeny: ^0000FF{0}^000000",
+      "translation" : "Zeny：^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+0+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "Base EXP: ^0000FF{0}^000000",
+      "translation" : "基础经验：^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 36,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +currentquest$+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "Job EXP: ^0000FF{0}^000000",
+      "translation" : "职业经验：^0000FF{0}^000000"
     },
     {
       "kind" : "option",
@@ -64,17 +544,15 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + currentquest$ + \"_huntingname$\")",
-        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
-        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
-        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
-        "((getd(\".\" +currentquest$+\"_huntingprize\"))?getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))+\" - \"+getd(\".\" +currentquest$+\"_huntingamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
         "getd(\".\" +currentquest$+\"_huntingzeny\")",
         "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
         "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
       ],
       "state" : "translated",
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{4}\nZeny: ^0000FF{5}^000000\nBase EXP: ^0000FF{6}^000000\nJob EXP: ^0000FF{7}^000000",
-      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n--------------------------------\n[奖励]\n物品： ^0000FF{4}\nZeny： ^0000FF{5}^000000\n基础经验值： ^0000FF{6}^000000\n职业经验值： ^0000FF{7}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品：^0000FF{1} - {2} 个^000000\nZeny：^0000FF{3}^000000\n基础经验：^0000FF{4}^000000\n职业经验：^0000FF{5}^000000"
     },
     {
       "kind" : "message",
@@ -82,14 +560,426 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + currentquest$ + \"_huntingname$\")",
-        "((getd(\".\" +currentquest$+\"_huntingprize\"))?getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))+\" - \"+getd(\".\" +currentquest$+\"_huntingamount\")+\" ea.^000000\":\"Nothing^000000\")",
         "getd(\".\" +currentquest$+\"_huntingzeny\")",
         "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
         "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
       ],
       "state" : "translated",
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1}\nZeny: ^0000FF{2}^000000\nBase EXP: ^0000FF{3}^000000\nJob EXP: ^0000FF{4}^000000",
-      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品： ^0000FF{1}\nZeny： ^0000FF{2}^000000\n基础经验值： ^0000FF{3}^000000\n职业经验值： ^0000FF{4}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{1}^000000\n基础经验：^0000FF{2}^000000\n职业经验：^0000FF{3}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{4} - {5} ea.^000000\nZeny: ^0000FF{6}^000000\nBase EXP: ^0000FF{7}^000000\nJob EXP: ^0000FF{8}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{4} - {5} 个^000000\nZeny：^0000FF{6}^000000\n基础经验：^0000FF{7}^000000\n职业经验：^0000FF{8}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{4}^000000\nBase EXP: ^0000FF{5}^000000\nJob EXP: ^0000FF{6}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{4}^000000\n基础经验：^0000FF{5}^000000\n职业经验：^0000FF{6}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{7} - {8} ea.^000000\nZeny: ^0000FF{9}^000000\nBase EXP: ^0000FF{10}^000000\nJob EXP: ^0000FF{11}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{7} - {8} 个^000000\nZeny：^0000FF{9}^000000\n基础经验：^0000FF{10}^000000\n职业经验：^0000FF{11}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{7}^000000\nBase EXP: ^0000FF{8}^000000\nJob EXP: ^0000FF{9}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{7}^000000\n基础经验：^0000FF{8}^000000\n职业经验：^0000FF{9}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{10} - {11} ea.^000000\nZeny: ^0000FF{12}^000000\nBase EXP: ^0000FF{13}^000000\nJob EXP: ^0000FF{14}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{10} - {11} 个^000000\nZeny：^0000FF{12}^000000\n基础经验：^0000FF{13}^000000\n职业经验：^0000FF{14}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{10}^000000\nBase EXP: ^0000FF{11}^000000\nJob EXP: ^0000FF{12}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{10}^000000\n基础经验：^0000FF{11}^000000\n职业经验：^0000FF{12}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{13} - {14} ea.^000000\nZeny: ^0000FF{15}^000000\nBase EXP: ^0000FF{16}^000000\nJob EXP: ^0000FF{17}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{13} - {14} 个^000000\nZeny：^0000FF{15}^000000\n基础经验：^0000FF{16}^000000\n职业经验：^0000FF{17}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{13}^000000\nBase EXP: ^0000FF{14}^000000\nJob EXP: ^0000FF{15}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{13}^000000\n基础经验：^0000FF{14}^000000\n职业经验：^0000FF{15}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{16} - {17} ea.^000000\nZeny: ^0000FF{18}^000000\nBase EXP: ^0000FF{19}^000000\nJob EXP: ^0000FF{20}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{16} - {17} 个^000000\nZeny：^0000FF{18}^000000\n基础经验：^0000FF{19}^000000\n职业经验：^0000FF{20}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{16}^000000\nBase EXP: ^0000FF{17}^000000\nJob EXP: ^0000FF{18}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{16}^000000\n基础经验：^0000FF{17}^000000\n职业经验：^0000FF{18}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{19} - {20} ea.^000000\nZeny: ^0000FF{21}^000000\nBase EXP: ^0000FF{22}^000000\nJob EXP: ^0000FF{23}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n^FF0000{16} - {17}/{18} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{19} - {20} 个^000000\nZeny：^0000FF{21}^000000\n基础经验：^0000FF{22}^000000\n职业经验：^0000FF{23}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{19}^000000\nBase EXP: ^0000FF{20}^000000\nJob EXP: ^0000FF{21}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n^FF0000{16} - {17}/{18} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{19}^000000\n基础经验：^0000FF{20}^000000\n职业经验：^0000FF{21}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +currentquest$+\"_huntingprize\"))",
+        "getd(\".\" +currentquest$+\"_huntingamount\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{22} - {23} ea.^000000\nZeny: ^0000FF{24}^000000\nBase EXP: ^0000FF{25}^000000\nJob EXP: ^0000FF{26}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n^FF0000{16} - {17}/{18} 个^000000\n^FF0000{19} - {20}/{21} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{22} - {23} 个^000000\nZeny：^0000FF{24}^000000\n基础经验：^0000FF{25}^000000\n职业经验：^0000FF{26}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingzeny\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +currentquest$+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{22}^000000\nBase EXP: ^0000FF{23}^000000\nJob EXP: ^0000FF{24}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n^FF0000{16} - {17}/{18} 个^000000\n^FF0000{19} - {20}/{21} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{22}^000000\n基础经验：^0000FF{23}^000000\n职业经验：^0000FF{24}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 49,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + currentquest$ + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+currentquest$+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(currentquest$+\"_\"+.@currentmob+\"_\"+(.@j+1)+\"_killcount\")",
+        "getd(\".\"+currentquest$+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} ea.^000000\n^FF0000{4} - {5}/{6} ea.^000000\n^FF0000{7} - {8}/{9} ea.^000000\n^FF0000{10} - {11}/{12} ea.^000000\n^FF0000{13} - {14}/{15} ea.^000000\n^FF0000{16} - {17}/{18} ea.^000000\n^FF0000{19} - {20}/{21} ea.^000000\n^FF0000{22} - {23}/{24} ea.^000000\n--------------------------------\n[Reward]",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2}/{3} 个^000000\n^FF0000{4} - {5}/{6} 个^000000\n^FF0000{7} - {8}/{9} 个^000000\n^FF0000{10} - {11}/{12} 个^000000\n^FF0000{13} - {14}/{15} 个^000000\n^FF0000{16} - {17}/{18} 个^000000\n^FF0000{19} - {20}/{21} 个^000000\n^FF0000{22} - {23}/{24} 个^000000\n--------------------------------\n[奖励]"
     },
     {
       "kind" : "option",
@@ -128,27 +1018,86 @@
       "line" : 82,
       "npc" : "Questboard",
       "state" : "translated",
+      "text" : "Collection Quests",
+      "translation" : "收集任务"
+    },
+    {
+      "kind" : "option",
+      "line" : 82,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Hunting Quests",
+      "translation" : "狩猎任务"
+    },
+    {
+      "kind" : "option",
+      "line" : 82,
+      "npc" : "Questboard",
+      "state" : "translated",
       "text" : "Exit",
       "translation" : "退出"
+    },
+    {
+      "kind" : "option",
+      "line" : 92,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +(.@i+1)+\"_collectionmin\")",
+        "getd(\".\" +(.@i+1)+\"_collectionmax\")",
+        "getd(\".\" + (.@i+1) + \"_collectionname$\")"
+      ],
+      "state" : "translated",
+      "text" : "[{0} - {1}] {2}",
+      "translation" : "[{0} - {1}] {2}"
     },
     {
       "kind" : "message",
       "line" : 95,
       "npc" : "Questboard",
-      "placeholders" : [
-        "Time2Str(getd(.@selection + \"_collection_delay\"))"
-      ],
       "state" : "translated",
-      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0}^000000 to do this quest again.",
-      "translation" : "[^FF7700任务板^000000]\n还要等待 ^0000FF{0}^000000 才能再次接取这个任务。"
+      "text" : "[^FF7700Questboard^000000]",
+      "translation" : "[^FF7700任务板^000000]"
     },
     {
       "kind" : "message",
-      "line" : 102,
+      "line" : 96,
       "npc" : "Questboard",
+      "placeholders" : [
+        ".@Time$"
+      ],
       "state" : "translated",
-      "text" : "[^FF7700Questboard^000000]\nYou already did this quest.\nPlease choose another one.",
-      "translation" : "[^FF7700任务板^000000]\n你已经完成过这个任务了。\n请选择其他任务。"
+      "text" : "You have to wait ^0000FF{0}^000000 to do this quest again.",
+      "translation" : "还需等待^0000FF{0}^000000后才能再次进行此任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品：^0000FF{1} - {2} 个^000000\nZeny：^0000FF{3}^000000\n基础经验：^0000FF{4}^000000\n职业经验：^0000FF{5}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{1}^000000\n基础经验：^0000FF{2}^000000\n职业经验：^0000FF{3}^000000"
     },
     {
       "kind" : "message",
@@ -158,14 +1107,15 @@
         "getd(\".\" + .@selection + \"_collectionname$\")",
         "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
         "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
-        "((getd(\".\" +.@selection+\"_collectionprize\"))?getitemname(getd(\".\" +.@selection+\"_collectionprize\"))+\" - \"+getd(\".\" +.@selection+\"_collectionamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")",
         "getd(\".\" +.@selection+\"_collectionzeny\")",
         "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
         "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
       ],
       "state" : "translated",
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{3}\nZeny: ^0000FF{4}^000000\nBase EXP: ^0000FF{5}^000000\nJob EXP: ^0000FF{6}^000000",
-      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n--------------------------------\n[奖励]\n物品： ^0000FF{3}\nZeny： ^0000FF{4}^000000\n基础经验值： ^0000FF{5}^000000\n职业经验值： ^0000FF{6}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{3} - {4} ea.^000000\nZeny: ^0000FF{5}^000000\nBase EXP: ^0000FF{6}^000000\nJob EXP: ^0000FF{7}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{3} - {4} 个^000000\nZeny：^0000FF{5}^000000\n基础经验：^0000FF{6}^000000\n职业经验：^0000FF{7}^000000"
     },
     {
       "kind" : "message",
@@ -173,14 +1123,526 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + .@selection + \"_collectionname$\")",
-        "((getd(\".\" +.@selection+\"_collectionprize\"))?getitemname(getd(\".\" +.@selection+\"_collectionprize\"))+\" - \"+getd(\".\" +.@selection+\"_collectionamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
         "getd(\".\" +.@selection+\"_collectionzeny\")",
         "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
         "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
       ],
       "state" : "translated",
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1}\nZeny: ^0000FF{2}^000000\nBase EXP: ^0000FF{3}^000000\nJob EXP: ^0000FF{4}^000000",
-      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品： ^0000FF{1}\nZeny： ^0000FF{2}^000000\n基础经验值： ^0000FF{3}^000000\n职业经验值： ^0000FF{4}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{3}^000000\n基础经验：^0000FF{4}^000000\n职业经验：^0000FF{5}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{5} - {6} ea.^000000\nZeny: ^0000FF{7}^000000\nBase EXP: ^0000FF{8}^000000\nJob EXP: ^0000FF{9}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{5} - {6} 个^000000\nZeny：^0000FF{7}^000000\n基础经验：^0000FF{8}^000000\n职业经验：^0000FF{9}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{5}^000000\nBase EXP: ^0000FF{6}^000000\nJob EXP: ^0000FF{7}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{5}^000000\n基础经验：^0000FF{6}^000000\n职业经验：^0000FF{7}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{7} - {8} ea.^000000\nZeny: ^0000FF{9}^000000\nBase EXP: ^0000FF{10}^000000\nJob EXP: ^0000FF{11}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{7} - {8} 个^000000\nZeny：^0000FF{9}^000000\n基础经验：^0000FF{10}^000000\n职业经验：^0000FF{11}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionzeny\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{7}^000000\nBase EXP: ^0000FF{8}^000000\nJob EXP: ^0000FF{9}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{7}^000000\n基础经验：^0000FF{8}^000000\n职业经验：^0000FF{9}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{9} - {10} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{9} - {10} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{3} - {4} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{3} - {4} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{7} - {8} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{7} - {8} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{11} - {12} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n^FF0000{9} - {10} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{11} - {12} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n^FF0000{9} - {10} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品：^0000FF{1} - {2} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n^FF0000{9} - {10} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{5} - {6} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{5} - {6} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n^FF0000{11} - {12} ea.^000000\n^FF0000{13} - {14} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n^FF0000{9} - {10} 个^000000\n^FF0000{11} - {12} 个^000000\n^FF0000{13} - {14} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n^FF0000{11} - {12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{13} - {14} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n^FF0000{9} - {10} 个^000000\n^FF0000{11} - {12} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{13} - {14} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n^FF0000{11} - {12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n^FF0000{9} - {10} 个^000000\n^FF0000{11} - {12} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 108,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_collectionname$\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 113,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getitemname(getd(\".\"+.@selection+\"_collectionitem[\"+.@j+\"]\"))",
+        "getd(\".\"+.@selection+\"_collectionitem[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "^FF0000{0} - {1} ea.^000000",
+      "translation" : "^FF0000{0} - {1} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 115,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "--------------------------------",
+      "translation" : "--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[Reward]",
+      "translation" : "[奖励]"
+    },
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getitemname(getd(\".\" +.@selection+\"_collectionprize\"))",
+        "getd(\".\" +.@selection+\"_collectionamount\")"
+      ],
+      "state" : "translated",
+      "text" : "Item: ^0000FF{0} - {1} ea.^000000",
+      "translation" : "物品：^0000FF{0} - {1} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 117,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Item: ^0000FFNothing^000000",
+      "translation" : "物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 118,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +.@selection+\"_collectionzeny\")"
+      ],
+      "state" : "translated",
+      "text" : "Zeny: ^0000FF{0}^000000",
+      "translation" : "Zeny：^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +.@selection+\"_collectionexp[\"+0+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "Base EXP: ^0000FF{0}^000000",
+      "translation" : "基础经验：^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +.@selection+\"_collectionexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "Job EXP: ^0000FF{0}^000000",
+      "translation" : "职业经验：^0000FF{0}^000000"
     },
     {
       "kind" : "option",
@@ -208,6 +1670,14 @@
     },
     {
       "kind" : "message",
+      "line" : 126,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]",
+      "translation" : "[^FF7700任务板^000000]"
+    },
+    {
+      "kind" : "message",
       "line" : 133,
       "npc" : "Questboard",
       "state" : "translated",
@@ -216,22 +1686,194 @@
     },
     {
       "kind" : "message",
-      "line" : 148,
+      "line" : 133,
       "npc" : "Questboard",
-      "placeholders" : [
-        "Time2Str(getd(.@selection + \"_hunting_delay\"))"
-      ],
       "state" : "translated",
-      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0}^000000 to do this quest again.",
-      "translation" : "[^FF7700任务板^000000]\n还要等待 ^0000FF{0}^000000 才能再次接取这个任务。"
+      "text" : "[^FF7700Questboard^000000]",
+      "translation" : "[^FF7700任务板^000000]"
     },
     {
       "kind" : "message",
-      "line" : 155,
+      "line" : 133,
       "npc" : "Questboard",
       "state" : "translated",
-      "text" : "[^FF7700Questboard^000000]\nYou already did this quest.\nPlease choose another one.",
-      "translation" : "[^FF7700任务板^000000]\n你已经完成过这个任务了。\n请选择其他任务。"
+      "text" : "[^FF7700Questboard^000000]\nYou don't have the required",
+      "translation" : "[^FF7700任务板^000000]\n你未达到任务所需条件"
+    },
+    {
+      "kind" : "option",
+      "line" : 145,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +(.@i+1)+\"_huntingmin\")",
+        "getd(\".\" +(.@i+1)+\"_huntingmax\")",
+        "getd(\".\" + (.@i+1) + \"_huntingname$\")"
+      ],
+      "state" : "translated",
+      "text" : "[{0} - {1}] {2}",
+      "translation" : "[{0} - {1}] {2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]",
+      "translation" : "[^FF7700任务板^000000]"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF^000000 to do this quest again.",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF^000000请稍后再来接取此任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Time_Left"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} seconds^000000 to do this quest again.",
+      "translation" : "[^FF7700任务板^000000]\n还需等待^0000FF{0}秒^000000后才能再次进行此任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Minutes"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} minutes, ^000000 to do this quest again.",
+      "translation" : "[^FF7700任务板^000000]\n还需等待^0000FF{0}分钟，^000000后才能再次进行此任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Minutes",
+        ".@Time_Left"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} minutes, {1} seconds^000000 to do this quest again.",
+      "translation" : "[^FF7700任务板^000000]\n还需等待^0000FF{0}分钟，{1}秒^000000后才能再次进行此任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Hours"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} hours, ^000000 to do this quest again.",
+      "translation" : "[^FF7700任务板^000000]\n还需等待^0000FF{0}小时，^000000后才能再次进行此任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Hours",
+        ".@Time_Left"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} hours, {1} seconds^000000 to do this quest again.",
+      "translation" : "[^FF7700任务板^000000]\n还需等待^0000FF{0}小时，{1}秒^000000后才能再次进行此任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Hours",
+        ".@Minutes"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} hours, {1} minutes, ^000000 to do this quest again.",
+      "translation" : "[^FF7700任务板^000000]\n还需等待^0000FF{0}小时，{1}分钟，^000000后才能再次进行此任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Hours",
+        ".@Minutes",
+        ".@Time_Left"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} hours, {1} minutes, {2} seconds^000000 to do this quest again.",
+      "translation" : "[^FF7700任务板^000000]\n还需等待^0000FF{0}小时，{1}分钟，{2}秒^000000后才能再次进行此任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Days"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} days, ^000000 to do this quest again.",
+      "translation" : "[^FF7700任务板^000000]\n还需等待^0000FF{0}天，^000000后才能再次进行此任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 148,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Days",
+        ".@Time_Left"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou have to wait ^0000FF{0} days, {1} seconds^000000 to do this quest again.",
+      "translation" : "[^FF7700任务板^000000]\n还需等待^0000FF{0}天，{1}秒^000000后才能再次进行此任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 149,
+      "npc" : "Questboard",
+      "placeholders" : [
+        ".@Time$"
+      ],
+      "state" : "translated",
+      "text" : "You have to wait ^0000FF{0}^000000 to do this quest again.",
+      "translation" : "还需等待^0000FF{0}^000000后才能再次进行此任务。"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品：^0000FF{1} - {2} 个^000000\nZeny：^0000FF{3}^000000\n基础经验：^0000FF{4}^000000\n职业经验：^0000FF{5}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{1}^000000\nBase EXP: ^0000FF{2}^000000\nJob EXP: ^0000FF{3}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{1}^000000\n基础经验：^0000FF{2}^000000\n职业经验：^0000FF{3}^000000"
     },
     {
       "kind" : "message",
@@ -241,14 +1883,15 @@
         "getd(\".\" + .@selection + \"_huntingname$\")",
         "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
         "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
-        "((getd(\".\" +.@selection+\"_huntingprize\"))?getitemname(getd(\".\" +.@selection+\"_huntingprize\"))+\" - \"+getd(\".\" +.@selection+\"_huntingamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")",
         "getd(\".\" +.@selection+\"_huntingzeny\")",
         "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
         "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
       ],
       "state" : "translated",
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{3}\nZeny: ^0000FF{4}^000000\nBase EXP: ^0000FF{5}^000000\nJob EXP: ^0000FF{6}^000000",
-      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n--------------------------------\n[奖励]\n物品： ^0000FF{3}\nZeny： ^0000FF{4}^000000\n基础经验值： ^0000FF{5}^000000\n职业经验值： ^0000FF{6}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{3} - {4} ea.^000000\nZeny: ^0000FF{5}^000000\nBase EXP: ^0000FF{6}^000000\nJob EXP: ^0000FF{7}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{3} - {4} 个^000000\nZeny：^0000FF{5}^000000\n基础经验：^0000FF{6}^000000\n职业经验：^0000FF{7}^000000"
     },
     {
       "kind" : "message",
@@ -256,14 +1899,526 @@
       "npc" : "Questboard",
       "placeholders" : [
         "getd(\".\" + .@selection + \"_huntingname$\")",
-        "((getd(\".\" +.@selection+\"_huntingprize\"))?getitemname(getd(\".\" +.@selection+\"_huntingprize\"))+\" - \"+getd(\".\" +.@selection+\"_huntingamount\")+\" ea.^000000\":\"Nothing^000000\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
         "getd(\".\" +.@selection+\"_huntingzeny\")",
         "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
         "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
       ],
       "state" : "translated",
-      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1}\nZeny: ^0000FF{2}^000000\nBase EXP: ^0000FF{3}^000000\nJob EXP: ^0000FF{4}^000000",
-      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品： ^0000FF{1}\nZeny： ^0000FF{2}^000000\n基础经验值： ^0000FF{3}^000000\n职业经验值： ^0000FF{4}^000000"
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{3}^000000\nBase EXP: ^0000FF{4}^000000\nJob EXP: ^0000FF{5}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{3}^000000\n基础经验：^0000FF{4}^000000\n职业经验：^0000FF{5}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{5} - {6} ea.^000000\nZeny: ^0000FF{7}^000000\nBase EXP: ^0000FF{8}^000000\nJob EXP: ^0000FF{9}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{5} - {6} 个^000000\nZeny：^0000FF{7}^000000\n基础经验：^0000FF{8}^000000\n职业经验：^0000FF{9}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{5}^000000\nBase EXP: ^0000FF{6}^000000\nJob EXP: ^0000FF{7}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{5}^000000\n基础经验：^0000FF{6}^000000\n职业经验：^0000FF{7}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{7} - {8} ea.^000000\nZeny: ^0000FF{9}^000000\nBase EXP: ^0000FF{10}^000000\nJob EXP: ^0000FF{11}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{7} - {8} 个^000000\nZeny：^0000FF{9}^000000\n基础经验：^0000FF{10}^000000\n职业经验：^0000FF{11}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingzeny\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")",
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000\nZeny: ^0000FF{7}^000000\nBase EXP: ^0000FF{8}^000000\nJob EXP: ^0000FF{9}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000\nZeny：^0000FF{7}^000000\n基础经验：^0000FF{8}^000000\n职业经验：^0000FF{9}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{9} - {10} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{9} - {10} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{3} - {4} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{3} - {4} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{7} - {8} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{7} - {8} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{11} - {12} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n^FF0000{9} - {10} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{11} - {12} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n^FF0000{9} - {10} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FF{1} - {2} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品：^0000FF{1} - {2} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n^FF0000{9} - {10} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{5} - {6} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{5} - {6} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n^FF0000{11} - {12} ea.^000000\n^FF0000{13} - {14} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n^FF0000{9} - {10} 个^000000\n^FF0000{11} - {12} 个^000000\n^FF0000{13} - {14} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n^FF0000{11} - {12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FF{13} - {14} ea.^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n^FF0000{9} - {10} 个^000000\n^FF0000{11} - {12} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF{13} - {14} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")",
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} ea.^000000\n^FF0000{3} - {4} ea.^000000\n^FF0000{5} - {6} ea.^000000\n^FF0000{7} - {8} ea.^000000\n^FF0000{9} - {10} ea.^000000\n^FF0000{11} - {12} ea.^000000\n--------------------------------\n[Reward]\nItem: ^0000FFNothing^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000\n--------------------------------\n^FF0000{1} - {2} 个^000000\n^FF0000{3} - {4} 个^000000\n^FF0000{5} - {6} 个^000000\n^FF0000{7} - {8} 个^000000\n^FF0000{9} - {10} 个^000000\n^FF0000{11} - {12} 个^000000\n--------------------------------\n[奖励]\n物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 161,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" + .@selection + \"_huntingname$\")"
+      ],
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\n^0000FF{0}^000000",
+      "translation" : "[^FF7700任务板^000000]\n^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 166,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getmonsterinfo(getd(\".\"+.@selection+\"_huntingmob[\"+.@j+\"]\"), MOB_NAME)",
+        "getd(\".\"+.@selection+\"_huntingmob[\"+(.@j+1)+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "^FF0000{0} - {1} ea.^000000",
+      "translation" : "^FF0000{0} - {1} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "--------------------------------",
+      "translation" : "--------------------------------"
+    },
+    {
+      "kind" : "message",
+      "line" : 169,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[Reward]",
+      "translation" : "[奖励]"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getitemname(getd(\".\" +.@selection+\"_huntingprize\"))",
+        "getd(\".\" +.@selection+\"_huntingamount\")"
+      ],
+      "state" : "translated",
+      "text" : "Item: ^0000FF{0} - {1} ea.^000000",
+      "translation" : "物品：^0000FF{0} - {1} 个^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 170,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Item: ^0000FFNothing^000000",
+      "translation" : "物品：^0000FF无^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 171,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +.@selection+\"_huntingzeny\")"
+      ],
+      "state" : "translated",
+      "text" : "Zeny: ^0000FF{0}^000000",
+      "translation" : "Zeny：^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 172,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +.@selection+\"_huntingexp[\"+0+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "Base EXP: ^0000FF{0}^000000",
+      "translation" : "基础经验：^0000FF{0}^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 173,
+      "npc" : "Questboard",
+      "placeholders" : [
+        "getd(\".\" +.@selection+\"_huntingexp[\"+1+\"]\")"
+      ],
+      "state" : "translated",
+      "text" : "Job EXP: ^0000FF{0}^000000",
+      "translation" : "职业经验：^0000FF{0}^000000"
     },
     {
       "kind" : "option",
@@ -291,11 +2446,43 @@
     },
     {
       "kind" : "message",
+      "line" : 179,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]",
+      "translation" : "[^FF7700任务板^000000]"
+    },
+    {
+      "kind" : "message",
       "line" : 186,
       "npc" : "Questboard",
       "state" : "translated",
       "text" : "[^FF7700Questboard^000000]\nYou don't have the required\nlevel to do this quest.",
       "translation" : "[^FF7700任务板^000000]\n你的等级未达到这个任务的要求。"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]",
+      "translation" : "[^FF7700任务板^000000]"
+    },
+    {
+      "kind" : "message",
+      "line" : 186,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]\nYou don't have the required",
+      "translation" : "[^FF7700任务板^000000]\n你未达到任务所需条件"
+    },
+    {
+      "kind" : "message",
+      "line" : 204,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]",
+      "translation" : "[^FF7700任务板^000000]"
     },
     {
       "kind" : "message",
@@ -307,11 +2494,35 @@
     },
     {
       "kind" : "message",
+      "line" : 205,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "You don't have everything.",
+      "translation" : "所需物品还没收集齐。"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]",
+      "translation" : "[^FF7700任务板^000000]"
+    },
+    {
+      "kind" : "message",
       "line" : 211,
       "npc" : "Questboard",
       "state" : "translated",
       "text" : "[^FF7700Questboard^000000]\nCongratulation! Here is your Reward.",
       "translation" : "[^FF7700任务板^000000]\n恭喜！这是你的奖励。"
+    },
+    {
+      "kind" : "message",
+      "line" : 212,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "Congratulation! Here is your Reward.",
+      "translation" : "恭喜！这是你的奖励。"
     },
     {
       "kind" : "message",
@@ -323,11 +2534,27 @@
     },
     {
       "kind" : "message",
+      "line" : 239,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]",
+      "translation" : "[^FF7700任务板^000000]"
+    },
+    {
+      "kind" : "message",
       "line" : 243,
       "npc" : "Questboard",
       "state" : "translated",
       "text" : "[^FF7700Questboard^000000]\nCongratulation! Here is your Reward.",
       "translation" : "[^FF7700任务板^000000]\n恭喜！这是你的奖励。"
+    },
+    {
+      "kind" : "message",
+      "line" : 243,
+      "npc" : "Questboard",
+      "state" : "translated",
+      "text" : "[^FF7700Questboard^000000]",
+      "translation" : "[^FF7700任务板^000000]"
     }
   ]
 }

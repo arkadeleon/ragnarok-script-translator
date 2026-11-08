@@ -45,54 +45,195 @@
       "kind" : "message",
       "line" : 23,
       "npc" : "MvP Ladder Warper",
-      "placeholders" : [
-        "callfunc(\"F_InsertPlural\", .finish_item_amount, getitemname( .finish_item_id ))",
-        "callfunc( \"F_InsertComma\", .register_cost )"
-      ],
-      "state" : "translated",
-      "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.\nIf your party can finish the MVP ladder game, each member will earn {0}.\nBut the entrance fee is {1} zeny.",
-      "translation" : "[MVP阶梯传送员]\n你的队伍要按从弱到强的顺序，击败所有MVP魔物。\n完成挑战后，每位成员都能获得{0}。\n入场费为{1} Zeny。"
-    },
-    {
-      "kind" : "message",
-      "line" : 23,
-      "npc" : "MvP Ladder Warper",
-      "placeholders" : [
-        "callfunc( \"F_InsertComma\", .register_cost )"
-      ],
-      "state" : "translated",
-      "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.\nBut the entrance fee is {0} zeny.",
-      "translation" : "[MVP阶梯传送员]\n你的队伍要按从弱到强的顺序，击败所有MVP魔物。\n入场费为{0} Zeny。"
-    },
-    {
-      "kind" : "message",
-      "line" : 23,
-      "npc" : "MvP Ladder Warper",
-      "placeholders" : [
-        "callfunc(\"F_InsertPlural\", .finish_item_amount, getitemname( .finish_item_id ))"
-      ],
-      "state" : "translated",
-      "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.\nIf your party can finish the MVP ladder game, each member will earn {0}.",
-      "translation" : "[MVP阶梯传送员]\n你的队伍要按从弱到强的顺序，击败所有MVP魔物。\n完成挑战后，每位成员都能获得{0}。"
-    },
-    {
-      "kind" : "message",
-      "line" : 23,
-      "npc" : "MvP Ladder Warper",
       "state" : "translated",
       "text" : "[MvP Ladder Warper]\nIn this game, your party has to kill every single MvP monster in ascending order, from the weakest to strongest.",
       "translation" : "[MVP阶梯传送员]\n你的队伍要按从弱到强的顺序，击败所有MVP魔物。"
     },
     {
       "kind" : "message",
-      "line" : 30,
+      "line" : 26,
       "npc" : "MvP Ladder Warper",
       "placeholders" : [
-        ".timeout"
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
       ],
       "state" : "translated",
-      "text" : "[MvP Ladder Warper]\nYou lose the game if you can't finish in {0} minutes, or if your entire party is killed.\nGood luck!",
-      "translation" : "[MVP阶梯传送员]\n如果没能在{0}分钟内完成挑战，或者全队阵亡，就算失败。\n祝你好运！"
+      "text" : "If your party can finish the MVP ladder game, each member will earn {0} {1}.\nBut the entrance fee is 100000 zeny.",
+      "translation" : "如果队伍成功完成MVP阶梯挑战，每位成员都能获得{0} {1}。\n不过，入场费为100000 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "If your party can finish the MVP ladder game, each member will earn {0} {1}.\nBut the entrance fee is {2} zeny.",
+      "translation" : "如果队伍成功完成MVP阶梯挑战，每位成员都能获得{0} {1}。\n不过，入场费为{2} Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "MvP Ladder Warper",
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nYou lose the game if you can't finish in 60 minutes, or if your entire party is killed.\nGood luck!",
+      "translation" : "[MVP阶梯传送员]\n如果没能在60分钟内完成挑战，或者全队阵亡，就算失败。\n祝你好运！"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "$mvpladdderparty_time / 60",
+        "$mvpladdderparty_time % 60",
+        "$mvpladdderparty_name$"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.",
+      "translation" : "[MVP阶梯传送员]\n最佳记录：\n[ {0}分{1}秒 ]\n由队伍^FF0000{2}^000000创造。"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "$mvpladdderparty_time / 60",
+        "$mvpladdderparty_time % 60",
+        "$mvpladdderparty_name$",
+        "$mvpladderparty_member$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.\n^0000001. ^0000FF{3}",
+      "translation" : "[MVP阶梯传送员]\n最佳记录：\n[ {0}分{1}秒 ]\n由队伍^FF0000{2}^000000创造。\n^0000001. ^0000FF{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "$mvpladdderparty_time / 60",
+        "$mvpladdderparty_time % 60",
+        "$mvpladdderparty_name$",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}",
+      "translation" : "[MVP阶梯传送员]\n最佳记录：\n[ {0}分{1}秒 ]\n由队伍^FF0000{2}^000000创造。\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "$mvpladdderparty_time / 60",
+        "$mvpladdderparty_time % 60",
+        "$mvpladdderparty_name$",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}\n^0000003. ^0000FF{5}",
+      "translation" : "[MVP阶梯传送员]\n最佳记录：\n[ {0}分{1}秒 ]\n由队伍^FF0000{2}^000000创造。\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}\n^0000003. ^0000FF{5}"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "$mvpladdderparty_time / 60",
+        "$mvpladdderparty_time % 60",
+        "$mvpladdderparty_name$",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}\n^0000003. ^0000FF{5}\n^0000004. ^0000FF{6}",
+      "translation" : "[MVP阶梯传送员]\n最佳记录：\n[ {0}分{1}秒 ]\n由队伍^FF0000{2}^000000创造。\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}\n^0000003. ^0000FF{5}\n^0000004. ^0000FF{6}"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "$mvpladdderparty_time / 60",
+        "$mvpladdderparty_time % 60",
+        "$mvpladdderparty_name$",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}\n^0000003. ^0000FF{5}\n^0000004. ^0000FF{6}\n^0000005. ^0000FF{7}",
+      "translation" : "[MVP阶梯传送员]\n最佳记录：\n[ {0}分{1}秒 ]\n由队伍^FF0000{2}^000000创造。\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}\n^0000003. ^0000FF{5}\n^0000004. ^0000FF{6}\n^0000005. ^0000FF{7}"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "$mvpladdderparty_time / 60",
+        "$mvpladdderparty_time % 60",
+        "$mvpladdderparty_name$",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}\n^0000003. ^0000FF{5}\n^0000004. ^0000FF{6}\n^0000005. ^0000FF{7}\n^0000006. ^0000FF{8}",
+      "translation" : "[MVP阶梯传送员]\n最佳记录：\n[ {0}分{1}秒 ]\n由队伍^FF0000{2}^000000创造。\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}\n^0000003. ^0000FF{5}\n^0000004. ^0000FF{6}\n^0000005. ^0000FF{7}\n^0000006. ^0000FF{8}"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "$mvpladdderparty_time / 60",
+        "$mvpladdderparty_time % 60",
+        "$mvpladdderparty_name$",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}\n^0000003. ^0000FF{5}\n^0000004. ^0000FF{6}\n^0000005. ^0000FF{7}\n^0000006. ^0000FF{8}\n^0000007. ^0000FF{9}",
+      "translation" : "[MVP阶梯传送员]\n最佳记录：\n[ {0}分{1}秒 ]\n由队伍^FF0000{2}^000000创造。\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}\n^0000003. ^0000FF{5}\n^0000004. ^0000FF{6}\n^0000005. ^0000FF{7}\n^0000006. ^0000FF{8}\n^0000007. ^0000FF{9}"
+    },
+    {
+      "kind" : "message",
+      "line" : 35,
+      "npc" : "MvP Ladder Warper",
+      "placeholders" : [
+        "$mvpladdderparty_time / 60",
+        "$mvpladdderparty_time % 60",
+        "$mvpladdderparty_name$",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]",
+        "$mvpladderparty_member$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}\n^0000003. ^0000FF{5}\n^0000004. ^0000FF{6}\n^0000005. ^0000FF{7}\n^0000006. ^0000FF{8}\n^0000007. ^0000FF{9}\n^0000008. ^0000FF{10}",
+      "translation" : "[MVP阶梯传送员]\n最佳记录：\n[ {0}分{1}秒 ]\n由队伍^FF0000{2}^000000创造。\n^0000001. ^0000FF{3}\n^0000002. ^0000FF{4}\n^0000003. ^0000FF{5}\n^0000004. ^0000FF{6}\n^0000005. ^0000FF{7}\n^0000006. ^0000FF{8}\n^0000007. ^0000FF{9}\n^0000008. ^0000FF{10}"
     },
     {
       "kind" : "message",
@@ -101,34 +242,6 @@
       "state" : "translated",
       "text" : "[MvP Ladder Warper]\nNobody has finished this game yet.",
       "translation" : "[MVP阶梯传送员]\n目前还没有人完成这个游戏。"
-    },
-    {
-      "kind" : "message",
-      "line" : 35,
-      "npc" : "MvP Ladder Warper",
-      "placeholders" : [
-        "( $mvpladdderparty_time / 60 )",
-        "( $mvpladdderparty_time % 60 )",
-        "$mvpladdderparty_name$",
-        "( .@i +1 )",
-        "$mvpladderparty_member$[.@i]"
-      ],
-      "state" : "translated",
-      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.\n^000000{3}. ^0000FF{4}",
-      "translation" : "[MVP阶梯传送员]\n最佳记录：\n[ {0}分{1}秒 ]\n由队伍^FF0000{2}^000000创造。\n^000000{3}. ^0000FF{4}"
-    },
-    {
-      "kind" : "message",
-      "line" : 35,
-      "npc" : "MvP Ladder Warper",
-      "placeholders" : [
-        "( $mvpladdderparty_time / 60 )",
-        "( $mvpladdderparty_time % 60 )",
-        "$mvpladdderparty_name$"
-      ],
-      "state" : "translated",
-      "text" : "[MvP Ladder Warper]\nThe best record is\n[ {0} min {1} sec ]\nBy the party ^FF0000{2}^000000.",
-      "translation" : "[MVP阶梯传送员]\n最佳记录：\n[ {0}分{1}秒 ]\n由队伍^FF0000{2}^000000创造。"
     },
     {
       "kind" : "option",
@@ -198,24 +311,20 @@
       "kind" : "message",
       "line" : 83,
       "npc" : "MvP Ladder Warper",
-      "placeholders" : [
-        ".register_min"
-      ],
       "state" : "translated",
-      "text" : "[MvP Ladder Warper]\nYou have to form a party with exactly {0} members to play.",
-      "translation" : "[MVP阶梯传送员]\n队伍必须恰好有{0}名成员才能参加。"
+      "text" : "[MvP Ladder Warper]\nYou have to form a party with exactly 2 members to play.",
+      "translation" : "[MVP阶梯传送员]\n队伍必须恰好有2名成员才能参加。"
     },
     {
       "kind" : "message",
       "line" : 88,
       "npc" : "MvP Ladder Warper",
       "placeholders" : [
-        ".register_min",
         "strnpcinfo(4)"
       ],
       "state" : "translated",
-      "text" : "[MvP Ladder Warper]\nYour party must have {0} members online on map '{1}'.",
-      "translation" : "[MVP阶梯传送员]\n你的队伍必须有{0}名成员在地图“{1}”上在线。"
+      "text" : "[MvP Ladder Warper]\nYour party must have 2 members online on map '{0}'.",
+      "translation" : "[MVP阶梯传送员]\n你的队伍必须有2名成员在地图“{0}”上在线。"
     },
     {
       "kind" : "message",
