@@ -46,6 +46,14 @@
     },
     {
       "kind" : "message",
+      "line" : 46,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~\nEnter your storage password:",
+      "translation" : "[酷活動公司職員]\n馬上為您打開個人倉庫。\n感謝您使用我們的服務，支援酷活動公司。\n祝您今天愉快~\n請輸入倉庫密碼："
+    },
+    {
+      "kind" : "message",
       "line" : 74,
       "npc" : "F_CoolEventCorp",
       "state" : "translated",
@@ -57,12 +65,11 @@
       "line" : 82,
       "npc" : "F_CoolEventCorp",
       "placeholders" : [
-        ".@destination$",
-        ".@cost"
+        "getarg(5)"
       ],
       "state" : "translated",
-      "text" : "{0} -> {1} z",
-      "translation" : "{0} -> {1} z"
+      "text" : "{0} -> 2200 z",
+      "translation" : "{0} -> 2200 Zeny"
     },
     {
       "kind" : "option",
@@ -73,32 +80,37 @@
       "translation" : "取消"
     },
     {
+      "kind" : "option",
+      "line" : 82,
+      "npc" : "F_CoolEventCorp",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "{0} -> 4400 z",
+      "translation" : "{0} -> 4400 Zeny"
+    },
+    {
       "kind" : "message",
       "line" : 96,
       "npc" : "F_CoolEventCorp",
       "placeholders" : [
-        ".@destination$",
-        ".@cost"
+        "getarg(5)"
       ],
       "state" : "translated",
-      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto {0} is {1} zeny.",
-      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，\n無法使用瞬間移動服務。\n傳送到{0}的費用是{1} Zeny。"
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto {0} is 2200 zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，無法使用傳送服務。\n傳送到{0}需要2200 Zeny。"
     },
     {
       "kind" : "message",
-      "line" : 106,
+      "line" : 96,
       "npc" : "F_CoolEventCorp",
+      "placeholders" : [
+        "getarg(5)"
+      ],
       "state" : "translated",
-      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchant classes.",
-      "translation" : "[酷活動公司職員]\n很抱歉，手推車租賃服務僅對商人系職業開放。"
-    },
-    {
-      "kind" : "message",
-      "line" : 106,
-      "npc" : "F_CoolEventCorp",
-      "state" : "translated",
-      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, White Smiths,\nAlchemists and Creators.",
-      "translation" : "[酷活動公司職員]\n很抱歉，手推車租賃服務僅對商人、鐵匠、神工匠、鍊金術士和創造者開放。"
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto {0} is 4400 zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，無法使用傳送服務。\n傳送到{0}需要4400 Zeny。"
     },
     {
       "kind" : "message",
@@ -113,8 +125,8 @@
       "line" : 106,
       "npc" : "F_CoolEventCorp",
       "state" : "translated",
-      "text" : "[Cool Event Corp. Staff]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time.",
-      "translation" : "[酷活動公司職員]\n您已經有一輛手推車了。\n很抱歉，每位顧客一次只能租用一輛。"
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchant classes.",
+      "translation" : "[酷活動公司職員]\n很抱歉，手推車租賃服務僅對商人系職業開放。"
     },
     {
       "kind" : "message",
@@ -131,6 +143,22 @@
       "state" : "translated",
       "text" : "[Cool Event Corp. Staff]\nThe Pushcart rental\nfee is 800 Zeny. Would\nyou like to rent a Pushcart?",
       "translation" : "[酷活動公司職員]\n手推車租賃費是800 Zeny。\n您要租用手推車嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, White Smiths,\nAlchemists and Creators.",
+      "translation" : "[酷活動公司職員]\n很抱歉，手推車租賃服務僅對商人、鐵匠、神工匠、鍊金術士和創造者開放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time.",
+      "translation" : "[酷活動公司職員]\n您已經有一輛手推車了。\n很抱歉，每位顧客一次只能租用一輛。"
     },
     {
       "kind" : "option",
@@ -158,11 +186,1563 @@
     },
     {
       "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYour storage is protected with a password. What would you do now?",
+      "translation" : "[酷活動公司職員]\n您的倉庫已設定密碼保護。接下來要做什麼？"
+    },
+    {
+      "kind" : "option",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "Change old password -> 5000z",
+      "translation" : "更改舊密碼 -> 5000 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "Remove storage password -> 1000z",
+      "translation" : "移除倉庫密碼 -> 1000 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. proudly presents you a new service:\nAdditional storage protection with a password.",
+      "translation" : "[酷活動公司職員]\n酷活動公司隆重推出新服務：\n為倉庫新增密碼保護。"
+    },
+    {
+      "kind" : "option",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "Set new password -> 5000z",
+      "translation" : "設定新密碼 -> 5000 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nWrong password. We won't return your 1000z.\nPlease, next time enter correct password.",
+      "translation" : "[酷活動公司職員]\n密碼錯誤，1000z不予退還。\n下次請確認密碼正確。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou've successfully cleared your storage password.\nThank you for using Cool Event Corp..",
+      "translation" : "[酷活動公司職員]\n倉庫密碼已成功移除。\n感謝您使用酷活動公司服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou don't have enough zeny.",
+      "translation" : "[酷活動公司職員]\n您的Zeny不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou've protected your storage with a secret password.\nThank you for using Cool Event Corp..",
+      "translation" : "[酷活動公司職員]\n倉庫已設定密碼保護。\n感謝您使用酷活動公司服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou can't use such big password.\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "npc" : "F_CoolEventCorp",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
       "line" : 164,
       "npc" : "F_CoolEventCorp",
       "state" : "translated",
       "text" : "[Cool Event Corp. Staff]\nCool Event Corp. is always\nstriving to provide the best\nservices for our customers.\nHelp us become the best by\nproviding us with your opinions\nand honest feedback. Thank you.",
       "translation" : "[酷活動公司職員]\n酷活動公司始終致力於為顧客提供最優質的服務。\n歡迎提出意見，如實反饋，幫助我們做得更好。\n謝謝。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nWelcome to Cool Event Corp.\nOur staff is always working\nto surpass your expactations\nfor quality service. So how\nmay I assist you today?",
+      "translation" : "[酷活動公司職員]\n歡迎光臨酷活動公司。\n我們始終致力於提供超越您期待的優質服務。\n今天有什麼可以幫您的嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "Save",
+      "translation" : "儲存"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "Use Storage",
+      "translation" : "使用倉庫"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "Rent a Pushcart",
+      "translation" : "租用手推車"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "Storage Password Service",
+      "translation" : "倉庫密碼服務"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYour storage is protected with a password. What would you do now?",
+      "translation" : "[酷活動公司職員]\n您的倉庫已設定密碼保護。接下來要做什麼？"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "Change old password -> 5000z",
+      "translation" : "更改舊密碼 -> 5000 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "Remove storage password -> 1000z",
+      "translation" : "移除倉庫密碼 -> 1000 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. proudly presents you a new service:\nAdditional storage protection with a password.",
+      "translation" : "[酷活動公司職員]\n酷活動公司隆重推出新服務：\n為倉庫新增密碼保護。"
+    },
+    {
+      "kind" : "option",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "Set new password -> 5000z",
+      "translation" : "設定新密碼 -> 5000 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nWrong password. We won't return your 1000z.\nPlease, next time enter correct password.",
+      "translation" : "[酷活動公司職員]\n密碼錯誤，1000z不予退還。\n下次請確認密碼正確。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou've successfully cleared your storage password.\nThank you for using Cool Event Corp..",
+      "translation" : "[酷活動公司職員]\n倉庫密碼已成功移除。\n感謝您使用酷活動公司服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou don't have enough zeny.",
+      "translation" : "[酷活動公司職員]\n您的Zeny不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou've protected your storage with a secret password.\nThank you for using Cool Event Corp..",
+      "translation" : "[酷活動公司職員]\n倉庫已設定密碼保護。\n感謝您使用酷活動公司服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou can't use such big password.\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou can only rent a cart after\nlearning the Pushcart Skill.",
+      "translation" : "[酷活動公司職員]\n必須先學會手推車使用技能，才能租用手推車。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\nneed the Novice's\nBasic Skill Level 6 to\nuse the Storage Service.",
+      "translation" : "[酷活動公司職員]\n很抱歉，初心者的基本技能需要達到6級，才能使用倉庫服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchant classes.",
+      "translation" : "[酷活動公司職員]\n很抱歉，手推車租賃服務僅對商人系職業開放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYour Respawn Point\nhas been saved here\nin the town of Lighthalzen.\nThank you for using the\nCool Event Corp. service~",
+      "translation" : "[酷活動公司職員]\n您的復活點已保存於裡希塔樂鎮。\n感謝您使用酷活動公司的服務~"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't\nhave enough Zeny to use\nthe Storage Service. Our\nStorage access fee is 40 Zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，\n無法使用倉庫服務。\n使用倉庫需要40 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]",
+      "translation" : "[酷活動公司職員]"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. is always\nstriving to provide the best\nservices for our customers.\nHelp us become the best by\nproviding us with your opinions\nand honest feedback. Thank you.",
+      "translation" : "[酷活動公司職員]\n酷活動公司始終致力於為顧客提供最優質的服務。\n歡迎提出意見，如實反饋，幫助我們做得更好。\n謝謝。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nThe Pushcart rental\nfee is 800 Zeny. Would\nyou like to rent a Pushcart?",
+      "translation" : "[酷活動公司職員]\n手推車租賃費是800 Zeny。\n您要租用手推車嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, White Smiths,\nAlchemists and Creators.",
+      "translation" : "[酷活動公司職員]\n很抱歉，手推車租賃服務僅對商人、鐵匠、神工匠、鍊金術士和創造者開放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time.",
+      "translation" : "[酷活動公司職員]\n您已經有一輛手推車了。\n很抱歉，每位顧客一次只能租用一輛。"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~",
+      "translation" : "[酷活動公司職員]\n馬上為您打開個人倉庫。\n感謝您使用我們的服務，支援酷活動公司。\n祝您今天愉快~"
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~\nEnter your storage password:",
+      "translation" : "[酷活動公司職員]\n馬上為您打開個人倉庫。\n感謝您使用我們的服務，支援酷活動公司。\n祝您今天愉快~\n請輸入倉庫密碼："
+    },
+    {
+      "kind" : "message",
+      "line" : 178,
+      "npc" : "Cool Event Corp Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\ndon't have enough\nZeny to pay the Pushcart\nrental fee of 800 Zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，無法支付800 Zeny的手推車租賃費。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nWelcome to Cool Event Corp.\nOur staff is always working\nto surpass your expactations\nfor quality service. So how\nmay I assist you today?",
+      "translation" : "[酷活動公司職員]\n歡迎光臨酷活動公司。\n我們始終致力於提供超越您期待的優質服務。\n今天有什麼可以幫您的嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Save",
+      "translation" : "儲存"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Use Storage",
+      "translation" : "使用倉庫"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Rent a Pushcart",
+      "translation" : "租用手推車"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Storage Password Service",
+      "translation" : "倉庫密碼服務"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYour storage is protected with a password. What would you do now?",
+      "translation" : "[酷活動公司職員]\n您的倉庫已設定密碼保護。接下來要做什麼？"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Change old password -> 5000z",
+      "translation" : "更改舊密碼 -> 5000 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Remove storage password -> 1000z",
+      "translation" : "移除倉庫密碼 -> 1000 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. proudly presents you a new service:\nAdditional storage protection with a password.",
+      "translation" : "[酷活動公司職員]\n酷活動公司隆重推出新服務：\n為倉庫新增密碼保護。"
+    },
+    {
+      "kind" : "option",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Set new password -> 5000z",
+      "translation" : "設定新密碼 -> 5000 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nWrong password. We won't return your 1000z.\nPlease, next time enter correct password.",
+      "translation" : "[酷活動公司職員]\n密碼錯誤，1000z不予退還。\n下次請確認密碼正確。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou've successfully cleared your storage password.\nThank you for using Cool Event Corp..",
+      "translation" : "[酷活動公司職員]\n倉庫密碼已成功移除。\n感謝您使用酷活動公司服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou don't have enough zeny.",
+      "translation" : "[酷活動公司職員]\n您的Zeny不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou've protected your storage with a secret password.\nThank you for using Cool Event Corp..",
+      "translation" : "[酷活動公司職員]\n倉庫已設定密碼保護。\n感謝您使用酷活動公司服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou can't use such big password.\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou can only rent a cart after\nlearning the Pushcart Skill.",
+      "translation" : "[酷活動公司職員]\n必須先學會手推車使用技能，才能租用手推車。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\nneed the Novice's\nBasic Skill Level 6 to\nuse the Storage Service.",
+      "translation" : "[酷活動公司職員]\n很抱歉，初心者的基本技能需要達到6級，才能使用倉庫服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchant classes.",
+      "translation" : "[酷活動公司職員]\n很抱歉，手推車租賃服務僅對商人系職業開放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYour Respawn Point\nhas been saved here\nin the village of Hugel.\nThank you for using the\nCool Event Corp. service~",
+      "translation" : "[酷活動公司職員]\n您的復活點已保存於毀葛村。\n感謝您使用酷活動公司的服務~"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't\nhave enough Zeny to use\nthe Storage Service. Our\nStorage access fee is 40 Zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，\n無法使用倉庫服務。\n使用倉庫需要40 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]",
+      "translation" : "[酷活動公司職員]"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. is always\nstriving to provide the best\nservices for our customers.\nHelp us become the best by\nproviding us with your opinions\nand honest feedback. Thank you.",
+      "translation" : "[酷活動公司職員]\n酷活動公司始終致力於為顧客提供最優質的服務。\n歡迎提出意見，如實反饋，幫助我們做得更好。\n謝謝。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nThe Pushcart rental\nfee is 800 Zeny. Would\nyou like to rent a Pushcart?",
+      "translation" : "[酷活動公司職員]\n手推車租賃費是800 Zeny。\n您要租用手推車嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, White Smiths,\nAlchemists and Creators.",
+      "translation" : "[酷活動公司職員]\n很抱歉，手推車租賃服務僅對商人、鐵匠、神工匠、鍊金術士和創造者開放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time.",
+      "translation" : "[酷活動公司職員]\n您已經有一輛手推車了。\n很抱歉，每位顧客一次只能租用一輛。"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~",
+      "translation" : "[酷活動公司職員]\n馬上為您打開個人倉庫。\n感謝您使用我們的服務，支援酷活動公司。\n祝您今天愉快~"
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~\nEnter your storage password:",
+      "translation" : "[酷活動公司職員]\n馬上為您打開個人倉庫。\n感謝您使用我們的服務，支援酷活動公司。\n祝您今天愉快~\n請輸入倉庫密碼："
+    },
+    {
+      "kind" : "message",
+      "line" : 185,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\ndon't have enough\nZeny to pay the Pushcart\nrental fee of 800 Zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，無法支付800 Zeny的手推車租賃費。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nWelcome to Cool Event Corp.\nOur staff is always working\nto surpass your expactations\nfor quality service. So how\nmay I assist you today?",
+      "translation" : "[酷活動公司職員]\n歡迎光臨酷活動公司。\n我們始終致力於提供超越您期待的優質服務。\n今天有什麼可以幫您的嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Save",
+      "translation" : "儲存"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Use Storage",
+      "translation" : "使用倉庫"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Teleport Service",
+      "translation" : "傳送服務"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Rent a Pushcart",
+      "translation" : "租用手推車"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Storage Password Service",
+      "translation" : "倉庫密碼服務"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYour storage is protected with a password. What would you do now?",
+      "translation" : "[酷活動公司職員]\n您的倉庫已設定密碼保護。接下來要做什麼？"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Change old password -> 5000z",
+      "translation" : "更改舊密碼 -> 5000 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Remove storage password -> 1000z",
+      "translation" : "移除倉庫密碼 -> 1000 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. proudly presents you a new service:\nAdditional storage protection with a password.",
+      "translation" : "[酷活動公司職員]\n酷活動公司隆重推出新服務：\n為倉庫新增密碼保護。"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Set new password -> 5000z",
+      "translation" : "設定新密碼 -> 5000 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nWrong password. We won't return your 1000z.\nPlease, next time enter correct password.",
+      "translation" : "[酷活動公司職員]\n密碼錯誤，1000z不予退還。\n下次請確認密碼正確。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou've successfully cleared your storage password.\nThank you for using Cool Event Corp..",
+      "translation" : "[酷活動公司職員]\n倉庫密碼已成功移除。\n感謝您使用酷活動公司服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou don't have enough zeny.",
+      "translation" : "[酷活動公司職員]\n您的Zeny不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou've protected your storage with a secret password.\nThank you for using Cool Event Corp..",
+      "translation" : "[酷活動公司職員]\n倉庫已設定密碼保護。\n感謝您使用酷活動公司服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou can't use such big password.\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Please choose\nyour destination.",
+      "translation" : "請選擇目的地。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou can only rent a cart after\nlearning the Pushcart Skill.",
+      "translation" : "[酷活動公司職員]\n必須先學會手推車使用技能，才能租用手推車。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\nneed the Novice's\nBasic Skill Level 6 to\nuse the Storage Service.",
+      "translation" : "[酷活動公司職員]\n很抱歉，初心者的基本技能需要達到6級，才能使用倉庫服務。"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Veins -> 2200 z",
+      "translation" : "維因斯 -> 2200 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Veins -> 4400 z",
+      "translation" : "維因斯 -> 4400 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchant classes.",
+      "translation" : "[酷活動公司職員]\n很抱歉，手推車租賃服務僅對商人系職業開放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYour Respawn Point\nhas been saved here\nin the town of Rachel.\nThank you for using the\nCool Event Corp. service~",
+      "translation" : "[酷活動公司職員]\n您的復活點已保存於拉赫。\n感謝您使用酷活動公司的服務~"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't\nhave enough Zeny to use\nthe Storage Service. Our\nStorage access fee is 40 Zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，\n無法使用倉庫服務。\n使用倉庫需要40 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]",
+      "translation" : "[酷活動公司職員]"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. is always\nstriving to provide the best\nservices for our customers.\nHelp us become the best by\nproviding us with your opinions\nand honest feedback. Thank you.",
+      "translation" : "[酷活動公司職員]\n酷活動公司始終致力於為顧客提供最優質的服務。\n歡迎提出意見，如實反饋，幫助我們做得更好。\n謝謝。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nThe Pushcart rental\nfee is 800 Zeny. Would\nyou like to rent a Pushcart?",
+      "translation" : "[酷活動公司職員]\n手推車租賃費是800 Zeny。\n您要租用手推車嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, White Smiths,\nAlchemists and Creators.",
+      "translation" : "[酷活動公司職員]\n很抱歉，手推車租賃服務僅對商人、鐵匠、神工匠、鍊金術士和創造者開放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time.",
+      "translation" : "[酷活動公司職員]\n您已經有一輛手推車了。\n很抱歉，每位顧客一次只能租用一輛。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~",
+      "translation" : "[酷活動公司職員]\n馬上為您打開個人倉庫。\n感謝您使用我們的服務，支援酷活動公司。\n祝您今天愉快~"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~\nEnter your storage password:",
+      "translation" : "[酷活動公司職員]\n馬上為您打開個人倉庫。\n感謝您使用我們的服務，支援酷活動公司。\n祝您今天愉快~\n請輸入倉庫密碼："
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto Veins is 2200 zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，無法使用傳送服務。\n傳送到維因斯需要2200 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto Veins is 4400 zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，無法使用傳送服務。\n傳送到維因斯需要4400 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 192,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\ndon't have enough\nZeny to pay the Pushcart\nrental fee of 800 Zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，無法支付800 Zeny的手推車租賃費。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nWelcome to Cool Event Corp.\nOur staff is always working\nto surpass your expactations\nfor quality service. So how\nmay I assist you today?",
+      "translation" : "[酷活動公司職員]\n歡迎光臨酷活動公司。\n我們始終致力於提供超越您期待的優質服務。\n今天有什麼可以幫您的嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Save",
+      "translation" : "儲存"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Use Storage",
+      "translation" : "使用倉庫"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Teleport Service",
+      "translation" : "傳送服務"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Rent a Pushcart",
+      "translation" : "租用手推車"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Storage Password Service",
+      "translation" : "倉庫密碼服務"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYour storage is protected with a password. What would you do now?",
+      "translation" : "[酷活動公司職員]\n您的倉庫已設定密碼保護。接下來要做什麼？"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Change old password -> 5000z",
+      "translation" : "更改舊密碼 -> 5000 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Remove storage password -> 1000z",
+      "translation" : "移除倉庫密碼 -> 1000 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. proudly presents you a new service:\nAdditional storage protection with a password.",
+      "translation" : "[酷活動公司職員]\n酷活動公司隆重推出新服務：\n為倉庫新增密碼保護。"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Set new password -> 5000z",
+      "translation" : "設定新密碼 -> 5000 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字："
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nWrong password. We won't return your 1000z.\nPlease, next time enter correct password.",
+      "translation" : "[酷活動公司職員]\n密碼錯誤，1000z不予退還。\n下次請確認密碼正確。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou've successfully cleared your storage password.\nThank you for using Cool Event Corp..",
+      "translation" : "[酷活動公司職員]\n倉庫密碼已成功移除。\n感謝您使用酷活動公司服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nNow enter your ^FF0000new password^000000 to protect your storage from thieves.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been changed.",
+      "translation" : "[酷活動公司職員]\n請輸入^FF0000新密碼^000000，保護倉庫免遭盜竊。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼未更改。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou don't have enough zeny.",
+      "translation" : "[酷活動公司職員]\n您的Zeny不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou've protected your storage with a secret password.\nThank you for using Cool Event Corp..",
+      "translation" : "[酷活動公司職員]\n倉庫已設定密碼保護。\n感謝您使用酷活動公司服務。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou can't use such big password.\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nAt first, please enter your ^0000FFold password^000000.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nWrong password. You can't set a new password.",
+      "translation" : "[酷活動公司職員]\n請先輸入^0000FF舊密碼^000000。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼錯誤，無法設定新密碼。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou can't use such big password.\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼不能這麼長。\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nPlease, enter your password before its removal.\nEnter a number 1000~10000000:\nYou shouldn't use such short password.\nThe password hasn't been removed.",
+      "translation" : "[酷活動公司職員]\n請輸入密碼以移除密碼保護。\n請輸入1000～10000000之間的數字：\n密碼不能這麼短。\n密碼未移除。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Please choose\nyour destination.",
+      "translation" : "請選擇目的地。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou can only rent a cart after\nlearning the Pushcart Skill.",
+      "translation" : "[酷活動公司職員]\n必須先學會手推車使用技能，才能租用手推車。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\nneed the Novice's\nBasic Skill Level 6 to\nuse the Storage Service.",
+      "translation" : "[酷活動公司職員]\n很抱歉，初心者的基本技能需要達到6級，才能使用倉庫服務。"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Rachel -> 2200 z",
+      "translation" : "拉赫 -> 2200 Zeny"
+    },
+    {
+      "kind" : "option",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "Rachel -> 4400 z",
+      "translation" : "拉赫 -> 4400 Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchant classes.",
+      "translation" : "[酷活動公司職員]\n很抱歉，手推車租賃服務僅對商人系職業開放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYour Respawn Point\nhas been saved here\nin the town of Veins.\nThank you for using the\nCool Event Corp. service~",
+      "translation" : "[酷活動公司職員]\n您的復活點已保存於維因斯。\n感謝您使用酷活動公司的服務~"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't\nhave enough Zeny to use\nthe Storage Service. Our\nStorage access fee is 40 Zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，\n無法使用倉庫服務。\n使用倉庫需要40 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]",
+      "translation" : "[酷活動公司職員]"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nCool Event Corp. is always\nstriving to provide the best\nservices for our customers.\nHelp us become the best by\nproviding us with your opinions\nand honest feedback. Thank you.",
+      "translation" : "[酷活動公司職員]\n酷活動公司始終致力於為顧客提供最優質的服務。\n歡迎提出意見，如實反饋，幫助我們做得更好。\n謝謝。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nThe Pushcart rental\nfee is 800 Zeny. Would\nyou like to rent a Pushcart?",
+      "translation" : "[酷活動公司職員]\n手推車租賃費是800 Zeny。\n您要租用手推車嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but the\nPushcart rental service\nis only available to Merchants,\nBlacksmiths, White Smiths,\nAlchemists and Creators.",
+      "translation" : "[酷活動公司職員]\n很抱歉，手推車租賃服務僅對商人、鐵匠、神工匠、鍊金術士和創造者開放。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nYou already have\na Pushcart equipped.\nUnfortunately, we can't\nrent more than one to\neach customer at a time.",
+      "translation" : "[酷活動公司職員]\n您已經有一輛手推車了。\n很抱歉，每位顧客一次只能租用一輛。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~",
+      "translation" : "[酷活動公司職員]\n馬上為您打開個人倉庫。\n感謝您使用我們的服務，支援酷活動公司。\n祝您今天愉快~"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nLet me open your personal\nstorage for you right away.\nThanks for supporting Cool\nEvent Corp. by using our\nservices. Have a good day~\nEnter your storage password:",
+      "translation" : "[酷活動公司職員]\n馬上為您打開個人倉庫。\n感謝您使用我們的服務，支援酷活動公司。\n祝您今天愉快~\n請輸入倉庫密碼："
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto Rachel is 2200 zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，無法使用傳送服務。\n傳送到拉赫需要2200 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you don't have\nenough zeny for the Teleport\nService. The fee to teleport\nto Rachel is 4400 zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，無法使用傳送服務。\n傳送到拉赫需要4400 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 199,
+      "npc" : "Cool Event Corp. Staff",
+      "state" : "translated",
+      "text" : "[Cool Event Corp. Staff]\nI'm sorry, but you\ndon't have enough\nZeny to pay the Pushcart\nrental fee of 800 Zeny.",
+      "translation" : "[酷活動公司職員]\n很抱歉，您的Zeny不足，無法支付800 Zeny的手推車租賃費。"
     }
   ]
 }

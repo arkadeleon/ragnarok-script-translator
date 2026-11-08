@@ -213,12 +213,9 @@
       "kind" : "message",
       "line" : 117,
       "npc" : "Interdimensional Device",
-      "placeholders" : [
-        ".@md_name$"
-      ],
       "state" : "translated",
-      "text" : "Only registered members can enter the {0} instance.",
-      "translation" : "只有已登記的成員才能進入{0}副本。"
+      "text" : "Only registered members can enter the Ghost Palace instance.",
+      "translation" : "只有登記過的成員才能進入幽靈皇宮副本。"
     },
     {
       "kind" : "message",
@@ -602,7 +599,7 @@
       "line" : 887,
       "npc" : "King",
       "placeholders" : [
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "state" : "translated",
       "text" : "[King]\nDo you possibly have the ^006400{0}^000000?\nCan you give it to me?\nThe memories of the faithful royal guard\nand the memories of everyone he loved\nare contained inside of these shards.",
@@ -613,7 +610,7 @@
       "line" : 894,
       "npc" : "King",
       "placeholders" : [
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "state" : "translated",
       "text" : "[King]\nWill you give the ^006400{0}^000000 to me?\nThe guilt is eating my soul.\nMy soul is trapped inside the Ghost Palace.",
@@ -632,7 +629,7 @@
       "line" : 902,
       "npc" : "King",
       "placeholders" : [
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "state" : "translated",
       "text" : "[King]\nIf you give any ^006400{0}^000000s to me, I can make equipment for you.",
@@ -647,11 +644,22 @@
       "translation" : "[國王]\n被詛咒的騎士...\n請幫幫我，拯救薩克雷的靈魂。"
     },
     {
+      "kind" : "option",
+      "line" : 921,
+      "npc" : "King",
+      "placeholders" : [
+        ".@menu$"
+      ],
+      "state" : "translated",
+      "text" : "{0}Cancel",
+      "translation" : "{0}取消"
+    },
+    {
       "kind" : "message",
       "line" : 923,
       "npc" : "King",
       "placeholders" : [
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "state" : "translated",
       "text" : "[King]\nSomeday, Sakray will\nget out of this curse for sure.\nI believe\n^006400{0}^000000s are the only method\nto save him....",
@@ -663,12 +671,23 @@
       "npc" : "King",
       "placeholders" : [
         ".@item_name$[.@s]",
-        ".@cost",
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "state" : "translated",
-      "text" : "[King]\nTo make a ^FF0000{0}^000000\nI need {1} ^006400{2}^000000.",
-      "translation" : "[國王]\n製作^FF0000{0}^000000需要{1}個^006400{2}^000000。"
+      "text" : "[King]\nTo make a ^FF0000{0}^000000\nI need 100 ^006400{1}^000000.",
+      "translation" : "[國王]\n製作^FF0000{0}^000000需要100個^006400{1}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 932,
+      "npc" : "King",
+      "placeholders" : [
+        ".@item_name$[.@s]",
+        "getitemname(6672)"
+      ],
+      "state" : "translated",
+      "text" : "[King]\nTo make a ^FF0000{0}^000000\nI need 200 ^006400{1}^000000.",
+      "translation" : "[國王]\n製作^FF0000{0}^000000需要200個^006400{1}^000000。"
     },
     {
       "kind" : "option",
@@ -683,12 +702,22 @@
       "line" : 936,
       "npc" : "King",
       "placeholders" : [
-        ".@cost",
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "state" : "translated",
-      "text" : "Hand over {0} {1}.",
-      "translation" : "交出{0}個{1}"
+      "text" : "Hand over 100 {0}.",
+      "translation" : "交出100個{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 936,
+      "npc" : "King",
+      "placeholders" : [
+        "getitemname(6672)"
+      ],
+      "state" : "translated",
+      "text" : "Hand over 200 {0}.",
+      "translation" : "交出200個{0}"
     },
     {
       "kind" : "message",
@@ -703,14 +732,26 @@
       "line" : 944,
       "npc" : "King",
       "placeholders" : [
-        ".@item_name_req$",
+        "getitemname(6672)",
         ".@item_name$[.@s]",
-        ".@cost",
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "state" : "translated",
-      "text" : "[King]\nYou do not have enough ^006400{0}^000000\nto make a ^FF0000{1}^000000.\nI need {2} ^006400{3}^000000.",
-      "translation" : "[國王]\n你的^006400{0}^000000不夠，無法制作^FF0000{1}^000000。\n需要{2}個^006400{3}^000000。"
+      "text" : "[King]\nYou do not have enough ^006400{0}^000000\nto make a ^FF0000{1}^000000.\nI need 100 ^006400{2}^000000.",
+      "translation" : "[國王]\n你的^006400{0}^000000不夠，無法制作^FF0000{1}^000000。\n需要100個^006400{2}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 944,
+      "npc" : "King",
+      "placeholders" : [
+        "getitemname(6672)",
+        ".@item_name$[.@s]",
+        "getitemname(6672)"
+      ],
+      "state" : "translated",
+      "text" : "[King]\nYou do not have enough ^006400{0}^000000\nto make a ^FF0000{1}^000000.\nI need 200 ^006400{2}^000000.",
+      "translation" : "[國王]\n你的^006400{0}^000000不夠，無法制作^FF0000{1}^000000。\n需要200個^006400{2}^000000。"
     },
     {
       "kind" : "message",
@@ -718,12 +759,23 @@
       "npc" : "King",
       "placeholders" : [
         ".@item_name$[.@s]",
-        ".@cost",
-        ".@item_name_req$"
+        "getitemname(6672)"
       ],
       "state" : "translated",
-      "text" : "[King]\nI will make a ^FF0000{0}^000000\nwith {1} ^006400{2}^000000.",
-      "translation" : "[國王]\n我會為你製作^FF0000{0}^000000，消耗{1}個^006400{2}^000000。"
+      "text" : "[King]\nI will make a ^FF0000{0}^000000\nwith 100 ^006400{1}^000000.",
+      "translation" : "[國王]\n我會為你製作^FF0000{0}^000000，消耗100個^006400{1}^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 951,
+      "npc" : "King",
+      "placeholders" : [
+        ".@item_name$[.@s]",
+        "getitemname(6672)"
+      ],
+      "state" : "translated",
+      "text" : "[King]\nI will make a ^FF0000{0}^000000\nwith 200 ^006400{1}^000000.",
+      "translation" : "[國王]\n我會為你製作^FF0000{0}^000000，消耗200個^006400{1}^000000。"
     },
     {
       "kind" : "message",

@@ -42,6 +42,14 @@
       "translation" : "取消"
     },
     {
+      "kind" : "option",
+      "line" : 79,
+      "npc" : "Zonda Rep",
+      "state" : "translated",
+      "text" : "Request entry.",
+      "translation" : "申請入場"
+    },
+    {
       "kind" : "message",
       "line" : 81,
       "npc" : "Zonda Rep",
@@ -80,14 +88,6 @@
       "state" : "translated",
       "text" : "[Belka]\nDo you have any questions about Zonda's ambitious new project, Wave Mode?",
       "translation" : "[貝爾卡]\n您對宗達雄心勃勃的新專案“波浪模式”有任何疑問嗎？"
-    },
-    {
-      "kind" : "message",
-      "line" : 93,
-      "npc" : "Zonda Rep",
-      "state" : "translated",
-      "text" : "[Belka]\nDo you have any questions about Zonda's ambitious new project, Wave Mode?\n[Belka]\nWhich Wave Mode would you like to enter: Forest or Sky?",
-      "translation" : "[貝爾卡]\n您對宗達雄心勃勃的新專案“波浪模式”有任何疑問嗎？\n[貝爾卡]\n您想進入哪種波浪模式：森林還是天空？"
     },
     {
       "kind" : "option",
@@ -158,8 +158,24 @@
       "line" : 120,
       "npc" : "Zonda Rep",
       "state" : "translated",
-      "text" : "[Belka]\nAny other questions?\n[Belka]\nWhich Wave Mode would you like to enter: Forest or Sky?",
-      "translation" : "[貝爾卡]\n還有其他問題嗎？\n[貝爾卡]\n您想進入哪種波浪模式：森林還是天空？"
+      "text" : "[Belka]\nAny other questions?",
+      "translation" : "[貝爾卡]\n還有其他問題嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 120,
+      "npc" : "Zonda Rep",
+      "state" : "translated",
+      "text" : "[Belka]",
+      "translation" : "[貝爾卡]"
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "npc" : "Zonda Rep",
+      "state" : "translated",
+      "text" : "Any other questions?",
+      "translation" : "還有其他問題嗎？"
     },
     {
       "kind" : "message",
@@ -191,13 +207,129 @@
       "npc" : "Zonda Rep",
       "placeholders" : [
         ".@count_online",
-        "(.@count_online == 1 ? \"member\" : \"members\")",
-        ".@player_name$",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Belka]\n{0} party member found {1}, right? To enter the ^6B9900<Wave Mode - Forest>^000000, please sign here.",
+      "translation" : "[貝爾卡]\n找到{0}名隊員{1}，對嗎？要進入^6B9900<波浪模式 - 森林>^000000，請在這裡簽字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Belka]\n{0} party members found {1}, right? To enter the ^6B9900<Wave Mode - Forest>^000000, please sign here.",
+      "translation" : "[貝爾卡]\n找到{0}名隊員{1}，對嗎？要進入^6B9900<波浪模式 - 森林>^000000，請在這裡簽字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Belka]\n{0} party member found {1}, right? To enter the ^6B9900<Wave Mode - Sky>^000000, please sign here.",
+      "translation" : "[貝爾卡]\n找到{0}名隊員{1}，對嗎？要進入^6B9900<波浪模式 - 天空>^000000，請在這裡簽字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Belka]\n{0} party members found {1}, right? To enter the ^6B9900<Wave Mode - Sky>^000000, please sign here.",
+      "translation" : "[貝爾卡]\n找到{0}名隊員{1}，對嗎？要進入^6B9900<波浪模式 - 天空>^000000，請在這裡簽字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Zonda Rep",
+      "state" : "translated",
+      "text" : "[Belka]",
+      "translation" : "[貝爾卡]"
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0} party member found {1}, right? To enter the ^6B9900<Wave Mode - Forest>^000000, please sign here.",
+      "translation" : "找到{0}名隊員{1}，對嗎？要進入^6B9900<波浪模式 - 森林>^000000，請在這裡簽字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0} party member found {1}, right? To enter the ^6B9900<Wave Mode - Sky>^000000, please sign here.",
+      "translation" : "找到{0}名隊員{1}，對嗎？要進入^6B9900<波浪模式 - 天空>^000000，請在這裡簽字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)",
         ".@instance_name$[.@s]"
       ],
       "state" : "translated",
-      "text" : "[Belka]\n{0} party {1} found {2}, right? To enter the ^6B9900<{3}>^000000, please sign here.",
-      "translation" : "[貝爾卡]\n{0}隊伍{1}找到了{2}，對吧？\n要進入^6B9900<{3}>^000000，請在這裡簽字。"
+      "text" : "{0} party member found {1}, right? To enter the ^6B9900<{2}>^000000, please sign here.",
+      "translation" : "找到{0}名隊員{1}，對嗎？要進入^6B9900<{2}>^000000，請在這裡簽字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0} party members found {1}, right? To enter the ^6B9900<Wave Mode - Forest>^000000, please sign here.",
+      "translation" : "找到{0}名隊員{1}，對嗎？要進入^6B9900<波浪模式 - 森林>^000000，請在這裡簽字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "{0} party members found {1}, right? To enter the ^6B9900<Wave Mode - Sky>^000000, please sign here.",
+      "translation" : "找到{0}名隊員{1}，對嗎？要進入^6B9900<波浪模式 - 天空>^000000，請在這裡簽字。"
+    },
+    {
+      "kind" : "message",
+      "line" : 130,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        ".@count_online",
+        "strcharinfo(0)",
+        ".@instance_name$[.@s]"
+      ],
+      "state" : "translated",
+      "text" : "{0} party members found {1}, right? To enter the ^6B9900<{2}>^000000, please sign here.",
+      "translation" : "找到{0}名隊員{1}，對嗎？要進入^6B9900<{2}>^000000，請在這裡簽字。"
     },
     {
       "kind" : "option",
@@ -212,7 +344,67 @@
       "line" : 133,
       "npc" : "Zonda Rep",
       "placeholders" : [
-        ".@player_name$",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Belka]\n{0} has requested to enter the ^6B9900<Wave Mode - Forest>^000000. Please come back when it's your turn to enter.",
+      "translation" : "[貝爾卡]\n{0}已申請進入^6B9900<波浪模式 - 森林>^000000。輪到您入場時，請再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Belka]\n{0} has requested to enter the ^6B9900<Wave Mode - Sky>^000000. Please come back when it's your turn to enter.",
+      "translation" : "[貝爾卡]\n{0}已申請進入^6B9900<波浪模式 - 天空>^000000。輪到您入場時，請再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "getpartyname( getcharid(1) )",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Belka]\n{0} has requested to enter the ^6B9900<Wave Mode - Forest>^000000. Please come back when it's your turn to enter.\nParty Name: {1}\nParty Leader: {2}\n^0000ffWave Mode - Forest ^000000 - Reservation Failed.",
+      "translation" : "[貝爾卡]\n{0}已申請進入^6B9900<波浪模式 - 森林>^000000。輪到您入場時，請再來。\n隊伍名稱：{1}\n隊長：{2}\n^0000ff波浪模式 - 森林 ^000000 - 預約失敗。"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        "strcharinfo(0)",
+        "getpartyname( getcharid(1) )",
+        "strcharinfo(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Belka]\n{0} has requested to enter the ^6B9900<Wave Mode - Sky>^000000. Please come back when it's your turn to enter.\nParty Name: {1}\nParty Leader: {2}\n^0000ffWave Mode - Sky ^000000 - Reservation Failed.",
+      "translation" : "[貝爾卡]\n{0}已申請進入^6B9900<波浪模式 - 天空>^000000。輪到您入場時，請再來。\n隊伍名稱：{1}\n隊長：{2}\n^0000ff波浪模式 - 天空 ^000000 - 預約失敗。"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        "strcharinfo(0)",
+        ".@instance_name$[.@s]"
+      ],
+      "state" : "translated",
+      "text" : "[Belka]\n{0} has requested to enter the ^6B9900<{1}>^000000. Please come back when it's your turn to enter.",
+      "translation" : "[貝爾卡]\n{0}已申請進入^6B9900<{1}>^000000，輪到您時請再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 133,
+      "npc" : "Zonda Rep",
+      "placeholders" : [
+        "strcharinfo(0)",
         ".@instance_name$[.@s]",
         "getpartyname( getcharid(1) )",
         "strcharinfo(0)",
@@ -221,18 +413,6 @@
       "state" : "translated",
       "text" : "[Belka]\n{0} has requested to enter the ^6B9900<{1}>^000000. Please come back when it's your turn to enter.\nParty Name: {2}\nParty Leader: {3}\n^0000ff{4} ^000000 - Reservation Failed.",
       "translation" : "[貝爾卡]\n{0}已申請進入^6B9900<{1}>^000000，輪到您時請再來。\n隊伍名稱：{2}\n隊長：{3}\n^0000ff{4} ^000000 - 預約失敗。"
-    },
-    {
-      "kind" : "message",
-      "line" : 133,
-      "npc" : "Zonda Rep",
-      "placeholders" : [
-        ".@player_name$",
-        ".@instance_name$[.@s]"
-      ],
-      "state" : "translated",
-      "text" : "[Belka]\n{0} has requested to enter the ^6B9900<{1}>^000000. Please come back when it's your turn to enter.",
-      "translation" : "[貝爾卡]\n{0}已申請進入^6B9900<{1}>^000000，輪到您時請再來。"
     },
     {
       "kind" : "message",

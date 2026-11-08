@@ -45,12 +45,33 @@
       "kind" : "message",
       "line" : 39,
       "npc" : "Kafra Employee",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nOoh, I'm sorry\nbut you need to\nbring at least",
+      "translation" : "[卡普拉職員]\n哎呀，抱歉，您至少要帶來"
+    },
+    {
+      "kind" : "message",
+      "line" : 39,
+      "npc" : "Kafra Employee",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@Items[.@i+1],getitemname(.@Items[.@i]))"
+        "sprintf(\"%d\", getarg(0))",
+        "getarg(1)"
       ],
       "state" : "translated",
-      "text" : "[Kafra Employee]\nOoh, I'm sorry\nbut you need to\nbring at least\n{0}.",
-      "translation" : "[卡普拉職員]\n哎呀，很抱歉，您至少還需要帶上{0}。"
+      "text" : "[Kafra Employee]\nOoh, I'm sorry\nbut you need to\nbring at least\n{0} {1}.",
+      "translation" : "[卡普拉職員]\n哎呀，抱歉，您至少要帶來{0}個{1}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "npc" : "Kafra Employee",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "{0} {1}.",
+      "translation" : "{0}個{1}。"
     },
     {
       "kind" : "message",
@@ -64,12 +85,33 @@
       "kind" : "message",
       "line" : 56,
       "npc" : "Kafra Employee",
+      "state" : "translated",
+      "text" : "[Kafra Employee]\nHm? I'm sorry,\nbut I actually can't\nmake this right now. You",
+      "translation" : "[卡普拉職員]\n咦？抱歉，我現在還做不了。你還需要"
+    },
+    {
+      "kind" : "message",
+      "line" : 56,
+      "npc" : "Kafra Employee",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@Items[.@i+1],getitemname(.@Items[.@i]))"
+        "sprintf(\"%d\", getarg(0))",
+        "getarg(1)"
       ],
       "state" : "translated",
-      "text" : "[Kafra Employee]\nHm? I'm sorry,\nbut I actually can't\nmake this right now. You\nneed {0}\nin order for me to put this\nBunny Band together...",
-      "translation" : "[卡普拉職員]\n嗯？很抱歉，我現在還無法為您製作。\n您需要{0}，我才能為您製作兔耳髮圈..."
+      "text" : "[Kafra Employee]\nHm? I'm sorry,\nbut I actually can't\nmake this right now. You\nneed {0} {1}\nin order for me to put this\nBunny Band together...",
+      "translation" : "[卡普拉職員]\n咦？抱歉，我現在還做不了。你還需要{0}個{1}，我才能製作兔耳髮圈..."
+    },
+    {
+      "kind" : "message",
+      "line" : 60,
+      "npc" : "Kafra Employee",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "need {0} {1}\nin order for me to put this\nBunny Band together...",
+      "translation" : "還需要{0}個{1}，我才能製作兔耳髮圈..."
     },
     {
       "kind" : "message",

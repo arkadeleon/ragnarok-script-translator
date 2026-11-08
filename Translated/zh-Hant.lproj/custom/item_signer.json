@@ -37,47 +37,24 @@
       "kind" : "message",
       "line" : 30,
       "npc" : "Perchik",
-      "placeholders" : [
-        ".@Item[.@i+1]",
-        "getitemname(.@Item[.@i])",
-        "callfunc(\"F_InsertComma\",.@Cost[0])",
-        "callfunc(\"F_InsertComma\",.@Cost[1])"
-      ],
       "state" : "translated",
-      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2} Zeny\n ~ {3} Zeny per refine",
-      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2} Zeny\n ~ 每級精煉加收{3} Zeny"
+      "text" : "[Perchik]\nI work for free, but...",
+      "translation" : "[佩爾奇克]\n我免費幫忙，不過..."
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:",
+      "translation" : "[佩爾奇克]\n收費如下："
     },
     {
       "kind" : "message",
       "line" : 30,
       "npc" : "Perchik",
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",.@Cost[0])",
-        "callfunc(\"F_InsertComma\",.@Cost[1])"
-      ],
-      "state" : "translated",
-      "text" : "[Perchik]\nFor my work I accept:\n ~ {0} Zeny\n ~ {1} Zeny per refine",
-      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0} Zeny\n ~ 每級精煉加收{1} Zeny"
-    },
-    {
-      "kind" : "message",
-      "line" : 30,
-      "npc" : "Perchik",
-      "placeholders" : [
-        ".@Item[.@i+1]",
-        "getitemname(.@Item[.@i])",
-        "callfunc(\"F_InsertComma\",.@Cost[1])"
-      ],
-      "state" : "translated",
-      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2} Zeny per refine",
-      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ 每級精煉加收{2} Zeny"
-    },
-    {
-      "kind" : "message",
-      "line" : 30,
-      "npc" : "Perchik",
-      "placeholders" : [
-        "callfunc(\"F_InsertComma\",.@Cost[1])"
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[Perchik]\nFor my work I accept:\n ~ {0} Zeny per refine",
@@ -88,24 +65,11 @@
       "line" : 30,
       "npc" : "Perchik",
       "placeholders" : [
-        ".@Item[.@i+1]",
-        "getitemname(.@Item[.@i])",
-        "callfunc(\"F_InsertComma\",.@Cost[0])"
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
-      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2} Zeny",
-      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2} Zeny"
-    },
-    {
-      "kind" : "message",
-      "line" : 30,
-      "npc" : "Perchik",
-      "placeholders" : [
-        "callfunc(\"F_InsertComma\",.@Cost[0])"
-      ],
-      "state" : "translated",
-      "text" : "[Perchik]\nFor my work I accept:\n ~ {0} Zeny",
-      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0} Zeny"
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ 每級精煉加收{0} Zeny"
     },
     {
       "kind" : "message",
@@ -123,17 +87,461 @@
       "kind" : "message",
       "line" : 30,
       "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "getarg(0)"
+      ],
       "state" : "translated",
-      "text" : "[Perchik]\nFor my work I accept:",
-      "translation" : "[佩爾奇克]\n收費如下："
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ 每級精煉加收{2} Zeny"
     },
     {
       "kind" : "message",
       "line" : 30,
       "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
       "state" : "translated",
-      "text" : "[Perchik]\nI work for free, but...",
-      "translation" : "[佩爾奇克]\n我免費幫忙，不過..."
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ 每級精煉加收{2} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ 每級精煉加收{4} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ 每級精煉加收{4} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ 每級精煉加收{6} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ 每級精煉加收{6} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ 每級精煉加收{8} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ 每級精煉加收{8} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ 每級精煉加收{10} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ 每級精煉加收{10} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10}x {11}",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ {10}個{11}"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10}x {11}\n ~ {12} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ {10}個{11}\n ~ 每級精煉加收{12} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10}x {11}\n ~ {12} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ {10}個{11}\n ~ 每級精煉加收{12} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10}x {11}\n ~ {12}x {13}",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ {10}個{11}\n ~ {12}個{13}"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10}x {11}\n ~ {12}x {13}\n ~ {14} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ {10}個{11}\n ~ {12}個{13}\n ~ 每級精煉加收{14} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10}x {11}\n ~ {12}x {13}\n ~ {14} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ {10}個{11}\n ~ {12}個{13}\n ~ 每級精煉加收{14} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10}x {11}\n ~ {12}x {13}\n ~ {14}x {15}",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ {10}個{11}\n ~ {12}個{13}\n ~ {14}個{15}"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10}x {11}\n ~ {12}x {13}\n ~ {14}x {15}\n ~ {16} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ {10}個{11}\n ~ {12}個{13}\n ~ {14}個{15}\n ~ 每級精煉加收{16} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 30,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nFor my work I accept:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10}x {11}\n ~ {12}x {13}\n ~ {14}x {15}\n ~ {16} Zeny per refine",
+      "translation" : "[佩爾奇克]\n收費如下：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ {10}個{11}\n ~ {12}個{13}\n ~ {14}個{15}\n ~ 每級精煉加收{16} Zeny"
     },
     {
       "kind" : "message",
@@ -163,55 +571,23 @@
       "kind" : "message",
       "line" : 63,
       "npc" : "Perchik",
+      "placeholders" : [
+        "getitemname(.@id)"
+      ],
       "state" : "translated",
-      "text" : "[Perchik]\nNothing is equipped there!",
-      "translation" : "[佩爾奇克]\n那個部位沒有穿戴裝備！"
-    },
-    {
-      "kind" : "message",
-      "line" : 63,
-      "npc" : "Perchik",
-      "state" : "translated",
-      "text" : "[Perchik]\nAlas, this item's already signed.\nI would never touch a master's work.",
-      "translation" : "[佩爾奇克]\n唉，這件物品已經有署名了。\n我可不會動其他大師的作品。"
-    },
-    {
-      "kind" : "message",
-      "line" : 63,
-      "npc" : "Perchik",
-      "state" : "translated",
-      "text" : "[Perchik]\nA card? Here?!\nAs I said before, I don't sign items with cards.",
-      "translation" : "[佩爾奇克]\n這裡竟然有卡片？！\n我說過，不給鑲嵌了卡片的物品簽名。"
-    },
-    {
-      "kind" : "message",
-      "line" : 63,
-      "npc" : "Perchik",
-      "state" : "translated",
-      "text" : "[Perchik]\nSorry, I don't sign slotted items.",
-      "translation" : "[佩爾奇克]\n抱歉，我不給有卡槽的物品簽名。"
-    },
-    {
-      "kind" : "message",
-      "line" : 63,
-      "npc" : "Perchik",
-      "state" : "translated",
-      "text" : "[Perchik]\nSorry, I don't sign rental items!",
-      "translation" : "[佩爾奇克]\n抱歉，我不給租賃物品簽名！"
+      "text" : "[Perchik]\nShall I sign your ^0055FF{0}^000000?",
+      "translation" : "[佩爾奇克]\n要在您的^0055FF{0}^000000上簽名嗎？"
     },
     {
       "kind" : "message",
       "line" : 63,
       "npc" : "Perchik",
       "placeholders" : [
-        ".@Item[.@i+1]",
-        "getitemname(.@Item[.@i])",
-        ".@price",
         "getitemname(.@id)"
       ],
       "state" : "translated",
-      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2} Zeny\nShall I sign your ^0055FF{3}^000000?",
-      "translation" : "[佩爾奇克]\n我需要：\n ~ {0}個{1}\n ~ {2} Zeny\n要在您的^0055FF{3}^000000上簽名嗎？"
+      "text" : "[Perchik]\nI will need:\nShall I sign your ^0055FF{0}^000000?",
+      "translation" : "[佩爾奇克]\n我需要：\n要在您的^0055FF{0}^000000上簽名嗎？"
     },
     {
       "kind" : "message",
@@ -243,22 +619,294 @@
       "line" : 63,
       "npc" : "Perchik",
       "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@price",
         "getitemname(.@id)"
       ],
       "state" : "translated",
-      "text" : "[Perchik]\nI will need:\nShall I sign your ^0055FF{0}^000000?",
-      "translation" : "[佩爾奇克]\n我需要：\n要在您的^0055FF{0}^000000上簽名嗎？"
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2} Zeny\nShall I sign your ^0055FF{3}^000000?",
+      "translation" : "[佩爾奇克]\n我需要：\n ~ {0}個{1}\n ~ {2} Zeny\n要在您的^0055FF{3}^000000上簽名嗎？"
     },
     {
       "kind" : "message",
       "line" : 63,
       "npc" : "Perchik",
       "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2}x {3}",
+      "translation" : "[佩爾奇克]\n我需要：\n ~ {0}個{1}\n ~ {2}個{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@price"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nI will need:\n ~ {0} Zeny",
+      "translation" : "[佩爾奇克]\n我需要：\n ~ {0} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@price"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4} Zeny",
+      "translation" : "[佩爾奇克]\n我需要：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "state" : "translated",
+      "text" : "[Perchik]\nI will need:",
+      "translation" : "[佩爾奇克]\n我需要："
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "state" : "translated",
+      "text" : "[Perchik]",
+      "translation" : "[佩爾奇克]"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}",
+      "translation" : "[佩爾奇克]\n我需要：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@price"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6} Zeny",
+      "translation" : "[佩爾奇克]\n我需要：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}",
+      "translation" : "[佩爾奇克]\n我需要：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@price"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8} Zeny",
+      "translation" : "[佩爾奇克]\n我需要：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}",
+      "translation" : "[佩爾奇克]\n我需要：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10}x {11}",
+      "translation" : "[佩爾奇克]\n我需要：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ {10}個{11}"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10}x {11}\n ~ {12}x {13}",
+      "translation" : "[佩爾奇克]\n我需要：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ {10}個{11}\n ~ {12}個{13}"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])",
+        ".@Item[.@i+1]",
+        "getitemname(.@Item[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "[Perchik]\nI will need:\n ~ {0}x {1}\n ~ {2}x {3}\n ~ {4}x {5}\n ~ {6}x {7}\n ~ {8}x {9}\n ~ {10}x {11}\n ~ {12}x {13}\n ~ {14}x {15}",
+      "translation" : "[佩爾奇克]\n我需要：\n ~ {0}個{1}\n ~ {2}個{3}\n ~ {4}個{5}\n ~ {6}個{7}\n ~ {8}個{9}\n ~ {10}個{11}\n ~ {12}個{13}\n ~ {14}個{15}"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "state" : "translated",
+      "text" : "[Perchik]\nNothing is equipped there!",
+      "translation" : "[佩爾奇克]\n那個部位沒有穿戴裝備！"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "state" : "translated",
+      "text" : "[Perchik]\nAlas, this item's already signed.\nI would never touch a master's work.",
+      "translation" : "[佩爾奇克]\n唉，這件物品已經有署名了。\n我可不會動其他大師的作品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "state" : "translated",
+      "text" : "[Perchik]\nSorry, I don't sign slotted items.",
+      "translation" : "[佩爾奇克]\n抱歉，我不給有卡槽的物品簽名。"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "state" : "translated",
+      "text" : "[Perchik]\nA card? Here?!\nAs I said before, I don't sign items with cards.",
+      "translation" : "[佩爾奇克]\n這裡竟然有卡片？！\n我說過，不給鑲嵌了卡片的物品簽名。"
+    },
+    {
+      "kind" : "message",
+      "line" : 63,
+      "npc" : "Perchik",
+      "state" : "translated",
+      "text" : "[Perchik]\nSorry, I don't sign rental items!",
+      "translation" : "[佩爾奇克]\n抱歉，我不給租賃物品簽名！"
+    },
+    {
+      "kind" : "message",
+      "line" : 102,
+      "npc" : "Perchik",
+      "placeholders" : [
+        ".@price"
+      ],
+      "state" : "translated",
+      "text" : " ~ {0} Zeny",
+      "translation" : " ~ {0} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 104,
+      "npc" : "Perchik",
+      "placeholders" : [
         "getitemname(.@id)"
       ],
       "state" : "translated",
-      "text" : "[Perchik]\nShall I sign your ^0055FF{0}^000000?",
-      "translation" : "[佩爾奇克]\n要在您的^0055FF{0}^000000上簽名嗎？"
+      "text" : "Shall I sign your ^0055FF{0}^000000?",
+      "translation" : "要在^0055FF{0}^000000上簽名嗎？"
     },
     {
       "kind" : "option",
@@ -289,6 +937,14 @@
       "line" : 112,
       "npc" : "Perchik",
       "state" : "translated",
+      "text" : "[Perchik]",
+      "translation" : "[佩爾奇克]"
+    },
+    {
+      "kind" : "message",
+      "line" : 112,
+      "npc" : "Perchik",
+      "state" : "translated",
       "text" : "[Perchik]\nI don't work for 'thanks'.",
       "translation" : "[佩爾奇克]\n光說聲“謝謝”可不能當報酬。"
     },
@@ -310,6 +966,14 @@
       "state" : "translated",
       "text" : "[Perchik]\nDone!",
       "translation" : "[佩爾奇克]\n完成了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "npc" : "Perchik",
+      "state" : "translated",
+      "text" : "Done!",
+      "translation" : "完成了！"
     }
   ]
 }

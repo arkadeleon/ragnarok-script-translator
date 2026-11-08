@@ -679,7 +679,7 @@
       "line" : 444,
       "npc" : "Little Girl",
       "placeholders" : [
-        ".@name$"
+        "getd(\"$ma_name0\"+rand(1,6)+\"$\")"
       ],
       "state" : "translated",
       "text" : "[Little Girl]\nA little while ago {0} came and told me a fun story.",
@@ -690,7 +690,7 @@
       "line" : 447,
       "npc" : "Little Girl",
       "placeholders" : [
-        ".@name$"
+        "getd(\"$ma_name0\"+rand(1,6)+\"$\")"
       ],
       "state" : "translated",
       "text" : "[Little Girl]\n'I planted a pair of pear trees in the yard.'\nHe he. Isn't it fun? {0} seems like a fun person.",
@@ -848,7 +848,7 @@
       "line" : 521,
       "npc" : "Local",
       "placeholders" : [
-        ".@name$"
+        "getd(\"$ma_name0\"+rand(1,6)+\"$\")"
       ],
       "state" : "translated",
       "text" : "[Local]\nBe careful walking around the village at night. {0} was taken down by Wokwok.",
@@ -859,7 +859,7 @@
       "line" : 525,
       "npc" : "Local",
       "placeholders" : [
-        ".@name$"
+        "getd(\"$ma_name0\"+rand(1,6)+\"$\")"
       ],
       "state" : "translated",
       "text" : "[Local]\n{0} is said to have successfully tamed a Tikbalang. This person must be courageous. Wonder if I'll get to see this tamed Tikbalang?",
@@ -870,7 +870,7 @@
       "line" : 529,
       "npc" : "Local",
       "placeholders" : [
-        ".@name$"
+        "getd(\"$ma_name0\"+rand(1,6)+\"$\")"
       ],
       "state" : "translated",
       "text" : "[Local]\nHave you ever seen Bongisungisu? I heard {0} is hunting down Bongisungisus.",
@@ -881,7 +881,7 @@
       "line" : 533,
       "npc" : "Local",
       "placeholders" : [
-        ".@name$"
+        "getd(\"$ma_name0\"+rand(1,6)+\"$\")"
       ],
       "state" : "translated",
       "text" : "[Local]\nIf you plan to go out of the village, be careful of Tiucknuc. {0} is said to be tricked by Tiucknuc and had to go to the hospital.",
@@ -1079,7 +1079,7 @@
       "line" : 619,
       "npc" : "Woman",
       "placeholders" : [
-        ".@name$"
+        "getd(\"$ma_name0\"+rand(1,6)+\"$\")"
       ],
       "state" : "translated",
       "text" : "[Woman]\nI like fun stories. Not so long ago, {0} came and told me a funny story.",
@@ -1122,7 +1122,7 @@
       "line" : 643,
       "npc" : "Woman",
       "placeholders" : [
-        ".@name$"
+        "getd(\"$ma_name0\"+rand(1,6)+\"$\")"
       ],
       "state" : "translated",
       "text" : "[Woman]\n{0} said that and was kicked out of the Tool Store.",
@@ -1157,7 +1157,7 @@
       "line" : 658,
       "npc" : "Woman",
       "placeholders" : [
-        ".@name$"
+        "getd(\"$ma_name0\"+rand(1,6)+\"$\")"
       ],
       "state" : "translated",
       "text" : "[Woman]\nI like fun stories. Oh by the way! {0}, love is photogenic. Don't you agree?",
@@ -1333,6 +1333,53 @@
     },
     {
       "kind" : "message",
+      "line" : 729,
+      "npc" : "F_Malaya_Jeepney",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 729,
+      "npc" : "F_Malaya_Jeepney",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 729,
+      "npc" : "F_Malaya_Jeepney",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 729,
+      "npc" : "F_Malaya_Jeepney",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]",
+      "translation" : "[吉普尼司機]"
+    },
+    {
+      "kind" : "message",
       "line" : 738,
       "npc" : "F_Malaya_Jeepney",
       "state" : "translated",
@@ -1383,12 +1430,25 @@
       "kind" : "message",
       "line" : 767,
       "npc" : "F_Malaya_Jeepney",
-      "placeholders" : [
-        ".@zif_in"
-      ],
       "state" : "translated",
-      "text" : "[Jeepney Driver]\n{0} passenger Jeepney's location has been marked on your map.",
-      "translation" : "[吉普尼司機]\n{0}人座吉普尼車的位置已在地圖上標記。"
+      "text" : "[Jeepney Driver]\n12 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n12人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 767,
+      "npc" : "F_Malaya_Jeepney",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n30 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n30人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 767,
+      "npc" : "F_Malaya_Jeepney",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n60 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n60人座吉普尼車的位置已在地圖上標記。"
     },
     {
       "kind" : "message",
@@ -1397,6 +1457,2292 @@
       "state" : "translated",
       "text" : "[Jeepney Driver]\nHave a nice trip.",
       "translation" : "[吉普尼司機]\n祝您旅途愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(4)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getmapusers(.@mapName$)",
+        ".@passengers"
+      ],
+      "state" : "translated",
+      "text" : "Board [Passenger {0}/{1}]",
+      "translation" : "上車 [乘客 {0}/{1}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Jeepney?",
+      "translation" : "吉普尼車？"
+    },
+    {
+      "kind" : "option",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Are there any other Jeepneys?",
+      "translation" : "還有其他吉普尼車嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Ah... Yes...",
+      "translation" : "啊...好的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nOh! Other Jeepneys are in operation, of course.",
+      "translation" : "[吉普尼司機]\n哦！當然還有其他吉普尼車在運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice day.",
+      "translation" : "[吉普尼司機]\n祝您有美好的一天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nIn Port Malaya there are 12, 30 and 60 passenger Jeepneys with 3 each operating.",
+      "translation" : "[吉普尼司機]\n馬來港有12人座、30人座和60人座的吉普尼，每種各有3輛運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nWould you like to know the location of other cars?",
+      "translation" : "[吉普尼司機]\n您想知道其他車輛的位置嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 12 passenger car is.",
+      "translation" : "我想知道12人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 30 passenger car is.",
+      "translation" : "我想知道30人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 60 passenger car is.",
+      "translation" : "我想知道60人座車的位置"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n12 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n12人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n30 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n30人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n60 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n60人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]",
+      "translation" : "[吉普尼司機]"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}\n[Jeepney Driver]\n{5}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}\n[吉普尼司機]\n{5}"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(2)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(3)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice trip.",
+      "translation" : "[吉普尼司機]\n祝您旅途愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 778,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nI'm afraid the Jeepney is full.\nI'm sorry but how about some other Jeepney?",
+      "translation" : "[吉普尼司機]\n不好意思，這輛吉普尼已經滿員了。\n換輛車坐怎麼樣？"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(4)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getmapusers(.@mapName$)",
+        ".@passengers"
+      ],
+      "state" : "translated",
+      "text" : "Board [Passenger {0}/{1}]",
+      "translation" : "上車 [乘客 {0}/{1}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Jeepney?",
+      "translation" : "吉普尼車？"
+    },
+    {
+      "kind" : "option",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Are there any other Jeepneys?",
+      "translation" : "還有其他吉普尼車嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Ah... Yes...",
+      "translation" : "啊...好的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nOh! Other Jeepneys are in operation, of course.",
+      "translation" : "[吉普尼司機]\n哦！當然還有其他吉普尼車在運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice day.",
+      "translation" : "[吉普尼司機]\n祝您有美好的一天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nIn Port Malaya there are 12, 30 and 60 passenger Jeepneys with 3 each operating.",
+      "translation" : "[吉普尼司機]\n馬來港有12人座、30人座和60人座的吉普尼，每種各有3輛運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nWould you like to know the location of other cars?",
+      "translation" : "[吉普尼司機]\n您想知道其他車輛的位置嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 12 passenger car is.",
+      "translation" : "我想知道12人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 30 passenger car is.",
+      "translation" : "我想知道30人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 60 passenger car is.",
+      "translation" : "我想知道60人座車的位置"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n12 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n12人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n30 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n30人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n60 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n60人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]",
+      "translation" : "[吉普尼司機]"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}\n[Jeepney Driver]\n{5}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}\n[吉普尼司機]\n{5}"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(2)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(3)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice trip.",
+      "translation" : "[吉普尼司機]\n祝您旅途愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 798,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nI'm afraid the Jeepney is full.\nI'm sorry but how about some other Jeepney?",
+      "translation" : "[吉普尼司機]\n不好意思，這輛吉普尼已經滿員了。\n換輛車坐怎麼樣？"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(4)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getmapusers(.@mapName$)",
+        ".@passengers"
+      ],
+      "state" : "translated",
+      "text" : "Board [Passenger {0}/{1}]",
+      "translation" : "上車 [乘客 {0}/{1}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Jeepney?",
+      "translation" : "吉普尼車？"
+    },
+    {
+      "kind" : "option",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Are there any other Jeepneys?",
+      "translation" : "還有其他吉普尼車嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Ah... Yes...",
+      "translation" : "啊...好的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nOh! Other Jeepneys are in operation, of course.",
+      "translation" : "[吉普尼司機]\n哦！當然還有其他吉普尼車在運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice day.",
+      "translation" : "[吉普尼司機]\n祝您有美好的一天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nIn Port Malaya there are 12, 30 and 60 passenger Jeepneys with 3 each operating.",
+      "translation" : "[吉普尼司機]\n馬來港有12人座、30人座和60人座的吉普尼，每種各有3輛運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nWould you like to know the location of other cars?",
+      "translation" : "[吉普尼司機]\n您想知道其他車輛的位置嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 12 passenger car is.",
+      "translation" : "我想知道12人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 30 passenger car is.",
+      "translation" : "我想知道30人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 60 passenger car is.",
+      "translation" : "我想知道60人座車的位置"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n12 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n12人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n30 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n30人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n60 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n60人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]",
+      "translation" : "[吉普尼司機]"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}\n[Jeepney Driver]\n{5}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}\n[吉普尼司機]\n{5}"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(2)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(3)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice trip.",
+      "translation" : "[吉普尼司機]\n祝您旅途愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 816,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nI'm afraid the Jeepney is full.\nI'm sorry but how about some other Jeepney?",
+      "translation" : "[吉普尼司機]\n不好意思，這輛吉普尼已經滿員了。\n換輛車坐怎麼樣？"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(4)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getmapusers(.@mapName$)",
+        ".@passengers"
+      ],
+      "state" : "translated",
+      "text" : "Board [Passenger {0}/{1}]",
+      "translation" : "上車 [乘客 {0}/{1}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Jeepney?",
+      "translation" : "吉普尼車？"
+    },
+    {
+      "kind" : "option",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Are there any other Jeepneys?",
+      "translation" : "還有其他吉普尼車嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Ah... Yes...",
+      "translation" : "啊...好的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nOh! Other Jeepneys are in operation, of course.",
+      "translation" : "[吉普尼司機]\n哦！當然還有其他吉普尼車在運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice day.",
+      "translation" : "[吉普尼司機]\n祝您有美好的一天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nIn Port Malaya there are 12, 30 and 60 passenger Jeepneys with 3 each operating.",
+      "translation" : "[吉普尼司機]\n馬來港有12人座、30人座和60人座的吉普尼，每種各有3輛運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nWould you like to know the location of other cars?",
+      "translation" : "[吉普尼司機]\n您想知道其他車輛的位置嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 12 passenger car is.",
+      "translation" : "我想知道12人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 30 passenger car is.",
+      "translation" : "我想知道30人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 60 passenger car is.",
+      "translation" : "我想知道60人座車的位置"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n12 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n12人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n30 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n30人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n60 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n60人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]",
+      "translation" : "[吉普尼司機]"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}\n[Jeepney Driver]\n{5}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}\n[吉普尼司機]\n{5}"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(2)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(3)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice trip.",
+      "translation" : "[吉普尼司機]\n祝您旅途愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 834,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nI'm afraid the Jeepney is full.\nI'm sorry but how about some other Jeepney?",
+      "translation" : "[吉普尼司機]\n不好意思，這輛吉普尼已經滿員了。\n換輛車坐怎麼樣？"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(4)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getmapusers(.@mapName$)",
+        ".@passengers"
+      ],
+      "state" : "translated",
+      "text" : "Board [Passenger {0}/{1}]",
+      "translation" : "上車 [乘客 {0}/{1}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Jeepney?",
+      "translation" : "吉普尼車？"
+    },
+    {
+      "kind" : "option",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Are there any other Jeepneys?",
+      "translation" : "還有其他吉普尼車嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Ah... Yes...",
+      "translation" : "啊...好的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nOh! Other Jeepneys are in operation, of course.",
+      "translation" : "[吉普尼司機]\n哦！當然還有其他吉普尼車在運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice day.",
+      "translation" : "[吉普尼司機]\n祝您有美好的一天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nIn Port Malaya there are 12, 30 and 60 passenger Jeepneys with 3 each operating.",
+      "translation" : "[吉普尼司機]\n馬來港有12人座、30人座和60人座的吉普尼，每種各有3輛運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nWould you like to know the location of other cars?",
+      "translation" : "[吉普尼司機]\n您想知道其他車輛的位置嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 12 passenger car is.",
+      "translation" : "我想知道12人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 30 passenger car is.",
+      "translation" : "我想知道30人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 60 passenger car is.",
+      "translation" : "我想知道60人座車的位置"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n12 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n12人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n30 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n30人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n60 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n60人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]",
+      "translation" : "[吉普尼司機]"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}\n[Jeepney Driver]\n{5}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}\n[吉普尼司機]\n{5}"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(2)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(3)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice trip.",
+      "translation" : "[吉普尼司機]\n祝您旅途愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 852,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nI'm afraid the Jeepney is full.\nI'm sorry but how about some other Jeepney?",
+      "translation" : "[吉普尼司機]\n不好意思，這輛吉普尼已經滿員了。\n換輛車坐怎麼樣？"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(4)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getmapusers(.@mapName$)",
+        ".@passengers"
+      ],
+      "state" : "translated",
+      "text" : "Board [Passenger {0}/{1}]",
+      "translation" : "上車 [乘客 {0}/{1}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Jeepney?",
+      "translation" : "吉普尼車？"
+    },
+    {
+      "kind" : "option",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Are there any other Jeepneys?",
+      "translation" : "還有其他吉普尼車嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Ah... Yes...",
+      "translation" : "啊...好的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nOh! Other Jeepneys are in operation, of course.",
+      "translation" : "[吉普尼司機]\n哦！當然還有其他吉普尼車在運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice day.",
+      "translation" : "[吉普尼司機]\n祝您有美好的一天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nIn Port Malaya there are 12, 30 and 60 passenger Jeepneys with 3 each operating.",
+      "translation" : "[吉普尼司機]\n馬來港有12人座、30人座和60人座的吉普尼，每種各有3輛運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nWould you like to know the location of other cars?",
+      "translation" : "[吉普尼司機]\n您想知道其他車輛的位置嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 12 passenger car is.",
+      "translation" : "我想知道12人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 30 passenger car is.",
+      "translation" : "我想知道30人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 60 passenger car is.",
+      "translation" : "我想知道60人座車的位置"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n12 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n12人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n30 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n30人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n60 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n60人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]",
+      "translation" : "[吉普尼司機]"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}\n[Jeepney Driver]\n{5}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}\n[吉普尼司機]\n{5}"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(2)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(3)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice trip.",
+      "translation" : "[吉普尼司機]\n祝您旅途愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 870,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nI'm afraid the Jeepney is full.\nI'm sorry but how about some other Jeepney?",
+      "translation" : "[吉普尼司機]\n不好意思，這輛吉普尼已經滿員了。\n換輛車坐怎麼樣？"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(4)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getmapusers(.@mapName$)",
+        ".@passengers"
+      ],
+      "state" : "translated",
+      "text" : "Board [Passenger {0}/{1}]",
+      "translation" : "上車 [乘客 {0}/{1}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Jeepney?",
+      "translation" : "吉普尼車？"
+    },
+    {
+      "kind" : "option",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Are there any other Jeepneys?",
+      "translation" : "還有其他吉普尼車嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Ah... Yes...",
+      "translation" : "啊...好的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nOh! Other Jeepneys are in operation, of course.",
+      "translation" : "[吉普尼司機]\n哦！當然還有其他吉普尼車在運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice day.",
+      "translation" : "[吉普尼司機]\n祝您有美好的一天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nIn Port Malaya there are 12, 30 and 60 passenger Jeepneys with 3 each operating.",
+      "translation" : "[吉普尼司機]\n馬來港有12人座、30人座和60人座的吉普尼，每種各有3輛運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nWould you like to know the location of other cars?",
+      "translation" : "[吉普尼司機]\n您想知道其他車輛的位置嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 12 passenger car is.",
+      "translation" : "我想知道12人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 30 passenger car is.",
+      "translation" : "我想知道30人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 60 passenger car is.",
+      "translation" : "我想知道60人座車的位置"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n12 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n12人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n30 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n30人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n60 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n60人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]",
+      "translation" : "[吉普尼司機]"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}\n[Jeepney Driver]\n{5}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}\n[吉普尼司機]\n{5}"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(2)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(3)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice trip.",
+      "translation" : "[吉普尼司機]\n祝您旅途愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 888,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nI'm afraid the Jeepney is full.\nI'm sorry but how about some other Jeepney?",
+      "translation" : "[吉普尼司機]\n不好意思，這輛吉普尼已經滿員了。\n換輛車坐怎麼樣？"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(4)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getmapusers(.@mapName$)",
+        ".@passengers"
+      ],
+      "state" : "translated",
+      "text" : "Board [Passenger {0}/{1}]",
+      "translation" : "上車 [乘客 {0}/{1}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Jeepney?",
+      "translation" : "吉普尼車？"
+    },
+    {
+      "kind" : "option",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Are there any other Jeepneys?",
+      "translation" : "還有其他吉普尼車嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Ah... Yes...",
+      "translation" : "啊...好的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nOh! Other Jeepneys are in operation, of course.",
+      "translation" : "[吉普尼司機]\n哦！當然還有其他吉普尼車在運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice day.",
+      "translation" : "[吉普尼司機]\n祝您有美好的一天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nIn Port Malaya there are 12, 30 and 60 passenger Jeepneys with 3 each operating.",
+      "translation" : "[吉普尼司機]\n馬來港有12人座、30人座和60人座的吉普尼，每種各有3輛運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nWould you like to know the location of other cars?",
+      "translation" : "[吉普尼司機]\n您想知道其他車輛的位置嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 12 passenger car is.",
+      "translation" : "我想知道12人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 30 passenger car is.",
+      "translation" : "我想知道30人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 60 passenger car is.",
+      "translation" : "我想知道60人座車的位置"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n12 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n12人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n30 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n30人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n60 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n60人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]",
+      "translation" : "[吉普尼司機]"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}\n[Jeepney Driver]\n{5}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}\n[吉普尼司機]\n{5}"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(2)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(3)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice trip.",
+      "translation" : "[吉普尼司機]\n祝您旅途愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 903,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nI'm afraid the Jeepney is full.\nI'm sorry but how about some other Jeepney?",
+      "translation" : "[吉普尼司機]\n不好意思，這輛吉普尼已經滿員了。\n換輛車坐怎麼樣？"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(4)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "option",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getmapusers(.@mapName$)",
+        ".@passengers"
+      ],
+      "state" : "translated",
+      "text" : "Board [Passenger {0}/{1}]",
+      "translation" : "上車 [乘客 {0}/{1}]"
+    },
+    {
+      "kind" : "option",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Jeepney?",
+      "translation" : "吉普尼車？"
+    },
+    {
+      "kind" : "option",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Are there any other Jeepneys?",
+      "translation" : "還有其他吉普尼車嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "Ah... Yes...",
+      "translation" : "啊...好的..."
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nOh! Other Jeepneys are in operation, of course.",
+      "translation" : "[吉普尼司機]\n哦！當然還有其他吉普尼車在運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice day.",
+      "translation" : "[吉普尼司機]\n祝您有美好的一天。"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nIn Port Malaya there are 12, 30 and 60 passenger Jeepneys with 3 each operating.",
+      "translation" : "[吉普尼司機]\n馬來港有12人座、30人座和60人座的吉普尼，每種各有3輛運營。"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nWould you like to know the location of other cars?",
+      "translation" : "[吉普尼司機]\n您想知道其他車輛的位置嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 12 passenger car is.",
+      "translation" : "我想知道12人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 30 passenger car is.",
+      "translation" : "我想知道30人座車的位置"
+    },
+    {
+      "kind" : "option",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "I'd like to know where the 60 passenger car is.",
+      "translation" : "我想知道60人座車的位置"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n12 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n12人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n30 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n30人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n60 passenger Jeepney's location has been marked on your map.",
+      "translation" : "[吉普尼司機]\n60人座吉普尼車的位置已在地圖上標記。"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]",
+      "translation" : "[吉普尼司機]"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")",
+        "getd(\".@msgJeepneyInfo$[\" + .@i + \"]\")"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}\n[Jeepney Driver]\n{1}\n[Jeepney Driver]\n{2}\n[Jeepney Driver]\n{3}\n[Jeepney Driver]\n{4}\n[Jeepney Driver]\n{5}",
+      "translation" : "[吉普尼司機]\n{0}\n[吉普尼司機]\n{1}\n[吉普尼司機]\n{2}\n[吉普尼司機]\n{3}\n[吉普尼司機]\n{4}\n[吉普尼司機]\n{5}"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(2)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "placeholders" : [
+        "getarg(3)"
+      ],
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\n{0}",
+      "translation" : "[吉普尼司機]\n{0}"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nHave a nice trip.",
+      "translation" : "[吉普尼司機]\n祝您旅途愉快。"
+    },
+    {
+      "kind" : "message",
+      "line" : 919,
+      "npc" : "Jeepney Driver",
+      "state" : "translated",
+      "text" : "[Jeepney Driver]\nI'm afraid the Jeepney is full.\nI'm sorry but how about some other Jeepney?",
+      "translation" : "[吉普尼司機]\n不好意思，這輛吉普尼已經滿員了。\n換輛車坐怎麼樣？"
     }
   ]
 }

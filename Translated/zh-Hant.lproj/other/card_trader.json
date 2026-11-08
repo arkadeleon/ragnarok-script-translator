@@ -96,23 +96,33 @@
       "kind" : "message",
       "line" : 119,
       "npc" : "Putty",
-      "placeholders" : [
-        "callfunc(\"F_GetPlural\",getitemname(.@card))"
-      ],
       "state" : "translated",
-      "text" : "[Putty]\nYou don't have any ^0055FF{0}^000000 with you!",
-      "translation" : "[帕蒂]\n你沒有攜帶^0055FF{0}^000000！"
+      "text" : "[Putty]",
+      "translation" : "[帕蒂]"
     },
     {
       "kind" : "message",
       "line" : 119,
       "npc" : "Putty",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@count,getitemname(.@card))"
+        "sprintf(\"%d\", getarg(0))",
+        "getarg(1)"
       ],
       "state" : "translated",
-      "text" : "[Putty]\nYou've got ^0055FF{0}^000000.\n \nWould you like to exchange 1 point for each of them?",
-      "translation" : "[帕蒂]\n你有^0055FF{0}^000000。\n \n要將這些卡片按每張1積分兌換嗎？"
+      "text" : "[Putty]\nYou've got ^0055FF{0} {1}^000000.\n \nWould you like to exchange 1 point for each of them?",
+      "translation" : "[帕蒂]\n你有^0055FF{0}個{1}^000000。\n\n要把這些都兌換成積分嗎？每張可兌換1積分。"
+    },
+    {
+      "kind" : "message",
+      "line" : 119,
+      "npc" : "Putty",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "[Putty]\nYou've got ^0055FF{0} {1}^000000.",
+      "translation" : "[帕蒂]\n你有^0055FF{0}個{1}^000000。"
     },
     {
       "kind" : "message",
@@ -121,6 +131,41 @@
       "state" : "translated",
       "text" : "[Putty]\nPlease, come back here if you want to exchange a monster card.",
       "translation" : "[帕蒂]\n想用魔物卡片換積分時，隨時來找我。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Putty",
+      "placeholders" : [
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "You don't have any ^0055FF{0}^000000 with you!",
+      "translation" : "你身上沒有^0055FF{0}^000000！"
+    },
+    {
+      "kind" : "message",
+      "line" : 127,
+      "npc" : "Putty",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "You've got ^0055FF{0} {1}^000000.\n \nWould you like to exchange 1 point for each of them?",
+      "translation" : "你有^0055FF{0}個{1}^000000。\n\n要把這些都兌換成積分嗎？每張可兌換1積分。"
+    },
+    {
+      "kind" : "message",
+      "line" : 127,
+      "npc" : "Putty",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "You've got ^0055FF{0} {1}^000000.",
+      "translation" : "你有^0055FF{0}個{1}^000000。"
     },
     {
       "kind" : "option",
@@ -148,6 +193,14 @@
       "state" : "translated",
       "text" : "[Putty]\nAlright, you have received ^CC0000{0}^000000 points.",
       "translation" : "[帕蒂]\n好，你獲得了^CC0000{0}^000000積分。"
+    },
+    {
+      "kind" : "message",
+      "line" : 139,
+      "npc" : "Putty",
+      "state" : "translated",
+      "text" : "[Putty]",
+      "translation" : "[帕蒂]"
     },
     {
       "kind" : "message",

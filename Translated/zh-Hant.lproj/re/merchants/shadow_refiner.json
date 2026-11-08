@@ -16,11 +16,63 @@
       "translation" : "[影子鐵匠]\n想精煉影子裝備？選吧！"
     },
     {
+      "kind" : "option",
+      "line" : 31,
+      "placeholders" : [
+        ".@menu$"
+      ],
+      "state" : "translated",
+      "text" : "{0}Refine info",
+      "translation" : "{0}精煉資訊"
+    },
+    {
+      "kind" : "option",
+      "line" : 31,
+      "state" : "translated",
+      "text" : "Refine info",
+      "translation" : "精煉資訊"
+    },
+    {
+      "kind" : "option",
+      "line" : 31,
+      "placeholders" : [
+        ".@menu$",
+        "\"Unknown\""
+      ],
+      "state" : "translated",
+      "text" : "{0}{1}-[Not equipped]",
+      "translation" : "{0}{1}-[未裝備]"
+    },
+    {
+      "kind" : "option",
+      "line" : 31,
+      "placeholders" : [
+        "\"Unknown\""
+      ],
+      "state" : "translated",
+      "text" : "{0}-[Not equipped]",
+      "translation" : "{0}-[未裝備]"
+    },
+    {
       "kind" : "message",
       "line" : 33,
       "state" : "translated",
       "text" : "[Shadow Blacksmith]\nWhen a shadow item is refined, it gains extra bonuses very much like normal items.",
       "translation" : "[影子鐵匠]\n影子裝備和普通裝備一樣，精煉後會獲得額外加成。"
+    },
+    {
+      "kind" : "message",
+      "line" : 33,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
+    },
+    {
+      "kind" : "message",
+      "line" : 34,
+      "state" : "translated",
+      "text" : "When a shadow item is refined, it gains extra bonuses very much like normal items.",
+      "translation" : "影子裝備和普通裝備一樣，精煉後會獲得額外加成。"
     },
     {
       "kind" : "message",
@@ -31,10 +83,52 @@
     },
     {
       "kind" : "message",
+      "line" : 36,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
+    },
+    {
+      "kind" : "message",
+      "line" : 37,
+      "state" : "translated",
+      "text" : "Weapon: ATK, MATK + 1 increase for each +1 refine success.",
+      "translation" : "武器：每成功精煉+1，ATK和MATK各增加1。"
+    },
+    {
+      "kind" : "message",
+      "line" : 38,
+      "state" : "translated",
+      "text" : "Etc: HP + 10 increase for each +1 refine success.",
+      "translation" : "其他部位：每成功精煉+1，HP增加10。"
+    },
+    {
+      "kind" : "message",
       "line" : 40,
       "state" : "translated",
       "text" : "[Shadow Blacksmith]\nAll types of Oridecon and Elunium can be used to refine shadow items. Each attempt will also cost 20,000 zeny.",
       "translation" : "[影子鐵匠]\n所有種類的神之金屬和鋁都可以用來精煉影子裝備。每次嘗試還需要支付20,000 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 40,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
+    },
+    {
+      "kind" : "message",
+      "line" : 41,
+      "state" : "translated",
+      "text" : "All types of Oridecon and Elunium can be used to refine shadow items. Each attempt will also cost 20,000 zeny.",
+      "translation" : "所有種類的神之金屬和鋁都可以用來精煉影子裝備。每次嘗試還需支付20,000 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 43,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
     },
     {
       "kind" : "message",
@@ -45,6 +139,20 @@
     },
     {
       "kind" : "message",
+      "line" : 44,
+      "state" : "translated",
+      "text" : "HD ores can be used for gear that is at least refine level +7 and will prevent breaking as long as you stay talking to me.",
+      "translation" : "高濃縮礦石可用於精煉值+7及以上的裝備。只要保持與我的對話，裝備就不會損毀。"
+    },
+    {
+      "kind" : "message",
+      "line" : 51,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
+    },
+    {
+      "kind" : "message",
       "line" : 51,
       "state" : "translated",
       "text" : "[Shadow Blacksmith]\nThere's nothing here!",
@@ -52,13 +160,105 @@
     },
     {
       "kind" : "message",
+      "line" : 52,
+      "state" : "translated",
+      "text" : "There's nothing here!",
+      "translation" : "這裡什麼都沒有！"
+    },
+    {
+      "kind" : "message",
+      "line" : 60,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]\nI require 200000 zeny as a fee for EACH refine attempt.\nChoose your Ore and start refining.",
+      "translation" : "[影子鐵匠]\n每次精煉收取200000 Zeny。\n選擇礦石，開始精煉吧。"
+    },
+    {
+      "kind" : "message",
       "line" : 60,
       "placeholders" : [
-        "callfunc(\"F_InsertComma\", .@zeny_cost)"
+        "insertchar(.@str$,\",\",.@i)"
       ],
       "state" : "translated",
       "text" : "[Shadow Blacksmith]\nI require {0} zeny as a fee for EACH refine attempt.\nChoose your Ore and start refining.",
       "translation" : "[影子鐵匠]\n每次精煉收取{0} Zeny。\n選好礦石就開始吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 60,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]\nI require 200000 zeny as a fee for EACH refine attempt.",
+      "translation" : "每次精煉收取200000 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 60,
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]\nI require {0} zeny as a fee for EACH refine attempt.",
+      "translation" : "每次精煉收取{0} Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 60,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "state" : "translated",
+      "text" : "I require 200000 zeny as a fee for EACH refine attempt.",
+      "translation" : "每次精煉收取200000 Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 61,
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "I require {0} zeny as a fee for EACH refine attempt.",
+      "translation" : "每次精煉收取{0} Zeny。"
+    },
+    {
+      "kind" : "message",
+      "line" : 62,
+      "state" : "translated",
+      "text" : "Choose your Ore and start refining.",
+      "translation" : "選擇礦石，開始精煉吧。"
+    },
+    {
+      "kind" : "option",
+      "line" : 83,
+      "placeholders" : [
+        "getitemname(.@material[0])"
+      ],
+      "state" : "translated",
+      "text" : "^8C8C8C{0}^000000",
+      "translation" : "^8C8C8C{0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 83,
+      "placeholders" : [
+        "getitemname(.@material[1])"
+      ],
+      "state" : "translated",
+      "text" : "^8C8C8C{0}^000000",
+      "translation" : "^8C8C8C{0}^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 83,
+      "placeholders" : [
+        "getitemname(.@material[2])"
+      ],
+      "state" : "translated",
+      "text" : "^8C8C8C{0}^000000",
+      "translation" : "^8C8C8C{0}^000000"
     },
     {
       "kind" : "option",
@@ -71,8 +271,29 @@
       "kind" : "message",
       "line" : 93,
       "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
+    },
+    {
+      "kind" : "message",
+      "line" : 93,
+      "state" : "translated",
       "text" : "[Shadow Blacksmith]\nHD Ore can only used for +7 or higher refine level items.",
       "translation" : "[影子鐵匠]\n高濃縮礦石只能用於精煉值+7及以上的裝備。"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "state" : "translated",
+      "text" : "HD Ore can only used for +7 or higher refine level items.",
+      "translation" : "高濃縮礦石只能用於精煉值+7及以上的裝備。"
+    },
+    {
+      "kind" : "message",
+      "line" : 101,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
     },
     {
       "kind" : "message",
@@ -80,6 +301,20 @@
       "state" : "translated",
       "text" : "[Shadow Blacksmith]\nYou've cancelled refining.",
       "translation" : "[影子鐵匠]\n您已取消精煉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 102,
+      "state" : "translated",
+      "text" : "You've cancelled refining.",
+      "translation" : "您已取消精煉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
     },
     {
       "kind" : "message",
@@ -93,10 +328,41 @@
     },
     {
       "kind" : "message",
+      "line" : 107,
+      "placeholders" : [
+        "getitemname(.@choose)"
+      ],
+      "state" : "translated",
+      "text" : "You do not have enough {0}.",
+      "translation" : "您的{0}不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 111,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
+    },
+    {
+      "kind" : "message",
       "line" : 111,
       "state" : "translated",
       "text" : "[Shadow Blacksmith]\nYou do not have enough zeny.",
       "translation" : "[影子鐵匠]\n您的Zeny不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 112,
+      "state" : "translated",
+      "text" : "You do not have enough zeny.",
+      "translation" : "您的Zeny不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 116,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
     },
     {
       "kind" : "message",
@@ -107,10 +373,38 @@
     },
     {
       "kind" : "message",
+      "line" : 117,
+      "state" : "translated",
+      "text" : "Shadow Equipment can be refined to the maximum of 10...",
+      "translation" : "影子裝備最高可以精煉到+10..."
+    },
+    {
+      "kind" : "message",
+      "line" : 121,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
+    },
+    {
+      "kind" : "message",
       "line" : 121,
       "state" : "translated",
       "text" : "[Shadow Blacksmith]\nThis item cannot be refined.",
       "translation" : "[影子鐵匠]\n該物品無法精煉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 122,
+      "state" : "translated",
+      "text" : "This item cannot be refined.",
+      "translation" : "該物品無法精煉。"
+    },
+    {
+      "kind" : "message",
+      "line" : 126,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]\nThe safety refine level for Shadow Equipment is +4.\nThe next refinement, if it fails, will degrade the refinement. Do you want to refine?",
+      "translation" : "[影子鐵匠]\n影子裝備的安全精煉值是+4，這次精煉若失敗，精煉值會降低。\n還要精煉嗎？"
     },
     {
       "kind" : "message",
@@ -123,8 +417,29 @@
       "kind" : "message",
       "line" : 126,
       "state" : "translated",
-      "text" : "[Shadow Blacksmith]\nThe safety refine level for Shadow Equipment is +4.\nThe next refinement, if it fails, will degrade the refinement. Do you want to refine?",
-      "translation" : "[影子鐵匠]\n影子裝備的安全精煉值是+4，這次精煉若失敗，精煉值會降低。\n還要精煉嗎？"
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
+    },
+    {
+      "kind" : "message",
+      "line" : 127,
+      "state" : "translated",
+      "text" : "The safety refine level for Shadow Equipment is +4.",
+      "translation" : "影子裝備的安全精煉值是+4。"
+    },
+    {
+      "kind" : "message",
+      "line" : 129,
+      "state" : "translated",
+      "text" : "Shadow equipment may be destroyed in subsequent refinements. Want to get started?",
+      "translation" : "繼續精煉可能會損毀影子裝備。要開始嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 131,
+      "state" : "translated",
+      "text" : "The next refinement, if it fails, will degrade the refinement. Do you want to refine?",
+      "translation" : "這次精煉若失敗，精煉值會降低。還要繼續精煉嗎？"
     },
     {
       "kind" : "option",
@@ -156,6 +471,20 @@
     },
     {
       "kind" : "message",
+      "line" : 139,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "state" : "translated",
+      "text" : "Well then.. here goes nothing!",
+      "translation" : "那麼...豁出去了！"
+    },
+    {
+      "kind" : "message",
       "line" : 151,
       "state" : "translated",
       "text" : "[Shadow Blacksmith]\nIt worked! It worked!",
@@ -163,10 +492,38 @@
     },
     {
       "kind" : "message",
+      "line" : 151,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
+    },
+    {
+      "kind" : "message",
+      "line" : 152,
+      "state" : "translated",
+      "text" : "It worked! It worked!",
+      "translation" : "成功了！成功了！"
+    },
+    {
+      "kind" : "message",
+      "line" : 159,
+      "state" : "translated",
+      "text" : "[Shadow Blacksmith]",
+      "translation" : "[影子鐵匠]"
+    },
+    {
+      "kind" : "message",
       "line" : 159,
       "state" : "translated",
       "text" : "[Shadow Blacksmith]\nOh Odin No!",
       "translation" : "[影子鐵匠]\n奧丁啊，不——！"
+    },
+    {
+      "kind" : "message",
+      "line" : 160,
+      "state" : "translated",
+      "text" : "Oh Odin No!",
+      "translation" : "奧丁啊，不——！"
     }
   ]
 }

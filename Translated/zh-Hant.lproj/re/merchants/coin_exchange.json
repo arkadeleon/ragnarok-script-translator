@@ -50,6 +50,69 @@
       "translation" : "[硬幣兌換機 CX-1]\n----兌換比率----\n兌換更高等級：30換10\n兌換更低等級：10換30\n------------------------\n^ff3333兌換時，將按當前市價收取手續費。^000000"
     },
     {
+      "kind" : "option",
+      "line" : 85,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "Stop",
+      "translation" : "停止"
+    },
+    {
+      "kind" : "option",
+      "line" : 85,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "^ff3333Unavailable exchange to higher coin^000000",
+      "translation" : "^ff3333無法兌換為更高階硬幣^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 85,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "^ff3333Unavailable exchange to lower coin^000000",
+      "translation" : "^ff3333無法兌換為更低階硬幣^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 85,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        "getitemname(.@coin)"
+      ],
+      "state" : "translated",
+      "text" : "Exchange to higher coin - {0} (30 needed)",
+      "translation" : "兌換為更高階硬幣 - {0}（需要30枚）"
+    },
+    {
+      "kind" : "option",
+      "line" : 85,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "^aaaaaaExchange to higher coin (null)^000000",
+      "translation" : "^aaaaaa兌換為更高階硬幣（無）^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 85,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        "getitemname(.@coin)",
+        ".@exchange_rate[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "Exchange to lower coin - {0} ({1} needed)",
+      "translation" : "兌換為更低階硬幣 - {0}（需要{1}枚）"
+    },
+    {
+      "kind" : "option",
+      "line" : 85,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "^aaaaaaExchange to lower coin (null)^000000",
+      "translation" : "^aaaaaa兌換為更低階硬幣（無）^000000"
+    },
+    {
       "kind" : "message",
       "line" : 87,
       "npc" : "Coin Exchanger CX-1",
@@ -65,8 +128,102 @@
         ".@exchange_name$[.@i]"
       ],
       "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\nThis coin is not available to exchange to {0} coin.",
+      "translation" : "[硬幣兌換機 CX-1]\n無法將這種硬幣兌換為{0}硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\nThis coin is not available to exchange to higher coin.",
+      "translation" : "[硬幣兌換機 CX-1]\n這種硬幣無法兌換為更高階硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\nThis coin is not available to exchange to lower coin.",
+      "translation" : "[硬幣兌換機 CX-1]\n這種硬幣無法兌換為更低階硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\nThis coin is not available to exchange to higher coin.\nThank you for coming.",
+      "translation" : "[硬幣兌換機 CX-1]\n這種硬幣無法兌換為更高階硬幣。\n感謝光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\nThis coin is not available to exchange to lower coin.\nThank you for coming.",
+      "translation" : "[硬幣兌換機 CX-1]\n這種硬幣無法兌換為更低階硬幣。\n感謝光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 92,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "state" : "translated",
       "text" : "[Coin Exchanger CX-1]\nThis coin is not available to exchange to {0} coin.\nThank you for coming.",
       "translation" : "[硬幣兌換機 CX-1]\n此硬幣無法兌換為{0}硬幣。\n感謝您的光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 94,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "Thank you for coming.",
+      "translation" : "感謝光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to higher coin.",
+      "translation" : "[硬幣兌換機 CX-1]\n你的硬幣不足，無法兌換為更高階硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to lower coin.",
+      "translation" : "[硬幣兌換機 CX-1]\n你的硬幣不足，無法兌換為更低階硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to {0} coin.",
+      "translation" : "[硬幣兌換機 CX-1]\n你的硬幣不足，無法兌換為{0}硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to higher coin.\nThank you for coming.",
+      "translation" : "[硬幣兌換機 CX-1]\n你的硬幣不足，無法兌換為更高階硬幣。\n感謝光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 98,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to lower coin.\nThank you for coming.",
+      "translation" : "[硬幣兌換機 CX-1]\n你的硬幣不足，無法兌換為更低階硬幣。\n感謝光臨。"
     },
     {
       "kind" : "message",
@@ -78,6 +235,42 @@
       "state" : "translated",
       "text" : "[Coin Exchanger CX-1]\nYou don't have enough coins to exchange to {0} coin.\nThank you for coming.",
       "translation" : "[硬幣兌換機 CX-1]\n您的硬幣不足，無法兌換為{0}硬幣。\n感謝您的光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 100,
+      "npc" : "Coin Exchanger CX-1",
+      "state" : "translated",
+      "text" : "Thank you for coming.",
+      "translation" : "感謝光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        ".@exchange_rate[.@i]",
+        "getitemname(.@coin)",
+        ".@exchange_loss[(!.@i)]",
+        ".@exchange_total"
+      ],
+      "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\n^003399{0}^000000 unit(s) of ^003399 {1}^000000 taken.\nI exchanged them for ^003399higher coins^000000, after deducting ^003399{2}^000000 unit(s), ^003399{3}^000000 unit(s) remaining.",
+      "translation" : "[硬幣兌換機 CX-1]\n已收取^003399{0}^000000枚^003399{1}^000000。\n兌換為^003399更高階硬幣^000000後，扣除^003399{2}^000000枚，剩餘^003399{3}^000000枚。"
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        ".@exchange_rate[.@i]",
+        "getitemname(.@coin)",
+        ".@exchange_loss[(!.@i)]",
+        ".@exchange_total"
+      ],
+      "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\n^003399{0}^000000 unit(s) of ^003399 {1}^000000 taken.\nI exchanged them for ^003399lower coins^000000, after deducting ^003399{2}^000000 unit(s), ^003399{3}^000000 unit(s) remaining.",
+      "translation" : "[硬幣兌換機 CX-1]\n已收取^003399{0}^000000枚^003399{1}^000000。\n兌換為^003399更低階硬幣^000000後，扣除^003399{2}^000000枚，剩餘^003399{3}^000000枚。"
     },
     {
       "kind" : "message",
@@ -93,6 +286,19 @@
       "state" : "translated",
       "text" : "[Coin Exchanger CX-1]\n^003399{0}^000000 unit(s) of ^003399 {1}^000000 taken.\nI exchanged them for ^003399{2} coins^000000, after deducting ^003399{3}^000000 unit(s), ^003399{4}^000000 unit(s) remaining.",
       "translation" : "[硬幣兌換機 CX-1]\n已收取^003399{0}^000000枚^003399{1}^000000。\n兌換為^003399{2}硬幣^000000，扣除^003399{3}^000000枚，剩餘^003399{4}^000000枚。"
+    },
+    {
+      "kind" : "message",
+      "line" : 106,
+      "npc" : "Coin Exchanger CX-1",
+      "placeholders" : [
+        "getitemname(.@coin)",
+        ".@exchange_loss[(!.@i)]",
+        ".@exchange_total"
+      ],
+      "state" : "translated",
+      "text" : "[Coin Exchanger CX-1]\n^00339930^000000 unit(s) of ^003399 {0}^000000 taken.\nI exchanged them for ^003399higher coins^000000, after deducting ^003399{1}^000000 unit(s), ^003399{2}^000000 unit(s) remaining.",
+      "translation" : "[硬幣兌換機 CX-1]\n已收取^00339930^000000枚^003399{0}^000000。\n兌換為^003399更高階硬幣^000000後，扣除^003399{1}^000000枚，剩餘^003399{2}^000000枚。"
     },
     {
       "kind" : "message",
@@ -119,6 +325,86 @@
       "translation" : "[特殊販賣機]\n歡迎光臨CX-82。\n您擁有獼猴桃果實，因此可以購買具有特殊能力的綿綿島特產。"
     },
     {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Explanation",
+      "translation" : "說明"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Seagod's Protection [23 hours]",
+      "translation" : "海神護身符[23小時]"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Seagod's Protection [7 days]",
+      "translation" : "海神護身符[7天]"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Seagod's Protection [15 days]",
+      "translation" : "海神護身符[15天]"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Octopus Hunting Stick [23 hours]",
+      "translation" : "捕章魚棍[23小時]"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Octopus Hunting Stick [3 days]",
+      "translation" : "捕章魚棍[3天]"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Octopus Hunting Stick [7 days]",
+      "translation" : "捕章魚棍[7天]"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Premium Lubricant",
+      "translation" : "高階潤滑劑"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Ordinary Lubricant",
+      "translation" : "普通潤滑劑"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Sillit Pong",
+      "translation" : "希利特龐"
+    },
+    {
       "kind" : "message",
       "line" : 140,
       "npc" : "Special Vending Machine",
@@ -128,11 +414,113 @@
     },
     {
       "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Seagod's Protection [23 hours]^000000. For purchasing, you need ^0055004^000000 unit(s) of Silvervine Fruit.",
+      "translation" : "[特殊販賣機]\n你選擇了^005500海神護身符[23小時]^000000。購買需要^0055004^000000個獼猴桃果實。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Seagod's Protection [7 days]^000000. For purchasing, you need ^00550012^000000 unit(s) of Silvervine Fruit.",
+      "translation" : "[特殊販賣機]\n你選擇了^005500海神護身符[7天]^000000。購買需要^00550012^000000個獼猴桃果實。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Seagod's Protection [15 days]^000000. For purchasing, you need ^00550024^000000 unit(s) of Silvervine Fruit.",
+      "translation" : "[特殊販賣機]\n你選擇了^005500海神護身符[15天]^000000。購買需要^00550024^000000個獼猴桃果實。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Octopus Hunting Stick [23 hours]^000000. For purchasing, you need ^0055002^000000 unit(s) of Silvervine Fruit.",
+      "translation" : "[特殊販賣機]\n你選擇了^005500捕章魚棍[23小時]^000000。購買需要^0055002^000000個獼猴桃果實。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Octopus Hunting Stick [3 days]^000000. For purchasing, you need ^0055005^000000 unit(s) of Silvervine Fruit.",
+      "translation" : "[特殊販賣機]\n你選擇了^005500捕章魚棍[3天]^000000。購買需要^0055005^000000個獼猴桃果實。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Octopus Hunting Stick [7 days]^000000. For purchasing, you need ^00550010^000000 unit(s) of Silvervine Fruit.",
+      "translation" : "[特殊販賣機]\n你選擇了^005500捕章魚棍[7天]^000000。購買需要^00550010^000000個獼猴桃果實。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Premium Lubricant^000000. For purchasing, you need ^00550056^000000 unit(s) of Silvervine Fruit.",
+      "translation" : "[特殊販賣機]\n你選擇了^005500高階潤滑劑^000000。購買需要^00550056^000000個獼猴桃果實。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Ordinary Lubricant^000000. For purchasing, you need ^00550036^000000 unit(s) of Silvervine Fruit.",
+      "translation" : "[特殊販賣機]\n你選擇了^005500普通潤滑劑^000000。購買需要^00550036^000000個獼猴桃果實。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nYou choose ^005500Sillit Pong^000000. For purchasing, you need ^005500192^000000 unit(s) of Silvervine Fruit.",
+      "translation" : "[特殊販賣機]\n你選擇了^005500希利特龐^000000。購買需要^005500192^000000個獼猴桃果實。"
+    },
+    {
+      "kind" : "message",
       "line" : 143,
       "npc" : "Special Vending Machine",
       "state" : "translated",
       "text" : "[Special Vending Machine]\nOctopus Hunting Stick is an item used for entering the Culvert memorial dungeon during a certain period.",
       "translation" : "[特殊販賣機]\n捕章魚棍可在有效期內用於進入下水道記憶副本。"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Stop",
+      "translation" : "停止"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "placeholders" : [
+        "countitem(6417)"
+      ],
+      "state" : "translated",
+      "text" : "Purchase - Silvervine Fruit (have {0})",
+      "translation" : "購買 - 獼猴桃果實（持有{0}個）"
+    },
+    {
+      "kind" : "option",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "placeholders" : [
+        ".@cost - countitem(6417)"
+      ],
+      "state" : "translated",
+      "text" : "^999999Silvervine Fruit (missing {0})^000000",
+      "translation" : "^999999獼猴桃果實（還缺{0}個）^000000"
     },
     {
       "kind" : "message",
@@ -144,11 +532,115 @@
     },
     {
       "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]",
+      "translation" : "[特殊販賣機]"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Thank you for coming.",
+      "translation" : "感謝光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "The transaction is completed. Thank you for coming.",
+      "translation" : "交易完成，感謝光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Not enough Silvervine Fruit.",
+      "translation" : "獼猴桃果實不足。"
+    },
+    {
+      "kind" : "message",
+      "line" : 124,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Closing the transaction.",
+      "translation" : "交易結束。"
+    },
+    {
+      "kind" : "message",
+      "line" : 163,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nThank you for coming.",
+      "translation" : "[特殊販賣機]\n感謝您的光臨。"
+    },
+    {
+      "kind" : "message",
       "line" : 149,
       "npc" : "Special Vending Machine",
       "state" : "translated",
       "text" : "[Special Vending Machine]\nSillit Pong is special item that separates sockets with MVP cards. Unable to separate MVP card by Premium and Ordinary Lubricant.",
       "translation" : "[特殊販賣機]\n西里特蓬是專門用於拆卸MVP卡片的道具。\n高階潤滑劑和普通潤滑劑無法拆卸MVP卡片。"
+    },
+    {
+      "kind" : "message",
+      "line" : 174,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nThe transaction is completed. Thank you for coming.",
+      "translation" : "[特殊販賣機]\n交易完成。感謝您的光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 168,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nNot enough Silvervine Fruit.\nClosing the transaction.\nThank you for coming.",
+      "translation" : "[特殊販賣機]\n獼猴桃果實不足。\n交易已取消。\n感謝您的光臨。"
+    },
+    {
+      "kind" : "option",
+      "line" : 138,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "Explanation",
+      "translation" : "說明"
+    },
+    {
+      "kind" : "message",
+      "line" : 140,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nSeagod's Protection is an item used for entering the Culvert memorial dungeon during a certain period.",
+      "translation" : "[特殊販賣機]\n海神護身符是在限定時間內進入水道紀念迷宮的道具。"
+    },
+    {
+      "kind" : "message",
+      "line" : 143,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nOctopus Hunting Stick is an item used for entering the Culvert memorial dungeon during a certain period.",
+      "translation" : "[特殊販賣機]\n捕章魚棍是在限定時間內進入水道紀念迷宮的道具。"
+    },
+    {
+      "kind" : "message",
+      "line" : 146,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nPremium and Ordinary Lubricant are items used for separation of equipment and cards. If you visit the specialist Jeremy with either item, he will explain more details of the effects.",
+      "translation" : "[特殊販賣機]\n高階潤滑劑和普通潤滑劑可用於分離裝備與卡片。帶著任意一種道具去找專家傑里米，他會詳細說明其效果。"
+    },
+    {
+      "kind" : "message",
+      "line" : 149,
+      "npc" : "Special Vending Machine",
+      "state" : "translated",
+      "text" : "[Special Vending Machine]\nSillit Pong is special item that separates sockets with MVP cards. Unable to separate MVP card by Premium and Ordinary Lubricant.",
+      "translation" : "[特殊販賣機]\n希利特龐是用於分離鑲有MVP卡片插槽的特殊道具。MVP卡片無法使用高階潤滑劑或普通潤滑劑分離。"
     },
     {
       "kind" : "message",
@@ -171,12 +663,34 @@
       "translation" : "停止"
     },
     {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Special Vending Machine",
+      "placeholders" : [
+        "countitem(6417)"
+      ],
+      "state" : "translated",
+      "text" : "Purchase - Silvervine Fruit (have {0})",
+      "translation" : "購買 - 獼猴桃果實（持有{0}個）"
+    },
+    {
+      "kind" : "option",
+      "line" : 161,
+      "npc" : "Special Vending Machine",
+      "placeholders" : [
+        ".@cost - countitem(6417)"
+      ],
+      "state" : "translated",
+      "text" : "^999999Silvervine Fruit (missing {0})^000000",
+      "translation" : "^999999獼猴桃果實（還缺{0}個）^000000"
+    },
+    {
       "kind" : "message",
       "line" : 163,
       "npc" : "Special Vending Machine",
       "state" : "translated",
       "text" : "[Special Vending Machine]\nThank you for coming.",
-      "translation" : "[特殊販賣機]\n感謝您的光臨。"
+      "translation" : "[特殊販賣機]\n感謝光臨。"
     },
     {
       "kind" : "message",
@@ -184,7 +698,7 @@
       "npc" : "Special Vending Machine",
       "state" : "translated",
       "text" : "[Special Vending Machine]\nNot enough Silvervine Fruit.\nClosing the transaction.\nThank you for coming.",
-      "translation" : "[特殊販賣機]\n獼猴桃果實不足。\n交易已取消。\n感謝您的光臨。"
+      "translation" : "[特殊販賣機]\n獼猴桃果實不足。\n交易結束。\n感謝光臨。"
     },
     {
       "kind" : "message",
@@ -192,7 +706,7 @@
       "npc" : "Special Vending Machine",
       "state" : "translated",
       "text" : "[Special Vending Machine]\nThe transaction is completed. Thank you for coming.",
-      "translation" : "[特殊販賣機]\n交易完成。感謝您的光臨。"
+      "translation" : "[特殊販賣機]\n交易完成，感謝光臨。"
     },
     {
       "kind" : "message",
@@ -227,12 +741,82 @@
       "translation" : "退出"
     },
     {
+      "kind" : "option",
+      "line" : 204,
+      "npc" : "Dark Merchant K",
+      "state" : "translated",
+      "text" : "^aaaaaaExchange 1 Mora Coin (Not Enough)^000000",
+      "translation" : "^aaaaaa兌換1枚穆拉村硬幣（數量不足）^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 204,
+      "npc" : "Dark Merchant K",
+      "state" : "translated",
+      "text" : "Exchange 1 Mora Coin",
+      "translation" : "兌換1枚穆拉村硬幣"
+    },
+    {
+      "kind" : "option",
+      "line" : 204,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]/10"
+      ],
+      "state" : "translated",
+      "text" : "^aaaaaaExchange {0} Mora Coin (Not Enough)^000000",
+      "translation" : "^aaaaaa兌換{0}枚穆拉村硬幣（數量不足）^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 204,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]/10"
+      ],
+      "state" : "translated",
+      "text" : "Exchange {0} Mora Coin",
+      "translation" : "兌換{0}枚穆拉村硬幣"
+    },
+    {
+      "kind" : "message",
+      "line" : 206,
+      "npc" : "Dark Merchant K",
+      "state" : "translated",
+      "text" : "[Merchant K]",
+      "translation" : "[商人 K]"
+    },
+    {
       "kind" : "message",
       "line" : 206,
       "npc" : "Dark Merchant K",
       "state" : "translated",
       "text" : "[Merchant K]\nLet's exchange some other time.",
       "translation" : "[商人 K]\n我們改天再兌換吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 207,
+      "npc" : "Dark Merchant K",
+      "state" : "translated",
+      "text" : "Let's exchange some other time.",
+      "translation" : "下次再兌換吧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Dark Merchant K",
+      "state" : "translated",
+      "text" : "[Merchant K]",
+      "translation" : "[商人 K]"
+    },
+    {
+      "kind" : "message",
+      "line" : 211,
+      "npc" : "Dark Merchant K",
+      "state" : "translated",
+      "text" : "[Merchant K]\nYou need ^ff000010^000000 C Grade Coin to perform the exchange. But you don't seem to have enough now.",
+      "translation" : "[商人 K]\n兌換需要^ff000010^000000枚C級代幣，但你現在的數量不夠。"
     },
     {
       "kind" : "message",
@@ -244,6 +828,25 @@
       "state" : "translated",
       "text" : "[Merchant K]\nYou need ^ff0000{0}^000000 C Grade Coin to perform the exchange. But you don't seem to have enough now.",
       "translation" : "[商人 K]\n兌換需要^ff0000{0}^000000枚C級代幣。但您現在的數量似乎不夠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 212,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "You need ^ff0000{0}^000000 C Grade Coin to perform the exchange. But you don't seem to have enough now.",
+      "translation" : "兌換需要^ff0000{0}^000000枚C級代幣，但你的數量不夠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 217,
+      "npc" : "Dark Merchant K",
+      "state" : "translated",
+      "text" : "[Merchant K]\nC Grade Coin ^00339910^000000 well received.\nExchanged to ^0033991^000000 Mora Coin.",
+      "translation" : "[商人 K]\n已收取^00339910^000000枚C級代幣。\n兌換為^0033991^000000枚穆拉村硬幣。"
     },
     {
       "kind" : "message",
@@ -259,11 +862,57 @@
     },
     {
       "kind" : "message",
+      "line" : 217,
+      "npc" : "Dark Merchant K",
+      "state" : "translated",
+      "text" : "[Merchant K]",
+      "translation" : "[商人 K]"
+    },
+    {
+      "kind" : "message",
+      "line" : 218,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "C Grade Coin ^003399{0}^000000 well received.",
+      "translation" : "已收取^003399{0}^000000枚C級代幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 219,
+      "npc" : "Dark Merchant K",
+      "placeholders" : [
+        ".@coin_amount[.@i]/10"
+      ],
+      "state" : "translated",
+      "text" : "Exchanged to ^003399{0}^000000 Mora Coin.",
+      "translation" : "兌換為^003399{0}^000000枚穆拉村硬幣。"
+    },
+    {
+      "kind" : "message",
       "line" : 221,
       "npc" : "Dark Merchant K",
       "state" : "translated",
       "text" : "[Merchant K]\nWould you like to continue?",
       "translation" : "[商人 K]\n您想繼續嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 221,
+      "npc" : "Dark Merchant K",
+      "state" : "translated",
+      "text" : "[Merchant K]",
+      "translation" : "[商人 K]"
+    },
+    {
+      "kind" : "message",
+      "line" : 222,
+      "npc" : "Dark Merchant K",
+      "state" : "translated",
+      "text" : "Would you like to continue?",
+      "translation" : "要繼續嗎？"
     },
     {
       "kind" : "message",
@@ -330,12 +979,129 @@
       "translation" : "[黑暗機器 TX100]\n----兌換比率----\n兌換更高等級：3換1\n兌換更低等級：1換3\n---------------------\n^ff3333兌換所得的硬幣中，將扣除少量手續費。^000000"
     },
     {
+      "kind" : "option",
+      "line" : 304,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "Quit",
+      "translation" : "退出"
+    },
+    {
+      "kind" : "option",
+      "line" : 304,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "^ff3333Cannot exchange to higher level coin^000000",
+      "translation" : "^ff3333無法兌換為更高階硬幣^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 304,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "^ff3333Cannot exchange to lower level coin^000000",
+      "translation" : "^ff3333無法兌換為更低階硬幣^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 304,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "^aaaaaaExchange to higher level coin (Not enough)^000000",
+      "translation" : "^aaaaaa兌換為更高階硬幣（數量不足）^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 304,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        "getitemname(.@coin)"
+      ],
+      "state" : "translated",
+      "text" : "Exchange 99 {0} into higher level coin",
+      "translation" : "將99枚{0}兌換為更高階硬幣"
+    },
+    {
+      "kind" : "option",
+      "line" : 304,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        "getitemname(.@coin)"
+      ],
+      "state" : "translated",
+      "text" : "Exchange 500 {0} into lower level coin",
+      "translation" : "將500枚{0}兌換為更低階硬幣"
+    },
+    {
+      "kind" : "option",
+      "line" : 304,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "^aaaaaaExchange to lower level coin (Not enough)^000000",
+      "translation" : "^aaaaaa兌換為更低階硬幣（數量不足）^000000"
+    },
+    {
+      "kind" : "option",
+      "line" : 304,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        "countitem(.@coin)",
+        "getitemname(.@coin)"
+      ],
+      "state" : "translated",
+      "text" : "Exchange {0} {1} into lower level coin",
+      "translation" : "將{0}枚{1}兌換為更低階硬幣"
+    },
+    {
       "kind" : "message",
       "line" : 306,
       "npc" : "Dark MachineTX100",
       "state" : "translated",
       "text" : "[Dark Machine TX100]\nThank you for coming.",
       "translation" : "[黑暗機器 TX100]\n感謝您的光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nThis coin cannot be exchanged to a lower level coin.",
+      "translation" : "[黑暗機器 TX100]\n這種硬幣無法兌換為更低階硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nThis coin cannot be exchanged to a {0} level coin.",
+      "translation" : "[黑暗機器 TX100]\n這種硬幣無法兌換為{0}級硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nThis coin cannot be exchanged to a higher level coin.",
+      "translation" : "[黑暗機器 TX100]\n這種硬幣無法兌換為更高階硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nThis coin cannot be exchanged to a higher level coin.\nAborting process. Thank you for coming.",
+      "translation" : "[黑暗機器 TX100]\n這種硬幣無法兌換為更高階硬幣。\n中止兌換。感謝光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 311,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nThis coin cannot be exchanged to a lower level coin.\nAborting process. Thank you for coming.",
+      "translation" : "[黑暗機器 TX100]\n這種硬幣無法兌換為更低階硬幣。\n中止兌換。感謝光臨。"
     },
     {
       "kind" : "message",
@@ -350,6 +1116,57 @@
     },
     {
       "kind" : "message",
+      "line" : 313,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "Aborting process. Thank you for coming.",
+      "translation" : "中止兌換。感謝光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@exchange_name$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nYou have not enough coins for a {0} level coin exchange.",
+      "translation" : "[黑暗機器 TX100]\n你的硬幣不足，無法兌換為{0}級硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nYou have not enough coins for a higher level coin exchange.",
+      "translation" : "[黑暗機器 TX100]\n你的硬幣不足，無法兌換為更高階硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nYou have not enough coins for a lower level coin exchange.",
+      "translation" : "[黑暗機器 TX100]\n你的硬幣不足，無法兌換為更低階硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nYou have not enough coins for a higher level coin exchange.\nAborting process. Thank you for coming.",
+      "translation" : "[黑暗機器 TX100]\n你的硬幣不足，無法兌換為更高階硬幣。\n中止兌換。感謝光臨。"
+    },
+    {
+      "kind" : "message",
+      "line" : 317,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nYou have not enough coins for a lower level coin exchange.\nAborting process. Thank you for coming.",
+      "translation" : "[黑暗機器 TX100]\n你的硬幣不足，無法兌換為更低階硬幣。\n中止兌換。感謝光臨。"
+    },
+    {
+      "kind" : "message",
       "line" : 317,
       "npc" : "Dark MachineTX100",
       "placeholders" : [
@@ -361,6 +1178,14 @@
     },
     {
       "kind" : "message",
+      "line" : 319,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "Aborting process. Thank you for coming.",
+      "translation" : "中止兌換。感謝光臨。"
+    },
+    {
+      "kind" : "message",
       "line" : 323,
       "npc" : "Dark MachineTX100",
       "placeholders" : [
@@ -369,6 +1194,30 @@
       "state" : "translated",
       "text" : "[Dark Machine TX100]\nYou have too many {0} level coins already. Please come back with less coins.",
       "translation" : "[黑暗機器 TX100]\n您擁有的{0}級硬幣已經太多了。請減少硬幣數量後再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 323,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nYou have too many higher level coins already. Please come back with less coins.",
+      "translation" : "[黑暗機器 TX100]\n你持有的高階硬幣過多。請減少數量後再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 323,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nYou have too many lower level coins already. Please come back with less coins.",
+      "translation" : "[黑暗機器 TX100]\n你持有的低階硬幣過多。請減少數量後再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 342,
+      "npc" : "Dark MachineTX100",
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]",
+      "translation" : "[黑暗機器 TX100]"
     },
     {
       "kind" : "message",
@@ -384,6 +1233,95 @@
       "state" : "translated",
       "text" : "[Dark Machine TX100]\nReceived ^003399{0}^000000 for ^003399{1}^000000 unit(s).\nWe have exchanged your coin to ^003399{2}^000000 unit(s) of ^003399{3} Level Coin^000000, deducted ^003399{4}^000000 unit(s) as exchanging fee.",
       "translation" : "[黑暗機器 TX100]\n已收到^003399{0}^000000，共^003399{1}^000000枚。\n已兌換為^003399{2}^000000枚^003399{3}級硬幣^000000，另扣除^003399{4}^000000枚作為手續費。"
+    },
+    {
+      "kind" : "message",
+      "line" : 342,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        "getitemname(.@coin)",
+        ".@reward_amount-.@fee",
+        ".@fee"
+      ],
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nReceived ^003399{0}^000000 for ^00339999^000000 unit(s).\nWe have exchanged your coin to ^003399{1}^000000 unit(s) of ^003399High Level Coin^000000, deducted ^003399{2}^000000 unit(s) as exchanging fee.",
+      "translation" : "[黑暗機器 TX100]\n已收取^003399{0}^000000枚硬幣，共^00339999^000000枚。\n為你兌換成^003399{1}^000000枚^003399高階硬幣^000000，並收取^003399{2}^000000枚兌換手續費。"
+    },
+    {
+      "kind" : "message",
+      "line" : 342,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        "getitemname(.@coin)",
+        ".@reward_amount-.@fee",
+        ".@fee"
+      ],
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nReceived ^003399{0}^000000 for ^003399500^000000 unit(s).\nWe have exchanged your coin to ^003399{1}^000000 unit(s) of ^003399Low Level Coin^000000, deducted ^003399{2}^000000 unit(s) as exchanging fee.",
+      "translation" : "[黑暗機器 TX100]\n已收取^003399{0}^000000枚硬幣，共^003399500^000000枚。\n為你兌換成^003399{1}^000000枚^003399低階硬幣^000000，並收取^003399{2}^000000枚兌換手續費。"
+    },
+    {
+      "kind" : "message",
+      "line" : 342,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        "getitemname(.@coin)",
+        ".@payment_amount",
+        ".@reward_amount-.@fee",
+        ".@fee"
+      ],
+      "state" : "translated",
+      "text" : "[Dark Machine TX100]\nReceived ^003399{0}^000000 for ^003399{1}^000000 unit(s).\nWe have exchanged your coin to ^003399{2}^000000 unit(s) of ^003399Low Level Coin^000000, deducted ^003399{3}^000000 unit(s) as exchanging fee.",
+      "translation" : "[黑暗機器 TX100]\n已收取^003399{0}^000000枚硬幣，共^003399{1}^000000枚。\n為你兌換成^003399{2}^000000枚^003399低階硬幣^000000，並收取^003399{3}^000000枚兌換手續費。"
+    },
+    {
+      "kind" : "message",
+      "line" : 343,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        "getitemname(.@coin)",
+        ".@payment_amount"
+      ],
+      "state" : "translated",
+      "text" : "Received ^003399{0}^000000 for ^003399{1}^000000 unit(s).",
+      "translation" : "已收取^003399{0}^000000枚硬幣，共^003399{1}^000000枚。"
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@reward_amount-.@fee",
+        ".@coin_text$",
+        ".@fee"
+      ],
+      "state" : "translated",
+      "text" : "We have exchanged your coin to ^003399{0}^000000 unit(s) of ^003399{1} Level Coin^000000, deducted ^003399{2}^000000 unit(s) as exchanging fee.",
+      "translation" : "已為你兌換成^003399{0}^000000枚^003399{1}級硬幣^000000，並收取^003399{2}^000000枚兌換手續費。"
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@reward_amount-.@fee",
+        ".@fee"
+      ],
+      "state" : "translated",
+      "text" : "We have exchanged your coin to ^003399{0}^000000 unit(s) of ^003399High Level Coin^000000, deducted ^003399{1}^000000 unit(s) as exchanging fee.",
+      "translation" : "已為你兌換成^003399{0}^000000枚^003399高階硬幣^000000，並收取^003399{1}^000000枚兌換手續費。"
+    },
+    {
+      "kind" : "message",
+      "line" : 344,
+      "npc" : "Dark MachineTX100",
+      "placeholders" : [
+        ".@reward_amount-.@fee",
+        ".@fee"
+      ],
+      "state" : "translated",
+      "text" : "We have exchanged your coin to ^003399{0}^000000 unit(s) of ^003399Low Level Coin^000000, deducted ^003399{1}^000000 unit(s) as exchanging fee.",
+      "translation" : "已為你兌換成^003399{0}^000000枚^003399低階硬幣^000000，並收取^003399{1}^000000枚兌換手續費。"
     },
     {
       "kind" : "message",
@@ -549,6 +1487,30 @@
       "kind" : "message",
       "line" : 424,
       "npc" : "Can Agency Guard",
+      "state" : "translated",
+      "text" : "[Can Agency Guard]\nExchanged 1 Malangdo Cat Can to 3 E Class Coin. Check it out.",
+      "translation" : "[坎機構守衛]\n已將1罐綿綿島貓食罐頭兌換成3枚E級代幣，請確認。"
+    },
+    {
+      "kind" : "message",
+      "line" : 424,
+      "npc" : "Can Agency Guard",
+      "state" : "translated",
+      "text" : "[Can Agency Guard]\nExchanged 10 Malangdo Cat Can to 30 E Class Coin. Check it out.",
+      "translation" : "[坎機構守衛]\n已將10罐綿綿島貓食罐頭兌換成30枚E級代幣，請確認。"
+    },
+    {
+      "kind" : "message",
+      "line" : 424,
+      "npc" : "Can Agency Guard",
+      "state" : "translated",
+      "text" : "[Can Agency Guard]\nExchanged 100 Malangdo Cat Can to 300 E Class Coin. Check it out.",
+      "translation" : "[坎機構守衛]\n已將100罐綿綿島貓食罐頭兌換成300枚E級代幣，請確認。"
+    },
+    {
+      "kind" : "message",
+      "line" : 424,
+      "npc" : "Can Agency Guard",
       "placeholders" : [
         ".@count",
         "(.@count*3)"
@@ -698,11 +1660,11 @@
       "placeholders" : [
         ".@npc_name$",
         "getarg(2)",
-        "getarg(5)"
+        "getarg(6)"
       ],
       "state" : "translated",
-      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} Malangdo Canned Specialties.",
-      "translation" : "{0}\n^0000FF[{1}]^000000需要{2}個綿綿島風味罐頭。"
+      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} Silvervine Fruit.",
+      "translation" : "{0}\n^0000FF[{1}]^000000需要{2}個獼猴桃果實。"
     },
     {
       "kind" : "message",
@@ -711,11 +1673,11 @@
       "placeholders" : [
         ".@npc_name$",
         "getarg(2)",
-        "getarg(6)"
+        "getarg(5)"
       ],
       "state" : "translated",
-      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} Silvervine Fruit.",
-      "translation" : "{0}\n^0000FF[{1}]^000000需要{2}個獼猴桃果實。"
+      "text" : "{0}\nThe price of ^0000FF[{1}]^000000 is\n{2} Malangdo Canned Specialties.",
+      "translation" : "{0}\n^0000FF[{1}]^000000需要{2}個綿綿島風味罐頭。"
     },
     {
       "kind" : "message",
@@ -742,16 +1704,69 @@
       "translation" : "{0}\n要購買^0000FF[{1}]^000000嗎？"
     },
     {
+      "kind" : "option",
+      "line" : 529,
+      "npc" : "F_mal_coin",
+      "state" : "translated",
+      "text" : "Yes.",
+      "translation" : "是。"
+    },
+    {
+      "kind" : "option",
+      "line" : 529,
+      "npc" : "F_mal_coin",
+      "state" : "translated",
+      "text" : "No, I'll purchase with cans.",
+      "translation" : "不，我要用罐頭購買。"
+    },
+    {
+      "kind" : "option",
+      "line" : 529,
+      "npc" : "F_mal_coin",
+      "state" : "translated",
+      "text" : "I don't want to purchase any.",
+      "translation" : "我不想購買。"
+    },
+    {
+      "kind" : "option",
+      "line" : 529,
+      "npc" : "F_mal_coin",
+      "state" : "translated",
+      "text" : "No.",
+      "translation" : "否。"
+    },
+    {
       "kind" : "message",
       "line" : 551,
       "npc" : "F_mal_coin",
       "placeholders" : [
-        ".@npc_name$",
-        ".@str$"
+        "getarg(1)"
       ],
       "state" : "translated",
-      "text" : "{0}\nI'm sorry, you need more {1}.",
-      "translation" : "{0}\n很抱歉，您需要更多的{1}。"
+      "text" : "{0}\nI'm sorry, you need more coins.",
+      "translation" : "{0}\n抱歉，你的硬幣不夠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 551,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nI'm sorry, you need more Silvervine Fruit.",
+      "translation" : "{0}\n抱歉，你的獼猴桃果實不夠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 551,
+      "npc" : "F_mal_coin",
+      "placeholders" : [
+        "getarg(1)"
+      ],
+      "state" : "translated",
+      "text" : "{0}\nI'm sorry, you need more cans.",
+      "translation" : "{0}\n抱歉，你的罐頭不夠。"
     },
     {
       "kind" : "message",
@@ -785,6 +1800,94 @@
       "state" : "translated",
       "text" : "{0}\nAlways be careful\nwhen you purchase items.",
       "translation" : "{0}\n購買物品時，請務必仔細確認。"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nNice to meet you~~\nI am! YES~~ That's right!\nI'm selling special stuff\nwhich you can see only here on Meow Meow Island!",
+      "translation" : "[流浪商人]\n幸會～～\n沒錯！就是我～～\n我賣的都是特別商品，\n只有在喵喵島才能見到！"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nHow about it? What are you waiting for?\nWhy don't you take a look at\nwhat kinds of stuff I have?",
+      "translation" : "[流浪商人]\n怎麼樣？還等什麼？\n要不要看看\n我這裡都賣些什麼？"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nOh~\nThese are rental items, so make sure you know if you have the ^0000FF1 hour^000000 or ^0000FF7 day^000000 version.",
+      "translation" : "[流浪商人]\n哦～\n這些都是租賃物品，請確認你要的是^0000FF1小時^000000版還是^0000FF7天^000000版。"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWell then, do you want to take a look at what I have now?",
+      "translation" : "[流浪商人]\n那麼，要看看我現在賣的東西嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWell, take a good look at them~~~",
+      "translation" : "[流浪商人]\n好好看看吧～～～"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAhaaa~\nIf you want to buy this stuff,\nyou can talk to me\nwhen you grow up a little more.\nThis stuff is too expensive\nfor a child~",
+      "translation" : "[流浪商人]\n啊哈～\n想買這些東西的話，\n等你再長大一點\n再來找我吧。\n這些對小孩子來說\n太貴了～"
+    },
+    {
+      "kind" : "message",
+      "line" : 599,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWell, then. I'll see you next time.\nGoodbye.",
+      "translation" : "[流浪商人]\n那麼，下次再見。\n再見。"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nIt seems that there are too many items in your inventory.\nPlease make space and come back again~",
+      "translation" : "[流浪商人]\n你的背包裡東西太多了。\n騰出空間再回來吧～"
+    },
+    {
+      "kind" : "message",
+      "line" : 575,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nIt seems that you're overweight.\nPlease reduce your weight and come back again~",
+      "translation" : "[流浪商人]\n你的負重太高了。\n減輕負重後再回來吧～"
     },
     {
       "kind" : "option",
@@ -896,73 +1999,191 @@
       "npc" : "Wandering Merchant",
       "state" : "translated",
       "text" : "[Wandering Merchant]\nWell, then. I'll see you next time.\nGoodbye.",
-      "translation" : "[流浪商人]\n那麼，下次再見。\n再見。"
+      "translation" : "[流浪商人]\n那麼，下次再見。\n再會。"
     },
     {
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~",
-      "translation" : "[流浪商人]\n對^0000FF[{0}]^000000感興趣嗎？\n這是種隨季節洄游的魚，味道鮮美！\n不過，說好吃只是從食物的角度來說啦~"
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail]^000000?\nThis fish looks like a long belt.",
+      "translation" : "[流浪商人]\n您對^0000FF[帶魚]^000000感興趣嗎？\n這種魚看起來就像一條長腰帶。"
     },
     {
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000.",
-      "translation" : "[流浪商人]\n對^0000FF[{0}]^000000感興趣嗎？\n這種魚很受歡迎，能做成各種菜餚。\n劍士、商人和服事系職業還能把它當^DC143C鈍器^000000用。"
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail (7Days)]^000000?\nThis fish looks like a long belt.",
+      "translation" : "[流浪商人]\n您對^0000FF[帶魚（7天）]^000000感興趣嗎？\n這種魚看起來就像一條長腰帶。"
     },
     {
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis fish looks like a long belt.",
-      "translation" : "[流浪商人]\n您對^0000FF[{0}]^000000感興趣嗎？\n這種魚看起來像一條長長的腰帶。"
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~",
+      "translation" : "[流浪商人]\n您對^0000FF[旗魚]^000000感興趣嗎？\n這是一種隨季節活動的魚……味道很鮮美！\n不過我說的是食物哦，真好吃~"
     },
     {
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks.",
-      "translation" : "[流浪商人]\n對^0000FF[{0}]^000000感興趣嗎？\n這把^DC143C短劍^000000在物理攻擊時，有一定機率獲得MATK + 100、ATK + 30，持續7秒。"
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks.",
+      "translation" : "[流浪商人]\n您對^0000FF[竹筴魚]^000000感興趣嗎？\n這是一把^DC143C短劍^000000，物理攻擊時有一定機率使MATK +100、ATK +30，持續7秒。"
     },
     {
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120.",
-      "translation" : "[流浪商人]\n對^0000FF[{0}]^000000感興趣嗎？\n這把^DC143C弓^000000提供LUK + 3，暴擊傷害增加50%。\nBase等級超過100時，遠端物理攻擊傷害再增加20%。\n基礎ATK為120。"
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish (7Days)]^000000?\nThis is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~",
+      "translation" : "[流浪商人]\n您對^0000FF[旗魚（7天）]^000000感興趣嗎？\n這是一種隨季節活動的魚……味道很鮮美！\n不過我說的是食物哦，真好吃~"
     },
     {
       "kind" : "message",
       "line" : 604,
       "npc" : "Wandering Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180.",
-      "translation" : "[流浪商人]\n對^0000FF[{0}]^000000感興趣嗎？\n這是一把^DC143C弓^000000，正是因為彈性好，我們才開始拿它當弓用。\n基礎ATK為180。"
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel (7Days)]^000000?\nThis is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks.",
+      "translation" : "[流浪商人]\n您對^0000FF[竹筴魚（7天）]^000000感興趣嗎？\n這是一把^DC143C短劍^000000，物理攻擊時有一定機率使MATK +100、ATK +30，持續7秒。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120.",
+      "translation" : "[流浪商人]\n您對^0000FF[綿綿島雪蟹]^000000感興趣嗎？\n這是一把^DC143C弓^000000，可使LUK +3、暴擊傷害 +50%；基礎等級達到100以上時，遠端物理攻擊力 +20%。\n基礎ATK為120。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab (7Days)]^000000?\nThis is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.\nBase ATK is 120.",
+      "translation" : "[流浪商人]\n您對^0000FF[綿綿島雪蟹（7天）]^000000感興趣嗎？\n這是一把^DC143C弓^000000，可使LUK +3、暴擊傷害 +50%；基礎等級達到100以上時，遠端物理攻擊力 +20%。\n基礎ATK為120。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000.",
+      "translation" : "[流浪商人]\n您對^0000FF[金槍魚]^000000感興趣嗎？\n這是一種很受歡迎的魚，可以用來製作各種料理。劍士、商人和服事職業可以將它用作^DC143C鈍器^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180.",
+      "translation" : "[流浪商人]\n您對^0000FF[斑紋海鰻]^000000感興趣嗎？\n這是一把^DC143C弓^000000。\n因為它彈性十足，\n人們開始把它當作弓使用。\n基礎ATK為180。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna (7Days)]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it\nas a ^DC143CMace^000000.",
+      "translation" : "[流浪商人]\n您對^0000FF[金槍魚（7天）]^000000感興趣嗎？\n這是一種很受歡迎的魚，可以用來製作各種料理。劍士、商人和服事職業可以將它用作^DC143C鈍器^000000。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel (7Days)]^000000?\nThis is a ^DC143CBow^000000.\nBecause it has elastic force,\nwe started to use it as a Bow.\nBase ATK is 180.",
+      "translation" : "[流浪商人]\n您對^0000FF[斑紋海鰻（7天）]^000000感興趣嗎？\n這是一把^DC143C弓^000000。\n因為它彈性十足，\n人們開始把它當作弓使用。\n基礎ATK為180。"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna]^000000?",
+      "translation" : "[流浪商人]\n您對^0000FF[金槍魚]^000000感興趣嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail]^000000?",
+      "translation" : "[流浪商人]\n您對^0000FF[帶魚]^000000感興趣嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel]^000000?",
+      "translation" : "[流浪商人]\n您對^0000FF[竹筴魚]^000000感興趣嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab]^000000?",
+      "translation" : "[流浪商人]\n您對^0000FF[綿綿島雪蟹]^000000感興趣嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel]^000000?",
+      "translation" : "[流浪商人]\n您對^0000FF[斑紋海鰻]^000000感興趣嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Hairtail (7Days)]^000000?",
+      "translation" : "[流浪商人]\n您對^0000FF[帶魚（7天）]^000000感興趣嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Spearfish (7Days)]^000000?",
+      "translation" : "[流浪商人]\n您對^0000FF[旗魚（7天）]^000000感興趣嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Saurel (7Days)]^000000?",
+      "translation" : "[流浪商人]\n您對^0000FF[竹筴魚（7天）]^000000感興趣嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna (7Days)]^000000?",
+      "translation" : "[流浪商人]\n您對^0000FF[金槍魚（7天）]^000000感興趣嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Brindle Eel (7Days)]^000000?",
+      "translation" : "[流浪商人]\n您對^0000FF[斑紋海鰻（7天）]^000000感興趣嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Malang Snow Crab (7Days)]^000000?",
+      "translation" : "[流浪商人]\n您對^0000FF[綿綿島雪蟹（7天）]^000000感興趣嗎？"
     },
     {
       "kind" : "message",
@@ -974,6 +2195,22 @@
       "state" : "translated",
       "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[{0}]^000000?",
       "translation" : "[流浪商人]\n您對^0000FF[{0}]^000000感興趣嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 604,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAre you interested in ^0000FF[Tuna]^000000?\nThis is a very popular fish\nwhich is used in various dishes.\nSwordman, Merchant, and Acolyte classes can use it",
+      "translation" : "[流浪商人]\n您對^0000FF[金槍魚]^000000感興趣嗎？\n這是一種很受歡迎的魚，可以用來製作各種料理。劍士、商人和服事職業都可以使用它。"
+    },
+    {
+      "kind" : "message",
+      "line" : 609,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "This is... a fish that moves according to the season, very tasty!\nBut this is only a food that I'm talking about, yummy~",
+      "translation" : "這是一種……會隨著季節洄游的魚，非常美味！\n我說的是食材啦，嘿嘿～"
     },
     {
       "kind" : "message",
@@ -993,6 +2230,14 @@
     },
     {
       "kind" : "message",
+      "line" : 627,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "This is a very popular fish\nwhich is used in various dishes.",
+      "translation" : "這是一種很受歡迎的魚，可以用來製作各種料理。"
+    },
+    {
+      "kind" : "message",
       "line" : 632,
       "npc" : "Wandering Merchant",
       "state" : "translated",
@@ -1009,11 +2254,27 @@
     },
     {
       "kind" : "message",
+      "line" : 645,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "This fish looks like a long belt.",
+      "translation" : "這種魚看起來像一條長腰帶。"
+    },
+    {
+      "kind" : "message",
       "line" : 647,
       "npc" : "Wandering Merchant",
       "state" : "translated",
       "text" : "[Wandering Merchant]\nThis is a ^DC143CTwo-Handed Sword^000000\nwhich most swordmen can use.\nIt increases 50% of critical damage when attacking and CRI + 20.\nBase ATK is 220.",
       "translation" : "[流浪商人]\n這是一把大多數劍士都能使用的^DC143C雙手劍^000000。\n攻擊時增加50%的暴擊傷害且CRI + 20。\n基礎ATK為220。"
+    },
+    {
+      "kind" : "message",
+      "line" : 647,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]",
+      "translation" : "[流浪商人]"
     },
     {
       "kind" : "message",
@@ -1025,11 +2286,27 @@
     },
     {
       "kind" : "message",
+      "line" : 660,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "This is a ^DC143CDagger^000000 which gives MATK + 100\nand ATK + 30 for 7sec at a certain rate with physical attacks.",
+      "translation" : "這把^DC143C匕首^000000有一定機率在物理攻擊時使MATK+100、ATK+30，持續7秒。"
+    },
+    {
+      "kind" : "message",
       "line" : 663,
       "npc" : "Wandering Merchant",
       "state" : "translated",
       "text" : "[Wandering Merchant]\nMore details are...\ngives MATK + 20 for 7sec at a certain rate with magical attacks\nand additional MATK + 10, ATK + 10 when Base Lv. is over 100.\nBase ATK is 160.",
       "translation" : "[流浪商人]\n再說說屬性...\n魔法攻擊時，有一定機率獲得MATK + 20，持續7秒。\nBase等級超過100時，額外MATK + 10、ATK + 10。\n基礎ATK為160。"
+    },
+    {
+      "kind" : "message",
+      "line" : 672,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "This is a ^DC143CBow^000000 which increases LUK + 3 and 50% of critical damage,\nand increases 20% of long rage physical ATK when Base Lv. is over 100.",
+      "translation" : "這把^DC143C弓^000000使LUK+3、暴擊傷害+50%；基礎等級達到100級後，遠距離物理攻擊力再提升20%。"
     },
     {
       "kind" : "message",
@@ -1041,11 +2318,783 @@
     },
     {
       "kind" : "message",
+      "line" : 683,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "This is a ^DC143CBow^000000.\nBecause it has elastic force,",
+      "translation" : "這是一把^DC143C弓^000000。\n由於彈性十足，"
+    },
+    {
+      "kind" : "message",
       "line" : 688,
       "npc" : "Wandering Merchant",
       "state" : "translated",
       "text" : "[Wandering Merchant]\nMore details are...\nAGI + 3, and ASPD + 2 for 5sec at a certain rate with long range physical attacks.\nAlso gives additional 20% of long range physical ATK when Base Lv. is over 100.\nHunter, Bard, and Dancer classes can use it.",
       "translation" : "[流浪商人]\n再說說屬性...\nAGI + 3，遠端物理攻擊時，有一定機率獲得ASPD + 2，持續5秒。\nBase等級超過100時，遠端物理攻擊傷害再增加20%。\n獵人、詩人和舞娘系職業都能使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Malang Snow Crab]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[綿綿島雪蟹]^000000的價格是\n8枚E級硬幣或{0}罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Malang Snow Crab]^000000 is\n{0} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[綿綿島雪蟹]^000000的價格是\n{0}個獼猴桃果實.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Malang Snow Crab]^000000 is\n{0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[綿綿島雪蟹]^000000的價格是\n{0}罐綿綿島特產罐頭.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Malang Snow Crab]^000000 with E Grade Coins?",
+      "translation" : "[流浪商人]\n要用E級代幣購買^0000FF[綿綿島雪蟹]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Malang Snow Crab]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[綿綿島雪蟹]^000000嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "Yes.",
+      "translation" : "是。"
+    },
+    {
+      "kind" : "option",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "No, I'll purchase with cans.",
+      "translation" : "不，我要用罐頭購買。"
+    },
+    {
+      "kind" : "option",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "I don't want to purchase any.",
+      "translation" : "我不想購買。"
+    },
+    {
+      "kind" : "option",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "No.",
+      "translation" : "否。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Malang Snow Crab (7Days)]^000000 is\n{0} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[綿綿島雪蟹（7天）]^000000的價格是\n{0}個獼猴桃果實.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Malang Snow Crab (7Days)]^000000 is\n{0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[綿綿島雪蟹（7天）]^000000的價格是\n{0}罐綿綿島特產罐頭.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Malang Snow Crab (7Days)]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[綿綿島雪蟹（7天）]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Saurel]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[竹筴魚]^000000的價格是\n8枚E級硬幣或{0}罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Saurel]^000000 is\n{0} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[竹筴魚]^000000的價格是\n{0}個獼猴桃果實.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Saurel]^000000 is\n{0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[竹筴魚]^000000的價格是\n{0}罐綿綿島特產罐頭.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Saurel]^000000 with E Grade Coins?",
+      "translation" : "[流浪商人]\n要用E級代幣購買^0000FF[竹筴魚]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Saurel]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[竹筴魚]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThank you.",
+      "translation" : "[流浪商人]\n謝謝惠顧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Saurel (7Days)]^000000 is\n{0} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[竹筴魚（7天）]^000000的價格是\n{0}個獼猴桃果實.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Saurel (7Days)]^000000 is\n{0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[竹筴魚（7天）]^000000的價格是\n{0}罐綿綿島特產罐頭.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Saurel (7Days)]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[竹筴魚（7天）]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Brindle Eel]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[斑紋海鰻]^000000的價格是\n8枚E級硬幣或{0}罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Brindle Eel]^000000 is\n{0} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[斑紋海鰻]^000000的價格是\n{0}個獼猴桃果實.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Brindle Eel]^000000 is\n{0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[斑紋海鰻]^000000的價格是\n{0}罐綿綿島特產罐頭.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Brindle Eel]^000000 with E Grade Coins?",
+      "translation" : "[流浪商人]\n要用E級代幣購買^0000FF[斑紋海鰻]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Brindle Eel]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[斑紋海鰻]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Brindle Eel (7Days)]^000000 is\n{0} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[斑紋海鰻（7天）]^000000的價格是\n{0}個獼猴桃果實.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Brindle Eel (7Days)]^000000 is\n{0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[斑紋海鰻（7天）]^000000的價格是\n{0}罐綿綿島特產罐頭.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Brindle Eel (7Days)]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[斑紋海鰻（7天）]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Hairtail]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[帶魚]^000000的價格是\n8枚E級硬幣或{0}罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Hairtail]^000000 is\n{0} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[帶魚]^000000的價格是\n{0}個獼猴桃果實.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Hairtail]^000000 is\n{0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[帶魚]^000000的價格是\n{0}罐綿綿島特產罐頭.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Hairtail]^000000 with E Grade Coins?",
+      "translation" : "[流浪商人]\n要用E級代幣購買^0000FF[帶魚]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Hairtail]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[帶魚]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Hairtail (7Days)]^000000 is\n{0} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[帶魚（7天）]^000000的價格是\n{0}個獼猴桃果實.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Hairtail (7Days)]^000000 is\n{0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[帶魚（7天）]^000000的價格是\n{0}罐綿綿島特產罐頭.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Hairtail (7Days)]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[帶魚（7天）]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Spearfish]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[旗魚]^000000的價格是\n8枚E級硬幣或{0}罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Spearfish]^000000 is\n{0} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[旗魚]^000000的價格是\n{0}個獼猴桃果實.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Spearfish]^000000 is\n{0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[旗魚]^000000的價格是\n{0}罐綿綿島特產罐頭.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Spearfish]^000000 with E Grade Coins?",
+      "translation" : "[流浪商人]\n要用E級代幣購買^0000FF[旗魚]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Spearfish]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[旗魚]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Tuna]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[金槍魚]^000000的價格是\n8枚E級硬幣或{0}罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Tuna]^000000 is\n{0} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[金槍魚]^000000的價格是\n{0}個獼猴桃果實.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Tuna]^000000 is\n{0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[金槍魚]^000000的價格是\n{0}罐綿綿島特產罐頭.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Tuna]^000000 with E Grade Coins?",
+      "translation" : "[流浪商人]\n要用E級代幣購買^0000FF[金槍魚]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Tuna]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[金槍魚]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Spearfish (7Days)]^000000 is\n{0} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[旗魚（7天）]^000000的價格是\n{0}個獼猴桃果實.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Spearfish (7Days)]^000000 is\n{0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[旗魚（7天）]^000000的價格是\n{0}罐綿綿島特產罐頭.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Spearfish (7Days)]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[旗魚（7天）]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Tuna (7Days)]^000000 is\n{0} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[金槍魚（7天）]^000000的價格是\n{0}個獼猴桃果實.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Tuna (7Days)]^000000 is\n{0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[金槍魚（7天）]^000000的價格是\n{0}罐綿綿島特產罐頭.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[Tuna (7Days)]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[金槍魚（7天）]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]",
+        "getarg(6)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[{0}]^000000 is\n{1} Silvervine Fruit.",
+      "translation" : "[流浪商人]\n^0000FF[{0}]^000000的價格是\n{1} Silvervine Fruit.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]",
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[{0}]^000000 is\n{1} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[{0}]^000000的價格是\n{1} Malangdo Canned Specialties.。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        ".@names$[.@i]"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to\npurchase ^0000FF[{0}]^000000?",
+      "translation" : "[流浪商人]\n要購買^0000FF[{0}]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nAlways be careful\nwhen you purchase items.",
+      "translation" : "[流浪商人]\n購買物品時請務必小心。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nI'm sorry, you need more Silvervine Fruit.",
+      "translation" : "[流浪商人]\n抱歉，您的獼猴桃果實不夠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nI'm sorry, you need more cans.",
+      "translation" : "[流浪商人]\n抱歉，您的特產罐頭不夠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nSorry, you've purchased too many.\nYou need to make more space in your inventory. Please come back later.",
+      "translation" : "[流浪商人]\n抱歉，您購買的數量太多了。\n請整理出更多物品欄空間後再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Hairtail (7Days)]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[帶魚（7天）]^000000的價格是\n8枚E級硬幣或{0}罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Hairtail (7Days)]^000000 with E Grade Coins?",
+      "translation" : "[流浪商人]\n要用E級代幣購買^0000FF[帶魚（7天）]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Spearfish (7Days)]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[旗魚（7天）]^000000的價格是\n8枚E級硬幣或{0}罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Spearfish (7Days)]^000000 with E Grade Coins?",
+      "translation" : "[流浪商人]\n要用E級代幣購買^0000FF[旗魚（7天）]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Saurel (7Days)]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[竹筴魚（7天）]^000000的價格是\n8枚E級硬幣或{0}罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Saurel (7Days)]^000000 with E Grade Coins?",
+      "translation" : "[流浪商人]\n要用E級代幣購買^0000FF[竹筴魚（7天）]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Tuna (7Days)]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[金槍魚（7天）]^000000的價格是\n8枚E級硬幣或{0}罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Tuna (7Days)]^000000 with E Grade Coins?",
+      "translation" : "[流浪商人]\n要用E級代幣購買^0000FF[金槍魚（7天）]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "placeholders" : [
+        "getarg(5)"
+      ],
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Brindle Eel (7Days)]^000000 is\n8 E Grade Coin or {0} Malangdo Canned Specialties.",
+      "translation" : "[流浪商人]\n^0000FF[斑紋海鰻（7天）]^000000的價格是\n8枚E級硬幣或{0}罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nWould you like to purchase\n^0000FF[Brindle Eel (7Days)]^000000 with E Grade Coins?",
+      "translation" : "[流浪商人]\n要用E級代幣購買^0000FF[斑紋海鰻（7天）]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nThe price of ^0000FF[Malang Snow Crab (7Days)]^000000 is",
+      "translation" : "[流浪商人]\n^0000FF[綿綿島雪蟹（7天）]^000000的價格是\n8枚E級硬幣。"
+    },
+    {
+      "kind" : "message",
+      "line" : 700,
+      "npc" : "Wandering Merchant",
+      "state" : "translated",
+      "text" : "[Wandering Merchant]\nI'm sorry, you need more coins.",
+      "translation" : "[流浪商人]\n抱歉，您的硬幣不夠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nNice to meet you~~\nI am! YES~~ That's right!\nI'm selling special stuff\nwhich you can see only here on Meow Meow Island!",
+      "translation" : "[臭商人]\n初次見面~~\n沒錯！就是我~~\n我在出售只有喵喵島才買得到的\n特別商品！"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nHow about it? What are you waiting for?\nWhy don't you take a look at\nwhat kinds of stuff I have?",
+      "translation" : "[臭商人]\n怎麼樣？還等什麼呢？\n要不要看看我這裡\n都賣些什麼？"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nWell then, do you want to take a look at what I have now?",
+      "translation" : "[臭商人]\n那麼，要看看我現在賣的東西嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nWell, take a good look at them~~~",
+      "translation" : "[臭商人]\n好好看看吧~~~"
+    },
+    {
+      "kind" : "message",
+      "line" : 716,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nWell, then. I'll see you next time.\nGoodbye.",
+      "translation" : "[臭烘烘的商人]\n那麼，下次再見。\n再見。"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nIt seems that there are too many items in your inventory.\nPlease make space and come back again~",
+      "translation" : "[臭商人]\n您的物品欄好像裝得太滿了。\n騰出些空間再來吧~"
+    },
+    {
+      "kind" : "message",
+      "line" : 706,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nIt seems that you're overweight.\nPlease reduce your weight and come back again~",
+      "translation" : "[臭商人]\n您的負重好像超標了。\n減輕負重後再來吧~"
     },
     {
       "kind" : "option",
@@ -1077,40 +3126,23 @@
       "npc" : "Stinky Merchant",
       "state" : "translated",
       "text" : "[Stinky Merchant]\nWell, then. I'll see you next time.\nGoodbye.",
-      "translation" : "[臭烘烘的商人]\n那麼，下次再見。\n再見。"
+      "translation" : "[臭商人]\n那就下次再見。\n再會。"
     },
     {
       "kind" : "message",
       "line" : 721,
       "npc" : "Stinky Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is a glove which can give happiness\njust by wearing it.",
-      "translation" : "[臭烘烘的商人]\n您對^0000FF[{0}]^000000感興趣嗎？\n這是一隻只要戴上就能帶來幸福的手套。"
+      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[Cat Paw Glove]^000000?\nThis is a glove which can give happiness\njust by wearing it.",
+      "translation" : "[臭商人]\n您對^0000FF[貓爪手套]^000000感興趣嗎？\n只要戴上它，就能讓人幸福滿滿。"
     },
     {
       "kind" : "message",
       "line" : 721,
       "npc" : "Stinky Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nIt looks like it wouldn't hurt, don't you think so?\nBut I'm telling you, it can hurt someone.",
-      "translation" : "[臭烘烘的商人]\n您對^0000FF[{0}]^000000感興趣嗎？\n看起來好像不會傷人，您覺得呢？\n但我告訴您，它是會傷人的。"
-    },
-    {
-      "kind" : "message",
-      "line" : 721,
-      "npc" : "Stinky Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "state" : "translated",
-      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[{0}]^000000?",
-      "translation" : "[臭烘烘的商人]\n您對^0000FF[{0}]^000000感興趣嗎？"
+      "text" : "[Stinky Merchant]\nAre you interested in ^0000FF[Cat Club]^000000?\nIt looks like it wouldn't hurt, don't you think so?\nBut I'm telling you, it can hurt someone.",
+      "translation" : "[臭商人]\n您對^0000FF[貓咪球棒]^000000感興趣嗎？\n看起來似乎打不疼人，對吧？\n不過我可告訴你，它真的能打疼人。"
     },
     {
       "kind" : "message",
@@ -1135,6 +3167,190 @@
       "state" : "translated",
       "text" : "[Stinky Merchant]\nThis is a ^DC143CMace^000000 that increases 15% of damage to the animal type of monster.\nBase ATK is 88.\nThe other details are\nWeapon Lv : 1 / SLOT : 3 / Refine : Able / Destruction : Unable",
       "translation" : "[臭烘烘的商人]\n這把^DC143C鈍器^000000對動物型魔物的傷害增加15%，基礎ATK為88。\n其他屬性如下：\n武器等級：1/插槽：3/可精煉/不可破壞"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nThe price of ^0000FF[Cat Club]^000000 is\n32 E Grade Coin or 200 Malangdo Canned Specialties.",
+      "translation" : "[臭商人]\n^0000FF[貓咪球棒]^000000的價格是\n32枚E級硬幣或200罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nWould you like to purchase\n^0000FF[Cat Club]^000000 with E Grade Coins?",
+      "translation" : "[臭商人]\n要用E級硬幣購買\n^0000FF[貓咪球棒]^000000嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "Yes.",
+      "translation" : "是。"
+    },
+    {
+      "kind" : "option",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "No, I'll purchase with cans.",
+      "translation" : "不，我要用罐頭購買。"
+    },
+    {
+      "kind" : "option",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "I don't want to purchase any.",
+      "translation" : "我不想購買。"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nThank you.",
+      "translation" : "[臭商人]\n謝謝惠顧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nThe price of ^0000FF[Cat Paw Glove]^000000 is\n32 E Grade Coin or 200 Malangdo Canned Specialties.",
+      "translation" : "[臭商人]\n^0000FF[貓爪手套]^000000的價格是\n32枚E級硬幣或200罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nWould you like to purchase\n^0000FF[Cat Paw Glove]^000000 with E Grade Coins?",
+      "translation" : "[臭商人]\n要用E級硬幣購買\n^0000FF[貓爪手套]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nAlways be careful\nwhen you purchase items.",
+      "translation" : "[臭商人]\n購買物品時請務必小心。"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nI'm sorry, you need more coins.",
+      "translation" : "[臭商人]\n抱歉，您的硬幣不夠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nI'm sorry, you need more cans.",
+      "translation" : "[臭商人]\n抱歉，您的特產罐頭不夠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 751,
+      "npc" : "Stinky Merchant",
+      "state" : "translated",
+      "text" : "[Stinky Merchant]\nSorry, you've purchased too many.\nYou need to make more space in your inventory. Please come back later.",
+      "translation" : "[臭商人]\n抱歉，您購買的數量太多了。\n請整理出更多物品欄空間後再來。"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nNice to meet you~~\nI am! YES~~ That's right!\nI'm selling special stuff\nwhich you can see only here on Meow Meow Island!",
+      "translation" : "[流動商人]\n初次見面~~\n沒錯！就是我~~\n我在出售只有喵喵島才買得到的\n特別商品！"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nHow about it? What are you waiting for?\nWhy don't you take a look at\nwhat kinds of stuff I have?",
+      "translation" : "[流動商人]\n怎麼樣？還等什麼呢？\n要不要看看我這裡\n都賣些什麼？"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nJust for your information,\nSow Bug, Starfish, Dried Squid, and Flying Fish are the items which you can use for 1 hour.",
+      "translation" : "[流動商人]\n順便告訴您，\n鋸鍬形蟲、海星、魷魚乾和飛魚都是\n效果持續1小時的物品。"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nWell then, do you want to take a look at what I have now?",
+      "translation" : "[流動商人]\n那麼，要看看我現在賣的東西嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "Yes",
+      "translation" : "是"
+    },
+    {
+      "kind" : "option",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "No",
+      "translation" : "否"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nWell, take a good look at them~~~",
+      "translation" : "[流動商人]\n好好看看吧~~~"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nAhaaa~\nIf you want to buy this stuff,\nyou can talk to me\nwhen you grow up a little more.\nThis stuff is too expensive\nfor a child~",
+      "translation" : "[流動商人]\n啊哈~\n想買這些東西的話，\n等你再長大一些再來找我吧。\n這些東西對小孩子來說\n可太貴了~"
+    },
+    {
+      "kind" : "message",
+      "line" : 769,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nWell, then. I'll see you next time.\nGoodbye.",
+      "translation" : "[流動商人]\n那麼，下次再見。\n再見。"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nIt seems that there are too many items in your inventory.\nPlease make space and come back again~",
+      "translation" : "[流動商人]\n您的物品欄好像裝得太滿了。\n騰出些空間再來吧~"
+    },
+    {
+      "kind" : "message",
+      "line" : 757,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nIt seems that you're overweight.\nPlease reduce your weight and come back again~",
+      "translation" : "[流動商人]\n您的負重好像超標了。\n減輕負重後再來吧~"
     },
     {
       "kind" : "option",
@@ -1182,62 +3398,39 @@
       "npc" : "Roving Merchant",
       "state" : "translated",
       "text" : "[Roving Merchant]\nWell, then. I'll see you next time.\nGoodbye.",
-      "translation" : "[流動商人]\n那麼，下次再見。\n再見。"
+      "translation" : "[流動商人]\n那就下次再見。\n再會。"
     },
     {
       "kind" : "message",
       "line" : 774,
       "npc" : "Roving Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nThis is the one that flies\nwith a big pectoral.",
-      "translation" : "[流動商人]\n您對^0000FF[{0}]^000000感興趣嗎？\n這是那種用大胸鰭飛行的傢伙。"
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Flying Fish]^000000?\nThis is the one that flies\nwith a big pectoral.",
+      "translation" : "[流動商人]\n您對^0000FF[飛魚]^000000感興趣嗎？\n它靠寬大的胸鰭\n在空中飛翔。"
     },
     {
       "kind" : "message",
       "line" : 774,
       "npc" : "Roving Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nIn that case, I'll explain for you.\nThis is a ^DC143CBullet^000000 which stuns the enemy at a certain rate when attacking.",
-      "translation" : "[流動商人]\n您對^0000FF[{0}]^000000感興趣嗎？\n如果是這樣，我來為您解釋一下。\n這是一種^DC143C子彈^000000，攻擊時有一定機率使敵人眩暈。"
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Sow Bug]^000000?\nIn that case, I'll explain for you.\nThis is a ^DC143CBullet^000000 which stuns the enemy at a certain rate when attacking.",
+      "translation" : "[流動商人]\n您對^0000FF[鋸鍬形蟲]^000000感興趣嗎？\n我來為您介紹一下。\n這是一種^DC143C子彈^000000，攻擊時有一定機率使敵人陷入昏厥。"
     },
     {
       "kind" : "message",
       "line" : 774,
       "npc" : "Roving Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which causes darkness at a certain rate.\nIt's neutral property and its ATK is 50.",
-      "translation" : "[流動商人]\n您對^0000FF[{0}]^000000感興趣嗎？\n我來為您解釋一下這個物品。\n這是一種^DC143C投擲武器^000000，有一定機率造成黑暗狀態。\n它是無屬性，ATK為50。"
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Starfish]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which stuns the enemy at a certain rate.",
+      "translation" : "[流動商人]\n您對^0000FF[海星]^000000感興趣嗎？\n我來為您介紹一下。\n這是一種^DC143C投擲武器^000000，使用時有一定機率使敵人陷入昏厥。"
     },
     {
       "kind" : "message",
       "line" : 774,
       "npc" : "Roving Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
       "state" : "translated",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which stuns the enemy at a certain rate.",
-      "translation" : "[流動商人]\n您對^0000FF[{0}]^000000感興趣嗎？\n我來為您解釋一下這個物品。\n這是一種^DC143C投擲武器^000000，有一定機率使敵人眩暈。"
-    },
-    {
-      "kind" : "message",
-      "line" : 774,
-      "npc" : "Roving Merchant",
-      "placeholders" : [
-        ".@names$[.@i]"
-      ],
-      "state" : "translated",
-      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[{0}]^000000?\n[Roving Merchant]\nFor your information,\none box contains\n200 units.",
-      "translation" : "[流動商人]\n對^0000FF[{0}]^000000感興趣嗎？\n[流動商人]\n提醒您，一盒裝有200個。"
+      "text" : "[Roving Merchant]\nAre you interested in ^0000FF[Dried Squid]^000000?\nI'll explain about this item.\nThis is a ^DC143CThrowing Weapon^000000 which causes darkness at a certain rate.\nIt's neutral property and its ATK is 50.",
+      "translation" : "[流動商人]\n您對^0000FF[魷魚乾]^000000感興趣嗎？\n我來為您介紹一下。\n這是一種^DC143C投擲武器^000000，使用時有一定機率使敵人陷入黑暗。\n它是無屬性武器，ATK為50。"
     },
     {
       "kind" : "message",
@@ -1286,6 +3479,118 @@
       "state" : "translated",
       "text" : "[Roving Merchant]\nFor your information,\none box contains\n200 units.",
       "translation" : "[流動商人]\n提醒您，一盒裝有200個。"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nThe price of ^0000FF[Sow Bug]^000000 is\n200 Malangdo Canned Specialties.",
+      "translation" : "[流動商人]\n^0000FF[鋸鍬形蟲]^000000的價格是\n200罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nWould you like to\npurchase ^0000FF[Sow Bug]^000000?",
+      "translation" : "[流動商人]\n要購買^0000FF[鋸鍬形蟲]^000000嗎？"
+    },
+    {
+      "kind" : "option",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "Yes.",
+      "translation" : "是。"
+    },
+    {
+      "kind" : "option",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "No.",
+      "translation" : "否。"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nThe price of ^0000FF[Starfish]^000000 is\n200 Malangdo Canned Specialties.",
+      "translation" : "[流動商人]\n^0000FF[海星]^000000的價格是\n200罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nWould you like to\npurchase ^0000FF[Starfish]^000000?",
+      "translation" : "[流動商人]\n要購買^0000FF[海星]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nThank you.",
+      "translation" : "[流動商人]\n謝謝惠顧。"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nThe price of ^0000FF[Dried Squid]^000000 is\n200 Malangdo Canned Specialties.",
+      "translation" : "[流動商人]\n^0000FF[魷魚乾]^000000的價格是\n200罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nWould you like to\npurchase ^0000FF[Dried Squid]^000000?",
+      "translation" : "[流動商人]\n要購買^0000FF[魷魚乾]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nThe price of ^0000FF[Flying Fish]^000000 is\n200 Malangdo Canned Specialties.",
+      "translation" : "[流動商人]\n^0000FF[飛魚]^000000的價格是\n200罐綿綿島特產罐頭。"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nWould you like to\npurchase ^0000FF[Flying Fish]^000000?",
+      "translation" : "[流動商人]\n要購買^0000FF[飛魚]^000000嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nAlways be careful\nwhen you purchase items.",
+      "translation" : "[流動商人]\n購買物品時請務必小心。"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nI'm sorry, you need more cans.",
+      "translation" : "[流動商人]\n抱歉，您的特產罐頭不夠。"
+    },
+    {
+      "kind" : "message",
+      "line" : 827,
+      "npc" : "Roving Merchant",
+      "state" : "translated",
+      "text" : "[Roving Merchant]\nSorry, you've purchased too many.\nYou need to make more space in your inventory. Please come back later.",
+      "translation" : "[流動商人]\n抱歉，您購買的數量太多了。\n請整理出更多物品欄空間後再來。"
     },
     {
       "kind" : "message",
@@ -1350,14 +3655,6 @@
       "state" : "translated",
       "text" : "Luk Glove",
       "translation" : "幸運手套"
-    },
-    {
-      "kind" : "message",
-      "line" : 848,
-      "npc" : "Armor Merchant Naphara",
-      "state" : "translated",
-      "text" : "[Armor Merchant]\n^3131FFRequired Level: 100^000000\n^3131FFSlot: 0^000000\n^3131FFWeight: 10^000000\nare the characteristic options.",
-      "translation" : "[防具商人]\n以下是裝備屬性：\n^3131FF需求等級：100^000000\n^3131FF插槽：0^000000\n^3131FF重量：10^000000"
     },
     {
       "kind" : "message",
@@ -1694,23 +3991,9 @@
       "kind" : "message",
       "line" : 988,
       "npc" : "Herb Merchant Plafina",
-      "placeholders" : [
-        ".cost[.@item]"
-      ],
       "state" : "translated",
-      "text" : "[Herb Merchant]\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each.",
-      "translation" : "[藥草商人]\n使用間隔為5秒，每個售價{0}枚輝煌領域金幣。"
-    },
-    {
-      "kind" : "message",
-      "line" : 988,
-      "npc" : "Herb Merchant Plafina",
-      "placeholders" : [
-        ".cost[.@item]"
-      ],
-      "state" : "translated",
-      "text" : "[Herb Merchant]\nSnow Flip has special effects on ^3131FFBurning, Bleeding, Deep Sleep, Sleep^000000.\nRequires 5 seconds between uses.\nIt costs {0} Splendide Coins for each.",
-      "translation" : "[藥草商人]\n冰雪花瓣對^3131FF燃燒、流血、深度睡眠和睡眠^000000有特殊效果。\n使用間隔為5秒，每個售價{0}枚輝煌領域金幣。"
+      "text" : "[Herb Merchant]\nSnow Flip has special effects on ^3131FFBurning, Bleeding, Deep Sleep, Sleep^000000.\nRequires 5 seconds between uses.\nIt costs 5 Splendide Coins for each.",
+      "translation" : "[藥草商普拉菲娜]\n雪花薄荷可對^3131FF灼燒、出血、深度睡眠、睡眠^000000狀態產生特殊效果。\n每次使用後需間隔5秒。\n每個售價5枚史普蘭迪德硬幣。"
     },
     {
       "kind" : "message",
@@ -1774,12 +4057,22 @@
       "line" : 1013,
       "npc" : "Herb Merchant Plafina",
       "placeholders" : [
-        ".@buy",
         "getitemname(.items[.@item])"
       ],
       "state" : "translated",
-      "text" : "[Herb Merchant]\nWould you like to buy {0} {1}?",
-      "translation" : "[藥草商人]\n您要購買{0}個{1}嗎？"
+      "text" : "[Herb Merchant]\nWould you like to buy 1 {0}?",
+      "translation" : "[藥草商普拉菲娜]\n要購買1個{0}嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1013,
+      "npc" : "Herb Merchant Plafina",
+      "placeholders" : [
+        "getitemname(.items[.@item])"
+      ],
+      "state" : "translated",
+      "text" : "[Herb Merchant]\nWould you like to buy 10 {0}?",
+      "translation" : "[藥草商普拉菲娜]\n要購買10個{0}嗎？"
     },
     {
       "kind" : "option",
@@ -2046,6 +4339,52 @@
       "translation" : "[帕爾圖]\n你有什麼想法嗎？不如看看這個？"
     },
     {
+      "kind" : "option",
+      "line" : 1134,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        ".@menu$",
+        "getitemname(.@items[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "{0}{1} (^777777Insufficient ingredients^000000)",
+      "translation" : "{0}{1}（^777777材料不足^000000）"
+    },
+    {
+      "kind" : "option",
+      "line" : 1134,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        ".@menu$",
+        "getitemname(.@items[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "{0}{1} (^2502FDAble to Replicate^000000)",
+      "translation" : "{0}{1}（^2502FD可進行復制^000000）"
+    },
+    {
+      "kind" : "option",
+      "line" : 1134,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        "getitemname(.@items[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "{0} (^777777Insufficient ingredients^000000)",
+      "translation" : "{0}（^777777材料不足^000000）"
+    },
+    {
+      "kind" : "option",
+      "line" : 1134,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        "getitemname(.@items[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "{0} (^2502FDAble to Replicate^000000)",
+      "translation" : "{0}（^2502FD可進行復制^000000）"
+    },
+    {
       "kind" : "message",
       "line" : 1135,
       "npc" : "Replication Expert Paltu",
@@ -2058,11 +4397,46 @@
     },
     {
       "kind" : "message",
+      "line" : 1135,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1136,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        "getitemname(.@items[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "Is ^0571B0{0}^000000 what you wanted?",
+      "translation" : "^0571B0{0}^000000就是您想要的嗎？"
+    },
+    {
+      "kind" : "message",
       "line" : 1140,
       "npc" : "Replication Expert Paltu",
       "state" : "translated",
       "text" : "[Paltu]\nAy... Credit purchases are difficult for me.",
       "translation" : "[帕爾圖]\n唉...賒賬對我來說有點難辦。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1140,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1141,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "Ay... Credit purchases are difficult for me.",
+      "translation" : "唉……賒賬對我來說可真困難。"
     },
     {
       "kind" : "message",
@@ -2077,6 +4451,41 @@
     },
     {
       "kind" : "message",
+      "line" : 1143,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1144,
+      "npc" : "Replication Expert Paltu",
+      "placeholders" : [
+        "getitemname(.@items[.@i])"
+      ],
+      "state" : "translated",
+      "text" : "^0571B0{0}^000000 and",
+      "translation" : "^0571B0{0}^000000，以及"
+    },
+    {
+      "kind" : "message",
+      "line" : 1145,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "^E1281E50 Splendide Coins, 4 Crystal Mirrors, 1 Fairy Magic Powder, 10 of each Emerald, Ruby, Sapphire, Topaz, and Zircon^000000 are necessary.",
+      "translation" : "^E1281E50還需要50枚史普蘭迪德硬幣、4面水晶鏡、1份妖精魔法粉末，以及各10顆祖母綠、紅寶石、藍寶石、黃玉和鋯石。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1147,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
       "line" : 1147,
       "npc" : "Replication Expert Paltu",
       "state" : "translated",
@@ -2085,11 +4494,35 @@
     },
     {
       "kind" : "message",
+      "line" : 1148,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "I'm in a tight spot myself. Please consider my situation also.",
+      "translation" : "我自己也很為難，請您體諒一下我的處境。"
+    },
+    {
+      "kind" : "message",
       "line" : 1152,
       "npc" : "Replication Expert Paltu",
       "state" : "translated",
       "text" : "[Paltu]\nYes, this is more than enough. Should I make it now?",
       "translation" : "[帕爾圖]\n好的，這些足夠了。我現在就開始製作嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1152,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1153,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "Yes, this is more than enough. Should I make it now?",
+      "translation" : "嗯，這些已經足夠了。現在就開始製作嗎？"
     },
     {
       "kind" : "option",
@@ -2112,8 +4545,24 @@
       "line" : 1157,
       "npc" : "Replication Expert Paltu",
       "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1157,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
       "text" : "[Paltu]\nHey.. Hey! Hey! Where you going?",
       "translation" : "[帕爾圖]\n嘿...嘿！嘿！你要去哪？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1158,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "Hey.. Hey! Hey! Where you going?",
+      "translation" : "喂……喂！喂！你要去哪兒？"
     },
     {
       "kind" : "message",
@@ -2125,11 +4574,43 @@
     },
     {
       "kind" : "message",
+      "line" : 1162,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1163,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "I got it. Oh right! Almost forgot again.",
+      "translation" : "我知道了。對了！差點又忘了。"
+    },
+    {
+      "kind" : "message",
       "line" : 1165,
       "npc" : "Replication Expert Paltu",
       "state" : "translated",
       "text" : "[Paltu]\n^FF0000In the process of replication, magic intervention phenomenon causes the hat to lose all of its refinements, cards, and hidden enchantments.^000000",
       "translation" : "[帕爾圖]\n^FF0000在複製過程中，魔法干涉現象會導致帽子失去所有的精煉等級、卡片和隱藏附魔。^000000"
+    },
+    {
+      "kind" : "message",
+      "line" : 1165,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1166,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "^FF0000In the process of replication, magic intervention phenomenon causes the hat to lose all of its refinements, cards, and hidden enchantments.^000000",
+      "translation" : "^FF0000複製過程中發生的魔法干涉現象，會使頭飾失去所有精煉等級、卡片和隱藏附魔。^000000"
     },
     {
       "kind" : "message",
@@ -2141,11 +4622,43 @@
     },
     {
       "kind" : "message",
+      "line" : 1168,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1169,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "^FF0000And if you possess multiple hats of the same type, the one you don't want can undergo the replication process, so please check to make sure.^000000",
+      "translation" : "^FF0000如果您持有多個同類型頭飾，不想複製的那個也可能被選中，請務必仔細確認。^000000"
+    },
+    {
+      "kind" : "message",
       "line" : 1171,
       "npc" : "Replication Expert Paltu",
       "state" : "translated",
       "text" : "[Paltu]\nSo any problems with that?",
       "translation" : "[帕爾圖]\n那麼，您對此有什麼異議嗎？"
+    },
+    {
+      "kind" : "message",
+      "line" : 1171,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1172,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "So any problems with that?",
+      "translation" : "這樣沒問題吧？"
     },
     {
       "kind" : "option",
@@ -2168,8 +4681,24 @@
       "line" : 1175,
       "npc" : "Replication Expert Paltu",
       "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1175,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
       "text" : "[Paltu]\nYeah, please make sure!",
       "translation" : "[帕爾圖]\n是的，請務必確認！"
+    },
+    {
+      "kind" : "message",
+      "line" : 1176,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "Yeah, please make sure!",
+      "translation" : "好，請務必確認！"
     },
     {
       "kind" : "message",
@@ -2181,11 +4710,51 @@
     },
     {
       "kind" : "message",
+      "line" : 1180,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1181,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "Woohoo- Got it.",
+      "translation" : "嗚呼——成功了。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1182,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "It's finally time for me to use my skills again.",
+      "translation" : "終於又輪到我大顯身手了。"
+    },
+    {
+      "kind" : "message",
       "line" : 1185,
       "npc" : "Replication Expert Paltu",
       "state" : "translated",
       "text" : "[Paltu]\nDo this thing here, and do that thing there, and then do this thing here again...",
       "translation" : "[帕爾圖]\n這裡弄一下，那裡弄一下，然後再弄一下這裡..."
+    },
+    {
+      "kind" : "message",
+      "line" : 1185,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1186,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "Do this thing here, and do that thing there, and then do this thing here again...",
+      "translation" : "這裡這樣弄，那裡那樣弄，然後這裡再弄一下……"
     },
     {
       "kind" : "message",
@@ -2197,11 +4766,51 @@
     },
     {
       "kind" : "message",
+      "line" : 1190,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
+      "line" : 1191,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "... .. ...",
+      "translation" : "…… …… ……"
+    },
+    {
+      "kind" : "message",
+      "line" : 1212,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "[Paltu]",
+      "translation" : "[帕爾圖]"
+    },
+    {
+      "kind" : "message",
       "line" : 1212,
       "npc" : "Replication Expert Paltu",
       "state" : "translated",
       "text" : "[Paltu]\nGood. This is a satisfying result.\nI'll do even a better job next time. Please tell others about my work. Have a good day~",
       "translation" : "[帕爾圖]\n很好。這是一個令人滿意的結果。\n下次我會做得更好。請把我的手藝推薦給其他人吧。祝您愉快~"
+    },
+    {
+      "kind" : "message",
+      "line" : 1213,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "Good. This is a satisfying result.",
+      "translation" : "很好，結果令人滿意。"
+    },
+    {
+      "kind" : "message",
+      "line" : 1214,
+      "npc" : "Replication Expert Paltu",
+      "state" : "translated",
+      "text" : "I'll do even a better job next time. Please tell others about my work. Have a good day~",
+      "translation" : "下次我會做得更好。請幫忙向大家宣傳我的手藝。祝您今天愉快~"
     }
   ]
 }

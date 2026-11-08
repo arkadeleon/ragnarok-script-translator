@@ -5,40 +5,480 @@
       "kind" : "message",
       "line" : 17,
       "npc" : "Reset Girl",
-      "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@Reset[3],\"time\")"
-      ],
       "state" : "translated",
-      "text" : "[Reset Girl]\nSorry you can only reset {0} in your life.",
-      "translation" : "[重置少女]\n很抱歉，您一生的重置次數限制為{0}。"
+      "text" : "[Reset Girl]",
+      "translation" : "[重置少女]"
     },
     {
       "kind" : "message",
       "line" : 17,
       "npc" : "Reset Girl",
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",.@Reset[1])",
-        "callfunc(\"F_InsertComma\",.@Reset[0])",
-        "callfunc(\"F_InsertComma\",.@Reset[2])",
-        "callfunc(\"F_InsertPlural\",.@Reset[3],\"time\")",
-        "((.@Reset[3]>1)?\"them\":\"it\")"
+        "getarg(0)",
+        "getarg(0)"
       ],
       "state" : "translated",
-      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nYou may only reset {3}, so use {4} wisely.\nPlease select the service you want:",
-      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n重置次數限制為{3}，請謹慎使用{4}。\n請選擇您需要的服務："
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny"
     },
     {
       "kind" : "message",
       "line" : 17,
       "npc" : "Reset Girl",
       "placeholders" : [
-        "callfunc(\"F_InsertComma\",.@Reset[1])",
-        "callfunc(\"F_InsertComma\",.@Reset[0])",
-        "callfunc(\"F_InsertComma\",.@Reset[2])"
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)"
       ],
       "state" : "translated",
       "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nPlease select the service you want:",
       "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nYou may only reset {3} time, so use them wisely.",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n你一生只能重置{3}次，請謹慎使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nYou may only reset {3} time, so use it wisely.",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n你一生只能重置{3}次，請謹慎使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z\nYou may only reset {2} time, so use them wisely.",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny\n你一生只能重置{2}次，請謹慎使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z\nYou may only reset {2} time, so use it wisely.",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny\n你一生只能重置{2}次，請謹慎使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z\nYou may only reset {2} time, so use them wisely.",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny\n你一生只能重置{2}次，請謹慎使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z\nYou may only reset {2} time, so use it wisely.",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny\n你一生只能重置{2}次，請謹慎使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nYou may only reset {3} time, so use them wisely.",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n你一生只能重置{3}次，請謹慎使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nYou may only reset {3} time, so use it wisely.",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n你一生只能重置{3}次，請謹慎使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nYou may only reset {3} time, so use them wisely.",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n你一生只能重置{3}次，請謹慎使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "insertchar(.@str$,\",\",.@i)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nYou may only reset {3} time, so use it wisely.",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n你一生只能重置{3}次，請謹慎使用。"
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "getarg(0)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z\nYou may only reset {2} time, so use them wisely.\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny\n你一生只能重置{2}次，請謹慎使用。\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "getarg(0)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z\nYou may only reset {2} time, so use it wisely.\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny\n你一生只能重置{2}次，請謹慎使用。\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z\nYou may only reset {2} time, so use them wisely.\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny\n你一生只能重置{2}次，請謹慎使用。\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: 5000z\nReset Both: {1}z\nYou may only reset {2} time, so use it wisely.\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：5000 Zeny\n同時重置：{1} Zeny\n你一生只能重置{2}次，請謹慎使用。\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nYou may only reset {3} time, so use them wisely.\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n你一生只能重置{3}次，請謹慎使用。\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "getarg(0)",
+        "insertchar(.@str$,\",\",.@i)",
+        "getarg(0)",
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nI am the Reset Girl.\nReset Stats: {0}z\nReset Skills: {1}z\nReset Both: {2}z\nYou may only reset {3} time, so use it wisely.\nPlease select the service you want:",
+      "translation" : "[重置少女]\n我是重置少女。\n重置屬性：{0} Zeny\n重置技能：{1} Zeny\n同時重置：{2} Zeny\n你一生只能重置{3}次，請謹慎使用。\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 17,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))"
+      ],
+      "state" : "translated",
+      "text" : "[Reset Girl]\nSorry you can only reset {0} time in your life.",
+      "translation" : "[重置少女]\n很抱歉，您一生的重置次數限制為{0}。"
+    },
+    {
+      "kind" : "message",
+      "line" : 19,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "Sorry you can only reset {0} {1} in your life.",
+      "translation" : "很抱歉，您一生只能進行{0}{1}重置。"
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "You may only reset {0} {1}, so use them wisely.\nPlease select the service you want:",
+      "translation" : "你最多隻能重置{0}{1}，請謹慎使用。\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 26,
+      "npc" : "Reset Girl",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
+      "state" : "translated",
+      "text" : "You may only reset {0} {1}, so use it wisely.\nPlease select the service you want:",
+      "translation" : "你最多隻能重置{0}{1}，請謹慎使用。\n請選擇您需要的服務："
+    },
+    {
+      "kind" : "message",
+      "line" : 27,
+      "npc" : "Reset Girl",
+      "state" : "translated",
+      "text" : "Please select the service you want:",
+      "translation" : "請選擇您需要的服務："
     },
     {
       "kind" : "option",
@@ -77,6 +517,14 @@
       "line" : 31,
       "npc" : "Reset Girl",
       "state" : "translated",
+      "text" : "[Reset Girl]",
+      "translation" : "[重置少女]"
+    },
+    {
+      "kind" : "message",
+      "line" : 31,
+      "npc" : "Reset Girl",
+      "state" : "translated",
       "text" : "[Reset Girl]\nSorry, you don't have enough Zeny.",
       "translation" : "[重置少女]\n很抱歉，您的Zeny不足。"
     },
@@ -85,46 +533,46 @@
       "line" : 31,
       "npc" : "Reset Girl",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@Reset[3],\"time\")"
+        "sprintf(\"%d\", getarg(0))"
       ],
       "state" : "translated",
-      "text" : "[Reset Girl]\nYou can only reset {0} in your life, are you sure?",
-      "translation" : "[重置少女]\n您一生的重置次數限制為{0}，確定要重置嗎？"
+      "text" : "[Reset Girl]\nYou can only reset {0} time in your life, are you sure?",
+      "translation" : "[重置少女]\n您一生只能重置{0}次，確定要繼續嗎？"
     },
     {
       "kind" : "message",
       "line" : 31,
       "npc" : "Reset Girl",
       "placeholders" : [
-        "callfunc(\"F_InsertPlural\",.@Reset[3],\"time\")"
+        "sprintf(\"%d\", getarg(0))"
       ],
       "state" : "translated",
-      "text" : "[Reset Girl]\nYou can only reset {0} in your life, are you sure?\nThere you go!",
-      "translation" : "[重置少女]\n您一生的重置次數限制為{0}，確定要重置嗎？\n重置完成！"
+      "text" : "[Reset Girl]\nYou can only reset {0} timees in your life, are you sure?",
+      "translation" : "[重置少女]\n您一生只能重置{0}次，確定要繼續嗎？"
     },
     {
       "kind" : "message",
       "line" : 31,
       "npc" : "Reset Girl",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
       "state" : "translated",
-      "text" : "[Reset Girl]\nThere you go!",
-      "translation" : "[重置少女]\n重置完成！"
+      "text" : "[Reset Girl]\nYou can only reset {0} {1} in your life, are you sure?",
+      "translation" : "[重置少女]\n您一生只能重置{0}{1}次，確定要繼續嗎？"
     },
     {
-      "kind" : "option",
-      "line" : 38,
+      "kind" : "message",
+      "line" : 37,
       "npc" : "Reset Girl",
+      "placeholders" : [
+        "sprintf(\"%d\", getarg(0))",
+        "sprintf(.@format$,.@str$)"
+      ],
       "state" : "translated",
-      "text" : "Let me think",
-      "translation" : "讓我想想"
-    },
-    {
-      "kind" : "option",
-      "line" : 38,
-      "npc" : "Reset Girl",
-      "state" : "translated",
-      "text" : "That's fine",
-      "translation" : "沒問題"
+      "text" : "You can only reset {0} {1} in your life, are you sure?",
+      "translation" : "您一生只能重置{0}{1}次，確定要繼續嗎？"
     }
   ]
 }

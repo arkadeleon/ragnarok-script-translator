@@ -181,6 +181,22 @@
       "translation" : "[麗莎]\n結束對話。"
     },
     {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Lisa",
+      "state" : "translated",
+      "text" : "Cancel",
+      "translation" : "取消"
+    },
+    {
+      "kind" : "option",
+      "line" : 107,
+      "npc" : "Lisa",
+      "state" : "translated",
+      "text" : "^808080(Module Amount 0)^000000",
+      "translation" : "^808080（模組數量 0）^000000"
+    },
+    {
       "kind" : "message",
       "line" : 109,
       "npc" : "Lisa",
@@ -249,7 +265,7 @@
       "line" : 196,
       "npc" : "Lisa",
       "placeholders" : [
-        ".@equip_name$",
+        "getequipname(.@part)",
         "getitemname(.@module_id)"
       ],
       "state" : "translated",
@@ -573,12 +589,11 @@
       "line" : 361,
       "npc" : "Yecheon",
       "placeholders" : [
-        ".@price",
         "mesitemlink(1000103)"
       ],
       "state" : "translated",
-      "text" : "[Yecheon]\nI will exchange 1 random Automatic Module excluding the epic grade modules for {0} {1}.",
-      "translation" : "[禮泉]\n支付{0}個{1}，就能兌換一個隨機的全自動模組，不包括史詩級模組。"
+      "text" : "[Yecheon]\nI will exchange 1 random Automatic Module excluding the epic grade modules for 90 {0}.",
+      "translation" : "[禮泉]\n我將用90張{0}兌換一個隨機的全自動模組（不含史詩級模組）。"
     },
     {
       "kind" : "option",
@@ -625,13 +640,11 @@
       "line" : 385,
       "npc" : "Yecheon",
       "placeholders" : [
-        ".@price",
-        "mesitemlink(1000103)",
-        ".@zeny"
+        "mesitemlink(1000103)"
       ],
       "state" : "translated",
-      "text" : "[Yecheon]\nI will exchange ^FF00001 Physical Automatic Improvement Device^000000 for {0} {1} or {2} Zeny.",
-      "translation" : "[禮泉]\n兌換^FF00001個物理全自動改良裝置^000000需要{0}個{1}或{2} Zeny。"
+      "text" : "[Yecheon]\nI will exchange ^FF00001 Physical Automatic Improvement Device^000000 for 45 {0} or 1500000 Zeny.",
+      "translation" : "[禮泉]\n我可以用^FF00001個物理全自動改良裝置^000000兌換45個{0}或1,500,000 Zeny。"
     },
     {
       "kind" : "option",
@@ -694,13 +707,11 @@
       "line" : 427,
       "npc" : "Yecheon",
       "placeholders" : [
-        ".@price",
-        "mesitemlink(1000103)",
-        ".@zeny"
+        "mesitemlink(1000103)"
       ],
       "state" : "translated",
-      "text" : "[Yecheon]\nI will exchange ^FF00001 Magical Automatic Improvement Device^000000 for {0} {1} or {2} Zeny.",
-      "translation" : "[禮泉]\n兌換^FF00001個魔法全自動改良裝置^000000需要{0}個{1}或{2} Zeny。"
+      "text" : "[Yecheon]\nI will exchange ^FF00001 Magical Automatic Improvement Device^000000 for 45 {0} or 1500000 Zeny.",
+      "translation" : "[禮泉]\n我可以用^FF00001個魔法全自動改良裝置^000000兌換45個{0}或1,500,000 Zeny。"
     },
     {
       "kind" : "option",
